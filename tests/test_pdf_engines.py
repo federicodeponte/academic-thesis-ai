@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Comprehensive test suite for PDF generation engines.
-Tests all engines, edge cases, and integration.
+ABOUTME: Comprehensive test suite for PDF generation engines (Pandoc, LibreOffice, WeasyPrint)
+ABOUTME: Tests all engines, edge cases, fallback mechanisms, and integration (9 tests total)
 """
 
 import sys

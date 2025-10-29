@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Academic Thesis AI - AI Detection Utility
-Check AI-generated content score using GPTZero API
+ABOUTME: AI detection utility using GPTZero API to check AI-generated content score
+ABOUTME: Helps ensure writing appears natural and human-authored (< 20% AI score target)
 """
 
 import argparse

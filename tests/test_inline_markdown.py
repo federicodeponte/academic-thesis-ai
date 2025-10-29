@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Test script for LibreOffice engine inline markdown parser.
-Tests bold, italic, code, and combined formatting.
+ABOUTME: Test suite for LibreOffice engine inline markdown parser
+ABOUTME: Validates bold, italic, code, and combined formatting in DOCX generation
 """
 
 import sys

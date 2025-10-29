@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Academic Thesis AI - Citation Management Utility
-Format and validate citations using pybtex and citeproc
+ABOUTME: Citation management utility for formatting and validating BibTeX citations
+ABOUTME: Supports APA, IEEE, Chicago, and MLA styles using pybtex and citeproc
 """
 
 import argparse

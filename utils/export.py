@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Academic Thesis AI - Document Export Utility
-Converts Markdown to PDF, Word, and LaTeX formats
+ABOUTME: Legacy export utilities for markdown to PDF, Word, and LaTeX conversion
+ABOUTME: For production use, prefer utils/export_professional.py with multi-engine support
 """
 
 import argparse

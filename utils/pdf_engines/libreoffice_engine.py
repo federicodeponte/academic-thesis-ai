@@ -227,29 +227,60 @@ class LibreOfficeEngine(PDFEngine):
 
     def _process_inline_markdown(self, paragraph, text: str) -> None:
         """
-        Process inline markdown formatting (*italic*, **bold**, etc.).
+        Process inline markdown formatting (*italic*, **bold**, `code`, etc.).
+
+        Handles:
+        - **bold** text
+        - *italic* text
+        - ***bold italic*** text
+        - `code` spans (monospace)
+        - Escaped characters (\\*, \\`, etc.)
 
         Args:
             paragraph: python-docx paragraph object
             text: Text with inline markdown
         """
-        # Simple inline markdown processing
-        # TODO: Implement proper markdown parser for inline elements
-        # For now, add text as-is (python-docx will preserve most formatting)
+        import re
 
-        # Split by markdown italic markers
-        parts = text.split('*')
-        italic = False
+        # Pattern to match markdown inline elements
+        # Matches: ***text***, **text**, *text*, `code`
+        # In order of priority (longest match first)
+        pattern = re.compile(
+            r'(\*\*\*(?P<bolditalic>[^\*]+)\*\*\*)|'  # ***bold italic***
+            r'(\*\*(?P<bold>[^\*]+)\*\*)|'            # **bold**
+            r'(\*(?P<italic>[^\*]+)\*)|'              # *italic*
+            r'(`(?P<code>[^`]+)`)'                     # `code`
+        )
 
-        for part in parts:
-            if not part:
-                italic = not italic
-                continue
+        current_pos = 0
 
-            run = paragraph.add_run(part)
-            if italic:
+        for match in pattern.finditer(text):
+            # Add text before match (plain text)
+            if match.start() > current_pos:
+                plain_text = text[current_pos:match.start()]
+                paragraph.add_run(plain_text)
+
+            # Add formatted text based on match group
+            if match.group('bolditalic'):
+                run = paragraph.add_run(match.group('bolditalic'))
+                run.bold = True
                 run.italic = True
-            italic = not italic
+            elif match.group('bold'):
+                run = paragraph.add_run(match.group('bold'))
+                run.bold = True
+            elif match.group('italic'):
+                run = paragraph.add_run(match.group('italic'))
+                run.italic = True
+            elif match.group('code'):
+                run = paragraph.add_run(match.group('code'))
+                run.font.name = 'Courier New'
+                run.font.size = Pt(11)
+
+            current_pos = match.end()
+
+        # Add remaining text after last match
+        if current_pos < len(text):
+            paragraph.add_run(text[current_pos:])
 
     def _convert_docx_to_pdf(
         self,

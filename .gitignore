@@ -57,7 +57,52 @@ output/
 *.pdf
 *.docx
 *.tex
+*.html
+
+# Test outputs (keep structure, ignore most generated files)
+tests/outputs/**/*.pdf
+tests/outputs/**/*.docx
+tests/outputs/**/*.tex
+tests/outputs/**/*.html
+tests/outputs/**/temp_*
+tests/outputs/**/TEST_*
+!tests/outputs/PRODUCTION_TEST_RESULTS.md
+!tests/outputs/README.md
+
+# Example outputs (generated)
+examples/output/**/*
+!examples/output/.gitkeep
 
 # Temporary files
 tmp/
 temp/
+*.tmp
+*.bak
+
+# Additional Python artifacts
+.mypy_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Research papers cache
+papers/
+cache/
+.cache/
+
+# AI API keys (extra safety)
+*_api_key*
+*_secret*
+credentials.json
+
+# IDE additions
+.cursor/
+
+# Documentation builds
+docs/_build/
+site/

@@ -33,38 +33,52 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 
 ---
 
-## 🚀 Quick Start (3 Steps)
+## 🚀 Quick Start
 
-### 1. Install
+### Option 1: Docker (Recommended - Zero Setup)
+
+```bash
+git clone https://github.com/yourusername/academic-thesis-ai.git
+cd academic-thesis-ai
+cp .env.example .env
+# Edit .env and add at least one API key
+
+# Start web UI
+docker-compose up -d
+
+# Access at http://localhost:8501
+```
+
+**Includes everything:** Pandoc, LaTeX, LibreOffice, all dependencies. No local installation needed!
+
+See `docs/DOCKER.md` for complete guide.
+
+### Option 2: Local Installation
 
 ```bash
 git clone https://github.com/yourusername/academic-thesis-ai.git
 cd academic-thesis-ai
 ./mcp_servers/install_all.sh  # Install research database MCP servers
 pip install -r requirements.txt
-```
 
-### 2. Configure
-
-```bash
+# Configure API keys
 cp .env.example .env
-# Edit .env and add your API keys:
-# - ANTHROPIC_API_KEY (for Claude)
-# - OPENAI_API_KEY (for GPT)
-# - GOOGLE_API_KEY (for Gemini)
-```
+# Edit .env and add your keys
 
-### 3. Start Writing
+# Option A: Web UI
+streamlit run ui/app.py
 
-```bash
-# Open in your IDE
+# Option B: IDE workflow
 cursor .  # or: code .
-
-# Follow the workflow guide
 open prompts/00_WORKFLOW.md
 ```
 
-**That's it!** Follow the step-by-step guide in `00_WORKFLOW.md` to write your paper.
+### Option 3: Quick Tutorial
+
+```bash
+# Follow the 30-minute tutorial
+open examples/tutorial/README.md
+```
 
 ---
 
@@ -145,12 +159,19 @@ python utils/export.py --format latex --output paper.tex final_thesis.md
 
 ## 💻 Requirements
 
-### System Requirements
+### Option 1: Docker (Easiest)
+- **Docker Desktop** or Docker Engine
+- **4GB RAM** minimum
+- **3GB Disk Space** for image
+- **No other dependencies** - Everything included!
+
+### Option 2: Local Installation
 - **OS:** macOS, Linux, or Windows (with WSL)
 - **Python:** 3.8 or higher
-- **IDE:** Claude Code or Cursor (MCP support)
+- **IDE:** Claude Code or Cursor (MCP support) - Optional for web UI
 - **Memory:** 4GB RAM minimum
 - **Disk Space:** 2GB (for MCP servers and papers)
+- **Optional:** Pandoc + LaTeX for best PDF quality
 
 ### API Keys Required
 
@@ -237,6 +258,84 @@ python utils/export.py --format pdf --output thesis.pdf final_thesis.md
 ```
 
 **Result:** 60-80 page thesis, 20,000+ words, ready for submission.
+
+---
+
+## 🌐 Web UI (New in v1.1.0)
+
+### Browser-Based Interface
+
+Access via Docker or Streamlit:
+
+```bash
+# With Docker
+docker-compose up -d
+# Access at http://localhost:8501
+
+# Or locally
+streamlit run ui/app.py
+```
+
+### Features
+
+- **✍️ Markdown Editor** - Write and edit in your browser
+- **📄 Template Loading** - One-click template insertion
+- **🎨 PDF Options** - Configure fonts, margins, TOC, title page
+- **📥 Export** - Download as markdown or PDF
+- **📚 Agent Docs** - Built-in documentation for all 14 agents
+- **⚙️ Engine Selection** - Choose Pandoc, LibreOffice, or WeasyPrint
+
+Perfect for:
+- Quick prototyping
+- Non-technical users
+- Remote access workflows
+- Teaching and demonstrations
+
+---
+
+## 📋 Quick-Start Templates (New in v1.1.0)
+
+Get started faster with pre-built templates:
+
+### Available Templates
+
+**1. Literature Review** (`examples/templates/literature_review.md`)
+- Systematic review structure
+- 50+ paper synthesis format
+- Research gap identification
+
+**2. Empirical Study** (`examples/templates/empirical_study.md`)
+- IMRaD format (Intro, Methods, Results, Discussion)
+- Hypothesis testing framework
+- Statistical analysis sections
+
+**3. Theoretical Paper** (`examples/templates/theoretical_paper.md`)
+- Framework development structure
+- Theoretical propositions
+- Conceptual argumentation
+
+### Usage
+
+```bash
+# Load in web UI (Templates tab)
+# Or copy to your project
+cp examples/templates/literature_review.md my_paper.md
+```
+
+---
+
+## 🎓 Tutorial (New in v1.1.0)
+
+**30-60 minute hands-on tutorial:** `examples/tutorial/README.md`
+
+Learn by doing:
+1. Find papers (Scout Agent)
+2. Summarize research (Scribe Agent)
+3. Write introduction (Crafter Agent)
+4. Polish writing (Polish Agent)
+5. Export to PDF
+
+Perfect for first-time users!
 
 ---
 
@@ -448,7 +547,15 @@ Inspired by the need for better academic writing tools.
 
 ## 🔮 Roadmap
 
-### v1.0 (Current - Production)
+### v1.1.0 (Current - Released 2025-10-29)
+- ✅ Web UI (Streamlit dashboard)
+- ✅ Docker deployment (full containerization)
+- ✅ Quick-start templates (3 types)
+- ✅ Step-by-step tutorial (30-60 min)
+- ✅ Enhanced PDF export (LibreOffice inline markdown)
+- ✅ Complete Docker documentation
+
+### v1.0.0 (Production - Released 2025-10-28)
 - ✅ 14 specialized agent prompts
 - ✅ 4 research database integrations (MCP)
 - ✅ Multi-LLM support (Claude, GPT, Gemini)
@@ -456,14 +563,13 @@ Inspired by the need for better academic writing tools.
 - ✅ Complete agent testing (14/14 - 100% coverage)
 - ✅ Multi-agent workflow validation
 - ✅ Production-quality outputs verified
-- ✅ Comprehensive documentation
 
-### v1.5 (Next)
-- [ ] Web UI (Streamlit dashboard)
+### v1.2 (Next)
 - [ ] Collaborative features (multi-author)
 - [ ] More MCP servers (IEEE, Springer)
 - [ ] Enhanced citation management
-- [ ] Docker deployment
+- [ ] Web UI agent integration
+- [ ] Batch processing interface
 
 ### v2.0 (Future)
 - [ ] Domain-specific agents (medical, legal, etc.)

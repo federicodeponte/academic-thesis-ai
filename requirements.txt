@@ -1,0 +1,23 @@
+# Academic Thesis AI - Python Dependencies
+# Minimal dependencies for maximum simplicity
+
+# === LLM APIs ===
+anthropic>=0.20.0
+openai>=1.0.0
+google-generativeai>=0.4.0
+
+# === Citation Management ===
+pybtex>=0.24.0              # BibTeX parsing/generation
+citeproc-py>=0.6.0          # Citation formatting (APA, MLA, Chicago, IEEE)
+
+# === Document Export ===
+markdown>=3.5.0             # Markdown parsing
+weasyprint>=60.0            # PDF generation (no LaTeX needed!)
+python-docx>=1.0.0          # Word document generation
+
+# === HTTP Client ===
+requests>=2.31.0            # For CrossRef API, GPTZero API
+
+# === Utilities ===
+python-dotenv>=1.0.0        # Load .env files
+rich>=13.0.0                # Pretty terminal output (for scripts)

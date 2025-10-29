@@ -1,0 +1,63 @@
+# Environment variables
+.env
+.env.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+ENV/
+env/
+
+# Research data (user-generated)
+research/papers/
+research/sources.md
+research/summaries.md
+research/gaps.md
+sections/
+outline.md
+final_thesis.*
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Output files
+output/
+*.pdf
+*.docx
+*.tex
+
+# Temporary files
+tmp/
+temp/

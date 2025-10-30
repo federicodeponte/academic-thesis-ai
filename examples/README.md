@@ -2,31 +2,37 @@
 
 This directory contains showcase examples of the Academic Thesis AI system's output.
 
-## Viewing the HTML Thesis
+## Viewing the Thesis
 
-### Quick View (Mac/Linux)
+### PDF Version (Recommended)
+```bash
+open thesis_showcase.pdf
+```
+
+The PDF version provides the best reading experience with proper academic formatting.
+
+**Online:** [View PDF on GitHub Pages](https://federicodeponte.github.io/academic-thesis-ai/examples/thesis_showcase.pdf)
+
+### HTML Version
 ```bash
 open thesis_showcase.html
 ```
 
-This will open the thesis in your default browser (Safari/Chrome).
-
-### Alternative: Python Server
-```bash
-# From the examples/ directory
-python3 -m http.server 8000
-
-# Then visit: http://localhost:8000/thesis_showcase.html
-```
+**Online:** [View HTML on GitHub Pages](https://federicodeponte.github.io/academic-thesis-ai/examples/thesis_showcase.html)
 
 ## Files
 
-- **thesis_showcase.html** - Complete academic thesis in HTML format
+- **thesis_showcase.pdf** - Complete academic thesis in PDF format
+  - 20 pages
+  - 6,432 words
+  - Professional academic formatting (A4, Times New Roman, 12pt)
   - Topic: "Pricing Models for Agentic AI Systems"
-  - 6,400+ words
-  - Full academic formatting
-  - Table of contents
   - 120+ citations
+
+- **thesis_showcase.html** - Complete academic thesis in HTML format
+  - Same content as PDF
+  - Searchable and copy-paste friendly
+  - Table of contents with navigation
 
 - **academic-style.css** - Professional academic CSS styling
   - Times New Roman font

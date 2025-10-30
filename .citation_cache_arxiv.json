@@ -11,5 +11,29 @@
       "title": "Which shapes can appear in a Curve Shortening Flow Singularity?",
       "arxiv_id": "2403.09876"
     }
+  },
+  "2305.17493": {
+    "status": "verified",
+    "details": "Found: The Curse of Recursion: Training on Generated Data Makes Mod...",
+    "metadata": {
+      "title": "The Curse of Recursion: Training on Generated Data Makes Models Forget",
+      "arxiv_id": "2305.17493"
+    }
+  },
+  "1606.06565": {
+    "status": "verified",
+    "details": "Found: Concrete Problems in AI Safety...",
+    "metadata": {
+      "title": "Concrete Problems in AI Safety",
+      "arxiv_id": "1606.06565"
+    }
+  },
+  "2002.06177": {
+    "status": "verified",
+    "details": "Found: The Next Decade in AI: Four Steps Towards Robust Artificial ...",
+    "metadata": {
+      "title": "The Next Decade in AI: Four Steps Towards Robust Artificial Intelligence",
+      "arxiv_id": "2002.06177"
+    }
   }
 }

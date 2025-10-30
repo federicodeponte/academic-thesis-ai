@@ -33,52 +33,43 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 
 ---
 
-## 🚀 Quick Start
+## 🚀 Quick Start (2 Steps)
 
-### Option 1: Docker (Recommended - Zero Setup)
-
-```bash
-git clone https://github.com/yourusername/academic-thesis-ai.git
-cd academic-thesis-ai
-cp .env.example .env
-# Edit .env and add at least one API key
-
-# Start web UI
-docker-compose up -d
-
-# Access at http://localhost:8501
-```
-
-**Includes everything:** Pandoc, LaTeX, LibreOffice, all dependencies. No local installation needed!
-
-See `docs/DOCKER.md` for complete guide.
-
-### Option 2: Local Installation
+### 1. Clone and Install
 
 ```bash
 git clone https://github.com/yourusername/academic-thesis-ai.git
 cd academic-thesis-ai
-./mcp_servers/install_all.sh  # Install research database MCP servers
 pip install -r requirements.txt
-
-# Configure API keys
-cp .env.example .env
-# Edit .env and add your keys
-
-# Option A: Web UI
-streamlit run ui/app.py
-
-# Option B: IDE workflow
-cursor .  # or: code .
-open prompts/00_WORKFLOW.md
 ```
 
-### Option 3: Quick Tutorial
+### 2. Write Your Thesis in Your IDE
 
 ```bash
-# Follow the 30-minute tutorial
+# Open in Cursor, Claude Code, or VS Code
+cursor .    # or: code .
+
+# Configure your API key (one-time)
+cp .env.example .env
+# Edit .env and add ANTHROPIC_API_KEY, OPENAI_API_KEY, or GOOGLE_API_KEY
+
+# Follow the workflow guide
+open prompts/00_WORKFLOW.md
+
+# Or try the 30-minute tutorial
 open examples/tutorial/README.md
 ```
+
+**That's it!** Use the AI agents in `prompts/` to help you write. No Docker, no web server, just write your thesis in your IDE like you write code.
+
+### Optional: Research Database Integration
+
+```bash
+# Install MCP servers for automatic paper discovery
+./mcp_servers/install_all.sh
+```
+
+This connects your IDE to arXiv, Semantic Scholar, PubMed, and Google Scholar.
 
 ---
 
@@ -159,19 +150,15 @@ python utils/export.py --format latex --output paper.tex final_thesis.md
 
 ## 💻 Requirements
 
-### Option 1: Docker (Easiest)
-- **Docker Desktop** or Docker Engine
-- **4GB RAM** minimum
-- **3GB Disk Space** for image
-- **No other dependencies** - Everything included!
-
-### Option 2: Local Installation
 - **OS:** macOS, Linux, or Windows (with WSL)
 - **Python:** 3.8 or higher
-- **IDE:** Claude Code or Cursor (MCP support) - Optional for web UI
-- **Memory:** 4GB RAM minimum
-- **Disk Space:** 2GB (for MCP servers and papers)
-- **Optional:** Pandoc + LaTeX for best PDF quality
+- **IDE:** Cursor, Claude Code, or VS Code
+- **Memory:** 2GB RAM minimum
+- **Disk Space:** 500MB
+
+**Optional but recommended:**
+- **MCP Servers:** Automatic paper discovery (run `./mcp_servers/install_all.sh`)
+- **Pandoc + LaTeX:** Best PDF quality (system packages)
 
 ### API Keys Required
 
@@ -261,81 +248,47 @@ python utils/export.py --format pdf --output thesis.pdf final_thesis.md
 
 ---
 
-## 🌐 Web UI (New in v1.1.0)
+## 📋 Quick-Start Templates
 
-### Browser-Based Interface
+Get started faster with pre-built templates in `examples/templates/`:
 
-Access via Docker or Streamlit:
-
-```bash
-# With Docker
-docker-compose up -d
-# Access at http://localhost:8501
-
-# Or locally
-streamlit run ui/app.py
-```
-
-### Features
-
-- **✍️ Markdown Editor** - Write and edit in your browser
-- **📄 Template Loading** - One-click template insertion
-- **🎨 PDF Options** - Configure fonts, margins, TOC, title page
-- **📥 Export** - Download as markdown or PDF
-- **📚 Agent Docs** - Built-in documentation for all 14 agents
-- **⚙️ Engine Selection** - Choose Pandoc, LibreOffice, or WeasyPrint
-
-Perfect for:
-- Quick prototyping
-- Non-technical users
-- Remote access workflows
-- Teaching and demonstrations
-
----
-
-## 📋 Quick-Start Templates (New in v1.1.0)
-
-Get started faster with pre-built templates:
-
-### Available Templates
-
-**1. Literature Review** (`examples/templates/literature_review.md`)
-- Systematic review structure
-- 50+ paper synthesis format
+**1. Literature Review** (`literature_review.md`)
+- Systematic review of 50+ papers
 - Research gap identification
+- Synthesis structure
 
-**2. Empirical Study** (`examples/templates/empirical_study.md`)
+**2. Empirical Study** (`empirical_study.md`)
 - IMRaD format (Intro, Methods, Results, Discussion)
 - Hypothesis testing framework
 - Statistical analysis sections
 
-**3. Theoretical Paper** (`examples/templates/theoretical_paper.md`)
-- Framework development structure
+**3. Theoretical Paper** (`theoretical_paper.md`)
+- Framework development
 - Theoretical propositions
 - Conceptual argumentation
 
 ### Usage
 
 ```bash
-# Load in web UI (Templates tab)
-# Or copy to your project
+# Copy template to your project
 cp examples/templates/literature_review.md my_paper.md
+
+# Open in your IDE and customize
+cursor my_paper.md
 ```
 
 ---
 
-## 🎓 Tutorial (New in v1.1.0)
+## 🎓 Tutorial
 
-**30-60 minute hands-on tutorial:** `examples/tutorial/README.md`
+**30-minute hands-on tutorial:** `examples/tutorial/README.md`
 
-Learn by doing:
+Learn the workflow by writing your first section:
 1. Find papers (Scout Agent)
 2. Summarize research (Scribe Agent)
 3. Write introduction (Crafter Agent)
 4. Polish writing (Polish Agent)
 5. Export to PDF
-
-Perfect for first-time users!
 
 ---
 
@@ -602,3 +555,20 @@ If this helps your research, consider starring the repo!
 **Built with ❤️ for researchers, by researchers**
 
 **Keywords:** academic writing, AI agents, thesis, research paper, literature review, MCP, Claude, GPT, Gemini, arXiv, Semantic Scholar, publication automation
+
+---
+
+## 🐳 Advanced: Docker Deployment
+
+For self-hosting or if you prefer containerized environments:
+
+```bash
+# Build and run
+docker-compose up -d
+
+# Access at http://localhost:8501 (experimental web UI)
+```
+
+See `docs/DOCKER.md` for complete guide. Docker includes Pandoc, LaTeX, and LibreOffice pre-installed.
+
+**Note:** Docker is optional. Most users should use the simple pip install workflow above.

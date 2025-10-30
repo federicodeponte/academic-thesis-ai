@@ -18,34 +18,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - `examples/templates/theoretical_paper.md` - Theoretical framework template
 - Comprehensive step-by-step tutorial (`examples/tutorial/README.md`)
   - 5-part tutorial covering Scout, Scribe, Crafter, Polish agents
-  - 30-60 minute learning path
+  - 30-minute learning path
   - Troubleshooting guide and next steps
 
-**Docker Deployment:**
-- Full Docker configuration for containerized deployment
-  - `Dockerfile` with Pandoc, LaTeX, and LibreOffice
-  - `docker-compose.yml` with multi-service setup
-  - `.dockerignore` for efficient builds
-  - `docs/DOCKER.md` - Complete deployment and troubleshooting guide
-- Health checks and resource limits
-- Volume mounts for persistent data
-- Testing service profile
-
-**Web UI:**
-- Streamlit-based web interface (`ui/app.py`)
-  - Browser-based markdown editor with live editing
-  - PDF generation with all 3 engines
-  - Template loading (quick-start)
-  - PDF options configuration (fonts, margins, TOC, title page)
-  - Multi-tab interface: Editor, Templates, Agents, About
-  - Download buttons for markdown and PDF
-- Accessible at http://localhost:8501 when running via Docker
-
 **Documentation:**
-- `docs/DOCKER.md` - Complete Docker deployment guide
 - Enhanced `SESSION.md` with comprehensive PDF solution documentation
 - ABOUTME comments added to key utility and test files
 - `CHANGELOG.md` - Version history tracking
+
+**Advanced Features (Optional):**
+- Docker deployment option for self-hosting
+  - `Dockerfile` with Pandoc, LaTeX, and LibreOffice
+  - `docker-compose.yml` for container orchestration
+  - `docs/DOCKER.md` - Complete deployment guide
+- Not required for basic usage (simple pip install is recommended)
 
 ### Fixed
 
@@ -76,17 +62,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 **Git Repository:**
 - Initialized git repository with clean history
 - Tagged v1.0.0 (initial production release)
-- 10 commits from 1.0.0 to 1.1.0:
+- Commits from 1.0.0 to 1.1.0:
   1. Initial commit
   2. Enhanced .gitignore
   3. SESSION.md solution documentation
   4. LibreOffice inline markdown parser fix
   5. ABOUTME comments
   6. Templates and tutorial
-  7. Docker configuration
-  8. Streamlit web UI
-  9. CHANGELOG and documentation
-  10. Version 1.1.0 release
+  7. Docker configuration (advanced feature)
+  8. CHANGELOG and documentation
+  9. Refocus on IDE workflow (removed UI complexity)
 
 ---
 

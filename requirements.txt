@@ -21,4 +21,3 @@ requests>=2.31.0            # For CrossRef API, GPTZero API
 # === Utilities ===
 python-dotenv>=1.0.0        # Load .env files
 rich>=13.0.0                # Pretty terminal output (for scripts)
-streamlit==1.31.0

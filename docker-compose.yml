@@ -23,12 +23,14 @@ services:
       # Environment file (for API keys)
       - ./.env:/app/.env:ro
 
-    # Port mapping for web UI
-    ports:
-      - "8501:8501"  # Streamlit UI
+    # No ports needed for CLI-only usage
+    # Uncomment below if you add a web UI later:
+    # ports:
+    #   - "8501:8501"
 
-    # Override default command
-    command: ["python", "-m", "streamlit", "run", "ui/app.py", "--server.address", "0.0.0.0"]
+    # Default: run tests on startup
+    # Override with: docker-compose run --rm academic-thesis-ai bash
+    # command: ["python", "tests/test_pdf_engines.py"]
 
     # Restart policy
     restart: unless-stopped

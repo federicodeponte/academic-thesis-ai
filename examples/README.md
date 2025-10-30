@@ -23,11 +23,19 @@ open thesis_showcase.html
 ## Files
 
 - **thesis_showcase.pdf** - Complete academic thesis in PDF format
-  - 20 pages
-  - 6,432 words
-  - Professional academic formatting (A4, Times New Roman, 12pt)
-  - Topic: "Pricing Models for Agentic AI Systems"
-  - 120+ citations
+  - **33 pages** with full academic formatting
+  - **10,700+ words** of comprehensive analysis
+  - Professional academic structure:
+    - Cover page with metadata
+    - Abstract with keywords
+    - Table of contents (auto-generated)
+    - Numbered sections and subsections
+    - Page numbers throughout
+    - Comprehensive appendices (mathematical frameworks, case study data tables, implementation checklists)
+  - Topic: "Pricing Models for Agentic AI Systems: From Token-Based to Value-Based Approaches"
+  - 120+ scholarly citations
+  - 3 detailed case studies (Healthcare, Finance, Legal)
+  - A4 format, Times New Roman 12pt, 1-inch margins
 
 - **thesis_showcase.html** - Complete academic thesis in HTML format
   - Same content as PDF

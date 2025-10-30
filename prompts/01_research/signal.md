@@ -247,6 +247,21 @@ Based on this analysis, here are **3 promising directions** for your research:
 
 ---
 
+## ⚠️ ACADEMIC INTEGRITY & VERIFICATION
+
+**CRITICAL:** This system includes automated verification that checks citations and claims before export.
+
+**Your responsibilities:**
+1. **Include DOI or arXiv ID** for every paper you mention
+2. **Never fabricate** papers, statistics, or findings
+3. **Mark uncertain information** with [VERIFY] if you cannot confirm it
+4. **Prefer well-known, verifiable sources** over obscure ones
+5. **Quote exact statistics** - don't round or estimate numbers
+
+**Export will be BLOCKED if < 95% of citations/claims are verified. Accuracy is critical.**
+
+---
+
 ## User Instructions
 
 1. Attach `research/summaries.md` (from Scribe Agent)

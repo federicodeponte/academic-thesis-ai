@@ -1,0 +1,120 @@
+/* Academic Paper CSS Styling */
+/* Professional styling for academic documents */
+
+body {
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    text-align: justify;
+    max-width: 8.5in;
+    margin: 0 auto;
+    padding: 1in;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+h1 {
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: 24pt;
+    margin-bottom: 12pt;
+    text-align: center;
+}
+
+h2 {
+    font-size: 14pt;
+    font-weight: bold;
+    margin-top: 18pt;
+    margin-bottom: 9pt;
+}
+
+h3 {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 12pt;
+    margin-bottom: 6pt;
+}
+
+p {
+    margin-bottom: 12pt;
+    text-indent: 0.5in;
+}
+
+/* First paragraph after headings - no indent */
+h1 + p, h2 + p, h3 + p {
+    text-indent: 0;
+}
+
+blockquote {
+    margin-left: 0.5in;
+    margin-right: 0.5in;
+    font-style: italic;
+    border-left: 3px solid #ccc;
+    padding-left: 1em;
+}
+
+code {
+    font-family: "Courier New", Consolas, monospace;
+    background-color: #f5f5f5;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-size: 11pt;
+}
+
+pre {
+    font-family: "Courier New", Consolas, monospace;
+    background-color: #f5f5f5;
+    padding: 10px;
+    overflow-x: auto;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 12pt 0;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+/* Links */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+    margin-bottom: 12pt;
+}
+
+li {
+    margin-bottom: 6pt;
+}
+
+/* Print-friendly */
+@media print {
+    body {
+        padding: 0;
+        max-width: 100%;
+    }
+
+    @page {
+        size: A4;
+        margin: 2.5cm;
+    }
+}

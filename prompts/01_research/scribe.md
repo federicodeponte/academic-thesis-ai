@@ -171,6 +171,21 @@ Based on these papers, gaps to explore:
 
 ---
 
+## ⚠️ ACADEMIC INTEGRITY & VERIFICATION
+
+**CRITICAL:** When extracting findings and statistics, all claims MUST be verifiable and properly cited.
+
+**Your responsibilities:**
+1. **Preserve DOI/arXiv ID** from Scout Agent for every paper
+2. **Quote exact numbers** from papers (don't paraphrase statistics)
+3. **Mark uncertain claims** with [VERIFY] if you cannot confirm from the paper
+4. **Never fabricate** findings, statistics, or methodologies
+5. **Cite page numbers** for key statistics when available
+
+**Quantitative claims (%, $, hours, counts) MUST have clear citations. Mark any uncertain claims with [VERIFY].**
+
+---
+
 ## Special Instructions
 
 ### For Review Papers

@@ -164,6 +164,21 @@ None found ✓
 
 ---
 
+## ⚠️ ACADEMIC INTEGRITY & VERIFICATION
+
+**CRITICAL:** Every quantitative claim MUST be cited. Verification checks will flag uncited statistics.
+
+**Your responsibilities:**
+1. **Cite every statistic** (%, $, hours, counts) immediately after stating it
+2. **Use exact citations** from research phase (Author et al., Year) with DOI
+3. **Mark uncertain claims** with [VERIFY] if source is unclear
+4. **Never invent** statistics, even if they "seem reasonable"
+5. **Provide page numbers** for key claims when available
+
+**Example:** "LLMs hallucinate 11-12% of citations (Smith et al., 2023, DOI: 10.xxx)" not "LLMs often hallucinate citations."
+
+---
+
 ## User Instructions
 
 1. Attach ALL section files (sections/*.md)

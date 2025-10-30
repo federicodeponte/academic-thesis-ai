@@ -10,6 +10,23 @@ import sys
 import markdown
 from pathlib import Path
 
+# Verification infrastructure
+try:
+    from citation_verifier import CitationVerifier
+    from fact_checker import FactChecker
+    VERIFICATION_AVAILABLE = True
+except ImportError:
+    # Try relative import if running from utils/
+    try:
+        import sys
+        sys.path.insert(0, os.path.dirname(__file__))
+        from citation_verifier import CitationVerifier
+        from fact_checker import FactChecker
+        VERIFICATION_AVAILABLE = True
+    except ImportError:
+        VERIFICATION_AVAILABLE = False
+        print("Warning: Verification infrastructure not available. Use --skip-verification to bypass.")
+
 try:
     from weasyprint import HTML, CSS
     WEASY_AVAILABLE = True
@@ -25,6 +42,68 @@ try:
 except ImportError:
     DOCX_AVAILABLE = False
     print("Warning: python-docx not installed. Word export unavailable.")
+
+
+def verify_before_export(input_file, force=False, skip_verification=False):
+    """
+    Verify academic integrity before export (Quality Gate)
+
+    Returns:
+        True if verification passed or was skipped/forced
+        False if verification failed and not forced
+    """
+    if skip_verification:
+        print("\n⚠️  WARNING: Skipping verification (--skip-verification)")
+        print("   Export may contain unverified citations and claims.\n")
+        return True
+
+    if not VERIFICATION_AVAILABLE:
+        print("\n⚠️  WARNING: Verification infrastructure not available")
+        print("   Install dependencies or use --skip-verification\n")
+        return False
+
+    print("\n" + "="*60)
+    print("ACADEMIC INTEGRITY VERIFICATION")
+    print("="*60 + "\n")
+
+    # Citation verification
+    print("Running citation verification...")
+    citation_verifier = CitationVerifier(use_cache=True)
+    citation_report = citation_verifier.verify_file(input_file)
+    citation_report.print_summary()
+
+    # Fact-checking
+    print("\nRunning fact-check...")
+    fact_checker = FactChecker()
+    fact_report = fact_checker.check_file(input_file)
+    fact_report.print_summary()
+
+    # Overall assessment
+    citation_passed = citation_report.passes_threshold(95.0)
+    fact_passed = fact_report.passes_threshold(95.0)
+
+    print("\n" + "="*60)
+    print("VERIFICATION SUMMARY")
+    print("="*60)
+    print(f"Citations: {'✅ PASS' if citation_passed else '❌ FAIL'} ({citation_report.verification_rate:.1f}%)")
+    print(f"Fact-check: {'✅ PASS' if fact_passed else '❌ FAIL'} ({fact_report.citation_rate:.1f}%)")
+
+    if citation_passed and fact_passed:
+        print("\n✅ VERIFICATION PASSED - Ready for export")
+        print("="*60 + "\n")
+        return True
+    else:
+        print("\n❌ VERIFICATION FAILED - Academic integrity issues detected")
+        print("="*60 + "\n")
+
+        if force:
+            print("⚠️  WARNING: Proceeding with export anyway (--force)")
+            print("   This document has NOT met academic standards.\n")
+            return True
+        else:
+            print("Export BLOCKED. Fix issues or use --force to override.")
+            print("Use --skip-verification to bypass checks entirely.\n")
+            return False
 
 
 def markdown_to_html(md_content):
@@ -266,13 +345,26 @@ def export_latex(input_file, output_file):
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Export Markdown to PDF, Word, or LaTeX',
+        description='Export Markdown to PDF, Word, or LaTeX with academic integrity verification',
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog='''
 Examples:
+  # Normal export (with verification)
   python export.py --format pdf --output paper.pdf final_thesis.md
-  python export.py --format docx --output paper.docx final_thesis.md
-  python export.py --format latex --output paper.tex final_thesis.md
+
+  # Skip verification (not recommended)
+  python export.py --format pdf --output paper.pdf --skip-verification final_thesis.md
+
+  # Force export despite verification failures
+  python export.py --format pdf --output paper.pdf --force final_thesis.md
+
+Academic Integrity:
+  By default, this tool verifies:
+  - Citations exist and are accessible (CrossRef, arXiv)
+  - Quantitative claims are properly cited
+  - No hallucinated references (95% threshold)
+
+  Use --force or --skip-verification at your own risk.
         '''
     )
     parser.add_argument('input', help='Input Markdown file')
@@ -280,14 +372,35 @@ Examples:
                         help='Output format')
     parser.add_argument('--output', '-o', required=True,
                         help='Output file path')
-    
+    parser.add_argument('--force', action='store_true',
+                        help='Force export even if verification fails (not recommended)')
+    parser.add_argument('--skip-verification', action='store_true',
+                        help='Skip verification entirely (not recommended)')
+
     args = parser.parse_args()
-    
+
     # Check input file exists
     if not os.path.exists(args.input):
         print(f"ERROR: Input file not found: {args.input}")
         sys.exit(1)
-    
+
+    # Verify academic integrity before export (Quality Gate)
+    verification_passed = verify_before_export(
+        args.input,
+        force=args.force,
+        skip_verification=args.skip_verification
+    )
+
+    if not verification_passed:
+        print("❌ Export BLOCKED due to verification failure.")
+        print("   Fix issues, use --force, or use --skip-verification")
+        sys.exit(1)
+
+    # Create output directory if needed
+    output_dir = os.path.dirname(args.output)
+    if output_dir and not os.path.exists(output_dir):
+        os.makedirs(output_dir, exist_ok=True)
+
     # Export
     success = False
     if args.format == 'pdf':
@@ -296,7 +409,7 @@ Examples:
         success = export_docx(args.input, args.output)
     elif args.format == 'latex':
         success = export_latex(args.input, args.output)
-    
+
     if not success:
         sys.exit(1)
 

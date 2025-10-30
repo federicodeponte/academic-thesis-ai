@@ -1,0 +1,15 @@
+{
+  "9999.99999": {
+    "status": "not_found",
+    "details": "arXiv ID not found (no title in response)",
+    "metadata": null
+  },
+  "2403.09876": {
+    "status": "verified",
+    "details": "Found: Which shapes can appear in a Curve Shortening Flow Singulari...",
+    "metadata": {
+      "title": "Which shapes can appear in a Curve Shortening Flow Singularity?",
+      "arxiv_id": "2403.09876"
+    }
+  }
+}

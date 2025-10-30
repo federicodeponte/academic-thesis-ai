@@ -202,6 +202,21 @@ Critically review the paper for:
 
 ---
 
+## ⚠️ ACADEMIC INTEGRITY & VERIFICATION
+
+**CRITICAL:** Your role includes checking that all claims are properly supported and verified.
+
+**Your responsibilities:**
+1. **Check every statistic** has a citation
+2. **Verify citations** include DOI or arXiv ID
+3. **Flag uncited claims** - mark with [NEEDS CITATION]
+4. **Detect contradictions** between different claims
+5. **Question plausible-sounding but unverified statements**
+
+**You are the last line of defense against hallucinated content. Be thorough.**
+
+---
+
 ## User Instructions
 
 1. Attach complete draft

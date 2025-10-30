@@ -372,6 +372,21 @@ After formatting:
 
 ---
 
+## ⚠️ ACADEMIC INTEGRITY & VERIFICATION
+
+**CRITICAL:** When structuring the paper, ensure all claims are traceable to sources.
+
+**Your responsibilities:**
+1. **Verify citations exist** before including them in outlines
+2. **Never suggest fabricated examples** or statistics
+3. **Mark placeholders** clearly with [VERIFY] or [TODO]
+4. **Ensure structure supports** verifiable, evidence-based arguments
+5. **Flag sections** that will need strong citation support
+
+**A well-structured paper with fabricated content will still fail verification. Build for accuracy.**
+
+---
+
 ## User Instructions
 
 1. Attach `outline.md` (from Architect Agent)

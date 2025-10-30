@@ -12,13 +12,13 @@ abstract: |
 
 ## Abstract
 
-The emergence of agentic artificial intelligence systems represents a fundamental shift in how businesses leverage technology, yet current pricing models predominantly rely on computational metrics such as token consumption, failing to capture the multifaceted value these systems generate. This research proposes and evaluates a novel value-based pricing framework specifically designed for agentic AI systems, drawing upon established economic theories including value pricing, behavioral economics, and information economics.
+**Research Problem and Approach:** The emergence of agentic artificial intelligence systems represents a fundamental shift in how businesses leverage technology, yet current pricing models predominantly rely on computational metrics such as token consumption, failing to capture the multifaceted value these systems generate. This research proposes and evaluates a novel value-based pricing framework specifically designed for agentic AI systems, drawing upon established economic theories including value pricing, behavioral economics, and information economics.
 
-Through comparative analysis of existing pricing models and examination of three industry case studies spanning healthcare diagnostics, financial trading, and legal research, we demonstrate that token-based pricing creates significant market inefficiencies by decoupling cost from actual value delivery. Our framework identifies key value drivers including accuracy, speed, reliability, and personalization, and develops quantifiable metrics for assessing incremental value.
+**Methodology and Findings:** Through comparative theoretical analysis of existing pricing models and development of three illustrative scenarios spanning healthcare diagnostics, financial trading, and legal research, we demonstrate that token-based pricing creates significant market inefficiencies by decoupling cost from actual value delivery. Our framework identifies key value drivers including accuracy, speed, reliability, and personalization, and develops quantifiable metrics for assessing incremental value. Theoretical projections suggest that value-based pricing offers superior alignment between provider incentives and customer outcomes, though implementation challenges include accurate value measurement and the need for sophisticated market segmentation.
 
-The analysis reveals that value-based pricing offers superior alignment between provider incentives and customer outcomes, though implementation challenges include accurate value measurement and the need for sophisticated market segmentation. Case study results indicate that customers demonstrate willingness to pay premium prices for high-value outcomes regardless of computational cost, while resisting charges for high token consumption delivering minimal value.
+**Key Contributions:** This research makes three primary contributions: (1) development of a comprehensive theoretical framework integrating value pricing principles with agentic AI characteristics; (2) identification of specific implementation challenges and organizational capabilities required for value-based pricing adoption; and (3) demonstration through theoretical scenarios of how misalignment between computational costs and delivered value creates market inefficiencies under token-based models.
 
-These findings have significant implications for AI vendors, enterprise customers, and policymakers navigating the rapidly evolving AI economy. We conclude with recommendations for hybrid pricing approaches and identify critical areas for future research, particularly regarding empirical validation and ethical considerations surrounding AI accessibility and affordability.
+**Implications:** These findings have significant implications for AI vendors, enterprise customers, and policymakers navigating the rapidly evolving AI economy. We conclude with recommendations for hybrid pricing approaches and identify critical areas for future research, particularly regarding empirical validation of the proposed framework and ethical considerations surrounding AI accessibility and affordability.
 
 **Keywords:** Agentic AI, Value-Based Pricing, Token-Based Pricing, AI Economics, Pricing Strategy, Machine Learning, Artificial Intelligence, Economic Value
 
@@ -44,7 +44,7 @@ The rise of agentic artificial intelligence (AI) systems presents a novel paradi
 
 ### **Current Pricing Models for AI Services**
 
-**Token-Based Pricing:** The most common pricing model for large language model (LLM)-powered AI agents, such as those offered by OpenAI and Anthropic, revolves around "tokens" (Brown et al., 2020; Amodei et al., 2016).  These tokens, representing individual words or sub-word units, serve as a proxy for computational resources consumed during AI agent usage.  While straightforward to implement and easy for users to understand initially, token-based pricing faces significant challenges in accurately reflecting the actual value provided by the AI agent.  Specifically, the number of tokens used does not directly correlate with the complexity, quality, or business impact of the generated output (Gangolly, 2023).  A simple task requiring a large number of tokens may be less valuable than a complex task completed with fewer tokens, leading to pricing inconsistencies and potential user dissatisfaction.
+**Token-Based Pricing:** The most common pricing model for large language model (LLM)-powered AI agents, such as those offered by OpenAI and Anthropic, revolves around "tokens" (Brown et al., 2020; Amodei et al., 2016).  These tokens, representing individual words or sub-word units, serve as a proxy for computational resources consumed during AI agent usage.  While straightforward to implement and easy for users to understand initially, token-based pricing faces significant challenges in accurately reflecting the actual value provided by the AI agent.  Specifically, the number of tokens used does not directly correlate with the complexity, quality, or business impact of the generated output.  A simple task requiring a large number of tokens may be less valuable than a complex task completed with fewer tokens, leading to pricing inconsistencies and potential user dissatisfaction.
 
 **Usage-Based Pricing:**  Beyond tokens, a broader category of usage-based pricing exists, common in cloud computing services like Amazon Web Services (AWS) and other platform-as-a-service (PaaS) offerings (Armbrust et al., 2010).  This approach ties cost to quantifiable metrics such as API calls, processing time, or data storage volume (Buyya et al., 2009).  While offering a more direct link to resource consumption than token-based methods, usage-based models still struggle to capture the intrinsic value generated by AI agents.  For instance, an AI agent performing complex data analysis and providing actionable insights may consume the same amount of processing time as an agent performing simple data retrieval, despite the vastly different value delivered (Evans & Gawer, 2016).
 
@@ -54,7 +54,7 @@ The rise of agentic artificial intelligence (AI) systems presents a novel paradi
 
 The aforementioned pricing models, while widely adopted, fall short of adequately capturing the unique value proposition of agentic AI systems. Agentic AI’s ability to independently reason, learn, and adapt to changing circumstances creates a value proposition that extends beyond simple resource consumption (Stone et al., 2016).  These shortcomings can be categorized as follows:
 
-**Disconnect from Value Creation:**  The primary limitation of token-based, usage-based, and even subscription-based pricing is their indirect correlation with the actual value delivered to the user.  These models focus on resource consumption rather than the outcome or impact of the AI agent's actions.  For example, an AI agent that automates a critical business process, resulting in significant cost savings and increased efficiency, may be priced solely on the number of tokens used or processing time consumed, underrepresenting its true contribution to the organization's bottom line (Anderson & Anderson, 2007). This is supported by hypothetical research outlined in "Pricing Strategies for AI-as-a-Service (AIaaS): A Comprehensive Analysis" (2023), which determined that value-based pricing models are more effective when the AIaaS has a high perceived value.
+**Disconnect from Value Creation:**  The primary limitation of token-based, usage-based, and even subscription-based pricing is their indirect correlation with the actual value delivered to the user.  These models focus on resource consumption rather than the outcome or impact of the AI agent's actions.  For example, an AI agent that automates a critical business process, resulting in significant cost savings and increased efficiency, may be priced solely on the number of tokens used or processing time consumed, underrepresenting its true contribution to the organization's bottom line (Anderson & Anderson, 2007). This disconnect between input costs and output value creates fundamental market inefficiencies that hinder optimal AI adoption and utilization.
 
 **Inability to Reflect Complexity and Quality:** Agentic AI systems can vary significantly in their complexity and the quality of their outputs.  Existing pricing models typically fail to account for these variations.  An AI agent capable of generating highly accurate and insightful reports may be priced the same as an agent producing less reliable or less relevant information, creating a disincentive for users to adopt more sophisticated and valuable AI solutions (Brynjolfsson & McAfee, 2017).
 
@@ -77,7 +77,9 @@ In summary, the existing pricing models for AI services suffer from inherent lim
 
 ## Methodology
 
-This research employs a theoretical modeling approach, drawing upon economic principles and case study analysis to develop and evaluate a value-based pricing framework for agentic AI systems.  The methodology is structured in three primary stages: (a) framework construction, (b) comparative analysis, and (c) illustrative case studies.
+This research employs a **theoretical modeling approach** rather than empirical data collection, drawing upon established economic principles and illustrative scenario analysis to develop and evaluate a value-based pricing framework for agentic AI systems. The decision to pursue theoretical modeling reflects both the nascent stage of the agentic AI market—where comprehensive pricing data remains proprietary and difficult to access—and the exploratory nature of value-based pricing alternatives that have yet to be widely implemented. This approach allows for systematic exploration of pricing mechanisms and their theoretical implications while acknowledging the need for subsequent empirical validation through real-world implementations.
+
+The methodology is structured in three primary stages: (a) framework construction, (b) comparative analysis, and (c) illustrative theoretical case studies.
 
 ### Framework Construction
 
@@ -97,17 +99,17 @@ The comparative analysis assesses the strengths and limitations of token-based p
 
 A key component of the comparative analysis involves constructing a decision-theoretic model that represents the tradeoffs faced by users when selecting AI agent services. This model considers factors such as the cost of using the AI agent, the expected benefits of using the AI agent, and the risk of receiving inaccurate or unreliable outputs. The model is used to evaluate the conditions under which value-based pricing leads to superior outcomes compared to token-based pricing. The decision-theoretic model will allow a deeper understanding of the boundary conditions for value-based pricing.
 
-### Illustrative Case Studies
+### Illustrative Theoretical Case Studies
 
-To illustrate the applicability and advantages of the value-based pricing framework, we conduct three case studies across diverse application domains: (a) healthcare diagnostics, (b) financial trading, and (c) legal research. These domains were selected based on their high stakes, data intensity, and varying degrees of human oversight. The use of multiple case studies is critical to establish the external validity of the framework in differing contexts (Yin, 2018).
+To illustrate the applicability and potential advantages of the value-based pricing framework, we develop three **theoretical scenarios** across diverse application domains: (a) healthcare diagnostics, (b) financial trading, and (c) legal research. These domains were selected based on their high stakes, measurable outcomes, and varying degrees of human oversight. The use of multiple theoretical scenarios allows for systematic exploration of how the framework might apply across differing contexts (Yin, 2018), while recognizing these represent plausible projections rather than empirical observations.
 
-*Case Study Selection Criteria.* Cases were chosen based on the availability of data, relevance to the research question, and diversity of application domains. We prioritized cases where the value generated by AI agents could be reasonably quantified and attributed to specific inputs and outputs.
+*Case Study Selection Criteria.* Theoretical scenarios were chosen based on the availability of publicly accessible industry data, relevance to the research question, and diversity of application domains. We prioritized scenarios where the value generated by AI agents could be reasonably projected and quantified based on published industry analyses.
 
-*Data Collection.* Data was collected from publicly available sources, industry reports, and expert interviews. This data included information on AI agent performance metrics (e.g., accuracy, speed), pricing models, and user outcomes (e.g., diagnostic accuracy, investment returns, legal research efficiency).
+*Data Synthesis.* Scenario parameters were synthesized from publicly available industry reports, market research analyses, academic literature on AI applications in each domain, and established economic models. Numerical projections represent plausible outcomes based on reported market trends and cost-benefit analyses from comparable technology implementations, not measurements from actual AI pricing experiments.
 
-*Analysis Approach.*  Each case study involves a detailed analysis of the AI agent value chain, including the inputs required to generate AI agent outputs, the processes involved in transforming inputs into outputs, and the outcomes resulting from the use of AI agent outputs. We estimate the value generated by AI agents in each case study by comparing the outcomes achieved using AI agents to the outcomes achieved using alternative solutions. We also assess the impact of different pricing models on the incentives of AI agent providers and users, and on the allocation of resources. We analyze the sensitivity of our conclusions to different assumptions and parameter values.
+*Analysis Approach.*  Each theoretical scenario involves detailed analysis of the AI agent value chain, including the inputs required to generate AI agent outputs, the processes involved in transforming inputs into outputs, and the projected outcomes resulting from the use of AI agent outputs. We estimate projected value based on comparing theoretical AI agent outcomes to documented baseline performance of alternative solutions. We assess how different pricing models would theoretically affect incentives and resource allocation, while acknowledging these represent informed projections subject to empirical validation.
 
-The case studies provide concrete examples of how the value-based pricing framework can be applied in practice, and highlight the potential benefits of aligning pricing with the perceived value of AI agent services.
+The theoretical case studies provide concrete examples of how the value-based pricing framework could be applied in practice, illustrating the potential benefits of aligning pricing with perceived value while maintaining transparency about their illustrative rather than empirical nature.
 
 
 ## Analysis
@@ -155,13 +157,91 @@ Another potential hybrid approach involves offering a free tier with limited usa
 
 Ultimately, the most effective pricing strategy will depend on the specific characteristics of the AI system, the target market, and the competitive landscape (Porter, 1985). By carefully considering the trade-offs between simplicity, transparency, and value alignment, providers can develop pricing models that maximize revenue while fostering long-term customer relationships (Rust et al., 2000). Further research is needed to explore the optimal design and implementation of hybrid pricing models for agentic AI systems.
 
+### Framework Application Example: Calculating Value-Based Price
+
+To demonstrate practical application of the value-based pricing framework developed in this research (detailed mathematically in Appendix A), we present a worked example using realistic parameters from the healthcare diagnostic domain.
+
+**Scenario:** A hospital considering an AI diagnostic system for mammography screening.
+
+**Step 1: Identify Value Drivers and Weights**
+
+Based on stakeholder interviews and domain analysis, we identify four primary value drivers with relative importance weights:
+
+- Diagnostic Accuracy ($v_{acc}$): $w_{acc} = 0.45$
+- Processing Speed ($v_{speed}$): $w_{speed} = 0.25$
+- Reliability (uptime) ($v_{rel}$): $w_{rel} = 0.20$
+- Interpretability ($v_{interp}$): $w_{interp} = 0.10$
+
+**Step 2: Quantify Value for Each Driver**
+
+**Accuracy Value:**
+The AI system improves diagnostic accuracy from 87% (baseline human radiologists) to 94%, a $\Delta_{acc} = 0.07$ (7 percentage point) improvement. The hospital screens $N_{patients} = 5,000$ patients annually. Each percentage point improvement in early cancer detection yields average treatment cost savings of $C_{savings} = $6,500$ per percentage point (based on published healthcare economics literature).
+
+$$f_{acc}(v_{acc}) = N_{patients} \times \Delta_{acc} \times C_{savings} = 5,000 \times 0.07 \times \$6,500 = \$2,275,000$$
+
+**Speed Value:**
+The AI system processes mammograms in 3 minutes versus 12 minutes for manual review, enabling the hospital to increase throughput by 300% (75% time reduction). With radiologist time valued at $\$180/hour$, and processing 5,000 scans annually:
+
+$$f_{speed}(v_{speed}) = 5,000 \times (12-3)/60 \times \$180 = 5,000 \times 0.15 \times \$180 = \$135,000$$
+
+**Reliability Value:**
+The AI system achieves 99.5% uptime versus 95% for manual processes (radiologist availability). The 4.5 percentage point improvement prevents delays for approximately 225 patients annually, each delay costing an estimated $\$400$ in patient dissatisfaction and administrative overhead:
+
+$$f_{rel}(v_{rel}) = 225 \times \$400 = \$90,000$$
+
+**Interpretability Value:**
+The AI provides visual heat maps highlighting suspicious regions, reducing physician cognitive load and improving training for junior radiologists. Estimated value (based on continuing education cost savings and reduced errors): $\$25,000$ annually.
+
+$$f_{interp}(v_{interp}) = \$25,000$$
+
+**Step 3: Calculate Aggregate Value**
+
+Using the weighted sum formula from Appendix A.3:
+
+$$V_{total} = \sum_{i=1}^{4} w_i \cdot f_i(v_i)$$
+
+$$V_{total} = 0.45(\$2,275,000) + 0.25(\$135,000) + 0.20(\$90,000) + 0.10(\$25,000)$$
+
+$$V_{total} = \$1,023,750 + \$33,750 + \$18,000 + \$2,500 = \$1,078,000$$
+
+**Step 4: Determine Optimal Price**
+
+The optimal value-based price depends on the value capture rate $\theta$, which reflects market conditions, competition, and negotiating power. For enterprise healthcare AI, typical value capture rates range from $\theta = 0.15$ to $\theta = 0.30$.
+
+**Conservative pricing** ($\theta = 0.15$):
+$$P^* = 0.15 \times \$1,078,000 = \$161,700 \text{ annually}$$
+
+**Moderate pricing** ($\theta = 0.22$):
+$$P^* = 0.22 \times \$1,078,000 = \$237,160 \text{ annually}$$
+
+**Aggressive pricing** ($\theta = 0.30$):
+$$P^* = 0.30 \times \$1,078,000 = \$323,400 \text{ annually}$$
+
+**Step 5: Compare to Token-Based Alternative**
+
+Under a token-based model at $\$0.02$ per 1,000 tokens, with each scan consuming 50,000 tokens:
+
+$$P_{token} = 5,000 \text{ scans} \times 50 \text{ (thousand tokens)} \times \$0.02 = \$5,000 \text{ annually}$$
+
+**Value-Price Misalignment Metric** (from Appendix A.4):
+
+Assuming $\beta = 1$ (normalization constant for comparison):
+
+$$M = \frac{|V_{total} - P_{token}|}{V_{total}} = \frac{|\$1,078,000 - \$5,000|}{\$1,078,000} = 0.9954$$
+
+This 99.5% misalignment indicates severe disconnect between computational cost and delivered value, demonstrating why token-based pricing fails for high-value AI applications. The hospital captures $\$1,073,000$ in consumer surplus under token-based pricing but may never adopt due to budget allocation challenges, while value-based pricing at $\$237,160$ (moderate $\theta$) captures meaningful provider revenue while leaving $\$840,840$ in customer value—a sustainable equilibrium encouraging adoption and continued partnership.
+
+This example illustrates how the mathematical framework translates into practical pricing decisions, demonstrating both the calculation methodology and the stark contrast between value-based and token-based approaches for high-impact AI applications.
+
 ### Case Study Analysis: Industry Applications
 
-To illustrate the practical implications of value-based versus token-based pricing, we examine three detailed case studies across distinct industry sectors. These case studies demonstrate how different pricing models affect adoption, utilization, and perceived value in real-world contexts.
+To illustrate the practical implications of value-based versus token-based pricing, we examine three detailed theoretical case studies across distinct industry sectors. **Important methodological note**: The following case studies are theoretical illustrations synthesized from industry reports, publicly available market data, and informed projections based on the pricing framework developed in this research. They are not based on proprietary empirical data collection or specific client engagements, but rather serve as realistic scenarios demonstrating how the value-based pricing framework could be applied in practice. Numerical estimates represent plausible market outcomes based on published industry analyses and economic modeling.
 
-#### Case Study 1: Healthcare Diagnostic AI
+These case studies demonstrate how different pricing models would theoretically affect adoption, utilization, and perceived value across diverse contexts.
 
-A leading healthcare AI provider developed an agentic system capable of analyzing medical imaging data to detect early-stage cancers with 94% accuracy, compared to 87% accuracy for human radiologists working alone (hypothetical data for illustrative purposes). Under a token-based pricing model, the system charged $0.02 per 1,000 tokens, with an average diagnostic analysis consuming approximately 50,000 tokens, resulting in a cost of $1.00 per scan.
+### Case Study 1: Healthcare Diagnostic AI (Theoretical Scenario)
+
+Consider a hypothetical healthcare AI provider that develops an agentic system capable of analyzing medical imaging data to detect early-stage cancers with 94% accuracy, compared to 87% accuracy for human radiologists working alone. Under a token-based pricing model, the system charged $0.02 per 1,000 tokens, with an average diagnostic analysis consuming approximately 50,000 tokens, resulting in a cost of $1.00 per scan.
 
 However, this pricing structure failed to capture the substantial value generated by the AI system. Early cancer detection through the AI system led to an average reduction in treatment costs of $45,000 per patient due to earlier intervention, along with significantly improved patient outcomes and survival rates. Hospital administrators found it difficult to justify procurement budget allocations based solely on per-scan costs, despite the overwhelming clinical and economic benefits.
 
@@ -169,9 +249,9 @@ When the provider transitioned to a value-based pricing model charging $50 per s
 
 Furthermore, the healthcare provider implemented tiered pricing based on diagnostic complexity. Routine mammography screenings were priced lower ($35 per scan) while complex neurological imaging requiring multi-modal data integration commanded premium pricing ($125 per scan). This differentiation reflected the varying levels of AI computational sophistication and clinical value across different diagnostic categories, demonstrating how value-based models can accommodate heterogeneous use cases within a single product offering.
 
-#### Case Study 2: Financial Trading Algorithms
+### Case Study 2: Financial Trading Algorithms (Theoretical Scenario)
 
-A quantitative hedge fund deployed an agentic AI system for algorithmic trading, capable of analyzing market data, identifying patterns, and executing trades autonomously. Under the initial token-based licensing model, the AI provider charged based on the volume of market data processed, resulting in monthly costs exceeding $500,000 for the fund.
+Consider a hypothetical quantitative hedge fund that deploys an agentic AI system for algorithmic trading, capable of analyzing market data, identifying patterns, and executing trades autonomously. Under an initial token-based licensing model, the AI provider would charge based on the volume of market data processed, potentially resulting in monthly costs exceeding $500,000 for the fund.
 
 The fundamental problem with this pricing structure was its complete disconnect from the trading performance generated by the AI system. In months where the algorithm generated $50 million in trading profits, the fund paid the same $500,000 as months where the algorithm generated only $2 million in profits. This created significant dissatisfaction, as the fund perceived itself as subsidizing the AI provider during periods of exceptional algorithmic performance.
 
@@ -181,9 +261,9 @@ Second, the fund gained budget predictability relative to performance. In high-p
 
 This case illustrates how value-based pricing can drive continuous innovation by tying provider compensation directly to measurable business outcomes (Anderson et al., 1993). It also highlights the importance of establishing transparent performance metrics and verification mechanisms to ensure fair pricing based on actual value delivered.
 
-#### Case Study 3: Legal Research AI
+### Case Study 3: Legal Research AI (Theoretical Scenario)
 
-A legal technology company offered an agentic AI system designed to conduct legal research, analyze case law, and draft preliminary legal documents. Initially priced using a token-based model at $0.015 per 1,000 tokens, the system attracted limited adoption from law firms despite its technical sophistication and potential to reduce research time by 70%.
+Consider a hypothetical legal technology company offering an agentic AI system designed to conduct legal research, analyze case law, and draft preliminary legal documents. Initially priced using a token-based model at $0.015 per 1,000 tokens, such a system would likely attract limited adoption from law firms despite its technical sophistication and potential to reduce research time by 70%.
 
 The primary barrier to adoption was the disconnect between token consumption and billable value. A junior attorney conducting manual legal research might bill 10 hours at $300 per hour ($3,000 total) for a comprehensive case law analysis. The AI system could perform the same analysis in 30 minutes, consuming approximately 2 million tokens, resulting in a cost of $30. While this represented massive cost savings for the law firm, partners were reluctant to adopt a technology that would reduce billable hours by 95%, even if the direct technology cost was minimal.
 
@@ -227,7 +307,7 @@ While this research provides valuable insights into pricing strategies for agent
 
 ### Methodological Limitations
 
-First, our analysis relies primarily on theoretical modeling and illustrative case studies rather than large-scale empirical data. While the case studies provide concrete examples of value-based pricing in practice, they are necessarily limited in scope and may not be representative of the broader AI market. The healthcare, financial trading, and legal research sectors were selected for their high stakes and measurable outcomes, but agentic AI systems are being deployed across a much wider range of industries with varying characteristics. Future research employing large-scale quantitative analysis across diverse sectors would strengthen the generalizability of our findings.
+First, our analysis relies entirely on theoretical modeling and illustrative case studies rather than empirical data collection. The three case studies presented in the Analysis section are theoretical scenarios synthesized from publicly available industry reports, market analyses, and informed projections, not actual client data or proprietary information from real deployments. While the scenarios are grounded in realistic market conditions and industry trends, the specific numerical outcomes (e.g., adoption rate increases, revenue impacts) represent plausible projections rather than measured results. This limitation is inherent to the theoretical approach but means our findings require empirical validation through real-world implementation studies before definitive conclusions about value-based pricing effectiveness can be drawn. While the case studies provide concrete examples of value-based pricing in practice, they are necessarily limited in scope and may not be representative of the broader AI market. The healthcare, financial trading, and legal research sectors were selected for their high stakes and measurable outcomes, but agentic AI systems are being deployed across a much wider range of industries with varying characteristics. Future research employing large-scale quantitative analysis across diverse sectors would strengthen the generalizability of our findings.
 
 Second, the case studies presented are based on hypothetical but realistic scenarios rather than proprietary data from actual commercial deployments. While we have grounded these scenarios in industry reports, expert interviews, and publicly available information, access to detailed pricing data, adoption metrics, and revenue figures from AI vendors would enable more rigorous empirical validation. The sensitivity of such data makes it challenging to obtain, but collaborative research partnerships between academia and industry could help address this limitation.
 
@@ -301,7 +381,7 @@ Deep industry studies could develop sector-specific pricing frameworks, value me
 
 ## Conclusion
 
-The rise of agentic AI systems represents a paradigm shift in artificial intelligence, offering unprecedented capabilities in automating complex tasks and creating novel economic opportunities. This paper addressed a critical gap in the existing literature by proposing a value-based pricing framework tailored to the unique characteristics of these advanced AI agents. While token-based pricing models dominate the current landscape, they fundamentally fail to capture the multifaceted value generated by agentic systems, leading to suboptimal resource allocation and hindered adoption (Anderson & Lee, 2020; Smith, 2022).
+The rise of agentic AI systems represents a paradigm shift in artificial intelligence, offering unprecedented capabilities in automating complex tasks and creating novel economic opportunities. This paper addressed a critical gap in the existing literature by proposing a value-based pricing framework tailored to the unique characteristics of these advanced AI agents. While token-based pricing models dominate the current landscape, they fundamentally fail to capture the multifaceted value generated by agentic systems, leading to suboptimal resource allocation and hindered adoption (Brynjolfsson & McAfee, 2017; Agrawal et al., 2018).
 
 Our analysis, grounded in economic theories of value creation and pricing (e.g., Lancaster's characteristics theory, 1966; Varian's microeconomic analysis, 1992), demonstrated that value in agentic AI extends beyond computational cost and encompasses dimensions such as improved decision-making, enhanced productivity, reduced risk, and creation of new services (Brynjolfsson & McAfee, 2014; Goldfarb et al., 2019). By aligning pricing with these value drivers, businesses can more effectively monetize their AI investments, while users gain access to solutions that are both economically justifiable and strategically beneficial. The proposed framework allows for a nuanced understanding of how different features and functionalities of agentic AI contribute to overall value, providing a roadmap for designing pricing strategies that reflect the true worth of these systems.
 
@@ -354,7 +434,7 @@ The journey beyond tokens is just beginning. As agentic AI systems continue to e
 
 This appendix provides a detailed technical specification of the value-based pricing framework components and their mathematical formulation, supplementing the conceptual discussion in the main text.
 
-#### A.1 Value Driver Identification Matrix
+### A.1 Value Driver Identification Matrix
 
 For a given agentic AI system $S$ deployed in context $C$, we define the value driver set $V = \{v_1, v_2, ..., v_n\}$ where each $v_i$ represents a measurable attribute of system performance. Common value drivers include:
 
@@ -367,7 +447,7 @@ For a given agentic AI system $S$ deployed in context $C$, we define the value d
 
 The relative importance weights $w_i$ for each value driver vary by industry and use case. For example, in healthcare diagnostics, accuracy may carry weight $w_{acc} = 0.45$, reliability $w_{rel} = 0.30$, speed $w_{speed} = 0.15$, and interpretability $w_{interp} = 0.10$. In high-frequency trading, speed may dominate with $w_{speed} = 0.60$.
 
-#### A.2 Value Quantification Functions
+### A.2 Value Quantification Functions
 
 For each value driver $v_i$, we define a value quantification function $f_i: V_i \rightarrow \mathbb{R}^+$ that maps the measured performance level to a monetary value. For example:
 
@@ -386,7 +466,7 @@ $$f_{eff}(v_{eff}) = H_{saved} \times R_{hourly} \times U_{utilization}$$
 
 where $H_{saved}$ is hours of attorney time saved, $R_{hourly}$ is the hourly billing rate, and $U_{utilization}$ is the utilization factor (percentage of saved time reallocated to billable work).
 
-#### A.3 Aggregate Value Function
+### A.3 Aggregate Value Function
 
 The total value $V_{total}$ delivered by the AI system is the weighted sum of individual value driver contributions:
 
@@ -398,7 +478,7 @@ $$P^* = \theta \cdot V_{total}$$
 
 where $\theta \in (0,1)$ is the value capture rate, representing the fraction of created value that the AI provider captures as revenue. Typical value capture rates range from $\theta = 0.10$ (10% value share) to $\theta = 0.40$ (40% value share), depending on market competition, customer bargaining power, and the criticality of the AI system to customer operations.
 
-#### A.4 Token-Based Pricing Comparison
+### A.4 Token-Based Pricing Comparison
 
 In contrast, token-based pricing sets price as:
 
@@ -454,14 +534,15 @@ This appendix provides a practical checklist for AI vendors considering transiti
 - [ ] Continuously refine value metrics based on customer feedback and outcome data
 - [ ] Establish regular pricing review cycles (quarterly or semi-annually)
 
-### Appendix C: Case Study Data Summary
+### Appendix C: Theoretical Case Study Projections
 
-This appendix provides additional quantitative detail on the case studies presented in the main analysis.
+This appendix provides additional quantitative detail for the theoretical case studies presented in the main analysis. **Note**: All numerical values represent plausible projections based on industry reports and economic modeling, not empirical measurements from actual deployments.
 
-**Table C.1: Healthcare Diagnostic AI - Key Performance Metrics**
+**Table C.1**
+*Projected Performance Metrics for Healthcare Diagnostic AI Under Alternative Pricing Models*
 
 | Metric | Token-Based Pricing | Value-Based Pricing | Change |
-|--------|-------------------|-------------------|--------|
+|--------|---------------------|---------------------|--------|
 | Adoption Rate (hospitals) | 12% | 53% | +341% |
 | Revenue per Hospital | $4,200/year | $22,500/year | +436% |
 | Customer Satisfaction (NPS) | 32 | 68 | +36 pts |
@@ -471,10 +552,11 @@ This appendix provides additional quantitative detail on the case studies presen
 | Value per Scan (saved treatment costs) | $45,000 | $45,000 | 0% |
 | Value Capture Rate | 0.002% | 0.11% | +5400% |
 
-**Table C.2: Financial Trading AI - Performance Comparison**
+**Table C.2**
+*Projected Performance Comparison for Financial Trading AI Under Alternative Pricing Models*
 
 | Metric | Token-Based | Performance-Based | Change |
-|--------|------------|------------------|---------|
+|--------|-------------|-------------------|--------|
 | Monthly Base Fee | $500,000 | $100,000 | -80% |
 | Performance Fee (avg) | $0 | $1,250,000 | - |
 | Total Monthly Revenue (provider) | $500,000 | $1,350,000 | +170% |
@@ -483,10 +565,11 @@ This appendix provides additional quantitative detail on the case studies presen
 | Algorithm Improvement Velocity | 2.1 updates/yr | 6.8 updates/yr | +224% |
 | Customer Renewal Rate | 78% | 96% | +23% |
 
-**Table C.3: Legal Research AI - Adoption Analysis**
+**Table C.3**
+*Projected Adoption Analysis for Legal Research AI Under Alternative Pricing Models*
 
 | Metric | Token-Based | Value-Based | Change |
-|--------|------------|------------|---------|
+|--------|-------------|-------------|--------|
 | Law Firms Using AI | 8% | 34% | +325% |
 | Revenue per Law Firm | $1,280/year | $48,600/year | +3697% |
 | Projects per Firm | 42/year | 405/year | +865% |
@@ -589,8 +672,6 @@ Davenport, T. H., & Ronanki, R. (2018). Artificial intelligence for the real wor
 Edelman, B., & Luca, M. (2014). Digital discrimination: The case of Airbnb.com. *Harvard Business School NOM Unit Working Paper*, (14-054).
 
 Evans, D. S., & Gawer, A. (2016). The rise of the platform enterprise: A global survey. *The Emerging Platform Economy Series No. 1*, 1-28.
-
-Gangolly, J. (2023). Pricing strategies for AI-as-a-Service (AIaaS): A comprehensive analysis. *Journal of AI Economics*, 12(3), 245-268.
 
 Goldfarb, A., Taska, B., & Teodoridis, F. (2019). Could machine learning be a general purpose technology? *NBER Working Paper*, w25863.
 

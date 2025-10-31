@@ -99,24 +99,37 @@ class DOCXPostProcessor:
         print(f"   ✓ Fixed {count} paragraphs (2.0 spacing, 0.5\" indent, justified)")
 
     def _insert_cover_page_break(self):
-        """Insert page break after Date paragraph to separate cover page."""
-        # Find Date paragraph (usually index 3: Title, Subtitle, Author, Date)
+        """
+        Verify cover page structure (Title, Subtitle, Author, Date).
+
+        Note: Page break after cover page is now handled by _insert_table_of_contents()
+        which adds page_break_before=True to the TOC heading. This ensures TOC
+        starts on page 2 regardless of where it's inserted.
+
+        This method just verifies the expected cover page elements exist.
+        """
+        # Find and verify Date paragraph (usually index 3: Title, Subtitle, Author, Date)
         for i, para in enumerate(self.doc.paragraphs):
             if para.style.name == 'Date' or (i <= 5 and 'date' in para.text.lower()):
-                # Insert page break on NEXT paragraph (after Date)
-                if i + 1 < len(self.doc.paragraphs):
-                    self.doc.paragraphs[i + 1].paragraph_format.page_break_before = True
-                    print(f"   ✓ Inserted page break before paragraph {i+1} (after Date)")
+                print(f"   ✓ Cover page verified: found Date at paragraph {i}")
+                print(f"      Page 1: Title, Subtitle, Author, Date")
+                print(f"      Page 2: Table of Contents (page break handled by TOC insertion)")
                 return
 
-        # Fallback: insert on 5th paragraph if no Date style found
-        if len(self.doc.paragraphs) > 4:
-            self.doc.paragraphs[4].paragraph_format.page_break_before = True
-            print(f"   ✓ Inserted page break before paragraph 4 (fallback)")
+        # No Date found
+        print(f"   ⚠️  Warning: No Date paragraph found in first 5 paragraphs")
+        print(f"      Cover page structure may be non-standard")
 
     def _insert_table_of_contents(self):
-        """Insert Table of Contents after cover page using Word field code."""
-        # Find insertion point (after cover page break, before Abstract)
+        """
+        Insert Table of Contents after cover page using Word field code.
+
+        Structure created:
+        - Page 1: Cover (Title, Subtitle, Author, Date)
+        - Page 2: TOC heading + TOC field (this function adds page break here)
+        - Page 3: Abstract (separate page break added in _insert_section_page_breaks)
+        """
+        # Find insertion point (before Abstract/Heading 2)
         insert_index = None
         for i, para in enumerate(self.doc.paragraphs):
             if para.style.name in ['Heading 2', 'Abstract']:
@@ -127,10 +140,11 @@ class DOCXPostProcessor:
             print("   ⚠️  Could not find insertion point for TOC (skipping)")
             return
 
-        # Insert TOC heading
+        # Insert TOC heading with page break (starts page 2)
         toc_heading = self.doc.paragraphs[insert_index].insert_paragraph_before()
         toc_heading.text = "Table of Contents"
         toc_heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        toc_heading.paragraph_format.page_break_before = True  # START PAGE 2 HERE
 
         # Make heading bold and larger
         if toc_heading.runs:
@@ -139,46 +153,60 @@ class DOCXPostProcessor:
             run.font.size = Pt(14)
             run.font.name = 'Times New Roman'
 
-        # Insert TOC field
+        # Insert TOC field paragraph (on same page as heading)
         toc_para = self.doc.paragraphs[insert_index + 1].insert_paragraph_before()
         self._add_toc_field(toc_para)
 
-        # Add page break on next paragraph (after TOC)
-        # This will make Abstract start on new page
-        if insert_index + 2 < len(self.doc.paragraphs):
-            self.doc.paragraphs[insert_index + 2].paragraph_format.page_break_before = True
+        # Note: Page break before Abstract is added by _insert_section_page_breaks()
+        # which runs after this method
 
-        print(f"   ✓ Inserted Table of Contents before paragraph {insert_index}")
+        print(f"   ✓ Inserted Table of Contents at paragraph {insert_index} (page 2)")
 
     def _add_toc_field(self, paragraph):
         """
         Add a TOC field to the given paragraph.
 
-        Word TOC field format: { TOC \\o "1-3" \\h \\z \\u }
+        Word TOC field format requires separate runs for proper field recognition:
+        { TOC \\o "1-3" \\h \\z \\u }
         - \\o "1-3": Include heading levels 1-3
         - \\h: Make entries hyperlinks
         - \\z: Hide tab leader and page numbers in web view
         - \\u: Use outline levels
-        """
-        run = paragraph.add_run()
 
-        # Create field begin tag
+        Note: Each field element MUST be in a separate run for Word to recognize
+        it as an updateable field. Missing the "separate" element or combining
+        elements in one run causes Word to ignore the field.
+        """
+        # Run 1: Field begin
+        run_begin = paragraph.add_run()
         fldChar_begin = OxmlElement('w:fldChar')
         fldChar_begin.set(qn('w:fldCharType'), 'begin')
+        run_begin._r.append(fldChar_begin)
 
-        # Create instruction text
+        # Run 2: Instruction text
+        run_instr = paragraph.add_run()
         instrText = OxmlElement('w:instrText')
         instrText.set(qn('xml:space'), 'preserve')
         instrText.text = 'TOC \\o "1-3" \\h \\z \\u'
+        run_instr._r.append(instrText)
 
-        # Create field end tag
+        # Run 3: Field separate (CRITICAL - Word won't update without this)
+        run_separate = paragraph.add_run()
+        fldChar_separate = OxmlElement('w:fldChar')
+        fldChar_separate.set(qn('w:fldCharType'), 'separate')
+        run_separate._r.append(fldChar_separate)
+
+        # Run 4: Placeholder text (will be replaced when field updates)
+        run_text = paragraph.add_run()
+        text_elem = OxmlElement('w:t')
+        text_elem.text = 'Right-click to update field'
+        run_text._r.append(text_elem)
+
+        # Run 5: Field end
+        run_end = paragraph.add_run()
         fldChar_end = OxmlElement('w:fldChar')
         fldChar_end.set(qn('w:fldCharType'), 'end')
-
-        # Add to run
-        run._r.append(fldChar_begin)
-        run._r.append(instrText)
-        run._r.append(fldChar_end)
+        run_end._r.append(fldChar_end)
 
     def _insert_section_page_breaks(self):
         """Insert page breaks before major sections (Abstract, Introduction, etc.)."""

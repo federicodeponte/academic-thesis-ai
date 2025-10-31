@@ -10,10 +10,24 @@ from typing import Literal, Optional
 from pathlib import Path
 
 
-# Try to load environment variables from .env file
+# Try to load environment variables from .env files
+# Priority: .env.local > .env (local overrides default)
 try:
     from dotenv import load_dotenv
-    load_dotenv()
+
+    # Get directory where config.py is located
+    config_dir = Path(__file__).parent
+
+    # Load .env first (defaults)
+    env_path = config_dir / '.env'
+    if env_path.exists():
+        load_dotenv(env_path)
+
+    # Load .env.local second (overrides, gitignored)
+    env_local_path = config_dir / '.env.local'
+    if env_local_path.exists():
+        load_dotenv(env_local_path, override=True)
+
 except ImportError:
     # dotenv is optional - will use system environment variables
     pass

@@ -33,32 +33,56 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 
 ---
 
-## 🚀 Quick Start (2 Steps)
+## 🚀 Quick Start (10 Minutes)
+
+**New here?** → Start with **[00_START_HERE.md](00_START_HERE.md)** for step-by-step setup!
 
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/yourusername/academic-thesis-ai.git
+git clone https://github.com/federicodeponte/academic-thesis-ai.git
 cd academic-thesis-ai
+
+# Create virtual environment (recommended)
+python3 -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-### 2. Write Your Thesis in Your IDE
+### 2. Get API Key (FREE option available)
+
+**👉 See [docs/API_KEYS.md](docs/API_KEYS.md) for detailed guide**
+
+**Quick start:** Use Google Gemini (free tier, 5 minutes to set up)
+1. Go to: https://aistudio.google.com/apikey
+2. Create API key
+3. Copy to `.env.local`:
 
 ```bash
-# Open in Cursor, Claude Code, or VS Code
-cursor .    # or: code .
-
-# Configure your API key (one-time)
-cp .env.example .env
-# Edit .env and add ANTHROPIC_API_KEY, OPENAI_API_KEY, or GOOGLE_API_KEY
-
-# Follow the workflow guide
-open prompts/00_WORKFLOW.md
-
-# Or try the 30-minute tutorial
-open examples/tutorial/README.md
+cp .env.example .env.local
+# Edit .env.local and add:
+# GOOGLE_API_KEY=your-key-here
 ```
+
+### 3. Verify Setup Works
+
+```bash
+python examples/quick_test.py
+```
+
+**Expected:** `✅ Setup successful!`
+
+**If errors:** See [docs/INSTALLATION.md](docs/INSTALLATION.md)
+
+### 4. Start Writing
+
+**Recommended:** [30-minute tutorial](examples/tutorial/README.md)
+
+**OR Jump to full workflow:** [prompts/00_WORKFLOW.md](prompts/00_WORKFLOW.md)
+
+---
 
 **That's it!** Use the AI agents in `prompts/` to help you write. No Docker, no web server, just write your thesis in your IDE like you write code.
 

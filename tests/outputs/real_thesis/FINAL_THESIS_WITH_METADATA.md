@@ -284,22 +284,22 @@ Based on stakeholder interviews and domain analysis, we identify four primary va
 **Accuracy Value:**
 The AI system improves diagnostic accuracy from 87% (baseline human radiologists) to 94%, a $\Delta_{acc} = 0.07$ (7 percentage point) improvement. The hospital screens $N_{patients} = 5,000$ patients annually. Each percentage point improvement in early cancer detection yields average treatment cost savings of $C_{savings} = 6500$ per percentage point (based on published healthcare economics literature).
 
-$$f_{acc}(v_{acc}) = N_{patients} \times \Delta_{acc} \times C_{savings} = 5,000 \times 0.07 \times 6500 = 2,275,000$$
+$$f_{acc}(v_{acc}) = N_{patients} \times \Delta_{acc} \times C_{savings} = 5\,000 \times 0.07 \times 6500 = 2\,275\,000$$
 
 **Speed Value:**
 The AI system processes mammograms in 3 minutes versus 12 minutes for manual review, enabling the hospital to increase throughput by 300% (75% time reduction). With radiologist time valued at \$180/hour, and processing 5,000 scans annually:
 
-$$f_{speed}(v_{speed}) = 5,000 \times (12-3)/60 \times 180 = 5,000 \times 0.15 \times 180 = 135,000$$
+$$f_{speed}(v_{speed}) = 5\,000 \times (12-3)/60 \times 180 = 5\,000 \times 0.15 \times 180 = 135\,000$$
 
 **Reliability Value:**
 The AI system achieves 99.5% uptime versus 95% for manual processes (radiologist availability). The 4.5 percentage point improvement prevents delays for approximately 225 patients annually, each delay costing an estimated \$400 in patient dissatisfaction and administrative overhead:
 
-$$f_{rel}(v_{rel}) = 225 \times 400 = 90,000$$
+$$f_{rel}(v_{rel}) = 225 \times 400 = 90\,000$$
 
 **Interpretability Value:**
 The AI provides visual heat maps highlighting suspicious regions, reducing physician cognitive load and improving training for junior radiologists. Estimated value (based on continuing education cost savings and reduced errors): \$25,000 annually.
 
-$$f_{interp}(v_{interp}) = 25,000$$
+$$f_{interp}(v_{interp}) = 25\,000$$
 
 **Step 3: Calculate Aggregate Value**
 
@@ -307,34 +307,34 @@ Using the weighted sum formula from Appendix A.3:
 
 $$V_{total} = \sum_{i=1}^{4} w_i \cdot f_i(v_i)$$
 
-$$V_{total} = 0.45(2,275,000) + 0.25(135,000) + 0.20(90,000) + 0.10(25,000)$$
+$$V_{total} = 0.45(2\,275\,000) + 0.25(135\,000) + 0.20(90\,000) + 0.10(25\,000)$$
 
-$$V_{total} = 1,023,750 + 33,750 + 18,000 + 2,500 = 1,078,000$$
+$$V_{total} = 1\,023\,750 + 33\,750 + 18\,000 + 2\,500 = 1\,078\,000$$
 
 **Step 4: Determine Optimal Price**
 
 The optimal value-based price depends on the value capture rate $\theta$, which reflects market conditions, competition, and negotiating power. For enterprise healthcare AI, typical value capture rates range from $\theta = 0.15$ to $\theta = 0.30$.
 
 **Conservative pricing** ($\theta = 0.15$):
-$$P^* = 0.15 \times 1,078,000 = 161,700 \text{ annually}$$
+$$P^* = 0.15 \times 1\,078\,000 = 161\,700 \text{ annually}$$
 
 **Moderate pricing** ($\theta = 0.22$):
-$$P^* = 0.22 \times 1,078,000 = 237,160 \text{ annually}$$
+$$P^* = 0.22 \times 1\,078\,000 = 237\,160 \text{ annually}$$
 
 **Aggressive pricing** ($\theta = 0.30$):
-$$P^* = 0.30 \times 1,078,000 = 323,400 \text{ annually}$$
+$$P^* = 0.30 \times 1\,078\,000 = 323\,400 \text{ annually}$$
 
 **Step 5: Compare to Token-Based Alternative**
 
 Under a token-based model at \$0.02 per 1,000 tokens, with each scan consuming 50,000 tokens:
 
-$$P_{token} = 5,000 \text{ scans} \times 50 \text{ (thousand tokens)} \times 0.02 = 5,000 \text{ annually}$$
+$$P_{token} = 5\,000 \text{ scans} \times 50 \text{ (thousand tokens)} \times 0.02 = 5\,000 \text{ annually}$$
 
 **Value-Price Misalignment Metric** (from Appendix A.4):
 
 Assuming $\beta = 1$ (normalization constant for comparison):
 
-$$M = \frac{|V_{total} - P_{token}|}{V_{total}} = \frac{|1,078,000 - 5,000|}{1,078,000} = 0.9954$$
+$$M = \frac{|V_{total} - P_{token}|}{V_{total}} = \frac{|1\,078\,000 - 5\,000|}{1\,078\,000} = 0.9954$$
 
 This 99.5% misalignment indicates severe disconnect between computational cost and delivered value, demonstrating why token-based pricing fails for high-value AI applications. The hospital captures \$1,073,000 in consumer surplus under token-based pricing but may never adopt due to budget allocation challenges, while value-based pricing at \$237,160 (moderate $\theta$) captures meaningful provider revenue while leaving \$840,840 in customer value—a sustainable equilibrium encouraging adoption and continued partnership.
 
@@ -534,8 +534,6 @@ The journey beyond tokens is just beginning. As agentic AI systems continue to e
 
 
 ---
-
-## Appendix: Supplementary Materials
 
 ## Appendix A: Comparative Pricing Model Framework
 

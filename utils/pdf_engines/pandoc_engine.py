@@ -150,6 +150,20 @@ class PandocLatexEngine(PDFEngine):
   {}                                  % Label
   {0pt}                               % Sep
   {}                                  % Before-code
+
+% Better table formatting - prevent truncation, auto-wrap cells
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{relsize}
+% Set table margins to full text width
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+% Reduce font size slightly for wide tables
+\let\oldlongtable\longtable
+\let\endoldlongtable\endlongtable
+\renewenvironment{longtable}{\small\oldlongtable}{\endoldlongtable}
 '''
 
         # Add APA 7th edition title page formatting if metadata provided
@@ -180,6 +194,7 @@ class PandocLatexEngine(PDFEngine):
 \AfterPreamble{%
   \let\oldtableofcontents\tableofcontents
   \renewcommand{\tableofcontents}{%
+    \clearpage
     \oldtableofcontents
     \cleardoublepage
     \pagenumbering{arabic}%
@@ -253,6 +268,7 @@ class PandocLatexEngine(PDFEngine):
             if options.enable_toc:
                 cmd.append('--toc')
                 cmd.extend(['--variable', f'toc-depth={options.toc_depth}'])
+                cmd.extend(['--variable', 'toc-title=Table of Contents'])
 
             # Run Pandoc
             result = subprocess.run(

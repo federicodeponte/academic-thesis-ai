@@ -6,15 +6,14 @@ system_creator: "Federico De Ponte"
 github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
 date: "January 2025"
 quality_score: "A- (90/100) - Publication-ready for mid-tier academic journals"
-word_count: "14,567 words across 79 pages"
+word_count: "14,567 words across 67 pages"
 citations_verified: "66 academic references, all verified and cited"
 visual_elements: "5 tables, 2 figures, comprehensive appendices"
 generation_method: "14 specialized AI agents (Research, Writing, Fact-Checking, Citation, Export)"
-showcase_description: "This complete 79-page master's thesis was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review to mathematical proofs to case studies—all AI-generated."
+showcase_description: "This complete 67-page master's thesis was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review to mathematical proofs to case studies—all AI-generated."
 system_capabilities: "Research any academic topic • Generate original frameworks • Create case studies • Verify citations • Export to PDF/DOCX/HTML • Quality gates for academic integrity"
 call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/academic-thesis-ai"
 license: "MIT - Use it, fork it, improve it, publish with it"
-abstract: "The emergence of agentic artificial intelligence systems represents a fundamental shift in how businesses leverage technology, yet current pricing models predominantly rely on computational metrics such as token consumption, failing to capture the multifaceted value these systems generate. This research proposes and evaluates a novel value-based pricing framework specifically designed for agentic AI systems, drawing upon established economic theories including value pricing, behavioral economics, and information economics. Through comparative analysis of existing pricing models and examination of three industry case studies spanning healthcare diagnostics, financial trading, and legal research, we demonstrate that token-based pricing creates significant market inefficiencies by decoupling cost from actual value delivery. Our framework identifies key value drivers including accuracy, speed, reliability, and personalization, and develops quantifiable metrics for assessing incremental value. The analysis reveals that value-based pricing offers superior alignment between provider incentives and customer outcomes, though implementation challenges include accurate value measurement and the need for sophisticated market segmentation. Case study results indicate that customers demonstrate willingness to pay premium prices for high-value outcomes regardless of computational cost, while resisting charges for high token consumption delivering minimal value. These findings have significant implications for AI vendors, enterprise customers, and policymakers navigating the rapidly evolving AI economy. We conclude with recommendations for hybrid pricing approaches and identify critical areas for future research, particularly regarding empirical validation and ethical considerations surrounding AI accessibility and affordability."
 ---
 
 ## Abstract
@@ -28,6 +27,8 @@ abstract: "The emergence of agentic artificial intelligence systems represents a
 **Implications:** These findings have significant implications for AI vendors, enterprise customers, and policymakers navigating the rapidly evolving AI economy. We conclude with recommendations for hybrid pricing approaches and identify critical areas for future research, particularly regarding empirical validation of the proposed framework and ethical considerations surrounding AI accessibility and affordability.
 
 **Keywords:** Agentic AI, Value-Based Pricing, Token-Based Pricing, AI Economics, Pricing Strategy, Machine Learning, Artificial Intelligence, Economic Value
+
+\newpage
 
 ## Introduction
 
@@ -159,13 +160,13 @@ Token-based pricing disadvantages include:
 
 **Table 2: Value Driver Importance Weights Across Industries**
 
-| Value Driver | Healthcare Diagnostics | Financial Trading | Legal Research | Manufacturing QA | Customer Service |
-|--------------|----------------------|-------------------|----------------|------------------|------------------|
-| **Accuracy** | 45% - Critical for patient safety | 30% - Important but speed matters more | 40% - Errors have major consequences | 50% - Defects are costly | 25% - Balance with speed |
-| **Speed** | 15% - Throughput matters | 60% - Microseconds = millions | 20% - Deadlines important | 20% - Production pace | 40% - Response time critical |
-| **Reliability** | 30% - Consistent performance needed | 5% - Redundancy handles downtime | 25% - Dependability valued | 20% - Uptime affects operations | 20% - Availability expectations |
-| **Cost Savings** | 5% - Secondary to outcomes | 3% - Margin optimization | 10% - Efficiency gains | 5% - Operational efficiency | 10% - Labor cost reduction |
-| **Interpretability** | 5% - Regulatory/clinical needs | 2% - Black box acceptable | 5% - Legal justification needed | 5% - Root cause analysis | 5% - Training and oversight |
+| Value Driver | Healthcare | Financial | Legal | Mfg QA | Cust Service |
+|--------------|------------|-----------|-------|--------|--------------|
+| **Accuracy** | 45% - Patient safety | 30% - Speed focus | 40% - Error cost | 50% - Defects | 25% - Balanced |
+| **Speed** | 15% - Throughput | 60% - Microseconds | 20% - Deadlines | 20% - Pace | 40% - Response |
+| **Reliability** | 30% - Consistency | 5% - Redundancy | 25% - Dependable | 20% - Uptime | 20% - Available |
+| **Cost Savings** | 5% - Secondary | 3% - Margins | 10% - Efficiency | 5% - Operations | 10% - Labor |
+| **Interpretability** | 5% - Regulatory | 2% - Black box OK | 5% - Justification | 5% - Analysis | 5% - Oversight |
 | **Total** | 100% | 100% | 100% | 100% | 100% |
 
 *Note: Weights represent relative importance in value-based pricing calculations. Values are illustrative projections based on industry analysis and stakeholder priorities.*

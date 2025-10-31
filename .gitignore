@@ -97,6 +97,7 @@ htmlcov/
 papers/
 cache/
 .cache/
+.citation_cache*.json
 
 # AI API keys (extra safety)
 *_api_key*

@@ -98,6 +98,45 @@ class DOCXPostProcessor:
 
         print(f"   ✓ Fixed {count} paragraphs (2.0 spacing, 0.5\" indent, justified)")
 
+    def _create_sdt_toc_wrapper(self):
+        """
+        Create SDT (Structured Document Tag) wrapper for Table of Contents.
+
+        This matches Pandoc's native TOC structure and is CRITICAL for Word/LibreOffice
+        to recognize and update the TOC. The SDT marks it as a "Table of Contents"
+        content control.
+
+        Returns:
+            OxmlElement: SDT element with docPartGallery set to "Table of Contents"
+        """
+        # Create SDT (Structured Document Tag)
+        sdt = OxmlElement('w:sdt')
+
+        # Create SDT properties
+        sdtPr = OxmlElement('w:sdtPr')
+
+        # Create docPartObj (marks this as a document part)
+        docPartObj = OxmlElement('w:docPartObj')
+
+        # Set gallery to "Table of Contents" (this is the key identifier)
+        docPartGallery = OxmlElement('w:docPartGallery')
+        docPartGallery.set(qn('w:val'), 'Table of Contents')
+        docPartObj.append(docPartGallery)
+
+        # Add unique flag (makes this a unique instance)
+        docPartUnique = OxmlElement('w:docPartUnique')
+        docPartObj.append(docPartUnique)
+
+        # Build hierarchy: sdt → sdtPr → docPartObj → (docPartGallery, docPartUnique)
+        sdtPr.append(docPartObj)
+        sdt.append(sdtPr)
+
+        # Create SDT content container (TOC paragraphs will go here)
+        sdtContent = OxmlElement('w:sdtContent')
+        sdt.append(sdtContent)
+
+        return sdt, sdtContent
+
     def _insert_cover_page_break(self):
         """
         Verify cover page structure (Title, Subtitle, Author, Date).
@@ -122,91 +161,168 @@ class DOCXPostProcessor:
 
     def _insert_table_of_contents(self):
         """
-        Insert Table of Contents after cover page using Word field code.
+        Insert Table of Contents after cover page using SDT-wrapped Word field code.
 
-        Structure created:
+        Structure created (matches Pandoc native TOC):
         - Page 1: Cover (Title, Subtitle, Author, Date)
-        - Page 2: TOC heading + TOC field (this function adds page break here)
+        - Page 2: SDT wrapper containing:
+          - TOC heading (with page break)
+          - TOC field (with dirty flag)
         - Page 3: Abstract (separate page break added in _insert_section_page_breaks)
+
+        The SDT (Structured Document Tag) wrapper is CRITICAL for Word/LibreOffice
+        to recognize this as an updateable Table of Contents content control.
         """
         # Find insertion point (before Abstract/Heading 2)
         insert_index = None
+        insertion_para = None
         for i, para in enumerate(self.doc.paragraphs):
             if para.style.name in ['Heading 2', 'Abstract']:
                 insert_index = i
+                insertion_para = para
                 break
 
         if insert_index is None:
             print("   ⚠️  Could not find insertion point for TOC (skipping)")
             return
 
-        # Insert TOC heading with page break (starts page 2)
-        toc_heading = self.doc.paragraphs[insert_index].insert_paragraph_before()
-        toc_heading.text = "Table of Contents"
-        toc_heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        toc_heading.paragraph_format.page_break_before = True  # START PAGE 2 HERE
+        # Create SDT wrapper
+        sdt, sdtContent = self._create_sdt_toc_wrapper()
 
-        # Make heading bold and larger
-        if toc_heading.runs:
-            run = toc_heading.runs[0]
-            run.font.bold = True
-            run.font.size = Pt(14)
-            run.font.name = 'Times New Roman'
+        # Create TOC heading paragraph
+        toc_heading_p = OxmlElement('w:p')
 
-        # Insert TOC field paragraph (on same page as heading)
-        toc_para = self.doc.paragraphs[insert_index + 1].insert_paragraph_before()
-        self._add_toc_field(toc_para)
+        # Add page break property to heading
+        pPr = OxmlElement('w:pPr')
+        pageBreakBefore = OxmlElement('w:pageBreakBefore')
+        pPr.append(pageBreakBefore)
 
-        # Note: Page break before Abstract is added by _insert_section_page_breaks()
-        # which runs after this method
+        # Add style (TOCHeading if available, otherwise centered alignment)
+        pStyle = OxmlElement('w:pStyle')
+        pStyle.set(qn('w:val'), 'TOCHeading')
+        pPr.append(pStyle)
 
-        print(f"   ✓ Inserted Table of Contents at paragraph {insert_index} (page 2)")
+        # Add centered alignment
+        jc = OxmlElement('w:jc')
+        jc.set(qn('w:val'), 'center')
+        pPr.append(jc)
 
-    def _add_toc_field(self, paragraph):
-        """
-        Add a TOC field to the given paragraph.
+        toc_heading_p.append(pPr)
 
-        Word TOC field format requires separate runs for proper field recognition:
-        { TOC \\o "1-3" \\h \\z \\u }
-        - \\o "1-3": Include heading levels 1-3
-        - \\h: Make entries hyperlinks
-        - \\z: Hide tab leader and page numbers in web view
-        - \\u: Use outline levels
+        # Add heading text run
+        r = OxmlElement('w:r')
+        rPr = OxmlElement('w:rPr')
 
-        Note: Each field element MUST be in a separate run for Word to recognize
-        it as an updateable field. Missing the "separate" element or combining
-        elements in one run causes Word to ignore the field.
-        """
-        # Run 1: Field begin
-        run_begin = paragraph.add_run()
+        # Bold
+        b = OxmlElement('w:b')
+        rPr.append(b)
+
+        # Font size 14pt
+        sz = OxmlElement('w:sz')
+        sz.set(qn('w:val'), '28')  # 14pt * 2
+        rPr.append(sz)
+
+        # Font name
+        rFonts = OxmlElement('w:rFonts')
+        rFonts.set(qn('w:ascii'), 'Times New Roman')
+        rFonts.set(qn('w:hAnsi'), 'Times New Roman')
+        rPr.append(rFonts)
+
+        r.append(rPr)
+
+        # Add text
+        t = OxmlElement('w:t')
+        t.text = 'Table of Contents'
+        r.append(t)
+
+        toc_heading_p.append(r)
+
+        # Add heading to SDT content
+        sdtContent.append(toc_heading_p)
+
+        # Create TOC field paragraph with field structure
+        toc_field_p = OxmlElement('w:p')
+
+        # Create run containing TOC field
+        r_field = OxmlElement('w:r')
+
+        # Element 1: Field begin with dirty flag
         fldChar_begin = OxmlElement('w:fldChar')
         fldChar_begin.set(qn('w:fldCharType'), 'begin')
-        run_begin._r.append(fldChar_begin)
+        fldChar_begin.set(qn('w:dirty'), 'true')
+        r_field.append(fldChar_begin)
 
-        # Run 2: Instruction text
-        run_instr = paragraph.add_run()
+        # Element 2: Instruction text
         instrText = OxmlElement('w:instrText')
         instrText.set(qn('xml:space'), 'preserve')
         instrText.text = 'TOC \\o "1-3" \\h \\z \\u'
-        run_instr._r.append(instrText)
+        r_field.append(instrText)
 
-        # Run 3: Field separate (CRITICAL - Word won't update without this)
-        run_separate = paragraph.add_run()
+        # Element 3: Field separate
         fldChar_separate = OxmlElement('w:fldChar')
         fldChar_separate.set(qn('w:fldCharType'), 'separate')
-        run_separate._r.append(fldChar_separate)
+        r_field.append(fldChar_separate)
 
-        # Run 4: Placeholder text (will be replaced when field updates)
-        run_text = paragraph.add_run()
-        text_elem = OxmlElement('w:t')
-        text_elem.text = 'Right-click to update field'
-        run_text._r.append(text_elem)
-
-        # Run 5: Field end
-        run_end = paragraph.add_run()
+        # Element 4: Field end (NO placeholder text between separate and end)
         fldChar_end = OxmlElement('w:fldChar')
         fldChar_end.set(qn('w:fldCharType'), 'end')
-        run_end._r.append(fldChar_end)
+        r_field.append(fldChar_end)
+
+        # Add run to paragraph
+        toc_field_p.append(r_field)
+
+        # Add TOC field paragraph to SDT content
+        sdtContent.append(toc_field_p)
+
+        # Insert SDT before the Abstract paragraph
+        insertion_para._element.addprevious(sdt)
+
+        print(f"   ✓ Inserted Table of Contents at paragraph {insert_index} (page 2)")
+        print(f"   ✓ TOC wrapped in SDT with docPartGallery='Table of Contents'")
+
+    def _add_toc_field(self, paragraph):
+        """
+        Add a TOC field to the given paragraph using SDT-compatible structure.
+
+        This matches Pandoc's native TOC field structure exactly:
+        - All field elements in a SINGLE run (critical!)
+        - w:dirty="true" flag to signal field needs update
+        - NO placeholder text between separate and end
+        - Field structure: begin → instrText → separate → end
+
+        Word TOC field format: { TOC \\o "1-3" \\h \\z \\u }
+        - \\o "1-3": Include heading levels 1-3
+        - \\h: Make entries hyperlinks
+        - \\z: Hide tab leader and page numbers in web view
+        - \\u: Use outline levels (relies on style-based outline levels)
+        """
+        # Create single run containing all field elements
+        run = paragraph.add_run()
+
+        # Element 1: Field begin with dirty flag
+        fldChar_begin = OxmlElement('w:fldChar')
+        fldChar_begin.set(qn('w:fldCharType'), 'begin')
+        fldChar_begin.set(qn('w:dirty'), 'true')  # CRITICAL: signals needs update
+        run._r.append(fldChar_begin)
+
+        # Element 2: Instruction text
+        instrText = OxmlElement('w:instrText')
+        instrText.set(qn('xml:space'), 'preserve')
+        instrText.text = 'TOC \\o "1-3" \\h \\z \\u'
+        run._r.append(instrText)
+
+        # Element 3: Field separate (marks boundary between instruction and result)
+        fldChar_separate = OxmlElement('w:fldChar')
+        fldChar_separate.set(qn('w:fldCharType'), 'separate')
+        run._r.append(fldChar_separate)
+
+        # NO placeholder text here - critical difference from previous implementation
+        # Word will auto-populate this when TOC is updated
+
+        # Element 4: Field end
+        fldChar_end = OxmlElement('w:fldChar')
+        fldChar_end.set(qn('w:fldCharType'), 'end')
+        run._r.append(fldChar_end)
 
     def _insert_section_page_breaks(self):
         """Insert page breaks before major sections (Abstract, Introduction, etc.)."""

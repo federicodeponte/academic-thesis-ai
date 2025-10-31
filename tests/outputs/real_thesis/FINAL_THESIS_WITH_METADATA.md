@@ -6,11 +6,11 @@ system_creator: "Federico De Ponte"
 github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
 date: "January 2025"
 quality_score: "A- (90/100) - Publication-ready for mid-tier academic journals"
-word_count: "14,567 words across 81 pages"
+word_count: "14,567 words across 79 pages"
 citations_verified: "66 academic references, all verified and cited"
 visual_elements: "5 tables, 2 figures, comprehensive appendices"
 generation_method: "14 specialized AI agents (Research, Writing, Fact-Checking, Citation, Export)"
-showcase_description: "This complete 81-page master's thesis was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review to mathematical proofs to case studies—all AI-generated."
+showcase_description: "This complete 79-page master's thesis was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review to mathematical proofs to case studies—all AI-generated."
 system_capabilities: "Research any academic topic • Generate original frameworks • Create case studies • Verify citations • Export to PDF/DOCX/HTML • Quality gates for academic integrity"
 call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/academic-thesis-ai"
 license: "MIT - Use it, fork it, improve it, publish with it"
@@ -149,13 +149,13 @@ Token-based pricing disadvantages include:
 
 **Table 1: Comprehensive Comparison of AI Pricing Models**
 
-| Pricing Model | Transparency | Value Alignment | Implementation Complexity | Customer Acceptance | Best Use Cases |
-|--------------|--------------|-----------------|--------------------------|---------------------|----------------|
-| **Token-Based** | Very High - Direct cost per token visible | Low - No connection between tokens and business value | Low - Simple metering and billing | High - Easy to understand | Experimental use, low-stakes applications, commoditized AI services |
-| **Subscription** | Medium - Fixed cost but usage varies | Medium - Tiers may reflect feature value | Medium - Need tier design and feature gating | High - Predictable budgeting | Steady-state usage, enterprise customers, all-you-can-use models |
-| **Value-Based** | Low - Complex value metrics | Very High - Price directly tied to outcomes | Very High - Requires value measurement infrastructure | Medium - Needs education and trust | Mission-critical applications, measurable ROI, strategic partnerships |
-| **Outcome-Based** | Medium - Pay for results | Very High - Perfect alignment with customer goals | Very High - Attribution challenges | Medium-High - Risk sharing appeals | Performance marketing, trading algorithms, process automation |
-| **Hybrid** | Medium - Combines multiple elements | High - Balances multiple factors | High - Multiple pricing mechanisms | Medium-High - Flexibility valued | Diverse customer segments, evolving markets, transition strategies |
+| Model | Transparency | Value Align | Complexity | Acceptance | Best Use Cases |
+|-------|--------------|-------------|------------|------------|----------------|
+| **Token** | V. High: Direct cost visible | Low: No value link | Low: Simple metering | High: Easy to grasp | Experimental, low-stakes, commoditized AI |
+| **Subscription** | Medium: Fixed cost | Medium: Tiers reflect value | Medium: Tier design | High: Predictable | Steady usage, enterprise, all-you-can-use |
+| **Value** | Low: Complex metrics | V. High: Tied to outcomes | V. High: Needs infrastructure | Medium: Needs trust | Mission-critical, measurable ROI |
+| **Outcome** | Medium: Pay for results | V. High: Goal alignment | V. High: Attribution hard | Med-High: Risk sharing | Performance marketing, trading, automation |
+| **Hybrid** | Medium: Multiple elements | High: Balances factors | High: Multiple mechanisms | Med-High: Flexible | Diverse segments, evolving markets |
 
 **Table 2: Value Driver Importance Weights Across Industries**
 
@@ -663,8 +663,8 @@ This appendix provides additional quantitative detail for the theoretical case s
 
 **Table C.2: Financial Trading AI - Projected Performance Under Alternative Pricing Models**
 
-| Performance Metric | Token-Based | Performance-Based | Change |
-|:-------------------|------------:|------------------:|-------:|
+| Performance Metric | Token-Based | Perf-Based | Change |
+|:-------------------|------------:|-----------:|-------:|
 | **Pricing Structure** |
 | Monthly Base Fee | \$500,000 | \$100,000 | -80% |
 | Performance Fee (average) | \$0 | \$1,250,000 | New component |

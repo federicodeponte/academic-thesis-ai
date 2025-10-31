@@ -9,6 +9,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/federicodeponte/academic-thesis-ai?style=social)](https://github.com/federicodeponte/academic-thesis-ai/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/federicodeponte/academic-thesis-ai?style=social)](https://github.com/federicodeponte/academic-thesis-ai/network/members)
 
+> 🌐 **Landing Page:** [academic-thesis-ai-landing.vercel.app](https://academic-thesis-ai-landing.vercel.app) | **Repository:** [github.com/federicodeponte/academic-thesis-ai-landing](https://github.com/federicodeponte/academic-thesis-ai-landing)
+
 Write academic papers 50-70% faster with AI assistance while maintaining quality and academic integrity.
 
 > **✅ Production Ready:** All 14 agents tested and validated. Comprehensive test coverage with publication-quality outputs. See [Test Results](tests/outputs/PRODUCTION_TEST_RESULTS.md) for details.

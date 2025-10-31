@@ -51,28 +51,24 @@ class DOCXPostProcessor:
             print("1. Fixing line spacing and indentation...")
             self._fix_paragraph_formatting()
 
-            # Step 2: Fix heading outline levels (CRITICAL for TOC detection)
-            print("2. Fixing heading outline levels for TOC detection...")
-            self._fix_heading_outline_levels()
-
-            # Step 3: Insert page break after cover page
-            print("3. Separating cover page...")
+            # Step 2: Insert page break after cover page
+            print("2. Separating cover page...")
             self._insert_cover_page_break()
 
-            # Step 4: Insert Table of Contents
-            print("4. Adding Table of Contents...")
+            # Step 3: Insert Table of Contents
+            print("3. Adding Table of Contents...")
             self._insert_table_of_contents()
 
-            # Step 5: Insert page breaks before major sections
-            print("5. Adding page breaks before major sections...")
+            # Step 4: Insert page breaks before major sections
+            print("4. Adding page breaks before major sections...")
             self._insert_section_page_breaks()
 
-            # Step 6: Add section breaks for different page numbering
-            print("6. Adding section breaks for page numbering...")
+            # Step 5: Add section breaks for different page numbering
+            print("5. Adding section breaks for page numbering...")
             self._insert_section_breaks()
 
-            # Step 7: Add page numbers
-            print("7. Adding page numbers...")
+            # Step 6: Add page numbers
+            print("6. Adding page numbers...")
             self._add_page_numbers()
 
             # Save changes
@@ -101,55 +97,6 @@ class DOCXPostProcessor:
                 count += 1
 
         print(f"   ✓ Fixed {count} paragraphs (2.0 spacing, 0.5\" indent, justified)")
-
-    def _fix_heading_outline_levels(self):
-        """
-        Fix heading paragraphs to include explicit outline levels in paragraph properties.
-
-        CRITICAL for TOC detection: Word/LibreOffice TOC fields require outline levels
-        to be explicitly set in paragraph properties, not just inherited from style
-        definitions. Pandoc generates headings with style references but doesn't add
-        outline levels to paragraph properties.
-
-        Without this fix, TOC fields will be empty even if properly structured because
-        they cannot detect any headings.
-
-        Mapping:
-        - Heading 1 → outline level 0
-        - Heading 2 → outline level 1 (major sections: Abstract, Introduction, etc.)
-        - Heading 3 → outline level 2 (subsections)
-        - Heading 4-6 → outline levels 3-5
-        """
-        heading_to_level = {
-            'Heading 1': 0,
-            'Heading 2': 1,
-            'Heading 3': 2,
-            'Heading 4': 3,
-            'Heading 5': 4,
-            'Heading 6': 5,
-        }
-
-        count = 0
-        for para in self.doc.paragraphs:
-            style_name = para.style.name if para.style else None
-
-            if style_name in heading_to_level:
-                outline_level = heading_to_level[style_name]
-
-                # Get or create paragraph properties element
-                pPr = para.paragraph_format._element.get_or_add_pPr()
-
-                # Check if outline level already exists
-                existing_outline = pPr.find(qn('w:outlineLvl'))
-
-                if existing_outline is None:
-                    # Add outline level element to paragraph properties
-                    outlineLvl = OxmlElement('w:outlineLvl')
-                    outlineLvl.set(qn('w:val'), str(outline_level))
-                    pPr.append(outlineLvl)
-                    count += 1
-
-        print(f"   ✓ Fixed {count} heading paragraphs (added explicit outline levels for TOC)")
 
     def _insert_cover_page_break(self):
         """

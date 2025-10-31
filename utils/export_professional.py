@@ -281,6 +281,17 @@ def export_docx(
 
         print(f"✅ DOCX created successfully: {output_docx}")
         print(f"   Tables, formatting, and styling preserved from markdown")
+
+        # Post-process DOCX to add features Pandoc can't create
+        # (page numbers, TOC, proper spacing/indents, section/page breaks)
+        from docx_postprocessor import post_process_docx
+
+        print()
+        if not post_process_docx(output_docx):
+            print("⚠️  Post-processing failed - DOCX created but may lack some formatting")
+            print("   (Try opening in Word and adding page numbers/TOC manually)")
+            return True  # Still return True since basic DOCX was created
+
         return True
 
     except subprocess.TimeoutExpired:

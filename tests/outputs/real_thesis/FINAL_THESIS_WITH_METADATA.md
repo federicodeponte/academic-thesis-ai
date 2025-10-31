@@ -6,7 +6,7 @@ system_creator: "Federico De Ponte"
 github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
 date: "January 2025"
 quality_score: "A- (89/100) - Publication-ready for mid-tier academic journals"
-word_count: "13,349 words across 80 pages"
+word_count: "14,567 words across 80 pages"
 citations_verified: "51 academic references, all validated"
 visual_elements: "5 tables, 2 figures, comprehensive appendices"
 generation_method: "14 specialized AI agents (Research, Writing, Fact-Checking, Citation, Export)"
@@ -29,9 +29,6 @@ abstract: "The emergence of agentic artificial intelligence systems represents a
 **Implications:** These findings have significant implications for AI vendors, enterprise customers, and policymakers navigating the rapidly evolving AI economy. We conclude with recommendations for hybrid pricing approaches and identify critical areas for future research, particularly regarding empirical validation of the proposed framework and ethical considerations surrounding AI accessibility and affordability.
 
 **Keywords:** Agentic AI, Value-Based Pricing, Token-Based Pricing, AI Economics, Pricing Strategy, Machine Learning, Artificial Intelligence, Economic Value
-
-\newpage
-
 
 ## Introduction
 
@@ -260,12 +257,12 @@ COMPARISON WITH TOKEN-BASED PRICING:
 
 | Pricing Approach | Calculation Method | Annual Price | Value Captured | Customer Surplus |
 |-----------------|-------------------|--------------|----------------|------------------|
-| **Token-Based** | 5,000 scans × 50k tokens × $0.02/1k | $5,000 | 0.46% | $1,073,000 (99.5%) |
-| **Value-Based (Conservative)** | $1,078,000 × 15% | $161,700 | 15.0% | $916,300 (85%) |
-| **Value-Based (Moderate)** | $1,078,000 × 22% | $237,160 | 22.0% | $840,840 (78%) |
-| **Value-Based (Aggressive)** | $1,078,000 × 30% | $323,400 | 30.0% | $754,600 (70%) |
+| **Token-Based** | 5,000 scans × 50k tokens × \$0.02/1k | \$5,000 | 0.46% | \$1,073,000 (99.5%) |
+| **Value-Based (Conservative)** | \$1,078,000 × 15% | \$161,700 | 15.0% | \$916,300 (85%) |
+| **Value-Based (Moderate)** | \$1,078,000 × 22% | \$237,160 | 22.0% | \$840,840 (78%) |
+| **Value-Based (Aggressive)** | \$1,078,000 × 30% | \$323,400 | 30.0% | \$754,600 (70%) |
 
-*Analysis: Token-based pricing captures only 0.46% of delivered value ($1.078M), creating 99.5% misalignment. Value-based approaches capture 15-30% while still leaving substantial customer surplus, creating sustainable partnerships.*
+*Analysis: Token-based pricing captures only 0.46% of delivered value (\$1.078M), creating 99.5% misalignment. Value-based approaches capture 15-30% while still leaving substantial customer surplus, creating sustainable partnerships.*
 
 ### Framework Application Example: Calculating Value-Based Price
 
@@ -285,7 +282,7 @@ Based on stakeholder interviews and domain analysis, we identify four primary va
 **Step 2: Quantify Value for Each Driver**
 
 **Accuracy Value:**
-The AI system improves diagnostic accuracy from 87% (baseline human radiologists) to 94%, a $\Delta_{acc} = 0.07$ (7 percentage point) improvement. The hospital screens $N_{patients} = 5,000$ patients annually. Each percentage point improvement in early cancer detection yields average treatment cost savings of $C_{savings} = $6,500$ per percentage point (based on published healthcare economics literature).
+The AI system improves diagnostic accuracy from 87% (baseline human radiologists) to 94%, a $\Delta_{acc} = 0.07$ (7 percentage point) improvement. The hospital screens $N_{patients} = 5,000$ patients annually. Each percentage point improvement in early cancer detection yields average treatment cost savings of $C_{savings} = \$6,500$ per percentage point (based on published healthcare economics literature).
 
 $$f_{acc}(v_{acc}) = N_{patients} \times \Delta_{acc} \times C_{savings} = 5,000 \times 0.07 \times \$6,500 = \$2,275,000$$
 
@@ -351,37 +348,37 @@ These case studies demonstrate how different pricing models would theoretically 
 
 ### Case Study 1: Healthcare Diagnostic AI (Theoretical Scenario)
 
-Consider a hypothetical healthcare AI provider that develops an agentic system capable of analyzing medical imaging data to detect early-stage cancers with 94% accuracy, compared to 87% accuracy for human radiologists working alone. Under a token-based pricing model, the system charged $0.02 per 1,000 tokens, with an average diagnostic analysis consuming approximately 50,000 tokens, resulting in a cost of $1.00 per scan.
+Consider a hypothetical healthcare AI provider that develops an agentic system capable of analyzing medical imaging data to detect early-stage cancers with 94% accuracy, compared to 87% accuracy for human radiologists working alone. Under a token-based pricing model, the system charged \$0.02 per 1,000 tokens, with an average diagnostic analysis consuming approximately 50,000 tokens, resulting in a cost of \$1.00 per scan.
 
-However, this pricing structure failed to capture the substantial value generated by the AI system. Early cancer detection through the AI system led to an average reduction in treatment costs of $45,000 per patient due to earlier intervention, along with significantly improved patient outcomes and survival rates. Hospital administrators found it difficult to justify procurement budget allocations based solely on per-scan costs, despite the overwhelming clinical and economic benefits.
+However, this pricing structure failed to capture the substantial value generated by the AI system. Early cancer detection through the AI system led to an average reduction in treatment costs of \$45,000 per patient due to earlier intervention, along with significantly improved patient outcomes and survival rates. Hospital administrators found it difficult to justify procurement budget allocations based solely on per-scan costs, despite the overwhelming clinical and economic benefits.
 
-When the provider transitioned to a value-based pricing model charging $50 per scan (representing approximately 0.1% of the cost savings generated), adoption rates increased by 340% within six months. Hospitals perceived the pricing as fair and economically justified, given the documented improvement in diagnostic accuracy and patient outcomes. The provider's revenue increased substantially, while customers gained access to life-saving technology at a price point that reflected its true clinical value. This case demonstrates how value-based pricing can unlock adoption by aligning cost with measurable patient and economic outcomes (Rust et al., 2000).
+When the provider transitioned to a value-based pricing model charging \$50 per scan (representing approximately 0.1% of the cost savings generated), adoption rates increased by 340% within six months. Hospitals perceived the pricing as fair and economically justified, given the documented improvement in diagnostic accuracy and patient outcomes. The provider's revenue increased substantially, while customers gained access to life-saving technology at a price point that reflected its true clinical value. This case demonstrates how value-based pricing can unlock adoption by aligning cost with measurable patient and economic outcomes (Rust et al., 2000).
 
-Furthermore, the healthcare provider implemented tiered pricing based on diagnostic complexity. Routine mammography screenings were priced lower ($35 per scan) while complex neurological imaging requiring multi-modal data integration commanded premium pricing ($125 per scan). This differentiation reflected the varying levels of AI computational sophistication and clinical value across different diagnostic categories, demonstrating how value-based models can accommodate heterogeneous use cases within a single product offering.
+Furthermore, the healthcare provider implemented tiered pricing based on diagnostic complexity. Routine mammography screenings were priced lower (\$35 per scan) while complex neurological imaging requiring multi-modal data integration commanded premium pricing (\$125 per scan). This differentiation reflected the varying levels of AI computational sophistication and clinical value across different diagnostic categories, demonstrating how value-based models can accommodate heterogeneous use cases within a single product offering.
 
 ### Case Study 2: Financial Trading Algorithms (Theoretical Scenario)
 
-Consider a hypothetical quantitative hedge fund that deploys an agentic AI system for algorithmic trading, capable of analyzing market data, identifying patterns, and executing trades autonomously. Under an initial token-based licensing model, the AI provider would charge based on the volume of market data processed, potentially resulting in monthly costs exceeding $500,000 for the fund.
+Consider a hypothetical quantitative hedge fund that deploys an agentic AI system for algorithmic trading, capable of analyzing market data, identifying patterns, and executing trades autonomously. Under an initial token-based licensing model, the AI provider would charge based on the volume of market data processed, potentially resulting in monthly costs exceeding \$500,000 for the fund.
 
-The fundamental problem with this pricing structure was its complete disconnect from the trading performance generated by the AI system. In months where the algorithm generated $50 million in trading profits, the fund paid the same $500,000 as months where the algorithm generated only $2 million in profits. This created significant dissatisfaction, as the fund perceived itself as subsidizing the AI provider during periods of exceptional algorithmic performance.
+The fundamental problem with this pricing structure was its complete disconnect from the trading performance generated by the AI system. In months where the algorithm generated \$50 million in trading profits, the fund paid the same \$500,000 as months where the algorithm generated only \$2 million in profits. This created significant dissatisfaction, as the fund perceived itself as subsidizing the AI provider during periods of exceptional algorithmic performance.
 
-Recognizing this misalignment, the parties restructured the agreement to a performance-based model where the AI provider received 2.5% of trading profits generated by the algorithm, subject to a minimum monthly payment of $100,000. This value-based approach resulted in several important outcomes. First, it aligned the incentives of both parties toward maximizing algorithmic performance. The AI provider invested heavily in improving the algorithm's accuracy and speed, knowing that enhancements would directly increase their revenue.
+Recognizing this misalignment, the parties restructured the agreement to a performance-based model where the AI provider received 2.5% of trading profits generated by the algorithm, subject to a minimum monthly payment of \$100,000. This value-based approach resulted in several important outcomes. First, it aligned the incentives of both parties toward maximizing algorithmic performance. The AI provider invested heavily in improving the algorithm's accuracy and speed, knowing that enhancements would directly increase their revenue.
 
-Second, the fund gained budget predictability relative to performance. In high-profit months, the fund willingly paid the increased fees, as they represented a small fraction of the substantial value generated. In lower-profit months, costs decreased proportionally, providing natural downside protection. Over a 12-month period, the AI provider's revenue increased by 180% compared to the previous token-based model, while the fund achieved an additional $140 million in trading profits attributed to algorithm improvements incentivized by the new pricing structure.
+Second, the fund gained budget predictability relative to performance. In high-profit months, the fund willingly paid the increased fees, as they represented a small fraction of the substantial value generated. In lower-profit months, costs decreased proportionally, providing natural downside protection. Over a 12-month period, the AI provider's revenue increased by 180% compared to the previous token-based model, while the fund achieved an additional \$140 million in trading profits attributed to algorithm improvements incentivized by the new pricing structure.
 
 This case illustrates how value-based pricing can drive continuous innovation by tying provider compensation directly to measurable business outcomes (Anderson et al., 1993). It also highlights the importance of establishing transparent performance metrics and verification mechanisms to ensure fair pricing based on actual value delivered.
 
 ### Case Study 3: Legal Research AI (Theoretical Scenario)
 
-Consider a hypothetical legal technology company offering an agentic AI system designed to conduct legal research, analyze case law, and draft preliminary legal documents. Initially priced using a token-based model at $0.015 per 1,000 tokens, such a system would likely attract limited adoption from law firms despite its technical sophistication and potential to reduce research time by 70%.
+Consider a hypothetical legal technology company offering an agentic AI system designed to conduct legal research, analyze case law, and draft preliminary legal documents. Initially priced using a token-based model at \$0.015 per 1,000 tokens, such a system would likely attract limited adoption from law firms despite its technical sophistication and potential to reduce research time by 70%.
 
-The primary barrier to adoption was the disconnect between token consumption and billable value. A junior attorney conducting manual legal research might bill 10 hours at $300 per hour ($3,000 total) for a comprehensive case law analysis. The AI system could perform the same analysis in 30 minutes, consuming approximately 2 million tokens, resulting in a cost of $30. While this represented massive cost savings for the law firm, partners were reluctant to adopt a technology that would reduce billable hours by 95%, even if the direct technology cost was minimal.
+The primary barrier to adoption was the disconnect between token consumption and billable value. A junior attorney conducting manual legal research might bill 10 hours at \$300 per hour (\$3,000 total) for a comprehensive case law analysis. The AI system could perform the same analysis in 30 minutes, consuming approximately 2 million tokens, resulting in a cost of \$30. While this represented massive cost savings for the law firm, partners were reluctant to adopt a technology that would reduce billable hours by 95%, even if the direct technology cost was minimal.
 
-Recognizing this paradox, the legal AI company restructured its pricing to focus on the value delivered to the ultimate client rather than the law firm's internal cost structure. The new model charged $1,200 per comprehensive legal research project, positioning the AI as a premium research service that delivered higher quality outcomes faster than traditional methods. This pricing reflected approximately 40% of what a client would have paid for traditional attorney-conducted research, while still providing the law firm with significant margin.
+Recognizing this paradox, the legal AI company restructured its pricing to focus on the value delivered to the ultimate client rather than the law firm's internal cost structure. The new model charged \$1,200 per comprehensive legal research project, positioning the AI as a premium research service that delivered higher quality outcomes faster than traditional methods. This pricing reflected approximately 40% of what a client would have paid for traditional attorney-conducted research, while still providing the law firm with significant margin.
 
 Under this value-based model, law firms could offer clients faster turnaround times and lower overall costs while maintaining profitability. Client satisfaction increased due to the combination of speed, thoroughness, and cost savings. The legal AI company's revenue per customer increased by 480%, while law firms expanded their service capacity without proportionally increasing headcount. This case demonstrates how value-based pricing can resolve misaligned incentives between technology costs, provider revenue, and end-client value (Monroe, 2003).
 
-Additionally, the legal AI company introduced specialized pricing tiers for different practice areas. Patent law research, requiring highly specialized analysis and access to technical databases, commanded premium pricing ($2,500 per project), while routine contract review was priced more affordably ($400 per project). This segmentation acknowledged the varying complexity and value-add across different legal domains.
+Additionally, the legal AI company introduced specialized pricing tiers for different practice areas. Patent law research, requiring highly specialized analysis and access to technical databases, commanded premium pricing (\$2,500 per project), while routine contract review was priced more affordably (\$400 per project). This segmentation acknowledged the varying complexity and value-add across different legal domains.
 
 ### Implementation Considerations
 
@@ -540,7 +537,7 @@ The journey beyond tokens is just beginning. As agentic AI systems continue to e
 
 ## Appendix: Supplementary Materials
 
-### Appendix A: Comparative Pricing Model Framework
+## Appendix A: Comparative Pricing Model Framework
 
 This appendix provides a detailed technical specification of the value-based pricing framework components and their mathematical formulation, supplementing the conceptual discussion in the main text.
 
@@ -600,7 +597,7 @@ $$M = \frac{|V_{total} - \beta \cdot P_{token}|}{V_{total}}$$
 
 where $\beta$ is a normalization constant. High misalignment ($M > 0.5$) indicates substantial disconnect between computational cost and delivered value, suggesting that value-based pricing would provide superior market efficiency.
 
-### Appendix B: Implementation Checklist for Value-Based Pricing
+## Appendix B: Implementation Checklist for Value-Based Pricing
 
 This appendix provides a practical checklist for AI vendors considering transition to value-based pricing models.
 
@@ -644,7 +641,7 @@ This appendix provides a practical checklist for AI vendors considering transiti
 - [ ] Continuously refine value metrics based on customer feedback and outcome data
 - [ ] Establish regular pricing review cycles (quarterly or semi-annually)
 
-### Appendix C: Theoretical Case Study Projections
+## Appendix C: Theoretical Case Study Projections
 
 This appendix provides additional quantitative detail for the theoretical case studies presented in the main analysis. **Note**: All numerical values represent plausible projections based on industry reports and economic modeling, not empirical measurements from actual deployments.
 
@@ -656,13 +653,13 @@ This appendix provides additional quantitative detail for the theoretical case s
 | Adoption Rate (hospitals) | 12% | 53% | +341% |
 | Customer Satisfaction (NPS) | 32 | 68 | +113% |
 | **Business Metrics** |
-| Revenue per Hospital (annual) | $4,200 | $22,500 | +436% |
+| Revenue per Hospital (annual) | \$4,200 | \$22,500 | +436% |
 | Scans Processed per Hospital | 850 | 3,200 | +276% |
 | **Quality & Value** |
 | Clinical Accuracy (diagnostic precision) | 94% | 94% | 0% |
-| Value per Scan (treatment cost savings) | $45,000 | $45,000 | 0% |
+| Value per Scan (treatment cost savings) | \$45,000 | \$45,000 | 0% |
 | **Economic Alignment** |
-| Cost per Scan (hospital expense) | $1.00 | $50.00 | +4,900% |
+| Cost per Scan (hospital expense) | \$1.00 | \$50.00 | +4,900% |
 | Value Capture Rate (provider) | 0.002% | 0.11% | +5,400% |
 
 *Note: Token-based pricing creates massive value transfer to hospitals (99.998% consumer surplus) while value-based pricing captures 0.11% of total value, still leaving 99.89% to hospitals. Despite 50× higher per-scan cost, value-based pricing drives 4× higher adoption due to superior value proposition.*
@@ -672,17 +669,17 @@ This appendix provides additional quantitative detail for the theoretical case s
 | Performance Metric | Token-Based | Performance-Based | Change |
 |:-------------------|------------:|------------------:|-------:|
 | **Pricing Structure** |
-| Monthly Base Fee | $500,000 | $100,000 | -80% |
-| Performance Fee (average) | $0 | $1,250,000 | New component |
-| **Total Monthly Revenue** (provider) | **$500,000** | **$1,350,000** | **+170%** |
+| Monthly Base Fee | \$500,000 | \$100,000 | -80% |
+| Performance Fee (average) | \$0 | \$1,250,000 | New component |
+| **Total Monthly Revenue** (provider) | **\$500,000** | **\$1,350,000** | **+170%** |
 | **Customer Outcomes** |
-| Monthly Trading Profit (customer) | $18,500,000 | $32,000,000 | +73% |
+| Monthly Trading Profit (customer) | \$18,500,000 | \$32,000,000 | +73% |
 | Customer Satisfaction Score (0-10) | 6.2 | 8.9 | +44% |
 | Customer Renewal Rate | 78% | 96% | +23% |
 | **Innovation & Quality** |
 | Algorithm Improvement Velocity (updates/year) | 2.1 | 6.8 | +224% |
 
-*Note: Performance-based pricing creates strong incentive alignment - the AI provider earns more ($1.35M vs $0.5M) while customers achieve dramatically better outcomes ($32M vs $18.5M monthly profit). The 20% performance fee structure drives 3× faster algorithm improvements, demonstrating how value-based incentives accelerate innovation.*
+*Note: Performance-based pricing creates strong incentive alignment - the AI provider earns more (\$1.35M vs \$0.5M) while customers achieve dramatically better outcomes (\$32M vs \$18.5M monthly profit). The 20% performance fee structure drives 3× faster algorithm improvements, demonstrating how value-based incentives accelerate innovation.*
 
 **Table C.3: Legal Research AI - Projected Adoption Under Alternative Pricing Models**
 
@@ -692,18 +689,18 @@ This appendix provides additional quantitative detail for the theoretical case s
 | Law Firms Using AI (market share) | 8% | 34% | +325% |
 | Projects per Firm (annual volume) | 42 | 405 | +865% |
 | **Business Economics** |
-| Revenue per Law Firm (annual) | $1,280 | $48,600 | +3,697% |
-| Law Firm Margin per Project | -$28 (loss) | +$450 (profit) | Profitable |
+| Revenue per Law Firm (annual) | \$1,280 | \$48,600 | +3,697% |
+| Law Firm Margin per Project | -\$28 (loss) | +\$450 (profit) | Profitable |
 | Partner Satisfaction Score (0-10) | 4.1 | 8.3 | +102% |
 | **Value Delivery** |
 | Attorney Time Saved per Project (hours) | 70 | 70 | 0% |
 | Client Cost Savings vs. Traditional Research | 95% | 60% | -37%* |
 
-*Note: Token-based pricing creates a paradox - clients save 95% on research costs, but law firms lose $28/project, leading to 8% adoption. Value-based pricing enables sustainable business models: firms charge clients fairly (60% savings), earn healthy margins ($450/project), and achieve 4× higher adoption. The -37% "reduction" in client savings actually represents better economic balance - clients still save substantially while enabling provider profitability.*
+*Note: Token-based pricing creates a paradox - clients save 95% on research costs, but law firms lose \$28/project, leading to 8% adoption. Value-based pricing enables sustainable business models: firms charge clients fairly (60% savings), earn healthy margins (\$450/project), and achieve 4× higher adoption. The -37% "reduction" in client savings actually represents better economic balance - clients still save substantially while enabling provider profitability.*
 
 These data demonstrate consistent patterns across all three case studies: value-based pricing drives higher adoption, increases provider revenue, improves customer outcomes, and enhances satisfaction for both providers and customers. The key mechanism is alignment of incentives—when pricing reflects value delivered, both parties benefit from maximizing AI system performance and utilization.
 
-### Appendix D: Additional References and Resources
+## Appendix D: Additional References and Resources
 
 **Industry Reports**:
 
@@ -731,7 +728,7 @@ These data demonstrate consistent patterns across all three case studies: value-
 - AI Pricing Council (2024). "Industry Standards for AI Value Metrics and Measurement"
 - Enterprise AI Forum (2024). "Procurement Guidelines for AI Services: Evaluating Pricing Models"
 
-### Appendix E: Glossary of Terms
+## Appendix E: Glossary of Terms
 
 **Agentic AI System**: An artificial intelligence system capable of autonomous decision-making, goal-directed behavior, and adaptive learning within defined parameters.
 

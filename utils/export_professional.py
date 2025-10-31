@@ -77,13 +77,15 @@ def export_pdf(
         return False
 
 
-def export_docx(md_file: Path, output_docx: Path) -> bool:
+def export_docx_basic(md_file: Path, output_docx: Path) -> bool:
     """
-    Export markdown to DOCX format.
+    Export markdown to DOCX format using basic python-docx parsing.
 
-    Note: This is a legacy function. For production use, prefer using
-    the LibreOffice engine which generates DOCX as an intermediate format
-    before creating PDF.
+    Note: This is a legacy/fallback function with limited formatting support.
+    Does NOT support tables, complex formatting, or citations.
+
+    For production use, prefer export_docx() which uses Pandoc with full
+    markdown support and proper table formatting.
 
     Args:
         md_file: Path to input markdown file
@@ -175,6 +177,115 @@ def export_docx(md_file: Path, output_docx: Path) -> bool:
         print(f"✅ DOCX created successfully: {output_docx}")
         return True
 
+    except Exception as e:
+        print(f"❌ DOCX generation failed: {str(e)}")
+        return False
+
+
+def export_docx(
+    md_file: Path,
+    output_docx: Path,
+    options: Optional[PDFGenerationOptions] = None
+) -> bool:
+    """
+    Export markdown to DOCX with full formatting support (tables, citations, styles).
+
+    Uses Pandoc with custom reference document for professional formatting that matches
+    PDF output quality. Automatically falls back to basic export if Pandoc unavailable.
+
+    Features:
+    - ✅ Tables rendered as Word tables (not pipe text)
+    - ✅ Proper heading styles (APA 7th edition compatible)
+    - ✅ Citations and footnotes
+    - ✅ Table of contents
+    - ✅ Custom fonts and spacing from reference document
+
+    Args:
+        md_file: Path to input markdown file
+        output_docx: Path for output DOCX file
+        options: PDF generation options (uses academic defaults if None)
+
+    Returns:
+        bool: True if DOCX generation succeeded, False otherwise
+
+    Examples:
+        >>> export_docx(Path('thesis.md'), Path('thesis.docx'))
+        >>> options = PDFGenerationOptions(enable_toc=True, toc_depth=3)
+        >>> export_docx(Path('thesis.md'), Path('thesis.docx'), options)
+    """
+    import subprocess
+    import shutil
+
+    if options is None:
+        options = PDFGenerationOptions()
+
+    # Try Pandoc method first (best quality)
+    if not shutil.which('pandoc'):
+        print("⚠️  Pandoc not found - falling back to basic DOCX export")
+        print("   (Tables and advanced formatting will be limited)")
+        print("   Install Pandoc for better results: sudo apt install pandoc")
+        return export_docx_basic(md_file, output_docx)
+
+    try:
+        # Locate reference document
+        reference_doc = Path(__file__).parent.parent / "examples" / "custom-reference.docx"
+
+        if not reference_doc.exists():
+            print(f"⚠️  Warning: Reference document not found: {reference_doc}")
+            print("   Continuing without reference document (may lose some formatting)")
+            reference_doc = None
+
+        # Build pandoc command
+        cmd = [
+            'pandoc',
+            str(md_file),
+            '-o', str(output_docx),
+            '--from', 'markdown',
+            '--to', 'docx',
+        ]
+
+        # Add reference document for styling
+        if reference_doc:
+            cmd.extend(['--reference-doc', str(reference_doc)])
+
+        # Add table of contents
+        if options.enable_toc:
+            cmd.append('--toc')
+            cmd.extend(['--toc-depth', str(options.toc_depth)])
+
+        # Add metadata if provided
+        if options.title:
+            cmd.extend(['--metadata', f'title={options.title}'])
+        if options.author:
+            cmd.extend(['--metadata', f'author={options.author}'])
+
+        print(f"\n📄 Generating DOCX with Pandoc: {output_docx.name}")
+        print(f"   Input: {md_file}")
+        if reference_doc:
+            print(f"   Reference doc: {reference_doc.name}")
+        print()
+
+        # Run pandoc
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=60
+        )
+
+        if result.returncode != 0:
+            print(f"❌ Pandoc failed with return code {result.returncode}")
+            if result.stderr:
+                print(f"   Error: {result.stderr}")
+            return False
+
+        print(f"✅ DOCX created successfully: {output_docx}")
+        print(f"   Tables, formatting, and styling preserved from markdown")
+        return True
+
+    except subprocess.TimeoutExpired:
+        print("❌ DOCX generation timed out (>60s)")
+        return False
     except Exception as e:
         print(f"❌ DOCX generation failed: {str(e)}")
         return False

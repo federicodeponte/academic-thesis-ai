@@ -5,15 +5,14 @@ author: "Academic Thesis AI (Multi-Agent System)"
 system_creator: "Federico De Ponte"
 github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
 date: "January 2025"
-quality_score: "A- (89/100) - Publication-ready for mid-tier academic journals"
-word_count: "14,567 words across 80 pages"
-citations_verified: "51 academic references, all validated"
+quality_score: "B+ (85/100) - Strong academic work requiring citation audit completion"
+word_count: "14,567 words across 81 pages"
+citations_verified: "63 academic references"
 visual_elements: "5 tables, 2 figures, comprehensive appendices"
 generation_method: "14 specialized AI agents (Research, Writing, Fact-Checking, Citation, Export)"
-showcase_description: "This complete 80-page master's thesis was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review to mathematical proofs to case studies—all AI-generated."
-system_capabilities: "Research any academic topic • Generate original frameworks • Create case studies • Verify citations (95%+ accuracy) • Export to PDF/DOCX/HTML • Quality gates for academic integrity"
+showcase_description: "This complete 81-page master's thesis was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review to mathematical proofs to case studies—all AI-generated."
+system_capabilities: "Research any academic topic • Generate original frameworks • Create case studies • Verify citations • Export to PDF/DOCX/HTML • Quality gates for academic integrity"
 call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/academic-thesis-ai"
-fun_fact: "Yes, AI can write better theses than some grad students. Don't @ me."
 license: "MIT - Use it, fork it, improve it, publish with it"
 abstract: "The emergence of agentic artificial intelligence systems represents a fundamental shift in how businesses leverage technology, yet current pricing models predominantly rely on computational metrics such as token consumption, failing to capture the multifaceted value these systems generate. This research proposes and evaluates a novel value-based pricing framework specifically designed for agentic AI systems, drawing upon established economic theories including value pricing, behavioral economics, and information economics. Through comparative analysis of existing pricing models and examination of three industry case studies spanning healthcare diagnostics, financial trading, and legal research, we demonstrate that token-based pricing creates significant market inefficiencies by decoupling cost from actual value delivery. Our framework identifies key value drivers including accuracy, speed, reliability, and personalization, and develops quantifiable metrics for assessing incremental value. The analysis reveals that value-based pricing offers superior alignment between provider incentives and customer outcomes, though implementation challenges include accurate value measurement and the need for sophisticated market segmentation. Case study results indicate that customers demonstrate willingness to pay premium prices for high-value outcomes regardless of computational cost, while resisting charges for high token consumption delivering minimal value. These findings have significant implications for AI vendors, enterprise customers, and policymakers navigating the rapidly evolving AI economy. We conclude with recommendations for hybrid pricing approaches and identify critical areas for future research, particularly regarding empirical validation and ethical considerations surrounding AI accessibility and affordability."
 ---
@@ -677,7 +676,7 @@ This appendix provides additional quantitative detail for the theoretical case s
 | **Innovation & Quality** |
 | Algorithm Improvement Velocity (updates/year) | 2.1 | 6.8 | +224% |
 
-*Note: Performance-based pricing creates strong incentive alignment - the AI provider earns more (\$1.35M vs \$0.5M) while customers achieve dramatically better outcomes (\$32M vs \$18.5M monthly profit). The 20% performance fee structure drives 3× faster algorithm improvements, demonstrating how value-based incentives accelerate innovation.*
+*Note: Performance-based pricing creates strong incentive alignment - the AI provider earns more (\$1.35M vs \$0.5M) while customers achieve dramatically better outcomes (\$32M vs \$18.5M monthly profit). The performance-based fee structure drives 3× faster algorithm improvements, demonstrating how value-based incentives accelerate innovation.*
 
 **Table C.3: Legal Research AI - Projected Adoption Under Alternative Pricing Models**
 
@@ -764,6 +763,8 @@ Anderson, C. (2006). *The long tail: Why the future of business is selling less 
 Anderson, J. C., & Anderson, J. A. (2007). *Managing market relationships*. Wiley.
 
 Anderson, J. C., Jain, D. C., & Chintagunta, P. K. (1993). Customer value assessment in business markets. *Journal of Business-to-Business Marketing, 1*(1), 3-29.
+
+Anderson, J. C., & Narus, J. A. (1998). Business marketing: Understand what customers value. *Harvard Business Review, 76*(6), 53-65.
 
 Anthropic. (2024). *Claude pricing*. https://www.anthropic.com/pricing
 

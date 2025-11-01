@@ -36,6 +36,7 @@ If the input thesis is in a **non-English language** (German, Spanish, French, e
 - ✅ Section metadata: "Section:" → "Abschnitt:" / "Sección:" / "Section:"
 - ✅ Section metadata: "Word Count:" → "Wortzahl:" / "Recuento de palabras:" / "Nombre de mots:"
 - ✅ Section metadata: "Status:" → "Status:" (same in German/Spanish/French)
+- ✅ Status values: "Draft v1" → "Entwurf v1" (German) / "Borrador v1" (Spanish) / "Brouillon v1" (French)
 
 ### Common Translation Patterns
 
@@ -47,6 +48,7 @@ If the input thesis is in a **non-English language** (German, Spanish, French, e
 - Figure → Abbildung
 - Content → Inhalt
 - Appendix → Anhang
+- Draft v1 / Draft v2 → Entwurf v1 / Entwurf v2
 
 **Spanish:**
 - Limitations → Limitaciones
@@ -79,6 +81,7 @@ grep "Table " output.md                 # FAIL - should be "Tabelle "
 grep "Figure " output.md                # FAIL - should be "Abbildung "
 grep "## Content" output.md             # FAIL - should be "## Inhalt"
 grep "**Section:**" output.md           # FAIL - should be "**Abschnitt:**"
+grep "Draft v1" output.md               # FAIL - should be "Entwurf v1"
 ```
 
 **If ANY of these patterns are found in a non-English thesis, you have FAILED the language consistency requirement.**

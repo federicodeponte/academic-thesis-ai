@@ -442,7 +442,7 @@ These research directions collectively point toward a richer, more nuanced under
 
 ## Conclusion
 
-The imperative to achieve the Sustainable Development Goals (SDGs) by 2030 necessitates a comprehensive understanding of all potential drivers, particularly those rooted in technological innovation (United Nations, 2015). This paper embarked on an exploration beyond the superficial benefits often attributed to open source software (OSS), developing and applying the "Beyond Code" theoretical framework to elucidate the causal mechanisms through which OSS contributes to sustainable development (Present Study, 2024). Our analysis has demonstrated that OSS is not merely a collection of freely available tools, but a dynamic ecosystem fostering unique collaborative, transparent, and adaptable properties that directly translate into tangible advancements across various SDGs.
+The imperative to achieve the Sustainable Development Goals (SDGs) by 2030 necessitates a comprehensive understanding of all potential drivers, particularly those rooted in technological innovation (United Nations, 2015). This paper embarked on an exploration beyond the superficial benefits often attributed to open source software (OSS), developing and applying the "Beyond Code" theoretical framework to elucidate the causal mechanisms through which OSS contributes to sustainable development (De Ponte, 2024). Our analysis has demonstrated that OSS is not merely a collection of freely available tools, but a dynamic ecosystem fostering unique collaborative, transparent, and adaptable properties that directly translate into tangible advancements across various SDGs.
 
 Our key findings underscore that the impact of open source on sustainable development is multifaceted and deeply embedded in its inherent characteristics. The collaborative development model inherent to OSS facilitates the rapid dissemination of knowledge and best practices, directly supporting SDG 4 (Quality Education) by providing accessible learning resources and fostering digital literacy (Piotrowski, 2021). Furthermore, the transparency of OSS codebases enhances accountability and trust, aligning with SDG 16 (Peace, Justice, and Strong Institutions) by enabling auditability in governance applications and public services (Chen et al., 2022). The adaptability and localizability of open source solutions empower communities to tailor technologies to their specific contexts and resource constraints, thereby driving progress in SDG 3 (Good Health and Well-being) through customizable health information systems and SDG 9 (Industry, Innovation, and Infrastructure) by fostering local innovation ecosystems (Meng et al., 2023).
 
@@ -804,73 +804,138 @@ This extended list serves as a gateway for deeper exploration into the multiface
 ---
 
 ## References
-
 Acemoglu, D., & Robinson, J. A. (2012). *Why nations fail: The origins of power, prosperity, and poverty*. Crown Business.
+
 Apache Software Foundation. (2023). *Apache HTTP Server Project*. https://httpd.apache.org/
+
 Benkler, Y. (2006). *The wealth of networks: How social production transforms markets and freedom*. Yale University Press.
+
 Callon, M. (1986). Some elements of a sociology of translation: Domestication of the scallops and the fishermen of St Brieuc Bay. *The Sociological Review*, 32(S1), 196-233. https://doi.org/10.1111/j.1467-954X.1986.tb00843.x
-CapGemini. (2004). *Open Source Software: A Study for the European Commission*. CapGemini. https://ec.europa.eu/enterprise/sectors/ict/files/oss_study_final_report_en.pdf
+
+CapGemini. (2004). *Open Source Software: A Study for the European Commission*. https://ec.europa.eu/enterprise/sectors/ict/files/oss_study_final_report_en.pdf
+
 Castells, M. (2000). *The rise of the network society: The information age: Economy, society and culture Vol. I* (2nd ed.). Blackwell Publishing.
+
 Chen, Y., Fan, Y., & Chen, J. (2022). Open-source software and government transparency: A systematic literature review. *Government Information Quarterly*, 39(1), 101662. https://doi.org/10.1016/j.giq.2021.101662
+
 Choudhury, N., Rahman, M. S., & Islam, M. S. (2022). Open-source electronic health record systems in developing countries: A systematic review. *Journal of Medical Systems*, 46(11), 1-15. https://doi.org/10.1007/s10916-022-01859-9
+
 Debian. (2023). *About Debian*. Debian Project. https://www.debian.org/intro/
+
 Dern, D. (2001). The "Open Source" Business Model: Opportunities and Challenges. *Journal of Business Strategy*, 22(4), 16-21. https://doi.org/10.1108/eb040149
+
 DiBona, C., Ockman, M., & Stone, M. (Eds.). (1999). *Open sources: Voices from the open source revolution*. O'Reilly Media.
+
 Ducheneaut, N. (2005). Socialization in an open-source software project: An examination of critical incidents. *Information Technology & People*, 18(1), 58-74. https://doi.org/10.1108/09593840510584617
+
 Eisenhardt, K. M. (1989). Building theories from case study research. *Academy of Management Review*, 14(4), 532-550. https://doi.org/10.5465/amr.1989.4308385
+
 Feller, J., & Fitzgerald, B. (2002). *Understanding open source software development*. Addison-Wesley Professional.
+
 Fitzgerald, B., & Kenny, T. (2007a). The role of open source software in public sector innovation. *Information Technology for Development*, 13(4), 345-358. https://doi.org/10.1080/02681100701633532
+
 Fitzgerald, B., & Kenny, T. (2007b). Open Source Software in the Public Sector: An Empirical Study. *Journal of Public Administration and Policy*, 10(1), 1-17.
+
 Foster, W., & Goodman, S. (2005). The lower end of the digital divide: The role of open source in bridging the gap. *The Information Society*, 21(5), 337-348. https://doi.org/10.1080/01972240500253492
+
 Geels, F. W. (2004). From sectoral systems of innovation to socio-technical systems: Insights about dynamics and change from sociology and institutional theory. *Research Policy*, 33(6-7), 897-920. https://doi.org/10.1016/j.respol.2004.01.006
+
 GES DISC. (2023). *About GES DISC*. NASA Goddard Earth Sciences Data and Information Services Center. https://disc.gsfc.nasa.gov/about
+
 Ghosh, R. A. (2005). *CODE: Collaborative ownership and the digital economy*. MIT Press.
+
 Green Software Foundation. (2023). *About the Green Software Foundation*. https://greensoftware.foundation/about
+
 Hamelink, C. J. (2003). *Information and communication technologies and social development*. United Nations Research Institute for Social Development. https://www.unrisd.org/80256B3C005BCCF9/(httpAuxPages)/0E50A949168CF87C80256B67005B73F7/$file/hamelink.pdf
+
 Harmon, J., & Maxwell, J. (2018). *Green software engineering: A guide to sustainable software development*. Springer. https://doi.org/10.1007/978-3-319-79344-2
+
 Hsieh, H. F., & Shannon, S. E. (2005). Three approaches to qualitative content analysis. *Qualitative Health Research*, 15(9), 1277-1288. https://doi.org/10.1177/1049732305276687
+
 Kirkpatrick, D. (2013). *The Facebook Effect: The Inside Story of the Company That Is Connecting the World*. Simon & Schuster.
+
 Kitchenham, B., & Charters, S. (2007). *Guidelines for performing systematic literature reviews in software engineering*. Keele University. https://www.elsevier.com/__data/assets/pdf_file/0007/32578/se_guidelines.pdf
-Krogh, G. V., & Von Krogh, S. (2006). Open Source Software Development: An Introduction to a Special Issue. *Management Science*, 52(7), 1109-1115. https://doi.org/10.1287/mnsc.1060.0545
+
 Kuan, J. (2001). Open source software as a business strategy: The case of Linux. *First Monday*, 6(5). https://doi.org/10.5210/fm.v6i5.856
+
 Latour, B. (2005). *Reassembling the social: An introduction to actor-network-theory*. Oxford University Press.
+
 Lerner, J., & Tirole, J. (2002). Some simple economics of open source. *Journal of Industrial Economics*, 50(2), 197-234. https://doi.org/10.1111/1467-6451.00174
+
 Lerner, J., & Tirole, J. (2005). The economics of open-source software development. *The American Economic Review*, 95(2), 197-201. https://doi.org/10.1257/000282805774670077
+
 Lessig, L. (2001). *The future of ideas: The fate of the commons in a connected world*. Random House.
+
 Linux Foundation. (2023). *The state of open source software*. https://www.linuxfoundation.org/resources/publications/state-of-open-source-report-2023
+
 Markard, J., & Truffer, B. (2020). Innovation for sustainability: An introduction. *Environmental Innovation and Societal Transitions*, 37, 251-255. https://doi.org/10.1016/j.eist.2020.08.001
+
 Meng, X., Yu, M., Li, Y., & Liu, Y. (2023). Open-source electronic health records systems: A systematic review. *Computers in Biology and Medicine*, 156, 106689. https://doi.org/10.1016/j.compbiomed.2023.106689
+
 Morgan, L., & Finnegan, P. (2012). Open source software in the public sector: An analysis of motivations, benefits and risks. *Information Systems Journal*, 22(5), 415-442. https://doi.org/10.1111/j.1365-2575.2011.00378.x
+
 Mozilla. (2023). *About Mozilla*. https://www.mozilla.org/en-US/about/
+
 Organisation for Economic Co-operation and Development. (2021). *The use of open educational resources in higher education: From policy to practice*. OECD Publishing. https://doi.org/10.1787/11a76d1a-en
+
 O'Neil, M. (2016). *Cyberchiefs: Autonomy and authority in online tribes*. Pluto Press.
+
 OpenStreetMap contributors. (2023). *About OpenStreetMap*. OpenStreetMap Foundation. https://www.openstreetmap.org/about
+
 O'Reilly, T. (2005, September 30). *What Is Web 2.0*. O'Reilly Media. http://www.oreilly.com/pub/a/web2/archive/what-is-web-20.html
+
 Patel, D. K., Kumar, R., & Singh, A. K. (2022). Open-source hardware and software for water quality monitoring: A review. *Sensors*, 22(12), 4668. https://doi.org/10.3390/s22124668
+
 Piotrowski, M. (2021). Open-source software in education: A systematic review. *Education and Information Technologies*, 26(4), 4801-4820. https://doi.org/10.1007/s10639-021-10557-4
-Present Study. (2024). *How Open Source Software Can Save the World: From Code Collaboration to Global Impact*. [Manuscript in preparation].
+
+De Ponte, F. (2024). *How Open Source Software Can Save the World: From Code Collaboration to Global Impact* [Manuscript in preparation].
+
 QGIS. (2023). *About QGIS*. QGIS.org. https://qgis.org/en/site/about/index.html
+
 Raymond, E. S. (1999). *The cathedral and the bazaar: Musings on Linux and open source by an accidental revolutionary*. O'Reilly Media.
+
 Red Hat. (2023). *The state of enterprise open source*. https://www.redhat.com/en/enterprise-open-source-report/2023
+
 Schneier, B. (2000). *Secrets and lies: Digital security in a networked world*. Wiley.
+
 Schwab, K. (2017). *The Fourth Industrial Revolution*. Crown Business.
+
 Scott, W. R. (2008). *Institutions and organizations: Ideas, interests, and identities* (3rd ed.). Sage Publications.
+
 Sen, A. (1999). *Development as freedom*. Oxford University Press.
+
 Stallman, R. (2002). *Free software, free society: Selected essays of Richard M. Stallman*. GNU Press.
+
 Torvalds, L., & Diamond, D. (2001). *Just for fun: The story of an accidental revolutionary*. HarperBusiness.
+
 Ubuntu. (2023). *About Ubuntu*. Canonical. https://ubuntu.com/about
+
 UNCTAD. (2010). *Information economy report 2010: ICTs, enterprises and poverty alleviation*. United Nations. https://unctad.org/system/files/official-document/ier2010_en.pdf
+
 UNCTAD. (2018). *Technology and innovation report 2018: Harnessing frontier technologies for sustainable development*. United Nations Publications. https://unctad.org/system/files/official-document/tir2018_en.pdf
-UNESCO. (2012). *Open educational resources: Global report 2012*. UNESCO. https://unesdoc.unesco.org/ark:/48223/pf0000215804
+
+UNESCO. (2012). *Open educational resources: Global report 2012*. https://unesdoc.unesco.org/ark:/48223/pf0000215804
+
 United Nations. (2015). *Transforming our world: The 2030 Agenda for Sustainable Development*. General Assembly Resolution 70/1. https://sustainabledevelopment.un.org/post2015/transformingourworld
+
 Von Hippel, E. (2005). *Democratizing innovation*. MIT Press.
+
 Von Krogh, G., & Von Krogh, S. (2006). Open Source Software Development: An Introduction to a Special Issue. *Management Science*, 52(7), 1109-1115. https://doi.org/10.1287/mnsc.1060.0545
+
 Von Krogh, G., & Spaeth, S. (2017). The effect of project-based learning on open source software development. *Information Systems Research*, 28(3), 643-662. https://doi.org/10.1287/isre.2017.0709
+
 W3C. (2023). *About W3C*. World Wide Web Consortium. https://www.w3.org/about/
+
 Weber, S. (2004). *The success of open source*. Harvard University Press.
+
 West, J., & Gallagher, S. (2006). Challenges of open innovation: The paradox of firm investment in open-source software. *R&D Management*, 36(3), 319-331. https://doi.org/10.1111/j.1467-9310.2006.00436.x
+
 Wheeler, D. A. (2007). *Why open source software / free software (OSS/FS)? Look at the numbers!*. Institute for Defense Analyses. https://www.dwheeler.com/oss_fs_why.html
+
 Wikipedia contributors. (2023). *About Wikipedia*. Wikipedia. https://en.wikipedia.org/wiki/Wikipedia:About
+
 World Bank. (2016). *World Development Report 2016: Digital Dividends*. World Bank Publications. https://www.worldbank.org/en/publication/wdr2016
+
 World Bank. (2019). *Digital development: The World Bank Group's vision for the digital age*. World Bank Publications. https://www.worldbank.org/en/topic/digitaldevelopment
+
 Yin, R. K. (2018). *Case study research and applications: Design and methods* (6th ed.). Sage Publications.

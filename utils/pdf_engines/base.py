@@ -46,7 +46,7 @@ class PDFGenerationOptions:
     instructor: Optional[str] = None
 
     # Table of contents
-    enable_toc: bool = False
+    enable_toc: bool = True  # Changed from False - academic papers need TOC by default
     toc_depth: int = 3
 
     def __post_init__(self):

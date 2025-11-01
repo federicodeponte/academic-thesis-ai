@@ -60,9 +60,10 @@ The input thesis is typically 7,000-10,000 words. You must ADD approximately **6
 
 ### 1. YAML Frontmatter (Lines 1-17)
 
-Add at the very beginning of the document:
+Add at the very beginning of the document. **CRITICAL: Output the YAML directly - DO NOT wrap in ```yaml code fences.**
 
-```yaml
+The YAML frontmatter must start on line 1 with three dashes (---) and end with three dashes (---). Output it exactly as shown below WITHOUT any code fence markers:
+
 ---
 title: "[Exact thesis title from original]"
 subtitle: "AI-Generated Academic Thesis Showcase"
@@ -80,7 +81,8 @@ system_capabilities: "Research any academic topic • Generate original framewor
 call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/academic-thesis-ai"
 license: "MIT - Use it, fork it, improve it, publish with it"
 ---
-```
+
+**FORMATTING REQUIREMENT:** The YAML block must be output directly in your response starting from line 1. Do NOT use markdown code fences (```yaml) around it.
 
 **Instructions:**
 - Calculate word count by analyzing thesis length
@@ -431,6 +433,11 @@ Add **3-5 comprehensive tables** and **1-2 ASCII figures** throughout the thesis
 
 **Placement:** In Methodology or Theoretical Framework sections
 
+**CRITICAL CHARACTER REQUIREMENTS:**
+- **USE ONLY ASCII characters:** + - | / \ (plus, minus, pipe, slashes)
+- **NEVER use Unicode box-drawing:** ┌ ─ │ └ ┬ ▼ ► ◄ (these break PDF export)
+- All diagrams must render correctly with basic ASCII (characters 32-126 only)
+
 **Format:**
 
 ```markdown
@@ -443,25 +450,36 @@ Add **3-5 comprehensive tables** and **1-2 ASCII figures** throughout the thesis
 \`\`\`
 [ASCII diagram showing relationships, flow, or structure]
 
-Example for conceptual frameworks:
-┌─────────────────────────────────────────┐
-│         [MAIN CONCEPT]                  │
-└─────────────────┬───────────────────────┘
-                  │
-     ┌────────────┴────────────┐
-     │                         │
-┌────▼──────┐          ┌───────▼─────┐
-│ [Element1]│          │  [Element2] │
-└────┬──────┘          └───────┬─────┘
-     │                         │
-     └───────────┬─────────────┘
-                 │
-         ┌───────▼────────┐
-         │   [OUTCOME]    │
-         └────────────────┘
+Example for conceptual frameworks (ASCII-ONLY):
++-----------------------------------------+
+|         [MAIN CONCEPT]                  |
++-------------------+---------------------+
+                    |
+        +-----------+-----------+
+        |                       |
+    +---v-------+          +----v------+
+    | [Element1]|          | [Element2]|
+    +-----+-----+          +-----+-----+
+          |                      |
+          +----------+-----------+
+                     |
+              +------v-------+
+              |  [OUTCOME]   |
+              +--------------+
+
+Alternative styles (all ASCII-only):
+- Boxes: +---+ or *---* or #---#
+- Lines: | (vertical) or - (horizontal)
+- Arrows: --> or ==> or v (use repeated chars or letters)
+- Connectors: + (junctions) or / \ (diagonal)
 \`\`\`
 
 *Note: [Explain the relationships shown in the figure. Interpret key connections.]*
+
+**VALIDATION:** Before outputting any diagram, verify:
+1. Contains ONLY these characters: + - | / \ # * = > < v ^ (and alphanumeric/space)
+2. Does NOT contain: ┌ ─ │ └ ┬ ▼ ◄ ► or any Unicode >127
+3. Renders correctly in plain text editors
 
 ---
 ```

@@ -573,6 +573,33 @@ def main():
     else:
         print("   ✅ Alle Zitate verifiziert (keine [VERIFY] Tags)")
 
+    # Check Bug Fix #5: Language Consistency (NEW - CRITICAL)
+    print("\n✅ Bug Fix #5: Sprachkonsistenz prüfen (100% Deutsch)...")
+    english_patterns = [
+        '## 6. Limitations',
+        '## 7. Future Research',
+        '## 8. Conclusion',
+        '**Section:**',
+        '**Word Count:**',
+        'Table 1:',  # Should be "Tabelle 1:"
+        'Figure 1:',  # Should be "Abbildung 1:"
+        '## Content',  # Should be "## Inhalt"
+        'Draft v1',  # Should be "Entwurf v1"
+    ]
+
+    found_english = []
+    for pattern in english_patterns:
+        if pattern in enhanced_content:
+            found_english.append(pattern)
+
+    if found_english:
+        issues.append(f"❌ English content found: {', '.join(found_english)}")
+        manual_interventions += len(found_english)
+        print(f"   ❌ Englische Muster gefunden: {found_english}")
+        print(f"   ❌ {len(found_english)} Stellen benötigen Übersetzung")
+    else:
+        print("   ✅ 100% Deutscher Inhalt (keine englischen Abschnitte)")
+
     # ====================================================================
     # SUMMARY
     # ====================================================================

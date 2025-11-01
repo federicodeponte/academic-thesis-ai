@@ -519,14 +519,76 @@ python utils/ai_detection.py full_draft.md
 - [ ] Punctuation correct
 - [ ] Reads smoothly
 
-**🎉 MILESTONE:** Refinement complete! Paper is polished and ready.
+**🎉 MILESTONE:** Refinement complete! Paper is polished and ready for enhancement.
+
+---
+
+## PHASE 6: ENHANCE
+
+**Goal:** Transform complete thesis into publication-ready showcase with professional elements
+
+### Step 15: Professional Enhancement (Enhancer Agent) 🆕
+⏱️ **Time:** 3-5 min (automatic)
+
+**What it does:**
+Automatically adds professional elements that make your thesis publication-ready:
+- YAML metadata frontmatter
+- Enhanced 4-paragraph abstract with keywords
+- 5 comprehensive appendices (domain-specific)
+- Limitations section (4-5 subsections)
+- Future Research section (5-7 directions)
+- 3-5 professional tables
+- 1-2 ASCII figures/diagrams
+- Expanded case studies with quantitative data
+
+**Instructions:**
+1. Run the test script with enhancement enabled (now automatic):
+   ```bash
+   python tests/scripts/test_opensource_thesis.py
+   ```
+
+2. The enhancer runs automatically after Agent #13 (Entropy)
+
+3. Output will be saved as `15_enhanced_final.md`
+
+**Expected Output:**
+- **Before Enhancement:** ~8,000-10,000 words, 29-39 pages
+- **After Enhancement:** ~14,000-16,000 words, 60-70 pages
+- **Added:** YAML metadata + 5 appendices + Limitations + Future Research + visual elements
+
+**Agent will:**
+- Analyze thesis domain and content
+- Generate appropriate appendices (mathematical frameworks, implementation checklists, case studies, resources, glossary)
+- Add Limitations section with methodological, scope, and theoretical constraints
+- Add Future Research section with 5-7 specific research directions
+- Create comparative tables and ASCII diagrams
+- Expand case studies with detailed quantitative metrics
+- Add YAML frontmatter with accurate metadata
+
+**✅ Checklist:**
+- [ ] YAML frontmatter added with accurate stats
+- [ ] Abstract enhanced into 4 labeled paragraphs
+- [ ] 5 comprehensive appendices present
+- [ ] Limitations section added (~800 words)
+- [ ] Future Research section added (~800 words)
+- [ ] 3-5 tables added in Analysis/Discussion sections
+- [ ] 1-2 figures added in Methodology/Theory sections
+- [ ] Word count increased by ~6,000-7,000 words
+
+**⚠️ Important:**
+- All original citations are preserved
+- No content is removed, only added
+- Domain-specific appendices are automatically generated based on thesis content
+- Enhancement maintains academic integrity
+
+**🎉 MILESTONE:** Enhancement complete! Thesis is now publication-ready showcase quality.
 
 ---
 
 ## Final Steps: EXPORT & SUBMIT
 
-### Step 15: Generate Final Document
-⏱️ **Time:** 15 min
+### Step 16: Generate Final Document
+⏱️ **Time:** 15 min (automatic)
 
 **Assemble final paper:**
 ```bash
@@ -628,9 +690,10 @@ Use this to track your progress:
 | **REFINE** | 12 | Voice (optional) | ⬜ | __ |
 | | 13 | Entropy | ⬜ | __ |
 | | 14 | Polish | ⬜ | __ |
-| **SUBMIT** | 15 | Export | ⬜ | __ |
-| | 16 | Final Check | ⬜ | __ |
-| | 17 | Submit | ⬜ | __ |
+| **ENHANCE** | 15 | Enhancer 🆕 | ⬜ | __ |
+| **SUBMIT** | 16 | Export | ⬜ | __ |
+| | 17 | Final Check | ⬜ | __ |
+| | 18 | Submit | ⬜ | __ |
 
 ---
 

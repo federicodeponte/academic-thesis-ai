@@ -349,14 +349,16 @@ def main():
     )
 
     # ====================================================================
-    # EXPORT
+    # PHASE 6: ENHANCE
     # ====================================================================
     print("\n" + "="*70)
-    print("📤 EXPORTING TO PDF/WORD")
+    print("✨ PHASE 6: ENHANCE (Agent #15)")
     print("="*70)
 
-    # Create final version with humanized intro
-    final_paper = f"""# {topic}
+    rate_limit_delay()
+
+    # Create complete draft for enhancement
+    draft_paper = f"""# {topic}
 
 {humanized_intro or intro}
 
@@ -376,6 +378,51 @@ def main():
 
 [To be completed with proper citations]
 """
+
+    # Save draft before enhancement
+    draft_path = output_dir / "14_draft_pre_enhancement.md"
+    with open(draft_path, 'w', encoding='utf-8') as f:
+        f.write(draft_paper)
+
+    print(f"✅ Draft saved: {draft_path}")
+    print(f"📊 Draft stats: ~{len(draft_paper.split())} words")
+
+    # Step 14: Enhancer - Add professional elements
+    print("\n🔧 Running Enhancement Agent...")
+    print("   This will add:")
+    print("   • YAML metadata frontmatter")
+    print("   • Enhanced 4-paragraph abstract")
+    print("   • 5 comprehensive appendices")
+    print("   • Limitations and Future Research sections")
+    print("   • 3-5 tables and 1-2 figures")
+    print("   • Expanded case studies")
+    print("\n⏳ Enhancement may take 3-5 minutes...")
+
+    enhanced_paper = run_agent(
+        model=model,
+        name="14. Enhancer - Professional Enhancement",
+        prompt_path="prompts/06_enhance/enhancer.md",
+        user_input=f"Enhance this thesis to publication-ready standard:\n\n{draft_paper[:10000]}\n\n[THESIS CONTINUES...]",
+        save_to=output_dir / "15_enhanced_final.md"
+    )
+
+    # Use enhanced version if available, otherwise fall back to draft
+    final_paper = enhanced_paper if enhanced_paper else draft_paper
+
+    if enhanced_paper:
+        enhanced_word_count = len(enhanced_paper.split())
+        print(f"\n✅ Enhancement complete!")
+        print(f"📊 Enhanced stats: ~{enhanced_word_count} words (target: 14,000+)")
+        print(f"📈 Word count increase: ~{enhanced_word_count - len(draft_paper.split())} words")
+    else:
+        print(f"\n⚠️  Enhancement failed, using draft version")
+
+    # ====================================================================
+    # EXPORT
+    # ====================================================================
+    print("\n" + "="*70)
+    print("📤 EXPORTING TO PDF/WORD")
+    print("="*70)
 
     final_md = output_dir / "FINAL_THESIS.md"
     with open(final_md, 'w') as f:

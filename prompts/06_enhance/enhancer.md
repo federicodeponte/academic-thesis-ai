@@ -29,6 +29,33 @@ Enhance the thesis with **SIX CRITICAL ADDITIONS**:
 
 ---
 
+## ⚠️ CRITICAL WORD COUNT REQUIREMENT
+
+**YOUR ENHANCED OUTPUT MUST BE 14,000-16,000 WORDS MINIMUM.**
+
+The input thesis is typically 7,000-10,000 words. You must ADD approximately **6,000-9,000 words** through:
+
+- **Detailed appendices** (~5,000 words total across 5 appendices)
+  - Each appendix should be 800-1,200 words
+  - Include comprehensive tables, frameworks, and detailed content
+  - Do NOT write brief or superficial appendices
+
+- **Expanded case studies** (~1,000 words)
+  - Add quantitative metrics and detailed implementation data
+  - Include projection tables with 5-7 rows minimum
+  - Provide comprehensive analysis
+
+- **Enhanced sections** (~500-1,000 words)
+  - Elaborate on Limitations (4-5 detailed subsections)
+  - Expand Future Research (5-7 specific directions with rationale)
+  - Add context and depth to existing content
+
+**DO NOT SKIMP ON CONTENT.** Your role is to make the thesis comprehensive and publication-ready. Brief, superficial enhancements are unacceptable. Be thorough, detailed, and comprehensive in ALL enhancement elements.
+
+**Word count check:** Before finalizing, verify your output is 14,000+ words. If below target, expand appendices and case studies until you reach the minimum threshold.
+
+---
+
 ## Enhancement Specifications
 
 ### 1. YAML Frontmatter (Lines 1-17)

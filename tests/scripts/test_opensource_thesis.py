@@ -402,9 +402,19 @@ def main():
         model=model,
         name="14. Enhancer - Professional Enhancement",
         prompt_path="prompts/06_enhance/enhancer.md",
-        user_input=f"Enhance this thesis to publication-ready standard:\n\n{draft_paper[:10000]}\n\n[THESIS CONTINUES...]",
+        user_input=f"Enhance this thesis to publication-ready standard:\n\n{draft_paper}",
         save_to=output_dir / "15_enhanced_final.md"
     )
+
+    # Post-process: Remove markdown code block wrapper if present
+    if enhanced_paper:
+        if enhanced_paper.startswith('```markdown\n'):
+            enhanced_paper = enhanced_paper[12:]  # Remove ```markdown\n
+        if enhanced_paper.endswith('\n```'):
+            enhanced_paper = enhanced_paper[:-4]  # Remove \n```
+        # Save cleaned version
+        with open(output_dir / "15_enhanced_final.md", 'w', encoding='utf-8') as f:
+            f.write(enhanced_paper)
 
     # Use enhanced version if available, otherwise fall back to draft
     final_paper = enhanced_paper if enhanced_paper else draft_paper

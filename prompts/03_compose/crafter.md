@@ -23,6 +23,88 @@ Given a formatted outline and research materials, you will write specific sectio
 
 ---
 
+## ⚠️ CRITICAL: LANGUAGE CONSISTENCY REQUIREMENT
+
+**BEFORE GENERATING ANY CONTENT, DETERMINE THE INPUT THESIS LANGUAGE FROM THE RESEARCH/OUTLINE MATERIALS.**
+
+If research materials and outline are in a **non-English language** (German, Spanish, French, etc.), **ALL SECTION CONTENT AND METADATA MUST BE IN THE SAME LANGUAGE.**
+
+### Language Enforcement Checklist
+
+**✅ MUST match input language:**
+- ✅ Section metadata field: "Section:" → "Abschnitt:" (German) / "Sección:" (Spanish) / "Section:" (French)
+- ✅ Word count field: "Word Count:" → "Wortzahl:" (German) / "Recuento de palabras:" (Spanish) / "Nombre de mots:" (French)
+- ✅ Status field: "Draft v1" → "Entwurf v1" (German) / "Borrador v1" (Spanish) / "Brouillon v1" (French)
+- ✅ Status field: "Draft v2" → "Entwurf v2" (German) / "Borrador v2" (Spanish) / "Brouillon v2" (French)
+- ✅ Content header: "Content" → "Inhalt" (German) / "Contenido" (Spanish) / "Contenu" (French)
+- ✅ Citations header: "Citations Used" → "Verwendete Zitate" (German) / "Citas utilizadas" (Spanish) / "Citations utilisées" (French)
+- ✅ Notes header: "Notes for Revision" → "Hinweise zur Überarbeitung" (German) / "Notas para revisión" (Spanish) / "Notes pour révision" (French)
+- ✅ Word count breakdown: "Word Count Breakdown" → "Wortzahl-Aufschlüsselung" (German) / "Desglose del recuento" (Spanish) / "Répartition du nombre de mots" (French)
+- ✅ ALL section content prose in target language
+
+### Common Translation Patterns
+
+**German:**
+- Section → Abschnitt
+- Word Count → Wortzahl
+- Status → Status (same)
+- Draft v1 / Draft v2 → Entwurf v1 / Entwurf v2
+- Content → Inhalt
+- Citations Used → Verwendete Zitate
+- Notes for Revision → Hinweise zur Überarbeitung
+- Word Count Breakdown → Wortzahl-Aufschlüsselung
+- Placeholder → Platzhalter
+
+**Spanish:**
+- Section → Sección
+- Word Count → Recuento de palabras
+- Status → Estado
+- Draft v1 / Draft v2 → Borrador v1 / Borrador v2
+- Content → Contenido
+- Citations Used → Citas utilizadas
+- Notes for Revision → Notas para revisión
+
+**French:**
+- Section → Section (same)
+- Word Count → Nombre de mots
+- Status → Statut
+- Draft v1 / Draft v2 → Brouillon v1 / Brouillon v2
+- Content → Contenu
+- Citations Used → Citations utilisées
+- Notes for Revision → Notes pour révision
+
+### Pre-Output Validation
+
+**BEFORE returning the section, run these language checks:**
+
+**For German thesis, these patterns MUST NOT appear:**
+```bash
+grep "**Section:**" output.md      # FAIL - should be "**Abschnitt:**"
+grep "**Word Count:**" output.md   # FAIL - should be "**Wortzahl:**"
+grep "Draft v1" output.md          # FAIL - should be "Entwurf v1"
+grep "Draft v2" output.md          # FAIL - should be "Entwurf v2"
+grep "## Content" output.md        # FAIL - should be "## Inhalt"
+grep "Citations Used" output.md    # FAIL - should be "Verwendete Zitate"
+grep "Notes for Revision" output.md  # FAIL - should be "Hinweise zur Überarbeitung"
+```
+
+**For Spanish thesis, these patterns MUST NOT appear:**
+```bash
+grep "**Section:**" output.md      # FAIL - should be "**Sección:**"
+grep "**Word Count:**" output.md   # FAIL - should be "**Recuento de palabras:**"
+grep "Draft v1" output.md          # FAIL - should be "Borrador v1"
+```
+
+### Zero Tolerance for Language Mixing
+
+**NEVER mix English and target language in ANY part of the output:**
+- ❌ WRONG: German content with English metadata ("Draft v1")
+- ✅ CORRECT: German content with German metadata ("Entwurf v1")
+
+**If input materials are in German/Spanish/French, the ENTIRE output (prose + metadata) must be in that language.**
+
+---
+
 ## Writing Principles
 
 ### Clarity First
@@ -106,12 +188,18 @@ Given a formatted outline and research materials, you will write specific sectio
 
 ## Output Format
 
+**⚠️ IMPORTANT - Language Consistency:**
+- If writing in **German**, use: `**Abschnitt:**` `**Wortzahl:**` `Entwurf v1`
+- If writing in **Spanish**, use: `**Sección:**` `**Recuento de palabras:**` `Borrador v1`
+- If writing in **French**, use: `**Section:**` `**Nombre de mots:**` `Brouillon v1`
+- If writing in **English**, use: `**Section:**` `**Word Count:**` `Draft v1`
+
 ```markdown
 # [Section Title]
 
-**Section:** [e.g., Introduction, Methods, Results]
-**Word Count:** [Target]
-**Status:** Draft v1
+**Section:** [e.g., Introduction, Methods, Results] / **Abschnitt:** (German) / **Sección:** (Spanish)
+**Word Count:** [Target] / **Wortzahl:** (German) / **Recuento de palabras:** (Spanish)
+**Status:** Draft v1 / Entwurf v1 (German) / Borrador v1 (Spanish) / Brouillon v1 (French)
 
 ---
 

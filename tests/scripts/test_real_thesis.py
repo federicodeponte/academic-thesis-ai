@@ -345,16 +345,16 @@ def main():
         save_to=output_dir / "13_humanized_intro.md"
     )
 
-    # ====================================================================
-    # PHASE 6: ENHANCE
-    # ====================================================================
-    print("\n" + "="*70)
-    print("✨ PHASE 6: ENHANCE (Agent #15)")
-    print("="*70)
-
     rate_limit_delay()
 
-    # Create complete draft for enhancement
+    # ====================================================================
+    # PHASE 6: CITATION VERIFICATION
+    # ====================================================================
+    print("\n" + "="*70)
+    print("✅ PHASE 6: CITATION VERIFICATION (Agent #14)")
+    print("="*70)
+
+    # Create complete draft for citation verification
     draft_paper = f"""# {topic}
 
 {humanized_intro or intro}
@@ -376,15 +376,51 @@ def main():
 [To be completed with proper citations]
 """
 
-    # Save draft before enhancement
-    draft_path = output_dir / "14_draft_pre_enhancement.md"
+    # Save draft before citation verification
+    draft_path = output_dir / "14_draft_pre_citation_check.md"
     with open(draft_path, 'w', encoding='utf-8') as f:
         f.write(draft_paper)
 
     print(f"✅ Draft saved: {draft_path}")
     print(f"📊 Draft stats: ~{len(draft_paper.split())} words")
 
-    # Step 14: Enhancer - Add professional elements
+    # Step 14: Citation Verifier - Complete [VERIFY] placeholders
+    print("\n🔍 Running Citation Verifier...")
+    print("   This will:")
+    print("   • Find all [VERIFY] citation placeholders")
+    print("   • Complete missing metadata (year, publisher, DOI)")
+    print("   • Validate APA 7th edition format")
+    print("   • Output: 100% verified citations")
+    print("\n⏳ Citation verification may take 2-3 minutes...")
+
+    verified_paper = run_agent(
+        model=model,
+        name="14. Citation Verifier - Complete Citations",
+        prompt_path="prompts/05_refine/citation_verifier.md",
+        user_input=f"Complete all [VERIFY] citation placeholders in this thesis:\n\n{draft_paper}",
+        save_to=output_dir / "15_verified_citations.md"
+    )
+
+    # Use verified version if available, otherwise fall back to draft
+    paper_for_enhancement = verified_paper if verified_paper else draft_paper
+
+    if verified_paper:
+        verified_word_count = len(verified_paper.split())
+        print(f"\n✅ Citation verification complete!")
+        print(f"📊 Verified thesis: ~{verified_word_count} words")
+    else:
+        print(f"\n⚠️  Citation verification failed, using draft with [VERIFY] tags")
+
+    rate_limit_delay()
+
+    # ====================================================================
+    # PHASE 7: ENHANCE
+    # ====================================================================
+    print("\n" + "="*70)
+    print("✨ PHASE 7: ENHANCE (Agent #15)")
+    print("="*70)
+
+    # Step 15: Enhancer - Add professional elements
     print("\n🔧 Running Enhancement Agent...")
     print("   This will add:")
     print("   • YAML metadata frontmatter")
@@ -397,10 +433,10 @@ def main():
 
     enhanced_paper = run_agent(
         model=model,
-        name="14. Enhancer - Professional Enhancement",
+        name="15. Enhancer - Professional Enhancement",
         prompt_path="prompts/06_enhance/enhancer.md",
-        user_input=f"Enhance this thesis to publication-ready standard:\n\n{draft_paper}",
-        save_to=output_dir / "15_enhanced_final.md"
+        user_input=f"Enhance this thesis to publication-ready standard:\n\n{paper_for_enhancement}",
+        save_to=output_dir / "16_enhanced_final.md"
     )
 
     # Post-process: Remove markdown code block wrapper if present
@@ -410,11 +446,11 @@ def main():
         if enhanced_paper.endswith('\n```'):
             enhanced_paper = enhanced_paper[:-4]  # Remove \n```
         # Save cleaned version
-        with open(output_dir / "15_enhanced_final.md", 'w', encoding='utf-8') as f:
+        with open(output_dir / "16_enhanced_final.md", 'w', encoding='utf-8') as f:
             f.write(enhanced_paper)
 
-    # Use enhanced version if available, otherwise fall back to draft
-    final_paper = enhanced_paper if enhanced_paper else draft_paper
+    # Use enhanced version if available, otherwise fall back to verified or draft
+    final_paper = enhanced_paper if enhanced_paper else (verified_paper if verified_paper else draft_paper)
 
     if enhanced_paper:
         enhanced_word_count = len(enhanced_paper.split())
@@ -422,7 +458,7 @@ def main():
         print(f"📊 Enhanced stats: ~{enhanced_word_count} words (target: 14,000+)")
         print(f"📈 Word count increase: ~{enhanced_word_count - len(draft_paper.split())} words")
     else:
-        print(f"\n⚠️  Enhancement failed, using draft version")
+        print(f"\n⚠️  Enhancement failed, using {'verified' if verified_paper else 'draft'} version")
 
     # ====================================================================
     # EXPORT

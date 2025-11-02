@@ -77,6 +77,89 @@ def export_pdf(
         return False
 
 
+def _normalize_yaml_for_pandoc(md_content: str) -> str:
+    """
+    Normalize YAML frontmatter field names to English for Pandoc compatibility.
+
+    Pandoc only recognizes English field names (title, subtitle, author, date)
+    for creating styled paragraphs in DOCX/PDF output. This function translates
+    localized field names back to English while preserving the field values.
+
+    Supported translations:
+    - German: titel→title, untertitel→subtitle, autor→author, datum→date
+    - Spanish: título→title, subtítulo→subtitle, autor→author, fecha→date
+    - French: titre→title, sous-titre→subtitle, auteur→author, date→date
+
+    Args:
+        md_content: Markdown content with YAML frontmatter
+
+    Returns:
+        Markdown content with normalized YAML field names
+    """
+    import re
+
+    # Translation map: localized → English
+    field_translations = {
+        # German
+        'titel:': 'title:',
+        'untertitel:': 'subtitle:',
+        'autor:': 'author:',
+        'datum:': 'date:',
+        'wortzahl:': 'word_count:',
+        'seitenzahl:': 'page_count:',
+        'sprache:': 'language:',
+        'thema:': 'topic:',
+        'schlagwörter:': 'keywords:',
+        'qualitäts_bewertung:': 'quality_score:',
+        'system_ersteller:': 'system_creator:',
+        'zitate_verifiziert:': 'citations_verified:',
+        'visuelle_elemente:': 'visual_elements:',
+        'generierungs_methode:': 'generation_method:',
+        'beschreibung_showcase:': 'showcase_description:',
+        'system_fähigkeiten:': 'system_capabilities:',
+        'aufruf_zur_aktion:': 'call_to_action:',
+        'lizenz:': 'license:',
+
+        # Spanish
+        'título:': 'title:',
+        'subtítulo:': 'subtitle:',
+        'fecha:': 'date:',
+        'recuento_de_palabras:': 'word_count:',
+        'idioma:': 'language:',
+
+        # French
+        'titre:': 'title:',
+        'sous-titre:': 'subtitle:',
+        'auteur:': 'author:',
+        'nombre_de_mots:': 'word_count:',
+        'langue:': 'language:',
+    }
+
+    # Only process if YAML frontmatter exists
+    if not md_content.strip().startswith('---'):
+        return md_content
+
+    # Extract YAML frontmatter
+    parts = md_content.split('---', 2)
+    if len(parts) < 3:
+        return md_content
+
+    yaml_content = parts[1]
+    rest_content = parts[2]
+
+    # Translate field names (case-insensitive)
+    for localized, english in field_translations.items():
+        yaml_content = re.sub(
+            f'^{re.escape(localized)}',
+            english,
+            yaml_content,
+            flags=re.MULTILINE | re.IGNORECASE
+        )
+
+    # Reconstruct markdown
+    return f'---{yaml_content}---{rest_content}'
+
+
 def export_docx_basic(md_file: Path, output_docx: Path) -> bool:
     """
     Export markdown to DOCX format using basic python-docx parsing.
@@ -106,7 +189,11 @@ def export_docx_basic(md_file: Path, output_docx: Path) -> bool:
     try:
         # Read markdown
         with open(md_file, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
+            md_content = f.read()
+
+        # Normalize YAML for Pandoc (translate localized field names to English)
+        md_content = _normalize_yaml_for_pandoc(md_content)
+        lines = md_content.splitlines(keepends=True)
 
         # Create document
         doc = Document()
@@ -227,6 +314,26 @@ def export_docx(
         return export_docx_basic(md_file, output_docx)
 
     try:
+        # Read and normalize YAML field names for Pandoc compatibility
+        # (Pandoc only recognizes English field names like 'title', 'author', 'date')
+        with open(md_file, 'r', encoding='utf-8') as f:
+            md_content = f.read()
+
+        md_content = _normalize_yaml_for_pandoc(md_content)
+
+        # Write normalized content to temporary file for Pandoc
+        import tempfile
+        temp_md = None
+        try:
+            temp_fd, temp_path = tempfile.mkstemp(suffix='.md', text=True)
+            temp_md = Path(temp_path)
+            with open(temp_md, 'w', encoding='utf-8') as f:
+                f.write(md_content)
+        finally:
+            if temp_fd:
+                import os
+                os.close(temp_fd)
+
         # Locate reference document
         reference_doc = Path(__file__).parent.parent / "examples" / "custom-reference.docx"
 
@@ -235,10 +342,10 @@ def export_docx(
             print("   Continuing without reference document (may lose some formatting)")
             reference_doc = None
 
-        # Build pandoc command
+        # Build pandoc command (use normalized temp file)
         cmd = [
             'pandoc',
-            str(md_file),
+            str(temp_md),  # Use normalized markdown instead of original
             '-o', str(output_docx),
             '--from', 'markdown',
             '--to', 'docx',
@@ -300,6 +407,10 @@ def export_docx(
     except Exception as e:
         print(f"❌ DOCX generation failed: {str(e)}")
         return False
+    finally:
+        # Clean up temporary markdown file
+        if temp_md and temp_md.exists():
+            temp_md.unlink()
 
 
 def show_available_engines() -> None:

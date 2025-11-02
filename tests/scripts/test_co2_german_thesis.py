@@ -429,28 +429,14 @@ def main():
         print(f"📊 Verifizierte Arbeit: ~{verified_word_count} Wörter")
 
         # CRITICAL: Validate that all [VERIFY] placeholders were removed
-        verify_count = verified_paper.count('[VERIFY]')
+        from utils.citation_validation import validate_citation_verification, print_validation_report
 
-        if verify_count > 0:
-            print(f"\n⚠️  WARNUNG: {verify_count} [VERIFY] Platzhalter verbleiben!")
+        validation_result = validate_citation_verification(verified_paper, language='german')
+        print_validation_report(validation_result, verbose=True)
 
-            # Extract locations for debugging
-            lines_with_verify = [
-                (i+1, line.strip())
-                for i, line in enumerate(verified_paper.split('\n'))
-                if '[VERIFY]' in line
-            ]
-
-            print("\n📍 Fundorte:")
-            for line_num, line in lines_with_verify[:10]:  # Show first 10
-                preview = line[:100] + "..." if len(line) > 100 else line
-                print(f"  Zeile {line_num}: {preview}")
-
-            print("\n⚠️  Zitatprüfung UNVOLLSTÄNDIG - manuelle Überprüfung erforderlich")
-            issues.append(f"❌ {verify_count} [VERIFY] Platzhalter verbleiben")
+        if not validation_result['success']:
+            issues.append(f"❌ {validation_result['count']} [VERIFY] Platzhalter verbleiben")
             manual_interventions += 1
-        else:
-            print(f"\n✅ Alle [VERIFY] Platzhalter erfolgreich entfernt!")
     else:
         print(f"\n⚠️  Zitatprüfung fehlgeschlagen, nutze Entwurf mit [VERIFY] Tags")
 

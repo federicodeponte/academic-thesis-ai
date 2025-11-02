@@ -413,28 +413,14 @@ def main():
         print(f"📊 Verified thesis: ~{verified_word_count} words")
 
         # CRITICAL: Validate that all [VERIFY] placeholders were removed
-        verify_count = verified_paper.count('[VERIFY]')
+        from utils.citation_validation import validate_citation_verification, print_validation_report
 
-        if verify_count > 0:
-            print(f"\n⚠️  WARNING: {verify_count} [VERIFY] placeholders remain!")
+        validation_result = validate_citation_verification(verified_paper, language='english')
+        print_validation_report(validation_result, verbose=True)
 
-            # Extract locations for debugging
-            lines_with_verify = [
-                (i+1, line.strip())
-                for i, line in enumerate(verified_paper.split('\n'))
-                if '[VERIFY]' in line
-            ]
-
-            print("\n📍 Locations:")
-            for line_num, line in lines_with_verify[:10]:  # Show first 10
-                preview = line[:100] + "..." if len(line) > 100 else line
-                print(f"  Line {line_num}: {preview}")
-
-            print("\n⚠️  Citation verification INCOMPLETE - manual review required")
-            issues.append(f"❌ {verify_count} [VERIFY] placeholders remaining")
+        if not validation_result['success']:
+            issues.append(f"❌ {validation_result['count']} [VERIFY] placeholders remaining")
             manual_interventions += 1
-        else:
-            print(f"\n✅ All [VERIFY] placeholders successfully removed!")
     else:
         print(f"\n⚠️  Citation verification failed, using draft with [VERIFY] tags")
 

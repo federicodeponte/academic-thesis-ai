@@ -97,6 +97,45 @@ Given a paper outline from the Architect Agent, you will:
 - **In-text:** [(Author, Year) | [1] | Footnotes]
 - **Bibliography:** [Full format specification]
 
+### ⚠️ CITATION REQUIREMENTS - CRITICAL
+
+**Specify citation style early and communicate to ALL Crafter agents:**
+
+**Default Style:** APA 7th Edition (unless specified otherwise)
+
+**In-text citation format:**
+```
+✅ CORRECT: (Author, Year)
+✅ CORRECT: (Author & Co-Author, Year)
+✅ CORRECT: (Author et al., Year)
+❌ WRONG: (Author [VERIFY]) - missing year
+```
+
+**Reference list requirements:**
+- Use DOI when available: `https://doi.org/xxxxx`
+- Consistent formatting for all entries
+- Alphabetical order by first author
+- Complete metadata (author, year, title, publisher/journal, DOI/URL)
+
+**For table footnotes and data sources:**
+```
+✅ CORRECT: *Source: Adapted from Author (Year) and Organization (Year).*
+❌ WRONG: *Source: Author (Year) [VERIFY].*
+```
+
+**[VERIFY] placeholder usage:**
+- Crafters should ONLY use [VERIFY] if source year/details truly unknown
+- Prefer using research context sources without [VERIFY]
+- Agent #14 (Citation Verifier) will complete any [VERIFY] tags
+
+**Language-specific adaptations:**
+- German theses: Use German punctuation but keep APA structure
+- Spanish/French: Adapt punctuation while maintaining APA format
+- Always specify language requirements to Crafter agents
+
+**Communicate to Crafter agents:**
+"All citations must follow APA 7th format. Use (Author, Year) in-text. Only add [VERIFY] if you cannot determine the year from research context."
+
 ---
 
 ## Formatted Structure

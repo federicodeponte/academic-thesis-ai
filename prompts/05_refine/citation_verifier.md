@@ -93,6 +93,101 @@ Author, A. A. (Year). Title of paper. In Proceedings of Conference Name (pp. pag
 
 ---
 
+## ⚠️ CRITICAL: Table Footnotes and Data Sources
+
+**In addition to in-text citations, you MUST verify citations in:**
+- Table footnotes (e.g., `*Quelle: ... [VERIFY]*`)
+- Figure captions
+- Data source notes
+- Appendix sources
+
+**Common table footnote patterns to scan for:**
+```
+*Quelle: Adaptiert von European Environment Agency (2023) [VERIFY].*
+*Source: Based on Eurostat (2023), IEA (2023) [VERIFY].*
+*Datenquelle: Eigene Berechnungen auf Basis von ... [VERIFY].*
+```
+
+**Process:**
+1. Scan ENTIRE thesis for [VERIFY] tags (not just paragraphs)
+2. Check tables, figures, footnotes, appendices
+3. Complete ALL [VERIFY] placeholders
+
+---
+
+## Language-Specific Citation Rules
+
+### For German Theses (Deutsch)
+
+When processing German academic theses:
+
+**In-text citations:** Use standard APA format (English conventions)
+```
+✅ CORRECT: (Schmidt, 2020)
+✅ CORRECT: (Müller & Weber, 2019)
+✅ CORRECT: (Fischer et al., 2021)
+```
+
+**References section:** Use German punctuation and capitalization
+- Capitalize ALL German nouns in titles (not just first word)
+- Use German punctuation rules for commas/periods
+- "Retrieved from" → "Abgerufen von" OR keep English for APA consistency
+- "et al." → keep "et al." (standard in German academic APA)
+
+**Table footnotes (German):**
+```
+✅ CORRECT: *Quelle: Eigene Darstellung basierend auf Eurostat (2023) und IEA (2023).*
+✅ CORRECT: *Datenquelle: Adaptiert von European Commission (2020, 2024).*
+❌ WRONG: *Quelle: Eurostat (2023) [VERIFY].*
+```
+
+### For Spanish/French Theses
+
+Apply similar language-specific punctuation and capitalization rules while maintaining APA structure.
+
+---
+
+## Verification Priority Order
+
+When completing [VERIFY] placeholders, use this priority order:
+
+### Priority 1: Research Context (HIGHEST)
+- Check the research context/scout output FIRST
+- Use citations already gathered during literature review
+- These are the most reliable sources for this thesis
+
+### Priority 2: Well-Known Publications
+- Official government sources (European Commission, IPCC, IEA)
+- Major academic publishers (Nature, Science, IEEE)
+- Industry standards (ISO, W3C)
+- Historical facts (e.g., Linux released 1991)
+
+### Priority 3: CrossRef API / Academic Databases
+- Use DOI lookup for journal articles (if accessible)
+- Check arXiv for preprints
+- Use Google Scholar for verification (last resort)
+
+### Priority 4: Add Uncertainty Note
+If you cannot verify with high confidence:
+- Add note: `[approximate date]` or `[as cited in Secondary Source]`
+- Prefer "as cited in" for secondary citations
+- NEVER remove [VERIFY] if completely uncertain
+
+### ⛔ NEVER:
+- Fabricate citations or guess publication dates
+- Invent DOIs or URLs
+- Create fake journal names or publishers
+- Use completely unreliable sources
+
+**Example of proper handling:**
+```
+UNCERTAIN: (Schmidt, 20XX [VERIFY])
+✅ GOOD: (Schmidt, 2019 [approximate date])
+❌ BAD: (Schmidt, 2023)  ← guessed year
+```
+
+---
+
 ## Process
 
 ### Step 1: Scan for [VERIFY] Tags

@@ -23,6 +23,66 @@ Given a formatted outline and research materials, you will write specific sectio
 
 ---
 
+## ⚠️ CRITICAL: CITATION REQUIREMENTS
+
+**All citations must follow APA 7th Edition format (unless specified otherwise in outline).**
+
+### In-Text Citation Format
+
+**REQUIRED format:**
+```
+✅ CORRECT: (Author, Year)
+✅ CORRECT: (Author & Co-Author, Year)
+✅ CORRECT: (Author et al., Year)
+✅ CORRECT: According to Smith (2020), ...
+```
+
+**FORBIDDEN formats:**
+```
+❌ WRONG: (Author [VERIFY]) - missing year
+❌ WRONG: (Author, 20XX [VERIFY]) - placeholder year
+❌ WRONG: Smith stated that... - no citation
+```
+
+### [VERIFY] Placeholder Usage
+
+**ONLY use [VERIFY] when absolutely necessary:**
+- If you cannot find the publication year in research context
+- If source details are genuinely missing from research materials
+- If unsure about exact author/year
+
+**Prefer complete citations from research context WITHOUT [VERIFY].**
+
+### Table Footnotes and Data Sources
+
+**For tables, charts, and data visualizations:**
+```
+✅ CORRECT: *Source: Adapted from Author (Year) and Organization (Year).*
+✅ CORRECT: *Quelle: Eigene Darstellung basierend auf Schmidt (2020).*
+❌ WRONG: *Source: Author (Year) [VERIFY].*
+```
+
+**NEVER use [VERIFY] in table footnotes if source is in research context.**
+
+### Reference List Requirements
+
+You do NOT create the References section (that's done by other agents), but your citations will be used to build it. Ensure:
+- Every in-text citation will have complete information
+- Consistent (Author, Year) format throughout
+- Minimize [VERIFY] placeholders
+
+### Language-Specific Citation Format
+
+**For German theses:**
+- In-text: Keep (Author, Year) format in English
+- References: German punctuation and capitalization
+- Example: (Müller, 2020) or (Schmidt & Weber, 2019)
+
+**For Spanish/French theses:**
+- Same principle: APA structure, language-specific punctuation
+
+---
+
 ## ⚠️ CRITICAL: LANGUAGE CONSISTENCY REQUIREMENT
 
 **BEFORE GENERATING ANY CONTENT, DETERMINE THE INPUT THESIS LANGUAGE FROM THE RESEARCH/OUTLINE MATERIALS.**

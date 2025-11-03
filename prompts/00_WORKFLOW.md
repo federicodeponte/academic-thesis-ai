@@ -159,6 +159,36 @@ You'll progress through 5 phases:
 
 **Goal:** Design logical paper structure and argument flow
 
+### Step 3.5: Extract Citations (Citation Manager)
+⏱️ **Time:** 5-10 min (automated)
+
+**Instructions:**
+1. Open `prompts/02_structure/citation_manager.md`
+2. This step extracts all citations from your research materials into a structured database
+3. Open IDE chat
+4. Paste the prompt
+5. **Attach** `research/sources.md` AND `research/summaries.md`
+6. Submit
+
+**Agent will:**
+- Extract all citations from research materials using LLM
+- Create structured citation database (JSON format)
+- Assign citation IDs (cite_001, cite_002, etc.)
+- Validate all required metadata (authors, year, title, etc.)
+- Store in `research/citations.json`
+
+**Save output to:** `research/citations.json`
+
+**✅ Checklist:**
+- [ ] Citation database created successfully
+- [ ] All citations have complete metadata
+- [ ] Citation IDs assigned sequentially
+- [ ] Saved to `research/citations.json`
+
+**📝 Important:** These citation IDs will be used in ALL subsequent sections. Writers will reference `{cite_001}` instead of inline citations like "(Smith, 2023)". This enables 100% deterministic citation formatting in the final step.
+
+---
+
 ### Step 4: Create Outline (Architect Agent)
 ⏱️ **Time:** 1-2 hours
 
@@ -520,6 +550,55 @@ python utils/ai_detection.py full_draft.md
 - [ ] Reads smoothly
 
 **🎉 MILESTONE:** Refinement complete! Paper is polished and ready for enhancement.
+
+---
+
+## PHASE 5.5: CITATION COMPILATION (Agent #14)
+
+**Goal:** Replace citation IDs with formatted citations and generate reference list
+
+### Step 14.5: Compile Citations (Citation Compiler Agent) 🆕
+⏱️ **Time:** Instant (deterministic)
+
+**Instructions:**
+1. This step is AUTOMATIC if you used citation IDs from Step 3.5
+2. The Citation Compiler performs dictionary lookup (O(1) complexity)
+3. **No LLM needed** - This is deterministic compilation
+
+**What happens:**
+```python
+# Your draft has citation IDs:
+Recent studies {cite_001} show effectiveness...
+
+# Citation Compiler replaces them:
+Recent studies (Smith et al., 2023) show effectiveness...
+
+# Reference list is auto-generated from cited IDs
+```
+
+**Agent will:**
+- Scan for all `{cite_XXX}` patterns in thesis
+- Look up each ID in citation database (from Step 3.5)
+- Format according to citation style (APA 7th, IEEE, MLA)
+- Replace IDs with formatted citations
+- Generate reference list with ONLY cited sources
+- Sort references alphabetically (APA style)
+
+**Save output to:** `thesis_with_citations.md`
+
+**✅ Checklist:**
+- [ ] All `{cite_XXX}` IDs replaced
+- [ ] Citations formatted correctly (APA 7th)
+- [ ] Reference list auto-generated
+- [ ] No missing citations
+- [ ] 100% compilation success
+
+**📊 Expected Results:**
+- **Compilation time:** < 1 second (dictionary lookup)
+- **Success rate:** 100% (deterministic)
+- **Missing citations:** 0
+
+**📝 Note:** This replaces the old Agent #14 (Citation Verifier) which searched for `[VERIFY]` tags. The new architecture prevents citation placeholders at the source, ensuring zero manual verification needed.
 
 ---
 

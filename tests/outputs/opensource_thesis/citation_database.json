@@ -1,0 +1,37 @@
+{
+  "citations": [
+    {
+      "id": "cite_001",
+      "authors": [
+        "OpenForum Europe",
+        "Fraunhofer ISI"
+      ],
+      "year": 2021,
+      "title": "The Economic Impact of Open Source Software on the European Economy",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "European Commission",
+      "url": "https://op.europa.eu/en/publication-detail/-/publication/3923a1a9-960c-11eb-b85c-01aa75ed71a1/language-en"
+    },
+    {
+      "id": "cite_002",
+      "authors": [
+        "Nunes",
+        "Gomes"
+      ],
+      "year": 2022,
+      "title": "Open Source Software and Sustainable Development Goals: A Systematic Literature Review",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Sustainability",
+      "doi": "10.3390/su141912444",
+      "url": "https://www.mdpi.com/2071-1050/14/19/12444"
+    }
+  ],
+  "metadata": {
+    "total_citations": 2,
+    "citation_style": "APA 7th",
+    "thesis_language": "english",
+    "extracted_date": "2025-11-02T16:43:24.656917"
+  }
+}

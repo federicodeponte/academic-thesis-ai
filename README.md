@@ -205,7 +205,7 @@ This connects your IDE to arXiv, Semantic Scholar, PubMed, and Google Scholar.
 ### Phase-Based Agent System
 
 ```
-RESEARCH → STRUCTURE → COMPOSE → VALIDATE → REFINE → SUBMIT
+RESEARCH → STRUCTURE → COMPOSE → VALIDATE → REFINE → COMPILE → ENHANCE → SUBMIT
 ```
 
 #### Phase 1: RESEARCH (1-3 days)
@@ -214,11 +214,12 @@ RESEARCH → STRUCTURE → COMPOSE → VALIDATE → REFINE → SUBMIT
 - **Signal Agent** - Identify research gaps and opportunities
 
 #### Phase 2: STRUCTURE (1 day)
+- **Citation Manager** 🆕 - Extract citations into database with IDs
 - **Architect Agent** - Design paper outline and argument flow
 - **Formatter Agent** - Apply journal formatting (IMRaD, IEEE, APA)
 
 #### Phase 3: COMPOSE (2-5 days)
-- **Crafter Agent** - Write sections with proper citations
+- **Crafter Agent** - Write sections with citation IDs (not inline citations)
 - **Thread Agent** - Check narrative consistency
 - **Narrator Agent** - Unify voice and tone
 
@@ -231,6 +232,12 @@ RESEARCH → STRUCTURE → COMPOSE → VALIDATE → REFINE → SUBMIT
 - **Voice Agent** - Match your writing style
 - **Entropy Agent** - Increase natural variation (anti-AI detection)
 - **Polish Agent** - Final grammar and flow
+
+#### Phase 5.5: CITATION COMPILATION (instant) 🆕
+- **Citation Compiler (Agent #14)** 🆕 - Replace citation IDs with formatted citations (APA 7th), auto-generate reference list (100% deterministic)
+
+#### Phase 6: ENHANCEMENT (optional) 🆕
+- **Enhancer (Agent #15)** 🆕 - Add YAML metadata, appendices, tables, figures (transforms 8k-word draft → 14k-word publication-ready thesis)
 
 ---
 

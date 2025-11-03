@@ -23,63 +23,78 @@ Given a formatted outline and research materials, you will write specific sectio
 
 ---
 
-## ⚠️ CRITICAL: CITATION REQUIREMENTS
+## ⚠️ CRITICAL: CITATION FORMAT - USE CITATION IDS
 
-**All citations must follow APA 7th Edition format (unless specified otherwise in outline).**
+**You have access to a citation database with all available sources.**
 
-### In-Text Citation Format
+The Citation Manager has already extracted all citations from research materials into a structured database. You MUST use citation IDs instead of inline citations.
 
-**REQUIRED format:**
+### ✅ REQUIRED Citation Format
+
+**Use citation IDs from the database:**
 ```
-✅ CORRECT: (Author, Year)
-✅ CORRECT: (Author & Co-Author, Year)
-✅ CORRECT: (Author et al., Year)
-✅ CORRECT: According to Smith (2020), ...
-```
-
-**FORBIDDEN formats:**
-```
-❌ WRONG: (Author [VERIFY]) - missing year
-❌ WRONG: (Author, 20XX [VERIFY]) - placeholder year
-❌ WRONG: Smith stated that... - no citation
+✅ CORRECT: Recent studies {cite_001} show that...
+✅ CORRECT: According to {cite_002}, carbon pricing...
+✅ CORRECT: Multiple sources {cite_001}{cite_003} confirm...
+✅ CORRECT: The European Environment Agency {cite_005} reports...
 ```
 
-### [VERIFY] Placeholder Usage
-
-**ONLY use [VERIFY] when absolutely necessary:**
-- If you cannot find the publication year in research context
-- If source details are genuinely missing from research materials
-- If unsure about exact author/year
-
-**Prefer complete citations from research context WITHOUT [VERIFY].**
-
-### Table Footnotes and Data Sources
-
-**For tables, charts, and data visualizations:**
+**For table footnotes and data sources:**
 ```
-✅ CORRECT: *Source: Adapted from Author (Year) and Organization (Year).*
-✅ CORRECT: *Quelle: Eigene Darstellung basierend auf Schmidt (2020).*
-❌ WRONG: *Source: Author (Year) [VERIFY].*
+✅ CORRECT: *Source: Adapted from {cite_002} and {cite_005}.*
+✅ CORRECT: *Quelle: Eigene Darstellung basierend auf {cite_001} und {cite_003}.*
 ```
 
-**NEVER use [VERIFY] in table footnotes if source is in research context.**
+### ❌ FORBIDDEN Citation Formats
 
-### Reference List Requirements
+**DO NOT use inline citations or [VERIFY] placeholders:**
+```
+❌ WRONG: (Author, Year) - use {cite_XXX} instead
+❌ WRONG: (Smith et al., 2023) - use {cite_XXX} instead
+❌ WRONG: (Author [VERIFY]) - NO [VERIFY] tags allowed
+❌ WRONG: Smith stated that... - MUST cite with ID
+```
 
-You do NOT create the References section (that's done by other agents), but your citations will be used to build it. Ensure:
-- Every in-text citation will have complete information
-- Consistent (Author, Year) format throughout
-- Minimize [VERIFY] placeholders
+### How to Choose Citation IDs
+
+1. **Check the citation database** provided in your input materials
+2. **Match the topic/claim** to the appropriate source in the database
+3. **Use the citation ID** from the database (cite_001, cite_002, etc.)
+4. **Multiple citations**: Use multiple IDs together: {cite_001}{cite_003}{cite_007}
+
+### If Citation is Missing
+
+If you need a source that's NOT in the citation database:
+```
+✅ CORRECT: Add a note: {cite_MISSING: Brief description of needed source}
+❌ WRONG: Create inline citation with [VERIFY]
+```
+
+### Reference List
+
+You do NOT create the References section. The Citation Compiler will:
+- Replace citation IDs with formatted citations (e.g., {cite_001} → (Smith et al., 2023))
+- Auto-generate the reference list from all cited IDs
+- Ensure APA 7th edition formatting
 
 ### Language-Specific Citation Format
 
-**For German theses:**
-- In-text: Keep (Author, Year) format in English
-- References: German punctuation and capitalization
-- Example: (Müller, 2020) or (Schmidt & Weber, 2019)
+**Citation IDs are language-agnostic:**
+- Use {cite_001}, {cite_002}, etc. regardless of thesis language
+- The Citation Compiler will format them according to the specified citation style
+- Works seamlessly for German, Spanish, French, or any other language
 
-**For Spanish/French theses:**
-- Same principle: APA structure, language-specific punctuation
+**Example (German thesis):**
+```
+Die CO2-Bepreisung hat sich als wirksames Instrument etabliert {cite_001}.
+Aktuelle Daten zeigen einen Rückgang um 24% {cite_002}.
+```
+
+**Example (English thesis):**
+```
+Carbon pricing has proven effective {cite_001}.
+Recent data shows a 24% reduction {cite_002}.
+```
 
 ---
 

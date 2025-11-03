@@ -33,21 +33,21 @@
 **TODOs/FIXMEs Check:**
 ```bash
 grep -r "TODO\|FIXME\|XXX\|HACK" --include="*.py" --include="*.md" \
-  utils/ prompts/ tests/scripts/test_real_thesis.py docs/architecture/
+  utils/ prompts/ tests/scripts/test_ai_pricing_thesis.py docs/architecture/
 # Result: 0 TODO/FIXME comments found
 ```
 
 **Debug Statements Check:**
 ```bash
 grep -r "import pdb\|pdb.set_trace\|breakpoint()" \
-  utils/citation_*.py tests/scripts/test_real_thesis.py
+  utils/citation_*.py tests/scripts/test_ai_pricing_thesis.py
 # Result: 0 debug statements found
 ```
 
 **Commented-Out Code Check:**
 ```bash
 grep -E "^\s*#\s*(def |class |import |from )" \
-  utils/citation_*.py tests/scripts/test_real_thesis.py
+  utils/citation_*.py tests/scripts/test_ai_pricing_thesis.py
 # Result: 0 commented-out code blocks found
 ```
 
@@ -363,7 +363,7 @@ academic-thesis-ai/
 └── tests/scripts/
     ├── test_citation_system_phase1.py     - Architecture test
     ├── test_citation_phase2_minimal.py    - Integration test
-    └── test_real_thesis.py                - E2E test (UPDATED)
+    └── test_ai_pricing_thesis.py                - E2E test (UPDATED)
 ```
 
 **Onboarding Path for New Developer:**

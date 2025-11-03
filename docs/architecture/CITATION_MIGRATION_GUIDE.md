@@ -1207,7 +1207,7 @@ validation = compiler.validate_compilation(draft, compiled)
 assert validation['missing_citations'] == 0
 ```
 
-**See:** `tests/scripts/test_real_thesis.py` for complete example.
+**See:** `tests/scripts/test_ai_pricing_thesis.py` for complete example.
 
 ---
 

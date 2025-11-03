@@ -21,5 +21,246 @@
       "year": 2022,
       "type": "journal-article"
     }
+  },
+  "10.1111/j.1467-954X.1986.tb00843.x": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1111/j.1365-2575.2011.00378.x": {
+    "status": "verified",
+    "details": "Found: Information security policies in the UK healthcare sector: a critical evaluation",
+    "metadata": {
+      "title": "Information security policies in the UK healthcare sector: a critical evaluation",
+      "authors": [
+        "Stahl",
+        "Doherty",
+        "Shaw"
+      ],
+      "year": 2012,
+      "type": "journal-article"
+    }
+  },
+  "10.1007/978-3-319-79344-2": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1108/eb040149": {
+    "status": "verified",
+    "details": "Found: E\u2010Business",
+    "metadata": {
+      "title": "E\u2010Business",
+      "authors": [
+        "Graham"
+      ],
+      "year": 2001,
+      "type": "journal-article"
+    }
+  },
+  "10.1016/j.compbiomed.2023.106689": {
+    "status": "verified",
+    "details": "Found: Spatio-temporal deep forest for emotion recognition based on facial electromyography signals",
+    "metadata": {
+      "title": "Spatio-temporal deep forest for emotion recognition based on facial electromyography signals",
+      "authors": [
+        "Xu",
+        "Cheng",
+        "Li"
+      ],
+      "year": 2023,
+      "type": "journal-article"
+    }
+  },
+  "10.1080/02681100701633532": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1007/s10916-022-01859-9": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1080/01972240500253492": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1016/j.giq.2021.101662": {
+    "status": "verified",
+    "details": "Found: Unpacking the digitalisation of public services: Configuring work during automation in local government",
+    "metadata": {
+      "title": "Unpacking the digitalisation of public services: Configuring work during automation in local government",
+      "authors": [
+        "Andersson",
+        "Hallin",
+        "Ivory"
+      ],
+      "year": 2022,
+      "type": "journal-article"
+    }
+  },
+  "10.1287/mnsc.1060.0545": {
+    "status": "verified",
+    "details": "Found: Open Source Software User Communities: A Study of Participation in Linux User Groups",
+    "metadata": {
+      "title": "Open Source Software User Communities: A Study of Participation in Linux User Groups",
+      "authors": [
+        "Bagozzi",
+        "Dholakia"
+      ],
+      "year": 2006,
+      "type": "journal-article"
+    }
+  },
+  "10.3390/s22124668": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1111/1467-6451.00174]**": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1787/11a76d1a-en": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1108/09593840510584617": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1257/000282805774670077": {
+    "status": "verified",
+    "details": "Found: Metropolitan-Specific Estimates of the Price Elasticity of Supply of Housing, and Their Sources",
+    "metadata": {
+      "title": "Metropolitan-Specific Estimates of the Price Elasticity of Supply of Housing, and Their Sources",
+      "authors": [
+        "Green",
+        "Malpezzi",
+        "Mayo"
+      ],
+      "year": 2005,
+      "type": "journal-article"
+    }
+  },
+  "10.1177/1049732305276687": {
+    "status": "verified",
+    "details": "Found: Three Approaches to Qualitative Content Analysis",
+    "metadata": {
+      "title": "Three Approaches to Qualitative Content Analysis",
+      "authors": [
+        "Hsieh",
+        "Shannon"
+      ],
+      "year": 2005,
+      "type": "journal-article"
+    }
+  },
+  "10.1111/1467-6451.00174": {
+    "status": "verified",
+    "details": "Found: Some Simple Economics of Open Source",
+    "metadata": {
+      "title": "Some Simple Economics of Open Source",
+      "authors": [
+        "Lerner",
+        "Tirole"
+      ],
+      "year": 2002,
+      "type": "journal-article"
+    }
+  },
+  "10.1080/02681100701633532]**": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1111/j.1467-9310.2006.00436.x": {
+    "status": "verified",
+    "details": "Found: Challenges of open innovation: the paradox of firm investment in open-source software",
+    "metadata": {
+      "title": "Challenges of open innovation: the paradox of firm investment in open-source software",
+      "authors": [
+        "West",
+        "Gallagher"
+      ],
+      "year": 2006,
+      "type": "journal-article"
+    }
+  },
+  "10.5465/amr.1989.4308385": {
+    "status": "verified",
+    "details": "Found: Building Theories from Case Study Research",
+    "metadata": {
+      "title": "Building Theories from Case Study Research",
+      "authors": [
+        "Eisenhardt"
+      ],
+      "year": 1989,
+      "type": "journal-article"
+    }
+  },
+  "10.1016/j.respol.2004.01.006": {
+    "status": "verified",
+    "details": "Found: Panic and panacea: brain drain and science and technology human capital policy",
+    "metadata": {
+      "title": "Panic and panacea: brain drain and science and technology human capital policy",
+      "authors": [
+        "Davenport"
+      ],
+      "year": 2004,
+      "type": "journal-article"
+    }
+  },
+  "10.1287/isre.2017.0709": {
+    "status": "verified",
+    "details": "Found: On Buyer Selection of Service Providers in Online Outsourcing Platforms for IT Services",
+    "metadata": {
+      "title": "On Buyer Selection of Service Providers in Online Outsourcing Platforms for IT Services",
+      "authors": [
+        "Hong",
+        "Pavlou"
+      ],
+      "year": 2017,
+      "type": "journal-article"
+    }
+  },
+  "10.1007/s10639-021-10557-4": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
+  },
+  "10.1016/j.eist.2020.08.001": {
+    "status": "verified",
+    "details": "Found: Anticipated emotions and resistance to innovations: the case of p2p car sharing",
+    "metadata": {
+      "title": "Anticipated emotions and resistance to innovations: the case of p2p car sharing",
+      "authors": [
+        "Valor"
+      ],
+      "year": 2020,
+      "type": "journal-article"
+    }
+  },
+  "10.5210/fm.v6i5.856": {
+    "status": "verified",
+    "details": "Found: Understanding online message dissemination: An analysis of Send-this-story-to-your-friend data",
+    "metadata": {
+      "title": "Understanding online message dissemination: An analysis of Send-this-story-to-your-friend data",
+      "authors": [
+        "Krishnamurthy"
+      ],
+      "year": null,
+      "type": "journal-article"
+    }
+  },
+  "10.3390/su141912444.": {
+    "status": "not_found",
+    "details": "DOI not found in CrossRef database",
+    "metadata": null
   }
 }

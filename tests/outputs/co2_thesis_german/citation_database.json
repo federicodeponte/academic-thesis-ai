@@ -1,0 +1,38 @@
+{
+  "citations": [
+    {
+      "id": "cite_001",
+      "authors": [
+        "Ellerman",
+        "Buchner",
+        "Carraro"
+      ],
+      "year": 2021,
+      "title": "The EU Emissions Trading System: An Economic and Environmental Assessment",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Review of Environmental Economics and Policy",
+      "doi": "10.1093/reep/reab005"
+    },
+    {
+      "id": "cite_002",
+      "authors": [
+        "Pahle",
+        "Edenhofer",
+        "Flachsland"
+      ],
+      "year": 2020,
+      "title": "Carbon Pricing and Deep Decarbonization: A Systematic Review",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Environmental Science & Policy",
+      "doi": "10.1016/j.envsci.2020.01.006"
+    }
+  ],
+  "metadata": {
+    "total_citations": 2,
+    "citation_style": "APA 7th",
+    "thesis_language": "german",
+    "extracted_date": "2025-11-02T18:11:56.442394"
+  }
+}

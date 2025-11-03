@@ -19,6 +19,7 @@ from tests.validators import Section, validate_paper_sections
 from utils.citation_manager import extract_citations_from_text
 from utils.citation_database import save_citation_database, load_citation_database
 from utils.citation_compiler import CitationCompiler
+from utils.text_utils import smart_truncate
 
 
 def main():
@@ -98,7 +99,7 @@ def main():
         model=model,
         name="2. Scribe - Zusammenfassung der Forschung",
         prompt_path="prompts/01_research/scribe.md",
-        user_input=f"**WICHTIG: Antworte auf Deutsch.**\n\nFasse diese Forschungsergebnisse zusammen:\n\n{scout_output[:3000]}",
+        user_input=f"**WICHTIG: Antworte auf Deutsch.**\n\nFasse diese Forschungsergebnisse zusammen:\n\n{smart_truncate(scout_output, max_chars=8000, preserve_json=True)}",
         save_to=output_dir / "02_scribe.md"
     )
 
@@ -109,7 +110,7 @@ def main():
         model=model,
         name="3. Signal - Forschungslücken-Analyse",
         prompt_path="prompts/01_research/signal.md",
-        user_input=f"**WICHTIG: Antworte auf Deutsch.**\n\nAnalysiere Forschungslücken beim CO2-Zertifikatehandel:\n\n{scribe_output[:3000]}",
+        user_input=f"**WICHTIG: Antworte auf Deutsch.**\n\nAnalysiere Forschungslücken beim CO2-Zertifikatehandel:\n\n{smart_truncate(scribe_output, max_chars=8000, preserve_json=False)}",
         save_to=output_dir / "03_signal.md"
     )
 

@@ -233,4 +233,40 @@ This will be used by the next agents (Scribe, Signal) in the workflow.
 
 ---
 
+## ⚠️ OUTPUT VALIDATION REQUIREMENTS
+
+**CRITICAL:** Your output will be automatically validated. The following requirements MUST be met:
+
+### JSON Structure Validation
+1. **Valid JSON**: Output must be parseable JSON with no syntax errors
+2. **Size Limit**: Total output must be < 500KB (approximately 20-50 papers)
+3. **Complete Structure**: Must include all required fields from the output format above
+
+### Content Validation
+4. **No Repetition**: Author names, titles, and all fields must NOT contain repetitive patterns
+   - ❌ WRONG: `"authors": ["G. M. G. M. G. M. G. M. ...]`
+   - ❌ WRONG: `"authors": ["Smith Smith Smith Smith"]`
+   - ✅ CORRECT: `"authors": ["John Smith", "Mary Johnson"]`
+
+5. **Author Name Format**: Each author must be in one of these formats:
+   - Full name: "FirstName LastName" (e.g., "John Smith")
+   - Abbreviated first: "F. LastName" (e.g., "J. Smith")
+   - Multiple initials: "F.M. LastName" (e.g., "J.M. Smith")
+   - NO infinite repetitions, NO identical repeated tokens
+
+6. **Unique Papers**: Each paper in the list must be unique (no duplicates)
+
+7. **Field Completeness**: Every paper must have at minimum:
+   - `rank`, `title`, `authors` (array), `year`, `abstract`
+   - Missing fields should be `null`, not omitted
+
+### Quality Checks
+8. **Author Array**: Must be an array with 1-20 authors (not a string, not empty)
+9. **Year Range**: Must be 1900-2025 (realistic publication years)
+10. **Non-Empty Fields**: `title` and `abstract` must not be empty strings
+
+**If validation fails, your output will be rejected and regenerated. Ensure quality on first attempt.**
+
+---
+
 **Ready to find great papers! What's your research topic?**

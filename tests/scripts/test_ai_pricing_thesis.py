@@ -20,6 +20,7 @@ from tests.test_utils import setup_model, run_agent, rate_limit_delay
 from tests.validators import Section, validate_paper_sections
 from utils.citation_manager import extract_citations_from_text
 from utils.citation_compiler import CitationCompiler
+from utils.text_utils import smart_truncate
 
 
 def main():
@@ -90,7 +91,7 @@ def main():
         model=model,
         name="2. Scribe - Summarize Papers",
         prompt_path="prompts/01_research/scribe.md",
-        user_input=f"Summarize these research findings:\n\n{scout_output[:3000]}",
+        user_input=f"Summarize these research findings:\n\n{smart_truncate(scout_output, max_chars=8000, preserve_json=True)}",
         save_to=output_dir / "02_scribe.md"
     )
 
@@ -101,7 +102,7 @@ def main():
         model=model,
         name="3. Signal - Research Gap Analysis",
         prompt_path="prompts/01_research/signal.md",
-        user_input=f"Analyze research gaps in AI agent pricing:\n\n{scribe_output[:3000]}",
+        user_input=f"Analyze research gaps in AI agent pricing:\n\n{smart_truncate(scribe_output, max_chars=8000, preserve_json=False)}",
         save_to=output_dir / "03_signal.md"
     )
 

@@ -1,77 +1,65 @@
-# 1. EINLEITUNG
+# Einleitung
 
 **Abschnitt:** Einleitung
-**Wortzahl:** 1200 Wörter
+**Wortzahl:** 1.200
 **Status:** Entwurf v1
 
 ---
 
 ## Inhalt
 
-Der Klimawandel stellt eine der größten und komplexesten Herausforderungen des 21. Jahrhunderts dar. Die wissenschaftliche Gemeinschaft ist sich weitgehend einig, dass die anthropogenen Emissionen von Treibhausgasen, insbesondere Kohlendioxid (CO2), maßgeblich für die beobachtete globale Erwärmung verantwortlich sind {cite_MISSING: IPCC Assessment Reports}. Die potenziellen Folgen reichen von extremen Wetterereignissen, dem Anstieg des Meeresspiegels und der Versauerung der Ozeane bis hin zu irreversiblen Veränderungen in Ökosystemen und einer Bedrohung der menschlichen Lebensgrundlagen {cite_MISSING: UNEP Emissions Gap Report}. Angesichts dieser Bedrohung haben sich Staaten weltweit im Pariser Abkommen dazu verpflichtet, die globale Erwärmung deutlich unter 2 °C gegenüber vorindustriellen Werten zu halten und Anstrengungen zu unternehmen, sie auf 1,5 °C zu begrenzen {cite_MISSING: Paris Agreement}. Die Erreichung dieses Ziels erfordert eine tiefgreifende und rasche Dekarbonisierung der Weltwirtschaft, was eine fundamentale Transformation in den Bereichen Energieerzeugung, Industrie, Verkehr und Landwirtschaft bedingt.
+Der Klimawandel stellt eine der größten und komplexesten Herausforderungen des 21. Jahrhunderts dar, dessen weitreichende Auswirkungen von steigenden Meeresspiegeln über extreme Wetterereignisse bis hin zu Bedrohungen der Artenvielfalt reichen {cite_004}. Die wissenschaftliche Gemeinschaft ist sich weitgehend einig über die Dringlichkeit, globale Treibhausgasemissionen drastisch zu reduzieren, um katastrophale Folgen für Ökosysteme und menschliche Gesellschaften abzuwenden {cite_009}. Angesichts dieser existentiellen Bedrohung haben Regierungen weltweit eine Vielzahl von Strategien und politischen Instrumenten entwickelt, um den Übergang zu einer kohlenstoffarmen Wirtschaft zu beschleunigen. Zu den vielversprechendsten und am häufigsten diskutierten Ansätzen gehören marktbasierte Mechanismen, die darauf abzielen, negative Umweltauswirkungen zu internalisieren und Anreize für emissionsminderndes Verhalten zu schaffen.
 
-Um diesen ambitionierten Klimazielen gerecht zu werden, sind effektive politische Instrumente unerlässlich. Traditionelle Regulierungen wie Emissionsstandards oder Subventionen haben sich in bestimmten Kontexten bewährt, stoßen jedoch oft an ihre Grenzen hinsichtlich Kosteneffizienz und Flexibilität. Aus diesem Grund hat sich in den letzten Jahrzehnten ein wachsendes Interesse an marktbasierten Instrumenten entwickelt, die ökonomische Anreize zur Emissionsreduktion schaffen. Zu diesen Instrumenten gehören die CO2-Steuer und der CO2-Zertifikatehandel, auch bekannt als Emissionshandelssysteme (EHS). Beide Ansätze zielen darauf ab, CO2-Emissionen einen Preis zu geben, wodurch externe Kosten internalisiert und Unternehmen sowie Haushalte dazu motiviert werden, emissionsärmere Alternativen zu wählen {cite_002}. Während eine CO2-Steuer einen festen Preis pro Tonne CO2 festlegt, bietet der Emissionshandel einen marktbasierten Mechanismus zur Festlegung des Preises und der Menge der Emissionen.
+Ein solches Instrument, das in den letzten Jahrzehnten erheblich an Bedeutung gewonnen hat, ist der Emissionshandel, insbesondere in Form von CO2-Zertifikatesystemen. Diese Systeme basieren auf dem "Cap-and-Trade"-Prinzip, bei dem eine Obergrenze (Cap) für die gesamten Emissionen festgelegt wird und Unternehmen Emissionszertifikate kaufen oder verkaufen können, um ihre Verpflichtungen zu erfüllen {cite_002}. Der Handel mit diesen Zertifikaten schafft einen Preis für CO2, der Unternehmen dazu anregen soll, in emissionsarme Technologien und Prozesse zu investieren. Der Europäische Emissionshandel (EU ETS), der 2005 eingeführt wurde, gilt als das größte und liquideste Kohlenstoffmarktsystem der Welt und hat als Blaupause für zahlreiche andere regionale und nationale Systeme gedient {cite_001}. Weltweit sind bereits über 70 Kohlenstoffpreisinstrumente in Betrieb oder in Planung, die einen erheblichen Teil der globalen Emissionen abdecken {cite_009}.
 
-Der CO2-Zertifikatehandel, als "Cap-and-Trade"-System konzipiert, funktioniert nach einem einfachen Prinzip: Eine Obergrenze (Cap) für die Gesamtemissionen wird festgelegt, und für jede Tonne CO2-Äquivalent, die emittiert wird, ist ein Emissionszertifikat erforderlich. Diese Zertifikate werden entweder versteigert oder kostenlos zugeteilt und können anschließend auf einem Markt gehandelt werden. Unternehmen, die ihre Emissionen kostengünstig reduzieren können, verkaufen überschüssige Zertifikate, während Unternehmen mit höheren Reduktionskosten zusätzliche Zertifikate kaufen. Dieser Mechanismus soll sicherstellen, dass Emissionsminderungen dort erfolgen, wo sie am kostengünstigsten sind, und somit die Gesamtemissionen bei minimalen volkswirtschaftlichen Kosten reduziert werden {cite_001}. Weltweit wurden verschiedene Emissionshandelssysteme implementiert, darunter das EU-Emissionshandelssystem (EU-EHS), das seit 2005 in Betrieb ist und als das größte und liquideste Kohlenstoffmarkt der Welt gilt. Weitere bedeutende Systeme existieren in Kalifornien, Quebec, China und weiteren Jurisdiktionen, was die wachsende globale Akzeptanz dieses Politikansatzes unterstreicht {cite_MISSING: World Bank Carbon Pricing Dashboard}.
+Trotz der weiten Verbreitung und der theoretischen Attraktivität des Emissionshandels als effizientes Instrument zur Emissionsreduktion, bleibt die empirische Evidenz seiner tatsächlichen Klimaschutzwirkung ein zentrales Thema intensiver wissenschaftlicher und politischer Debatten. Kritiker äußern Bedenken hinsichtlich der Wirksamkeit dieser Systeme, insbesondere in Bezug auf die Festlegung angemessener Obergrenzen, die Volatilität der Zertifikatspreise und potenzielle Verzerrungen des Wettbewerbs, die zu Carbon Leakage führen könnten {cite_003}{cite_008}. Die Frage, ob Emissionshandelssysteme tatsächlich zu signifikanten und nachhaltigen Reduktionen von Treibhausgasemissionen führen und gleichzeitig die wirtschaftliche Wettbewerbsfähigkeit erhalten und Innovationen fördern, ist von entscheidender Bedeutung für die zukünftige Ausgestaltung der Klimapolitik {cite_005}{cite_006}. Insbesondere in Phasen wirtschaftlicher Unsicherheit oder bei unzureichender politischer Unterstützung können die Anreize für Investitionen in Dekarbonisierung geschwächt werden, was die langfristige Wirksamkeit des Instruments in Frage stellt {cite_008}.
 
-### 1.1 Hintergrund und Motivation
+In diesem Kontext rückt die Notwendigkeit einer umfassenden und differenzierten Analyse der Wirksamkeit von Emissionshandelssystemen in den Vordergrund. Während zahlreiche Studien die Funktionsweise und die ökonomischen Auswirkungen des Emissionshandels untersucht haben, besteht weiterhin Bedarf an robusten empirischen Nachweisen, die die direkten und indirekten Effekte auf die Emissionsreduktion quantifizieren {cite_010}. Es gilt zu klären, unter welchen Bedingungen und mit welchen Designmerkmalen Emissionshandelssysteme ihre Klimaschutzziele am effektivsten erreichen können. Die Komplexität dieser Systeme, ihre Integration in globale Märkte und ihre Wechselwirkungen mit anderen politischen Instrumenten erfordern eine sorgfältige Betrachtung, um ihre Rolle im globalen Kampf gegen den Klimawandel adäquat bewerten zu können.
 
-Die Einführung des CO2-Zertifikatehandels wurde von der Hoffnung begleitet, einen effizienten und effektiven Weg zur Emissionsminderung zu ebnen. Theoretisch bietet der Emissionshandel klare Vorteile: Er setzt einen Preis auf Emissionen, fördert technologische Innovationen und ermöglicht es Unternehmen, ihre individuellen Reduktionspfade flexibel zu gestalten {cite_002}. Das EU-EHS beispielsweise deckt derzeit rund 40 % der gesamten Treibhausgasemissionen der Europäischen Union ab und wurde als Eckpfeiler der europäischen Klimapolitik konzipiert. Es hat sich über die Jahre weiterentwickelt, um auf Herausforderungen wie Marktüberschüsse und Preisvolatilität zu reagieren, beispielsweise durch die Einführung der Marktstabilitätsreserve {cite_001}. Trotz dieser Anpassungen und der grundsätzlichen Akzeptanz des Instruments gibt es weiterhin eine intensive Debatte über die tatsächliche Wirksamkeit des Emissionshandels in Bezug auf die Erreichung signifikanter Klimaschutzziele.
+Diese Masterarbeit zielt darauf ab, einen Beitrag zur Klärung der Klimaschutzwirkung des Emissionshandels zu leisten, indem sie eine detaillierte Analyse der verfügbaren empirischen Evidenz und theoretischen Rahmenbedingungen vornimmt. Das übergeordnete Forschungsziel ist es, die Wirksamkeit von CO2-Zertifikatesystemen als Instrument zur Reduktion von Treibhausgasemissionen zu bewerten und dabei sowohl Erfolgsfaktoren als auch Herausforderungen zu identifizieren. Um dieses Hauptziel zu erreichen, werden folgende spezifische Forschungsfragen und -ziele verfolgt:
+1.  **Analyse der Designmerkmale:** Welche zentralen Designmerkmale von Emissionshandelssystemen (z.B. Cap-Level, Preisstabilität, Allokationsmethoden) beeinflussen deren Effektivität bei der Emissionsreduktion?
+2.  **Empirische Evidenz der Emissionsreduktion:** Welche empirischen Belege existieren für die tatsächliche Reduktion von Treibhausgasemissionen durch etablierte Emissionshandelssysteme, insbesondere im europäischen Kontext?
+3.  **Wirtschaftliche und soziale Auswirkungen:** Welche wirtschaftlichen (z.B. Wettbewerbsfähigkeit, Innovation) und sozialen (z.B. Verteilungseffekte) Auswirkungen gehen mit der Implementierung von Emissionshandelssystemen einher?
+4.  **Herausforderungen und Zukunftsperspektiven:** Welche zentralen Herausforderungen (z.B. Carbon Leakage, politische Akzeptanz) bestehen bei der Gestaltung und Umsetzung von Emissionshandelssystemen, und welche Anpassungen sind für eine zukünftige Steigerung der Klimaschutzwirkung erforderlich?
 
-Ein zentraler Kritikpunkt betrifft oft die Höhe des Emissionspreises. Ein zu niedriger Preis setzt keine ausreichenden Anreize für Investitionen in emissionsarme Technologien oder für substanzielle Verhaltensänderungen. Historisch gesehen war der Zertifikatspreis im EU-EHS in den ersten Phasen oft zu niedrig, was auf eine Überallokation von Zertifikaten zurückgeführt wurde {cite_001}. Dies führte zu einem Überschuss an Zertifikaten auf dem Markt und dämpfte den Anreiz zur Emissionsreduktion. Weitere Herausforderungen umfassen die Gefahr der Kohlenstoffleckage, bei der Unternehmen ihre Produktion in Länder mit weniger strengen Emissionsvorschriften verlagern könnten, sowie Bedenken hinsichtlich der Wettbewerbsfähigkeit von energieintensiven Industrien. Obwohl Maßnahmen wie die kostenlose Zuteilung von Zertifikaten oder Grenzausgleichsmechanismen (Carbon Border Adjustment Mechanism, CBAM) diesen Problemen entgegenwirken sollen, bleibt die Balance zwischen Klimaschutzambition und wirtschaftlicher Tragfähigkeit ein sensibles Thema.
+Durch die Beantwortung dieser Fragen soll ein umfassendes Bild der Stärken und Schwächen von Emissionshandelssystemen gezeichnet und fundierte Empfehlungen für deren Weiterentwicklung abgeleitet werden. Der Fokus liegt dabei auf der Synthese bestehender Forschungsergebnisse und der kritischen Bewertung verschiedener Perspektiven, um ein kohärentes Verständnis des Themas zu ermöglichen.
 
-### 1.1.1 Problemstellung.
-
-Die effektive Minderung von Treibhausgasemissionen ist für die Begrenzung des Klimawandels von entscheidender Bedeutung. Während der CO2-Zertifikatehandel als ein vielversprechendes Instrument zur Erreichung dieser Ziele gilt, ist seine tatsächliche Klimaschutzwirkung Gegenstand intensiver wissenschaftlicher und politischer Diskussionen. Es besteht eine Forschungslücke hinsichtlich einer umfassenden und systematischen Bewertung, inwieweit Emissionshandelssysteme, insbesondere in reifen Märkten wie dem EU-EHS, tatsächlich zu einer signifikanten und nachhaltigen Reduktion von Emissionen beigetragen haben. Viele Studien konzentrieren sich auf ökonomische Aspekte wie Preisbildung und Marktliquidität, oder auf spezifische Sektoren, vernachlässigen jedoch oft eine aggregierte Analyse der direkten Umweltauswirkungen über längere Zeiträume und unter Berücksichtigung verschiedener Kontextfaktoren {cite_002}.
-
-Darüber hinaus mangelt es an einer klaren Abgrenzung der durch den Emissionshandel erzielten Reduktionen von solchen, die durch andere politische Maßnahmen (z.B. Erneuerbare-Energien-Gesetze, Energieeffizienzstandards) oder durch makroökonomische Entwicklungen (z.B. Wirtschaftskrisen, Strukturwandel) verursacht wurden. Diese Kausalitätszuschreibung ist komplex, aber entscheidend für die Bewertung der Effektivität des Instruments und für die Gestaltung zukünftiger Klimapolitik. Ohne ein klares Verständnis der tatsächlichen Wirksamkeit des CO2-Zertifikatehandels besteht die Gefahr, dass politische Entscheidungen auf unzureichender Evidenz basieren, was die Erreichung der globalen Klimaziele gefährden könnte. Diese Arbeit adressiert diese Forschungslücke, indem sie eine detaillierte Analyse der Klimaschutzwirkung des CO2-Zertifikatehandels vornimmt und dabei versucht, die kausalen Zusammenhänge und maßgeblichen Einflussfaktoren zu identifizieren.
-
-### 1.2 Forschungsziele und Forschungsfragen
-
-Vor dem Hintergrund der skizzierten Problemstellung und der globalen Dringlichkeit des Klimaschutzes verfolgt diese Arbeit das übergeordnete Ziel, die Klimaschutzwirkung des CO2-Zertifikatehandels systematisch zu analysieren und zu bewerten. Im Fokus steht die Frage, inwieweit dieses marktwirtschaftliche Instrument tatsächlich zu einer Reduktion von Treibhausgasemissionen beigetragen hat und welche Faktoren seine Effektivität beeinflussen. Um dieses Ziel zu erreichen, werden folgende spezifische Forschungsfragen gestellt:
-
-1.  In welchem Maße hat der CO2-Zertifikatehandel in den untersuchten Jurisdiktionen zur Reduktion von Treibhausgasemissionen beigetragen?
-2.  Welche methodischen Ansätze eignen sich am besten, um die kausale Wirkung des Emissionshandels auf die Emissionsentwicklung von anderen Einflussfaktoren zu isolieren?
-3.  Welche nicht-preislichen Faktoren (z.B. technologische Entwicklung, regulatorisches Umfeld, makroökonomische Bedingungen) haben die Wirksamkeit des CO2-Zertifikatehandels maßgeblich beeinflusst?
-4.  Welche Schlussfolgerungen lassen sich aus den Erfahrungen mit bestehenden Emissionshandelssystemen für die Weiterentwicklung und Implementierung zukünftiger Kohlenstoffmärkte ziehen, um deren Klimaschutzwirkung zu maximieren?
-
-Durch die Beantwortung dieser Fragen soll ein fundierter Beitrag zur Debatte über die Rolle und das Potenzial des CO2-Zertifikatehandels als Instrument der Klimapolitik geleistet werden.
-
-### 1.3 Aufbau der Arbeit
-
-Die vorliegende Arbeit ist in fünf Hauptkapitel gegliedert, die einem typischen IMRaD-Format folgen. Nach dieser Einleitung (Kapitel 1), die den Kontext, die Problemstellung und die Forschungsfragen darlegt, folgt das Kapitel 2, das den **Literaturüberblick** darstellt. In diesem Kapitel werden die theoretischen Grundlagen des CO2-Zertifikatehandels sowie die bisherige Forschung zur Klimaschutzwirkung und den Herausforderungen von Emissionshandelssystemen umfassend diskutiert. Dabei wird auch die methodische Landschaft zur Bewertung solcher Politikinstrumente beleuchtet und die identifizierte Forschungslücke präzisiert.
-
-Kapitel 3 beschreibt die angewandte **Methodik** dieser Studie. Hier werden die Datenquellen, die Auswahl der untersuchten Emissionshandelssysteme, die verwendeten ökonometrischen Modelle und statistischen Analyseverfahren detailliert erläutert, um die kausale Wirkung des CO2-Zertifikatehandels zu isolieren und zu quantifizieren. Kapitel 4 präsentiert die **Ergebnisse** der empirischen Analyse. In diesem Abschnitt werden die quantitativen Befunde zur Emissionsentwicklung unter dem Einfluss von Emissionshandelssystemen sowie die identifizierten Einflussfaktoren und deren Wirkungsweisen objektiv und ohne Interpretation dargestellt.
-
-Im Kapitel 5, der **Diskussion**, werden die erzielten Ergebnisse interpretiert und in den Kontext der bestehenden Literatur eingeordnet. Hier werden die Implikationen der Befunde für die Klimapolitik erörtert, Limitationen der Studie aufgezeigt und Potenziale für zukünftige Forschungsarbeiten identifiziert. Die Arbeit schließt mit einem **Fazit** in Kapitel 6, das die wichtigsten Erkenntnisse zusammenfasst, die Forschungsfragen beantwortet und abschließende Empfehlungen für Politik und Praxis formuliert.
+Die vorliegende Arbeit ist wie folgt strukturiert: Kapitel 2 bietet einen umfassenden Überblick über die theoretischen Grundlagen des Emissionshandels, einschließlich seiner historischen Entwicklung, ökonomischen Prinzipien und verschiedenen Designoptionen. Hier werden auch die wichtigsten Begriffe definiert und ein Rahmen für die nachfolgende Analyse geschaffen. Kapitel 3 widmet sich der Methodik, die für die Datenerhebung und -analyse verwendet wird, wobei der Schwerpunkt auf einer systematischen Literaturübersicht liegt, die relevante Studien und Berichte identifiziert und bewertet. In Kapitel 4 werden die Ergebnisse der empirischen Studien zur Klimaschutzwirkung von Emissionshandelssystemen vorgestellt und kritisch diskutiert, wobei ein besonderes Augenmerk auf quantitative Daten und Fallstudien gelegt wird. Kapitel 5 diskutiert diese Ergebnisse im größeren Kontext der Klimapolitik, beleuchtet die identifizierten Herausforderungen und Erfolgsfaktoren und verknüpft die Befunde mit den eingangs formulierten Forschungsfragen. Schließlich fasst Kapitel 6 die zentralen Erkenntnisse zusammen, zieht Schlussfolgerungen hinsichtlich der Wirksamkeit des Emissionshandels und gibt Empfehlungen für zukünftige Forschung sowie für politische Entscheidungsträger. Diese Struktur ermöglicht eine logische und schrittweise Annäherung an das komplexe Thema, beginnend mit den Grundlagen bis hin zu einer umfassenden Bewertung und zukunftsgerichteten Perspektiven.
 
 ---
 
 ## Verwendete Zitate
 
-1.  Ellerman, Buchner et al. (2021) - The EU Emissions Trading System: An Economic and Environment...
-2.  Pahle, Edenhofer et al. (2020) - Carbon Pricing and Deep Decarbonization: A Systematic Review...
-3.  {cite_MISSING: IPCC Assessment Reports}
-4.  {cite_MISSING: UNEP Emissions Gap Report}
-5.  {cite_MISSING: Paris Agreement}
-6.  {cite_MISSING: World Bank Carbon Pricing Dashboard}
+1.  Ellerman, Convery et al. (2020) - The European Emissions Trading System: A Decade of Policy, M...
+2.  Tietenberg (2006) - Emissions Trading and the Clean Development Mechanism: An Ec...
+3.  Dechezleprêtre, Sato (2017) - Carbon Pricing and Competitiveness: A Review of the Literatu...
+4.  Shishlov, Bellassen et al. (2019) - The Role of Carbon Markets in Achieving the Paris Agreement ...
+5.  Calel, Dechezleprêtre (2016) - The Impact of Emissions Trading on Innovation: A Review...
+6.  Rogge, Schleich et al. (2021) - Carbon Pricing and Decarbonization: Evidence from the EU ETS...
+7.  Keohane, Victor (2016) - The Political Economy of Carbon Pricing...
+8.  World Bank (2023) - Global Carbon Pricing: The State and Future of International...
+9.  Haab, McConnell (2020) - The Effectiveness of Emissions Trading Systems: A Meta-Analy...
 
 ---
 
 ## Hinweise zur Überarbeitung
 
-- [ ] Die fehlenden Zitate für IPCC, UNEP, Paris Agreement und World Bank Carbon Pricing Dashboard mit konkreten IDs aus der vollständigen Datenbank ergänzen.
-- [ ] Sicherstellen, dass die Einleitung die 1200 Wörter weitgehend erreicht oder leicht überschreitet. Aktuell ist sie etwas kürzer.
-- [ ] Den Übergang zwischen den Abschnitten "Hintergrund und Motivation" und "Problemstellung" noch flüssiger gestalten.
-- [ ] Überprüfen, ob die Forschungsfragen präzise genug sind und direkt auf die identifizierte Forschungslücke abzielen.
+-   [ ] Überprüfen Sie die Wortzahl und erweitern Sie bei Bedarf die Abschnitte zu den globalen Herausforderungen und der Problemstellung, um das Ziel von 1.200 Wörtern zu erreichen.
+-   [ ] Stellen Sie sicher, dass die Übergänge zwischen den Abschnitten nahtlos sind und eine kohärente Erzählung bilden.
+-   [ ] Eventuell spezifischere Beispiele für die Auswirkungen des Klimawandels hinzufügen, um den Einstieg noch eindringlicher zu gestalten.
+-   [ ] Die Forschungsfragen sind klar formuliert; prüfen, ob sie präzise auf die Problemstellung einzahlen.
 
 ---
 
 ## Wortzahl-Aufschlüsselung
 
-- Einleitung (Klimawandel, Instrumente): 345 Wörter
-- 1.1 Hintergrund und Motivation (ETS Prinzip, EU-EHS): 355 Wörter
-- 1.1.1 Problemstellung: 250 Wörter
-- 1.2 Forschungsziele und Forschungsfragen: 155 Wörter
-- 1.3 Aufbau der Arbeit: 200 Wörter
-- **Total:** 1305 Wörter / 1200 Ziel
+-   Abschnitt 1 (Einstieg Klimawandel): 112 Wörter
+-   Abschnitt 2 (Hintergrund Emissionshandel): 131 Wörter
+-   Abschnitt 3 (Problemstellung 1): 139 Wörter
+-   Abschnitt 4 (Problemstellung 2): 101 Wörter
+-   Abschnitt 5 (Forschungsziele Einführung): 108 Wörter
+-   Abschnitt 6 (Spezifische Forschungsfragen): 156 Wörter
+-   Abschnitt 7 (Aufbau der Arbeit): 199 Wörter
+-   **Gesamt:** 946 Wörter / 1.200 Ziel
+
+*Hinweis: Die aktuelle Wortzahl liegt bei 946 Wörtern. Um die Zielvorgabe von 1.200 Wörtern zu erreichen, müssten die Abschnitte 3, 4, 5 und 7 noch erweitert werden, insbesondere die Problemstellung und die detailliertere Begründung der Forschungsfragen sowie die Vertiefung des Aufbaus der Arbeit.*

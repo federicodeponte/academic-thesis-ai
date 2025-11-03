@@ -1,251 +1,245 @@
 # Paper Architecture
 
-**Paper Type:** Empirische Studie (mit Fallstudien)
+**Paper Type:** Empirische Studie (mit Fallstudie EU ETS)
 **Research Question:** Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels?
-**Target Venue:** Abschlussarbeit (z.B. Masterarbeit)
+**Target Venue:** Masterarbeit
 **Estimated Length:** 8,000-10,000 Wörter
 
 ---
 
 ## Core Argument Flow
 
-**Thesis Statement:** Obwohl der Handel mit CO2-Zertifikaten als zentrales Instrument der Klimapolitik konzipiert ist und in einigen Regionen Emissionsreduktionen bewirkt hat, zeigt eine vergleichende empirische Analyse, dass seine Wirksamkeit hinsichtlich einer signifikanten Verlangsamung des Klimawandels stark von spezifischen Systemdesigns, der politischen Integration und den umfassenden sozio-ökonomischen Verteilungseffekten abhängt.
+**Thesis Statement:** Obwohl der CO2-Zertifikatehandel als Instrument zur Emissionsreduktion konzipiert ist, ist seine nachweisliche Wirksamkeit bei der signifikanten Verlangsamung des menschengemachten Klimawandels – insbesondere im EU-ETS nach 2015 mit der Einführung der Marktstabilitätsreserve – noch nicht umfassend empirisch belegt und erfordert eine detaillierte Analyse der tatsächlichen Emissionsminderungen und ihrer Attribution.
 
 **Logical Progression:**
-1.  Der menschengemachte Klimawandel ist ein drängendes Problem, das effektive politische Instrumente erfordert (Einleitung).
-2.  CO2-Zertifikatehandel (ETS) wird als Schlüsselmechanismus zur Emissionsreduktion eingesetzt, doch seine tatsächliche globale Wirksamkeit und seine breiteren Auswirkungen sind nicht umfassend vergleichend bewertet worden (Literaturübersicht & Forschungslücke).
-3.  Um diese Lücke zu schließen, analysieren wir mittels vergleichender Fallstudien ausgewählte ETS-Systeme hinsichtlich ihrer Emissionsreduktionserfolge, Innovationsanreize und sozio-ökonomischen Effekte (Methodik).
-4.  Unsere Analysen zeigen, dass Designmerkmale und Kontextfaktoren die Wirksamkeit und die Verteilungseffekte erheblich beeinflussen (Ergebnisse).
-5.  Dies bedeutet, dass eine pauschale Aussage zur "signifikanten Verlangsamung des Klimawandels" durch ETS nuanciert werden muss und die Gestaltung zukünftiger Systeme entscheidend ist (Diskussion).
+1.  Der Klimawandel stellt eine drängende globale Herausforderung dar, und CO2-Zertifikatehandel ist ein zentrales politisches Instrument (Einleitung).
+2.  Bestehende Forschungsarbeiten zeigen gemischte Ergebnisse zur Wirksamkeit von CO2-Handelssystemen, wobei oft frühere Phasen oder spezifische Aspekte im Vordergrund stehen (Literaturübersicht).
+3.  Eine wesentliche Lücke besteht in der Analyse der Wirksamkeit des EU-ETS nach 2015, insbesondere hinsichtlich der Auswirkungen wichtiger Reformen wie der Marktstabilitätsreserve (MSR) und des "Fit for 55"-Pakets (Forschungslücke/Beitrag).
+4.  Diese Arbeit analysiert empirisch die Emissionsreduktionen und die Marktstabilität des EU-ETS nach 2015 und bewertet die Rolle der MSR (Methodik).
+5.  Die Ergebnisse zeigen (potenziell) einen Beitrag des EU-ETS zu Emissionsreduktionen, dessen Umfang und Kausalität jedoch differenziert betrachtet werden müssen (Ergebnisse).
+6.  Dies bedeutet, dass der CO2-Zertifikatehandel unter bestimmten Bedingungen zur Klimaschutzpolitik beiträgt, aber seine Gesamtwirkung auf die Verlangsamung des Klimawandels komplex ist und von vielen Faktoren abhängt (Diskussion).
 
 ---
 
 ## Paper Structure
 
 ### 1. Titel
-**Suggested title:** CO2-Zertifikatehandel und Klimawandel: Eine vergleichende empirische Analyse der Wirksamkeit und sozio-ökonomischen Effekte globaler Emissionshandelssysteme
-**Alternative:** Jenseits des EU ETS: Führt der CO2-Zertifikatehandel nachweislich zu einer signifikanten Verlangsamung des Klimawandels? Eine vergleichende Fallstudienanalyse.
+**Suggested title:** Die Wirksamkeit des EU-Emissionshandelssystems nach 2015: Eine empirische Analyse der Marktstabilitätsreserve und ihrer Rolle bei der Verlangsamung des Klimawandels
+**Alternative:** CO2-Zertifikatehandel und Klimawandel: Eine kritische Bewertung der Emissionsminderungen im EU-ETS seit Einführung der Marktstabilitätsreserve
 
 ### 2. Abstract (250-300 Wörter)
 **Structure:**
--   **Hintergrund (2 Sätze):** Der Klimawandel erfordert effektive Instrumente zur Emissionsreduktion; CO2-Zertifikatehandel (ETS) ist ein zentraler Ansatz.
--   **Problem/Lücke (1-2 Sätze):** Die Forschung konzentriert sich oft auf das EU ETS, vernachlässigt aber eine umfassende vergleichende Analyse verschiedener Systeme und deren sozio-ökonomische Verteilungseffekte.
--   **Ihr Ansatz (2 Sätze):** Diese Arbeit untersucht mittels vergleichender Fallstudien (z.B. EU ETS, Kalifornien, China) die Wirksamkeit von ETS bei der Emissionsreduktion und analysiert deren breitere Auswirkungen.
--   **Hauptergebnisse (2-3 Sätze):** Die Ergebnisse zeigen, dass Designmerkmale wie Kappenhöhe, Auktionsmechanismen und die Integration in die Gesamtpolitik die Klimawirkung maßgeblich beeinflussen. Zudem werden unterschiedliche sozio-ökonomische Effekte in den Fallstudien sichtbar.
--   **Implikationen (1 Satz):** Die Arbeit liefert differenzierte Erkenntnisse zur Rolle des CO2-Zertifikatehandels bei der Klimawandelbekämpfung und gibt Empfehlungen für Politikgestaltung.
+-   **Hintergrund (2 Sätze):** Der menschengemachte Klimawandel erfordert effektive politische Instrumente, wobei der CO2-Zertifikatehandel, insbesondere das EU-Emissionshandelssystem (EU-ETS), eine zentrale Rolle spielt.
+-   **Problem/Forschungslücke (1-2 Sätze):** Die tatsächliche Wirksamkeit des EU-ETS, insbesondere nach wichtigen Reformen wie der Einführung der Marktstabilitätsreserve (MSR) im Jahr 2019, ist jedoch noch nicht umfassend empirisch bewertet worden.
+-   **Ansatz (2 Sätze):** Diese Arbeit untersucht mittels quantitativer Zeitreihenanalyse die Entwicklung der Emissionen und der CO2-Zertifikatspreise im EU-ETS von 2016 bis heute, um den Einfluss der MSR auf die Emissionsminderung und Marktstabilität zu beurteilen.
+-   **Hauptergebnisse (2-3 Sätze):** Die Analyse zeigt [Beispiel: signifikante Emissionsreduktionen in einigen Sektoren, eine Stabilisierung der Zertifikatspreise nach Einführung der MSR, aber auch Herausforderungen bei der Kausalitätszuschreibung der beobachteten Effekte direkt auf den Zertifikatehandel].
+-   **Implikationen (1 Satz):** Die Ergebnisse liefern wichtige Erkenntnisse für die Weiterentwicklung des EU-ETS und die Bewertung des CO2-Zertifikatehandels als Instrument zur Klimaschutzpolitik.
 
 ### 3. Einleitung (800-1200 Wörter)
 **Sections:**
 
-#### 3.1 Hook & Kontext (200 Wörter)
--   **Opening:** [Der menschengemachte Klimawandel stellt eine existenzielle Bedrohung dar, deren Bewältigung koordinierte globale Anstrengungen erfordert.]
--   **Warum dies wichtig ist:** [Die Dringlichkeit der Dekarbonisierung macht die Bewertung der Wirksamkeit klimapolitischer Instrumente unerlässlich, um das 1,5-Grad-Ziel zu erreichen.]
--   **Aktueller Stand:** [Der CO2-Zertifikatehandel (ETS) hat sich in den letzten Jahrzehnten als ein marktbasiertes Instrument zur Reduktion von Treibhausgasemissionen etabliert und wird weltweit in verschiedenen Formen angewendet.]
+#### 3.1 Haken & Kontext (200 Wörter)
+-   **Eröffnung:** [Compelling opening sentence] Der Klimawandel ist die größte Herausforderung unserer Zeit und erfordert dringende und effektive politische Maßnahmen zur Reduktion von Treibhausgasemissionen.
+-   **Warum das wichtig ist:** [Broader impact] Die globalen Anstrengungen zur Dekarbonisierung, wie im Pariser Abkommen festgelegt, sind auf Instrumente angewiesen, die nachweislich zu realen Emissionsminderungen führen und somit die Erderwärmung verlangsamen können.
+-   **Aktueller Stand:** [What we know] Der CO2-Zertifikatehandel wird weltweit als marktbasierter Mechanismus zur effizienten Emissionsreduktion eingesetzt, wobei das EU-Emissionshandelssystem (EU-ETS) das größte und am längsten etablierte System darstellt.
 
 #### 3.2 Problemstellung (200 Wörter)
--   **Die Lücke:** [Obwohl das EU ETS intensiv erforscht ist, fehlt eine umfassende vergleichende Analyse, die Designunterschiede, regulatorische Kontexte und die tatsächliche, nachweisbare Klimawirkung *verschiedener* ETS-Systeme weltweit gegenüberstellt.]
--   **Warum es wichtig ist:** [Ohne einen solchen Vergleich bleiben Best Practices, die Übertragbarkeit von Reformen und die umfassenden sozio-ökonomischen Auswirkungen, die über die reine Emissionsreduktion hinausgehen, unklar. Dies behindert eine effektive globale Klimapolitik.]
--   **Herausforderungen:** [Die Komplexität der Attribuierung von Emissionsreduktionen zu einem einzelnen Instrument, die Verfügbarkeit vergleichbarer Daten und die Berücksichtigung regionaler Besonderheiten stellen methodische Herausforderungen dar.]
+-   **Die Lücke:** [What's missing] Trotz seiner weiten Verbreitung und der zahlreichen Reformen, wie der Einführung der Marktstabilitätsreserve (MSR) im EU-ETS, fehlt eine umfassende, aktuelle empirische Bewertung, inwieweit der Zertifikatehandel nach 2015 tatsächlich zu einer signifikanten Verlangsamung des Klimawandels beiträgt.
+-   **Warum es wichtig ist:** [Stakes] Ohne eine klare Evidenzbasis besteht das Risiko, dass erhebliche politische und wirtschaftliche Ressourcen in ein Instrument investiert werden, dessen tatsächliche Klimawirkung unklar bleibt oder überschätzt wird.
+-   **Herausforderungen:** [Why it's hard] Die Kausalitätszuschreibung von Emissionsreduktionen allein auf den Zertifikatehandel ist komplex, da andere Faktoren wie Wirtschaftswachstum, technologische Fortschritte und weitere Umweltpolitiken ebenfalls eine Rolle spielen.
 
 #### 3.3 Forschungsfrage (150 Wörter)
--   **Hauptfrage:** [Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels, und welche Faktoren beeinflussen diese Wirksamkeit und ihre sozio-ökonomischen Auswirkungen?]
+-   **Hauptfrage:** Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels?
 -   **Unterfragen:**
-    -   Wie unterscheiden sich die Designmerkmale und die Implementierung von CO2-Zertifikatehandelssystemen in ausgewählten Jurisdiktionen (z.B. EU, Kalifornien, China)?
-    -   Welche Emissionsreduktionen sind den einzelnen ETS-Systemen nachweislich zuzuschreiben, und wie tragen diese zur Klimawandelbekämpfung bei?
-    -   Welche sozio-ökonomischen Verteilungseffekte (z.B. auf Innovation, Wettbewerbsfähigkeit, Haushalte) sind in den verschiedenen ETS-Kontexten zu beobachten?
+    1.  Welche Emissionsreduktionen wurden im EU-ETS seit 2016 in den erfassten Sektoren erzielt?
+    2.  Welchen Einfluss hatte die Einführung und Funktionsweise der Marktstabilitätsreserve (MSR) auf die CO2-Zertifikatspreise und die Angebots-Nachfrage-Dynamik im EU-ETS?
+    3.  Inwieweit können die beobachteten Emissionsminderungen kausal dem EU-ETS, insbesondere den Reformen nach 2015, zugeschrieben werden?
 
-#### 3.4 Beitrag (250 Wörter)
--   **Ihr Ansatz:** [Diese Arbeit begegnet den identifizierten Forschungslücken durch eine empirische vergleichende Fallstudienanalyse von drei unterschiedlichen Emissionshandelssystemen: dem EU ETS, dem California Cap-and-Trade Program und dem chinesischen nationalen ETS.]
--   **Neue Aspekte:** [Der Beitrag liegt in der systematischen Gegenüberstellung der Designmerkmale und der empirischen Bewertung der *nachweislichen* Klimawirkung sowie der erstmaligen umfassenden Analyse der sozio-ökonomischen Verteilungseffekte über verschiedene globale Kontexte hinweg, die über die etablierte EU-Forschung hinausgeht.]
--   **Wichtigste Ergebnisse (Vorschau):** [Wir werden zeigen, dass die Klimawirkung von ETS stark von der Ambition des Emissionsdeckels und der Robustheit der Marktmechanismen abhängt, während die sozio-ökonomischen Effekte eng mit nationalen Energiepolitiken und Kompensationsmaßnahmen verknüpft sind.]
+#### 3.4 Beitrag der Arbeit (250 Wörter)
+-   **Ihr Ansatz:** [How you address it] Diese Arbeit adressiert die identifizierte Forschungslücke durch eine detaillierte empirische Analyse des EU-ETS im Zeitraum von 2016 bis heute, mit besonderem Fokus auf die Wirkungsweise der MSR.
+-   **Neue Aspekte:** [What's new] Im Gegensatz zu früheren Studien, die sich oft auf das erste Jahrzehnt des EU-ETS konzentrieren (z.B. Ellerman et al., 2020), wird hier eine aktualisierte und erweiterte Perspektive eingenommen, die die jüngsten politischen und markttechnischen Entwicklungen, einschließlich des "Fit for 55"-Pakets, berücksichtigt.
+-   **Schlüsselergebnisse (Vorschau):** [Main results - preview] Die Studie wird [Beispiel: zeigen, dass die MSR einen stabilisierenden Effekt auf die Zertifikatspreise hatte und indirekt zu verstärkten Emissionsminderungen beitrug, deren absolute Wirkung auf die globale Klimaerwärmung jedoch begrenzt ist].
 
 #### 3.5 Aufbau der Arbeit (100 Wörter)
--   **Abschnitt 2:** [Stellt den theoretischen Rahmen und die Literatur zum CO2-Zertifikatehandel vor, identifiziert Forschungslücken und leitet die Relevanz der Fallstudien ab.]
--   **Abschnitt 3:** [Beschreibt die gewählte Methodik, die Auswahl der Fallstudien und die Datenerhebung und -analyse.]
--   **Abschnitt 4:** [Präsentiert die empirischen Ergebnisse der einzelnen Fallstudien und eine vergleichende Analyse.]
--   **Abschnitt 5:** [Diskutiert die Ergebnisse im Kontext der Forschungsfrage und der bestehenden Literatur.]
--   **Abschnitt 6:** [Fasst die Hauptergebnisse zusammen, beleuchtet die Beiträge der Arbeit und gibt Ausblick auf zukünftige Forschung.]
+-   **Kapitel 2:** [What's there] Eine umfassende Literaturübersicht zum CO2-Zertifikatehandel und dessen Wirksamkeit.
+-   **Kapitel 3:** [What's there] Die angewandte Methodik, Datenquellen und Analyseverfahren.
+-   **Kapitel 4:** [What's there] Die Darstellung und Analyse der empirischen Ergebnisse.
+-   **Kapitel 5:** [What's there] Eine kritische Diskussion der Ergebnisse im Kontext der Forschungsfrage und bestehender Literatur.
+-   **Kapitel 6:** [What's there] Eine Zusammenfassung der wichtigsten Erkenntnisse, der Beitrag der Arbeit und ein Ausblick auf zukünftige Forschung.
 
 ### 4. Literaturübersicht (1500-2500 Wörter)
-**Organization:** Thematisch und dann nach ETS-Typ (Generell -> EU ETS -> Andere ETS -> Sozio-ökonomische Effekte)
+**Organization:** Thematisch
 
 #### 4.1 Grundlagen des CO2-Zertifikatehandels
--   **Papiere:** [Grundlagenwerke zu Cap-and-Trade, Pigou-Steuern, Umweltökonomie]
--   **Key Insights:** [Theoretische Begründung, Funktionsweise, Vorteile und Nachteile von ETS.]
--   **Limitations:** [Theoretische Modelle oft vereinfacht, berücksichtigen nicht alle realen Komplexitäten.]
+-   **Papiere:** [List relevant papers] Coase (1960), Tietenberg (1985), Montgomery (1972)
+-   **Kernerkenntnisse:** [What they found] Ökonomische Theorie der externen Effekte, Konzept des Cap-and-Trade, Effizienzvorteile marktbasierter Instrumente.
+-   **Einschränkungen:** [What they missed] Ideale Marktbedingungen vs. Realität, Verteilungswirkungen.
 
-#### 4.2 Das EU Emissionshandelssystem (EU ETS): Design, Entwicklung und Bewertung
--   **Papiere:** [Ellerman et al., 2021; Rubashkina et al., 2024; weitere Studien zur Effektivität, Reformen, MSR]
--   **Key Insights:** [Entwicklung des EU ETS, Phasen, Marktstabilitätsreserve, Emissionsreduktionen, ökonomische Auswirkungen.]
--   **Limitations:** [Fokus auf EU, oft nur Aggregatdaten, weniger auf Verteilungseffekte.]
+#### 4.2 Das EU-Emissionshandelssystem (EU-ETS): Design und Entwicklung
+-   **Papiere:** [List relevant papers] Europäische Kommission (Richtlinien), Schleich & Betz (2005), Ellerman et al. (2010)
+-   **Kernerkenntnisse:** [What they found] Phasen des EU-ETS, Sektorabdeckung, Allokationsmechanismen (grandfathering, Auktionierung).
+-   **Einschränkungen:** [What they missed] Frühe Probleme (Überallokation, Preisvolatilität).
 
-#### 4.3 Andere Emissionshandelssysteme: Überblick und erste Erkenntnisse
--   **Papiere:** [Studien zu California Cap-and-Trade, China ETS, UK ETS, RGGI etc.]
--   **Key Insights:** [Unterschiede in Design (Sektorabdeckung, Allokation), erste Evaluationsergebnisse.]
--   **Limitations:** [Weniger umfassende Forschung als EU ETS, oft isolierte Analysen, fehlende Vergleiche.]
+#### 4.3 Empirische Studien zur Wirksamkeit des CO2-Zertifikatehandels (pre-2015)
+-   **Papiere:** [List relevant papers] Ellerman et al. (2020) – Fokus auf 2005-2015, Smale et al. (2006), Abrell & Weigt (2012)
+-   **Kernerkenntnisse:** [What they found] Erste Hinweise auf Emissionsreduktionen, aber oft begrenzt und schwer von anderen Faktoren zu trennen.
+-   **Einschränkungen:** [What they missed] Fokus auf frühe Phasen, unzureichende Berücksichtigung struktureller Probleme, mangelnde Kausalitätszuschreibung.
 
-#### 4.4 Sozio-ökonomische Verteilungseffekte von CO2-Preismechanismen
--   **Papiere:** [Studien zu Auswirkungen auf Haushalte, Industrie, Innovation, Wettbewerbsfähigkeit, "Just Transition"]
--   **Key Insights:** [Identifizierung von Gewinnern und Verlierern, Bedeutung von Kompensationsmaßnahmen, Innovationsanreize.]
--   **Limitations:** [Oft nur qualitative oder modellbasierte Studien, empirische Daten zu tatsächlichen Verteilungseffekten begrenzt, besonders im Vergleich verschiedener Systeme.]
+#### 4.4 Reformen des EU-ETS nach 2015: Fokus Marktstabilitätsreserve (MSR) und "Fit for 55"
+-   **Papiere:** [List relevant papers] Europäische Kommission (MSR-Verordnung), Kettner et al. (2019), Neuhoff et al. (2020)
+-   **Kernerkenntnisse:** [What they found] Einführung der MSR zur Adressierung des Überschusses, Anpassung der linearen Reduktionsrate, "Fit for 55"-Ziele.
+-   **Einschränkungen:** [What they missed] Mangel an umfassenden Ex-post-Evaluierungen der MSR-Wirkung, insbesondere im Zusammenspiel mit den Ambitionssteigerungen.
 
-#### 4.5 Synthese & Identifikation der Forschungslücken
--   **Was wir wissen:** [ETS ist ein potenziell wirksames Instrument zur Emissionsreduktion, das EU ETS hat Erfolge gezeigt.]
--   **Was fehlt:** [Eine *vergleichende empirische* Analyse, die über das EU ETS hinausgeht und systematisch die Designmerkmale, die nachweisliche Klimawirkung und insbesondere die *umfassenden sozio-ökonomischen Verteilungseffekte* in verschiedenen globalen Kontexten beleuchtet.]
--   **Ihr Beitrag:** [Diese Arbeit füllt diese Lücke, indem sie die Wirksamkeit und Auswirkungen von ETS über mehrere Jurisdiktionen hinweg vergleichend untersucht.]
+#### 4.5 Synthese & Forschungslückenidentifikation
+-   **Was wir wissen:** [Summary] Der CO2-Zertifikatehandel ist ein theoretisch effizientes Instrument, und das EU-ETS hat in früheren Phasen begrenzte Emissionsminderungen gezeigt. Reformen wie die MSR wurden zur Stärkung des Systems eingeführt.
+-   **Was fehlt:** [Gaps] Eine umfassende empirische Analyse der tatsächlichen Emissionsreduktionen und der Kausalität der MSR-Wirkung im EU-ETS nach 2015, die über qualitative Einschätzungen hinausgeht und die Frage der signifikanten Verlangsamung des Klimawandels adressiert. Die Arbeit von Ellerman et al. (2020) bedarf einer Aktualisierung und Erweiterung um diese jüngsten Entwicklungen.
+-   **Ihr Beitrag:** [How you fill gaps] Diese Arbeit schließt diese Lücke, indem sie eine detaillierte quantitative Analyse der post-2015-Periode des EU-ETS durchführt und die Rolle der MSR bei der Erreichung der Klimaziele untersucht.
 
 ### 5. Methodik (1000-1500 Wörter)
 #### 5.1 Forschungsdesign
--   **Ansatz:** [Vergleichende Fallstudienanalyse (qualitativ und quantitativ), eingebettet in einen mixed-methods Ansatz.]
--   **Rationale:** [Ermöglicht tiefgehende Untersuchung komplexer Phänomene in ihrem realen Kontext und den Vergleich von Mechanismen und Outcomes über verschiedene Systeme hinweg, um Muster und kausale Zusammenhänge zu identifizieren.]
--   **Auswahl der Fallstudien:** [Begründung der Auswahl von z.B. EU ETS (etabliert, umfassend), California Cap-and-Trade (subnational, innovativ), China ETS (groß, aufstrebend) basierend auf Kriterien wie Reifegrad, geografischer Diversität, Sektorabdeckung.]
+-   **Ansatz:** [Qualitative | Quantitative | Mixed] Quantitative empirische Analyse im Rahmen einer Fallstudie (EU-ETS).
+-   **Begründung:** [Why this design] Der quantitative Ansatz ermöglicht die systematische Analyse großer Datensätze zu Emissionen und Zertifikatspreisen, um kausale Zusammenhänge und Trends zu identifizieren. Die Fallstudie des EU-ETS ist aufgrund seiner Reife und der Verfügbarkeit detaillierter Daten besonders geeignet.
 
 #### 5.2 Daten/Materialien
--   **Quelle:** [Sekundärdaten: Emissionsdaten (UNFCCC, nationale Statistiken), Preisdaten (EEX, ICE, CCAR), Wirtschaftsdaten (Eurostat, Weltbank), Policy-Dokumente (Gesetze, Verordnungen), Evaluierungsberichte, akademische Studien.]
--   **Beschreibung:** [Quantifizierung von Emissionen, Preisvolatilität, wirtschaftliche Indikatoren (BIP, Beschäftigung), Subventionen, Investitionen in grüne Technologien.]
--   **Justification:** [Auswahl relevanter und vergleichbarer Datenpunkte für jede Fallstudie zur Bewertung der Emissionsreduktion, Innovation und sozio-ökonomischen Auswirkungen.]
+-   **Quelle:** [Where data comes from] Daten der Europäischen Umweltagentur (EEA) für Emissionen auf Anlagen- und Sektorebene, Daten der EEX (European Energy Exchange) für CO2-Zertifikatspreise (EUA), Daten der Europäischen Kommission zur MSR (Menge der Zertifikate im Umlauf, Zertifikate in Reserve).
+-   **Beschreibung:** [What it contains] Emissionsdaten (jährliche verifizierte Emissionen), EUA-Spot- und Futures-Preise, MSR-Indikatoren (Total Number of Allowances in Circulation - TNAC, MSR-Einlagerungen/-Entnahmen).
+-   **Rechtfertigung:** [Why appropriate] Diese Daten sind öffentlich zugänglich, von hoher Qualität und direkt relevant für die Bewertung der Wirksamkeit des EU-ETS und der MSR.
 
-#### 5.3 Prozeduren (Datenerhebung und -aufbereitung)
--   **Schritt 1:** [Systematische Sammlung von Emissions- und Preisdaten für die ausgewählten ETS-Systeme über einen definierten Zeitraum.]
--   **Schritt 2:** [Analyse von Policy-Dokumenten zur Identifizierung und Charakterisierung der Designmerkmale (Deckel, Allokation, Offsets, Marktstabilitätsmechanismen) jeder Fallstudie.]
--   **Schritt 3:** [Zusammenstellung von Daten zu relevanten sozio-ökonomischen Indikatoren (z.B. Industrieproduktion, Beschäftigung in betroffenen Sektoren, Innovationsindikatoren).]
--   **Schritt 4:** [Harmonisierung und Normalisierung der Daten, um Vergleichbarkeit über die Fallstudien hinweg zu gewährleisten.]
+#### 5.3 Vorgehen zur Datenanalyse
+-   **Schritt 1: Datenbeschaffung und -aufbereitung:** Sammlung und Bereinigung der Emissions- und Preisdaten für den Zeitraum 2016-heute.
+-   **Schritt 2: Deskriptive Statistik:** Analyse von Trends in Emissionen, Zertifikatspreisen und MSR-Indikatoren.
+-   **Schritt 3: Zeitreihenanalyse:** Untersuchung von Kointegration, Kausalität (z.B. Granger-Kausalität) zwischen Zertifikatspreisen, MSR-Indikatoren und Emissionsentwicklungen.
+-   **Schritt 4: Regressionsanalyse:** Einsatz von Regressionsmodellen (z.B. Panel-Regression, Difference-in-Differences-Ansatz bei MSR-Einführung), um den Einfluss des EU-ETS und der MSR auf Emissionsreduktionen unter Kontrolle anderer Faktoren (z.B. Wirtschaftswachstum, Energiepreise, technologische Entwicklung) zu isolieren. [VERIFY: Datenverfügbarkeit für Kontrollvariablen prüfen]
 
-#### 5.4 Analyse
--   **Techniken:** [
-    *   **Quantitative Analyse:** Regressionsanalysen (z.B. Difference-in-Differences, Paneldatenmodelle) zur Attribuierung von Emissionsreduktionen zum ETS, statistische Analyse von Preisvolatilität und Korrelationen mit ökonomischen Indikatoren.
-    *   **Qualitative Analyse:** Inhaltsanalyse von Policy-Dokumenten und Expertenberichten zur Bewertung von Designmerkmalen und sozio-ökonomischen Auswirkungen, komparative Analyse der Fallstudien.
-    ]
--   **Tools:** [Statistiksoftware (z.B. R, Stata), qualitative Datenanalysesoftware (z.B. NVivo – falls Sekundärliteratur systematisch analysiert wird).]
+#### 5.4 Analysetechniken
+-   **Techniken:** [Statistical methods, etc.] Deskriptive Statistik, Zeitreihenanalyse (z.B. ARIMA, VAR-Modelle), Ökonometrische Regressionsmodelle (z.B. OLS, Panel-Regression).
+-   **Tools:** [Software used] Statistiksoftware wie R, Python (mit Pandas, Statsmodels, SciPy) oder Stata.
 
 ### 6. Ergebnisse (1500-2000 Wörter)
-#### 6.1 Fallstudie 1: Das EU Emissionshandelssystem
--   **Beobachtung:** [Darstellung der Emissionsentwicklung, Preisvolatilität und wichtigsten Designmerkmale.]
--   **Evidenz:** [Quantifizierte Emissionsreduktionen, ökonomische Auswirkungen auf Sektoren, Innovationsindikatoren, sozio-ökonomische Effekte (z.B. auf Energiepreise, Industrie).]
--   **Abbildung/Tabelle:** [Grafik: Emissionsentwicklung vs. Cap; Tabelle: Wichtige Kennzahlen des EU ETS.]
+#### 6.1 Entwicklung der Emissionen im EU-ETS (2016-heute)
+-   **Beobachtung:** [What you found] Darstellung der jährlichen Gesamtemissionen und der Emissionen in den Hauptsektoren (Energie, Industrie, Luftfahrt) im EU-ETS seit 2016.
+-   **Evidenz:** [Data/stats] Absolute und prozentuale Veränderungen, Wachstumsraten.
+-   **Abbildung/Tabelle:** [Visual reference] Abbildung 1: Zeitliche Entwicklung der Gesamtemissionen im EU-ETS; Tabelle 1: Emissionsentwicklung nach Sektoren.
 
-#### 6.2 Fallstudie 2: California Cap-and-Trade Program
--   **Beobachtung:** [Darstellung der Emissionsentwicklung, Preisvolatilität und Besonderheiten des Designs (z.B. Offsets, Verknüpfung mit Quebec).]
--   **Evidenz:** [Nachweisbare Emissionsreduktionen, Auswirkungen auf die regionale Wirtschaft, sozio-ökonomische Verteilungseffekte (z.B. auf benachteiligte Gemeinden).]
--   **Abbildung/Tabelle:** [Grafik: Emissionsentwicklung Kalifornien; Tabelle: Schlüsselmerkmale des California ETS.]
+#### 6.2 CO2-Zertifikatspreise und Marktstabilität
+-   **Beobachtung:** [What you found] Darstellung der Entwicklung der EUA-Spot- und Futures-Preise, insbesondere vor und nach der Einführung der MSR und im Kontext des "Fit for 55"-Pakets. Analyse der Preisvolatilität.
+-   **Evidenz:** [Data/stats] Preiszeitreihen, Volatilitätsindikatoren (z.B. Standardabweichung).
+-   **Abbildung/Tabelle:** [Visual reference] Abbildung 2: Entwicklung der EUA-Preise; Abbildung 3: Volatilität der EUA-Preise.
 
-#### 6.3 Fallstudie 3: Nationales ETS in China
--   **Beobachtung:** [Darstellung der Implementierung, Sektorabdeckung, Preisentwicklung und anfänglichen Herausforderungen.]
--   **Evidenz:** [Erste Schätzungen der Emissionsreduktionen, Auswirkungen auf ausgewählte Sektoren, Herausforderungen bei der Datenqualität und sozio-ökonomische Aspekte in einem Entwicklungslandkontext.]
--   **Abbildung/Tabelle:** [Grafik: Emissionsentwicklung China (falls verfügbar); Tabelle: Designmerkmale des China ETS.]
+#### 6.3 Einfluss der Marktstabilitätsreserve (MSR)
+-   **Beobachtung:** [What you found] Darstellung der MSR-Operationen (Einlagerungen, Entnahmen), der Entwicklung des TNAC (Total Number of Allowances in Circulation) und des geschätzten Einflusses auf das Marktangebot. Analyse des Zusammenhangs zwischen MSR-Indikatoren und Zertifikatspreisen.
+-   **Evidenz:** [Data/stats] MSR-Berichte, Korrelations- und Regressionsergebnisse.
+-   **Abbildung/Tabelle:** [Visual reference] Abbildung 4: MSR-Einlagerungen und TNAC-Entwicklung; Tabelle 2: Regressionsergebnisse zum MSR-Einfluss auf Preise.
 
-#### 6.4 Vergleichende Analyse der Fallstudien
--   **Beobachtung:** [Gegenüberstellung der Emissionsreduktionserfolge, der Wirksamkeit der Designmerkmale und der beobachteten sozio-ökonomischen Effekte.]
--   **Evidenz:** [Identifikation von Mustern und Unterschieden in der Performance, der Innovationsanreize und der Verteilungswirkung.]
--   **Abbildung/Tabelle:** [Tabelle: Vergleich der Emissionsreduktionen und Designmerkmale; Grafik: Vergleich sozio-ökonomischer Indikatoren.]
+#### 6.4 Kausale Zusammenhänge und Attribution der Emissionsminderungen
+-   **Beobachtung:** [What you found] Ergebnisse der Regressionsanalysen, die den kausalen Zusammenhang zwischen EU-ETS-Instrumenten (insbesondere der MSR und dem Preisniveau) und den beobachteten Emissionsreduktionen unter Berücksichtigung von Kontrollvariablen aufzeigen.
+-   **Evidenz:** [Data/stats] Statistische Signifikanz, Koeffizienten, R-Quadrat-Werte.
+-   **Abbildung/Tabelle:** [Visual reference] Tabelle 3: Regressionsergebnisse zu Emissionsminderungen und dem EU-ETS.
 
 ### 7. Diskussion (1500-2000 Wörter)
 #### 7.1 Interpretation der Ergebnisse
--   **Was die Ergebnisse bedeuten:** [Die Ergebnisse zeigen, dass ETS-Systeme zur Emissionsreduktion beitragen können, aber die *signifikante Verlangsamung des Klimawandels* eine Funktion der Ambition des Deckels, der Marktstabilität und der breiteren politischen Integration ist.]
--   **Wie sie die Forschungsfrage beantworten:** [Die Wirksamkeit ist variabel und kontextabhängig; eine pauschale Aussage ist nicht möglich. Die sozio-ökonomischen Effekte sind ebenfalls divers und erfordern gezielte Politikmaßnahmen.]
+-   **Was die Ergebnisse bedeuten:** [Implications] Die Ergebnisse zeigen, dass [Beispiel: das EU-ETS nach 2015 zu einer signifikanten Reduktion der Emissionen in den erfassten Sektoren beigetragen hat, wobei die MSR eine wichtige Rolle bei der Preisstabilisierung und der Schaffung von Anreizen spielte].
+-   **Wie sie die Forschungsfrage beantworten:** [Connection] Obwohl ein Beitrag zur Emissionsminderung nachweisbar ist, ist die direkte Kausalität zur "signifikanten Verlangsamung des Klimawandels" komplex und muss im Kontext globaler Emissionen und anderer Klimapolitiken gesehen werden.
 
 #### 7.2 Bezug zur Literatur
--   **Bestätigt:** [Ergebnisse, die die grundsätzliche Wirksamkeit von ETS bestätigen, insbesondere für gut etablierte Systeme wie das EU ETS.]
--   **Widerspricht:** [Mögliche Abweichungen von optimistischen Annahmen in der Literatur bezüglich der automatischen Attribuierung von Reduktionen oder der Vernachlässigung bestimmter sozio-ökonomischer Kosten.]
--   **Erweitert:** [Die Arbeit erweitert die Literatur durch den systematischen Vergleich verschiedener globaler ETS und eine tiefere Analyse der sozio-ökonomischen Verteilungseffekte, die bisherige Lücken schließt.]
+-   **Bestätigt:** [What aligns with prior work] Die Ergebnisse bestätigen frühere Erkenntnisse, dass der CO2-Zertifikatehandel grundsätzlich ein effektives Instrument sein kann (z.B. Ellerman et al., 2020 für frühere Phasen).
+-   **Widerspricht:** [What diverges] Die Studie widerspricht möglicherweise der Annahme, dass der Zertifikatehandel allein ausreicht, um die ambitionierten Klimaziele zu erreichen, oder zeigt, dass die MSR [Beispiel: weniger effektiv war als erhofft, oder dass andere Faktoren wichtiger waren].
+-   **Erweitert:** [What's new] Die Arbeit erweitert die Literatur durch eine aktualisierte empirische Analyse der post-2015-Periode und liefert spezifische Erkenntnisse über die Wirksamkeit der MSR, was eine wesentliche Lücke in der Forschung schließt.
 
 #### 7.3 Theoretische Implikationen
--   **Fortschritte im Verständnis:** [Beitrag zur Umweltökonomie durch die empirische Bestätigung oder Modifikation von Theorien zur CO2-Bepreisung und deren Auswirkungen auf Innovation und Wettbewerb. Weiterentwicklung des Verständnisses von "Best Practices" im ETS-Design.]
+-   **Fortschritte im Verständnis:** [Theory] Die Ergebnisse tragen zum Verständnis der ökonomischen Theorie des Cap-and-Trade bei, insbesondere hinsichtlich der Rolle von Marktinterventionsmechanismen (wie der MSR) in realen, dynamischen Märkten. Sie beleuchten die Herausforderungen bei der Umsetzung von Preissignalen in tatsächliche Verhaltensänderungen.
 
 #### 7.4 Praktische Implikationen
--   **Anwendungen in der Praxis:** [Empfehlungen für politische Entscheidungsträger zur Gestaltung effektiverer und gerechterer ETS-Systeme, insbesondere für aufstrebende Systeme. Bedeutung von flankierenden Maßnahmen und Kompensationsmechanismen.]
+-   **Anwendungen in der Praxis:** [Practice] Die Erkenntnisse sind relevant für politische Entscheidungsträger, die das EU-ETS weiterentwickeln oder ähnliche Systeme in anderen Regionen implementieren wollen. Sie unterstreichen die Bedeutung eines robusten Marktmechanismus und eines flexiblen Anpassungsrahmens. [VERIFY: Konkrete Politikempfehlungen ableiten]
 
 #### 7.5 Limitationen
--   **Studieneinschränkungen:** [Herausforderungen bei der Attribuierung von Reduktionen, Verfügbarkeit und Vergleichbarkeit von Daten über verschiedene Jurisdiktionen hinweg, Fokus auf ausgewählte Fallstudien (nicht alle ETS weltweit abgedeckt).]
--   **Zukünftige Forschung:** [Notwendigkeit weiterer Forschung zu langfristigen sozio-ökonomischen Effekten, der Rolle von Offsets, der Interaktion von ETS mit anderen Klimainstrumenten und der Entwicklung neuer ETS-Systeme.]
+-   **Studieneinschränkungen:** [What to qualify] Die Studie konzentriert sich auf das EU-ETS und kann nicht direkt auf andere Handelssysteme übertragen werden. Die kausale Attribution ist aufgrund der Vielzahl externer Faktoren (z.B. globale Wirtschaftskrisen, Energiepreise) weiterhin eine Herausforderung. Die Datenverfügbarkeit für bestimmte Kontrollvariablen war möglicherweise begrenzt.
+-   **Zukünftige Forschung:** [What's needed next] Zukünftige Forschung könnte sich auf die Analyse der sektorspezifischen Auswirkungen konzentrieren, die Rolle von technologischen Innovationen detaillierter untersuchen oder die Wechselwirkungen des EU-ETS mit anderen Klimapolitiken auf nationaler Ebene analysieren.
 
 ### 8. Fazit (500-700 Wörter)
 #### 8.1 Zusammenfassung
--   **Forschungsfrage neu aufgegriffen:** [Die Frage, ob CO2-Zertifikatehandel den Klimawandel signifikant verlangsamt, ist komplex und kann nicht pauschal beantwortet werden.]
--   **Wichtigste Ergebnisse rekapituliert:** [Die vergleichende Analyse hat gezeigt, dass die Klimawirkung von ETS stark vom Design (Deckel, MSR), der politischen Integration und dem sozio-ökonomischen Kontext abhängt. Das EU ETS zeigt Erfolge, während andere Systeme unterschiedliche Herausforderungen und Potenziale aufweisen. Sozio-ökonomische Verteilungseffekte sind real und müssen adressiert werden.]
+-   **Forschungsfrage revisited:** Die Arbeit untersuchte, ob der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels führt, mit Fokus auf das EU-ETS nach 2015.
+-   **Zusammenfassung der Hauptergebnisse:** Die empirische Analyse zeigt, dass [Beispiel: das EU-ETS seit 2016 zu substanziellen Emissionsreduktionen beigetragen hat, wobei die MSR eine wichtige Rolle bei der Stabilisierung des Marktpreises spielte. Die direkte Kausalität zur Verlangsamung des Klimawandels ist jedoch komplex und muss im Kontext anderer Faktoren und der globalen Emissionen gesehen werden].
 
-#### 8.2 Beiträge
--   **Theoretische Beiträge:** [Systematischer globaler Vergleich von ETS-Wirksamkeit und -Design, empirische Evidenz zu sozio-ökonomischen Effekten jenseits des EU ETS.]
--   **Praktische Beiträge:** [Konkrete Empfehlungen für die Politik zur Optimierung von ETS-Designs und zur Minderung negativer sozio-ökonomischer Auswirkungen, um die Akzeptanz und Effektivität zu steigern.]
+#### 8.2 Beiträge der Arbeit
+-   **Theoretische Beiträge:** Aktualisierung des Wissens über die Wirksamkeit von Cap-and-Trade-Systemen unter Berücksichtigung von Marktinterventionsmechanismen.
+-   **Praktische Beiträge:** Bereitstellung einer fundierten Evidenzbasis für die Bewertung und Weiterentwicklung des EU-ETS und anderer Emissionshandelssysteme.
 
-#### 8.3 Zukünftige Richtungen
--   **Unmittelbare nächste Schritte:** [Vertiefende Analysen spezifischer sozio-ökonomischer Gruppen (z.B. energieintensive Haushalte) und die Rolle von Kompensationsmechanismen. Untersuchung der Langzeitwirkungen von ETS auf Innovation.]
--   **Langfristige Forschungsagenda:** [Entwicklung eines umfassenden Frameworks zur Bewertung der Übertragbarkeit von ETS-Reformen auf neue Jurisdiktionen und die Integration von ETS in umfassendere Klimaschutzstrategien.]
+#### 8.3 Zukünftige Forschungsrichtungen
+-   **Unmittelbare nächste Schritte:** Eine detailliertere Analyse der Auswirkungen des "Fit for 55"-Pakets, sobald mehr Daten verfügbar sind.
+-   **Langfristige Forschungsagenda:** Untersuchung der globalen Interaktionen zwischen verschiedenen ETS und der Gesamtwirkung auf die globalen Emissionen und die Erderwärmung.
 
 ---
 
 ## Argument Flow Map
 
 ```
-Einleitung: Klimawandel ist Problem X, CO2-Zertifikatehandel ist ein Instrument
+Einleitung: Klimawandel ist Problem X, CO2-Zertifikatehandel ist Instrument Y
     ↓
-Literaturübersicht: Aktuelle Lösungen (insb. EU ETS) zeigen Erfolge, aber globale Vergleiche und sozio-ökonomische Effekte sind Lücke Y
+Literaturübersicht: Bestehende Lösungen Z sind unzureichend/nicht aktuell (Fokus pre-2015)
     ↓
-Lücke: Niemand hat einen umfassenden vergleichenden Ansatz Z über verschiedene ETS-Systeme hinweg mit Fokus auf sozio-ökonomische Effekte verfolgt
+Forschungslücke: Wirksamkeit des EU-ETS nach 2015, insb. MSR, ist unzureichend analysiert
     ↓
-Methodik: Wir nutzen vergleichende Fallstudien (EU, Kalifornien, China) und Daten D, um Z zu untersuchen
+Methodik: Wir analysieren das EU-ETS post-2015 mit Daten D und Methoden M
     ↓
-Ergebnisse: Die Befunde zeigen, dass die Wirksamkeit und die sozio-ökonomischen Effekte von ETS stark vom Design und Kontext abhängen
+Ergebnisse: Unsere Analyse zeigt, dass MSR einen Einfluss auf Preise P und Emissionen E hat
     ↓
-Diskussion: Dies bedeutet, dass eine signifikante Verlangsamung des Klimawandels durch ETS nuanciert betrachtet werden muss und eine optimale Gestaltung W erfordert
+Diskussion: Das bedeutet W für die Klimaschutzpolitik und Feld F; Kausalität ist komplex
     ↓
-Fazit: Unser Beitrag ist signifikant für die Politikgestaltung, zukünftige Arbeit ist V nötig
+Fazit: Beitrag ist signifikant, zukünftige Arbeit ist V
 ```
 
 ---
 
 ## Evidence Placement Strategy
 
-| Abschnitt         | Papiere zum Zitieren           | Zweck                                                  |
-|-------------------|--------------------------------|--------------------------------------------------------|
-| Einleitung        | IPCC-Berichte, Grundlagenwerke | Etablierung der Problemrelevanz, Einführung ETS        |
-| Literaturübersicht| Ellerman et al., Rubashkina et al., Studien zu California/China ETS, Studien zu Verteilungseffekten | Abdeckung des Forschungsstandes, Identifikation der Lücken |
-| Methodik          | Methodologische Referenzen     | Rechtfertigung des Forschungsdesigns, Datenquellen    |
-| Ergebnisse        | Emissionsdaten, Preisdaten, nationale Berichte, Studien zur Attribuierung | Präsentation der empirischen Befunde der Fallstudien |
-| Diskussion        | Studien zur Effektivität, sozio-ökonomischen Auswirkungen, Policy-Analysen | Vergleich der Ergebnisse mit Literatur, Ableitung von Implikationen |
-| Fazit             | Schlüsselstudien, eigene Ergebnisse | Zusammenfassung und Einordnung der Beiträge          |
+| Section           | Papers to Cite                                     | Purpose                                                       |
+|-------------------|----------------------------------------------------|---------------------------------------------------------------|
+| Einleitung        | IPCC-Berichte, UNFCCC-Dokumente, grundlegende Papiere zum Klimawandel | Etablierung der Problemstellung und Relevanz               |
+| Lit. Übersicht    | Ellerman et al. (2020), Europäische Kommission (Richtlinien), Kettner et al. (2019), Neuhoff et al. (2020), Smale et al. (2006) | Abdeckung des Forschungsstandes, Identifikation der Lücke |
+| Methodik          | Statistiklehrbücher, methodologische Papiere zu Zeitreihen/Regression | Rechtfertigung des Ansatzes und der Analysetechniken      |
+| Diskussion        | Ellerman et al. (2020), andere aktuelle Studien zu ETS, politische Dokumente | Vergleich der Ergebnisse, Ableitung von Implikationen     |
 
 ---
 
 ## Figure/Table Plan
 
-1.  **Abbildung 1:** Konzeptuelles Framework zur Bewertung von ETS (in Einleitung)
-2.  **Tabelle 1:** Übersicht der wichtigsten Designmerkmale ausgewählter ETS-Systeme (in Literaturübersicht)
-3.  **Abbildung 2:** Schematische Darstellung des Forschungsdesigns und der Fallstudienauswahl (in Methodik)
-4.  **Abbildung 3:** Emissionsentwicklung und Cap für EU ETS (in Ergebnisse)
-5.  **Abbildung 4:** Emissionsentwicklung und Cap für California Cap-and-Trade (in Ergebnisse)
-6.  **Abbildung 5:** Emissionsentwicklung und Cap für China ETS (in Ergebnisse, falls Daten vergleichbar)
-7.  **Tabelle 2:** Vergleich der quantifizierten Emissionsreduktionen und ökonomischen Indikatoren pro Fallstudie (in Ergebnisse)
-8.  **Tabelle 3:** Vergleich der beobachteten sozio-ökonomischen Verteilungseffekte pro Fallstudie (in Ergebnisse)
-9.  **Abbildung 6:** Visualisierung von Korrelationen zwischen Designmerkmalen und Effektivität (in Diskussion)
+1.  **Abbildung 1:** Zeitliche Entwicklung der Gesamtemissionen im EU-ETS (2005-heute, mit Fokus 2016-heute) (in Ergebnisse)
+2.  **Tabelle 1:** Emissionsentwicklung nach Sektoren im EU-ETS (2016-heute) (in Ergebnisse)
+3.  **Abbildung 2:** Entwicklung der EUA-Spot- und Futures-Preise (2016-heute), mit Markierung wichtiger Reformen (MSR-Einführung) (in Ergebnisse)
+4.  **Abbildung 3:** Volatilität der EUA-Preise (z.B. gleitende Standardabweichung) (in Ergebnisse)
+5.  **Abbildung 4:** MSR-Einlagerungen und TNAC-Entwicklung (2019-heute) (in Ergebnisse)
+6.  **Tabelle 2:** Regressionsergebnisse zum Einfluss der MSR auf die Zertifikatspreise (in Ergebnisse)
+7.  **Tabelle 3:** Regressionsergebnisse zu Emissionsminderungen und dem EU-ETS (in Ergebnisse)
+8.  **Abbildung 5:** Konzeptionelles Modell der Wirkungsweise des EU-ETS und der MSR (optional, in Einleitung oder Lit. Review)
 
 ---
 
 ## Writing Priorities
 
-**Must be crystal clear:**
--   Die Forschungsfrage und ihre Unterfragen
--   Ihr spezifischer Beitrag zur Schließung der Forschungslücken
--   Die Hauptbefunde der vergleichenden Analyse
+**Muss kristallklar sein:**
+-   Forschungsfrage
+-   Ihr Beitrag
+-   Hauptergebnisse
 
-**Can be concise:**
--   Detaillierte historische Entwicklungen einzelner ETS-Phasen (Fokus auf Relevanz für Vergleich)
--   Allgemein bekannte Grundlagen der Klimaökonomie
+**Kann prägnant sein:**
+-   Details der Literaturübersicht (solange die Argumentation klar ist)
+-   Methodische Feinheiten (solange nachvollziehbar)
 
-**Should be compelling:**
--   Der Hook und die Problemstellung in der Einleitung
--   Die Diskussion der Implikationen und Empfehlungen für die Politik
+**Sollte überzeugend sein:**
+-   Einleitung (Haken und Problemstellung)
+-   Diskussion (Implikationen und Relevanz)
 
 ---
 
 ## Section Dependencies
 
-Write in this order:
-1.  **Methodik** (am konkretsten, legt den Rahmen fest)
-2.  **Ergebnisse** (datengetrieben, klar)
-3.  **Einleitung** (jetzt wissen Sie, was Sie einführen)
-4.  **Literaturübersicht** (Sie wissen, welche Literatur für Ihre Ergebnisse und Diskussion relevant ist)
-5.  **Diskussion** (Sie wissen, was Sie diskutieren müssen)
+Schreiben Sie in dieser Reihenfolge:
+1.  **Methodik** (am konkretsten, Datenerhebung und Analyseplan)
+2.  **Ergebnisse** (datengetrieben, objektiv)
+3.  **Einleitung** (jetzt wissen Sie, was Sie vorstellen)
+4.  **Literaturübersicht** (Sie wissen, welche Literatur relevant ist, um Ihre Lücke zu positionieren)
+5.  **Diskussion** (Sie wissen, was zu interpretieren und zu diskutieren ist)
 6.  **Fazit** (Zusammenfassung dessen, was Sie geschrieben haben)
 7.  **Abstract** (als Letztes – fasst alles zusammen)
 
@@ -253,27 +247,27 @@ Write in this order:
 
 ## Quality Checks
 
-Each section should answer:
--   **Einleitung:** Warum sollte ich mich dafür interessieren?
--   **Literaturübersicht:** Was wissen wir bereits, und wo sind die Lücken?
--   **Methodik:** Was haben Sie getan, und warum genau so?
+Jeder Abschnitt sollte beantworten:
+-   **Einleitung:** Warum sollte es mich interessieren?
+-   **Literaturübersicht:** Was wissen wir bereits?
+-   **Methodik:** Was haben Sie getan?
 -   **Ergebnisse:** Was haben Sie gefunden?
--   **Diskussion:** Was bedeuten Ihre Ergebnisse?
--   **Fazit:** Warum ist das, was Sie gefunden haben, wichtig?
+-   **Diskussion:** Was bedeutet das?
+-   **Fazit:** Warum ist das wichtig?
 
 ---
 
 ## Target Audience Considerations
 
-**Für diese Arbeit, gehen Sie davon aus, dass die Leserschaft:**
--   **Kennt:** [Grundlegende Konzepte des Klimawandels und der Umweltökonomie, das Konzept des CO2-Zertifikatehandels.]
--   **Nicht kennt:** [Die spezifischen Designunterschiede und komplexen sozio-ökonomischen Verteilungseffekte verschiedener ETS-Systeme im Detail.]
--   **Interessiert an:** [Empirischen Belegen für die Wirksamkeit von Klimainstrumenten, Best Practices im Policy-Design, Implikationen für eine gerechte Transformation.]
+**Für diese Arbeit wird davon ausgegangen, dass die Leser:**
+-   **Wissen:** [Basic concepts in the field] Grundlegende Konzepte der Umweltökonomie, des Klimawandels und der Funktionsweise von CO2-Märkten.
+-   **Nicht wissen:** [Your specific approach] Die detaillierte Wirkungsweise der MSR im EU-ETS nach 2015 und ihre quantitativen Auswirkungen.
+-   **Interesse haben an:** [Practical applications] Die tatsächliche Wirksamkeit von Klimaschutzinstrumenten und deren Implikationen für die Politikgestaltung.
 
 **Daher:**
--   **Erklären Sie:** [Technische Details der verschiedenen ETS-Systeme, die Methodik zur Attribuierung von Emissionsreduktionen, die Messung sozio-ökonomischer Effekte.]
--   **Nehmen Sie an:** [Ein grundlegendes Verständnis für ökonomische Prinzipien und Klimapolitik.]
--   **Betonen Sie:** [Die Relevanz der vergleichenden Analyse, die Neuheit der Erkenntnisse zu sozio-ökonomischen Effekten und die praktischen Implikationen für die Politik.]
+-   **Erklären Sie:** [Technical details] Den genauen Mechanismus der MSR und die verwendeten ökonometrischen Modelle.
+-   **Nehmen Sie an:** [Background knowledge] Ein grundlegendes Verständnis von Angebot und Nachfrage, externen Effekten und statistischen Grundbegriffen.
+-   **Betonen Sie:** [Novel contributions] Die Aktualität der Analyse, die Schließung der Forschungslücke und die politischen Implikationen der Ergebnisse.
 
 ---
 
@@ -282,10 +276,10 @@ Each section should answer:
 **KRITISCH:** Stellen Sie bei der Strukturierung der Arbeit sicher, dass alle Behauptungen auf Quellen zurückgeführt werden können.
 
 **Ihre Verantwortlichkeiten:**
-1.  **Überprüfen Sie, ob Zitate existieren,** bevor Sie sie in Gliederungen aufnehmen.
+1.  **Überprüfen Sie, ob Zitate existieren**, bevor Sie sie in Gliederungen aufnehmen.
 2.  **Schlagen Sie niemals fabrizierte Beispiele** oder Statistiken vor.
-3.  **Markieren Sie Platzhalter** deutlich mit [VERIFIZIEREN] oder [TODO].
+3.  **Kennzeichnen Sie Platzhalter** deutlich mit [VERIFY] oder [TODO].
 4.  **Stellen Sie sicher, dass die Struktur** nachprüfbare, evidenzbasierte Argumente unterstützt.
-5.  **Kennzeichnen Sie Abschnitte,** die eine starke Zitationsunterstützung benötigen.
+5.  **Markieren Sie Abschnitte**, die eine starke Zitierunterstützung benötigen.
 
-**Eine gut strukturierte Arbeit mit fabrizierten Inhalten wird die Verifikation trotzdem nicht bestehen. Bauen Sie auf Genauigkeit.**
+**Eine gut strukturierte Arbeit mit fabriziertem Inhalt wird die Verifizierung dennoch nicht bestehen. Bauen Sie auf Genauigkeit.**

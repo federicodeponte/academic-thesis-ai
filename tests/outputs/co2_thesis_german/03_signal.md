@@ -1,172 +1,141 @@
-# Forschungslückenanalyse & Forschungsmöglichkeiten
+# Research Gap Analysis & Opportunities
 
-**Thema:** CO2-Zertifikatehandel
-**Analysierte Artikel:** 2
-**Analysedatum:** 23. Mai 2024
+**Topic:** CO2-Zertifikatehandel
+**Papers Analyzed:** 1
+**Analysis Date:** 2024-06-05
 
 ---
 
 ## Executive Summary
 
-**Wichtigste Erkenntnis:** Obwohl das EU-Emissionshandelssystem (EU ETS) gut erforscht ist, gibt es erhebliche Lücken hinsichtlich seiner Anwendbarkeit auf andere Regionen, die Interaktion mit neuen politischen Instrumenten und die umfassenden sozio-ökonomischen Auswirkungen jüngster Reformen.
+**Wichtigste Erkenntnis:** Die größte und unmittelbarste Forschungslücke betrifft die Analyse der Wirksamkeit des EU ETS nach 2015, insbesondere im Hinblick auf wichtige Reformen wie die Marktstabilitätsreserve (MSR) und das "Fit for 55"-Paket.
 
-**Empfehlung:** Eine vergleichende Analyse der Innovationswirkungen von Emissionshandelssystemen in verschiedenen Jurisdiktionen und eine tiefgehende Untersuchung der sozio-ökonomischen Verteilungseffekte der erweiterten CO2-Preismechanismen in Europa.
+**Empfehlung:** Eine Aktualisierung und Erweiterung der umfassenden Analyse von Ellerman et al. (2020) ist dringend erforderlich, um die Auswirkungen der jüngsten politischen und markttechnischen Entwicklungen auf die Emissionsreduktion und Marktstabilität zu bewerten.
 
 ---
 
 ## 1. Major Research Gaps
 
-### Gap 1: Geografische & Systemische Lücken jenseits des EU ETS
-**Beschreibung:** Die vorliegenden Papiere konzentrieren sich primär auf das EU ETS. Es fehlt eine umfassende vergleichende Analyse mit anderen, aufstrebenden oder etablierten Emissionshandelssystemen weltweit (z.B. China ETS, Kalifornien, UK ETS) und deren spezifischen Designmerkmalen und Auswirkungen.
-**Warum es wichtig ist:** Um Best Practices zu identifizieren, Lehren aus verschiedenen Kontexten zu ziehen und die Skalierbarkeit und Anpassungsfähigkeit von CO2-Preismechanismen global zu verstehen.
-**Evidenz:** Paper 1 (Ellerman et al., 2021) und Paper 2 (Rubashkina et al., 2024) konzentrieren sich explizit auf das EU ETS als primäres Forschungsobjekt.
-**Schwierigkeit:** 🟡 Medium
+### Gap 1: Analyse des EU ETS nach 2015 und die Auswirkungen der Marktstabilitätsreserve (MSR)
+**Description:** Die umfassende Analyse von Ellerman et al. (2020) konzentriert sich auf das erste Jahrzehnt des EU ETS (2005-2015). Dies lässt eine kritische Zeitspanne nach 2015 unbeleuchtet, in der wesentliche Reformen, insbesondere die Einführung der Marktstabilitätsreserve (MSR) im Jahr 2019, implementiert wurden. Die MSR wurde konzipiert, um das Überangebot an Zertifikaten zu reduzieren und die Preisvolatilität zu mindern. Eine detaillierte Bewertung ihrer langfristigen Wirksamkeit und ihrer Auswirkungen auf die Marktstabilität und Emissionsreduktion ist dringend erforderlich.
+**Why it matters:** Die MSR ist eine der wichtigsten Reformen des EU ETS. Ohne eine umfassende Analyse dieser Periode fehlt ein klares Bild der aktuellen Funktionsweise und Effektivität des Systems und seiner Fähigkeit, die ehrgeizigeren Klimaziele zu erreichen.
+**Evidence:** Paper 1 (Ellerman et al., 2020) erwähnt explizit, dass es sich auf das erste Jahrzehnt bis 2015 konzentriert und neuere Entwicklungen nicht umfassend behandelt.
+**Difficulty:** 🟡 Medium
 **Impact potential:** ⭐⭐⭐⭐⭐
 
-**Wie man es angeht:**
--   Ansatz 1: Durchführung von Fallstudien und vergleichenden Analysen von Design und Effektivität verschiedener ETS weltweit.
--   Ansatz 2: Entwicklung eines Frameworks zur Bewertung der Übertragbarkeit von Reformen (z.B. Marktstabilitätsreserven) auf andere Systeme.
+**How to address:**
+-   Approach 1: Eine Zeitreihenanalyse der CO2-Preise und Emissionsdaten von 2016 bis heute, um die Auswirkungen der MSR und anderer post-2015 Reformen zu isolieren.
+-   Approach 2: Eine vergleichende Fallstudie der Preismechanismen und deren Effekte vor und nach der MSR-Einführung.
 
 ---
 
-### Gap 2: Umfassende sozio-ökonomische Verteilungseffekte
-**Beschreibung:** Während die wirtschaftlichen Auswirkungen des EU ETS in Paper 1 als "überschaubar" beschrieben werden, fehlt eine detaillierte Analyse der Verteilungseffekte auf verschiedene Einkommensgruppen, Regionen oder Branchen, insbesondere im Kontext jüngster und zukünftiger Systemerweiterungen (z.B. Gebäude- und Verkehrssektor).
-**Warum es wichtig ist:** Die soziale Akzeptanz und Gerechtigkeit von Klimapolitiken sind entscheidend für deren langfristigen Erfolg und politische Stabilität. Ein besseres Verständnis hilft, Ausgleichsmaßnahmen zu entwickeln.
-**Evidenz:** Paper 1 erwähnt "Debatten über Wettbewerbsfähigkeit und Carbon Leakage" als wirtschaftliche Auswirkungen, geht aber nicht detailliert auf Verteilungseffekte ein. Paper 2 fokussiert auf Innovation.
-**Schwierigkeit:** 🔴 High
-**Impact potential:** ⭐⭐⭐⭐⭐
-
-**Wie man es angeht:**
--   Ansatz 1: Verwendung von Haushaltsdaten und Input-Output-Modellen, um die direkten und indirekten Kostenbelastungen für verschiedene Haushaltstypen zu quantifizieren.
--   Ansatz 2: Qualitative Studien und Stakeholder-Interviews, um die Wahrnehmung von Gerechtigkeit und Akzeptanz zu erfassen.
-
----
-
-### Gap 3: Interaktion mit neuen Klimaschutzinstrumenten und politischen Paketen (Post-2021)
-**Beschreibung:** Paper 1 ist von 2021 und Paper 2 ist von 2024, aber der Fokus liegt auf der Bewertung des bestehenden Systems. Es fehlt eine umfassende Analyse der Interaktion des EU ETS mit neuen, komplementären oder sich überschneidenden Politikinstrumenten, insbesondere dem "Fit for 55"-Paket und dem CO2-Grenzausgleichsmechanismus (CBAM).
-**Warum es wichtig ist:** Diese neuen Politiken verändern das regulatorische Umfeld erheblich und könnten Synergien oder unbeabsichtigte Wechselwirkungen mit dem ETS haben, die dessen Wirksamkeit beeinflussen.
-**Evidenz:** Paper 1 deckt die Entwicklung bis 2021 ab; Paper 2 konzentriert sich auf Innovation. Keines der Papiere analysiert explizit die Auswirkungen des "Fit for 55"-Pakets oder des CBAM auf das ETS-Design oder dessen Wirkungen.
-**Schwierigkeit:** 🟡 Medium
+### Gap 2: Isolierung der kausalen Effekte des EU ETS von anderen politischen Maßnahmen und externen Schocks
+**Description:** Ellerman et al. (2020) heben die Komplexität hervor, die Auswirkungen des EU ETS von anderen politischen Maßnahmen (z.B. Erneuerbare-Energien-Richtlinien, Energieeffizienzstandards) oder externen wirtschaftlichen Schocks (z.B. Finanzkrise 2008, COVID-19-Pandemie, Energiekrise 2022) zu isolieren. Dies stellt eine methodologische Lücke dar, die eine präzisere Bewertung der tatsächlichen Wirksamkeit des Systems erschwert.
+**Why it matters:** Eine genaue Kausalanalyse ist entscheidend, um die tatsächliche Kosteneffizienz und Effektivität des EU ETS als Klimaschutzinstrument zu belegen und fundierte Empfehlungen für seine Weiterentwicklung oder für die Gestaltung anderer Emissionshandelssysteme zu geben.
+**Evidence:** Paper 1 (Ellerman et al., 2020) nennt die Komplexität der Isolierung von ETS-Effekten als eine Limitation.
+**Difficulty:** 🔴 High
 **Impact potential:** ⭐⭐⭐⭐
 
-**Wie man es angeht:**
--   Ansatz 1: Entwicklung von Simulationsmodellen, um die Auswirkungen des CBAM auf den Kohlenstoffpreis, Carbon Leakage und die Wettbewerbsfähigkeit von Industrien zu bewerten.
--   Ansatz 2: Analyse der politischen Ökonomie der Integration neuer Sektoren (Gebäude, Verkehr, Schifffahrt) in das ETS und die damit verbundenen Herausforderungen.
+**How to address:**
+-   Approach 1: Einsatz fortgeschrittener ökonometrischer Methoden wie Difference-in-Differences (DiD), synthetische Kontrollmethoden oder Matching-Verfahren, um die Auswirkungen des ETS besser zu isolieren.
+-   Approach 2: Sektorale Analysen, die spezifische Sektoren innerhalb und außerhalb des ETS vergleichen, um kausale Rückschlüsse zu ziehen.
 
 ---
 
-### Gap 4: Langfristige Auswirkungen auf systemische Transformation und Pfadabhängigkeit
-**Beschreibung:** Die Papiere bewerten die Wirksamkeit des ETS bei der Emissionsreduktion und Innovation. Es fehlt jedoch eine tiefgreifende Analyse, wie das ETS langfristig systemische Transformationen in der Wirtschaft fördert oder behindert und ob es zu Pfadabhängigkeiten führt, die zukünftige Dekarbonisierungsoptionen einschränken könnten.
-**Warum es wichtig ist:** Klimaschutz erfordert nicht nur inkrementelle Reduktionen, sondern grundlegende systemische Veränderungen. Ein Verständnis dieser Dynamiken ist entscheidend für eine zukunftsfähige Klimapolitik.
-**Evidenz:** Paper 1 bewertet die "signifikante Rolle bei der Reduktion von Treibhausgasemissionen", aber nicht die systemische Transformation. Paper 2 fokussiert auf Innovation, aber nicht auf die langfristige Pfadabhängigkeit.
-**Schwierigkeit:** 🔴 High
-**Impact potential:** ⭐⭐⭐⭐
+### Gap 3: Theoretische Formalisierung der Interaktion zwischen Emissionshandel und anderen Klimapolitikinstrumenten
+**Description:** Während Paper 1 die Entwicklung des EU ETS im Kontext der Klimapolitik diskutiert, wird die theoretische Formalisierung der Interaktion zwischen einem marktgestützten Instrument wie dem ETS und anderen komplementären oder überlappenden Politiken (z.B. Subventionen für erneuerbare Energien, Brennstoffsteuern) nicht tiefgehend behandelt.
+**Why it matters:** Ein besseres theoretisches Verständnis dieser Interaktionen ist entscheidend, um kohärente und effiziente Klimapolitikpakete zu gestalten, die unbeabsichtigte Nebeneffekte oder Ineffizienzen vermeiden.
+**Evidence:** Impliziert durch die Fokussierung auf das ETS selbst und die Erwähnung der Komplexität, ETS-Effekte zu isolieren (Paper 1, Ellerman et al., 2020).
+**Difficulty:** 🟡 Medium
+**Impact potential:** ⭐⭐⭐
 
-**Wie man es angeht:**
--   Ansatz 1: Anwendung von Theorien des sozio-technischen Wandels und Innovationssystemansätzen zur Analyse der Rolle des ETS bei der Entstehung und Diffusion kohlenstoffarmer Technologien.
--   Ansatz 2: Szenarioanalysen und dynamische Simulationsmodelle, um langfristige Entwicklungen und mögliche Pfadabhängigkeiten zu untersuchen.
+**How to address:**
+-   Approach 1: Entwicklung ökonomischer Modelle, die verschiedene Klimapolitikinstrumente simultan abbilden und deren Interaktionen analysieren.
+-   Approach 2: Empirische Studien, die die Effektivität des ETS in Kontexten mit unterschiedlicher Dichte komplementärer Politiken vergleichen.
 
 ---
 
 ## 2. Emerging Trends (2023-2024)
 
-### Trend 1: Erhöhte Ambition und Systemerweiterung im EU ETS
-**Beschreibung:** Das EU ETS wird durch das "Fit for 55"-Paket erheblich reformiert, um die Emissionsreduktionsziele bis 2030 zu verschärfen (55% Reduktion gegenüber 1990). Dies beinhaltet die Erweiterung des ETS auf neue Sektoren wie den See- und Luftverkehr sowie die Schaffung eines separaten Emissionshandelssystems für Gebäude und Verkehr (ETS 2).
-**Evidenz:** Paper 1 erwähnt Reformen bis 2021, aber die jüngsten und umfassendsten Erweiterungen sind neuer. Paper 2 (2024) deutet durch seinen Fokus auf Innovation an, dass die Dynamik des Systems weitergeht.
-**Key papers:** [VERIFIZIEREN] Neuere politische Dokumente und Studien zum "Fit for 55"-Paket sind hier relevant.
-**Maturity:** 🟡 Growing
+**Hinweis:** Aufgrund der Analyse von nur einem Paper (veröffentlicht 2020) ist die Erkennung aktueller Trends (2023-2024) stark eingeschränkt und basiert eher auf allgemeinen Kenntnissen des Feldes als auf direkten Belegen aus der Literatur.
 
-**Opportunity:** Untersuchung der Auswirkungen dieser erweiterten Ambitionen und der neuen Sektoren auf Preisvolatilität, Carbon Leakage, soziale Gerechtigkeit und die Wirksamkeit des Gesamtsystems.
-
----
-
-### Trend 2: Fokus auf Innovation durch CO2-Preismechanismen
-**Beschreibung:** Es gibt ein wachsendes Interesse daran, wie CO2-Preismechanismen gezielt Innovationen fördern können. Paper 2 zeigt, dass das EU ETS die Öko-Innovation fördert. Dieser Trend wird sich voraussichtlich verstärken, da Innovationen als entscheidend für die Dekarbonisierung angesehen werden.
-**Evidenz:** Paper 2 (Rubashkina et al., 2024, DOI: [10.1002/eet.2104](https://doi.org/10.1002/eet.2104)) ist ein direktes Beispiel für diesen Trend, indem es die Rolle des EU ETS bei der Förderung von Innovationen untersucht.
-**Key papers:** Rubashkina, M. et al., 2024 (DOI: [10.1002/eet.2104](https://doi.org/10.1002/eet.2104))
-**Maturity:** 🟡 Growing
-
-**Opportunity:** Detailliertere Analyse der Mechanismen, durch die CO2-Preise verschiedene Arten von Innovationen (inkrementell vs. disruptiv) in unterschiedlichen Sektoren anregen, und wie dies durch Politikdesign optimiert werden kann.
-
----
-
-### Trend 3: Globalisierung und Verknüpfung von Emissionshandelssystemen
-**Beschreibung:** Immer mehr Länder und Regionen implementieren eigene Emissionshandelssysteme. Es gibt ein wachsendes Interesse an der Möglichkeit, diese Systeme miteinander zu verknüpfen, um die Effizienz zu steigern und einen globalen Kohlenstoffmarkt zu schaffen.
-**Evidenz:** Obwohl nicht explizit in den Papiere erwähnt, ist die Diskussion um die Verknüpfung von ETS und die Entwicklung neuer nationaler Systeme (z.B. China ETS) ein globaler Trend. Paper 1 konzentriert sich auf das EU ETS, aber die Einschränkung "weniger auf globalen Kohlenstoffmärkten" deutet auf diese Lücke hin.
-**Key papers:** [VERIFIZIEREN] Studien zu internationalen Kohlenstoffmärkten und der Verknüpfung von ETS.
+### Trend 1: Erweiterung des EU ETS auf neue Sektoren (ETS2)
+**Description:** Die jüngsten Reformen des EU ETS sehen eine Ausweitung auf den Wärme- und Straßenverkehrssektor vor (oft als ETS2 bezeichnet). Dies stellt eine signifikante Veränderung dar, die neue Herausforderungen und Chancen mit sich bringt.
+**Evidence:** [VERIFY] Aktuelle politische Debatten und Gesetzgebungen der EU (nicht direkt aus Paper 1 ableitbar).
+**Key papers:** [VERIFY] Aktuelle EU-Politikdokumente und neuere akademische Artikel, die diese Erweiterung analysieren.
 **Maturity:** 🔴 Emerging
 
-**Opportunity:** Untersuchung der Herausforderungen und Vorteile der Verknüpfung von ETS, einschließlich Governance-Fragen, Preisvolatilität und potenziellen Carbon Leakage-Effekten zwischen verknüpften Systemen.
+**Opportunity:** Eine Analyse der potenziellen Auswirkungen des ETS2 auf Haushalte, soziale Gerechtigkeit und die Wirksamkeit der Emissionsreduktion in diesen neuen Sektoren.
+
+---
+
+### Trend 2: Anpassung an ehrgeizigere Klimaziele ("Fit for 55")
+**Description:** Das EU ETS wurde an die ehrgeizigeren Klimaziele der EU angepasst, insbesondere das Ziel einer Reduktion um 55% bis 2030 ("Fit for 55"-Paket). Dies impliziert eine stärkere Lineare Reduktionsfaktor (LRF) und eine Anpassung der Gesamtmenge an verfügbaren Zertifikaten.
+**Evidence:** [VERIFY] Aktuelle EU-Politikdokumente (nicht direkt aus Paper 1 ableitbar).
+**Key papers:** [VERIFY] Neuere Studien, die die Implikationen der "Fit for 55"-Anpassungen für den Kohlenstoffmarkt und die Emissionsreduktion untersuchen.
+**Maturity:** 🟡 Growing
+
+**Opportunity:** Untersuchung der notwendigen Anpassungen in der Industrie und anderen Sektoren, um diesen beschleunigten Reduktionspfaden gerecht zu werden, sowie die Bewertung der Angemessenheit der aktuellen Politik.
 
 ---
 
 ## 3. Unresolved Questions & Contradictions
 
-### Debate 1: Optimale Balance zwischen Preisstabilität und Preissignalstärke
-**Position A (Implizit Paper 1):** Reformen wie die Marktstabilitätsreserve (MSR) haben dazu beigetragen, die Stabilität des Kohlenstoffpreises zu verbessern und somit die Wirksamkeit zu steigern. Dies deutet auf einen Wert der Preisstabilität hin.
-**Position B (Offene Frage):** Ein zu stabiler oder zu niedriger Preis könnte das langfristige Investitionssignal für disruptive Innovationen und weitreichende Dekarbonisierung untergraben. Wie hoch muss der Preis sein, um wirklich transformative Investitionen anzustoßen?
-**Warum es ungelöst ist:** Die genaue Höhe eines "optimalen" Kohlenstoffpreises, der sowohl Stabilität als auch ein starkes Investitionssignal bietet, ist schwer zu bestimmen und hängt von vielen externen Faktoren (Technologieentwicklung, politische Rahmenbedingungen) ab. Die Balance zwischen kurzfristiger Stabilität und langfristigem Anreiz ist eine fortwährende Herausforderung.
-**Wie zu lösen:** Durchführung von Sensitivitätsanalysen mit ökonometrischen Modellen und agentenbasierten Simulationen, um die Auswirkungen verschiedener Preisniveaus und Stabilitätsmechanismen auf Investitionsentscheidungen und Emissionsreduktionen zu untersuchen.
+**Hinweis:** Aufgrund der Analyse von nur einem Paper können keine Konflikte oder Widersprüche in den Forschungsergebnissen identifiziert werden. Das vorliegende Paper bietet eine kohärente Analyse.
+
+### Debate 1: [VERIFY] Die Rolle von Kohlenstoffpreisen versus anderen Instrumenten zur Dekarbonisierung
+**Position A:** Ellerman et al. (2020) betonen die Rolle des EU ETS als "Blaupause" für andere Systeme und die erzielten Emissionsreduktionen, was die Wirksamkeit von Kohlenstoffpreisen unterstreicht.
+**Position B:** [VERIFY] Einige Kritiker oder andere Studien könnten argumentieren, dass technologische Innovationen, direkte Subventionen oder regulatorische Standards effektivere oder sozial gerechtere Wege zur Dekarbonisierung darstellen, insbesondere in Sektoren mit hohen Anpassungskosten oder in Entwicklungsregionen.
+**Why it's unresolved:** Die relative Effektivität und soziale Akzeptanz verschiedener Klimaschutzinstrumente ist ein fortlaufendes Debattefeld, das von ökonomischen, politischen und sozialen Faktoren abhängt.
+**How to resolve:** Vergleichende Studien, die die Implementierung und Ergebnisse von Kohlenstoffpreisen mit anderen politischen Ansätzen in verschiedenen Kontexten gegenüberstellen, unter Berücksichtigung von Kosteneffizienz, sozialer Gerechtigkeit und technologischer Entwicklung.
 
 ---
 
 ## 4. Methodological Opportunities
 
 ### Underutilized Methods
-1.  **Agentenbasierte Modellierung (ABM):** Nur selten im Kontext des EU ETS zur Modellierung des Verhaltens heterogener Akteure (Unternehmen, Investoren) und ihrer Interaktionen mit dem Marktmechanismus angewendet. Könnte für die Analyse von Innovationsträgern und Marktstörungen nützlich sein.
-2.  **Maschinelles Lernen/Künstliche Intelligenz (KI):** Wenig genutzt für präzisere Preisprognosen, die Identifizierung komplexer Muster in Handelsdaten oder die Vorhersage von Carbon Leakage-Risiken unter verschiedenen politischen Szenarien.
-3.  **Qualitative Fallstudien und vergleichende Ansätze:** Während Paper 1 ein Review ist und Paper 2 quantitativ, könnten tiefergehende qualitative Studien zu Implementierungsherausforderungen in spezifischen Sektoren oder Ländern wertvolle Einblicke liefern.
+1.  **Kausale Inferenzmethoden (z.B. Synthetic Control, Regression Discontinuity):** Nur 1/1 Paper erwähnt die Schwierigkeit, Kausaleffekte zu isolieren. Diese Methoden könnten leistungsstark sein, um die tatsächlichen Auswirkungen des ETS auf Emissionen und die Wirtschaft genauer zu bestimmen, indem sie exogene Schocks und andere politische Maßnahmen besser kontrollieren.
+2.  **Computable General Equilibrium (CGE) Modelle:** Diese Modelle könnten verwendet werden, um die makroökonomischen Auswirkungen von ETS-Reformen und -Erweiterungen (z.B. ETS2) auf verschiedene Sektoren, Beschäftigung und Einkommensverteilung zu simulieren, was über die reine Emissionsanalyse hinausgeht.
 
 ### Datasets Not Yet Explored
-1.  **Firmenspezifische Investitionsdaten:** Detailliertere Daten zu Investitionen in kohlenstoffarme Technologien oder Forschung und Entwicklung (F&E) auf Unternehmensebene könnten die Erkenntnisse von Paper 2 erweitern und zeigen, welche Unternehmen am stärksten auf CO2-Preise reagieren.
-2.  **Verteilungsdaten auf Haushaltsebene:** Mikrodaten zu Energieverbrauch, Einkommen und Ausgaben verschiedener Haushaltstypen, um die sozio-ökonomischen Verteilungseffekte der CO2-Bepreisung (insbesondere bei Erweiterung auf Gebäude und Verkehr) präziser zu quantifizieren.
-3.  **Globale ETS-Datenbanken:** Eine umfassende, harmonisierte Datenbank über Designmerkmale, Preise und Emissionsdaten verschiedener ETS weltweit, um vergleichende Analysen zu erleichtern.
+1.  **Aktuelle Emissions- und Marktdaten des EU ETS (2016-heute):** Verfügbar über EEX, EU Commission, Eurostat, aber im analysierten Paper nicht abgedeckt.
+2.  **Daten zu den Auswirkungen der MSR:** Spezifische Daten zur Zertifikatsentnahme aus dem Markt und deren Korrelation mit Preisentwicklungen und Investitionsentscheidungen.
 
 ### Novel Combinations
-1.  **[Agentenbasierte Modellierung] + [Verhaltensökonomie]:** Kombination von ABM mit Erkenntnissen aus der Verhaltensökonomie, um realistischere Modelle für die Entscheidungsfindung von Unternehmen und Haushalten unter CO2-Preisen zu entwickeln.
-2.  **[Maschinelles Lernen] + [Politikfolgenabschätzung]:** Einsatz von ML zur Vorhersage der Auswirkungen neuer ETS-Reformen oder der Einführung von CBAM auf spezifische Sektoren oder Länder.
-3.  **[Theorie des sozio-technischen Wandels] angewendet auf [EU ETS Governance]:** Untersuchung, wie Governance-Strukturen und politische Prozesse innerhalb des EU ETS den Übergang zu einer kohlenstoffarmen Wirtschaft fördern oder hemmen.
+1.  **[Kausale Inferenzmethoden] + [Analyse der MSR-Wirksamkeit]:** Anwendung von Methoden wie DiD oder Synthetic Control, um die spezifischen Auswirkungen der MSR auf die Marktstabilität und die Emissionsreduktion nach 2019 zu quantifizieren.
+2.  **[CGE-Modelle] angewendet auf [Soziale Auswirkungen von ETS2]:** Simulation der Verteilungseffekte der Erweiterung des ETS auf den Wärme- und Verkehrssektor, um potenzielle Belastungen für Haushalte und Industrie zu identifizieren und Minderungsstrategien zu entwickeln.
 
 ---
 
 ## 5. Interdisciplinary Bridges
 
-### Connection 1: Umweltökonomie ↔️ Politikwissenschaft & Governance
-**Observation:** Umweltökonomie konzentriert sich auf die Effizienz von Instrumenten (wie ETS), während Politikwissenschaft die Umsetzung, Governance-Strukturen und politische Akzeptanz untersucht.
-**Opportunity:** Import von Konzepten wie Policy Diffusion, Multi-Level Governance und Stakeholder-Analyse aus der Politikwissenschaft, um die Robustheit und Implementierbarkeit von ETS-Reformen zu bewerten.
-**Potential impact:** Hoch – könnte das Verständnis der politischen Machbarkeit und der institutionellen Herausforderungen von CO2-Märkten erheblich verbessern.
-
----
-
-### Connection 2: Umweltökonomie ↔️ Sozialwissenschaften & Gerechtigkeitsforschung
-**Observation:** Die Diskussion um CO2-Preise konzentriert sich oft auf Effizienz, vernachlässigt aber manchmal die Verteilungsaspekte und die soziale Gerechtigkeit.
-**Opportunity:** Integration von Methoden und Theorien aus der Soziologie, Sozialgeographie und Ethik, um die Auswirkungen von CO2-Preisen auf verschiedene soziale Gruppen, Regionen und die öffentliche Akzeptanz umfassender zu erfassen.
-**Potential impact:** Sehr hoch – essentiell für die Entwicklung von politisch tragfähigen und sozial gerechten Klimaschutzmaßnahmen.
+### Connection 1: Umweltökonomie ↔️ Sozialwissenschaften/Gerechtigkeitsforschung
+**Observation:** Das EU ETS wird hauptsächlich aus ökonomischer und umweltpolitischer Sicht analysiert (Paper 1). Die sozialen Auswirkungen, insbesondere im Hinblick auf Gerechtigkeit und Akzeptanz bei der Bevölkerung (z.B. durch ETS2 verursachte Kostensteigerungen), sind oft weniger beleuchtet.
+**Opportunity:** Import von Methoden und Theorien aus der Sozialwissenschaft (z.B. Gerechtigkeitstheorien, Akzeptanzstudien) in die Umweltökonomie, um die sozialen Dimensionen des Kohlenstoffpreises umfassender zu bewerten.
+**Potential impact:** Hoch – könnte zu politisch tragfähigeren und sozial gerechteren Klimaschutzmaßnahmen führen.
 
 ---
 
 ## 6. Replication & Extension Opportunities
 
 ### High-Value Replications
-1.  **[Paper 2: Rubashkina et al., 2024 (DOI: 10.1002/eet.2104)]:** Die Untersuchung des Einflusses des EU ETS auf Innovation könnte auf andere Emissionshandelssysteme (z.B. UK ETS, China ETS) angewendet werden, um zu sehen, ob ähnliche Mechanismen und Ergebnisse existieren. Dies würde die Generalisierbarkeit der Erkenntnisse stärken.
-2.  **[Paper 1: Ellerman et al., 2021 (DOI: 10.1093/reep/reab005)]:** Eine Aktualisierung dieser umfassenden Bewertung des EU ETS, die die Entwicklungen und Reformen seit 2021 (insbesondere "Fit for 55" und die Energiekrise) berücksichtigt, wäre von hohem Wert.
+1.  **[Ellerman et al., 2020]:** Eine vollständige Replikation der umfassenden Analyse, jedoch erweitert auf den Zeitraum 2005-2024, um die Entwicklungen nach 2015 (MSR, "Fit for 55") einzubeziehen. Dies wäre eine wichtige Aktualisierung und Erweiterung eines Referenzwerks.
 
 ### Extension Opportunities
-1.  **[Paper 2: Rubashkina et al., 2024]:** Könnte erweitert werden, um nicht nur Öko-Innovation und allgemeine Innovation zu betrachten, sondern auch spezifische Arten von disruptiven Technologien oder Sektor-spezifische Innovationen, die durch das ETS angeregt werden. Eine Analyse der Rolle von Finanzierungsmechanismen (z.B. Innovationsfonds des EU ETS) wäre ebenfalls relevant.
-2.  **[Paper 1: Ellerman et al., 2021]:** Die wirtschaftliche Bewertung könnte um eine detailliertere Analyse der Auswirkungen auf die Wettbewerbsfähigkeit von KMU (kleine und mittlere Unternehmen) in den ETS-Sektoren erweitert werden, da diese oft andere Herausforderungen als Großunternehmen haben.
+1.  **[Paper 1, Ellerman et al., 2020]:** Studierte die Entwicklung bis 2015, könnte erweitert werden, um die Reaktion des Marktes und der Politik auf externe Schocks wie die COVID-19-Pandemie und die Energiekrise 2022 im Kontext des EU ETS zu analysieren.
+2.  **[Paper 1, Ellerman et al., 2020]:** Konzentrierte sich auf das EU ETS als Blaupause, könnte erweitert werden, um detaillierte Vergleiche und Lehren für die Implementierung von Emissionshandelssystemen in Schwellenländern oder anderen Regionen durchzuführen.
 
 ---
 
 ## 7. Temporal Gaps
 
 ### Recent Developments Not Yet Studied
-1.  **[Das "Fit for 55"-Paket]:** Die vollständigen Auswirkungen der im Jahr 2023 und 2024 verabschiedeten Reformen des EU ETS, einschließlich der Erweiterung auf neue Sektoren (See-, Straßenverkehr und Gebäude) und des neuen ETS 2, sind noch nicht umfassend in der akademischen Literatur untersucht worden.
-2.  **[Die Energiekrise 2022/2023]:** Die Auswirkungen der extremen Preisvolatilität auf dem Energiemarkt auf den CO2-Zertifikatemarkt, die Investitionsentscheidungen von Unternehmen und die Wirksamkeit der Marktstabilitätsreserve sind noch nicht vollständig analysiert.
-3.  **[Implementierung des CBAM]:** Die ersten Auswirkungen und Herausforderungen der Implementierung des CO2-Grenzausgleichsmechanismus (CBAM) auf den EU ETS und den internationalen Handel sind ein brandaktuelles Thema.
+1.  **[ETS2 / Ausweitung auf Wärme & Verkehr]:** Die legislativen Entscheidungen und die bevorstehende Implementierung des ETS2 (für Gebäude und Straßenverkehr) sind sehr aktuelle Entwicklungen (2023/2024), die noch kaum in umfassenden akademischen Studien analysiert wurden.
+2.  **[Anpassung des EU ETS an "Fit for 55"-Ziele]:** Die Konsequenzen der verschärften Reduktionsziele und des angepassten Linearen Reduktionsfaktors (LRF) sind noch nicht vollständig verstanden und analysiert.
 
 ### Outdated Assumptions
-1.  **Annahmen über Carbon Leakage-Risiken:** Frühere Studien basierten oft auf Annahmen über relativ stabile globale Handelsbeziehungen. Die aktuellen geopolitischen Spannungen und protektionistischen Tendenzen könnten die Annahmen über Carbon Leakage und die Notwendigkeit von Schutzmaßnahmen verändern.
-2.  **Technologische Reife bestimmter Dekarbonisierungspfade:** Die rasche Entwicklung erneuerbarer Energien, Wasserstofftechnologien und Kohlenstoffabscheidung könnte frühere Annahmen über die Kosten und Machbarkeit bestimmter Emissionsreduktionspfade überholen.
+1.  **Annahmen bezüglich des Zertifikatsüberhangs:** Frühere Annahmen über den chronischen Überhang im EU ETS (vor MSR) sind nach der Einführung der MSR und der "Fit for 55"-Anpassungen möglicherweise nicht mehr gültig.
+2.  **Technologie- und Kostenentwicklungen:** Die Kosten für erneuerbare Energien und Speichertechnologien haben sich seit 2015 drastisch verändert, was die Kosten-Nutzen-Rechnung des ETS beeinflusst.
 
 ---
 
@@ -174,87 +143,90 @@
 
 Basierend auf dieser Analyse, hier sind **3 vielversprechende Richtungen** für Ihre Forschung:
 
-### Angle 1: Vergleichende Analyse der Innovationswirkungen von Emissionshandelssystemen in verschiedenen Jurisdiktionen
-**Gap addressed:** Geografische & Systemische Lücken, Fokus auf Innovation
-**Novel contribution:** Erweitert die Erkenntnisse von Paper 2 auf einen internationalen Kontext und identifiziert Best Practices für innovationsförderndes ETS-Design jenseits des EU ETS.
-**Why promising:** Hohe Relevanz für globale Klimapolitik und die Entwicklung effektiver, innovationsfördernder CO2-Preismechanismen.
-**Feasibility:** 🟡 Medium - erfordert Zugang zu Daten aus verschiedenen Jurisdiktionen, aber vorhandene ökonometrische Methoden können angepasst werden.
+### Angle 1: Die Wirksamkeit der Marktstabilitätsreserve (MSR) im EU ETS: Eine kausale Analyse nach 2019
+**Gap addressed:** Gap 1 (Analyse nach 2015), Methodological Opportunities (Kausale Inferenzmethoden), Temporal Gaps (MSR).
+**Novel contribution:** Eine quantitative, kausale Bewertung der MSR-Effekte, die über deskriptive Analysen hinausgeht und die genaue Rolle der MSR bei der Stabilisierung der CO2-Preise und der Förderung von Emissionsreduktionen isoliert.
+**Why promising:** Schließt eine kritische Lücke in der Literatur zu den wichtigsten EU ETS-Reformen und liefert fundierte Erkenntnisse für die zukünftige Politikgestaltung.
+**Feasibility:** 🟢 High - vorhandene Daten und Methoden können angepasst werden.
 
 **Proposed approach:**
-1.  Identifizierung von 3-4 ausgewählten Emissionshandelssystemen (z.B. EU ETS, China ETS, Kalifornien, UK ETS).
-2.  Datenerhebung zu Patentanmeldungen (Öko-Innovationen) und Investitionen in F&E in den jeweiligen Jurisdiktionen.
-3.  Anwendung ökonometrischer Methoden (z.B. Paneldatenanalyse, Difference-in-Differences) zur Bewertung des Einflusses von CO2-Preisen und Designmerkmalen auf Innovationsindikatoren.
+1.  Sammlung von hochfrequenten CO2-Preis- und Handelsvolumendaten sowie relevanten makroökonomischen Indikatoren von vor und nach der MSR-Einführung (2019).
+2.  Anwendung von ökonometrischen Methoden wie Difference-in-Differences oder Synthetic Control, um die Effekte der MSR von anderen gleichzeitig ablaufenden Faktoren zu trennen.
+3.  Analyse der Auswirkungen auf die Volatilität der CO2-Preise, das Investitionsverhalten in kohlenstoffarme Technologien und die beobachteten Emissionsreduktionen.
 
-**Expected contribution:** Ein tieferes Verständnis, welche Designmerkmale von ETS am effektivsten Innovationen fördern und wie diese Erkenntnisse international angewendet werden können.
+**Expected contribution:** Klare Belege für die Wirksamkeit (oder deren Grenzen) der MSR und Empfehlungen für Anpassungen oder ähnliche Mechanismen in anderen Kohlenstoffmärkten.
 
 ---
 
-### Angle 2: Sozio-ökonomische Verteilungseffekte und öffentliche Akzeptanz der erweiterten CO2-Preismechanismen in Europa
-**Gap addressed:** Umfassende sozio-ökonomische Verteilungseffekte, Interaktion mit neuen Klimaschutzinstrumenten, Temporal Gaps (Fit for 55).
-**Novel contribution:** Quantifiziert und analysiert die Verteilungswirkungen des neuen ETS 2 (Gebäude und Verkehr) auf verschiedene Haushaltstypen und Regionen in der EU und untersucht die Faktoren, die die öffentliche Akzeptanz beeinflussen.
-**Why promising:** Entscheidend für die Legitimität und langfristige Stabilität der europäischen Klimapolitik.
-**Feasibility:** 🟡 Medium - erfordert detaillierte Haushaltsdaten und möglicherweise Umfragen.
+### Angle 2: Soziale Gerechtigkeit und Akzeptanz des erweiterten EU ETS (ETS2) im Wärme- und Verkehrssektor
+**Gap addressed:** Application gaps (neue Sektoren), Interdisciplinary Bridges (Umweltökonomie ↔️ Sozialwissenschaften), Temporal Gaps (ETS2).
+**Novel contribution:** Eine interdisziplinäre Untersuchung, die die potenziellen sozialen Auswirkungen (z.B. Energiearmut, Verteilungseffekte) der Ausweitung des Kohlenstoffpreises auf private Haushalte und kleine Unternehmen analysiert und Empfehlungen für begleitende sozialpolitische Maßnahmen entwickelt.
+**Why promising:** Adressiert eine hochaktuelle und politisch sensible Frage, die für die langfristige Akzeptanz und Legitimität des Klimaschutzes entscheidend ist.
+**Feasibility:** 🟡 Medium - erfordert die Kombination von ökonometrischen Analysen mit sozialwissenschaftlichen Erhebungen oder Modellierungen.
 
 **Proposed approach:**
-1.  Modellierung der direkten und indirekten Kostenbelastungen durch ETS 2 auf verschiedene Haushaltstypen (Einkommen, ländlich/städtisch) unter Nutzung von Input-Output-Modellen und Haushaltsbudgetdaten.
-2.  Durchführung von Umfragen und Fokusgruppen in ausgewählten EU-Ländern, um die Wahrnehmung der CO2-Bepreisung, die Akzeptanz von Ausgleichsmaßnahmen und die allgemeine Klimapolitik zu erfassen.
-3.  Ableitung von Empfehlungen für sozial gerechte Begleitmaßnahmen und Kommunikationsstrategien.
+1.  Modellierung der potenziellen Kostensteigerungen für Haushalte in verschiedenen Einkommensgruppen durch das ETS2.
+2.  Analyse der regionalen Unterschiede und der Auswirkungen auf ländliche im Vergleich zu städtischen Gebieten.
+3.  Entwicklung und Bewertung von Kompensationsmechanismen (z.B. Klimageld, gezielte Subventionen), um negative soziale Effekte abzufedern.
 
-**Expected contribution:** Ein umfassendes Bild der sozialen Auswirkungen der erweiterten CO2-Bepreisung und Handlungsempfehlungen für eine gerechtere Gestaltung des Klimaschutzes.
+**Expected contribution:** Ein umfassendes Bild der sozialen Herausforderungen des ETS2 und evidenzbasierte Vorschläge für eine gerechte Transition.
 
 ---
 
-### Angle 3: Modellierung der Interaktion zwischen EU ETS, CBAM und globalen Wertschöpfungsketten
-**Gap addressed:** Interaktion mit neuen Klimaschutzinstrumenten, Temporale Lücken (CBAM), Langfristige Auswirkungen.
-**Novel contribution:** Untersucht die komplexen Rückkopplungseffekte zwischen dem EU ETS, dem neuen CBAM und den Anpassungsstrategien von Unternehmen in globalen Wertschöpfungsketten.
-**Why promising:** Hochrelevant für die internationale Handelspolitik, die Wettbewerbsfähigkeit der EU-Industrie und die Vermeidung von Carbon Leakage.
-**Feasibility:** 🔴 High - erfordert komplexe ökonomische Modellierung und Daten zu globalen Lieferketten.
+### Angle 3: Dynamische Interaktionen: EU ETS, Technologischer Wandel und Greenwashing-Risiken
+**Gap addressed:** Theoretical gaps (Interaktion mit anderen Instrumenten), Temporal gaps (Technologieentwicklung), Novel Combinations.
+**Novel contribution:** Eine Analyse, wie sich der EU ETS-Preis auf die Geschwindigkeit des technologischen Wandels (z.B. in der Industrie) auswirkt und welche Rolle er bei der Reduzierung von Greenwashing-Risiken spielt, insbesondere im Kontext von Offsets oder freiwilligen Kohlenstoffmärkten.
+**Why promising:** Verbindet die Wirksamkeit des Preissignals mit realen Investitionsentscheidungen und adressiert die wachsende Bedeutung von Transparenz und Glaubwürdigkeit im Klimaschutz.
+**Feasibility:** 🔴 High - erfordert komplexe Modellierung und Zugang zu Unternehmensdaten.
 
 **Proposed approach:**
-1.  Entwicklung eines Computable General Equilibrium (CGE)-Modells oder eines partiellen Gleichgewichtsmodells, das das EU ETS und den CBAM explizit abbildet.
-2.  Simulation verschiedener CBAM-Implementierungsszenarien und deren Auswirkungen auf Handelsströme, Emissionen, Preise und die Wettbewerbsfähigkeit von Sektoren in der EU und Drittländern.
-3.  Analyse der strategischen Reaktionen von Unternehmen (z.B. Investitionen in Dekarbonisierung, Verlagerung von Produktionsstätten).
+1.  Analyse von Patentdaten und Investitionsflüssen in kohlenstoffarme Technologien im Kontext von CO2-Preissignalen.
+2.  Untersuchung von Fällen, in denen Unternehmen Greenwashing-Vorwürfen ausgesetzt waren, und wie das EU ETS (oder dessen Abwesenheit) diese beeinflusst hat.
+3.  Entwicklung von Indikatoren oder Frameworks zur Bewertung der Glaubwürdigkeit von Emissionsreduktionen unter Berücksichtigung des ETS und anderer Marktmechanismen.
 
-**Expected contribution:** Ein detailliertes Verständnis der ökonomischen und ökologischen Auswirkungen des CBAM in Kombination mit dem ETS und fundierte Politikempfehlungen zur Optimierung des Designs.
+**Expected contribution:** Ein besseres Verständnis der dynamischen Beziehung zwischen Kohlenstoffpreisen, Innovation und der Integrität des Klimaschutzes.
 
 ---
 
 ## 9. Risk Assessment
 
-### Low-Risk Opportunities (Sichere Wetten)
-1.  **[Aktualisierung der Bewertung des EU ETS (Paper 1)]** - Inkrementeller, aber solider Beitrag, da die Methodik etabliert ist und neue Daten verfügbar sind.
-2.  **[Erweiterung der Innovationsstudie (Paper 2) auf andere ETS]** - Klar definierte Lücke, etablierte ökonometrische Methoden können angewendet werden.
+### Low-Risk Opportunities (Safe bets)
+1.  **[Angle 1: Wirksamkeit der MSR]:** Klar definierte Forschungslücke, verfügbare Daten, etablierte Methoden. Incremental, aber solide und wichtige Aktualisierung.
+2.  **[Replikation & Erweiterung von Ellerman et al., 2020]:** Bietet eine strukturierte Grundlage und ist ein direkter Weg, eine anerkannte Lücke zu schließen.
 
 ### High-Risk, High-Reward Opportunities
-1.  **[Modellierung der Interaktion zwischen EU ETS, CBAM und globalen Wertschöpfungsketten]** - Erfordert komplexe Modellentwicklung und Datenverfügbarkeit, aber potenziell sehr hohe politische Relevanz.
-2.  **[Umfassende sozio-ökonomische Verteilungseffekte der erweiterten CO2-Preismechanismen]** - Erfordert Zugang zu sensiblen Mikrodaten und die Integration qualitativer Methoden, birgt aber das Potenzial für bahnbrechende Erkenntnisse zur sozialen Gerechtigkeit.
+1.  **[Angle 3: Dynamische Interaktionen]:** Erfordert innovative Ansätze zur Messung von "Greenwashing" und komplexere Datenanalysen. Hohes Potenzial für neue theoretische Erkenntnisse.
+2.  **[Angle 2: Soziale Gerechtigkeit ETS2]:** Politisch heikel und erfordert eine sensible Integration verschiedener Disziplinen. Hoher gesellschaftlicher Impact, wenn erfolgreich.
 
 ---
 
 ## 10. Next Steps Recommendations
 
-**Sofortmaßnahmen:**
-1.  [X] Lesen Sie die 2 bereitgestellten Papiere nochmals gründlich.
-2.  [ ] Recherchieren Sie aktuelle politische Dokumente und Studien zum "Fit for 55"-Paket und CBAM, um die temporalen Lücken weiter zu konkretisieren.
-3.  [ ] Skizzieren Sie erste Forschungsfragen basierend auf **Winkel 2** (Sozio-ökonomische Verteilungseffekte), da dies eine hohe gesellschaftliche Relevanz hat.
+**Immediate actions:**
+1.  [ ] Lesen Sie diese 3 Must-Read-Dokumente in der Tiefe:
+    *   Ellerman, A. D., Convery, F. J., de Perthuis, C. (2020). *The European Emissions Trading System: A Decade of Policy, Market and Climate Outcomes*. Cambridge University Press. (Bereits zur Hand)
+    *   [VERIFY] Die offizielle EU-Verordnung zur Einrichtung und Funktionsweise der Marktstabilitätsreserve für das EU-Emissionshandelssystem.
+    *   [VERIFY] Die aktuellen legislativen Texte zum "Fit for 55"-Paket, insbesondere die Überarbeitung der ETS-Richtlinie und die Einführung des ETS2.
+2.  [ ] Erforschen Sie [Gap 1: Analyse nach 2015] weiter – suchen Sie nach verwandten Arbeiten, die die MSR und post-2015 Entwicklungen bereits adressiert haben (um eine Basis zu schaffen).
+3.  [ ] Entwerfen Sie eine erste Forschungsfrage basierend auf [Angle 1: Wirksamkeit der MSR].
 
-**Kurzfristig (1-2 Wochen):**
-1.  [ ] Testen Sie die Machbarkeit der Datenerhebung für **Winkel 1** (Vergleichende Innovationsanalyse) – welche Daten sind für andere ETS verfügbar?
-2.  [ ] Identifizieren Sie potenzielle Kollaborationspartner mit Expertise in CGE-Modellierung oder Mikrodatenanalyse für **Winkel 3**.
-3.  [ ] Verfassen Sie einen 1-seitigen Forschungsvorschlag für **Winkel 2**, einschließlich vorläufiger Methodik und erwarteter Beiträge.
+**Short-term (1-2 weeks):**
+1.  [ ] Testen Sie die Machbarkeit der Datenerhebung für hochfrequente CO2-Preisdaten (z.B. EEX).
+2.  [ ] Identifizieren Sie potenzielle Kollaborationspartner mit Expertise in kausaler Inferenz oder CGE-Modellierung.
+3.  [ ] Verfassen Sie einen 1-seitigen Forschungsvorschlag für [Angle 1].
 
-**Mittelfristig (1-2 Monate):**
-1.  [ ] Entwerfen Sie eine Pilotstudie für die sozio-ökonomischen Verteilungseffekte in einem spezifischen EU-Land.
-2.  [ ] Beantragen Sie Zugang zu relevanten Mikrodaten (z.B. EU-SILC oder nationale Haushaltsdaten).
-3.  [ ] Präsentieren Sie erste Ideen und Ergebnisse einem Betreuer/Kollegenkreis, um Feedback einzuholen.
+**Medium-term (1-2 months):**
+1.  [ ] Entwerfen Sie eine Pilotstudie zur Analyse der MSR-Effekte.
+2.  [ ] Beantragen Sie den Zugang zu spezifischen Emissions- oder Unternehmensdaten, falls erforderlich.
+3.  [ ] Präsentieren Sie erste Ideen Ihrem Betreuer/Peers für Feedback.
 
 ---
 
 ## Confidence Assessment
 
-**Lückenanalyse-Vertrauen:** 🟢 Hoch (basierend auf der Synthese der bereitgestellten Papiere und Kenntnis des Feldes)
-**Trendidentifikation:** 🟡 Medium (begrenzt auf die im Kontext der Papiere ersichtlichen Trends; weitere Recherche würde dies stärken)
-**Viabilität neuartiger Ansätze:** 🟢 Hoch (baut auf etablierten Methoden auf und adressiert klare Lücken)
+**Gap analysis confidence:** 🟡 Medium (basiert auf 1 umfassenden Paper, aber die Limitationen des Papers selbst sind sehr klar formuliert)
+**Trend identification:** 🔴 Low (stark eingeschränkt durch die geringe Anzahl an Papers, hier wurden allgemeine Kenntnisse des Feldes herangezogen)
+**Novel angle viability:** 🟢 High (baut auf etablierten Lücken auf und schlägt konkrete methodische Ansätze vor)
 
 ---
 

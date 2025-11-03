@@ -6,6 +6,7 @@ ABOUTME: Creates structured citation database from research notes or thesis
 
 import json
 import sys
+import logging
 from pathlib import Path
 from typing import Optional
 
@@ -22,6 +23,9 @@ from utils.citation_database import (
     save_citation_database
 )
 from tests.test_utils import setup_model, load_prompt
+
+# Configure logging
+logger = logging.getLogger(__name__)
 
 
 def extract_citations_from_text(
@@ -240,11 +244,57 @@ def run_citation_manager(
         verbose=verbose
     )
 
-    # Save database
-    save_citation_database(database, output_path)
+    # Save database with comprehensive error handling
+    logger.debug(f"Saving citation database to: {output_path}")
 
-    if verbose:
-        print(f"📄 Database saved to: {output_path}")
+    try:
+        # Attempt to save database
+        save_citation_database(database, output_path)
+
+        # CRITICAL: Verify file was actually created
+        if not output_path.exists():
+            error_msg = f"Citation database file was not created: {output_path}"
+            logger.error(error_msg)
+            raise IOError(error_msg)
+
+        # Verify file has content
+        file_size = output_path.stat().st_size
+        if file_size == 0:
+            error_msg = f"Citation database file is empty: {output_path}"
+            logger.error(error_msg)
+            raise IOError(error_msg)
+
+        # Verify file is valid JSON
+        try:
+            with open(output_path, 'r', encoding='utf-8') as f:
+                json.load(f)
+        except json.JSONDecodeError as e:
+            error_msg = f"Citation database file contains invalid JSON: {e}"
+            logger.error(error_msg)
+            raise ValueError(error_msg) from e
+
+        logger.info(f"Successfully saved citation database: {file_size} bytes to {output_path}")
+
+        if verbose:
+            print(f"📄 Database saved to: {output_path} ({file_size} bytes)")
+
+    except ValueError as e:
+        # Validation errors from save_citation_database
+        error_msg = f"Citation database validation failed: {str(e)}"
+        logger.error(error_msg)
+        logger.debug(f"Database content: {database.to_dict()}")
+        raise ValueError(error_msg) from e
+
+    except IOError as e:
+        # File I/O errors
+        logger.error(f"Failed to save citation database to {output_path}: {str(e)}")
+        raise
+
+    except Exception as e:
+        # Unexpected errors
+        error_msg = f"Unexpected error saving citation database: {str(e)}"
+        logger.error(error_msg)
+        raise RuntimeError(error_msg) from e
 
     return database
 

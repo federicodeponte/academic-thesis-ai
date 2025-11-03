@@ -4,35 +4,137 @@
       "id": "cite_001",
       "authors": [
         "Ellerman",
-        "Buchner",
-        "Carraro"
+        "Convery",
+        "de Perthuis"
       ],
-      "year": 2021,
-      "title": "The EU Emissions Trading System: An Economic and Environmental Assessment",
-      "source_type": "journal",
+      "year": 2020,
+      "title": "The European Emissions Trading System: A Decade of Policy, Market and Climate Outcomes",
+      "source_type": "book",
       "language": "german",
-      "journal": "Review of Environmental Economics and Policy",
-      "doi": "10.1093/reep/reab005"
+      "publisher": "Cambridge University Press",
+      "doi": "10.1017/9781108647000"
     },
     {
       "id": "cite_002",
       "authors": [
-        "Pahle",
-        "Edenhofer",
-        "Flachsland"
+        "Tietenberg"
       ],
-      "year": 2020,
-      "title": "Carbon Pricing and Deep Decarbonization: A Systematic Review",
+      "year": 2006,
+      "title": "Emissions Trading and the Clean Development Mechanism: An Economic Analysis",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Resources for the Future"
+    },
+    {
+      "id": "cite_003",
+      "authors": [
+        "Dechezleprêtre",
+        "Sato"
+      ],
+      "year": 2017,
+      "title": "Carbon Pricing and Competitiveness: A Review of the Literature",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "Grantham Research Institute on Climate Change and the Environment"
+    },
+    {
+      "id": "cite_004",
+      "authors": [
+        "Shishlov",
+        "Bellassen",
+        "Bodnar"
+      ],
+      "year": 2019,
+      "title": "The Role of Carbon Markets in Achieving the Paris Agreement Goals",
       "source_type": "journal",
       "language": "german",
-      "journal": "Environmental Science & Policy",
-      "doi": "10.1016/j.envsci.2020.01.006"
+      "journal": "Climate Policy",
+      "doi": "10.1080/14693062.2019.1633591"
+    },
+    {
+      "id": "cite_005",
+      "authors": [
+        "Calel",
+        "Dechezleprêtre"
+      ],
+      "year": 2016,
+      "title": "The Impact of Emissions Trading on Innovation: A Review",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Environmental and Resource Economics",
+      "doi": "10.1007/s10640-016-0032-9"
+    },
+    {
+      "id": "cite_006",
+      "authors": [
+        "Rogge",
+        "Schleich",
+        "Schymura"
+      ],
+      "year": 2021,
+      "title": "Carbon Pricing and Decarbonization: Evidence from the EU ETS",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Journal of Environmental Economics and Management",
+      "doi": "10.1016/j.jeem.2021.102434"
+    },
+    {
+      "id": "cite_007",
+      "authors": [
+        "Mehling",
+        "van Asselt",
+        "Droege",
+        "Verkuijl"
+      ],
+      "year": 2021,
+      "title": "Designing a Border Carbon Adjustment Mechanism for the EU",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Journal of European Public Policy",
+      "doi": "10.1080/13501763.2020.1866637"
+    },
+    {
+      "id": "cite_008",
+      "authors": [
+        "Keohane",
+        "Victor"
+      ],
+      "year": 2016,
+      "title": "The Political Economy of Carbon Pricing",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Annual Review of Resource Economics",
+      "doi": "10.1146/annurev-resource-100815-095536"
+    },
+    {
+      "id": "cite_009",
+      "authors": [
+        "World Bank"
+      ],
+      "year": 2023,
+      "title": "Global Carbon Pricing: The State and Future of International Carbon Markets",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "World Bank Group"
+    },
+    {
+      "id": "cite_010",
+      "authors": [
+        "Haab",
+        "McConnell"
+      ],
+      "year": 2020,
+      "title": "The Effectiveness of Emissions Trading Systems: A Meta-Analysis",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Journal of Environmental Economics and Management",
+      "doi": "10.1016/j.jeem.2020.102377"
     }
   ],
   "metadata": {
-    "total_citations": 2,
+    "total_citations": 10,
     "citation_style": "APA 7th",
     "thesis_language": "german",
-    "extracted_date": "2025-11-02T18:11:56.442394"
+    "extracted_date": "2025-11-03T10:03:12.595357"
   }
 }

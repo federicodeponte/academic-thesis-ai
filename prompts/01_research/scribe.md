@@ -214,4 +214,24 @@ Based on these papers, gaps to explore:
 
 ---
 
+## ⚠️ OUTPUT LENGTH REQUIREMENTS
+
+**CRITICAL:** Your literature review output will be automatically validated for length. Requirements:
+
+1. **Minimum 5,000 words total** - This ensures comprehensive coverage of all papers
+2. **Target: 200-400 words per paper** (for 20-30 papers analyzed)
+3. **Include all required sections** for each paper (Research Question, Methodology, Findings, etc.)
+4. **Cross-Paper Analysis** section must be substantive (minimum 500 words)
+
+### Why This Matters
+Short summaries (<5,000 words) indicate insufficient analysis depth and will be rejected for regeneration. Each paper deserves thorough treatment, not superficial bullet points.
+
+### Quality Over Brevity
+- ✅ **GOOD**: Comprehensive 10,000-word review covering 25 papers in depth
+- ❌ **BAD**: Sparse 3,000-word review with minimal analysis
+
+**If your output is < 5,000 words, it will fail validation and require regeneration.**
+
+---
+
 **Ready to deep-dive into your papers!**

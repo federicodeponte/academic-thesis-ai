@@ -8,154 +8,155 @@
 ## Summary
 
 **Strengths:**
-- Clear identification of the research question and the complexity of isolating causal effects.
-- Selection of two highly relevant and prominent carbon pricing systems (EU ETS, California Cap-and-Trade) for comparative analysis.
-- Detailed outline of diverse data sources (emissions, prices, economic, weather) crucial for a comprehensive analysis.
-- Application of appropriate econometric methods (Panel Regression, DiD) to address the research question.
-- Acknowledgment of key challenges like confounding factors and the need for counterfactuals.
+-   Clear structure and logical flow in presenting the methodology.
+-   Appropriate selection of case studies (EU ETS, California Cap-and-Trade) for comparative analysis.
+-   Comprehensive list of quantitative data types and relevant sources.
+-   Acknowledgement of the challenge of causal attribution.
+-   Planned use of robust statistical methods (multivariate regression, panel data models) and complementary qualitative analysis.
 
-**Critical Issues:** 4 major, 6 moderate, 7 minor
-**Recommendation:** Significant revisions needed before publication to enhance methodological rigor, address overclaims, and provide necessary detail.
+**Critical Issues:** 4 major, 6 moderate, 3 minor
+**Recommendation:** Significant revisions needed to strengthen methodological rigor and address potential overclaims before publication.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Overclaiming Causal Identification and Robustness
-**Location:** Throughout sections 3.1, 3.3, 3.4
-**Claim Examples:**
-- "Dies ist essentiell, um robuste Aussagen über die tatsächliche Wirkung der untersuchten Instrumente treffen zu können." (3.1)
-- "...was die Durchführung einer robusten quantitativen Analyse ermöglicht." (3.2)
-- "...ökonometrische Methoden angewendet, die darauf abzielen, kausale Zusammenhänge zu identifizieren und den Einfluss von Konfundierungsfaktoren zu minimieren." (3.4)
-- "Fixed-Effects-Modelle sind besonders nützlich, um den Einfluss von unbeobachteten, zeitkonstanten Merkmalen... zu eliminieren..." (3.4)
-**Problem:** The language used implies a certainty of identifying *true* causality and achieving *complete* robustness or *elimination* of influences, which is highly challenging in empirical policy evaluation. Econometric methods *estimate* causal effects and *mitigate* confounding, but rarely "identify" true causality with certainty or "eliminate" all influences.
-**Evidence:** The inherent complexity of policy evaluation, as acknowledged by the paper itself ("Herausforderung bei der Bewertung der Wirksamkeit liegt in der Isolierung des kausalen Effekts..."), contradicts the strong claims of full identification and elimination.
-**Fix:** Rephrase strong claims using more cautious and realistic language (e.g., "aim to estimate causal effects," "mitigate confounding factors," "contribute to a robust analysis," "control for"). Acknowledge that even with advanced methods, perfect causal identification is an ideal often not fully achieved.
-**Severity:** 🔴 High - affects the fundamental interpretation of the paper's potential findings and its scientific humility.
+### Issue 1: Vague Operationalization of Key Control Variables
+**Location:** Statistische Methoden zur Wirksamkeitsanalyse, Regressionsanalyse
+**Claim:** "andere Einflussfaktoren wie BIP-Wachstum, Energiepreise, technologische Entwicklung und regulatorische Änderungen als Kontrollvariablen einbezogen werden." (other influencing factors such as GDP growth, energy prices, technological development, and regulatory changes are included as control variables.)
+**Problem:** While GDP and energy prices are straightforward, the operationalization and measurement of "technological development" and "regulatory changes" are not described. These are complex concepts that can be proxied in many ways (e.g., patent counts, R&D spending, specific policy dummy variables, policy stringency indices). Without this detail, the claim to control for them is unsubstantiated.
+**Evidence:** No explanation of how these variables will be quantified or included in the model.
+**Fix:** Explicitly detail the specific metrics or approaches used to operationalize "technological development" and "regulatory changes" as control variables in the regression analysis.
+**Severity:** 🔴 High - directly impacts the validity and credibility of the causal attribution claimed.
 
-### Issue 2: Insufficient Detail on Endogeneity Treatment
-**Location:** Section 3.4, last paragraph
-**Claim:** "Darüber hinaus werden wir die Möglichkeit der Endogenität des Kohlenstoffpreises... durch die Verwendung von Instrumentvariablen oder verzögerten Effekten untersuchen, um verzerrte Schätzungen zu vermeiden."
-**Problem:** While identifying endogeneity is critical and commendable, simply stating the intention to "examine" it and use IVs or lagged effects to "avoid" bias is insufficient. Instrument variables are notoriously difficult to find and validate in practice. Lagged effects only address certain types of endogeneity.
-**Missing:** A discussion of *how* potential instruments will be identified, what specific variables might serve as instruments, and how their validity (relevance and exogeneity) will be tested. Also, a brief discussion on the limitations and challenges of these approaches (e.g., weak instruments, data requirements).
-**Fix:** Expand this section to detail the specific strategies for addressing endogeneity. If IVs are planned, propose concrete candidates and outline validation steps. If lagged effects are primarily used, explain the underlying assumptions and their limitations. Explicitly acknowledge the challenges of endogeneity and that mitigation, not full avoidance, is the goal.
-**Severity:** 🔴 High - threatens the validity of the core findings if endogeneity is not rigorously addressed.
+### Issue 2: Incomplete Data Coverage for Analytical Framework Elements
+**Location:** Analyserahmen für Klimaschutzwirkung, Datenquellen und Messverfahren
+**Claim:** The analytical framework considers "die Auswirkungen auf die Wettbewerbsfähigkeit von Unternehmen {cite_003} und die Generierung von Einnahmen, die für Klimaschutzmaßnahmen reinvestiert werden können." (the impacts on corporate competitiveness and the generation of revenues that can be reinvested in climate protection measures.)
+**Problem:** The subsequent "Datenquellen und Messverfahren" section does not list any specific data types or sources for "impacts on competitiveness" or "revenue generation." This creates a significant gap between the stated scope of the analysis and the actual data collected.
+**Evidence:** No mention of data on firm-level competitiveness metrics (e.g., profitability, market share, trade balance) or public revenue data from carbon pricing.
+**Fix:** Either add specific data types and sources for competitiveness and revenue generation, or clearly state that these aspects will be addressed qualitatively through the comparative case study analysis (and ensure the qualitative methods are robust enough for this). If not covered, remove these from the analytical framework.
+**Severity:** 🔴 High - a disconnect between stated analytical scope and actual execution.
 
-### Issue 3: Vague Specification of Control Variables for "Other Policy Measures"
-**Location:** Section 3.3, point 3 (Wirtschafts- und Kontrolldaten)
-**Claim:** "Andere Politikmaßnahmen: Dummy-Variablen oder Indikatoren für die Einführung signifikanter zusätzlicher Klimaschutzmaßnahmen oder Energieeffizienzstandards, um deren Einfluss auf die Emissionen zu kontrollieren."
-**Problem:** This is a crucial category of control variables, yet its description is very vague. "Signifikante zusätzliche Klimaschutzmaßnahmen" is subjective and undefined. The specific types of policies, their timing, and how they will be quantified (e.g., what constitutes a "dummy variable" for such complex policies) are not specified.
-**Missing:** Concrete examples of such policies, how they will be identified for each case study, and the exact method of their inclusion in the model (e.g., specific dummy variables for key legislative changes, or indices).
-**Fix:** Provide more specific examples of "other policy measures" relevant to the EU ETS and California. Explain the process for identifying these policies and how they will be operationalized as control variables (e.g., "We will create dummy variables for the introduction of the Renewable Energy Directive in the EU and the Low Carbon Fuel Standard in California").
-**Severity:** 🔴 High - without clear specification, this critical confounder may not be adequately controlled, leading to omitted variable bias.
+### Issue 3: Lack of Methodological Detail for Qualitative Data and Analysis
+**Location:** Datenquellen und Messverfahren (Qualitative Daten), Statistische Methoden zur Wirksamkeitsanalyse (Vergleichende Fallstudienanalyse)
+**Claim:** "Qualitative Daten werden durch eine systematische Literaturrecherche gewonnen..." (Qualitative data is obtained through a systematic literature review...). "Vergleichende Fallstudienanalyse... basierend auf der systematischen Auswertung der Sekundärliteratur und Policy-Dokumenten..." (Comparative case study analysis... based on the systematic evaluation of secondary literature and policy documents...).
+**Problem:** "Systematische Literaturrecherche" and "systematische Auswertung" are stated but lack crucial methodological details. For instance: What databases will be used? What search terms and inclusion/exclusion criteria? How will the identified documents be analyzed (e.g., content analysis, thematic analysis)? How will "expert opinions" be extracted from the literature, and how will their potential biases be addressed?
+**Evidence:** The description is too high-level, lacking the specific steps for rigorous qualitative data collection and analysis.
+**Fix:** Provide a brief but clear description of the methodology for the systematic literature review and the comparative case study analysis, including search strategies, selection criteria, and the analytical approach (e.g., thematic analysis, policy document analysis framework).
+**Severity:** 🔴 High - threatens the rigor and transparency of the qualitative component.
 
-### Issue 4: Lack of Explicit Timeframe for Data Collection
-**Location:** Section 3.3, Emissionsdaten
-**Claim:** "Die Zeitreihen umfassen den Zeitraum von der Einführung der jeweiligen Systeme bis zum aktuellsten verfügbaren Jahr, um prä- und post-Implementierungs-Effekte zu erfassen."
-**Problem:** While generally stated, specific start and end years are not provided for each system. "Aktuellstes verfügbares Jahr" is also vague and could mean different things depending on when the paper is finalized.
-**Missing:** Explicit start and end years for the data periods for both EU ETS and California Cap-and-Trade.
-**Fix:** Specify the precise date ranges, e.g., "For the EU ETS, data will cover the period from 2005 to 2023. For California, the period will be from 2013 to 2023."
-**Severity:** 🔴 High - crucial for reproducibility and understanding the scope of the analysis.
+### Issue 4: Ambiguity in "Expert Opinions" as a Data Type
+**Location:** Datenquellen und Messverfahren (Qualitative Daten)
+**Claim:** Qualitative data includes "sowie Expertenmeinungen zur Wirksamkeit und zu Herausforderungen zu erfassen." (as well as expert opinions on effectiveness and challenges).
+**Problem:** It's unclear if "expert opinions" are derived *solely* from the systematic literature review (i.e., published opinions) or if direct engagement with experts (e.g., interviews, surveys) is planned. The current phrasing suggests the former, which is a less direct form of "expert opinion" data.
+**Evidence:** No mention of interviews, surveys, or other direct primary data collection methods from experts.
+**Fix:** Clarify how "expert opinions" will be captured. If it's only from published literature, rephrase to "analysis of published expert perspectives" or similar, to avoid implying direct data collection. If direct engagement is planned, briefly outline the approach.
+**Severity:** 🟡 Moderate - clarity and transparency concern.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 5: Vague Definition of "Sektor/Region i" in Panel Regression
-**Location:** Section 3.4, Model Equation
-**Problem:** The term "$E_{it}$ die Treibhausgasemissionen in Sektor/Region $i$ zum Zeitpunkt $t$ darstellt" is used, but "$i$" is not clearly defined in the context of the two case studies. Will "$i$" refer to individual countries within the EU ETS, specific industrial sectors, or perhaps sub-regions within California? The choice significantly impacts the panel structure and interpretation.
-**Fix:** Clarify what "Sektor/Region $i$" precisely represents for both the EU ETS and the California Cap-and-Trade program. For example, "For the EU ETS, 'i' will represent individual member states or key industrial sectors (e.g., electricity generation, cement production). For California, 'i' will refer to major economic sectors or aggregated facility groups."
+### Issue 5: Specificity of Market Data Sources
+**Location:** Datenquellen und Messverfahren, Quantitative Daten, Marktdaten
+**Problem:** Sources for market data are given as "den jeweiligen Emissionshandelsregistern und Finanzmarktplattformen." (the respective emissions trading registries and financial market platforms).
+**Missing:** For transparency and reproducibility, it would be beneficial to name specific, prominent platforms or registries (e.g., EEX, ICE, EU Transaction Log, CARB's registry).
+**Fix:** Provide specific examples of platforms or registries from which market data will be retrieved.
 
-### Issue 6: Lack of Detail on "Robuste Schätzverfahren" for Data Gaps
-**Location:** Section 3.3, last sentence
-**Claim:** "Potenzielle Datenlücken oder -inkonsistenzen werden durch Interpolation oder die Anwendung robuster Schätzverfahren adressiert."
-**Problem:** "Robuste Schätzverfahren" is too vague. While interpolation is a common technique, the "robust" methods are not specified, raising questions about potential biases or assumptions introduced.
-**Fix:** Briefly specify the types of "robuste Schätzverfahren" considered (e.g., "missing data imputation techniques such as multiple imputation or expectation-maximization algorithms"). Acknowledge that such methods have assumptions and may introduce uncertainty.
+### Issue 6: Justification for Panel Data Model Choice
+**Location:** Statistische Methoden zur Wirksamkeitsanalyse, Regressionsanalyse
+**Claim:** "Panel-Daten-Modelle (Fixed-Effects oder Random-Effects) werden angewendet..." (Panel data models (Fixed-Effects or Random-Effects) are applied...).
+**Problem:** The choice between Fixed-Effects (FE) and Random-Effects (RE) models is often justified by theoretical considerations or statistical tests (e.g., Hausman test). Simply stating "or" leaves this choice open and potentially arbitrary.
+**Fix:** Briefly mention the criteria for choosing between FE and RE models, or state which one is preferred and why (e.g., "A Hausman test will be conducted to determine the appropriateness of Fixed-Effects versus Random-Effects models").
 
-### Issue 7: Assumptions of DiD Not Addressed
-**Location:** Section 3.4, DiD approach
-**Claim:** "Dies würde eine robustere Schätzung des kausalen Effekts ermöglichen, indem die Entwicklung der Emissionen in den behandelten Sektoren mit der Entwicklung in den Kontrollsektoren verglichen wird."
-**Problem:** The Difference-in-Differences (DiD) approach relies heavily on the "parallel trends" assumption. This critical assumption is not mentioned, nor is any plan to test or address its potential violation.
-**Fix:** Include a statement acknowledging the parallel trends assumption for DiD and briefly describe how this assumption will be assessed (e.g., "We will test the parallel trends assumption by examining pre-treatment emission trends in treatment and control groups").
+### Issue 7: Operationalization of "Emissionsreduktionen" as Dependent Variable
+**Location:** Statistische Methoden zur Wirksamkeitsanalyse, Regressionsanalyse
+**Claim:** "Emissionsreduktionen als abhängige Variable modelliert..." (Emission reductions modeled as dependent variable...).
+**Problem:** Typically, the dependent variable in such regressions is the level of "Emissions" (e.g., log-transformed emissions), and the coefficient of the CO2 price then indicates its impact on emissions. Modeling "reductions" directly might imply a difference-in-differences approach or a specific definition of reduction which is not detailed.
+**Fix:** Clarify whether "Emissionsreduktionen" refers to a specific transformation (e.g., year-on-year change, log difference) or if "Emissions" (absolute or intensity) will be the primary dependent variable. If it's a difference-in-differences, specify the methodology.
 
-### Issue 8: Limited Discussion on Selection of Control Groups for DiD
-**Location:** Section 3.4, DiD approach
-**Claim:** "...insbesondere wenn geeignete Kontrollgruppen oder -sektoren identifiziert werden können, die nicht von einem Kohlenstoffpreisinstrument betroffen waren, aber ansonsten ähnliche Trends aufweisen."
-**Problem:** The identification of "suitable" control groups/sectors is a major challenge in DiD. The paper states *if* they can be identified, but doesn't elaborate on the criteria or the process for this crucial step.
-**Fix:** Briefly describe the criteria and process for identifying suitable control groups or sectors. For instance, "Control groups will be chosen based on similarity in pre-treatment emission levels, economic structure, and exposure to other environmental policies, using methods such as propensity score matching if applicable."
+### Issue 8: Missing Discussion of Endogeneity
+**Location:** Analyserahmen für Klimaschutzwirkung, Statistische Methoden zur Wirksamkeitsanalyse
+**Problem:** While the challenge of causal attribution is acknowledged, the specific issue of endogeneity (where CO2 prices might be influenced by emissions trends or policy decisions, creating a feedback loop) is not explicitly discussed or addressed by the chosen methods.
+**Missing:** A brief mention of how potential endogeneity between CO2 prices and emissions/policy decisions will be handled (e.g., instrumental variables, lagged variables, or acknowledgement as a limitation).
+**Fix:** Add a sentence or two acknowledging the potential for endogeneity and how it might be addressed or discussed as a limitation.
 
-### Issue 9: Omission of Methodological Limitations
-**Location:** General (missing section)
-**Problem:** While the paper acknowledges challenges in isolating causality, it lacks a dedicated section or explicit discussion of the inherent limitations of the chosen methodologies (panel regression, DiD) in policy evaluation, even with the proposed controls.
-**Missing:** A brief discussion on the limitations of the chosen methods, such as:
-    *   Difficulty in fully capturing all confounding factors.
-    *   Potential for unobserved heterogeneity despite fixed effects.
-    *   Challenges in generalizing findings from two case studies.
-    *   Limitations of statistical inference in complex real-world policy settings.
-**Fix:** Add a short paragraph or subsection discussing the limitations of the methodological approach. This enhances transparency and intellectual honesty.
+### Issue 9: Scope of "Innovationsdaten" Citation
+**Location:** Datenquellen und Messverfahren, Quantitative Daten, Innovationsdaten
+**Problem:** The citation `{cite_005}` (Calel, Dechezleprêtre (2016) - The Impact of Emissions Trading on Innovation: A Review...) is for a *review* of the impact of ETS on innovation, not for specific *data sources* or *studies* that will be used to collect innovation data. While relevant to the topic, it's not a direct source for data collection.
+**Evidence:** The citation is for a review paper.
+**Fix:** Either add specific examples of "specific studies" that provide innovation data or clarify that this citation broadly supports the *relevance* of innovation data, while the actual data sources will be EPO and other unidentified studies.
 
-### Issue 10: Specifics of "Robustheitsprüfungen"
-**Location:** Section 3.4, Robustheitsprüfungen
-**Claim:** "Robustheitsprüfungen umfassen Sensitivitätsanalysen bezüglich der Modellspezifikation, der Auswahl der Kontrollvariablen und der Berücksichtigung potenzieller struktureller Brüche in den Zeitreihen."
-**Problem:** This is a good general statement but lacks specifics. What types of "Sensitivitätsanalysen"? How will "strukturelle Brüche" be identified and addressed (e.g., Chow tests, dummy variables, different subsamples)?
-**Fix:** Provide a few examples of specific robustness checks (e.g., "We will test alternative lag structures, include additional control variables, and run models with different subsamples or exclude outliers. Structural breaks will be investigated using [specific statistical tests, e.g., Chow test] and addressed via [e.g., dummy variables, segmented regression].").
+### Issue 10: Missing Discussion of Policy Interactions
+**Location:** Analyserahmen für Klimaschutzwirkung, Statistische Methoden zur Wirksamkeitsanalyse
+**Problem:** CO2 pricing systems often operate alongside other climate policies (e.g., renewable energy subsidies, energy efficiency standards). The interaction and potential confounding effects of these other policies are not explicitly mentioned as factors to be controlled for or discussed.
+**Missing:** Acknowledgment of policy interaction and how it will be managed (e.g., by including relevant policy dummy variables if quantifiable, or by discussing the qualitative impact).
+**Fix:** Briefly mention the challenge of interacting policies and how the study intends to account for them, or acknowledge this as a limitation.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Vague claim:** "ausreichend lange Zeiträume implementiert wurden, um aussagekräftige Daten für eine empirische Analyse zu liefern." (3.2) - "Aussagekräftig" is subjective. Consider rephrasing to "sufficiently long to allow for robust statistical analysis."
-2.  **Missing justification for case study exclusion:** While the chosen case studies are good, a brief sentence explaining why other prominent systems (e.g., RGGI, China ETS) were *not* chosen could strengthen the selection rationale or acknowledge the scope limitation.
-3.  **Clarity on "CO2-Äquivalent":** Briefly mention how different greenhouse gases are converted to CO2-equivalents and if this is consistent across data sources.
-4.  **Slightly repetitive phrasing:** "um die Wirksamkeit der Kohlenstoffpreisinstrumente zu bewerten" appears multiple times. Minor rephrasing for variety.
-5.  **Word count:** The section is slightly over the target word count. Minor trimming and more concise phrasing, especially in introductory sentences, would be beneficial.
-6.  **"Weltweit größte und am längsten bestehende":** {cite_001} is provided for EU ETS, but the citation refers to "The EU Emissions Trading System: An Economic and Environment..." not directly to a report confirming its global size/age. While likely true, ensure the citation directly supports this strong claim, or add an additional source.
-7.  **Software mention:** "Die statistische Software R wird für alle Analysen verwendet." (3.4) - This is good, but consider mentioning specific packages if relevant and widely used for the methods described (e.g., `plm` for panel data, `did` for DiD).
+1.  **Word Choice:** "signifikante und nachhaltige Reduktionen" (significant and sustainable reductions) - "Significant" needs to be defined (statistically?). "Sustainable" implies long-term, which is covered by longitudinal data, but could be clearer.
+2.  **Citation Consistency:** Ensure all citations in the reference list include DOIs or arXiv IDs as per the "ACADEMIC INTEGRITY & VERIFICATION" instruction (currently not present).
+3.  **Wording:** "Die Arbeit verfolgt einen vergleichenden Ansatz..." (The work pursues a comparative approach...) could be strengthened to "Die Arbeit *wird* einen vergleichenden Ansatz verfolgen..." for future tense consistency.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Link between "Analyserahmen" and "Methoden"
-**Location:** Section 3.1 → Section 3.4
-**Logic:** Section 3.1 describes the theoretical framework and the challenge of isolating causal effects. Section 3.4 introduces the statistical methods.
-**Missing:** A more explicit bridge connecting the theoretical considerations and challenges outlined in 3.1 to *how* the specific statistical methods in 3.4 are designed to address those challenges. While implied, making this link stronger would improve coherence.
-**Fix:** In 3.4, explicitly state how panel regression and DiD directly operationalize the "plausible Kontrafaktum" and multivariate control discussed in 3.1.
+### Gap 1: Framework-to-Methodology Disconnect
+**Location:** Analyserahmen für Klimaschutzwirkung → Datenquellen und Messverfahren
+**Logic:** The analytical framework explicitly states it considers "impacts on competitiveness" and "revenue generation."
+**Missing:** Specific data sources and measurement procedures for these aspects are completely absent in the "Datenquellen und Messverfahren" section.
+**Fix:** Close this gap by either adding relevant data/methods or adjusting the scope of the analytical framework.
+
+### Gap 2: Vague "Control" for Regulatory Changes
+**Location:** Statistische Methoden zur Wirksamkeitsanalyse
+**Logic:** Claims to control for "regulatorische Änderungen" (regulatory changes).
+**Missing:** How exactly will these be quantified? Regulatory changes are not a single, continuous variable. Will this involve dummy variables for major policy shifts, or a more nuanced index? Without this detail, the claim to control is a logical leap.
+**Fix:** Provide details on the operationalization of "regulatory changes."
 
 ---
 
 ## Methodological Concerns
 
-### Concern 1: Generalizability from Two Case Studies
-**Issue:** The analysis focuses on two specific carbon pricing systems.
-**Risk:** Results, especially regarding design differences, may not be directly generalizable to other contexts (e.g., developing countries, different political systems).
-**Reviewer Question:** "To what extent can findings from the EU ETS and California be applied to other regions or nations considering carbon pricing?"
-**Suggestion:** Add a brief discussion on the generalizability of findings as a limitation, perhaps in the introduction to the methodology or in a dedicated limitations section.
+### Concern 1: Generalizability Beyond Case Studies
+**Issue:** Only two specific CO2 pricing systems are chosen.
+**Risk:** While these are important, the generalizability of "Best Practices sowie Herausforderungen" (best practices and challenges) to other, possibly smaller or newer, systems might be limited.
+**Reviewer Question:** "To what extent can the findings from these two specific, large, and established systems be generalized to other carbon pricing initiatives globally?"
+**Suggestion:** Acknowledge this as a limitation, or briefly discuss the scope of generalizability.
+
+### Concern 2: Data Availability for Long-Term Control Variables
+**Issue:** Control variables like "technologische Entwicklung" and "regulatorische Änderungen" might be difficult to consistently quantify over the entire operational history of both systems.
+**Risk:** Gaps in data for these complex variables could lead to omitted variable bias or reduce the robustness of the regression analysis.
+**Question:** "What specific data challenges are anticipated for measuring 'technological development' and 'regulatory changes' over the full study period, and how will these be addressed?"
+**Fix:** Add a brief discussion of potential data limitations for these complex variables and strategies for handling them (e.g., imputation, using proxies, or acknowledging as a limitation).
 
 ---
 
 ## Missing Discussions
 
-1.  **Heterogeneity of Effects:** Will the analysis explore whether the effects of carbon pricing vary across different sectors or over time within the case studies? (e.g., early vs. later phases of EU ETS).
-2.  **Mechanism of Impact:** While the framework mentions "substitution" and "innovation," the statistical methods primarily look at aggregate emission changes. How will the paper attempt to shed light on *which* mechanisms (e.g., fuel switching, efficiency gains, technological innovation) are primarily driving the observed changes?
-3.  **Computational Cost/Feasibility:** No mention of the computational resources or challenges anticipated, especially if complex IVs or extensive robustness checks are planned. (Minor, but good for completeness).
+1.  **Counterfactual considerations:** While causal attribution is mentioned, a brief discussion on the inherent difficulty of establishing a true counterfactual (what would have happened without the CO2 pricing system) would strengthen the methodological honesty.
+2.  **Sensitivity Analysis:** Will sensitivity analyses be performed (e.g., to different model specifications, variable definitions, or outlier treatments)?
+3.  **Robustness Checks:** What robustness checks are planned for the statistical models?
+4.  **Limitations of "Systematic Literature Review":** Acknowledging potential biases in published literature or the challenge of synthesizing diverse qualitative findings.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Overly Confident Language:** As noted in Major Issue 1, the repeated use of strong, definitive terms ("identifizieren", "eliminieren", "gewährleisten") diminishes scientific caution. Soften the language to reflect the inherent uncertainties of empirical research.
-2.  **Slightly Repetitive:** Some phrases like "um die Wirksamkeit... zu bewerten" could be varied for better flow.
+1.  **Slightly Declarative:** Phrases like "Die Arbeit verfolgt einen vergleichenden Ansatz..." could be softened to "Diese Studie wird einen vergleichenden Ansatz verfolgen..." to maintain a consistent future-oriented tone for a methodology section. (Minor)
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "What specific variables will be used as instruments for carbon prices, and how will their validity be tested?"
-2.  "How will the parallel trends assumption for the DiD analysis be assessed and, if violated, addressed?"
-3.  "Can you provide more detail on the 'other policy measures' control variables and how they will be operationalized?"
-4.  "What are the specific start and end years for your data collection for both the EU ETS and California Cap-and-Trade?"
-5.  "How will you define 'Sektor/Region i' in your panel regression models for each case study?"
+1.  "How exactly will 'technological development' and 'regulatory changes' be measured and included in your regression models?" (🔴 Major)
+2.  "What specific data sources will be used to assess 'corporate competitiveness' and 'revenue generation' as mentioned in your analytical framework?" (🔴 Major)
+3.  "Please provide more detail on your 'systematic literature review' and 'systematic evaluation' methodologies. What are your search strategies, inclusion/exclusion criteria, and analytical methods?" (🔴 Major)
+4.  "How will you address potential endogeneity in your regression analysis, given the complex interplay between CO2 prices and emissions/policy decisions?" (🟡 Moderate)
+5.  "How will you justify the choice between Fixed-Effects and Random-Effects models?" (🟡 Moderate)
 
 **Prepare answers or add to paper**
 
@@ -164,16 +165,16 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 Fix Issue 1 (Overclaiming Causal Identification and Robustness) - affects fundamental interpretation.
-2.  🔴 Address Issue 2 (Insufficient Detail on Endogeneity Treatment) - critical for validity.
-3.  🔴 Resolve Issue 3 (Vague Specification of Control Variables for "Other Policy Measures") - crucial for controlling confounds.
-4.  🔴 Address Issue 4 (Lack of Explicit Timeframe for Data Collection) - essential for reproducibility.
-5.  🟡 Clarify Issue 5 (Vague Definition of "Sektor/Region i").
-6.  🟡 Add Issue 9 (Methodological Limitations discussion).
-7.  🟡 Address Issue 7 (Assumptions of DiD Not Addressed).
-8.  🟡 Provide more detail for Issue 10 (Robustheitsprüfungen).
+1.  🔴 Fix Issue 1 (Vague Operationalization of Key Control Variables) - affects validity
+2.  🔴 Address Issue 2 (Incomplete Data Coverage for Analytical Framework Elements) - scope-method mismatch
+3.  🔴 Resolve Issue 3 (Lack of Methodological Detail for Qualitative Data and Analysis) - rigor concern
+4.  🟡 Address Issue 4 (Ambiguity in "Expert Opinions" as a Data Type) - clarity concern
+5.  🟡 Address Issue 8 (Missing Discussion of Endogeneity) - validity concern
+6.  🟡 Address Issue 10 (Missing Discussion of Policy Interactions) - validity concern
 
 **Can defer:**
-- Minor wording issues and word count adjustments.
-- Adding specific package names for R.
-- More extensive discussion on generalizability (can be in discussion/conclusion).
+-   Minor wording issues (fix in revision)
+-   Adding more specific market data sources (Issue 5)
+-   Justification for FE/RE models (Issue 6)
+-   Clarifying "Emissionsreduktionen" (Issue 7)
+-   Scope of innovation citation (Issue 9)

@@ -8,163 +8,143 @@
 ## Summary
 
 **Strengths:**
-- Comprehensive overview of EHS implications, challenges, and potential.
-- Good structure that logically progresses from benefits to challenges, solutions, global role, and recommendations.
-- Addresses key issues like price volatility, carbon leakage, and distributional effects.
-- Recommendations for policy and business are clear and actionable.
+-   **Comprehensive Scope:** The discussion covers a wide range of relevant topics concerning Emissions Trading Systems (EHS), from their effectiveness and implications to challenges, improvements, global role, and future research.
+-   **Clear Structure:** The section is logically structured with clear subheadings, making it easy to follow the arguments.
+-   **Relevant Citations:** The paper draws upon a selection of highly relevant and authoritative literature in the field of carbon pricing and EHS.
+-   **Actionable Recommendations:** The recommendations for policy and economy are practical and directly derived from the preceding discussion.
 
-**Critical Issues:** 6 major, 7 moderate, 5 minor
-**Recommendation:** Significant revisions needed before publication, primarily to address missing citations and strengthen evidence for claims.
+**Critical Issues:** 5 major, 10 moderate, 8 minor
+**Recommendation:** Significant revisions needed before publication, particularly regarding the paper's scope and the substantiation of claims.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Numerous Missing Citations
-**Location:** Throughout sections 5.1, 5.2, 5.3, 5.4
-**Problem:** Many key claims are presented without any supporting evidence. This is a critical academic integrity flaw.
-**Missing Citations Examples:**
-- "Die strategische Verwendung dieser Einnahmen kann die Akzeptanz von CO2-Preisen erhöhen und eine gerechte Transformation fördern, indem sie negative Verteilungseffekte abfedert {cite_MISSING: Quelle zu Einnahmenverwendung und Akzeptanz}." (Section 5.1)
-- "Ein zu niedriger Preis entzieht dem System die Lenkungswirkung, während ein zu hoher Preis die Wettbewerbsfähigkeit von Unternehmen beeinträchtigen und soziale Spannungen verursachen kann {cite_MISSING: Quelle zu Preisvolatilität und Auswirkungen}." (Section 5.2)
-- "Die Notwendigkeit einer "gerechten Transformation" erfordert Mechanismen zum Ausgleich dieser Effekte... {cite_MISSING: Quelle zu Verteilungseffekten und gerechter Transformation}." (Section 5.2)
-- "Die Komplexität des Designs und der Governance eines EHS kann ebenfalls eine Hürde darstellen... {cite_MISSING: Quelle zu politischer Akzeptanz und Umsetzbarkeit}." (Section 5.2)
-- "Zur Bekämpfung des Carbon Leakage ist die Einführung eines CO2-Grenzausgleichsmechanismus (Carbon Border Adjustment Mechanism, CBAM) vielversprechend... {cite_MISSING: Quelle zu CBAM und dessen Vorteilen}." (Section 5.3)
-- "Das Potenzial liegt insbesondere in der Möglichkeit, über Artikel 6 des Pariser Abkommens internationale Kooperationen zu fördern... {cite_MISSING: Quelle zu Artikel 6 und globalen Märkten}." (Section 5.4)
-**Fix:** Provide specific, credible academic citations for every claim, especially those relating to impacts, benefits, challenges, and proposed solutions. If no source exists, the claim must be rephrased as a hypothesis or removed.
-**Severity:** 🔴 High - Threatens academic credibility and validity of the entire discussion.
+### Issue 1: Fundamental Discrepancy in Paper's Contribution
+**Location:** Introduction to Discussion (first paragraph), and "Limitationen" section (first sentence)
+**Claim:** "Die vorliegende Arbeit untersuchte die Effektivität von Emissionshandelssystemen (EHS)... Die Ergebnisse bestätigen die grundlegende Wirksamkeit..."
+**Problem:** This phrasing strongly implies original research with new findings. However, the entire discussion section relies exclusively on external citations (`cite_001` to `cite_010`). This creates a critical logical flaw: if there are "results" from "this paper's investigation," they are neither presented nor discussed, and the "Limitationen" section later confirms reliance "primär auf existierende Literatur."
+**Evidence:** No internal references (e.g., to a "Results" section of this paper) are used; all evidence comes from `cite_XXX`.
+**Fix:**
+    1.  **If it *is* original research:** Integrate and discuss your paper's specific findings first, then contextualize them with external literature.
+    2.  **If it *is* a literature review/synthesis:** Rephrase the introduction of the discussion (and likely the paper's overall introduction) to accurately reflect that the paper synthesizes, analyzes, or critically reviews existing literature, rather than presenting new empirical "results." The current phrasing is an overclaim.
+**Severity:** 🔴 High - fundamentally misrepresents the nature of the paper's contribution and threatens its academic integrity.
 
-### Issue 2: Inconsistency on Price Stability
-**Location:** Section 5.1, para 2 vs. Section 5.2, para 1 and Section 5.5, Policy Rec 1
-**Claim 1 (5.1):** "Die langfristige Planungssicherheit, die ein stabiler und vorhersehbarer CO2-Preis bietet, ist entscheidend..."
-**Claim 2 (5.2):** "Eine wesentliche Herausforderung ist die Preisvolatilität."
-**Claim 3 (5.5):** "Stärkung der Preissignale: Implementierung von robusten Preisstabilitätsmechanismen..."
-**Problem:** The text first states that EHS *provides* price stability (or the planning security that comes from it), then identifies price volatility as a *major challenge*, and finally recommends *implementing* mechanisms to achieve price stability. This creates a direct contradiction.
-**Fix:** Rephrase Section 5.1 to acknowledge that while *the goal* of EHS is to provide long-term planning security through a carbon price, *in practice* price volatility has been a significant challenge that *requires* robust stability mechanisms.
-**Severity:** 🔴 High - Fundamental logical flaw regarding a core characteristic of EHS.
+### Issue 2: Weak or Missing Direct Citations for Key Claims
+**Location:** Throughout the discussion, particularly in "Implikationen für die Klimapolitik" and "Verbesserungsvorschläge für CO2-Märkte".
+**Problem:** Several significant claims and recommendations are made without direct supporting citations, or the cited work may not fully cover the specific assertion. This weakens the arguments and makes them appear unsubstantiated.
+**Examples:**
+    *   "Die Ausweitung des Anwendungsbereichs von EHS auf weitere Sektoren... birgt ein enormes Potenzial zur weiteren Emissionsminderung." (No direct citation for "enormous potential.")
+    *   "Die Einführung eines CO2-Preises in diesen Sektoren könnte durch flankierende Maßnahmen... begleitet werden, um eine breite Akzeptanz zu gewährleisten und einen gerechten Übergang zu fördern." (Effectiveness of flanking measures uncited.)
+    *   "Standardisierte Regeln für Monitoring, Berichterstattung und Verifizierung (MRV) sind dabei unerlässlich." (Uncited.)
+    *   "Mechanismen wie ein Mindestpreis für CO2 oder eine dynamische Anpassung des Angebots an Zertifikaten können hierbei eine Rolle spielen." (Effectiveness/role of specific mechanisms uncited.)
+    *   "Ein gut konzipierter BCA kann auch als Anreiz für Drittländer dienen, selbst ambitioniertere Klimapolitiken zu implementieren..." (Strong claim about BCA as an incentive, needs stronger support.)
+    *   "Die Sicherstellung der Akzeptanz erfordert transparente Prozesse..." (Uncited.)
+**Fix:** For each uncited or weakly cited claim, either:
+    1.  Add a specific citation that directly supports the claim.
+    2.  Rephrase the statement to be less assertive or to frame it as a logical deduction from prior, cited points (if truly a deduction).
+    3.  Acknowledge it as a generally accepted principle or policy suggestion if no direct evidence is found, but preferably still with a relevant source.
+**Severity:** 🔴 High - undermines the scholarly rigor and trustworthiness of the discussion.
 
-### Issue 3: Overclaiming on EU-ETS Innovation Contribution
-**Location:** Section 5.1, para 2
-**Claim:** "Der EU-EHS hat beispielsweise zur Entwicklung und Implementierung von Effizienzmaßnahmen in der Industrie und im Energiesektor beigetragen {cite_001}."
-**Problem:** While plausible, attributing specific innovations *solely* or *primarily* to the EU-EHS can be an overclaim, as many factors drive innovation (other regulations, R&D funding, market demand). The citation {cite_001} (Ellerman, Buchner et al., an overview of EU ETS) might support the *idea* that EHS encourages innovation, but likely not a direct causal link to *specific* developments without more granular empirical evidence.
-**Fix:** Qualify the statement: "Der EU-EHS hat *mutmaßlich* zur Entwicklung und Implementierung von Effizienzmaßnahmen beigetragen" or "Der EU-EHS war *einer der Faktoren*, die zur Entwicklung..." or provide more specific evidence from {cite_001} if it exists, detailing *how* EHS led to these.
-**Severity:** 🔴 High - Potential overclaim of causal impact without robust evidence.
-
-### Issue 4: Lack of Nuance on "Decisive Advantage"
-**Location:** Section 5.1, para 1
-**Claim:** "Diese Flexibilität, wo und wie Emissionen reduziert werden, ist ein entscheidender Vorteil gegenüber ordnungsrechtlichen Ansätzen."
-**Problem:** While EHS can be more cost-efficient in certain contexts, claiming a "decisive advantage" over all regulatory approaches is an overclaim and a potential false dichotomy. Regulatory approaches (e.g., bans on certain substances, efficiency standards) have their own advantages (e.g., certainty of outcome, speed of implementation for certain issues) and are often complementary.
-**Fix:** Rephrase to acknowledge the context-dependency: "Diese Flexibilität kann in vielen Fällen einen *bedeutenden* Vorteil hinsichtlich der Kosteneffizienz gegenüber rein ordnungsrechtlichen Ansätzen bieten, insbesondere wenn sektorweite Reduktionen angestrebt werden." Or discuss scenarios where regulations are more effective.
-**Severity:** 🟡 Moderate - Weakens argument by overstating a general truth.
-
-### Issue 5: Generalization of EU-ETS as "Model" without sufficient caveats
-**Location:** Section 5.4, last sentence
-**Claim:** "Die kontinuierliche Verbesserung und Anpassung bestehender Systeme wie des EU-EHS ist daher nicht nur für Europa, sondern auch als Modell für den globalen Klimaschutz von Bedeutung {cite_001}."
-**Problem:** While the EU-EHS offers valuable lessons, calling it a direct "model" for global climate protection without explicitly discussing the significant differences in political, economic, and administrative contexts of other regions is an overclaim. Many elements of the EU-EHS might not be directly transferable.
-**Fix:** Add caveats about the transferability of the EU-EHS model, explicitly mentioning the need for adaptation to local contexts, administrative capacities, and political priorities.
-**Severity:** 🟡 Moderate - Overclaiming transferability.
-
-### Issue 6: Undefined Scope of "Analysis"
-**Location:** Introduction to Discussion
-**Claim:** "Die vorliegende Arbeit untersuchte die Wirksamkeit, Herausforderungen und das zukünftige Potenzial von Emissionshandelssystemen (EHS) als zentrales Instrument der Klimapolitik. Die Analyse hat bestätigt..."
-**Problem:** The discussion refers to "Die Analyse" (The analysis) as if the paper itself conducted primary research to "confirm" these points. However, this is the discussion section, and the paper only cites two general review articles. It's unclear what "analysis" the paper refers to that "confirmed" these points.
-**Fix:** Clarify what "analysis" refers to. If it's a literature review, state that. For example: "Basierend auf der vorliegenden Literaturanalyse wird bestätigt..." or "Die Literatur hat bestätigt..."
-**Severity:** 🟡 Moderate - Ambiguity regarding the paper's own contribution and scope.
-
----
+### Issue 3: Overclaim of "Globaler Nettoanstieg der Emissionen"
+**Location:** "Grenzen und Herausforderungen des Emissionshandels"
+**Claim:** "...führt auch zu einem globalen Nettoanstieg der Emissionen." (referring to carbon leakage)
+**Problem:** While carbon leakage can undermine national reduction efforts, the claim of a *global net increase* in emissions due to leakage is a very strong and often debated point. While some studies suggest it, others argue the net effect is negligible or even negative due to other factors (e.g., technology transfer). `cite_003` (Dechezleprêtre, Sato) reviews competitiveness, which includes leakage, but might not definitively conclude a *global net increase*.
+**Evidence:** The claim is presented as a definitive outcome.
+**Fix:** Qualify this statement (e.g., "potentially lead to," "some studies suggest") or provide a more specific citation that robustly concludes a *global net increase*.
+**Severity:** 🔴 High - potentially an overclaim that misrepresents the academic consensus on a complex issue.
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 7: Weak Literature Coverage - Only Two General Citations
-**Location:** Throughout the entire Discussion section
-**Problem:** The discussion relies almost exclusively on two general review articles. While these are good starting points, a robust discussion section typically draws on a wider range of sources, including empirical studies, policy analyses, and more specific reports to support detailed claims.
-**Impact:** Many claims, even if generally true, lack specific, deep evidence. For example, claims about "technological innovation" or "cost-efficiency" would benefit from concrete examples or studies beyond general statements.
-**Fix:** Integrate more specific citations from the broader literature to support individual claims, especially when discussing specific impacts, challenges, or solutions. This will significantly strengthen the evidence base.
+### Issue 4: Repetition of CO2 Price Volatility
+**Location:** "Implikationen für die Klimapolitik" and "Grenzen und Herausforderungen des Emissionshandels"
+**Problem:** The issue of CO2 price stability/volatility is discussed in both sections. While it's a critical point, the repetition feels redundant.
+**Fix:** Consolidate the discussion of price volatility and its implications into one comprehensive segment, or ensure that the second mention adds a distinct new perspective or depth (e.g., focusing on *mechanisms* in one place, and *impacts* in another).
 
-### Issue 8: Missing Counterarguments for Carbon Taxes vs. EHS
-**Location:** Section 5.1, para 4
-**Claim:** "Dies [Cap-and-Trade] unterscheidet sie von reinen CO2-Steuern, deren Reduktionswirkung schwieriger vorherzusagen ist."
-**Problem:** While true that EHS provides quantity certainty, this statement implies EHS is unilaterally superior in this regard without acknowledging that carbon taxes offer *price certainty*, which is often cited as a key advantage for investment planning by some proponents.
-**Fix:** Acknowledge the reciprocal advantage of carbon taxes: "Dies unterscheidet sie von reinen CO2-Steuern, deren Reduktionswirkung schwieriger vorherzusagen ist, während diese wiederum eine höhere Preissicherheit bieten können."
+### Issue 5: Lack of Specificity in Proposed Improvements
+**Location:** "Verbesserungsvorschläge für CO2-Märkte"
+**Problem:** While suggestions like "stärkere Harmonisierung und Verknüpfung" or "Preisstabilisierungsmechanismen weiterentwickeln" are good, they often lack specific examples or deeper explanations of *how* this would be achieved or *what challenges* these specific mechanisms face. For instance, what are the main hurdles for harmonizing EHS? What are the known trade-offs of a minimum price?
+**Fix:** Briefly elaborate on some of the proposed mechanisms or challenges associated with their implementation, perhaps with a specific example from existing EHS where applicable.
 
-### Issue 9: Vague Claims and Lack of Quantification
-**Location:** Multiple instances (e.g., "entscheidende Rolle," "tiefgreifende Implikationen," "erhebliche Hürden")
-**Problem:** Many claims are qualitative and strong ("entscheidende," "tiefgreifend," "erheblich") without quantifying the extent or impact.
-**Fix:** Where possible, add qualifiers or examples to provide more nuance. E.g., instead of "tiefgreifende Implikationen," consider "substanzielle Implikationen" or provide specific examples of these implications.
+### Issue 6: Clarity on "Erkenntnisse" and "Analyse"
+**Location:** Throughout the paper (e.g., "Die Analyse unterstreicht...", "Die Erkenntnisse legen nahe...", "Für die Wirtschaft bedeuten die Erkenntnisse...")
+**Problem:** Given Issue 1, it's unclear whether "Erkenntnisse" and "Analyse" refer to the (unspecified) results of *this paper's own investigation* or the *findings from the cited literature*.
+**Fix:** Be explicit. If referring to external literature, use phrases like "Die Analyse der bestehenden Literatur unterstreicht..." or "Basierend auf den Erkenntnissen der Forschung..."
 
-### Issue 10: Lack of Specific Examples for "Effizienzmaßnahmen"
-**Location:** Section 5.1, para 2
-**Claim:** "Der EU-EHS hat beispielsweise zur Entwicklung und Implementierung von Effizienzmaßnahmen in der Industrie und im Energiesektor beigetragen {cite_001}."
-**Problem:** While the general claim is made, no specific examples of these efficiency measures are provided, making the argument less concrete and harder to verify.
-**Fix:** If the literature (especially {cite_001}) provides specific examples, include one or two to illustrate the point.
+### Issue 7: Incomplete Citation Details
+**Location:** "Verwendete Zitate"
+**Problem:** The citation list provides author, year, and title but lacks crucial identifiers like DOIs or arXiv IDs.
+**Fix:** Add DOIs or arXiv IDs for all cited papers to ensure verifiability and academic integrity.
 
-### Issue 11: Word Count Exceeded
-**Location:** Self-noted by author
-**Problem:** The section is 1664 words, exceeding the target of 1500 words.
-**Fix:** Systematically review for conciseness, remove redundant phrasing, and condense arguments. This might also be achieved by synthesizing some of the `cite_MISSING` points if they overlap.
-
----
+### Issue 8: Broadness of Recommendations for Economy
+**Location:** "Empfehlungen für Politik und Wirtschaft"
+**Problem:** While generally sound, the recommendations for the economy (e.g., "Potenziale der Kreislaufwirtschaft und der Energieeffizienz voll ausschöpfen") are quite broad and could be more specifically linked to the *implications of EHS*. How does EHS specifically incentivize or interact with circular economy principles?
+**Fix:** Strengthen the explicit link between EHS and these broader economic strategies. Explain *how* EHS creates the incentive or framework for these actions.
 
 ## MINOR ISSUES
 
-1.  **Redundant phrasing:** "Die Diskussion vertieft diese Erkenntnisse, indem sie die Implikationen für die Klimapolitik erörtert, bestehende Grenzen und Herausforderungen beleuchtet, Verbesserungsvorschläge unterbreitet und die Rolle des EHS im globalen Klimaschutzkontext bewertet. Abschließend werden konkrete Empfehlungen für Politik und Wirtschaft abgeleitet." (Can be shortened)
-2.  **Repetitive use of "entscheidend":** Appears multiple times, could vary vocabulary.
-3.  **Passive voice:** Frequent use of passive voice could be balanced with active voice for stronger impact.
-4.  **"Blaupause" as a metaphor:** While understandable, in academic writing, it might be more precise to say "can serve as a foundational framework" or "offer valuable lessons."
-5.  **Unsubstantiated "proactive strategies":** In recommendations for business, "über die gesetzlichen Mindestanforderungen hinausgehen" (going beyond minimum legal requirements) is a good goal but needs a brief justification (e.g., "to achieve long-term competitive advantages and reduce future regulatory risks").
+1.  **Vague claim:** "enormes Potenzial" (quantify or qualify).
+2.  **Missing logical bridge:** "Problem X ist wichtig" → "Daher verwenden wir Methode Y" (in the abstract/intro, not this section directly, but the logic carries over to the discussion's framing).
+3.  **Unsubstantiated general statements:** "Die Sicherstellung der Akzeptanz erfordert transparente Prozesse..." (while true, could be cited or framed as a general good practice).
+4.  **Wordiness:** Some sentences could be more concise. The section is slightly over the target word count.
+5.  **Tone:** A few phrases could be softened slightly to avoid sounding overly definitive where nuance is warranted (e.g., "führt auch zu einem globalen Nettoanstieg" could be "kann auch zu einem potenziellen globalen Nettoanstieg führen").
+6.  **"Politische Ökonomie":** While cited, a brief definition or elaboration on what aspects of political economy are most relevant here (e.g., rent-seeking, distributional conflicts) could enhance clarity for a broader audience.
+7.  **Transition smoothness:** While generally good, some transitions between paragraphs could be made even smoother with explicit linking phrases.
+8.  **"Für die Wirtschaft bedeuten die Erkenntnisse...":** This sentence structure could be improved. What "Erkenntnisse" specifically?
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Causal Chain for Income Redistribution
-**Location:** Section 5.3, Point 4 ("Gerechte Verteilung der Einnahmen")
-**Logic:** Recommends using EHS revenues for social programs.
-**Missing:** Acknowledgment that the *mechanism* and *political will* for effective redistribution are complex and not guaranteed. Simply stating "should be used" doesn't address the practical hurdles of ensuring those funds actually reach the intended beneficiaries or are spent efficiently.
-**Fix:** Briefly mention the importance of robust governance and allocation mechanisms to ensure effective and equitable distribution of revenues.
+### Gap 1: Unjustified Assertions
+**Location:** Multiple instances, especially "Implikationen für die Klimapolitik" and "Verbesserungsvorschläge für CO2-Märkte".
+**Logic:** A claim is made (e.g., "Ausweitung auf weitere Sektoren birgt enormes Potenzial") → but the direct supporting evidence or logical chain from the provided citations is missing.
+**Missing:** The explicit link or evidence that connects the premise to the conclusion.
+**Fix:** Add specific citations or clarify the logical derivation from previous points.
 
-### Gap 2: Linkage Requirements
-**Location:** Section 5.3, Point 5 ("Harmonisierung und Verknüpfung")
-**Logic:** Advocates for linking EHS systems.
-**Missing:** Deeper discussion of the specific *challenges* to linkage beyond "Vertrauen und Kompatibilität." This could include differing ambition levels, monitoring, reporting, and verification (MRV) standards, and legal frameworks, which are significant hurdles.
-**Fix:** Expand on the specific technical and political challenges that linkage entails, not just the general requirements.
+### Gap 2: Contradictory Framing of Paper's Scope
+**Location:** Introduction to Discussion vs. "Limitationen und zukünftige Forschungsansätze"
+**Logic:** Introduction states "Die vorliegende Arbeit untersuchte... Die Ergebnisse bestätigen..." (implies original research) → "Limitationen" states "Die Analyse stützt sich primär auf existierende Literatur..." (implies literature review).
+**Missing:** A consistent definition of the paper's contribution.
+**Fix:** Resolve Issue 1, ensuring the paper's scope (original research vs. literature review) is consistently and accurately represented throughout.
 
 ---
 
-## Methodological Concerns (as applicable to a discussion)
+## Methodological Concerns (for the discussion itself)
 
-### Concern 1: Depth of Evidence for Empirical Claims
-**Issue:** Many claims about the *effects* or *contributions* of EHS (e.g., on innovation, cost-efficiency, specific challenges) are presented as established facts, but are cited only by general review papers. These papers summarize findings but often don't provide the granular empirical evidence for every specific claim.
-**Risk:** The discussion might overstate the certainty or magnitude of certain effects without direct empirical backing from the paper itself or sufficiently detailed citations.
-**Reviewer Question:** "What specific empirical evidence (beyond general reviews) supports the claims about EHS's direct contribution to innovation or specific efficiency measures?"
-**Suggestion:** As noted under "Major Issues," integrate more specific academic literature that provides empirical evidence for these claims.
+### Concern 1: Selection Bias in Evidence Presentation
+**Issue:** The discussion consistently presents EHS in a positive light, focusing on its effectiveness and potential, while challenges are framed as surmountable. While valid, a more critical review of the *limitations of the cited studies themselves* or a more balanced presentation of debates surrounding EHS effectiveness (beyond carbon leakage and political economy) could be beneficial.
+**Risk:** Appears to advocate for EHS rather than critically discuss its nuances.
+**Reviewer Question:** "Are there studies that suggest EHS is *not* effective under certain conditions, or that its benefits are overstated? Are the limitations of the specific EU-ETS studies acknowledged?"
+**Suggestion:** Briefly mention alternative perspectives or debates where appropriate, or acknowledge that the presented evidence primarily highlights the *potential* and *demonstrated effectiveness* of EHS, while still acknowledging challenges.
 
 ---
 
 ## Missing Discussions
 
-1.  **Role of complementary policies:** While "Interaktion mit anderen Politikfeldern" is mentioned, the discussion could benefit from elaborating on *how* EHS works best when integrated with other policies (e.g., R&D subsidies, renewable energy mandates, energy efficiency standards) rather than just avoiding overlap.
-2.  **Dynamic nature of challenges:** Some challenges (like carbon leakage) are discussed, but how these challenges evolve over time with policy responses (e.g., the EU's phase-out of free allocation) could be explored more.
-3.  **Different EHS designs:** The discussion implicitly focuses on cap-and-trade. A brief acknowledgment of other EHS variants (e.g., baseline-and-credit, different auctioning vs. free allocation ratios) and their specific implications could enrich the discussion, even if focusing on the EU-EHS.
-4.  **Risk of market manipulation/speculation:** While price volatility is mentioned, the potential for market manipulation or excessive speculation in carbon markets is a specific concern that could be briefly addressed.
-5.  **Equity in access to permits/market participation:** How smaller entities or new entrants can effectively participate in EHS, or if larger players dominate, could be a brief point.
+1.  **Equity and Justice:** While "soziale Härten" are mentioned, a deeper discussion on the equity implications of EHS, especially for vulnerable populations or developing countries, could be beneficial beyond just "gerechter Übergang." How can EHS design specifically address these?
+2.  **Interaction with other policies:** The "Limitationen" section mentions this, but the main discussion could benefit from a brief (cited) overview of how EHS interacts with other climate policies (e.g., regulations, subsidies for renewables). Are there synergies or conflicts?
+3.  **Dynamic Efficiency/Innovation:** While innovation is mentioned, a deeper dive into how EHS fosters dynamic efficiency (long-term cost reductions through innovation) compared to other policy instruments would strengthen the argument.
+4.  **Implementation Challenges (beyond political economy):** What are the practical, administrative, or technical challenges in implementing EHS, especially in new sectors or developing countries?
+5.  **Monitoring, Reporting, Verification (MRV) specifics:** While MRV is mentioned as "unerlässlich," a brief discussion of why it's challenging or what constitutes "robust" MRV would add value.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Slightly declarative:** Some statements are very definitive. While confidence is good, a more nuanced "suggests," "indicates," or "can lead to" might be more appropriate for a discussion of complex policy instruments.
-2.  **Repetitive phrasing:** Certain phrases (e.g., "entscheidende Rolle," "maßgeblich") are used frequently. Varying the language would improve readability.
+1.  **Overly confident:** Phrases like "bestätigen die grundlegende Wirksamkeit" or "führt auch zu einem globalen Nettoanstieg" could be softened to reflect scientific uncertainty or ongoing debate.
+2.  **Repetitive phrasing:** Certain phrases (e.g., "die Erkenntnisse zeigen," "die Analyse unterstreicht") are used frequently. Varying the language would improve readability.
+3.  **Definitive recommendations:** While recommendations are strong, ensuring they are clearly linked to the *analysis presented* rather than appearing as standalone policy advice would be beneficial.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Where is the empirical evidence for the specific claims about EU-EHS contributions to innovation?"
-2.  "How do the proposed price stability mechanisms (floor/ceiling) interact with the market stability reserve, and what are the potential trade-offs?"
-3.  "What are the specific challenges and success factors for implementing a CBAM, beyond its general benefits?"
-4.  "Given the stated price volatility, how can EHS truly offer 'long-term planning security' without the recommended stability mechanisms already in place and proven effective?"
-5.  "How would the proposed sector expansion (buildings, transport) address the unique challenges of these diffuse sectors (e.g., consumer impact, administrative burden)?"
-6.  "What specific lessons can be drawn from other EHS systems (e.g., California, China) to inform the recommendations, beyond just the EU-EHS?"
+1.  "What 'results' is this paper discussing? If it's a literature review, please reframe the paper's contribution."
+2.  "Many claims lack direct citations. Please provide specific evidence for each assertion."
+3.  "Can you elaborate on the specific mechanisms for price stability you suggest, and their known pros and cons?"
+4.  "How does this discussion account for the diverse performance and design of EHS worldwide, beyond the EU-ETS example?"
+5.  "Is the claim of a 'global net increase' due to carbon leakage robustly supported by the cited literature, or is it an overstatement?"
 
 **Prepare answers or add to paper**
 
@@ -173,14 +153,14 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Fix Issue 1 (Missing Citations):** This is paramount for academic integrity.
-2.  🔴 **Address Issue 2 (Inconsistency on Price Stability):** Resolve the logical contradiction.
-3.  🔴 **Fix Issue 3 (Overclaim on EU-ETS Innovation):** Qualify the statement with stronger evidence or more nuanced phrasing.
-4.  🟡 **Address Issue 4 (Nuance on "Decisive Advantage"):** Add caveats about regulatory approaches.
-5.  🟡 **Address Issue 6 (Undefined "Analysis"):** Clarify the scope of the paper's own analysis.
-6.  🟡 **Integrate more diverse literature (Issue 7):** Strengthen the evidence base.
-7.  🟡 **Reduce word count:** Achieve target length.
+1.  🔴 **Fix Issue 1 (Fundamental Discrepancy)** - Redefine paper's scope (original research vs. literature review) throughout. This is paramount.
+2.  🔴 **Address Issue 2 (Weak/Missing Citations)** - Systematically go through all claims and add specific citations.
+3.  🔴 **Resolve Issue 3 (Overclaim of "Globaler Nettoanstieg")** - Qualify the statement or provide stronger evidence.
+4.  🟡 **Address Issue 4 (Repetition)** - Consolidate discussion on price volatility.
+5.  🟡 **Address Issue 6 (Clarity on "Erkenntnisse")** - Be explicit about the source of "findings" or "analysis."
+6.  🟡 **Address Issue 7 (Incomplete Citation Details)** - Add DOIs/arXiv IDs to the reference list.
 
-**Can defer:**
-- Minor wording issues (fix in revision).
-- Adding more specific examples (can be done if word count allows after addressing major issues).
+**Can defer (but recommended for stronger paper):**
+-   Minor wording issues (fix in revision).
+-   Adding more specific examples or deeper elaborations (can be done in a later revision if word count is a concern, but enhances quality).
+-   Addressing missing discussions (can be suggested as future work if too extensive).

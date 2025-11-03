@@ -18,6 +18,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from config import get_config
 from tests.test_utils import setup_model, run_agent, rate_limit_delay
 from tests.validators import Section, validate_paper_sections
+from utils.citation_manager import extract_citations_from_text
+from utils.citation_database import save_citation_database, load_citation_database
 
 
 def main():
@@ -145,6 +147,42 @@ def main():
 
     rate_limit_delay()
 
+    # Step 3.5: Citation Manager - Extract citations from research
+    print("\n" + "="*70)
+    print("📚 PHASE 2.5: CITATION MANAGEMENT")
+    print("="*70)
+
+    print("Extracting citations from research notes...")
+
+    # Extract citations from research materials
+    citation_database = extract_citations_from_text(
+        text=scribe_output,  # Use summarized research notes
+        model=model,
+        language="english",
+        citation_style="APA 7th",
+        verbose=True
+    )
+
+    # Save citation database
+    citation_db_path = output_dir / "citation_database.json"
+    save_citation_database(citation_database, citation_db_path)
+
+    print(f"\n✅ Citation database created: {len(citation_database.citations)} citations")
+    print(f"📄 Saved to: {citation_db_path}")
+
+    # Prepare citation database summary for Crafters
+    citation_summary = f"\n\n## CITATION DATABASE\n\nYou have access to {len(citation_database.citations)} citations. Use citation IDs (cite_001, cite_002, etc.) instead of inline citations.\n\n"
+    citation_summary += "Available citations:\n"
+    for citation in citation_database.citations[:20]:  # Show first 20
+        authors_str = ", ".join(citation.authors[:2])
+        if len(citation.authors) > 2:
+            authors_str += " et al."
+        citation_summary += f"- {citation.id}: {authors_str} ({citation.year}) - {citation.title[:60]}...\n"
+    if len(citation_database.citations) > 20:
+        citation_summary += f"  ... and {len(citation_database.citations) - 20} more citations\n"
+
+    rate_limit_delay()
+
     # ====================================================================
     # PHASE 3: COMPOSE
     # ====================================================================
@@ -164,7 +202,8 @@ def main():
             f"- Background on open source software movement\n"
             f"- Problem statement (proprietary vs open source)\n"
             f"- Research objectives (how open source saves the world)\n"
-            f"- Paper organization"
+            f"- Paper organization\n"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "06_introduction.md"
     )
@@ -184,7 +223,8 @@ def main():
             f"- Collaborative development theory\n"
             f"- Digital commons and knowledge sharing\n"
             f"- Environmental sustainability through open source\n\n"
-            f"Use research: {scribe_output[:1500]}"
+            f"Use research: {scribe_output[:1500]}\n"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "07_literature_review.md"
     )
@@ -201,7 +241,8 @@ def main():
             f"Describe:\n"
             f"- Framework for analyzing open source impact\n"
             f"- Case study selection criteria (Linux, Wikipedia, etc.)\n"
-            f"- Analysis approach for global impact assessment"
+            f"- Analysis approach for global impact assessment\n"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "08_methodology.md"
     )
@@ -220,7 +261,8 @@ def main():
             f"- Economic benefits (cost savings, job creation)\n"
             f"- Environmental sustainability (reduced waste, efficient development)\n"
             f"- Social impact (education, accessibility, digital divide)\n"
-            f"- Real-world examples (Linux, Apache, Wikipedia, Firefox)"
+            f"- Real-world examples (Linux, Apache, Wikipedia, Firefox)\n"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "09_analysis.md"
     )
@@ -238,7 +280,8 @@ def main():
             f"- Implications for technology policy\n"
             f"- Open source as solution to global challenges\n"
             f"- Future of collaborative development\n"
-            f"- Recommendations for governments and organizations"
+            f"- Recommendations for governments and organizations\n"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "10_discussion.md"
     )
@@ -255,7 +298,8 @@ def main():
             f"Summarize:\n"
             f"- Key findings on open source impact\n"
             f"- Contributions to understanding global technology challenges\n"
-            f"- Future research directions in open source and sustainability"
+            f"- Future research directions in open source and sustainability\n"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "11_conclusion.md"
     )
@@ -387,42 +431,54 @@ def main():
     print(f"✅ Draft saved: {draft_path}")
     print(f"📊 Draft stats: ~{len(draft_paper.split())} words")
 
-    # Step 14: Citation Verifier - Complete [VERIFY] placeholders
-    print("\n🔍 Running Citation Verifier...")
+    # Step 14: Citation Compiler - Replace citation IDs with formatted citations
+    print("\n🔍 Running Citation Compiler...")
     print("   This will:")
-    print("   • Find all [VERIFY] citation placeholders")
-    print("   • Complete missing metadata (year, publisher, DOI)")
-    print("   • Validate APA 7th edition format")
-    print("   • Output: 100% verified citations")
-    print("\n⏳ Citation verification may take 2-3 minutes...")
+    print("   • Replace all {cite_XXX} IDs with formatted citations")
+    print("   • Generate reference list automatically")
+    print("   • Validate all citations present in database")
+    print("   • Output: 100% deterministic citation compilation")
+    print("\n⏳ Compiling citations...")
 
-    verified_paper = run_agent(
-        model=model,
-        name="14. Citation Verifier - Complete Citations",
-        prompt_path="prompts/05_refine/citation_verifier.md",
-        user_input=f"Complete all [VERIFY] citation placeholders in this thesis:\n\n{draft_paper}",
-        save_to=output_dir / "15_verified_citations.md"
-    )
+    from utils.citation_compiler import CitationCompiler
 
-    # Use verified version if available, otherwise fall back to draft
-    paper_for_enhancement = verified_paper if verified_paper else draft_paper
+    # Load citation database
+    citation_database = load_citation_database(citation_db_path)
 
-    if verified_paper:
-        verified_word_count = len(verified_paper.split())
-        print(f"\n✅ Citation verification complete!")
-        print(f"📊 Verified thesis: ~{verified_word_count} words")
+    # Compile citations
+    compiler = CitationCompiler(citation_database)
+    compiled_paper, missing_ids = compiler.compile_citations(draft_paper)
 
-        # CRITICAL: Validate that all [VERIFY] placeholders were removed
-        from utils.citation_validation import validate_citation_verification, print_validation_report
+    # Generate reference list
+    reference_list = compiler.generate_reference_list(draft_paper)
 
-        validation_result = validate_citation_verification(verified_paper, language='english')
-        print_validation_report(validation_result, verbose=True)
+    # Append reference list to paper
+    verified_paper = compiled_paper + "\n\n" + reference_list
 
-        if not validation_result['success']:
-            issues.append(f"❌ {validation_result['count']} [VERIFY] placeholders remaining")
-            manual_interventions += 1
+    # Save compiled paper
+    verified_paper_path = output_dir / "15_compiled_citations.md"
+    with open(verified_paper_path, 'w', encoding='utf-8') as f:
+        f.write(verified_paper)
+
+    # Use compiled version
+    paper_for_enhancement = verified_paper
+
+    # Validate compilation
+    validation_result = compiler.validate_compilation(draft_paper, compiled_paper)
+
+    verified_word_count = len(verified_paper.split())
+    print(f"\n✅ Citation compilation complete!")
+    print(f"📊 Compiled thesis: ~{verified_word_count} words")
+    print(f"✅ Total citations: {validation_result['total_citations']}")
+    print(f"✅ Successfully compiled: {validation_result['successfully_compiled']}")
+
+    if validation_result['missing_citations'] > 0:
+        print(f"⚠️  Missing citations: {validation_result['missing_citations']}")
+        print(f"   Missing IDs: {missing_ids}")
+        issues.append(f"❌ {validation_result['missing_citations']} missing citation IDs")
+        manual_interventions += 1
     else:
-        print(f"\n⚠️  Citation verification failed, using draft with [VERIFY] tags")
+        print("✅ All citation IDs successfully compiled - 100% success rate!")
 
     rate_limit_delay()
 

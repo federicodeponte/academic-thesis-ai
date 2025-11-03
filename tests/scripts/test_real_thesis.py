@@ -18,6 +18,8 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from config import get_config
 from tests.test_utils import setup_model, run_agent, rate_limit_delay
 from tests.validators import Section, validate_paper_sections
+from utils.citation_manager import extract_citations_from_text
+from utils.citation_compiler import CitationCompiler
 
 
 def main():
@@ -106,11 +108,34 @@ def main():
     rate_limit_delay()
 
     # ====================================================================
-    # PHASE 2: STRUCTURE
+    # PHASE 2: STRUCTURE (Citation Manager Added in Phase 2)
     # ====================================================================
     print("\n" + "="*70)
     print("🏗️  PHASE 2: STRUCTURE")
     print("="*70)
+
+    # Step 3.5: Citation Manager - Extract citations from research
+    print("\n📚 Extracting citations from research materials...")
+    citation_database = extract_citations_from_text(
+        text=f"{scout_output}\n\n{scribe_output}",
+        model=model,
+        language="english",
+        citation_style="APA 7th",
+        verbose=True
+    )
+
+    print(f"✅ Citation database created: {len(citation_database.citations)} citations extracted")
+
+    # Prepare citation summary for Crafters
+    citation_summary = f"\n\n## CITATION DATABASE\n\nYou have access to {len(citation_database.citations)} citations. Use citation IDs (cite_001, cite_002, etc.) instead of inline citations.\n\n"
+    citation_summary += "Available citations:\n"
+    for citation in citation_database.citations[:20]:  # Show first 20
+        authors_str = ", ".join(citation.authors[:2])
+        if len(citation.authors) > 2:
+            authors_str += " et al."
+        citation_summary += f"- {citation.id}: {authors_str} ({citation.year}) - {citation.title[:60]}...\n"
+
+    rate_limit_delay()
 
     # Step 4: Architect - Create outline
     architect_output = run_agent(
@@ -164,6 +189,7 @@ def main():
             f"- Problem statement (pricing complexity)\n"
             f"- Research objectives\n"
             f"- Paper organization"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "06_introduction.md"
     )
@@ -183,6 +209,7 @@ def main():
             f"- Value-based pricing theory\n"
             f"- Comparative analysis\n\n"
             f"Use research: {scribe_output[:1500]}"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "07_literature_review.md"
     )
@@ -200,6 +227,7 @@ def main():
             f"- Framework for comparing pricing models\n"
             f"- Case study selection criteria\n"
             f"- Analysis approach"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "08_methodology.md"
     )
@@ -218,6 +246,7 @@ def main():
             f"- Advantages and disadvantages\n"
             f"- Real-world examples (OpenAI, Claude, etc.)\n"
             f"- Hybrid pricing approaches"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "09_analysis.md"
     )
@@ -236,6 +265,7 @@ def main():
             f"- Customer adoption considerations\n"
             f"- Future pricing trends\n"
             f"- Recommendations"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "10_discussion.md"
     )
@@ -253,6 +283,7 @@ def main():
             f"- Key findings\n"
             f"- Contributions to field\n"
             f"- Future research directions"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "11_conclusion.md"
     )
@@ -348,13 +379,13 @@ def main():
     rate_limit_delay()
 
     # ====================================================================
-    # PHASE 6: CITATION VERIFICATION
+    # PHASE 6: CITATION COMPILATION
     # ====================================================================
     print("\n" + "="*70)
-    print("✅ PHASE 6: CITATION VERIFICATION (Agent #14)")
+    print("✅ PHASE 6: CITATION COMPILATION (Agent #14 - Citation Compiler)")
     print("="*70)
 
-    # Create complete draft for citation verification
+    # Create complete draft for citation compilation
     draft_paper = f"""# {topic}
 
 {humanized_intro or intro}
@@ -368,48 +399,72 @@ def main():
 {discussion}
 
 {conclusion}
-
----
-
-## References
-
-[To be completed with proper citations]
 """
 
-    # Save draft before citation verification
-    draft_path = output_dir / "14_draft_pre_citation_check.md"
+    # Save draft before citation compilation
+    draft_path = output_dir / "14_draft_pre_citation_compilation.md"
     with open(draft_path, 'w', encoding='utf-8') as f:
         f.write(draft_paper)
 
     print(f"✅ Draft saved: {draft_path}")
     print(f"📊 Draft stats: ~{len(draft_paper.split())} words")
 
-    # Step 14: Citation Verifier - Complete [VERIFY] placeholders
-    print("\n🔍 Running Citation Verifier...")
+    # Step 14: Citation Compiler - Replace citation IDs with formatted citations
+    print("\n🔧 Running Citation Compiler...")
     print("   This will:")
-    print("   • Find all [VERIFY] citation placeholders")
-    print("   • Complete missing metadata (year, publisher, DOI)")
-    print("   • Validate APA 7th edition format")
-    print("   • Output: 100% verified citations")
-    print("\n⏳ Citation verification may take 2-3 minutes...")
+    print("   • Replace {cite_XXX} IDs with formatted citations (APA 7th)")
+    print("   • Auto-generate reference list from cited sources")
+    print("   • 100% deterministic compilation (O(1) dictionary lookup)")
+    print("\n⏳ Citation compilation (instant)...")
 
-    verified_paper = run_agent(
-        model=model,
-        name="14. Citation Verifier - Complete Citations",
-        prompt_path="prompts/05_refine/citation_verifier.md",
-        user_input=f"Complete all [VERIFY] citation placeholders in this thesis:\n\n{draft_paper}",
-        save_to=output_dir / "15_verified_citations.md"
-    )
+    compiler = CitationCompiler(citation_database)
+    compiled_paper, missing_ids = compiler.compile_citations(draft_paper)
 
-    # Use verified version if available, otherwise fall back to draft
-    paper_for_enhancement = verified_paper if verified_paper else draft_paper
+    # Generate reference list
+    reference_list = compiler.generate_reference_list(draft_paper)
 
-    if verified_paper:
-        verified_word_count = len(verified_paper.split())
-        print(f"\n✅ Citation verification complete!")
-        print(f"📊 Verified thesis: ~{verified_word_count} words")
-    else:
-        print(f"\n⚠️  Citation verification failed, using draft with [VERIFY] tags")
+    # Combine compiled paper with reference list
+    verified_paper = f"""{compiled_paper}
+
+---
+
+{reference_list}
+"""
+
+    # Save compiled version
+    with open(output_dir / "15_compiled_citations.md", 'w', encoding='utf-8') as f:
+        f.write(verified_paper)
+
+    # Validate compilation
+    validation = compiler.validate_compilation(draft_paper, compiled_paper)
+
+    print(f"\n✅ Citation compilation complete!")
+    print(f"📊 Compilation stats:")
+    print(f"   - Total citations: {validation['total_citations']}")
+    print(f"   - Successfully compiled: {validation['successfully_compiled']}")
+    print(f"   - Missing: {validation['missing_citations']}")
+    if missing_ids:
+        print(f"   ⚠️  Missing citation IDs: {missing_ids}")
+
+    # Generate coverage report
+    print("\n📊 Generating citation coverage report...")
+    from utils.citation_compiler import format_coverage_report
+    coverage_report_data = compiler.generate_coverage_report(draft_paper)
+    coverage_report = format_coverage_report(coverage_report_data)
+
+    # Save coverage report
+    coverage_report_path = output_dir / "14_citation_coverage_report.md"
+    with open(coverage_report_path, 'w', encoding='utf-8') as f:
+        f.write(coverage_report)
+
+    print(f"✅ Coverage report generated!")
+    print(f"   - Citations available: {coverage_report_data['total_citations_available']}")
+    print(f"   - Citations used: {coverage_report_data['citations_used']}")
+    print(f"   - Coverage: {coverage_report_data['coverage_percentage']:.1f}%")
+    print(f"   - Report saved to: {coverage_report_path}")
+
+    # Use compiled version
+    paper_for_enhancement = verified_paper
 
     rate_limit_delay()
 

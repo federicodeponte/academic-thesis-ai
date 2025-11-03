@@ -16,6 +16,9 @@ sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from config import get_config
 from tests.test_utils import setup_model, run_agent, rate_limit_delay
 from tests.validators import Section, validate_paper_sections
+from utils.citation_manager import extract_citations_from_text
+from utils.citation_database import save_citation_database, load_citation_database
+from utils.citation_compiler import CitationCompiler
 
 
 def main():
@@ -154,6 +157,44 @@ def main():
     rate_limit_delay()
 
     # ====================================================================
+    # PHASE 2.5: CITATION MANAGEMENT
+    # ====================================================================
+    print("\n" + "="*70)
+    print("📚 PHASE 2.5: ZITATVERWALTUNG (CITATION MANAGEMENT)")
+    print("="*70)
+
+    print("Zitate aus Forschungsnotizen extrahieren...")
+
+    # Extract citations from research materials
+    citation_database = extract_citations_from_text(
+        text=scribe_output,  # Use summarized research notes
+        model=model,
+        language="german",
+        citation_style="APA 7th",
+        verbose=True
+    )
+
+    # Save citation database
+    citation_db_path = output_dir / "citation_database.json"
+    save_citation_database(citation_database, citation_db_path)
+
+    print(f"\n✅ Zitatdatenbank erstellt: {len(citation_database.citations)} Zitate")
+    print(f"📄 Gespeichert in: {citation_db_path}")
+
+    # Prepare citation database summary for Crafters
+    citation_summary = f"\n\n## ZITATDATENBANK\n\nSie haben Zugriff auf {len(citation_database.citations)} Zitate. Verwenden Sie Zitat-IDs (cite_001, cite_002, etc.) statt Inline-Zitate.\n\n"
+    citation_summary += "Verfügbare Zitate:\n"
+    for citation in citation_database.citations[:20]:  # Show first 20
+        authors_str = ", ".join(citation.authors[:2])
+        if len(citation.authors) > 2:
+            authors_str += " et al."
+        citation_summary += f"- {citation.id}: {authors_str} ({citation.year}) - {citation.title[:60]}...\n"
+    if len(citation_database.citations) > 20:
+        citation_summary += f"  ... und {len(citation_database.citations) - 20} weitere Zitate\n"
+
+    rate_limit_delay()
+
+    # ====================================================================
     # PHASE 3: COMPOSE
     # ====================================================================
     print("\n" + "="*70)
@@ -174,6 +215,7 @@ def main():
             f"- Problemstellung (Wirksamkeit des Emissionshandels)\n"
             f"- Forschungsziele (Klimaschutzwirkung nachweisen)\n"
             f"- Aufbau der Arbeit"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "06_introduction.md"
     )
@@ -195,6 +237,7 @@ def main():
             f"- Empirische Studien zur Wirksamkeit\n"
             f"- Kritische Perspektiven und Herausforderungen\n\n"
             f"Nutze Forschung: {scribe_output[:1500]}"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "07_literature_review.md"
     )
@@ -214,6 +257,7 @@ def main():
             f"- Auswahlkriterien für Fallstudien (EU ETS, Kalifornien, etc.)\n"
             f"- Datenquellen und Messverfahren\n"
             f"- Statistische Methoden zur Wirksamkeitsanalyse"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "08_methodology.md"
     )
@@ -234,6 +278,7 @@ def main():
             f"- Fallstudien (EU ETS, Kalifornien, China)\n"
             f"- Vergleich mit anderen Klimaschutzinstrumenten\n"
             f"- Empirische Belege für Klimaschutzwirkung"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "09_analysis.md"
     )
@@ -254,6 +299,7 @@ def main():
             f"- Verbesserungsvorschläge für CO2-Märkte\n"
             f"- Rolle im globalen Klimaschutz\n"
             f"- Empfehlungen für Politik und Wirtschaft"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "10_discussion.md"
     )
@@ -272,6 +318,7 @@ def main():
             f"- Hauptergebnisse zur Klimaschutzwirkung\n"
             f"- Beitrag zum Verständnis des Emissionshandels\n"
             f"- Zukünftige Forschungsrichtungen"
+            f"{citation_summary}"
         ),
         save_to=output_dir / "11_conclusion.md"
     )
@@ -367,13 +414,13 @@ def main():
     rate_limit_delay()
 
     # ====================================================================
-    # PHASE 6: CITATION VERIFICATION
+    # PHASE 6: CITATION COMPILATION
     # ====================================================================
     print("\n" + "="*70)
-    print("✅ PHASE 6: ZITATPRÜFUNG (CITATION VERIFICATION - Agent #14)")
+    print("✅ PHASE 6: ZITAT-KOMPILIERUNG (CITATION COMPILATION)")
     print("="*70)
 
-    # Create complete draft for citation verification
+    # Create complete draft for citation compilation
     draft_paper = f"""# {topic}
 
 {humanized_intro or intro}
@@ -392,10 +439,10 @@ def main():
 
 ## Literaturverzeichnis
 
-[Wird mit korrekten Zitationen ergänzt]
+[Wird automatisch generiert]
 """
 
-    # Save draft before citation verification
+    # Save draft before citation compilation
     draft_path = output_dir / "14_draft_pre_citation_check.md"
     with open(draft_path, 'w', encoding='utf-8') as f:
         f.write(draft_paper)
@@ -403,42 +450,55 @@ def main():
     print(f"✅ Entwurf gespeichert: {draft_path}")
     print(f"📊 Statistik: ~{len(draft_paper.split())} Wörter")
 
-    # Step 14: Citation Verifier
-    print("\n🔍 Zitatprüfung läuft...")
+    # Step 14: Citation Compiler - Replace citation IDs with formatted citations
+    print("\n🔍 Zitat-Compiler läuft...")
     print("   Dies wird:")
-    print("   • Alle [VERIFY] Platzhalter finden")
-    print("   • Fehlende Metadaten ergänzen (Jahr, Verlag, DOI)")
-    print("   • APA 7th Format validieren")
-    print("   • Ausgabe: 100% verifizierte Zitationen")
-    print("\n⏳ Zitatprüfung dauert 2-3 Minuten...")
+    print("   • Alle {cite_XXX} IDs durch formatierte Zitate ersetzen")
+    print("   • Literaturverzeichnis automatisch generieren")
+    print("   • Alle Zitate in der Datenbank validieren")
+    print("   • Ausgabe: 100% deterministische Zitat-Kompilierung")
+    print("\n⏳ Kompiliere Zitate...")
 
-    verified_paper = run_agent(
-        model=model,
-        name="14. Citation Verifier - Zitate vervollständigen",
-        prompt_path="prompts/05_refine/citation_verifier.md",
-        user_input=f"**WICHTIG: Antworte auf Deutsch.**\n\nVervollständige alle [VERIFY] Platzhalter in dieser Arbeit:\n\n{draft_paper}",
-        save_to=output_dir / "15_verified_citations.md"
-    )
+    # Load citation database
+    citation_database = load_citation_database(citation_db_path)
 
-    # Use verified version if available
-    paper_for_enhancement = verified_paper if verified_paper else draft_paper
+    # Compile citations
+    compiler = CitationCompiler(citation_database)
+    compiled_paper, missing_ids = compiler.compile_citations(draft_paper)
 
-    if verified_paper:
-        verified_word_count = len(verified_paper.split())
-        print(f"\n✅ Zitatprüfung abgeschlossen!")
-        print(f"📊 Verifizierte Arbeit: ~{verified_word_count} Wörter")
+    # Generate reference list
+    reference_list = compiler.generate_reference_list(draft_paper)
 
-        # CRITICAL: Validate that all [VERIFY] placeholders were removed
-        from utils.citation_validation import validate_citation_verification, print_validation_report
+    # Append reference list to paper
+    verified_paper = compiled_paper + "\n\n" + reference_list
 
-        validation_result = validate_citation_verification(verified_paper, language='german')
-        print_validation_report(validation_result, verbose=True)
+    # Save compiled paper
+    verified_paper_path = output_dir / "15_compiled_citations.md"
+    with open(verified_paper_path, 'w', encoding='utf-8') as f:
+        f.write(verified_paper)
 
-        if not validation_result['success']:
-            issues.append(f"❌ {validation_result['count']} [VERIFY] Platzhalter verbleiben")
-            manual_interventions += 1
+    # Use compiled version
+    paper_for_enhancement = verified_paper
+
+    # Validate compilation
+    validation_result = compiler.validate_compilation(draft_paper, compiled_paper)
+
+    verified_word_count = len(verified_paper.split())
+    print(f"\n✅ Zitat-Kompilierung abgeschlossen!")
+    print(f"📊 Kompilierte Arbeit: ~{verified_word_count} Wörter")
+    print(f"✅ Gesamtzitate: {validation_result['total_citations']}")
+    print(f"✅ Erfolgreich kompiliert: {validation_result['successfully_compiled']}")
+
+    issues = []
+    manual_interventions = 0
+
+    if validation_result['missing_citations'] > 0:
+        print(f"⚠️  Fehlende Zitate: {validation_result['missing_citations']}")
+        print(f"   Fehlende IDs: {missing_ids}")
+        issues.append(f"❌ {validation_result['missing_citations']} fehlende Zitat-IDs")
+        manual_interventions += 1
     else:
-        print(f"\n⚠️  Zitatprüfung fehlgeschlagen, nutze Entwurf mit [VERIFY] Tags")
+        print("✅ Alle Zitat-IDs erfolgreich kompiliert - 100% Erfolgsquote!")
 
     rate_limit_delay()
 

@@ -168,6 +168,53 @@ def remove_excessive_dividers(content: str) -> str:
     return '\n'.join(cleaned_lines)
 
 
+def remove_appendix_b_checklists(content: str) -> str:
+    """
+    Remove Appendix B implementation checklists from thesis content.
+
+    Removes entire Appendix B sections that contain implementation checklists
+    with checkbox items, which are development metadata rather than academic content.
+
+    Removes sections like:
+    - ## Appendix B: AI Agent Pricing Strategy Checklist for Providers
+    - ## Anhang B: Implementierungs-Checkliste für CO2-Bepreisungsprojekte
+    - ## Appendix B: Open Source Project Adoption and Implementation Checklist
+
+    Args:
+        content: Markdown content
+
+    Returns:
+        Content without Appendix B checklists
+    """
+    lines = content.split('\n')
+    cleaned_lines = []
+    skip_appendix_b = False
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+
+        # Check if this is Appendix B heading (English or German)
+        if re.match(r'^##\s+Appendix B:', stripped) or re.match(r'^##\s+Anhang B:', stripped):
+            skip_appendix_b = True
+            continue  # Skip Appendix B heading
+
+        # If we're skipping Appendix B, check if we've hit Appendix C or another major section
+        if skip_appendix_b:
+            # Check if this is Appendix C (or Anhang C) or another major heading
+            if (re.match(r'^##\s+Appendix [C-Z]:', stripped) or
+                re.match(r'^##\s+Anhang [C-Z]:', stripped) or
+                re.match(r'^#\s+', stripped)):  # Also stop at top-level headings
+                # This is a new section - stop skipping
+                skip_appendix_b = False
+                cleaned_lines.append(line)
+            # Otherwise keep skipping (this is content of Appendix B)
+        else:
+            # Not skipping - keep this line
+            cleaned_lines.append(line)
+
+    return '\n'.join(cleaned_lines)
+
+
 def clean_thesis_markdown(input_file: Path, output_file: Path = None) -> None:
     """
     Clean thesis markdown file for publication.
@@ -196,6 +243,10 @@ def clean_thesis_markdown(input_file: Path, output_file: Path = None) -> None:
     # Remove metadata section headings (## Content, ## Citations Used, etc.)
     print(f"   Removing metadata sections...")
     content = remove_metadata_sections(content)
+
+    # Remove Appendix B implementation checklists
+    print(f"   Removing Appendix B implementation checklists...")
+    content = remove_appendix_b_checklists(content)
 
     # Remove inline metadata headers (**Section:**, **Word Count:**, etc.)
     print(f"   Removing metadata headers...")

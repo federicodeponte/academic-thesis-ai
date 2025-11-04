@@ -76,6 +76,98 @@ def remove_metadata_headers(content: str) -> str:
     return '\n'.join(cleaned_lines)
 
 
+def remove_metadata_sections(content: str) -> str:
+    """
+    Remove entire metadata sections from thesis content.
+
+    Removes sections like:
+    - ## Content / ## Inhalt (section markers)
+    - ## Citations Used (with all numbered lists)
+    - ## Notes for Revision (with all checklists)
+    - ## Word Count Breakdown (with all breakdowns)
+
+    Args:
+        content: Markdown content
+
+    Returns:
+        Content without metadata sections
+    """
+    lines = content.split('\n')
+    cleaned_lines = []
+    skip_until_next_heading = False
+
+    # Metadata section headings to remove (including their content)
+    metadata_section_patterns = [
+        r'^##\s+Content\s*$',
+        r'^##\s+Inhalt\s*$',  # German
+        r'^##\s+Citations Used\s*$',
+        r'^##\s+Notes for Revision\s*$',
+        r'^##\s+Word Count Breakdown\s*$',
+    ]
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+
+        # Check if this is a metadata section heading
+        is_metadata_section = False
+        for pattern in metadata_section_patterns:
+            if re.match(pattern, stripped):
+                is_metadata_section = True
+                skip_until_next_heading = True
+                break
+
+        if is_metadata_section:
+            continue  # Skip this heading
+
+        # If we're skipping, check if we've hit the next real heading
+        if skip_until_next_heading:
+            # Check if this is a new heading (## or # but NOT the metadata ones)
+            if re.match(r'^#{1,6}\s+\w', stripped):
+                # This is a new heading - stop skipping
+                skip_until_next_heading = False
+                cleaned_lines.append(line)
+            # Otherwise keep skipping (this is content of the metadata section)
+        else:
+            # Not skipping - keep this line
+            cleaned_lines.append(line)
+
+    return '\n'.join(cleaned_lines)
+
+
+def remove_excessive_dividers(content: str) -> str:
+    """
+    Remove excessive horizontal rule dividers (---).
+
+    Keeps dividers that appear to be legitimate section breaks,
+    but removes those that are only separating metadata sections.
+
+    Strategy: Remove dividers that have empty lines or other dividers nearby.
+
+    Args:
+        content: Markdown content
+
+    Returns:
+        Content with reduced dividers
+    """
+    lines = content.split('\n')
+    cleaned_lines = []
+
+    for i, line in enumerate(lines):
+        # Check if this is a horizontal rule
+        if re.match(r'^---\s*$', line.strip()):
+            # Check context: is this divider surrounded by empty lines?
+            prev_empty = (i == 0 or not lines[i-1].strip())
+            next_empty = (i == len(lines)-1 or not lines[i+1].strip())
+
+            # If divider is surrounded by empty lines, it's likely metadata separation
+            if prev_empty and next_empty:
+                continue  # Skip this divider
+
+        cleaned_lines.append(line)
+
+    return '\n'.join(cleaned_lines)
+
+
 def clean_thesis_markdown(input_file: Path, output_file: Path = None) -> None:
     """
     Clean thesis markdown file for publication.
@@ -101,11 +193,20 @@ def clean_thesis_markdown(input_file: Path, output_file: Path = None) -> None:
     print(f"   Removing YAML frontmatter...")
     content = remove_yaml_frontmatter(content)
 
-    # Remove metadata headers
+    # Remove metadata section headings (## Content, ## Citations Used, etc.)
+    print(f"   Removing metadata sections...")
+    content = remove_metadata_sections(content)
+
+    # Remove inline metadata headers (**Section:**, **Word Count:**, etc.)
     print(f"   Removing metadata headers...")
     content = remove_metadata_headers(content)
 
+    # Remove excessive horizontal dividers
+    print(f"   Removing excessive dividers...")
+    content = remove_excessive_dividers(content)
+
     # Clean up excessive blank lines (more than 2 consecutive)
+    print(f"   Cleaning up blank lines...")
     content = re.sub(r'\n{4,}', '\n\n\n', content)
 
     # Remove leading/trailing whitespace

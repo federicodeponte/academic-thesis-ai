@@ -1,0 +1,167 @@
+#!/usr/bin/env python3
+"""
+ABOUTME: Strip metadata from thesis markdown files for clean PDF publication
+ABOUTME: Removes YAML frontmatter and section metadata headers
+"""
+
+import re
+import sys
+from pathlib import Path
+from typing import List
+
+
+def remove_yaml_frontmatter(content: str) -> str:
+    """
+    Remove YAML frontmatter from markdown content.
+
+    Removes everything from first --- to second --- (inclusive).
+
+    Args:
+        content: Markdown content with YAML frontmatter
+
+    Returns:
+        Content without frontmatter
+    """
+    # Pattern: starts with ---, followed by anything, ending with ---
+    pattern = r'^---\s*\n.*?\n---\s*\n'
+    cleaned = re.sub(pattern, '', content, count=1, flags=re.DOTALL | re.MULTILINE)
+    return cleaned
+
+
+def remove_metadata_headers(content: str) -> str:
+    """
+    Remove metadata headers from thesis content.
+
+    Removes lines like:
+    - **Section:** Introduction
+    - **Word Count:** 1200
+    - **Status:** Draft v1 (Humanized)
+    - **Abschnitt:** Einleitung (German)
+    - **Wortzahl:** 1200 (German)
+
+    Args:
+        content: Markdown content
+
+    Returns:
+        Content without metadata headers
+    """
+    lines = content.split('\n')
+    cleaned_lines = []
+
+    # Metadata patterns to remove (English and German)
+    metadata_patterns = [
+        r'^\*\*Section:\*\*',
+        r'^\*\*Word Count:\*\*',
+        r'^\*\*Status:\*\*',
+        r'^\*\*Abschnitt:\*\*',
+        r'^\*\*Wortzahl:\*\*',
+        r'^\*\*Citations Used:\*\*',
+        r'^\*\*Research Problem',
+        r'^\*\*Key Findings',
+        r'^\*\*Significance',
+    ]
+
+    for line in lines:
+        # Check if line matches any metadata pattern
+        is_metadata = False
+        for pattern in metadata_patterns:
+            if re.match(pattern, line.strip()):
+                is_metadata = True
+                break
+
+        # Keep line if it's not metadata
+        if not is_metadata:
+            cleaned_lines.append(line)
+
+    return '\n'.join(cleaned_lines)
+
+
+def clean_thesis_markdown(input_file: Path, output_file: Path = None) -> None:
+    """
+    Clean thesis markdown file for publication.
+
+    Args:
+        input_file: Path to FINAL_THESIS.md
+        output_file: Output path (defaults to input_file with _CLEAN suffix)
+    """
+    # Default output file
+    if output_file is None:
+        output_file = input_file.parent / f"{input_file.stem}_CLEAN{input_file.suffix}"
+
+    print(f"📄 Reading: {input_file}")
+
+    # Read original content
+    with open(input_file, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    original_lines = len(content.split('\n'))
+    print(f"   Original: {original_lines} lines")
+
+    # Remove YAML frontmatter
+    print(f"   Removing YAML frontmatter...")
+    content = remove_yaml_frontmatter(content)
+
+    # Remove metadata headers
+    print(f"   Removing metadata headers...")
+    content = remove_metadata_headers(content)
+
+    # Clean up excessive blank lines (more than 2 consecutive)
+    content = re.sub(r'\n{4,}', '\n\n\n', content)
+
+    # Remove leading/trailing whitespace
+    content = content.strip() + '\n'
+
+    cleaned_lines = len(content.split('\n'))
+    print(f"   Cleaned: {cleaned_lines} lines")
+    print(f"   Removed: {original_lines - cleaned_lines} lines")
+
+    # Write cleaned content
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(content)
+
+    print(f"✅ Saved: {output_file}")
+    print()
+
+
+def main():
+    """Main entry point."""
+    print("="*80)
+    print("THESIS CLEANER - Remove Metadata for Publication")
+    print("="*80)
+    print()
+
+    # Get input file from command line or use defaults
+    if len(sys.argv) > 1:
+        input_files = [Path(sys.argv[1])]
+    else:
+        # Default: clean all 3 thesis files
+        base_dir = Path(__file__).parent.parent
+        input_files = [
+            base_dir / "tests/outputs/opensource_thesis/FINAL_THESIS.md",
+            base_dir / "tests/outputs/ai_pricing_thesis/FINAL_THESIS.md",
+            base_dir / "tests/outputs/co2_thesis_german/FINAL_THESIS.md",
+        ]
+
+    # Clean each file
+    cleaned_count = 0
+    for input_file in input_files:
+        if not input_file.exists():
+            print(f"❌ File not found: {input_file}")
+            continue
+
+        clean_thesis_markdown(input_file)
+        cleaned_count += 1
+
+    print("="*80)
+    print(f"✅ Cleaned {cleaned_count} thesis file(s)")
+    print("="*80)
+    print()
+    print("Next steps:")
+    print("1. Review cleaned files (*_CLEAN.md)")
+    print("2. Export to PDF using your PDF generation tool")
+    print("3. Replace PDFs in examples/ directory")
+    print("4. Push to GitHub")
+
+
+if __name__ == "__main__":
+    main()

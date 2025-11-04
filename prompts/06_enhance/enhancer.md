@@ -109,7 +109,7 @@ grep "Draft v1" output.md               # FAIL - should be "Entwurf v1"
 Enhance the thesis with **SIX CRITICAL ADDITIONS**:
 
 1. **YAML Metadata Frontmatter** - Professional showcase metadata
-2. **Five Comprehensive Appendices** - Domain-specific supplementary material
+2. **Four Comprehensive Appendices** - Domain-specific supplementary material
 3. **Limitations Section** - 4-5 subsections on methodological/scope limitations
 4. **Future Research Section** - 5-7 specific research directions
 5. **Visual Elements** - 3-5 tables, 1-2 figures (ASCII diagrams)
@@ -123,7 +123,7 @@ Enhance the thesis with **SIX CRITICAL ADDITIONS**:
 
 The input thesis is typically 7,000-10,000 words. You must ADD approximately **6,000-9,000 words** through:
 
-- **Detailed appendices** (~5,000 words total across 5 appendices)
+- **Detailed appendices** (~4,200 words total across 4 appendices)
   - Each appendix should be 800-1,200 words
   - Include comprehensive tables, frameworks, and detailed content
   - Do NOT write brief or superficial appendices
@@ -243,39 +243,6 @@ Add after Conclusion, before References. Each appendix should be **substantial**
 ### A.4 Validation Criteria
 
 [How to validate/test the framework]
-
----
-```
-
-#### Appendix B: Implementation/Application Checklist
-
-**Purpose:** Provide actionable steps for practitioners
-
-**Format:** Structured checklist with phases, steps, and deliverables
-
-**Example Structure:**
-
-```markdown
-## Appendix B: Implementation Checklist for [Domain Application]
-
-### Phase 1: Preparation & Assessment
-
-**Step 1.1: [Action Item]**
-- Deliverable: [Expected output]
-- Timeline: [Estimated time]
-- Resources needed: [Required resources]
-
-**Step 1.2: [Action Item]**
-- Deliverable: [Expected output]
-- Timeline: [Estimated time]
-
-### Phase 2: [Next Phase]
-
-[Continue with 3-5 phases, each with 2-4 steps]
-
-### Phase 3: Monitoring & Optimization
-
-[Final phase with metrics and KPIs]
 
 ---
 ```
@@ -608,7 +575,7 @@ Alternative styles (all ASCII-only):
 - **Additions breakdown:**
   - YAML metadata: ~200 words
   - Enhanced abstract: +100 words
-  - Five appendices: ~4,000 words total (800 each)
+  - Four appendices: ~3,200 words total (800 each)
   - Limitations: ~800 words
   - Future Research: ~800 words
   - Visual elements & expanded case studies: ~1,000 words
@@ -673,12 +640,6 @@ Return the **complete enhanced thesis** as a single markdown document with this 
 
 ---
 
-## Appendix B: [Title]
-
-[Comprehensive appendix - ~800 words]
-
----
-
 ## Appendix C: [Title]
 
 [Comprehensive appendix with data tables - ~800 words]
@@ -710,7 +671,7 @@ Before returning the enhanced thesis, verify:
 
 ✅ **YAML frontmatter present** with accurate word count/page estimates
 ✅ **Abstract enhanced** into 4 labeled paragraphs with keywords
-✅ **Five substantial appendices** added (each 10+ paragraphs or equivalent)
+✅ **Four substantial appendices** added (each 10+ paragraphs or equivalent)
 ✅ **Limitations section** added with 4-5 subsections (~800 words)
 ✅ **Future Research section** added with 7 specific directions (~800 words)
 ✅ **3-5 tables** added in Analysis/Discussion with proper formatting
@@ -736,10 +697,10 @@ Before returning the enhanced thesis, verify:
 **Enhanced Output:**
 - Title: [Same]
 - Length: 14,800 words (+6,071 words)
-- Sections: 6 core + Limitations + Future Research + 5 Appendices = 14 sections
+- Sections: 6 core + Limitations + Future Research + 4 Appendices = 13 sections
 - Tables: 5 (Software Comparison, Economic Impact, Environmental Metrics, Case Study Data, Implementation Checklist)
 - Figures: 2 (Sustainability Framework, Value Creation Model)
-- Appendices: 5 (A: Comparative Framework, B: Implementation Checklist, C: Case Studies, D: Resources, E: Glossary)
+- Appendices: 4 (A: Comparative Framework, C: Case Studies, D: Resources, E: Glossary)
 - Page estimate: 67 pages (vs original 39 pages)
 
 ---

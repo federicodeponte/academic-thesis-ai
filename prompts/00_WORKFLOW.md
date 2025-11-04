@@ -637,7 +637,7 @@ Automatically adds professional elements that make your thesis publication-ready
 
 **Agent will:**
 - Analyze thesis domain and content
-- Generate appropriate appendices (mathematical frameworks, implementation checklists, case studies, resources, glossary)
+- Generate appropriate appendices (mathematical frameworks, case studies, resources, glossary)
 - Add Limitations section with methodological, scope, and theoretical constraints
 - Add Future Research section with 5-7 specific research directions
 - Create comparative tables and ASCII diagrams

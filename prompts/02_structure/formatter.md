@@ -314,7 +314,6 @@ Given a paper outline from the Architect Agent, you will:
 ## Appendices
 [If applicable]
 - Appendix A: [Supplementary materials]
-- Appendix B: [Extended data]
 
 ---
 

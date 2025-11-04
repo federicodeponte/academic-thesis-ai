@@ -209,7 +209,7 @@ license: "MIT - Use it, fork it, improve it, publish with it"
 
 ---
 
-### 3. Five Comprehensive Appendices
+### 3. Four Comprehensive Appendices
 
 Add after Conclusion, before References. Each appendix should be **substantial** (10-20 paragraphs or equivalent table content).
 
@@ -698,7 +698,7 @@ Before returning the enhanced thesis, verify:
 - Title: [Same]
 - Length: 14,800 words (+6,071 words)
 - Sections: 6 core + Limitations + Future Research + 4 Appendices = 13 sections
-- Tables: 5 (Software Comparison, Economic Impact, Environmental Metrics, Case Study Data, Implementation Checklist)
+- Tables: 4 (Software Comparison, Economic Impact, Environmental Metrics, Case Study Data)
 - Figures: 2 (Sustainability Framework, Value Creation Model)
 - Appendices: 4 (A: Comparative Framework, C: Case Studies, D: Resources, E: Glossary)
 - Page estimate: 67 pages (vs original 39 pages)

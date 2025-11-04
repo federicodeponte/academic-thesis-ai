@@ -1,42 +1,229 @@
 #!/usr/bin/env python3
 """
-ABOUTME: Citation compiler for deterministic citation ID replacement
-ABOUTME: Replaces {cite_001} with formatted citations, generates reference lists
+ABOUTME: Citation compiler for deterministic citation ID replacement and missing citation research
+ABOUTME: Replaces {cite_001} with formatted citations, researches {cite_MISSING:topic} placeholders, generates reference lists
 """
 
 import re
-from typing import Any, Dict, List, Tuple, Set
+from typing import Any, Dict, List, Tuple, Set, Optional
 from pathlib import Path
+
+import google.generativeai as genai
 
 from utils.citation_database import Citation, CitationDatabase, CitationStyle
 
 
 class CitationCompiler:
-    """Deterministic citation compiler using dictionary lookup."""
+    """Deterministic citation compiler with automatic missing citation research."""
 
-    def __init__(self, database: CitationDatabase):
+    def __init__(self, database: CitationDatabase, model: Optional[genai.GenerativeModel] = None):
         """
         Initialize compiler with citation database.
 
         Args:
             database: CitationDatabase with all available citations
+            model: Optional Gemini model for researching missing citations
         """
         self.database = database
         self.citation_lookup = {c.id: c for c in database.citations}
         self.style = database.citation_style
+        self.model = model
+        self.research_enabled = model is not None
+        self.researched_topics: Dict[str, Optional[Citation]] = {}
 
-    def compile_citations(self, text: str) -> Tuple[str, List[str]]:
+    def _research_missing_citation(self, topic: str, verbose: bool = True) -> Optional[Citation]:
         """
-        Replace citation IDs with formatted citations.
+        Research a missing citation using Gemini Scout agent.
 
         Args:
-            text: Text containing citation IDs like {cite_001}
+            topic: Topic or description to research
+            verbose: Whether to print progress
 
         Returns:
-            tuple: (formatted_text, list_of_missing_ids)
+            Citation object if found, None otherwise
+        """
+        if not self.research_enabled:
+            if verbose:
+                print(f"  ⚠️  Research disabled - no model provided")
+            return None
+
+        # Check cache first
+        if topic in self.researched_topics:
+            return self.researched_topics[topic]
+
+        if verbose:
+            print(f"  🔍 Researching: {topic[:70]}{'...' if len(topic) > 70 else ''}")
+
+        try:
+            # Load Scout agent prompt
+            from tests.test_utils import load_prompt
+            scout_prompt = load_prompt("prompts/01_research/scout.md")
+
+            # Build research request
+            user_input = f"""# Research Task
+
+Find the most relevant academic paper for this topic:
+
+**Topic:** {topic}
+
+## Requirements
+
+1. Search for papers matching this topic
+2. Find the single MOST relevant paper (highest quality, most cited, most recent)
+3. Return ONLY ONE paper with complete metadata
+
+## Output Format
+
+Return a JSON object with this structure:
+
+```json
+{{
+  "authors": ["Author One", "Author Two"],
+  "year": 2023,
+  "title": "Complete Paper Title",
+  "source_type": "journal|conference|book|report|article",
+  "journal": "Journal Name (if journal article)",
+  "conference": "Conference Name (if conference paper)",
+  "doi": "10.xxxx/xxxxx (if available)",
+  "url": "https://... (if available)",
+  "pages": "1-10 (if available)",
+  "volume": "5 (if available)",
+  "publisher": "Publisher Name (if available)"
+}}
+```
+
+## Important
+
+- Return ONLY the JSON object, no markdown, no explanation
+- Ensure all fields are present (use empty string "" if not available)
+- year must be an integer
+- authors must be a list (even if only one author)
+- source_type must be one of: journal, conference, book, report, article
+- If you cannot find a paper, return: {{"error": "No paper found"}}
+"""
+
+            # Call Gemini
+            response = self.model.generate_content(
+                [scout_prompt, user_input],
+                generation_config=genai.GenerationConfig(
+                    temperature=0.2,  # Low temperature for factual research
+                    max_output_tokens=2048
+                )
+            )
+
+            # Parse JSON response
+            import json
+            response_text = response.text.strip()
+
+            # Remove markdown code blocks if present
+            if response_text.startswith("```"):
+                response_text = response_text.split("```")[1]
+                if response_text.startswith("json"):
+                    response_text = response_text[4:]
+                response_text = response_text.strip()
+
+            data = json.loads(response_text)
+
+            # Check for error
+            if "error" in data:
+                if verbose:
+                    print(f"    ✗ {data['error']}")
+                self.researched_topics[topic] = None
+                return None
+
+            # Generate next citation ID
+            existing_ids = list(self.citation_lookup.keys())
+            if existing_ids:
+                # Get max number from cite_XXX
+                max_num = max(int(cid.replace("cite_", "")) for cid in existing_ids if cid.startswith("cite_"))
+                next_id = f"cite_{max_num + 1:03d}"
+            else:
+                next_id = "cite_001"
+
+            # Create Citation object
+            # Note: For conference papers, use publisher field for conference name
+            citation = Citation(
+                citation_id=next_id,
+                authors=data.get("authors", []),
+                year=int(data.get("year", 0)),
+                title=data.get("title", ""),
+                source_type=data.get("source_type", "article"),
+                language="english",
+                journal=data.get("journal", "") or data.get("conference", ""),  # Use journal field for both journals and conferences
+                doi=data.get("doi", ""),
+                url=data.get("url", ""),
+                pages=data.get("pages", ""),
+                volume=data.get("volume", ""),
+                publisher=data.get("publisher", "")
+            )
+
+            # Validate citation
+            if not citation.authors or citation.year == 0 or not citation.title:
+                if verbose:
+                    print(f"    ✗ Incomplete citation metadata")
+                self.researched_topics[topic] = None
+                return None
+
+            # Add to database and lookup
+            self.database.citations.append(citation)
+            self.citation_lookup[citation.id] = citation
+            self.researched_topics[topic] = citation
+
+            if verbose:
+                print(f"    ✓ Found: {citation.authors[0]} et al. ({citation.year}) [{citation.id}]")
+                if citation.doi:
+                    print(f"      DOI: {citation.doi}")
+
+            return citation
+
+        except Exception as e:
+            if verbose:
+                print(f"    ✗ Research failed: {e}")
+            self.researched_topics[topic] = None
+            return None
+
+    def compile_citations(self, text: str, research_missing: bool = True, verbose: bool = True) -> Tuple[str, List[str], List[str]]:
+        """
+        Replace citation IDs with formatted citations and research missing citations.
+
+        Args:
+            text: Text containing {cite_001} and/or {cite_MISSING:topic} patterns
+            research_missing: Whether to research {cite_MISSING:topic} placeholders
+            verbose: Whether to print progress
+
+        Returns:
+            tuple: (formatted_text, list_of_missing_ids, list_of_researched_topics)
         """
         missing_ids: List[str] = []
+        researched_topics: List[str] = []
 
+        # Step 1: Find and research all {cite_MISSING:topic} placeholders
+        if research_missing:
+            missing_pattern = r'\{cite_MISSING:([^}]+)\}'
+            missing_matches = re.findall(missing_pattern, text)
+
+            if missing_matches and verbose:
+                unique_topics = list(dict.fromkeys(missing_matches))  # Preserve order, remove duplicates
+                print(f"\n🔍 Found {len(missing_matches)} missing citation placeholders ({len(unique_topics)} unique topics)")
+                print(f"📚 Researching citations with Scout agent...")
+
+            # Research each unique topic
+            unique_topics = list(dict.fromkeys(missing_matches))
+            for i, topic in enumerate(unique_topics, 1):
+                if verbose:
+                    print(f"\n[{i}/{len(unique_topics)}]", end=" ")
+
+                citation = self._research_missing_citation(topic.strip(), verbose=verbose)
+                if citation:
+                    researched_topics.append(topic.strip())
+                    # Create a mapping for this topic to citation ID
+                    # We'll replace {cite_MISSING:topic} with {cite_XXX} first
+                    text = text.replace(f"{{cite_MISSING:{topic}}}", f"{{{citation.id}}}")
+
+            if verbose and researched_topics:
+                print(f"\n✅ Successfully researched {len(researched_topics)}/{len(unique_topics)} citations")
+
+        # Step 2: Replace all {cite_XXX} patterns (including newly created ones from research)
         def replace_citation(match: re.Match) -> str:
             """Replace single citation ID with formatted citation."""
             cite_id = match.group(0).strip('{}')  # Extract cite_001 from {cite_001}
@@ -52,7 +239,17 @@ class CitationCompiler:
         citation_pattern = r'\{cite_\d{3}\}'
         formatted_text = re.sub(citation_pattern, replace_citation, text)
 
-        return formatted_text, missing_ids
+        # Step 3: Handle any remaining {cite_MISSING:topic} that couldn't be researched
+        remaining_missing_pattern = r'\{cite_MISSING:([^}]+)\}'
+        remaining_matches = re.findall(remaining_missing_pattern, formatted_text)
+        if remaining_matches:
+            # Replace with [MISSING: topic] markers
+            for topic in remaining_matches:
+                formatted_text = formatted_text.replace(f"{{cite_MISSING:{topic}}}", f"[MISSING: {topic.strip()}]")
+                if topic.strip() not in missing_ids:
+                    missing_ids.append(f"TOPIC:{topic.strip()}")
+
+        return formatted_text, missing_ids, researched_topics
 
     def format_in_text_citation(self, citation: Citation) -> str:
         """
@@ -372,29 +569,36 @@ def format_coverage_report(report: Dict[str, Any]) -> str:
 def compile_citations_in_file(
     input_path: Path,
     output_path: Path,
-    database: CitationDatabase
-) -> Tuple[bool, List[str]]:
+    database: CitationDatabase,
+    model: Optional[genai.GenerativeModel] = None,
+    research_missing: bool = True
+) -> Tuple[bool, List[str], List[str]]:
     """
-    Compile citations in file using database.
+    Compile citations in file using database, optionally researching missing citations.
 
     Args:
-        input_path: Input file with citation IDs
+        input_path: Input file with citation IDs and/or {cite_MISSING:topic} placeholders
         output_path: Output file for compiled text
         database: Citation database
+        model: Optional Gemini model for researching missing citations
+        research_missing: Whether to research {cite_MISSING:topic} placeholders
 
     Returns:
-        tuple: (success, list_of_missing_ids)
+        tuple: (success, list_of_missing_ids, list_of_researched_topics)
     """
     # Read input
     with open(input_path, 'r', encoding='utf-8') as f:
         text = f.read()
 
     # Compile citations
-    compiler = CitationCompiler(database)
-    compiled_text, missing_ids = compiler.compile_citations(text)
+    compiler = CitationCompiler(database, model=model)
+    compiled_text, missing_ids, researched_topics = compiler.compile_citations(
+        text,
+        research_missing=research_missing
+    )
 
     # Write output
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(compiled_text)
 
-    return len(missing_ids) == 0, missing_ids
+    return len(missing_ids) == 0, missing_ids, researched_topics

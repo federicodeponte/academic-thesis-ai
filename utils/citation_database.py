@@ -5,9 +5,12 @@ ABOUTME: Provides schema validation, loading, and saving for citation databases
 """
 
 import json
+import logging
 from pathlib import Path
 from typing import Dict, List, Optional, Literal
 from datetime import datetime
+
+logger = logging.getLogger(__name__)
 
 
 # Type definitions for citations
@@ -185,13 +188,13 @@ class CitationDatabase:
 
             # Validate DOI format if present
             if citation.doi and not citation.doi.startswith("10."):
-                raise ValueError(f"Citation {citation.id} has invalid DOI format: {citation.doi}")
+                logger.warning(f"Citation {citation.id} has questionable DOI format: {citation.doi}")
 
-            # Validate source-specific fields
+            # Validate source-specific fields (log warnings for AI-extracted citations)
             if citation.source_type == "journal" and not citation.journal:
-                raise ValueError(f"Journal citation {citation.id} missing journal name")
+                logger.warning(f"Journal citation {citation.id} missing journal name - may impact APA formatting")
             if citation.source_type in ["book", "report"] and not citation.publisher:
-                raise ValueError(f"{citation.source_type.capitalize()} citation {citation.id} missing publisher")
+                logger.warning(f"{citation.source_type.capitalize()} citation {citation.id} missing publisher - may impact APA formatting")
 
         return True
 

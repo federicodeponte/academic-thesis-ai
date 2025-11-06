@@ -134,6 +134,99 @@ def remove_metadata_sections(content: str) -> str:
     return '\n'.join(cleaned_lines)
 
 
+def remove_style_variance_report(content: str) -> str:
+    """
+    Remove Style Variance Report and all metadata from thesis content.
+
+    Removes:
+    - Style Variance Report section
+    - Entropy scores and AI detection metrics
+    - Example transformations
+    - Anti-AI detection technique documentation
+    - AI Detection Testing sections
+    - Cautions sections
+    - Humanized Introduction metadata
+
+    Keeps only real academic content starting from first academic section heading.
+
+    Args:
+        content: Markdown content
+
+    Returns:
+        Content without metadata
+    """
+    lines = content.split('\n')
+
+    # Find thesis title (first level-1 heading with capital letter)
+    title_idx = None
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if re.match(r'^#\s+[A-ZÄÖÜßÉÈÊÀÂÙÛÔÇ]', stripped):  # Support German/French characters
+            title_idx = i
+            break
+
+    if title_idx is None:
+        # No title found, return as-is
+        return content
+
+    # Academic section keywords (English and German)
+    academic_keywords = [
+        r'Introduction',
+        r'Einleitung',
+        r'Abstract',
+        r'Zusammenfassung',
+        r'Background',
+        r'Hintergrund',
+        r'Literature Review',
+        r'Literaturübersicht',
+        r'Literaturüberblick',
+        r'Methodology',
+        r'Methodik',
+        r'Methods',
+        r'Methoden',
+        r'Results',
+        r'Ergebnisse',
+        r'Analysis',
+        r'Analyse',
+        r'Discussion',
+        r'Diskussion',
+        r'Conclusion',
+        r'Fazit',
+        r'Schlussfolgerung',
+        r'References',
+        r'Literaturverzeichnis',
+        r'Appendix',
+        r'Anhang',
+        r'Acknowledgments',
+        r'Danksagung',
+        r'The Genesis',  # Special case for "The Genesis and Evolution"
+        r'Die Entstehung',  # German equivalent
+    ]
+
+    # Find first academic section (level-2 or level-3 heading with academic keyword)
+    first_academic_section_idx = None
+    for i in range(title_idx + 1, len(lines)):
+        stripped = lines[i].strip()
+        # Check if this is a heading (level 2 or 3)
+        if re.match(r'^#{2,3}\s+', stripped):
+            # Check if it contains academic keywords
+            for keyword in academic_keywords:
+                if re.search(keyword, stripped, re.IGNORECASE):
+                    first_academic_section_idx = i
+                    break
+            if first_academic_section_idx:
+                break
+
+    if first_academic_section_idx is None:
+        # No academic section found, keep from title onwards (safe fallback)
+        return '\n'.join(lines[title_idx:])
+
+    # Keep title + first academic section onwards
+    # Skip everything between title and first academic section (metadata)
+    cleaned_lines = [lines[title_idx]] + lines[first_academic_section_idx:]
+    return '\n'.join(cleaned_lines)
+
+
 def remove_excessive_dividers(content: str) -> str:
     """
     Remove excessive horizontal rule dividers (---).
@@ -239,6 +332,10 @@ def clean_thesis_markdown(input_file: Path, output_file: Path = None) -> None:
     # Remove YAML frontmatter
     print(f"   Removing YAML frontmatter...")
     content = remove_yaml_frontmatter(content)
+
+    # Remove Style Variance Report from beginning
+    print(f"   Removing Style Variance Report...")
+    content = remove_style_variance_report(content)
 
     # Remove metadata section headings (## Content, ## Citations Used, etc.)
     print(f"   Removing metadata sections...")

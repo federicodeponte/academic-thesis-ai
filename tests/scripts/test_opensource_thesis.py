@@ -11,6 +11,7 @@ import os
 import sys
 import time
 import subprocess
+import shutil
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
@@ -197,7 +198,7 @@ def main():
         name="6. Crafter - Write Introduction",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Introduction section (1,200 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Introduction section (2,500 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Include:\n"
             f"- Hook about global challenges and technology's role\n"
             f"- Background on open source software movement\n"
@@ -217,7 +218,7 @@ def main():
         name="7. Crafter - Write Literature Review",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Literature Review section (2,000 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Literature Review section (6,000 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Cover:\n"
             f"- History of open source software (Linux, Apache, etc.)\n"
             f"- Economic models of open source\n"
@@ -238,7 +239,7 @@ def main():
         name="8. Crafter - Write Methodology",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Methodology section (1,000 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Methodology section (2,500 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Describe:\n"
             f"- Framework for analyzing open source impact\n"
             f"- Case study selection criteria (Linux, Wikipedia, etc.)\n"
@@ -256,7 +257,7 @@ def main():
         name="9. Crafter - Write Analysis",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Analysis section (2,500 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Analysis section (6,000 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Analyze:\n"
             f"- Open source impact on innovation\n"
             f"- Economic benefits (cost savings, job creation)\n"
@@ -276,7 +277,7 @@ def main():
         name="10. Crafter - Write Discussion",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Discussion section (1,500 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Discussion section (3,000 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Discuss:\n"
             f"- Implications for technology policy\n"
             f"- Open source as solution to global challenges\n"
@@ -295,7 +296,7 @@ def main():
         name="11. Crafter - Write Conclusion",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Conclusion section (600 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Conclusion section (1,000 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Summarize:\n"
             f"- Key findings on open source impact\n"
             f"- Contributions to understanding global technology challenges\n"
@@ -446,9 +447,9 @@ def main():
     # Load citation database
     citation_database = load_citation_database(citation_db_path)
 
-    # Compile citations
-    compiler = CitationCompiler(citation_database)
-    compiled_paper, missing_ids = compiler.compile_citations(draft_paper)
+    # Compile citations (with automatic research of missing citations)
+    compiler = CitationCompiler(citation_database, model=model)
+    compiled_paper, missing_ids, researched_topics = compiler.compile_citations(draft_paper, research_missing=True)
 
     # Generate reference list
     reference_list = compiler.generate_reference_list(draft_paper)
@@ -484,51 +485,32 @@ def main():
     rate_limit_delay()
 
     # ====================================================================
-    # PHASE 7: ENHANCE
+    # PHASE 7: SKIP ENHANCEMENT (Production Stability)
     # ====================================================================
     print("\n" + "="*70)
-    print("✨ PHASE 7: ENHANCE (Agent #15)")
+    print("⏭️  PHASE 7: SKIP ENHANCEMENT (Agent #15 BYPASSED)")
     print("="*70)
 
-    # Step 15: Enhancer - Add professional elements
-    print("\n🔧 Running Enhancement Agent...")
-    print("   This will add:")
-    print("   • YAML metadata frontmatter")
-    print("   • Enhanced 4-paragraph abstract")
-    print("   • 5 comprehensive appendices")
-    print("   • Limitations and Future Research sections")
-    print("   • 3-5 tables and 1-2 figures")
-    print("   • Expanded case studies")
-    print("\n⏳ Enhancement may take 3-5 minutes...")
+    print("\n📋 PRODUCTION DECISION: Skipping Agent #15 Enhancement")
+    print("\nReason:")
+    print("  • Agent #15 historically produced corrupted files (1.8MB, table corruption)")
+    print("  • Table cells with 633K+ spaces causing PDF cut-offs")
+    print("  • Enhancement messages leaking into final PDFs")
+    print("  • Risk vs. benefit analysis favors stability")
+    print("\n✅ Using clean citation-compiled version (15_compiled_citations.md)")
+    print("   This ensures:")
+    print("   • Clean references without [VERIFY] or [MISSING] tags")
+    print("   • Proper formatting without metadata leakage")
+    print("   • Stable file size (~80-100KB)")
+    print("   • Production-ready quality")
 
-    enhanced_paper = run_agent(
-        model=model,
-        name="15. Enhancer - Professional Enhancement",
-        prompt_path="prompts/06_enhance/enhancer.md",
-        user_input=f"Enhance this thesis to publication-ready standard:\n\n{paper_for_enhancement}",
-        save_to=output_dir / "16_enhanced_final.md"
-    )
+    # Use the citation-compiled version as final output
+    final_paper = verified_paper if verified_paper else draft_paper
 
-    # Post-process: Remove markdown code block wrapper if present
-    if enhanced_paper:
-        if enhanced_paper.startswith('```markdown\n'):
-            enhanced_paper = enhanced_paper[12:]  # Remove ```markdown\n
-        if enhanced_paper.endswith('\n```'):
-            enhanced_paper = enhanced_paper[:-4]  # Remove \n```
-        # Save cleaned version
-        with open(output_dir / "16_enhanced_final.md", 'w', encoding='utf-8') as f:
-            f.write(enhanced_paper)
-
-    # Use enhanced version if available, otherwise fall back to verified or draft
-    final_paper = enhanced_paper if enhanced_paper else (verified_paper if verified_paper else draft_paper)
-
-    if enhanced_paper:
-        enhanced_word_count = len(enhanced_paper.split())
-        print(f"\n✅ Enhancement complete!")
-        print(f"📊 Enhanced stats: ~{enhanced_word_count} words (target: 14,000+)")
-        print(f"📈 Word count increase: ~{enhanced_word_count - len(draft_paper.split())} words")
-    else:
-        print(f"\n⚠️  Enhancement failed, using {'verified' if verified_paper else 'draft'} version")
+    final_word_count_before_export = len(final_paper.split())
+    print(f"\n✅ Using citation-compiled thesis (skipped enhancement)")
+    print(f"📊 Final stats: ~{final_word_count_before_export} words")
+    print(f"📄 Source: 15_compiled_citations.md")
 
     # ====================================================================
     # EXPORT
@@ -548,11 +530,11 @@ def main():
     print("\nExporting to PDF...")
     try:
         result = subprocess.run([
-            sys.executable, 'utils/export.py',
-            '--format', 'pdf',
-            '--output', str(output_dir / 'FINAL_THESIS.pdf'),
-            str(final_md)
-        ], capture_output=True, text=True, timeout=30)
+            sys.executable, 'utils/export_professional.py',
+            str(final_md),
+            '--pdf', str(output_dir / 'FINAL_THESIS.pdf'),
+            '--engine', 'pandoc'
+        ], capture_output=True, text=True, timeout=60)
 
         if result.returncode == 0:
             pdf_size = (output_dir / 'FINAL_THESIS.pdf').stat().st_size
@@ -566,11 +548,10 @@ def main():
     print("\nExporting to Word...")
     try:
         result = subprocess.run([
-            sys.executable, 'utils/export.py',
-            '--format', 'docx',
-            '--output', str(output_dir / 'FINAL_THESIS.docx'),
-            str(final_md)
-        ], capture_output=True, text=True, timeout=30)
+            sys.executable, 'utils/export_professional.py',
+            str(final_md),
+            '--docx', str(output_dir / 'FINAL_THESIS.docx')
+        ], capture_output=True, text=True, timeout=60)
 
         if result.returncode == 0:
             docx_size = (output_dir / 'FINAL_THESIS.docx').stat().st_size

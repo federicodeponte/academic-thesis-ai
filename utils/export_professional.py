@@ -9,7 +9,7 @@ import argparse
 from pathlib import Path
 from typing import Optional, Literal
 
-from pdf_engines import (
+from utils.pdf_engines import (
     PDFGenerationOptions,
     PDFEngineFactory,
     get_available_engines,

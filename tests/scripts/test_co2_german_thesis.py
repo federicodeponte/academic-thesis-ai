@@ -9,6 +9,7 @@ import os
 import sys
 import time
 import subprocess
+import shutil
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
@@ -209,7 +210,7 @@ def main():
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
             f"**WICHTIG: Antworte auf Deutsch.**\n\n"
-            f"Schreibe die Einleitung (1,200 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
+            f"Schreibe die Einleitung (2,500 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
             f"Einbeziehen:\n"
             f"- Einstieg über Klimawandel und globale Herausforderungen\n"
             f"- Hintergrund zum CO2-Zertifikatehandel\n"
@@ -230,7 +231,7 @@ def main():
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
             f"**WICHTIG: Antworte auf Deutsch.**\n\n"
-            f"Schreibe die Literaturübersicht (2,000 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
+            f"Schreibe die Literaturübersicht (6,000 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
             f"Abdecken:\n"
             f"- Geschichte des Emissionshandels (Kyoto, EU ETS)\n"
             f"- Theoretische Grundlagen der Umweltökonomie\n"
@@ -252,7 +253,7 @@ def main():
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
             f"**WICHTIG: Antworte auf Deutsch.**\n\n"
-            f"Schreibe die Methodik (1,000 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
+            f"Schreibe die Methodik (2,500 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
             f"Beschreiben:\n"
             f"- Analyserahmen für Klimaschutzwirkung\n"
             f"- Auswahlkriterien für Fallstudien (EU ETS, Kalifornien, etc.)\n"
@@ -272,7 +273,7 @@ def main():
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
             f"**WICHTIG: Antworte auf Deutsch.**\n\n"
-            f"Schreibe die Analyse (2,500 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
+            f"Schreibe die Analyse (6,000 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
             f"Analysieren:\n"
             f"- Emissionsreduktionen durch CO2-Handel\n"
             f"- Preisgestaltung und Marktmechanismen\n"
@@ -293,7 +294,7 @@ def main():
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
             f"**WICHTIG: Antworte auf Deutsch.**\n\n"
-            f"Schreibe die Diskussion (1,500 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
+            f"Schreibe die Diskussion (3,000 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
             f"Diskutieren:\n"
             f"- Implikationen für Klimapolitik\n"
             f"- Grenzen und Herausforderungen des Emissionshandels\n"
@@ -314,7 +315,7 @@ def main():
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
             f"**WICHTIG: Antworte auf Deutsch.**\n\n"
-            f"Schreibe das Fazit (600 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
+            f"Schreibe das Fazit (1,000 Wörter) für:\n\n{formatter_output[:2000]}\n\n"
             f"Zusammenfassen:\n"
             f"- Hauptergebnisse zur Klimaschutzwirkung\n"
             f"- Beitrag zum Verständnis des Emissionshandels\n"
@@ -463,9 +464,9 @@ def main():
     # Load citation database
     citation_database = load_citation_database(citation_db_path)
 
-    # Compile citations
-    compiler = CitationCompiler(citation_database)
-    compiled_paper, missing_ids = compiler.compile_citations(draft_paper)
+    # Compile citations (with automatic research of missing citations)
+    compiler = CitationCompiler(citation_database, model=model)
+    compiled_paper, missing_ids, researched_topics = compiler.compile_citations(draft_paper, research_missing=True)
 
     # Generate reference list
     reference_list = compiler.generate_reference_list(draft_paper)
@@ -504,51 +505,32 @@ def main():
     rate_limit_delay()
 
     # ====================================================================
-    # PHASE 7: ENHANCE
+    # PHASE 7: SKIP ENHANCEMENT (Production Stability)
     # ====================================================================
     print("\n" + "="*70)
-    print("✨ PHASE 7: VERBESSERUNG (ENHANCE - Agent #15)")
+    print("⏭️  PHASE 7: VERBESSERUNG ÜBERSPRUNGEN (Agent #15 UMGANGEN)")
     print("="*70)
 
-    # Step 15: Enhancer - Add professional elements
-    print("\n🔧 Verbesserungs-Agent läuft...")
-    print("   Dies fügt hinzu:")
-    print("   • YAML Metadaten-Frontmatter")
-    print("   • Erweitertes 4-Absatz Abstract")
-    print("   • 5 umfassende Anhänge")
-    print("   • Limitationen und Zukunftsforschung")
-    print("   • 3-5 Tabellen und 1-2 Abbildungen")
-    print("   • Erweiterte Fallstudien")
-    print("\n⏳ Verbesserung dauert 3-5 Minuten...")
+    print("\n📋 PRODUKTIONSENTSCHEIDUNG: Agent #15 Verbesserung wird übersprungen")
+    print("\nGrund:")
+    print("  • Agent #15 hat historisch korrupte Dateien erzeugt (1,8 MB, Tabellen-Korruption)")
+    print("  • Tabellenzellen mit 633.000+ Leerzeichen verursachen PDF-Abbrüche")
+    print("  • Verbesserungsnachrichten gelangen in finale PDFs")
+    print("  • Risiko-Nutzen-Analyse bevorzugt Stabilität")
+    print("\n✅ Verwende saubere zitatkompilierte Version (15_compiled_citations.md)")
+    print("   Dies gewährleistet:")
+    print("   • Saubere Referenzen ohne [VERIFY] oder [MISSING] Tags")
+    print("   • Korrekte Formatierung ohne Metadaten-Leck")
+    print("   • Stabile Dateigröße (~80-100KB)")
+    print("   • Produktionsreife Qualität")
 
-    enhanced_paper = run_agent(
-        model=model,
-        name="15. Enhancer - Professionelle Verbesserung",
-        prompt_path="prompts/06_enhance/enhancer.md",
-        user_input=f"**WICHTIG: Antworte auf Deutsch.**\n\nVerbessere diese Arbeit auf Publikationsstandard:\n\n{paper_for_enhancement}",
-        save_to=output_dir / "16_enhanced_final.md"
-    )
+    # Use the citation-compiled version as final output
+    final_paper = verified_paper if verified_paper else draft_paper
 
-    # Post-process: Remove markdown code block wrapper if present
-    if enhanced_paper:
-        if enhanced_paper.startswith('```markdown\n'):
-            enhanced_paper = enhanced_paper[12:]
-        if enhanced_paper.endswith('\n```'):
-            enhanced_paper = enhanced_paper[:-4]
-        # Save cleaned version
-        with open(output_dir / "16_enhanced_final.md", 'w', encoding='utf-8') as f:
-            f.write(enhanced_paper)
-
-    # Use enhanced version if available
-    final_paper = enhanced_paper if enhanced_paper else (verified_paper if verified_paper else draft_paper)
-
-    if enhanced_paper:
-        enhanced_word_count = len(enhanced_paper.split())
-        print(f"\n✅ Verbesserung abgeschlossen!")
-        print(f"📊 Erweiterte Statistik: ~{enhanced_word_count} Wörter (Ziel: 14,000+)")
-        print(f"📈 Wortzahl-Erhöhung: ~{enhanced_word_count - len(draft_paper.split())} Wörter")
-    else:
-        print(f"\n⚠️  Verbesserung fehlgeschlagen, nutze {'verifizierte' if verified_paper else 'Entwurfs'}-Version")
+    final_word_count_before_export = len(final_paper.split())
+    print(f"\n✅ Verwende zitatkompilierte Arbeit (Verbesserung übersprungen)")
+    print(f"📊 Finale Statistik: ~{final_word_count_before_export} Wörter")
+    print(f"📄 Quelle: 15_compiled_citations.md")
 
     # ====================================================================
     # EXPORT

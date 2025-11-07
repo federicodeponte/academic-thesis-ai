@@ -60,7 +60,7 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 - **FREE option** available (Gemini free tier covers up to 12k words)
 - **Publication-ready** outputs with proper citations
 
-**Real Example:** Our [67-page master's thesis](examples/thesis_showcase_pricing.pdf) cost $22 total using Gemini 2.5 Flash (vs $800-1,200 for professional editing). See both [complete theses](#-real-success-stories---two-complete-theses-generated) below.
+**Real Example:** Our [67-page master's thesis](examples/ai_pricing_thesis.pdf) cost $22 total using Gemini 2.5 Flash (vs $800-1,200 for professional editing). See both [complete theses](#-real-success-stories---two-complete-theses-generated) below.
 
 ---
 
@@ -94,7 +94,7 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 
 ### 📊 Thesis #1: AI Pricing Models (Business/Economics)
 
-[📄 View PDF](examples/thesis_showcase_pricing.pdf) | [📄 View DOCX](examples/thesis_showcase_pricing.docx) | [📊 Test Results](tests/outputs/PRODUCTION_TEST_RESULTS.md)
+[📄 View PDF](examples/ai_pricing_thesis.pdf) | [📄 View DOCX](examples/ai_pricing_thesis.docx) | [📊 Test Results](tests/outputs/PRODUCTION_TEST_RESULTS.md)
 
 **Stats:**
 - **Topic:** Pricing Models for Agentic AI Systems (Token-Based to Value-Based)
@@ -107,7 +107,7 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 
 ### 🌍 Thesis #2: Open Source Software (Technology/Social Impact)
 
-[📄 View PDF](examples/thesis_showcase_opensource.pdf) | [📄 View DOCX](examples/thesis_showcase_opensource.docx)
+[📄 View PDF](examples/opensource_thesis.pdf) | [📄 View DOCX](examples/opensource_thesis.docx)
 
 **Stats:**
 - **Topic:** How Open Source Software Can Save the World (Collaboration to Global Impact)

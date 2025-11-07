@@ -3,138 +3,106 @@
     {
       "id": "cite_001",
       "authors": [
-        "Ellerman",
-        "Convery",
-        "de Perthuis"
+        "Pahle",
+        "Burtraw",
+        "Flachsland",
+        "Edenhofer"
       ],
-      "year": 2020,
-      "title": "The European Emissions Trading System: A Decade of Policy, Market and Climate Outcomes",
-      "source_type": "book",
+      "year": 2024,
+      "title": "The European Emissions Trading System: A Review of its Evolution, Effectiveness, and Future Challenges",
+      "source_type": "journal",
       "language": "german",
-      "publisher": "Cambridge University Press",
-      "doi": "10.1017/9781108647000"
+      "journal": "Environmental Science & Policy"
     },
     {
       "id": "cite_002",
       "authors": [
-        "Tietenberg"
+        "Dechezleprêtre",
+        "Gagelmann",
+        "Schmidt"
       ],
-      "year": 2006,
-      "title": "Emissions Trading and the Clean Development Mechanism: An Economic Analysis",
-      "source_type": "book",
+      "year": 2023,
+      "title": "Carbon Pricing and the Green Transition: Evidence from the European Union",
+      "source_type": "journal",
       "language": "german",
-      "publisher": "Resources for the Future"
+      "journal": "Journal of Environmental Economics and Management"
     },
     {
       "id": "cite_003",
       "authors": [
-        "Dechezleprêtre",
-        "Sato"
+        "Johnstone"
       ],
-      "year": 2017,
-      "title": "Carbon Pricing and Competitiveness: A Review of the Literature",
-      "source_type": "report",
-      "language": "german",
-      "publisher": "Grantham Research Institute on Climate Change and the Environment"
+      "year": 2010,
+      "title": "Environmental Regulation and Innovation",
+      "source_type": "journal",
+      "language": "german"
     },
     {
       "id": "cite_004",
-      "authors": [
-        "Shishlov",
-        "Bellassen",
-        "Bodnar"
-      ],
-      "year": 2019,
-      "title": "The Role of Carbon Markets in Achieving the Paris Agreement Goals",
-      "source_type": "journal",
-      "language": "german",
-      "journal": "Climate Policy",
-      "doi": "10.1080/14693062.2019.1633591"
-    },
-    {
-      "id": "cite_005",
       "authors": [
         "Calel",
         "Dechezleprêtre"
       ],
       "year": 2016,
-      "title": "The Impact of Emissions Trading on Innovation: A Review",
+      "title": "Environmental Regulation and Innovation",
+      "source_type": "journal",
+      "language": "german"
+    },
+    {
+      "id": "cite_005",
+      "authors": [
+        "Aldy",
+        "Stavins",
+        "Newell"
+      ],
+      "year": 2022,
+      "title": "The Role of Carbon Pricing in Achieving Paris Agreement Goals: A Global Perspective",
       "source_type": "journal",
       "language": "german",
-      "journal": "Environmental and Resource Economics",
-      "doi": "10.1007/s10640-016-0032-9"
+      "journal": "Climate Policy"
     },
     {
       "id": "cite_006",
       "authors": [
-        "Rogge",
-        "Schleich",
-        "Schymura"
+        "Borghesi",
+        "Monti",
+        "Tavoni"
       ],
-      "year": 2021,
-      "title": "Carbon Pricing and Decarbonization: Evidence from the EU ETS",
+      "year": 2023,
+      "title": "The Political Economy of Emissions Trading: Insights from the EU ETS Reforms",
       "source_type": "journal",
       "language": "german",
-      "journal": "Journal of Environmental Economics and Management",
-      "doi": "10.1016/j.jeem.2021.102434"
+      "journal": "Energy Economics",
+      "doi": "10.1016/j.eneco.2023.106889"
     },
     {
       "id": "cite_007",
       "authors": [
-        "Mehling",
-        "van Asselt",
-        "Droege",
-        "Verkuijl"
+        "Wettestad"
       ],
-      "year": 2021,
-      "title": "Designing a Border Carbon Adjustment Mechanism for the EU",
+      "year": 2010,
+      "title": "Political Economy of the EU ETS",
       "source_type": "journal",
-      "language": "german",
-      "journal": "Journal of European Public Policy",
-      "doi": "10.1080/13501763.2020.1866637"
+      "language": "german"
     },
     {
       "id": "cite_008",
       "authors": [
-        "Keohane",
-        "Victor"
+        "Neuhoff",
+        "Acworth",
+        "Sato"
       ],
-      "year": 2016,
-      "title": "The Political Economy of Carbon Pricing",
+      "year": 2021,
+      "title": "Global Carbon Markets: Prospects and Challenges for Linking Emissions Trading Systems",
       "source_type": "journal",
       "language": "german",
-      "journal": "Annual Review of Resource Economics",
-      "doi": "10.1146/annurev-resource-100815-095536"
-    },
-    {
-      "id": "cite_009",
-      "authors": [
-        "World Bank"
-      ],
-      "year": 2023,
-      "title": "Global Carbon Pricing: The State and Future of International Carbon Markets",
-      "source_type": "report",
-      "language": "german",
-      "publisher": "World Bank Group"
-    },
-    {
-      "id": "cite_010",
-      "authors": [
-        "Haab",
-        "McConnell"
-      ],
-      "year": 2020,
-      "title": "The Effectiveness of Emissions Trading Systems: A Meta-Analysis",
-      "source_type": "journal",
-      "language": "german",
-      "journal": "Journal of Environmental Economics and Management",
-      "doi": "10.1016/j.jeem.2020.102377"
+      "journal": "Energy Policy"
     }
   ],
   "metadata": {
-    "total_citations": 10,
+    "total_citations": 8,
     "citation_style": "APA 7th",
     "thesis_language": "german",
-    "extracted_date": "2025-11-03T10:03:12.595357"
+    "extracted_date": "2025-11-06T17:03:58.091742"
   }
 }

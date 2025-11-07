@@ -33,7 +33,8 @@ def extract_citations_from_text(
     model: genai.GenerativeModel,
     language: Language = "english",
     citation_style: CitationStyle = "APA 7th",
-    verbose: bool = True
+    verbose: bool = True,
+    validate_dois: bool = True
 ) -> CitationDatabase:
     """
     Extract all citations from text using LLM.
@@ -44,6 +45,7 @@ def extract_citations_from_text(
         language: Language of the text
         citation_style: Citation style to use
         verbose: Whether to print progress
+        validate_dois: Whether to validate DOIs via CrossRef API (default: True)
 
     Returns:
         CitationDatabase: Structured database with extracted citations
@@ -172,6 +174,66 @@ CRITICAL:
         )
         citations.append(citation)
 
+    # ====================================================================
+    # DOI VALIDATION - Verify DOIs exist via CrossRef API
+    # ====================================================================
+    if validate_dois and citations:
+        if verbose:
+            print(f"\n{'='*70}")
+            print(f"🔍 DOI Validation - Verifying Citations via CrossRef API")
+            print(f"{'='*70}")
+
+        # Import validator (lazy import to avoid circular dependencies)
+        from utils.citation_validator import CitationValidator
+
+        validator = CitationValidator(timeout=10)
+        invalid_citations = []
+        network_error_count = 0
+
+        for i, citation in enumerate(citations):
+            if citation.doi:
+                # Validate DOI via CrossRef API
+                is_valid = validator.validate_doi(citation.doi)
+
+                if is_valid is False:  # Explicitly False (not None for network errors)
+                    invalid_citations.append(citation)
+                    logger.warning(f"Invalid DOI for {citation.id}: {citation.doi}")
+                    if verbose:
+                        print(f"  ❌ {citation.id}: Invalid DOI ({citation.doi})")
+                elif is_valid is None:  # Network error
+                    network_error_count += 1
+                    logger.warning(f"Network error validating DOI for {citation.id}: {citation.doi}")
+                    if verbose:
+                        print(f"  ⚠️  {citation.id}: Network error - keeping citation")
+                else:  # Valid
+                    if verbose and (i + 1) % 10 == 0:
+                        print(f"  ✅ Validated {i + 1}/{len([c for c in citations if c.doi])} DOIs...")
+
+        # Remove invalid citations
+        if invalid_citations:
+            original_count = len(citations)
+            citations = [c for c in citations if c not in invalid_citations]
+            removed_count = original_count - len(citations)
+
+            logger.info(f"Removed {removed_count} citations with invalid DOIs")
+            if verbose:
+                print(f"\n⚠️  Removed {removed_count} citation(s) with invalid DOIs:")
+                for citation in invalid_citations[:5]:  # Show first 5
+                    authors_str = ", ".join(citation.authors[:2])
+                    if len(citation.authors) > 2:
+                        authors_str += " et al."
+                    print(f"   - {citation.id}: {authors_str} ({citation.year})")
+                    print(f"     Invalid DOI: {citation.doi}")
+                if len(invalid_citations) > 5:
+                    print(f"   ... and {len(invalid_citations) - 5} more")
+
+        if verbose:
+            print(f"\n✅ DOI Validation Complete:")
+            print(f"   Valid: {len([c for c in citations if c.doi]) - len(invalid_citations)}")
+            print(f"   Invalid: {len(invalid_citations)}")
+            print(f"   Network Errors: {network_error_count}")
+            print(f"   Total Citations Remaining: {len(citations)}")
+
     # Deduplicate citations (keep version with most metadata)
     if verbose:
         print(f"\n📊 Deduplication:")
@@ -205,7 +267,8 @@ def run_citation_manager(
     language: Language = "english",
     citation_style: CitationStyle = "APA 7th",
     model_override: Optional[str] = None,
-    verbose: bool = True
+    verbose: bool = True,
+    validate_dois: bool = True
 ) -> CitationDatabase:
     """
     Run Citation Manager agent on input file.
@@ -217,6 +280,7 @@ def run_citation_manager(
         citation_style: Citation style to use
         model_override: Optional model name to override config
         verbose: Whether to print progress
+        validate_dois: Whether to validate DOIs via CrossRef API (default: True)
 
     Returns:
         CitationDatabase: Extracted citation database
@@ -241,7 +305,8 @@ def run_citation_manager(
         model=model,
         language=language,
         citation_style=citation_style,
-        verbose=verbose
+        verbose=verbose,
+        validate_dois=validate_dois
     )
 
     # Save database with comprehensive error handling

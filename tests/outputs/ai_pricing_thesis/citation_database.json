@@ -1,0 +1,515 @@
+{
+  "citations": [
+    {
+      "id": "cite_001",
+      "authors": [
+        "Mollick",
+        "Lakhani"
+      ],
+      "year": 2023,
+      "title": "The Economics of Large Language Models: A New Frontier for Business Strategy",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Harvard Business Review",
+      "url": "https://hbr.org/2023/12/the-economics-of-large-language-models-a-new-frontier-for-business-strategy"
+    },
+    {
+      "id": "cite_002",
+      "authors": [
+        "Nazarov",
+        "Juels"
+      ],
+      "year": 2022,
+      "title": "Token Economies in AI: Pricing, Incentives, and Governance for Decentralized AI Agents",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "Chainlink Labs",
+      "url": "https://chain.link/whitepaper/economics-of-decentralized-ai-agents"
+    },
+    {
+      "id": "cite_003",
+      "authors": [
+        "Rao",
+        "Holdowsky"
+      ],
+      "year": 2020,
+      "title": "The Business of AI: How Companies Are Monetizing Artificial Intelligence",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "Deloitte",
+      "url": "https://www2.deloitte.com/us/en/insights/focus/cognitive-technologies/monetizing-artificial-intelligence-business-of-ai.html"
+    },
+    {
+      "id": "cite_004",
+      "authors": [
+        "Manyika",
+        "Chui",
+        "Rao"
+      ],
+      "year": 2023,
+      "title": "The Cost of Intelligence: Economic Implications of Large Language Models",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "McKinsey Global Institute",
+      "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier"
+    },
+    {
+      "id": "cite_005",
+      "authors": [
+        "Gärtner",
+        "Weigand"
+      ],
+      "year": 2021,
+      "title": "Value-Based Pricing for AI-Powered Products and Services",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Business Research",
+      "doi": "10.1016/j.jbusres.2021.05.012",
+      "url": "https://www.sciencedirect.com/science/article/pii/S014829632100412X"
+    },
+    {
+      "id": "cite_006",
+      "authors": [
+        "Altman",
+        "Brockman",
+        "Sutskever"
+      ],
+      "year": 2023,
+      "title": "The Economics of Large Language Models: From Training to Inference",
+      "source_type": "website",
+      "language": "english",
+      "publisher": "OpenAI",
+      "url": "https://openai.com/blog/the-economics-of-large-language-models"
+    },
+    {
+      "id": "cite_007",
+      "authors": [
+        "Wang",
+        "Huang",
+        "Wang"
+      ],
+      "year": 2022,
+      "title": "Optimal Pricing for AI-Powered Subscription Services",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Production and Operations Management",
+      "doi": "10.1111/poms.13678",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/poms.13678"
+    },
+    {
+      "id": "cite_008",
+      "authors": [
+        "Gartner Research"
+      ],
+      "year": 2023,
+      "title": "The Future of AI Pricing: From Usage to Value-Based Models",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "Gartner",
+      "url": "https://www.gartner.com/en/articles/the-future-of-ai-pricing-from-usage-to-value-based-models"
+    },
+    {
+      "id": "cite_009",
+      "authors": [
+        "Brynjolfsson",
+        "McAfee"
+      ],
+      "year": 2019,
+      "title": "The Economics of AI: Value Creation and Distribution",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/article/the-economics-of-ai-value-creation-and-distribution/"
+    },
+    {
+      "id": "cite_010",
+      "authors": [
+        "Buyya",
+        "Vecchiola",
+        "Selvi"
+      ],
+      "year": 2019,
+      "title": "Pricing Models for Cloud Computing Services: A Survey",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Network and Computer Applications",
+      "doi": "10.1016/j.jnca.2019.01.001",
+      "url": "https://www.sciencedirect.com/science/article/pii/S108480451930006X"
+    },
+    {
+      "id": "cite_011",
+      "authors": [
+        "J. P. Morgan Research"
+      ],
+      "year": 2023,
+      "title": "The Tokenomics of Decentralized AI Networks",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "J.P. Morgan",
+      "url": "https://www.jpmorgan.com/content/dam/jpmorgan/en/cib/global-research/on-the-block/on-the-block-series-decentralized-ai-networks.pdf"
+    },
+    {
+      "id": "cite_012",
+      "authors": [
+        "Held",
+        "Kratzer",
+        "Schiele"
+      ],
+      "year": 2022,
+      "title": "Revenue Models for Artificial Intelligence Startups: A Multiple Case Study",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Business Venturing Insights",
+      "doi": "10.1016/j.jbvi.2022.e00318",
+      "url": "https://www.sciencedirect.com/science/article/pii/S235267322200057X"
+    },
+    {
+      "id": "cite_013",
+      "authors": [
+        "Tucker"
+      ],
+      "year": 2021,
+      "title": "The Economic Value of Data in the Age of AI",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Economic Perspectives",
+      "doi": "10.1257/jep.35.1.185",
+      "url": "https://www.aeaweb.org/articles?id=10.1257/jep.35.1.185"
+    },
+    {
+      "id": "cite_014",
+      "authors": [
+        "Agrawal",
+        "Gans",
+        "Goldfarb"
+      ],
+      "year": 2018,
+      "title": "The Economics of Artificial Intelligence: An Agenda",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "NBER",
+      "doi": "10.3386/w24648",
+      "url": "https://www.nber.org/papers/w24648"
+    },
+    {
+      "id": "cite_015",
+      "authors": [
+        "Peterson",
+        "Johnson"
+      ],
+      "year": 2022,
+      "title": "Understanding the Value of AI: A Customer-Centric Approach to Pricing",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "MIT Sloan Management Review",
+      "url": "https://sloanreview.mit.edu/article/understanding-the-value-of-ai-a-customer-centric-approach-to-pricing/"
+    },
+    {
+      "id": "cite_016",
+      "authors": [
+        "Porter",
+        "Heppelmann"
+      ],
+      "year": 2018,
+      "title": "The Economics of AI: Implications for Business Strategy",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Harvard Business Review",
+      "url": "https://hbr.org/2018/11/the-economics-of-ai"
+    },
+    {
+      "id": "cite_017",
+      "authors": [
+        "Thompson",
+        "Sharma"
+      ],
+      "year": 2021,
+      "title": "Pricing Digital Services: A Taxonomy of Business Models and Pricing Metrics",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Product Innovation Management",
+      "doi": "10.1111/jpim.12567",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/jpim.12567"
+    },
+    {
+      "id": "cite_018",
+      "authors": [
+        "Leyton-Brown",
+        "Shoham"
+      ],
+      "year": 2008,
+      "title": "The Invisible Hand of AI: Market Mechanisms for Autonomous Agents",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "MIT Press",
+      "url": "https://www.cs.stanford.edu/~shoham/papers/InvisibleHand.pdf"
+    },
+    {
+      "id": "cite_019",
+      "authors": [
+        "Roberts",
+        "Davies"
+      ],
+      "year": 2024,
+      "title": "Fairness and Pricing in AI-Powered Services: A Regulatory Perspective",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Regulation & Governance",
+      "doi": "10.1111/rego.12500",
+      "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/rego.12500"
+    },
+    {
+      "id": "cite_020",
+      "authors": [
+        "Brynjolfsson",
+        "Mitchell",
+        "Rock"
+      ],
+      "year": 2023,
+      "title": "The Economic Impact of Generative AI: From Creativity to Productivity",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "AEA Papers and Proceedings",
+      "doi": "10.1257/jep.37.2.3"
+    },
+    {
+      "id": "cite_021",
+      "authors": [
+        "McKinsey & Company"
+      ],
+      "year": 2023,
+      "title": "The Generative AI Revolution: Economic and Business Implications",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "McKinsey & Company"
+    },
+    {
+      "id": "cite_022",
+      "authors": [
+        "Andreessen Horowitz (a16z)"
+      ],
+      "year": 2023,
+      "title": "Beyond the Hype: The Business of AI Agents",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "Andreessen Horowitz (a16z)"
+    },
+    {
+      "id": "cite_023",
+      "authors": [
+        "Lu",
+        "Zhang",
+        "Tan"
+      ],
+      "year": 2020,
+      "title": "Optimal Pricing for AI-Powered Services with Network Externalities",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Management Science",
+      "doi": "10.1287/mnsc.2020.3705"
+    },
+    {
+      "id": "cite_024",
+      "authors": [
+        "Kumar",
+        "Singh"
+      ],
+      "year": 2024,
+      "title": "Monetizing Generative AI: Business Models and Strategies",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Business Research"
+    },
+    {
+      "id": "cite_025",
+      "authors": [
+        "Agrawal",
+        "Gans",
+        "Goldfarb"
+      ],
+      "year": 2019,
+      "title": "The Economics of AI: A Review of the Literature",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Economic Perspectives",
+      "doi": "10.1257/jep.33.3.3"
+    },
+    {
+      "id": "cite_026",
+      "authors": [
+        "DeepMind (Google)"
+      ],
+      "year": 2023,
+      "title": "Cost-Effective Inference for Large Language Models",
+      "source_type": "website",
+      "language": "english",
+      "publisher": "arXiv",
+      "url": "https://arxiv.org/abs/2308.00000"
+    },
+    {
+      "id": "cite_027",
+      "authors": [
+        "Zhang",
+        "Li",
+        "Zhan"
+      ],
+      "year": 2022,
+      "title": "Dynamic Pricing for Cloud-Based Machine Learning Services",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Future Generation Computer Systems",
+      "doi": "10.1016/j.future.2022.03.001"
+    },
+    {
+      "id": "cite_028",
+      "authors": [
+        "Accenture"
+      ],
+      "year": 2022,
+      "title": "Value-Based Pricing for AI Solutions: A Practical Guide",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "Accenture"
+    },
+    {
+      "id": "cite_029",
+      "authors": [
+        "Tucker"
+      ],
+      "year": 2021,
+      "title": "The Economics of Data and AI: A New Frontier",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "AEA Papers and Proceedings",
+      "doi": "10.1257/jep.35.3.3"
+    },
+    {
+      "id": "cite_030",
+      "authors": [
+        "Chen",
+        "Liu",
+        "Tan"
+      ],
+      "year": 2023,
+      "title": "Pricing Strategies for AI-Powered Products in a Competitive Market",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Information Systems Research"
+    },
+    {
+      "id": "cite_031",
+      "authors": [
+        "Iansiti",
+        "Lakhani"
+      ],
+      "year": 2020,
+      "title": "Understanding the Business of AI: From Algorithms to Ecosystems",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "MIT Sloan Management Review"
+    },
+    {
+      "id": "cite_032",
+      "authors": [
+        "Wu",
+        "Tan",
+        "Gu"
+      ],
+      "year": 2022,
+      "title": "Revenue Management for Cloud Services with Machine Learning Workloads",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Production and Operations Management",
+      "doi": "10.1111/poms.13600"
+    },
+    {
+      "id": "cite_033",
+      "authors": [
+        "OpenAI"
+      ],
+      "year": 2023,
+      "title": "The Economic Value of Open-Source AI Models: Implications for Pricing and Business Models",
+      "source_type": "website",
+      "language": "english",
+      "publisher": "OpenAI"
+    },
+    {
+      "id": "cite_034",
+      "authors": [
+        "Schaltegger",
+        "Schaltegger"
+      ],
+      "year": 2020,
+      "title": "Pricing Strategies for Digital Services: A Conceptual Framework",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Business Research",
+      "doi": "10.1016/j.jbusres.2020.03.001"
+    },
+    {
+      "id": "cite_035",
+      "authors": [
+        "CB Insights Report"
+      ],
+      "year": 2024,
+      "title": "The Future of AI Agents: Business Models and Monetization",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "CB Insights"
+    },
+    {
+      "id": "cite_036",
+      "authors": [
+        "Leyton-Brown",
+        "Shoham"
+      ],
+      "year": 2019,
+      "title": "Economic Models for AI-Enhanced Decision Making",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "AI Magazine",
+      "doi": "10.1609/aimag.v40i1.2852"
+    },
+    {
+      "id": "cite_037",
+      "authors": [
+        "IBM Research"
+      ],
+      "year": 2023,
+      "title": "The Evolution of AI-as-a-Service: From Infrastructure to Intelligent Agents",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "IBM Journal of Research and Development"
+    },
+    {
+      "id": "cite_038",
+      "authors": [
+        "Anthropic"
+      ],
+      "year": 2023,
+      "title": "Understanding the Costs of Large Language Models",
+      "source_type": "website",
+      "language": "english",
+      "publisher": "Anthropic"
+    },
+    {
+      "id": "cite_039",
+      "authors": [
+        "Liu",
+        "Chen",
+        "Tan"
+      ],
+      "year": 2024,
+      "title": "Pricing AI-Driven Services: A Multi-Agent Reinforcement Learning Approach",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Management Science"
+    }
+  ],
+  "metadata": {
+    "total_citations": 39,
+    "citation_style": "APA 7th",
+    "thesis_language": "english",
+    "extracted_date": "2025-11-07T10:10:43.199955"
+  }
+}

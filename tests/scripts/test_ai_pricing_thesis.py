@@ -20,7 +20,9 @@ from tests.test_utils import setup_model, run_agent, rate_limit_delay
 from tests.validators import Section, validate_paper_sections
 from utils.citation_manager import extract_citations_from_text
 from utils.citation_compiler import CitationCompiler
+from utils.citation_database import save_citation_database
 from utils.text_utils import smart_truncate
+from utils.abstract_generator import generate_abstract_for_thesis
 
 
 def main():
@@ -127,6 +129,11 @@ def main():
 
     print(f"✅ Citation database created: {len(citation_database.citations)} citations extracted")
 
+    # Save citation database to file
+    citation_db_path = output_dir / "citation_database.json"
+    save_citation_database(citation_database, citation_db_path)
+    print(f"✅ Citation database saved to: {citation_db_path}")
+
     # Prepare citation summary for Crafters
     citation_summary = f"\n\n## CITATION DATABASE\n\nYou have access to {len(citation_database.citations)} citations. Use citation IDs (cite_001, cite_002, etc.) instead of inline citations.\n\n"
     citation_summary += "Available citations:\n"
@@ -183,7 +190,7 @@ def main():
         name="6. Crafter - Write Introduction",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Introduction section (1,200 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Introduction section (2,500 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Include:\n"
             f"- Hook about AI pricing challenges\n"
             f"- Background on agentic AI systems\n"
@@ -203,7 +210,7 @@ def main():
         name="7. Crafter - Write Literature Review",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Literature Review section (2,000 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Literature Review section (6,000 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Cover:\n"
             f"- Token-based pricing models (OpenAI, Anthropic)\n"
             f"- Usage-based pricing (AWS, cloud services)\n"
@@ -223,7 +230,7 @@ def main():
         name="8. Crafter - Write Methodology",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Methodology section (1,000 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Methodology section (2,500 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Describe:\n"
             f"- Framework for comparing pricing models\n"
             f"- Case study selection criteria\n"
@@ -241,7 +248,7 @@ def main():
         name="9. Crafter - Write Analysis",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Analysis section (2,500 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Analysis section (6,000 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Analyze:\n"
             f"- Comparison of pricing models\n"
             f"- Advantages and disadvantages\n"
@@ -260,7 +267,7 @@ def main():
         name="10. Crafter - Write Discussion",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Discussion section (1,500 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Discussion section (3,000 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Discuss:\n"
             f"- Implications for AI companies\n"
             f"- Customer adoption considerations\n"
@@ -279,7 +286,7 @@ def main():
         name="11. Crafter - Write Conclusion",
         prompt_path="prompts/03_compose/crafter.md",
         user_input=(
-            f"Write Conclusion section (600 words) for:\n\n{formatter_output[:2000]}\n\n"
+            f"Write Conclusion section (1,000 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Summarize:\n"
             f"- Key findings\n"
             f"- Contributions to field\n"
@@ -418,8 +425,45 @@ def main():
     print("   • 100% deterministic compilation (O(1) dictionary lookup)")
     print("\n⏳ Citation compilation (instant)...")
 
-    compiler = CitationCompiler(citation_database)
-    compiled_paper, missing_ids = compiler.compile_citations(draft_paper)
+    # VALIDATION STEP: Validate citations for academic integrity
+    print("\n" + "="*70)
+    print("🔍 CITATION VALIDATION (Academic Integrity Check)")
+    print("="*70)
+
+    from utils.citation_validator import CitationValidator
+    validator = CitationValidator(timeout=10)
+    issues, stats = validator.validate_database(citation_db_path)
+
+    if issues:
+        print(f"\n⚠️  Found {len(issues)} citation validation issues:")
+        print(f"   • Critical issues: {stats['critical_issues']}")
+        print(f"   • Warnings: {stats['warnings']}")
+        print(f"   • Invalid DOIs: {stats['invalid_dois']}")
+        print(f"   • Invalid authors: {stats['invalid_authors']}")
+
+        # Display first 5 critical issues
+        critical = [i for i in issues if i.severity == 'critical']
+        if critical:
+            print("\n❌ CRITICAL ISSUES (first 5):")
+            for issue in critical[:5]:
+                print(f"   [{issue.citation_id}] {issue.message}")
+
+        # Save full validation report
+        validation_report = validator.generate_report(issues, "AI Pricing Thesis")
+        report_path = output_dir / "citation_validation_report.txt"
+        with open(report_path, 'w', encoding='utf-8') as f:
+            f.write(validation_report)
+        print(f"\n📄 Full validation report saved: {report_path}")
+
+        print("\n⚠️  RECOMMENDATION: Review and fix invalid citations before publication")
+        print("   Continuing with current citations for now...")
+    else:
+        print("\n✅ All citations passed validation - no issues found!")
+
+    print("\n" + "="*70)
+
+    compiler = CitationCompiler(citation_database, model=model)
+    compiled_paper, missing_ids, researched_topics = compiler.compile_citations(draft_paper, research_missing=True)
 
     # Generate reference list
     reference_list = compiler.generate_reference_list(draft_paper)
@@ -466,6 +510,54 @@ def main():
 
     # Use compiled version
     paper_for_enhancement = verified_paper
+
+    rate_limit_delay()
+
+    # ====================================================================
+    # PHASE 6.5: ABSTRACT GENERATION (Agent #16 - Abstract Specialist)
+    # ====================================================================
+    print("\n" + "="*70)
+    print("📝 PHASE 6.5: ABSTRACT GENERATION (Agent #16)")
+    print("="*70)
+
+    print("\n🔧 Generating or verifying academic abstract...")
+    print("   This will:")
+    print("   • Check if thesis has placeholder abstract")
+    print("   • Auto-detect language (English/German)")
+    print("   • Generate 4-paragraph abstract (250-300 words)")
+    print("   • Include 12-15 relevant keywords")
+    print("   • Skip if full abstract already exists")
+
+    # Determine path to latest thesis version (find the compiled citations file)
+    compiled_path = output_dir / "15_compiled_citations.md" if (output_dir / "15_compiled_citations.md").exists() else None
+    if not compiled_path or not compiled_path.exists():
+        # Fall back to draft if compiled not found
+        compiled_path = output_dir / "05_draft_thesis.md"
+
+    # Call Abstract Generator utility
+    abstract_success, abstract_updated_content = generate_abstract_for_thesis(
+        thesis_path=compiled_path,
+        model=model,
+        run_agent_func=run_agent,
+        output_dir=output_dir,
+        verbose=True
+    )
+
+    if abstract_success and abstract_updated_content:
+        # Update verified_paper with new content
+        verified_paper = abstract_updated_content
+
+        # Save updated version
+        with open(compiled_path, 'w', encoding='utf-8') as f:
+            f.write(verified_paper)
+
+        paper_for_enhancement = verified_paper
+
+        print(f"✅ Abstract generation complete!")
+    elif abstract_success and not abstract_updated_content:
+        print(f"✅ Abstract already complete - no generation needed")
+    else:
+        print(f"⚠️  Abstract generation failed - continuing with existing content")
 
     rate_limit_delay()
 
@@ -534,11 +626,11 @@ def main():
     print("\nExporting to PDF...")
     try:
         result = subprocess.run([
-            sys.executable, 'utils/export.py',
-            '--format', 'pdf',
-            '--output', str(output_dir / 'FINAL_THESIS.pdf'),
-            str(final_md)
-        ], capture_output=True, text=True, timeout=30)
+            sys.executable, 'utils/export_professional.py',
+            str(final_md),
+            '--pdf', str(output_dir / 'FINAL_THESIS.pdf'),
+            '--engine', 'pandoc'
+        ], capture_output=True, text=True, timeout=60)
 
         if result.returncode == 0:
             pdf_size = (output_dir / 'FINAL_THESIS.pdf').stat().st_size
@@ -552,11 +644,10 @@ def main():
     print("\nExporting to Word...")
     try:
         result = subprocess.run([
-            sys.executable, 'utils/export.py',
-            '--format', 'docx',
-            '--output', str(output_dir / 'FINAL_THESIS.docx'),
-            str(final_md)
-        ], capture_output=True, text=True, timeout=30)
+            sys.executable, 'utils/export_professional.py',
+            str(final_md),
+            '--docx', str(output_dir / 'FINAL_THESIS.docx')
+        ], capture_output=True, text=True, timeout=60)
 
         if result.returncode == 0:
             docx_size = (output_dir / 'FINAL_THESIS.docx').stat().st_size

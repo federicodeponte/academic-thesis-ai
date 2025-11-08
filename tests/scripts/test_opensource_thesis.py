@@ -22,6 +22,7 @@ from tests.validators import Section, validate_paper_sections
 from utils.citation_manager import extract_citations_from_text
 from utils.citation_database import save_citation_database, load_citation_database
 from utils.text_utils import smart_truncate
+from utils.abstract_generator import generate_abstract_for_thesis
 
 
 def main():
@@ -443,9 +444,46 @@ def main():
     print("\n⏳ Compiling citations...")
 
     from utils.citation_compiler import CitationCompiler
+    from utils.citation_validator import CitationValidator
 
     # Load citation database
     citation_database = load_citation_database(citation_db_path)
+
+    # VALIDATION STEP: Validate citations for academic integrity
+    print("\n" + "="*70)
+    print("🔍 CITATION VALIDATION (Academic Integrity Check)")
+    print("="*70)
+
+    validator = CitationValidator(timeout=10)
+    issues, stats = validator.validate_database(citation_db_path)
+
+    if issues:
+        print(f"\n⚠️  Found {len(issues)} citation validation issues:")
+        print(f"   • Critical issues: {stats['critical_issues']}")
+        print(f"   • Warnings: {stats['warnings']}")
+        print(f"   • Invalid DOIs: {stats['invalid_dois']}")
+        print(f"   • Invalid authors: {stats['invalid_authors']}")
+
+        # Display first 5 critical issues
+        critical = [i for i in issues if i.severity == 'critical']
+        if critical:
+            print("\n❌ CRITICAL ISSUES (first 5):")
+            for issue in critical[:5]:
+                print(f"   [{issue.citation_id}] {issue.message}")
+
+        # Save full validation report
+        validation_report = validator.generate_report(issues, "Open Source Thesis")
+        report_path = output_dir / "citation_validation_report.txt"
+        with open(report_path, 'w', encoding='utf-8') as f:
+            f.write(validation_report)
+        print(f"\n📄 Full validation report saved: {report_path}")
+
+        print("\n⚠️  RECOMMENDATION: Review and fix invalid citations before publication")
+        print("   Continuing with current citations for now...")
+    else:
+        print("\n✅ All citations passed validation - no issues found!")
+
+    print("\n" + "="*70)
 
     # Compile citations (with automatic research of missing citations)
     compiler = CitationCompiler(citation_database, model=model)
@@ -481,6 +519,47 @@ def main():
         manual_interventions += 1
     else:
         print("✅ All citation IDs successfully compiled - 100% success rate!")
+
+    rate_limit_delay()
+
+    # ====================================================================
+    # PHASE 6.5: ABSTRACT GENERATION (Agent #16 - Abstract Specialist)
+    # ====================================================================
+    print("\n" + "="*70)
+    print("📝 PHASE 6.5: ABSTRACT GENERATION (Agent #16)")
+    print("="*70)
+
+    print("\n🔧 Generating or verifying academic abstract...")
+    print("   This will:")
+    print("   • Check if thesis has placeholder abstract")
+    print("   • Auto-detect language (English/German)")
+    print("   • Generate 4-paragraph abstract (250-300 words)")
+    print("   • Include 12-15 relevant keywords")
+    print("   • Skip if full abstract already exists")
+
+    # Call Abstract Generator utility
+    abstract_success, abstract_updated_content = generate_abstract_for_thesis(
+        thesis_path=verified_paper_path,
+        model=model,
+        run_agent_func=run_agent,
+        output_dir=output_dir,
+        verbose=True
+    )
+
+    if abstract_success and abstract_updated_content:
+        # Update verified_paper with new content
+        verified_paper = abstract_updated_content
+
+        # Save updated version
+        with open(verified_paper_path, 'w', encoding='utf-8') as f:
+            f.write(verified_paper)
+
+        print(f"✅ Abstract generation complete!")
+    elif abstract_success and not abstract_updated_content:
+        print(f"✅ Abstract already complete - no generation needed")
+    else:
+        print(f"⚠️  Abstract generation failed - continuing with existing content")
+        issues.append("⚠️ Abstract generation failed")
 
     rate_limit_delay()
 

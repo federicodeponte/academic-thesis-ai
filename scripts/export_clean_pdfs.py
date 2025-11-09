@@ -22,22 +22,22 @@ def main():
 
     base_dir = Path(__file__).parent.parent
 
-    # Define thesis files (clean versions)
+    # Define thesis files (use FINAL_THESIS.md, NOT FINAL_THESIS_CLEAN.md which is polluted with agent outputs)
     theses = [
         {
             "name": "Open Source Thesis",
-            "md_file": base_dir / "tests/outputs/opensource_thesis/FINAL_THESIS_CLEAN.md",
+            "md_file": base_dir / "tests/outputs/opensource_thesis/FINAL_THESIS.md",
             "pdf_file": base_dir / "examples/opensource_thesis.pdf"
         },
         {
             "name": "AI Pricing Thesis",
-            "md_file": base_dir / "tests/outputs/ai_pricing_thesis/FINAL_THESIS_CLEAN.md",
+            "md_file": base_dir / "tests/outputs/ai_pricing_thesis/FINAL_THESIS.md",
             "pdf_file": base_dir / "examples/ai_pricing_thesis.pdf"
         },
         {
             "name": "CO2 German Thesis",
-            "md_file": base_dir / "tests/outputs/co2_thesis_german/FINAL_THESIS_CLEAN.md",
-            "pdf_file": base_dir / "examples/co2_german_thesis.pdf"
+            "md_file": base_dir / "tests/outputs/co2_thesis_german/FINAL_THESIS.md",
+            "pdf_file": base_dir / "examples/co2_thesis_german.pdf"
         }
     ]
 

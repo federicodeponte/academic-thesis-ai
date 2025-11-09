@@ -453,5 +453,31 @@ class PandocLatexEngine(PDFEngine):
                 flags=re.MULTILINE | re.IGNORECASE
             )
 
+        # Strip custom fields that Pandoc doesn't recognize
+        # Only keep: title, subtitle, author, date, abstract
+        pandoc_recognized_fields = ['title', 'subtitle', 'author', 'date', 'abstract']
+        yaml_lines = yaml_content.split('\n')
+        filtered_lines = []
+
+        for line in yaml_lines:
+            line_stripped = line.strip()
+            if not line_stripped or line_stripped.startswith('#'):
+                # Keep empty lines and comments
+                filtered_lines.append(line)
+                continue
+
+            # Check if this line starts with a field name
+            field_match = re.match(r'^(\w+):', line_stripped)
+            if field_match:
+                field_name = field_match.group(1).lower()
+                if field_name in pandoc_recognized_fields:
+                    filtered_lines.append(line)
+                # Skip lines with unrecognized fields
+            else:
+                # Keep continuation lines (indented or quoted multi-line values)
+                filtered_lines.append(line)
+
+        yaml_content = '\n'.join(filtered_lines)
+
         # Reconstruct markdown
         return f'---{yaml_content}---{rest_content}'

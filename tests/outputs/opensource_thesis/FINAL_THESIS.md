@@ -1,4 +1,3 @@
-```markdown
 ---
 title: "How Open Source Software Can Save the World: From Code Collaboration to Global Impact"
 subtitle: "AI-Generated Academic Thesis Showcase"

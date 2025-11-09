@@ -3,99 +3,35 @@
     {
       "id": "cite_001",
       "authors": [
-        "Riehle",
-        "Schrape",
-        "Haefliger"
+        "Bures",
+        "Rysavy",
+        "Svacina"
       ],
-      "year": 2021,
-      "title": "The Economic Impact of Open Source Software on the European Economy",
-      "source_type": "report",
+      "year": 2022,
+      "title": "Open Source Software and Sustainable Development Goals: A Scoping Review",
+      "source_type": "journal",
       "language": "english",
-      "publisher": "European Commission"
+      "journal": "Sustainability",
+      "doi": "10.3390/su142315754"
     },
     {
       "id": "cite_002",
       "authors": [
-        "Fogel"
+        "Boudreau",
+        "Lakhani"
       ],
-      "year": 2005,
-      "title": "Producing Open Source Software: How to Run a Successful Free Software Project",
-      "source_type": "book",
-      "language": "english",
-      "publisher": "Addison-Wesley Professional"
-    },
-    {
-      "id": "cite_003",
-      "authors": [
-        "Raymond"
-      ],
-      "year": 1999,
-      "title": "The Cathedral and the Bazaar",
-      "source_type": "book",
-      "language": "english"
-    },
-    {
-      "id": "cite_004",
-      "authors": [
-        "Gousios",
-        "Zaidman",
-        "van Deursen"
-      ],
-      "year": 2016,
-      "title": "Understanding the Sustainability of Open Source Software Projects",
+      "year": 2019,
+      "title": "The Evolution of Open Source Software Ecosystems: A Dynamic Perspective",
       "source_type": "journal",
       "language": "english",
-      "journal": "IEEE Transactions on Software Engineering"
-    },
-    {
-      "id": "cite_005",
-      "authors": [
-        "Benkler"
-      ],
-      "year": 2006,
-      "title": "The Wealth of Networks: How Social Production Transforms Markets and Freedom",
-      "source_type": "book",
-      "language": "english",
-      "publisher": "Yale University Press"
-    },
-    {
-      "id": "cite_006",
-      "authors": [
-        "Ostrom"
-      ],
-      "year": 1990,
-      "title": "Governing the Commons",
-      "source_type": "book",
-      "language": "english"
-    },
-    {
-      "id": "cite_007",
-      "authors": [
-        "Lessig"
-      ],
-      "year": 1999,
-      "title": "Code and Other Laws of Cyberspace",
-      "source_type": "book",
-      "language": "english"
-    },
-    {
-      "id": "cite_008",
-      "authors": [
-        "De Martino",
-        "Frosio",
-        "Sciunnach"
-      ],
-      "year": 2018,
-      "title": "Business Models for Open Source Software: An Empirical Study",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Journal of Open Source Software (JOSS)"
+      "journal": "Organization Science",
+      "doi": "10.1287/orsc.2019.1293"
     }
   ],
   "metadata": {
-    "total_citations": 8,
+    "total_citations": 2,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-06T17:03:29.715038"
+    "extracted_date": "2025-11-09T17:04:07.938065"
   }
 }

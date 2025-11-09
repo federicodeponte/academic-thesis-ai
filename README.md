@@ -13,7 +13,7 @@
 
 Write academic papers 50-70% faster with AI assistance while maintaining quality and academic integrity.
 
-> **✅ Production Ready:** All 15 agents tested and validated (including new Enhancer agent). Comprehensive test coverage with publication-quality outputs. See [Test Results](tests/outputs/PRODUCTION_TEST_RESULTS.md) for details.
+> **✅ Production Ready:** All 15 agents tested and validated (including Enhancer with Nov 2025 bug fixes). Comprehensive test coverage with publication-quality outputs. Agent #15 dual-layer defense (prevention + sanitization) ensures stable file outputs. See [Test Results](tests/outputs/PRODUCTION_TEST_RESULTS.md) for details.
 
 ---
 
@@ -30,6 +30,7 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 - Zero-code setup (just prompts in your IDE)
 - 15 specialized AI agents (Scout, Scribe, Signal, Architect, Enhancer, etc.)
 - **NEW:** Automatic professional enhancement (YAML metadata, appendices, tables, figures)
+- **FIXED (Nov 2025):** Agent #15 stability improvements - dual-layer defense prevents table corruption, file bloat, and PDF rendering issues
 - Real academic database integration (arXiv, Semantic Scholar, PubMed, Google Scholar)
 - Multi-LLM support (Claude Sonnet 4.5, GPT-5, Gemini 2.5 Flash)
 - Export to PDF, Word, LaTeX
@@ -238,6 +239,7 @@ RESEARCH → STRUCTURE → COMPOSE → VALIDATE → REFINE → COMPILE → ENHAN
 
 #### Phase 6: ENHANCEMENT (optional) 🆕
 - **Enhancer (Agent #15)** 🆕 - Add YAML metadata, appendices, tables, figures (transforms 8k-word draft → 14k-word publication-ready thesis)
+- **Output Sanitizer** 🆕 - Automatic post-processing to prevent table corruption, file bloat, and PDF rendering issues (90% size reduction vs corrupted outputs)
 
 ---
 

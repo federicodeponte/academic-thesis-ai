@@ -5,12 +5,18 @@ CITATION VALIDATION REPORT: AI Pricing Thesis
 
 
 
-⚠️  WARNINGS (1):
+⚠️  WARNINGS (3):
 --------------------------------------------------------------------------------
 
-[cite_010] Generic title pattern: 'A Survey'
-  Buyya, Vecchiola et al. (2019) - Pricing Models for Cloud Computing Services: A Survey...
+[cite_006] Generic title pattern: 'A Survey'
+  Li, Li et al. (2022) - Pricing Models for Cloud-Based AI Services: A Survey...
+
+[cite_009] Generic title pattern: 'A Survey'
+  Li, Li et al. (2021) - Pricing of Cloud-Based Data Analytics Services: A Survey...
+
+[cite_013] Generic title pattern: 'An Overview'
+  J (2019) - Pricing Strategies for Digital Services: An Overview...
 
 ================================================================================
-TOTAL ISSUES: 1 (0 critical, 1 warnings)
+TOTAL ISSUES: 3 (0 critical, 3 warnings)
 ================================================================================

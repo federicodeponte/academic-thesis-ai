@@ -23,6 +23,7 @@ from utils.citation_compiler import CitationCompiler
 from utils.citation_database import save_citation_database
 from utils.text_utils import smart_truncate
 from utils.abstract_generator import generate_abstract_for_thesis
+from utils.output_sanitizer import sanitize_enhanced_file
 
 
 def main():
@@ -562,10 +563,10 @@ def main():
     rate_limit_delay()
 
     # ====================================================================
-    # PHASE 7: ENHANCE
+    # PHASE 7: ENHANCEMENT (Agent #15) - WITH SANITIZATION
     # ====================================================================
     print("\n" + "="*70)
-    print("✨ PHASE 7: ENHANCE (Agent #15)")
+    print("✨ PHASE 7: ENHANCE (Agent #15 - WITH OUTPUT SANITIZATION)")
     print("="*70)
 
     # Step 15: Enhancer - Add professional elements
@@ -587,15 +588,25 @@ def main():
         save_to=output_dir / "16_enhanced_final.md"
     )
 
-    # Post-process: Remove markdown code block wrapper if present
+    # CRITICAL: Sanitize enhanced output to fix 4 bugs
     if enhanced_paper:
-        if enhanced_paper.startswith('```markdown\n'):
-            enhanced_paper = enhanced_paper[12:]  # Remove ```markdown\n
-        if enhanced_paper.endswith('\n```'):
-            enhanced_paper = enhanced_paper[:-4]  # Remove \n```
-        # Save cleaned version
-        with open(output_dir / "16_enhanced_final.md", 'w', encoding='utf-8') as f:
-            f.write(enhanced_paper)
+        print("\n" + "="*70)
+        print("🧹 SANITIZING ENHANCED OUTPUT (Bug Fix)")
+        print("="*70)
+
+        sanitize_success = sanitize_enhanced_file(
+            input_path=output_dir / "16_enhanced_final.md",
+            output_path=None,  # Sanitize in place
+            verbose=True
+        )
+
+        if sanitize_success:
+            # Re-read sanitized version
+            with open(output_dir / "16_enhanced_final.md", 'r', encoding='utf-8') as f:
+                enhanced_paper = f.read()
+            print("✅ Enhanced output sanitized successfully!")
+        else:
+            print("⚠️  Sanitization failed - using original enhanced output")
 
     # Use enhanced version if available, otherwise fall back to verified or draft
     final_paper = enhanced_paper if enhanced_paper else (verified_paper if verified_paper else draft_paper)
@@ -605,6 +616,7 @@ def main():
         print(f"\n✅ Enhancement complete!")
         print(f"📊 Enhanced stats: ~{enhanced_word_count} words (target: 14,000+)")
         print(f"📈 Word count increase: ~{enhanced_word_count - len(draft_paper.split())} words")
+        print(f"📄 Source: 16_enhanced_final.md (sanitized)")
     else:
         print(f"\n⚠️  Enhancement failed, using {'verified' if verified_paper else 'draft'} version")
 

@@ -344,14 +344,14 @@ Given a paper outline from the Architect Agent, you will:
 
 | Section | Words | % of Total |
 |---------|-------|------------|
-| Abstract | 250 | 3% |
-| Introduction | 1000 | 13% |
-| Literature Review | 2000 | 27% |
-| Methodology | 1200 | 16% |
-| Results | 1800 | 24% |
-| Discussion | 1200 | 16% |
-| Conclusion | 550 | 7% |
-| **Total** | **8000** | **100%** |
+| Abstract | 250 | 1% |
+| Introduction | 2500 | 12% |
+| Literature Review | 6000 | 29% |
+| Methodology | 2500 | 12% |
+| Results | 6000 | 29% |
+| Discussion | 3000 | 14% |
+| Conclusion | 1000 | 5% |
+| **Total** | **21000** | **100%** |
 
 ---
 

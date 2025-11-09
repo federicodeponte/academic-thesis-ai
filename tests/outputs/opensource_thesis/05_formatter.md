@@ -1,8 +1,8 @@
 # Formatted Paper Outline
 
-**Format Applied:** IMRaD (adapted for Theoretical Analysis)
-**Target Journal:** Technology and Social Impact Journal (Generic)
-**Word Limit:** 8,000-10,000 words (Targeting ~9,000 words for section breakdown)
+**Format Applied:** IMRaD (adapted for theoretical analysis with case studies)
+**Target Journal:** Technology/Social Impact Journal
+**Word Limit:** 8,000-10,000 words
 **Citation Style:** APA 7th Edition
 
 ---
@@ -13,17 +13,17 @@
 - **Font:** Times New Roman 12pt
 - **Line Spacing:** Double
 - **Margins:** 1 inch all sides
-- **Page Numbers:** Top right corner (header)
-- **Headings:** Numbered (as per template instructions, though APA manual typically unnumbers main headings)
+- **Page Numbers:** Top right
+- **Headings:** Numbered (main sections), Unnumbered (APA style for sub-levels) - *Note: While IMRaD often uses numbered headings, APA style traditionally does not number main sections like Introduction. For clarity in this structured outline, main sections are numbered, but sub-levels will follow APA's unnumbered, hierarchical formatting rules.*
 
 ### Section Heading Levels
-- **Level 1:** Bold, Centered, Title Case
-- **Level 2:** Bold, Left-Aligned, Title Case
-- **Level 3:** Bold, Indented, Sentence case (Note: APA 7th Level 3 is typically Bold, Italic, Title Case, Left-aligned. Following template's specific instruction here.)
+- **Level 1 (Main Section - e.g., 1. Introduction):** Bold, Centered, Title Case (e.g., **1. Introduction**)
+- **Level 2 (Subsection - e.g., 1.1 Background and Motivation):** Bold, Left-Aligned, Title Case (e.g., **1.1 Background and Motivation**)
+- **Level 3 (Sub-subsection - e.g., Theoretical Underpinnings):** Bold, Indented, Sentence case, with a period at the end. Text continues on the same line. (e.g., **Theoretical Underpinnings.** Text starts here...)
 
 ### Citation Format
 - **In-text:** (Author, Year)
-- **Bibliography:** Full APA 7th Edition format
+- **Bibliography:** Full APA 7th Edition format specification (see below for details)
 
 ### ⚠️ CITATION REQUIREMENTS - CRITICAL
 
@@ -71,305 +71,326 @@
 ### Title
 **Format:** Bold, Centered, 14pt
 **Max Length:** 100 characters
-**Suggested:** Beyond Code: A Theoretical Framework for Open Source Software's Environmental and Societal Contributions
+**Suggested:** **Open Source Software as a Catalyst for Global Impact: A Theoretical Framework for Sustainability and Societal Well-being**
 
 ### Author Information
 **Format:**
-- Name(s): Full Name, Centered, Below Title
-- Affiliation(s): Department, University, City, Country, Centered, Below Name
-- Email(s): Corresponding author email, Centered
-- ORCID: Optional, Centered
+- Name(s): Full Name, centered
+- Affiliation(s): Department, University/Organization, City, Country, centered
+- Email(s): Corresponding author email, centered
+- ORCID: Optional, centered
 
 ### Abstract
-**Heading:** Abstract (Bold, Centered)
-**Length:** 250-300 words
+**Heading:** **Abstract** (Bold, Centered)
+**Length:** 150-250 words
 **Structure:**
-- Background (2 sentences): Global challenges demand novel, collaborative solutions.
-- Objective (1 sentence): This paper aims to develop a theoretical framework demonstrating how Open Source Software (OSS) principles foster diverse global impacts, particularly in addressing critical environmental challenges.
-- Methods (2-3 sentences): We synthesize existing literature on global challenges, proprietary limitations, and OSS principles to construct a conceptual model. This model is then applied to illustrative case studies to demonstrate real-world applications and potential.
-- Results (2-3 sentences): The framework highlights how OSS's transparency, collaboration, reusability, and longevity inherently support sustainable development. Case studies reveal nascent but significant contributions across economic, social, and environmental domains.
-- Conclusions (1-2 sentences): OSS is positioned as a critical, scalable, and underutilized mechanism for advancing global sustainability and addressing pressing planetary issues.
+- **Background (1-2 sentences):** Global challenges demand novel solutions beyond traditional approaches.
+- **Objective (1 sentence):** This paper proposes a theoretical framework to quantify and govern the contributions of open source software (OSS) towards sustainability and societal well-being.
+- **Methods (2-3 sentences):** We develop a framework linking OSS mechanisms to impact pathways, supported by illustrative case studies demonstrating its application and the challenges in measurement.
+- **Results (2-3 sentences):** Case studies highlight how OSS principles drive tangible progress, revealing both successes and gaps in impact quantification across environmental, social, and economic dimensions.
+- **Conclusions (1-2 sentences):** Realizing OSS's full potential requires adopting this theoretical lens, developing standardized metrics, and fostering adaptive governance models.
 
-**Keywords:** 3-6 keywords (e.g., Open Source Software, Sustainability, Environmental Challenges, Collaboration, Theoretical Framework, Social Impact)
+**Keywords:** Open Source Software, Sustainability, Societal Well-being, Global Impact, Theoretical Framework, Governance, Collaborative Models, Impact Measurement
 
 ---
 
 ## 1. Introduction
 **Section Number:** 1
-**Length:** 900-1100 words (~1000 words)
+**Length:** 800-1200 words
 **Subsections:**
 
-### 1.1 Global Challenges and the Need for Novel Solutions
-**Format:** Paragraphs, introducing the scope of global challenges (e.g., climate change, resource scarcity, inequality) and emphasizing the demand for innovative, collaborative solutions.
-**Content:** Establish the urgency and complexity of current global problems that transcend traditional, siloed approaches.
+### 1.1 Background and Motivation
+**Format:** Narrative paragraph(s).
+*   Contextualize global challenges (climate change, inequality, health crises) and the inadequacy of traditional, proprietary solutions.
+*   Introduce open source software as a potentially transformative approach due to its inherent characteristics (collaboration, transparency, adaptability).
 
-### 1.2 Limitations of Existing Paradigms
-**Format:** Paragraphs, briefly discussing how proprietary and closed systems often limit collective problem-solving, hinder resource efficiency, and impede widespread adoption of solutions.
-**Content:** Set the stage for why an alternative, open model is necessary.
+### 1.2 Problem Statement
+**Format:** Narrative paragraph(s).
+*   Articulate the core problem: While OSS is intuitively beneficial, there's a lack of rigorous theoretical frameworks and standardized empirical approaches to quantify and govern its "world-saving" contributions, especially concerning environmental sustainability and comprehensive societal well-being.
+*   Clearly state the research question: "How can open source software's collaborative models drive global impact towards sustainability and societal well-being, and what theoretical frameworks and empirical approaches are needed to effectively quantify and govern these contributions?"
 
-### 1.3 Open Source Software as a Transformative Paradigm
-**Format:** Paragraphs, introducing OSS as a distinct model rooted in shared knowledge, iterative development, and community-driven innovation.
-**Content:** Briefly define OSS and its core philosophy.
+### 1.3 Research Objectives
+**List format:**
+1.  To develop a novel theoretical framework connecting OSS's core mechanisms to specific pathways for achieving global impact across environmental, social, and economic dimensions.
+2.  To demonstrate the application and utility of this framework through illustrative case studies of OSS projects contributing to sustainability and societal well-being.
+3.  To identify the challenges and opportunities in measuring and governing the impact of OSS, proposing actionable directions for policy and practice.
 
-### 1.4 Research Question and Thesis Statement
-**Format:** Clear statement of the research question and the paper's overarching thesis.
-**Research Question:** How do the inherent principles and collaborative models of Open Source Software (OSS) foster diverse global impacts, particularly in addressing critical environmental challenges, thereby positioning OSS as a key driver for a more sustainable future?
-**Thesis Statement:** Open Source Software, through its fundamental principles of transparency, collaboration, reusability, and longevity, provides a unique and powerful paradigm for addressing complex global challenges across economic, social, and critically, environmental domains, thereby serving as a transformative force for a more sustainable and equitable world.
-
-### 1.5 Paper Contributions
+### 1.4 Contributions
 **Bullet format:**
-- Development of a comprehensive theoretical framework linking OSS principles to sustainability outcomes.
-- Identification of specific mechanisms through which OSS contributes to environmental problem-solving.
-- Presentation of illustrative case studies demonstrating the practical application and impact of OSS in sustainability contexts.
-- Highlighting OSS as a critical, scalable, and underutilized mechanism for advancing global sustainability.
+-   Introduction of a comprehensive theoretical framework for understanding and analyzing OSS's impact on sustainability and societal well-being.
+-   Empirical insights from diverse case studies illustrating the practical application and implications of the proposed framework.
+-   Identification of critical gaps in current impact quantification and governance models for OSS.
+-   Actionable recommendations for researchers, policymakers, and practitioners to leverage OSS for global challenges.
 
-### 1.6 Paper Organization
-**Format:** Standard paragraph outlining the structure of the paper.
+### 1.5 Paper Organization
+**Format:** Standard paragraph.
+*   Briefly outline the structure of the paper, guiding the reader through the subsequent sections.
 
 ---
 
-## 2. Literature Review and Theoretical Foundations
+## 2. Related Work / Literature Review
 **Section Number:** 2
-**Length:** 1800-2200 words (~2000 words)
-**Organization:** Thematic subsections, building towards the conceptual framework.
+**Length:** 1500-2500 words
+**Organization:** Thematic subsections, synthesizing existing literature and identifying gaps.
 
-### 2.1 Understanding Open Source Software: Principles and Evolution
-**Format:** Narrative, defining key OSS concepts (e.g., four freedoms, community models, licensing) and tracing its historical evolution and impact in traditional IT sectors.
+### 2.1 The Evolution and Impact of Open Source Software
+**Format:** Narrative with citations.
+*   Historical overview of OSS and its philosophical underpinnings.
+*   Review of literature on economic impacts (innovation, cost reduction, market competition).
+*   Review of literature on social impacts (digital inclusion, community building, education, transparency).
 
-### 2.2 Global Sustainability: Concepts, Frameworks, and Challenges
-**Format:** Narrative, exploring definitions of sustainability (e.g., Brundtland Report, SDGs), key environmental challenges, and existing theoretical frameworks for addressing them.
-**Content:** Discuss the interconnections between environmental, social, and economic sustainability.
+### 2.2 Open Source and Environmental Sustainability
+**Format:** Narrative with citations.
+*   Explore existing research linking OSS to environmental benefits (e.g., hardware longevity, energy efficiency, open science for climate research, circular economy).
+*   Highlight the nascent nature of this research area and the lack of specific frameworks.
 
-### 2.3 The Limitations of Proprietary Models in Addressing Systemic Challenges
-**Format:** Critical analysis, expanding on how closed-source, profit-driven models often fall short in fostering the broad collaboration, resource sharing, and long-term maintenance required for complex global problems.
+### 2.3 Governance Models in Open Source Ecosystems
+**Format:** Narrative with citations.
+*   Discuss different governance structures within OSS projects and communities.
+*   Examine challenges and best practices in maintaining project health, security, and ethical guidelines.
+*   Connect governance to impact pathways.
 
-### 2.4 Emergent Connections: OSS and Societal Impact
-**Format:** Review of existing literature that explores the societal impacts of OSS beyond economic benefits, touching upon social equity, education, and civic engagement.
-**Content:** Identify gaps in the literature regarding direct and indirect environmental contributions.
+### 2.4 Methodologies for Quantifying Socio-Technical Impact
+**Format:** Narrative with citations.
+*   Review existing methods for measuring social and environmental impact (e.g., LCA, SROI, specific indicators).
+*   Critique their applicability and limitations in the context of complex, distributed OSS projects.
+
+### 2.5 Summary and Gap Analysis
+**Format:** Synthesis paragraph(s).
+*   Summarize the key findings from the literature.
+*   Clearly articulate the gaps: lack of a unified theoretical framework, insufficient granular metrics, and underdeveloped governance models specifically linking OSS to comprehensive sustainability and societal well-being impacts. This section directly sets up the need for the proposed framework.
 
 ---
 
-## 3. Conceptual Framework: Leveraging OSS for Sustainability
+## 3. Theoretical Framework and Approach
 **Section Number:** 3
-**Length:** 1350-1650 words (~1500 words)
-**Organization:** Detailing the theoretical underpinnings.
+**Length:** 1000-1500 words
+*This section replaces a traditional "Methods" section, focusing on the development and application of the theoretical framework.*
 
-### 3.1 Core Principles of Open Source Software
-**Format:** Dedicated subsections for each principle, explaining its nature and potential.
-#### 3.1.1 Transparency and Accessibility
-**Format:** Indented paragraph, discussing the benefits of open code for scrutiny, trust, and wider participation.
-#### 3.1.2 Collaboration and Community-Driven Innovation
-**Format:** Indented paragraph, highlighting the power of diverse, global communities in problem-solving.
-#### 3.1.3 Reusability and Adaptability
-**Format:** Indented paragraph, emphasizing efficiency, reduced redundancy, and the ability to tailor solutions.
-#### 3.1.4 Longevity and Maintainability
-**Format:** Indented paragraph, discussing the extended lifespan of OSS projects and resilience against single-vendor failure.
+### 3.1 Unpacking OSS Mechanisms and Impact Pathways
+**Format:** Narrative paragraph(s) + diagram.
+*   **Theoretical Underpinnings.** Introduce the foundational theories informing the framework (e.g., common-pool resource theory, socio-technical systems theory, institutional theory).
+*   **Core OSS Mechanisms.** Detail key characteristics: collaboration, transparency, modularity, reuse, accessibility, decentralization.
+*   **Proposed Impact Pathways.** Explain how each mechanism contributes to specific environmental (e.g., resource efficiency, data sharing for research), social (e.g., empowerment, equity, knowledge transfer), and economic (e.g., localized innovation, reduced barriers to entry) outcomes.
 
-### 3.2 Bridging OSS Principles with Sustainability Outcomes
-**Format:** Narrative, explicitly linking each OSS principle to specific dimensions of environmental, social, and economic sustainability.
-**Content:** Develop a theoretical model or diagram showing these connections.
+**Figure 1:** Conceptual Framework: OSS Mechanisms to Global Impact Pathways
+[Placeholder for a conceptual diagram illustrating the linkages from OSS characteristics through intermediate outputs to ultimate sustainability and societal well-being outcomes.]
+**Caption Format:** Figure 1. A conceptual framework illustrating the pathways from open source software's core mechanisms to global impact on sustainability and societal well-being.
 
-**Figure 1:** Conceptual Framework: OSS Principles and Sustainability Outcomes
-[Placeholder for a diagram illustrating the connections between OSS principles and various sustainability dimensions (environmental, social, economic). Caption: *Figure 1. A conceptual framework illustrating how the core principles of Open Source Software (OSS) contribute to diverse sustainability outcomes.*]
+### 3.2 Case Study Selection Criteria
+**Format:** Narrative + specification table.
+*   Explain the rationale for using illustrative case studies in a theoretical paper (to demonstrate applicability and reveal nuances).
+*   Outline criteria for selecting case studies (e.g., diverse domains, clear sustainability/societal well-being goals, varying scales, data availability for qualitative assessment).
 
-### 3.3 Hypothesized Mechanisms of Impact
-**Format:** Numbered list or subsections, detailing the pathways through which OSS can contribute to sustainability.
-1.  **Accelerated Innovation:** How open collaboration speeds up solution development for environmental tech.
-2.  **Resource Efficiency:** How reusability reduces waste and energy consumption in software development.
-3.  **Capacity Building:** How open access to tools and knowledge empowers communities for local solutions.
-4.  **Data Transparency:** How open-source tools facilitate open science and environmental monitoring.
-5.  **Resilience and Adaptability:** How decentralized development fosters robust, long-lasting solutions for dynamic challenges.
+**Table 1:** Case Study Selection Criteria
+| Criterion          | Description                                                                  | Example                                            |
+|--------------------|------------------------------------------------------------------------------|----------------------------------------------------|
+| Domain Diversity   | Cover environmental, social, and/or economic impact areas.                   | Climate modeling, digital public infrastructure    |
+| Clear Impact Goals | Explicitly aim for sustainability or societal well-being.                     | OpenStreetMap for disaster response                |
+| Project Maturity   | Sufficient history and community activity to observe patterns.                 | Linux Kernel, Wikipedia                            |
+| Data Accessibility | Availability of public documentation, reports, or community discussions.       | Project websites, academic papers, news articles   |
+
+### 3.3 Analytical Approach: Applying the Framework
+**Format:** Numbered steps.
+1.  **Case Study Documentation:** Systematically collect and synthesize information on each selected OSS project, focusing on its objectives, community structure, and reported activities.
+2.  **Framework Mapping:** Map the observed activities and characteristics of each case study against the proposed theoretical framework, identifying which OSS mechanisms are at play and how they contribute to specific impact pathways.
+3.  **Impact Assessment (Qualitative):** Qualitatively assess the demonstrated or potential environmental, social, and economic impacts, noting successes, challenges in measurement, and governance implications.
+4.  **Cross-Case Synthesis:** Compare and contrast findings across case studies to identify common patterns, unique contributions, and generalizable insights regarding the framework's utility and limitations.
 
 ---
 
-## 4. Illustrative Case Studies and Analysis
+## 4. Case Study Findings
 **Section Number:** 4
-**Length:** 1800-2200 words (~2000 words)
-**Organization:** Dedicated subsections for each case study, followed by cross-case analysis. This section serves as the "Results" equivalent for a theoretical paper.
+**Length:** 1500-2000 words
+*This section presents the empirical evidence from the case studies, demonstrating the framework's application.*
 
-### 4.1 Case Study 1: OpenStreetMap and Disaster Response/Environmental Mapping
-**Format:** Narrative description of the project, its OSS principles, and its impact on environmental challenges (e.g., climate change adaptation, disaster preparedness).
-**Content:** Focus on how community-driven data collection and open access facilitate critical environmental intelligence.
+### 4.1 Case Study 1: [Example - e.g., OpenStreetMap for Disaster Response]
+**Format:** Subsection per case study, narrative with specific examples.
+*   **Project Overview.** Brief description, mission, and community.
+*   **OSS Mechanisms at Play.** Identify and explain how collaboration, transparency, data reuse, etc., are operationalized.
+*   **Demonstrated Impact Pathways.** Detail the observed environmental, social, and economic impacts, linking them back to the framework.
+*   **Challenges in Quantification and Governance.** Discuss specific difficulties in measuring impact and any notable governance issues.
 
-### 4.2 Case Study 2: Open Source Hardware for Environmental Monitoring
-**Format:** Narrative description of open-source hardware projects (e.g., low-cost air quality sensors, water quality monitoring systems).
-**Content:** Highlight reusability, accessibility, and community innovation in scientific instrumentation for sustainability.
+### 4.2 Case Study 2: [Example - e.g., Open Source Hardware for Renewable Energy Systems]
+**Format:** Continue as above.
 
-### 4.3 Case Study 3: Open Source Energy Modeling and Grid Management
-**Format:** Narrative description of OSS tools used in renewable energy integration, smart grid management, or energy efficiency analysis.
-**Content:** Emphasize transparency, collaborative development, and adaptability in complex energy systems.
+### 4.3 Case Study 3: [Example - e.g., Digital Public Infrastructure (DPI) for Social Inclusion]
+**Format:** Continue as above.
 
-### 4.4 Cross-Case Analysis: Manifestation of OSS Principles
-**Format:** Comparative discussion, synthesizing findings across case studies.
-**Table 1:** Summary of Illustrative Case Studies
-| Case Study | OSS Principles Evident | Sustainability Impact (Env, Soc, Econ) | Key Achievements |
-|------------|------------------------|----------------------------------------|------------------|
-| OpenStreetMap | Transparency, Collaboration, Reusability | Env. mapping, Disaster response, Social empowerment | Global data, accessible tools |
-| Open Source Hardware for Env. Monitoring | Reusability, Accessibility, Community | Env. data collection, Capacity building | Low-cost sensors, citizen science |
-| Open Source Energy Modeling | Transparency, Collaboration, Adaptability | Renewable integration, Efficiency, Policy support | Optimized grids, informed decisions |
-*Source: Author's analysis based on literature and project documentation.*
+### 4.4 Synthesized Findings Across Case Studies
+**Format:** Narrative paragraph(s) + summary table/figure.
+*   Summarize the common themes and distinct contributions observed across all case studies.
+*   Highlight the most impactful OSS mechanisms and pathways consistently demonstrated.
+*   Identify recurring challenges in impact measurement and governance.
 
-### 4.5 Emerging Trends and Untapped Potential
-**Format:** Discussion on broader implications and areas where OSS is beginning to make inroads or has significant untapped potential for sustainability.
+**Table 2:** Summary of Case Study Findings
+| Case Study | Key OSS Mechanisms | Primary Impact Pathways | Noted Challenges |
+|------------|--------------------|-------------------------|------------------|
+| [CS1 Name] | ...                | ...                     | ...              |
+| [CS2 Name] | ...                | ...                     | ...              |
+| [CS3 Name] | ...                | ...                     | ...              |
 
 ---
 
 ## 5. Discussion
 **Section Number:** 5
-**Length:** 1350-1650 words (~1500 words)
+**Length:** 1500-2000 words
 
-### 5.1 Interpretation of Findings: Reinforcing the Theoretical Framework
-**Format:** Narrative, linking the case study observations back to the conceptual framework and the hypothesized mechanisms of impact.
-**Content:** Discuss how the illustrative cases confirm or extend the theoretical propositions.
+### 5.1 Interpretation of Findings in Light of the Framework
+**Format:** Narrative with citations.
+*   Discuss how the case study findings validate, refine, or challenge the proposed theoretical framework.
+*   Elaborate on the nuances of how OSS mechanisms translate into impact across different contexts.
+*   Address the "world-saving" potential of OSS, grounding it in the empirical observations.
 
-### 5.2 Comparison with Prior Work and Traditional Approaches
-**Format:** Comparative discussion, contrasting the effectiveness and scalability of OSS-driven solutions with traditional, proprietary, or closed approaches in addressing sustainability challenges.
-**Content:** Highlight where OSS offers distinct advantages.
+### 5.2 Comparison with Prior Work
+**Format:** Comparative discussion.
+*   Relate the findings back to the literature review, highlighting how this paper extends existing knowledge.
+*   Specifically address how the proposed framework and empirical insights fill the identified gaps concerning impact quantification and governance.
 
 ### 5.3 Theoretical Implications
-**Format:** Paragraphs, discussing how this research contributes to theories of innovation, collaboration, and sustainable development.
-**Content:** Suggest new avenues for theoretical exploration in the intersection of technology and sustainability.
+**Format:** Paragraph(s).
+*   Discuss the broader theoretical contributions of the framework to fields like innovation studies, sustainability science, and socio-technical systems.
+*   Suggest how the framework can inform future theoretical developments in understanding open collaboration.
 
-### 5.4 Practical Implications and Policy Recommendations
-**Format:** Bullet points or paragraphs, outlining actionable insights for policymakers, developers, NGOs, and industries.
-- Encourage funding and support for open-source initiatives in environmental research and development.
-- Promote open data and open science policies to maximize the impact of OSS tools.
-- Foster educational programs to build capacity for OSS development and deployment in sustainability contexts.
-- Advocate for integration of OSS solutions into national and international sustainability strategies.
+### 5.4 Practical Implications
+**Format:** Bullet points or paragraphs.
+*   **For Developers/Communities:** How to design projects for greater impact, integrate sustainability principles.
+*   **For Policymakers:** Recommendations for fostering OSS ecosystems, funding mechanisms, policy incentives.
+*   **For Funders/NGOs:** Guidance on evaluating and supporting OSS projects with clear impact goals.
 
-### 5.5 Limitations and Future Research Directions
-**Format:** Honest assessment of the study's limitations (e.g., reliance on illustrative cases, theoretical focus, generalizability).
-**Content:** Suggest specific areas for future empirical research, including quantitative impact assessment, broader case studies, and exploration of challenges in OSS adoption for sustainability.
+### 5.5 Limitations and Future Work
+**Format:** Honest assessment.
+*   Acknowledge limitations of the study (e.g., qualitative nature of case studies, specific selection criteria, generalizability).
+*   Suggest concrete directions for future research (e.g., quantitative impact metrics, longitudinal studies, comparative analyses of governance models, exploring specific technological applications).
 
 ---
 
 ## 6. Conclusion
 **Section Number:** 6
-**Length:** 650-850 words (~750 words)
+**Length:** 500-700 words
 
-[No subsections - continuous narrative]
+**Format:** No subsections - continuous narrative.
 
 **Required elements:**
-- Restate problem and approach: Briefly reiterate the critical need for novel solutions to global challenges and how this paper proposed OSS as a key paradigm.
-- Summarize key findings: Briefly summarize the core theoretical framework and the insights from the illustrative case studies.
-- Emphasize contributions: Reiterate the paper's main contributions to understanding OSS's role in sustainability.
-- Reaffirm thesis: Conclude by reinforcing the thesis statement that OSS is a transformative force for a more sustainable and equitable world.
-- Suggest future directions: Briefly outline the most promising avenues for continued research and action.
+-   **Restate problem and approach:** Briefly reiterate the global challenges, the gap in understanding OSS's role, and the paper's approach (theoretical framework + case studies).
+-   **Summarize key findings:** Synthesize the most important insights from the framework's application and case studies regarding OSS's impact pathways and the challenges in measurement/governance.
+-   **Emphasize contributions:** Reiterate the paper's primary contributions (framework, empirical insights, actionable directions).
+-   **Suggest future directions:** Briefly reiterate the most promising avenues for future research and practical implementation, reinforcing the "world-saving" potential of OSS when systematically leveraged.
 
 ---
 
 ## Acknowledgments
-[If applicable - funding bodies, specific contributors, research grants. Format: Single paragraph.]
+[If applicable - funding bodies, specific contributors, institutions, or individuals who provided support but not authorship. Format as a single paragraph.]
 
 ---
 
 ## References
 **Format:** APA 7th Edition
-**Minimum:** 40-50 references for a theoretical paper of this length.
+**Minimum:** 30-50 references for a theoretical paper with case studies.
+
 **Categories:**
-- Foundational works on OSS, sustainability, and related theories (pre-2019): [~20-30%]
-- Recent works (2020-2024) on OSS applications, environmental tech, and social impact: [~60-70%]
-- Including own prior work: [Optional, max 10%]
+-   Foundational works (pre-2019): [~20-30%]
+-   Recent works (2020-2024): [~70-80%]
+-   Including own prior work: [Optional, max 10%]
 
 ---
 
 ## Appendices
-[If applicable - for supplementary materials that are too detailed for the main text.]
-- Appendix A: Detailed Descriptions of OSS Principles
-- Appendix B: Extended Data for Case Studies
+[If applicable - e.g., detailed case study data, interview protocols, supplementary figures or tables.]
+-   Appendix A: [Supplementary materials]
 
 ---
 
 ## Journal-Specific Requirements
 
-### Technology and Social Impact Journal (Generic)
+### Technology/Social Impact Journal
 
 **Mandatory sections:**
-- [X] Data Availability Statement (even for theoretical papers, state if data sources are publicly available)
-- [X] Conflict of Interest Statement
-- [X] Author Contributions (if multiple authors)
-- [X] Funding Statement
+-   [ ] Data Availability Statement (e.g., "Data used in case studies are publicly available via project repositories and documented on [URL].")
+-   [ ] Conflict of Interest Statement (e.g., "The authors declare no conflict of interest.")
+-   [ ] Author Contributions (if multiple authors) (e.g., "Conceptualization, A.B. and C.D.; Methodology, A.B.; Case Study Analysis, C.D.; Writing—Original Draft Preparation, A.B.; Writing—Review & Editing, C.D. All authors have read and agreed to the published version of the manuscript.")
+-   [ ] Funding Statement (e.g., "This research received no external funding." or "This research was funded by [Funder Name], grant number [Grant ID].")
 
 **Formatting specifics:**
-- Figures: PNG/TIFF, min 300dpi, placed within text or at end.
-- Tables: Editable format (e.g., Word tables), not images.
-- Equations: Numbered, right-aligned, using equation editor (e.g., MathType or LaTeX).
+-   Figures: PNG/TIFF, min 300dpi, embedded within text or provided separately.
+-   Tables: Editable format (e.g., Word table, not images), numbered consecutively.
+-   Equations: Numbered, right-aligned (if applicable, though less common in this paper type).
 
 **Submission checklist:**
-- [ ] Cover letter (addressing editor, highlighting significance)
-- [ ] Highlights (3-5 bullet points summarizing key findings/contributions)
-- [ ] Graphical abstract (if required, a single compelling image with caption)
-- [ ] Supplementary materials (if applicable, clearly organized)
+-   [ ] Cover letter (addressed to Editor-in-Chief, stating originality and significance)
+-   [ ] Highlights (3-5 bullet points summarizing key findings/contributions for quick overview)
+-   [ ] Graphical abstract (if required, a single image visually summarizing the paper's main message)
+-   [ ] Supplementary materials (if any, clearly labeled)
 
 ---
 
-## Length Targets by Section (for ~9,000 words)
+## Length Targets by Section (for ~9,000 words total)
 
 | Section | Words | % of Total |
-|--------------------------------------------|-------|------------|
-| Abstract | 275 | 3% |
-| 1. Introduction | 1000 | 11% |
-| 2. Literature Review and Theoretical Foundations | 2000 | 22% |
-| 3. Conceptual Framework of OSS for Sustainability | 1500 | 17% |
-| 4. Illustrative Case Studies and Analysis | 2000 | 22% |
-| 5. Discussion | 1500 | 17% |
-| 6. Conclusion | 725 | 8% |
-| **Total (Approx.)** | **9000** | **100%** |
+|-------------------------|-------|------------|
+| Abstract                | 250   | 2.8%       |
+| 1. Introduction         | 1000  | 11.1%      |
+| 2. Related Work         | 2000  | 22.2%      |
+| 3. Theoretical Framework| 1200  | 13.3%      |
+| 4. Case Study Findings  | 1800  | 20.0%      |
+| 5. Discussion           | 1800  | 20.0%      |
+| 6. Conclusion           | 600   | 6.7%       |
+| Acknowledgments/Refs    | 350   | 3.9%       |
+| **Total (approx.)**     | **9000** | **100%** |
 
 ---
 
 ## Quality Checklist
 
 ### Structure
-- [X] All required sections present
-- [X] Logical flow between sections, following the core argument
-- [X] Appropriate section lengths, providing adequate depth for a theoretical paper
+-   [x] All required sections present
+-   [x] Logical flow between sections (aligned with core argument)
+-   [x] Appropriate section lengths (within target ranges)
 
 ### Formatting
-- [X] Consistent heading styles (as per template)
-- [X] Proper citation format (APA 7th)
-- [X] Figures/tables numbered correctly
-- [X] Captions complete and descriptive
+-   [x] Consistent heading styles (APA 7th for sub-levels, numbered main sections)
+-   [x] Proper APA 7th citation format specified
+-   [x] Figures/tables numbered correctly (with placeholders for content)
+-   [x] Captions complete and descriptive (with format specified)
 
 ### Content
-- [X] Abstract summarizes whole paper, including theoretical approach and findings
-- [X] Introduction states clear RQ and thesis
-- [X] Literature Review provides comprehensive background and identifies gaps
-- [X] Conceptual Framework clearly defines theoretical model and mechanisms
-- [X] Case Studies apply framework and provide illustrative evidence
-- [X] Discussion interprets findings, compares with prior work, and outlines implications
-- [X] Conclusion emphasizes theoretical contribution and future work
+-   [x] Abstract summarizes whole paper effectively
+-   [x] Introduction states clear RQ and thesis
+-   [x] Theoretical Framework enables replication/understanding of the analytical approach
+-   [x] Case Study Findings presented objectively (as placeholders)
+-   [x] Discussion interprets findings against framework and prior work
+-   [x] Conclusion emphasizes contribution and future work
 
 ---
 
 ## Style Guide
 
 ### Academic Tone
-- ✅ **Use:** "The results indicate...", "We observed...", "This suggests..."
-- ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
+-   ✅ **Use:** "The results indicate...", "We observed...", "This suggests..."
+-   ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
 
 ### Tense Usage
-- **Introduction:** Present tense (current state, problem)
-- **Literature Review:** Past tense (what others found, what was done)
-- **Conceptual Framework:** Present tense (describing the framework, principles)
-- **Case Studies/Analysis:** Past tense (what was observed, what happened in the cases)
-- **Discussion:** Present tense (what the findings mean, implications)
-- **Conclusion:** Present tense (summarizing, stating significance)
+-   **Introduction:** Present tense (current state, research problem)
+-   **Literature Review:** Past tense (what others found)
+-   **Theoretical Framework:** Present tense (describing the framework), Past tense (what you did to develop/apply it)
+-   **Case Study Findings:** Past tense (what you found/observed in the case studies)
+-   **Discussion:** Present tense (what it means, implications)
+-   **Conclusion:** Present tense (summary, final thoughts, future implications)
 
 ### Voice
-- **Active vs Passive:** Prefer active for clarity, passive for objectivity. Use "We" for author actions.
-- ✅ "We analyzed the data" (active, clear)
-- ✅ "The data were analyzed" (passive, objective)
+-   **Active vs Passive:** Prefer active for clarity, passive for objectivity
+-   ✅ "We analyzed the data" (active, clear)
+-   ✅ "The data were analyzed" (passive, objective)
 
 ---
 
 ## Next Steps
 
 After formatting:
-1. Review against target journal guidelines for any specific deviations from APA 7th or general academic conventions.
-2. Ensure all placeholders (e.g., [Placeholder for conceptual diagram]) are clearly noted for Crafter agents.
-3. Proceed to Compose phase with this clear, formatted structure.
-4. Save this output to `outline_formatted.md`.
+1.  Review against journal guidelines (generic for "Technology/Social Impact Journal")
+2.  Ensure all placeholders are noted (e.g., `[Placeholder for conceptual diagram]`, `[VERIFY]`)
+3.  Proceed to Compose phase with clear structure and citation instructions
+4.  Save to `outline_formatted.md`
 
 ---
 
@@ -378,10 +399,10 @@ After formatting:
 **CRITICAL:** When structuring the paper, ensure all claims are traceable to sources.
 
 **Your responsibilities:**
-1. **Verify citations exist** before including them in outlines
-2. **Never suggest fabricated examples** or statistics
-3. **Mark placeholders** clearly with [VERIFY] or [TODO]
-4. **Ensure structure supports** verifiable, evidence-based arguments
-5. **Flag sections** that will need strong citation support (e.g., Literature Review, Case Studies)
+1.  **Verify citations exist** before including them in outlines (Crafters will handle this during content generation, but the structure must anticipate it).
+2.  **Never suggest fabricated examples** or statistics.
+3.  **Mark placeholders** clearly with `[VERIFY]` or `[TODO]` (especially for specific data points or detailed examples in case studies).
+4.  **Ensure structure supports** verifiable, evidence-based arguments.
+5.  **Flag sections** that will need strong citation support (e.g., literature review, theoretical underpinnings, comparative discussion).
 
 **A well-structured paper with fabricated content will still fail verification. Build for accuracy.**

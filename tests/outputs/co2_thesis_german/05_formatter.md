@@ -1,8 +1,8 @@
-# Formatiertes Paper-Outline
+# Formatierte Gliederung der Arbeit
 
-**Format Angewendet:** IMRaD
-**Arbeitstyp:** Masterarbeit
-**Wortlimit:** 8.000-10.000 Wörter (Ziel: 8.000 Wörter für die Aufteilung)
+**Format Angewendet:** IMRaD (angepasst für Masterarbeit)
+**Zielpublikation:** Masterarbeit (im Kontext eines Umweltwissenschaften/Klimapolitik-Journals)
+**Wortbegrenzung:** 8,000-10,000 Wörter
 **Zitierstil:** APA 7th Edition
 
 ---
@@ -11,19 +11,19 @@
 
 ### Manuskriptspezifikationen
 -   **Schriftart:** Times New Roman 12pt
--   **Zeilenabstand:** 1.5-fach (häufig für Masterarbeiten, doppelt für Einreichungen)
--   **Seitenränder:** 2,54 cm (1 Zoll) an allen Seiten
--   **Seitenzahlen:** Rechts oben
+-   **Zeilenabstand:** 1.5-fach (Standard für viele Masterarbeiten, doppelt für Journal-Einreichungen)
+-   **Seitenränder:** 2.54 cm (1 Zoll) ringsum
+-   **Seitenzahlen:** Unten rechts
 -   **Überschriften:** Nummeriert
 
 ### Überschriftenebenen
--   **Ebene 1:** Fett, zentriert, Titel-Case
--   **Ebene 2:** Fett, linksbündig, Titel-Case
--   **Ebene 3:** Fett, eingerückt, Sentence case
+-   **Ebene 1:** Fett, Zentriert, Titel-Großschreibung (z.B. **1. EINLEITUNG**)
+-   **Ebene 2:** Fett, Linksbündig, Titel-Großschreibung (z.B. **1.1 Hintergrund und Motivation**)
+-   **Ebene 3:** Fett, Eingezogen, Satz-Großschreibung (z.B. **1.1.1 Historische Entwicklung**)
 
 ### Zitierformat
--   **Im Text:** (Autor, Jahr)
--   **Literaturverzeichnis:** Vollständige Formatdefinitionen gemäß APA 7th Edition
+-   **Im Text:** (Autor, Jahr) oder (Autor & Co-Autor, Jahr) oder (Autor et al., Jahr)
+-   **Literaturverzeichnis:** Vollständige Formatierung gemäß APA 7th Edition
 
 ### ⚠️ ZITIERANFORDERUNGEN - KRITISCH
 
@@ -47,294 +47,288 @@
 
 **Für Tabellenfußnoten und Datenquellen:**
 ```
-✅ KORREKT: *Quelle: Angepasst von Autor (Jahr) und Organisation (Jahr).*
+✅ KORREKT: *Quelle: Adaptiert von Autor (Jahr) und Organisation (Jahr).*
 ❌ FALSCH: *Quelle: Autor (Jahr) [VERIFY].*
 ```
 
 **Verwendung des [VERIFY]-Platzhalters:**
 -   Crafter sollen [VERIFY] NUR verwenden, wenn das Quelljahr/die Details wirklich unbekannt sind
--   Bevorzugen Sie die Verwendung von Forschungskontextquellen ohne [VERIFY]
+-   Bevorzugen Sie die Verwendung von Quellen aus dem Forschungskontext ohne [VERIFY]
 -   Agent #14 (Citation Verifier) wird alle [VERIFY]-Tags vervollständigen
 
 **Sprachspezifische Anpassungen:**
--   Deutsche Abschlussarbeiten: Deutsche Interpunktion verwenden, aber APA-Struktur beibehalten
--   Spanisch/Französisch: Interpunktion anpassen, dabei das APA-Format beibehalten
+-   Deutsche Masterarbeiten: Deutsche Interpunktion verwenden, aber APA-Struktur beibehalten
+-   Spanisch/Französisch: Interpunktion anpassen, aber APA-Format beibehalten
 -   Sprachanforderungen immer an Crafter-Agenten kommunizieren
 
 **Kommunikation an Crafter-Agenten:**
-"Alle Zitate müssen dem APA 7th-Format folgen. Verwenden Sie (Autor, Jahr) im Text. Fügen Sie [VERIFY] nur hinzu, wenn Sie das Jahr aus dem Forschungskontext nicht ermitteln können."
+"Alle Zitate müssen dem APA 7th Format folgen. Verwenden Sie (Autor, Jahr) im Text. Fügen Sie [VERIFY] nur hinzu, wenn Sie das Jahr aus dem Forschungskontext nicht ermitteln können."
 
 ---
 
 ## Formatierte Struktur
 
 ### Titel
-**Format:** Fett, zentriert, 14pt
-**Maximale Länge:** ca. 100 Zeichen
-**Vorgeschlagen:** Die Wirksamkeit des EU-Emissionshandelssystems nach 2015: Eine empirische Analyse der Marktstabilitätsreserve und ihrer Rolle bei der Verlangsamung des Klimawandels
+**Format:** Fett, Zentriert, 14pt
+**Maximale Länge:** 100 Zeichen (für Journal, Masterarbeit kann länger sein)
+**Vorgeschlagen:** Die Wirksamkeit des CO2-Zertifikatehandels bei der Verlangsamung des Klimawandels: Eine integrierte Analyse von Reformen, Einnahmenrückführung und öffentlicher Akzeptanz
 
 ### Autoreninformationen
 **Format:**
--   Name(n): [Dein Name]
--   Affiliation(en): [Deine Universität/Fakultät]
--   E-Mail(s): [Deine E-Mail-Adresse]
--   ORCID: [Optional]
+-   Name(n): [Ihr Name]
+-   Affiliation(en): [Studiengang, Institut, Universität]
+-   E-Mail(s): [Ihre E-Mail-Adresse]
+-   ORCID: [Optional, falls vorhanden]
 
 ### Abstract
-**Überschrift:** Fett, zentriert
-**Länge:** 250-300 Wörter
+**Überschrift:** Fett, Zentriert
+**Länge:** 250-300 Wörter (vom Nutzer vorgegeben)
 **Struktur:**
--   **Hintergrund:** Der menschengemachte Klimawandel erfordert effektive politische Instrumente, wobei der CO2-Zertifikatehandel als zentrales Instrument zur Emissionsreduktion konzipiert ist. (2 Sätze)
--   **Ziel:** Diese Masterarbeit untersucht die nachweisliche Wirksamkeit des EU-Emissionshandelssystems (EU-ETS) nach 2015, insbesondere hinsichtlich der Rolle der Marktstabilitätsreserve (MSR) bei der signifikanten Verlangsamung des Klimawandels. (1 Satz)
--   **Methoden:** Mittels einer empirischen Analyse werden die Emissionsreduktionen und die Marktstabilität im EU-ETS nach 2015 untersucht. Es werden [spezifische Methoden wie ökonometrische Modelle, Fallstudienanalyse, Datenquellen etc.] angewendet, um die Attribution der Emissionsminderungen zu bewerten. (2-3 Sätze)
--   **Ergebnisse:** Die Ergebnisse zeigen [potenziell] einen Beitrag des EU-ETS zu Emissionsreduktionen auf, dessen Umfang und Kausalität jedoch differenziert betrachtet werden müssen. Die Analyse deutet darauf hin, dass die MSR [spezifische Auswirkung auf Marktstabilität/Preise] hatte. (2-3 Sätze)
--   **Schlussfolgerungen:** Der CO2-Zertifikatehandel kann unter bestimmten Bedingungen zur Klimaschutzpolitik beitragen, doch seine Gesamtwirkung auf die Verlangsamung des Klimawandels ist komplex und von zahlreichen Faktoren abhängig. Die Arbeit identifiziert Bereiche für zukünftige Forschung und politische Gestaltung. (1-2 Sätze)
+-   **Hintergrund:** Der Klimawandel stellt eine existenzielle Bedrohung dar, die innovative und effektive politische Lösungen erfordert. Der CO2-Zertifikatehandel (ETS) wird als ein zentrales, marktbasiertes Instrument zur Emissionsreduktion diskutiert.
+-   **Problem/Forschungslücke:** Die tatsächliche Wirksamkeit von ETS bei der signifikanten Verlangsamung des Klimawandels ist jedoch komplex und hängt von verschiedenen Faktoren ab, die in der aktuellen Forschung oft isoliert betrachtet werden. Es besteht eine Forschungslücke in der integrierten Analyse, wie spezifische ETS-Reformen, Strategien zur Einnahmenrückführung und die öffentliche Akzeptanz die Effektivität von ETS beeinflussen.
+-   **Methoden:** Diese Masterarbeit untersucht mittels einer komparativen Fallstudienanalyse, wie diese Faktoren in ausgewählten ETS-Systemen interagieren und die Emissionsreduktion sowie die öffentliche Akzeptanz beeinflussen. Hierzu werden qualitative und quantitative Daten aus Politikdokumenten, Berichten und Umfragen herangezogen.
+-   **Ergebnisse:** Die empirischen Ergebnisse zeigen, dass die Wirksamkeit von ETS maßgeblich von einer stringenten Ausgestaltung der Cap-Anpassung, einer transparenten und zweckgebundenen Einnahmenrückführung sowie einer aktiven Kommunikation zur Förderung der öffentlichen Akzeptanz abhängt.
+-   **Schlussfolgerungen:** Diese Erkenntnisse implizieren, dass ETS unter bestimmten Bedingungen signifikant zur Verlangsamung des Klimawandels beitragen können, jedoch politische Gestaltung und soziale Faktoren entscheidend sind. Die Arbeit liefert fundierte Empfehlungen für eine effektivere Klimapolitik, die über die reine Preisbildung hinausgeht.
 
-**Keywords:** 3-6 Keywords (z.B. EU-ETS, CO2-Zertifikatehandel, Klimawandel, Emissionsreduktion, Marktstabilitätsreserve, empirische Analyse)
+**Schlüsselwörter:** 3-6 Schlüsselwörter (z.B. CO2-Zertifikatehandel, Klimawandel, Emissionsreduktion, Einnahmenrückführung, Öffentliche Akzeptanz, Klimapolitik)
 
 ---
 
 ## 1. Einleitung
 **Abschnittsnummer:** 1
-**Länge:** 800-1200 Wörter
+**Länge:** 1000-1200 Wörter
 **Unterabschnitte:**
 
 ### 1.1 Hintergrund und Motivation
-[Format: Einführung in die globale Herausforderung des Klimawandels. Vorstellung des CO2-Zertifikatehandels als zentrales politisches Instrument. Bezug zur Relevanz der Arbeit.]
+[Format: Einführung in die Dringlichkeit des Klimawandels und die Notwendigkeit effektiver politischer Instrumente zur Emissionsreduktion. Kontextualisierung des CO2-Zertifikatehandels als ein solches Instrument.]
 
-### 1.2 Problemstellung
-[Format: Präsentation der Forschungsfrage: Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels? Erläuterung der Komplexität der Kausalitätszuschreibung.]
+### 1.2 Problemstellung und Forschungslücke
+[Format: Ausformulierung des Problems, dass trotz der Diskussion um ETS deren nachweisliche Wirksamkeit bei der signifikanten Verlangsamung des Klimawandels und die komplexen Wechselwirkungen politischer Ausgestaltung (insbesondere Einnahmenrückführung) und öffentlicher Akzeptanz unzureichend integriert analysiert werden.]
 
-### 1.3 Forschungsziele
-**Listenformat:**
-1.  Empirische Analyse der Emissionsreduktionen im EU-ETS nach 2015.
-2.  Bewertung der Rolle der Marktstabilitätsreserve (MSR) für die Wirksamkeit des EU-ETS.
-3.  Beurteilung des Beitrags des EU-ETS zur Verlangsamung des menschengemachten Klimawandels.
+### 1.3 Forschungsfrage und Ziele
+**Forschungsfrage:** Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels?
+**Ziele (Liste):**
+1.  Die politischen Ausgestaltungsmerkmale von CO2-Zertifikatehandelssystemen (ETS), insbesondere im Hinblick auf Reformen und Einnahmenrückführung, zu identifizieren und zu analysieren.
+2.  Den Einfluss der öffentlichen Akzeptanz auf die Effektivität und Implementierung von ETS zu untersuchen.
+3.  Eine integrierte Analyse der Wechselwirkungen zwischen politischer Ausgestaltung, Einnahmenrückführung und öffentlicher Akzeptanz auf die Emissionsreduktion und die Verlangsamung des Klimawandels durch ETS durchzuführen.
+4.  Empfehlungen für eine effektivere Gestaltung von ETS abzuleiten.
 
-### 1.4 Beiträge der Arbeit
+### 1.4 Wissenschaftlicher und Praktischer Beitrag
 **Aufzählungsformat:**
--   Detaillierte empirische Untersuchung des EU-ETS in der Post-2015-Periode.
--   Spezifische Analyse der Auswirkungen der MSR auf Emissionsminderungen und Marktstabilität.
--   Kritische Bewertung der Attribution von Emissionsreduktionen zum EU-ETS.
--   Ableitung von Implikationen für die Klimapolitik und zukünftige Forschung.
+-   **Wissenschaftlicher Beitrag:** Schließung der Forschungslücke durch eine integrierte Analyse der genannten Faktoren, die über einzelne Aspekte hinausgeht.
+-   **Praktischer Beitrag:** Bereitstellung fundierter Empfehlungen für Politikgestalter zur Verbesserung der Wirksamkeit und Akzeptanz von ETS.
 
 ### 1.5 Aufbau der Arbeit
-[Standardabsatz: Kurze Beschreibung des Aufbaus der folgenden Kapitel.]
+[Standardabsatz, der die Struktur der folgenden Kapitel kurz beschreibt.]
 
 ---
 
 ## 2. Literaturübersicht
 **Abschnittsnummer:** 2
-**Länge:** 1500-2500 Wörter
-**Organisation:** Thematische Unterabschnitte, die von breiteren Themen (Klimapolitikinstrumente) zu spezifischeren (EU-ETS, MSR) überleiten.
+**Länge:** 2500-3000 Wörter
+**Organisation:** Thematische Unterabschnitte mit kritischer Würdigung und Identifikation von Forschungslücken.
 
-### 2.1 Theoretische Grundlagen des Emissionshandels
-[Format: Darstellung der ökonomischen Theorie des Cap-and-Trade-Systems, Effizienz und Herausforderungen. Inklusive relevanter historischer Entwicklungen.]
+### 2.1 Theoretische Grundlagen des CO2-Zertifikatehandels
+[Format: narrative Darstellung der ökonomischen Theorie hinter ETS (Pigou-Steuer, Coase-Theorem, Cap-and-Trade), Effizienzdiskussion.]
 
-### 2.2 Bestehende Forschung zur Wirksamkeit von CO2-Handelssystemen
-[Format: Zusammenfassung wichtiger Studien zu verschiedenen ETS weltweit. Fokus auf gemischte Ergebnisse und die Herausforderungen der Attributionsanalyse. Narrative + Vergleichstabelle.]
+### 2.2 Empirische Evidenz zur Emissionsreduktion durch ETS
+[Format: Überblick über Studien, die die Effekte von ETS auf Emissionsreduktion analysieren, Fokus auf Erfolgsfaktoren und Limitationen. Diskussion relevanter Fallstudien.]
 
-**Tabelle 1:** Zusammenfassung relevanter Studien zum Emissionshandel
-| Studie | Methode | Wichtigste Erkenntnisse | Limitationen |
-|--------|---------|-------------------------|--------------|
-| [1]    | ...     | ...                     | ...          |
-| [2]    | ...     | ...                     | ...          |
-| [3]    | ...     | ...                     | ...          |
+**Tabelle 1:** Übersicht relevanter Studien zum Emissionshandel
+| Studie | ETS-System | Methodik | Zentrale Ergebnisse | Limitationen |
+|---|---|---|---|---|
+| [1] | EU-ETS | Ökonometrisch | Signifikante Emissionsreduktion | Berücksichtigung des Carbon Leakage unzureichend |
+| [2] | Kalifornien | Komparativ | Positive Effekte auf Innovation | Datenverfügbarkeit |
+| [3] | ... | ... | ... | ... |
+*Anmerkung: Tabelle dient als Beispiel und sollte mit tatsächlichen Quellen gefüllt werden.*
 
-### 2.3 Spezifische Analysen zum EU-ETS vor 2015
-[Format: Fokus auf Studien zu den frühen Phasen des EU-ETS, identifizierte Stärken und Schwächen vor den großen Reformen.]
+### 2.3 Die Rolle von Reformen und Einnahmenrückführung in ETS
+[Format: Analyse der Literatur zu Reformen (z.B. Marktstabilitätsreserve, Cap-Anpassung) und verschiedenen Strategien der Einnahmenrückführung (z.B. Steuerreduktion, Investitionen in grüne Technologien, Dividenden) und deren Auswirkungen auf Effektivität und Verteilungsgerechtigkeit.]
 
-### 2.4 Einführung und Auswirkungen der Marktstabilitätsreserve (MSR)
-[Format: Darstellung der politischen Hintergründe und Ziele der MSR. Erste Einschätzungen und Modellierungen ihrer potenziellen Auswirkungen.]
+### 2.4 Öffentliche Akzeptanz von Klimapolitikinstrumenten, insbesondere ETS
+[Format: Untersuchung der Faktoren, die die öffentliche Akzeptanz von Umwelt- und Klimapolitik beeinflussen, mit besonderem Fokus auf ETS. Rolle von Fairness, Transparenz, Kommunikationsstrategien.]
 
-### 2.5 Forschungslücke und Positionierung der Arbeit
-[Format: Syntheseabsatz, der die Forschungslücke identifiziert: Mangel an umfassenden empirischen Analysen zur Wirksamkeit des EU-ETS *nach* 2015, insbesondere unter Berücksichtigung der MSR und des "Fit for 55"-Pakets. Verdeutlichung des Beitrags dieser Arbeit zur Schließung dieser Lücke.]
+### 2.5 Zusammenfassung und Forschungslücke
+[Format: Synthese der Literatur, Herausarbeitung der identifizierten Forschungslücke, dass eine integrierte Analyse der Wechselwirkungen zwischen politischer Ausgestaltung (Reformen, Einnahmenrückführung) und öffentlicher Akzeptanz auf die tatsächliche Wirksamkeit von ETS bei der Klimawandelverlangsamung fehlt.]
 
 ---
 
 ## 3. Methodologie
 **Abschnittsnummer:** 3
-**Länge:** 1000-1500 Wörter
+**Länge:** 1000-1200 Wörter
 
 ### 3.1 Forschungsdesign
-[Format: Beschreibung des empirischen Forschungsdesigns (z.B. quasi-experimentell, Fallstudie, Zeitreihenanalyse). Begründung der Wahl des Designs im Kontext der Forschungsfrage und der Thesis Statement. Paragraph + Diagramm.]
+[Format: Beschreibung des komparativen Fallstudien-Designs (z.B. Vergleich von zwei oder drei ETS-Systemen, die sich in Ausgestaltung und/oder Akzeptanz unterscheiden). Begründung der Fallauswahl. Diskussion des qualitativen und/oder quantitativen Ansatzes.]
 
-**Abbildung 1:** Forschungsrahmen und Analyseprozess
-[Platzhalter für konzeptionelles Diagramm, z.B. Input-Output-Modell, Kausalzusammenhang.]
+**Abbildung 1:** Forschungsrahmen
+[Platzhalter für ein konzeptuelles Diagramm, das die untersuchten Variablen (politische Ausgestaltung, Einnahmenrückführung, öffentliche Akzeptanz) und deren erwartete Wechselwirkungen mit der Emissionsreduktion und der Verlangsamung des Klimawandels darstellt.]
 
-### 3.2 Datenerhebung und -quellen
-[Format: Detaillierte Beschreibung der verwendeten Daten (Emissionsdaten, Auktionsdaten, Zertifikatspreise, ökonomische Indikatoren, politische Ereignisse). Angabe der Quellen (z.B. EUTL, Eurostat, ECX, World Bank). Narrative + Spezifikationstabelle.]
+### 3.2 Datenerhebung
+[Format: Detaillierte Beschreibung der verwendeten Datenquellen und Erhebungsmethoden.]
 
 **Tabelle 2:** Datensatzspezifikationen
 | Attribut | Beschreibung |
-|----------|--------------|
-| Quelle   | ...          |
-| Zeitraum | ...          |
-| Umfang   | ...          |
-| Granularität | ...      |
+|---|---|
+| Datenquellen | Politikdokumente, Gesetzestexte, Berichte von Umweltagenturen, wissenschaftliche Studien, Umfragedaten zur Akzeptanz, Medienanalysen |
+| Datentyp | Primär- und Sekundärdaten (qualitativ und quantitativ) |
+| Erhebungszeitraum | [z.B. 2005-2023] |
+| Fallstudien | [z.B. EU-ETS, California Cap-and-Trade Program] |
 
 ### 3.3 Analyseverfahren
-[Format: Beschreibung der angewandten statistischen oder ökonometrischen Methoden (z.B. Regressionsanalyse, Difference-in-Differences, Zeitreihenmodelle). Detaillierte Erläuterung der Variablen, Modelle und Hypothesen. Nummerierte Schritte.]
-1.  **Schritt 1: Datenbereinigung und Vorverarbeitung:** [Beschreibung der Schritte zur Aufbereitung der Rohdaten.]
-2.  **Schritt 2: Deskriptive Analyse:** [Beschreibung der initialen statistischen Auswertung zur Charakterisierung der Daten.]
-3.  **Schritt 3: Modellentwicklung und Hypothesentest:** [Detaillierte Erklärung der verwendeten Modelle und der Überprüfung der Forschungsannahmen.]
-4.  **Schritt 4: Sensitivitätsanalyse:** [Beschreibung der Überprüfung der Robustheit der Ergebnisse.]
+[Format: Nummerierte Schritte der Datenanalyse.]
+1.  Schritt 1: **Dokumentenanalyse:** Systematische Auswertung von Politikdokumenten und Berichten zur Identifikation von Reformen und Strategien der Einnahmenrückführung in den ausgewählten ETS-Systemen.
+2.  Schritt 2: **Inhaltsanalyse/Diskursanalyse:** Analyse von Medienberichten und öffentlichen Stellungnahmen zur Erfassung der öffentlichen Akzeptanz und der wahrgenommenen Fairness der ETS-Systeme.
+3.  Schritt 3: **Quantitative Analyse (falls zutreffend):** Statistische Auswertung von Emissionsdaten und sozioökonomischen Indikatoren zur Bewertung der Wirksamkeit und Korrelationen.
+4.  Schritt 4: **Vergleichende Analyse:** Systematischer Vergleich der Fallstudien zur Identifizierung von Mustern, Gemeinsamkeiten und Unterschieden in den Wechselwirkungen der untersuchten Faktoren.
 
 ---
 
 ## 4. Ergebnisse
 **Abschnittsnummer:** 4
-**Länge:** 1500-2000 Wörter
-[Objektive Darstellung der Befunde ohne Interpretation.]
+**Länge:** 2500-3000 Wörter
+[Objektive Darstellung der empirischen Befunde ohne Interpretation.]
 
-### 4.1 Deskriptive Statistiken und Trends
-[Format: Text + Tabelle. Präsentation der grundlegenden statistischen Merkmale der Emissionsdaten, Zertifikatspreise und MSR-Parameter im Untersuchungszeitraum.]
+### 4.1 Beschreibung der Fallstudien
+[Format: Kurze Vorstellung der ausgewählten ETS-Systeme (z.B. EU-ETS, California Cap-and-Trade) und deren Kontext. Darstellung der wichtigsten Ausgestaltungsmerkmale, Reformen und Einnahmenrückführungsstrategien.]
 
-**Tabelle 3:** Deskriptive Statistiken der Hauptvariablen (2015-202X)
-[Spezifikation der angezeigten Statistiken, z.B. Mittelwert, Standardabweichung, Min, Max.]
+**Tabelle 3:** Überblick über die Fallstudien
+| Merkmal | EU-ETS | California Cap-and-Trade |
+|---|---|---|
+| Startjahr | 2005 | 2013 |
+| Sektoren | Energie, Industrie | Energie, Industrie, Transport |
+| Einnahmenrückführung | Vielfältig (Mitgliedstaaten) | Investitionen in Klimaschutzprojekte |
+| Akzeptanzniveau | [Befund] | [Befund] |
 
-### 4.2 Emissionsentwicklung und der Beitrag des EU-ETS
-[Format: Unterabschnitt pro Hauptbefund + Visualisierung. Darstellung der beobachteten Emissionsreduktionen. Analyse, inwieweit diese Reduktionen dem EU-ETS zugeschrieben werden können, unter Berücksichtigung anderer Einflussfaktoren (z.B. Wirtschaftswachstum, Energiepreise).]
+### 4.2 Befunde zur politischen Ausgestaltung und Einnahmenrückführung
+[Format: Darstellung der Ergebnisse der Dokumentenanalyse. Welche Reformen wurden umgesetzt? Wie wurden Einnahmen rückgeführt? Welche Muster zeigen sich?]
 
-**Abbildung 2:** Entwicklung der Emissionen im EU-ETS (2015-202X)
-[Platzhalter für Liniendiagramm oder Balkendiagramm + Bildunterschrift im APA-Format.]
+**Abbildung 2:** Entwicklung des CO2-Preises und Emissionsreduktion im EU-ETS
+[Platzhalter für eine Grafik, die den Zusammenhang zwischen politischer Intervention (z.B. Marktstabilitätsreserve) und Emissionsentwicklung/Preisentwicklung darstellt. Beschriftung im APA-Format.]
 
-### 4.3 Auswirkungen der Marktstabilitätsreserve (MSR)
-[Format: Text + Figuren/Tabellen. Präsentation der Ergebnisse zur Wirkung der MSR auf den Zertifikatemarkt (z.B. Preisvolatilität, Überschuss an Zertifikaten). Empirische Belege für ihre Rolle bei der Stabilisierung oder Steuerung des Marktes.]
+### 4.3 Befunde zur öffentlichen Akzeptanz
+[Format: Darstellung der Ergebnisse der Inhalts-/Diskursanalyse und/oder Umfragedaten. Wie wird ETS wahrgenommen? Welche Faktoren beeinflussen die Akzeptanz?]
 
-**Abbildung 3:** Entwicklung des Zertifikatsüberschusses und MSR-Anpassungen
-[Platzhalter für Visualisierung + Bildunterschrift.]
-
-### 4.4 Zusätzliche Analysen
-[Format: Text + ergänzende Figuren/Tabellen. Darstellung von Sensitivitätsanalysen, Robustheitsprüfungen oder Analysen von Subsektoren.]
+### 4.4 Integrierte Befunde: Wechselwirkungen und Wirksamkeit
+[Format: Darstellung der Hauptbefunde aus der vergleichenden Analyse, die die Wechselwirkungen zwischen Ausgestaltung, Einnahmenrückführung und Akzeptanz auf die Emissionsreduktion und die Verlangsamung des Klimawandels beleuchten. Dies ist der Kern der empirischen Ergebnisse.]
 
 ---
 
 ## 5. Diskussion
 **Abschnittsnummer:** 5
-**Länge:** 1500-2000 Wörter
-[Interpretation der Ergebnisse im Kontext der Forschungsfrage und der Literatur.]
+**Länge:** 1200-1500 Wörter
+[Interpretation der Ergebnisse im Lichte der Forschungsfrage und der Literaturübersicht.]
 
 ### 5.1 Interpretation der Ergebnisse
-[Format: Narrative mit Zitaten. Erläuterung der Bedeutung der gefundenen Emissionsreduktionen und der Rolle der MSR. Diskussion der Kausalität und der Komplexität der Attributionszuschreibung.]
+[Format: Narrative Interpretation der Hauptbefunde. Was bedeuten die Ergebnisse? Wie beantworten sie die Forschungsfrage? Welche neuen Erkenntnisse ergeben sich?]
 
-### 5.2 Vergleich mit früheren Arbeiten
-[Format: Vergleichende Diskussion. Wie stehen die eigenen Ergebnisse im Einklang mit oder im Widerspruch zu den Erkenntnissen aus der Literaturübersicht? Erklärung möglicher Diskrepanzen (z.B. aufgrund des Untersuchungszeitraums, der Methodik).]
+### 5.2 Vergleich mit der bestehenden Literatur
+[Format: Diskussion, wie die eigenen Ergebnisse die bestehende Literatur bestätigen, erweitern oder ihr widersprechen. Bezugnahme auf die in Kapitel 2 identifizierten Theorien und empirischen Studien.]
 
 ### 5.3 Theoretische Implikationen
-[Format: Absatz. Welche neuen Erkenntnisse liefern die Ergebnisse für die Theorie des Emissionshandels, der Klimapolitik oder der Umweltökonomie?]
+[Format: Beitrag der Arbeit zur Theoriebildung im Bereich Umweltökonomie, Klimapolitik oder Governance. Welche neuen Konzepte oder Zusammenhänge werden aufgezeigt?]
 
 ### 5.4 Praktische Implikationen
-[Format: Aufzählungspunkte oder Absätze. Welche Schlussfolgerungen können für politische Entscheidungsträger und die Gestaltung zukünftiger Klimapolitik gezogen werden? Empfehlungen für das EU-ETS und andere Emissionshandelssysteme.]
+[Format: Welche Handlungsempfehlungen ergeben sich aus den Ergebnissen für Politikgestalter, die den CO2-Zertifikatehandel effektiver gestalten wollen? Fokus auf die Gestaltung von Reformen, Einnahmenrückführung und Kommunikationsstrategien zur Akzeptanzförderung.]
 
 ### 5.5 Limitationen und zukünftige Forschungsansätze
-[Format: Ehrliche Bewertung. Offenlegung der Einschränkungen der vorliegenden Studie (z.B. Datenverfügbarkeit, methodische Annahmen, kausale Zuschreibung). Vorschläge für zukünftige Forschungsrichtungen, die auf den hier gewonnenen Erkenntnissen aufbauen können.]
+[Format: Offene und ehrliche Diskussion der Einschränkungen der eigenen Studie (z.B. Auswahl der Fallstudien, Verfügbarkeit von Daten, Methodik). Vorschläge für zukünftige Forschungsrichtungen, die auf den Erkenntnissen dieser Arbeit aufbauen können.]
 
 ---
 
-## 6. Schlussfolgerung
+## 6. Fazit
 **Abschnittsnummer:** 6
-**Länge:** 500-700 Wörter
+**Länge:** 400-600 Wörter
 
-[Keine Unterabschnitte – kontinuierlicher Erzähltext]
+[Keine Unterabschnitte – kontinuierliche Erzählung.]
 
 **Erforderliche Elemente:**
--   Wiederholung der Problemstellung und des Forschungsansatzes.
--   Zusammenfassung der wichtigsten Ergebnisse (Antwort auf die Forschungsfrage).
--   Hervorhebung der zentralen Beiträge der Arbeit.
--   Vorschläge für zukünftige Forschung und politische Handlungsempfehlungen.
+-   **Problem und Ansatz rekapitulieren:** Kurze Wiederholung der Forschungsfrage, der Relevanz des Themas und des gewählten methodischen Ansatzes.
+-   **Zentrale Ergebnisse zusammenfassen:** Prägnante Zusammenfassung der wichtigsten Befunde, die die Forschungsfrage beantworten.
+-   **Beiträge hervorheben:** Betonung des wissenschaftlichen und praktischen Beitrags der Arbeit.
+-   **Zukünftige Forschungsrichtungen vorschlagen:** Ausblick auf weitere Forschungsfragen, die sich aus dieser Arbeit ergeben.
 
 ---
 
-## Danksagungen
-[Falls zutreffend – z.B. Betreuer, Finanzierung, Unterstützer]
+## Danksagung
+[Optional – falls zutreffend: Danksagung an Betreuer, Förderinstitutionen, Personen, die zur Arbeit beigetragen haben.]
 
 ---
 
 ## Literaturverzeichnis
 **Format:** APA 7th Edition
-**Minimum:** 50+ Referenzen für eine Masterarbeit mit empirischer Studie und umfassender Literaturübersicht.
+**Minimum:** 30-50 Referenzen (für Masterarbeit empfohlen)
 
-**Kategorien:**
--   Grundlagenwerke (vor 2019): [~20%]
--   Aktuelle Arbeiten (2020-2024): [~80%]
--   Eigene frühere Arbeiten: [Optional, max. 10%]
+**Kategorien (Beispielhafte Verteilung):**
+-   Grundlagenwerke (vor 2019): [ca. 20-30%]
+-   Aktuelle Werke (2020-2024): [ca. 60-70%]
+-   Eigene Vorarbeiten: [Optional, max. 10%]
 
 ---
 
 ## Anhänge
 [Falls zutreffend]
--   Anhang A: [Zusätzliche Daten oder Rohdaten]
--   Anhang B: [Zusätzliche Abbildungen oder Tabellen]
--   Anhang C: [Code-Auszüge oder Modellgleichungen]
+-   Anhang A: [Zusätzliche Daten, Interviewleitfäden, detaillierte Fallstudienbeschreibungen, etc.]
 
 ---
 
-## Spezifische Anforderungen für die Masterarbeit
+## Masterarbeits- / Journal-spezifische Anforderungen
 
-### [Name der Universität/Fakultät]
-
+### Anforderungen für Masterarbeiten (Universität/Fakultät [Name])
 **Obligatorische Abschnitte:**
--   [ ] Eidesstattliche Erklärung (Declaration of Authorship)
--   [ ] Sperrvermerk (falls zutreffend)
--   [ ] ggf. Danksagung und/oder Widmung
--   [ ] ggf. Abkürzungsverzeichnis
--   [ ] ggf. Abbildungsverzeichnis
--   [ ] ggf. Tabellenverzeichnis
+-   [ ] Eidesstattliche Erklärung (Eigenständigkeitserklärung)
+-   [ ] Ggf. Sperrvermerk
+-   [ ] Erklärung zur Datenverfügbarkeit (falls externe Daten verwendet)
+-   [ ] Ggf. Erklärung zu Interessenkonflikten
 
 **Formatierungsspezifika:**
--   Abbildungen: [PNG/TIFF, min 300dpi, in Graustufen druckbar]
+-   Abbildungen: [PNG/TIFF, min. 300dpi, bei Einreichung an Journal]
 -   Tabellen: [Editierbares Format, keine Bilder]
 -   Gleichungen: [Nummeriert, rechtsbündig]
--   Kopf-/Fußzeilen: [Gemäß Universitätsrichtlinien]
 
-**Einreichungs-Checkliste:**
--   [ ] Deckblatt gemäß Vorlage
--   [ ] Inhaltsverzeichnis
--   [ ] Abstrakt (Deutsch und Englisch, falls gefordert)
--   [ ] Gedruckte Exemplare (Anzahl gemäß Vorgabe)
--   [ ] Digitale Version (CD/USB oder Upload)
--   [ ] Formular zur Abgabe der Masterarbeit
+**Einreichungs-Checkliste (für Masterarbeit):**
+-   [ ] Vollständige Arbeit (gedruckt und digital)
+-   [ ] Eidesstattliche Erklärung unterschrieben
+-   [ ] Alle Anhänge vorhanden
+-   [ ] Formatierung gemäß Richtlinien des Prüfungsamtes
 
 ---
 
-## Längenziele pro Abschnitt
+## Längenziele nach Abschnitt (Angepasst für 8,000-10,000 Wörter)
 
-| Abschnitt | Wörter | % des Gesamtumfangs (Basis 8000 Wörter) |
-|-----------|--------|----------------------------------------|
-| Abstract | 300 | 4% |
-| Einleitung | 1000 | 12.5% |
-| Literaturübersicht | 2000 | 25% |
-| Methodologie | 1200 | 15% |
-| Ergebnisse | 1800 | 22.5% |
-| Diskussion | 1200 | 15% |
-| Schlussfolgerung | 500 | 6% |
-| **Gesamt** | **8000** | **100%** |
-*(Hinweis: Bei einem Gesamtumfang von 10.000 Wörtern können die Längen proportional angepasst werden.)*
+| Abschnitt | Wörter (Ziel) | % der Gesamtlänge (ca.) |
+|-------------------|---------------|-------------------------|
+| Abstract          | 250-300       | 3%                      |
+| 1. Einleitung     | 1000-1200     | 12%                     |
+| 2. Literaturübersicht | 2500-3000     | 30%                     |
+| 3. Methodologie   | 1000-1200     | 12%                     |
+| 4. Ergebnisse     | 2500-3000     | 30%                     |
+| 5. Diskussion     | 1200-1500     | 15%                     |
+| 6. Fazit          | 400-600       | 5%                      |
+| **Gesamt (ohne Referenzen/Anhänge)** | **8850-10800** | **100%** |
+*Hinweis: Die Prozentangaben sind Richtwerte und können je nach inhaltlichem Fokus leicht variieren.*
 
 ---
 
-## Qualitätscheckliste
+## Qualitäts-Checkliste
 
 ### Struktur
 -   [ ] Alle erforderlichen Abschnitte vorhanden
 -   [ ] Logischer Fluss zwischen den Abschnitten
 -   [ ] Angemessene Abschnittslängen
--   [ ] Berücksichtigung der spezifischen Anforderungen einer Masterarbeit
 
 ### Formatierung
 -   [ ] Konsistente Überschriftenstile
 -   [ ] Korrektes Zitierformat (APA 7th)
 -   [ ] Abbildungen/Tabellen korrekt nummeriert
--   [ ] Bildunterschriften vollständig und deskriptiv
+-   [ ] Bildunterschriften und Tabellentitel vollständig und deskriptiv
 
 ### Inhalt
 -   [ ] Abstract fasst die gesamte Arbeit zusammen
--   [ ] Einleitung formuliert klare Forschungsfrage und Thesis Statement
--   [ ] Methoden ermöglichen die Replikation
+-   [ ] Einleitung formuliert klare Forschungsfrage und Ziele
+-   [ ] Methodik ermöglicht Replikation
 -   [ ] Ergebnisse werden objektiv präsentiert
--   [ ] Diskussion interpretiert die Befunde und vergleicht sie mit der Literatur
--   [ ] Schlussfolgerung betont den Beitrag und gibt Ausblick
+-   [ ] Diskussion interpretiert Befunde und ordnet sie ein
+-   [ ] Fazit betont den Beitrag der Arbeit
 
 ---
 
@@ -345,13 +339,14 @@
 -   ❌ **Vermeiden Sie:** "Offensichtlich...", "Es ist klar, dass...", "Es ist interessant, dass..."
 
 ### Zeitform
--   **Einleitung:** Präsens (aktueller Stand, Problemstellung)
--   **Literaturübersicht:** Präteritum (was andere Forscher gefunden haben)
--   **Methodologie:** Präteritum (was du getan hast)
--   **Ergebnisse:** Präteritum (was du gefunden hast)
--   **Diskussion:** Präsens (was die Ergebnisse bedeuten, Schlussfolgerungen)
+-   **Einleitung:** Präsens (aktueller Stand der Forschung, Relevanz)
+-   **Literaturübersicht:** Präteritum (was andere Forscher gefunden haben), Präsens (was die aktuelle Forschung zeigt, generelle Aussagen)
+-   **Methodik:** Präteritum (was Sie getan haben)
+-   **Ergebnisse:** Präteritum (was Sie gefunden haben)
+-   **Diskussion:** Präsens (was die Ergebnisse bedeuten, Implikationen)
+-   **Fazit:** Präsens (Zusammenfassung, Ausblick)
 
-### Genus Verbi (Voice)
+### Voice (Aktiv/Passiv)
 -   **Aktiv vs. Passiv:** Bevorzugen Sie Aktiv für Klarheit, Passiv für Objektivität
 -   ✅ "Wir analysierten die Daten" (aktiv, klar)
 -   ✅ "Die Daten wurden analysiert" (passiv, objektiv)
@@ -361,22 +356,22 @@
 ## Nächste Schritte
 
 Nach der Formatierung:
-1.  Überprüfung anhand der universitätsspezifischen Richtlinien.
-2.  Sicherstellen, dass alle Platzhalter (z.B. [VERIFY]) vermerkt sind.
-3.  Fortfahren mit der Erstellungsphase (Compose Phase) mit klarer Struktur.
-4.  Speichern unter `outline_formatted.md`.
+1.  Überprüfung anhand der spezifischen Richtlinien Ihrer Universität/Fakultät für Masterarbeiten.
+2.  Sicherstellen, dass alle Platzhalter ([VERIFY], [TODO]) notiert sind.
+3.  Übergabe an die Compose-Phase mit klarer Struktur.
+4.  Speichern in `outline_formatted.md`.
 
 ---
 
-## ⚠️ AKADEMISCHE INTEGRITÄT & VERIFIKATION
+## ⚠️ AKADEMISCHE INTEGRITÄT & VERIFIZIERUNG
 
-**KRITISCH:** Beim Strukturieren der Arbeit ist sicherzustellen, dass alle Behauptungen auf nachvollziehbare Quellen zurückgeführt werden können.
+**KRITISCH:** Stellen Sie bei der Strukturierung der Arbeit sicher, dass alle Behauptungen auf nachvollziehbaren Quellen basieren.
 
-**Deine Verantwortlichkeiten:**
-1.  **Verifizieren, dass Zitate existieren**, bevor sie in Outlines aufgenommen werden.
-2.  **Niemals fabrizierte Beispiele** oder Statistiken vorschlagen.
-3.  **Platzhalter klar kennzeichnen** mit [VERIFY] oder [TODO].
-4.  **Sicherstellen, dass die Struktur** überprüfbare, evidenzbasierte Argumente unterstützt.
-5.  **Abschnitte kennzeichnen**, die einer starken Zitierunterstützung bedürfen.
+**Ihre Verantwortlichkeiten:**
+1.  **Überprüfen Sie, ob Zitate existieren**, bevor Sie sie in Gliederungen aufnehmen.
+2.  **Schlagen Sie niemals fabrizierte Beispiele** oder Statistiken vor.
+3.  **Markieren Sie Platzhalter** deutlich mit [VERIFY] oder [TODO].
+4.  **Stellen Sie sicher, dass die Struktur** überprüfbare, evidenzbasierte Argumente unterstützt.
+5.  **Markieren Sie Abschnitte**, die eine starke Zitierunterstützung benötigen.
 
-**Eine gut strukturierte Arbeit mit fabriziertem Inhalt wird die Verifikation trotzdem nicht bestehen. Baue auf Genauigkeit.**
+**Eine gut strukturierte Arbeit mit fabrizierten Inhalten wird die Verifizierung dennoch nicht bestehen. Bauen Sie auf Genauigkeit.**

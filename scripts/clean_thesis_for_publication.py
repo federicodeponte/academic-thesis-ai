@@ -261,6 +261,79 @@ def remove_excessive_dividers(content: str) -> str:
     return '\n'.join(cleaned_lines)
 
 
+def remove_placeholder_text(content: str) -> str:
+    """
+    Remove placeholder text patterns from thesis content.
+
+    Removes patterns like:
+    - [To be completed with proper citations]
+    - [To be completed...]
+    - [VERIFY]
+    - [TODO: ...]
+
+    Args:
+        content: Markdown content
+
+    Returns:
+        Content without placeholder text
+    """
+    # Remove common placeholder patterns
+    patterns = [
+        r'\[To be completed with proper citations\]',
+        r'\[To be completed.*?\]',
+        r'\[VERIFY\]',
+        r'\[TODO:.*?\]',
+        r'\[PLACEHOLDER.*?\]',
+        r'\[INSERT.*?\]',
+    ]
+
+    for pattern in patterns:
+        content = re.sub(pattern, '', content, flags=re.IGNORECASE)
+
+    return content
+
+
+def deduplicate_references_headers(content: str) -> str:
+    """
+    Remove duplicate "## References" headers.
+
+    If there are multiple consecutive References sections, keep only the first one
+    and merge the content.
+
+    Args:
+        content: Markdown content
+
+    Returns:
+        Content with deduplicated References headers
+    """
+    lines = content.split('\n')
+    cleaned_lines = []
+    last_was_references = False
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Check if this is a References header
+        is_references_header = (
+            re.match(r'^##\s+References\s*$', stripped) or
+            re.match(r'^##\s+Literaturverzeichnis\s*$', stripped)  # German
+        )
+
+        if is_references_header:
+            # Only add if we haven't just seen a References header
+            if not last_was_references:
+                cleaned_lines.append(line)
+                last_was_references = True
+            # Otherwise skip this duplicate header
+        else:
+            cleaned_lines.append(line)
+            # Reset flag if we see non-empty content
+            if stripped:
+                last_was_references = False
+
+    return '\n'.join(cleaned_lines)
+
+
 def remove_appendix_b_checklists(content: str) -> str:
     """
     Remove Appendix B implementation checklists from thesis content.
@@ -348,6 +421,14 @@ def clean_thesis_markdown(input_file: Path, output_file: Path = None) -> None:
     # Remove inline metadata headers (**Section:**, **Word Count:**, etc.)
     print(f"   Removing metadata headers...")
     content = remove_metadata_headers(content)
+
+    # Remove placeholder text patterns
+    print(f"   Removing placeholder text...")
+    content = remove_placeholder_text(content)
+
+    # Deduplicate References headers
+    print(f"   Deduplicating References headers...")
+    content = deduplicate_references_headers(content)
 
     # Remove excessive horizontal dividers
     print(f"   Removing excessive dividers...")

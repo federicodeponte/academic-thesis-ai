@@ -8,117 +8,149 @@
 ## Summary
 
 **Strengths:**
-- Clearly articulates the paper's main thesis and findings.
-- Acknowledges challenges faced by the open-source ecosystem.
-- Proposes relevant and forward-looking future research directions.
-- Uses appropriate concluding language to reinforce the paper's message.
+- Addresses a highly relevant and important topic: the role of OSS in global challenges and sustainable development.
+- The structure clearly lays out the problem, key findings, contributions, limitations, and future research.
+- Attempts to synthesize literature and provide a holistic view.
 
-**Critical Issues:** 3 major, 2 moderate, 5 minor
-**Recommendation:** Revisions needed before publication
+**Critical Issues:** 4 major, 6 moderate, 3 minor
+**Recommendation:** Significant revisions are needed to align claims with the stated scope and methodology, enhance specificity, and improve balance.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Overclaim - "Uniquely Positioned"
-**Location:** Paragraph 1, line 5
-**Claim:** OSS "emerged as a paradigm uniquely positioned to address these complexities" (digital inequality, ethical dilemmas, environmental concerns).
-**Problem:** While OSS offers significant advantages, "uniquely positioned" is a strong overclaim. Other paradigms (e.g., public good initiatives, non-profit organizations, government-funded research) also aim to address these issues, albeit through different mechanisms. The paper's body might argue OSS is *excellently* or *well* positioned, but "uniquely" is difficult to prove and likely inaccurate.
-**Evidence:** The conclusion itself later acknowledges challenges and limits (e.g., funding, diversity), implying it's not a perfect or sole solution.
-**Fix:** Rephrase to "exceptionally well-positioned," "a powerful paradigm," or "a paradigm with distinct advantages."
-**Severity:** 🔴 High - affects the paper's foundational framing and risks appearing dismissive of other approaches.
+### Issue 1: Direct Contradiction on SDG Contribution
+**Location:** Paragraph 5 ("this study confirmed the crucial link...") vs. Paragraph 6 ("while the paper theorized the links... empirical quantification... remains an area for deeper investigation.")
+**Claim:** The paper first claims to have "confirmed the crucial link" between OSS and SDGs, then later states it "theorized the links" and that "empirical quantification... remains an area for deeper investigation."
+**Problem:** This is a direct contradiction regarding the nature and strength of the study's findings on SDGs. If the study only *theorized* the links, it cannot claim to have *confirmed* them.
+**Evidence:** The two statements are in direct opposition.
+**Fix:** Rephrase Paragraph 5 to accurately reflect the study's contribution (e.g., "this study *explored the theoretical links*," or "this study *argued for the crucial link*"), consistent with the stated limitation. The word "confirmed" implies empirical validation not supported by the stated limitation.
+**Severity:** 🔴 High - fundamental flaw in reporting findings.
 
-### Issue 2: Logical Leap / Overclaim - Transparency and Ethical AI/Data Privacy
-**Location:** Paragraph 3, line 3
-**Claim:** "Its transparency allows for greater scrutiny and trust, crucial for ethical AI development and data privacy."
-**Problem:** While transparency is necessary for scrutiny, it is not *sufficient* for ensuring ethical AI or data privacy. The statement implies a direct causal link that is too strong. Transparency *enables* scrutiny, but active, informed scrutiny and robust governance are still required. An open-source AI project could still be developed with unethical biases or data handling practices if not properly audited or if the community lacks the ethical framework.
-**Evidence:** Transparency does not automatically equate to ethical outcomes; it merely provides the means to *check* for them.
-**Fix:** Qualify the statement: "Its transparency *facilitates* greater scrutiny and trust, which are *foundational elements* for ethical AI development and data privacy." Or, "Transparency is a crucial enabler for..."
-**Severity:** 🔴 High - misrepresents the role of transparency and overstates its direct impact on complex ethical challenges.
+### Issue 2: Overclaims of "Demonstration" and "Confirmation"
+**Location:** Throughout Paragraphs 3, 4, 5 (e.g., "demonstrating its profound capacity," "research demonstrated OSS's significant role," "this study confirmed the crucial link").
+**Claim:** The paper frequently uses strong verbs like "demonstrated" and "confirmed" to describe its findings.
+**Problem:** Given the stated methodology (synthesizing literature, analytical framework, illustrative case studies) and the limitation about lack of empirical quantification, these verbs represent overclaims. Case studies are illustrative, not typically "demonstrative" or "confirmatory" in a statistically rigorous sense, especially for broad claims about "profound capacity" or "significant roles" across multiple dimensions.
+**Evidence:** The methodology description and the explicitly stated limitation (Paragraph 6) indicate a theoretical/qualitative approach, not one suitable for "demonstrating" or "confirming" such broad impacts empirically.
+**Fix:** Replace strong verbs with more appropriately hedged language such as "highlighted," "illustrated," "argued for," "explored," "suggested," or "provided evidence supporting the argument for." For example, instead of "the research demonstrated," use "the research *illustrated* the significant role" or "the research *argued for* the significant role."
+**Severity:** 🔴 High - misrepresents the strength and scope of the study's findings.
 
-### Issue 3: Lack of Specific Examples for Broad Claims
-**Location:** Paragraphs 2 & 3 (multiple claims)
-**Claim:**
-    *   "bridging digital divides and promoting local technological self-sufficiency." (P2)
-    *   "directly supports sustainable development goals by providing cost-effective tools for education, healthcare, and governance..." (P3)
-    *   "The long lifecycle and adaptability of OSS projects often translate to reduced electronic waste and more efficient resource utilization..." (P3)
-    *   "The collective intelligence harnessed through global OSS communities offers a robust mechanism for tackling complex, interdisciplinary problems..." (P3)
-**Problem:** These are strong, positive assertions, but in a conclusion, they need to summarize points *already demonstrated* in the main body. Without specific examples or brief mentions of *how* these were shown in the paper, they read as generalized claims rather than summarized findings. For a "theoretical analysis," this means referring back to the theoretical frameworks or literature reviews presented earlier.
-**Evidence:** The provided text is a high-level summary. While appropriate for a conclusion, the *strength* of these claims implies specific instances or comprehensive arguments were made in the main paper.
-**Fix:** (Assuming the main body provides this) Briefly allude to the *types* of evidence or examples provided earlier. E.g., for digital divides, "as exemplified by projects like [Project X]..." Or, for environmental impact, "as discussed in our analysis of [specific OSS project type]..." If the main body *doesn't* provide this, then the claims themselves might be overclaims for the paper's scope.
-**Severity:** 🔴 High - weakens the overall persuasiveness of the paper by presenting findings without a clear anchor to the preceding analysis.
+### Issue 3: Missing Acknowledgment of Counterarguments/Challenges in Main Discussion
+**Location:** Paragraphs 1-6 primarily focus on the benefits and positive impact of OSS. Challenges are only introduced as an area for "future research" in Paragraph 7.
+**Claim:** The conclusion presents OSS as an overwhelmingly positive force without acknowledging its inherent complexities or potential downsides within the main summary of its value.
+**Problem:** While the paper's focus might be on benefits, a balanced critical review of OSS would at least briefly acknowledge potential challenges (e.g., security vulnerabilities, sustainability of volunteer communities, governance issues, digital divide *within* OSS communities) in the main discussion of its value, even if the paper doesn't delve into them deeply. Pushing all challenges to "future research" makes the overall argument appear less nuanced and potentially biased.
+**Evidence:** Paragraph 7 explicitly lists "ethical implications and potential challenges of OSS adoption, such as security vulnerabilities or the concentration of power within specific contributor groups" as an area for future research, implying these were not adequately addressed or even mentioned in the paper's core arguments.
+**Fix:** Integrate a brief, balanced statement in Paragraph 2 or 6 acknowledging that while OSS offers significant advantages, it also presents complexities or challenges that warrant consideration (e.g., "While offering a compelling alternative, the adoption of OSS also presents challenges such as X and Y, which require careful consideration."). This demonstrates a more critical and complete understanding of the topic.
+**Severity:** 🔴 High - impacts the paper's overall balance and critical perspective.
+
+### Issue 4: Vague Theoretical Contribution
+**Location:** Paragraph 6
+**Claim:** "Theoretically, this research contributes to the discourse on technological governance and commons-based peer production by providing an updated framework for analyzing the socio-economic impacts of open collaboration in the digital age."
+**Problem:** The term "updated framework" is used without any specific details about what this framework entails, how it is updated, or what makes it novel. In a conclusion, this should be a concise summary of the *key innovation* of the framework, not just a vague assertion.
+**Evidence:** No elaboration or specific features of the "updated framework" are mentioned in the conclusion.
+**Fix:** Briefly describe the core elements or the key differentiating aspects of this "updated framework." For example, "by providing an updated framework that integrates X, Y, and Z dimensions into the analysis of socio-economic impacts..."
+**Severity:** 🔴 High - weakens the claim of theoretical contribution significantly due to lack of specificity.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 4: Nuance in "Bridging Digital Divides"
-**Location:** Paragraph 2, line 4
-**Claim:** OSS "empowers individuals and organizations in developing regions to adapt, modify, and build upon existing software solutions, thereby bridging digital divides and promoting local technological self-sufficiency."
-**Problem:** While OSS *contributes* to bridging digital divides, "bridging" implies a significant reduction or near-elimination. Digital divides are multi-faceted (access, skills, infrastructure, cultural relevance) and complex. OSS helps, but doesn't unilaterally "bridge" them. Furthermore, adapting and modifying OSS still requires significant technical skills and infrastructure, which can themselves be barriers in developing regions.
-**Fix:** Rephrase to "contributing to the reduction of digital divides" or "helping to narrow digital divides." Acknowledge the need for complementary efforts (e.g., education, infrastructure).
-**Severity:** 🟡 Moderate - important for accuracy and avoiding an overly simplistic view of a complex problem.
+### Issue 5: Excessive Aspirational Language and Hyperbole
+**Location:** Throughout, especially Paragraphs 1, 2, 8 (e.g., "meticulously explored," "profound capacity," "strategic imperative," "transformative potential," "undoubtedly be paved").
+**Problem:** The language is often highly aspirational, superlative, and emphatic, which can undermine the perceived objectivity and academic rigor of the conclusion. Phrases like "undoubtedly" are rarely justifiable in academic writing.
+**Evidence:** Words and phrases such as "meticulously explored," "profound capacity," "strategic imperative," "transformative potential," "crucial link," "significant role," "undoubtedly be paved," "empowering humanity to collectively build the digital commons necessary for shared prosperity and planetary well-being."
+**Fix:** Tone down the rhetoric. Replace overly strong or subjective adjectives and adverbs with more neutral and precise language. Focus on what the *study shows* rather than what the author *believes* or *hopes*.
+**Severity:** 🟡 Moderate - affects academic tone and credibility.
 
-### Issue 5: Citation Verification - Missing DOI/arXiv ID
-**Location:** Citations Used
-**Problem:** The provided citations lack standard identifiers like DOI or arXiv ID. While the titles and authors are present, for academic rigor and ease of verification, these should be included.
-**Missing:** DOI or arXiv ID for {cite_001} and {cite_002}.
-**Fix:** Add the DOI or arXiv ID for each cited paper.
-**Severity:** 🟡 Moderate - standard academic practice for reproducibility and verification.
+### Issue 6: General Statements vs. Study's Specific Findings
+**Location:** Throughout Paragraphs 3, 4, 5. Many claims about OSS benefits (e.g., cost-effectiveness, open access accelerating innovation, customization, reducing vendor lock-in) are well-known general attributes of OSS.
+**Problem:** While true, the conclusion should emphasize *how this specific study's analytical framework and illustrative case studies* uniquely contributed to understanding or demonstrating these benefits, rather than just restating general knowledge about OSS. The current phrasing often makes it hard to distinguish between general OSS characteristics and the *novel findings* of this paper.
+**Evidence:** For example, "By providing unrestricted access to source code, OSS accelerates the pace of innovation..." is a general characteristic. How did *this paper* add to this understanding?
+**Fix:** For each key finding, explicitly link the general benefit to how the paper's "comprehensive analytical framework" or "illustrative case studies" provided specific insights or evidence. For example, "Our analytical framework further illuminated how the cost-effectiveness of OSS, as seen in Case Study X, specifically addresses barriers in resource-constrained environments by..."
+**Severity:** 🟡 Moderate - dilutes the perceived novelty and unique contribution of the research.
+
+### Issue 7: Citation Verification - Missing DOIs/arXiv IDs
+**Location:** "Citations Used" section.
+**Problem:** The provided citations lack standard identifiers (DOI or arXiv ID), which are crucial for verification and academic integrity.
+**Evidence:** Citations are listed as `{cite_001}` and `{cite_002}` with only author and title.
+**Fix:** Add DOIs or arXiv IDs (and full publication details like journal, volume, pages, year) for all citations. If these are placeholders, ensure they are replaced with full, verifiable references in the final version.
+**Severity:** 🟡 Moderate - essential for academic integrity and reproducibility.
+
+### Issue 8: Word Count Exceeds Target
+**Location:** Entire conclusion section.
+**Problem:** The conclusion is 1249 words, significantly over the 1000-word target. This suggests verbosity, repetition, and a lack of conciseness, which hinders readability and impact.
+**Evidence:** Stated word count is 1249 words.
+**Fix:** Condense sentences, remove redundant phrases, and eliminate less critical details. Focus on summarizing the most crucial findings and contributions succinctly. Addressing Issue 5 (Aspirational Language) will naturally help reduce word count.
+**Severity:** 🟡 Moderate - impacts readability and conciseness.
+
+### Issue 9: "Proprietary Software's Planned Obsolescence" Claim
+**Location:** Paragraph 5
+**Claim:** "reducing the need for constant hardware upgrades often necessitated by proprietary software’s planned obsolescence."
+**Problem:** While "planned obsolescence" is a recognized phenomenon, attributing it directly and solely to "proprietary software" in such a strong, generalized manner might be an oversimplification or overclaim without specific evidence or nuance provided in the paper. Hardware upgrades are driven by many factors beyond just proprietary software.
+**Evidence:** The claim is presented as a definitive statement without qualification.
+**Fix:** Either provide specific evidence from the paper to support this strong claim or rephrase it to be more nuanced (e.g., "potentially reducing the pressure for hardware upgrades often associated with certain proprietary software models").
+**Severity:** 🟡 Moderate - could be perceived as an unsupported generalization.
+
+### Issue 10: "Inextricably Linked" Claim
+**Location:** Paragraph 2
+**Claim:** "many of the world's pressing challenges—ranging from digital divides and data sovereignty to environmental sustainability and inclusive innovation—are inextricably linked to technological access, control, and development."
+**Problem:** "Inextricably linked" is a very strong claim, implying an absolute and inseparable connection. While there's certainly a strong link, "inextricably" might be an overstatement.
+**Evidence:** The strength of the claim without immediate specific evidence from the paper.
+**Fix:** Consider softening this to "strongly linked," "fundamentally connected," or "deeply intertwined" to maintain accuracy without overstating the case.
+**Severity:** 🟡 Moderate - minor overclaim.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Vague claim:** "profound impact" (P2, line 1) - while evocative, consider if a more precise descriptor could be used if the paper quantifies this.
-2.  **"Directly supports" (P3, line 1):** "Directly" might be too strong for "sustainable development goals." OSS provides *tools* that *can be used* to support these goals, but the support is often mediated by implementation, policy, and user adoption. Consider "contributes significantly to" or "facilitates progress towards."
-3.  **Potential for "Greenwashing" (P3, line 5):** The claim about "reduced electronic waste and more efficient resource utilization" is positive. While plausible, it needs solid backing (even for a theoretical paper, this means referencing specific arguments/literature). Without it, it risks sounding like an unsubstantiated environmental benefit claim. Ensure the main body thoroughly supports this, perhaps by contrasting the full lifecycle of proprietary vs. open-source.
-4.  **Redundancy in final paragraph:** "immense potential to shape a more equitable, resilient, and sustainable technological future" and "Its principles offer a blueprint for addressing some of humanity's most pressing challenges, from digital inclusion to environmental stewardship." These are very similar statements. Consider combining or rephrasing for greater impact.
-5.  **Wordiness:** "The investigation began by framing the contemporary technological landscape, characterized by rapid advancements alongside persistent issues such as digital inequality, ethical dilemmas, and environmental concerns." (P1) Could be slightly more concise: "The paper framed the contemporary technological landscape, marked by rapid advancements and persistent issues such as digital inequality, ethical dilemmas, and environmental concerns."
+1.  **Repetitive Phrasing:** Phrases like "democratize technology," "foster collaborative innovation," and "contribute to a more equitable and resilient global society" appear multiple times with slight variations. Condense or vary the language.
+2.  **Subjective Adjectives:** "meticulously explored" (Paragraph 1) is a subjective self-assessment. Let the reader judge the meticulousness.
+3.  **Vague Practical Insights:** "Practically, the findings offer actionable insights for policymakers..." (Paragraph 6) is vague. While recommendations follow, the *insights* themselves could be more explicitly summarized.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Unstated Assumptions about Implementation Success
-**Location:** Paragraph 2 & 3 (multiple claims about positive impact)
-**Logic:** OSS is available → therefore it will be successfully adapted/implemented to achieve positive outcomes (e.g., bridge divides, support SDGs).
-**Missing:** The conclusion, like many positive claims in the paper, assumes successful implementation and uptake. It doesn't explicitly acknowledge the significant challenges (beyond those mentioned in P4) that users/organizations face in *actually* leveraging OSS to its full potential (e.g., lack of technical expertise, infrastructure, cultural fit, ongoing maintenance costs, community engagement).
-**Fix:** While it's a conclusion, a subtle acknowledgment of the *effort* required to realize these benefits would strengthen the argument. For example, "When successfully adopted and supported, this accessibility empowers..."
+### Gap 1: Disconnect Between "Elucidated Value" and "Strategic Imperative"
+**Location:** Paragraph 1
+**Logic:** "This paper has elucidated the intrinsic value of OSS beyond mere technical utility" → "positioning it as a strategic imperative for confronting complex socio-technical dilemmas."
+**Missing:** The explicit logical step that transforms "elucidated value" into a "strategic imperative." While the former might *lead* to the latter, the conclusion needs to briefly articulate *why* the elucidated value *necessitates* it becoming a strategic imperative based on the paper's arguments.
+**Fix:** Add a sentence or phrase explaining this transition.
 
 ---
 
-## Methodological Concerns (as implied by Conclusion)
+## Methodological Concerns (as reflected in Conclusion claims)
 
-### Concern 1: Scope of "Theoretical Analysis"
-**Issue:** The conclusion makes many strong claims about real-world impact (e.g., "bridging digital divides," "reduced electronic waste," "directly supports SDGs").
-**Risk:** If the main paper is *purely* theoretical (e.g., literature review, conceptual framework), these claims need to be carefully framed as *potential* impacts or syntheses of *existing empirical work*. If the paper does not include a robust review of empirical evidence, some of these claims might overreach the "theoretical analysis" methodology.
-**Reviewer Question:** "How does a 'theoretical analysis' support these concrete claims of impact? Does it synthesize sufficient empirical literature, or are these presented as hypotheses?"
-**Suggestion:** Ensure the main body clearly defines "theoretical analysis" and how it supports such impact claims. If not, temper the language in the conclusion (e.g., "our analysis *suggests* OSS has the potential to...")
+### Concern 1: Scope of Case Studies
+**Issue:** The acknowledged limitation (Paragraph 6) states "The scope of the case studies, while illustrative, was not exhaustive."
+**Risk:** This limitation directly impacts the strength of generalized claims made earlier in the conclusion, particularly those using "demonstrated" or "confirmed."
+**Reviewer Question:** "How can claims of 'profound impact' or 'significant role' be made across multiple dimensions and SDGs if the case studies were not exhaustive and empirical quantification is lacking?"
+**Suggestion:** Ensure all claims are tempered to reflect the illustrative nature of the case studies.
 
 ---
 
-## Missing Discussions (as implied by Conclusion)
+## Missing Discussions
 
-1.  **Costs beyond licensing:** While "cost-effective" is mentioned, the conclusion doesn't explicitly address the often-significant *total cost of ownership* of OSS (e.g., implementation, customization, training, maintenance, security patching), especially for organizations in resource-constrained environments. This would add nuance to the "accessibility" claim.
-2.  **Quality/Maturity variation:** OSS projects vary wildly in quality, documentation, maintenance, and community support. The conclusion largely treats "OSS" as a monolithic, uniformly beneficial entity. A brief acknowledgment that not all OSS is equally viable for critical applications would enhance realism.
-3.  **Dependency issues:** The reliance on specific OSS projects can create dependencies, and if a project loses contributors or funding, it can become a liability. This is an implicit challenge not explicitly discussed in the context of long-term viability.
+1.  **Specifics of the "Comprehensive Analytical Framework":** While mentioned as a contribution, the conclusion doesn't offer any specific insight into what this framework *is* or *how it works*.
+2.  **Trade-offs/Costs of OSS Adoption:** Beyond the benefits, what are the inherent challenges or costs (e.g., learning curve, maintenance burden for smaller organizations, potential for fragmentation) that might make OSS *not* suitable in certain contexts? A brief mention would enhance balance.
+3.  **Nuance in "Democratization":** While OSS democratizes access, it doesn't necessarily democratize *control* or *influence* within projects, which can still be concentrated. Acknowledging this nuance would strengthen the argument.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Slightly Repetitive:** As noted in minor issues, some ideas are re-stated very similarly across the last two paragraphs. Streamlining could enhance impact.
+1.  **Overly Confident/Aspirational:** The tone is highly confident and aspirational, sometimes bordering on advocacy rather than purely academic summary. Words like "profound," "transformative," "undoubtedly" contribute to this.
+2.  **Lack of Nuance:** The conclusion paints an almost uniformly positive picture of OSS, which can come across as less critical or balanced.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "What specific empirical evidence or case studies from the paper support the claims of 'bridging digital divides' or 'reduced electronic waste'?"
-2.  "How does the paper differentiate the impact of OSS from other non-proprietary or public-good technology initiatives, especially given the claim of being 'uniquely positioned'?"
-3.  "Beyond the challenges listed, what are the practical difficulties or hidden costs for organizations, particularly in developing regions, when adopting and maintaining OSS?"
-4.  "Given the theoretical nature of the analysis, how robust are the links between OSS principles and the achievement of specific sustainable development goals?"
-5.  "Are there any contexts where open-source might *not* be the optimal solution for addressing these global challenges, and if so, how does the paper account for that?"
+1.  "Given that your study only 'theorized' the links to SDGs and lacked 'empirical quantification,' how can you claim to have 'confirmed' these links?"
+2.  "What are the specific, novel elements of the 'updated analytical framework' that you developed?"
+3.  "The conclusion heavily emphasizes the benefits of OSS. Why are the potential challenges or limitations of OSS adoption not discussed within the main body of the conclusion, but only relegated to future research?"
+4.  "Could you provide more specific examples from your case studies to support the broad claims of 'profound impact' on innovation, digital inclusion, and SDGs?"
+5.  "How do your findings move beyond general, well-known benefits of OSS to offer novel insights or contributions?"
 
 **Prepare answers or add to paper**
 
@@ -127,12 +159,15 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 Fix Issue 1 (Overclaim "Uniquely Positioned") - fundamental framing.
-2.  🔴 Address Issue 2 (Logical Leap on Transparency/Ethics) - crucial for accuracy.
-3.  🔴 Resolve Issue 3 (Lack of specific examples for claims) - strengthens persuasiveness.
-4.  🟡 Address Issue 4 (Nuance in "Bridging Digital Divides") - improves accuracy.
-5.  🟡 Add DOI/arXiv IDs to citations (Issue 5) - academic rigor.
+1.  🔴 Fix Issue 1 (Direct Contradiction on SDG Contribution) - **CRITICAL for logical coherence.**
+2.  🔴 Address Issue 2 (Overclaims of "Demonstration" and "Confirmation") - **CRITICAL for accuracy of findings.**
+3.  🔴 Resolve Issue 3 (Missing Acknowledgment of Counterarguments/Challenges) - **CRITICAL for balance and academic rigor.**
+4.  🔴 Fix Issue 4 (Vague Theoretical Contribution) - **CRITICAL for claiming a theoretical contribution.**
+5.  🟡 Address Issue 5 (Excessive Aspirational Language) - Improves academic tone.
+6.  🟡 Address Issue 6 (General Statements vs. Study's Specific Findings) - Enhances novelty.
+7.  🟡 Address Issue 7 (Citation Verification) - Essential for academic integrity.
+8.  🟡 Reduce word count (Issue 8) - Improves readability.
 
 **Can defer:**
 - Minor wording issues (fix in revision).
-- Adding more detailed discussions on TCO or project variation (could be expanded in main body or future work).
+- Additional experiments/data (these are future research suggestions, not immediate fixes for the conclusion).

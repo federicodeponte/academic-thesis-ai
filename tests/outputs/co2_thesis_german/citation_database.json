@@ -3,106 +3,65 @@
     {
       "id": "cite_001",
       "authors": [
-        "Pahle",
-        "Burtraw",
-        "Flachsland",
-        "Edenhofer"
+        "Stern"
       ],
-      "year": 2024,
-      "title": "The European Emissions Trading System: A Review of its Evolution, Effectiveness, and Future Challenges",
+      "year": 2021,
+      "title": "The Economics of Climate Change: The Stern Review Revisited",
       "source_type": "journal",
       "language": "german",
-      "journal": "Environmental Science & Policy"
+      "journal": "Journal of Economic Perspectives",
+      "doi": "10.1257/jep.35.3.3"
     },
     {
       "id": "cite_002",
       "authors": [
-        "Dechezleprêtre",
-        "Gagelmann",
-        "Schmidt"
+        "Rübbelke",
+        "Vögele"
       ],
       "year": 2023,
-      "title": "Carbon Pricing and the Green Transition: Evidence from the European Union",
+      "title": "The Role of Carbon Markets in Achieving Paris Agreement Goals",
       "source_type": "journal",
       "language": "german",
-      "journal": "Journal of Environmental Economics and Management"
+      "journal": "Energy Policy",
+      "doi": "10.1016/j.enpol.2022.112999"
     },
     {
       "id": "cite_003",
       "authors": [
-        "Johnstone"
+        "Stern"
       ],
-      "year": 2010,
-      "title": "Environmental Regulation and Innovation",
-      "source_type": "journal",
-      "language": "german"
+      "year": 2006,
+      "title": "The Stern Review on the Economics of Climate Change",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "HM Treasury"
     },
     {
       "id": "cite_004",
       "authors": [
-        "Calel",
-        "Dechezleprêtre"
+        "IPCC"
       ],
-      "year": 2016,
-      "title": "Environmental Regulation and Innovation",
-      "source_type": "journal",
-      "language": "german"
+      "year": 2021,
+      "title": "Assessment Report on Climate Change",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "IPCC"
     },
     {
       "id": "cite_005",
       "authors": [
-        "Aldy",
-        "Stavins",
-        "Newell"
+        "UNFCCC"
       ],
-      "year": 2022,
-      "title": "The Role of Carbon Pricing in Achieving Paris Agreement Goals: A Global Perspective",
-      "source_type": "journal",
-      "language": "german",
-      "journal": "Climate Policy"
-    },
-    {
-      "id": "cite_006",
-      "authors": [
-        "Borghesi",
-        "Monti",
-        "Tavoni"
-      ],
-      "year": 2023,
-      "title": "The Political Economy of Emissions Trading: Insights from the EU ETS Reforms",
-      "source_type": "journal",
-      "language": "german",
-      "journal": "Energy Economics",
-      "doi": "10.1016/j.eneco.2023.106889"
-    },
-    {
-      "id": "cite_007",
-      "authors": [
-        "Wettestad"
-      ],
-      "year": 2010,
-      "title": "Political Economy of the EU ETS",
-      "source_type": "journal",
+      "year": 2015,
+      "title": "Paris Agreement",
+      "source_type": "report",
       "language": "german"
-    },
-    {
-      "id": "cite_008",
-      "authors": [
-        "Neuhoff",
-        "Acworth",
-        "Sato"
-      ],
-      "year": 2021,
-      "title": "Global Carbon Markets: Prospects and Challenges for Linking Emissions Trading Systems",
-      "source_type": "journal",
-      "language": "german",
-      "journal": "Energy Policy"
     }
   ],
   "metadata": {
-    "total_citations": 8,
+    "total_citations": 5,
     "citation_style": "APA 7th",
     "thesis_language": "german",
-    "extracted_date": "2025-11-06T17:03:58.091742"
+    "extracted_date": "2025-11-09T17:04:46.495029"
   }
 }

@@ -23,6 +23,7 @@ from utils.citation_manager import extract_citations_from_text
 from utils.citation_database import save_citation_database, load_citation_database
 from utils.text_utils import smart_truncate
 from utils.abstract_generator import generate_abstract_for_thesis
+from utils.output_sanitizer import sanitize_enhanced_file
 
 
 def main():
@@ -564,32 +565,67 @@ def main():
     rate_limit_delay()
 
     # ====================================================================
-    # PHASE 7: SKIP ENHANCEMENT (Production Stability)
+    # PHASE 7: ENHANCEMENT (Agent #15) - WITH SANITIZATION
     # ====================================================================
     print("\n" + "="*70)
-    print("⏭️  PHASE 7: SKIP ENHANCEMENT (Agent #15 BYPASSED)")
+    print("✨ PHASE 7: ENHANCE (Agent #15 - WITH OUTPUT SANITIZATION)")
     print("="*70)
 
-    print("\n📋 PRODUCTION DECISION: Skipping Agent #15 Enhancement")
-    print("\nReason:")
-    print("  • Agent #15 historically produced corrupted files (1.8MB, table corruption)")
-    print("  • Table cells with 633K+ spaces causing PDF cut-offs")
-    print("  • Enhancement messages leaking into final PDFs")
-    print("  • Risk vs. benefit analysis favors stability")
-    print("\n✅ Using clean citation-compiled version (15_compiled_citations.md)")
-    print("   This ensures:")
-    print("   • Clean references without [VERIFY] or [MISSING] tags")
-    print("   • Proper formatting without metadata leakage")
-    print("   • Stable file size (~80-100KB)")
-    print("   • Production-ready quality")
+    # Step 15: Enhancer - Add professional elements (NOW RE-ENABLED!)
+    print("\n🔧 Running Enhancement Agent...")
+    print("   This will add:")
+    print("   • YAML metadata frontmatter")
+    print("   • Enhanced 4-paragraph abstract")
+    print("   • 5 comprehensive appendices")
+    print("   • Limitations and Future Research sections")
+    print("   • 3-5 tables and 1-2 figures")
+    print("   • Expanded case studies")
+    print("\n⏳ Enhancement may take 3-5 minutes...")
 
-    # Use the citation-compiled version as final output
-    final_paper = verified_paper if verified_paper else draft_paper
+    enhanced_paper = run_agent(
+        model=model,
+        name="15. Enhancer - Professional Enhancement",
+        prompt_path="prompts/06_enhance/enhancer.md",
+        user_input=f"Enhance this thesis to publication-ready standard:\n\n{paper_for_enhancement}",
+        save_to=output_dir / "16_enhanced_final.md"
+    )
 
-    final_word_count_before_export = len(final_paper.split())
-    print(f"\n✅ Using citation-compiled thesis (skipped enhancement)")
-    print(f"📊 Final stats: ~{final_word_count_before_export} words")
-    print(f"📄 Source: 15_compiled_citations.md")
+    # CRITICAL: Sanitize enhanced output to fix 4 bugs
+    if enhanced_paper:
+        print("\n" + "="*70)
+        print("🧹 SANITIZING ENHANCED OUTPUT (Bug Fix)")
+        print("="*70)
+
+        sanitize_success = sanitize_enhanced_file(
+            input_path=output_dir / "16_enhanced_final.md",
+            output_path=None,  # Sanitize in place
+            verbose=True
+        )
+
+        if sanitize_success:
+            # Re-read sanitized version
+            with open(output_dir / "16_enhanced_final.md", 'r', encoding='utf-8') as f:
+                enhanced_paper = f.read()
+            print("✅ Enhanced output sanitized successfully!")
+        else:
+            print("⚠️  Sanitization failed - using original enhanced output")
+
+    # Use enhanced version if available, otherwise fall back to verified or draft
+    final_paper = enhanced_paper if enhanced_paper else (verified_paper if verified_paper else draft_paper)
+
+    if enhanced_paper:
+        enhanced_word_count = len(enhanced_paper.split())
+        final_word_count_before_export = enhanced_word_count
+        print(f"\n✅ Enhancement complete!")
+        print(f"📊 Enhanced stats: ~{enhanced_word_count} words (target: 14,000+)")
+        print(f"📈 Word count increase: ~{enhanced_word_count - len(draft_paper.split())} words")
+        print(f"📄 Source: 16_enhanced_final.md (sanitized)")
+    else:
+        final_paper = verified_paper if verified_paper else draft_paper
+        final_word_count_before_export = len(final_paper.split())
+        print(f"\n⚠️  Enhancement failed, using {'verified' if verified_paper else 'draft'} version")
+        print(f"📊 Final stats: ~{final_word_count_before_export} words")
+        print(f"📄 Source: 15_compiled_citations.md")
 
     # ====================================================================
     # EXPORT

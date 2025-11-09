@@ -297,7 +297,7 @@ Return a JSON object with this structure:
             text: Text with formatted citations (to determine which were used)
 
         Returns:
-            str: Formatted reference list
+            str: Formatted reference list (header only added if not already present)
         """
         # Find all cited IDs in original format
         cited_ids = self._extract_cited_ids(text)
@@ -310,14 +310,18 @@ Return a JSON object with this structure:
         ]
 
         if not cited_citations:
-            return "## References\n\n(No citations found)\n"
+            # Only add header if not already present
+            if "## References" not in text:
+                return "## References\n\n(No citations found)\n"
+            else:
+                return "\n(No citations found)\n"
 
         # Sort alphabetically by first author (APA style)
         if self.style == "APA 7th":
             cited_citations.sort(key=lambda c: c.authors[0].lower())
 
-        # Format references
-        references = ["## References\n"]
+        # Format references (without header initially)
+        references = []
 
         for citation in cited_citations:
             if self.style == "APA 7th":
@@ -329,7 +333,13 @@ Return a JSON object with this structure:
 
             references.append(ref)
 
-        return "\n\n".join(references)
+        # Only add "## References" header if not already present in text
+        references_content = "\n\n".join(references)
+        if "## References" not in text:
+            return f"## References\n\n{references_content}"
+        else:
+            # Header already exists, just return the references
+            return references_content
 
     def _extract_cited_ids(self, text: str) -> Set[str]:
         """Extract all citation IDs mentioned in text."""

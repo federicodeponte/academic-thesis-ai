@@ -477,6 +477,36 @@ Add **3-5 comprehensive tables** and **1-2 ASCII figures** throughout the thesis
 ---
 ```
 
+**🚨 CRITICAL TABLE CELL LENGTH CONSTRAINTS:**
+
+**MANDATORY LIMITS - VIOLATIONS WILL CAUSE PDF CORRUPTION:**
+- **Maximum cell content:** 100 characters per cell
+- **If content exceeds 100 chars:** Use abbreviations, split into multiple rows, or reference appendices
+- **Never repeat text:** Each cell must contain unique, concise content
+- **Headers:** Max 30 characters
+- **Data cells:** Max 50 characters
+- **Interpretation cells:** Max 100 characters
+
+**Example of CORRECT cell lengths:**
+```markdown
+| Dimension | Approach A | Approach B | Impact |
+|-----------|------------|------------|--------|
+| **Speed** | Fast (2s) | Slow (10s) | High |
+| **Cost** | Low ($5) | High ($50) | Medium |
+```
+
+**Example of INCORRECT (TOO LONG - WILL BREAK PDF):**
+```markdown
+| Dimension | Mechanism |
+|-----------|-----------|
+| **Impact** | This is a very long description that goes on and on explaining every single detail about the mechanism which causes massive file bloat and PDF rendering errors because it contains hundreds of characters that should have been in paragraph text instead of a concise table cell | ❌ WRONG
+```
+
+**If you need to explain something in detail:**
+- ✅ Write 1-2 paragraphs BEFORE the table
+- ✅ Add footnotes AFTER the table
+- ❌ DO NOT put long text in table cells
+
 **Table Types to Create:**
 1. **Comparative Analysis Table** - Compare approaches/models/theories across dimensions
 2. **Quantitative Metrics Table** - Show measurable outcomes/impacts across scenarios

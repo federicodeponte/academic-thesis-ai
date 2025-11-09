@@ -1,11 +1,16 @@
-🔍 Validating 8 citations from citation_database.json...
-✅ opensource_thesis: All citations passed validation!
-
 
 ================================================================================
-VALIDATION SUMMARY
+CITATION VALIDATION REPORT: Open Source Thesis
 ================================================================================
-Total Critical Issues: 0
-Total Warnings: 0
 
-✅ ALL CITATIONS VALID
+
+
+⚠️  WARNINGS (1):
+--------------------------------------------------------------------------------
+
+[cite_004] Generic title pattern: 'A Systematic Review'
+  P, J et al. (2023) - The Impact of Open Source on Software Quality and Security: ...
+
+================================================================================
+TOTAL ISSUES: 1 (0 critical, 1 warnings)
+================================================================================

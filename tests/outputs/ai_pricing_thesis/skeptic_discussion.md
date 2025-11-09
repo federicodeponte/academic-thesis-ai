@@ -8,130 +8,122 @@
 ## Summary
 
 **Strengths:**
--   **Comprehensive Coverage:** The discussion provides a broad and well-structured overview of AI pricing models, covering implications for companies, customer adoption, future trends, and recommendations for multiple stakeholders.
--   **Clear Central Argument:** The paper effectively articulates the need for nuanced, value-driven, and adaptive AI monetization strategies.
--   **Good Use of Citations:** A substantial number of relevant citations are integrated, providing a foundation for many claims.
--   **Logical Flow:** The discussion generally progresses logically from current implications to future trends and actionable recommendations.
+- Comprehensive coverage of key aspects: implications for AI companies, customer adoption, future pricing trends, and recommendations for various stakeholders.
+- Well-structured and logically flows from current state to future predictions and actionable advice.
+- Effectively integrates established economic and business principles with the nascent field of AI agents.
+- Provides specific examples of current pricing models from industry leaders (OpenAI, Anthropic, Google).
+- Addresses important considerations like trust, reliability, and regulatory impact.
 
-**Critical Issues:** 3 major, 2 moderate, 10 minor
-**Recommendation:** Revisions needed before publication, particularly to address overclaims, strengthen arguments with more empirical evidence or acknowledgments of practical challenges, and include critical counterarguments.
+**Critical Issues:** 1 major, 4 moderate, 5 minor
+**Recommendation:** Revisions needed before publication, particularly concerning academic integrity and the specificity of claims.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Overclaim on "Near-zero Marginal Costs" for AI Inference
-**Location:** Future Pricing Trends, para 3
-**Claim:** "As open-source models become more powerful and efficient, and as competition intensifies, the cost of basic AI inference will likely decrease significantly, moving towards near-zero marginal costs for generic tasks."
-**Problem:** While AI inference costs are indeed decreasing and becoming more efficient, claiming "near-zero marginal costs" is a significant overstatement. Even for commoditized compute, there are tangible and non-negligible energy, hardware, and infrastructure costs. This claim ignores the physical realities and environmental impact of large-scale AI operations.
-**Evidence:** The analogy to cloud computing is valid for commoditization, but even raw cloud compute is not "near-zero" marginal cost. This prediction is highly speculative and potentially misleading.
-**Fix:** Hedge this claim significantly. Rephrase to "significantly reduced marginal costs," "approaching commodity pricing levels," or "driving down the cost of basic inference considerably." Acknowledge that while efficiency improves, physical resource consumption (energy, hardware) still incurs a cost.
-**Severity:** 🔴 High - A bold economic prediction that lacks sufficient grounding and could misrepresent future market dynamics.
-
-### Issue 2: Weak Argument/Lack of Empirical Support for "Ethical AI Premium"
-**Location:** Future Pricing Trends, para 4; Recommendations for AI Companies, point 4
-**Claim:** "The push for 'ethical AI' might lead to premium pricing for services that demonstrate verifiable fairness, explainability, and robust security measures." and "Consider how robust ethical design and compliance can be a differentiator, justifying premium pricing for solutions that offer verifiable fairness and responsible AI governance."
-**Problem:** While ethical considerations are crucial for AI adoption and risk mitigation, the paper asserts that customers will pay a *premium* specifically for "verifiable ethical AI" without providing strong empirical evidence or theoretical backing for this market dynamic. The cited work (Roberts, Davies, 2024) likely focuses on regulatory aspects, not necessarily market willingness to pay a premium. This claim feels aspirational rather than a demonstrated trend or a proven strategy for justifying higher prices beyond compliance.
-**Evidence:** The discussion links ethical AI to trust and reduced risk (which can drive adoption), but not directly to premium pricing. More specific examples or studies on customer willingness to pay extra for certified ethical features are needed.
-**Fix:** Hedge the claim by presenting it as an *emerging possibility* or *potential differentiator* rather than a definite trend. Acknowledge that customer willingness to pay a premium for "ethical AI" is still developing and might be limited to specific sectors or high-risk applications, or provide concrete examples of companies successfully implementing this.
-**Severity:** 🔴 High - A key future trend and recommendation relies on an unverified market dynamic, potentially leading to misinformed strategic advice.
-
-### Issue 3: Missing Counter-argument: Vendor Lock-in for Usage-Based Models
-**Location:** Implications for AI Companies, para 2
-**Claim:** "A usage-based or pay-per-token model, common in the LLM space, can lower the barrier to entry for smaller businesses and individual developers, fostering widespread experimentation and innovation."
-**Problem:** While usage-based models can indeed lower initial barriers, they also carry a significant risk of vendor lock-in, especially for proprietary AI services (like LLMs accessed via API). As customers integrate these services deeply, build applications on their APIs, and accumulate fine-tuned models or proprietary data within the vendor's ecosystem, switching providers becomes costly and difficult. This critical downside, which impacts competitive positioning and customer choice, is completely unaddressed.
-**Missing:** Discussion of the potential for vendor lock-in and its implications for competitive dynamics, customer autonomy, and long-term costs.
-**Fix:** Add a sentence or two acknowledging this potential drawback. For example: "However, a heavy reliance on a single provider's usage-based model can also introduce risks of vendor lock-in, particularly as proprietary data and fine-tuned models become deeply embedded within a customer's operations, making migration to alternative providers costly and complex."
-**Severity:** 🔴 High - Overlooks a critical strategic consideration for both AI companies (competitive advantage) and customers (risk management).
+### Issue 1: Incomplete Citation Information
+**Location:** Throughout the entire Discussion section (Citations Used list)
+**Problem:** All citations lack essential identifiers such as DOI or arXiv ID. While author, year, and title are provided, these are insufficient for academic verification and retrieval. This is a critical academic integrity concern.
+**Evidence:** The "Citations Used" list only provides (Author, Year) and Title. For example, "{cite_001} Brynjolfsson, Unger (2023) - The Economics of Generative AI: An Introduction..." lacks a unique identifier.
+**Fix:** For every academic reference, provide the DOI. For preprints, provide the arXiv ID. For industry reports/documentation, provide direct URLs if publicly accessible.
+**Severity:** 🔴 High - affects academic rigor and verifiability of all claims.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 4: Practical Challenges of Highly Sophisticated Value-Based Pricing
-**Location:** Future Pricing Trends, para 1
-**Claim:** "Future pricing models will likely incorporate advanced analytics to measure the tangible ROI for each customer, moving away from generic tiers to highly customized, outcome-linked agreements. This could involve dynamic contracts where the price adjusts based on the achieved performance metrics..."
-**Problem:** This vision is highly ambitious and overlooks the immense practical, operational, and legal challenges of accurately measuring, attributing, and contractually enforcing such granular ROI and performance metrics. Isolating the AI's precise contribution from other business factors in complex environments is extremely difficult.
-**Missing:** Acknowledgment of the significant complexities involved in implementing truly dynamic, outcome-linked contracts, including issues of measurement, attribution, data availability, legal enforceability, and operational overhead.
-**Fix:** Add a sentence or two about these challenges: "While promising, the implementation of such dynamic, outcome-linked contracts presents significant challenges, including the precise attribution of value in complex systems, the development of robust and auditable performance metrics, and the legal and operational complexities of variable agreements."
-**Severity:** 🟡 Moderate - Important nuance missing from an otherwise insightful prediction, reducing its practical applicability.
+### Issue 2: Generality and Lack of AI Agent Specificity
+**Location:** Throughout sections 4.1, 4.2, and 4.3
+**Problem:** Many arguments present general economic or business principles (e.g., competitive pricing, ROI analysis, switching costs). While these are applicable to AI agents, the discussion often doesn't sufficiently elaborate on *how* AI agents uniquely alter or intensify these principles, or present *specific empirical evidence* tied directly to AI agent deployment (beyond foundational LLMs). The connection is often asserted rather than deeply explored with unique AI agent characteristics.
+**Evidence:**
+- "aggressive pricing can be a tool to gain market share..." (4.1) - True for any product. How is it distinctly different for AI agents beyond the general LLM market?
+- "Customers evaluate AI agents not just on their raw capabilities, but on the return on investment (ROI) they offer." (4.2) - Fundamental for all business investments. What unique challenges or opportunities does AI agent ROI present?
+**Fix:** Strengthen the "AI agent" angle in each argument. Provide more specific examples or nuances that are *unique* to the autonomous, adaptive, and complex task execution nature of AI agents, rather than just LLMs or software-as-a-service. This might involve drawing more from the "agent-centric" literature.
+**Severity:** 🟡 Medium - weakens the unique contribution of the discussion to AI agents specifically.
 
-### Issue 5: Operational Burden vs. Agility of "Frequent Adjustments"
-**Location:** Implications for AI Companies, para 4
-**Claim:** "This constant innovation means that the 'value' of an AI service can change quickly, necessitating flexible pricing tiers and frequent adjustments."
-**Problem:** While pricing agility is desirable, "frequent adjustments" impose a significant operational burden on AI companies (e.g., re-evaluating, communicating changes, updating billing systems) and can create pricing unpredictability for customers, potentially eroding trust. The discussion highlights the necessity but doesn't address this inherent tension.
-**Missing:** Discussion of the trade-off between pricing agility/responsiveness and operational overhead/customer predictability and trust.
-**Fix:** Acknowledge the practical difficulties: "While enabling agility, such frequent adjustments also impose significant operational overhead on providers and can introduce unpredictability for customers, necessitating a careful balance between responsiveness and stability in pricing."
-**Severity:** 🟡 Moderate - Overlooks a critical practical implication of a proposed strategic approach.
+### Issue 3: Overly Confident Predictions for "Agent-Centric Pricing"
+**Location:** Section 4.3, "Agent-centric pricing models" paragraph
+**Claim:** "the 'unit' of pricing shifts from raw tokens to the agent's 'actions,' 'computational energy,' or 'cognitive cycles'." and "Pricing could be based on the number of tools used, the depth of reasoning, or the overall 'cognitive cost'..."
+**Problem:** While conceptually interesting and cited by theoretical papers (Wellman, Stone 2004; David 2024), these are strong predictions for *future* pricing models that are not yet widely implemented or empirically validated in the commercial AI agent space. The language could be more hedged to reflect this speculative nature.
+**Evidence:** The current market predominantly uses token-based or subscription models. The practical challenges of defining, measuring, and standardizing "cognitive cycles" or "computational energy" are immense and largely unaddressed in the text.
+**Fix:** Rephrase these predictions to explicitly acknowledge the speculative nature and the significant technical/standardization challenges. For example, "A potential unique trend..." or "Future models *may* explore pricing based on..."
+**Severity:** 🟡 Medium - risks overclaiming the certainty of future market shifts.
+
+### Issue 4: Missing "Limitations of This Discussion" Section
+**Location:** Overall Discussion
+**Problem:** The discussion is quite confident in its analysis and predictions. While it acknowledges some challenges within specific topics, it lacks a dedicated section or paragraph reflecting on the inherent limitations of the discussion itself. For instance, the reliance on current trends to predict future ones, the early stage of AI agent technology, or potential unforeseen regulatory/technological disruptions.
+**Missing:** A brief section acknowledging what the discussion *doesn't* cover, or the inherent uncertainties in predicting a rapidly evolving field.
+**Fix:** Add a small paragraph at the end of the discussion (before recommendations or conclusion) that explicitly states the limitations, e.g., "This discussion, while comprehensive, acknowledges the inherent challenges in predicting the trajectory of a nascent field..."
+**Severity:** 🟡 Medium - enhances academic humility and robustness.
+
+### Issue 5: Insufficient Detail on Ethical Implications of Pricing
+**Location:** Section 4.3 (Regulatory Impact), Section 4.4 (Policymakers)
+**Problem:** While ethical and safety implications are mentioned (cite_020) and a recommendation for policymakers includes "Address Ethical and Safety Implications in Pricing," the discussion doesn't delve into *how* pricing models themselves might create or exacerbate ethical issues (e.g., access for non-profits/developing countries, potential for biased personalized pricing, impact on labor markets if automation is too cheap).
+**Missing:** Specific discussion on the ethical dimensions *of pricing decisions* for AI agents.
+**Fix:** Expand the "Regulatory Impact" or add a new sub-point in the "Recommendations for Policymakers" to specifically address ethical considerations in pricing, such as ensuring equitable access, preventing discriminatory pricing, or considering the societal impact of highly optimized pricing models.
+**Severity:** 🟡 Medium - important contemporary concern in AI that needs more dedicated discussion.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Vague Claim:** "meticulously examined" and "elucidated the complexities" in the introduction. **Fix:** Soften to "comprehensively examined" and "explored the complexities" for a more academic tone.
-2.  **Missing Nuance:** "Misjudging these costs can lead to either underpricing... or overpricing..." (Implications for AI Companies, para 1). **Problem:** Doesn't account for *strategic* underpricing to gain market share or build an ecosystem. **Fix:** Add a brief mention of this strategic choice.
-3.  **Vague Term:** "another layer of complexity and opportunity" regarding tokenomics (Implications for AI Companies, para 3). **Fix:** Be more specific about *what kind* of complexity/opportunity, or provide a brief example.
-4.  **Slight Overclaim:** "performance of AI models improves at an astonishing pace" (Implications for AI Companies, para 4). **Fix:** "rapid pace" or "accelerated pace" is more accurate and less hyperbolic.
-5.  **Missing Operational Detail:** "continuous feedback loop between product development, sales, and customer success teams to refine value propositions and pricing strategies" (Implications for AI Companies, para 4). **Problem:** Good idea, but lacks specifics on *how* this loop is established or what mechanisms are used. **Fix:** Briefly mention tools or processes (e.g., "through dedicated cross-functional teams and iterative market testing").
-6.  **Missing Nuance:** "Simplicity and transparency in pricing are therefore paramount" (Customer Adoption, para 1). **Problem:** While generally true, sometimes the value *is* complex, and oversimplification can obscure true benefits or features. **Fix:** Add a brief caveat about balancing simplicity with accurate representation of value/features.
-7.  **Weak Link:** "Trust, built through reliable performance and transparent operations, is deeply intertwined with pricing." (Customer Adoption, para 2). **Problem:** The link between *fair pricing* (beyond just predictability) and *trust* could be more explicitly elaborated. **Fix:** Clarify how equitable and transparent pricing actively contributes to building trust.
-8.  **Vague Term:** "significant backlash and rejection" (Customer Adoption, para 3). **Fix:** Be more specific, e.g., "reputational damage, customer churn, or regulatory scrutiny."
-9.  **Missing Detail/Practicality Check:** Policymakers recommendation #3: "Consider regulations that mandate greater transparency in how AI services are priced..." **Problem:** How would this be implemented without stifling innovation or creating undue burden for providers? **Fix:** Briefly acknowledge the challenge of balancing regulation with innovation and practical implementation.
-10. **Word Count:** The section is slightly over the target (3140 words vs. 3000). Addressing these minor issues concisely, along with the major and moderate ones, could help in trimming the content without losing substance.
+1.  **Redundancy in Introduction:** The first paragraph is slightly verbose. "The emergence of sophisticated AI agents... presents a transformative paradigm shift... necessitating a re-evaluation... This discussion synthesizes... interpreting their broader implications..." could be streamlined.
+    **Fix:** Condense the introductory paragraph for conciseness.
+2.  **Uncited Recommendations:** Some specific recommendations, while logical, lack direct citation even when the broader concept was cited earlier. For example, "Enhance Pricing Transparency and Predictability" or "Start with Pilot Programs and Phased Rollouts" in 4.4.
+    **Fix:** Either add a relevant citation for these specific recommendations or rephrase to indicate they are synthesized from the preceding analysis.
+3.  **Vague "AI Literacy" Recommendation:** In 4.4, "Invest in Internal AI Literacy" for enterprises is a good point, but "understanding, evaluating, and managing AI agent technologies" is broad.
+    **Fix:** Provide a few more concrete examples of what "AI literacy" entails in this context (e.g., understanding model limitations, data governance, ethical guidelines for deployment).
+4.  **Implicit Assumptions about Value Measurement:** When discussing value-based pricing, the text notes "The challenge will be in robustly measuring and attributing value..." While acknowledged, the difficulty of this measurement could be emphasized more, as it's a significant practical hurdle.
+    **Fix:** Briefly elaborate on *why* this measurement is challenging (e.g., multi-factor contributions, long-term vs. short-term value, subjective vs. objective outcomes).
+5.  **Word Choice - "Devalue Advanced Capabilities":** In 4.1, "underpricing can devalue their advanced capabilities" is a strong claim. While it can reduce perceived value, "devalue" might be too absolute. It could also stimulate adoption and network effects, leading to *more* value in the long run.
+    **Fix:** Rephrase to "underpricing can *risk* devaluing their advanced capabilities or *undermine perceived value*."
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Unexplored Trade-off between Market Penetration and Profitability
-**Location:** Implications for AI Companies, para 2
-**Logic:** The discussion highlights how usage-based models foster market penetration ("maximize adoption") and value-based models capture higher ROI.
-**Missing:** A deeper exploration of the inherent strategic trade-offs between these two objectives. Does a company prioritize market share over immediate profitability, or vice-versa? How do these strategies evolve over a company's lifecycle or as market maturity changes?
-**Fix:** Add a short paragraph or a few sentences exploring this strategic tension and how companies navigate it, potentially drawing on examples from other tech sectors.
-
-### Gap 2: Mechanism for "Advanced Analytics" Leading to "More Precise" Value Quantification
-**Location:** Future Pricing Trends, para 1
-**Logic:** Claims future pricing will use "advanced analytics to measure the tangible ROI... moving away from generic tiers to highly customized, outcome-linked agreements."
-**Missing:** An explanation of *how* these "advanced analytics" will achieve this leap in precision and overcome current attribution challenges. What makes them "advanced" enough (e.g., specific techniques, data requirements, AI capabilities) to enable such a transformation? This is a logical leap without explaining the enabling technology or methodology.
-**Fix:** Briefly elaborate on *how* these analytics would achieve greater precision (e.g., "leveraging explainable AI models to trace impact, granular data correlation, or sophisticated causal inference techniques").
+No major logical gaps were identified. The discussion flows coherently and arguments generally follow from their premises. The issues are more about depth, specificity, and academic rigor rather than flawed reasoning.
 
 ---
 
-## Methodological Concerns (Pertaining to the discussion's arguments)
+## Methodological Concerns
 
-### Concern 1: Reliance on "Hypothetical Case Studies"
-**Issue:** The introduction states the discussion is informed by "an analysis of illustrative case studies (hypothetically presented in previous sections)."
-**Risk:** Without access to the specific details or rigor of these hypothetical case studies, the strength and generalizability of claims derived from them in the discussion cannot be fully assessed. The discussion relies on the *assumption* that these studies were robust and representative.
-**Reviewer Question:** "What specific, concrete insights from these (hypothetical) case studies directly inform the stronger claims made in this discussion? Were they diverse enough to support the breadth of generalizations presented?"
-**Suggestion:** For the final paper, ensure the hypothetical case studies (or actual ones, if they are replaced) are robustly presented and their insights clearly linked to the discussion's arguments. In the discussion itself, briefly reference the *type* of insights gained to ground some claims, or add a disclaimer about the generalizability of findings based on these studies.
+### Concern 1: Depth of Empirical Evidence for AI Agents
+**Issue:** While the discussion uses a strong theoretical framework and cites general LLM pricing examples, it lacks specific empirical data or case studies on the pricing models, adoption challenges, or unique market dynamics *specifically for autonomous AI agents*. The distinction between foundational LLMs and multi-step, autonomous agents could be more sharply drawn and supported with agent-specific evidence.
+**Risk:** The discussion might be perceived as a general economic review applied to "AI," rather than a focused analysis of "AI agents."
+**Reviewer Question:** "What real-world examples exist of the 'agent-centric pricing models' or how companies are uniquely adapting pricing for autonomous agents versus just API calls to LLMs?"
+**Suggestion:** If available, incorporate more nascent industry examples, pilot programs, or even hypothetical but highly detailed scenarios that illustrate the unique pricing and adoption challenges/opportunities of *agents*.
+
+### Concern 2: Nuance on Open-Source Impact
+**Issue:** The role of open-source models is mentioned as exerting "downward pressure on proprietary model pricing" (4.1). While true, it could be nuanced further. Open-source models also drive innovation, create new markets (e.g., fine-tuning, deployment services), and expand the overall AI ecosystem, which can indirectly benefit proprietary models by fostering general AI adoption.
+**Risk:** Simplistic view of open-source as purely a competitive threat.
+**Suggestion:** Briefly expand on the multifaceted impact of open-source AI, acknowledging its role in ecosystem growth and innovation, not just price competition.
 
 ---
 
 ## Missing Discussions
 
-1.  **Ethical Implications of Dynamic Pricing:** While ethical AI is discussed, the specific ethical considerations of *dynamic pricing itself* (e.g., potential for price discrimination, fairness to different customer segments based on inferred willingness to pay, impact on accessibility) are not explicitly addressed.
-2.  **Impact of Open-Source Models on Proprietary Solutions:** While the commoditization of foundational models is mentioned, a deeper dive into how the proliferation of powerful, freely available open-source models (e.g., Llama, Mistral variants) directly pressures the pricing strategies of proprietary AI companies (e.g., OpenAI, Anthropic) could be highly relevant. This could lead to a focus on niche expertise, specialized data, or superior managed services.
-3.  **Cross-Border/Jurisdictional Pricing Challenges:** AI services are global, but regulations (e.g., GDPR), market values, and economic conditions vary significantly across regions. This adds complexity to global pricing models (e.g., how compliance costs in the EU affect pricing there vs. the US).
-4.  **Talent and Human Capital Costs:** Beyond general operational costs, the substantial cost of attracting and retaining top AI talent (researchers, engineers, ethicists) and how this factors into the pricing models, especially for cutting-edge or highly specialized solutions, could be a valuable addition.
+1.  **Impact on Labor Markets (beyond cost):** While cost reduction (4.2) is mentioned, a deeper dive into the broader socio-economic impact of AI agent pricing strategies on labor markets (job displacement, creation of new job types, reskilling needs) is largely absent, despite its importance to the "transformative paradigm shift."
+2.  **Long-term vs. Short-term Value:** The discussion touches on ROI and value-based pricing, but a more explicit discussion on how to price for long-term strategic value versus immediate, measurable task completion could be beneficial.
+3.  **Data Ownership and Value Attribution in Agent Ecosystems:** If agents collaborate and share data, how is the value of that data attributed and priced within a micro-transactional agent ecosystem? This is a complex issue for agent-centric models.
+4.  **Security Risks and Pricing:** While security is mentioned, the unique security risks of autonomous agents (e.g., prompt injection, adversarial attacks on tools) and how their mitigation might be priced are not specifically detailed.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Overly Confident Language:** Phrases like "meticulously examined," "elucidated the complexities," "astonishing pace," "paramount," "will likely incorporate," "will inevitably be reflected" appear throughout. While confidence is good, some of these could be softened to maintain academic rigor and avoid sounding definitive where uncertainty or prediction exists (e.g., "comprehensively examined," "explored the complexities," "rapid pace," "critical," "are expected to incorporate," "are likely to be reflected").
-2.  **Subtle Repetition:** Some concepts, such as the importance of value-based pricing or ethical considerations, are reiterated across sections (e.g., Future Trends and Recommendations). While reinforcement is acceptable, ensure new insights or specific applications are added with each mention, rather than simple restatement, to justify the length.
+1.  **Slightly Repetitive Phrasing:** Some phrases like "intrinsically linked," "paramount," or "critical" are used frequently. Varying vocabulary could enhance readability.
+2.  **Confidence in Predictions:** As noted in Issue 3, some predictions are stated with high certainty. Softening the language to reflect the speculative nature of future trends would be appropriate.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "How do you address the potential for vendor lock-in with usage-based AI models, especially for proprietary fine-tuned solutions and embedded APIs?"
-2.  "Given the complexities of value attribution, how feasible are truly 'outcome-linked' and 'dynamic' contracts in practice, and what are the operational and legal challenges involved?"
-3.  "What empirical evidence or market analysis supports the claim that customers are willing to pay a *premium* specifically for 'verifiable ethical AI' beyond standard compliance or risk mitigation?"
-4.  "Can you elaborate on the specific 'advanced analytics' or methodologies that will enable more precise value quantification in future pricing models, overcoming current attribution difficulties?"
-5.  "How do the predicted 'near-zero marginal costs' for basic inference reconcile with the increasing energy demands and hardware costs associated with large-scale AI operations?"
-6.  "What are the ethical implications of dynamic pricing models themselves, beyond the ethical design of the AI system?"
-7.  "How do open-source AI models influence the pricing strategies of proprietary AI service providers?"
+1.  "Can you provide DOIs or arXiv IDs for all cited academic papers and direct URLs for industry reports?" (🔴 Critical)
+2.  "How do the unique characteristics of *autonomous AI agents* (beyond foundational LLMs) specifically influence these pricing models and adoption considerations, with more concrete examples?"
+3.  "What are the biggest uncertainties or potential 'black swan' events that could significantly alter these predicted pricing trends for AI agents?"
+4.  "Could you elaborate on the practical challenges of implementing 'agent-centric pricing' based on 'cognitive cycles' or 'actions taken'?"
+5.  "How do pricing models for AI agents specifically address or exacerbate ethical concerns such as equitable access, bias, or data privacy, and what concrete policy recommendations emerge from this?"
 
 **Prepare answers or add to paper**
 
@@ -140,13 +132,12 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 Fix Issue 1 (Overclaiming "near-zero marginal costs") - affects a fundamental economic claim.
-2.  🔴 Address Issue 2 (Weak evidence for "Ethical AI Premium") - impacts key recommendations and future trends.
-3.  🔴 Resolve Issue 3 (Missing vendor lock-in counter-argument) - critical for competitive strategy.
-4.  🟡 Address Issue 4 (Practical Challenges of Value-Based Pricing) - adds crucial realism to predictions.
-5.  🟡 Address Issue 5 (Operational Burden of Dynamic Pricing) - important practical consideration.
+1.  🔴 **Fix Issue 1 (Incomplete Citation Information)** - This is non-negotiable for academic publication.
+2.  🟡 **Address Issue 2 (Generality and Lack of AI Agent Specificity)** - Deepen the unique AI agent perspective.
+3.  🟡 **Resolve Issue 3 (Overly Confident Predictions)** - Hedge language for future trends.
+4.  🟡 **Address Issue 4 (Missing "Limitations" Section)** - Add a paragraph on the scope and limitations of the discussion.
+5.  🟡 **Address Issue 5 (Insufficient Detail on Ethical Implications of Pricing)** - Expand on this crucial aspect.
 
 **Can defer:**
--   Minor wording issues (fix in revision).
--   Adding more detailed operational specifics for feedback loops or policy implementation (can be suggested as future work if too extensive for current scope).
--   A deeper dive into all missing discussions (can be suggested as future research directions if space is constrained after addressing major issues).
+- Minor wording issues (fix in revision)
+- Further empirical evidence (can be suggested for future work if not immediately available)

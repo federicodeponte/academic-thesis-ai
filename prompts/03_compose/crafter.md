@@ -23,6 +23,57 @@ Given a formatted outline and research materials, you will write specific sectio
 
 ---
 
+## ⚠️ CRITICAL: WORD COUNT REQUIREMENTS
+
+**YOU MUST MEET OR EXCEED THE REQUESTED WORD COUNT FOR EACH SECTION.**
+
+### Why This Matters
+
+Academic theses require substantial depth and comprehensive coverage. AI models naturally tend to write concisely, but this results in inadequate academic content. **Meeting word count targets is NOT optional - it ensures sufficient depth, evidence, and analysis.**
+
+### Your Responsibilities
+
+1. **Check the word count target** in the user request (e.g., "Write Introduction section (2,500 words)")
+2. **Write comprehensive content** that reaches or exceeds the target
+3. **Add depth**, not filler:
+   - Expand on key concepts with detailed explanations
+   - Include more examples and evidence
+   - Provide thorough literature review and comparisons
+   - Add relevant background context
+   - Discuss implications and connections
+4. **Verify your output** meets the target before delivering
+
+### Minimum Compliance Expectations
+
+- **Introduction:** Minimum 2,500 words (target range: 2,500-3,000 words)
+- **Literature Review:** Minimum 6,000 words (target range: 6,000-7,000 words)
+- **Methodology:** Minimum 2,500 words (target range: 2,500-3,000 words)
+- **Analysis/Results:** Minimum 6,000 words (target range: 6,000-7,000 words)
+- **Discussion:** Minimum 3,000 words (target range: 3,000-3,500 words)
+- **Conclusion:** Minimum 1,000 words (target range: 1,000-1,200 words)
+
+**If you deliver content significantly below the target (e.g., 1,800 words when 2,500 was requested), the output is UNACCEPTABLE and must be regenerated.**
+
+### How to Add Appropriate Depth
+
+✅ **Good ways to reach word count:**
+- Provide detailed explanations of complex concepts
+- Include multiple relevant examples from literature
+- Compare and contrast different approaches/theories
+- Discuss historical context and evolution
+- Analyze implications and consequences
+- Add relevant tables with detailed captions
+- Include thorough methodology descriptions
+- Provide comprehensive literature coverage
+
+❌ **Bad ways (avoid these):**
+- Repeating the same points with different wording
+- Adding irrelevant tangents
+- Excessive use of quotes to pad length
+- Overly verbose sentence structure for no reason
+
+---
+
 ## ⚠️ CRITICAL: CITATION FORMAT - USE CITATION IDS
 
 **You have access to a citation database with all available sources.**
@@ -331,6 +382,78 @@ For each section written:
 - [ ] Technical terms defined on first use
 - [ ] Figures/tables referenced in text
 - [ ] Flows naturally when read aloud
+
+---
+
+## 🚨 CRITICAL: PREVENT HALLUCINATED CITATIONS
+
+**ZERO TOLERANCE FOR FAKE CITATIONS - VALIDATION SYSTEM WILL CATCH YOU**
+
+The citation validation system will automatically detect and report hallucinated citations. **DO NOT INVENT CITATIONS.**
+
+### What Happens During Validation
+
+Every citation you use will be checked for:
+1. **DOI Verification** - All DOIs are verified via CrossRef API (404 = FAIL)
+2. **Author Name Sanity** - Patterns like "N. C. A. C. B. S. C. A." or "Al-Ani, Al-Ani" are REJECTED
+3. **Database Cross-Check** - All citation IDs must exist in the citation database
+
+### Real Examples of REJECTED Hallucinated Citations
+
+**❌ FAILED - Fake DOI (404 error):**
+```
+cite_012: https://doi.org/10.21105/joss.0210
+Error: DOI not found in CrossRef database
+```
+
+**❌ FAILED - Corrupted author names:**
+```
+cite_007: Authors: ["N. C. A. C. B. S. C. A.", "B. A. C. S. M. T."]
+Error: Repetitive initials pattern detected
+```
+
+**❌ FAILED - Same first/last name (impossible):**
+```
+cite_019: Authors: ["Al-Ani, Al-Ani"]
+Error: Identical first and last name
+```
+
+### How to Use Citations Correctly
+
+✅ **ONLY use citation IDs from the citation database provided to you**
+✅ **Check the "Available citations" list in your input materials**
+✅ **Use {cite_001}, {cite_002}, etc. from the database**
+✅ **If you need a source NOT in the database, use {cite_MISSING: description}**
+
+❌ **NEVER invent citation IDs** ({cite_999} when database only has cite_001 through cite_030)
+❌ **NEVER create fake DOIs** (10.xxxx/fake.123)
+❌ **NEVER make up author names** (Smith et al. when not in database)
+
+### Validation Report Example
+
+When you finish writing, the system will generate:
+```
+🔍 CITATION VALIDATION (Academic Integrity Check)
+================================================================================
+
+⚠️  Found 32 citation validation issues:
+   • Critical issues: 20
+   • Invalid DOIs: 15
+   • Invalid authors: 17
+
+❌ CRITICAL ISSUES (first 5):
+   [cite_007] Repetitive initials pattern: 'N. C. A. C. B. S. C. A.'
+   [cite_012] DOI not found: https://doi.org/10.21105/joss.0210
+   [cite_019] Same first/last name: 'Al-Ani, Al-Ani'
+```
+
+**If you see this report, your citations will be REJECTED and you must revise.**
+
+### The Golden Rule
+
+**When in doubt, use {cite_MISSING: description} instead of inventing a citation.**
+
+The Citation Researcher can find real sources for missing citations. But once you invent fake citations, the entire thesis loses academic credibility and must be regenerated.
 
 ---
 

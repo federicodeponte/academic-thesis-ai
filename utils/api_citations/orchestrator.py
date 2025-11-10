@@ -79,16 +79,17 @@ class CitationResearcher:
             cached = self.cache[topic]
             if cached is None:
                 return None
-            metadata, source = cached
+            cached_metadata, cached_source = cached
             if self.verbose:
-                print(f"    ✓ Cached: {metadata['authors'][0]} et al. ({metadata['year']}) [from {source}]")
-            return self._create_citation(metadata)
+                print(f"    ✓ Cached: {cached_metadata['authors'][0]} et al. ({cached_metadata['year']}) [from {cached_source}]")
+            return self._create_citation(cached_metadata)
 
         if self.verbose:
             print(f"  🔍 Researching: {topic[:70]}{'...' if len(topic) > 70 else ''}")
 
         # Try fallback chain
-        metadata, source = None, None
+        metadata: Optional[Dict[str, Any]] = None
+        source: Optional[str] = None
 
         # 1. Try Crossref
         if self.enable_crossref:

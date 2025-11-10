@@ -630,9 +630,6 @@ Linux's dominance in server environments and its role as the foundation for clou
 
 ## References
 
-[To be completed with proper citations]
-
-
 Castells. (1996). *The Rise of the Network Society*. Blackwell Publishing.
 
 Chesbrough. (2003). *Open Innovation: The New Imperative for Creating and Profiting from Technology*. Harvard Business School Press.

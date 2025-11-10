@@ -630,3 +630,25 @@ Linux's dominance in server environments and its role as the foundation for clou
 
 ## References
 
+[To be completed with proper citations]
+
+
+Castells. (1996). *The Rise of the Network Society*. Blackwell Publishing.
+
+Chesbrough. (2003). *Open Innovation: The New Imperative for Creating and Profiting from Technology*. Harvard Business School Press.
+
+Deci, & Ryan. (2000). *Self-Determination Theory: Basic Psychological Needs and Optimal Functioning*. Guilford Press.
+
+Ellen MacArthur Foundation. (2013). *Towards the Circular Economy: Opportunities for the Consumer Goods Sector*. Ellen MacArthur Foundation.
+
+Foucault. (1980). *Power/Knowledge: Selected Interviews and Other Writings, 1972-1977*. Pantheon Books.
+
+Lessig. (2004). *Free Culture: How Big Media Uses Technology and the Law to Lock Down Culture and Control Creativity*. Penguin Press.
+
+Nonaka, & Takeuchi. (1995). *The Knowledge-Creating Company: How Japanese Companies Create the Dynamics of Innovation*. Oxford University Press.
+
+Ostrom. (1990). *Governing the Commons: The Evolution of Institutions for Collective Action*. Cambridge University Press.
+
+Raymond. (1999). *The Cathedral and the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary*. O'Reilly Media.
+
+Samuelson. (1954). The Pure Theory of Public Expenditure. *The Review of Economics and Statistics*.

@@ -266,19 +266,47 @@ Return a JSON object with this structure:
 - If you cannot find a paper, return: {{"error": "No paper found"}}
 """
 
-            # Call Gemini
+            # Call Gemini with relaxed safety settings for academic research
             import google.generativeai as genai
+
+            # Safety settings: Allow academic research content
+            # Default filters are too aggressive for legitimate academic queries
+            safety_settings = {
+                genai.types.HarmCategory.HARM_CATEGORY_HATE_SPEECH: genai.types.HarmBlockThreshold.BLOCK_NONE,
+                genai.types.HarmCategory.HARM_CATEGORY_HARASSMENT: genai.types.HarmBlockThreshold.BLOCK_NONE,
+                genai.types.HarmCategory.HARM_CATEGORY_SEXUALLY_EXPLICIT: genai.types.HarmBlockThreshold.BLOCK_NONE,
+                genai.types.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT: genai.types.HarmBlockThreshold.BLOCK_NONE,
+            }
+
             response = self.gemini_model.generate_content(
                 [scout_prompt, user_input],
                 generation_config=genai.GenerationConfig(
                     temperature=0.2,  # Low temperature for factual research
                     max_output_tokens=2048
-                )
+                ),
+                safety_settings=safety_settings
             )
 
-            # Parse JSON response
+            # Parse JSON response with error handling for safety blocks
             import json
-            response_text = response.text.strip()
+
+            # Check if response was blocked by safety filter
+            if not response.candidates:
+                logger.warning(f"LLM response blocked (no candidates) for topic: {topic[:50]}...")
+                return None
+
+            candidate = response.candidates[0]
+            if candidate.finish_reason not in [1, 0]:  # 1 = STOP (normal), 0 = UNSPECIFIED
+                logger.warning(f"LLM response blocked (finish_reason={candidate.finish_reason}) for topic: {topic[:50]}...")
+                return None
+
+            # Try to access response text safely
+            try:
+                response_text = response.text.strip()
+            except ValueError as e:
+                # response.text raises ValueError if no valid part exists
+                logger.warning(f"LLM response has no valid text (safety filter likely) for topic: {topic[:50]}...")
+                return None
 
             # Remove markdown code blocks if present
             if response_text.startswith("```"):
@@ -287,10 +315,17 @@ Return a JSON object with this structure:
                     response_text = response_text[4:]
                 response_text = response_text.strip()
 
-            data = json.loads(response_text)
+            # Parse JSON with robust error handling
+            try:
+                data = json.loads(response_text)
+            except json.JSONDecodeError as e:
+                logger.warning(f"LLM returned invalid JSON for topic '{topic[:50]}...': {e}")
+                logger.debug(f"Raw response: {response_text[:200]}...")
+                return None
 
             # Check for error
             if "error" in data:
+                logger.debug(f"LLM returned error response for topic '{topic[:50]}...': {data['error']}")
                 return None
 
             # Validate and return
@@ -310,10 +345,11 @@ Return a JSON object with this structure:
                     "confidence": 0.5,  # Lower confidence for LLM results
                 }
             else:
+                logger.debug(f"LLM returned incomplete metadata for topic '{topic[:50]}...'")
                 return None
 
         except Exception as e:
-            logger.error(f"LLM research failed: {e}")
+            logger.error(f"LLM research failed for topic '{topic[:50]}...': {e}")
             return None
 
     def close(self) -> None:

@@ -157,7 +157,8 @@ class PandocLatexEngine(PDFEngine):
         else:
             spacing_command = r'\singlespacing'
 
-        preamble = r'''\usepackage{etoolbox}
+        preamble = r'''\PassOptionsToPackage{hyphens}{url}
+\usepackage{etoolbox}
 \usepackage{setspace}
 ''' + spacing_command + r'''
 \usepackage{indentfirst}

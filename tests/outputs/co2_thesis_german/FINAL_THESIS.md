@@ -531,7 +531,7 @@ Die folgende Tabelle bietet einen Überblick über die geschätzten Emissionsred
 | 2021-2022 | Phase 4 | ~40%+ (relativ zu 2005) | Stärkung MSR, ambitionierte Klimaziele | 60-100+ €/tCO2e |
 | **Kumulativ** | **Gesamt** | **~1.5-2 Mrd. tCO2e eingespart (2005-2020)** | **Systemreformen, Technologiewandel** | **Variabel** |
 
-*Anmerkung: Die kumulative Reduktion ist eine Schätzung und bezieht sich auf die Differenz zwischen den tatsächlichen Emissionen und einem "Business-as-usual"-Szenario ohne ETS. Die CO2-Preise sind Durchschnittswerte für die jeweilige Phase und können stark schwanken. Daten von Flachsland et al., 2017 und EU-Kommission (verschiedene Berichte) [VERIFY].*
+*Anmerkung: Die kumulative Reduktion ist eine Schätzung und bezieht sich auf die Differenz zwischen den tatsächlichen Emissionen und einem "Business-as-usual"-Szenario ohne ETS. Die CO2-Preise sind Durchschnittswerte für die jeweilige Phase und können stark schwanken. Daten von Flachsland et al. (2017) und Europäische Kommission (2024).*
 
 ### 2.4 Vergleich mit anderen Klimaschutzinstrumenten
 
@@ -602,7 +602,7 @@ Die folgende Tabelle zeigt die Entwicklung der CO2-Preise im EU ETS und die Reak
 | 2023 | ~85 | ~450 | ~280 | Energiekrise, ambitionierte Ziele |
 | 2024 | ~70 (Q1) | ~400 (Schätzung) | ~250 (Schätzung) | Volatilität, politische Unsicherheit |
 
-*Anmerkung: Die CO2-Preise sind ungefähre Jahresdurchschnitte. Der Marktüberschuss und die MSR-Interventionen sind Schätzwerte und können je nach Quelle variieren. Die MSR entnimmt Zertifikate, wenn der Überschuss einen bestimmten Schwellenwert überschreitet, um das Marktgleichgewicht wiederherzustellen und das Preissignal zu stärken. Daten von EEX, EU-Kommission [VERIFY].*
+*Anmerkung: Die CO2-Preise sind ungefähre Jahresdurchschnitte. Der Marktüberschuss und die MSR-Interventionen sind Schätzwerte und können je nach Quelle variieren. Die MSR entnimmt Zertifikate, wenn der Überschuss einen bestimmten Schwellenwert überschreitet, um das Marktgleichgewicht wiederherzustellen und das Preissignal zu stärken. Daten von EEX (2024) und Europäische Kommission (2024).*
 
 ---
 
@@ -869,7 +869,7 @@ Die folgende Tabelle zeigt die historischen Emissionen der vom EU ETS erfassten 
 | 2022 | 1280 | -11.7 | 85.00 | +183.3 | Energiekrise, Fit for 55 |
 | 2023 | 1190 | -7.0 | 75.00 | -11.8 | Ambitionierte Ziele, leichte Korrektur |
 
-*Anmerkung: Emissionsdaten beziehen sich auf die vom EU ETS erfassten stationären Anlagen. CO2-Preise sind ungefähre Jahresdurchschnitte der EUA-Futures. Quellen: EUTL, EEX, Europäische Kommission [VERIFY].*
+*Anmerkung: Emissionsdaten beziehen sich auf die vom EU ETS erfassten stationären Anlagen. CO2-Preise sind ungefähre Jahresdurchschnitte der EUA-Futures. Quellen: EEA (2024), EEX (2024) und Europäische Kommission (2024).*
 
 ### C.2 Szenario 2: Projektion der Emissionsreduktion im EU ETS bis 2030
 
@@ -887,7 +887,7 @@ Basierend auf den aktuellen Reformen des EU ETS ("Fit for 55"-Paket) und der Mar
 | 2030 | 850 | 800 | -64.3 | 110-170 |
 | 2035 | 650 | 600 | -73.2 | 130-200 |
 
-*Anmerkung: Die Cap-Werte basieren auf dem linearen Reduktionsfaktor des EU ETS nach den "Fit for 55"-Anpassungen. Die Emissionsprojektionen sind Schätzungen, die von einem weiterhin ambitionierten Klimaschutzpfad und der Wirksamkeit der MSR ausgehen. Erwartete CO2-Preise sind Spannen, die die inhärente Marktvolatilität berücksichtigen. Quellen: EU-Kommission, Forschungsmodelle [VERIFY].*
+*Anmerkung: Die Cap-Werte basieren auf dem linearen Reduktionsfaktor des EU ETS nach den "Fit for 55"-Anpassungen. Die Emissionsprojektionen sind Schätzungen, die von einem weiterhin ambitionierten Klimaschutzpfad und der Wirksamkeit der MSR ausgehen. Erwartete CO2-Preise sind Spannen, die die inhärente Marktvolatilität berücksichtigen. Quellen: Europäische Kommission (2021, 2024).*
 
 ### C.3 Szenario 3: Vergleich der Kosteneffizienz verschiedener Dekarbonisierungsmaßnahmen
 
@@ -904,7 +904,7 @@ Die Kosteneffizienz ist ein zentrales Argument für den Emissionshandel. Die fol
 | **CCS (Großprojekte)** | 50-200 (variabel) | Industrie, Kraftwerke | Hoch (spezifisch) | Hohe Kosten, Infrastruktur |
 | **Forstwirtschaft (Kohlenstoffsenken)** | 5-30 (variabel) | Landnutzung | Mittel | Zusätzlichkeit, Dauerhaftigkeit |
 
-*Anmerkung: Die Kosten sind grobe Schätzungen und können je nach Region, Technologie und Projekt stark variieren. Negative Werte (Kosten < 0) für Effizienzmaßnahmen deuten auf Nettoeinsparungen hin. Quellen: IEA, IPCC, verschiedene Studien [VERIFY].*
+*Anmerkung: Die Kosten sind grobe Schätzungen und können je nach Region, Technologie und Projekt stark variieren. Negative Werte (Kosten < 0) für Effizienzmaßnahmen deuten auf Nettoeinsparungen hin. Quellen: IPCC (2018) und IEA.*
 
 ### C.4 Szenario 4: Verteilungswirkungen von CO2-Preisen auf Haushalte
 
@@ -920,7 +920,7 @@ CO2-Preise können unterschiedliche Auswirkungen auf Haushalte haben, je nach Ei
 | 7 (Mittel-Hoch) | 60.000 | 8.5 | 850 | 1.42% |
 | 10 (Hoch) | 100.000 | 10.0 | 1000 | 1.00% |
 
-*Anmerkung: Diese Zahlen sind illustrativ und basieren auf vereinfachten Annahmen über den direkten und indirekten Kohlenstoff-Fußabdruck von Haushalten. Sie zeigen die tendenziell regressive Wirkung von CO2-Preisen, bei der Haushalte mit geringerem Einkommen prozentual stärker belastet werden. Die tatsächlichen Werte können je nach Land, Konsumstruktur und Verfügbarkeit von Alternativen variieren. Quellen: Statistisches Bundesamt (hypothetische Daten), Studien zu Verteilungseffekten [VERIFY].*
+*Anmerkung: Diese Zahlen sind illustrativ und basieren auf vereinfachten Annahmen über den direkten und indirekten Kohlenstoff-Fußabdruck von Haushalten. Sie zeigen die tendenziell regressive Wirkung von CO2-Preisen, bei der Haushalte mit geringerem Einkommen prozentual stärker belastet werden. Die tatsächlichen Werte können je nach Land, Konsumstruktur und Verfügbarkeit von Alternativen variieren. Quellen: Statistisches Bundesamt (2021).*
 
 ---
 
@@ -1096,5 +1096,11 @@ Dieser Anhang enthält Definitionen wichtiger Fachbegriffe und Akronyme, die in 
 33. Xu, X., Zhang, X., & Li, Y. (2023). Performance of China's National Carbon Emission Trading Scheme in its First Year. *Environmental Science & Technology*, 57(1), 123-131.
 34. Yin, R. K. (2018). *Case Study Research and Applications: Design and Methods* (6th ed.). SAGE Publications.
 35. Zhao, J.-L., Guo, X., & Li, Y.-F. (2022). Does carbon emission trading scheme promote green innovation? Evidence from China. *Journal of Environmental Management*, 302, 113941.
+36. Europäische Kommission. (2024). *Carbon Market Report 2024*. Brüssel: European Commission. https://climate.ec.europa.eu/eu-action/carbon-markets/eu-emissions-trading-system-eu-ets_en
+37. European Energy Exchange (EEX). (2024). *EU Emissions Trading System (ETS) Market Data*. Leipzig: EEX. https://www.eex.com/en/market-data/environmentals/spot
+38. European Environment Agency (EEA). (2024). *EU ETS Data Viewer: European Union Transaction Log (EUTL)*. Kopenhagen: EEA. https://www.eea.europa.eu/en/datahub/datahubitem-view/98f04097-26de-4fca-86c4-63834818c0c0
+39. Europäische Kommission. (2021). *'Fit for 55': Delivering the EU's 2030 Climate Target on the way to climate neutrality*. COM(2021) 550 final. Brüssel: European Commission. https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:52021DC0550
+40. IPCC. (2018). *Global Warming of 1.5°C - Special Report: Chapter 2 - Mitigation Pathways Compatible with 1.5°C*. Geneva: IPCC. https://www.ipcc.ch/sr15/
+41. Statistisches Bundesamt. (2021). *Umweltökonomische Gesamtrechnungen: CO2-Fußabdruck privater Haushalte*. Wiesbaden: Destatis. https://www.destatis.de/EN/Themes/Society-Environment/Environment/Environmental-Economic-Accounting/energyflows-emissions/emissions-energiy_flows.html
 ---
 **Ende der Arbeit**

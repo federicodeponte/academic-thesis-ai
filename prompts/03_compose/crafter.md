@@ -314,59 +314,84 @@ grep "Draft v1" output.md          # FAIL - should be "Borrador v1"
 
 ## Output Format
 
-**⚠️ IMPORTANT - Language Consistency:**
-- If writing in **German**, use: `**Abschnitt:**` `**Wortzahl:**` `Entwurf v1`
-- If writing in **Spanish**, use: `**Sección:**` `**Recuento de palabras:**` `Borrador v1`
-- If writing in **French**, use: `**Section:**` `**Nombre de mots:**` `Brouillon v1`
-- If writing in **English**, use: `**Section:**` `**Word Count:**` `Draft v1`
+**⚠️ CRITICAL: CLEAN OUTPUT - NO INTERNAL METADATA SECTIONS**
+
+**Your output should contain ONLY the actual section content for the final thesis.**
+
+DO NOT include these internal tracking sections in your output:
+- ❌ `## Citations Used`
+- ❌ `## Notes for Revision`
+- ❌ `## Word Count Breakdown`
+
+These are for YOUR internal tracking only (mental notes). The final output should be clean academic prose ready for inclusion in the thesis.
+
+**⚠️ LANGUAGE CONSISTENCY:**
+- If writing in **German**: Use proper German section name (e.g., "Einleitung" not "Introduction")
+- If writing in **Spanish**: Use proper Spanish section name (e.g., "Introducción" not "Introduction")
+- If writing in **French**: Use proper French section name (e.g., "Introduction" is same)
+- If writing in **English**: Use proper English section name (e.g., "Introduction")
+
+**✅ CORRECT Output Format:**
 
 ```markdown
-# [Section Title]
+# [Proper Section Name in Target Language]
 
-**Section:** [e.g., Introduction, Methods, Results] / **Abschnitt:** (German) / **Sección:** (Spanish)
-**Word Count:** [Target] / **Wortzahl:** (German) / **Recuento de palabras:** (Spanish)
-**Status:** Draft v1 / Entwurf v1 (German) / Borrador v1 (Spanish) / Brouillon v1 (French)
-
----
-
-## Content
+**Examples:**
+- English: "# Introduction" or "# Literature Review" or "# Methodology"
+- German: "# Einleitung" or "# Literaturübersicht" or "# Methodik"
+- Spanish: "# Introducción" or "# Revisión de Literatura" or "# Metodología"
 
 [Well-written academic prose with proper formatting]
 
-The advent of large language models (LLMs) has transformed natural language processing, enabling unprecedented capabilities in text generation, translation, and understanding (Brown et al., 2020; Devlin et al., 2019). Recent applications in healthcare demonstrate particular promise, with systems achieving near-expert performance in medical question answering (Singhal et al., 2023) and diagnostic support (Thirunavukarasu et al., 2023). However, critical challenges remain in ensuring reliability, interpretability, and clinical safety of these systems (Wornow et al., 2023).
+The advent of large language models (LLMs) has transformed natural language processing {cite_001}{cite_002}. Recent applications in healthcare demonstrate particular promise {cite_003}, with systems achieving near-expert performance in medical question answering {cite_004}. However, critical challenges remain in ensuring reliability and clinical safety {cite_005}.
 
 [Continue with clear paragraphs, proper citations, logical flow...]
 
----
+[Multiple comprehensive paragraphs to meet word count target...]
 
-## Citations Used
-
-1. Brown et al. (2020) - GPT-3 paper
-2. Devlin et al. (2019) - BERT paper
-3. Singhal et al. (2023) - Med-PaLM
-4. Thirunavukarasu et al. (2023) - LLMs in medicine review
-5. Wornow et al. (2023) - Reliability concerns
-
----
-
-## Notes for Revision
-
-- [ ] Add more recent citations (2024)
-- [ ] Expand paragraph 3 with specific examples
-- [ ] Check that transition to Methods is smooth
-
----
-
-## Word Count Breakdown
-
-- Paragraph 1 (Hook): 120 words
-- Paragraph 2 (Context): 180 words
-- Paragraph 3 (Gap): 150 words
-- Paragraph 4 (Approach): 140 words
-- Paragraph 5 (Preview): 90 words
-- **Total:** 680 words / 800 target
-
+[Final paragraph concluding the section and transitioning to next section...]
 ```
+
+**❌ INCORRECT Output (DO NOT DO THIS):**
+
+```markdown
+# Introduction
+
+**Section:** Introduction  ← ❌ Remove this
+**Word Count:** 2,500 words ← ❌ Remove this
+**Status:** Draft v1 ← ❌ Remove this
+
+---
+
+## Content  ← ❌ Remove this generic header
+
+[Content here]
+
+---
+
+## Citations Used  ← ❌ Remove this entire section
+
+1. Smith et al...
+
+---
+
+## Notes for Revision  ← ❌ Remove this entire section
+
+- [ ] Fix this...
+
+---
+
+## Word Count Breakdown  ← ❌ Remove this entire section
+
+- Paragraph 1: 120 words...
+```
+
+**Remember:**
+- Output ONLY the section content itself
+- Start with the proper section title (`# Introduction`, `# Einleitung`, etc.)
+- Follow immediately with the academic prose
+- NO metadata sections (`## Citations Used`, `## Notes`, `## Word Count`)
+- Track citations/notes/word count mentally, don't output them
 
 ---
 

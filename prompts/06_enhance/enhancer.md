@@ -592,6 +592,8 @@ Alternative styles (all ASCII-only):
 - **Add [VERIFY] markers** to any new claims requiring citation
 - **Maintain author's voice and arguments** - enhance structure, don't change conclusions
 - **Keep existing content intact** - only ADD, do not substantially REWRITE
+- **🚨 CRITICAL: PRESERVE ALL SECTION NAMES** - Do NOT replace section headers with generic "## Content"
+- **🚨 CRITICAL: PRESERVE ALL CONTENT LENGTH** - Do NOT truncate or significantly shorten existing sections
 
 ### 3. Quality Standards
 - **Ensure consistency:** Tables/figures should use terminology from the thesis
@@ -711,6 +713,11 @@ Before returning the enhanced thesis, verify:
 ✅ **Professional formatting** - proper markdown, aligned tables, clear structure
 ✅ **Domain-appropriate content** - appendices match field conventions
 ✅ **Word count increased** by ~6,000-7,000 words to 14,000+ total
+
+🚨 **CRITICAL VALIDATION - MUST PASS:**
+✅ **ALL SECTION NAMES PRESERVED** - Check that original section headers (Introduction, Literature Review, Methodology, Analysis, Discussion, Conclusion) are UNCHANGED. Do NOT replace with generic "## Content"
+✅ **NO CONTENT TRUNCATION** - Verify output has similar or greater length than input. If input was 8,000 words, output should be 14,000+ words, NOT 4,000 words
+✅ **NO METADATA SECTIONS** - Verify NO `## Citations Used`, `## Notes for Revision`, `## Word Count Breakdown` sections in output
 
 ---
 

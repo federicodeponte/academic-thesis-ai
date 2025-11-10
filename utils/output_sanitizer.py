@@ -37,10 +37,14 @@ META_COMMENT_PATTERNS = [
     r'^(Here is|Hier ist|This is|I have generated).*?(enhanced|verbessert|thesis|Arbeit).*?\n+',
     r'^\*\*Note:\*\*.*?(generated|erstellt|AI|agent).*?\n+',
     r'^\[.*?(Agent|LLM|generated|auto).*?\].*?\n+',
-    # NEW: Remove section metadata pollution from Crafter/Enhancer agents
+    # NEW: Remove section metadata pollution from Crafter/Enhancer agents (inline)
     r'^\*\*Section:\*\*.*?\n',           # Remove **Section:** lines
     r'^\*\*Word Count:\*\*.*?\n',        # Remove **Word Count:** lines
     r'^\*\*Status:\*\*.*?\n',            # Remove **Status:** lines
+    r'^\*\*Abschnitt:\*\*.*?\n',         # Remove **Abschnitt:** (German)
+    r'^\*\*Wortzahl:\*\*.*?\n',          # Remove **Wortzahl:** (German)
+    r'^\*\*Sección:\*\*.*?\n',           # Remove **Sección:** (Spanish)
+    r'^\*\*Recuento de palabras:\*\*.*?\n',  # Remove **Recuento:** (Spanish)
     r'^\[To be completed.*?\].*?\n',     # Remove placeholder citations
 ]
 
@@ -112,6 +116,46 @@ def remove_meta_comments(content: str) -> Tuple[str, int]:
         cleaned_content = re.sub(pattern, '', cleaned_content, flags=re.MULTILINE | re.IGNORECASE)
 
     return cleaned_content, removed_count
+
+
+def remove_metadata_h2_sections(content: str) -> Tuple[str, int]:
+    """
+    Remove H2 metadata sections like '## Citations Used', '## Notes for Revision', etc.
+
+    These sections are internal tracking artifacts that should not appear in final output.
+
+    Args:
+        content: Full thesis markdown content
+
+    Returns:
+        Tuple of (cleaned_content, num_sections_removed)
+    """
+    sections_removed = 0
+
+    # Patterns for H2 metadata sections (English + German + Spanish)
+    h2_metadata_patterns = [
+        r'^## Citations Used\s*\n(?:.*?\n)*?(?=^##|\Z)',  # English
+        r'^## Verwendete Zitate\s*\n(?:.*?\n)*?(?=^##|\Z)',  # German
+        r'^## Citas utilizadas\s*\n(?:.*?\n)*?(?=^##|\Z)',  # Spanish
+        r'^## Notes for Revision\s*\n(?:.*?\n)*?(?=^##|\Z)',  # English
+        r'^## Hinweise zur Überarbeitung\s*\n(?:.*?\n)*?(?=^##|\Z)',  # German
+        r'^## Notas para revisión\s*\n(?:.*?\n)*?(?=^##|\Z)',  # Spanish
+        r'^## Word Count Breakdown\s*\n(?:.*?\n)*?(?=^##|\Z)',  # English
+        r'^## Wortzahl-Aufschlüsselung\s*\n(?:.*?\n)*?(?=^##|\Z)',  # German
+        r'^## Desglose del recuento\s*\n(?:.*?\n)*?(?=^##|\Z)',  # Spanish
+        # Also remove generic "## Content" sections when they appear alone
+        r'^## Content\s*\n(?=^##)',  # Empty content section
+        r'^## Inhalt\s*\n(?=^##)',  # German empty content
+        r'^## Contenido\s*\n(?=^##)',  # Spanish empty content
+    ]
+
+    cleaned_content = content
+    for pattern in h2_metadata_patterns:
+        matches = re.findall(pattern, cleaned_content, re.MULTILINE)
+        sections_removed += len(matches)
+        cleaned_content = re.sub(pattern, '', cleaned_content, flags=re.MULTILINE)
+
+    return cleaned_content, sections_removed
 
 
 def normalize_whitespace(content: str) -> Tuple[str, int]:
@@ -224,6 +268,7 @@ def sanitize_enhanced_output(
     stats = {
         'original_size': len(content.encode('utf-8')),
         'cells_truncated': 0,
+        'h2_metadata_sections_removed': 0,
         'meta_comments_removed': 0,
         'whitespace_chars_removed': 0,
         'final_size': 0,
@@ -237,11 +282,17 @@ def sanitize_enhanced_output(
     if verbose and cells_truncated > 0:
         print(f"  ✓ Truncated {cells_truncated} oversized table cells")
 
-    # Step 2: Remove meta-comments
+    # Step 1.5: Remove H2 metadata sections (## Citations Used, ## Notes for Revision, etc.)
+    sanitized, h2_sections_removed = remove_metadata_h2_sections(sanitized)
+    stats['h2_metadata_sections_removed'] = h2_sections_removed
+    if verbose and h2_sections_removed > 0:
+        print(f"  ✓ Removed {h2_sections_removed} H2 metadata sections")
+
+    # Step 2: Remove inline meta-comments
     sanitized, comments_removed = remove_meta_comments(sanitized)
     stats['meta_comments_removed'] = comments_removed
     if verbose and comments_removed > 0:
-        print(f"  ✓ Removed {comments_removed} meta-comments")
+        print(f"  ✓ Removed {comments_removed} inline meta-comments")
 
     # Step 3: Normalize whitespace
     sanitized, chars_removed = normalize_whitespace(sanitized)
@@ -317,7 +368,8 @@ def sanitize_enhanced_file(
             print()
             print("📊 Sanitization Summary:")
             print(f"  • Cells truncated: {stats['cells_truncated']}")
-            print(f"  • Meta-comments removed: {stats['meta_comments_removed']}")
+            print(f"  • H2 metadata sections removed: {stats['h2_metadata_sections_removed']}")
+            print(f"  • Inline meta-comments removed: {stats['meta_comments_removed']}")
             print(f"  • Whitespace removed: {stats['whitespace_chars_removed']:,} chars")
             print(f"  • Size reduction: {stats['size_reduction']:,} bytes")
             print(f"  • Final size: {stats['final_size']:,} bytes")

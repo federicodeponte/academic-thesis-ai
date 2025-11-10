@@ -8,9 +8,9 @@
 ## Summary
 
 **Strengths:**
--   **Comprehensive Scope:** The paper provides a broad and well-structured overview of Emissionshandelssysteme (ETS), covering theoretical foundations, market mechanisms, specific case studies (EU ETS, California, China), comparisons with other instruments, and empirical evidence.
--   **Clear Structure:** The logical flow of sections and sub-sections is clear and easy to follow, making the complex topic accessible.
--   **Relevant Topics:** The discussion addresses highly relevant aspects of ETS, including price volatility, market stability mechanisms (MSR), carbon leakage, and the integration into broader climate policy mixes.
+-  **Comprehensive Scope:** The paper provides a broad and well-structured overview of Emissionshandelssysteme (ETS), covering theoretical foundations, market mechanisms, specific case studies (EU ETS, California, China), comparisons with other instruments, and empirical evidence.
+-  **Clear Structure:** The logical flow of sections and sub-sections is clear and easy to follow, making the complex topic accessible.
+-  **Relevant Topics:** The discussion addresses highly relevant aspects of ETS, including price volatility, market stability mechanisms (MSR), carbon leakage, and the integration into broader climate policy mixes.
 
 **Critical Issues:** 3 major, 2 moderate, 5 minor
 **Recommendation:** Fundamental revisions needed before publication, primarily to address the severe lack of empirical and theoretical support for claims.
@@ -133,5 +133,5 @@
 6.  🟡 **Fix Issue 5 (Unsubstantiated Perception Claims):** Ensures evidence-based arguments.
 
 **Can defer (but should be addressed for final publication):**
--   Minor wording issues and general conciseness for word count reduction.
--   Further expansion on very specific data points (can be refined in a later stage if primary issues are fixed).
+-  Minor wording issues and general conciseness for word count reduction.
+-  Further expansion on very specific data points (can be refined in a later stage if primary issues are fixed).

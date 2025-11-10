@@ -8,7 +8,6 @@
 
 ## Introduction
 
-**Word Count:** 3,509
 
 # Critical Review Report
 
@@ -20,10 +19,10 @@
 ## Summary
 
 **Strengths:**
--   **Clear Thesis:** The paper presents a clear and compelling central argument that open source principles offer a powerful framework for addressing global challenges.
--   **Structured Argument:** The introduction follows a logical flow, moving from global context to the specific problem, the proposed solution (open source), its background, detailed problem statement, research objectives, and paper organization.
--   **Relevant Theoretical Foundations:** The research objectives demonstrate an intention to ground the argument in established theories (common-pool resources, public goods, self-determination, knowledge creation).
--   **Broad Scope:** The paper aims to extend the "open source way" beyond software, which is a valuable and timely undertaking.
+-  **Clear Thesis:** The paper presents a clear and compelling central argument that open source principles offer a powerful framework for addressing global challenges.
+-  **Structured Argument:** The introduction follows a logical flow, moving from global context to the specific problem, the proposed solution (open source), its background, detailed problem statement, research objectives, and paper organization.
+-  **Relevant Theoretical Foundations:** The research objectives demonstrate an intention to ground the argument in established theories (common-pool resources, public goods, self-determination, knowledge creation).
+-  **Broad Scope:** The paper aims to extend the "open source way" beyond software, which is a valuable and timely undertaking.
 
 **Critical Issues:** 6 major, 7 moderate, 10 minor
 **Recommendation:** Significant revisions needed, particularly regarding conciseness, citation completeness, and nuanced argumentation, before proceeding.
@@ -44,9 +43,9 @@
 **Claim:** Several key claims and definitions lack specific citations.
 **Problem:** The paper relies on placeholder citations (`{cite_MISSING}`) for fundamental concepts and reports. This undermines the academic rigor and trustworthiness of the claims.
 **Evidence:**
--   `{cite_MISSING: UN Sustainable Development Goals report}` (Introduction, para 1) - A foundational claim about global challenges needs a specific, verifiable source.
--   `{cite_MISSING: Stallman's Four Freedoms definition}` (Section 1.1, para 2) - This is a direct definition and needs a precise citation to Stallman's own work or a definitive source.
--   `{cite_MISSING: example of interview methodology}` (Section 1.4, Section 3 description) - This is a methodological detail that needs a standard reference.
+-  `{cite_MISSING: UN Sustainable Development Goals report}` (Introduction, para 1) - A foundational claim about global challenges needs a specific, verifiable source.
+-  `{cite_MISSING: Stallman's Four Freedoms definition}` (Section 1.1, para 2) - This is a direct definition and needs a precise citation to Stallman's own work or a definitive source.
+-  `{cite_MISSING: example of interview methodology}` (Section 1.4, Section 3 description) - This is a methodological detail that needs a standard reference.
 **Fix:** Research and include the correct, specific citations for these missing references. Ensure all claims, especially factual statements or definitions, are properly attributed.
 **Severity:** 🔴 High - severe academic integrity concern, impacts credibility.
 
@@ -70,10 +69,10 @@
 **Location:** Introduction (main section), 1.1 Background, 1.2 Problem Statement.
 **Problem:** The core argument about open source being a solution to global challenges, and the critique of proprietary systems, is repeated across multiple paragraphs and subsections, often with similar phrasing. For example, the idea of open source fostering transparency, collaboration, and democratizing access appears in the main introduction, 1.1, and 1.2.
 **Evidence:**
--   Para 1: "open source movement offer a compelling framework for leveraging technology as a force for good, addressing these global challenges by fostering collaboration, democratizing access to knowledge..."
--   Para 3: "OSS represents a development philosophy that advocates for free access to a product's source code, allowing for modification, distribution, and improvement by anyone."
--   Para 4: "The inherent characteristics of open source—transparency, accessibility, and community-driven development—position it uniquely to address many of the global challenges outlined above."
--   Section 1.1, para 5: "Many of the principles that make open source software robust and adaptable—transparency, modularity, community governance, and a focus on public good—are directly applicable to complex challenges..."
+-  Para 1: "open source movement offer a compelling framework for leveraging technology as a force for good, addressing these global challenges by fostering collaboration, democratizing access to knowledge..."
+-  Para 3: "OSS represents a development philosophy that advocates for free access to a product's source code, allowing for modification, distribution, and improvement by anyone."
+-  Para 4: "The inherent characteristics of open source—transparency, accessibility, and community-driven development—position it uniquely to address many of the global challenges outlined above."
+-  Section 1.1, para 5: "Many of the principles that make open source software robust and adaptable—transparency, modularity, community governance, and a focus on public good—are directly applicable to complex challenges..."
 **Fix:** Consolidate and streamline the introduction. Identify the unique contribution of each section and eliminate overlapping statements. The main introduction should introduce the *idea*, 1.1 should provide *historical context*, and 1.2 should *detail the problem* that the idea addresses, without repeating the benefits of the solution too much.
 **Severity:** 🔴 High - contributes to word count overrun, reduces impact, and makes the text less engaging.
 
@@ -223,8 +222,8 @@
 9.  🟡 **Condense software history** (Issue 10) - balance with broader objectives.
 
 **Can defer:**
--   Minor wording and flow adjustments (can be done during overall paper editing).
--   Further examples (can be developed in later sections).
+-  Minor wording and flow adjustments (can be done during overall paper editing).
+-  Further examples (can be developed in later sections).
 
 This introduction sets up an interesting and important paper. Addressing these critical issues will significantly strengthen its foundation and prepare it for a positive reception.
 
@@ -233,7 +232,6 @@ This introduction sets up an interesting and important paper. Addressing these c
 
 ## Literature Review
 
-**Word Count:** 6,773
 
 # Critical Review Report
 
@@ -488,7 +486,6 @@ This introduction sets up an interesting and important paper. Addressing these c
 
 ## Methodology
 
-**Word Count:** 8,664
 
 # Critical Review Report
 
@@ -500,11 +497,11 @@ This introduction sets up an interesting and important paper. Addressing these c
 ## Summary
 
 **Strengths:**
--   **Clear Philosophical Foundation:** The interpretive epistemological stance and critical realism ontology are well-articulated and logically linked to the multiple-case study design.
--   **Robust Conceptual Framework:** The novel framework, synthesizing diverse theories (Ostrom, Nonaka & Takeuchi, Chesbrough, Castells, Raymond, Foucault), provides a comprehensive and multi-dimensional lens for impact analysis. The three pillars are well-defined with clear analytical dimensions.
--   **Systematic Design:** The methodology outlines a clear, step-by-step approach from case selection to data analysis, enhancing transparency and reproducibility.
--   **Thorough Trustworthiness Measures:** The detailed discussion of triangulation, audit trail, researcher reflexivity, and peer debriefing significantly strengthens the rigor and trustworthiness of the qualitative approach.
--   **Honest Limitations:** The inclusion of a comprehensive limitations section demonstrates strong self-awareness and academic integrity.
+-  **Clear Philosophical Foundation:** The interpretive epistemological stance and critical realism ontology are well-articulated and logically linked to the multiple-case study design.
+-  **Robust Conceptual Framework:** The novel framework, synthesizing diverse theories (Ostrom, Nonaka & Takeuchi, Chesbrough, Castells, Raymond, Foucault), provides a comprehensive and multi-dimensional lens for impact analysis. The three pillars are well-defined with clear analytical dimensions.
+-  **Systematic Design:** The methodology outlines a clear, step-by-step approach from case selection to data analysis, enhancing transparency and reproducibility.
+-  **Thorough Trustworthiness Measures:** The detailed discussion of triangulation, audit trail, researcher reflexivity, and peer debriefing significantly strengthens the rigor and trustworthiness of the qualitative approach.
+-  **Honest Limitations:** The inclusion of a comprehensive limitations section demonstrates strong self-awareness and academic integrity.
 
 **Critical Issues:** 3 major, 4 moderate, 3 minor
 **Recommendation:** Revisions needed before publication, particularly regarding academic integrity and methodological clarity.
@@ -647,15 +644,14 @@ This introduction sets up an interesting and important paper. Addressing these c
 6.  🟡 **Address Issue 7 (Word Count):** Review for conciseness, preparing for potential cuts.
 
 **Can defer:**
--   Minor wording issues (fix in final proofreading).
--   Additional discussions (e.g., timeline) unless specifically requested by a journal.
+-  Minor wording issues (fix in final proofreading).
+-  Additional discussions (e.g., timeline) unless specifically requested by a journal.
 
 ---
 
 
 ## Analysis
 
-**Word Count:** 13,039
 
 # Critical Review Report
 
@@ -684,21 +680,21 @@ This introduction sets up an interesting and important paper. Addressing these c
 **Problem:** The paper presents an overwhelmingly positive, one-sided narrative of open source, almost exclusively highlighting its benefits without acknowledging challenges, limitations, potential drawbacks, or complexities. This fundamental imbalance undermines the analytical rigor and objectivity expected of an academic review.
 **Evidence:** Every subsection is dedicated to positive impacts. Phrases like "often surpasses," "unimaginable," "ensures," "game-changer," "pivotal role," and "bulwark" are used without qualification or recognition of counterpoints. There is no discussion of fragmentation, maintenance burden, "free rider" problems, security risks, governance issues, or potential negative environmental footprints of the open-source ecosystem itself.
 **Fix:** For each impact area and within the real-world examples, introduce dedicated paragraphs or subsections discussing the inherent challenges, limitations, and potential downsides of open source. This could include:
-    *   **Innovation:** Fragmentation, "bus factor," slower decision-making in large communities, sustainability of less popular projects.
-    *   **Economic:** "Free rider" problem, funding challenges for volunteer-driven projects, commercial exploitation without contribution, competition with well-resourced proprietary solutions.
-    *   **Environmental:** Energy consumption of large-scale distributed development (servers, CI/CD), energy cost of running massive open-source cloud infrastructure.
-    *   **Social:** Governance issues, digital literacy barriers for effective participation, potential for misuse of open-source tools (e.g., surveillance, cybercrime), issues of diversity and inclusion within communities.
-    *   **Examples:** Briefly mention ongoing challenges for each project (e.g., Linux fragmentation, Apache's competition, Wikipedia's misinformation battles, Firefox's market share struggles).
+  *  **Innovation:** Fragmentation, "bus factor," slower decision-making in large communities, sustainability of less popular projects.
+  *  **Economic:** "Free rider" problem, funding challenges for volunteer-driven projects, commercial exploitation without contribution, competition with well-resourced proprietary solutions.
+  *  **Environmental:** Energy consumption of large-scale distributed development (servers, CI/CD), energy cost of running massive open-source cloud infrastructure.
+  *  **Social:** Governance issues, digital literacy barriers for effective participation, potential for misuse of open-source tools (e.g., surveillance, cybercrime), issues of diversity and inclusion within communities.
+  *  **Examples:** Briefly mention ongoing challenges for each project (e.g., Linux fragmentation, Apache's competition, Wikipedia's misinformation battles, Firefox's market share struggles).
 **Severity:** 🔴 High - fundamentally compromises the paper's academic credibility and analytical depth.
 
 ### Issue 2: Pervasive Overclaims and Unqualified Assertions
 **Location:** Throughout the entire "Analysis" section
 **Problem:** The paper frequently makes strong, definitive claims about open source's superiority, transformative power, or definitive outcomes without sufficient empirical evidence or appropriate hedging. This aggressive language detracts from an objective academic tone.
 **Evidence:**
-    *   Innovation: "often surpasses that of closed systems" (para 1), "leading to higher quality and more secure software compared to proprietary counterparts" (para 2), "ensures that technological progress is not hindered by proprietary lock-ins" (para 3), "unimaginable under a purely proprietary model" (para 5).
-    *   Economic: "prevents vendor lock-in" (para 3), "ensures that technological progress is driven by merit... rather than by restrictive licensing or market dominance" (para 3), "ensures that nations and organizations retain control over their digital destiny" (para 5).
-    *   Environmental: "Proprietary software often comes with planned obsolescence" (para 2, too strong as a general rule).
-    *   Social: "challenges existing power structures" (para 1), "ensuring that technology is inclusive for a wider range of individuals" (para 3), "ensuring that the benefits of the digital age are shared more equitably" (para 4), "stands as a bulwark against the potential for technological authoritarianism" (para 5), "strengthening democratic principles and fostering a more just digital future" (conclusion).
+  *  Innovation: "often surpasses that of closed systems" (para 1), "leading to higher quality and more secure software compared to proprietary counterparts" (para 2), "ensures that technological progress is not hindered by proprietary lock-ins" (para 3), "unimaginable under a purely proprietary model" (para 5).
+  *  Economic: "prevents vendor lock-in" (para 3), "ensures that technological progress is driven by merit... rather than by restrictive licensing or market dominance" (para 3), "ensures that nations and organizations retain control over their digital destiny" (para 5).
+  *  Environmental: "Proprietary software often comes with planned obsolescence" (para 2, too strong as a general rule).
+  *  Social: "challenges existing power structures" (para 1), "ensuring that technology is inclusive for a wider range of individuals" (para 3), "ensuring that the benefits of the digital age are shared more equitably" (para 4), "stands as a bulwark against the potential for technological authoritarianism" (para 5), "strengthening democratic principles and fostering a more just digital future" (conclusion).
 **Fix:** Rephrase these strong claims using more cautious, academically appropriate language (e.g., "can often," "tends to contribute to," "facilitates," "helps to mitigate," "offers a strong alternative"). Provide specific, verifiable evidence or explicitly acknowledge contexts where such strong claims might not universally hold true.
 **Severity:** 🔴 High - affects the paper's credibility, academic tone, and objectivity.
 
@@ -706,9 +702,9 @@ This introduction sets up an interesting and important paper. Addressing these c
 **Location:** Various points, especially in Economic Benefits and Real-World Examples
 **Problem:** Several significant quantitative or comparative claims are made without specific data, statistics, or citations from empirical studies or reputable reports to support them. These claims appear as unsubstantiated assertions.
 **Evidence:**
-    *   Innovation: "often surpasses that of closed systems" and "leading to higher quality and more secure software compared to proprietary counterparts" lack specific comparative studies.
-    *   Economic: "The Android ecosystem alone represents trillions of dollars in economic activity." (Linux example) - This is a massive claim that requires a direct, verifiable citation.
-    *   Apache HTTP Server: "responsible for serving a significant majority of websites on the internet." (para 1, Example 5.2) - Needs a specific market share statistic and its source, as market shares fluctuate.
+  *  Innovation: "often surpasses that of closed systems" and "leading to higher quality and more secure software compared to proprietary counterparts" lack specific comparative studies.
+  *  Economic: "The Android ecosystem alone represents trillions of dollars in economic activity." (Linux example) - This is a massive claim that requires a direct, verifiable citation.
+  *  Apache HTTP Server: "responsible for serving a significant majority of websites on the internet." (para 1, Example 5.2) - Needs a specific market share statistic and its source, as market shares fluctuate.
 **Fix:** Provide specific data, statistics, and citations from empirical studies, market research reports, or reputable economic analyses for all quantitative or comparative claims. If precise data is unavailable, rephrase the claim to be qualitative or speculative, acknowledging the lack of specific numbers.
 **Severity:** 🔴 High - directly impacts academic integrity, verifiability, and the robustness of arguments.
 
@@ -727,9 +723,9 @@ This introduction sets up an interesting and important paper. Addressing these c
 **Location:** Throughout the paper, particularly in "Innovation," "Environmental Sustainability," and "Social Impact" sections.
 **Problem:** The paper frequently sets up open source in stark, often oversimplified contrast to proprietary models, sometimes overgeneralizing the latter's negative aspects. This creates a biased comparison rather than a nuanced, analytical discussion of the distinct advantages and disadvantages of each.
 **Evidence:**
-    *   "This open access to knowledge stands in stark contrast to proprietary models where internal knowledge is often guarded as a competitive secret..." (Innovation, Transparency)
-    *   "Proprietary software often comes with planned obsolescence..." (Environmental, Longevity)
-    *   "Proprietary software often struggles to cater to the diverse needs of users with disabilities, or it offers accessibility features only as expensive add-ons." (Social, Accessibility)
+  *  "This open access to knowledge stands in stark contrast to proprietary models where internal knowledge is often guarded as a competitive secret..." (Innovation, Transparency)
+  *  "Proprietary software often comes with planned obsolescence..." (Environmental, Longevity)
+  *  "Proprietary software often struggles to cater to the diverse needs of users with disabilities, or it offers accessibility features only as expensive add-ons." (Social, Accessibility)
 **Fix:** Acknowledge that proprietary models also have their strengths, invest in R&D, offer long-term support, and provide accessibility features. Focus on what open source *offers differently* or *makes more accessible* rather than solely on what proprietary *allegedly lacks* or *does poorly*. Aim for a more balanced comparison of models, recognizing that both have their place and complexities.
 **Severity:** 🟡 Medium - impacts nuance and the fairness of the analysis.
 
@@ -820,7 +816,6 @@ This introduction sets up an interesting and important paper. Addressing these c
 
 ## Discussion
 
-**Word Count:** 9,643
 
 # Critical Review Report
 
@@ -832,10 +827,10 @@ This introduction sets up an interesting and important paper. Addressing these c
 ## Summary
 
 **Strengths:**
--   **Comprehensive Scope:** The discussion covers a broad range of implications and applications of open source, from technology policy to global challenges and future development.
--   **Strong Theoretical Grounding:** The paper effectively integrates foundational concepts from prominent thinkers (Lessig, Foucault, Ostrom, Samuelson, Castells, Raymond, etc.) to frame its arguments.
--   **Clear Recommendations:** The final section provides clear and actionable recommendations for both governments and organizations.
--   **Forward-Looking Perspective:** It thoughtfully explores the potential integration of emerging technologies like AI and blockchain into collaborative development.
+-  **Comprehensive Scope:** The discussion covers a broad range of implications and applications of open source, from technology policy to global challenges and future development.
+-  **Strong Theoretical Grounding:** The paper effectively integrates foundational concepts from prominent thinkers (Lessig, Foucault, Ostrom, Samuelson, Castells, Raymond, etc.) to frame its arguments.
+-  **Clear Recommendations:** The final section provides clear and actionable recommendations for both governments and organizations.
+-  **Forward-Looking Perspective:** It thoughtfully explores the potential integration of emerging technologies like AI and blockchain into collaborative development.
 
 **Critical Issues:** 3 major, 2 moderate, 2 minor
 **Recommendation:** Significant revisions are needed to enhance balance, academic rigor, and address critical omissions before publication.
@@ -848,10 +843,10 @@ This introduction sets up an interesting and important paper. Addressing these c
 **Location:** Throughout sections 4.1, 4.2, 4.3, and 4.4
 **Problem:** The discussion presents an almost uniformly optimistic view of open source, portraying it as an inherent solution or "antidote" to various complex problems. It largely omits critical analysis of the significant challenges, risks, limitations, and potential downsides of open-source models. This one-sided perspective compromises the academic rigor and objectivity of the discussion.
 **Examples:**
-*   **Policy:** Limited discussion of the practical difficulties in enforcing open licenses across jurisdictions, the continued dominance of proprietary IP, or the 'tragedy of the commons' in poorly governed open projects.
-*   **Global Challenges:** Overlooking the practical hurdles in scaling open-source hardware (e.g., manufacturing, supply chains, quality control), the resource requirements for digital inclusion (beyond just software), or the actual adoption barriers for open-source health solutions during crises.
-*   **Future Development:** Downplaying the immaturity, legal uncertainties, and scalability challenges of DAOs; the potential for AI tools to centralize power or introduce new forms of bias; or the inherent difficulties of interdisciplinary collaboration.
-*   **Recommendations:** The inherent costs and complexities for organizations to adopt an "open by default" strategy or dedicate significant resources to external open-source projects are not adequately explored.
+*  **Policy:** Limited discussion of the practical difficulties in enforcing open licenses across jurisdictions, the continued dominance of proprietary IP, or the 'tragedy of the commons' in poorly governed open projects.
+*  **Global Challenges:** Overlooking the practical hurdles in scaling open-source hardware (e.g., manufacturing, supply chains, quality control), the resource requirements for digital inclusion (beyond just software), or the actual adoption barriers for open-source health solutions during crises.
+*  **Future Development:** Downplaying the immaturity, legal uncertainties, and scalability challenges of DAOs; the potential for AI tools to centralize power or introduce new forms of bias; or the inherent difficulties of interdisciplinary collaboration.
+*  **Recommendations:** The inherent costs and complexities for organizations to adopt an "open by default" strategy or dedicate significant resources to external open-source projects are not adequately explored.
 **Fix:** Integrate dedicated paragraphs or a distinct subsection within each major section to discuss the limitations, potential pitfalls, and counter-arguments related to open source. Acknowledge the complexities and nuances of its application and impact.
 **Severity:** 🔴 High - fundamentally affects the paper's academic balance and critical analysis.
 
@@ -868,10 +863,10 @@ This introduction sets up an interesting and important paper. Addressing these c
 **Claim:** Many strong assertions are made regarding open source's practical impact on policy, its role in addressing global challenges, and its future trajectory.
 **Problem:** While the paper successfully leverages theoretical citations, it often lacks specific empirical examples, case studies, or references to research that quantifies or demonstrates these impacts in practice. The claims often rely on theoretical alignment or anecdotal examples rather than robust evidence of large-scale, sustained success.
 **Example:**
-*   Claims about public sector procurement prioritizing open-source solutions (4.1.1, 4.4.1) lack cited evidence of widespread, successful implementation and documented impact.
-*   Assertions regarding open source's role in the circular economy (4.2.1) are largely theoretical, without specific examples of open-source hardware projects achieving significant, measurable environmental impact.
-*   The discussion of open-source health solutions (4.2.2) provides examples like ventilators but doesn't delve into the challenges of their widespread adoption or long-term sustainability.
-*   Predictions about AI and DAOs (4.3.1, 4.3.2) are highly speculative, lacking references to pilot programs, empirical studies, or detailed analyses of their current state and challenges.
+*  Claims about public sector procurement prioritizing open-source solutions (4.1.1, 4.4.1) lack cited evidence of widespread, successful implementation and documented impact.
+*  Assertions regarding open source's role in the circular economy (4.2.1) are largely theoretical, without specific examples of open-source hardware projects achieving significant, measurable environmental impact.
+*  The discussion of open-source health solutions (4.2.2) provides examples like ventilators but doesn't delve into the challenges of their widespread adoption or long-term sustainability.
+*  Predictions about AI and DAOs (4.3.1, 4.3.2) are highly speculative, lacking references to pilot programs, empirical studies, or detailed analyses of their current state and challenges.
 **Fix:** Provide more concrete, specific examples and case studies (even if hypothetical to illustrate a point, clearly marked as such) or, ideally, cite empirical research and reports that substantiate the strong claims about practical applications, policy effectiveness, and future trends.
 **Severity:** 🔴 High - weakens the foundation of the arguments and reduces their persuasive power.
 
@@ -897,10 +892,10 @@ This introduction sets up an interesting and important paper. Addressing these c
 ## MINOR ISSUES
 
 1.  **Vague Ethical Mechanisms:** In sections 4.1.3 and 4.4.3, while ethical concerns are raised (e.g., AI misuse, bias), the proposed solutions like "mechanisms for community governance," "international collaborative bodies," and "shared codes of conduct" remain quite abstract.
-    *   **Fix:** Briefly elaborate on *what* these mechanisms or guidelines might entail, or provide brief examples of existing efforts or concrete steps that could be taken.
+  *  **Fix:** Briefly elaborate on *what* these mechanisms or guidelines might entail, or provide brief examples of existing efforts or concrete steps that could be taken.
 
 2.  **Strong Prescriptive Tone in Recommendations:** In Section 4.4 (Recommendations), the language used to describe government actions is very strong and prescriptive ("unequivocally prioritize," "absolutely essential," "must make strategic investments," "require significant modernization," "paramount"). While recommendations should be clear, this tone can come across as overly dictatorial for an academic paper.
-    *   **Fix:** Consider softening the tone slightly to be more persuasive and less commanding, perhaps by framing them as "strong recommendations based on the preceding analysis" or using slightly less forceful verbs where appropriate.
+  *  **Fix:** Consider softening the tone slightly to be more persuasive and less commanding, perhaps by framing them as "strong recommendations based on the preceding analysis" or using slightly less forceful verbs where appropriate.
 
 ---
 
@@ -937,9 +932,9 @@ This introduction sets up an interesting and important paper. Addressing these c
 ## Tone & Presentation Issues
 
 1.  **Advocacy vs. Academic Discussion:** The overall tone leans heavily towards advocacy for open source rather than a balanced, critical academic discussion. This can lead to a perception of bias.
-    *   **Fix:** Introduce more cautious, analytical, and objective language. Ensure that benefits are balanced with challenges and limitations.
+  *  **Fix:** Introduce more cautious, analytical, and objective language. Ensure that benefits are balanced with challenges and limitations.
 2.  **Repetitive Use of Intensifiers:** Words like "profoundly," "immense," "undeniably," "absolutely essential" are used frequently, contributing to the overconfident tone.
-    *   **Fix:** Vary vocabulary and use intensifiers judiciously to maintain academic gravitas.
+  *  **Fix:** Vary vocabulary and use intensifiers judiciously to maintain academic gravitas.
 
 ---
 
@@ -967,15 +962,14 @@ This introduction sets up an interesting and important paper. Addressing these c
 5.  🟡 **Address Missing Discussions:** Incorporate new sections or expand existing ones to cover economic sustainability, quality/security/accountability, skills gap, and governance challenges.
 
 **Can defer:**
--   Minor wording and tone adjustments (can be refined during subsequent editing passes).
--   Further examples (if the current ones are sufficiently strengthened and balanced).
+-  Minor wording and tone adjustments (can be refined during subsequent editing passes).
+-  Further examples (if the current ones are sufficiently strengthened and balanced).
 
 ---
 
 
 ## Conclusion
 
-**Word Count:** 1,299
 
 # Critical Review Report
 
@@ -987,10 +981,10 @@ This introduction sets up an interesting and important paper. Addressing these c
 ## Summary
 
 **Strengths:**
--   **Broad and Ambitious Scope:** The conclusion effectively summarizes a comprehensive exploration of open source's impact across economic, social, and environmental dimensions.
--   **Strong Theoretical Integration:** The thesis successfully integrates diverse theoretical frameworks (common-pool resources, knowledge creation, public goods, open innovation, self-determination theory) to build its arguments.
--   **Clear Future Research Directions:** The final paragraphs provide well-articulated and specific avenues for future research, demonstrating a nuanced understanding of remaining gaps.
--   **Well-Structured Argument:** The conclusion follows a logical flow, transitioning from overall argument to specific findings and then to future work.
+-  **Broad and Ambitious Scope:** The conclusion effectively summarizes a comprehensive exploration of open source's impact across economic, social, and environmental dimensions.
+-  **Strong Theoretical Integration:** The thesis successfully integrates diverse theoretical frameworks (common-pool resources, knowledge creation, public goods, open innovation, self-determination theory) to build its arguments.
+-  **Clear Future Research Directions:** The final paragraphs provide well-articulated and specific avenues for future research, demonstrating a nuanced understanding of remaining gaps.
+-  **Well-Structured Argument:** The conclusion follows a logical flow, transitioning from overall argument to specific findings and then to future work.
 
 **Critical Issues:** 4 major, 3 moderate, 1 minor
 **Recommendation:** Revisions needed to temper overclaims, add nuance, and strengthen the link between stated findings and the summary evidence provided.
@@ -1115,14 +1109,14 @@ This introduction sets up an interesting and important paper. Addressing these c
 6.  🟡 Address Issue 6 ("Pivotal" and "Critical" Claims): Justify or rephrase.
 
 **Can defer:**
--   Minor wording issues (Issue 7) can be addressed during general editing.
--   Further experiments (suggested as future work) are not required for this revision.
+-  Minor wording issues (Issue 7) can be addressed during general editing.
+-  Further experiments (suggested as future work) are not required for this revision.
 
 ---
 **Academic Integrity & Verification Notes:**
--   The citations are listed with IDs (e.g., {cite_001}). Ensure that in the final bibliography, these citations include specific identifiers like DOI or arXiv ID for easy verification, as per the review criteria.
--   No specific statistics are presented in this conclusion section, so no flag for uncited statistics.
--   No obvious contradictions were detected.
--   The primary concern is the strength of claims *relative to the summary evidence provided* in this conclusion, which has been addressed in the Major Issues.
+-  The citations are listed with IDs (e.g., {cite_001}). Ensure that in the final bibliography, these citations include specific identifiers like DOI or arXiv ID for easy verification, as per the review criteria.
+-  No specific statistics are presented in this conclusion section, so no flag for uncited statistics.
+-  No obvious contradictions were detected.
+-  The primary concern is the strength of claims *relative to the summary evidence provided* in this conclusion, which has been addressed in the Major Issues.
 
 ---

@@ -8,11 +8,11 @@
 ## Summary
 
 **Strengths:**
--   **Clear Philosophical Foundation:** The interpretive epistemological stance and critical realism ontology are well-articulated and logically linked to the multiple-case study design.
--   **Robust Conceptual Framework:** The novel framework, synthesizing diverse theories (Ostrom, Nonaka & Takeuchi, Chesbrough, Castells, Raymond, Foucault), provides a comprehensive and multi-dimensional lens for impact analysis. The three pillars are well-defined with clear analytical dimensions.
--   **Systematic Design:** The methodology outlines a clear, step-by-step approach from case selection to data analysis, enhancing transparency and reproducibility.
--   **Thorough Trustworthiness Measures:** The detailed discussion of triangulation, audit trail, researcher reflexivity, and peer debriefing significantly strengthens the rigor and trustworthiness of the qualitative approach.
--   **Honest Limitations:** The inclusion of a comprehensive limitations section demonstrates strong self-awareness and academic integrity.
+-  **Clear Philosophical Foundation:** The interpretive epistemological stance and critical realism ontology are well-articulated and logically linked to the multiple-case study design.
+-  **Robust Conceptual Framework:** The novel framework, synthesizing diverse theories (Ostrom, Nonaka & Takeuchi, Chesbrough, Castells, Raymond, Foucault), provides a comprehensive and multi-dimensional lens for impact analysis. The three pillars are well-defined with clear analytical dimensions.
+-  **Systematic Design:** The methodology outlines a clear, step-by-step approach from case selection to data analysis, enhancing transparency and reproducibility.
+-  **Thorough Trustworthiness Measures:** The detailed discussion of triangulation, audit trail, researcher reflexivity, and peer debriefing significantly strengthens the rigor and trustworthiness of the qualitative approach.
+-  **Honest Limitations:** The inclusion of a comprehensive limitations section demonstrates strong self-awareness and academic integrity.
 
 **Critical Issues:** 3 major, 4 moderate, 3 minor
 **Recommendation:** Revisions needed before publication, particularly regarding academic integrity and methodological clarity.
@@ -155,5 +155,5 @@
 6.  🟡 **Address Issue 7 (Word Count):** Review for conciseness, preparing for potential cuts.
 
 **Can defer:**
--   Minor wording issues (fix in final proofreading).
--   Additional discussions (e.g., timeline) unless specifically requested by a journal.
+-  Minor wording issues (fix in final proofreading).
+-  Additional discussions (e.g., timeline) unless specifically requested by a journal.

@@ -8,11 +8,11 @@
 ## Summary
 
 **Strengths:**
--   **Comprehensive Structure:** The Methodik section is well-structured, covering all essential components from the analytical framework to statistical methods.
--   **Appropriate Methodological Choices:** The proposed use of Panel Regression, Differenz-in-Differenzen (DiD), and Synthetische Kontrollmethode (SCM) demonstrates a robust approach to causal inference in policy evaluation.
--   **Clear Data Sources:** Specific primary data sources (EUTL, CARB, EEX, ICE) are clearly identified.
--   **Strong Robustness Awareness:** The detailed plan for robustness checks (sensitivity, placebo, alternative controls, endogeneity tests) indicates a high level of methodological rigor.
--   **Relevant Case Studies:** The selection of EU ETS and CA ETS is well-justified by criteria such as maturity, diversity, and data availability.
+-  **Comprehensive Structure:** The Methodik section is well-structured, covering all essential components from the analytical framework to statistical methods.
+-  **Appropriate Methodological Choices:** The proposed use of Panel Regression, Differenz-in-Differenzen (DiD), and Synthetische Kontrollmethode (SCM) demonstrates a robust approach to causal inference in policy evaluation.
+-  **Clear Data Sources:** Specific primary data sources (EUTL, CARB, EEX, ICE) are clearly identified.
+-  **Strong Robustness Awareness:** The detailed plan for robustness checks (sensitivity, placebo, alternative controls, endogeneity tests) indicates a high level of methodological rigor.
+-  **Relevant Case Studies:** The selection of EU ETS and CA ETS is well-justified by criteria such as maturity, diversity, and data availability.
 
 **Critical Issues:** 4 major, 3 moderate, 1 minor
 **Recommendation:** Revisions needed before publication, especially regarding critical citations and methodological precision.
@@ -25,13 +25,13 @@
 **Location:** Throughout the document (1.1, 1.2, 1.4)
 **Problem:** Fundamental claims, definitions, and methodological foundations lack proper academic citations. This includes basic EHS principles, the signal effect of carbon prices, the scope and introduction details of EU ETS and CA ETS, and the theoretical underpinnings of panel regression, DiD, and SCM. The `{cite_MISSING}` placeholders are highly problematic.
 **Evidence:**
--   1.1: "{cite_MISSING: Referenz zu grundlegenden EHS-Prinzipien}"
--   1.1: "{cite_MISSING: Referenz zu Kohlenstoffpreis-Signalwirkung}"
--   1.2: "{cite_MISSING: Referenz zu EU ETS Einführung und Umfang}"
--   1.2: "{cite_MISSING: Referenz zu CA ETS Einführung und Umfang}"
--   1.4: "{cite_MISSING: Referenz zu Paneldaten-Regression}"
--   1.4: "{cite_MISSING: Referenz zu DiD-Methodik}"
--   1.4: "{cite_MISSING: Referenz zu SCM}"
+-  1.1: "{cite_MISSING: Referenz zu grundlegenden EHS-Prinzipien}"
+-  1.1: "{cite_MISSING: Referenz zu Kohlenstoffpreis-Signalwirkung}"
+-  1.2: "{cite_MISSING: Referenz zu EU ETS Einführung und Umfang}"
+-  1.2: "{cite_MISSING: Referenz zu CA ETS Einführung und Umfang}"
+-  1.4: "{cite_MISSING: Referenz zu Paneldaten-Regression}"
+-  1.4: "{cite_MISSING: Referenz zu DiD-Methodik}"
+-  1.4: "{cite_MISSING: Referenz zu SCM}"
 **Fix:** Replace all `{cite_MISSING}` placeholders with specific, authoritative academic references (e.g., key textbooks, seminal journal articles). For `cite_001`, ensure full reference details (including DOI or arXiv ID as per instructions) are provided.
 **Severity:** 🔴 High - Threatens academic integrity, credibility, and the scientific grounding of the entire methodology.
 
@@ -87,7 +87,7 @@
 ## MINOR ISSUES
 
 1.  **Word Count:** The section is slightly over the stated target word count (2643 vs. 2500 words). While minor, some conciseness could be applied.
-    *   **Fix:** Review for any redundancies or overly verbose sentences. For instance, the introductory paragraph to the Methodik section or some descriptive sentences could be slightly tightened.
+  *  **Fix:** Review for any redundancies or overly verbose sentences. For instance, the introductory paragraph to the Methodik section or some descriptive sentences could be slightly tightened.
 
 ---
 
@@ -99,7 +99,7 @@ No major logical gaps in the overall flow, but the issues raised under "Inconsis
 
 ## Methodological Concerns
 
-*   These are primarily addressed in the "Major Issues" section regarding the application of DiD for EU ETS and the panel regression specification.
+*  These are primarily addressed in the "Major Issues" section regarding the application of DiD for EU ETS and the panel regression specification.
 
 ---
 
@@ -139,8 +139,8 @@ The tone is appropriately academic, objective, and professional throughout the s
 4.  🟡 **Address Issue 4 (Panel Regression Specification for EU ETS):** Improve model clarity and identifiability.
 
 **Can defer (but should address for a strong paper):**
-*   🟡 Address Issue 5 (Vagueness of "Verteilungseffekte")
-*   🟠 Address Issue 6 ("Article 6" Example Placement)
-*   🟠 Address Issue 7 (Caveat on Instrument Variables)
-*   Review for minor wording/conciseness (Minor Issue 1)
-*   Add missing discussions (Missing Discussions 1-3)
+*  🟡 Address Issue 5 (Vagueness of "Verteilungseffekte")
+*  🟠 Address Issue 6 ("Article 6" Example Placement)
+*  🟠 Address Issue 7 (Caveat on Instrument Variables)
+*  Review for minor wording/conciseness (Minor Issue 1)
+*  Add missing discussions (Missing Discussions 1-3)

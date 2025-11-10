@@ -8,10 +8,10 @@
 ## Summary
 
 **Strengths:**
--   **Comprehensive Coverage:** The discussion section covers a broad and relevant range of topics concerning Emissionshandelssysteme (EHS), including their effectiveness, challenges, improvement mechanisms, and global role.
--   **Clear Structure:** The section is logically structured, moving from interpretation to implications, challenges, solutions, and recommendations.
--   **Academic Tone:** The language is appropriate for an academic paper, maintaining a formal and analytical style.
--   **Policy Relevance:** The implications and recommendations sections provide valuable insights for both policymakers and economic actors, aligning with the practical relevance of climate policy.
+-  **Comprehensive Coverage:** The discussion section covers a broad and relevant range of topics concerning Emissionshandelssysteme (EHS), including their effectiveness, challenges, improvement mechanisms, and global role.
+-  **Clear Structure:** The section is logically structured, moving from interpretation to implications, challenges, solutions, and recommendations.
+-  **Academic Tone:** The language is appropriate for an academic paper, maintaining a formal and analytical style.
+-  **Policy Relevance:** The implications and recommendations sections provide valuable insights for both policymakers and economic actors, aligning with the practical relevance of climate policy.
 
 **Critical Issues:** 3 major, 2 moderate, 2 minor
 **Recommendation:** Major revisions are needed, primarily to address the pervasive lack of specific citations and to explicitly connect the discussion to the paper's own (currently unseen) research findings. Without these, the academic rigor and unique contribution of the paper are significantly undermined.
@@ -24,16 +24,16 @@
 **Location:** Throughout the entire discussion section (10 unique `cite_MISSING` placeholders).
 **Problem:** Numerous foundational claims and widely accepted facts about EHS effectiveness, challenges, and solutions are presented without proper academic attribution. This is the most critical flaw, as it undermines the academic integrity and verifiability of the discussion. It makes it impossible for a reader (or reviewer) to verify the basis of many statements.
 **Evidence:**
--   "{cite_MISSING: Literatur zum Effizienzvorteil von EHS}"
--   "{cite_MISSING: Studien zu Überzuteilung und Preisvolatilität im EU-EHS}"
--   "{cite_MISSING: Literatur zu Policy-Mix und grüner Transformation}"
--   "{cite_MISSING: Studien zur Bedeutung von Langfristsignalen in der Klimapolitik}"
--   "{cite_MISSING: Literatur zu sozialen Ausgleichsmaßnahmen bei CO2-Bepreisung}"
--   "{cite_MISSING: Studien zu Preisvolatilität und ihren Ursachen}"
--   "{cite_MISSING: Literatur zu Carbon Leakage und seinen Auswirkungen}"
--   "{cite_MISSING: Herausforderungen bei der Sektorerweiterung von EHS}"
--   "{cite_MISSING: Studien zur optimalen Cap-Setzung}"
--   "{cite_MISSING: Konzepte zur Klimadividende und Einnahmenverwendung}"
+-  "{cite_MISSING: Literatur zum Effizienzvorteil von EHS}"
+-  "{cite_MISSING: Studien zu Überzuteilung und Preisvolatilität im EU-EHS}"
+-  "{cite_MISSING: Literatur zu Policy-Mix und grüner Transformation}"
+-  "{cite_MISSING: Studien zur Bedeutung von Langfristsignalen in der Klimapolitik}"
+-  "{cite_MISSING: Literatur zu sozialen Ausgleichsmaßnahmen bei CO2-Bepreisung}"
+-  "{cite_MISSING: Studien zu Preisvolatilität und ihren Ursachen}"
+-  "{cite_MISSING: Literatur zu Carbon Leakage und seinen Auswirkungen}"
+-  "{cite_MISSING: Herausforderungen bei der Sektorerweiterung von EHS}"
+-  "{cite_MISSING: Studien zur optimalen Cap-Setzung}"
+-  "{cite_MISSING: Konzepte zur Klimadividende und Einnahmenverwendung}"
 **Fix:** Replace all `cite_MISSING` placeholders with specific, verifiable citations (author, year, title, DOI/arXiv ID if applicable). Every claim that is not original to this paper's analysis *must* be cited.
 **Severity:** 🔴 High - **CRITICAL ACADEMIC INTEGRITY ISSUE**. The paper cannot be accepted without resolving this.
 
@@ -49,8 +49,8 @@
 **Location:** Multiple instances, e.g., "Die Analyse hat gezeigt, dass Emissionshandelssysteme (EHS) prinzipiell ein wirksames Instrument zur Reduktion von Treibhausgasemissionen darstellen können..." (Interpretation)
 **Problem:** While EHS *can* be effective, the discussion sometimes presents general principles or potential benefits as if they are universally proven or directly demonstrated by *this paper*, without sufficient hedging or acknowledgment of the specific conditions under which these benefits materialize. Without seeing the specific results, it's difficult to assess if this paper's findings warrant such strong, general statements.
 **Evidence:**
--   "Die ökonomische Effizienz, die durch die Internalisierung externer Kosten der Umweltverschmutzung erreicht wird, ist ein wiederkehrendes Argument in der Literatur..." (Interpretation) - This is true, but the paper's role should be to *interpret* this in light of its *own* findings, not just state it as a given.
--   "Die Ergebnisse legen nahe, dass die bloße Existenz eines Emissionshandelssystems nicht ausreicht; vielmehr ist eine kontinuierliche Anpassung und Verfeinerung der Marktmechanismen entscheidend." (Interpretation) - While a valid conclusion, the link to *this paper's specific results* is missing, making it an overclaim if the paper is not empirical.
+-  "Die ökonomische Effizienz, die durch die Internalisierung externer Kosten der Umweltverschmutzung erreicht wird, ist ein wiederkehrendes Argument in der Literatur..." (Interpretation) - This is true, but the paper's role should be to *interpret* this in light of its *own* findings, not just state it as a given.
+-  "Die Ergebnisse legen nahe, dass die bloße Existenz eines Emissionshandelssystems nicht ausreicht; vielmehr ist eine kontinuierliche Anpassung und Verfeinerung der Marktmechanismen entscheidend." (Interpretation) - While a valid conclusion, the link to *this paper's specific results* is missing, making it an overclaim if the paper is not empirical.
 **Fix:**
 1.  Clearly distinguish between findings from *this paper* and established knowledge from the literature.
 2.  Use more nuanced language (e.g., "suggests," "indicates," "can contribute to," "under certain conditions") when discussing general principles or potential outcomes, especially when not directly proven by the paper's own results.
@@ -65,8 +65,8 @@
 **Location:** Especially between "4.1 Implikationen für die Klimapolitik" and "4.4 Rolle im globalen Klimaschutz," and social equity aspects appearing in multiple sections.
 **Problem:** Key themes like international cooperation (Article 6), social equity, and the need for a policy mix are discussed in multiple sections (e.g., Interpretation, Implications, Challenges, Recommendations). While reiteration for emphasis can be useful, some arguments are repeated without adding significant new dimensions or depth, leading to a somewhat circuitous flow.
 **Evidence:**
--   International cooperation/Article 6 is mentioned in "Interpretation," "Implikationen," "Grenzen," "Verbesserungsvorschläge," and "Rolle im globalen Klimaschutz," and "Empfehlungen."
--   Social equity and distribution effects are covered in "Implikationen," "Grenzen," and "Verbesserungsvorschläge."
+-  International cooperation/Article 6 is mentioned in "Interpretation," "Implikationen," "Grenzen," "Verbesserungsvorschläge," and "Rolle im globalen Klimaschutz," and "Empfehlungen."
+-  Social equity and distribution effects are covered in "Implikationen," "Grenzen," and "Verbesserungsvorschläge."
 **Fix:** Review the discussion flow to identify areas where arguments are repeated. Consolidate or rephrase to ensure each instance introduces a new perspective or deeper analysis relevant to that specific section's focus. For example, "Rolle im globalen Klimaschutz" could focus more on the *mechanisms* of global impact beyond just Article 6, or delve into regional differences etc.
 **Severity:** 🟡 Moderate - **Affects readability and conciseness.**
 
@@ -142,5 +142,5 @@
 5.  🟡 **Address Issue 4 (Redundancy):** Streamline repetitive arguments to improve flow and conciseness.
 
 **Can defer:**
--   Minor wording issues (can be polished in later revision stages).
--   Adding extensive case studies (can be an enhancement, but not critical for initial acceptance if other issues are fixed).
+-  Minor wording issues (can be polished in later revision stages).
+-  Adding extensive case studies (can be an enhancement, but not critical for initial acceptance if other issues are fixed).

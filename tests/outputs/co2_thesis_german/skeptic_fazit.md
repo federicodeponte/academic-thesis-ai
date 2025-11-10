@@ -8,10 +8,10 @@
 ## Summary
 
 **Strengths:**
--   **Clear Structure:** The Fazit follows a logical and comprehensive structure, covering a summary of findings, the thesis's contribution, and future research directions.
--   **Relevant Scope:** Addresses highly relevant and complex aspects of emissions trading systems, including design, international integration (Article 6), and broader policy contexts.
--   **Identification of Key Challenges:** Effectively highlights critical challenges such as carbon leakage, market stability, and the complexities of international cooperation.
--   **Identification of Future Research:** Proposes several pertinent and valuable avenues for future academic inquiry.
+-  **Clear Structure:** The Fazit follows a logical and comprehensive structure, covering a summary of findings, the thesis's contribution, and future research directions.
+-  **Relevant Scope:** Addresses highly relevant and complex aspects of emissions trading systems, including design, international integration (Article 6), and broader policy contexts.
+-  **Identification of Key Challenges:** Effectively highlights critical challenges such as carbon leakage, market stability, and the complexities of international cooperation.
+-  **Identification of Future Research:** Proposes several pertinent and valuable avenues for future academic inquiry.
 
 **Critical Issues:** 3 major, 3 moderate, 5 minor
 **Recommendation:** Significant revisions are needed, especially regarding citation and the articulation of the thesis's unique contribution.
@@ -24,9 +24,9 @@
 **Location:** Paragraph 2 (twice), Paragraph 5
 **Problem:** The Fazit makes several foundational claims about the empirical evidence for ETS effectiveness, design parameters, and existing research gaps without providing specific references. This is a severe academic integrity flaw.
 **Examples:**
-    -   "{cite_MISSING: Referenz zu empirischen Belegen für Kosteneffizienz von ETS}"
-    -   "{cite_MISSING: Referenz zu Designparametern und Marktstabilität}"
-    -   "{cite_MISSING: Referenz zu Forschungslücke in Entwicklungsländern}"
+  -  "{cite_MISSING: Referenz zu empirischen Belegen für Kosteneffizienz von ETS}"
+  -  "{cite_MISSING: Referenz zu Designparametern und Marktstabilität}"
+  -  "{cite_MISSING: Referenz zu Forschungslücke in Entwicklungsländern}"
 **Fix:** Provide specific, authoritative citations for *every* factual claim or statement attributed to "empirical evidence" or "research." These citations should directly support the specific point being made.
 **Severity:** 🔴 High - Threatens the credibility and academic rigor of the entire thesis.
 
@@ -91,8 +91,8 @@
 
 ## Methodological Concerns
 
-*   **(Implicit) Thesis Scope & Limitations:** The Fazit does not explicitly mention any limitations of the *thesis itself* (e.g., its scope, the specific systems analyzed, the depth of empirical analysis if it was a literature review). While not always mandatory in a Fazit, for a critical review, acknowledging the boundaries of one's own work adds to its credibility and academic humility.
-    *   **Suggestion:** Briefly add a sentence or two about the scope or inherent limitations (e.g., "Diese Arbeit konzentrierte sich auf X und Y, wodurch Z nicht vertieft werden konnte..." or "Aufgrund des Umfangs konnte die quantitative Modellierung von A nicht durchgeführt werden...").
+*  **(Implicit) Thesis Scope & Limitations:** The Fazit does not explicitly mention any limitations of the *thesis itself* (e.g., its scope, the specific systems analyzed, the depth of empirical analysis if it was a literature review). While not always mandatory in a Fazit, for a critical review, acknowledging the boundaries of one's own work adds to its credibility and academic humility.
+  *  **Suggestion:** Briefly add a sentence or two about the scope or inherent limitations (e.g., "Diese Arbeit konzentrierte sich auf X und Y, wodurch Z nicht vertieft werden konnte..." or "Aufgrund des Umfangs konnte die quantitative Modellierung von A nicht durchgeführt werden...").
 
 ---
 
@@ -133,6 +133,6 @@
 5.  🟡 **Address Moderate Issue 5 (Vague Attribution):** Clarify the source of the findings (thesis's own analysis vs. synthesis of literature).
 
 **Can defer (but recommended for quality):**
--   Minor wording and stylistic improvements.
--   Conciseness to meet word count.
--   Adding a brief statement on thesis limitations.
+-  Minor wording and stylistic improvements.
+-  Conciseness to meet word count.
+-  Adding a brief statement on thesis limitations.

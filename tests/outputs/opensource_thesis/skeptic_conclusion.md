@@ -8,10 +8,10 @@
 ## Summary
 
 **Strengths:**
--   **Broad and Ambitious Scope:** The conclusion effectively summarizes a comprehensive exploration of open source's impact across economic, social, and environmental dimensions.
--   **Strong Theoretical Integration:** The thesis successfully integrates diverse theoretical frameworks (common-pool resources, knowledge creation, public goods, open innovation, self-determination theory) to build its arguments.
--   **Clear Future Research Directions:** The final paragraphs provide well-articulated and specific avenues for future research, demonstrating a nuanced understanding of remaining gaps.
--   **Well-Structured Argument:** The conclusion follows a logical flow, transitioning from overall argument to specific findings and then to future work.
+-  **Broad and Ambitious Scope:** The conclusion effectively summarizes a comprehensive exploration of open source's impact across economic, social, and environmental dimensions.
+-  **Strong Theoretical Integration:** The thesis successfully integrates diverse theoretical frameworks (common-pool resources, knowledge creation, public goods, open innovation, self-determination theory) to build its arguments.
+-  **Clear Future Research Directions:** The final paragraphs provide well-articulated and specific avenues for future research, demonstrating a nuanced understanding of remaining gaps.
+-  **Well-Structured Argument:** The conclusion follows a logical flow, transitioning from overall argument to specific findings and then to future work.
 
 **Critical Issues:** 4 major, 3 moderate, 1 minor
 **Recommendation:** Revisions needed to temper overclaims, add nuance, and strengthen the link between stated findings and the summary evidence provided.
@@ -136,12 +136,12 @@
 6.  🟡 Address Issue 6 ("Pivotal" and "Critical" Claims): Justify or rephrase.
 
 **Can defer:**
--   Minor wording issues (Issue 7) can be addressed during general editing.
--   Further experiments (suggested as future work) are not required for this revision.
+-  Minor wording issues (Issue 7) can be addressed during general editing.
+-  Further experiments (suggested as future work) are not required for this revision.
 
 ---
 **Academic Integrity & Verification Notes:**
--   The citations are listed with IDs (e.g., {cite_001}). Ensure that in the final bibliography, these citations include specific identifiers like DOI or arXiv ID for easy verification, as per the review criteria.
--   No specific statistics are presented in this conclusion section, so no flag for uncited statistics.
--   No obvious contradictions were detected.
--   The primary concern is the strength of claims *relative to the summary evidence provided* in this conclusion, which has been addressed in the Major Issues.
+-  The citations are listed with IDs (e.g., {cite_001}). Ensure that in the final bibliography, these citations include specific identifiers like DOI or arXiv ID for easy verification, as per the review criteria.
+-  No specific statistics are presented in this conclusion section, so no flag for uncited statistics.
+-  No obvious contradictions were detected.
+-  The primary concern is the strength of claims *relative to the summary evidence provided* in this conclusion, which has been addressed in the Major Issues.

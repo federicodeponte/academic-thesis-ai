@@ -8,11 +8,11 @@
 ## Summary
 
 **Strengths:**
--   **Robust Dual Approach:** The combination of theoretical analysis and comparative case study is well-justified for the nascent field of AI agent pricing.
--   **Comprehensive Framework:** The proposed five-dimensional framework (Cost Structure, Value Proposition, Market Dynamics, Pricing Mechanisms, Agent Autonomy/Complexity) is thorough and integrates relevant economic theories with AI-specific characteristics.
--   **Clear Case Study Criteria:** The selection criteria for case studies are well-defined and appropriate for achieving analytical generalization, focusing on diversity and data accessibility.
--   **Systematic Analysis Plan:** The multi-step analytical approach, including framework application, comparative analysis, and iterative refinement, demonstrates a structured path to generating insights.
--   **Strong Validity & Reliability Considerations:** The section explicitly addresses construct, internal, external validity, and reliability, showing good methodological awareness.
+-  **Robust Dual Approach:** The combination of theoretical analysis and comparative case study is well-justified for the nascent field of AI agent pricing.
+-  **Comprehensive Framework:** The proposed five-dimensional framework (Cost Structure, Value Proposition, Market Dynamics, Pricing Mechanisms, Agent Autonomy/Complexity) is thorough and integrates relevant economic theories with AI-specific characteristics.
+-  **Clear Case Study Criteria:** The selection criteria for case studies are well-defined and appropriate for achieving analytical generalization, focusing on diversity and data accessibility.
+-  **Systematic Analysis Plan:** The multi-step analytical approach, including framework application, comparative analysis, and iterative refinement, demonstrates a structured path to generating insights.
+-  **Strong Validity & Reliability Considerations:** The section explicitly addresses construct, internal, external validity, and reliability, showing good methodological awareness.
 
 **Critical Issues:** 3 major, 2 moderate, 3 minor
 **Recommendation:** Revisions needed before publication
@@ -34,8 +34,8 @@
 **Claim:** "maximize the generalizability of analytical insights to the broader industry" in 2.2 regarding prominent players.
 **Problem:** This phrase in 2.2 contradicts the explicit statement in 2.3 that external validity is addressed through "analytical generalization of the developed framework" and "not statistically generalizable to the entire market." Analytical generalization is about refining theory, not directly generalizing findings to an industry in a statistical sense.
 **Evidence:**
--   2.2: "...the priority will be on those with established market presence to maximize the generalizability of analytical insights to the broader industry."
--   2.3: "External validity, while acknowledged as a challenge for case study research, will be addressed through the analytical generalization of the developed framework. The framework itself is intended to be generalizable to other AI agent pricing scenarios, even if the specific findings from the selected cases are not statistically generalizable to the entire market."
+-  2.2: "...the priority will be on those with established market presence to maximize the generalizability of analytical insights to the broader industry."
+-  2.3: "External validity, while acknowledged as a challenge for case study research, will be addressed through the analytical generalization of the developed framework. The framework itself is intended to be generalizable to other AI agent pricing scenarios, even if the specific findings from the selected cases are not statistically generalizable to the entire market."
 **Fix:** Rephrase the statement in 2.2 to align with the concept of analytical generalization, e.g., focusing on how prominent cases can offer richer data for theoretical refinement or represent significant trends that inform the framework's applicability, rather than "maximizing generalizability to the broader industry."
 **Severity:** 🔴 High - a core logical flaw regarding the study's scope and contribution.
 
@@ -140,5 +140,5 @@
 5.  🟡 Address Issue 5 (Missing Citation for Key Claim) - Strengthens empirical support.
 
 **Can defer:**
--   Minor wording issues and word count reduction (can be part of a general editing pass).
--   Adding more detailed discussions on inter-rater reliability or ethical considerations (can be added in a subsequent major revision if space allows, but good to think about now).
+-  Minor wording issues and word count reduction (can be part of a general editing pass).
+-  Adding more detailed discussions on inter-rater reliability or ethical considerations (can be added in a subsequent major revision if space allows, but good to think about now).

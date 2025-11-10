@@ -8,11 +8,11 @@
 ## Summary
 
 **Strengths:**
--   Provides a comprehensive and well-structured overview of the topic, from global climate challenges to specific policy instruments.
--   Effectively frames the problem statement, acknowledging both the theoretical benefits and practical criticisms of Emissions Trading Systems (ETS).
--   Clearly articulates the overarching research goal and specific research questions, providing a roadmap for the thesis.
--   The proposed structure of the thesis (Chapter 2 for theory, Chapter 3 for methodology, etc.) is logical and standard.
--   The introduction demonstrates a good grasp of the complexity and nuances of carbon pricing mechanisms.
+-  Provides a comprehensive and well-structured overview of the topic, from global climate challenges to specific policy instruments.
+-  Effectively frames the problem statement, acknowledging both the theoretical benefits and practical criticisms of Emissions Trading Systems (ETS).
+-  Clearly articulates the overarching research goal and specific research questions, providing a roadmap for the thesis.
+-  The proposed structure of the thesis (Chapter 2 for theory, Chapter 3 for methodology, etc.) is logical and standard.
+-  The introduction demonstrates a good grasp of the complexity and nuances of carbon pricing mechanisms.
 
 **Critical Issues:** 1 Major (Academic Integrity), 2 Moderate, 3 Minor
 **Recommendation:** Significant revisions needed, primarily to address the missing citations, before the paper can be considered robust.
@@ -113,6 +113,6 @@
 3.  🟡 **Address Issue 3 (Length and Scope):** Condense the introduction, moving more detailed historical or theoretical content to Chapter 2. Refine RQ1 to reflect a more active research contribution.
 
 **Can defer:**
--   Minor wording issues and repetitive phrasing (can be addressed during general editing).
--   Adding further specific examples of ETS (can be done in Chapter 2).
--   Deepening discussions on political feasibility or broader equity (can be integrated into Chapter 5 Discussion).
+-  Minor wording issues and repetitive phrasing (can be addressed during general editing).
+-  Adding further specific examples of ETS (can be done in Chapter 2).
+-  Deepening discussions on political feasibility or broader equity (can be integrated into Chapter 5 Discussion).

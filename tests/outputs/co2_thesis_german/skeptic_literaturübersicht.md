@@ -10,10 +10,10 @@
 This literature review provides a comprehensive and well-structured overview of CO2 certificate trading systems, covering their historical development, theoretical underpinnings, practical application, empirical effectiveness, and critical perspectives. The author demonstrates a strong conceptual understanding of the subject matter and outlines a logical progression of arguments. The "Fazit" section is particularly strong in its self-reflection, accurately identifying the significant limitations due to the scarcity of provided source materials.
 
 **Strengths:**
--   **Comprehensive Structure:** The review follows a clear, logical structure, building from historical context and theoretical foundations to empirical evidence and critical challenges.
--   **Clear Conceptual Explanations:** Complex environmental economic theories (externalities, Pigou taxes, efficiency) are explained clearly and concisely.
--   **Detailed EU ETS Overview:** The discussion of the EU ETS, particularly its design evolution and impacts, is detailed and insightful, largely drawing on the cited Grubb et al. (2020) work.
--   **Strong Self-Critique:** The "Fazit" section admirably articulates the limitations of the current draft regarding source material and identifies crucial research gaps for future work.
+-  **Comprehensive Structure:** The review follows a clear, logical structure, building from historical context and theoretical foundations to empirical evidence and critical challenges.
+-  **Clear Conceptual Explanations:** Complex environmental economic theories (externalities, Pigou taxes, efficiency) are explained clearly and concisely.
+-  **Detailed EU ETS Overview:** The discussion of the EU ETS, particularly its design evolution and impacts, is detailed and insightful, largely drawing on the cited Grubb et al. (2020) work.
+-  **Strong Self-Critique:** The "Fazit" section admirably articulates the limitations of the current draft regarding source material and identifies crucial research gaps for future work.
 
 **Critical Issues:** 5 major, 3 moderate, 2 minor
 **Recommendation:** Extensive revisions are needed to integrate specific, cited evidence before this draft can serve as a robust literature review for a Master's thesis.
@@ -150,5 +150,5 @@ This literature review provides a comprehensive and well-structured overview of 
 8.  🟡 **Address Issue 8 (Structure of "Hinweise zur Überarbeitung"):** Remove this section from the main document.
 
 **Can defer:**
--   Minor wording and stylistic improvements (can be refined in subsequent drafts).
--   Further expansion of "Missing Discussions" (can be integrated as the literature base grows, or specified as future work).
+-  Minor wording and stylistic improvements (can be refined in subsequent drafts).
+-  Further expansion of "Missing Discussions" (can be integrated as the literature base grows, or specified as future work).

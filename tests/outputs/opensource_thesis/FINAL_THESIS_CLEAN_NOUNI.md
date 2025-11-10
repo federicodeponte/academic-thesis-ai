@@ -204,11 +204,11 @@ To provide empirical depth and illustrate the framework's applicability, a multi
 ### 3.4 Data Collection and Sources
 
 Data for the case studies will be collected from a variety of primary and secondary sources to ensure triangulation and enhance the validity of findings. These sources include:
-*   **Project Documentation:** Official project websites, whitepapers, technical specifications, release notes, and community forums.
-*   **Academic Literature:** Peer-reviewed articles, books, and conference papers discussing the selected projects and broader open source phenomena (Frank et al., 2022)(Chen et al., 2022).
-*   **Industry Reports:** Reports from research firms, consulting agencies, and non-governmental organizations assessing the impact and trends of open source (Johnson et al., 2024).
-*   **Archival Data:** Historical data on project growth, contributor statistics, download figures, and financial disclosures (for projects with associated commercial entities).
-*   **Public Media:** News articles, documentaries, and interviews providing qualitative insights into the projects' societal and cultural impact.
+*  **Project Documentation:** Official project websites, whitepapers, technical specifications, release notes, and community forums.
+*  **Academic Literature:** Peer-reviewed articles, books, and conference papers discussing the selected projects and broader open source phenomena (Frank et al., 2022)(Chen et al., 2022).
+*  **Industry Reports:** Reports from research firms, consulting agencies, and non-governmental organizations assessing the impact and trends of open source (Johnson et al., 2024).
+*  **Archival Data:** Historical data on project growth, contributor statistics, download figures, and financial disclosures (for projects with associated commercial entities).
+*  **Public Media:** News articles, documentaries, and interviews providing qualitative insights into the projects' societal and cultural impact.
 
 ### 3.5 Data Analysis Approach
 
@@ -322,8 +322,6 @@ By strategically embracing open source, governments and organizations can not on
 
 
 ## References
-
-[To be completed with proper citations]
 
 
 ## References

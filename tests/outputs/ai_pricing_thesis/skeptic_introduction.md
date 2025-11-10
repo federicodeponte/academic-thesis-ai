@@ -88,7 +88,7 @@
 
 ## Methodological Concerns
 
-*   No methodological concerns arise directly from the Introduction section itself. The proposed qualitative, analytical methodology involving conceptual modeling and theoretical synthesis (Section 1.4, referring to Section 3) appears appropriate for the stated objectives.
+*  No methodological concerns arise directly from the Introduction section itself. The proposed qualitative, analytical methodology involving conceptual modeling and theoretical synthesis (Section 1.4, referring to Section 3) appears appropriate for the stated objectives.
 
 ---
 

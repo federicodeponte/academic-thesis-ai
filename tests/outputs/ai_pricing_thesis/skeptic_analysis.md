@@ -88,8 +88,8 @@
 2.  **Slight Tension in Subscription Predictability (4.2.2.1):** The paragraph discusses both the "predictability" advantage of subscriptions and the challenge of "over-charging low-volume users or under-charging high-volume users." While not a contradiction, explicitly acknowledging this tension could improve coherence.
 3.  **TCO in Pricing Disadvantages (4.3.7):** While Total Cost of Ownership (TCO) is a valid "challenge in value perception," its inclusion in a section on "disadvantages of current pricing approaches" could be rephrased to clarify that TCO complicates the *perception and comparison* of pricing models, rather than being a direct disadvantage of a model itself.
 4.  **Redundant/Obvious Statements:**
-    *   **4.1.4:** The last sentence, "The competitive intensity ensures that pricing is not static but rather a strategic lever used to attract, retain, and grow the LLM user base," is a bit redundant given the detailed discussion of competitive dynamics preceding it.
-    *   **General:** Some phrases like "direct correlation with the computational resources consumed" and "fundamentally cost-reflective mechanism" are repeated multiple times across 4.1.1 and 4.2.1. Varying the phrasing would improve flow.
+  *  **4.1.4:** The last sentence, "The competitive intensity ensures that pricing is not static but rather a strategic lever used to attract, retain, and grow the LLM user base," is a bit redundant given the detailed discussion of competitive dynamics preceding it.
+  *  **General:** Some phrases like "direct correlation with the computational resources consumed" and "fundamentally cost-reflective mechanism" are repeated multiple times across 4.1.1 and 4.2.1. Varying the phrasing would improve flow.
 5.  **Missing Nuance on Open-Source "Costs" (4.5.5):** While open-source models lower barriers, the practical "costs" of self-management, lack of enterprise support, and needing to manage infrastructure (even if it's managed services) could be more explicitly highlighted as a counterpoint to the "free" aspect, even though the text touches on managed services.
 
 ---

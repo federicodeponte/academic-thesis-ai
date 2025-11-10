@@ -25,6 +25,63 @@ from utils.output_sanitizer import sanitize_enhanced_file
 from utils.section_restorer import restore_sections_in_file
 
 
+def sanitize_all_variants(output_dir: Path, verbose: bool = True) -> int:
+    """
+    Sanitize ALL .md files in thesis directory to remove placeholders.
+
+    This catches variant files like FINAL_THESIS_CLEAN.md that users might view.
+
+    Args:
+        output_dir: Path to thesis output directory
+        verbose: Print detailed progress
+
+    Returns:
+        Number of files sanitized
+    """
+    if verbose:
+        print("\n🧹 Sanitizing ALL markdown variants in directory...")
+
+    files_cleaned = 0
+
+    # Get all .md files, excluding backups
+    for md_file in sorted(output_dir.glob("*.md")):
+        # Skip backup directories
+        if "backup" in str(md_file):
+            continue
+
+        # Skip section files (06_introduction.md, etc.) - they're pristine
+        if md_file.name[0].isdigit() and md_file.name[1].isdigit() and md_file.name[2] == '_':
+            # But DO clean numbered compilation files (14_, 15_, 16_)
+            if not md_file.name.startswith(('14_', '15_', '16_')):
+                continue
+
+        try:
+            if verbose:
+                print(f"  Sanitizing {md_file.name}...", end=" ")
+
+            success = sanitize_enhanced_file(
+                input_path=md_file,
+                output_path=None,  # In-place
+                verbose=False  # Don't print detailed stats for each file
+            )
+
+            if success:
+                files_cleaned += 1
+                if verbose:
+                    print("✅")
+            else:
+                if verbose:
+                    print("⚠️ No changes needed")
+        except Exception as e:
+            if verbose:
+                print(f"❌ Error: {e}")
+
+    if verbose:
+        print(f"\n✅ Sanitized {files_cleaned} variant files")
+
+    return files_cleaned
+
+
 def repair_thesis(thesis_name: str, language: str, output_dir: Path) -> bool:
     """
     Repair a single thesis with all fixes.
@@ -49,6 +106,14 @@ def repair_thesis(thesis_name: str, language: str, output_dir: Path) -> bool:
     if not final_thesis.exists():
         print(f"❌ {final_thesis} not found - skipping")
         return False
+
+    # Step 0: Sanitize ALL markdown variants in directory (catches FINAL_THESIS_CLEAN.md, etc.)
+    print("\n🧹 Step 0: Sanitizing ALL markdown variants...")
+    variants_cleaned = sanitize_all_variants(output_dir, verbose=True)
+    if variants_cleaned > 0:
+        print(f"✅ Cleaned {variants_cleaned} variant files")
+    else:
+        print("✅ No variants needed cleaning")
 
     # Step 1: Sanitize enhanced output (remove H2 metadata sections, inline metadata)
     print("\n🧹 Step 1: Sanitizing enhanced output...")
@@ -207,6 +272,7 @@ def main():
         print(f"  • {info['name']} ({info['language']})")
     print()
     print("Fixes applied:")
+    print("  0. Sanitize ALL .md variants (FINAL_THESIS_CLEAN.md, COMPLETE_DRAFT.md, etc.)")
     print("  1. Remove H2 metadata sections (## Citations Used, etc.)")
     print("  2. Remove inline metadata (**Section:**, **Word Count:**, etc.)")
     print("  3. Restore proper section names (not generic '## Content')")

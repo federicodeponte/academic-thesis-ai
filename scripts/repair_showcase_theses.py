@@ -230,6 +230,37 @@ def repair_thesis(thesis_name: str, language: str, output_dir: Path) -> bool:
         print(f"⚠️  PDF export error: {e}")
         print(f"⚠️  Continuing without PDF regeneration")
 
+    # Step 5: Copy PDF to examples/ for GitHub Pages
+    print("\n📤 Step 5: Copying PDF to examples/ for GitHub Pages...")
+    try:
+        import shutil
+        project_root = Path(__file__).parent.parent
+        examples_dir = project_root / "examples"
+        examples_dir.mkdir(exist_ok=True)
+
+        # Determine destination filename based on thesis
+        if 'opensource' in str(output_dir).lower():
+            dest_name = 'opensource_thesis.pdf'
+        elif 'ai_pricing' in str(output_dir).lower():
+            dest_name = 'ai_pricing_thesis.pdf'
+        elif 'co2' in str(output_dir).lower():
+            dest_name = 'co2_thesis_german.pdf'
+        else:
+            dest_name = 'FINAL_THESIS.pdf'
+
+        source_pdf = output_dir / "FINAL_THESIS.pdf"
+        dest_pdf = examples_dir / dest_name
+
+        if source_pdf.exists():
+            shutil.copy2(source_pdf, dest_pdf)
+            dest_size = dest_pdf.stat().st_size
+            print(f"✅ Copied to {dest_pdf} ({dest_size:,} bytes)")
+        else:
+            print(f"⚠️  Source PDF not found: {source_pdf}")
+    except Exception as e:
+        print(f"⚠️  Failed to copy to examples/: {e}")
+        print(f"⚠️  Continuing anyway")
+
     print("\n" + "=" * 80)
     print(f"✅ {thesis_name} REPAIR COMPLETE")
     print("=" * 80)
@@ -286,6 +317,7 @@ def main():
     print("  3. Restore proper section names (not generic '## Content')")
     print("  4. Verify References sections intact")
     print("  5. Regenerate clean PDFs")
+    print("  6. Copy PDFs to examples/ for GitHub Pages")
     print()
     print("=" * 80)
 

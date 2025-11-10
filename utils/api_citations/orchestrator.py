@@ -85,7 +85,11 @@ class CitationResearcher:
                 print(
                     f"    ✓ Cached: {cached_metadata['authors'][0]} et al. ({cached_metadata['year']}) [from {cached_source}]"
                 )
-            return self._create_citation(cached_metadata)
+            citation = self._create_citation(cached_metadata)
+            if citation and cached_source:
+                # Attach source metadata for tracking (used by Scout analytics)
+                citation._source = cached_source  # type: ignore[attr-defined]
+            return citation
 
         if self.verbose:
             print(f"  🔍 Researching: {topic[:70]}{'...' if len(topic) > 70 else ''}")
@@ -158,6 +162,9 @@ class CitationResearcher:
         # Convert to Citation object
         if metadata:
             citation = self._create_citation(metadata)
+            if citation and source:
+                # Attach source metadata for tracking (used by Scout analytics)
+                citation._source = source  # type: ignore[attr-defined]
             if self.verbose and citation:
                 print(f"    ✓ Found: {citation.authors[0]} et al. ({citation.year}) [from {source}]")
                 if citation.doi:

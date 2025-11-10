@@ -17,7 +17,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from config import get_config
-from tests.test_utils import setup_model, run_agent, rate_limit_delay
+from tests.test_utils import setup_model, run_agent, rate_limit_delay, research_citations_via_api
 from tests.validators import Section, validate_paper_sections
 from utils.citation_manager import extract_citations_from_text
 from utils.citation_database import save_citation_database, load_citation_database
@@ -66,26 +66,105 @@ def main():
     print("📚 PHASE 1: RESEARCH")
     print("="*70)
 
-    # Step 1: Scout - Find papers
-    scout_output = run_agent(
-        model=model,
-        name="1. Scout - Find Relevant Papers",
-        prompt_path="prompts/01_research/scout.md",
-        user_input=(
-            f"Find 30 academic papers and industry reports on:\n"
-            f"- Open source software development\n"
-            f"- Economic impact of open source\n"
-            f"- Open source sustainability and environmental benefits\n"
-            f"- Collaborative software development\n"
-            f"- Digital commons and knowledge sharing\n"
-            f"- Open source innovation models\n\n"
-            f"Research focus: {research_focus}"
-        ),
-        save_to=output_dir / "01_scout.md"
-    )
+    # Step 1: Scout - API-backed citation discovery (replaces LLM hallucination)
+    research_topics = [
+        # Open source development fundamentals
+        "open source software development methodologies and practices",
+        "distributed peer production in software development",
+        "collaborative software development processes",
+        "open source contribution patterns and community dynamics",
+        "open source governance models and decision-making",
 
-    if not scout_output:
-        print("❌ Scout failed - aborting test")
+        # Economic impact and business models
+        "economic impact of open source software on GDP",
+        "open source business models and commercial strategies",
+        "open source software as public good economic theory",
+        "open source market competition and vendor lock-in",
+        "open innovation paradigms in software industry",
+
+        # Environmental sustainability
+        "open source environmental sustainability practices",
+        "circular economy principles in open source",
+        "open source hardware repairability and longevity",
+        "software obsolescence and electronic waste reduction",
+        "energy efficiency in open source software",
+
+        # Knowledge sharing and commons
+        "digital commons knowledge management",
+        "collaborative knowledge creation platforms",
+        "peer production networks and social capital",
+        "knowledge-creating organizations theory",
+        "commons-based peer production",
+
+        # Innovation and network effects
+        "cathedral and bazaar development models",
+        "network society and information technology",
+        "self-determination theory in open source motivation",
+        "intrinsic motivation in collaborative development",
+        "gift economy in open source communities",
+
+        # Governance and institutions
+        "common-pool resource governance in digital commons",
+        "intellectual property and open source licensing",
+        "free software movement history and philosophy",
+        "open standards and software interoperability",
+        "open source security through peer review",
+
+        # Case studies and examples
+        "Linux operating system collaborative development",
+        "Apache web server architecture and community",
+        "Wikipedia collaborative encyclopedia model",
+        "Mozilla Firefox browser open development",
+        "TensorFlow and open source AI frameworks",
+
+        # Policy and social impact
+        "open source technology policy and regulation",
+        "digital divide bridging through open source",
+        "open source in education technology",
+        "public sector innovation with open source",
+        "accessibility and inclusion in open source",
+
+        # Advanced topics
+        "open source licensing legal frameworks",
+        "open source project sustainability mechanisms",
+        "code quality in open source development",
+        "power dynamics in open source communities",
+        "open source developer career motivation",
+
+        # Theoretical frameworks
+        "network theory applied to open source",
+        "social capital formation in developer communities",
+        "power and knowledge in open collaboration",
+        "transparency and trust in open development",
+        "meritocracy in open source organizations",
+    ]
+
+    try:
+        scout_result = research_citations_via_api(
+            model=model,
+            research_topics=research_topics,
+            output_path=output_dir / "01_scout.md",
+            target_minimum=50,  # Quality gate: require 50+ valid citations
+            verbose=True
+        )
+
+        print(f"\n✅ Scout Success: {scout_result['count']} valid citations")
+        print(f"📊 API Success Rate: {scout_result['count']/len(research_topics)*100:.1f}%")
+        print(f"📚 Sources: Crossref={scout_result['sources']['Crossref']}, "
+              f"Semantic Scholar={scout_result['sources']['Semantic Scholar']}, "
+              f"LLM={scout_result['sources']['Gemini LLM']}")
+
+        # Read scout output for next agents
+        scout_output = (output_dir / "01_scout.md").read_text(encoding='utf-8')
+
+    except ValueError as e:
+        print(f"\n❌ SCOUT QUALITY GATE FAILED")
+        print(str(e))
+        print("\n⚠️  Cannot proceed - insufficient valid citations for academic thesis")
+        return 1
+    except Exception as e:
+        print(f"\n❌ SCOUT FAILED - Unexpected Error")
+        print(f"Error: {str(e)}")
         return 1
 
     rate_limit_delay()

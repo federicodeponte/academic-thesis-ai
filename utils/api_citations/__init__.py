@@ -8,7 +8,7 @@ from .crossref import CrossrefClient
 from .semantic_scholar import SemanticScholarClient
 
 __all__ = [
-    'CitationResearcher',
-    'CrossrefClient',
-    'SemanticScholarClient',
+    "CitationResearcher",
+    "CrossrefClient",
+    "SemanticScholarClient",
 ]

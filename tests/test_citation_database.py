@@ -231,7 +231,7 @@ class TestCitationCompiler:
         compiler = CitationCompiler(db)
 
         text = "Recent studies {cite_001} show promising results."
-        compiled, missing = compiler.compile_citations(text)
+        compiled, missing, researched = compiler.compile_citations(text, research_missing=False)
 
         assert "(Smith, 2023)" in compiled
         assert "{cite_001}" not in compiled
@@ -247,7 +247,7 @@ class TestCitationCompiler:
         compiler = CitationCompiler(db)
 
         text = "Studies {cite_001} and {cite_002} confirm this."
-        compiled, missing = compiler.compile_citations(text)
+        compiled, missing, researched = compiler.compile_citations(text, research_missing=False)
 
         assert "(Smith, 2023)" in compiled
         assert "(Jones & Brown, 2022)" in compiled
@@ -262,7 +262,7 @@ class TestCitationCompiler:
         compiler = CitationCompiler(db)
 
         text = "{cite_001}"
-        compiled, missing = compiler.compile_citations(text)
+        compiled, missing, researched = compiler.compile_citations(text, research_missing=False)
 
         assert "(Smith et al., 2023)" in compiled
 
@@ -275,7 +275,7 @@ class TestCitationCompiler:
         compiler = CitationCompiler(db)
 
         text = "Studies {cite_001} and {cite_999} show results."
-        compiled, missing = compiler.compile_citations(text)
+        compiled, missing, researched = compiler.compile_citations(text, research_missing=False)
 
         assert "(Smith, 2023)" in compiled
         assert "[MISSING: cite_999]" in compiled

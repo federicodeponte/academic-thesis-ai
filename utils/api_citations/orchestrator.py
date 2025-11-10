@@ -13,6 +13,7 @@ from .semantic_scholar import SemanticScholarClient
 
 # Import existing Citation dataclass
 import sys
+
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from utils.citation_database import Citation
 
@@ -81,7 +82,9 @@ class CitationResearcher:
                 return None
             cached_metadata, cached_source = cached
             if self.verbose:
-                print(f"    ✓ Cached: {cached_metadata['authors'][0]} et al. ({cached_metadata['year']}) [from {cached_source}]")
+                print(
+                    f"    ✓ Cached: {cached_metadata['authors'][0]} et al. ({cached_metadata['year']}) [from {cached_source}]"
+                )
             return self._create_citation(cached_metadata)
 
         if self.verbose:
@@ -146,7 +149,8 @@ class CitationResearcher:
                 logger.error(f"Gemini LLM error: {e}")
 
         # Cache result (even if None)
-        if metadata:
+        # Defensive: Only cache when we have both metadata AND source
+        if metadata and source:
             self.cache[topic] = (metadata, source)
         else:
             self.cache[topic] = None
@@ -222,6 +226,7 @@ class CitationResearcher:
         try:
             # Load Scout agent prompt
             from tests.test_utils import load_prompt
+
             scout_prompt = load_prompt("prompts/01_research/scout.md")
 
             # Build research request (same as current implementation)
@@ -282,10 +287,9 @@ Return a JSON object with this structure:
             response = self.gemini_model.generate_content(
                 [scout_prompt, user_input],
                 generation_config=genai.GenerationConfig(
-                    temperature=0.2,  # Low temperature for factual research
-                    max_output_tokens=2048
+                    temperature=0.2, max_output_tokens=2048  # Low temperature for factual research
                 ),
-                safety_settings=safety_settings
+                safety_settings=safety_settings,
             )
 
             # Parse JSON response with error handling for safety blocks
@@ -298,7 +302,9 @@ Return a JSON object with this structure:
 
             candidate = response.candidates[0]
             if candidate.finish_reason not in [1, 0]:  # 1 = STOP (normal), 0 = UNSPECIFIED
-                logger.warning(f"LLM response blocked (finish_reason={candidate.finish_reason}) for topic: {topic[:50]}...")
+                logger.warning(
+                    f"LLM response blocked (finish_reason={candidate.finish_reason}) for topic: {topic[:50]}..."
+                )
                 return None
 
             # Try to access response text safely
@@ -355,9 +361,9 @@ Return a JSON object with this structure:
 
     def close(self) -> None:
         """Close API clients."""
-        if hasattr(self, 'crossref'):
+        if hasattr(self, "crossref"):
             self.crossref.close()
-        if hasattr(self, 'semantic_scholar'):
+        if hasattr(self, "semantic_scholar"):
             self.semantic_scholar.close()
 
     def __enter__(self):

@@ -75,8 +75,8 @@ class SemanticScholarClient(BaseAPIClient):
             params={
                 "query": query,
                 "limit": 5,  # Get top 5 results
-                "fields": "title,authors,year,venue,externalIds,url,citationCount,publicationTypes"
-            }
+                "fields": "title,authors,year,venue,externalIds,url,citationCount,publicationTypes",
+            },
         )
 
         if not response:
@@ -96,7 +96,9 @@ class SemanticScholarClient(BaseAPIClient):
             metadata = self._extract_metadata(paper)
 
             if metadata:
-                logger.info(f"SemanticScholar: Found '{metadata['title'][:50]}...' by {metadata['authors'][0]} ({metadata['year']})")
+                logger.info(
+                    f"SemanticScholar: Found '{metadata['title'][:50]}...' by {metadata['authors'][0]} ({metadata['year']})"
+                )
                 return metadata
             else:
                 logger.debug(f"SemanticScholar: Incomplete metadata for '{query[:50]}...'")
@@ -181,7 +183,7 @@ class SemanticScholarClient(BaseAPIClient):
                 has_url=bool(url),
                 has_venue=bool(journal),
                 author_count=len(authors),
-                citation_count=citation_count
+                citation_count=citation_count,
             )
 
             return {
@@ -237,12 +239,7 @@ class SemanticScholarClient(BaseAPIClient):
             return "journal"  # Default
 
     def _calculate_confidence(
-        self,
-        has_doi: bool,
-        has_url: bool,
-        has_venue: bool,
-        author_count: int,
-        citation_count: int
+        self, has_doi: bool, has_url: bool, has_venue: bool, author_count: int, citation_count: int
     ) -> float:
         """
         Calculate confidence score for paper metadata.

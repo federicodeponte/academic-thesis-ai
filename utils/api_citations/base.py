@@ -40,7 +40,7 @@ class BaseAPIClient(ABC):
             timeout: Request timeout in seconds
             max_retries: Maximum retry attempts for failed requests
         """
-        self.base_url = base_url.rstrip('/')
+        self.base_url = base_url.rstrip("/")
         self.rate_limit_per_second = rate_limit_per_second
         self.timeout = timeout
         self.max_retries = max_retries
@@ -51,9 +51,7 @@ class BaseAPIClient(ABC):
 
         # Session for connection pooling
         self.session = requests.Session()
-        self.session.headers.update({
-            'User-Agent': 'AcademicThesisAI/1.0 (mailto:research@example.com)'
-        })
+        self.session.headers.update({"User-Agent": "AcademicThesisAI/1.0 (mailto:research@example.com)"})
 
     def _rate_limit_wait(self) -> None:
         """Wait if necessary to respect rate limit."""
@@ -114,14 +112,14 @@ class BaseAPIClient(ABC):
 
                 elif response.status_code == 429:
                     # Rate limited - wait longer
-                    wait_time = 2 ** attempt  # Exponential backoff
+                    wait_time = 2**attempt  # Exponential backoff
                     logger.warning(f"Rate limited (429), waiting {wait_time}s before retry")
                     time.sleep(wait_time)
                     continue
 
                 elif response.status_code >= 500:
                     # Server error - retry
-                    wait_time = 2 ** attempt
+                    wait_time = 2**attempt
                     logger.warning(f"Server error ({response.status_code}), waiting {wait_time}s before retry")
                     time.sleep(wait_time)
                     continue
@@ -132,13 +130,13 @@ class BaseAPIClient(ABC):
                     return None
 
             except requests.exceptions.Timeout:
-                wait_time = 2 ** attempt
+                wait_time = 2**attempt
                 logger.warning(f"Request timeout, waiting {wait_time}s before retry")
                 time.sleep(wait_time)
                 continue
 
             except requests.exceptions.ConnectionError as e:
-                wait_time = 2 ** attempt
+                wait_time = 2**attempt
                 logger.warning(f"Connection error: {e}, waiting {wait_time}s before retry")
                 time.sleep(wait_time)
                 continue

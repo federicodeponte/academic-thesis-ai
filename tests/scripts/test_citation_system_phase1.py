@@ -116,7 +116,7 @@ Garcia, R., Lopez, M., & Martinez, S. (2022). Renewable Energy Transition. IEEE.
     text_with_ids = "Recent studies {cite_001} show effectiveness. Cross-referenced with {cite_002} and {cite_003}."
 
     compiler = CitationCompiler(database)
-    compiled_text, missing = compiler.compile_citations(text_with_ids)
+    compiled_text, missing, researched = compiler.compile_citations(text_with_ids, research_missing=False)
 
     print(f"   Original: {text_with_ids}")
     print(f"   Compiled: {compiled_text}")
@@ -135,7 +135,7 @@ Garcia, R., Lopez, M., & Martinez, S. (2022). Renewable Energy Transition. IEEE.
     # Step 6: Validate compilation
     print("\n6. Validating compilation...")
     original_with_ids = "Text with {cite_001}, {cite_002}, and {cite_003}."
-    compiled_with_cites = compiler.compile_citations(original_with_ids)[0]
+    compiled_with_cites, _, _ = compiler.compile_citations(original_with_ids, research_missing=False)
 
     validation = compiler.validate_compilation(original_with_ids, compiled_with_cites)
 

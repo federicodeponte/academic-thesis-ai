@@ -76,8 +76,8 @@ class CrossrefClient(BaseAPIClient):
                 "query": query,
                 "rows": 5,  # Get top 5 results
                 "sort": "relevance",
-                "select": "DOI,title,author,published,container-title,publisher,volume,issue,page,type"
-            }
+                "select": "DOI,title,author,published,container-title,publisher,volume,issue,page,type",
+            },
         )
 
         if not response:
@@ -97,7 +97,9 @@ class CrossrefClient(BaseAPIClient):
             metadata = self._extract_metadata(paper)
 
             if metadata:
-                logger.info(f"Crossref: Found '{metadata['title'][:50]}...' by {metadata['authors'][0]} ({metadata['year']})")
+                logger.info(
+                    f"Crossref: Found '{metadata['title'][:50]}...' by {metadata['authors'][0]} ({metadata['year']})"
+                )
                 return metadata
             else:
                 logger.debug(f"Crossref: Incomplete metadata for '{query[:50]}...'")
@@ -183,10 +185,7 @@ class CrossrefClient(BaseAPIClient):
 
             # Calculate confidence score
             confidence = self._calculate_confidence(
-                has_doi=bool(doi),
-                has_journal=bool(journal),
-                has_publisher=bool(publisher),
-                author_count=len(authors)
+                has_doi=bool(doi), has_journal=bool(journal), has_publisher=bool(publisher), author_count=len(authors)
             )
 
             return {
@@ -230,13 +229,7 @@ class CrossrefClient(BaseAPIClient):
 
         return type_mapping.get(crossref_type, "journal")  # Default to journal
 
-    def _calculate_confidence(
-        self,
-        has_doi: bool,
-        has_journal: bool,
-        has_publisher: bool,
-        author_count: int
-    ) -> float:
+    def _calculate_confidence(self, has_doi: bool, has_journal: bool, has_publisher: bool, author_count: int) -> float:
         """
         Calculate confidence score for paper metadata.
 

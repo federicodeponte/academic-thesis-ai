@@ -661,6 +661,29 @@ def main():
     final_word_count = len(final_paper.split())
     print(f"✅ Finale Arbeit: {final_word_count:,} Wörter")
 
+    # ====================================================================
+    # QUALITY GATE: Validate thesis is publication-ready
+    # ====================================================================
+    print("\n" + "="*70)
+    print("🔍 QUALITY GATE: Validierung der Publikationsreife")
+    print("="*70)
+
+    from scripts.validate_thesis_quality import validate_thesis
+    is_publication_ready = validate_thesis(final_md, verbose=True)
+
+    if not is_publication_ready:
+        print("\n" + "="*70)
+        print("❌ THESIS-GENERIERUNG FEHLGESCHLAGEN - Quality Gate nicht bestanden")
+        print("="*70)
+        print("\n🚫 PDF-Export blockiert wegen Qualitätsproblemen")
+        print("   Beheben Sie die oben aufgeführten Probleme und führen Sie die Generierung erneut aus")
+        print("\n💡 Tipp: Sie können FINAL_THESIS.md manuell korrigieren und erneut exportieren:")
+        print(f"   python3 scripts/export_clean_pdfs.py")
+        print("="*70)
+        return 1  # Exit with error code
+
+    print("="*70)
+
     # Export to PDF
     print("\nExport zu PDF...")
     try:

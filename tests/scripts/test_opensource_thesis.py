@@ -652,8 +652,16 @@ def main():
     is_publication_ready = validate_thesis(final_md, verbose=True)
 
     if not is_publication_ready:
-        print("\n⚠️  WARNING: Thesis has quality issues but export will continue")
-        print("   Fix issues before publishing to production")
+        print("\n" + "="*70)
+        print("❌ THESIS GENERATION FAILED - Quality gate not passed")
+        print("="*70)
+        print("\n🚫 Blocking PDF export due to quality issues")
+        print("   Fix the issues listed above and re-run generation")
+        print("\n💡 Tip: You can manually fix FINAL_THESIS.md and re-export:")
+        print(f"   python3 scripts/export_clean_pdfs.py")
+        print("="*70)
+        return 1  # Exit with error code
+
     print("="*70)
 
     # Export to PDF

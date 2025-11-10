@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ABOUTME: Quality gate - validate thesis is publication-ready before marking as FINAL
-ABOUTME: Checks for [VERIFY] markers, incomplete citations, and required sections
+ABOUTME: Checks for [VERIFY], [MISSING], {cite_MISSING} markers, and required sections
 """
 
 import re
@@ -37,6 +37,25 @@ def check_missing_citations(content: str) -> Tuple[int, List[str]]:
     matches = re.findall(pattern, content)
 
     return len(matches), matches[:10]
+
+
+def check_missing_bracket_markers(content: str) -> Tuple[int, List[str]]:
+    """
+    Find [MISSING: ...] placeholders.
+
+    These are created when Scout agent fails to research citations.
+    They're just as critical as [VERIFY] markers.
+
+    Returns:
+        (count, list of examples)
+    """
+    pattern = r'\[MISSING:([^\]]+)\]'
+    matches = re.findall(pattern, content)
+
+    # Get unique examples (max 10)
+    unique_examples = list(set(matches))[:10]
+
+    return len(matches), unique_examples
 
 
 def check_required_sections(content: str) -> Dict[str, bool]:
@@ -109,7 +128,20 @@ def validate_thesis(file_path: Path, verbose: bool = True) -> bool:
     elif verbose:
         print(f"✅ No missing citation placeholders")
 
-    # Check 3: Required sections
+    # Check 3: [MISSING: ...] markers (Scout agent failures)
+    missing_bracket_count, missing_bracket_examples = check_missing_bracket_markers(content)
+    if missing_bracket_count > 0:
+        is_valid = False
+        if verbose:
+            print(f"❌ Found {missing_bracket_count} [MISSING: ...] markers (Scout agent failures)")
+            print(f"   Examples:")
+            for example in missing_bracket_examples[:5]:
+                print(f"   - [MISSING: {example}]")
+            print()
+    elif verbose:
+        print(f"✅ No [MISSING] bracket markers")
+
+    # Check 4: Required sections
     sections = check_required_sections(content)
     missing_sections = [name for name, present in sections.items() if not present]
 
@@ -139,12 +171,18 @@ def validate_thesis(file_path: Path, verbose: bool = True) -> bool:
         else:
             print("❌ THESIS NOT PUBLICATION-READY")
             print("\nAction required:")
+            action_num = 1
             if verify_count > 0:
-                print(f"  1. Fill {verify_count} [VERIFY] placeholders with proper citations")
+                print(f"  {action_num}. Fill {verify_count} [VERIFY] placeholders with proper citations")
+                action_num += 1
             if missing_count > 0:
-                print(f"  2. Research and add {missing_count} missing citations")
+                print(f"  {action_num}. Research and add {missing_count} {{cite_MISSING:...}} citations")
+                action_num += 1
+            if missing_bracket_count > 0:
+                print(f"  {action_num}. Research and add {missing_bracket_count} [MISSING: ...] citations (Scout failures)")
+                action_num += 1
             if missing_sections:
-                print(f"  3. Add missing sections: {', '.join(missing_sections)}")
+                print(f"  {action_num}. Add missing sections: {', '.join(missing_sections)}")
         print(f"{'='*70}\n")
 
     return is_valid

@@ -32,8 +32,6 @@ lizenz: "MIT - Nutzen Sie es, forken Sie es, verbessern Sie es, veröffentlichen
 
 ## Einleitung
 
-**Abschnitt:** Einleitung
-**Wortzahl:** ca. 2,500 (stilistisch angepasst)
 
 ---
 
@@ -45,8 +43,6 @@ Ein Kernstück der politischen Instrumente, um diese Herausforderung zu meistern
 
 ## Literaturübersicht
 
-**Abschnitt:** Literaturübersicht
-**Wortzahl:** 8.353 Wörter
 
 ---
 
@@ -301,8 +297,6 @@ Die vorliegende Literaturübersicht dient somit als konzeptioneller Rahmen und a
 
 ## Methodik
 
-**Abschnitt:** Methodik
-**Wortzahl:** 2,643 Wörter
 
 ---
 
@@ -429,8 +423,6 @@ Um die komplexen Zusammenhänge und Wirkungsweisen von Emissionshandelssystemen 
 
 ## Analyse der Emissionshandelssysteme (ETS) als Klimaschutzinstrument
 
-**Abschnitt:** Analyse
-**Wortzahl:** 9,213 Wörter
 
 ---
 
@@ -726,8 +718,6 @@ Um die unterschiedlichen Ansätze und deren Auswirkungen auf die Klimaschutzwirk
 
 ## Diskussion
 
-**Abschnitt:** Diskussion
-**Wortzahl:** 3.816 Wörter
 
 ---
 
@@ -889,8 +879,6 @@ Diese Forschungsrichtungen kollektiv zielen darauf ab, ein reicheres, nuancierte
 
 ## Fazit
 
-**Abschnitt:** Fazit
-**Wortzahl:** 1.328 Wörter
 
 ---
 

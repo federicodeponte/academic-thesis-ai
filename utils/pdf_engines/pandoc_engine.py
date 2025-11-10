@@ -157,7 +157,8 @@ class PandocLatexEngine(PDFEngine):
         else:
             spacing_command = r'\singlespacing'
 
-        preamble = r'''\usepackage{setspace}
+        preamble = r'''\usepackage{etoolbox}
+\usepackage{setspace}
 ''' + spacing_command + r'''
 \usepackage{indentfirst}
 \setlength{\parindent}{0.5in}

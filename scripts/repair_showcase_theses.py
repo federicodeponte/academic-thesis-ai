@@ -206,13 +206,19 @@ def repair_thesis(thesis_name: str, language: str, output_dir: Path) -> bool:
     try:
         pdf_path = output_dir / "FINAL_THESIS.pdf"
 
-        # Use pandoc directly (more reliable than Python wrapper)
+        # Use pandoc directly with academic formatting
         result = subprocess.run([
             'pandoc',
             str(final_thesis),
             '-o', str(pdf_path),
             '--pdf-engine=xelatex',
+            '-V', 'fontsize=12pt',           # Standard academic font size
+            '-V', 'linestretch=1.5',          # 1.5 line spacing (academic standard)
             '-V', 'geometry:margin=1in',
+            '-V', 'documentclass=article',
+            '--toc',                          # Table of contents
+            '--toc-depth=3',
+            '--number-sections',              # Number sections
             '--quiet'
         ], capture_output=True, text=True, timeout=120)
 

@@ -201,26 +201,34 @@ def repair_thesis(thesis_name: str, language: str, output_dir: Path) -> bool:
         print(f"   You may need to manually restore from {pre_enhancement}")
         # Don't fail - sanitization still succeeded
 
-    # Step 4: Regenerate PDF
+    # Step 4: Regenerate PDF with pandoc directly
     print("\n📤 Step 4: Regenerating PDF...")
     try:
         pdf_path = output_dir / "FINAL_THESIS.pdf"
+
+        # Use pandoc directly (more reliable than Python wrapper)
         result = subprocess.run([
-            sys.executable, 'utils/export_professional.py',
+            'pandoc',
             str(final_thesis),
-            '--pdf', str(pdf_path),
-            '--engine', 'pandoc'
-        ], capture_output=True, text=True, timeout=60)
+            '-o', str(pdf_path),
+            '--pdf-engine=xelatex',
+            '-V', 'geometry:margin=1in',
+            '--quiet'
+        ], capture_output=True, text=True, timeout=120)
 
         if result.returncode == 0:
             pdf_size = pdf_path.stat().st_size
             print(f"✅ PDF regenerated: {pdf_size:,} bytes")
         else:
             print(f"⚠️  PDF export failed: {result.stderr}")
-            return False
+            # Don't fail the whole repair if PDF generation fails
+            print(f"⚠️  Continuing without PDF regeneration")
+    except FileNotFoundError:
+        print(f"⚠️  pandoc not found - skipping PDF regeneration")
+        print(f"   Install with: sudo apt-get install texlive-xetex")
     except Exception as e:
         print(f"⚠️  PDF export error: {e}")
-        return False
+        print(f"⚠️  Continuing without PDF regeneration")
 
     print("\n" + "=" * 80)
     print(f"✅ {thesis_name} REPAIR COMPLETE")

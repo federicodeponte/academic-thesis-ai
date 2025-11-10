@@ -634,6 +634,21 @@ def main():
     final_word_count = len(final_paper.split())
     print(f"✅ Final thesis: {final_word_count:,} words")
 
+    # ====================================================================
+    # QUALITY GATE: Validate thesis is publication-ready
+    # ====================================================================
+    print("\n" + "="*70)
+    print("🔍 QUALITY GATE: Validating Publication-Readiness")
+    print("="*70)
+
+    from scripts.validate_thesis_quality import validate_thesis
+    is_publication_ready = validate_thesis(final_md, verbose=True)
+
+    if not is_publication_ready:
+        print("\n⚠️  WARNING: Thesis has quality issues but export will continue")
+        print("   Fix issues before publishing to production")
+    print("="*70)
+
     # Export to PDF
     print("\nExporting to PDF...")
     try:

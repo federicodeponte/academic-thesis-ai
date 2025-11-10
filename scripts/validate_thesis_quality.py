@@ -1,0 +1,169 @@
+#!/usr/bin/env python3
+"""
+ABOUTME: Quality gate - validate thesis is publication-ready before marking as FINAL
+ABOUTME: Checks for [VERIFY] markers, incomplete citations, and required sections
+"""
+
+import re
+import sys
+from pathlib import Path
+from typing import List, Tuple, Dict
+
+
+def check_verify_markers(content: str) -> Tuple[int, List[str]]:
+    """
+    Find all [VERIFY] placeholders in content.
+
+    Returns:
+        (count, list of examples)
+    """
+    pattern = r'\[VERIFY[^\]]*\]'
+    matches = re.findall(pattern, content, re.IGNORECASE)
+
+    # Get unique examples (max 10)
+    unique_examples = list(set(matches))[:10]
+
+    return len(matches), unique_examples
+
+
+def check_missing_citations(content: str) -> Tuple[int, List[str]]:
+    """
+    Find {cite_MISSING:...} placeholders.
+
+    Returns:
+        (count, list of topics)
+    """
+    pattern = r'\{cite_MISSING:([^}]+)\}'
+    matches = re.findall(pattern, content)
+
+    return len(matches), matches[:10]
+
+
+def check_required_sections(content: str) -> Dict[str, bool]:
+    """
+    Check if thesis has all required sections.
+
+    Returns:
+        Dict of section_name: present (bool)
+    """
+    sections = {
+        'Abstract': r'#+\s*Abstract',
+        'Introduction': r'#+\s*(Introduction|1\.?\s*Introduction)',
+        'Literature Review': r'#+\s*(Literature Review|2\.?\s*Literature Review)',
+        'Methodology': r'#+\s*(Methodology|Method)',
+        'References': r'#+\s*References',
+    }
+
+    results = {}
+    for section_name, pattern in sections.items():
+        results[section_name] = bool(re.search(pattern, content, re.IGNORECASE))
+
+    return results
+
+
+def validate_thesis(file_path: Path, verbose: bool = True) -> bool:
+    """
+    Validate thesis is publication-ready.
+
+    Returns:
+        True if publication-ready, False otherwise
+    """
+    if not file_path.exists():
+        print(f"❌ File not found: {file_path}")
+        return False
+
+    with open(file_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    if verbose:
+        print(f"\n{'='*70}")
+        print(f"📋 THESIS QUALITY VALIDATION: {file_path.name}")
+        print(f"{'='*70}\n")
+
+    # Track overall status
+    is_valid = True
+
+    # Check 1: [VERIFY] markers
+    verify_count, verify_examples = check_verify_markers(content)
+    if verify_count > 0:
+        is_valid = False
+        if verbose:
+            print(f"❌ Found {verify_count} [VERIFY] placeholders")
+            print(f"   Examples:")
+            for example in verify_examples[:5]:
+                print(f"   - {example}")
+            print()
+    elif verbose:
+        print(f"✅ No [VERIFY] markers found")
+
+    # Check 2: Missing citations
+    missing_count, missing_topics = check_missing_citations(content)
+    if missing_count > 0:
+        is_valid = False
+        if verbose:
+            print(f"❌ Found {missing_count} missing citations {{cite_MISSING:...}}")
+            print(f"   Topics:")
+            for topic in missing_topics[:5]:
+                print(f"   - {topic}")
+            print()
+    elif verbose:
+        print(f"✅ No missing citation placeholders")
+
+    # Check 3: Required sections
+    sections = check_required_sections(content)
+    missing_sections = [name for name, present in sections.items() if not present]
+
+    if missing_sections:
+        is_valid = False
+        if verbose:
+            print(f"❌ Missing required sections: {', '.join(missing_sections)}")
+    elif verbose:
+        print(f"✅ All required sections present")
+
+    # Check 4: Word count
+    word_count = len(content.split())
+    if verbose:
+        print(f"\n📊 Statistics:")
+        print(f"   - Word count: {word_count:,}")
+        print(f"   - Character count: {len(content):,}")
+
+    if word_count < 8000:
+        if verbose:
+            print(f"⚠️  Warning: Word count below 8,000 (academic minimum)")
+
+    # Final verdict
+    if verbose:
+        print(f"\n{'='*70}")
+        if is_valid:
+            print("✅ THESIS IS PUBLICATION-READY")
+        else:
+            print("❌ THESIS NOT PUBLICATION-READY")
+            print("\nAction required:")
+            if verify_count > 0:
+                print(f"  1. Fill {verify_count} [VERIFY] placeholders with proper citations")
+            if missing_count > 0:
+                print(f"  2. Research and add {missing_count} missing citations")
+            if missing_sections:
+                print(f"  3. Add missing sections: {', '.join(missing_sections)}")
+        print(f"{'='*70}\n")
+
+    return is_valid
+
+
+def main():
+    """Validate thesis files from command line."""
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Validate thesis quality')
+    parser.add_argument('file', type=Path, help='Thesis file to validate')
+    parser.add_argument('--quiet', action='store_true', help='Minimal output')
+
+    args = parser.parse_args()
+
+    is_valid = validate_thesis(args.file, verbose=not args.quiet)
+
+    sys.exit(0 if is_valid else 1)
+
+
+if __name__ == "__main__":
+    main()

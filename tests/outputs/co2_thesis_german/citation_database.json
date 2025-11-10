@@ -3,65 +3,22 @@
     {
       "id": "cite_001",
       "authors": [
-        "Stern"
+        "Flachsland",
+        "Edenhofer",
+        "Jakob"
       ],
-      "year": 2021,
-      "title": "The Economics of Climate Change: The Stern Review Revisited",
-      "source_type": "journal",
-      "language": "german",
-      "journal": "Journal of Economic Perspectives",
-      "doi": "10.1257/jep.35.3.3"
-    },
-    {
-      "id": "cite_002",
-      "authors": [
-        "Rübbelke",
-        "Vögele"
-      ],
-      "year": 2023,
-      "title": "The Role of Carbon Markets in Achieving Paris Agreement Goals",
+      "year": 2017,
+      "title": "The European Emissions Trading System: A decade of experience",
       "source_type": "journal",
       "language": "german",
       "journal": "Energy Policy",
-      "doi": "10.1016/j.enpol.2022.112999"
-    },
-    {
-      "id": "cite_003",
-      "authors": [
-        "Stern"
-      ],
-      "year": 2006,
-      "title": "The Stern Review on the Economics of Climate Change",
-      "source_type": "report",
-      "language": "german",
-      "publisher": "HM Treasury"
-    },
-    {
-      "id": "cite_004",
-      "authors": [
-        "IPCC"
-      ],
-      "year": 2021,
-      "title": "Assessment Report on Climate Change",
-      "source_type": "report",
-      "language": "german",
-      "publisher": "IPCC"
-    },
-    {
-      "id": "cite_005",
-      "authors": [
-        "UNFCCC"
-      ],
-      "year": 2015,
-      "title": "Paris Agreement",
-      "source_type": "report",
-      "language": "german"
+      "doi": "10.1016/j.enpol.2017.03.012"
     }
   ],
   "metadata": {
-    "total_citations": 5,
+    "total_citations": 1,
     "citation_style": "APA 7th",
     "thesis_language": "german",
-    "extracted_date": "2025-11-09T17:04:46.495029"
+    "extracted_date": "2025-11-10T09:54:18.063278"
   }
 }

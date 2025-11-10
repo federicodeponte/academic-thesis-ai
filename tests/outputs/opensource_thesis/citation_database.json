@@ -3,35 +3,41 @@
     {
       "id": "cite_001",
       "authors": [
-        "Bures",
-        "Rysavy",
-        "Svacina"
+        "Ostrom"
       ],
-      "year": 2022,
-      "title": "Open Source Software and Sustainable Development Goals: A Scoping Review",
-      "source_type": "journal",
+      "year": 1990,
+      "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
+      "source_type": "book",
       "language": "english",
-      "journal": "Sustainability",
-      "doi": "10.3390/su142315754"
+      "publisher": "Cambridge University Press"
     },
     {
       "id": "cite_002",
       "authors": [
-        "Boudreau",
-        "Lakhani"
+        "Chesbrough"
       ],
-      "year": 2019,
-      "title": "The Evolution of Open Source Software Ecosystems: A Dynamic Perspective",
-      "source_type": "journal",
+      "year": 2003,
+      "title": "Open Innovation: The New Imperative for Creating and Profiting from Technology",
+      "source_type": "book",
       "language": "english",
-      "journal": "Organization Science",
-      "doi": "10.1287/orsc.2019.1293"
+      "publisher": "Harvard Business School Press"
+    },
+    {
+      "id": "cite_003",
+      "authors": [
+        "International Organization for Standardization"
+      ],
+      "year": 2006,
+      "title": "Environmental management — Life cycle assessment — Principles and framework / Requirements and guidelines",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "ISO"
     }
   ],
   "metadata": {
-    "total_citations": 2,
+    "total_citations": 3,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-09T17:04:07.938065"
+    "extracted_date": "2025-11-10T09:51:33.140540"
   }
 }

@@ -8,151 +8,121 @@
 ## Summary
 
 **Strengths:**
--   Well-structured and logically organized, following a clear thematic progression.
--   Provides a coherent narrative on the evolution and theoretical underpinnings of CO2 pricing mechanisms.
--   Successfully integrates the (limited) provided sources to build arguments.
--   Acknowledges the multi-faceted nature of climate policy, including the need for complementary measures.
+-   **Clear Structure:** The literature review is well-organized into logical sections, covering history, theory, empirical evidence, and challenges.
+-   **Detailed Discussion of Limited Sources:** Where specific papers are referenced (even if the full citation is missing), the discussion of their findings and implications is quite thorough and well-articulated, demonstrating a good understanding of the topics.
+-   **Relevant Research Gaps:** The "Fazit und Forschungslücken" section identifies pertinent and forward-looking research questions, which is a strong point.
 
-**Critical Issues:** 3 major, 3 moderate, 5 minor
-**Recommendation:** Significant revisions are needed, particularly regarding citation accuracy and the breadth of evidence, before this draft can serve as a comprehensive literature review.
+**Critical Issues:** 3 major, 3 moderate, 2 minor
+**Recommendation:** Fundamental revisions needed before publication, primarily addressing the severe lack of fully verifiable citations and the narrow scope of the literature.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Critical Citation Ambiguity and Missing Source
-**Location:** Throughout the entire document, especially sections 2.1, 2.2, 2.3, 2.4, 2.5
-**Problem:** The citation tag `{cite_001}` is inconsistently used for two distinct sources: "Flachsland, Edenhofer und Jakob (2021)" and "Stern (2021)". Furthermore, "Flachsland, Edenhofer und Jakob (2021)" is frequently cited in the text but is *not* present in the final "Verwendete Zitate" list. This is a fundamental academic error.
-**Evidence:**
--   In the text: "Flachsland, Edenhofer und Jakob (2021) {cite_001} beschreiben..."
--   In the text: "Stern (2021) {cite_001} bekräftigt in seiner aktualisierten Analyse..."
--   In "Verwendete Zitate": 1. Stern (2021) - The Economics of Climate Change: The Stern Review Revisited...
-**Fix:**
-1.  **Add "Flachsland, Edenhofer und Jakob (2021)" to the "Verwendete Zitate" list** with a unique citation number (e.g., `{cite_006}`).
-2.  **Correct all instances** where `{cite_001}` is used for Flachsland, Edenhofer und Jakob (2021) to the new, correct citation number.
-3.  Thoroughly review all citations to ensure each `{cite_XXX}` corresponds unambiguously to a single source.
-**Severity:** 🔴 High - fundamentally undermines academic integrity and verifiability of claims.
+### Issue 1: Pervasive Missing Citations - Academic Integrity Threat
+**Location:** Throughout the entire document (e.g., Introduction line 3, 2.1 line 2, 2.1.1 line 1, 2.1.1 line 5, 2.1.2 line 19, 2.2 line 2, 2.2.1 line 3, 2.2.2 line 6, 2.3.1 line 3, 2.3.1 line 15, 2.3.2 line 3, 2.5.1 line 3, 2.5.2 line 5, 2.5.4 line 3, 2.5.4 line 8, and many more).
+**Problem:** The vast majority of claims, including foundational statements, historical facts, and specific research findings, are attributed to `{cite_MISSING: ...}`. This is the most critical flaw for a literature review. Without verifiable citations, all claims, no matter how plausible, are unsubstantiated. This fundamentally undermines the academic credibility and trustworthiness of the entire section.
+**Evidence:** The explicit `cite_MISSING` tags are present on 18 out of 19 listed citations, and numerous other claims within the text are implicitly uncited.
+**Fix:** Every `{cite_MISSING}` tag must be replaced with a complete, verifiable citation (including author, year, title, and ideally DOI/arXiv ID or full publication details). Any uncited claims must also be supported by appropriate citations. This will likely require extensive additional research.
+**Severity:** 🔴 High - Affects the core academic integrity and validity of the literature review.
 
-### Issue 2: Numerous Uncited Foundational Claims
-**Location:** Predominantly Sections 2.2 (Theoretische Grundlagen) and 2.5 (Kritische Perspektiven)
-**Problem:** Many core theoretical principles, generally accepted concepts, and critical arguments are presented without specific citations. While some may be common knowledge in the field, in an academic literature review, all significant claims and arguments, even foundational ones, should be attributed to their originators or authoritative sources. This makes the text appear to present the author's assertions rather than a synthesis of existing literature.
-**Evidence:**
--   "Die Ursprünge des internationalen Emissionshandels lassen sich bis zum Kyoto-Protokoll von 1997 zurückverfolgen..." (Section 2.1) [NEEDS CITATION]
--   "Die theoretische Effizienz von CO2-Preismechanismen liegt in ihrer Fähigkeit, Emissionen dort zu reduzieren, wo dies am kostengünstigsten ist." (Section 2.2) [NEEDS CITATION]
--   "Die theoretische Stärke dieser Instrumente liegt in ihrer Flexibilität und Effizienz im Vergleich zu direkten Regulierungen..." (Section 2.2) [NEEDS CITATION]
--   "Die empirische Forschung zur Wirksamkeit von CO2-Preismechanismen... hat in den letzten Jahren erheblich zugenommen." (Section 2.4) [NEEDS CITATION]
--   "Die sozialen und distributional Auswirkungen von CO2-Preisen sind ebenfalls ein wichtiger Kritikpunkt." (Section 2.5) [NEEDS CITATION]
--   "Eine CO2-Steuer oder hohe Zertifikatspreise können zu höheren Preisen für Energie und Konsumgüter führen, was Haushalte mit niedrigem Einkommen überproportional belasten kann (regressive Wirkung)." (Section 2.5) [NEEDS CITATION]
--   "Die politische Akzeptanz und Umsetzbarkeit von CO2-Preismechanismen stellen eine weitere Hürde dar." (Section 2.5) [NEEDS CITATION]
--   "Schließlich erfordert die effektive Integration von CO2-Preismechanismen in eine umfassende Klimapolitik die Berücksichtigung von Komplementarität mit anderen Instrumenten." (Section 2.5) [NEEDS CITATION]
--   "CO2-Preise allein reichen oft nicht aus..." (Section 2.5) [NEEDS CITATION]
-**Fix:** Review every sentence to ensure that claims are supported by a direct citation to one of the included sources or by adding new, relevant sources. For foundational concepts, cite seminal works in environmental economics.
-**Severity:** 🔴 High - compromises the academic rigor and credibility of the literature review.
+### Issue 2: Extremely Narrow Scope of Literature
+**Location:** Overall structure and content.
+**Claim:** The document purports to be a "Literaturübersicht" (literature review) covering a broad topic.
+**Problem:** Despite its length, the review effectively synthesizes only **five** specific papers (Flachsland et al. (2017), Aldy & Stavins (2007), Ellerman et al. (2010), Fischer & Salant (2021), Stavins (2019)) repeatedly across different sections. While these papers are relevant, a comprehensive literature review on such a vast and well-researched topic as "Emissionshandel und internationale Klimapolitik" requires a significantly broader range of sources. Many sections (e.g., general history, basic economic theory, critical challenges) are discussed without reference to a diverse set of foundational or contemporary works.
+**Evidence:** The "Verwendete Zitate" list clearly shows only one complete citation (`cite_001`), and only five distinct papers are named with `cite_MISSING` tags that are discussed in detail.
+**Fix:** Expand the literature base substantially. Incorporate a wider array of foundational texts, seminal papers, recent state-of-the-art research, and studies offering diverse perspectives on each sub-topic. This will naturally lead to a more robust and comprehensive review.
+**Severity:** 🔴 High - Threatens the completeness, balance, and representativeness of the review.
 
-### Issue 3: Insufficient Depth and Breadth Due to Limited Sources
-**Location:** Throughout the entire document
-**Problem:** While acknowledged in the user's preliminary note, the review's reliance on a very small number of sources (effectively 5-6) inherently limits its ability to provide a comprehensive, nuanced, and truly critical overview of the vast literature on CO2 pricing. This leads to generalized statements that lack detailed evidence or exploration of diverse viewpoints.
-**Evidence:**
--   The "Verwendete Zitate" list contains only 5 entries.
--   The text frequently cites the same few sources, leading to a narrow perspective on complex issues. For example, "critical perspectives" are mostly drawn from the same sources that also highlight the benefits.
-**Fix:** As suggested in the "Hinweise zur Überarbeitung," significantly expand the number of sources (20-30 articles) to cover a wider range of empirical studies, theoretical debates, and critical analyses. This is crucial for meeting the implied scope of a "Literaturübersicht" aiming for 6,000 words.
-**Severity:** 🔴 High - affects the fundamental purpose and quality of a literature review.
+### Issue 3: Self-Acknowledged Reliance on Summaries Limits Critical Depth
+**Location:** Introduction, last paragraph: "Die begrenzte Anzahl an verfügbaren vollständigen Zitationen erfordert hierbei eine Synthese der bereitgestellten Forschungszusammenfassungen und eine umfassende Darstellung des allgemeinen Wissensstands in den relevanten Themengebieten, um die Tiefe der Analyse zu gewährleisten."
+**Problem:** The author explicitly states that the review is based on "Forschungszusammenfassungen" (research summaries) rather than direct engagement with full papers. This is a severe methodological limitation for a critical literature review. It prevents the reviewer from deeply assessing the "Methodological Rigor" of the cited works, identifying subtle logical flaws, or critically evaluating the nuances of arguments and evidence presented in the original research. The current review primarily *summarizes* findings rather than *critically analyzing* them.
+**Evidence:** The direct statement by the author. The absence of specific critiques of methodologies, data limitations, or alternative interpretations *within* the discussed papers.
+**Fix:** To provide a truly critical review, direct engagement with the full texts of the cited papers is essential. This allows for a deeper analysis of their methodologies, specific results, limitations, and how they contribute to or challenge existing knowledge. The language should reflect a critical stance rather than just synthesis.
+**Severity:** 🔴 High - Impacts the quality and critical nature of the review itself.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 4: Vague or Unsubstantiated Generalizations
-**Location:** Primarily Section 2.5
-**Problem:** Some claims, while plausible, are presented as broad generalizations without sufficient specific evidence or attribution to the literature.
-**Evidence:**
--   "...jedoch bleibt die optimale Gestaltung solcher Mechanismen Gegenstand der Forschung." (Section 2.5) - This is a research gap claim, but who says it remains a subject of research?
--   "...wie Beispiele aus verschiedenen Ländern gezeigt haben." (Section 2.5, regarding social acceptance) - This is a strong claim that requires specific examples or a citation to a review paper that details such examples. Without it, it's an unsubstantiated assertion.
-**Fix:** For claims about ongoing research or general observations, either provide a specific citation or rephrase to attribute it as a common understanding derived from the overall literature (e.g., "Es wird in der Literatur diskutiert, dass...") rather than a definitive statement. For "Beispiele aus verschiedenen Ländern," provide concrete examples or cite a source that compiles them.
+### Issue 4: Repetitive Discussion of Core Papers
+**Location:** Sections 2.1.2, 2.4.1, 2.4.6, 2.5.1, 2.5.3 (Flachsland et al. 2017); Sections 2.1.1, 2.4.4, 2.4.6 (Aldy & Stavins 2007); Sections 2.1.2, 2.4.2, 2.4.6 (Ellerman et al. 2010); Sections 2.3.1, 2.4.3, 2.4.6 (Fischer & Salant 2021); Sections 2.3.2, 2.4.5, 2.4.6, 2.5.2 (Stavins 2019).
+**Problem:** Due to the narrow literature base (Issue 2), the same few papers are extensively re-discussed across multiple sections. While a literature review should synthesize, the repeated re-introduction and summary of the same paper's general findings in different contexts (e.g., Flachsland et al. for history, effectiveness, challenges) makes the review feel redundant and limits the introduction of new insights or diverse perspectives.
+**Evidence:** The frequent re-citation and re-summarization of the same 5 papers.
+**Fix:** With a broader literature base, each paper should ideally contribute unique insights to specific sub-sections. The synthesis section (2.4.6) should then draw conclusions from a wider range of empirical findings, rather than just reiterating the same five.
+**Severity:** 🟡 Medium - Affects readability, flow, and perceived depth of the review.
 
-### Issue 5: Limited Engagement with Counterarguments within Critical Perspectives
-**Location:** Section 2.5
-**Problem:** While a section is dedicated to "Kritische Perspektiven und Herausforderungen," the critiques are often presented as general problems rather than specific counterarguments from particular schools of thought or studies. The section lists challenges but doesn't deeply engage with the *arguments* used by critics, nor does it present potential rebuttals or different interpretations from the literature.
-**Evidence:**
--   The discussion on "Carbon Leakage" mentions measures to mitigate it but doesn't delve into the debate about the effectiveness or fairness of those measures (e.g., free allocation vs. CBAM).
--   The regressive impact of CO2 prices is mentioned, along with compensatory measures, but the effectiveness and political feasibility of these measures are not critically explored in depth (e.g., which compensation schemes work best, what are their limitations?).
-**Fix:** Expand this section by introducing specific critical viewpoints from the literature (e.g., "Critics like [Author X] argue that..." or "While [Source Y] points to effectiveness, [Source Z] raises concerns about..."). This would require adding more sources.
+### Issue 5: Overgeneralizations and Unsubstantiated Claims
+**Location:** Numerous instances, especially in sections 2.1 ("Die Idee des Emissionshandels... hat ihre Wurzeln..."), 2.2 ("Das zentrale Konzept... ist das der externen Effekte."), 2.5.1 ("Eine der am häufigsten diskutierten Herausforderungen ist das sogenannte 'Carbon Leakage'.").
+**Problem:** Many general statements about the history, foundational theories, or widely acknowledged challenges of emissions trading are presented as established facts, which they are, but without specific academic sources. While these might be "allgemeiner Wissensstand" (general knowledge) as stated in the introduction, a rigorous literature review requires every such statement to be backed by a cited academic source, even for well-known concepts.
+**Evidence:** Claims like "Ein Wendepunkt in der internationalen Klimapolitik war das Kyoto-Protokoll..." (2.1.1) or "Arthur Pigou schlug bereits im frühen 20. Jahrhundert vor..." (2.2.1) are true but need proper academic citations for their historical context and theoretical foundation.
+**Fix:** Ensure every factual statement, especially those introducing a concept or historical event, is supported by a specific, verifiable citation. This is standard academic practice for a literature review.
+**Severity:** 🟡 Medium - Undermines the academic rigor and trustworthiness of individual claims.
 
-### Issue 6: Missing Standard Citation Information
-**Location:** "Verwendete Zitate" list
-**Problem:** The provided list of citations lacks essential details like DOIs or arXiv IDs, which are standard practice in academic writing for easy verification and access.
-**Evidence:** The list only provides Author, Year, and a brief title.
-**Fix:** For each source, add the DOI (Digital Object Identifier) if it's a journal article or report, or an arXiv ID for preprints. For reports, provide the full publishing body and URL if available.
+### Issue 6: Inconsistent Citation Format / Missing DOI/arXiv for `cite_001`
+**Location:** "Verwendete Zitate" section, `cite_001`.
+**Problem:** The `ACADEMIC INTEGRITY & VERIFICATION` section explicitly states: "Verify citations include DOI or arXiv ID." While `cite_001` is the only "complete" citation, it lacks a DOI or arXiv ID. This omission, while minor compared to `cite_MISSING`, still hinders full verifiability.
+**Evidence:** `cite_001` is listed as "Flachsland, Edenhofer et al. (2017) - The European Emissions Trading System: A decade of experience" without further identification.
+**Fix:** Provide the DOI or arXiv ID for `cite_001`, and ensure all future citations (once `cite_MISSING` are addressed) adhere to a consistent and verifiable format, including these identifiers where available.
+**Severity:** 🟢 Low - Formatting and verifiability concern.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Vague wording:** "häufig für klimarelevante Projekte" (Section 2.1) - Could be more precise about the nature or proportion of these projects if the source allows.
-2.  **Repetitive phrasing:** Some phrases are repeated, e.g., "die Notwendigkeit robuster Governance-Strukturen, die Vermeidung von Doppelzählungen und die Sicherstellung der Zusätzlichkeit von Minderungsmaßnahmen" (Section 2.4 and 2.5). While these are important points, varying the language can improve flow.
-3.  **Strong language without explicit source backing:** Phrases like "maßgeblich geprägt" or "entscheidend" are used without explicitly linking the strength of the claim to the source's original wording. While often implied, a reviewer might question if the source is *that* definitive.
-4.  **Consistency in attributing broad statements:** Sometimes broad statements are attributed (e.g., "Diese Preissignale fördern Innovation... {cite_001}"), while similar broad statements remain uncited (see Major Issue 2). Strive for consistency.
-5.  **Lack of future outlook beyond challenges:** The "Kritische Perspektiven" section effectively acts as a conclusion, but a dedicated brief section on "Zukünftige Entwicklungen und Forschungsbedarf" could provide a stronger forward-looking perspective, explicitly linking to the identified gaps.
+1.  **Uneven Section Introduction Lengths:** The introductory paragraphs for several major sub-sections (e.g., 2.2 "Theoretische Grundlagen der Umweltökonomie" - 82 words; 2.3 "CO2-Preismechanismen und Klimaschutz" - 85 words; 2.4 "Empirische Studien..." - 78 words; 2.5 "Kritische Perspektiven..." - 64 words) are very brief. This makes the structure feel somewhat abrupt and doesn't always adequately set the stage or provide a comprehensive overview for the detailed discussions that follow.
+2.  **Potential Overclaiming in Research Gaps:** While the identified "Forschungslücken" (2.6) are relevant, given the extremely narrow scope of the reviewed literature, claiming these are *the* remaining research gaps might be an overclaim. It would be more accurate to state that these are significant gaps *identified within the context of the literature reviewed here* or *as highlighted by the discussed authors*.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Implicit Jumps in Theoretical Application
-**Location:** Section 2.2 (Theoretische Grundlagen)
-**Logic:** The section establishes external effects and market failure, and then states that CO2 pricing mechanisms correct this.
-**Missing:** A more explicit bridge connecting the abstract economic theory (e.g., Pigouvian taxes, Coase theorem) to the specific design principles of ETS or carbon taxes. While the text mentions "internalisieren," a deeper dive into *how* these mechanisms achieve internalization and why they are theoretically preferred over other interventions (e.g., command-and-control) would strengthen the argument.
-**Fix:** Briefly elaborate on the theoretical link between external costs and specific CO2 pricing instruments.
-
-### Gap 2: Limited Linkage Between Empirical Findings and Critical Challenges
-**Location:** Sections 2.4 (Empirische Studien) and 2.5 (Kritische Perspektiven)
-**Logic:** Section 2.4 highlights the successes and measured impacts of the EU ETS. Section 2.5 lists challenges.
-**Missing:** A more direct discussion of how the empirical findings *inform* or *contradict* the critical perspectives. For example, if "Carbon Leakage" was found to be "largely unfounded" empirically (2.4), how does this reconcile with it being a "critical issue" (2.5)? The text touches upon it by mentioning free allocation, but a deeper discussion of the *debate* around these findings would be beneficial.
-**Fix:** Explicitly connect the empirical evidence with the critical discussions. For instance, "While empirical studies like [Source X] suggest limited carbon leakage, critics continue to emphasize the risk, advocating for [specific measure]."
+**Gap 1: Evidentiary Gap**
+**Location:** Throughout the entire document.
+**Logic:** The review presents numerous claims, arguments, and syntheses of findings.
+**Missing:** The foundational evidence (verifiable citations) to support these claims. The logical chain from premise (research finding) to conclusion (synthesized insight) is consistently broken or weakened by the absence of fully attributed and verifiable sources.
+**Fix:** Address Issue 1 (Pervasive Missing Citations). Without this, the logical coherence of the entire review is compromised at its most fundamental level.
 
 ---
 
-## Methodological Concerns (for a Literature Review)
+## Methodological Concerns (for the review itself)
 
-### Concern 1: Selection Bias in Sources
-**Issue:** The review heavily relies on a very small set of highly influential but potentially aligned sources (e.g., multiple Stern reports, one key paper on EU ETS). This might lead to an overrepresentation of certain viewpoints or a lack of alternative interpretations.
-**Risk:** The review might inadvertently present a less balanced or comprehensive picture of the academic discourse.
-**Reviewer Question:** "Have you actively sought out and included sources that offer dissenting or alternative views on the effectiveness or design of CO2 pricing mechanisms?"
-**Suggestion:** Broaden the source base to include studies from different research traditions, geographical contexts, or those with more critical stances on the mainstream consensus.
+### Concern 1: Insufficient Critical Engagement with Cited Works' Methodologies
+**Issue:** The review, as currently structured and limited by its reliance on summaries, does not critically engage with the methodological rigor of the underlying studies it cites (e.g., Flachsland et al., Ellerman et al.). There is no discussion of whether their methods were appropriate for their research questions, potential limitations of their approaches, or alternative interpretations of their results.
+**Risk:** This absence prevents a true "critical review" of the literature, turning it into a summary rather than an analytical synthesis.
+**Reviewer Question:** "How were the methodologies of the primary studies evaluated? What were their specific limitations or potential confounds?"
+**Suggestion:** Once full papers are accessible, dedicate space within the discussion of each study (or in a dedicated section) to critically evaluate its methodology, data, and potential biases, as per Review Criteria 3.
 
-### Concern 2: Lack of Methodological Discussion of Cited Works
-**Issue:** The review summarizes findings but does not discuss the methodologies of the primary research papers it cites (e.g., what type of empirical study was Flachsland et al.? What models did Rübbelke and Vögele use?).
-**Risk:** Without understanding the methods, the reader cannot fully assess the robustness or limitations of the reported findings.
-**Question:** "What research methods (e.g., econometric analysis, CGE modeling, qualitative case studies) were employed by the studies you cite, and what are the implications of these methods for their findings?"
-**Fix:** For key empirical studies, briefly mention their methodology (e.g., "Flachsland et al. used a quasi-experimental design to analyze...") and any significant limitations they report.
+### Concern 2: Selection Bias in Literature (Implied by User's Notes)
+**Issue:** The user's note about "limited number of available complete research summaries" suggests that the selection of the five core papers might not be a result of a systematic literature search but rather a constraint.
+**Risk:** This could lead to a biased or incomplete representation of the overall literature and its key debates. Important, perhaps contradictory, findings from other researchers might be missed.
+**Reviewer Question:** "What systematic search strategy was employed to identify the literature for this review?"
+**Suggestion:** Clearly articulate the methodology for literature selection, even if it was constrained. Ideally, a systematic search should be performed to ensure comprehensive coverage.
 
 ---
 
 ## Missing Discussions
 
-1.  **Specific Policy Design Details (Beyond EU ETS):** While EU ETS is a good example, a broader literature review would benefit from briefly mentioning other significant ETS (e.g., California, China, RGGI) or carbon tax implementations and their unique features/challenges.
-2.  **Interaction with Other Policies:** Deeper exploration of how CO2 pricing interacts with renewable energy subsidies, energy efficiency standards, or industrial policies.
-3.  **Political Economy of Carbon Pricing:** Why are some countries successful in implementing carbon pricing, while others face significant political hurdles? What are the roles of different interest groups?
-4.  **Equity and Justice Considerations:** Beyond regressive impacts, delve into broader environmental justice concerns related to carbon pricing and energy transitions.
-5.  **Global vs. Regional/National Approaches:** A more explicit discussion on the advantages and disadvantages of different scales of carbon pricing and the challenges of linking systems.
+1.  **Nuances of ETS Design Features:** While the EU ETS is discussed, a deeper dive into the empirical consequences of specific design choices (e.g., different allocation methods beyond free vs. auction, banking/borrowing rules, specific price collars like MSR's impact) across various ETS systems (not just EU ETS) would be beneficial.
+2.  **Interaction with Other Climate Policies:** The review focuses heavily on carbon pricing. A more explicit discussion of how carbon pricing interacts with, complements, or potentially conflicts with other climate policy instruments (e.g., renewable energy subsidies, direct regulations, technology standards) would provide a richer context.
+3.  **Cross-Jurisdictional Comparisons (Beyond EU ETS):** While the EU ETS is central, a broader comparison of the effectiveness and challenges of other major ETS systems (e.g., California, RGGI, China's ETS) would provide valuable comparative insights into what works and why.
+4.  **Qualitative vs. Quantitative Impacts:** The review discusses effectiveness generally. A more explicit discussion of how carbon pricing drives *qualitative* changes (e.g., corporate culture shift, increased R&D focus) versus *quantitative* emission reductions would add depth.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Slightly Declarative Tone:** Some statements are very declarative (e.g., "ist entscheidend," "belegt eindeutig") when the nature of scientific consensus often involves degrees of certainty and ongoing debate. While appropriate for IPCC or Stern, when synthesizing, it's good to reflect the source's nuance.
-2.  **Repetitive sentence beginnings:** Varying sentence structure and opening phrases can enhance readability.
+1.  **Lack of Critical Stance:** The tone is largely descriptive and synthesizes existing information. For a "CRITICAL REVIEWER" agent, the output should reflect more direct critical analysis, questioning, and evaluation of the claims presented *in the reviewed literature*. This is a direct consequence of Issue 3 (reliance on summaries).
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Where is the source 'Flachsland, Edenhofer und Jakob (2021)' in your reference list, and why is `{cite_001}` used for two different sources?" (This is the most critical question)
-2.  "Many fundamental claims, especially in the theoretical and critical sections, lack citations. Please provide appropriate scholarly sources for these statements."
-3.  "Given the limited number of sources, how confident can we be that this review represents a balanced and comprehensive overview of the literature on CO2 pricing?"
-4.  "Could you elaborate on the specific methodologies used in the empirical studies you cite (e.g., Flachsland et al., Rübbelke & Vögele) and their implications for the findings?"
-5.  "You mention 'Beispiele aus verschiedenen Ländern' for social acceptance issues; could you provide concrete examples or a reference that surveys these cases?"
-6.  "What are the specific arguments and counter-arguments within the critical perspectives you've outlined, rather than just listing challenges?"
+1.  "Why are so many fundamental claims and literature references missing complete citations or DOIs/arXiv IDs?"
+2.  "Given the breadth of the topic, why does this review rely so heavily on only five core papers? What systematic approach was used to select these specific works?"
+3.  "How do you ensure the depth of your analysis and critical evaluation when you acknowledge relying on 'Forschungszusammenfassungen' rather than the full research papers?"
+4.  "Can you provide more details on the methodologies employed by the studies you cite, and discuss their limitations or potential biases?"
+5.  "Beyond the EU ETS, what insights can be drawn from other major emissions trading systems globally regarding their effectiveness and challenges?"
 
 **Prepare answers or add to paper**
 
@@ -161,13 +131,13 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Fix Issue 1 (Citation Ambiguity/Missing Source)** - This is paramount.
-2.  🔴 **Address Issue 2 (Numerous Uncited Claims)** - Essential for academic credibility.
-3.  🔴 **Resolve Issue 3 (Insufficient Depth/Breadth)** - Requires adding significantly more sources.
-4.  🟡 Address Issue 4 (Vague/Unsubstantiated Generalizations)
-5.  🟡 Address Issue 5 (Limited Engagement with Counterarguments)
-6.  🟡 Address Issue 6 (Missing Standard Citation Information)
+1.  🔴 **Fix Issue 1 (Pervasive Missing Citations)** - This is non-negotiable for academic work.
+2.  🔴 **Address Issue 2 (Extremely Narrow Scope)** - Broaden the literature significantly.
+3.  🔴 **Resolve Issue 3 (Reliance on Summaries)** - Engage with full texts for deeper critical analysis.
+4.  🟡 **Address Issue 4 (Repetitive Discussion)** - Integrate new sources to reduce redundancy.
+5.  🟡 **Address Issue 5 (Overgeneralizations)** - Cite all factual statements.
+6.  🟢 **Fix Issue 6 (Citation Format)** - Add DOI/arXiv for `cite_001` and all others.
 
 **Can defer:**
--   Minor wording issues (can be polished in later drafts).
--   Deeper discussions on specific policy design details or political economy (can be expanded once the core structure and source base are solid).
+-   Minor wording and section introduction adjustments (can be refined in subsequent drafts).
+-   Expanding on "Missing Discussions" (these can be added as the literature base grows).

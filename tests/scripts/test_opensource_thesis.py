@@ -610,6 +610,35 @@ def main():
         else:
             print("⚠️  Sanitization failed - using original enhanced output")
 
+        # CRITICAL: Restore missing sections (defensive fix for LLM non-compliance)
+        # Enhancement agent sometimes removes sections despite "UNCHANGED" instructions
+        if enhanced_paper:
+            print("\n" + "="*70)
+            print("🔧 RESTORING SECTIONS (LLM Non-Compliance Fix)")
+            print("="*70)
+
+            from utils.section_restorer import restore_sections_in_file
+
+            # Save pre-enhancement version for restoration
+            pre_enhancement_path = output_dir / "14_draft_pre_citation_check.md"
+            with open(pre_enhancement_path, 'w', encoding='utf-8') as f:
+                f.write(paper_for_enhancement)
+
+            sections_restored = restore_sections_in_file(
+                enhanced_path=output_dir / "16_enhanced_final.md",
+                pre_enhancement_path=pre_enhancement_path,
+                language="english",
+                verbose=True
+            )
+
+            if sections_restored:
+                # Re-read restored version
+                with open(output_dir / "16_enhanced_final.md", 'r', encoding='utf-8') as f:
+                    enhanced_paper = f.read()
+                print("✅ Missing sections restored successfully!")
+            else:
+                print("✅ No section restoration needed - all sections intact")
+
     # Use enhanced version if available, otherwise fall back to verified or draft
     final_paper = enhanced_paper if enhanced_paper else (verified_paper if verified_paper else draft_paper)
 

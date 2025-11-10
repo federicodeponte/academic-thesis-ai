@@ -630,6 +630,35 @@ def main():
         else:
             print("⚠️  Bereinigung fehlgeschlagen - verwende originale erweiterte Ausgabe")
 
+        # KRITISCH: Fehlende Abschnitte wiederherstellen (defensive Lösung für LLM-Nichtbeachtung)
+        # Der Verbesserungs-Agent entfernt manchmal Abschnitte trotz "UNCHANGED"-Anweisungen
+        if enhanced_paper:
+            print("\n" + "="*70)
+            print("🔧 ABSCHNITTE WIEDERHERSTELLEN (LLM-Nichtbeachtungs-Fix)")
+            print("="*70)
+
+            from utils.section_restorer import restore_sections_in_file
+
+            # Pre-Enhancement-Version für Wiederherstellung speichern
+            pre_enhancement_path = output_dir / "14_draft_pre_citation_check.md"
+            with open(pre_enhancement_path, 'w', encoding='utf-8') as f:
+                f.write(paper_for_enhancement)
+
+            sections_restored = restore_sections_in_file(
+                enhanced_path=output_dir / "16_enhanced_final.md",
+                pre_enhancement_path=pre_enhancement_path,
+                language="german",
+                verbose=True
+            )
+
+            if sections_restored:
+                # Wiederhergestellte Version erneut lesen
+                with open(output_dir / "16_enhanced_final.md", 'r', encoding='utf-8') as f:
+                    enhanced_paper = f.read()
+                print("✅ Fehlende Abschnitte erfolgreich wiederhergestellt!")
+            else:
+                print("✅ Keine Abschnitts-Wiederherstellung erforderlich - alle Abschnitte intakt")
+
     # Verwende erweiterte Version falls verfügbar, sonst Fallback auf verifizierte oder Entwurf
     final_paper = enhanced_paper if enhanced_paper else (verified_paper if verified_paper else draft_paper)
 

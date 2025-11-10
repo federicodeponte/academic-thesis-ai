@@ -645,3 +645,7 @@ Linux's dominance in server environments and its role as the foundation for clou
 | **Hardware Refresh Cycle** | 3 years | 4 years | 5 years | +2 years (avg.) | Reduced e-waste, CapEx |
 | **Security Patching Speed** | Monthly (avg.) | Weekly (avg.) | Daily (critical) | 4x faster | Enhanced resilience |
 | **Developer Productivity** | 1.0 (baseline) | 1.1 | 1.3 | +3
+
+## References
+
+[To be completed with proper citations]

@@ -8,158 +8,139 @@
 ## Summary
 
 **Strengths:**
-- Comprehensive coverage of methodological components.
-- Clear and logical structure of the Methodik section.
-- Appropriate selection of quantitative methods (Panel Data, DiD, Time Series) for the research questions.
-- Proactive and thorough discussion of limitations, demonstrating critical self-reflection.
-- Excellent choice of case studies for comparative analysis (EU ETS, California, RGGI).
+-   **Comprehensive Structure:** The Methodik section is well-structured, covering all essential components from the analytical framework to statistical methods.
+-   **Appropriate Methodological Choices:** The proposed use of Panel Regression, Differenz-in-Differenzen (DiD), and Synthetische Kontrollmethode (SCM) demonstrates a robust approach to causal inference in policy evaluation.
+-   **Clear Data Sources:** Specific primary data sources (EUTL, CARB, EEX, ICE) are clearly identified.
+-   **Strong Robustness Awareness:** The detailed plan for robustness checks (sensitivity, placebo, alternative controls, endogeneity tests) indicates a high level of methodological rigor.
+-   **Relevant Case Studies:** The selection of EU ETS and CA ETS is well-justified by criteria such as maturity, diversity, and data availability.
 
-**Critical Issues:** 5 major, 3 moderate, 2 minor
-**Recommendation:** Substantial revisions needed before publication, particularly concerning the rigor of qualitative methods, the practical application of DiD, and the crucial issue of endogeneity.
+**Critical Issues:** 4 major, 3 moderate, 1 minor
+**Recommendation:** Revisions needed before publication, especially regarding critical citations and methodological precision.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Missing Core Citations for Methodological Foundations
-**Location:** Section 3.1 (Forschungsdesign), Section 3.3 (Auswahl der Fallstudien)
-**Problem:** Several fundamental claims regarding the suitability of comparative case studies, mixed methods, and specific case study justifications are marked with `{cite_MISSING}`. This severely undermines the academic grounding and credibility of the entire methodology section.
+### Issue 1: Missing Critical Citations
+**Location:** Throughout the document (1.1, 1.2, 1.4)
+**Problem:** Fundamental claims, definitions, and methodological foundations lack proper academic citations. This includes basic EHS principles, the signal effect of carbon prices, the scope and introduction details of EU ETS and CA ETS, and the theoretical underpinnings of panel regression, DiD, and SCM. The `{cite_MISSING}` placeholders are highly problematic.
 **Evidence:**
-- `{cite_MISSING: Yin, 2018; Comparative Case Studies}`
-- `{cite_MISSING: Eisenhardt, 1989; Building Theories from Case Study Research}`
-- `{cite_MISSING: Creswell & Plano Clark, 2017; Mixed Methods Research}`
-- `{cite_MISSING: California Air Resources Board, 2023}`
-- `{cite_MISSING: RGGI Inc., 2023}`
-**Fix:** Provide complete and accurate citations for all missing references.
-**Severity:** 🔴 High - affects paper's foundational claims and academic integrity.
+-   1.1: "{cite_MISSING: Referenz zu grundlegenden EHS-Prinzipien}"
+-   1.1: "{cite_MISSING: Referenz zu Kohlenstoffpreis-Signalwirkung}"
+-   1.2: "{cite_MISSING: Referenz zu EU ETS Einführung und Umfang}"
+-   1.2: "{cite_MISSING: Referenz zu CA ETS Einführung und Umfang}"
+-   1.4: "{cite_MISSING: Referenz zu Paneldaten-Regression}"
+-   1.4: "{cite_MISSING: Referenz zu DiD-Methodik}"
+-   1.4: "{cite_MISSING: Referenz zu SCM}"
+**Fix:** Replace all `{cite_MISSING}` placeholders with specific, authoritative academic references (e.g., key textbooks, seminal journal articles). For `cite_001`, ensure full reference details (including DOI or arXiv ID as per instructions) are provided.
+**Severity:** 🔴 High - Threatens academic integrity, credibility, and the scientific grounding of the entire methodology.
 
-### Issue 2: Endogeneity Problem Undiscussed in Main Methods Section
-**Location:** Section 3.6 (Statistische Methoden zur Wirksamkeitsanalyse)
-**Problem:** The carbon price is a key independent variable, but its relationship with emissions is inherently endogenous (emissions affect price, and price affects emissions). This is a well-known challenge in ETS research. The current statistical methods section does not discuss how this critical issue will be addressed, which can lead to biased estimates of the ETS's causal effect. While implicitly mentioned in limitations, it requires a direct methodological approach.
-**Missing:** Discussion of endogeneity bias and potential strategies to mitigate it (e.g., instrumental variables, GMM, lagged variables, specific model choices).
-**Fix:** Add a dedicated paragraph in Section 3.6 discussing the endogeneity problem and outlining the chosen econometric strategies (or acknowledging specific limitations if no mitigation is possible within the scope).
-**Severity:** 🔴 High - threatens the validity of causal claims.
+### Issue 2: Inconsistent Scope: Technological Innovation
+**Location:** 1.1 Analyserahmen für Klimaschutzwirkung, 1.3 Datenquellen und Messverfahren
+**Claim (1.1):** "Darüber hinaus integriert der Analyserahmen die Betrachtung von technologischer Innovation und strukturellem Wandel."
+**Problem (1.3):** The commitment to this is weakened by the conditional statement: "Daten zu technologischen Innovationen werden, **falls in der Analyse berücksichtigt**, über Patentdatenbanken... gesammelt."
+**Evidence:** Contradiction between stating it as an integrated part of the framework and then making its inclusion conditional.
+**Fix:** Clearly commit to either including or excluding technological innovation as part of the analysis. If included, specify how it will be quantitatively integrated into the models (e.g., as a dependent variable, a mediator, or a control). If excluded, remove it from the analytical framework description in 1.1 to avoid misleading the reader about the scope.
+**Severity:** 🔴 High - Affects the clarity and defined scope of the research.
 
-### Issue 3: Lack of Specificity for DiD Control Groups
-**Location:** Section 3.6 (Difference-in-Differences (DiD) Analyse)
-**Problem:** The text states DiD will be considered "sofern geeignete Kontrollgruppen identifiziert werden können" and suggests "Gegenüberstellung von Sektoren oder Regionen". However, for a Master's thesis, it is crucial to provide *concrete examples* of which sectors or regions within the chosen case studies (EU ETS, California, RGGI) could realistically serve as valid control groups. Without this specificity, the feasibility and rigor of the DiD approach remain highly questionable.
-**Missing:** Concrete examples of potential control groups for each ETS, or a discussion of the challenges in identifying them and how this might limit the DiD application.
-**Fix:** Elaborate on specific potential control groups or discuss the practical challenges of applying DiD to each case study, potentially suggesting alternative quasi-experimental designs if DiD is not robustly feasible.
-**Severity:** 🔴 High - impacts methodological rigor and practical feasibility.
+### Issue 3: Precision in DiD Application for EU ETS
+**Location:** 1.4 Statistische Methoden zur Wirksamkeitsanalyse
+**Claim:** "Im Kontext des EU ETS könnte dies den Vergleich von Emissionstrends in Ländern, die am EHS teilnehmen, mit solchen, die nicht teilnehmen (oder in Sektoren, die nicht abgedeckt sind), umfassen."
+**Problem:** Finding a suitable and credible "control group" of non-participating countries for the EU ETS is notoriously challenging due to the high degree of economic and policy integration within Europe. The statement is vague and lacks justification for the feasibility of such a comparison.
+**Fix:** Elaborate on the specific strategy for defining the control group for the EU ETS. If comparing to non-participating countries, provide a strong justification for their suitability (e.g., similar pre-treatment trends, economic structure, minimal spill-overs). If focusing on non-covered sectors, specify which ones and how they compare to covered sectors. Acknowledge the inherent difficulties in finding a perfect counterfactual for a large, long-standing, multi-country system like the EU ETS.
+**Severity:** 🔴 High - Threatens the validity of causal inference by potentially violating the parallel trends assumption.
 
-### Issue 4: Qualitative Methods Underspecified Despite Mixed-Methods Claim
-**Location:** Sections 3.1 (Forschungsdesign), 3.2 (Analyserahmen), 3.4 (Datenerhebung)
-**Problem:** The thesis explicitly claims a "Mixed-Methods-Ansatz" for depth of understanding ("Warum"-Fragen) and mentions qualitative aspects like "Kontextfaktoren, Designmerkmale, Implementierungsherausforderungen" and "Politikdokumente und Experteninterviews (sofern verfügbar)". However, there is *no detailed description* of the qualitative methods that will be used (e.g., content analysis, discourse analysis, structured interview protocols, coding schemes). This creates a significant gap between the stated ambition and the described execution.
-**Missing:** A dedicated subsection or detailed paragraphs outlining the specific qualitative data collection and analysis methods.
-**Fix:** Add a new subsection (e.g., 3.X Qualitative Methoden) detailing how policy documents will be analyzed, what kind of expert interviews (if any) are planned, and how these qualitative insights will be integrated with the quantitative findings.
-**Severity:** 🔴 High - undermines the mixed-methods claim and overall research design.
-
-### Issue 5: Overclaim on Innovation Measurement Without Detailed Plan
-**Location:** Section 3.2 (Analyserahmen), 3.5 (Messverfahren)
-**Problem:** The analytical framework (3.2) states that "Innovationseffekte" will be operationalized through "Analyse von Patentanmeldungen in relevanten Sektoren, Investitionen in Forschung und Entwicklung sowie die Diffusion von grünen Technologien". However, the subsequent sections on data collection (3.4) and variable operationalization (3.5) do not provide *any detail* on how these complex metrics will be collected, measured, or analyzed within the scope of a Master's thesis. This sounds like an overambitious claim without a concrete methodological plan.
-**Missing:** Specific data sources and methods for collecting and analyzing patent data, R&D investments, and technology diffusion.
-**Fix:** Either significantly elaborate on the detailed methodology for these innovation metrics (including specific databases, classification schemes, and analytical approaches) or, if not feasible, adjust the scope of the "Innovationseffekte" to more manageable indicators or acknowledge this as a significant limitation.
-**Severity:** 🔴 High - transparency concern and potential overclaim on research scope.
+### Issue 4: Panel Regression Specification for EU ETS
+**Location:** 1.4 Statistische Methoden zur Wirksamkeitsanalyse
+**Claim:** The model includes $EHS_{it}$ as a "Dummy-Variable, die anzeigt, ob das EHS in Kraft ist".
+**Problem:** For units (e.g., EU countries or sectors within the EU ETS) that have been part of the system since its inception, this dummy variable would be '1' for most of the observation period. This makes it difficult to isolate the EHS effect from general time trends or fixed unit characteristics, which are already captured by $\gamma_t$ (time fixed effects) and $\alpha_i$ (unit fixed effects). The effect of "being in force" might not be identifiable for long-term participants.
+**Fix:** Clarify how the EHS effect will be identified for the EU ETS within this panel regression framework. Consider using a more nuanced time-varying variable that captures the *intensity* or *stringency* of the EHS (e.g., carbon price, changes in the cap, specific policy reforms) rather than a simple 'on/off' dummy for its existence. Alternatively, if the dummy is used in a DiD context within the panel, clearly specify the treatment and control groups and intervention timings.
+**Severity:** 🟡 Moderate - Could lead to unidentifiable or misidentified effects, weakening the model's explanatory power for the EU ETS.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 6: Incomplete Citation for EU ETS Reference
-**Location:** Section 3.3 (Auswahl der Fallstudien), Verwendete Zitate
-**Problem:** The citation `cite_001: Flachsland, Edenhofer et al. (2017) - The European Emissions Trading System: A decade of experienc...` is incomplete. It lacks essential publication details like the journal/publisher, volume, issue, page numbers, and a DOI or arXiv ID.
-**Fix:** Provide the full, complete citation for this reference.
-**Severity:** 🟡 Moderate - academic integrity and reproducibility.
+### Issue 5: Vagueness of "Verteilungseffekte" (Distributional Effects)
+**Location:** 1.1 Analyserahmen für Klimaschutzwirkung
+**Claim:** "Darüber hinaus werden sekundäre Indikatoren wie die Entwicklung des Kohlenstoffpreises, die Investitionen in grüne Technologien und die Verteilungseffekte berücksichtigt."
+**Problem:** While carbon price and technological innovation are elaborated upon, how "Verteilungseffekte" (e.g., impact on low-income households, specific industries, or regions) will be "berücksichtigt" remains entirely vague. The later quantitative focus does not align with an easy assessment of these effects.
+**Fix:** Provide a brief explanation of how these effects will be assessed. If they are beyond the scope of this quantitative Master's thesis, either remove them from the analytical framework or explicitly state that they will be addressed only qualitatively (e.g., through a literature review discussion) and not through direct quantitative analysis within the empirical models.
+**Severity:** 🟡 Moderate - Reduces clarity on the actual scope and deliverables of the research.
 
-### Issue 7: Vague Sourcing for Specific Sectoral Data
-**Location:** Section 3.4 (Datenerhebung und Datenquellen)
-**Problem:** For "Spezifische Sektordaten," the text states these "können aus Branchenverbänden oder spezialisierten Datenbanken herangezogen werden." This is too vague. Which specific sectors are targeted, and which specific associations or databases are being considered? This lack of detail hinders reproducibility.
-**Fix:** Specify the key sectors for which detailed data will be sought and name a few examples of the specific industry associations or specialized databases that will be consulted.
-**Severity:** 🟡 Moderate - transparency and reproducibility.
+### Issue 6: "Article 6" Example Placement
+**Location:** 1.2 Auswahlkriterien für Fallstudien
+**Claim:** "Ein Beispiel hierfür ist die Diskussion um die Verknüpfung von EHS, die auch im Kontext von Artikel 6 des Pariser Abkommens relevant ist {cite_001}." This is given as an example of "innovative Designmerkmale".
+**Problem:** The discussion around Article 6 and EHS linkage is more about the interaction of EHS with broader international climate policy and other policy fields, as discussed in section 1.1, rather than an inherent "innovative design feature" *of the EU ETS or CA ETS themselves* in the same vein as an MSR or price stability mechanisms.
+**Fix:** Rephrase or relocate this example. It would fit better in the "Interaktion mit anderen Politikfeldern und internationalen Abkommen" section (1.1) to maintain logical flow and coherence.
+**Severity:** 🟠 Minor - Mild logical inconsistency in section structuring.
 
-### Issue 8: Missing Operationalization for "Social Justice"
-**Location:** Section 3.2 (Analyserahmen), Section 3.5 (Messverfahren)
-**Problem:** Under "Verteilungseffekte und Wettbewerbsfähigkeit" (3.2), the framework mentions considering "Auswirkungen auf Energiepreise und soziale Gerechtigkeit." While energy prices are clearly operationalized, there is no mention in Section 3.5 of how "soziale Gerechtigkeit" will be defined, measured, or assessed within this methodology.
-**Fix:** Either clarify how "soziale Gerechtigkeit" will be operationalized (e.g., through income distribution impacts, energy poverty indicators, etc.) or refine the claim to focus solely on aspects that are explicitly addressed by the methodology (e.g., energy prices).
-**Severity:** 🟡 Moderate - clarity and consistency.
+### Issue 7: Caveat on Instrument Variables (IV)
+**Location:** 1.4 Statistische Methoden zur Wirksamkeitsanalyse
+**Claim:** "gegebenenfalls Einsatz von Instrumentvariablen-Ansätzen, sofern geeignete Instrumente identifiziert werden können."
+**Problem:** Identifying valid and strong instrumental variables in empirical economics is notoriously difficult. The phrase "sofern geeignete Instrumente identifiziert werden können" is a significant practical caveat that should be acknowledged more explicitly as a potential limitation.
+**Fix:** Rephrase to acknowledge the inherent difficulty of finding valid instruments. State that while IVs are a consideration, alternative strategies (e.g., careful selection of control variables, fixed effects, DiD, SCM) will be prioritized for identification, and IVs will only be pursued if strong theoretical justification and data availability permit. Frame it as a potential advanced method or future direction if not immediately feasible.
+**Severity:** 🟠 Minor - Manages expectations and acknowledges a real-world difficulty in econometric practice.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Slightly Simplified Causal Chain for Carbon Price:** In Section 3.5, the claim "Der Preis dient als zentraler Anreizmechanismus des ETS" is true, but it could be more nuanced. The *cap* is the fundamental mechanism that creates scarcity, which then drives the price. The price is a *result* of the cap and market dynamics. (Suggestion: "Der Preis dient als zentraler Anreizmechanismus des ETS, der durch das Cap-Setting und die Marktmechanismen entsteht.")
-2.  **Lack of Examples for Design Feature Dummy Variables:** In Section 3.5, when discussing "Politische Designmerkmale" as dummy variables, providing a few concrete examples (e.g., introduction of the Market Stability Reserve (MSR) in the EU ETS, phase changes, scope extensions) would enhance clarity.
+1.  **Word Count:** The section is slightly over the stated target word count (2643 vs. 2500 words). While minor, some conciseness could be applied.
+    *   **Fix:** Review for any redundancies or overly verbose sentences. For instance, the introductory paragraph to the Methodik section or some descriptive sentences could be slightly tightened.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Disconnect between Mixed-Methods Claim and Qualitative Method Detail
-**Location:** Section 3.1 (Forschungsdesign) vs. entire Methodik chapter
-**Logic:** The thesis explicitly states a "Mixed-Methods-Ansatz" is chosen to provide both depth ("Warum") and statistical evidence ("Wie viel"). However, the subsequent detailed methodological sections heavily focus on quantitative methods and provide almost no detail on how the qualitative "Warum"-questions will be answered or how qualitative data (e.g., policy documents, interviews) will be systematically collected and analyzed.
-**Missing:** A clear, detailed plan for the qualitative research component.
-**Fix:** As detailed in MAJOR ISSUE 4, this requires a significant expansion of the qualitative methodology.
+No major logical gaps in the overall flow, but the issues raised under "Inconsistent Scope" and "Precision in DiD Application" point to areas where logical clarity within specific arguments needs to be strengthened.
 
 ---
 
 ## Methodological Concerns
 
-### Concern 1: Practical Feasibility of DiD in a Comparative Context
-**Issue:** The ambition to use Difference-in-Differences across multiple, diverse ETS is high. The challenge of finding truly comparable control groups (sectors or regions) that satisfy the parallel trend assumption for each unique ETS context might be insurmountable or severely limit the application of this method.
-**Risk:** Weak DiD application due to unsuitable control groups or unverified parallel trends.
-**Reviewer Question:** "How do you plan to rigorously test and justify the parallel trend assumption for your chosen control groups across different ETS, especially given their diverse contexts?"
-**Suggestion:** Acknowledge this challenge more explicitly in Section 3.6 and outline strategies for addressing or validating the parallel trend assumption (e.g., visual inspection, placebo tests, pre-trend analysis).
-
-### Concern 2: Scope and Depth of Innovation Analysis
-**Issue:** The stated intent to measure innovation effects via patent applications, R&D investments, and technology diffusion is very ambitious. These require specialized data collection (e.g., patent databases, firm-level R&D data, specific technology adoption surveys) and complex analytical methods.
-**Risk:** Superficial treatment or inability to fully execute this aspect due to data availability or scope limitations for a Master's thesis.
-**Question:** "Given the extensive nature of innovation measurement, how will you ensure a rigorous and feasible approach within the time and resource constraints of a Master's thesis?"
-**Suggestion:** Re-evaluate the scope of innovation analysis. If maintained, provide a highly detailed plan (as per MAJOR ISSUE 5). If not, consider focusing on more readily available proxy indicators or acknowledging this as a key area for future research.
+*   These are primarily addressed in the "Major Issues" section regarding the application of DiD for EU ETS and the panel regression specification.
 
 ---
 
 ## Missing Discussions
 
-1.  **Detailed Qualitative Analysis Plan:** Beyond mentioning "Politikdokumente" and "Experteninterviews," the paper lacks a detailed plan for their collection (e.g., interview structure, sampling strategy) and analysis (e.g., thematic analysis, content analysis, coding framework).
-2.  **Strategies for Endogeneity Mitigation:** While acknowledged in limitations, the main methods section should outline the specific econometric strategies (e.g., instrumental variables, system GMM, lagged effects, or specific robustness checks) that will be employed to address the endogeneity of carbon prices.
-3.  **Integration of Qualitative and Quantitative Findings:** The paper claims a mixed-methods approach but does not explain *how* the qualitative insights (e.g., on governance, design changes, contextual factors) will be systematically integrated with, or inform the interpretation of, the quantitative results.
-4.  **Data Pre-processing and Cleaning:** While "Harmonisierung der Daten und die Behandlung fehlender Werte" is mentioned, more detail on specific strategies (e.g., imputation methods, outlier detection and handling) would be beneficial.
-5.  **Ethical Considerations:** If expert interviews are planned, discussion of ethical considerations (e.g., informed consent, anonymity) is standard.
+1.  **Justification for Quantitative Focus:** A brief justification for prioritizing a purely quantitative approach over a mixed-methods or purely qualitative design could strengthen the methodological foundation, especially given the mention of qualitative aspects like "Interaktion mit anderen Politikfeldern".
+2.  **Specifics of SCM Donor Pool Selection:** While the Synthetische Kontrollmethode (SCM) is mentioned, a brief elaboration on the specific criteria for selecting units for the "Donor Pool" and the weighting mechanism (e.g., based on pre-treatment trends in emissions, economic indicators, policy similarity) would enhance clarity.
+3.  **Potential Data Limitations:** Beyond general data cleaning, a brief mention of specific potential limitations of the chosen data sources (e.g., reporting biases, data granularity, changes in reporting standards over time, or consistency across different data providers) could demonstrate a more critical awareness of data quality.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Generally appropriate:** The tone is professional and academic. No major issues to flag here.
+The tone is appropriately academic, objective, and professional throughout the section. No major issues identified.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Can you provide concrete examples of the control groups you intend to use for your Difference-in-Differences analysis for each ETS, and how will you verify the parallel trend assumption?"
-2.  "How will you address the potential endogeneity between carbon prices and emissions in your panel regression models, beyond merely acknowledging it as a limitation?"
-3.  "Given your mixed-methods approach, what specific qualitative methods (e.g., content analysis, interview protocols, coding schemes) will you employ, and how will their findings be systematically integrated with your quantitative results?"
-4.  "How do you plan to operationalize and collect data for 'Innovationseffekte' such as patent applications, R&D investments, and technology diffusion within the scope of this Master's thesis, or will you refine this scope?"
-5.  "Are all your cited references complete, including journal, volume, page numbers, and a DOI or arXiv ID?"
-6.  "What specific software packages (beyond R or Stata) and their functions (e.g., `plm` for panel data, `did` for DiD) do you plan to use for your statistical analyses?"
-7.  "How will you handle missing data and outliers in your various datasets?"
-
-**Prepare answers or add to paper**
+1.  "Which *specific* academic references support the foundational EHS principles and the methodologies for panel regression, DiD, and SCM?"
+2.  "How will you precisely define and justify your control group for the EU ETS in the DiD analysis, given the challenges of finding suitable non-participating countries?"
+3.  "Will technological innovation definitely be quantitatively analyzed, and if so, how will it be operationalized and integrated into your statistical models?"
+4.  "How will 'Verteilungseffekte' be assessed, or will they be excluded from the quantitative analysis, given the focus of this Master's thesis?"
+5.  "How will the panel regression model identify the EHS effect for systems like the EU ETS, which have been long established within the 'treatment group'?"
+6.  "What are the specific criteria for selecting units for the 'Donor Pool' in the Synthetic Control Method, and how will their pre-intervention characteristics be matched?"
+7.  "What are the known limitations or potential biases of the primary data sources (EUTL, CARB, financial market data) that could impact your analysis?"
+8.  "Given the mention of 'Interaktion mit anderen Politikfeldern', how will these qualitative aspects be integrated into the overall evaluation and conclusions of a predominantly quantitative study?"
 
 ---
 
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 Fix Issue 1 (Missing Core Citations) - **Critical for academic integrity.**
-2.  🔴 Address Issue 2 (Endogeneity Problem) - **Crucial for validity of causal claims.**
-3.  🔴 Resolve Issue 3 (Lack of Specificity for DiD Control Groups) - **Essential for methodological rigor.**
-4.  🔴 Address Issue 4 (Qualitative Methods Underspecified) - **Key for mixed-methods claim.**
-5.  🔴 Resolve Issue 5 (Overclaim on Innovation Measurement) - **Transparency and feasibility.**
-6.  🟡 Add complete citation for Issue 6 (Incomplete EU ETS Citation).
-7.  🟡 Provide more detail for Issue 7 (Vague Sourcing for Sectoral Data).
-8.  🟡 Clarify Issue 8 (Missing Operationalization for "Social Justice").
+1.  🔴 **Fix Issue 1 (Missing Critical Citations):** This is paramount for academic credibility.
+2.  🔴 **Address Issue 2 (Inconsistent Scope: Technological Innovation):** Clarify the research scope definitively.
+3.  🔴 **Resolve Issue 3 (Precision in DiD Application for EU ETS):** Crucial for the validity of causal claims.
+4.  🟡 **Address Issue 4 (Panel Regression Specification for EU ETS):** Improve model clarity and identifiability.
 
-**Can defer:**
-- Minor wording issues (e.g., carbon price causal chain).
-- Adding more examples for dummy variables (can be done in final proofreading).
+**Can defer (but should address for a strong paper):**
+*   🟡 Address Issue 5 (Vagueness of "Verteilungseffekte")
+*   🟠 Address Issue 6 ("Article 6" Example Placement)
+*   🟠 Address Issue 7 (Caveat on Instrument Variables)
+*   Review for minor wording/conciseness (Minor Issue 1)
+*   Add missing discussions (Missing Discussions 1-3)

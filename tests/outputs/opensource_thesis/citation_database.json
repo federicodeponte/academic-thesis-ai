@@ -14,6 +14,41 @@
     {
       "id": "cite_002",
       "authors": [
+        "Nonaka",
+        "Takeuchi"
+      ],
+      "year": 1995,
+      "title": "The Knowledge-Creating Company: How Japanese Companies Create the Dynamics of Innovation",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Oxford University Press"
+    },
+    {
+      "id": "cite_003",
+      "authors": [
+        "Samuelson"
+      ],
+      "year": 1954,
+      "title": "The Pure Theory of Public Expenditure",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "The Review of Economics and Statistics"
+    },
+    {
+      "id": "cite_004",
+      "authors": [
+        "Deci",
+        "Ryan"
+      ],
+      "year": 2000,
+      "title": "Self-Determination Theory: Basic Psychological Needs and Optimal Functioning",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Guilford Press"
+    },
+    {
+      "id": "cite_005",
+      "authors": [
         "Chesbrough"
       ],
       "year": 2003,
@@ -23,21 +58,65 @@
       "publisher": "Harvard Business School Press"
     },
     {
-      "id": "cite_003",
+      "id": "cite_006",
       "authors": [
-        "International Organization for Standardization"
+        "Foucault"
       ],
-      "year": 2006,
-      "title": "Environmental management — Life cycle assessment — Principles and framework / Requirements and guidelines",
+      "year": 1980,
+      "title": "Power/Knowledge: Selected Interviews and Other Writings, 1972-1977",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Pantheon Books"
+    },
+    {
+      "id": "cite_007",
+      "authors": [
+        "Lessig"
+      ],
+      "year": 2004,
+      "title": "Free Culture: How Big Media Uses Technology and the Law to Lock Down Culture and Control Creativity",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Penguin Press"
+    },
+    {
+      "id": "cite_008",
+      "authors": [
+        "Ellen MacArthur Foundation"
+      ],
+      "year": 2013,
+      "title": "Towards the Circular Economy: Opportunities for the Consumer Goods Sector",
       "source_type": "report",
       "language": "english",
-      "publisher": "ISO"
+      "publisher": "Ellen MacArthur Foundation"
+    },
+    {
+      "id": "cite_009",
+      "authors": [
+        "Castells"
+      ],
+      "year": 1996,
+      "title": "The Rise of the Network Society",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Blackwell Publishing"
+    },
+    {
+      "id": "cite_010",
+      "authors": [
+        "Raymond"
+      ],
+      "year": 1999,
+      "title": "The Cathedral and the Bazaar: Musings on Linux and Open Source by an Accidental Revolutionary",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "O'Reilly Media"
     }
   ],
   "metadata": {
-    "total_citations": 3,
+    "total_citations": 10,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-10T09:51:33.140540"
+    "extracted_date": "2025-11-10T14:00:17.468591"
   }
 }

@@ -1,166 +1,146 @@
 # Critical Review Report
 
 **Reviewer Stance:** Constructively Critical
-**Overall Assessment:** Reject (Major Revisions Required)
+**Overall Assessment:** Accept with Major Revisions
 
 ---
 
 ## Summary
 
 **Strengths:**
--   **Comprehensive Coverage:** The discussion provides a very thorough and well-structured overview of the implications, challenges, improvement suggestions, and global role of CO2 markets. It covers many relevant aspects of the topic.
--   **Clear Structure:** The section is logically organized into distinct sub-sections, making it easy to follow the different facets of the discussion.
--   **Policy Relevance:** The "Empfehlungen für Politik und Wirtschaft" section is well-articulated and offers actionable insights, demonstrating a strong understanding of practical applications.
--   **Good Language & Flow:** The German is academic, precise, and flows well between paragraphs and sections.
+-   **Comprehensive Coverage:** The discussion section covers a broad and relevant range of topics concerning Emissionshandelssysteme (EHS), including their effectiveness, challenges, improvement mechanisms, and global role.
+-   **Clear Structure:** The section is logically structured, moving from interpretation to implications, challenges, solutions, and recommendations.
+-   **Academic Tone:** The language is appropriate for an academic paper, maintaining a formal and analytical style.
+-   **Policy Relevance:** The implications and recommendations sections provide valuable insights for both policymakers and economic actors, aligning with the practical relevance of climate policy.
 
-**Critical Issues:** 3 major, 4 moderate, 5 minor
-**Recommendation:** Significant revisions are needed before this section can be considered for publication. The core issue is the disconnect between the discussion and the *paper's own results*.
+**Critical Issues:** 3 major, 2 moderate, 2 minor
+**Recommendation:** Major revisions are needed, primarily to address the pervasive lack of specific citations and to explicitly connect the discussion to the paper's own (currently unseen) research findings. Without these, the academic rigor and unique contribution of the paper are significantly undermined.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Absence of Paper's Own Results and Analysis
-**Location:** Throughout the entire "Diskussion" section, particularly in the introductory paragraph and every sub-section.
-**Problem:** The discussion section explicitly states in its introduction: "[Kurze Zusammenfassung des Untersuchungsgegenstandes und der Hauptbefunde, die in den Ergebnissen dargestellt wurden – hier exemplarisch formuliert, da die Ergebnisse nicht vorliegen]." This is the fundamental flaw. A discussion section must interpret, analyze, and contextualize the *specific findings* of the paper it belongs to. Currently, it reads as a general literature review or a policy brief on CO2 markets, entirely detached from any original research or analysis.
-**Evidence:** Phrases like "Die Ergebnisse dieser Untersuchung unterstreichen..." (Implikationen für Klimapolitik) are used, but no specific results are presented or referenced. The content entirely draws on general knowledge about EHS.
-**Fix:** The author *must* integrate the specific results and analysis of their own research into this section. Every point discussed should either directly refer to the paper's findings, or contextualize them within the broader literature, or use the paper's findings to critically evaluate existing knowledge. Without this, it is not a "Discussion" but a "Literature Review" or "Background."
-**Severity:** 🔴 High - This issue fundamentally undermines the purpose of a discussion section and renders the current draft unsuitable.
-
-### Issue 2: Pervasive Missing Citations (`cite_MISSING`)
-**Location:** Implikationen für Klimapolitik, Grenzen und Herausforderungen des Emissionshandels, Verbesserungsvorschläge für CO2-Märkte, Empfehlungen für Politik und Wirtschaft.
-**Problem:** There are multiple instances of `{cite_MISSING}` placeholders for critical claims and statements. For an academic paper, all non-original claims, data, or concepts must be properly attributed.
+### Issue 1: Pervasive Missing Citations
+**Location:** Throughout the entire discussion section (10 unique `cite_MISSING` placeholders).
+**Problem:** Numerous foundational claims and widely accepted facts about EHS effectiveness, challenges, and solutions are presented without proper academic attribution. This is the most critical flaw, as it undermines the academic integrity and verifiability of the discussion. It makes it impossible for a reader (or reviewer) to verify the basis of many statements.
 **Evidence:**
--   `{cite_MISSING: Studie zur Bedeutung von Preispfaden für Investitionen}`
--   `{cite_MISSING: Bericht über internationale Verknüpfung von EHS}`
--   `{cite_MISSING: Studie zu CBAM und Handelskonflikten}`
--   `{cite_MISSING: Analyse der WTO-Konformität von CBAM}`
--   `{cite_MISSING: Studie zur Policy-Kohärenz}`
-**Fix:** Research and provide specific, verifiable academic citations for every claim currently marked as missing. This is crucial for academic integrity.
-**Severity:** 🔴 High - Lack of proper citation is a serious academic flaw.
+-   "{cite_MISSING: Literatur zum Effizienzvorteil von EHS}"
+-   "{cite_MISSING: Studien zu Überzuteilung und Preisvolatilität im EU-EHS}"
+-   "{cite_MISSING: Literatur zu Policy-Mix und grüner Transformation}"
+-   "{cite_MISSING: Studien zur Bedeutung von Langfristsignalen in der Klimapolitik}"
+-   "{cite_MISSING: Literatur zu sozialen Ausgleichsmaßnahmen bei CO2-Bepreisung}"
+-   "{cite_MISSING: Studien zu Preisvolatilität und ihren Ursachen}"
+-   "{cite_MISSING: Literatur zu Carbon Leakage und seinen Auswirkungen}"
+-   "{cite_MISSING: Herausforderungen bei der Sektorerweiterung von EHS}"
+-   "{cite_MISSING: Studien zur optimalen Cap-Setzung}"
+-   "{cite_MISSING: Konzepte zur Klimadividende und Einnahmenverwendung}"
+**Fix:** Replace all `cite_MISSING` placeholders with specific, verifiable citations (author, year, title, DOI/arXiv ID if applicable). Every claim that is not original to this paper's analysis *must* be cited.
+**Severity:** 🔴 High - **CRITICAL ACADEMIC INTEGRITY ISSUE**. The paper cannot be accepted without resolving this.
 
-### Issue 3: Insufficient and Vague Citation (`cite_001`)
-**Location:** Repeatedly used throughout almost every sub-section.
-**Problem:** The single provided citation, "Flachsland, C., Edenhofer, O., et al. (2017) - The European Emissions Trading System: A decade of experience...", is too broad for direct in-text citation, especially when used to support numerous diverse claims. This is likely an edited volume. Academic practice requires citing the specific chapter, article, or report within such a volume, including specific authors for that part, title, page numbers, and a DOI or ISBN. A single generic reference cannot adequately support the multitude of specific points it's currently attributed to.
-**Evidence:** This citation appears at least 6 times, supporting claims about the theoretical premise, lessons from EU-EHS, price volatility, political influence, and the EU-EHS as a model.
+### Issue 2: Weak Link to Paper's Own Results
+**Location:** Throughout all subsections, especially "Interpretation der Ergebnisse und Verbindung zur Literatur" and "Implikationen für die Klimapolitik."
+**Claim:** The discussion consistently refers to "Die Ergebnisse der Analyse," "Die Untersuchung hat gezeigt," or "Diese Arbeit hat gezeigt."
+**Problem:** The discussion often makes general statements about EHS that are widely accepted in the literature without explicitly detailing *how this specific paper's analysis* (which is not provided in this draft) contributed to or confirmed these findings. This makes the discussion feel generic, resembling a literature review or policy brief rather than a critical interpretation of original research. The unique contribution of the paper is unclear.
+**Evidence:** Phrases like "Die Analyse hat gezeigt, dass Emissionshandelssysteme (EHS) prinzipiell ein wirksames Instrument zur Reduktion von Treibhausgasemissionen darstellen können" (Interpretation section) are general truths that need to be specifically supported by *this paper's* empirical or analytical findings.
+**Fix:** For every claim attributed to "this analysis/paper," explicitly state *what specific finding, data point, model result, or analytical insight* from the paper supports that claim. If the paper's contribution is primarily a synthesis or review, this should be clearly stated, and the claims should be appropriately hedged (e.g., "Our synthesis confirms that...").
+**Severity:** 🔴 High - **Impacts originality and contribution.**
+
+### Issue 3: Overclaiming/Lack of Nuance for General Statements
+**Location:** Multiple instances, e.g., "Die Analyse hat gezeigt, dass Emissionshandelssysteme (EHS) prinzipiell ein wirksames Instrument zur Reduktion von Treibhausgasemissionen darstellen können..." (Interpretation)
+**Problem:** While EHS *can* be effective, the discussion sometimes presents general principles or potential benefits as if they are universally proven or directly demonstrated by *this paper*, without sufficient hedging or acknowledgment of the specific conditions under which these benefits materialize. Without seeing the specific results, it's difficult to assess if this paper's findings warrant such strong, general statements.
+**Evidence:**
+-   "Die ökonomische Effizienz, die durch die Internalisierung externer Kosten der Umweltverschmutzung erreicht wird, ist ein wiederkehrendes Argument in der Literatur..." (Interpretation) - This is true, but the paper's role should be to *interpret* this in light of its *own* findings, not just state it as a given.
+-   "Die Ergebnisse legen nahe, dass die bloße Existenz eines Emissionshandelssystems nicht ausreicht; vielmehr ist eine kontinuierliche Anpassung und Verfeinerung der Marktmechanismen entscheidend." (Interpretation) - While a valid conclusion, the link to *this paper's specific results* is missing, making it an overclaim if the paper is not empirical.
 **Fix:**
-1.  Identify the specific parts of the Flachsland et al. (2017) publication that support each claim.
-2.  Cite these specific chapters/articles/sections with their individual authors, titles, and page numbers/DOIs.
-3.  If other sources are more appropriate for certain claims, replace the generic `{cite_001}` with those specific sources.
-**Severity:** 🔴 High - Affects the credibility and verifiability of numerous claims.
+1.  Clearly distinguish between findings from *this paper* and established knowledge from the literature.
+2.  Use more nuanced language (e.g., "suggests," "indicates," "can contribute to," "under certain conditions") when discussing general principles or potential outcomes, especially when not directly proven by the paper's own results.
+3.  Ensure that any strong claims about effectiveness or necessity are directly and explicitly supported by the paper's specific evidence or a robust synthesis of external, cited evidence.
+**Severity:** 🔴 High - **Affects claim strength and academic precision.**
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 4: Overclaims and Lack of Hedging
-**Location:** Various places, e.g., "Implikationen für Klimapolitik", "Rolle im globalen Klimaschutz".
-**Problem:** Many statements are presented as definitive facts or strong conclusions without appropriate hedging or explicit citation. While many points are generally accepted in the field, presenting them as universally true without nuance or specific evidence can be problematic.
+### Issue 4: Redundancy and Overlap Between Sections
+**Location:** Especially between "4.1 Implikationen für die Klimapolitik" and "4.4 Rolle im globalen Klimaschutz," and social equity aspects appearing in multiple sections.
+**Problem:** Key themes like international cooperation (Article 6), social equity, and the need for a policy mix are discussed in multiple sections (e.g., Interpretation, Implications, Challenges, Recommendations). While reiteration for emphasis can be useful, some arguments are repeated without adding significant new dimensions or depth, leading to a somewhat circuitous flow.
 **Evidence:**
--   "Ohne einen klaren Preispfad bleiben viele Investitionen in fossile Infrastrukturen attraktiver, was den Übergang zu einer kohlenstoffneutralen Wirtschaft erheblich verlangsamt." (Implikationen) - While plausible, this is a strong causal claim that needs support.
--   "Dennoch überwiegen die potenziellen Vorteile eines effektiven EHS in der Regel die administrativen Kosten..." (Grenzen und Herausforderungen) - Needs empirical evidence or explicit framing as expert consensus.
--   "...während es gleichzeitig die Wettbewerbsfähigkeit der Wirtschaft bewahrt, sofern es richtig ausgestaltet und kontinuierlich angepasst wird." (Rolle im globalen Klimaschutz) - The "preserving competitiveness" aspect is often debated and contingent on many factors; needs specific citation or hedging.
--   "Sie tragen auch zur Bewusstseinsbildung bei..." (Rolle im globalen Klimaschutz) - This is a plausible but hard-to-quantify claim that should be hedged or cited.
-**Fix:** Add appropriate hedging language ("suggests," "tends to," "can contribute to," "often observed") or provide specific citations for these strong claims.
+-   International cooperation/Article 6 is mentioned in "Interpretation," "Implikationen," "Grenzen," "Verbesserungsvorschläge," and "Rolle im globalen Klimaschutz," and "Empfehlungen."
+-   Social equity and distribution effects are covered in "Implikationen," "Grenzen," and "Verbesserungsvorschläge."
+**Fix:** Review the discussion flow to identify areas where arguments are repeated. Consolidate or rephrase to ensure each instance introduces a new perspective or deeper analysis relevant to that specific section's focus. For example, "Rolle im globalen Klimaschutz" could focus more on the *mechanisms* of global impact beyond just Article 6, or delve into regional differences etc.
+**Severity:** 🟡 Moderate - **Affects readability and conciseness.**
 
-### Issue 5: Lack of Specificity in Policy Recommendations
-**Location:** Empfehlungen für Politik und Wirtschaft.
-**Problem:** While the recommendations are sound, they sometimes lack the specificity that might arise from a detailed analysis (which is missing, see Major Issue 1). For example, "Dynamischere Anpassung des Angebots an Zertifikaten" or "Preiskorridoren" are mentioned, but *how* this dynamic adjustment should happen, or what specific price ranges are recommended based on the paper's (missing) analysis, is not discussed.
-**Fix:** If the paper's analysis provides specific insights into these mechanisms, incorporate them. Otherwise, acknowledge that these are general policy directions requiring further detailed study.
-
-### Issue 6: Potential for Circular Reasoning in "Implikationen"
-**Location:** Implikationen für Klimapolitik, first paragraph.
-**Claim:** "Die theoretische Prämisse, dass ein Preis auf CO2-Emissionen Anreize für Dekarbonisierung schafft, wird durch die Praxis in verschiedenen Jurisdiktionen zunehmend bestätigt {cite_001}." Followed by: "Ein gut konzipiertes EHS kann nicht nur Emissionen senken, sondern auch technologische Innovationen fördern... indem es Unternehmen einen klaren finanziellen Anreiz bietet, in sauberere Technologien zu investieren."
-**Problem:** The second sentence essentially re-states the theoretical premise as an implication of a "well-designed EHS." While true, it risks sounding like "EHS creates incentives because it creates incentives."
-**Fix:** Rephrase to clearly distinguish between the *confirmed theoretical premise* and the *mechanisms* through which a well-designed EHS operationalizes these incentives and achieves broader benefits (like innovation).
-
-### Issue 7: Limited Engagement with Counterarguments/Alternative Interpretations
+### Issue 5: Lack of Specific Examples/Case Studies (Once Citations are Added)
 **Location:** Throughout the discussion.
-**Problem:** While the section "Grenzen und Herausforderungen" is good, the overall tone in other sections is largely supportive of EHS. There's limited explicit engagement with strong criticisms or alternative fundamental approaches to climate policy (e.g., carbon taxes vs. EHS, or more direct regulatory approaches as primary instruments) beyond simply stating complementarity.
-**Fix:** Briefly acknowledge and discuss why EHS is chosen as the primary focus, perhaps contrasting it more explicitly with other major policy instruments, or briefly mentioning strong critiques that challenge the fundamental premise of EHS effectiveness in certain contexts.
+**Problem:** While the EU-EHS is mentioned as an example, the discussion remains at a relatively high level of abstraction. Even with citations, the arguments would be significantly strengthened by integrating specific examples or brief case studies that illustrate the challenges, successes, or policy implications discussed.
+**Evidence:** For instance, when discussing "Preisvolatilität" or "Carbon Leakage," specific historical periods or industry examples from actual EHS could be used to ground the claims.
+**Fix:** Once the `cite_MISSING` placeholders are filled, integrate brief, illustrative examples or specific data points from the cited literature to support the general claims. This would enhance the persuasiveness and depth of the discussion.
+**Severity:** 🟡 Moderate - **Enhances argument strength and engagement.**
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Repetitive Phrasing:** "Die Ergebnisse dieser Untersuchung unterstreichen..." or similar phrases are used frequently, which currently highlights Major Issue 1. Once specific results are integrated, vary the phrasing.
-2.  **General vs. Specific Claims:** Some claims are very general ("Die Klimapolitik muss somit nicht nur ökologisch effektiv, sondern auch sozial gerecht und wirtschaftlich tragfähig sein.") while others are more specific. Ensure the level of detail is consistent with the paper's (future) analysis.
-3.  **Flow/Transition:** While generally good, some transitions could be smoother. For instance, the jump from "internationale Verknüpfung" to "Verteilungswirkungen" in "Implikationen" is a bit abrupt.
-4.  **"Katalysator für die internationale Zusammenarbeit" (Rolle im globalen Klimaschutz):** This is a strong metaphor. While understandable, in a critical academic context, it might benefit from being framed more directly as "facilitator" or "enabler" unless specific catalytic effects are demonstrated.
-5.  **"Klarer Preispfad" (Implikationen für Klimapolitik):** This is a key concept. While its importance is stated, a brief explanation or a more precise definition (e.g., what constitutes "klar" or "stabil") could be beneficial.
+1.  **Vague Phrasing:** "tiefgreifende Implikationen" (4.1), "von entscheidender Bedeutung" (4.1, 4.3, 4.4) – While acceptable, varying these phrases or making them more specific to the context would improve precision.
+2.  **"Katalysator für die Skalierung von Klimaschutzinvestitionen" (4.4):** This is a plausible claim, but could benefit from a specific citation to literature that analyzes this catalytic effect, or a brief explanation of the mechanism, to elevate it beyond a potentially unsubstantiated assertion.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Unjustified Leap from "Problem X is important" to "Our approach is Y"
-**Location:** Introduction, first paragraph.
-**Logic:** "Die vorliegende Arbeit untersuchte [Kurze Zusammenfassung...]. Die Analyse konzentrierte sich auf [spezifische Aspekte...]. Die gewonnenen Erkenntnisse bieten eine fundierte Basis..."
-**Missing:** The current introduction *assumes* the paper has generated "Erkenntnisse" that provide a "fundierte Basis" without stating what these findings are or how the specific analysis led to them. This is a direct consequence of Major Issue 1.
-**Fix:** Clearly state the research question, the methodology used, and the main findings *before* launching into their implications.
-
-### Gap 2: Asserting Causality Without Explicit Mechanism/Evidence
-**Location:** Implikationen für Klimapolitik, "Dies ist eine entscheidende Implikation für die Klimapolitik, da sie über reine Regulierungen hinausgeht und marktbasierte Mechanismen nutzt, um die Emissionsreduktion zu internalisieren."
-**Problem:** While the statement is generally true, the phrase "da sie über reine Regulierungen hinausgeht" implies a direct causal superiority or distinctiveness that, without further explanation or citation, might be seen as an oversimplification. The *specific mechanisms* by which it "goes beyond" and how this leads to better outcomes should be more explicitly stated or referenced.
-**Fix:** Elaborate on the mechanisms or cite specific studies that compare EHS with command-and-control regulations in terms of efficiency, innovation, etc.
+### Gap 1: Implicit Assumption of Paper's Own Results
+**Location:** Throughout the entire discussion.
+**Logic:** The discussion proceeds as if the reader has full knowledge of the paper's preceding "analysis" and "results."
+**Problem:** Without the actual results section, the reader must implicitly trust that the claims made in the discussion are indeed derived from the paper's own work. This creates a logical gap between the discussion's claims and their internal empirical foundation.
+**Fix:** As mentioned in Major Issue 2, ensure the discussion explicitly refers back to *specific findings* from the paper's analysis, even if only briefly summarized. This bridges the gap for the reader.
 
 ---
 
 ## Methodological Concerns
 
-**Concern 1: Basis of Discussion**
-**Issue:** The entire discussion section is built on general knowledge and literature, not the paper's own research methodology or results.
-**Risk:** The discussion lacks rigor as it is not grounded in the specific analytical approach or empirical evidence generated by the paper.
-**Reviewer Question:** "What *specific* analysis did *this paper* conduct, and how do the findings of *that analysis* inform these discussions and recommendations?"
-**Suggestion:** Integrate the paper's methods and results throughout. For example, if the paper used a specific model, empirical study, or case study, the discussion should refer to *that* work's specific insights.
-
-**Concern 2: Implicit Assumptions about "Well-Designed EHS"**
-**Issue:** Many positive claims about EHS are prefaced with "Ein gut konzipiertes EHS..." or "sofern es richtig ausgestaltet..." without the paper providing a framework or definition of what constitutes "well-designed" or "richtig ausgestaltet" in its own context.
-**Risk:** The discussion might rely on an undefined ideal rather than grappling with the complexities of real-world implementation.
-**Question:** "What specific design features does *your paper's analysis* identify as crucial for a 'well-designed' EHS?"
-**Fix:** Either provide the paper's own criteria for a "well-designed" EHS (if it conducted such an analysis) or explicitly refer to the literature that defines these criteria.
+### Concern 1: Lack of Empirical Grounding (within the discussion)
+**Issue:** The discussion, as presented, reads largely as a synthesis of existing literature and general policy arguments. If the paper *does* contain original empirical or analytical results, the discussion fails to adequately ground itself in these.
+**Risk:** The paper might be perceived as a review paper or policy brief rather than original research, diminishing its academic contribution.
+**Reviewer Question:** "What specific methodology was employed in *this paper* that yielded the 'Ergebnisse der Analyse' being discussed?"
+**Suggestion:** Ensure that the discussion is clearly framed as an interpretation of the *paper's own specific findings*, even if those findings confirm or extend existing literature.
 
 ---
 
 ## Missing Discussions
 
-1.  **The Paper's Own Specific Contribution:** The most glaring omission is a discussion of *what this specific paper adds* to the existing body of knowledge on CO2 markets. What new insights, data, or analytical perspectives does it offer?
-2.  **Limitations of the Paper's Own Research:** A critical discussion section should always include a frank assessment of the limitations of the *present study*. What couldn't be covered? What are the boundaries of the findings?
-3.  **Future Research Directions from This Paper:** Based on the paper's findings and limitations, what specific avenues for future research are identified?
-4.  **Data/Empirical Context of the Paper:** If the paper uses a specific dataset or focuses on a particular region/timeframe, how do these specificities influence the generalizability of its findings? This should be discussed.
+1.  **Specific Limitations of *this study*:** Beyond the general "Grenzen und Herausforderungen des Emissionshandels," what were the specific limitations of *this paper's own analysis* (e.g., scope, data, geographical focus, methodological constraints)? A robust discussion section always includes a self-critical assessment of the study's boundaries.
+2.  **Specific Future Research Directions from *this study's findings*:** While "Verbesserungsvorschläge" are given, a dedicated section on "Future Research" should outline specific research questions that directly arise from the gaps, unresolved issues, or novel insights generated by *this particular paper's results*. This strengthens the paper's contribution to the academic discourse.
+3.  **Counterarguments/Alternative Interpretations to *this paper's specific findings*:** While the discussion covers general challenges of EHS, it doesn't address potential counterarguments or alternative interpretations *of this paper's own specific results*. If the paper found X, could X also be interpreted as Y, or are there limitations to X that need to be acknowledged?
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Overly Confident Language (Given Missing Results):** Phrases like "unterstreichen die zentrale Rolle," "bietet eine fundierte Basis," "ist eine entscheidende Implikation" are very strong. While appropriate if backed by robust results, they are currently overconfident given the absence of the paper's own findings.
-2.  **Generic Academic Tone:** While professional, the tone is currently very generic, reflecting a review of existing literature rather than a critical discussion stemming from original research. This will naturally change once Major Issue 1 is addressed.
+1.  **Slightly Repetitive Introductions to Claims:** Phrases like "Die Analyse hat gezeigt," "Die Ergebnisse legen nahe," "Diese Arbeit hat tiefgreifende Implikationen" are repeated frequently. Varying the sentence structure or integrating these claims more smoothly into the paragraph flow would improve readability.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "What are the *specific results* of *your investigation* that underpin these discussions and conclusions?"
-2.  "How do your findings *differ from* or *add to* the existing literature you cite?"
-3.  "What are the **limitations** of *your specific study*?"
-4.  "Could you provide more specific and verifiable citations for the general claims, especially for `cite_001`?"
-5.  "How do your recommendations for policy and business directly **stem from your own research findings**?"
+1.  "What are the specific, novel findings presented in *this paper's results section* that form the basis for this discussion?"
+2.  "Can you provide the full, verifiable citations for all statements currently marked `cite_MISSING`?"
+3.  "How do your findings contribute *beyond* what is already known in the existing literature on EHS?"
+4.  "What were the specific limitations of *your methodology or data* in this study?"
+5.  "Are there any alternative interpretations of your results that you considered and dismissed, and why?"
 
-**Prepare answers or add to paper.**
+**Prepare answers or add to paper**
 
 ---
 
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Fix Issue 1 (Absence of Paper's Own Results)** - Integrate the paper's findings and analysis throughout the discussion. This is paramount.
-2.  🔴 **Address Issue 2 (Pervasive Missing Citations)** - Research and add all `cite_MISSING` references.
-3.  🔴 **Resolve Issue 3 (Insufficient and Vague Citation)** - Provide detailed, specific citations for all uses of `cite_001`.
-4.  🟡 **Address Missing Discussions** - Add sections on the paper's specific contribution, limitations, and future research.
-5.  🟡 **Address Issue 4 (Overclaims and Lack of Hedging)** - Soften definitive statements or provide specific evidence.
+1.  🔴 **Fix Issue 1 (Pervasive Missing Citations):** This is non-negotiable for academic publication.
+2.  🔴 **Address Issue 2 (Weak Link to Own Results):** Explicitly connect the discussion points to your paper's specific findings. This is crucial for establishing the paper's unique contribution.
+3.  🔴 **Resolve Issue 3 (Overclaiming/Lack of Nuance):** Ensure claims are appropriately hedged and clearly distinguish between your findings and general knowledge.
+4.  🟡 **Add Missing Discussions:** Include sections on *this study's* specific limitations and future research directions.
+5.  🟡 **Address Issue 4 (Redundancy):** Streamline repetitive arguments to improve flow and conciseness.
 
 **Can defer:**
--   Minor wording and flow improvements (will likely be naturally resolved when addressing Major Issue 1).
-
----
-Let's make your paper bulletproof!
+-   Minor wording issues (can be polished in later revision stages).
+-   Adding extensive case studies (can be an enhancement, but not critical for initial acceptance if other issues are fixed).

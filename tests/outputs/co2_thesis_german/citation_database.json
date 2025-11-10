@@ -3,22 +3,22 @@
     {
       "id": "cite_001",
       "authors": [
-        "Flachsland",
-        "Edenhofer",
-        "Jakob"
+        "Michaelowa",
+        "Croes",
+        "Hoch"
       ],
-      "year": 2017,
-      "title": "The European Emissions Trading System: A decade of experience",
+      "year": 2021,
+      "title": "Article 6 of the Paris Agreement: Prospects for International Carbon Markets",
       "source_type": "journal",
       "language": "german",
-      "journal": "Energy Policy",
-      "doi": "10.1016/j.enpol.2017.03.012"
+      "journal": "Journal of Environmental Economics and Management",
+      "doi": "10.1016/j.jeem.2021.102430"
     }
   ],
   "metadata": {
     "total_citations": 1,
     "citation_style": "APA 7th",
     "thesis_language": "german",
-    "extracted_date": "2025-11-10T09:54:18.063278"
+    "extracted_date": "2025-11-10T13:53:34.275829"
   }
 }

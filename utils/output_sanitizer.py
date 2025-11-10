@@ -37,6 +37,11 @@ META_COMMENT_PATTERNS = [
     r'^(Here is|Hier ist|This is|I have generated).*?(enhanced|verbessert|thesis|Arbeit).*?\n+',
     r'^\*\*Note:\*\*.*?(generated|erstellt|AI|agent).*?\n+',
     r'^\[.*?(Agent|LLM|generated|auto).*?\].*?\n+',
+    # NEW: Remove section metadata pollution from Crafter/Enhancer agents
+    r'^\*\*Section:\*\*.*?\n',           # Remove **Section:** lines
+    r'^\*\*Word Count:\*\*.*?\n',        # Remove **Word Count:** lines
+    r'^\*\*Status:\*\*.*?\n',            # Remove **Status:** lines
+    r'^\[To be completed.*?\].*?\n',     # Remove placeholder citations
 ]
 
 # ============================================================================

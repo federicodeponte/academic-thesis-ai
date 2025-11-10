@@ -34,7 +34,6 @@ lizenz: "MIT - Nutzen Sie es, forken Sie es, verbessern Sie es, veröffentlichen
 
 **Abschnitt:** Einleitung
 **Wortzahl:** ca. 2,500 (stilistisch angepasst)
-**Status:** Entwurf v2 (humanisiert)
 
 ---
 
@@ -48,7 +47,6 @@ Ein Kernstück der politischen Instrumente, um diese Herausforderung zu meistern
 
 **Abschnitt:** Literaturübersicht
 **Wortzahl:** 8.353 Wörter
-**Status:** Entwurf v1
 
 ---
 
@@ -305,7 +303,6 @@ Die vorliegende Literaturübersicht dient somit als konzeptioneller Rahmen und a
 
 **Abschnitt:** Methodik
 **Wortzahl:** 2,643 Wörter
-**Status:** Entwurf v1
 
 ---
 
@@ -434,7 +431,6 @@ Um die komplexen Zusammenhänge und Wirkungsweisen von Emissionshandelssystemen 
 
 **Abschnitt:** Analyse
 **Wortzahl:** 9,213 Wörter
-**Status:** Entwurf v1
 
 ---
 
@@ -732,7 +728,6 @@ Um die unterschiedlichen Ansätze und deren Auswirkungen auf die Klimaschutzwirk
 
 **Abschnitt:** Diskussion
 **Wortzahl:** 3.816 Wörter
-**Status:** Entwurf v1
 
 ---
 
@@ -896,7 +891,6 @@ Diese Forschungsrichtungen kollektiv zielen darauf ab, ein reicheres, nuancierte
 
 **Abschnitt:** Fazit
 **Wortzahl:** 1.328 Wörter
-**Status:** Entwurf v1
 
 ---
 

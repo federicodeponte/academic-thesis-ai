@@ -17,7 +17,7 @@ import google.generativeai as genai
 from config import get_config
 from utils.output_validators import ValidationResult
 from utils.api_citations.orchestrator import CitationResearcher
-from utils.api_citations.citation import Citation
+from utils.citation_database import Citation
 
 # Configure logging
 logger = logging.getLogger(__name__)

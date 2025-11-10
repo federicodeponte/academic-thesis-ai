@@ -15,7 +15,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from config import get_config
-from tests.test_utils import setup_model, run_agent, rate_limit_delay
+from tests.test_utils import setup_model, run_agent, rate_limit_delay, research_citations_via_api
 from tests.validators import Section, validate_paper_sections
 from utils.citation_manager import extract_citations_from_text
 from utils.citation_database import save_citation_database, load_citation_database
@@ -71,28 +71,105 @@ def main():
     print("📚 PHASE 1: FORSCHUNG (RESEARCH)")
     print("="*70)
 
-    # Step 1: Scout - Find papers
-    scout_output = run_agent(
-        model=model,
-        name="1. Scout - Finde relevante Forschungsarbeiten",
-        prompt_path="prompts/01_research/scout.md",
-        user_input=(
-            f"**WICHTIG: Antworte auf Deutsch.**\n\n"
-            f"Finde 30 wissenschaftliche Artikel und Berichte über:\n"
-            f"- CO2-Zertifikatehandel und Emissionshandelssysteme\n"
-            f"- Klimawandel und Treibhausgasemissionen\n"
-            f"- Kyoto-Protokoll und Pariser Abkommen\n"
-            f"- Europäisches Emissionshandelssystem (EU ETS)\n"
-            f"- Umweltökonomie und Klimapolitik\n"
-            f"- Wirksamkeit von CO2-Preismechanismen\n"
-            f"- Kohlenstoffmärkte und Klimaschutz\n\n"
-            f"Forschungsschwerpunkt: {research_focus}"
-        ),
-        save_to=output_dir / "01_scout.md"
-    )
+    # Step 1: Scout - API-backed citation discovery (replaces LLM hallucination)
+    research_topics = [
+        # CO2 trading fundamentals
+        "carbon emissions trading systems design and implementation",
+        "cap-and-trade mechanisms for greenhouse gas reduction",
+        "European Union Emissions Trading System EU ETS",
+        "carbon pricing policy instruments and effectiveness",
+        "emissions allowance allocation methods",
 
-    if not scout_output:
-        print("❌ Scout failed - aborting test")
+        # Climate change and emissions
+        "anthropogenic climate change and greenhouse gas emissions",
+        "carbon dioxide atmospheric concentration trends",
+        "climate change mitigation strategies and policies",
+        "greenhouse gas emissions measurement and verification",
+        "carbon footprint assessment methodologies",
+
+        # International agreements
+        "Kyoto Protocol emissions reduction commitments",
+        "Paris Agreement climate targets and implementation",
+        "international carbon markets linkage mechanisms",
+        "Clean Development Mechanism CDM projects",
+        "Joint Implementation JI climate projects",
+
+        # EU ETS specific
+        "European Union carbon market price dynamics",
+        "EU ETS Phase III and Phase IV reforms",
+        "carbon leakage prevention mechanisms",
+        "free allocation versus auctioning of allowances",
+        "Market Stability Reserve EU ETS",
+
+        # Environmental economics
+        "environmental economics Pigouvian taxation",
+        "externalities in environmental policy",
+        "cost-benefit analysis of climate policies",
+        "market-based environmental regulation",
+        "pollution permits tradable emissions rights",
+
+        # Effectiveness studies
+        "carbon trading effectiveness empirical evidence",
+        "emissions reduction attributable to carbon markets",
+        "EU ETS impact on industrial emissions",
+        "carbon price and emissions abatement relationship",
+        "effectiveness of carbon pricing versus regulation",
+
+        # Regional carbon markets
+        "California cap-and-trade program analysis",
+        "China national carbon emissions trading system",
+        "Regional Greenhouse Gas Initiative RGGI",
+        "Korean emissions trading scheme",
+        "New Zealand Emissions Trading Scheme",
+
+        # Challenges and criticism
+        "carbon market volatility and price stability",
+        "windfall profits in emissions trading",
+        "carbon offset projects credibility and additionality",
+        "carbon market manipulation and fraud prevention",
+        "carbon leakage in emissions trading systems",
+
+        # Economic impacts
+        "carbon pricing economic competitiveness effects",
+        "emissions trading impact on electricity prices",
+        "carbon costs and industrial productivity",
+        "carbon markets and innovation incentives",
+        "distributional effects of carbon pricing",
+
+        # Monitoring and compliance
+        "emissions monitoring reporting verification MRV",
+        "carbon accounting standards and protocols",
+        "compliance mechanisms in emissions trading",
+        "carbon registry systems and tracking",
+        "enforcement of emissions caps and penalties",
+    ]
+
+    try:
+        scout_result = research_citations_via_api(
+            model=model,
+            research_topics=research_topics,
+            output_path=output_dir / "01_scout.md",
+            target_minimum=50,  # Quality gate: require 50+ valid citations
+            verbose=True
+        )
+
+        print(f"\n✅ Scout Erfolg: {scout_result['count']} gültige Zitate")
+        print(f"📊 API-Erfolgsrate: {scout_result['count']/len(research_topics)*100:.1f}%")
+        print(f"📚 Quellen: Crossref={scout_result['sources']['Crossref']}, "
+              f"Semantic Scholar={scout_result['sources']['Semantic Scholar']}, "
+              f"LLM={scout_result['sources']['Gemini LLM']}")
+
+        # Read scout output for next agents
+        scout_output = (output_dir / "01_scout.md").read_text(encoding='utf-8')
+
+    except ValueError as e:
+        print(f"\n❌ SCOUT QUALITY GATE FEHLGESCHLAGEN")
+        print(str(e))
+        print("\n⚠️  Kann nicht fortfahren - unzureichende gültige Zitate für akademische Arbeit")
+        return 1
+    except Exception as e:
+        print(f"\n❌ SCOUT FEHLGESCHLAGEN - Unerwarteter Fehler")
+        print(f"Fehler: {str(e)}")
         return 1
 
     rate_limit_delay()

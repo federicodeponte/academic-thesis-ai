@@ -16,7 +16,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
 from config import get_config
-from tests.test_utils import setup_model, run_agent, rate_limit_delay
+from tests.test_utils import setup_model, run_agent, rate_limit_delay, research_citations_via_api
 from tests.validators import Section, validate_paper_sections
 from utils.citation_manager import extract_citations_from_text
 from utils.citation_compiler import CitationCompiler
@@ -66,25 +66,112 @@ def main():
     print("📚 PHASE 1: RESEARCH")
     print("="*70)
 
-    # Step 1: Scout - Find papers
-    scout_output = run_agent(
-        model=model,
-        name="1. Scout - Find Relevant Papers",
-        prompt_path="prompts/01_research/scout.md",
-        user_input=(
-            f"Find 30 academic papers and industry reports on:\n"
-            f"- AI agent pricing models\n"
-            f"- Token-based pricing for LLMs\n"
-            f"- Usage-based vs value-based pricing\n"
-            f"- API pricing strategies\n"
-            f"- Economic models for AI services\n\n"
-            f"Research focus: {research_focus}"
-        ),
-        save_to=output_dir / "01_scout.md"
-    )
+    # Step 1: Scout - API-backed citation discovery (replaces LLM hallucination)
+    research_topics = [
+        # Pricing fundamentals
+        "pricing models for artificial intelligence services",
+        "token-based pricing for large language models",
+        "usage-based pricing in cloud computing",
+        "value-based pricing strategies",
+        "API pricing and monetization strategies",
 
-    if not scout_output:
-        print("❌ Scout failed - aborting test")
+        # AI agent economics
+        "economic models for AI agents",
+        "cost structures of machine learning services",
+        "pricing transparency in AI platforms",
+        "AI service pricing optimization",
+        "multi-tier pricing for AI APIs",
+
+        # LLM and generative AI pricing
+        "pricing strategies for generative AI",
+        "OpenAI API pricing models",
+        "cost per token in language models",
+        "pricing discrimination in AI services",
+        "freemium models for AI applications",
+
+        # Business models
+        "subscription pricing for AI software",
+        "pay-per-use models in AI industry",
+        "dynamic pricing for machine learning APIs",
+        "bundling strategies in AI services",
+        "platform pricing in two-sided markets",
+
+        # Value creation
+        "value capture in AI ecosystems",
+        "willingness to pay for AI services",
+        "customer lifetime value in SaaS AI",
+        "pricing psychology in technology adoption",
+        "perceived value of AI solutions",
+
+        # Competition and market dynamics
+        "competitive pricing in AI market",
+        "price wars in cloud AI services",
+        "monopolistic pricing in platform economics",
+        "network effects and pricing power",
+        "market segmentation in AI pricing",
+
+        # Usage metrics and monitoring
+        "metering and billing for cloud services",
+        "cost allocation in multi-tenant systems",
+        "usage tracking for API calls",
+        "chargeback models in enterprise AI",
+        "consumption-based pricing analytics",
+
+        # Cost optimization
+        "cost optimization strategies for AI inference",
+        "pricing efficiency in neural networks",
+        "resource allocation and pricing",
+        "economies of scale in AI services",
+        "marginal cost pricing in software",
+
+        # Industry studies
+        "pricing comparison GPT-4 vs Claude vs Gemini",
+        "AI pricing trends and forecasts",
+        "revenue models for AI startups",
+        "enterprise AI procurement pricing",
+        "pricing negotiation in B2B AI sales",
+
+        # Theoretical frameworks
+        "transaction cost economics in AI",
+        "information goods pricing theory",
+        "two-sided market pricing dynamics",
+        "versioning and price discrimination",
+        "penetration vs skimming pricing AI",
+
+        # Customer behavior
+        "price sensitivity in AI adoption",
+        "switching costs in AI platforms",
+        "lock-in effects in AI services",
+        "pricing transparency and trust",
+        "elasticity of demand for AI tools",
+    ]
+
+    try:
+        scout_result = research_citations_via_api(
+            model=model,
+            research_topics=research_topics,
+            output_path=output_dir / "01_scout.md",
+            target_minimum=50,  # Quality gate: require 50+ valid citations
+            verbose=True
+        )
+
+        print(f"\n✅ Scout Success: {scout_result['count']} valid citations")
+        print(f"📊 API Success Rate: {scout_result['count']/len(research_topics)*100:.1f}%")
+        print(f"📚 Sources: Crossref={scout_result['sources']['Crossref']}, "
+              f"Semantic Scholar={scout_result['sources']['Semantic Scholar']}, "
+              f"LLM={scout_result['sources']['Gemini LLM']}")
+
+        # Read scout output for next agents
+        scout_output = (output_dir / "01_scout.md").read_text(encoding='utf-8')
+
+    except ValueError as e:
+        print(f"\n❌ SCOUT QUALITY GATE FAILED")
+        print(str(e))
+        print("\n⚠️  Cannot proceed - insufficient valid citations for academic thesis")
+        return 1
+    except Exception as e:
+        print(f"\n❌ SCOUT FAILED - Unexpected Error")
+        print(f"Error: {str(e)}")
         return 1
 
     rate_limit_delay()

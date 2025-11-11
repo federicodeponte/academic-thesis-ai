@@ -158,6 +158,7 @@ class PandocLatexEngine(PDFEngine):
             spacing_command = r'\singlespacing'
 
         preamble = r'''\PassOptionsToPackage{hyphens}{url}
+\usepackage{xurl}
 \usepackage{etoolbox}
 \usepackage{setspace}
 ''' + spacing_command + r'''

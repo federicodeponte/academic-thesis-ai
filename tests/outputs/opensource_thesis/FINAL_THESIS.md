@@ -1139,7 +1139,7 @@ Jakubowski, M. (2012). *Global Village Construction Set*. Open Source Ecology. h
 
 Turyahabwe, Tumuhairwe, & Nkurunungi. (2022). *Towards a sustainable electronic waste management in Uganda: A stakeholder perspective*. African Journal of Environmental Science and Technology, 16(6), 238-251. https://doi.org/10.5897/AJEST2022.3098
 
-Veliz, & Antonio. (2015). *Requirements Engineering in Open Innovation and Software Ecosystems Exploring the requirements engineering practices in the industry in the context of Open Innovation and Software Ecosystems*. https://www.semanticscholar.org/paper/c9d8528d3081471a1fa8c4137983c8796f6ba2b2
+Veliz, & Antonio. (2015). *Requirements Engineering in Open Innovation and Software Ecosystems Exploring the requirements engineering practices in the industry in the context of Open Innovation and Software Ecosystems*.
 
 von Neumann, & Morgenstern. (1944). *Theory of Games and Economic Behavior*. .
 

@@ -1137,7 +1137,7 @@ Sutor. (2011). *Software Standards, Openness, and Interoperability*. Open Standa
 
 Jakubowski, M. (2012). *Global Village Construction Set*. Open Source Ecology. https://www.opensourceecology.org/gvcs/
 
-Turyahabwe, Tumuhairwe, & Nkurunungi. (2022). *Towards a sustainable electronic waste management in Uganda: A stakeholder perspective*. African Journal of Environmental Science and Technology, 16(6), 238-251. https://doi.org/10.5897/AJEST2022.3098
+Turyahabwe, Tumuhairwe, & Nkurunungi. (2022). *Towards a sustainable electronic waste management in Uganda: A stakeholder perspective*. African Journal of Environmental Science and Technology, 16(6), 238-251.
 
 Veliz, & Antonio. (2015). *Requirements Engineering in Open Innovation and Software Ecosystems Exploring the requirements engineering practices in the industry in the context of Open Innovation and Software Ecosystems*.
 

@@ -2,7 +2,7 @@
 
 **Format Applied:** IMRaD (adapted for theoretical paper with case studies)
 **Target Journal:** Technology/Social Impact Journal
-**Word Limit:** 8,000-10,000 words (Targeting ~9,000 words for detailed breakdown)
+**Word Limit:** 8,000-10,000 words
 **Citation Style:** APA 7th Edition
 
 ---
@@ -10,20 +10,20 @@
 ## Formatting Requirements
 
 ### Manuscript Specifications
-- **Font:** Times New Roman 12pt (Standard for APA)
+- **Font:** Times New Roman 12pt
 - **Line Spacing:** Double
 - **Margins:** 1 inch all sides
-- **Page Numbers:** Top right corner (APA standard)
-- **Headings:** Numbered (as per IMRaD/IEEE structure, adapted for clarity)
+- **Page Numbers:** Top right header
+- **Headings:** Numbered (as per template, though APA often uses unnumbered for some levels, confirm journal preference)
 
 ### Section Heading Levels
 - **Level 1:** Bold, Centered, Title Case (e.g., **1. Introduction**)
 - **Level 2:** Bold, Left-Aligned, Title Case (e.g., **1.1 Background and Motivation**)
-- **Level 3:** Bold, Indented, Sentence case (e.g., **1.1.1 Current landscape.**)
+- **Level 3:** Bold, Indented, Sentence case (e.g., **1.1.1 Specific Context.**)
 
 ### Citation Format
 - **In-text:** (Author, Year) or (Author & Co-Author, Year) or (Author et al., Year)
-- **Bibliography:** Full APA 7th Edition format specification (see below)
+- **Bibliography:** Follow APA 7th edition guidelines precisely.
 
 ### ⚠️ CITATION REQUIREMENTS - CRITICAL
 
@@ -69,335 +69,327 @@
 ## Formatted Structure
 
 ### Title
-**Format:** Bold, Centered, 14pt (APA standard for title)
-**Max Length:** 100 characters (including spaces)
-**Suggested:** **Beyond Code: Multi-Stakeholder Sustainability for Non-Software Open Initiatives**
-*(This title better reflects the research question and thesis statement, focusing on "non-software open initiatives" and "multi-stakeholder sustainability".)*
+**Format:** Bold, Centered, 14pt
+**Max Length:** 100 characters
+**Suggested:** Adaptive Governance in Open Source Software: Navigating External Factors for Project Sustainability and Global Impact
 
 ### Author Information
-**Format:** (APA 7th standard)
-- Name(s): Full Name (First Name, Middle Initial, Last Name)
-- Affiliation(s): Department, University/Organization, City, State/Country
-- Email(s): [Email Address]
-- ORCID: [ORCID ID] (Optional, but recommended)
+**Format:**
+- Name(s): [Full Name, no titles]
+- Affiliation(s): [Department, University/Organization, City, State/Country]
+- Email(s): [Professional email address]
+- ORCID: [Optional, recommended]
 
 ### Abstract
-**Heading:** Abstract (Bold, Centered, on its own page after title page)
-**Length:** 150-250 words
+**Heading:** Abstract (Bold, Centered)
+**Length:** 250-300 words
 **Structure:**
-- Background (1-2 sentences): Briefly introduce the context of open initiatives and global challenges.
-- Objective (1 sentence): State the paper's aim to propose a framework for non-software open initiatives.
-- Methods (2-3 sentences): Briefly describe the theoretical framework and its application to case studies.
-- Results (2-3 sentences): Summarize key insights from the framework's application and case studies.
-- Conclusions (1-2 sentences): Highlight the implications for sustainability, resilience, and equitable value distribution.
+- Background (1-2 sentences): Establish the importance of OSS and its challenges.
+- Objective (1 sentence): State the paper's aim to explore external factors and adaptive governance.
+- Methods (2-3 sentences): Briefly describe the theoretical framework and case study approach.
+- Results (2-3 sentences): Summarize key insights from framework application/case studies.
+- Conclusions (1-2 sentences): Emphasize the implications for sustainability and conflict resolution.
 
-**Keywords:** 3-6 keywords (e.g., Open Hardware, Open Data, Open Science, Sustainability, Multi-stakeholder, Resilience, Equitable Value Distribution, Open Innovation)
+**Keywords:** [3-6 keywords, e.g., Open Source Software, Governance, Community Dynamics, Sustainability, AI, Corporate Sponsorship, Conflict Resolution]
 
 ---
 
 ## 1. Introduction
 **Section Number:** 1
-**Heading:** **1. Introduction** (Bold, Centered, Title Case)
-**Length:** 800-1200 words (Target: 1000 words)
-**Subsections:**
+**Length:** 800-1000 words
+**Content Goal:** Establish the transformative potential of OSS, its current challenges, and the need for adaptive governance.
 
 ### 1.1 Background and Motivation
-**Heading:** **1.1 Background and Motivation** (Bold, Left-Aligned, Title Case)
-[Format specifications: Narrative paragraphs. Establish the context of global challenges and the role of open source principles. Introduce the "saving the world" potential of open source and the need to extend it beyond software.]
+[Format specifications: narrative paragraph(s). Introduce the significance of OSS and its enduring global impact, while acknowledging the inherent complexities and evolving landscape.]
 
 ### 1.2 Problem Statement
-**Heading:** **1.2 Problem Statement** (Bold, Left-Aligned, Title Case)
-[Format specifications: Clear, concise paragraph(s). Articulate the gap: existing models are software-centric, failing to address multi-stakeholder sustainability, resilience, and equitable value distribution for non-software open initiatives.]
+[Format specifications: narrative paragraph(s). Articulate the critical gap: existing research often overlooks or insufficiently addresses the profound influence of contemporary external factors (e.g., corporate sponsorship, AI tools, new collaboration platforms) on aging OSS projects. This leads to challenges in sustainability and conflict resolution.]
 
-### 1.3 Research Question and Objectives
-**Heading:** **1.3 Research Question and Objectives** (Bold, Left-Aligned, Title Case)
-**Research Question:** How can emerging non-software open initiatives (e.g., open hardware, open data, open science) develop multi-stakeholder sustainability models that foster resilience against geopolitical shifts and ensure equitable value distribution, thereby maximizing their potential for global impact?
-**List format for objectives:**
-1.  To review current sustainability models in open initiatives and identify gaps for non-software contexts.
-2.  To propose a novel theoretical framework integrating multi-stakeholder governance, resource commons, and socio-technical resilience.
-3.  To apply this framework through illustrative case studies of non-software open initiatives.
-4.  To derive insights for achieving sustainable and equitable global impact for these initiatives.
+### 1.3 Research Question
+**Explicitly state the research question:** How do external factors (e.g., corporate sponsorship, AI tools, new collaboration platforms) influence community dynamics and governance structures in aging Open Source Software (OSS) projects, and what are the implications for project sustainability and conflict resolution?
 
 ### 1.4 Contributions
-**Heading:** **1.4 Contributions** (Bold, Left-Aligned, Title Case)
 **Bullet format:**
--   A novel theoretical framework for multi-stakeholder sustainability in non-software open initiatives.
--   Empirical insights from case studies demonstrating the framework's application.
--   Advancement of theory on open innovation beyond traditional software.
--   Practical guidance for practitioners and policymakers in fostering resilient and equitable open initiatives.
+- Proposes a novel theoretical framework for understanding the co-evolution of governance and community dynamics in OSS.
+- Identifies and categorizes key external factors impacting aging OSS projects.
+- Provides empirical insights through illustrative case studies demonstrating adaptive strategies.
+- Offers practical implications for OSS project maintainers, sponsors, and policy-makers.
 
 ### 1.5 Paper Organization
-**Heading:** **1.5 Paper Organization** (Bold, Left-Aligned, Title Case)
-[Standard paragraph describing the structure of the paper, guiding the reader through the sections.]
+[Standard paragraph outlining the structure of the paper, guiding the reader through the subsequent sections.]
 
 ---
 
-## 2. Literature Review and Gap Analysis
+## 2. Related Work / Literature Review
 **Section Number:** 2
-**Heading:** **2. Literature Review and Gap Analysis** (Bold, Centered, Title Case)
-**Length:** 1500-2500 words (Target: 2000 words)
-**Organization:** Thematic subsections, critically evaluating existing research. This section will elaborate on the second point of the core argument flow.
+**Length:** 1600-2000 words
+**Organization:** Thematic subsections, critically reviewing existing literature and highlighting gaps.
 
-### 2.1 Understanding Open Initiatives: From Software to Hardware and Data
-**Heading:** **2.1 Understanding Open Initiatives: From Software to Hardware and Data** (Bold, Left-Aligned, Title Case)
-[Format: Narrative, defining different types of open initiatives (OSS, OSH, OGD, OScience). Discussing their evolution and core principles. This sets the stage for the specific focus on non-software initiatives.]
+### 2.1 Foundational Theories of Open Source Software Governance
+[Format: narrative. Discuss classic models (e.g., Cathedral and Bazaar, Bounded Rationality in OSS) and early studies on community structures and decision-making processes.]
 
-### 2.2 Existing Sustainability Models in Open Source Software
-**Heading:** **2.2 Existing Sustainability Models in Open Source Software** (Bold, Left-Aligned, Title Case)
-[Format: Critical review of prominent sustainability models (e.g., commercialization, foundations, community funding) in OSS. Highlight their strengths and limitations, particularly their software-centric nature.]
+### 2.2 Community Dynamics and Conflict Resolution in OSS
+[Format: narrative. Review literature on community health, contributor motivation, onboarding, and mechanisms for dispute resolution within OSS projects.]
 
-### 2.3 Theories of Multi-Stakeholder Governance and Commons
-**Heading:** **2.3 Theories of Multi-Stakeholder Governance and Commons** (Bold, Left-Aligned, Title Case)
-[Format: Review relevant theories from political science, economics, and management (e.g., Ostrom's principles for commons, stakeholder theory, network governance). Discuss their applicability to open initiatives.]
+### 2.3 Emerging External Factors and Their Impact on OSS
+[Format: narrative. Focus on recent literature addressing the influence of corporate sponsorship, the integration of AI tools (e.g., GitHub Copilot, automated testing), and the rise of new collaboration platforms on OSS projects. Emphasize the *aging* aspect of projects.]
 
-### 2.4 Socio-Technical Resilience and Geopolitical Context
-**Heading:** **2.4 Socio-Technical Resilience and Geopolitical Context** (Bold, Left-Aligned, Title Case)
-[Format: Explore concepts of resilience in socio-technical systems. Discuss the impact of geopolitical shifts on collaborative initiatives and the need for robust resilience mechanisms.]
-
-### 2.5 Gap Analysis: Beyond Software-Centric Models
-**Heading:** **2.5 Gap Analysis: Beyond Software-Centric Models** (Bold, Left-Aligned, Title Case)
-[Format: Synthesis paragraph(s). Clearly articulate the identified research gap: the lack of comprehensive, multi-stakeholder sustainability models tailored for non-software open initiatives that account for resilience and equitable value distribution in diverse geopolitical contexts. This transitions to the proposed framework.]
+### 2.4 Synthesis and Gap Analysis
+[Format: synthesis paragraph(s). Summarize the key findings from the literature and clearly articulate the gap: current research often treats internal dynamics and external factors separately, or doesn't adequately explore their complex interplay within aging projects, particularly concerning adaptive governance and long-term sustainability. This section directly leads to the need for the proposed theoretical framework.]
 
 ---
 
-## 3. Theoretical Framework: Multi-Stakeholder Sustainability for Open Initiatives
+## 3. Theoretical Framework: Co-evolution of Governance and Community Dynamics
 **Section Number:** 3
-**Heading:** **3. Theoretical Framework: Multi-Stakeholder Sustainability for Open Initiatives** (Bold, Centered, Title Case)
-**Length:** 1000-1500 words (Target: 1500 words)
-This section develops the third point of the core argument flow.
+**Length:** 1200-1500 words
+**Content Goal:** Propose a novel theoretical framework to model the co-evolution of governance and community dynamics under specific external influences.
 
-### 3.1 Core Components of the Framework
-**Heading:** **3.1 Core Components of the Framework** (Bold, Left-Aligned, Title Case)
-[Format: Narrative explanation of each component. Introduce and define the key elements of the proposed framework, drawing from the literature review (e.g., multi-stakeholder governance mechanisms, resource commons principles, socio-technical resilience dimensions).]
+### 3.1 Core Concepts and Definitions
+[Format: narrative with definitions. Define key terms: adaptive governance, community dynamics, external factors (categorization), project sustainability, conflict resolution.]
 
-**Figure 1:** Conceptual Framework for Multi-Stakeholder Sustainability in Non-Software Open Initiatives
-[Placeholder for a conceptual diagram illustrating the interconnections between the framework's components (e.g., inputs, processes, outcomes, feedback loops). Caption format: Figure number. Title in sentence case, italicized. Source (if adapted).]
+### 3.2 Model of Co-evolution: Governance and Community Dynamics
+[Format: narrative + diagram. Present the theoretical model illustrating how governance structures and community dynamics interact and evolve over time in OSS projects.]
 
-### 3.2 Framework Dimensions and Indicators
-**Heading:** **3.2 Framework Dimensions and Indicators** (Bold, Left-Aligned, Title Case)
-[Format: Narrative + specification table. Detail the specific dimensions of the framework (e.g., governance structures, resource management, community engagement, value distribution mechanisms, adaptive capacity). For each dimension, suggest potential indicators for analysis.]
+**Figure 1:** Conceptual Model of Co-evolution in Aging OSS Projects
+[Placeholder for a conceptual diagram illustrating the interplay between governance, community dynamics, and external factors over time. Caption format: **Figure 1.** Conceptual Model of Co-evolution in Aging OSS Projects. *This diagram illustrates the dynamic relationships between internal governance mechanisms, community behaviors, and external influences affecting project sustainability.*]
 
-**Table 1:** Key Dimensions and Indicators of the Multi-Stakeholder Sustainability Framework
-| Dimension | Description | Illustrative Indicators |
-|-----------|-------------|-------------------------|
-| Governance | How decisions are made... | Stakeholder representation, conflict resolution mechanisms |
-| Resources   | Management of shared assets... | Funding diversity, resource pooling, intellectual property policies |
-| Resilience  | Capacity to adapt to shocks... | Diversification of production, modularity, supply chain robustness |
-| Value Dist. | How benefits are shared... | Access to knowledge, economic benefits, social impact metrics |
-| ...         | ...         | ...                     |
-Caption format: Table number. Title in sentence case, italicized. Note (if applicable).
-
-### 3.3 Application Protocol
-**Heading:** **3.3 Application Protocol** (Bold, Left-Aligned, Title Case)
-[Format: Numbered steps. Explain how the framework will be used to analyze existing non-software open initiatives, particularly for the case studies. This details the "methodology" for a theoretical paper.]
-1.  **Selection Criteria for Case Studies:** [Description of how initiatives will be chosen.]
-2.  **Data Collection for Case Studies:** [Description of sources, e.g., white papers, interviews, public documents.]
-3.  **Framework Mapping and Analysis:** [Description of how framework dimensions will be applied to case study data.]
+### 3.3 Integrating External Factors into the Framework
+[Format: narrative. Detail how specific external factors (e.g., corporate sponsorship, AI tools, new collaboration platforms) are incorporated into the co-evolutionary model, explaining their hypothesized mechanisms of influence on governance and community dynamics.]
 
 ---
 
-## 4. Case Studies and Framework Application
+## 4. Case Study Methodology
 **Section Number:** 4
-**Heading:** **4. Case Studies and Framework Application** (Bold, Centered, Title Case)
-**Length:** 1500-2000 words (Target: 2000 words)
-This section addresses the fourth point of the core argument flow.
+**Length:** 800-1000 words
+**Content Goal:** Outline the approach for selecting and analyzing case studies to illustrate the theoretical framework.
 
-### 4.1 Case Study Selection and Overview
-**Heading:** **4.1 Case Study Selection and Overview** (Bold, Left-Aligned, Title Case)
-[Format: Narrative + table. Introduce the selected non-software open initiatives (e.g., an open hardware project, an open data platform, an open science initiative). Briefly describe each, justifying their selection based on the criteria outlined in Section 3.3.]
+### 4.1 Case Selection Criteria
+[Format: narrative + bullet points. Describe the rationale for selecting specific aging OSS projects as case studies, emphasizing criteria such as project age, exposure to diverse external factors, observable governance changes, and documented community dynamics.]
 
-**Table 2:** Overview of Selected Non-Software Open Initiatives
-| Initiative | Type | Focus | Key Features |
-|------------|------|-------|--------------|
-| Project X  | OSH  | Medical devices | Distributed manufacturing, community-driven design |
-| Platform Y | OGD  | Environmental data | Multi-sector data sharing, policy impact |
-| ...        | ...  | ...   | ...          |
-Caption format: Table number. Title in sentence case, italicized.
+### 4.2 Data Collection
+[Format: narrative. Detail the methods used to collect data for the case studies (e.g., archival research, mailing list analysis, GitHub history, developer interviews, forum discussions). Specify data sources and their relevance.]
 
-### 4.2 Application of the Framework to [Case Study 1 Name]
-**Heading:** **4.2 Application of the Framework to [Case Study 1 Name]** (Bold, Left-Aligned, Title Case)
-[Format: Subsection per case study. Apply the framework's dimensions to analyze the sustainability, resilience, and value distribution mechanisms of the first case study. Use narrative, supported by specific examples and evidence from the case.]
-
-### 4.3 Application of the Framework to [Case Study 2 Name]
-**Heading:** **4.3 Application of the Framework to [Case Study 2 Name]** (Bold, Left-Aligned, Title Case)
-[Continue with the second case study, following the same analytical approach.]
-
-### 4.4 Comparative Analysis of Case Studies
-**Heading:** **4.4 Comparative Analysis of Case Studies** (Bold, Left-Aligned, Title Case)
-[Format: Narrative + comparative table/figure. Synthesize the findings across the case studies. Highlight common patterns, unique challenges, and varying approaches to sustainability, resilience, and equitable value distribution as revealed by the framework.]
-
-**Figure 2:** Comparative Strengths and Weaknesses Across Case Studies
-[Placeholder for a visualization (e.g., radar chart, bar chart) comparing case studies against key framework dimensions. Caption format: Figure number. Title in sentence case, italicized. Source (if adapted).]
+### 4.3 Data Analysis
+[Format: narrative + numbered steps. Explain how the collected data will be analyzed through the lens of the proposed theoretical framework. This might involve qualitative content analysis, thematic analysis, or process tracing to identify patterns of co-evolution and adaptation.]
+1. Step 1: Initial coding of raw data (e.g., identifying instances of governance changes, community conflicts, external interventions).
+2. Step 2: Thematic analysis to categorize external factors and their immediate impacts.
+3. Step 3: Mapping observed phenomena onto the co-evolutionary framework to identify adaptive strategies and their outcomes.
 
 ---
 
-## 5. Discussion
+## 5. Case Study Findings: Applying the Framework
 **Section Number:** 5
-**Heading:** **5. Discussion** (Bold, Centered, Title Case)
-**Length:** 1000-1500 words (Target: 1500 words)
-This section addresses the fifth point of the core argument flow.
+**Length:** 1600-2000 words
+**Content Goal:** Present the findings from the case studies, demonstrating how the theoretical framework illuminates challenges and adaptive strategies.
 
-### 5.1 Interpretation of Findings
-**Heading:** **5.1 Interpretation of Findings** (Bold, Left-Aligned, Title Case)
-[Format: Narrative with citations. Interpret the insights gained from applying the framework to the case studies. Discuss how these findings answer the research question.]
+### 5.1 Case Study 1: [Aging OSS Project Name A]
+[Format: narrative + specific examples. Describe the project, its history, the external factors it encountered, how its governance adapted, and the impact on community dynamics and sustainability. Use concrete examples and evidence from data.]
 
-### 5.2 Theoretical Implications
-**Heading:** **5.2 Theoretical Implications** (Bold, Left-Aligned, Title Case)
-[Format: Paragraph(s). Discuss how the proposed framework and its application contribute to existing theories of open innovation, multi-stakeholder governance, and socio-technical resilience. How does it advance the understanding of open source beyond software?]
+**Table 1:** Key External Factors and Governance Adaptations in Project A
+| External Factor | Impact on Governance | Community Response | Sustainability Outcome |
+|-----------------|----------------------|--------------------|------------------------|
+| [Corporate Sponsor] | [Shift in decision-making] | [Increased contributor churn] | [Mixed, but sustained] |
+| [AI Tool Integration] | [New review processes] | [Efficiency gains, some resistance] | [Positive] |
 
-### 5.3 Practical Implications
-**Heading:** **5.3 Practical Implications** (Bold, Left-Aligned, Title Case)
-[Format: Bullet points or paragraphs. Offer actionable insights for practitioners (e.g., developers, community managers) and policymakers (e.g., funding bodies, regulatory agencies) involved in non-software open initiatives.]
+### 5.2 Case Study 2: [Aging OSS Project Name B]
+[Format: narrative + specific examples. Follow the same structure as Case Study 1, providing a contrasting or complementary example.]
 
-### 5.4 Limitations and Future Work
-**Heading:** **5.4 Limitations and Future Work** (Bold, Left-Aligned, Title Case)
-[Format: Honest assessment. Acknowledge the limitations of the current study (e.g., number/type of case studies, scope of framework). Suggest avenues for future research (e.g., empirical validation, extension to other contexts, quantitative analysis).]
+**Figure 2:** Evolution of Community Participation in Project B (Post-External Factor X)
+[Placeholder for a graph or timeline illustrating changes in community metrics (e.g., active contributors, commit frequency) in response to a specific external factor. Caption format: **Figure 2.** Evolution of Community Participation in Project B (Post-External Factor X). *This graph demonstrates the shift in contributor activity following the introduction of [External Factor X].*]
+
+### 5.3 Cross-Case Analysis
+[Format: narrative. Compare and contrast the findings across the case studies. Identify common themes, divergent paths, and generalizable patterns related to adaptive governance and the influence of external factors.]
 
 ---
 
-## 6. Conclusion
+## 6. Discussion
 **Section Number:** 6
-**Heading:** **6. Conclusion** (Bold, Centered, Title Case)
-**Length:** 500-700 words (Target: 800 words)
+**Length:** 1200-1500 words
+**Content Goal:** Interpret the findings, compare them with prior work, and discuss theoretical and practical implications.
+
+### 6.1 Interpretation of Findings
+[Format: narrative with citations. Discuss what the case studies reveal about the co-evolution of governance and community dynamics, and the role of external factors. Relate findings directly back to the proposed theoretical framework.]
+
+### 6.2 Comparison with Prior Work
+[Format: comparative discussion. Compare the paper's findings with existing literature, highlighting where the results confirm, challenge, or extend previous research on OSS governance, community dynamics, and sustainability.]
+
+### 6.3 Theoretical Implications
+[Format: paragraph(s). Discuss how the theoretical framework contributes to the broader understanding of organizational adaptation, socio-technical systems, and open collaboration in the digital age.]
+
+### 6.4 Practical Implications
+[Format: bullet points or paragraphs. Offer actionable insights for OSS project maintainers, community managers, corporate sponsors, and platform developers on how to foster adaptive governance, mitigate negative impacts of external factors, and ensure project sustainability.]
+
+### 6.5 Limitations and Future Work
+[Format: honest assessment. Acknowledge the limitations of the current study (e.g., number of case studies, specific external factors examined) and suggest avenues for future research (e.g., quantitative studies, longitudinal analysis, different types of OSS projects).]
+
+---
+
+## 7. Conclusion
+**Section Number:** 7
+**Length:** 400-500 words
+**Content Goal:** Restate the core argument, summarize key findings, and emphasize contributions.
 
 [No subsections - continuous narrative]
 
 **Required elements:**
--   Restate problem and approach: Briefly reiterate the challenge for non-software open initiatives and the paper's aim.
--   Summarize key findings: Recap the main insights from the framework application and case studies.
--   Emphasize contributions: Reiterate the theoretical and practical contributions.
--   Suggest future directions: Briefly touch upon the most promising areas for future research, reinforcing the paper's impact.
+- Restate the research problem and the paper's approach.
+- Summarize the key findings regarding the interplay of external factors, adaptive governance, and OSS sustainability.
+- Emphasize the paper's theoretical and practical contributions.
+- Suggest future directions for research, reinforcing the continued relevance of the topic.
 
 ---
 
 ## Acknowledgments
-[If applicable - funding bodies, contributing individuals, or institutions.]
+[If applicable - funding bodies, institutional support, specific individuals who contributed but are not authors.]
 
 ---
 
 ## References
 **Format:** APA 7th Edition
-**Minimum:** 30-50 references (for a theoretical paper with case studies, this can be higher than empirical)
+**Minimum:** 30-40 references for a theoretical paper with case studies.
 
 **Categories:**
--   Foundational works (pre-2019): [~20-30%]
--   Recent works (2020-2024): [~70-80%]
--   Including own prior work: [Optional, max 10%]
+- Foundational works (pre-2019): [~20-30%]
+- Recent works (2020-2024): [~70-80%]
+- Including own prior work: [Optional, max 10%]
 
 ---
 
 ## Appendices
-[If applicable, e.g., detailed case study data, interview protocols, supplementary figures/tables.]
--   Appendix A: [Supplementary materials for Case Study 1]
--   Appendix B: [Detailed Framework Indicators]
+[If applicable]
+- Appendix A: [Detailed Case Study Protocol / Interview Questions]
+- Appendix B: [Supplementary Data / Additional Figures]
 
 ---
 
 ## Journal-Specific Requirements
 
-### [Target Journal Name - e.g., *Journal of Open Innovation: Technology, Market, and Complexity*]
+### Technology/Social Impact Journal
 
 **Mandatory sections:**
--   [ ] Data Availability Statement (e.g., "Data supporting this study will be made available upon reasonable request.")
--   [ ] Conflict of Interest Statement
--   [ ] Author Contributions (if multiple authors)
--   [ ] Funding Statement (if applicable)
+- [ ] Data Availability Statement (e.g., "Data supporting this study are available upon reasonable request from the corresponding author.")
+- [ ] Conflict of Interest Statement
+- [ ] Author Contributions (if multiple authors, specify roles using CRediT taxonomy)
+- [ ] Funding Statement (if external funding was received)
 
 **Formatting specifics:**
--   Figures: [PNG/TIFF, min 300dpi, grayscale or color suitable for print]
--   Tables: [Editable format, not images, consistent styling]
--   Equations: [Numbered sequentially, right-aligned]
+- Figures: [PNG/TIFF, min 300dpi, grayscale for print, color for online]
+- Tables: [Editable format (e.g., .docx table), not images]
+- Equations: [Numbered, right-aligned, if applicable]
 
 **Submission checklist:**
--   [ ] Cover letter
--   [ ] Highlights (3-5 bullet points summarizing key findings/contributions)
--   [ ] Graphical abstract (if required)
--   [ ] Supplementary materials (if applicable, uploaded separately)
+- [ ] Cover letter (addressing editor, highlighting fit with journal scope)
+- [ ] Highlights (3-5 concise bullet points summarizing key findings)
+- [ ] Graphical abstract (if required, a single image visually summarizing the paper)
+- [ ] Supplementary materials (if necessary, clearly organized)
 
 ---
 
-## Length Targets by Section
+## Length Targets by Section (for 8,000-10,000 words, aiming for ~9,000)
 
-| Section | Words (Target) | % of Total (~9000 words) |
-|-------------------------------------------------------|----------------|--------------------------|
-| Abstract                                              | 200            | 2.2%                     |
-| 1. Introduction                                       | 1000           | 11.1%                    |
-| 2. Literature Review and Gap Analysis                 | 2000           | 22.2%                    |
-| 3. Theoretical Framework                              | 1500           | 16.7%                    |
-| 4. Case Studies and Framework Application             | 2000           | 22.2%                    |
-| 5. Discussion                                         | 1500           | 16.7%                    |
-| 6. Conclusion                                         | 800            | 8.9%                     |
-| **Total (Main Body)**                                 | **9000**       | **100%**                 |
-*(References, Appendices, Title Page, Abstract are additional)*
+| Section | Words (approx.) | % of Total (approx.) |
+|-----------------------------|-----------------|----------------------|
+| Abstract | 275 | 3% |
+| 1. Introduction | 900 | 10% |
+| 2. Related Work / Lit Review | 1800 | 20% |
+| 3. Theoretical Framework | 1350 | 15% |
+| 4. Case Study Methodology | 900 | 10% |
+| 5. Case Study Findings | 1800 | 20% |
+| 6. Discussion | 1350 | 15% |
+| 7. Conclusion | 450 | 5% |
+| **Total (Main Body)** | **8825** | **98%** |
+| Acknowledgments / References / Appendices | (Variable) | 2% |
+| **Grand Total** | **~9,000** | **100%** |
 
 ---
 
 ## Quality Checklist
 
 ### Structure
--   [x] All required sections present
--   [x] Logical flow between sections (following the core argument progression)
--   [x] Appropriate section lengths (within target ranges)
+- [X] All required sections present
+- [X] Logical flow between sections (Introduction -> Literature Review -> Theoretical Framework -> Methodology -> Findings -> Discussion -> Conclusion)
+- [X] Appropriate section lengths (within targets)
 
 ### Formatting
--   [x] Consistent heading styles (APA 7th, numbered)
--   [x] Proper citation format (APA 7th, in-text and reference list)
--   [x] Figures/tables numbered correctly
--   [x] Captions complete and descriptive
+- [X] Consistent heading styles (Level 1, 2, 3 as specified)
+- [X] Proper citation format (APA 7th, (Author, Year) in-text)
+- [X] Figures/tables numbered correctly (sequential within type)
+- [X] Captions complete and descriptive (including source if adapted)
 
 ### Content
--   [x] Abstract summarizes whole paper (background, objective, methods, results, conclusions)
--   [x] Introduction states clear RQ and motivation
--   [x] Literature Review identifies critical gaps relevant to RQ
--   [x] Theoretical Framework clearly defined and applicable
--   [x] Case Studies demonstrate framework application objectively
--   [x] Discussion interprets findings, links to theory and practice
--   [x] Conclusion emphasizes contribution and future directions
+- [X] Abstract summarizes whole paper (background, objective, methods, results, conclusions)
+- [X] Introduction states clear Research Question and thesis
+- [X] Theoretical Framework clearly defined and illustrated
+- [X] Case Study Methodology enables understanding of research process
+- [X] Case Study Findings presented objectively, linked to framework
+- [X] Discussion interprets findings, compares to literature, and outlines implications
+- [X] Conclusion emphasizes contribution and future directions
 
 ---
 
 ## Style Guide
 
 ### Academic Tone
--   ✅ **Use:** "The results indicate...", "We observed...", "This suggests..."
--   ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
+- ✅ **Use:** "The results indicate...", "We observed...", "This suggests...", "The framework posits..."
+- ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
 
 ### Tense Usage
--   **Introduction:** Present tense (current state, problem)
--   **Literature Review:** Past tense (what others found), Present tense (current understanding/theories)
--   **Theoretical Framework:** Present tense (describing the proposed framework)
--   **Case Studies:** Past tense (what was found/observed in the cases)
--   **Discussion:** Present tense (what the findings mean, implications)
--   **Conclusion:** Present tense (summary of findings, contributions)
+- **Introduction:** Present tense (current state of knowledge, significance)
+- **Literature Review:** Past tense (what others found), Present tense (what the literature *shows* or *lacks*)
+- **Theoretical Framework:** Present tense (the framework *proposes*, *defines*)
+- **Case Study Methodology:** Past tense (what you *did* to collect/analyze data)
+- **Case Study Findings:** Past tense (what you *found* in the case studies)
+- **Discussion:** Present tense (what the findings *mean*, *imply*, *suggest*)
+- **Conclusion:** Present tense (what the paper *achieves*, *contributes*)
 
 ### Voice
--   **Active vs Passive:** Prefer active for clarity, passive for objectivity
--   ✅ "We analyzed the data" (active, clear)
--   ✅ "The data were analyzed" (passive, objective)
+- **Active vs Passive:** Prefer active for clarity, passive for objectivity. Aim for a balance.
+- ✅ "We analyzed the data" (active, clear)
+- ✅ "The data were analyzed" (passive, objective)
+- For theoretical papers, "This framework posits..." or "The model suggests..." is often appropriate.
 
 ---
 
 ## Next Steps
 
 After formatting:
-1.  Review against specific journal guidelines (once a specific journal is chosen).
-2.  Ensure all placeholders (e.g., [VERIFY], [TODO]) are noted for Crafter agents.
-3.  Proceed to Compose phase with clear structure and detailed instructions.
-4.  Save to `outline_formatted.md`
+1. Review against target journal guidelines for any specific deviations from APA 7th or IMRaD adaptation.
+2. Ensure all placeholders (`[Placeholder]`, `[VERIFY]`, `[TODO]`) are noted for subsequent agents.
+3. Proceed to Compose phase with this clear, formatted structure.
+4. Save to `outline_formatted.md`
 
-```
+```markdown
+# Paper Architecture
+
+**Paper Type:** Theoretical Paper (with Case Studies)
+**Research Question:** How do external factors (e.g., corporate sponsorship, AI tools, new collaboration platforms) influence community dynamics and governance structures in aging Open Source Software (OSS) projects, and what are the implications for project sustainability and conflict resolution?
+**Target Venue:** Technology/Social Impact journal
+**Estimated Length:** 8,000-10,000 words
 
 ---
 
-## ⚠️ ACADEMIC INTEGRITY & VERIFICATION
+## Core Argument Flow
 
-**CRITICAL:** When structuring the paper, ensure all claims are traceable to sources.
+**Thesis Statement:** The enduring global impact and sustainability of Open Source Software (OSS) are increasingly contingent upon the development of adaptive governance models capable of proactively addressing the complex interplay between evolving external factors (such as corporate sponsorship and the pervasive integration of AI tools) and the internal dynamics of aging projects, thereby ensuring continued innovation and effective conflict resolution.
 
-**Your responsibilities:**
-1.  **Verify citations exist** before including them in outlines
-2.  **Never suggest fabricated examples** or statistics
-3.  **Mark placeholders** clearly with [VERIFY] or [TODO]
-4.  **Ensure structure supports** verifiable, evidence-based arguments
-5.  **Flag sections** that will need strong citation support
+**Logical Progression:**
+1.  Open Source Software holds immense transformative potential for global challenges, but its long-term impact is not guaranteed (Introduction).
+2.  Existing research on OSS community dynamics and governance often overlooks or insufficiently addresses the profound influence of contemporary external factors (Literature Review).
+3.  This creates a critical gap in understanding how aging OSS projects can maintain sustainability and resolve conflicts amidst these evolving external pressures (Gap).
+4.  We propose a novel theoretical framework to model the co-evolution of governance and community dynamics under specific external influences (Theoretical Framework).
+5.  Illustrative case studies demonstrate how this framework illuminates the challenges and adaptive strategies employed by real-world OSS projects (Case Studies).
+6.  The findings reveal that adaptive governance, informed by a deep understanding of external factors, is crucial for OSS sustainability and its capacity to deliver global impact (Discussion & Implications).
+7.  This paper significantly advances our theoretical understanding and offers practical guidance for the future of OSS (Conclusion).
 
-**A well-structured paper with fabricated content will still fail verification. Build for accuracy.**
+---
+
+## Paper Structure
+
+### 1. Title
+**Suggested title:** "How Open Source Software Can Save the World: From Adaptive Governance to Sustainable Global Impact"
+**Alternative:** "Adaptive Governance in Open Source Software: Navigating External Factors for Project Sustainability and Global Impact"
+
+### 2. Abstract (250-300 words)
+**Structure
+
+```

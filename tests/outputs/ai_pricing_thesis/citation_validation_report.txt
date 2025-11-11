@@ -5,18 +5,15 @@ CITATION VALIDATION REPORT: AI Pricing Thesis
 
 
 
-⚠️  WARNINGS (3):
+⚠️  WARNINGS (2):
 --------------------------------------------------------------------------------
 
-[cite_006] Generic title pattern: 'A Survey'
-  Li, Li et al. (2022) - Pricing Models for Cloud-Based AI Services: A Survey...
+[cite_007] Generic title pattern: 'An Overview'
+  Mirghaderi, Sziron et al. (2023) - Ethics and Transparency Issues in Digital Platforms: An Over...
 
-[cite_009] Generic title pattern: 'A Survey'
-  Li, Li et al. (2021) - Pricing of Cloud-Based Data Analytics Services: A Survey...
-
-[cite_013] Generic title pattern: 'An Overview'
-  J (2019) - Pricing Strategies for Digital Services: An Overview...
+[cite_036] Generic title pattern: 'An Overview'
+  Williamson (2010) - Transaction Cost Economics: An Overview...
 
 ================================================================================
-TOTAL ISSUES: 3 (0 critical, 3 warnings)
+TOTAL ISSUES: 2 (0 critical, 2 warnings)
 ================================================================================

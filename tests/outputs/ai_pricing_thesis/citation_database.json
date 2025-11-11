@@ -3,402 +3,738 @@
     {
       "id": "cite_001",
       "authors": [
-        "Brynjolfsson",
-        "Unger"
+        "Kshirsagar",
+        "More",
+        "Lahoti",
+        "Adgaonkar",
+        "Jain",
+        "Ryan",
+        "Kshirsagar"
       ],
-      "year": 2023,
-      "title": "The Economics of Generative AI: An Introduction",
-      "source_type": "journal",
+      "year": 2021,
+      "title": "GREE-COCO: Green Artificial Intelligence Powered Cost Pricing Models for Congestion Control",
+      "source_type": "conference",
       "language": "english",
-      "journal": "AEA Papers and Proceedings",
-      "doi": "10.1257/pandp.20231057",
-      "url": "https://www.aeaweb.org/articles?id=10.1257/pandp.20231057"
+      "doi": "10.5220/0010261209160923",
+      "url": "https://doi.org/10.5220/0010261209160923"
     },
     {
       "id": "cite_002",
       "authors": [
-        "Gao",
-        "Tang",
-        "Yao",
-        "Sun"
+        "Barbere",
+        "Martin",
+        "Thornton",
+        "Harris",
+        "Thompson"
       ],
       "year": 2024,
-      "title": "Pricing Large Language Models: A Comprehensive Survey",
+      "title": "Dynamic Token Hierarchies: Enhancing Large Language Models with a Multi-Tiered Token Processing Framework",
       "source_type": "report",
       "language": "english",
-      "url": "https://arxiv.org/abs/2402.04940"
+      "doi": "10.36227/techrxiv.172971998.83622138/v1",
+      "url": "https://doi.org/10.36227/techrxiv.172971998.83622138/v1"
     },
     {
       "id": "cite_003",
       "authors": [
-        "Agrawal",
-        "Gans",
-        "Goldfarb"
+        "Kaaniche",
+        "Laurent"
       ],
       "year": 2018,
-      "title": "The Economics of AI: Implications for Businesses and Strategy",
-      "source_type": "report",
+      "title": "BDUA: Blockchain-Based Data Usage Auditing",
+      "source_type": "conference",
       "language": "english",
-      "publisher": "NBER",
-      "doi": "10.3386/w24610",
-      "url": "https://www.nber.org/papers/w24610"
+      "doi": "10.1109/cloud.2018.00087",
+      "url": "https://doi.org/10.1109/cloud.2018.00087"
     },
     {
       "id": "cite_004",
       "authors": [
-        "Thomas"
+        "Maguire"
       ],
-      "year": 2022,
-      "title": "Value-Based Pricing for AI Products and Services",
-      "source_type": "journal",
+      "year": 2021,
+      "title": "Value selling",
+      "source_type": "book",
       "language": "english",
-      "journal": "Journal of Product Innovation Management",
-      "doi": "10.1111/jpim.12608",
-      "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jpim.12608"
+      "doi": "10.4324/9781003177937-20",
+      "url": "https://doi.org/10.4324/9781003177937-20"
     },
     {
       "id": "cite_005",
       "authors": [
-        "Markus"
+        "De"
       ],
-      "year": 2020,
-      "title": "AI as a Service: Business Models and Pricing Strategies",
-      "source_type": "journal",
+      "year": 2017,
+      "title": "API Monetization",
+      "source_type": "book",
       "language": "english",
-      "journal": "Journal of Business Research",
-      "doi": "10.1016/j.jbusres.2020.06.023",
-      "url": "https://www.sciencedirect.com/science/article/pii/S014829632030514X"
+      "doi": "10.1007/978-1-4842-1305-6_8",
+      "url": "https://doi.org/10.1007/978-1-4842-1305-6_8"
     },
     {
       "id": "cite_006",
       "authors": [
-        "Li",
-        "Li",
-        "Zhang"
+        "Korinek"
       ],
-      "year": 2022,
-      "title": "Pricing Models for Cloud-Based AI Services: A Survey",
-      "source_type": "journal",
+      "year": 2025,
+      "title": "AI Agents for Economic Research",
+      "source_type": "report",
       "language": "english",
-      "journal": "Future Generation Computer Systems",
-      "doi": "10.1016/j.future.2022.01.001",
-      "url": "https://www.sciencedirect.com/science/article/pii/S0167739X2200001X"
+      "doi": "10.3386/w34202",
+      "url": "https://doi.org/10.3386/w34202"
     },
     {
       "id": "cite_007",
       "authors": [
-        "Bapna",
-        "Krishnan",
-        "Gupta"
+        "Mirghaderi",
+        "Sziron",
+        "Hildt"
       ],
-      "year": 2013,
-      "title": "API Pricing: Theory and Practice",
+      "year": 2023,
+      "title": "Ethics and Transparency Issues in Digital Platforms: An Overview",
       "source_type": "journal",
       "language": "english",
-      "journal": "Information Systems Research",
-      "doi": "10.1287/isre.2013.0489",
-      "url": "https://pubsonline.informs.org/doi/abs/10.1287/isre.2013.0489"
+      "doi": "10.3390/ai4040042",
+      "url": "https://doi.org/10.3390/ai4040042"
     },
     {
       "id": "cite_008",
       "authors": [
-        "David"
+        "Satapathi"
       ],
-      "year": 2024,
-      "title": "AI Agent Business Models: A Conceptual Framework",
-      "source_type": "report",
+      "year": 2025,
+      "title": "Pricing tiers of Azure AI Language Service",
+      "source_type": "book",
       "language": "english",
-      "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4705322"
+      "doi": "10.1007/979-8-8688-1333-7_4",
+      "url": "https://doi.org/10.1007/979-8-8688-1333-7_4"
     },
     {
       "id": "cite_009",
       "authors": [
-        "Li",
-        "Li",
-        "Bi"
+        "Bhuram"
       ],
-      "year": 2021,
-      "title": "Pricing of Cloud-Based Data Analytics Services: A Survey",
+      "year": 2025,
+      "title": "Edge-Cloud AI for Dynamic Pricing in Automotive Aftermarkets: A Federated Reinforcement Learning Approach for Multi-Tier Ecosystems",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal of Parallel and Distributed Computing",
-      "doi": "10.1016/j.jpdc.2021.01.002",
-      "url": "https://www.sciencedirect.com/science/article/pii/S074373152100003X"
+      "doi": "10.30574/wjaets.2025.15.3.0909",
+      "url": "https://doi.org/10.30574/wjaets.2025.15.3.0909"
     },
     {
       "id": "cite_010",
       "authors": [
-        "Wellman",
-        "Stone"
+        "Niharika",
+        "Hareesh",
+        "Ariwa"
       ],
-      "year": 2004,
-      "title": "Economic Models for Resource Allocation in Multi-Agent Systems",
+      "year": 2024,
+      "title": "Pricing Optimisation Using Predictive Analytics",
       "source_type": "book",
       "language": "english",
-      "publisher": "MIT Press",
-      "url": "https://mitpress.mit.edu/books/multiagent-systems"
+      "doi": "10.1201/9781003472544-8",
+      "url": "https://doi.org/10.1201/9781003472544-8"
     },
     {
       "id": "cite_011",
       "authors": [
-        "S"
+        "Rudnytskyi"
       ],
-      "year": 2023,
-      "title": "Generative AI Business Models: A Strategic Perspective",
-      "source_type": "journal",
+      "year": 2022,
+      "title": "openai: R Wrapper for OpenAI API",
+      "source_type": "report",
       "language": "english",
-      "journal": "California Management Review Insights",
-      "url": "https://cmr.berkeley.edu/2023/11/generative-ai-business-models-a-strategic-perspective/"
+      "doi": "10.32614/cran.package.openai",
+      "url": "https://doi.org/10.32614/cran.package.openai"
     },
     {
       "id": "cite_012",
       "authors": [
-        "EleutherAI"
+        "Trad",
+        "Chehab"
       ],
-      "year": 2022,
-      "title": "Understanding the Costs of Large Language Models",
-      "source_type": "report",
+      "year": 2024,
+      "title": "Large Multimodal Agents for Accurate Phishing Detection with Enhanced Token Optimization and Cost Reduction",
+      "source_type": "conference",
       "language": "english",
-      "publisher": "EleutherAI",
-      "url": "https://www.eleuther.ai/blog/understanding-the-costs-of-large-language-models"
+      "doi": "10.1109/fllm63129.2024.10852444",
+      "url": "https://doi.org/10.1109/fllm63129.2024.10852444"
     },
     {
       "id": "cite_013",
       "authors": [
-        "J"
+        "Seufert"
       ],
-      "year": 2019,
-      "title": "Pricing Strategies for Digital Services: An Overview",
-      "source_type": "journal",
+      "year": 2014,
+      "title": "Analytics and Freemium Products",
+      "source_type": "book",
       "language": "english",
-      "journal": "Journal of Retailing and Consumer Services",
-      "doi": "10.1016/j.jretconser.2019.06.007",
-      "url": "https://www.sciencedirect.com/science/article/pii/S096969891930154X"
+      "doi": "10.1016/b978-0-12-416690-5.00002-6",
+      "url": "https://doi.org/10.1016/b978-0-12-416690-5.00002-6"
     },
     {
       "id": "cite_014",
       "authors": [
-        "K"
+        "Ladas",
+        "Kavadias",
+        "Loch"
       ],
-      "year": 2018,
-      "title": "Agent-Based Models for Pricing in Dynamic Markets",
-      "source_type": "journal",
+      "year": 2019,
+      "title": "Product Selling Versus Pay-Per-Use Services: A Strategic Analysis of Competing Business Models",
+      "source_type": "report",
       "language": "english",
-      "journal": "Journal of Economic Dynamics and Control",
-      "doi": "10.1016/j.jedc.2018.06.002",
-      "url": "https://www.sciencedirect.com/science/article/pii/S016518891830080X"
+      "doi": "10.2139/ssrn.3356458",
+      "url": "https://doi.org/10.2139/ssrn.3356458"
     },
     {
       "id": "cite_015",
       "authors": [
-        "OpenAI"
+        "Ayata"
       ],
-      "year": 2024,
-      "title": "OpenAI Pricing Page (Industry Report/Documentation)",
-      "source_type": "website",
+      "year": 2020,
+      "title": "Old abuses in new markets? Dealing with excessive pricing by a two-sided platform",
+      "source_type": "journal",
       "language": "english",
-      "url": "https://openai.com/pricing"
+      "doi": "10.1093/jaenfo/jnaa008",
+      "url": "https://doi.org/10.1093/jaenfo/jnaa008"
     },
     {
       "id": "cite_016",
       "authors": [
-        "Anthropic"
+        "Lorente"
       ],
-      "year": 2024,
-      "title": "Anthropic Claude Pricing (Industry Report/Documentation)",
-      "source_type": "website",
+      "year": 2025,
+      "title": "Value Creation and Value Capture in AI: A Triple Helix Model",
+      "source_type": "journal",
       "language": "english",
-      "url": "https://www.anthropic.com/api/pricing"
+      "doi": "10.1609/aies.v8i2.36662",
+      "url": "https://doi.org/10.1609/aies.v8i2.36662"
     },
     {
       "id": "cite_017",
       "authors": [
-        "Google Cloud"
+        "Fang",
+        "Zhou"
       ],
-      "year": 2024,
-      "title": "Google Cloud Vertex AI Pricing (Industry Report/Documentation)",
-      "source_type": "website",
+      "year": 2025,
+      "title": "Understanding the Impacts of Human-Like Competencies on Users' Willingness to Pay for Ai Companion Services: A Mixed-Method Approach",
+      "source_type": "report",
       "language": "english",
-      "url": "https://cloud.google.com/vertex-ai/pricing"
+      "doi": "10.2139/ssrn.5333712",
+      "url": "https://doi.org/10.2139/ssrn.5333712"
     },
     {
       "id": "cite_018",
       "authors": [
-        "Deloitte Insights"
+        "Siddannavar",
+        "Khan",
+        "Takalkar"
       ],
-      "year": 2023,
-      "title": "The Total Cost of Ownership of Large Language Models: A Business Perspective",
-      "source_type": "report",
+      "year": 2025,
+      "title": "Analysis of Psychological Factors Affecting Customer Lifetime Value on SaaS Platforms",
+      "source_type": "journal",
       "language": "english",
-      "publisher": "Deloitte",
-      "url": "https://www2.deloitte.com/us/en/insights/focus/gen-ai/total-cost-of-ownership-large-language-models-gen-ai.html"
+      "doi": "10.36948/ijfmr.2025.v07i04.52064",
+      "url": "https://doi.org/10.36948/ijfmr.2025.v07i04.52064"
     },
     {
       "id": "cite_019",
       "authors": [
-        "Agrawal",
-        "Gans",
-        "Goldfarb"
+        "Divakaruni",
+        "Navarro"
       ],
-      "year": 2018,
-      "title": "Prediction Machines: The Simple Economics of Artificial Intelligence",
-      "source_type": "book",
-      "language": "english"
+      "year": 2024,
+      "title": "Technology Adoption and Pricing: Evidence from US Airlines",
+      "source_type": "report",
+      "language": "english",
+      "doi": "10.2139/ssrn.4718902",
+      "url": "https://doi.org/10.2139/ssrn.4718902"
     },
     {
       "id": "cite_020",
       "authors": [
-        "Acemoglu",
-        "Restrepo"
+        "Yin",
+        "Qiu"
       ],
-      "year": 2019,
-      "title": "Automation and New Tasks: How Technology Displaces and Reinstates Labor",
-      "source_type": "journal",
-      "language": "english"
+      "year": 2021,
+      "title": "AI Technology and Online Purchase Intention：Multi-Group Analysis Based On Perceived Value",
+      "source_type": "report",
+      "language": "english",
+      "doi": "10.20944/preprints202103.0465.v1",
+      "url": "https://doi.org/10.20944/preprints202103.0465.v1"
     },
     {
       "id": "cite_021",
       "authors": [
-        "Nagle",
-        "Hogan"
+        "Cody"
       ],
-      "year": 2016,
-      "title": "The Strategy and Tactics of Pricing",
+      "year": 2000,
+      "title": "Competitive Infrastructure: As An Enabler of Market-Based Pricing",
       "source_type": "book",
-      "language": "english"
+      "language": "english",
+      "doi": "10.1007/978-1-4615-4529-3_4",
+      "url": "https://doi.org/10.1007/978-1-4615-4529-3_4"
     },
     {
       "id": "cite_022",
       "authors": [
-        "Lerner",
-        "Tirole"
+        "Livingstone"
       ],
-      "year": 2002,
-      "title": "Some Simple Economics of Open Source",
+      "year": 2013,
+      "title": "Cloud price wars could drive ‘volatility as a service’",
       "source_type": "journal",
-      "language": "english"
+      "language": "english",
+      "doi": "10.64628/aa.fwtdh7kfg",
+      "url": "https://doi.org/10.64628/aa.fwtdh7kfg"
     },
     {
       "id": "cite_023",
       "authors": [
-        "Varian"
+        "Ye",
+        "Zhang"
       ],
-      "year": 1995,
-      "title": "Pricing Information Goods",
-      "source_type": "book",
-      "language": "english"
+      "year": 2017,
+      "title": "Monopolistic nonlinear pricing with consumer entry",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.3982/te1944",
+      "url": "https://doi.org/10.3982/te1944"
     },
     {
       "id": "cite_024",
       "authors": [
-        "Shapiro",
-        "Varian"
+        "Pels",
+        "Verhoef"
       ],
-      "year": 1999,
-      "title": "Information Rules: A Strategic Guide to the Network Economy",
-      "source_type": "book",
-      "language": "english"
+      "year": 2002,
+      "title": "Airport Pricing: Network Congestion Pricing with Market Power and Endogenous Network Structures",
+      "source_type": "report",
+      "language": "english",
+      "doi": "10.2139/ssrn.324840",
+      "url": "https://doi.org/10.2139/ssrn.324840"
     },
     {
       "id": "cite_025",
       "authors": [
-        "Aghion",
-        "Howitt"
+        "Sonderegger"
       ],
-      "year": 1992,
-      "title": "A Model of Growth Through Creative Destruction",
+      "year": 2011,
+      "title": "MARKET SEGMENTATION WITH NONLINEAR PRICING",
       "source_type": "journal",
-      "language": "english"
+      "language": "english",
+      "doi": "10.1111/j.1467-6451.2011.00445.x",
+      "url": "https://doi.org/10.1111/j.1467-6451.2011.00445.x"
     },
     {
       "id": "cite_026",
       "authors": [
-        "Nakamoto"
+        "Li",
+        "Ren"
       ],
-      "year": 2008,
-      "title": "Bitcoin: A Peer-to-Peer Electronic Cash System",
-      "source_type": "report",
-      "language": "english"
+      "year": 2025,
+      "title": "Enhancing Multi-Tenant Database Resource Allocation with Active Learning-Driven Multi-Objective Optimization",
+      "source_type": "conference",
+      "language": "english",
+      "doi": "10.1109/eeiss65394.2025.11085993",
+      "url": "https://doi.org/10.1109/eeiss65394.2025.11085993"
     },
     {
       "id": "cite_027",
       "authors": [
-        "Goldhaber"
+        "Rodeghero",
+        "McMillan",
+        "Shirey"
       ],
-      "year": 1997,
-      "title": "The Attention Economy and the Net",
-      "source_type": "book",
-      "language": "english"
+      "year": 2017,
+      "title": "API Usage in Descriptions of Source Code Functionality",
+      "source_type": "conference",
+      "language": "english",
+      "doi": "10.1109/wapi.2017.3",
+      "url": "https://doi.org/10.1109/wapi.2017.3"
     },
     {
       "id": "cite_028",
       "authors": [
-        "Anderson",
-        "Narus"
+        "Ganguly"
       ],
-      "year": 1998,
-      "title": "Business Marketing: Understand What Customers Value",
-      "source_type": "journal",
-      "language": "english"
+      "year": 2025,
+      "title": "AI Governance and Responsible AI",
+      "source_type": "book",
+      "language": "english",
+      "doi": "10.1007/979-8-8688-1154-8_7",
+      "url": "https://doi.org/10.1007/979-8-8688-1154-8_7"
     },
     {
       "id": "cite_029",
       "authors": [
-        "Armbrust"
+        "Munk"
       ],
-      "year": 2010,
-      "title": "A View of Cloud Computing",
-      "source_type": "report",
-      "language": "english"
+      "year": 2013,
+      "title": "Basic Consumption-Based Asset Pricing",
+      "source_type": "book",
+      "language": "english",
+      "doi": "10.1093/acprof:oso/9780199585496.003.0008",
+      "url": "https://doi.org/10.1093/acprof:oso/9780199585496.003.0008"
     },
     {
       "id": "cite_030",
       "authors": [
-        "Rochet",
-        "Tirole"
+        "Unknown"
       ],
-      "year": 2006,
-      "title": "Two-Sided Markets: A Progress Report",
+      "year": 2025,
+      "title": "AI-Driven Strategies for Cloud Cost Optimization",
       "source_type": "journal",
-      "language": "english"
+      "language": "english",
+      "doi": "10.71097/ijsat.v16.i2.4714",
+      "url": "https://doi.org/10.71097/ijsat.v16.i2.4714"
     },
     {
       "id": "cite_031",
       "authors": [
-        "Eisenmann",
-        "Parker",
-        "Van Alstyne"
+        "Kohler",
+        "Krzyżak",
+        "Todorovic"
       ],
-      "year": 2006,
-      "title": "Strategies for Two-Sided Markets",
+      "year": 2010,
+      "title": "PRICING OF HIGH-DIMENSIONAL AMERICAN OPTIONS BY NEURAL NETWORKS",
       "source_type": "journal",
-      "language": "english"
+      "language": "english",
+      "doi": "10.1111/j.1467-9965.2010.00404.x",
+      "url": "https://doi.org/10.1111/j.1467-9965.2010.00404.x"
     },
     {
       "id": "cite_032",
       "authors": [
-        "Milgrom"
+        "Leechewyuwasorn",
+        "Wangpratham"
       ],
-      "year": 2004,
-      "title": "Putting Auction Theory to Work",
-      "source_type": "book",
-      "language": "english"
+      "year": 2024,
+      "title": "Comparative Analysis of Financial Sentiment Analysis Models for the Thai Stock Market: Traditional NLP vs. GPT vs. Gemini",
+      "source_type": "report",
+      "language": "english",
+      "doi": "10.2139/ssrn.4921837",
+      "url": "https://doi.org/10.2139/ssrn.4921837"
     },
     {
       "id": "cite_033",
       "authors": [
-        "Varian"
+        "Krokhicheva",
+        "Revina",
+        "Lantratova"
+      ],
+      "year": 2021,
+      "title": "BUDGETING AND PRICING AT THE ENTERPRISE",
+      "source_type": "conference",
+      "language": "english",
+      "doi": "10.26526/conferencearticle_61cc296c2906a8.21528312",
+      "url": "https://doi.org/10.26526/conferencearticle_61cc296c2906a8.21528312"
+    },
+    {
+      "id": "cite_034",
+      "authors": [
+        "Subham"
+      ],
+      "year": 2025,
+      "title": "AI-Powered Forecasting Models for Sales and Revenue Operations",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.55640/ijiot-05-01-04",
+      "url": "https://doi.org/10.55640/ijiot-05-01-04"
+    },
+    {
+      "id": "cite_035",
+      "authors": [
+        "Oleksii"
+      ],
+      "year": 2025,
+      "title": "Algorithmizing B2B Sales: Can AI Create a Sales Framework That Guarantees Predictable Results?",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.37547/tajmei/volume07issue03-02",
+      "url": "https://doi.org/10.37547/tajmei/volume07issue03-02"
+    },
+    {
+      "id": "cite_036",
+      "authors": [
+        "Williamson"
       ],
       "year": 2010,
-      "title": "Computer Mediated Transactions",
+      "title": "Transaction Cost Economics: An Overview",
+      "source_type": "book",
+      "language": "english",
+      "doi": "10.4337/9781849806909.00007",
+      "url": "https://doi.org/10.4337/9781849806909.00007"
+    },
+    {
+      "id": "cite_037",
+      "authors": [
+        "Fishburn",
+        "Odlyzko"
+      ],
+      "year": 1999,
+      "title": "Competitive pricing of information goods: Subscription pricing versus pay-per-use",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.1007/s001990050264",
+      "url": "https://doi.org/10.1007/s001990050264"
+    },
+    {
+      "id": "cite_038",
+      "authors": [
+        "Diaw",
+        "Pouyet"
+      ],
+      "year": 2004,
+      "title": "Competition, Incomplete Discrimination and Versioning",
+      "source_type": "report",
+      "language": "english",
+      "doi": "10.2139/ssrn.882805",
+      "url": "https://doi.org/10.2139/ssrn.882805"
+    },
+    {
+      "id": "cite_039",
+      "authors": [
+        "Liu"
+      ],
+      "year": 2024,
+      "title": "AI Pricing: Adoption of Artificial Intelligences and Collusive Price",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.62051/ed63gf48",
+      "url": "https://doi.org/10.62051/ed63gf48"
+    },
+    {
+      "id": "cite_040",
+      "authors": [
+        "Tucker"
+      ],
+      "year": 2019,
+      "title": "Digital Data, Platforms and the Usual [Antitrust] Suspects: Network Effects, Switching Costs, Essential Facility",
+      "source_type": "report",
+      "language": "english",
+      "doi": "10.2139/ssrn.3326385",
+      "url": "https://doi.org/10.2139/ssrn.3326385"
+    },
+    {
+      "id": "cite_041",
+      "authors": [
+        "Vogt",
+        "Bizer"
+      ],
+      "year": 2013,
+      "title": "Lock-In Effects in Competitive Bidding Schemes for Payments for Ecosystem Services",
+      "source_type": "report",
+      "language": "english",
+      "doi": "10.2139/ssrn.2282039",
+      "url": "https://doi.org/10.2139/ssrn.2282039"
+    },
+    {
+      "id": "cite_042",
+      "authors": [
+        "Nagaraju",
+        "Bahrami",
+        "Prasad",
+        "Mantena",
+        "Biswal",
+        "Islam"
+      ],
+      "year": 2023,
+      "title": "Predicting California Bearing Ratio of Lateritic Soils Using Hybrid Machine Learning Technique",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.3390/buildings13010255",
+      "url": "https://doi.org/10.3390/buildings13010255"
+    },
+    {
+      "id": "cite_043",
+      "authors": [
+        "Chaerul"
+      ],
+      "year": 2025,
+      "title": "Analyzing User Expectation and Experience to Formulate Data-Driven Strategy for Elevating Paid Subscription Engagement in Ai Educational Tools",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.55324/enrichment.v3i4.452",
+      "url": "https://doi.org/10.55324/enrichment.v3i4.452"
+    },
+    {
+      "id": "cite_044",
+      "authors": [
+        "Abbas"
+      ],
+      "year": 2025,
+      "title": "Optimizing Surplus Inventory Management in Electrical Distribution Through API-Driven Marketplace Integration",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.59573/emsj.9(4).2025.29",
+      "url": "https://doi.org/10.59573/emsj.9(4).2025.29"
+    },
+    {
+      "id": "cite_045",
+      "authors": [
+        "Chiruvelli"
+      ],
+      "year": 2025,
+      "title": "Generative AI For Personalized Product Bundling In Consumer Banking: A Revenue Optimization Framework",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.63278/jicrcr.vi.3302",
+      "url": "https://doi.org/10.63278/jicrcr.vi.3302"
+    },
+    {
+      "id": "cite_046",
+      "authors": [
+        "Cho",
+        "Bahn"
+      ],
+      "year": 2020,
+      "title": "A Cost Estimation Model for Cloud Services and Applying to PC Laboratory Platforms",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.3390/pr8010076",
+      "url": "https://doi.org/10.3390/pr8010076"
+    },
+    {
+      "id": "cite_047",
+      "authors": [
+        "Huang",
+        "Li",
+        "Yang",
+        "Si",
+        "Ma",
+        "Wang"
+      ],
+      "year": 2024,
+      "title": "Multiparticipant Double Auction for Resource Allocation and Pricing in Edge Computing",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.1109/JIOT.2023.3339655",
+      "url": "https://doi.org/10.1109/JIOT.2023.3339655"
+    },
+    {
+      "id": "cite_048",
+      "authors": [
+        "Geetha",
+        "Ayub",
+        "Vivin",
+        "Chandran"
+      ],
+      "year": 2024,
+      "title": "THE INFLUENCE OF ADOPTING ARTIFICIAL INTELLIGENCE (AI) ON MALAYSIA'S ECONOMIC ENVIRONMENT.",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.51200/mjbe.v11i1.5294",
+      "url": "https://doi.org/10.51200/mjbe.v11i1.5294"
+    },
+    {
+      "id": "cite_049",
+      "authors": [
+        "Ma",
+        "Yang",
+        "Huang",
+        "Li",
+        "Wang"
+      ],
+      "year": 2015,
+      "title": "The Re-Engineering of Iron and Steel Enterprise Procurement Processes Based on the ABC Method",
+      "source_type": "book",
+      "language": "english",
+      "doi": "10.1061/9780784479384.115",
+      "url": "https://doi.org/10.1061/9780784479384.115"
+    },
+    {
+      "id": "cite_050",
+      "authors": [
+        "Kärrberg"
+      ],
+      "year": 2010,
+      "title": "A Two-Sided Market Approach to Value Chain Dynamics in Telecom Services: A Study Lens for Mobile Platform Innovation and Pricing Strategies",
+      "source_type": "conference",
+      "language": "english",
+      "doi": "10.1109/ICMB-GMR.2010.76",
+      "url": "https://doi.org/10.1109/ICMB-GMR.2010.76"
+    },
+    {
+      "id": "cite_051",
+      "authors": [
+        "Obiajulu",
+        "Azubuko",
+        "Esemokhai"
+      ],
+      "year": 2025,
+      "title": "Pricing transparency and innovative pricing models: Driving customer trust and retention in SMEs",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.30574/wjarr.2025.27.3.2924",
+      "url": "https://doi.org/10.30574/wjarr.2025.27.3.2924"
+    },
+    {
+      "id": "cite_052",
+      "authors": [
+        "Klemmer",
+        "Horstmann",
+        "Patnaik",
+        "Ludden",
+        "Burton",
+        "Powers",
+        "Massacci",
+        "Rahman",
+        "Votipka",
+        "Lipford",
+        "Rashid",
+        "Naiakshina",
+        "Security",
+        "Bochum",
+        "Bristol",
+        "University",
+        "Amsterdam",
+        "Trento",
+        "University",
+        "Charlotte"
+      ],
+      "year": 2024,
+      "title": "Using AI Assistants in Software Development: A Qualitative Study on Security Practices and Concerns",
+      "source_type": "conference",
+      "language": "english",
+      "doi": "10.1145/3658644.3690283",
+      "url": "https://doi.org/10.1145/3658644.3690283"
+    },
+    {
+      "id": "cite_053",
+      "authors": [
+        "Vaswani"
+      ],
+      "year": 2017,
+      "title": "Attention Is All You Need",
+      "source_type": "conference",
+      "language": "english"
+    },
+    {
+      "id": "cite_054",
+      "authors": [
+        "Mori"
+      ],
+      "year": 1970,
+      "title": "The Uncanny Valley",
+      "source_type": "journal",
+      "language": "english"
+    },
+    {
+      "id": "cite_055",
+      "authors": [
+        "Etzkowitz",
+        "Leydesdorff"
+      ],
+      "year": 1995,
+      "title": "The Triple Helix of University-Industry-Government Relations",
       "source_type": "journal",
       "language": "english"
     }
   ],
   "metadata": {
-    "total_citations": 33,
+    "total_citations": 55,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-09T17:05:56.301394"
+    "extracted_date": "2025-11-10T18:31:44.815748"
   }
 }

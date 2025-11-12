@@ -173,9 +173,17 @@ class PandocLatexEngine(PDFEngine):
 \widowpenalty=10000
 \clubpenalty=10000
 
-% Aggressive URL breaking - allow breaking at any character
-\def\UrlBreaks{\do\/\do-\do.\do=\do?\do&\do_\do\%\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9}
-\sloppy
+% Configure hyperref for clickable DOI/URL links (Pandoc loads it automatically)
+\AtBeginDocument{%
+  \hypersetup{%
+    colorlinks=true,%
+    linkcolor=black,%
+    citecolor=black,%
+    urlcolor=blue,%
+    breaklinks=true%
+  }%
+  \urlstyle{same}%
+}
 
 % Fix Level 3 headings: italic (NOT bold) - APA 7th edition
 \usepackage{titlesec}
@@ -214,6 +222,9 @@ class PandocLatexEngine(PDFEngine):
 \postauthor{\par\end{center}}
 \predate{\begin{center}\large}
 \postdate{\par\end{center}}
+
+% Ensure title page is on separate page
+\AtBeginDocument{\maketitle\clearpage}
 
 % Add custom fields for APA title page
 % These will be populated via Pandoc variables
@@ -272,7 +283,7 @@ class PandocLatexEngine(PDFEngine):
                 '-o', str(output_pdf.resolve()),
                 '--pdf-engine=pdflatex',
                 '--include-in-header', str(preamble_path.resolve()),
-                '--from', 'markdown',
+                '--from', 'markdown+autolink_bare_uris',
                 '--variable', f'geometry:margin={margin}',
                 '--variable', f'fontsize={options.font_size}',
                 '--variable', 'papersize:letter',

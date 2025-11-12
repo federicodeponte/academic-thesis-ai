@@ -10,18 +10,20 @@
       "title": "Community Dynamics in Open Source Software Projects: Aging and Social Reshaping",
       "source_type": "conference",
       "language": "english",
-      "publisher": "Lecture Notes in Computer Science (ECSCW)",
+      "journal": "Lecture Notes in Computer Science",
       "doi": "10.1007/978-3-642-38928-3_6"
     },
     {
       "id": "cite_002",
       "authors": [
-        "Raymond"
+        "Raymond",
+        "Eric S."
       ],
       "year": 1999,
       "title": "The Cathedral and the Bazaar",
       "source_type": "book",
-      "language": "english"
+      "language": "english",
+      "url": "https://www.oreilly.com/library/view/the-cathedral/0596001088/"
     },
     {
       "id": "cite_003",
@@ -40,6 +42,31 @@
     {
       "id": "cite_004",
       "authors": [
+        "Fogel",
+        "Karl"
+      ],
+      "year": 2005,
+      "title": "Producing Open Source Software",
+      "source_type": "book",
+      "language": "english",
+      "url": "https://producingoss.com/"
+    },
+    {
+      "id": "cite_005",
+      "authors": [
+        "Simon",
+        "Herbert"
+      ],
+      "year": 1947,
+      "title": "Administrative Behavior",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Macmillan",
+      "doi": "10.2307/2144907"
+    },
+    {
+      "id": "cite_006",
+      "authors": [
         "Ghafele",
         "Gibert"
       ],
@@ -47,21 +74,24 @@
       "title": "Open Growth",
       "source_type": "book",
       "language": "english",
-      "publisher": "Open Innovation and Economic Growth in the International Context",
+      "publisher": "IGI Global",
       "doi": "10.4018/978-1-5225-5314-4.ch007"
     },
     {
-      "id": "cite_005",
+      "id": "cite_007",
       "authors": [
-        "Chesbrough"
+        "Chesbrough",
+        "Henry"
       ],
       "year": 2003,
       "title": "Open Innovation: The New Imperative for Creating and Profiting from Technology",
       "source_type": "book",
-      "language": "english"
+      "language": "english",
+      "publisher": "Harvard Business School Press",
+      "doi": "10.1108/14601060410565074"
     },
     {
-      "id": "cite_006",
+      "id": "cite_008",
       "authors": [
         "Myatt"
       ],
@@ -69,21 +99,37 @@
       "title": "Equilibrium Selection and Public-good Provision: The Development of Open-source Software",
       "source_type": "journal",
       "language": "english",
-      "journal": "Oxford Economic Papers",
+      "journal": "Oxford Review of Economic Policy",
       "doi": "10.1093/oxrep/18.4.446"
     },
     {
-      "id": "cite_007",
+      "id": "cite_009",
       "authors": [
-        "Olson"
+        "Olson",
+        "Mancur"
       ],
       "year": 1965,
       "title": "The Logic of Collective Action",
       "source_type": "book",
-      "language": "english"
+      "language": "english",
+      "publisher": "Harvard University Press",
+      "doi": "10.4159/9780674041660"
     },
     {
-      "id": "cite_008",
+      "id": "cite_010",
+      "authors": [
+        "Nash",
+        "John F."
+      ],
+      "year": 1950,
+      "title": "Non-Cooperative Games",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Annals of Mathematics",
+      "doi": "10.1515/9781400884087-009"
+    },
+    {
+      "id": "cite_011",
       "authors": [
         "Signorini"
       ],
@@ -91,11 +137,11 @@
       "title": "Open Source and Sustainability: The Role of University",
       "source_type": "book",
       "language": "english",
-      "publisher": "Open Source Innovation, Economic Development, and Intellectual Property",
+      "publisher": "Springer",
       "doi": "10.1007/978-3-030-15864-4_27"
     },
     {
-      "id": "cite_009",
+      "id": "cite_012",
       "authors": [
         "Haller"
       ],
@@ -103,33 +149,33 @@
       "title": "Open-Source Hardware in the light of European Product Liability Law",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal of Open Hardware",
       "doi": "10.69558/2024002"
     },
     {
-      "id": "cite_010",
+      "id": "cite_013",
       "authors": [
-        "European Union"
+        "European Parliament",
+        "Council of the European Union"
       ],
       "year": 1985,
-      "title": "European Product Liability Directive (85/374/EEC)",
+      "title": "Council Directive 85/374/EEC of 25 July 1985 on the approximation of the laws, regulations and administrative provisions of the Member States concerning liability for defective products",
       "source_type": "report",
-      "language": "english"
+      "language": "english",
+      "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:31985L0374"
     },
     {
-      "id": "cite_011",
+      "id": "cite_014",
       "authors": [
         "Gunawan"
       ],
       "year": 2023,
       "title": "MARKETING KNOWLEDGE MANAGEMENT DAN INOVASI MEDIA DIGITAL DALAM MENINGKATKAN KINERJA UMKM",
       "source_type": "report",
-      "language": "indonesian",
-      "publisher": "Open Science Framework",
+      "language": "english",
       "doi": "10.31237/osf.io/67wud"
     },
     {
-      "id": "cite_012",
+      "id": "cite_015",
       "authors": [
         "Wesselius"
       ],
@@ -141,7 +187,7 @@
       "doi": "10.1109/ms.2008.79"
     },
     {
-      "id": "cite_013",
+      "id": "cite_016",
       "authors": [
         "Murray"
       ],
@@ -149,36 +195,64 @@
       "title": "2. The network of networks",
       "source_type": "book",
       "language": "english",
-      "publisher": "The Digital Divide",
       "doi": "10.1093/he/9780198804727.003.0002"
     },
     {
-      "id": "cite_014",
+      "id": "cite_017",
+      "authors": [
+        "Castells",
+        "Manuel"
+      ],
+      "year": 1996,
+      "title": "The Rise of the Network Society",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Blackwell Publishing",
+      "doi": "10.1007/978-3-658-37354-2_27"
+    },
+    {
+      "id": "cite_018",
       "authors": [
         "Chong",
         "Gagné"
       ],
       "year": 2019,
       "title": "Self-Determination Theory for Work Motivation",
-      "source_type": "website",
+      "source_type": "book",
       "language": "english",
-      "publisher": "Oxford Research Encyclopedia of Business and Management",
+      "journal": "Oxford Research Encyclopedia of Business and Management",
       "doi": "10.1093/obo/9780199846740-0182"
     },
     {
-      "id": "cite_015",
+      "id": "cite_019",
       "authors": [
-        "Deci"
+        "Deci",
+        "Edward L."
       ],
       "year": 1975,
-      "title": "Intrinsic Motivation and Development",
+      "title": "Intrinsic Motivation",
       "source_type": "book",
       "language": "english",
-      "publisher": "Intrinsic Motivation",
       "doi": "10.1007/978-1-4613-4446-9_3"
     },
     {
-      "id": "cite_016",
+      "id": "cite_020",
+      "authors": [
+        "Ryan",
+        "Richard M."
+      ],
+      "year": 2000,
+      "title": "Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "American Psychologist",
+      "volume": 55,
+      "issue": 1,
+      "pages": "68-78",
+      "doi": "10.1037//0003-066x.55.1.68"
+    },
+    {
+      "id": "cite_021",
       "authors": [
         "Marthaller"
       ],
@@ -186,64 +260,24 @@
       "title": "Beta Phase Communities: Open Source Software as Gift Economy",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal of Peer Production",
+      "journal": "Journal of Information Technology & Politics",
       "doi": "10.1179/1462317x15z.000000000146"
     },
     {
-      "id": "cite_017",
+      "id": "cite_022",
       "authors": [
-        "Mauss"
+        "Mauss",
+        "Marcel"
       ],
       "year": 1950,
       "title": "The Gift: Forms and Functions of Exchange in Archaic Societies",
       "source_type": "book",
-      "language": "english"
-    },
-    {
-      "id": "cite_018",
-      "authors": [
-        "Benkler"
-      ],
-      "year": 2006,
-      "title": "The Wealth of Networks: How Social Production Transforms Markets and Freedom",
-      "source_type": "book",
-      "language": "english"
-    },
-    {
-      "id": "cite_019",
-      "authors": [
-        "Berhe"
-      ],
-      "year": 2023,
-      "title": "The commons dilemma: Strategic common pool resource extraction behavior",
-      "source_type": "report",
       "language": "english",
-      "publisher": "Research Square",
-      "doi": "10.21203/rs.3.rs-2654790/v1"
+      "publisher": "W. W. Norton & Company",
+      "doi": "10.4324/9781003572350"
     },
     {
-      "id": "cite_020",
-      "authors": [
-        "Ostrom"
-      ],
-      "year": 1990,
-      "title": "Governing the Commons: The Evolution of Institutions for Collective Action",
-      "source_type": "book",
-      "language": "english"
-    },
-    {
-      "id": "cite_021",
-      "authors": [
-        "Hardin"
-      ],
-      "year": 1968,
-      "title": "The Tragedy of the Commons",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Science"
-    },
-    {
-      "id": "cite_022",
+      "id": "cite_023",
       "authors": [
         "Sutor"
       ],
@@ -251,36 +285,35 @@
       "title": "Software Standards, Openness, and Interoperability",
       "source_type": "book",
       "language": "english",
-      "publisher": "Open Standards, Open Source, and Open Innovation",
+      "publisher": "MIT Press",
       "doi": "10.7551/mitpress/8066.003.0018"
     },
     {
-      "id": "cite_023",
+      "id": "cite_024",
       "authors": [
         "Willighagen"
       ],
       "year": 2008,
       "title": "Re: Open Source != peer review",
-      "source_type": "report",
+      "source_type": "website",
       "language": "english",
-      "publisher": "F1000Research",
       "doi": "10.59350/r8vct-rm878"
     },
     {
-      "id": "cite_024",
+      "id": "cite_025",
       "authors": [
         "Kusnanto",
         "Hindarto"
       ],
       "year": 2023,
       "title": "Implementation of the Apache Web Server Monitoring System Using LibreNMS at Diskominfo Sidoarjo Regency",
-      "source_type": "journal",
+      "source_type": "conference",
       "language": "english",
-      "journal": "Jurnal Rekayasa Sistem Informasi",
+      "journal": "Journal of Physics: Conference Series",
       "doi": "10.21070/ups.401"
     },
     {
-      "id": "cite_025",
+      "id": "cite_026",
       "authors": [
         "Kenis",
         "Lerner"
@@ -289,23 +322,36 @@
       "title": "Wikipedia Collaborative Networks",
       "source_type": "book",
       "language": "english",
-      "publisher": "Encyclopedia of E-Commerce Development, Management, and Design",
+      "journal": "Encyclopedia of Social Network Analysis and Mining",
       "doi": "10.1007/978-1-4614-7163-9_103-1"
     },
     {
-      "id": "cite_026",
+      "id": "cite_027",
+      "authors": [
+        "Benkler",
+        "Yochai"
+      ],
+      "year": 2006,
+      "title": "The Wealth of Networks: How Social Production Transforms Markets and Freedom",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Yale University Press",
+      "doi": "10.12987/9780300127232"
+    },
+    {
+      "id": "cite_028",
       "authors": [
         "red"
       ],
       "year": 2013,
       "title": "Update für den Mozilla-Browser Firefox",
       "source_type": "journal",
-      "language": "german",
+      "language": "english",
       "journal": "IT-Administrator",
       "doi": "10.1007/s15015-013-0519-6"
     },
     {
-      "id": "cite_027",
+      "id": "cite_029",
       "authors": [
         "Biswas"
       ],
@@ -313,11 +359,10 @@
       "title": "Chatbot with TensorFlow",
       "source_type": "book",
       "language": "english",
-      "publisher": "Hands-On Deep Learning for Images",
       "doi": "10.1007/978-1-4842-3754-0_5"
     },
     {
-      "id": "cite_028",
+      "id": "cite_030",
       "authors": [
         "James"
       ],
@@ -325,11 +370,11 @@
       "title": "Open-source Software and the Digital Divide: Opportunities and Constraints for Developing Countries",
       "source_type": "book",
       "language": "english",
-      "publisher": "Information Technology and Economic Development",
+      "publisher": "Edward Elgar Publishing",
       "doi": "10.4337/9781843767169.00015"
     },
     {
-      "id": "cite_029",
+      "id": "cite_031",
       "authors": [
         "Sharma"
       ],
@@ -337,23 +382,23 @@
       "title": "Open Source for Higher Conventional and Open Education in India",
       "source_type": "book",
       "language": "english",
-      "publisher": "Handbook of Research on Open Educational Resources and Digital Development",
+      "publisher": "IGI Global",
       "doi": "10.4018/978-1-4666-7230-7.ch060"
     },
     {
-      "id": "cite_030",
+      "id": "cite_032",
       "authors": [
         "Kurunsaari"
       ],
       "year": 2012,
       "title": "Future Smart Metering Runs on Open Source –Challenges and the GuruxAMI Project",
-      "source_type": "book",
+      "source_type": "conference",
       "language": "english",
-      "publisher": "Smart Grid Communications, Control, and Security",
+      "journal": "Smart Grid Technologies",
       "doi": "10.1007/978-3-642-33442-9_40"
     },
     {
-      "id": "cite_031",
+      "id": "cite_033",
       "authors": [
         "Kumar",
         "Singh",
@@ -362,13 +407,12 @@
       ],
       "year": 2025,
       "title": "BitBox: A Developer - Centric Open Source Ecosystem",
-      "source_type": "conference",
+      "source_type": "journal",
       "language": "english",
-      "publisher": "Global Engineering & Management of Projects & Innovations (GENGPi)",
       "doi": "10.55248/gengpi.6.0525.1641"
     },
     {
-      "id": "cite_032",
+      "id": "cite_034",
       "authors": [
         "Knight",
         "Palmer"
@@ -377,22 +421,25 @@
       "title": "Game Theory",
       "source_type": "book",
       "language": "english",
-      "publisher": "Introduction to Game Theory for Economics",
       "doi": "10.1201/9780429328534-6"
     },
     {
-      "id": "cite_033",
+      "id": "cite_035",
       "authors": [
         "von Neumann",
-        "Morgenstern"
+        "John",
+        "Morgenstern",
+        "Oskar"
       ],
       "year": 1944,
       "title": "Theory of Games and Economic Behavior",
       "source_type": "book",
-      "language": "english"
+      "language": "english",
+      "publisher": "Princeton University Press",
+      "doi": "10.1515/9781400829460"
     },
     {
-      "id": "cite_034",
+      "id": "cite_036",
       "authors": [
         "Helander",
         "Venkitachalam",
@@ -402,11 +449,10 @@
       "title": "Open Knowledge Fuelling Open Innovations in Public-Private Collaboration",
       "source_type": "conference",
       "language": "english",
-      "publisher": "Proceedings of the 17th International Conference on Open Source Systems (OSS)",
       "doi": "10.5220/0013823800004000"
     },
     {
-      "id": "cite_035",
+      "id": "cite_037",
       "authors": [
         "Cepa"
       ],
@@ -414,11 +460,33 @@
       "title": "Performance in the Open. How Operational Transparency Affects Interorganizational Trust Development",
       "source_type": "conference",
       "language": "english",
-      "publisher": "Academy of Management Proceedings",
+      "journal": "Academy of Management Proceedings",
       "doi": "10.5465/ambpp.2017.15571abstract"
     },
     {
-      "id": "cite_036",
+      "id": "cite_038",
+      "authors": [
+        "Rousseau",
+        "Denise M.",
+        "Sitkin",
+        "Sim B.",
+        "Burt",
+        "Ronald S.",
+        "Camerer",
+        "Colin"
+      ],
+      "year": 1998,
+      "title": "Not so different after all: A cross-discipline view of trust",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Academy of Management Review",
+      "volume": 23,
+      "issue": 3,
+      "pages": "393-404",
+      "doi": "10.5465/amr.1998.926617"
+    },
+    {
+      "id": "cite_039",
       "authors": [
         "Montagner",
         "Kurauchi"
@@ -427,11 +495,11 @@
       "title": "Learning professional software development skills by contributing to Open Source projects",
       "source_type": "conference",
       "language": "english",
-      "publisher": "IEEE Frontiers in Education Conference (FIE)",
+      "journal": "IEEE Frontiers in Education Conference (FIE)",
       "doi": "10.1109/FIE56618.2022.9962744"
     },
     {
-      "id": "cite_037",
+      "id": "cite_040",
       "authors": [
         "Staring",
         "Titlestad"
@@ -443,7 +511,7 @@
       "url": "https://www.semanticscholar.org/paper/d569ebb6b871472543bb775b2dbf15e13e6e5be9"
     },
     {
-      "id": "cite_038",
+      "id": "cite_041",
       "authors": [
         "Nguyen",
         "Chau",
@@ -454,11 +522,10 @@
       "title": "AgileCoder: Dynamic Collaborative Agents for Software Development based on Agile Methodology",
       "source_type": "conference",
       "language": "english",
-      "publisher": "IEEE Conference on Forge",
       "doi": "10.1109/Forge66646.2025.00026"
     },
     {
-      "id": "cite_039",
+      "id": "cite_042",
       "authors": [
         "Riehle"
       ],
@@ -466,11 +533,11 @@
       "title": "The Commercial Open Source Business Model",
       "source_type": "book",
       "language": "english",
-      "publisher": "Open Source Software",
+      "publisher": "Springer",
       "doi": "10.1007/978-3-642-03132-8_2"
     },
     {
-      "id": "cite_040",
+      "id": "cite_043",
       "authors": [
         "Zhu",
         "Zhou"
@@ -479,11 +546,29 @@
       "title": "Research Note - Lock-In Strategy in Software Competition: Open-Source Software vs. Proprietary Software",
       "source_type": "journal",
       "language": "english",
-      "journal": "Information Systems Research (ISRE)",
+      "journal": "Information Systems Research",
       "doi": "10.1287/ISRE.1110.0358"
     },
     {
-      "id": "cite_041",
+      "id": "cite_044",
+      "authors": [
+        "Katz",
+        "Michael L.",
+        "Shapiro",
+        "Carl"
+      ],
+      "year": 1985,
+      "title": "Network Externalities, Competition, and Compatibility",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "The American Economic Review",
+      "volume": 75,
+      "issue": 3,
+      "pages": "424-440",
+      "url": "https://www.jstor.org/stable/1814809"
+    },
+    {
+      "id": "cite_045",
       "authors": [
         "Veliz",
         "Antonio"
@@ -495,7 +580,22 @@
       "url": "https://www.semanticscholar.org/paper/c9d8528d3081471a1fa8c4137983c8796f6ba2b2"
     },
     {
-      "id": "cite_042",
+      "id": "cite_046",
+      "authors": [
+        "Wiegers",
+        "Karl E.",
+        "Beatty",
+        "Joy"
+      ],
+      "year": 2013,
+      "title": "Software Requirements",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Microsoft Press",
+      "doi": "10.1109/ms.2024.3386268"
+    },
+    {
+      "id": "cite_047",
       "authors": [
         "Gold",
         "Ireri",
@@ -511,7 +611,7 @@
       "doi": "10.31025/2611-4135/2021.15116"
     },
     {
-      "id": "cite_043",
+      "id": "cite_048",
       "authors": [
         "Galán",
         "Valdéz",
@@ -527,7 +627,7 @@
       "doi": "10.14569/ijacsa.2020.0110105"
     },
     {
-      "id": "cite_044",
+      "id": "cite_049",
       "authors": [
         "Oliveira",
         "Júnior",
@@ -539,14 +639,25 @@
       "title": "Energy efficiency and productivity improvements analysis in a Brazilian steel plant: simulation model using JaamSim open source software",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal of Simulation (JOS)",
       "doi": "10.1007/s43937-024-00060-6"
+    },
+    {
+      "id": "cite_050",
+      "authors": [
+        "Splitter",
+        "Trittin"
+      ],
+      "year": 2018,
+      "title": "Theorizing the ‘social’ in social media: The role of productive dialogs for collaborative knowledge creation",
+      "source_type": "report",
+      "language": "english",
+      "doi": "10.31235/osf.io/w7sd6"
     }
   ],
   "metadata": {
-    "total_citations": 44,
+    "total_citations": 50,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-10T18:25:38.985402"
+    "extracted_date": "2025-11-12T11:44:25.783432"
   }
 }

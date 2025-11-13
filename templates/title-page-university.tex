@@ -1,0 +1,141 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{times}
+\usepackage{setspace}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+% Hyperlink styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=blue,
+}
+
+\begin{document}
+
+% TITLE PAGE - University Dissertation Style
+\begin{titlepage}
+\centering
+
+% Optional university logo/seal
+$if(logo)$
+\includegraphics[width=0.3\textwidth]{$logo$}\\[1cm]
+$endif$
+
+\vspace{1cm}
+
+% Title
+{\LARGE\bfseries $title$\par}
+
+\vspace{1.5cm}
+
+% Degree statement
+{\large
+A $if(degree)$$degree$$else$Dissertation$endif$\\
+Presented to\\
+$if(institution)$$institution$$else$The Graduate Faculty$endif$\\
+}
+
+\vspace{1cm}
+
+% Author
+{\large
+by\\
+\vspace{0.5cm}
+\textbf{$author$}\\
+}
+
+\vspace{1.5cm}
+
+% Department and degree info
+$if(department)$
+{\normalsize
+$department$\\
+}
+\vspace{0.5cm}
+$endif$
+
+$if(degree)$
+{\normalsize
+In Partial Fulfillment of the Requirements\\
+for the Degree of\\
+\textbf{$degree$}\\
+}
+\vspace{1cm}
+$endif$
+
+% Date
+{\normalsize
+$date$\\
+}
+
+\vfill
+
+% Copyright notice (optional)
+$if(copyright)$
+{\footnotesize
+\textcopyright\ $date$ $author$\\
+All Rights Reserved\\
+}
+$endif$
+
+\end{titlepage}
+
+% ABSTRACT
+$if(abstract)$
+\newpage
+\chapter*{Abstract}
+\addcontentsline{toc}{chapter}{Abstract}
+\doublespacing
+$abstract$
+\singlespacing
+$endif$
+
+% DEDICATION (optional)
+$if(dedication)$
+\newpage
+\chapter*{Dedication}
+\vspace*{\fill}
+\begin{center}
+\textit{$dedication$}
+\end{center}
+\vspace*{\fill}
+$endif$
+
+% ACKNOWLEDGMENTS (optional)
+$if(acknowledgments)$
+\newpage
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+$acknowledgments$
+$endif$
+
+% TABLE OF CONTENTS
+$if(toc)$
+\newpage
+\tableofcontents
+$endif$
+
+% LIST OF TABLES (optional)
+$if(lot)$
+\newpage
+\listoftables
+\addcontentsline{toc}{chapter}{List of Tables}
+$endif$
+
+% LIST OF FIGURES (optional)
+$if(lof)$
+\newpage
+\listoffigures
+\addcontentsline{toc}{chapter}{List of Figures}
+$endif$
+
+% Main content
+\newpage
+$body$
+
+\end{document}

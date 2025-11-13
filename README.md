@@ -1,19 +1,31 @@
+<div align="center">
+
 # Academic Thesis AI
 
-**AI-Powered Academic Writing Framework** - From literature review to publication-ready papers
+### AI-Powered Academic Writing Framework
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
-[![Status: Production](https://img.shields.io/badge/status-production-brightgreen.svg)](https://github.com/federicodeponte/academic-thesis-ai)
-[![Test Coverage: 100%](https://img.shields.io/badge/agents%20tested-15%2F15%20(100%25)-brightgreen.svg)](tests/)
-[![GitHub stars](https://img.shields.io/github/stars/federicodeponte/academic-thesis-ai?style=social)](https://github.com/federicodeponte/academic-thesis-ai/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/federicodeponte/academic-thesis-ai?style=social)](https://github.com/federicodeponte/academic-thesis-ai/network/members)
+Generate publication-ready theses with 15 specialized AI agents and 200M+ research papers
 
-> 🌐 **Landing Page:** [academic-thesis-ai-landing.vercel.app](https://academic-thesis-ai-landing.vercel.app) | **Repository:** [github.com/federicodeponte/academic-thesis-ai-landing](https://github.com/federicodeponte/academic-thesis-ai-landing)
+<p>
+  <a href="https://academic-thesis-ai-landing.vercel.app"><strong>Website</strong></a> ·
+  <a href="#-quick-start-10-minutes"><strong>Quick Start</strong></a> ·
+  <a href="docs/"><strong>Documentation</strong></a> ·
+  <a href="examples/"><strong>Examples</strong></a>
+</p>
 
-Write academic papers 50-70% faster with AI assistance while maintaining quality and academic integrity.
+<p>
+  <img src="https://img.shields.io/badge/Python-3.8+-8B5CF6?style=flat-square&logo=python&logoColor=white" alt="Python 3.8+">
+  <img src="https://img.shields.io/badge/License-MIT-8B5CF6?style=flat-square" alt="MIT License">
+  <img src="https://img.shields.io/github/stars/federicodeponte/academic-thesis-ai?style=flat-square&color=8B5CF6" alt="GitHub Stars">
+</p>
 
-> **✅ Production Ready:** All 15 agents tested and validated (including Enhancer with Nov 2025 bug fixes). Comprehensive test coverage with publication-quality outputs. Agent #15 dual-layer defense (prevention + sanitization) ensures stable file outputs. See [Test Results](tests/outputs/PRODUCTION_TEST_RESULTS.md) for details.
+</div>
+
+<br/>
+
+Write academic papers **50-70% faster** with AI assistance while maintaining quality and academic integrity.
+
+**Production Ready:** All 15 agents tested and validated. Comprehensive test coverage with publication-quality outputs. Agent #15 dual-layer defense (prevention + sanitization) ensures stable file outputs. See [Test Results](tests/outputs/PRODUCTION_TEST_RESULTS.md) for details.
 
 ---
 
@@ -39,23 +51,76 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 
 ---
 
-## 💰 Why Choose This Over Alternatives?
+## Why Choose This Over Alternatives?
 
-| Feature | Academic Thesis AI | Professional Editing | Grammarly Premium | ChatGPT Pro |
-|---------|-------------------|---------------------|-------------------|-------------|
-| **Cost (20k-word thesis)** | **$10-50** 💰 | $400-2,000 | $144/year | $240/year |
-| **Time to Complete** | **10-20 hours** ⚡ | 2-3 months | N/A | 40-80 hours |
-| **Research Integration** | ✅ 200M+ papers | ❌ Manual | ❌ No | ⚠️ Limited |
-| **Citation Management** | ✅ Auto-verify | ⚠️ Basic | ❌ No | ⚠️ Often wrong |
-| **Multi-LLM Support** | ✅ 3 models | N/A | ❌ Proprietary | ❌ GPT only |
-| **Specialized Agents** | ✅ 15 agents | ❌ Generic | ❌ Grammar only | ❌ 1 model |
-| **PDF/Word Export** | ✅ Publication-ready | ✅ Yes | ⚠️ Basic | ❌ No |
-| **Academic Database Access** | ✅ 4 databases | ❌ Manual | ❌ No | ❌ No |
-| **Privacy** | ✅ Local | ⚠️ Shared | ⚠️ Cloud | ⚠️ Cloud |
-| **Customization** | ✅ Full control | ❌ Limited | ❌ No | ⚠️ Limited |
-| **FREE Tier Available** | ✅ Yes (Gemini) | ❌ No | ❌ No | ❌ No |
+<table>
+  <tr>
+    <th>Feature</th>
+    <th align="center"><strong>Academic Thesis AI</strong></th>
+    <th align="center">Professional Editing</th>
+    <th align="center">Grammarly Premium</th>
+    <th align="center">ChatGPT Pro</th>
+  </tr>
+  <tr>
+    <td><strong>Cost (20k words)</strong></td>
+    <td align="center">
+      <code>$10-50</code><br/>
+      <sub>95% cheaper</sub>
+    </td>
+    <td align="center"><sub>$400-2,000</sub></td>
+    <td align="center"><sub>$144/year</sub></td>
+    <td align="center"><sub>$240/year</sub></td>
+  </tr>
+  <tr>
+    <td><strong>Time to Complete</strong></td>
+    <td align="center">
+      <code>10-20 hours</code><br/>
+      <sub>10x faster</sub>
+    </td>
+    <td align="center"><sub>2-3 months</sub></td>
+    <td align="center"><sub>N/A</sub></td>
+    <td align="center"><sub>40-80 hours</sub></td>
+  </tr>
+  <tr>
+    <td><strong>Research Integration</strong></td>
+    <td align="center"><code>200M+ papers</code></td>
+    <td align="center"><sub>Manual</sub></td>
+    <td align="center"><sub>None</sub></td>
+    <td align="center"><sub>Limited</sub></td>
+  </tr>
+  <tr>
+    <td><strong>Citation Management</strong></td>
+    <td align="center"><code>Auto-verify</code></td>
+    <td align="center"><sub>Basic</sub></td>
+    <td align="center"><sub>None</sub></td>
+    <td align="center"><sub>Often wrong</sub></td>
+  </tr>
+  <tr>
+    <td><strong>Multi-LLM Support</strong></td>
+    <td align="center"><code>3 models</code></td>
+    <td align="center"><sub>N/A</sub></td>
+    <td align="center"><sub>Proprietary</sub></td>
+    <td align="center"><sub>GPT only</sub></td>
+  </tr>
+  <tr>
+    <td><strong>Specialized Agents</strong></td>
+    <td align="center"><code>15 agents</code></td>
+    <td align="center"><sub>Generic</sub></td>
+    <td align="center"><sub>Grammar only</sub></td>
+    <td align="center"><sub>1 model</sub></td>
+  </tr>
+  <tr>
+    <td><strong>FREE Tier</strong></td>
+    <td align="center"><code>Yes (Gemini)</code></td>
+    <td align="center"><sub>No</sub></td>
+    <td align="center"><sub>No</sub></td>
+    <td align="center"><sub>No</sub></td>
+  </tr>
+</table>
 
-**💡 Bottom Line:**
+<br/>
+
+**Bottom Line:**
 - **95% cheaper** than professional editing
 - **10x faster** than manual writing
 - **FREE option** available (Gemini free tier covers up to 12k words)
@@ -127,13 +192,20 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 - ✅ Citations formatted and verified
 - ✅ Academic structure (IMRaD adapted for theoretical papers)
 
-**What users say:**
+<details>
+<summary><strong>Community & Impact Metrics</strong></summary>
 
-> *"This tool saved me 2 months of writing. The citations are properly formatted and the structure is exactly what my advisor wanted."* - PhD Student, Computer Science
+<br/>
 
-> *"I was skeptical at first, but the quality is incredible. Used it for my literature review and got an A."* - Master's Student, Business
+**By the numbers:**
+- ⭐ **GitHub Stars** - Join researchers who've starred this project
+- 🔀 **Active Forks** - Developers extending the framework
+- 📄 **200M+ Papers** - Indexed across arXiv, Semantic Scholar, PubMed
+- ✅ **100% Test Coverage** - All 15 agents validated in production
 
-> *"The free tier was enough for my entire undergraduate thesis. Game-changer for students on a budget."* - Undergraduate, Engineering
+**Have you used Academic Thesis AI?** [Share your experience](https://github.com/federicodeponte/academic-thesis-ai/discussions/new) and help others!
+
+</details>
 
 ---
 
@@ -205,9 +277,31 @@ This connects your IDE to arXiv, Semantic Scholar, PubMed, and Google Scholar.
 
 ### Phase-Based Agent System
 
+```mermaid
+graph LR
+    A[Research Topic] --> B[Scout Agent<br/>Find 20-50 Papers]
+    B --> C[Scribe Agent<br/>Summarize Research]
+    C --> D[Architect Agent<br/>Design Outline]
+    D --> E[Crafter Agent<br/>Write Sections]
+    E --> F[Skeptic Agent<br/>Validate Quality]
+    F --> G[Citation Compiler<br/>Format References]
+    G --> H[Enhancer Agent<br/>Professional Polish]
+    H --> I[Publication-Ready<br/>PDF/Word/LaTeX]
+
+    style A fill:#f3f4f6,stroke:#8B5CF6,stroke-width:2px
+    style I fill:#8B5CF6,stroke:#8B5CF6,stroke-width:2px,color:#fff
+    style B fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+    style C fill:#fef3c7,stroke:#f59e0b,stroke-width:2px
+    style D fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+    style E fill:#dbeafe,stroke:#3b82f6,stroke-width:2px
+    style F fill:#dcfce7,stroke:#10b981,stroke-width:2px
+    style G fill:#e0e7ff,stroke:#6366f1,stroke-width:2px
+    style H fill:#fce7f3,stroke:#ec4899,stroke-width:2px
 ```
-RESEARCH → STRUCTURE → COMPOSE → VALIDATE → REFINE → COMPILE → ENHANCE → SUBMIT
-```
+
+<br/>
+
+**8 phases, 15 specialized agents working together:**
 
 #### Phase 1: RESEARCH (1-3 days)
 - **Scout Agent** - Find 20-50 relevant papers

@@ -1,0 +1,55 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{hyperref}
+
+% Hyperlink styling
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=blue,
+    citecolor=blue,
+}
+
+\title{$title$}
+
+\author{
+  \IEEEauthorblockN{$author$}
+  $if(institution)$
+  \IEEEauthorblockA{
+    $institution$\\
+    $if(department)$$department$\\$endif$
+    $if(email)$Email: $email$$endif$
+  }
+  $endif$
+}
+
+\begin{document}
+
+\maketitle
+
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+$if(keywords)$
+\begin{IEEEkeywords}
+$for(keywords)$$keywords$$sep$, $endfor$
+\end{IEEEkeywords}
+$endif$
+
+% Body content
+$body$
+
+% References (if using bibliography)
+$if(bibliography)$
+\bibliographystyle{IEEEtran}
+\bibliography{$bibliography$}
+$endif$
+
+\end{document}

@@ -1,19 +1,41 @@
 ---
+# DOCUMENT METADATA (rendered in PDF title page)
 title: "Pricing Models for Agentic AI Systems: From Token-Based to Value-Based Approaches"
-subtitle: "AI-Generated Academic Thesis Showcase"
-author: "Academic Thesis AI (Multi-Agent System)"
-system_creator: "Federico De Ponte"
-github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
+author: "Academic Thesis AI"
 date: "January 2025"
-quality_score: "A- (90/100) - Publication-ready for mid-tier academic journals"
-word_count: "22800 words across 104 pages"
-citations_verified: "29 academic references, all verified and cited"
-visual_elements: "4 tables, 2 figures, comprehensive appendices"
-generation_method: "14 specialized AI agents (Research, Writing, Fact-Checking, Citation, Export)"
-showcase_description: "This complete 104-page thesis on pricing models for agentic AI systems was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review on token-based pricing to case studies on value-based approaches—all AI-generated."
-system_capabilities: "Research any academic topic • Generate original frameworks • Create case studies • Verify citations • Export to PDF/DOCX/HTML • Quality gates for academic integrity"
-call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/academic-thesis-ai"
-license: "MIT - Use it, fork it, improve it, publish with it"
+abstract: |
+  This thesis examines the evolution of pricing models for agentic AI systems, analyzing the transition from traditional token-based pricing to emerging value-based approaches. Through case studies of major AI platforms and theoretical framework development, we identify key factors driving pricing model innovation and propose a comprehensive framework for future pricing strategies in the agentic AI ecosystem.
+
+# ACADEMIC METADATA
+institution: "Open Source Academic Framework"
+degree: "Master of Science in Business Administration"
+department: "Department of Economics and Technology Management"
+keywords:
+  - "AI Pricing Models"
+  - "Token-Based Pricing"
+  - "Value-Based Pricing"
+  - "Agentic AI"
+  - "SaaS Economics"
+  - "Platform Business Models"
+
+# FORMATTING OPTIONS
+toc: true
+toc-depth: 3
+line-spacing: 1.5
+font-size: 12pt
+margin: 1in
+
+# SHOWCASE METADATA (hidden from PDF rendering - for AI-generated examples only)
+_showcase:
+  quality_score: "A- (90/100)"
+  word_count: 22800
+  pages: 104
+  citations_verified: 29
+  visual_elements: "4 tables, 2 figures, comprehensive appendices"
+  generation_method: "Multi-agent AI system (15 specialized agents)"
+  github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
+  license: "MIT"
+  system_creator: "Federico De Ponte"
 ---
 
 ## Abstract

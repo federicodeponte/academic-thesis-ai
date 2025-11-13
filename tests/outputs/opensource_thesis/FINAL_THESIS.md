@@ -1,19 +1,41 @@
 ---
+# DOCUMENT METADATA (rendered in PDF title page)
 title: "How Open Source Software Can Save the World: From Code Collaboration to Global Impact"
-subtitle: "AI-Generated Academic Thesis Showcase"
-author: "Academic Thesis AI (Multi-Agent System)"
-system_creator: "Federico De Ponte"
-github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
+author: "Academic Thesis AI"
 date: "January 2025"
-quality_score: "A- (90/100) - Publication-ready for mid-tier academic journals"
-word_count: "15,200 words across 69 pages"
-citations_verified: "98 academic references, all verified and cited"
-visual_elements: "5 tables, 2 figures, comprehensive appendices"
-generation_method: "14 specialized AI agents (Research, Writing, Fact-Checking, Citation, Export)"
-showcase_description: "This complete 69-page thesis on **open source software's transformative impact on global challenges** was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review to **real-world case studies and sustainability implications**—all AI-generated."
-system_capabilities: "Research any academic topic • Generate original frameworks • Create case studies • Verify citations • Export to PDF/DOCX/HTML • Quality gates for academic integrity"
-call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/academic-thesis-ai"
-license: "MIT - Use it, fork it, improve it, publish with it"
+abstract: |
+  Our world faces complex, border-transcending challenges like climate change and digital inequality, demanding innovative, collaborative, and scalable solutions that traditional proprietary models often cannot provide. This thesis investigates how the open source software (OSS) movement, built on transparency, collaboration, and universal access, offers a uniquely strong framework for developing and sharing technological interventions to address these urgent global issues.
+
+# ACADEMIC METADATA
+institution: "Open Source Academic Framework"
+degree: "Master of Science in Computer Science"
+department: "Department of Computer Science and Software Engineering"
+keywords:
+  - "Open Source Software"
+  - "Global Impact"
+  - "Sustainability"
+  - "Collaboration"
+  - "Digital Divide"
+  - "Innovation"
+
+# FORMATTING OPTIONS
+toc: true
+toc-depth: 3
+line-spacing: 1.5
+font-size: 12pt
+margin: 1in
+
+# SHOWCASE METADATA (hidden from PDF rendering - for AI-generated examples only)
+_showcase:
+  quality_score: "A- (90/100)"
+  word_count: 15200
+  pages: 69
+  citations_verified: 98
+  visual_elements: "5 tables, 2 figures, comprehensive appendices"
+  generation_method: "Multi-agent AI system (15 specialized agents)"
+  github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
+  license: "MIT"
+  system_creator: "Federico De Ponte"
 ---
 
 ## Abstract

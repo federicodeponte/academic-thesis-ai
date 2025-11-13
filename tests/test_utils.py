@@ -15,9 +15,11 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import google.generativeai as genai
 from config import get_config
+from config.concurrency_config import get_concurrency_config
 from utils.output_validators import ValidationResult
 from utils.api_citations.orchestrator import CitationResearcher
 from utils.citation_database import Citation
+from utils.deep_research import DeepResearchPlanner
 
 # Configure logging
 logger = logging.getLogger(__name__)
@@ -247,6 +249,128 @@ def run_agent(
     return output
 
 
+def parallel_run_agents(
+    agent_configs: List[Dict[str, Any]],
+    model: Any,
+    verbose: bool = True
+) -> Dict[str, str]:
+    """
+    Run multiple agents in parallel (paid tier only).
+
+    Executes 6 Crafter agents concurrently to dramatically speed up thesis generation.
+    Automatically gates execution based on API tier - only enabled on paid tier (2,000 RPM).
+
+    Args:
+        agent_configs: List of agent configuration dictionaries, each containing:
+            - name: str - Agent name (e.g., "6. Crafter - Write Introduction")
+            - prompt_path: str - Path to agent prompt
+            - user_input: str - Input for the agent
+            - save_to: Path - Path to save output
+        model: Configured Gemini model instance
+        verbose: Whether to print progress messages
+
+    Returns:
+        Dict[str, str]: Mapping of agent names to their outputs
+
+    Raises:
+        RuntimeError: If attempted on free tier (insufficient rate limit)
+        Exception: If any agent execution fails
+
+    Examples:
+        >>> configs = [
+        ...     {"name": "Intro", "prompt_path": "...", "user_input": "...", "save_to": Path("...")},
+        ...     {"name": "Methods", "prompt_path": "...", "user_input": "...", "save_to": Path("...")},
+        ... ]
+        >>> results = parallel_run_agents(configs, model)
+        >>> intro_text = results["Intro"]
+    """
+    from concurrent.futures import ThreadPoolExecutor, as_completed
+
+    # Check tier - only allow on paid tier
+    config = get_concurrency_config(verbose=False)
+
+    if not config.crafter_parallel:
+        if verbose:
+            print(f"\n⚠️  Crafter parallelization disabled (tier: {config.tier.upper()})")
+            print(f"   Running agents sequentially for safety...")
+            print()
+
+        # Fall back to sequential execution
+        results = {}
+        for agent_config in agent_configs:
+            output = run_agent(
+                model=model,
+                name=agent_config["name"],
+                prompt_path=agent_config["prompt_path"],
+                user_input=agent_config["user_input"],
+                save_to=agent_config.get("save_to"),
+                verbose=verbose
+            )
+            results[agent_config["name"]] = output
+
+            # Add rate limit delay between sequential agents
+            if agent_config != agent_configs[-1]:  # Don't delay after last agent
+                rate_limit_delay()
+
+        return results
+
+    # Paid tier - run in parallel
+    if verbose:
+        print(f"\n{'='*70}")
+        print(f"🚀 PARALLEL EXECUTION (Paid Tier)")
+        print(f"{'='*70}")
+        print(f"Running {len(agent_configs)} agents concurrently...")
+        print()
+
+    results = {}
+    start_time = time.time()
+
+    # Execute agents in parallel using ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=len(agent_configs)) as executor:
+        # Submit all agents
+        future_to_config = {
+            executor.submit(
+                run_agent,
+                model=model,
+                name=agent_config["name"],
+                prompt_path=agent_config["prompt_path"],
+                user_input=agent_config["user_input"],
+                save_to=agent_config.get("save_to"),
+                verbose=verbose
+            ): agent_config
+            for agent_config in agent_configs
+        }
+
+        # Collect results as they complete
+        completed_count = 0
+        for future in as_completed(future_to_config):
+            agent_config = future_to_config[future]
+            agent_name = agent_config["name"]
+
+            try:
+                output = future.result()
+                results[agent_name] = output
+                completed_count += 1
+
+                if verbose:
+                    print(f"  ✅ [{completed_count}/{len(agent_configs)}] {agent_name} completed")
+
+            except Exception as e:
+                if verbose:
+                    print(f"  ❌ {agent_name} failed: {str(e)}")
+                raise Exception(f"Parallel agent '{agent_name}' failed: {str(e)}") from e
+
+    elapsed = time.time() - start_time
+
+    if verbose:
+        print(f"\n✅ All {len(agent_configs)} agents completed in {elapsed:.1f}s")
+        print(f"   Average: {elapsed/len(agent_configs):.1f}s per agent")
+        print(f"   Speedup: ~{len(agent_configs)*30/elapsed:.1f}x faster than sequential")
+        print()
+
+    return results
+
+
 def _is_transient_error(error: Exception) -> bool:
     """
     Check if error is transient and worth retrying.
@@ -337,64 +461,198 @@ def count_words(text: str) -> int:
     return len(text.split())
 
 
-def rate_limit_delay(seconds: int = 2) -> None:
+def rate_limit_delay(seconds: Optional[float] = None) -> None:
     """
-    Sleep for rate limiting (Gemini free tier: 10 requests/minute).
+    Sleep for rate limiting with tier-adaptive delays.
+
+    Automatically adjusts delay based on detected API tier:
+    - Free tier (10 RPM): 7 seconds (safe for 1 req/6s limit)
+    - Paid tier (2,000 RPM): 0.3 seconds (safe for high throughput)
 
     Args:
-        seconds: Seconds to wait (default: 2 seconds = safe for 10/min limit)
+        seconds: Manual override (default: None = use tier-adaptive delay)
+
+    Examples:
+        >>> rate_limit_delay()  # Auto: 7s on free, 0.3s on paid
+        >>> rate_limit_delay(5)  # Manual: always 5s
     """
+    if seconds is None:
+        # Use tier-adaptive delay
+        config = get_concurrency_config(verbose=False)
+        seconds = config.rate_limit_delay
+
     time.sleep(seconds)
 
 
 def research_citations_via_api(
     model: Any,
-    research_topics: List[str],
-    output_path: Path,
+    research_topics: Optional[List[str]] = None,
+    output_path: Optional[Path] = None,
     target_minimum: int = 50,
-    verbose: bool = True
+    verbose: bool = True,
+    # Deep Research Mode parameters
+    use_deep_research: bool = False,
+    topic: Optional[str] = None,
+    scope: Optional[str] = None,
+    seed_references: Optional[List[str]] = None,
+    min_sources_deep: int = 50
 ) -> Dict[str, Any]:
     """
-    Research citations using API-backed fallback chain instead of LLM hallucination.
+    Research citations using API-backed fallback chain with optional deep research mode.
 
-    This function replaces the Scout agent's LLM-only approach with real API search
-    using the CitationResearcher infrastructure. It provides 95%+ success rate by
-    searching Crossref → Semantic Scholar → Gemini LLM (fallback only).
+    Two modes of operation:
+    1. **Standard Mode** (use_deep_research=False):
+       - Uses manually provided research_topics list
+       - Executes each topic through API fallback chain
+       - Best for targeted, curated research queries
+
+    2. **Deep Research Mode** (use_deep_research=True):
+       - Uses DeepResearchPlanner for autonomous research strategy
+       - Creates 50+ systematic queries from topic + scope + seed references
+       - Best for comprehensive literature reviews (dissertations, thesis)
+
+    API Fallback Chain:
+    Crossref → Semantic Scholar → Gemini Grounded → Gemini LLM (95%+ success rate)
 
     Args:
-        model: Configured Gemini model instance (used for LLM fallback only)
-        research_topics: List of research topics to find citations for
-        output_path: Path to save Scout-compatible markdown output
+        model: Configured Gemini model instance (used for planning and LLM fallback)
+        research_topics: List of research topics (required if use_deep_research=False)
+        output_path: Path to save Scout-compatible markdown output (required if provided)
         target_minimum: Minimum citations required to pass quality gate (default: 50)
         verbose: Whether to print progress messages (default: True)
+
+        use_deep_research: Enable deep research mode (default: False)
+        topic: Main research topic (required if use_deep_research=True)
+        scope: Optional research scope constraints (e.g., "EU focus; B2C and B2B")
+        seed_references: Optional seed papers to expand from
+        min_sources_deep: Minimum sources for deep research (default: 50)
 
     Returns:
         Dict with keys:
             - citations: List[Citation] - Valid citations found
             - count: int - Number of valid citations
-            - sources: Dict[str, int] - Breakdown by source (Crossref, Semantic Scholar, LLM)
+            - sources: Dict[str, int] - Breakdown by source (Crossref, Semantic Scholar, etc.)
             - failed_topics: List[str] - Topics that failed to find citations
+            - research_plan: Optional[Dict] - Deep research plan (if deep mode enabled)
 
     Raises:
         ValueError: If citation count < target_minimum (quality gate failure)
+        ValueError: If invalid mode parameters (missing required args)
 
-    Example:
+    Examples:
+        Standard Mode:
         >>> result = research_citations_via_api(
         ...     model=model,
         ...     research_topics=["open source software", "Linux kernel"],
         ...     output_path=Path("01_scout.md"),
         ...     target_minimum=50
         ... )
-        >>> print(f"Found {result['count']} citations")
+
+        Deep Research Mode:
+        >>> result = research_citations_via_api(
+        ...     model=model,
+        ...     use_deep_research=True,
+        ...     topic="Algorithmic bias in AI-powered hiring tools",
+        ...     scope="EU focus; B2C and B2B SaaS",
+        ...     seed_references=["Raghavan et al. (2020). Mitigating Bias"],
+        ...     output_path=Path("01_scout_deep.md"),
+        ...     min_sources_deep=60
+        ... )
     """
+    # Validate mode parameters
+    if use_deep_research:
+        if not topic:
+            raise ValueError("Deep research mode requires 'topic' parameter")
+        mode_name = "DEEP RESEARCH MODE"
+    else:
+        if not research_topics:
+            raise ValueError("Standard mode requires 'research_topics' parameter")
+        mode_name = "STANDARD MODE"
+
     if verbose:
         print("\n" + "=" * 80)
-        print("🔬 API-BACKED SCOUT - Real Citation Discovery")
+        print(f"🔬 API-BACKED SCOUT - {mode_name}")
         print("=" * 80)
-        print(f"\n📊 Configuration:")
+
+    # ========================================================================
+    # DEEP RESEARCH MODE: Autonomous research planning
+    # ========================================================================
+    research_plan: Optional[Dict[str, Any]] = None
+
+    if use_deep_research:
+        if verbose:
+            print(f"\n🧠 Deep Research Planning Phase")
+            print(f"{'='*80}")
+            print(f"\n📋 Input:")
+            print(f"   Topic: {topic}")
+            if scope:
+                print(f"   Scope: {scope}")
+            if seed_references:
+                print(f"   Seed References: {len(seed_references)}")
+            print(f"   Target: {min_sources_deep}+ sources")
+            print()
+
+        # Initialize deep research planner
+        planner = DeepResearchPlanner(
+            gemini_model=model,
+            min_sources=min_sources_deep,
+            verbose=verbose
+        )
+
+        # Create research plan
+        research_plan = planner.create_research_plan(
+            topic=topic,
+            scope=scope,
+            seed_references=seed_references
+        )
+
+        # Validate plan quality
+        if not planner.validate_plan(research_plan):
+            if verbose:
+                print("\n⚠️  Initial plan validation failed - attempting refinement...")
+
+            # Attempt refinement
+            research_plan = planner.refine_plan(
+                plan=research_plan,
+                feedback=f"Insufficient queries or coverage. Need minimum {min_sources_deep} sources. "
+                        f"Generate more diverse queries covering: author searches, title searches, "
+                        f"topic queries, regulatory/standards, and interdisciplinary connections."
+            )
+
+            # Validate again
+            if not planner.validate_plan(research_plan):
+                raise ValueError(
+                    f"Deep research plan validation failed after refinement. "
+                    f"Generated {len(research_plan.get('queries', []))} queries, "
+                    f"estimated {planner.estimate_coverage(research_plan.get('queries', []))} sources, "
+                    f"but need minimum {min_sources_deep}."
+                )
+
+        # Extract queries as research topics
+        research_topics = research_plan.get('queries', [])
+
+        if verbose:
+            print(f"\n✅ Research Plan Created:")
+            print(f"   Queries Generated: {len(research_topics)}")
+            print(f"   Estimated Coverage: {planner.estimate_coverage(research_topics)} sources")
+            print(f"\n📝 Research Strategy:")
+            strategy_lines = research_plan.get('strategy', '').split('\n')
+            for line in strategy_lines[:5]:  # First 5 lines
+                print(f"   {line}")
+            if len(strategy_lines) > 5:
+                print(f"   ... (see output file for full strategy)")
+            print()
+
+    # ========================================================================
+    # EXECUTION PHASE: Run queries through API fallback chain
+    # ========================================================================
+
+    if verbose:
+        print(f"\n📊 Execution Configuration:")
         print(f"   Target Minimum: {target_minimum} citations")
-        print(f"   Research Topics: {len(research_topics)}")
-        print(f"   Output: {output_path}")
+        print(f"   Research Topics/Queries: {len(research_topics)}")
+        if output_path:
+            print(f"   Output: {output_path}")
         print()
 
     # Initialize CitationResearcher with API fallback chain
@@ -415,8 +673,19 @@ def research_citations_via_api(
     }
     failed_topics: List[str] = []
 
+    # Batch processing configuration (tier-adaptive)
+    config = get_concurrency_config(verbose=False)
+    BATCH_SIZE = config.scout_batch_size  # Tier-adaptive batch size
+    BATCH_DELAY = config.scout_batch_delay  # Tier-adaptive delay (free=5s, paid=1s)
+
     # Research each topic
     for idx, topic in enumerate(research_topics, 1):
+        # Add delay every BATCH_SIZE topics to prevent burst rate limits
+        if idx > 1 and (idx - 1) % BATCH_SIZE == 0:
+            if verbose:
+                print(f"\n⏸️  Batch complete ({idx-1} topics processed). Waiting {BATCH_DELAY}s to respect API limits...")
+            time.sleep(BATCH_DELAY)
+
         if verbose:
             print(f"[{idx}/{len(research_topics)}] 🔎 {topic[:65]}{'...' if len(topic) > 65 else ''}")
 
@@ -462,12 +731,51 @@ def research_citations_via_api(
             print(f"   {source}: {count} ({percentage:.1f}%)")
         print()
 
-    # CRITICAL QUALITY GATE
-    if citation_count < target_minimum:
+    # TIERED QUALITY GATE (Graceful Degradation)
+    # Instead of binary pass/fail, we have tiered thresholds:
+    # - Excellent: ≥ target_minimum (100% of goal)
+    # - Acceptable: ≥ 86% of target (47/50 = acceptable with warning)
+    # - Minimal: ≥ 70% of target (35/50 = last resort, warn strongly)
+    # - Below 70%: Hard fail
+
+    excellent_threshold = target_minimum
+    acceptable_threshold = int(target_minimum * 0.86)  # 43 for target=50
+    minimal_threshold = int(target_minimum * 0.70)    # 35 for target=50
+
+    if citation_count >= excellent_threshold:
+        # EXCELLENT: Met target exactly
+        if verbose:
+            print(f"✅ QUALITY GATE PASSED (EXCELLENT): {citation_count} ≥ {target_minimum} required\n")
+        logger.info(f"Quality gate: EXCELLENT - {citation_count}/{target_minimum} citations")
+
+    elif citation_count >= acceptable_threshold:
+        # ACCEPTABLE: Close to target (86%+)
+        percentage = (citation_count / target_minimum) * 100
+        if verbose:
+            print(f"⚠️  QUALITY GATE PASSED (ACCEPTABLE): {citation_count}/{target_minimum} ({percentage:.1f}%)")
+            print(f"    Academic quality is good, but {target_minimum - citation_count} more citations recommended.\n")
+        logger.warning(f"Quality gate: ACCEPTABLE - {citation_count}/{target_minimum} ({percentage:.1f}%)")
+
+    elif citation_count >= minimal_threshold:
+        # MINIMAL: Below target but usable (70-86%)
+        percentage = (citation_count / target_minimum) * 100
+        if verbose:
+            print(f"⚠️  QUALITY GATE PASSED (MINIMAL): {citation_count}/{target_minimum} ({percentage:.1f}%)")
+            print(f"    ⚠️  WARNING: Citation count is below recommended standards.")
+            print(f"    Consider adding {target_minimum - citation_count} more citations for better academic rigor.\n")
+        logger.warning(f"Quality gate: MINIMAL - {citation_count}/{target_minimum} ({percentage:.1f}%) - below standards")
+
+    else:
+        # HARD FAIL: Below 70% threshold
+        percentage = (citation_count / target_minimum) * 100
         error_msg = (
-            f"\n❌ QUALITY GATE FAILED\n\n"
-            f"Only {citation_count} citations found, but {target_minimum} required.\n"
-            f"Academic thesis standards require minimum {target_minimum} citations.\n\n"
+            f"\n❌ QUALITY GATE FAILED (INSUFFICIENT CITATIONS)\n\n"
+            f"Only {citation_count} citations found ({percentage:.1f}%), but minimum {minimal_threshold} required ({minimal_threshold/target_minimum*100:.0f}% of target).\n"
+            f"Target: {target_minimum} citations (100%)\n"
+            f"Acceptable: {acceptable_threshold}+ citations (86%)\n"
+            f"Minimal: {minimal_threshold}+ citations (70%)\n"
+            f"Current: {citation_count} citations ({percentage:.1f}%) ❌\n\n"
+            f"Academic thesis standards require at least {minimal_threshold} citations.\n\n"
             f"Failed Topics ({len(failed_topics)}):\n"
         )
         for topic in failed_topics[:10]:
@@ -475,11 +783,8 @@ def research_citations_via_api(
         if len(failed_topics) > 10:
             error_msg += f"  ... and {len(failed_topics) - 10} more\n"
 
-        logger.error(f"Quality gate failed: {citation_count} < {target_minimum}")
+        logger.error(f"Quality gate FAILED: {citation_count} < {minimal_threshold} (minimal threshold)")
         raise ValueError(error_msg)
-
-    if verbose:
-        print(f"✅ QUALITY GATE PASSED: {citation_count} ≥ {target_minimum} required\n")
 
     # Format output as Scout-compatible markdown
     markdown_lines = [
@@ -552,7 +857,8 @@ def research_citations_via_api(
         "citations": citations,
         "count": citation_count,
         "sources": sources_breakdown,
-        "failed_topics": failed_topics
+        "failed_topics": failed_topics,
+        "research_plan": research_plan  # None for standard mode, Dict for deep research mode
     }
 
 

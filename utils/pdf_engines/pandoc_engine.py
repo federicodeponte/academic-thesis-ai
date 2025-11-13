@@ -186,6 +186,11 @@ class PandocLatexEngine(PDFEngine):
     breaklinks=true%
   }%
   \urlstyle{same}%
+  % Enhanced URL breaking for DOIs and long URLs
+  % Allow breaks at: / - _ . (common in DOIs and URLs)
+  \def\UrlBreaks{\do\/\do\-\do\_\do\.}%
+  % Add small spacing around break points for better line breaking
+  \Urlmuskip=0mu plus 1mu%
 }
 
 % Fix Level 3 headings: italic (NOT bold) - APA 7th edition

@@ -293,34 +293,60 @@ class CitationCompiler:
 
         elif source_type == 'book':
             publisher = citation.publisher or ""
+            doi = citation.doi or ""
+            url = citation.url or ""
+
             ref = f"{author_str} ({year}). *{title}*."
             if publisher:  # Only add publisher if it exists
                 ref = f"{author_str} ({year}). *{title}*. {publisher}."
+            # Add DOI/URL for books
+            if doi:
+                ref += f" https://doi.org/{doi}"
+            elif url:
+                ref += f" {url}"
 
         elif source_type in ['report', 'website']:
             url = citation.url or ""
+            doi = citation.doi or ""
             publisher = citation.publisher or ""
 
             ref = f"{author_str} ({year}). *{title}*"
             if publisher:
                 ref += f". {publisher}"
             ref += "."
-            if url:
+            # Prefer DOI over URL
+            if doi:
+                ref += f" https://doi.org/{doi}"
+            elif url:
                 ref += f" {url}"
 
         elif source_type == 'conference':
             publisher = citation.publisher or ""
             pages = citation.pages or ""
+            doi = citation.doi or ""
+            url = citation.url or ""
 
             ref = f"{author_str} ({year}). {title}."
             if publisher:  # Only add publisher if it exists
                 ref += f" {publisher}."
             if pages:  # Only add pages if it exists
                 ref += f" (pp. {pages})."
+            # Add DOI/URL for conference papers
+            if doi:
+                ref += f" https://doi.org/{doi}"
+            elif url:
+                ref += f" {url}"
 
         else:
-            # Fallback
+            # Fallback - still add DOI/URL if available
+            doi = citation.doi or ""
+            url = citation.url or ""
+
             ref = f"{author_str} ({year}). {title}."
+            if doi:
+                ref += f" https://doi.org/{doi}"
+            elif url:
+                ref += f" {url}"
 
         return ref
 

@@ -250,79 +250,6 @@ class PandocLatexEngine(PDFEngine):
 
         return preamble
 
-    def _detect_template(self, md_file: Path) -> Optional[str]:
-        """
-        Detect which LaTeX template to use from YAML frontmatter.
-
-        Checks for explicit `template:` field or auto-detects based on document type.
-
-        Template Detection Logic:
-        1. If `template: minimal|ieee|acm|university` is specified, use that
-        2. Auto-detect based on degree/institution:
-           - If degree contains "PhD" or "Dissertation" → university template
-           - If institution contains "IEEE" or "ACM" → respective conference template
-           - Default → minimal template
-
-        Args:
-            md_file: Markdown file to analyze
-
-        Returns:
-            Template name (minimal|ieee|acm|university) or None for default Pandoc template
-        """
-        import re
-        import yaml
-
-        try:
-            with open(md_file, 'r', encoding='utf-8') as f:
-                content = f.read()
-
-            # Extract YAML frontmatter
-            if not content.strip().startswith('---'):
-                return None
-
-            parts = content.split('---', 2)
-            if len(parts) < 3:
-                return None
-
-            yaml_content = parts[1]
-
-            # Parse YAML
-            metadata = yaml.safe_load(yaml_content)
-            if not metadata:
-                return None
-
-            # Check for explicit template field
-            if 'template' in metadata:
-                template = metadata['template'].lower()
-                valid_templates = ['minimal', 'ieee', 'acm', 'university']
-                if template in valid_templates:
-                    return template
-                else:
-                    print(f"⚠️  Invalid template '{template}', using auto-detection")
-
-            # Auto-detect template based on document characteristics
-            degree = metadata.get('degree', '').lower()
-            institution = metadata.get('institution', '').lower()
-
-            # University/dissertation template
-            if any(keyword in degree for keyword in ['phd', 'ph.d', 'dissertation', 'doctoral']):
-                return 'university'
-
-            # IEEE conference template
-            if 'ieee' in institution.lower():
-                return 'ieee'
-
-            # ACM conference template
-            if 'acm' in institution.lower():
-                return 'acm'
-
-            # Default to minimal template for academic papers
-            return 'minimal'
-
-        except Exception as e:
-            print(f"⚠️  Warning: Could not detect template: {e}")
-            return None
-
     def _run_pandoc(
         self,
         md_file: Path,
@@ -333,8 +260,7 @@ class PandocLatexEngine(PDFEngine):
         """
         Run Pandoc to convert markdown to PDF.
 
-        Uses custom LaTeX templates for professional title pages or Pandoc's
-        default template with custom preamble for robustness.
+        Uses Pandoc's default template with custom preamble for robustness.
 
         Args:
             md_file: Input markdown file
@@ -346,21 +272,8 @@ class PandocLatexEngine(PDFEngine):
             EngineResult with success/failure
         """
         try:
-            # Detect template from YAML frontmatter
-            template_name = self._detect_template(md_file)
-            template_path = None
-
-            if template_name:
-                # Use custom LaTeX template
-                templates_dir = Path(__file__).parent.parent.parent / "templates"
-                template_path = templates_dir / f"title-page-{template_name}.tex"
-
-                if not template_path.exists():
-                    print(f"⚠️  Warning: Template not found: {template_path}")
-                    print(f"   Falling back to default Pandoc template")
-                    template_path = None
-
-            # Pandoc command with optional custom template
+            # Pandoc command with default template + custom preamble
+            # This is more robust than a full custom template
             # Use absolute paths to avoid any path resolution issues
             margin = options.margins.replace('in', 'in').replace('cm', 'cm')
 
@@ -369,22 +282,13 @@ class PandocLatexEngine(PDFEngine):
                 str(md_file.resolve()),
                 '-o', str(output_pdf.resolve()),
                 '--pdf-engine=pdflatex',
+                '--include-in-header', str(preamble_path.resolve()),
                 '--from', 'markdown+autolink_bare_uris',
                 '--variable', f'geometry:margin={margin}',
                 '--variable', f'fontsize={options.font_size}',
                 '--variable', 'papersize:letter',
+                '--variable', 'documentclass:article',
             ]
-
-            # Use custom template or default with preamble
-            if template_path:
-                cmd.extend(['--template', str(template_path.resolve())])
-                print(f"   Using custom template: {template_name}")
-            else:
-                cmd.extend([
-                    '--include-in-header', str(preamble_path.resolve()),
-                    '--variable', 'documentclass:article',
-                ])
-                print(f"   Using default Pandoc template with custom preamble")
 
             # Add title page metadata if provided
             if options.title:
@@ -567,55 +471,29 @@ class PandocLatexEngine(PDFEngine):
                 flags=re.MULTILINE | re.IGNORECASE
             )
 
-        # Strip custom fields that Pandoc/LaTeX templates don't recognize
-        # Keep academic metadata + template-specific fields
-        # Hide showcase metadata (fields starting with _)
-        recognized_fields = [
-            # Core Pandoc fields
-            'title', 'subtitle', 'author', 'date', 'abstract',
-            # Academic metadata
-            'institution', 'department', 'degree', 'course', 'instructor',
-            'city', 'country', 'email', 'keywords', 'bibliography',
-            # Document formatting
-            'toc', 'toc-depth', 'lot', 'lof', 'line-spacing', 'font-size', 'margin',
-            # Template-specific (university/dissertation)
-            'logo', 'dedication', 'acknowledgments', 'copyright',
-            # Template selection
-            'template'
-        ]
-
+        # Strip custom fields that Pandoc doesn't recognize
+        # Only keep: title, subtitle, author, date, abstract
+        pandoc_recognized_fields = ['title', 'subtitle', 'author', 'date', 'abstract']
         yaml_lines = yaml_content.split('\n')
         filtered_lines = []
-        skip_nested = False
 
         for line in yaml_lines:
             line_stripped = line.strip()
-
-            # Keep empty lines and comments
             if not line_stripped or line_stripped.startswith('#'):
+                # Keep empty lines and comments
                 filtered_lines.append(line)
                 continue
 
             # Check if this line starts with a field name
-            field_match = re.match(r'^([_\w-]+):', line_stripped)
+            field_match = re.match(r'^(\w+):', line_stripped)
             if field_match:
                 field_name = field_match.group(1).lower()
-
-                # Skip fields starting with _ (showcase metadata)
-                if field_name.startswith('_'):
-                    skip_nested = True
-                    continue
-
-                # Keep recognized fields
-                if field_name in recognized_fields:
+                if field_name in pandoc_recognized_fields:
                     filtered_lines.append(line)
-                    skip_nested = False
-                else:
-                    skip_nested = True
+                # Skip lines with unrecognized fields
             else:
-                # Keep continuation lines if not skipping
-                if not skip_nested:
-                    filtered_lines.append(line)
+                # Keep continuation lines (indented or quoted multi-line values)
+                filtered_lines.append(line)
 
         yaml_content = '\n'.join(filtered_lines)
 

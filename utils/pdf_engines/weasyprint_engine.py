@@ -115,72 +115,19 @@ class WeasyPrintEngine(PDFEngine):
         """
         Generate CSS from options.
 
-        Uses enhanced academic-style.css with premium typography (Crimson Text)
-        and professional spacing system. Falls back to basic CSS if file not found.
-
         Args:
             options: PDF generation options
 
         Returns:
             str: CSS stylesheet string
         """
-        # Try to load enhanced CSS
-        css_file = Path(__file__).parent.parent.parent / "examples" / "academic-style.css"
-
-        if css_file.exists():
-            try:
-                with open(css_file, 'r', encoding='utf-8') as f:
-                    base_css = f.read()
-
-                # Override CSS variables with options
-                overrides = f"""
-        /* Option overrides for WeasyPrint */
-        :root {{
-            --print-margin: {options.margins};
-        }}
-
-        @page {{
-            size: {options.page_size};
-            margin: {options.margins};
-        }}
-
-        body {{
-            font-size: {options.font_size};
-            line-height: {options.line_spacing};
-            text-align: {options.text_align};
-        }}
-        """
-
-                # Add page numbers if requested
-                if options.page_numbers:
-                    position = options.page_number_position
-                    if 'center' in position:
-                        alignment = 'center'
-                    elif 'right' in position:
-                        alignment = 'right'
-                    else:
-                        alignment = 'left'
-
-                    overrides += f"""
-        @page {{
-            @bottom-{alignment} {{
-                content: counter(page);
-                font-family: var(--font-body);
-                font-size: 12pt;
-            }}
-        }}
-        """
-
-                return base_css + overrides
-
-            except Exception as e:
-                print(f"⚠️  Warning: Could not load enhanced CSS: {e}")
-                print("   Falling back to basic CSS")
-
-        # Fallback to basic CSS if enhanced CSS not available
+        # Parse line spacing
         line_height = options.line_spacing
+
+        # Parse font size
         font_size = options.font_size
 
+        # Build CSS
         css = f"""
         @page {{
             size: {options.page_size};

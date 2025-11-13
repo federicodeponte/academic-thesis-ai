@@ -17,25 +17,28 @@ from utils.api_citations import CitationResearcher
 class CitationCompiler:
     """Deterministic citation compiler with automatic missing citation research."""
 
-    def __init__(self, database: CitationDatabase, model: Optional[genai.GenerativeModel] = None):
+    def __init__(self, database: CitationDatabase, model: Optional[genai.GenerativeModel] = None, complexity_threshold: float = 0.7):
         """
         Initialize compiler with citation database.
 
         Args:
             database: CitationDatabase with all available citations
             model: Optional Gemini model for researching missing citations (used as LLM fallback)
+            complexity_threshold: Threshold for identifying "complex" sections (0-1 scale, default: 0.7)
         """
         self.database = database
         self.citation_lookup = {c.id: c for c in database.citations}
         self.style = database.citation_style
         self.model = model
         self.research_enabled = model is not None
+        self.complexity_threshold = complexity_threshold
 
-        # Initialize API-backed citation researcher (Crossref → Semantic Scholar → Gemini LLM)
+        # Initialize API-backed citation researcher (Crossref → Semantic Scholar → Gemini Grounded → Gemini LLM)
         self.researcher = CitationResearcher(
             gemini_model=model,
             enable_crossref=True,
             enable_semantic_scholar=True,
+            enable_gemini_grounded=True,  # Enable Gemini Grounded for web sources
             enable_llm_fallback=True,
             verbose=False  # Will be overridden by method verbose parameter
         )
@@ -290,15 +293,18 @@ class CitationCompiler:
 
         elif source_type == 'book':
             publisher = citation.publisher or ""
-            ref = f"{author_str} ({year}). *{title}*. {publisher}."
+            ref = f"{author_str} ({year}). *{title}*."
+            if publisher:  # Only add publisher if it exists
+                ref = f"{author_str} ({year}). *{title}*. {publisher}."
 
         elif source_type in ['report', 'website']:
             url = citation.url or ""
             publisher = citation.publisher or ""
 
-            ref = f"{author_str} ({year}). *{title}*."
+            ref = f"{author_str} ({year}). *{title}*"
             if publisher:
-                ref = f"{author_str} ({year}). *{title}*. {publisher}."
+                ref += f". {publisher}"
+            ref += "."
             if url:
                 ref += f" {url}"
 
@@ -307,9 +313,9 @@ class CitationCompiler:
             pages = citation.pages or ""
 
             ref = f"{author_str} ({year}). {title}."
-            if publisher:
+            if publisher:  # Only add publisher if it exists
                 ref += f" {publisher}."
-            if pages:
+            if pages:  # Only add pages if it exists
                 ref += f" (pp. {pages})."
 
         else:
@@ -422,6 +428,94 @@ class CitationCompiler:
             'coverage_percentage': coverage,
             'unused_citations': unused_citations,
             'cited_ids': cited_ids,
+        }
+
+    def analyze_section_complexity(self, section_text: str) -> Dict[str, Any]:
+        """
+        Analyze complexity of a thesis section to determine research depth needs.
+
+        Used for hybrid deep research approach: complex sections get deep research,
+        routine sections get standard citation research.
+
+        Complexity Factors:
+        1. Technical term density (specialized vocabulary)
+        2. Citation density (research-heavy sections)
+        3. Section length (longer = more complex)
+        4. Academic keywords (theory, methodology, analysis, etc.)
+
+        Args:
+            section_text: Text of the section to analyze
+
+        Returns:
+            Dict with keys:
+                - complexity_score: float (0-1 scale, higher = more complex)
+                - is_complex: bool (score >= threshold)
+                - factors: Dict[str, float] - Individual factor scores
+                - recommendation: str - "deep_research" or "standard_research"
+        """
+        # Extract metrics
+        words = section_text.split()
+        word_count = len(words)
+        sentences = section_text.split('.')
+        sentence_count = max(1, len([s for s in sentences if s.strip()]))
+
+        # Factor 1: Technical term density (presence of academic/technical terms)
+        technical_terms = [
+            'methodology', 'framework', 'paradigm', 'theoretical', 'empirical',
+            'analysis', 'synthesis', 'hypothesis', 'validation', 'verification',
+            'algorithm', 'optimization', 'implementation', 'architecture',
+            'governance', 'compliance', 'regulation', 'standard', 'protocol',
+            'infrastructure', 'integration', 'scalability', 'performance',
+            'systematic', 'comprehensive', 'interdisciplinary', 'multifaceted'
+        ]
+        technical_count = sum(1 for word in words if word.lower() in technical_terms)
+        technical_density = min(technical_count / max(1, word_count / 100), 1.0)  # Per 100 words, capped at 1.0
+
+        # Factor 2: Citation density (how research-heavy is this section?)
+        citation_pattern_count = section_text.count('{cite_')
+        citation_density = min(citation_pattern_count / max(1, sentence_count / 10), 1.0)  # Per 10 sentences
+
+        # Factor 3: Section length (longer sections = more complex topics)
+        # Normalize: 500 words = 0.5, 1000+ words = 1.0
+        length_factor = min(word_count / 1000, 1.0)
+
+        # Factor 4: Academic keywords (research-oriented language)
+        academic_keywords = [
+            'research', 'study', 'literature', 'review', 'survey', 'investigation',
+            'evidence', 'findings', 'results', 'discussion', 'implications',
+            'limitations', 'future work', 'contributions', 'novelty',
+            'state-of-the-art', 'cutting-edge', 'emerging', 'recent developments'
+        ]
+        keyword_count = sum(1 for keyword in academic_keywords if keyword.lower() in section_text.lower())
+        keyword_density = min(keyword_count / 5, 1.0)  # 5+ keywords = 1.0
+
+        # Calculate weighted complexity score
+        complexity_score = (
+            technical_density * 0.3 +      # 30% weight
+            citation_density * 0.3 +       # 30% weight
+            length_factor * 0.2 +          # 20% weight
+            keyword_density * 0.2          # 20% weight
+        )
+
+        is_complex = complexity_score >= self.complexity_threshold
+
+        return {
+            'complexity_score': round(complexity_score, 3),
+            'is_complex': is_complex,
+            'factors': {
+                'technical_density': round(technical_density, 3),
+                'citation_density': round(citation_density, 3),
+                'length_factor': round(length_factor, 3),
+                'keyword_density': round(keyword_density, 3)
+            },
+            'recommendation': 'deep_research' if is_complex else 'standard_research',
+            'metrics': {
+                'word_count': word_count,
+                'sentence_count': sentence_count,
+                'citation_count': citation_pattern_count,
+                'technical_terms': technical_count,
+                'academic_keywords': keyword_count
+            }
         }
 
 

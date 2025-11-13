@@ -3,22 +3,559 @@
     {
       "id": "cite_001",
       "authors": [
-        "Michaelowa",
-        "Croes",
-        "Hoch"
+        "Weishaar"
       ],
-      "year": 2021,
-      "title": "Article 6 of the Paris Agreement: Prospects for International Carbon Markets",
+      "year": 2014,
+      "title": "Implementation issue 4: Lawsuits following from emissions trading",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Edward Elgar Publishing",
+      "doi": "10.4337/9781781952221.00013"
+    },
+    {
+      "id": "cite_002",
+      "authors": [
+        "Edwin",
+        "Josephine"
+      ],
+      "year": 2023,
+      "title": "European Union Emissions Trading System (EU ETS)",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Oxford University Press",
+      "doi": "10.1093/law-oeeul/e168.013.168"
+    },
+    {
+      "id": "cite_003",
+      "authors": [
+        "Kirchner",
+        "Schmidt",
+        "Wehrle"
+      ],
+      "year": 2019,
+      "title": "Exploiting Synergy of Carbon Pricing and other Policy Instruments for Deep Decarbonization",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "OSF Preprints",
+      "doi": "10.31224/osf.io/vbq6e"
+    },
+    {
+      "id": "cite_004",
+      "authors": [
+        "Goulder",
+        "Hafstead",
+        "Dworsky"
+      ],
+      "year": 2009,
+      "title": "Impacts of Alternative Emissions Allowance Allocation Methods under a Federal Cap-and-Trade Program",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "National Bureau of Economic Research",
+      "doi": "10.3386/w15293"
+    },
+    {
+      "id": "cite_005",
+      "authors": [
+        "Reid"
+      ],
+      "year": 2022,
+      "title": "The regression of atmospheric concentration on carbon dioxide emissions",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "ESSOAr",
+      "doi": "10.1002/essoar.10510796.1"
+    },
+    {
+      "id": "cite_006",
+      "authors": [
+        "Haque"
+      ],
+      "year": 2023,
+      "title": "Life Cycle Based Carbon Footprint Assessment and Techno-economic Evaluation Methodologies of Hydrogen Energy Systems",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.4493411"
+    },
+    {
+      "id": "cite_007",
+      "authors": [
+        "Oberthür",
+        "Ott"
+      ],
+      "year": 1999,
+      "title": "Emission Limitation and Reduction Commitments (Article 3)",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Springer Berlin Heidelberg",
+      "doi": "10.1007/978-3-662-03925-0_11"
+    },
+    {
+      "id": "cite_008",
+      "authors": [
+        "Ramji"
+      ],
+      "year": 2018,
+      "title": "Paris Agreement and climate change in India",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Routledge",
+      "doi": "10.4324/9781315212470-14"
+    },
+    {
+      "id": "cite_009",
+      "authors": [
+        "Gao"
+      ],
+      "year": 2024,
+      "title": "Staggered Linkage and Mechanisms between the International Crude Oil Market and China's Financial Markets",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.4896043"
+    },
+    {
+      "id": "cite_010",
+      "authors": [
+        "Janikowski",
+        "Michaliszyn",
+        "Krupanek"
+      ],
+      "year": 1994,
+      "title": "Joint Implementation Projects between the Netherlands and Poland",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Springer Netherlands",
+      "doi": "10.1007/978-94-015-8370-1_4"
+    },
+    {
+      "id": "cite_011",
+      "authors": [
+        "Ladaniwskyj"
+      ],
+      "year": 2008,
+      "title": "Price Dynamics in the European Carbon Market",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.1494092"
+    },
+    {
+      "id": "cite_012",
+      "authors": [
+        "Dittmann",
+        "Lauter",
+        "Prokopczuk",
+        "Sibbertsen"
+      ],
+      "year": 2024,
+      "title": "What Determines the Price of Carbon? New Evidence From Phase III and IV of the EU ETS",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.5053285"
+    },
+    {
+      "id": "cite_013",
+      "authors": [
+        "Wettestad"
+      ],
+      "year": 2023,
+      "title": "Proactive prevention of carbon leakage? The EU Carbon Border Adjustment Mechanism",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Edward Elgar Publishing",
+      "doi": "10.4337/9781789906981.00029"
+    },
+    {
+      "id": "cite_014",
+      "authors": [
+        "Mauer",
+        "Okullo",
+        "Pahle"
+      ],
+      "year": 2020,
+      "title": "Postponing Auctioning Versus Cancellation of Allowances in the EU ETS",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.3719948"
+    },
+    {
+      "id": "cite_015",
+      "authors": [
+        "Holt",
+        "Shobe"
+      ],
+      "year": 2015,
+      "title": "Price and Quantity 'Collars' for Stabilizing Emissions Allowance Prices: An Experimental Analysis of the EU ETS Market Stability Reserve",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.2630116"
+    },
+    {
+      "id": "cite_016",
+      "authors": [
+        "Piga"
+      ],
+      "year": 2003,
+      "title": "Pigouvian Taxation in Tourism",
       "source_type": "journal",
       "language": "german",
-      "journal": "Journal of Environmental Economics and Management",
-      "doi": "10.1016/j.jeem.2021.102430"
+      "journal": "Environmental & Resource Economics",
+      "doi": "10.1023/b:eare.0000003544.77701.01"
+    },
+    {
+      "id": "cite_017",
+      "authors": [
+        "Tol"
+      ],
+      "year": 2001,
+      "title": "Equitable cost-benefit analysis of climate change policies",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Ecological Economics",
+      "doi": "10.1016/s0921-8009(00)00204-4"
+    },
+    {
+      "id": "cite_018",
+      "authors": [
+        "Li",
+        "Zhao"
+      ],
+      "year": 2025,
+      "title": "The Effectiveness of Carbon Emission Trading System: Evidence from China's Regional Markets",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.5012034"
+    },
+    {
+      "id": "cite_019",
+      "authors": [
+        "Pearse",
+        "Böhm"
+      ],
+      "year": 2014,
+      "title": "Ten reasons why carbon markets will not bring about radical emissions reduction",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Carbon Management",
+      "doi": "10.1080/17583004.2014.990679"
+    },
+    {
+      "id": "cite_020",
+      "authors": [
+        "Guest"
+      ],
+      "year": 2010,
+      "title": "Global Demographic Change, Carbon Emissions, the Optimal Carbon Price and Carbon Abatement",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "B.E. Journal of Economic Analysis & Policy",
+      "doi": "10.2202/1524-5861.1466"
+    },
+    {
+      "id": "cite_021",
+      "authors": [
+        "Wei",
+        "Tian"
+      ],
+      "year": 2013,
+      "title": "Building Carbon Emissions Trading System for China under the Experience of EU Emissions Trading System",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Advanced Materials Research",
+      "doi": "10.4028/www.scientific.net/amm.411-414.2505"
+    },
+    {
+      "id": "cite_022",
+      "authors": [
+        "Yan"
+      ],
+      "year": 2021,
+      "title": "The impact of climate policy on fossil fuel consumption: Evidence from the Regional Greenhouse Gas Initiative (RGGI)",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Energy Economics",
+      "doi": "10.1016/j.eneco.2021.105333"
+    },
+    {
+      "id": "cite_023",
+      "authors": [
+        "Carter"
+      ],
+      "year": 2018,
+      "title": "Aotearoa/New Zealand and the Emissions Trading Scheme",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Springer International Publishing",
+      "doi": "10.1007/978-3-319-96439-3_5"
+    },
+    {
+      "id": "cite_024",
+      "authors": [
+        "KIFORY",
+        "INNOCENT DANIEL"
+      ],
+      "year": 2025,
+      "title": "Carbon Price Volatility Modeling: A STR-GARCH Approach Applied to the European Carbon Market",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.5721443"
+    },
+    {
+      "id": "cite_025",
+      "authors": [
+        "Gullì"
+      ],
+      "year": 2016,
+      "title": "Windfall profits in the EU ETS power sector",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Edward Elgar Publishing",
+      "doi": "10.4337/9781784710620.00016"
+    },
+    {
+      "id": "cite_026",
+      "authors": [
+        "Will"
+      ],
+      "year": 2019,
+      "title": "The eu Emissions Trading System emissions trading system (ets) Leading to Carbon Leakage Effects",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Brill Nijhoff",
+      "doi": "10.1163/9789004391055_003"
+    },
+    {
+      "id": "cite_027",
+      "authors": [
+        "Reinaud"
+      ],
+      "year": 2008,
+      "title": "From Electricity Prices to Electricity Costs: Impact of Emissions Trading on Industry’s Electricity Purchasing Strategies",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Edward Elgar Publishing",
+      "doi": "10.4337/9781848445031.00009"
+    },
+    {
+      "id": "cite_028",
+      "authors": [
+        "Rose"
+      ],
+      "year": 1987,
+      "title": "Electricity and industrial productivity: A technical and economic perspective",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Energy Economics",
+      "doi": "10.1016/0167-188x(87)90009-7"
+    },
+    {
+      "id": "cite_029",
+      "authors": [
+        "Ledo",
+        "Sapkota",
+        "Snapp"
+      ],
+      "year": 2023,
+      "title": "A Monitoring, Reporting and Verification Framework (Mrv) for Tracking Fertilizer-Induced Nitrous Oxide Emissions",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.4449914"
+    },
+    {
+      "id": "cite_030",
+      "authors": [
+        "Di Vaio",
+        "Ali"
+      ],
+      "year": 2024,
+      "title": "Accounting Standards and Guidance for Carbon-Free Economy",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Routledge",
+      "doi": "10.4324/9781003522324-8"
+    },
+    {
+      "id": "cite_031",
+      "authors": [
+        "Hu",
+        "Hu",
+        "Wu"
+      ],
+      "year": 2025,
+      "title": "Green Policies, Greener Wallets: How Cap‐and‐Trade Regulation Affects Cost of Capital",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Business Strategy and the Environment",
+      "doi": "10.1002/bse.4101"
+    },
+    {
+      "id": "cite_032",
+      "authors": [
+        "Kopittke",
+        "Dalal",
+        "McKenna",
+        "Smith",
+        "Wang",
+        "Weng",
+        "Bom",
+        "Menzies"
+      ],
+      "year": 2024,
+      "title": "Soil is a major contributor to global greenhouse gas emissions and climate change",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "SOIL",
+      "doi": "10.5194/soil-10-873-2024"
+    },
+    {
+      "id": "cite_033",
+      "authors": [
+        "Digitemie",
+        "Ekemezie"
+      ],
+      "year": 2024,
+      "title": "Assessing the role of carbon pricing in global climate change mitigation strategies",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Multidisciplinary Scientific Annals of the Royal Society for Science and Research",
+      "doi": "10.30574/msarr.2024.10.2.0040"
+    },
+    {
+      "id": "cite_034",
+      "authors": [
+        "Sutter",
+        "Parreño"
+      ],
+      "year": 2007,
+      "title": "Does the current Clean Development Mechanism (CDM) deliver its sustainable development claim? An analysis of officially registered CDM projects",
+      "source_type": "journal",
+      "language": "german",
+      "journal": "Climatic Change",
+      "doi": "10.1007/S10584-007-9269-9"
+    },
+    {
+      "id": "cite_035",
+      "authors": [
+        "European Union"
+      ],
+      "year": 2003,
+      "title": "Richtlinie 2003/87/EG über ein System für den Handel mit Treibhausgasemissionszertifikaten in der Gemeinschaft",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "Official Journal of the European Union"
+    },
+    {
+      "id": "cite_036",
+      "authors": [
+        "IPCC"
+      ],
+      "year": 2021,
+      "title": "Assessment Report",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "IPCC"
+    },
+    {
+      "id": "cite_037",
+      "authors": [
+        "ISO"
+      ],
+      "year": 2006,
+      "title": "Environmental management – Life cycle assessment – Principles and framework (ISO 14040)",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "International Organization for Standardization"
+    },
+    {
+      "id": "cite_038",
+      "authors": [
+        "United Nations Framework Convention on Climate Change"
+      ],
+      "year": 1997,
+      "title": "Kyoto Protocol to the United Nations Framework Convention on Climate Change",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "United Nations"
+    },
+    {
+      "id": "cite_039",
+      "authors": [
+        "United Nations Framework Convention on Climate Change"
+      ],
+      "year": 2015,
+      "title": "Paris Agreement",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "United Nations"
+    },
+    {
+      "id": "cite_040",
+      "authors": [
+        "European Union"
+      ],
+      "year": 2023,
+      "title": "Verordnung (EU) 2023/956 zur Schaffung eines CO2-Grenzausgleichsmechanismus",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "Official Journal of the European Union"
+    },
+    {
+      "id": "cite_041",
+      "authors": [
+        "Pigou",
+        "A.C."
+      ],
+      "year": 1920,
+      "title": "The Economics of Welfare",
+      "source_type": "book",
+      "language": "german",
+      "publisher": "Macmillan"
+    },
+    {
+      "id": "cite_042",
+      "authors": [
+        "IPCC"
+      ],
+      "year": 2006,
+      "title": "2006 IPCC Guidelines for National Greenhouse Gas Inventories",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "IPCC"
+    },
+    {
+      "id": "cite_043",
+      "authors": [
+        "International Accounting Standards Board"
+      ],
+      "year": 2024,
+      "title": "International Financial Reporting Standards",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "International Accounting Standards Board"
+    },
+    {
+      "id": "cite_044",
+      "authors": [
+        "Task Force on Climate-related Financial Disclosures"
+      ],
+      "year": 2017,
+      "title": "Recommendations of the Task Force on Climate-related Financial Disclosures",
+      "source_type": "report",
+      "language": "german",
+      "publisher": "Task Force on Climate-related Financial Disclosures"
     }
   ],
   "metadata": {
-    "total_citations": 1,
+    "total_citations": 44,
     "citation_style": "APA 7th",
     "thesis_language": "german",
-    "extracted_date": "2025-11-10T13:53:34.275829"
+    "extracted_date": "2025-11-13T16:47:10.095425"
   }
 }

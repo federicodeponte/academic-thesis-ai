@@ -37,11 +37,12 @@ class PDFGenerationOptions:
     # APA 7th edition specific
     heading_styles: dict = None
 
-    # Title page metadata (optional - for APA 7th edition title page)
+    # Title page metadata (optional - for professional academic title page)
     title: Optional[str] = None
     author: Optional[str] = None
     date: Optional[str] = None
     institution: Optional[str] = None
+    department: Optional[str] = None
     course: Optional[str] = None
     instructor: Optional[str] = None
 

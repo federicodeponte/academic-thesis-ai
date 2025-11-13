@@ -87,6 +87,9 @@ class PandocLatexEngine(PDFEngine):
 
             md_content = self._normalize_yaml_for_pandoc(md_content)
 
+            # Sanitize problematic Unicode characters for pdflatex
+            md_content = self._sanitize_unicode_for_latex(md_content)
+
             # Write normalized content to temporary file for Pandoc
             import tempfile
             temp_md = None
@@ -209,25 +212,68 @@ class PandocLatexEngine(PDFEngine):
 \renewenvironment{longtable}{\small\oldlongtable}{\endoldlongtable}
 '''
 
-        # Add APA 7th edition title page formatting if metadata provided
+        # Add professional cover page if metadata provided
         if any([options.title, options.author, options.institution,
                 options.course, options.instructor]):
-            preamble += r'''
-% APA 7th Edition Title Page Customization
-\usepackage{titling}
-% Title page formatting: centered, double-spaced
-\pretitle{\begin{center}\LARGE\bfseries}
-\posttitle{\par\end{center}\vskip 2em}
-\preauthor{\begin{center}\large}
-\postauthor{\par\end{center}}
-\predate{\begin{center}\large}
-\postdate{\par\end{center}}
+            # Build institutional metadata block
+            inst_lines = []
+            if options.institution:
+                inst_lines.append(options.institution)
+            if options.department:
+                inst_lines.append(options.department)
 
-% Ensure title page is on separate page
-\AtBeginDocument{\maketitle\clearpage}
+            # Build degree statement
+            degree_text = ""
+            if options.course:
+                degree_text = f"""
+    \\vspace{{1cm}}
+    {{\\normalsize
+    A thesis submitted in partial fulfillment\\\\
+    of the requirements for the degree of\\\\[0.5em]
+    \\textbf{{{options.course}}}\\\\
+    }}"""
 
-% Add custom fields for APA title page
-% These will be populated via Pandoc variables
+            inst_block = "\\\\[0.5em]\n    ".join(inst_lines) if inst_lines else ""
+
+            # Use Pandoc template variables directly to avoid LaTeX macro issues
+            title_text = options.title or ""
+            author_text = options.author or ""
+            date_text = options.date or ""
+
+            preamble += rf'''
+% Professional Academic Cover Page
+\usepackage{{titling}}
+
+% Custom title page layout
+\renewcommand{{\maketitle}}{{%
+  \begin{{titlepage}}
+    \centering
+    \vspace*{{3cm}}
+
+    % Title - large and bold
+    {{\Huge\bfseries {title_text}}}\\[2cm]
+
+    % Author - prominent
+    {{\Large {author_text}}}\\[1.5cm]
+
+    % Institutional details block
+    {{\large
+    {inst_block}
+    }}
+{degree_text}
+
+    \vfill
+
+    % Date at bottom
+    {{\large {date_text}}}
+
+  \end{{titlepage}}
+  \clearpage
+  \pagenumbering{{roman}}  % Start roman numerals after cover page
+}}
+
+% Ensure title page is rendered at document start
+\AtBeginDocument{{\maketitle}}
 '''
 
         # Add front matter page numbering (roman numerals) if TOC enabled
@@ -297,18 +343,16 @@ class PandocLatexEngine(PDFEngine):
                 cmd.extend(['--variable', f'author={options.author}'])
             if options.date:
                 cmd.extend(['--variable', f'date={options.date}'])
-            # Note: institution, course, instructor are APA-specific and may need
-            # custom template support. For now, we include them in subtitle if provided
-            subtitle_parts = []
+
+            # Add institutional metadata for professional cover page
             if options.institution:
-                subtitle_parts.append(options.institution)
+                cmd.extend(['--variable', f'institution={options.institution}'])
+            if options.department:
+                cmd.extend(['--variable', f'department={options.department}'])
             if options.course:
-                subtitle_parts.append(options.course)
+                cmd.extend(['--variable', f'course={options.course}'])
             if options.instructor:
-                subtitle_parts.append(f'Instructor: {options.instructor}')
-            if subtitle_parts:
-                subtitle = r'\\'.join(subtitle_parts)
-                cmd.extend(['--variable', f'subtitle={subtitle}'])
+                cmd.extend(['--variable', f'instructor={options.instructor}'])
 
             # Add table of contents if enabled
             if options.enable_toc:
@@ -499,3 +543,36 @@ class PandocLatexEngine(PDFEngine):
 
         # Reconstruct markdown
         return f'---{yaml_content}---{rest_content}'
+
+    def _sanitize_unicode_for_latex(self, md_content: str) -> str:
+        """
+        Replace problematic Unicode characters with ASCII equivalents.
+
+        Fixes Unicode errors like U+FF1A (fullwidth colon) that break pdflatex.
+        These characters are common in citations from international sources.
+
+        Args:
+            md_content: Markdown content with potential Unicode issues
+
+        Returns:
+            Markdown content with sanitized characters
+        """
+        replacements = {
+            '：': ':',    # U+FF1A fullwidth colon
+            '，': ',',    # U+FF0C fullwidth comma
+            '（': '(',    # U+FF08 fullwidth left paren
+            '）': ')',    # U+FF09 fullwidth right paren
+            '　': ' ',    # U+3000 ideographic space
+            ''': "'",    # U+2018 left single quotation mark
+            ''': "'",    # U+2019 right single quotation mark
+            '"': '"',    # U+201C left double quotation mark
+            '"': '"',    # U+201D right double quotation mark
+            '–': '-',    # U+2013 en dash
+            '—': '--',   # U+2014 em dash
+            '…': '...', # U+2026 horizontal ellipsis
+        }
+
+        for unicode_char, ascii_equiv in replacements.items():
+            md_content = md_content.replace(unicode_char, ascii_equiv)
+
+        return md_content

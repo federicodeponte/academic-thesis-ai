@@ -17,6 +17,74 @@ from utils.pdf_engines import (
 )
 
 
+def extract_metadata_from_yaml(md_file: Path) -> dict:
+    """
+    Extract metadata from YAML frontmatter in markdown file.
+
+    Normalizes German/Spanish/French field names to English.
+
+    Args:
+        md_file: Path to markdown file with YAML frontmatter
+
+    Returns:
+        dict: Normalized metadata (title, author, date, institution, department, degree)
+    """
+    import yaml
+
+    try:
+        with open(md_file, 'r', encoding='utf-8') as f:
+            content = f.read()
+
+        # Extract YAML frontmatter
+        if not content.strip().startswith('---'):
+            return {}
+
+        parts = content.split('---', 2)
+        if len(parts) < 3:
+            return {}
+
+        yaml_content = parts[1]
+        metadata = yaml.safe_load(yaml_content) or {}
+
+        # Normalize localized field names to English
+        field_map = {
+            # German
+            'titel': 'title',
+            'untertitel': 'subtitle',
+            'autor': 'author',
+            'datum': 'date',
+            # Spanish
+            'título': 'title',
+            'subtítulo': 'subtitle',
+            'autor': 'author',
+            'fecha': 'date',
+            # French
+            'titre': 'title',
+            'sous-titre': 'subtitle',
+            'auteur': 'author',
+            'date': 'date',
+            # English (pass-through)
+            'title': 'title',
+            'subtitle': 'subtitle',
+            'author': 'author',
+            'date': 'date',
+            'institution': 'institution',
+            'department': 'department',
+            'degree': 'degree',
+        }
+
+        normalized = {}
+        for key, value in metadata.items():
+            normalized_key = field_map.get(key.lower(), key.lower())
+            normalized[normalized_key] = value
+
+        return normalized
+
+    except Exception as e:
+        print(f"⚠️  Warning: Could not extract YAML metadata: {e}")
+        return {}
+
+
 def export_pdf(
     md_file: Path,
     output_pdf: Path,
@@ -44,8 +112,19 @@ def export_pdf(
         >>> options = PDFGenerationOptions(line_spacing=1.5)
         >>> export_pdf(Path('thesis.md'), Path('thesis.pdf'), options=options)
     """
+    # Extract metadata from YAML frontmatter
+    metadata = extract_metadata_from_yaml(md_file)
+
+    # Create options with metadata if not provided
     if options is None:
-        options = PDFGenerationOptions()
+        options = PDFGenerationOptions(
+            title=metadata.get('title'),
+            author=metadata.get('author'),
+            date=metadata.get('date'),
+            institution=metadata.get('institution'),
+            department=metadata.get('department'),
+            course=metadata.get('degree')  # Map degree to course field
+        )
 
     print(f"\n📄 Generating PDF: {output_pdf.name}")
     print(f"   Input: {md_file}")

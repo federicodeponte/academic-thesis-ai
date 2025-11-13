@@ -60,17 +60,19 @@ def check_missing_bracket_markers(content: str) -> Tuple[int, List[str]]:
 
 def check_required_sections(content: str) -> Dict[str, bool]:
     """
-    Check if thesis has all required sections.
+    Check if thesis has all required sections (multilingual support).
+
+    Supports English, German, Spanish, French section names.
 
     Returns:
         Dict of section_name: present (bool)
     """
     sections = {
-        'Abstract': r'#+\s*Abstract',
-        'Introduction': r'#+\s*(Introduction|1\.?\s*Introduction)',
-        'Literature Review': r'#+\s*(Literature Review|2\.?\s*Literature Review)',
-        'Methodology': r'#+\s*(Methodology|Method)',
-        'References': r'#+\s*References',
+        'Abstract': r'#+\s*(Abstract|Zusammenfassung|Resumen|Résumé)',
+        'Introduction': r'#+\s*(Introduction|Einleitung|Introducción|1\.?\s*(Introduction|Einleitung|Introducción))',
+        'Literature Review': r'#+\s*(Literature Review|Literaturübersicht|Literaturüberblick|Revisión de Literatura|Revue de Littérature|2\.?\s*(Literature Review|Literaturübersicht))',
+        'Methodology': r'#+\s*(Methodology|Method|Methodik|Metodología|Méthodologie)',
+        'References': r'#+\s*(References|Literaturverzeichnis|Bibliografie|Bibliografia|Références)',
     }
 
     results = {}

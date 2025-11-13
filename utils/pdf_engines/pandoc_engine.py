@@ -271,9 +271,6 @@ class PandocLatexEngine(PDFEngine):
   \clearpage
   \pagenumbering{{roman}}  % Start roman numerals after cover page
 }}
-
-% Ensure title page is rendered at document start
-\AtBeginDocument{{\maketitle}}
 '''
 
         # Add front matter page numbering (roman numerals) if TOC enabled

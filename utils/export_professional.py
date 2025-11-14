@@ -468,14 +468,14 @@ def export_docx(
         print(f"✅ DOCX created successfully: {output_docx}")
         print(f"   Tables, formatting, and styling preserved from markdown")
 
-        # Post-process DOCX to add features Pandoc can't create
-        # (page numbers, TOC, proper spacing/indents, section/page breaks)
-        from docx_postprocessor import post_process_docx
+        # Post-process DOCX to add academic structure (title page + TOC)
+        # Fixes Pandoc's inline title block by inserting professional page breaks
+        from utils.docx_post_processor import insert_academic_structure
 
         print()
-        if not post_process_docx(output_docx):
-            print("⚠️  Post-processing failed - DOCX created but may lack some formatting")
-            print("   (Try opening in Word and adding page numbers/TOC manually)")
+        if not insert_academic_structure(output_docx, verbose=True):
+            print("⚠️  Post-processing failed - DOCX created but may lack page structure")
+            print("   (DOCX will have inline title block instead of standalone pages)")
             return True  # Still return True since basic DOCX was created
 
         return True

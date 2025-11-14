@@ -35,7 +35,7 @@ def run_thesis_script(script_path: Path, log_path: Path) -> Tuple[str, int, floa
 
     try:
         # Run thesis script, redirecting output to log file
-        with open(log_path, 'w') as log_file:
+        with open(log_path, 'w', encoding='utf-8') as log_file:  # FIXED (Bug #15): Added UTF-8 encoding
             result = subprocess.run(
                 [sys.executable, str(script_path)],
                 stdout=log_file,
@@ -49,7 +49,7 @@ def run_thesis_script(script_path: Path, log_path: Path) -> Tuple[str, int, floa
     except Exception as e:
         duration = time.time() - start_time
         # Log error
-        with open(log_path, 'a') as log_file:
+        with open(log_path, 'a', encoding='utf-8') as log_file:  # FIXED (Bug #15): Added UTF-8 encoding
             log_file.write(f"\n\n❌ SCRIPT EXECUTION ERROR:\n{str(e)}\n")
 
         return (script_name, 1, duration)  # Return code 1 = error

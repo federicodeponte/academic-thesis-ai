@@ -5,6 +5,7 @@ ABOUTME: Replaces {cite_001} with formatted citations, researches {cite_MISSING:
 """
 
 import re
+import logging
 from typing import Any, Dict, List, Tuple, Set, Optional
 from pathlib import Path
 
@@ -12,6 +13,9 @@ import google.generativeai as genai
 
 from utils.citation_database import Citation, CitationDatabase, CitationStyle
 from utils.api_citations import CitationResearcher
+
+# FIXED (Bug #14): Added missing logger initialization
+logger = logging.getLogger(__name__)
 
 
 class CitationCompiler:

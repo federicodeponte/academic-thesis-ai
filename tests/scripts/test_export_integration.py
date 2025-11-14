@@ -29,7 +29,7 @@ response = model.generate_content(prompt)
 paper_content = response.text
 
 # Save to markdown
-with open('ai_generated_paper.md', 'w') as f:
+with open('ai_generated_paper.md', 'w', encoding='utf-8') as f:  # FIXED (Bug #15): Added UTF-8 encoding
     f.write(paper_content)
 
 print("✅ AI-generated paper saved to: ai_generated_paper.md")

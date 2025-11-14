@@ -69,13 +69,27 @@ def check_required_sections(content: str) -> Dict[str, bool]:
         Dict of section_name: present (bool)
     """
     # FIXED (Bug #13): Added (\d+\.?\s*)? to match optional numbered sections
-    # Examples: "# Methodology", "# 3. Methodology", "## 3.1 Methodology"
+    # FIXED (Bug #18): Extended regex to handle Roman numerals, Chapter prefixes, and various numbering formats
+    # Examples:
+    #   - Plain: "# Methodology"
+    #   - Numbered: "# 3. Methodology", "## 3.1 Methodology"
+    #   - Roman numerals: "# I. Introduction", "# IV. Methodology"
+    #   - Chapter prefix: "# Chapter 1: Methodology", "# Kapitel 3: Methodik"
+    #   - Mixed: "# Chapter I: Introduction"
+
+    # Comprehensive number prefix pattern (handles Arabic, Roman, Chapter prefix)
+    # (?:...) = non-capturing group
+    # (Chapter|Kapitel|Capítulo|Chapitre)?\s* = optional chapter prefix
+    # ([IVXLCDM]+|\d+)\.?\s* = Roman numerals OR Arabic numbers, optional dot
+    # [:\-]?\s* = optional colon or dash separator
+    number_prefix = r'((?:Chapter|Kapitel|Cap[íi]tulo|Chapitre)?\s*([IVXLCDM]+|\d+)[\.:;\-]?\s*)?'
+
     sections = {
-        'Abstract': r'#+\s*(\d+\.?\s*)?(Abstract|Zusammenfassung|Resumen|Résumé)',
-        'Introduction': r'#+\s*(\d+\.?\s*)?(Introduction|Einleitung|Introducción)',
-        'Literature Review': r'#+\s*(\d+\.?\s*)?(Literature Review|Literaturübersicht|Literaturüberblick|Revisión de Literatura|Revue de Littérature)',
-        'Methodology': r'#+\s*(\d+\.?\s*)?(Methodology|Method|Methodik|Metodología|Méthodologie)',
-        'References': r'#+\s*(\d+\.?\s*)?(References|Literaturverzeichnis|Bibliografie|Bibliografia|Références)',
+        'Abstract': rf'#+\s*{number_prefix}(Abstract|Zusammenfassung|Resumen|Résumé)',
+        'Introduction': rf'#+\s*{number_prefix}(Introduction|Einleitung|Introducción)',
+        'Literature Review': rf'#+\s*{number_prefix}(Literature Review|Literaturübersicht|Literaturüberblick|Revisión de Literatura|Revue de Littérature)',
+        'Methodology': rf'#+\s*{number_prefix}(Methodology|Method|Methodik|Metodología|Méthodologie)',
+        'References': rf'#+\s*{number_prefix}(References|Literaturverzeichnis|Bibliografie|Bibliografia|Références)',
     }
 
     results = {}

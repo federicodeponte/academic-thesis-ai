@@ -231,7 +231,7 @@ def main():
 """
 
     output_file = output_dir / "complete_paper_workflow.md"
-    with open(output_file, 'w') as f:
+    with open(output_file, 'w', encoding='utf-8') as f:  # FIXED (Bug #15): Added UTF-8 encoding
         f.write(final_paper)
 
     # Summary

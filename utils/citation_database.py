@@ -183,8 +183,10 @@ class CitationDatabase:
             seen_ids.add(citation.id)
 
             # Validate year range
-            if not (1900 <= citation.year <= 2025):
-                raise ValueError(f"Citation {citation.id} has invalid year: {citation.year}")
+            # FIXED (Bug #17): Dynamic year validation (current year + 2) instead of hardcoded 2025
+            max_year = datetime.now().year + 2
+            if not (1900 <= citation.year <= max_year):
+                raise ValueError(f"Citation {citation.id} has invalid year: {citation.year} (must be 1900-{max_year})")
 
             # Validate DOI format if present
             if citation.doi and not citation.doi.startswith("10."):

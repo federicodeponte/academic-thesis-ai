@@ -9,7 +9,7 @@ import google.generativeai as genai
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 
 # Read Scout Agent prompt
-with open('prompts/01_research/scout.md', 'r') as f:
+with open('prompts/01_research/scout.md', 'r', encoding='utf-8') as f:  # FIXED (Bug #15): Added UTF-8 encoding
     scout_prompt = f.read()
 
 # Simple test query

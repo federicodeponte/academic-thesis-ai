@@ -435,7 +435,7 @@ def main():
 """
 
     draft_file = output_dir / "COMPLETE_DRAFT.md"
-    with open(draft_file, 'w') as f:
+    with open(draft_file, 'w', encoding='utf-8') as f:  # FIXED (Bug #15): Added UTF-8 encoding
         f.write(complete_draft)
 
     word_count = len(complete_draft.split())
@@ -762,8 +762,24 @@ def main():
     print("="*70)
 
     final_md = output_dir / "FINAL_THESIS.md"
-    with open(final_md, 'w') as f:
-        f.write(final_paper)
+
+    # FIXED (Bug #16): Added error handling with fallback location
+    try:
+        with open(final_md, 'w', encoding='utf-8') as f:
+            f.write(final_paper)
+        print(f"✅ Saved to: {final_md}")
+    except (IOError, OSError, PermissionError) as e:
+        # Fallback to /tmp if primary location fails
+        fallback_path = Path("/tmp") / "FINAL_THESIS_ACADEMIC_AI_BACKUP.md"
+        try:
+            with open(fallback_path, 'w', encoding='utf-8') as f:
+                f.write(final_paper)
+            final_md = fallback_path  # Update path for later use
+            print(f"⚠️  Primary location failed: {e}")
+            print(f"✅ Saved to fallback: {fallback_path}")
+        except Exception as e2:
+            print(f"❌ FATAL: Failed to save thesis file: {e2}")
+            return 1
 
     final_word_count = len(final_paper.split())
     print(f"✅ Final thesis: {final_word_count:,} words")

@@ -12,6 +12,7 @@ from pathlib import Path
 from .crossref import CrossrefClient
 from .semantic_scholar import SemanticScholarClient
 from .gemini_grounded import GeminiGroundedClient
+from .query_router import QueryRouter, QueryClassification
 
 # Import existing Citation dataclass
 import sys
@@ -26,13 +27,19 @@ class CitationResearcher:
     """
     Orchestrates citation research across multiple sources with intelligent fallback.
 
-    Fallback chain:
+    Smart Routing (default):
+    - Industry queries → Gemini Grounded → Semantic Scholar → Crossref
+    - Academic queries → Crossref → Semantic Scholar → Gemini Grounded
+    - Mixed queries → Semantic Scholar → Gemini Grounded → Crossref
+
+    Classic Fallback chain (if smart routing disabled):
     1. Crossref API (best metadata, DOI-focused, academic papers)
     2. Semantic Scholar API (better search, 200M+ papers, academic focus)
     3. Gemini Grounded (Google Search grounding, web sources, URL validation)
     4. Gemini LLM (last resort, unverified)
 
     Provides 95%+ success rate vs 40% LLM-only approach.
+    Smart routing maximizes source diversity by routing to appropriate APIs first.
     """
 
     # Persistent cache file path
@@ -45,6 +52,7 @@ class CitationResearcher:
         enable_semantic_scholar: bool = True,
         enable_gemini_grounded: bool = True,
         enable_llm_fallback: bool = True,
+        enable_smart_routing: bool = True,
         verbose: bool = True,
     ):
         """
@@ -56,6 +64,7 @@ class CitationResearcher:
             enable_semantic_scholar: Whether to use Semantic Scholar API
             enable_gemini_grounded: Whether to use Gemini with Google Search grounding
             enable_llm_fallback: Whether to fall back to LLM if all else fails
+            enable_smart_routing: Whether to use smart query routing (default: True)
             verbose: Whether to print progress
         """
         self.gemini_model = gemini_model
@@ -63,6 +72,7 @@ class CitationResearcher:
         self.enable_semantic_scholar = enable_semantic_scholar
         self.enable_gemini_grounded = enable_gemini_grounded
         self.enable_llm_fallback = enable_llm_fallback and gemini_model is not None
+        self.enable_smart_routing = enable_smart_routing
         self.verbose = verbose
 
         # Initialize API clients
@@ -76,6 +86,10 @@ class CitationResearcher:
             except Exception as e:
                 logger.warning(f"Gemini Grounded client unavailable: {e}")
                 self.enable_gemini_grounded = False
+
+        # Initialize smart query router
+        if self.enable_smart_routing:
+            self.query_router = QueryRouter()
 
         # Load persistent cache (or initialize empty if file doesn't exist)
         self.cache: Dict[str, Optional[Tuple[Dict[str, Any], str]]] = self._load_cache()
@@ -163,65 +177,78 @@ class CitationResearcher:
         if self.verbose:
             print(f"  🔍 Researching: {topic[:70]}{'...' if len(topic) > 70 else ''}")
 
-        # Try fallback chain
+        # Classify query and determine API chain
+        api_chain = None
+        if self.enable_smart_routing:
+            classification = self.query_router.classify_and_route(topic)
+            api_chain = classification.api_chain
+            if self.verbose:
+                print(f"    📊 Query type: {classification.query_type} (confidence: {classification.confidence:.2f})")
+                print(f"    🔀 API chain: {' → '.join(api_chain)}")
+        else:
+            # Use original fallback chain if smart routing disabled
+            api_chain = ['crossref', 'semantic_scholar', 'gemini_grounded']
+
+        # Try API chain
         metadata: Optional[Dict[str, Any]] = None
         source: Optional[str] = None
 
-        # 1. Try Crossref
-        if self.enable_crossref:
-            if self.verbose:
-                print(f"    → Trying Crossref API...", end=" ", flush=True)
-            try:
-                metadata = self.crossref.search_paper(topic)
-                if metadata:
-                    source = "Crossref"
-                    if self.verbose:
-                        print(f"✓")
-                else:
-                    if self.verbose:
-                        print(f"✗")
-            except Exception as e:
-                if self.verbose:
-                    print(f"✗ Error: {e}")
-                logger.error(f"Crossref error: {e}")
+        for api_name in api_chain:
+            if metadata:
+                break  # Already found citation
 
-        # 2. Try Semantic Scholar if Crossref failed
-        if not metadata and self.enable_semantic_scholar:
-            if self.verbose:
-                print(f"    → Trying Semantic Scholar API...", end=" ", flush=True)
-            try:
-                metadata = self.semantic_scholar.search_paper(topic)
-                if metadata:
-                    source = "Semantic Scholar"
-                    if self.verbose:
-                        print(f"✓")
-                else:
-                    if self.verbose:
-                        print(f"✗")
-            except Exception as e:
+            if api_name == 'crossref' and self.enable_crossref:
                 if self.verbose:
-                    print(f"✗ Error: {e}")
-                logger.error(f"Semantic Scholar error: {e}")
+                    print(f"    → Trying Crossref API...", end=" ", flush=True)
+                try:
+                    metadata = self.crossref.search_paper(topic)
+                    if metadata:
+                        source = "Crossref"
+                        if self.verbose:
+                            print(f"✓")
+                    else:
+                        if self.verbose:
+                            print(f"✗")
+                except Exception as e:
+                    if self.verbose:
+                        print(f"✗ Error: {e}")
+                    logger.error(f"Crossref error: {e}")
 
-        # 3. Try Gemini Grounded if academic APIs failed
-        if not metadata and self.enable_gemini_grounded:
-            if self.verbose:
-                print(f"    → Trying Gemini Grounded (Google Search)...", end=" ", flush=True)
-            try:
-                metadata = self.gemini_grounded.search_paper(topic)
-                if metadata:
-                    source = "Gemini Grounded"
-                    if self.verbose:
-                        print(f"✓")
-                else:
-                    if self.verbose:
-                        print(f"✗")
-            except Exception as e:
+            elif api_name == 'semantic_scholar' and self.enable_semantic_scholar:
                 if self.verbose:
-                    print(f"✗ Error: {e}")
-                logger.error(f"Gemini Grounded error: {e}")
+                    print(f"    → Trying Semantic Scholar API...", end=" ", flush=True)
+                try:
+                    metadata = self.semantic_scholar.search_paper(topic)
+                    if metadata:
+                        source = "Semantic Scholar"
+                        if self.verbose:
+                            print(f"✓")
+                    else:
+                        if self.verbose:
+                            print(f"✗")
+                except Exception as e:
+                    if self.verbose:
+                        print(f"✗ Error: {e}")
+                    logger.error(f"Semantic Scholar error: {e}")
 
-        # 4. Try Gemini LLM if all else failed
+            elif api_name == 'gemini_grounded' and self.enable_gemini_grounded:
+                if self.verbose:
+                    print(f"    → Trying Gemini Grounded (Google Search)...", end=" ", flush=True)
+                try:
+                    metadata = self.gemini_grounded.search_paper(topic)
+                    if metadata:
+                        source = "Gemini Grounded"
+                        if self.verbose:
+                            print(f"✓")
+                    else:
+                        if self.verbose:
+                            print(f"✗")
+                except Exception as e:
+                    if self.verbose:
+                        print(f"✗ Error: {e}")
+                    logger.error(f"Gemini Grounded error: {e}")
+
+        # Try Gemini LLM as absolute last resort (not part of smart routing)
         if not metadata and self.enable_llm_fallback:
             if self.verbose:
                 print(f"    → Trying Gemini LLM fallback...", end=" ", flush=True)

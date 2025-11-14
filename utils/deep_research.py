@@ -167,7 +167,9 @@ class DeepResearchPlanner:
 
 **Quality Requirements:**
 - Minimum {self.min_sources} primary sources (peer-reviewed journals, standards, regulations)
-- Prefer: Academic journals, regulatory bodies, standards organizations
+- **Source Diversity:** Balance academic AND industry sources for comprehensive coverage
+  - Academic: Peer-reviewed journals, conference papers, dissertations
+  - Industry: Consulting reports (McKinsey, Gartner, BCG), think tanks (Brookings, RAND), regulatory bodies (WHO, OECD, European Commission), standards (ISO, IEEE)
 - Avoid: Blogs, press releases, marketing materials (unless no alternative)
 - Include: Recent work (last 5 years) AND foundational papers
 - Coverage: Multiple perspectives, interdisciplinary if relevant
@@ -187,12 +189,24 @@ Return JSON with keys:
 - queries: List of specific search queries to execute (aim for 50+)
 - outline: Structured outline with section headings
 
-Example queries:
-- "algorithmic bias detection methods"
-- "author:Green algorithmic advice reliance"
-- "title:AI governance frameworks Europe"
-- "NIST AI risk management"
-- "EU AI Act implementation"
+**Query Diversity:** Generate mix of academic AND industry queries for source diversity:
+
+Academic-focused queries (route to Crossref/Semantic Scholar):
+- "peer-reviewed studies on [topic]"
+- "systematic review of [topic]"
+- "author:Smith [topic]"
+- "title:empirical analysis [topic]"
+- "meta-analysis [topic]"
+
+Industry-focused queries (route to Gemini Grounded/web search):
+- "McKinsey report [topic]"
+- "Gartner analysis [topic]"
+- "WHO guidelines [topic]"
+- "OECD [topic] framework"
+- "European Commission [topic] regulation"
+- "BCG white paper [topic]"
+- "IEEE standards [topic]"
+- "NIST [topic] best practices"
 
 Return ONLY valid JSON, no markdown blocks or explanations.
 """

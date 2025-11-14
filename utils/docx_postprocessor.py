@@ -113,9 +113,8 @@ class DOCXPostProcessor:
         This converts plain text URLs (especially DOI links) to proper hyperlinks
         matching PDF output (blue, underlined, clickable).
 
-        Uses AcademicDocumentFormatter to detect URLs.
+        Handles paragraphs with multiple URLs by processing all URLs at once.
         """
-        formatter = AcademicDocumentFormatter()
         url_count = 0
 
         # URL pattern (matches http:// and https://)
@@ -126,46 +125,44 @@ class DOCXPostProcessor:
             if not para.text.strip():
                 continue
 
-            # Check if paragraph contains URLs
-            urls_in_para = re.findall(url_pattern, para.text)
-            if not urls_in_para:
+            # Get original paragraph text
+            para_text = para.text
+
+            # Find all URL matches with positions
+            url_matches = [(m.group(), m.start(), m.end()) for m in re.finditer(url_pattern, para_text)]
+
+            if not url_matches:
                 continue
 
-            # For each URL found, convert to hyperlink
-            for url in urls_in_para:
-                try:
-                    # Find runs containing the URL
-                    para_text = para.text
-                    url_start = para_text.find(url)
+            try:
+                # Clear paragraph runs
+                for run in para.runs:
+                    run.text = ''
 
-                    if url_start == -1:
-                        continue
-
-                    # Clear existing runs and rebuild with hyperlink
-                    url_end = url_start + len(url)
-                    text_before = para_text[:url_start]
-                    text_after = para_text[url_end:]
-
-                    # Clear paragraph
-                    for run in para.runs:
-                        run.text = ''
-
+                # Rebuild paragraph with hyperlinks
+                last_pos = 0
+                for url, start, end in url_matches:
                     # Add text before URL
-                    if text_before:
-                        para.add_run(text_before)
+                    if start > last_pos:
+                        para.add_run(para_text[last_pos:start])
 
                     # Add hyperlink
                     self._add_hyperlink(para, url, url)
 
-                    # Add text after URL
-                    if text_after:
-                        para.add_run(text_after)
-
+                    # Update position
+                    last_pos = end
                     url_count += 1
 
-                except Exception as e:
-                    # Skip this URL if conversion fails
-                    continue
+                # Add remaining text after last URL
+                if last_pos < len(para_text):
+                    para.add_run(para_text[last_pos:])
+
+            except Exception as e:
+                # If conversion fails, restore original text
+                for run in para.runs:
+                    run.text = ''
+                para.add_run(para_text)
+                continue
 
         print(f"   ✓ Converted {url_count} URLs to clickable hyperlinks")
 

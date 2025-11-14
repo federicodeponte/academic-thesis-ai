@@ -61,6 +61,7 @@ output/
 # Exception: Allow showcase files in examples directory
 !examples/*.html
 !examples/*.pdf
+!examples/*.docx
 
 # Test outputs (keep structure, ignore most generated files)
 tests/outputs/**/*.pdf

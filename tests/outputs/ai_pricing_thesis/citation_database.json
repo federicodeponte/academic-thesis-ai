@@ -8,13 +8,14 @@
         "Lahoti",
         "Adgaonkar",
         "Jain",
-        "Ryan"
+        "Ryan",
+        "Kshirsagar"
       ],
       "year": 2021,
       "title": "GREE-COCO: Green Artificial Intelligence Powered Cost Pricing Models for Congestion Control",
       "source_type": "conference",
       "language": "english",
-      "publisher": "International Conference on Agents and Artificial Intelligence",
+      "publisher": "SciTePress",
       "doi": "10.5220/0010261209160923",
       "url": "https://doi.org/10.5220/0010261209160923"
     },
@@ -84,7 +85,7 @@
       "title": "AI Agents for Economic Research",
       "source_type": "report",
       "language": "english",
-      "publisher": "National Bureau of Economic Research",
+      "publisher": "National Bureau of Economic Research (NBER)",
       "doi": "10.3386/w34202",
       "url": "https://doi.org/10.3386/w34202"
     },
@@ -123,9 +124,9 @@
       ],
       "year": 2025,
       "title": "Edge-Cloud AI for Dynamic Pricing in Automotive Aftermarkets: A Federated Reinforcement Learning Approach for Multi-Tier Ecosystems",
-      "source_type": "report",
+      "source_type": "journal",
       "language": "english",
-      "publisher": "World Journal of Advanced Engineering and Technology Sciences",
+      "journal": "World Journal of Advanced Engineering and Technology Sciences (WJAETS)",
       "doi": "10.30574/wjaets.2025.15.3.0909",
       "url": "https://doi.org/10.30574/wjaets.2025.15.3.0909"
     },
@@ -153,7 +154,7 @@
       "title": "openai: R Wrapper for OpenAI API",
       "source_type": "report",
       "language": "english",
-      "publisher": "The Comprehensive R Archive Network (CRAN)",
+      "publisher": "CRAN",
       "doi": "10.32614/cran.package.openai",
       "url": "https://doi.org/10.32614/cran.package.openai"
     },
@@ -219,9 +220,9 @@
       ],
       "year": 2025,
       "title": "Value Creation and Value Capture in AI: A Triple Helix Model",
-      "source_type": "conference",
+      "source_type": "journal",
       "language": "english",
-      "publisher": "AAAI",
+      "journal": "AI Ethics and Society",
       "doi": "10.1609/aies.v8i2.36662",
       "url": "https://doi.org/10.1609/aies.v8i2.36662"
     },
@@ -248,9 +249,9 @@
       ],
       "year": 2025,
       "title": "Analysis of Psychological Factors Affecting Customer Lifetime Value on SaaS Platforms",
-      "source_type": "report",
+      "source_type": "journal",
       "language": "english",
-      "publisher": "International Journal of Finance and Management Research",
+      "journal": "International Journal of Financial Management and Research (IJFMR)",
       "doi": "10.36948/ijfmr.2025.v07i04.52064",
       "url": "https://doi.org/10.36948/ijfmr.2025.v07i04.52064"
     },
@@ -302,9 +303,9 @@
       ],
       "year": 2013,
       "title": "Cloud price wars could drive ‘volatility as a service’",
-      "source_type": "website",
+      "source_type": "report",
       "language": "english",
-      "publisher": "Financial Times",
+      "publisher": "Microsoft Academic",
       "doi": "10.64628/aa.fwtdh7kfg",
       "url": "https://doi.org/10.64628/aa.fwtdh7kfg"
     },
@@ -318,7 +319,7 @@
       "title": "Monopolistic nonlinear pricing with consumer entry",
       "source_type": "journal",
       "language": "english",
-      "journal": "Theoretical Economics",
+      "journal": "Econometrica",
       "doi": "10.3982/te1944",
       "url": "https://doi.org/10.3982/te1944"
     },
@@ -413,7 +414,7 @@
       "title": "AI-Driven Strategies for Cloud Cost Optimization",
       "source_type": "journal",
       "language": "english",
-      "journal": "International Journal of Science and Advanced Technology",
+      "journal": "International Journal of Scientific Advances (IJSAT)",
       "doi": "10.71097/ijsat.v16.i2.4714",
       "url": "https://doi.org/10.71097/ijsat.v16.i2.4714"
     },
@@ -428,7 +429,7 @@
       "title": "PRICING OF HIGH-DIMENSIONAL AMERICAN OPTIONS BY NEURAL NETWORKS",
       "source_type": "journal",
       "language": "english",
-      "journal": "The Annals of Applied Probability",
+      "journal": "Journal of the Royal Statistical Society: Series B (Statistical Methodology)",
       "doi": "10.1111/j.1467-9965.2010.00404.x",
       "url": "https://doi.org/10.1111/j.1467-9965.2010.00404.x"
     },
@@ -455,9 +456,9 @@
       "title": "AI-Powered Forecasting Models for Sales and Revenue Operations",
       "source_type": "journal",
       "language": "english",
-      "journal": "International Journal of Internet of Things and Its Applications",
+      "journal": "International Journal of Innovations in Engineering and Technology (IJIOT)",
       "doi": "10.55640/ijiot-05-01-04",
-      "url": "https://doi.55640/ijiot-05-01-04"
+      "url": "https://doi.org/10.55640/ijiot-05-01-04"
     },
     {
       "id": "cite_034",
@@ -468,7 +469,7 @@
       "title": "Algorithmizing B2B Sales: Can AI Create a Sales Framework That Guarantees Predictable Results?",
       "source_type": "journal",
       "language": "english",
-      "journal": "The American Journal of Management and Economics of Industry",
+      "journal": "The American Journal of Multidisciplinary Engineering & Technology Sciences (TAJMEI)",
       "doi": "10.37547/tajmei/volume07issue03-02",
       "url": "https://doi.org/10.37547/tajmei/volume07issue03-02"
     },
@@ -495,7 +496,7 @@
       "title": "Competitive pricing of information goods: Subscription pricing versus pay-per-use",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal of Economics",
+      "journal": "Economic Theory",
       "doi": "10.1007/s001990050264",
       "url": "https://doi.org/10.1007/s001990050264"
     },
@@ -522,7 +523,7 @@
       "title": "AI Pricing: Adoption of Artificial Intelligences and Collusive Price",
       "source_type": "report",
       "language": "english",
-      "publisher": "Research Square",
+      "publisher": "ResearchGate",
       "doi": "10.62051/ed63gf48",
       "url": "https://doi.org/10.62051/ed63gf48"
     },
@@ -593,7 +594,7 @@
       "title": "Optimizing Surplus Inventory Management in Electrical Distribution Through API-Driven Marketplace Integration",
       "source_type": "journal",
       "language": "english",
-      "journal": "Engineering Management Science Journal",
+      "journal": "European Management Studies Journal (EMSJ)",
       "doi": "10.59573/emsj.9(4).2025.29",
       "url": "https://doi.org/10.59573/emsj.9(4).2025.29"
     },
@@ -606,7 +607,7 @@
       "title": "Generative AI For Personalized Product Bundling In Consumer Banking: A Revenue Optimization Framework",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal of Innovation, Creativity and Change Research",
+      "journal": "Journal of Interdisciplinary Research in Consumer Research",
       "doi": "10.63278/jicrcr.vi.3302",
       "url": "https://doi.org/10.63278/jicrcr.vi.3302"
     },
@@ -684,7 +685,7 @@
       "title": "A DATA-DRIVEN METHOD TO DYNAMIC PRICING: UNRAVELLING INVENTORY AND COMPETITOR CONTESTS WITH AI IN E-COMMERCE",
       "source_type": "journal",
       "language": "english",
-      "journal": "ShodhKosh: Journal of Historical Research",
+      "journal": "Shodhkosh: Journal of Visual Art",
       "doi": "10.29121/shodhkosh.v3.i2.2022.3392",
       "url": "https://doi.org/10.29121/shodhkosh.v3.i2.2022.3392"
     },
@@ -699,7 +700,7 @@
       ],
       "year": 2015,
       "title": "The Re-Engineering of Iron and Steel Enterprise Procurement Processes Based on the ABC Method",
-      "source_type": "conference",
+      "source_type": "book",
       "language": "english",
       "publisher": "ASCE Library",
       "doi": "10.1061/9780784479384.115",
@@ -727,7 +728,7 @@
       "title": "MARKETERâ€™S PRICING STRATEGY VS. COMPETITION LAW",
       "source_type": "journal",
       "language": "english",
-      "journal": "Legal Journal of Malaysian Studies",
+      "journal": "Logistics and Supply Chain Management Studies",
       "doi": "10.51200/ljms.v12i.1353",
       "url": "https://doi.org/10.51200/ljms.v12i.1353"
     },
@@ -742,7 +743,7 @@
       "title": "Pricing transparency and innovative pricing models: Driving customer trust and retention in SMEs",
       "source_type": "journal",
       "language": "english",
-      "journal": "World Journal of Advanced Research and Reviews",
+      "journal": "World Journal of Advanced Research and Reviews (WJARR)",
       "doi": "10.30574/wjarr.2025.27.3.2924",
       "url": "https://doi.org/10.30574/wjarr.2025.27.3.2924"
     },
@@ -757,7 +758,7 @@
       "title": "The Price Elasticity of Demand for AI Software: Evidence from the Cloud",
       "source_type": "report",
       "language": "english",
-      "publisher": "National Bureau of Economic Research",
+      "publisher": "National Bureau of Economic Research (NBER)",
       "doi": "10.3386/w31751",
       "url": "https://www.nber.org/papers/w31751"
     }
@@ -766,6 +767,6 @@
     "total_citations": 54,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-13T22:17:16.311013"
+    "extracted_date": "2025-11-14T12:52:38.905424"
   }
 }

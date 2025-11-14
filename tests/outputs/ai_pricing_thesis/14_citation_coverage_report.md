@@ -3,9 +3,9 @@
 ## Summary Statistics
 
 - **Total citations available**: 54
-- **Citations used in draft**: 20
-- **Citations unused**: 34
-- **Coverage percentage**: 37.0%
+- **Citations used in draft**: 19
+- **Citations unused**: 35
+- **Coverage percentage**: 35.2%
 
 ## Analysis
 
@@ -15,6 +15,7 @@
 
 The following citations are in the database but not used in the draft:
 
+- **cite_020**: Yin, Qiu (2021) - AI Technology and Online Purchase Intention：Multi-Group Analysis Based On Per...
 - **cite_021**: Cody (2000) - Competitive Infrastructure: As An Enabler of Market-Based Pricing
 - **cite_022**: Livingstone (2013) - Cloud price wars could drive ‘volatility as a service’
 - **cite_023**: Ye, Zhang (2017) - Monopolistic nonlinear pricing with consumer entry

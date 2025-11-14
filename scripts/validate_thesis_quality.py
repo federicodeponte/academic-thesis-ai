@@ -63,16 +63,19 @@ def check_required_sections(content: str) -> Dict[str, bool]:
     Check if thesis has all required sections (multilingual support).
 
     Supports English, German, Spanish, French section names.
+    Handles both numbered (e.g., "# 3. Methodology") and non-numbered (e.g., "## Methodology") sections.
 
     Returns:
         Dict of section_name: present (bool)
     """
+    # FIXED (Bug #13): Added (\d+\.?\s*)? to match optional numbered sections
+    # Examples: "# Methodology", "# 3. Methodology", "## 3.1 Methodology"
     sections = {
-        'Abstract': r'#+\s*(Abstract|Zusammenfassung|Resumen|Résumé)',
-        'Introduction': r'#+\s*(Introduction|Einleitung|Introducción|1\.?\s*(Introduction|Einleitung|Introducción))',
-        'Literature Review': r'#+\s*(Literature Review|Literaturübersicht|Literaturüberblick|Revisión de Literatura|Revue de Littérature|2\.?\s*(Literature Review|Literaturübersicht))',
-        'Methodology': r'#+\s*(Methodology|Method|Methodik|Metodología|Méthodologie)',
-        'References': r'#+\s*(References|Literaturverzeichnis|Bibliografie|Bibliografia|Références)',
+        'Abstract': r'#+\s*(\d+\.?\s*)?(Abstract|Zusammenfassung|Resumen|Résumé)',
+        'Introduction': r'#+\s*(\d+\.?\s*)?(Introduction|Einleitung|Introducción)',
+        'Literature Review': r'#+\s*(\d+\.?\s*)?(Literature Review|Literaturübersicht|Literaturüberblick|Revisión de Literatura|Revue de Littérature)',
+        'Methodology': r'#+\s*(\d+\.?\s*)?(Methodology|Method|Methodik|Metodología|Méthodologie)',
+        'References': r'#+\s*(\d+\.?\s*)?(References|Literaturverzeichnis|Bibliografie|Bibliografia|Références)',
     }
 
     results = {}

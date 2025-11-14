@@ -10,7 +10,12 @@ Usage:
 
 import sys
 import subprocess
+import os
 from pathlib import Path
+
+# Add project root to Python path for export_professional.py imports
+project_root = Path(__file__).parent.parent
+sys.path.insert(0, str(project_root))
 
 # Thesis output directories
 THESIS_DIRS = {
@@ -47,11 +52,15 @@ def regenerate_docx(thesis_name: str, thesis_dir: Path) -> bool:
     # Regenerate DOCX from markdown
     print(f"🔧 Generating DOCX from {final_md.name}...")
     try:
+        # Set PYTHONPATH to project root for imports
+        env = os.environ.copy()
+        env['PYTHONPATH'] = str(Path(__file__).parent.parent)
+
         result = subprocess.run([
             sys.executable, 'utils/export_professional.py',
             str(final_md),
             '--docx', str(output_docx)
-        ], capture_output=True, text=True, timeout=60)
+        ], capture_output=True, text=True, timeout=60, env=env)
 
         if result.returncode != 0:
             print(f"❌ DOCX export failed: {result.stderr}")

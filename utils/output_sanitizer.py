@@ -46,6 +46,13 @@ META_COMMENT_PATTERNS = [
     r'^\*\*Sección:\*\*.*?\n',           # Remove **Sección:** (Spanish)
     r'^\*\*Recuento de palabras:\*\*.*?\n',  # Remove **Recuento:** (Spanish)
     r'^\[To be completed.*?\].*?\n',     # Remove placeholder citations
+    # NEW: Remove Entropy agent inline diagnostic text
+    r'^Diversity Metrics\s*\n',          # Inline "Diversity Metrics" without ##
+    r'^Sentence Length Distribution\s*\n',  # Inline sentence distribution
+    r'^Before:.*?(?:too uniform|too consistent|too many|monotonous).*?\n',  # "Before:" diagnostic lines
+    r'^After:.*?(?:natural variation|varied|good).*?\n',  # "After:" diagnostic lines
+    r'^Lexical Diversity.*?TTR.*?\n',    # TTR metrics
+    r'^Sentence Structure Variety\s*\n', # Structure variety heading
 ]
 
 # ============================================================================
@@ -147,6 +154,15 @@ def remove_metadata_h2_sections(content: str) -> Tuple[str, int]:
         r'^## Content\s*\n(?=^##)',  # Empty content section
         r'^## Inhalt\s*\n(?=^##)',  # German empty content
         r'^## Contenido\s*\n(?=^##)',  # Spanish empty content
+        # NEW: Remove Entropy agent diagnostic output (diversity metrics)
+        r'^## Diversity Metrics\s*\n(?:.*?\n)*?(?=^##|\Z)',  # English
+        r'^## Diversitätsmetriken\s*\n(?:.*?\n)*?(?=^##|\Z)',  # German
+        r'^## Métricas de diversidad\s*\n(?:.*?\n)*?(?=^##|\Z)',  # Spanish
+        r'^## Style Variance Report\s*\n(?:.*?\n)*?(?=^##|\Z)',  # English
+        r'^## Stilvarianzbericht\s*\n(?:.*?\n)*?(?=^##|\Z)',  # German
+        r'^## AI Detection Testing\s*\n(?:.*?\n)*?(?=^##|\Z)',  # English
+        r'^## Changes by Category\s*\n(?:.*?\n)*?(?=^##|\Z)',  # English
+        r'^## Anti-AI Detection Techniques Applied\s*\n(?:.*?\n)*?(?=^##|\Z)',  # English
     ]
 
     cleaned_content = content

@@ -52,7 +52,10 @@
       "title": "Equilibrium Selection and Public-good Provision: The Development of Open-source Software",
       "source_type": "journal",
       "language": "english",
-      "journal": "Oxford Economic Papers",
+      "journal": "Oxford Review of Economic Policy",
+      "volume": 18,
+      "issue": 4,
+      "pages": "446",
       "doi": "10.1093/oxrep/18.4.446",
       "url": "https://doi.org/10.1093/oxrep/18.4.446"
     },
@@ -89,7 +92,8 @@
       "year": 2023,
       "title": "MARKETING KNOWLEDGE MANAGEMENT DAN INOVASI MEDIA DIGITAL DALAM MENINGKATKAN KINERJA UMKM",
       "source_type": "report",
-      "language": "indonesian",
+      "language": "english",
+      "publisher": "OSF Preprints",
       "doi": "10.31237/osf.io/67wud",
       "url": "https://doi.org/10.31237/osf.io/67wud"
     },
@@ -112,7 +116,7 @@
         "Murray"
       ],
       "year": 2019,
-      "title": "2. The network of networks",
+      "title": "The network of networks",
       "source_type": "book",
       "language": "english",
       "publisher": "Oxford University Press",
@@ -181,6 +185,7 @@
       "title": "Re: Open Source != peer review",
       "source_type": "report",
       "language": "english",
+      "publisher": "OSF Preprints",
       "doi": "10.59350/r8vct-rm878",
       "url": "https://doi.org/10.59350/r8vct-rm878"
     },
@@ -192,8 +197,9 @@
       ],
       "year": 2023,
       "title": "Implementation of the Apache Web Server Monitoring System Using LibreNMS at Diskominfo Sidoarjo Regency",
-      "source_type": "journal",
+      "source_type": "conference",
       "language": "english",
+      "publisher": "Universitas Pembangunan Nasional 'Veteran' Jawa Timur",
       "doi": "10.21070/ups.401",
       "url": "https://doi.org/10.21070/ups.401"
     },
@@ -214,13 +220,13 @@
     {
       "id": "cite_017",
       "authors": [
-        "Red"
+        "red"
       ],
       "year": 2013,
       "title": "Update für den Mozilla-Browser Firefox",
       "source_type": "journal",
-      "language": "german",
-      "journal": "Computerwoche",
+      "language": "english",
+      "journal": "Informatik Spektrum",
       "doi": "10.1007/s15015-013-0519-6",
       "url": "https://doi.org/10.1007/s15015-013-0519-6"
     },
@@ -270,7 +276,7 @@
       ],
       "year": 2012,
       "title": "Future Smart Metering Runs on Open Source –Challenges and the GuruxAMI Project",
-      "source_type": "book",
+      "source_type": "conference",
       "language": "english",
       "publisher": "Springer",
       "doi": "10.1007/978-3-642-33442-9_40",
@@ -288,6 +294,7 @@
       "title": "BitBox: A Developer - Centric Open Source Ecosystem",
       "source_type": "journal",
       "language": "english",
+      "journal": "General Engineering and Applied Science",
       "doi": "10.55248/gengpi.6.0525.1641",
       "url": "https://doi.org/10.55248/gengpi.6.0525.1641"
     },
@@ -427,6 +434,7 @@
       "title": "Efficient and safe substrates for black soldier fly biowaste treatment along circular economy principles",
       "source_type": "journal",
       "language": "english",
+      "journal": "Journal of Insects as Food and Feed",
       "doi": "10.31025/2611-4135/2021.15116",
       "url": "https://doi.org/10.31025/2611-4135/2021.15116"
     },
@@ -474,6 +482,7 @@
       "title": "Theorizing the ‘social’ in social media: The role of productive dialogs for collaborative knowledge creation",
       "source_type": "report",
       "language": "english",
+      "publisher": "OSF Preprints",
       "doi": "10.31235/osf.io/w7sd6",
       "url": "https://doi.org/10.31235/osf.io/w7sd6"
     },
@@ -516,7 +525,7 @@
       "title": "Commons‐based Peer Production and Virtue*",
       "source_type": "journal",
       "language": "english",
-      "journal": "Ethics and Information Technology",
+      "journal": "Journal of Political Philosophy",
       "doi": "10.1111/J.1467-9760.2006.00235.X",
       "url": "https://doi.org/10.1111/J.1467-9760.2006.00235.X"
     },
@@ -557,7 +566,7 @@
       "title": "Samir Chopra, Scott D. Dexter, Decoding Liberation: The Promise of Free and Open Source Software",
       "source_type": "journal",
       "language": "english",
-      "journal": "Minds and Machines",
+      "journal": "Metascience",
       "doi": "10.1007/s11023-008-9101-y",
       "url": "https://doi.org/10.1007/s11023-008-9101-y"
     },
@@ -611,6 +620,7 @@
       "title": "Europe Spotlight 2023: Exploring the State of European Open Source Innovation, Opportunities and Challenges",
       "source_type": "report",
       "language": "english",
+      "publisher": "OpenForum Europe",
       "doi": "10.70828/eune3704",
       "url": "https://doi.org/10.70828/eune3704"
     },
@@ -665,8 +675,9 @@
       ],
       "year": 2025,
       "title": "Influencing Factors of Social Capital Formation and Development in Urban Communities",
-      "source_type": "report",
+      "source_type": "journal",
       "language": "english",
+      "journal": "Frontiers in Public Health",
       "doi": "10.54097/s8kqgt58",
       "url": "https://doi.org/10.54097/s8kqgt58"
     },
@@ -691,6 +702,6 @@
     "total_citations": 49,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-14T14:05:53.077443"
+    "extracted_date": "2025-11-14T16:11:28.302434"
   }
 }

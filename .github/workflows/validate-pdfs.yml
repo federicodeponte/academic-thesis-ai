@@ -1,0 +1,43 @@
+name: Validate PDF Exports
+
+on:
+  push:
+    paths:
+      - 'examples/*.pdf'
+      - 'utils/pdf_engines/**'
+      - '.github/workflows/validate-pdfs.yml'
+  pull_request:
+    paths:
+      - 'examples/*.pdf'
+      - 'utils/pdf_engines/**'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install PyPDF2
+
+      - name: Validate PDF structure
+        run: |
+          python3 scripts/validate_pdf_structure.py --all
+
+      - name: Upload validation results
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-validation-report
+          path: |
+            scripts/validate_pdf_structure.py
+            examples/*.pdf

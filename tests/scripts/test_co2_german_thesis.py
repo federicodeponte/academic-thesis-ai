@@ -826,6 +826,21 @@ def main():
         if result.returncode == 0:
             pdf_size = (output_dir / 'FINAL_THESIS.pdf').stat().st_size
             print(f"✅ PDF-Export erfolgreich ({pdf_size:,} bytes)")
+
+            # ✅ NEW: Validate PDF structure to catch regressions
+            print("\n🔍 PDF-Struktur validieren...")
+            from scripts.validate_pdf_structure import PDFStructureValidator
+            validator = PDFStructureValidator(verbose=False)
+            validation_result = validator.validate_pdf(output_dir / 'FINAL_THESIS.pdf')
+
+            if validation_result.passed:
+                print(f"✅ PDF-Validierung bestanden ({validation_result.page_count} Seiten, {validation_result.engine_used})")
+            else:
+                print(f"❌ PDF-Validierung fehlgeschlagen:")
+                for issue in validation_result.issues:
+                    print(f"   {issue}")
+                # Don't fail the test, just warn
+                issues.append("⚠️ PDF-Struktur-Validierung fehlgeschlagen")
         else:
             print(f"⚠️  PDF-Export fehlgeschlagen: {result.stderr}")
     except Exception as e:

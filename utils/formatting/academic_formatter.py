@@ -103,45 +103,17 @@ class AcademicDocumentFormatter:
             return False
 
         # Traditional theses: Generate cover if we have title/author
-        has_basic_metadata = yaml_metadata.get('title') or yaml_metadata.get('author')
+        # CRITICAL: Handle empty YAML (yaml.safe_load returns None, not {})
+        has_basic_metadata = (yaml_metadata.get('title') or yaml_metadata.get('author')) if yaml_metadata else False
 
         if has_basic_metadata and self.verbose:
             print("   ✓ Generating traditional academic cover page")
 
         return has_basic_metadata
 
-    def filter_showcase_yaml_for_latex(self, yaml_metadata: Dict[str, Any]) -> Dict[str, Any]:
-        """
-        Filter YAML metadata for LaTeX processing.
-
-        Removes showcase-specific fields that shouldn't be rendered in PDF body,
-        keeping only standard academic metadata (title, author, date, institution).
-
-        Args:
-            yaml_metadata: Full YAML frontmatter dictionary
-
-        Returns:
-            Filtered dictionary with only standard academic fields
-        """
-        if not yaml_metadata:
-            return {}
-
-        # Fields to KEEP for LaTeX processing
-        standard_academic_fields = {
-            'title', 'author', 'date', 'institution', 'department',
-            'course', 'instructor', 'abstract'
-        }
-
-        filtered = {
-            key: value for key, value in yaml_metadata.items()
-            if key in standard_academic_fields
-        }
-
-        if self.verbose and len(filtered) < len(yaml_metadata):
-            removed_count = len(yaml_metadata) - len(filtered)
-            print(f"   ✓ Filtered {removed_count} showcase fields from LaTeX metadata")
-
-        return filtered
+    # REMOVED: Dead code - filter_showcase_yaml_for_latex() was never called
+    # YAML normalization is handled by _normalize_yaml_for_pandoc() in pandoc_engine.py
+    # This method was defined but unused (32 lines removed)
 
     def extract_doi_urls(self, content: str) -> List[Dict[str, str]]:
         """
@@ -287,15 +259,5 @@ def should_generate_cover_page(yaml_metadata: Dict[str, Any]) -> bool:
     return formatter.should_generate_traditional_cover(yaml_metadata)
 
 
-def filter_yaml_for_latex(yaml_metadata: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Convenience function to filter YAML for LaTeX processing.
-
-    Args:
-        yaml_metadata: Full YAML dictionary
-
-    Returns:
-        Filtered YAML with only standard academic fields
-    """
-    formatter = AcademicDocumentFormatter()
-    return formatter.filter_showcase_yaml_for_latex(yaml_metadata)
+# REMOVED: Dead code - filter_yaml_for_latex() was never called
+# Convenience wrapper for removed method (9 lines removed)

@@ -87,6 +87,10 @@ class PandocLatexEngine(PDFEngine):
             with open(md_file, 'r', encoding='utf-8') as f:
                 md_content = f.read()
 
+            # CRITICAL: Save original content BEFORE normalization for formatter check
+            # Normalization strips showcase YAML fields, causing wrong cover page detection
+            original_md_content = md_content
+
             md_content = self._normalize_yaml_for_pandoc(md_content)
 
             # Sanitize problematic Unicode characters for pdflatex
@@ -107,7 +111,9 @@ class PandocLatexEngine(PDFEngine):
                     os.close(temp_fd)
 
             # Create LaTeX preamble for header customization
-            latex_preamble = self._create_latex_preamble(options, md_content)
+            # CRITICAL: Use ORIGINAL content (before normalization) for YAML extraction
+            # This preserves showcase fields for is_showcase_thesis() check
+            latex_preamble = self._create_latex_preamble(options, original_md_content)
             preamble_path = output_pdf.parent / f"{output_pdf.stem}_preamble.tex"
             preamble_path = preamble_path.resolve()  # Get absolute path
 

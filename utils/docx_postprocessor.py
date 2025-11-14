@@ -118,7 +118,8 @@ class DOCXPostProcessor:
         url_count = 0
 
         # URL pattern (matches http:// and https://)
-        url_pattern = r'https?://[^\s\)\]<>]+'
+        # FIXED: Allow dots in URLs but exclude trailing punctuation using negative lookbehind
+        url_pattern = r'https?://[^\s\)\]<>]+(?<![.,:;!?])'
 
         for para in self.doc.paragraphs:
             # Skip if paragraph is empty

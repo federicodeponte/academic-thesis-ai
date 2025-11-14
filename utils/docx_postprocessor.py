@@ -4,14 +4,17 @@ ABOUTME: Post-processor for DOCX files to add advanced formatting features
 ABOUTME: Fixes page numbers, TOC, spacing, indents, section/page breaks after Pandoc generation
 """
 
+import re
+import uuid
 from pathlib import Path
 from typing import List, Optional
 from docx import Document
-from docx.shared import Pt, Inches
+from docx.shared import Pt, Inches, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.enum.section import WD_SECTION
+from utils.formatting.academic_formatter import AcademicDocumentFormatter
 
 
 class DOCXPostProcessor:
@@ -51,24 +54,28 @@ class DOCXPostProcessor:
             print("1. Fixing line spacing and indentation...")
             self._fix_paragraph_formatting()
 
-            # Step 2: Insert page break after cover page
-            print("2. Separating cover page...")
+            # Step 2: Convert plain text URLs to clickable hyperlinks
+            print("2. Converting URLs to clickable hyperlinks...")
+            self._convert_urls_to_hyperlinks()
+
+            # Step 3: Insert page break after cover page
+            print("3. Separating cover page...")
             self._insert_cover_page_break()
 
-            # Step 3: Insert Table of Contents
-            print("3. Adding Table of Contents...")
+            # Step 4: Insert Table of Contents
+            print("4. Adding Table of Contents...")
             self._insert_table_of_contents()
 
-            # Step 4: Insert page breaks before major sections
-            print("4. Adding page breaks before major sections...")
+            # Step 5: Insert page breaks before major sections
+            print("5. Adding page breaks before major sections...")
             self._insert_section_page_breaks()
 
-            # Step 5: Add section breaks for different page numbering
-            print("5. Adding section breaks for page numbering...")
+            # Step 6: Add section breaks for different page numbering
+            print("6. Adding section breaks for page numbering...")
             self._insert_section_breaks()
 
-            # Step 6: Add page numbers
-            print("6. Adding page numbers...")
+            # Step 7: Add page numbers
+            print("7. Adding page numbers...")
             self._add_page_numbers()
 
             # Save changes
@@ -97,6 +104,115 @@ class DOCXPostProcessor:
                 count += 1
 
         print(f"   ✓ Fixed {count} paragraphs (2.0 spacing, 0.5\" indent, justified)")
+
+    def _convert_urls_to_hyperlinks(self):
+        """
+        Convert plain text URLs to clickable hyperlinks in DOCX.
+
+        FIXED: Issue #2 - Citations had URLs in markdown but weren't clickable in DOCX.
+        This converts plain text URLs (especially DOI links) to proper hyperlinks
+        matching PDF output (blue, underlined, clickable).
+
+        Uses AcademicDocumentFormatter to detect URLs.
+        """
+        formatter = AcademicDocumentFormatter()
+        url_count = 0
+
+        # URL pattern (matches http:// and https://)
+        url_pattern = r'https?://[^\s\)\]<>]+'
+
+        for para in self.doc.paragraphs:
+            # Skip if paragraph is empty
+            if not para.text.strip():
+                continue
+
+            # Check if paragraph contains URLs
+            urls_in_para = re.findall(url_pattern, para.text)
+            if not urls_in_para:
+                continue
+
+            # For each URL found, convert to hyperlink
+            for url in urls_in_para:
+                try:
+                    # Find runs containing the URL
+                    para_text = para.text
+                    url_start = para_text.find(url)
+
+                    if url_start == -1:
+                        continue
+
+                    # Clear existing runs and rebuild with hyperlink
+                    url_end = url_start + len(url)
+                    text_before = para_text[:url_start]
+                    text_after = para_text[url_end:]
+
+                    # Clear paragraph
+                    for run in para.runs:
+                        run.text = ''
+
+                    # Add text before URL
+                    if text_before:
+                        para.add_run(text_before)
+
+                    # Add hyperlink
+                    self._add_hyperlink(para, url, url)
+
+                    # Add text after URL
+                    if text_after:
+                        para.add_run(text_after)
+
+                    url_count += 1
+
+                except Exception as e:
+                    # Skip this URL if conversion fails
+                    continue
+
+        print(f"   ✓ Converted {url_count} URLs to clickable hyperlinks")
+
+    def _add_hyperlink(self, paragraph, text, url):
+        """
+        Add a hyperlink to a paragraph.
+
+        Args:
+            paragraph: docx.text.paragraph.Paragraph object
+            text: Display text for the hyperlink
+            url: URL target
+
+        Returns:
+            Hyperlink run element
+        """
+        # Create relationship for hyperlink
+        part = paragraph.part
+        r_id = part.relate_to(url, 'http://schemas.openxmlformats.org/officeDocument/2006/relationships/hyperlink', is_external=True)
+
+        # Create hyperlink element
+        hyperlink = OxmlElement('w:hyperlink')
+        hyperlink.set(qn('r:id'), r_id)
+
+        # Create run element with hyperlink styling
+        run = OxmlElement('w:r')
+        r_pr = OxmlElement('w:rPr')
+
+        # Style: Blue, underline (standard hyperlink appearance)
+        color = OxmlElement('w:color')
+        color.set(qn('w:val'), '0563C1')  # Blue color
+        r_pr.append(color)
+
+        u = OxmlElement('w:u')
+        u.set(qn('w:val'), 'single')
+        r_pr.append(u)
+
+        run.append(r_pr)
+
+        # Add text
+        text_elem = OxmlElement('w:t')
+        text_elem.text = text
+        run.append(text_elem)
+
+        hyperlink.append(run)
+        paragraph._p.append(hyperlink)
+
+        return hyperlink
 
     def _create_sdt_toc_wrapper(self):
         """

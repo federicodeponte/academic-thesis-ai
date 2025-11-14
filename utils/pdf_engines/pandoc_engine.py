@@ -6,10 +6,12 @@ ABOUTME: Professional typesetting using LaTeX with proper font rendering
 
 import subprocess
 import shutil
+import yaml
 from pathlib import Path
-from typing import Optional
+from typing import Optional, Dict, Any
 
 from .base import PDFEngine, PDFGenerationOptions, EngineResult
+from utils.formatting.academic_formatter import AcademicDocumentFormatter
 
 
 class PandocLatexEngine(PDFEngine):
@@ -105,7 +107,7 @@ class PandocLatexEngine(PDFEngine):
                     os.close(temp_fd)
 
             # Create LaTeX preamble for header customization
-            latex_preamble = self._create_latex_preamble(options)
+            latex_preamble = self._create_latex_preamble(options, md_content)
             preamble_path = output_pdf.parent / f"{output_pdf.stem}_preamble.tex"
             preamble_path = preamble_path.resolve()  # Get absolute path
 
@@ -139,19 +141,29 @@ class PandocLatexEngine(PDFEngine):
                 error_message=f"Unexpected error: {str(e)}"
             )
 
-    def _create_latex_preamble(self, options: PDFGenerationOptions) -> str:
+    def _create_latex_preamble(self, options: PDFGenerationOptions, md_content: str = "") -> str:
         """
         Create LaTeX preamble for header customization.
 
         This is injected into Pandoc's default template, which is more robust
         than creating a full custom template.
 
+        FIXED: Now uses AcademicDocumentFormatter to intelligently decide whether
+        to generate traditional cover page (showcase theses have YAML as cover,
+        traditional theses get auto-generated LaTeX cover).
+
         Args:
             options: PDF generation options
+            md_content: Markdown content (for YAML metadata extraction)
 
         Returns:
             str: LaTeX preamble content
         """
+        # Extract YAML metadata from markdown content
+        yaml_metadata = self._extract_yaml_metadata(md_content)
+
+        # Use formatter to determine cover page strategy
+        formatter = AcademicDocumentFormatter(verbose=True)
         # Parse line spacing for LaTeX (2.0 = double spacing)
         if options.line_spacing >= 1.9:
             spacing_command = r'\doublespacing'
@@ -217,9 +229,12 @@ class PandocLatexEngine(PDFEngine):
 \renewenvironment{longtable}{\small\oldlongtable}{\endoldlongtable}
 '''
 
-        # Add professional cover page if metadata provided
-        if any([options.title, options.author, options.institution,
-                options.course, options.instructor]):
+        # Add professional cover page if metadata provided AND appropriate
+        # FIXED: Use formatter to intelligently decide (showcase theses skip traditional cover)
+        should_generate_cover = formatter.should_generate_traditional_cover(yaml_metadata)
+
+        if should_generate_cover and any([options.title, options.author, options.institution,
+                                          options.course, options.instructor]):
             # Build institutional metadata block
             inst_lines = []
             if options.institution:
@@ -437,6 +452,34 @@ class PandocLatexEngine(PDFEngine):
                     aux_file.unlink()
                 except Exception:
                     pass  # Ignore cleanup errors
+
+    def _extract_yaml_metadata(self, md_content: str) -> Dict[str, Any]:
+        """
+        Extract YAML frontmatter metadata from markdown content.
+
+        Args:
+            md_content: Markdown content with YAML frontmatter
+
+        Returns:
+            Dictionary of YAML metadata (empty dict if no YAML found)
+        """
+        if not md_content.strip().startswith('---'):
+            return {}
+
+        try:
+            # Extract YAML frontmatter (between first and second ---)
+            parts = md_content.split('---', 2)
+            if len(parts) < 3:
+                return {}
+
+            yaml_content = parts[1]
+            metadata = yaml.safe_load(yaml_content)
+
+            return metadata if isinstance(metadata, dict) else {}
+
+        except Exception:
+            # YAML parsing failed, return empty dict
+            return {}
 
     def _normalize_yaml_for_pandoc(self, md_content: str) -> str:
         """

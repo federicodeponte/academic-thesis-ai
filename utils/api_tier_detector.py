@@ -33,12 +33,12 @@ class APITierDetector:
         Initialize tier detector.
 
         Args:
-            api_key: Gemini API key (uses GEMINI_API_KEY env var if not provided)
+            api_key: Gemini API key (uses GOOGLE_API_KEY env var if not provided)
             force_detect: Force fresh detection (ignore cache)
         """
-        self.api_key = api_key or os.getenv("GEMINI_API_KEY")
+        self.api_key = api_key or os.getenv("GOOGLE_API_KEY")
         if not self.api_key:
-            raise ValueError("GEMINI_API_KEY not found in environment")
+            raise ValueError("GOOGLE_API_KEY not found in environment")
 
         self.force_detect = force_detect
         self._cached_result: Optional[Dict] = None

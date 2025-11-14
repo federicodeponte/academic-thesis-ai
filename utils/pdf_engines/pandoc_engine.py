@@ -246,8 +246,9 @@ class PandocLatexEngine(PDFEngine):
 \predate{\begin{center}\large}
 \postdate{\par\end{center}}
 
-% Ensure title page is on separate page
-\AtBeginDocument{\maketitle\clearpage}
+% Pandoc's default template automatically calls \maketitle when title: is in YAML frontmatter
+% Our titling package customizations above control the formatting
+% No need to call \maketitle again (that would create duplicate cover pages)
 
 % Add custom fields for APA title page
 % These will be populated via Pandoc variables

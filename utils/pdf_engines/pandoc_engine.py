@@ -11,7 +11,6 @@ from pathlib import Path
 from typing import Optional, Dict, Any
 
 from .base import PDFEngine, PDFGenerationOptions, EngineResult
-from utils.formatting.academic_formatter import AcademicDocumentFormatter
 
 
 class PandocLatexEngine(PDFEngine):
@@ -154,9 +153,9 @@ class PandocLatexEngine(PDFEngine):
         This is injected into Pandoc's default template, which is more robust
         than creating a full custom template.
 
-        FIXED: Now uses AcademicDocumentFormatter to intelligently decide whether
-        to generate traditional cover page (showcase theses have YAML as cover,
-        traditional theses get auto-generated LaTeX cover).
+        REVERTED: Restored original Pandoc template-based approach (pre-83330e9).
+        Pandoc reads YAML frontmatter and calls \maketitle automatically.
+        This approach works for ALL theses (showcase theses have rich YAML = beautiful cover).
 
         Args:
             options: PDF generation options
@@ -165,11 +164,6 @@ class PandocLatexEngine(PDFEngine):
         Returns:
             str: LaTeX preamble content
         """
-        # Extract YAML metadata from markdown content
-        yaml_metadata = self._extract_yaml_metadata(md_content)
-
-        # Use formatter to determine cover page strategy
-        formatter = AcademicDocumentFormatter(verbose=True)
         # Parse line spacing for LaTeX (2.0 = double spacing)
         if options.line_spacing >= 1.9:
             spacing_command = r'\doublespacing'
@@ -235,68 +229,28 @@ class PandocLatexEngine(PDFEngine):
 \renewenvironment{longtable}{\small\oldlongtable}{\endoldlongtable}
 '''
 
-        # Add professional cover page if metadata provided AND appropriate
-        # FIXED: Use formatter to intelligently decide (showcase theses skip traditional cover)
-        should_generate_cover = formatter.should_generate_traditional_cover(yaml_metadata)
+        # Add APA 7th edition title page formatting if metadata provided
+        # ORIGINAL APPROACH: Use titling package to customize Pandoc's template
+        # Pandoc reads YAML (title, subtitle, author, date, etc.) and calls \maketitle
+        # Showcase theses have RICH YAML → beautiful automated cover page
+        if any([options.title, options.author, options.institution,
+                options.course, options.instructor]):
+            preamble += r'''
+% APA 7th Edition Title Page Customization
+\usepackage{titling}
+% Title page formatting: centered, double-spaced
+\pretitle{\begin{center}\LARGE\bfseries}
+\posttitle{\par\end{center}\vskip 2em}
+\preauthor{\begin{center}\large}
+\postauthor{\par\end{center}}
+\predate{\begin{center}\large}
+\postdate{\par\end{center}}
 
-        if should_generate_cover and any([options.title, options.author, options.institution,
-                                          options.course, options.instructor]):
-            # Build institutional metadata block
-            inst_lines = []
-            if options.institution:
-                inst_lines.append(options.institution)
-            if options.department:
-                inst_lines.append(options.department)
+% Ensure title page is on separate page
+\AtBeginDocument{\maketitle\clearpage}
 
-            # Build degree statement
-            degree_text = ""
-            if options.course:
-                degree_text = f"""
-    \\vspace{{1cm}}
-    {{\\normalsize
-    A thesis submitted in partial fulfillment\\\\
-    of the requirements for the degree of\\\\[0.5em]
-    \\textbf{{{options.course}}}\\\\
-    }}"""
-
-            inst_block = "\\\\[0.5em]\n    ".join(inst_lines) if inst_lines else ""
-
-            # Use Pandoc template variables directly to avoid LaTeX macro issues
-            title_text = options.title or ""
-            author_text = options.author or ""
-            date_text = options.date or ""
-
-            preamble += rf'''
-% Professional Academic Cover Page
-\usepackage{{titling}}
-
-% Custom title page layout
-\renewcommand{{\maketitle}}{{%
-  \begin{{titlepage}}
-    \centering
-    \vspace*{{3cm}}
-
-    % Title - large and bold
-    {{\Huge\bfseries {title_text}}}\\[2cm]
-
-    % Author - prominent
-    {{\Large {author_text}}}\\[1.5cm]
-
-    % Institutional details block
-    {{\large
-    {inst_block}
-    }}
-{degree_text}
-
-    \vfill
-
-    % Date at bottom
-    {{\large {date_text}}}
-
-  \end{{titlepage}}
-  \clearpage
-  \pagenumbering{{roman}}  % Start roman numerals after cover page
-}}
+% Add custom fields for APA title page
+% These will be populated via Pandoc variables
 '''
 
         # Add front matter page numbering (roman numerals) if TOC enabled
@@ -597,9 +551,10 @@ class PandocLatexEngine(PDFEngine):
 
     def _sanitize_unicode_for_latex(self, md_content: str) -> str:
         """
-        Replace problematic Unicode characters with ASCII equivalents.
+        Replace problematic Unicode characters with ASCII/LaTeX equivalents.
 
-        Fixes Unicode errors like U+FF1A (fullwidth colon) that break pdflatex.
+        Fixes Unicode errors like U+FF1A (fullwidth colon) and Korean Hangul
+        characters (U+CD08 etc.) that break pdflatex compilation.
         These characters are common in citations from international sources.
 
         Args:
@@ -609,11 +564,14 @@ class PandocLatexEngine(PDFEngine):
             Markdown content with sanitized characters
         """
         replacements = {
+            # Fullwidth punctuation (common in East Asian sources)
             '：': ':',    # U+FF1A fullwidth colon
             '，': ',',    # U+FF0C fullwidth comma
             '（': '(',    # U+FF08 fullwidth left paren
             '）': ')',    # U+FF09 fullwidth right paren
             '　': ' ',    # U+3000 ideographic space
+
+            # Typographic quotes and dashes
             ''': "'",    # U+2018 left single quotation mark
             ''': "'",    # U+2019 right single quotation mark
             '"': '"',    # U+201C left double quotation mark
@@ -621,6 +579,13 @@ class PandocLatexEngine(PDFEngine):
             '–': '-',    # U+2013 en dash
             '—': '--',   # U+2014 em dash
             '…': '...', # U+2026 horizontal ellipsis
+
+            # Korean Hangul characters (replace with romanized equivalents)
+            # FIXED: Korean character 초 (U+CD08) causing LibreOffice fallback
+            '초': 'cho',  # U+CD08 Korean "cho" (initial)
+            '기': 'gi',   # U+AE30 Korean "gi" (machine/base)
+            '코': 'ko',   # U+CF54 Korean "ko" (code)
+            '드': 'deu',  # U+B4DC Korean "deu" (de)
         }
 
         for unicode_char, ascii_equiv in replacements.items():

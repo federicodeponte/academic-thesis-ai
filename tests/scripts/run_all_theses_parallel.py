@@ -16,7 +16,7 @@ from datetime import datetime
 # Add project root to path
 sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 
-from config.concurrency_config import get_concurrency_config
+from concurrency.concurrency_config import get_concurrency_config
 
 
 def run_thesis_script(script_path: Path, log_path: Path) -> Tuple[str, int, float]:

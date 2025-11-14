@@ -1,11 +1,14 @@
-🔍 Validating 8 citations from citation_database.json...
-✅ co2_thesis_german: All citations passed validation!
-
 
 ================================================================================
-VALIDATION SUMMARY
+CITATION VALIDATION REPORT: CO2 German Thesis
 ================================================================================
-Total Critical Issues: 0
-Total Warnings: 0
 
-✅ ALL CITATIONS VALID
+❌ CRITICAL ISSUES (1):
+--------------------------------------------------------------------------------
+
+[cite_041] Initials only (incomplete): 'A.C.'
+  Pigou, A.C. (1920) - The Economics of Welfare...
+
+================================================================================
+TOTAL ISSUES: 1 (1 critical, 0 warnings)
+================================================================================

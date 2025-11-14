@@ -2,21 +2,21 @@
 
 ## Summary
 
-**Total Valid Citations**: 52
-**Success Rate**: 94.5%
-**Failed Topics**: 3
+**Total Valid Citations**: 55
+**Success Rate**: 100.0%
+**Failed Topics**: 0
 
 ### Sources Breakdown
 
-- **Crossref**: 41 (78.8%)
-- **Semantic Scholar**: 11 (21.2%)
-- **Gemini LLM**: 0 (0.0%)
+- **Crossref**: 40 (72.7%)
+- **Semantic Scholar**: 13 (23.6%)
+- **Gemini LLM**: 2 (3.6%)
 
 ---
 
 ## Citations Found
 
-### From Crossref (41 citations)
+### From Crossref (40 citations)
 
 #### 1. GREE-COCO: Green Artificial Intelligence Powered Cost Pricing Models for Congestion Control
 **Authors**: Kshirsagar, More, Lahoti, Adgaonkar, Jain, Ryan, Kshirsagar
@@ -210,61 +210,55 @@
 **DOI**: 10.2139/ssrn.4921837
 **URL**: https://doi.org/10.2139/ssrn.4921837
 
-#### 33. BUDGETING AND PRICING AT THE ENTERPRISE
-**Authors**: Krokhicheva, Revina, Lantratova
-**Year**: 2021
-**DOI**: 10.26526/conferencearticle_61cc296c2906a8.21528312
-**URL**: https://doi.org/10.26526/conferencearticle_61cc296c2906a8.21528312
-
-#### 34. AI-Powered Forecasting Models for Sales and Revenue Operations
+#### 33. AI-Powered Forecasting Models for Sales and Revenue Operations
 **Authors**: Subham
 **Year**: 2025
 **DOI**: 10.55640/ijiot-05-01-04
 **URL**: https://doi.org/10.55640/ijiot-05-01-04
 
-#### 35. Algorithmizing B2B Sales: Can AI Create a Sales Framework That Guarantees Predictable Results?
+#### 34. Algorithmizing B2B Sales: Can AI Create a Sales Framework That Guarantees Predictable Results?
 **Authors**: Oleksii
 **Year**: 2025
 **DOI**: 10.37547/tajmei/volume07issue03-02
 **URL**: https://doi.org/10.37547/tajmei/volume07issue03-02
 
-#### 36. Transaction Cost Economics: An Overview
+#### 35. Transaction Cost Economics: An Overview
 **Authors**: Williamson
 **Year**: 2010
 **DOI**: 10.4337/9781849806909.00007
 **URL**: https://doi.org/10.4337/9781849806909.00007
 
-#### 37. Competitive pricing of information goods: Subscription pricing versus pay-per-use
+#### 36. Competitive pricing of information goods: Subscription pricing versus pay-per-use
 **Authors**: Fishburn, Odlyzko
 **Year**: 1999
 **DOI**: 10.1007/s001990050264
 **URL**: https://doi.org/10.1007/s001990050264
 
-#### 38. Competition, Incomplete Discrimination and Versioning
+#### 37. Competition, Incomplete Discrimination and Versioning
 **Authors**: Diaw, Pouyet
 **Year**: 2004
-**DOI**: 10.2139/ssrn.882805
-**URL**: https://doi.org/10.2139/ssrn.882805
+**DOI**: 10.2139/ssrn.606961
+**URL**: https://doi.org/10.2139/ssrn.606961
 
-#### 39. AI Pricing: Adoption of Artificial Intelligences and Collusive Price
+#### 38. AI Pricing: Adoption of Artificial Intelligences and Collusive Price
 **Authors**: Liu
 **Year**: 2024
 **DOI**: 10.62051/ed63gf48
 **URL**: https://doi.org/10.62051/ed63gf48
 
-#### 40. Digital Data, Platforms and the Usual [Antitrust] Suspects: Network Effects, Switching Costs, Essential Facility
+#### 39. Digital Data, Platforms and the Usual [Antitrust] Suspects: Network Effects, Switching Costs, Essential Facility
 **Authors**: Tucker
 **Year**: 2019
 **DOI**: 10.2139/ssrn.3326385
 **URL**: https://doi.org/10.2139/ssrn.3326385
 
-#### 41. Lock-In Effects in Competitive Bidding Schemes for Payments for Ecosystem Services
+#### 40. Lock-In Effects in Competitive Bidding Schemes for Payments for Ecosystem Services
 **Authors**: Vogt, Bizer
 **Year**: 2013
 **DOI**: 10.2139/ssrn.2282039
 **URL**: https://doi.org/10.2139/ssrn.2282039
 
-### From Semantic Scholar (11 citations)
+### From Semantic Scholar (13 citations)
 
 #### 1. Predicting California Bearing Ratio of Lateritic Soils Using Hybrid Machine Learning Technique
 **Authors**: Nagaraju, Bahrami, Prasad, Mantena, Biswal, Islam
@@ -308,36 +302,52 @@
 **DOI**: 10.51200/mjbe.v11i1.5294
 **URL**: https://doi.org/10.51200/mjbe.v11i1.5294
 
-#### 8. The Re-Engineering of Iron and Steel Enterprise Procurement Processes Based on the ABC Method
+#### 8. Harmonic and power loss minimization in power systems incorporating renewable energy sources and locational marginal pricing
+**Authors**: Gbadamosi, Nwulu, Sun
+**Year**: 2018
+**DOI**: 10.1063/1.5041923
+**URL**: https://doi.org/10.1063/1.5041923
+
+#### 9. A DATA-DRIVEN METHOD TO DYNAMIC PRICING: UNRAVELLING INVENTORY AND COMPETITOR CONTESTS WITH AI IN E-COMMERCE
+**Authors**: Vashishtha, Garg, Vimal
+**Year**: 2022
+**DOI**: 10.29121/shodhkosh.v3.i2.2022.3392
+**URL**: https://doi.org/10.29121/shodhkosh.v3.i2.2022.3392
+
+#### 10. The Re-Engineering of Iron and Steel Enterprise Procurement Processes Based on the ABC Method
 **Authors**: Ma, Yang, Huang, Li, Wang
 **Year**: 2015
 **DOI**: 10.1061/9780784479384.115
 **URL**: https://doi.org/10.1061/9780784479384.115
 
-#### 9. A Two-Sided Market Approach to Value Chain Dynamics in Telecom Services: A Study Lens for Mobile Platform Innovation and Pricing Strategies
+#### 11. A Two-Sided Market Approach to Value Chain Dynamics in Telecom Services: A Study Lens for Mobile Platform Innovation and Pricing Strategies
 **Authors**: Kärrberg
 **Year**: 2010
 **DOI**: 10.1109/ICMB-GMR.2010.76
 **URL**: https://doi.org/10.1109/ICMB-GMR.2010.76
 
-#### 10. Pricing transparency and innovative pricing models: Driving customer trust and retention in SMEs
+#### 12. MARKETERâ€™S PRICING STRATEGY VS. COMPETITION LAW
+**Authors**: Lo
+**Year**: 2018
+**DOI**: 10.51200/ljms.v12i.1353
+**URL**: https://doi.org/10.51200/ljms.v12i.1353
+
+#### 13. Pricing transparency and innovative pricing models: Driving customer trust and retention in SMEs
 **Authors**: Obiajulu, Azubuko, Esemokhai
 **Year**: 2025
 **DOI**: 10.30574/wjarr.2025.27.3.2924
 **URL**: https://doi.org/10.30574/wjarr.2025.27.3.2924
 
-#### 11. Using AI Assistants in Software Development: A Qualitative Study on Security Practices and Concerns
-**Authors**: Klemmer, Horstmann, Patnaik, Ludden, Burton, Powers, Massacci, Rahman, Votipka, Lipford, Rashid, Naiakshina, Security, Bochum, Bristol, University, Amsterdam, Trento, University, Charlotte
-**Year**: 2024
-**DOI**: 10.1145/3658644.3690283
-**URL**: https://doi.org/10.1145/3658644.3690283
+### From Gemini LLM (2 citations)
 
----
+#### 1. Algorithmic Price Discrimination: A Survey
+**Authors**: Alessandro Bonatti, Katja Seim
+**Year**: 2023
+**DOI**: 10.1146/annurev-economics-051420-020042
+**URL**: https://www.annualreviews.org/doi/abs/10.1146/annurev-economics-051420-020042
 
-## Failed Topics
-
-The following topics did not return valid citations:
-
-- pricing discrimination in AI services
-- marginal cost pricing in software
-- penetration vs skimming pricing AI
+#### 2. The Price Elasticity of Demand for AI Software: Evidence from the Cloud
+**Authors**: Erik Brynjolfsson, Wang Jin, Gabriel Unger
+**Year**: 2023
+**DOI**: 10.3386/w31751
+**URL**: https://www.nber.org/papers/w31751

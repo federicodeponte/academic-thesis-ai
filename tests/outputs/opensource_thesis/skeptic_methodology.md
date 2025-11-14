@@ -8,161 +8,134 @@
 ## Summary
 
 **Strengths:**
-- Clearly articulated qualitative, interpretivist research design.
-- Well-structured conceptual framework with comprehensive dimensions.
-- Robust justification for case study selection (Linux, Wikipedia).
-- Detailed plan for within-case and cross-case analysis.
-- Good acknowledgment of analytical generalization over statistical.
+- Acknowledges the theoretical nature of the paper from the outset, setting appropriate expectations for the methodology.
+- Develops a comprehensive, multi-dimensional analytical framework that correctly identifies key areas of open source impact (technological, economic, social, educational, governance).
+- Provides clear, well-justified criteria for case study selection, leading to the appropriate choice of Linux and Wikipedia as exemplary cases.
+- Explicitly discusses the limitations of generalizability for the chosen case studies.
+- Integrates a section on ethical considerations and limitations, demonstrating awareness of methodological boundaries.
 
-**Critical Issues:** 4 major, 6 moderate, 3 minor
-**Recommendation:** Significant revisions needed, particularly regarding data operationalization and secondary data limitations.
+**Critical Issues:** 3 major, 5 moderate, 7 minor
+**Recommendation:** Revisions needed before publication, primarily to address missing citations and enhance the rigor of the qualitative analysis description.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Operationalization of Conceptual Framework Indicators
-**Location:** Section 3.2 (all sub-sections on Technological, Economic, Social, Cultural Impact)
-**Claim:** Each dimension is "characterized by specific indicators, allowing for a comprehensive and holistic assessment."
-**Problem:** Many indicators are highly aspirational or difficult to consistently operationalize and measure using *only secondary qualitative data*, especially for cross-case comparison.
-**Evidence:**
-- "number of new features, code commits" (how to standardize counting across Linux/Wikipedia from secondary data?)
-- "adoption of open-source components in proprietary systems" (extremely difficult to track comprehensively from public sources)
-- "penetration testing results" (not always public or comparable across projects)
-- "quantified by comparing total cost of ownership (TCO)" (TCO analysis is complex and usually requires primary data)
-- "inferred from adoption rates and anecdotal evidence" (acknowledges weakness, but "anecdotal" is not rigorous evidence for a "comprehensive assessment")
-- "career trajectories of contributors" (very challenging to trace from secondary data)
-- "diversity of forks, specialized distributions" (requires significant, specific data collection strategy beyond general secondary sources)
-**Fix:** For each indicator, explicitly state *how* it will be identified, coded, and analyzed from the *specific secondary data sources* mentioned. If an indicator is genuinely unmeasurable with the chosen method, it should be removed or reframed as a theoretical concept not directly assessed. Re-evaluate the claim of "comprehensive and holistic assessment" if many indicators remain unaddressed.
-**Severity:** 🔴 High - affects the core feasibility and rigor of the conceptual framework and its application.
+### Issue 1: Missing Key Citations
+**Location:** Section 2.2, Section 2.3
+**Problem:** Several foundational methodological claims lack immediate citations, despite referring to specific authors/years. This is a critical academic integrity issue.
+**Missing Citations:**
+- Section 2.2: `{cite_MISSING: Yin, 2018, Case Study Research}`
+- Section 2.3: `{cite_MISSING: Creswell & Plano Clark, 2018, Mixed Methods Research}`
+- Section 2.3.2: `{cite_MISSING: Hsieh & Shannon, 2005, Qualitative Content Analysis}`
+**Fix:** Provide the full, correct citations immediately, or replace the placeholder with an appropriate citation ID from your reference list. If these references are not in your bibliography, they *must* be added.
+**Severity:** 🔴 High - affects academic integrity and trustworthiness.
 
-### Issue 2: Rigor of Secondary Data Evaluation and Bias Mitigation
-**Location:** Section 3.4.1 Data Collection and Sources, Section 3.4.3 Analytical Rigor
-**Claim:** "The credibility and relevance of each source will be critically evaluated to ensure data quality and reliability."
-**Problem:** The methodology states this crucial step but provides no detail on *how* this critical evaluation will be performed. Secondary data, especially news articles or project-internal documents, can carry significant biases.
-**Missing:** Specific criteria or a systematic process for assessing the credibility, reliability, and potential biases of diverse secondary sources (academic, journalistic, internal project docs, books). How will conflicting information from different sources be handled?
-**Fix:** Add a dedicated sub-section (or expand existing text) detailing the specific criteria and steps for source evaluation (e.g., author expertise, publication bias, date, corroboration from multiple independent sources, methodological soundness for academic papers). Explain how potential biases in different source types will be acknowledged and accounted for in the analysis.
-**Severity:** 🔴 High - threatens the validity and trustworthiness of the entire analysis based on secondary data.
+### Issue 2: Insufficient Detail for "Systematic Qualitative Content Analysis"
+**Location:** Section 2.3.2 Qualitative Content Analysis
+**Claim:** "A systematic qualitative content analysis is employed..."
+**Problem:** While the steps (coding, thematic analysis, pattern identification, interpretive synthesis) are listed, the methodology section lacks critical detail on *how* this systematic approach ensures rigor, especially in a secondary data synthesis context.
+**Missing:**
+- Details on the coding process: Who performed it? Were coding guidelines developed?
+- How inter-coder reliability was considered (even if a single researcher, the process to ensure consistency/minimize bias should be described).
+- Criteria for "critically evaluating" sources (mentioned in 2.3.1) and how this feeds into the QCA.
+- How conflicting findings or interpretations across different sources were handled.
+- How researcher bias was actively mitigated during interpretation.
+**Fix:** Elaborate on the practical steps taken to ensure the "systematic" and "rigorous" nature of the content analysis, even for a theoretical paper based on secondary data. This is crucial for methodological credibility.
+**Severity:** 🔴 High - threatens methodological rigor and validity of findings.
 
-### Issue 3: Integration of "Quantitative Indicators" in a Qualitative Interpretivist Study
-**Location:** Section 3.4.1 Data Collection and Sources, Section 3.4.2.1 Within-Case Analysis (point 4)
-**Claim:** "Quantitative indicators from these sources will be used to substantiate claims of scale and reach."
-**Problem:** The study explicitly adopts a "qualitative, interpretivist research paradigm." While quantitative data can inform qualitative analysis, the methodology needs a clearer explanation of *how* these quantitative indicators will be integrated without conflicting with the interpretivist stance or misrepresenting numerical data within a qualitative framework. How will "scale and reach" be interpreted qualitatively?
-**Missing:** A clear methodological bridge explaining how numerical data (e.g., market share percentages, download counts, page views) will be *qualitatively interpreted* and integrated into the narrative without shifting to a positivist approach or falling into the trap of pseudo-quantification.
-**Fix:** Elaborate on the process. For example, will quantitative data be used to contextualize, illustrate, or provide background for qualitative themes, rather than being treated as direct evidence for statistical claims? Emphasize that the *interpretation* of these numbers, rather than the numbers themselves, is the focus.
-**Severity:** 🔴 High - potential for methodological inconsistency and misinterpretation of data.
-
-### Issue 4: Overclaim of "Replicable Blueprint" and "Global Impact"
-**Location:** Introduction (para 1), Section 3.1 Research Design (para 1), Section 3.3.1 General Selection Criteria (point 2)
-**Claim:** The methodology aims to provide a "comprehensive and replicable blueprint" and assess "global impact."
-**Problem:** For a qualitative, interpretivist, multiple-case study relying on secondary data, "replicable blueprint" is a very strong claim. While the process can be transparent, exact replication of qualitative *interpretations* is inherently difficult. Similarly, assessing *truly global* impact from two specific cases and secondary data (which may have regional biases) is challenging.
-**Evidence:** The interpretivist paradigm emphasizes subjective meaning-making, which is not strictly "replicable" in the same way quantitative methods are. The "global reach" of cases is established, but the *assessment* of global impact needs more nuance.
-**Fix:** Rephrase "replicable blueprint" to "transparent and rigorous framework" or "systematic approach." Acknowledge that while the *process* is transparent, the *interpretations* are researcher-dependent. For "global impact," clarify that the focus is on *exemplary manifestations* of global impact through these cases, rather than a comprehensive survey of all global open-source impact.
-**Severity:** 🔴 High - affects the fundamental claims and scope of the research.
+### Issue 3: Overclaim of "Mixed-Methods Perspective"
+**Location:** Section 2.3, first paragraph
+**Claim:** "A mixed-methods perspective is implicitly integrated by leveraging both qualitative insights and quantitative indicators from the literature where available."
+**Problem:** Simply drawing on existing literature that contains both qualitative and quantitative information does not constitute a "mixed-methods perspective" in the methodological sense. Mixed methods typically imply *explicitly designing* research that integrates both *data collection and analysis* methods (often in a specific sequence or with a transformative intent).
+**Evidence:** The subsequent description (2.3.3) clarifies that quantitative indicators are "illustrative evidence" and not subjected to "complex statistical analysis," further distancing it from a true mixed-methods approach.
+**Fix:** Rephrase to accurately reflect the approach. For example, "The analysis integrates qualitative insights and illustrative quantitative indicators drawn from the existing literature" or "While primarily qualitative, the analysis incorporates quantitative evidence from secondary sources." Remove the term "mixed-methods perspective" unless a more robust justification for its use is provided.
+**Severity:** 🔴 High - misrepresents methodological approach.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 5: Generalizability from "Extreme Manifestations"
-**Location:** Section 3.1 Research Design (para 3)
-**Claim:** "The selected cases are representative of highly successful and globally influential open-source projects, providing critical insights into the extreme manifestations of open-source impact, which can inform broader theoretical understandings."
-**Problem:** While studying "extreme manifestations" (critical cases) is a valid strategy for theory building, the logical leap from these highly successful cases to "broader theoretical understandings" and "transferable insights" needs stronger justification. What about less successful, struggling, or niche open-source projects? Do the findings from Linux and Wikipedia truly generalize to *all* open-source initiatives?
-**Fix:** Explicitly discuss the limitations of studying only highly successful cases. Clarify that the analytical generalization focuses on refining theory *about successful open-source dynamics* or identifying *mechanisms* that *could* be present in other projects, rather than implying direct applicability across the board.
-**Severity:** 🟡 Medium - impacts the scope and applicability of the findings.
+### Issue 4: Weak Justification for "Essential" Framework
+**Location:** Section 2.1, first paragraph
+**Claim:** "To comprehensively assess the global impact of open source, a multi-dimensional analytical framework is essential."
+**Problem:** The term "essential" is strong and lacks explicit justification beyond the subsequent description of its benefits. While a framework is certainly beneficial, claiming it's "essential" without explaining why other approaches would fail is an overclaim.
+**Fix:** Soften the language (e.g., "highly beneficial," "crucial," "developed to facilitate") or provide a brief argument for why such a framework is indeed indispensable for the paper's aims.
 
-### Issue 6: Comparability of "Impact" Across Diverse Cases
-**Location:** Section 3.3.2 Specific Justification for Linux and Wikipedia, Section 3.4.2.2 Cross-Case Analysis
-**Problem:** While Linux (software/infrastructure) and Wikipedia (knowledge production) offer excellent contrast, the "impact" indicators within the conceptual framework might manifest very differently. The methodology needs to explicitly address the challenges of comparing these highly divergent forms of impact.
-**Missing:** A discussion on how the analysis will account for the qualitative differences in how "technological impact" for Linux (e.g., code commits, kernel versions) compares to Wikipedia (e.g., MediaWiki software evolution, platform scalability). Similarly for economic, social, and cultural impacts.
-**Fix:** Add a paragraph in the Cross-Case Analysis section discussing the specific challenges of comparing these distinct types of projects and how the conceptual framework is flexible enough to accommodate these differences without forcing a direct apples-to-apples comparison where inappropriate.
-**Severity:** 🟡 Medium - impacts the robustness of cross-case analysis.
+### Issue 5: Weak Argument on Quantitative Methods
+**Location:** Section 2.2, first paragraph
+**Claim:** "...offering rich descriptive insights that might be overlooked by purely quantitative methods {cite_002}."
+**Problem:** This presents a slight strawman argument. Quantitative methods don't necessarily "overlook" insights; they simply prioritize different types of insights (e.g., generalizability, statistical relationships). This phrasing can appear dismissive of other valid research approaches.
+**Fix:** Rephrase to emphasize the *strengths* of the qualitative case study approach for *this paper's goals* without diminishing other methods. For example, "offering rich descriptive insights particularly suited for exploring the complex interplay of factors in specific contexts."
 
-### Issue 7: Conditional Rigor Measure
-**Location:** Section 3.4.3 Analytical Rigor and Reflexivity (point 4)
-**Claim:** "Peer Debriefing: (If applicable in a collaborative research setting)"
-**Problem:** Listing "Peer Debriefing" as a rigor measure but making it conditional weakens its impact. If the study is single-authored, this measure is not applicable and should not be listed as a planned rigor step.
-**Fix:** Either commit to peer debriefing (e.g., by engaging external colleagues) or remove it from the list of planned rigor measures if it's a single-author work. If it's a collaborative work, remove the parenthetical.
-**Severity:** 🟡 Medium - minor but affects perceived rigor.
+### Issue 6: Unsubstantiated Claim of "Minimizing Interpretive Bias"
+**Location:** Section 2.3.5 Ethical Considerations and Limitations
+**Claim:** "...minimizing interpretive bias."
+**Problem:** While stated as an aim, the methodology section (2.3.2) does not sufficiently describe the specific procedures or checks implemented to actively minimize interpretive bias during the qualitative content analysis. This creates a disconnect between the stated intention and the described execution.
+**Fix:** Either provide concrete examples of how interpretive bias was minimized in Section 2.3.2 (e.g., triangulation of sources, reflective journaling, structured coding guidelines) or soften the claim in 2.3.5 to acknowledge it as an ongoing challenge rather than a minimized one.
 
-### Issue 8: Detail on "Critical Evaluation" of Sources
-**Location:** Section 3.4.1 Data Collection and Sources (last sentence)
-**Problem:** While Issue 2 covers the lack of *how* for bias mitigation, this specific sentence also lacks detail on what "critically evaluated" entails in practice.
-**Fix:** Provide at least a few examples of what "credibility and relevance" criteria will include (e.g., academic peer-review status, journalistic reputation, potential conflicts of interest for project-internal reports).
-**Severity:** 🟡 Medium - reinforces Issue 2.
-
-### Issue 9: "Global Impact" vs. Regional Bias in Secondary Data
-**Location:** Section 3.3.1 General Selection Criteria (point 2), Section 3.4.1 Data Collection and Sources
-**Problem:** While the chosen cases have "Global Reach," secondary data sources (academic literature, news articles) can have inherent regional or linguistic biases (e.g., English-language dominance, focus on Western perspectives). This could skew the assessment of "global impact."
-**Missing:** Acknowledgment of potential regional/linguistic biases in secondary data collection and how this might influence the "global" assessment.
-**Fix:** Add a sentence or two under Data Collection/Analytical Rigor acknowledging this potential bias and, if possible, mention strategies to mitigate it (e.g., searching non-English databases, seeking out diverse media reports if feasible within the scope).
-**Severity:** 🟡 Medium - affects the claim of "global" assessment.
-
-### Issue 10: Lack of Discussion on "Failure Cases" or Limitations of Open Source
-**Location:** Overall Methodology
-**Problem:** The methodology focuses exclusively on identifying and measuring *positive* impacts. By only selecting "highly successful" projects and focusing on their contributions, the study risks presenting an overly optimistic or incomplete picture of open-source phenomena.
-**Missing:** A discussion on how the analysis will address instances where open-source projects fail, face significant challenges, or have unintended negative consequences (e.g., security vulnerabilities, community burnout, forks leading to fragmentation). While the cases are successful, even they have challenges.
-**Fix:** Add a section (perhaps under "Missing Discussions" in the paper's Discussion section) acknowledging that the study's focus on successful cases is a deliberate choice for analytical generalization, but that this limits insights into the full spectrum of open-source outcomes. Alternatively, if the data allows, discuss challenges or "failures" *within* the successful cases.
-**Severity:** 🟡 Medium - affects the balanced perspective of the research.
+### Issue 7: "Foundational Premise" Overclaim
+**Location:** Section 2.1, second paragraph
+**Claim:** "The foundational premise is that open source represents a paradigm of distributed innovation and collaborative knowledge creation {cite_003}..."
+**Problem:** While this is a widely accepted view, stating it as *the* "foundational premise" of open source impact analysis might be an overclaim. Open source has multiple foundational premises depending on the analytical lens (e.g., economic efficiency, freedom, ethical considerations).
+**Fix:** Rephrase to "A foundational premise for this framework is that..." or "This framework is built upon the premise that..." to acknowledge other potential foundational views.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Vague claim:** "most project data is inherently public" (Section 3.5). While much is public, some aspects (e.g., private discussions, specific user data) are not. It's a slight oversimplification.
-2.  **Citation Consistency:** Ensure all `{cite_XXX}` references are consistently present and correctly formatted throughout the final paper. (This is a general note based on the placeholder format).
-3.  **Introduction of Methodology Section:** The introductory paragraph for Section 3 could be slightly more concise. The "overarching goal to provide a comprehensive and replicable blueprint" is a strong claim that might be better presented in the conclusion or overall framing, rather than as a goal of the methodology *section* itself.
+1.  **Vague claim:** "This characteristic inherently generates a broad societal benefit..." (Section 2.1, para 2) - "Inherently" is a strong word. While often true, it could be hedged (e.g., "tends to generate").
+2.  **Repetitive phrasing:** "socio-technical phenomenon {cite_001}{cite_002}" (Section 2.1, para 1) and "socio-technical systems perspective" (Section 2.1, para 3). Could be streamlined or varied slightly.
+3.  **Ambiguous "open growth" model:** (Section 2.1, para 2) While cited, a brief, concise definition or elaboration for readers unfamiliar with the term would be helpful, especially in a framework section.
+4.  **Redundant citation:** `{cite_001}{cite_002}` appears multiple times in short succession, sometimes for general statements. Consolidate or ensure each citation supports a specific phrase.
+5.  **"Widely recognized" implication:** (Section 2.2.1, Linux) "underpins much of the internet and modern computing infrastructure {cite_008}." While true, this is a very broad statement. The citation should ideally support the *extent* of this claim.
+6.  **"Ethical Considerations" section title:** Section 2.3.5 covers both ethics and limitations. Consider renaming to "Ethical Considerations and Limitations" for clarity.
+7.  **Citation style consistency:** Ensure all citations, especially the `cite_MISSING` ones once corrected, follow a consistent style throughout the paper (e.g., always author, year, or always just the ID).
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: From Description to "Impact Assessment"
-**Location:** Section 3.2 Conceptual Framework
-**Logic:** The framework lists indicators as descriptive elements ("creation of new software," "widespread use").
-**Missing:** A clearer logical link between *describing* these indicators and *assessing their impact*. How will the *significance* or *causality* of these observed phenomena be determined and attributed to open-source mechanisms, especially when relying on interpretivist analysis of secondary data?
-**Fix:** Reinforce in the analysis section how the interpretivist approach will move beyond mere description to infer and interpret the *impact* and its mechanisms.
+### Gap 1: Link between "Theoretical Nature" and "Case Study Approach"
+**Location:** Introduction (paper's theoretical nature) → Section 2.2 (case study approach)
+**Logic:** The paper states it's "theoretical" and "synthesizes existing knowledge." While case studies are qualitative, they are often associated with empirical investigation. The jump from "theoretical" to "case study approach was adopted" needs a stronger explicit bridge explaining *why* case studies are suitable for a *theoretical synthesis* rather than just *empirical grounding*.
+**Missing:** A clearer explanation of how the qualitative case study approach functions *within a theoretical synthesis* to provide insights for the framework, rather than purely for empirical observation.
+**Fix:** Strengthen the rationale in 2.2 by explicitly stating how the case studies serve to *illustrate*, *validate*, or *refine* the theoretical framework based on existing knowledge, rather than generating new primary data.
 
 ---
 
 ## Methodological Concerns
 
-### Concern 1: Depth vs. Breadth in Case Studies
-**Issue:** Choosing two extremely large and complex cases (Linux kernel, Wikipedia) for a qualitative, interpretivist study, combined with a very broad conceptual framework (4 dimensions, many indicators), risks superficial analysis for each indicator or dimension.
-**Risk:** The analysis might struggle to provide true "in-depth exploration and rich description" for *all* listed indicators across *both* cases within the scope of a single paper.
-**Reviewer Question:** "Given the immense scope of Linux and Wikipedia, how will the analysis ensure sufficient depth for each impact dimension and indicator, rather than a broad overview?"
-**Suggestion:** Explicitly acknowledge this challenge and perhaps prioritize certain indicators or sub-dimensions in the analysis, or clarify the expected level of "depth."
-
-### Concern 2: Researcher's Role in Interpretivist Analysis
-**Issue:** While "Researcher Reflexivity" is mentioned, the methodology could further elaborate on the researcher's active role in constructing meaning, which is central to interpretivism.
-**Risk:** Without this, the methodology might appear to implicitly lean towards a more objective, positivist data extraction, rather than an interpretivist sense-making process.
-**Question:** "How will the researcher's interpretations be explicitly acknowledged and presented in the findings, consistent with an interpretivist paradigm?"
-**Fix:** Briefly expand on reflexivity to include how the researcher's interpretation *shapes* the findings, and how this will be transparently communicated.
+### Concern 1: Depth of "Systematic" Review and Synthesis
+**Issue:** The methodology describes an "extensive literature review" and "systematic qualitative content analysis." However, the description lacks the level of detail often expected for a *systematic review* or highly rigorous qualitative analysis (e.g., specific search strategy, database selection, inclusion/exclusion criteria for sources, data extraction protocols).
+**Risk:** Without these details, the "systematic" claim appears weaker, raising questions about the comprehensiveness and replicability of the literature synthesis.
+**Reviewer Question:** "What were the specific search terms, databases, and selection criteria used for your 'extensive literature review'?"
+**Suggestion:** While not a full systematic review, providing more detail on the *process* of literature selection and evaluation would significantly enhance credibility.
 
 ---
 
 ## Missing Discussions
 
-1.  **Scope of "Global" Impact:** How will the analysis explicitly address the geographical and cultural nuances of impact, beyond just broad claims of global reach? Will the data sources allow for distinguishing impact in, say, North America vs. Sub-Saharan Africa?
-2.  **Dynamic Nature of Impact:** Open-source projects evolve. How will the methodology account for the *temporal evolution* of impact, as opposed to a static snapshot? (Longevity criterion helps, but the analysis approach doesn't explicitly detail temporal mapping).
-3.  **Unintended Consequences:** Even successful projects can have unintended (positive or negative) consequences. Will the inductive coding allow for these to emerge, and will they be discussed?
+1.  **Specific Scope of "Global Impact":** While the framework is multi-dimensional, the paper could briefly clarify its definition or boundaries of "global impact" within the methodology. Does it prioritize certain regions, or aspire to a universal understanding?
+2.  **Limitations of Secondary Data in QCA:** While acknowledged generally, a brief discussion on how the *specific limitations* of secondary data (e.g., varying methodologies of original studies, potential for outdated information) are handled or considered during the qualitative content analysis would be beneficial.
+3.  **Explicit Role of "Theoretical Nature":** The introduction mentions the paper's theoretical nature. The methodology could more explicitly link *how* each methodological choice (framework, case studies, analysis approach) aligns with and serves this theoretical aim.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Slightly Repetitive Justifications:** Some justifications for qualitative approach or case selection criteria are repeated across paragraphs. A minor edit for conciseness could be beneficial.
-2.  **Confidence vs. Nuance:** While confidence is good, some phrases lean towards definitive claims ("solves the X problem" equivalent) when nuance might be more appropriate for qualitative research. (e.g., "comprehensive and holistic assessment" for the framework, as noted in Major Issue 1).
+1.  **Slightly boilerplate language:** Some phrases, like "delineates the methodological approach undertaken," are common but could be more direct or engaging.
+2.  **Repetitive justifications:** Sometimes, justifications for choices (e.g., case study selection) are repeated across paragraphs. Streamlining could improve flow.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "How specifically will you operationalize and measure the listed indicators (e.g., 'career trajectories of contributors,' 'influence on industry standards') using only secondary data?"
-2.  "What are your criteria for determining the credibility and potential biases of news articles, project documentation, and other secondary sources?"
-3.  "Given the interpretivist paradigm, how will you ensure that the integration of quantitative data (e.g., user numbers, market share) remains consistent with a qualitative approach?"
-4.  "How do you plan to achieve 'analytical generalization' from studying only two highly successful and 'extreme' cases? What are the limitations of this case selection strategy for broader theory?"
-5.  "How will you manage the immense scope of data for two such large and complex projects to ensure depth of analysis across all four impact dimensions?"
+1.  "Can you provide the full citations for Yin (2018), Creswell & Plano Clark (2018), and Hsieh & Shannon (2005)?" (CRITICAL)
+2.  "What specific steps were taken to ensure the 'systematic' nature of your qualitative content analysis, particularly regarding source selection, coding, and bias mitigation?"
+3.  "Given the 'theoretical nature' of the paper, how do the case studies function to support or refine the analytical framework, rather than just describe examples?"
+4.  "How did you handle potentially conflicting findings or perspectives from different sources during your literature synthesis?"
+5.  "What were the inclusion/exclusion criteria for the literature reviewed for your analysis?"
 
 **Prepare answers or add to paper**
 
@@ -171,14 +144,11 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 Fix Issue 1 (Operationalization of Indicators) - *Crucial for the study's feasibility and rigor.*
-2.  🔴 Address Issue 2 (Rigor of Secondary Data Evaluation) - *Essential for data validity.*
-3.  🔴 Resolve Issue 3 (Quantitative-Qualitative Integration) - *Key for methodological consistency.*
-4.  🔴 Fix Issue 4 (Overclaim of Replicable/Global Impact) - *Impacts core claims and scope.*
-5.  🟡 Address Issue 5 (Generalizability from Extreme Cases) - *Strengthens theoretical contributions.*
-6.  🟡 Address Issue 6 (Comparability Across Diverse Cases) - *Enhances cross-case analysis robustness.*
-7.  🟡 Address Issue 9 (Regional Bias in Data) - *Improves "global" assessment credibility.*
+1.  🔴 Fix Issue 1 (missing citations) - *Absolutely critical for academic integrity.*
+2.  🔴 Address Issue 2 (insufficient QCA detail) - *Essential for methodological rigor.*
+3.  🔴 Resolve Issue 3 (overclaim of mixed-methods) - *Crucial for accurate representation.*
+4.  🟡 Address Issue 6 (unsubstantiated bias minimization) by adding detail to QCA.
+5.  🟡 Strengthen the logical gap between "theoretical paper" and "case study approach."
 
 **Can defer:**
-- Minor wording issues (fix in revision)
-- Additional discussions on failure cases (can be part of the main discussion section, not strictly methodology).
+- Minor wording adjustments (can be done during general proofreading).

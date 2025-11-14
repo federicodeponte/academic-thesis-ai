@@ -23,17 +23,17 @@ class SemanticScholarClient(BaseAPIClient):
 
     def __init__(
         self,
-        rate_limit_per_second: float = 10.0,
-        timeout: int = 10,
-        max_retries: int = 3,
+        rate_limit_per_second: float = 5.0,
+        timeout: int = 15,
+        max_retries: int = 5,
     ):
         """
         Initialize Semantic Scholar API client.
 
         Args:
-            rate_limit_per_second: Maximum requests per second (S2 allows 100, we use 10)
+            rate_limit_per_second: Maximum requests per second (S2 allows 100, we use 5 to avoid burst limits)
             timeout: Request timeout in seconds
-            max_retries: Maximum retry attempts
+            max_retries: Maximum retry attempts (increased for rate limit resilience)
         """
         super().__init__(
             base_url="https://api.semanticscholar.org",

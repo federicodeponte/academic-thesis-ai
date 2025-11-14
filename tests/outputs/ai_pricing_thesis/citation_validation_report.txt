@@ -11,7 +11,7 @@ CITATION VALIDATION REPORT: AI Pricing Thesis
 [cite_007] Generic title pattern: 'An Overview'
   Mirghaderi, Sziron et al. (2023) - Ethics and Transparency Issues in Digital Platforms: An Over...
 
-[cite_036] Generic title pattern: 'An Overview'
+[cite_035] Generic title pattern: 'An Overview'
   Williamson (2010) - Transaction Cost Economics: An Overview...
 
 ================================================================================

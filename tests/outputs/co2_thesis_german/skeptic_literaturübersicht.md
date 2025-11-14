@@ -7,131 +7,114 @@
 
 ## Summary
 
-This literature review provides a comprehensive and well-structured overview of CO2 certificate trading systems, covering their historical development, theoretical underpinnings, practical application, empirical effectiveness, and critical perspectives. The author demonstrates a strong conceptual understanding of the subject matter and outlines a logical progression of arguments. The "Fazit" section is particularly strong in its self-reflection, accurately identifying the significant limitations due to the scarcity of provided source materials.
-
 **Strengths:**
--  **Comprehensive Structure:** The review follows a clear, logical structure, building from historical context and theoretical foundations to empirical evidence and critical challenges.
--  **Clear Conceptual Explanations:** Complex environmental economic theories (externalities, Pigou taxes, efficiency) are explained clearly and concisely.
--  **Detailed EU ETS Overview:** The discussion of the EU ETS, particularly its design evolution and impacts, is detailed and insightful, largely drawing on the cited Grubb et al. (2020) work.
--  **Strong Self-Critique:** The "Fazit" section admirably articulates the limitations of the current draft regarding source material and identifies crucial research gaps for future work.
+-   **Comprehensive Coverage:** The literature review provides a well-structured and broad overview of Emissions Trading Systems (EHS) and CO2-pricing mechanisms, covering historical development, theoretical foundations, the EU-ETS in detail, empirical findings, and critical perspectives.
+-   **Clear Structure:** The paper is logically organized into distinct sections, making it easy to follow the progression of ideas from theory to application and challenges.
+-   **Acknowledgement of Complexities:** The author consistently acknowledges the challenges, criticisms, and limitations associated with EHS (e.g., initial over-allocation in EU-ETS, limitations of Coase theorem, carbon leakage, price volatility, social justice concerns, political economy issues).
+-   **Strong Theoretical Basis:** Section 2.3 provides a robust and clear explanation of the underlying environmental economic theories, including externalities, Pigou-taxes, Coase theorem, and the distinction between price and quantity instruments.
 
-**Critical Issues:** 5 major, 3 moderate, 2 minor
-**Recommendation:** Extensive revisions are needed to integrate specific, cited evidence before this draft can serve as a robust literature review for a Master's thesis.
+**Critical Issues:** 2 major, 2 moderate, 5 minor
+**Recommendation:** Significant revisions are needed, particularly regarding academic integrity and the strength of empirical claims, before publication.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Overwhelming Lack of Specific Evidence/Citations
-**Location:** Throughout the entire document, especially sections 2.1.1, 2.1.3, 2.2.1, 2.2.2, 2.2.3, 2.3.1, 2.3.3, 2.4.1, 2.4.2, 2.4.3, 2.5.1, 2.5.2, 2.6.3.
-**Problem:** The document contains an excessive number of `{cite_MISSING}` placeholders, indicating that many claims, facts, and theoretical references are not backed by specific, cited literature within the provided draft. While the author acknowledges this limitation in the "Fazit", its pervasiveness undermines the academic rigor expected of a Master's thesis literature review.
-**Evidence:** Over 25 `{cite_MISSING}` placeholders for foundational works (Coase, Dales, Pigou, Hardin, Mankiw), key policy documents (Kyoto, Paris Agreement, EU Commission), and crucial empirical studies (Ellerman, Bollen, Greenstone, Calel & Dechezleprêtre, Klenert, Lohmann, etc.).
-**Fix:** Systematically identify and integrate specific, peer-reviewed academic sources for *every* claim, statistic, theoretical concept, and historical fact. This will involve extensive literature search and synthesis. Each `{cite_MISSING}` must be replaced with a valid citation.
-**Severity:** 🔴 High - This is the single most critical issue, fundamentally affecting the validity and academic integrity of the entire literature review.
+### Issue 1: Missing Citations (Academic Integrity)
+**Location:** Sections 2.4 and 2.5 (multiple instances)
+**Problem:** Several claims, examples, and important statements lack supporting citations. This is a fundamental breach of academic integrity and significantly weakens the credibility of the review. The missing references pertain to specific examples and general assertions about empirical findings, which are crucial for a literature review.
+**Evidence:**
+-   Section 2.4: "Solche Mechanismen werden beispielsweise im kalifornischen EHS angewendet {cite_MISSING: Referenz für kalifornisches EHS Preisband}."
+-   Section 2.5: "Außerhalb der EU haben auch andere EHS, wie das in Kalifornien oder Südkorea, positive Effekte auf die Emissionsreduktion gezeigt {cite_MISSING: Referenz für EHS Kalifornien/Südkorea}."
+-   Section 2.5: "Ein stabiler und ausreichend hoher CO2-Preis signalisiert langfristige Vorteile für emissionsarme Technologien und stimuliert so private Investitionen in Forschung und Entwicklung {cite_MISSING: Referenz für Innovation durch CO2-Preis}."
+-   Section 2.5: "Allerdings sind die Effekte auf Innovation nicht immer unmittelbar und können je nach Sektor und der spezifischen Ausgestaltung des EHS variieren {cite_MISSING: Referenz für Innovationsvariabilität}."
+-   Section 2.5: "...sowie die EHS in China, dem weltweit größten Kohlenstoffmarkt nach Volumen, obwohl seine Wirksamkeit und Ambition noch weiterentwickelt werden müssen {cite_MISSING: Referenz für chinesisches EHS}."
+**Fix:** Provide the correct and verifiable citations for all flagged statements. If a statement cannot be cited, it must be removed or rephrased as a hypothesis or an observation that requires further evidence.
+**Severity:** 🔴 High - Directly impacts the academic rigor and trustworthiness of the paper.
 
-### Issue 2: Overclaims and Unsubstantiated Generalizations
-**Location:** Multiple sections, e.g., 2.3.1 ("weltweit größte in Bezug auf die abgedeckten Emissionen ist"), 2.4.1 ("viele Studien zeigen, dass das EU ETS..."), 2.4.2 ("Empirische Studien zu den makroökonomischen Auswirkungen... zeigen in der Regel...").
-**Problem:** Many statements are presented as established facts or broad conclusions from "numerous studies" without providing specific citations or the underlying data/methodology. While these statements might be generally true, in an academic context, they require explicit evidence.
-**Evidence:** For instance, the claim regarding China's ETS being the world's largest needs a specific source and date. General statements about "many studies" or "empirical studies show" are not sufficient without direct references to those studies.
-**Fix:** Either cite specific studies that support these generalizations or rephrase claims to be more cautious and attribute them to the general academic consensus (if no single source can be found, though this is less ideal for a thesis).
-**Severity:** 🔴 High - Weakens the credibility of the arguments and violates academic standards for evidence-based writing.
-
-### Issue 3: Limited Depth Beyond EU ETS (due to source limitation)
-**Location:** Sections 2.1.3, 2.3.1, 2.4.1, 2.4.2, 2.5.1.
-**Problem:** While the EU ETS discussion is robust (thanks to Grubb et al., 2020), the treatment of other international and national ETS (e.g., California, China, RGGI, Kyoto's CDM/JI) often lacks comparable depth and specific empirical detail. These systems are mentioned, but their unique features, challenges, and specific impacts are not explored with the same rigor, leading to an unbalanced review.
-**Evidence:** For instance, the discussion of China's ETS (2.3.1, 2.4.1) is very brief and mentions challenges without specific evidence or detailed examples from the literature. The Kyoto mechanisms are discussed conceptually but lack in-depth analysis of their specific successes and failures beyond a general mention of "mixed experiences."
-**Fix:** Integrate dedicated, cited research for each major ETS mentioned, providing specific examples, data, and critical analyses where relevant. This is directly linked to Issue 1.
-**Severity:** 🔴 High - Limits the comprehensiveness and comparative strength of the literature review, which is essential for a Master's thesis on global CO2 trading systems.
-
-### Issue 4: Academic Integrity - Verification of Claims
-**Location:** Throughout the entire document.
-**Problem:** The explicit instruction for a Skeptic Agent is to "check every statistic has a citation" and "flag uncited claims." Given the extensive use of `{cite_MISSING}`, almost all specific claims and statistics in the document are currently unverified.
-**Evidence:** Examples include "1.2 Milliarden Tonnen CO2" reduction by EU ETS (2.2.2.2), "über 20% der globalen Treibhausgasemissionen" covered by pricing mechanisms (2.3.1), or "Zunahme von Patentanmeldungen" (2.4.2). While these claims are plausible, their verifiability within the provided draft is zero.
-**Fix:** As with Issue 1, every factual claim, especially numerical ones, must be supported by a specific and verifiable citation.
-**Severity:** 🔴 High - Directly impacts the academic honesty and reliability of the work.
-
-### Issue 5: Inconsistent Section Numbering
-**Location:** Section 2.5.3 (title is 2.6.3)
-**Problem:** There is a minor numbering inconsistency where section 2.5.3 is incorrectly labeled as "2.6.3 Grenzen des Marktes und transformative Ansätze".
-**Fix:** Correct the numbering to 2.5.3.
-**Severity:** 🔴 High - While minor, indicates a need for careful proofreading and attention to detail.
+### Issue 2: Overclaims and Insufficient Nuance in Empirical Generalizations
+**Location:** Section 2.5, "Auswirkungen auf Emissionen und Dekarbonisierung" and "Fallstudien"
+**Claim:** "Dennoch unterstreichen die gesammelten Erfahrungen, dass ein gut konzipiertes und ausreichend ambitioniertes EHS ein mächtiges Instrument zur Steuerung von Emissionen sein kann." (para 3) and "Die Lehren aus diesen Systemen sind entscheidend für die Gestaltung zukünftiger Klimapolitiken weltweit." (para 6)
+**Problem:** While the EU-ETS is discussed in detail, other EHS (California, South Korea, China) are mentioned only briefly, with some even lacking citations. Concluding that "gesammelte Erfahrungen" (collected experiences) across *all* these systems unequivocally demonstrate a "mächtiges Instrument" (powerful instrument) or provide "entscheidende Lehren" (decisive lessons) is an overclaim given the limited comparative depth. The author even notes that "direkte Vergleiche erschwert" (direct comparisons are difficult), which contradicts the strong generalizing conclusions.
+**Evidence:** The empirical section lacks specific, comparative details from multiple EHS to fully support such definitive, global conclusions. The claims are strong and broad, but the supporting evidence presented is primarily EU-centric or very high-level for other systems.
+**Fix:**
+1.  **Hedge the claims:** Replace "mächtig" with "stark" or "effektiv" and "entscheidend" with "wichtig" or "bedeutsam."
+2.  **Provide more evidence:** If the strong claims are to be maintained, expand the empirical section to offer more detailed, comparative evidence from a wider range of EHS, explicitly highlighting the specific "lessons" learned.
+3.  **Acknowledge limitations:** Explicitly state that while the EU-ETS offers strong evidence, broader generalizations are made with some caveats due to the diversity and varying maturity of other systems.
+**Severity:** 🔴 High - Affects the accuracy and defensibility of the paper's main empirical summary.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 6: Vague Quantifications and Attributions
-**Location:** E.g., 2.2.2.2 ("mehrere Prozentpunkte" reduction), 2.4.2 ("geringer ausfallen als oft befürchtet").
-**Problem:** Some quantitative statements lack precision or comparative context. Phrases like "mehrere Prozentpunkte" are vague for an academic thesis. Similarly, "geringer ausfallen als oft befürchtet" begs the question: by whom is it feared, and how much lower were the actual impacts?
-**Fix:** Where possible, provide more precise figures or ranges, or attribute the "fears" to specific sources. If precise figures are not available, clearly state that the evidence suggests a range or a general trend and cite the source.
-**Severity:** 🟡 Medium - Reduces the analytical sharpness and specificity.
+### Issue 3: Limited Discussion on Addressing Long-term Price Volatility
+**Location:** Section 2.6, "Preisschwankungen und Investitionsunsicherheit"
+**Problem:** The section effectively identifies price volatility as a significant challenge and mentions mechanisms like MSR and price collars. However, it concludes with a statement that "Dennoch bleibt die Herausforderung, ein ausreichend stabiles und vorhersehbares Preissignal zu gewährleisten, das die notwendigen langfristigen Investitionen in die Dekarbonisierung stimuliert." This leaves the reader with an unaddressed problem. The literature review could go further by discussing how current research or policy proposals aim to ensure *long-term* price stability and predictability beyond the existing mechanisms, which are primarily reactive.
+**Fix:** Briefly discuss advanced policy designs or academic proposals to enhance long-term price stability, such as dynamic caps, linking mechanisms between different EHS, or explicit government commitments to long-term price floors/ceilings. This would demonstrate a more comprehensive understanding of the ongoing policy debate.
+**Impact:** Strengthens the review by showing a forward-looking perspective on a persistent challenge.
 
-### Issue 7: Repetitive Mention of Grubb et al. (2020)
-**Location:** Throughout sections 2.1.2, 2.2.2, 2.2.3, 2.3.2, 2.3.3, 2.4.1, 2.4.2, 2.4.3, 2.5.1.
-**Problem:** While Grubb et al. (2020) is an excellent source for the EU ETS, its repeated citation in almost every section, even for general points or theoretical concepts, highlights the limited breadth of the underlying literature. This can give the impression that the review is primarily a summary of one key paper rather than a synthesis of a broad academic field.
-**Evidence:** The citation list shows Grubb et al. (2020) is cited in the text at least 15 times.
-**Fix:** As new sources are integrated (per Issue 1), diversify the citations. Ensure that Grubb et al. (2020) is cited primarily for its specific contributions to EU ETS analysis, and other sources are used for broader theoretical concepts or other ETS systems.
-**Severity:** 🟡 Medium - Indicates a narrow evidence base and affects the perceived comprehensiveness.
-
-### Issue 8: Structure of "Hinweise zur Überarbeitung"
-**Location:** End of the document.
-**Problem:** The "Hinweise zur Überarbeitung" section, while helpful as a self-reflection, reads more like an internal memo or a "to-do" list for the author rather than a formal part of the academic document. It contains subjective statements ("unmöglich gemacht," "oberste Priorität").
-**Fix:** This section should ideally be removed from the final submission of the literature review. The points raised (e.g., limited sources, need for further research) are excellently covered in the formal "Fazit der Literaturübersicht."
-**Severity:** 🟡 Medium - Affects the professionalism and formal presentation of the document.
+### Issue 4: Nuance in Fostering Radical Innovation
+**Location:** Section 2.6, "Grenzen des Emissionshandels und die Notwendigkeit ergänzender Maßnahmen"
+**Problem:** The review presents the critique by Pearse and Böhm (2014) that EHS alone might only promote incremental changes and not "radikale gesellschaftliche Transformationen" or "disruptive Innovationen" {cite_019}. This contrasts somewhat with the earlier statement in Section 2.5 that CO2 prices "schaffen Anreize für Unternehmen, in grüne Technologien und Prozesse zu investieren" and "stimuliert so private Investitionen in Forschung und Entwicklung." The review could benefit from a more explicit reconciliation or nuanced discussion of how EHS, especially when part of a "Policy Mix" (as mentioned), *can* contribute to or support radical innovation.
+**Fix:**
+1.  **Reconcile:** Explicitly explain that while EHS might primarily drive incremental innovation on its own, its synergy with other instruments (e.g., R&D funding, technology mandates) is crucial for fostering radical, disruptive innovations.
+2.  **Elaborate:** Discuss the conditions under which EHS *can* indirectly support radical innovation (e.g., by creating a market for low-carbon products, attracting investment).
+**Impact:** Provides a more balanced and integrated understanding of EHS's role in technological transformation.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Missing DOIs/arXiv IDs:** The "Verwendete Zitate" list only provides full citation details for one source (`Michaelowa, Croes et al. (2021)`). All other entries are placeholders with `{cite_MISSING}`. For a final thesis, every citation must include complete bibliographic information, including DOIs or arXiv IDs where available.
-2.  **Over-reliance on "cite_001":** While `Michaelowa, Croes et al. (2021)` is a valid citation, it's referred to as `cite_001` in the text. For consistency and clarity, it's better to use the full author-year format in the text, as is done for Grubb et al. (2020).
+1.  **Vague Claim:** In Section 2.1, the phrase "der Pioniercharakter" regarding the Kyoto Protocol is accurate but could be more specific about *what* aspects were particularly pioneering or groundbreaking at the time.
+2.  **Slight Repetition:** The phrase "maßgeblich zur Dekarbonisierung in den erfassten Sektoren beigetragen" appears in both Section 2.2 and 2.5. While consistent, a slight rephrasing or expansion in one instance could avoid repetition.
+3.  **Lack of Specificity for "Lehren":** In Section 2.5, the claim "Die Lehren aus diesen Systemen sind entscheidend für die Gestaltung zukünftiger Klimapolitiken weltweit" is a strong assertion that lacks specific examples of these "lessons." Providing 1-2 concrete examples would significantly strengthen this statement.
+4.  **Tone in Introduction to Critical Section:** The introductory sentence of Section 2.6, "Trotz der weit verbreiteten Akzeptanz und der empirisch nachgewiesenen Wirksamkeit von Emissionshandelssystemen gibt es eine Reihe von kritischen Perspektiven...", uses "Trotz" (Despite) which can convey a slightly defensive tone. A neutral phrasing like "Während Emissionshandelssysteme weithin akzeptiert sind und ihre Wirksamkeit empirisch belegt wurde, existieren auch eine Reihe kritischer Perspektiven..." might be preferable.
+5.  **Unclear scope of "Policy Mix":** While "Policy Mix" is mentioned as effective (Section 2.5, 2.6), a clearer indication of *which* types of instruments are most effectively combined with EHS for different goals would be beneficial.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Implicit Assumptions on Causality
-**Location:** Sections 2.3.2 (Rolle des Preissignals), 2.4.1 (Quantitative Analysen).
-**Logic:** The text strongly implies a direct causal link between the CO2 price signal and decarbonization/emissions reduction. While this is the theoretical intent, and empirical evidence generally supports it, the *extent* and *uniqueness* of this causal link are complex.
-**Missing:** A more nuanced discussion about how other factors (e.g., technological advancements, other policy instruments, public pressure) interact with and potentially confound the direct effect of the price signal. The text mentions "Abgrenzung von anderen Politikinstrumenten" as a challenge, but the main narrative often presents the price signal as *the* primary driver without sufficient hedging.
-**Fix:** Explicitly acknowledge the interplay of multiple factors and the challenges in isolating the causal effect of the price signal. Emphasize that ETS are part of a policy mix.
+### Gap 1: Explicit Link between Pioneering Nature and Criticism
+**Location:** Section 2.1, "Historische Entwicklung..."
+**Logic:** The text mentions the "Pioniercharakter" of the Kyoto Protocol and then states it "stieß es auch auf Kritik." While implicitly understood, an explicit logical connection could be made.
+**Missing:** A sentence that directly links the pioneering, first-of-its-kind nature of the Kyoto mechanisms to the inherent challenges, learning processes, and subsequent criticism they faced.
+**Fix:** Add a sentence such as: "Given its pioneering nature as the first major international climate agreement with market mechanisms, the Kyoto Protocol inevitably faced significant criticism and encountered complexities, particularly regarding the implementation and effectiveness of mechanisms like the CDM."
 
 ---
 
-## Methodological Concerns (for a Literature Review)
+## Methodological Concerns
 
-### Concern 1: Scope and Representativeness of Literature
-**Issue:** The literature review attempts to cover a vast topic (global CO2 certificate trading) but, as acknowledged by the author, relies heavily on a single comprehensive source (Grubb et al., 2020) for empirical details and EU ETS specifics. This leads to a potential bias towards the EU context and limits the representativeness of the global literature on ETS.
-**Risk:** The conclusions drawn might inadvertently overemphasize aspects relevant to the EU ETS, potentially overlooking nuances or different findings from other systems or broader theoretical debates.
-**Reviewer Question:** "How would the narrative change if a broader range of primary empirical studies from different ETS (e.g., China, California) were integrated with the same depth as Grubb et al. (2020)?"
-**Suggestion:** Prioritize filling the identified research gaps by integrating diverse primary literature on other ETS, distributional effects, and governance challenges from various geographical and methodological perspectives.
+### Concern 1: Depth of Coverage for Non-EU ETS Empirical Evidence
+**Issue:** The empirical section (2.5) heavily relies on the EU-ETS for detailed examples and reforms, while other significant EHS (California, China, South Korea) are mentioned only superficially, often without citations. This imbalance limits the ability to draw robust, globally applicable conclusions from "gesammelten Erfahrungen."
+**Risk:** The review might be perceived as overly EU-centric, potentially weakening its claims about the universal effectiveness or lessons learned from EHS globally.
+**Reviewer Question:** "To what extent do the empirical findings from the EU-ETS generalize to other EHS, particularly given their different designs, economic contexts, and stages of development? Could you elaborate on specific findings from non-EU EHS?"
+**Suggestion:** If the scope allows, dedicate a slightly more detailed paragraph to 1-2 other prominent EHS (e.g., California or China) in the empirical section, highlighting their unique contributions or challenges, to better support the global conclusions. Alternatively, explicitly define the primary focus on the EU-ETS early in the review.
 
 ---
 
 ## Missing Discussions
 
-1.  **Detailed Comparison of ETS Designs:** While different systems are mentioned (EU, California, China), a more explicit comparative discussion of their design choices (e.g., allocation methods, scope, linking mechanisms, price stability mechanisms) and how these choices affect their performance would be valuable.
-2.  **Interaction with International Trade and Competitiveness:** While Carbon Leakage is mentioned, a deeper dive into the specific economic models and empirical studies assessing the impact of ETS on international trade flows and industrial competitiveness (beyond general statements) would strengthen the review.
-3.  **Role of Non-State Actors:** How do NGOs, civil society, and the private sector (beyond directly regulated companies) influence the design, implementation, and effectiveness of ETS?
-4.  **Future Outlook and Emerging Trends:** Beyond Article 6, what are the anticipated future developments in CO2 pricing, such as regional linkages, expansion into new sectors (e.g., agriculture, direct air capture), or the role of digital technologies (blockchain) in carbon markets?
-5.  **Ethical Dimensions of Carbon Offsets:** A more robust discussion of the ethical controversies surrounding offset mechanisms (e.g., land rights, indigenous communities, permanence issues) would add critical depth.
+1.  **Interaction with other climate policies:** While "Policy Mix" is mentioned, a deeper discussion on the specific interactions (synergies, conflicts, overlaps) between EHS and other complementary climate policies (e.g., renewable energy targets, energy efficiency standards, fossil fuel subsidy reforms, industrial policies) would enrich the review.
+2.  **The role and controversies of offsets:** The text mentions CDM/JI credits and their role in the EU-ETS price collapse. A dedicated, more integrated discussion on the broader role, benefits, and controversies (e.g., additionality, permanence, leakage, double-counting) of international carbon offsets and credits, especially in the context of Article 6 of the Paris Agreement, would be valuable.
+3.  **Future challenges and evolution beyond 2030:** The review focuses on current challenges. A brief discussion on future challenges for EHS in a net-zero world (e.g., integrating with negative emission technologies, managing residual emissions, global coordination of carbon pricing) could enhance the forward-looking aspect.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Overly Confident Language (without specific citation):** In sections where specific citations are missing, some phrases like "ist entscheidend zu untersuchen" (2.4) or "ist ein mächtiges Instrument" (2.3.2) could be hedged more cautiously or explicitly attributed to a specific viewpoint until supporting literature is integrated.
-2.  **Word Count vs. Content Density:** The current word count (8353 words) significantly exceeds the target of 6000 words. While the author explains this was to compensate for missing sources, a final literature review should achieve its word count through *dense, cited content*, not through extensive conceptual elaboration that lacks specific evidence. Once citations are added, the text might need to be condensed.
+1.  **Overly Confident Language:** As highlighted in Major Issue 2, terms like "mächtig" and "entscheidend" could be tempered to reflect the inherent complexities and ongoing debates in climate policy.
+2.  **Slight Repetition:** Some phrases are repeated, as noted in minor issues. A quick pass for stylistic variation would be beneficial.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "For every `{cite_MISSING}` placeholder, which specific peer-reviewed articles or authoritative reports support this claim?"
-2.  "Can you provide specific data, methodologies, and findings from studies that quantify the impact of ETS on GDP, employment, and innovation in different regions?"
-3.  "How do the design features of China's ETS or California's Cap-and-Trade compare in detail to the EU ETS, and what are the specific lessons learned from their implementation?"
-4.  "What are the most recent empirical findings on the distributional impacts of CO2 pricing, and how effective have specific compensatory measures (e.g., climate dividends) been in practice?"
-5.  "Beyond the general concept of 'political economy,' can you provide specific case studies or analyses of how lobbying or regulatory arbitrage has impacted *particular* ETS designs or outcomes?"
+1.  "Please provide the missing citations in Sections 2.4 and 2.5. Without them, the claims cannot be verified." (🔴 High priority)
+2.  "The claims about EHS being a 'powerful instrument' and providing 'decisive lessons' seem very strong given the limited empirical detail on non-EU systems. Can you either provide more comprehensive comparative evidence or rephrase these conclusions to be more appropriately hedged?" (🔴 High priority)
+3.  "How does the existing literature propose to address the long-term challenge of price predictability for investments in deep decarbonization, beyond the mechanisms like MSR and price collars already discussed?" (🟡 Moderate priority)
+4.  "Could you elaborate on the specific lessons learned from the Californian or Chinese EHS that are deemed 'crucial' for the design of future global climate policies?" (🟡 Moderate priority)
+5.  "The review presents a critique that EHS might only foster incremental innovation. How does the literature reconcile this with the idea that CO2 pricing stimulates green investments, and what policy combinations are suggested to promote more radical innovation?" (🟡 Moderate priority)
 
 **Prepare answers or add to paper.**
 
@@ -140,15 +123,12 @@ This literature review provides a comprehensive and well-structured overview of 
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Fix Issue 1 (Overwhelming Lack of Citations):** This is paramount. Every `{cite_MISSING}` must be replaced with a valid, verifiable citation from academic literature. This will involve significant research.
-2.  🔴 **Address Issue 2 (Overclaims and Unsubstantiated Generalizations):** Ensure all factual claims, especially quantitative ones, are rigorously supported by cited evidence.
-3.  🔴 **Resolve Issue 3 (Limited Depth Beyond EU ETS):** Integrate specific empirical and analytical details for other ETS systems to provide a balanced global perspective.
-4.  🔴 **Fix Issue 4 (Academic Integrity - Verification):** Ensure all claims, particularly statistics, are cited properly.
-5.  🔴 **Fix Issue 5 (Inconsistent Section Numbering):** Correct the numbering for section 2.5.3.
-6.  🟡 **Address Issue 6 (Vague Quantifications):** Add precision to quantitative statements.
-7.  🟡 **Address Issue 7 (Repetitive Citations):** Diversify citations as new sources are added.
-8.  🟡 **Address Issue 8 (Structure of "Hinweise zur Überarbeitung"):** Remove this section from the main document.
+1.  🔴 **Fix Issue 1 (Missing Citations):** This is paramount for academic integrity.
+2.  🔴 **Address Issue 2 (Overclaim/Insufficient Nuance in Empirical Effectiveness):** Strengthen empirical claims or hedge language appropriately to reflect the depth of evidence presented.
+3.  🟡 **Address Issue 3 (Limited Discussion on Addressing Price Volatility):** Expand on solutions or future research directions for long-term price stability.
+4.  🟡 **Address Issue 4 (Nuance in Promoting Radical Innovation):** Provide a more integrated and balanced discussion on EHS's role in fostering different types of innovation.
 
-**Can defer:**
--  Minor wording and stylistic improvements (can be refined in subsequent drafts).
--  Further expansion of "Missing Discussions" (can be integrated as the literature base grows, or specified as future work).
+**Can defer (but recommended for a stronger paper):**
+-   Minor wording issues and stylistic improvements.
+-   Adding more specific details for non-EU EHS case studies (if scope allows, otherwise hedge global claims).
+-   Deeper dives into the "Missing Discussions" sections (e.g., offsets, policy interactions) can be suggested as areas for future research or acknowledged as beyond the current scope.

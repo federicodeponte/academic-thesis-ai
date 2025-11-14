@@ -8,15 +8,15 @@
 
 ### Sources Breakdown
 
-- **Crossref**: 26 (52.0%)
-- **Semantic Scholar**: 24 (48.0%)
+- **Crossref**: 25 (50.0%)
+- **Semantic Scholar**: 25 (50.0%)
 - **Gemini LLM**: 0 (0.0%)
 
 ---
 
 ## Citations Found
 
-### From Crossref (26 citations)
+### From Crossref (25 citations)
 
 #### 1. Community Dynamics in Open Source Software Projects: Aging and Social Reshaping
 **Authors**: Hannemann, Klamma
@@ -90,91 +90,85 @@
 **DOI**: 10.1179/1462317x15z.000000000146
 **URL**: https://doi.org/10.1179/1462317x15z.000000000146
 
-#### 13. The commons dilemma: Strategic common pool resource extraction behavior
-**Authors**: Berhe
-**Year**: 2023
-**DOI**: 10.21203/rs.3.rs-2654790/v1
-**URL**: https://doi.org/10.21203/rs.3.rs-2654790/v1
-
-#### 14. Software Standards, Openness, and Interoperability
+#### 13. Software Standards, Openness, and Interoperability
 **Authors**: Sutor
 **Year**: 2011
 **DOI**: 10.7551/mitpress/8066.003.0018
 **URL**: https://doi.org/10.7551/mitpress/8066.003.0018
 
-#### 15. Re: Open Source != peer review
+#### 14. Re: Open Source != peer review
 **Authors**: Willighagen
 **Year**: 2008
 **DOI**: 10.59350/r8vct-rm878
 **URL**: https://doi.org/10.59350/r8vct-rm878
 
-#### 16. Implementation of the Apache Web Server Monitoring System Using LibreNMS at Diskominfo Sidoarjo Regency
+#### 15. Implementation of the Apache Web Server Monitoring System Using LibreNMS at Diskominfo Sidoarjo Regency
 **Authors**: Kusnanto, Hindarto
 **Year**: 2023
 **DOI**: 10.21070/ups.401
 **URL**: https://doi.org/10.21070/ups.401
 
-#### 17. Wikipedia Collaborative Networks
+#### 16. Wikipedia Collaborative Networks
 **Authors**: Kenis, Lerner
 **Year**: 2016
 **DOI**: 10.1007/978-1-4614-7163-9_103-1
 **URL**: https://doi.org/10.1007/978-1-4614-7163-9_103-1
 
-#### 18. Update für den Mozilla-Browser Firefox
+#### 17. Update für den Mozilla-Browser Firefox
 **Authors**: red
 **Year**: 2013
 **DOI**: 10.1007/s15015-013-0519-6
 **URL**: https://doi.org/10.1007/s15015-013-0519-6
 
-#### 19. Chatbot with TensorFlow
+#### 18. Chatbot with TensorFlow
 **Authors**: Biswas
 **Year**: 2018
 **DOI**: 10.1007/978-1-4842-3754-0_5
 **URL**: https://doi.org/10.1007/978-1-4842-3754-0_5
 
-#### 20. Open-source Software and the Digital Divide: Opportunities and Constraints for Developing Countries
+#### 19. Open-source Software and the Digital Divide: Opportunities and Constraints for Developing Countries
 **Authors**: James
 **Year**: 2003
 **DOI**: 10.4337/9781843767169.00015
 **URL**: https://doi.org/10.4337/9781843767169.00015
 
-#### 21. Open Source for Higher Conventional and Open Education in India
+#### 20. Open Source for Higher Conventional and Open Education in India
 **Authors**: Sharma
 **Year**: 2015
 **DOI**: 10.4018/978-1-4666-7230-7.ch060
 **URL**: https://doi.org/10.4018/978-1-4666-7230-7.ch060
 
-#### 22. Future Smart Metering Runs on Open Source –Challenges and the GuruxAMI Project
+#### 21. Future Smart Metering Runs on Open Source –Challenges and the GuruxAMI Project
 **Authors**: Kurunsaari
 **Year**: 2012
 **DOI**: 10.1007/978-3-642-33442-9_40
 **URL**: https://doi.org/10.1007/978-3-642-33442-9_40
 
-#### 23. BitBox: A Developer - Centric Open Source Ecosystem
+#### 22. BitBox: A Developer - Centric Open Source Ecosystem
 **Authors**: Kumar, Singh, Verma, Dixit
 **Year**: 2025
 **DOI**: 10.55248/gengpi.6.0525.1641
 **URL**: https://doi.org/10.55248/gengpi.6.0525.1641
 
-#### 24. Game Theory
+#### 23. Game Theory
 **Authors**: Knight, Palmer
 **Year**: 2022
 **DOI**: 10.1201/9780429328534-6
 **URL**: https://doi.org/10.1201/9780429328534-6
 
-#### 25. Open Knowledge Fuelling Open Innovations in Public-Private Collaboration
+#### 24. Open Knowledge Fuelling Open Innovations in Public-Private Collaboration
 **Authors**: Helander, Venkitachalam, Väyrynen
 **Year**: 2025
 **DOI**: 10.5220/0013823800004000
 **URL**: https://doi.org/10.5220/0013823800004000
 
-#### 26. Performance in the Open. How Operational Transparency Affects Interorganizational Trust Development
+#### 25. Performance in the Open. How Operational Transparency Affects Interorganizational Trust Development
 **Authors**: Cepa
 **Year**: 2017
 **DOI**: 10.5465/ambpp.2017.15571abstract
 **URL**: https://doi.org/10.5465/ambpp.2017.15571abstract
 
-### From Semantic Scholar (24 citations)
+### From Semantic Scholar (25 citations)
 
 #### 1. Learning professional software development skills by contributing to Open Source projects
 **Authors**: Montagner, Kurauchi
@@ -254,67 +248,73 @@
 **DOI**: 10.1111/J.1467-9760.2006.00235.X
 **URL**: https://doi.org/10.1111/J.1467-9760.2006.00235.X
 
-#### 14. Intellectual property licensing tensions in incorporating open source into formal standard setting context — The case of Apache V.2 in ETSI as a start
+#### 14. Decentralizing governance: exploring the dynamics and challenges of digital commons and DAOs
+**Authors**: Esposito, Tse, Goh
+**Year**: 2025
+**DOI**: 10.3389/fbloc.2025.1538227
+**URL**: https://doi.org/10.3389/fbloc.2025.1538227
+
+#### 15. Intellectual property licensing tensions in incorporating open source into formal standard setting context — The case of Apache V.2 in ETSI as a start
 **Authors**: Li
 **Year**: 2017
 **DOI**: 10.23919/ITU-WT.2017.8246986
 **URL**: https://doi.org/10.23919/ITU-WT.2017.8246986
 
-#### 15. Samir Chopra, Scott D. Dexter, Decoding Liberation: The Promise of Free and Open Source Software
+#### 16. Samir Chopra, Scott D. Dexter, Decoding Liberation: The Promise of Free and Open Source Software
 **Authors**: Hill
 **Year**: 2008
 **DOI**: 10.1007/s11023-008-9101-y
 **URL**: https://doi.org/10.1007/s11023-008-9101-y
 
-#### 16. DicomOS: A Preliminary Study on a Linux-Based Operating System Tailored for Medical Imaging and Enhanced Interoperability in Radiology Workflows
+#### 17. DicomOS: A Preliminary Study on a Linux-Based Operating System Tailored for Medical Imaging and Enhanced Interoperability in Radiology Workflows
 **Authors**: Currieri, Gambino, Pirrone, Vitabile
 **Year**: 2025
 **DOI**: 10.3390/electronics14020330
 **URL**: https://doi.org/10.3390/electronics14020330
 
-#### 17. Know Your Customer: Balancing innovation and regulation for financial inclusion
+#### 18. Know Your Customer: Balancing innovation and regulation for financial inclusion
 **Authors**: Elliott, Coopamootoo, Curran, Ezhilchelvan, Finnigan, Horsfall, Ma, Ng, Spiliotopoulos, Wu, Moorsel
 **Year**: 2021
 **DOI**: 10.1017/dap.2022.23
 **URL**: https://doi.org/10.1017/dap.2022.23
 
-#### 18. Europe Spotlight 2023: Exploring the State of European Open Source Innovation, Opportunities and Challenges
+#### 19. Europe Spotlight 2023: Exploring the State of European Open Source Innovation, Opportunities and Challenges
 **Authors**: Eberhardt, Odds, Dunderdale
 **Year**: 2023
 **DOI**: 10.70828/eune3704
 **URL**: https://doi.org/10.70828/eune3704
 
-#### 19. Evaluation of accessibility of open-source EHRs for visually impaired users
+#### 20. Evaluation of accessibility of open-source EHRs for visually impaired users
 **Authors**: Moncy, Pilli, Somasundaram, Purkayastha, Fulton
 **Year**: 2023
 **DOI**: 10.48550/arXiv.2311.02531
 **URL**: https://doi.org/10.48550/arXiv.2311.02531
 
-#### 20. Open Source and Open Data Licenses in the Smart Infrastructure Era: Review and License Selection Frameworks
+#### 21. Open Source and Open Data Licenses in the Smart Infrastructure Era: Review and License Selection Frameworks
 **Authors**: Alamoudi, Mehmood, Aljudaibi, Albeshri, Hasan
 **Year**: 2019
 **DOI**: 10.1007/978-3-030-13705-2_22
 **URL**: https://doi.org/10.1007/978-3-030-13705-2_22
 
-#### 21. As Code Testing: Characterizing Test Quality in Open Source Ansible Development
+#### 22. As Code Testing: Characterizing Test Quality in Open Source Ansible Development
 **Authors**: Hassan, Rahman
 **Year**: 2022
 **DOI**: 10.1109/ICST53961.2022.00031
 **URL**: https://doi.org/10.1109/ICST53961.2022.00031
 
-#### 22. Revealing Task Driven Knowledge Worker Behaviors in Open Source Software Communities
+#### 23. Revealing Task Driven Knowledge Worker Behaviors in Open Source Software Communities
 **Authors**: Wu, Shi, Ma
 **Year**: 2017
 **DOI**: 
 **URL**: https://www.semanticscholar.org/paper/2f59d5b3f1b3cc463fcda075b1718b648811cb59
 
-#### 23. Influencing Factors of Social Capital Formation and Development in Urban Communities
+#### 24. Influencing Factors of Social Capital Formation and Development in Urban Communities
 **Authors**: Jing
 **Year**: 2025
 **DOI**: 10.54097/s8kqgt58
 **URL**: https://doi.org/10.54097/s8kqgt58
 
-#### 24. The Merits of a Meritocracy in Open Source Software Ecosystems
+#### 25. The Merits of a Meritocracy in Open Source Software Ecosystems
 **Authors**: Eckhardt, Kaats, Jansen, Alves
 **Year**: 2014
 **DOI**: 10.1145/2642803.2642810

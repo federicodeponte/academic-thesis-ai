@@ -15,7 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 import google.generativeai as genai
 from config import get_config
-from config.concurrency_config import get_concurrency_config
+from concurrency.concurrency_config import get_concurrency_config
 from utils.output_validators import ValidationResult
 from utils.api_citations.orchestrator import CitationResearcher
 from utils.citation_database import Citation

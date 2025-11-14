@@ -8,8 +8,8 @@ CITATION VALIDATION REPORT: Open Source Thesis
 ⚠️  WARNINGS (1):
 --------------------------------------------------------------------------------
 
-[cite_004] Generic title pattern: 'A Systematic Review'
-  P, J et al. (2023) - The Impact of Open Source on Software Quality and Security: ...
+[cite_042] Generic title pattern: 'A Survey'
+  Alexy, Reischauer (2010) - The Open Source Business Model: A Survey...
 
 ================================================================================
 TOTAL ISSUES: 1 (0 critical, 1 warnings)

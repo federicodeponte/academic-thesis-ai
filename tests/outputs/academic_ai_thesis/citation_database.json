@@ -1,0 +1,224 @@
+{
+  "citations": [
+    {
+      "id": "cite_001",
+      "authors": [
+        "Bekker"
+      ],
+      "year": 2023,
+      "title": "Large Language Models and Academic Writing: Five tiers of engagement",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "OSF Preprints",
+      "doi": "10.31219/osf.io/63vcu"
+    },
+    {
+      "id": "cite_002",
+      "authors": [
+        "Cox",
+        "Thelwall"
+      ],
+      "year": 2025,
+      "title": "AI and scholarly communication",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "CRC Press",
+      "doi": "10.1201/9781003545163-5"
+    },
+    {
+      "id": "cite_003",
+      "authors": [
+        "Gatt"
+      ],
+      "year": 2025,
+      "title": "Natural Language Generation",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Oxford University Press",
+      "doi": "10.1093/acrefore/9780199384655.013.896"
+    },
+    {
+      "id": "cite_004",
+      "authors": [
+        "SHERIFF"
+      ],
+      "year": 2025,
+      "title": "FATA: A Framework-Agnostic, Task-Agnostic Agentic AI Platform for Serverless Multi-Agent Orchestration",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "TechRxiv",
+      "doi": "10.36227/techrxiv.175099921.10546764/v1"
+    },
+    {
+      "id": "cite_005",
+      "authors": [
+        "Rajan",
+        "Arango"
+      ],
+      "year": 2025,
+      "title": "Multi-Agent AI: From Isolated Agents to Cooperative Ecosystems",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.5118817"
+    },
+    {
+      "id": "cite_006",
+      "authors": [
+        "MOORTHY"
+      ],
+      "year": 2021,
+      "title": "Analysis to understand the difficulties in writing English for academic publishing",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Royal Journal of Research in Social Sciences",
+      "doi": "10.26524/royal.55.8"
+    },
+    {
+      "id": "cite_007",
+      "authors": [
+        "Wölfle"
+      ],
+      "year": 2019,
+      "title": "Local Citation Network and Citation Gecko: making literature discovery fun",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "OSF Preprints",
+      "doi": "10.59350/zrkxy-8pm78"
+    },
+    {
+      "id": "cite_008",
+      "authors": [
+        "Achanta"
+      ],
+      "year": 2023,
+      "title": "Data Democratization: Empowering Non-Technical Users with Self-Service BI Tools and Techniques to Access and Analyze Data Without Heavy Reliance on IT Teams",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "International Journal of Computer Trends and Technology",
+      "doi": "10.14445/22312803/ijctt-v71i8p106"
+    },
+    {
+      "id": "cite_009",
+      "authors": [
+        "Benhamou"
+      ],
+      "year": 2024,
+      "title": "Open Source AI: Does the Copyleft Clause Propagate to Proprietary AI Models? Revisiting the Definition of Derivatives in the AI-context",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.4859623"
+    },
+    {
+      "id": "cite_010",
+      "authors": [
+        "Tsai",
+        "Huang"
+      ],
+      "year": 2024,
+      "title": "Cross-Lingual Factual Accuracy and Ideological Divergence in Large Language Models",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "OSF Preprints",
+      "doi": "10.31219/osf.io/9vdz6"
+    },
+    {
+      "id": "cite_011",
+      "authors": [
+        "Lan"
+      ],
+      "year": 2024,
+      "title": "Prompt Engineering for Academic Librarian: Implications and Applications of Prompt Engineering in Academic Librarianship",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Academic Librarianship",
+      "doi": "10.1080/19322909.2024.2399055"
+    },
+    {
+      "id": "cite_012",
+      "authors": [
+        "Abinaya",
+        "Vadivu"
+      ],
+      "year": 2024,
+      "title": "AI Tools for Efficient Writing and Editing in Academic Research",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "IGI Global",
+      "doi": "10.4018/979-8-3693-1798-3.ch009"
+    },
+    {
+      "id": "cite_013",
+      "authors": [
+        "Mahapatra"
+      ],
+      "year": 2024,
+      "title": "Impact of ChatGPT on ESL students’ academic writing skills: a mixed methods intervention study",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Language Testing in Asia",
+      "doi": "10.1186/s40561-024-00295-9"
+    },
+    {
+      "id": "cite_014",
+      "authors": [
+        "Lv",
+        "Liu",
+        "Yin",
+        "Xi",
+        "Wei"
+      ],
+      "year": 2024,
+      "title": "Machine Learning Applications in Prediction Models for COVID-19: A Bibliometric Analysis",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Information",
+      "doi": "10.3390/info15090575"
+    },
+    {
+      "id": "cite_015",
+      "authors": [
+        "Blasimme",
+        "Vayena",
+        "Hafen"
+      ],
+      "year": 2018,
+      "title": "Democratizing Health Research Through Data Cooperatives",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Medical Ethics",
+      "doi": "10.1007/s13347-018-0320-8"
+    },
+    {
+      "id": "cite_016",
+      "authors": [
+        "Demeter"
+      ],
+      "year": 2020,
+      "title": "The Dynamics Behind the Problem of Inequality: The World-System of Global Inequality in Knowledge Production",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Springer",
+      "doi": "10.1007/978-3-030-52701-3_3"
+    },
+    {
+      "id": "cite_017",
+      "authors": [
+        "MoChridhe"
+      ],
+      "year": 2019,
+      "title": "Linguistic equity as open access: Internationalizing the language of scholarly communication",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Academic Librarianship",
+      "doi": "10.1016/j.acalib.2019.02.006"
+    }
+  ],
+  "metadata": {
+    "total_citations": 17,
+    "citation_style": "APA 7th",
+    "thesis_language": "english",
+    "extracted_date": "2025-11-13T22:42:42.061160"
+  }
+}

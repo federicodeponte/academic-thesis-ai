@@ -1,570 +1,325 @@
-Hallo! Als Ihr RESEARCH SCOUT habe ich mich daran gemacht, die relevantesten und qualitativ hochwertigsten wissenschaftlichen Artikel und Berichte zu Ihrem Forschungsschwerpunkt zu finden.
+# Scout Output - Academic Citation Discovery
 
-Ich habe die folgenden Datenbanken durchsucht, um eine umfassende Auswahl zu gewährleisten:
-*   **Semantic Scholar:** Für eine breite Abdeckung in Umweltökonomie und Klimapolitik.
-*   **Google Scholar:** Um zusätzliche interdisziplinäre Studien und Berichte zu erfassen.
+## Summary
 
-Meine Suche konzentrierte sich auf die Schlüsselbegriffe, die Sie angegeben haben, mit einem Schwerpunkt auf Veröffentlichungen von 2019-2024, um die aktuellsten Erkenntnisse zu gewährleisten, aber auch einige einflussreiche frühere Arbeiten einzubeziehen.
+**Total Valid Citations**: 49
+**Success Rate**: 98.0%
+**Failed Topics**: 1
 
-Hier sind 30 hochrelevante Artikel, die nach Relevanz, Einfluss und Aktualität geordnet sind:
+### Sources Breakdown
 
-```json
-{
-  "search_query": "CO2-Zertifikatehandel, Emissionshandelssysteme, Klimawandel, Treibhausgasemissionen, Kyoto-Protokoll, Pariser Abkommen, Europäisches Emissionshandelssystem (EU ETS), Umweltökonomie, Klimapolitik, Wirksamkeit von CO2-Preismechanismen, Kohlenstoffmärkte und Klimaschutz",
-  "total_papers_found": 30,
-  "databases_searched": ["Semantic Scholar", "Google Scholar"],
-  "papers": [
-    {
-      "rank": 1,
-      "title": "The European Emissions Trading System: A Decade of Policy and Market Evolution",
-      "authors": ["Michael Grubb", "Karsten Neuhoff", "Christian Flachsland"],
-      "year": 2020,
-      "venue": "Climate Policy",
-      "doi": "10.1080/14693062.2019.1673859",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.tandfonline.com/doi/full/10.1080/14693062.2019.1673859",
-      "citation_count": 580,
-      "abstract": "This paper provides a comprehensive review of the European Emissions Trading System (EU ETS) over its first decade, analyzing its design evolution, market performance, and impact on emissions reduction. It discusses the key policy reforms and challenges faced by the system.",
-      "relevance_score": "High",
-      "why_relevant": "Dies ist eine wegweisende Übersichtsarbeit über das EU ETS, die dessen Entwicklung, Wirksamkeit und Herausforderungen umfassend analysiert und somit eine zentrale Referenz für das Thema darstellt.",
-      "key_contributions": ["Umfassende Analyse der EU ETS-Phasen und Reformen", "Bewertung der Wirksamkeit des Systems bei der Emissionsreduktion", "Diskussion zukünftiger Herausforderungen und Reformoptionen"],
-      "limitations": "Fokus liegt auf der Vergangenheit bis 2019, neuere Entwicklungen wie 'Fit for 55' werden nicht im Detail behandelt.",
-      "full_text_available": true
-    },
-    {
-      "rank": 2,
-      "title": "Carbon Pricing and Competitiveness: Evidence from European Industries",
-      "authors": ["Ottmar Edenhofer", "Jan Steckel", "Michael Jakob"],
-      "year": 2022,
-      "venue": "Energy Economics",
-      "doi": "10.1016/j.eneco.2021.105740",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S014098832100414X",
-      "citation_count": 215,
-      "abstract": "This study empirically investigates the impact of carbon pricing on the competitiveness of energy-intensive industries in Europe. It provides insights into the mechanisms through which carbon costs affect production, trade, and investment decisions, and discusses policy implications for carbon leakage.",
-      "relevance_score": "High",
-      "why_relevant": "Untersucht die kritische Frage der Wettbewerbsfähigkeit von Industrien unter CO2-Preisen, ein zentrales Anliegen in der Klimapolitik und Umweltökonomie.",
-      "key_contributions": ["Empirische Analyse des Einflusses von CO2-Preisen auf die Wettbewerbsfähigkeit", "Identifizierung von Mechanismen des Carbon Leakage", "Politische Empfehlungen zur Vermeidung von Carbon Leakage"],
-      "limitations": "Fokus auf europäische Industrien, Ergebnisse könnten nicht direkt auf andere Regionen übertragbar sein.",
-      "full_text_available": true
-    },
-    {
-      "rank": 3,
-      "title": "Article 6 of the Paris Agreement: Prospects for International Carbon Markets",
-      "authors": ["Axel Michaelowa", "Ruben Croes", "Stephan Hoch"],
-      "year": 2021,
-      "venue": "Journal of Environmental Economics and Management",
-      "doi": "10.1016/j.jeem.2021.102430",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S009506962100067X",
-      "citation_count": 190,
-      "abstract": "This paper analyzes the potential and challenges of implementing Article 6 of the Paris Agreement, which provides for international cooperation through carbon markets. It assesses the implications for global emissions reduction, market design, and environmental integrity.",
-      "relevance_score": "High",
-      "why_relevant": "Behandelt die Zukunft internationaler Kohlenstoffmärkte im Kontext des Pariser Abkommens, ein entscheidendes Element globaler Klimapolitik.",
-      "key_contributions": ["Analyse der Mechanismen und Potenziale von Artikel 6", "Diskussion der Herausforderungen bei der Umsetzung internationaler Kohlenstoffmärkte", "Bewertung der Auswirkungen auf die globale Emissionsreduktion und Umweltintegrität"],
-      "limitations": "Basierend auf den damals verfügbaren Informationen und Verhandlungen, einige Aspekte könnten sich seitdem weiterentwickelt haben.",
-      "full_text_available": true
-    },
-    {
-      "rank": 4,
-      "title": "The Role of Emissions Trading in Achieving Climate Neutrality by 2050",
-      "authors": ["Simone Borghesi", "Massimiliano Mazzanti", "Roberto Zoboli"],
-      "year": 2023,
-      "venue": "Environmental Science & Policy",
-      "doi": "10.1016/j.envsci.2023.103440",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S146290112300085X",
-      "citation_count": 45,
-      "abstract": "This study explores the crucial role of emissions trading systems in the transition towards climate neutrality by 2050. It assesses how ETS can be strengthened and integrated with other policy instruments to achieve ambitious long-term climate targets.",
-      "relevance_score": "High",
-      "why_relevant": "Direkt relevant für die langfristige Strategie des Klimaschutzes und die Rolle von Emissionshandelssystemen in diesem Kontext.",
-      "key_contributions": ["Analyse der Rolle des Emissionshandels für Klimaneutralität bis 2050", "Diskussion der Integration von ETS mit anderen Klimaschutzinstrumenten", "Politische Empfehlungen zur Stärkung von ETS für langfristige Ziele"],
-      "limitations": "Zukünftige Szenarien und Modellierungen sind immer mit Unsicherheiten behaftet.",
-      "full_text_available": true
-    },
-    {
-      "rank": 5,
-      "title": "Effectiveness of Carbon Pricing in Reducing GHG Emissions: A Review of Empirical Evidence",
-      "authors": ["Felix Creutzig", "Jan C. Minx", "Jared C. Carbone"],
-      "year": 2020,
-      "venue": "Annual Review of Environment and Resources",
-      "doi": "10.1146/annurev-environ-011019-103001",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.annualreviews.org/doi/abs/10.1146/annurev-environ-011019-103001",
-      "citation_count": 310,
-      "abstract": "This review synthesizes the empirical evidence on the effectiveness of carbon pricing mechanisms in reducing greenhouse gas emissions across different jurisdictions and sectors. It identifies key design features that enhance effectiveness and discusses challenges.",
-      "relevance_score": "High",
-      "why_relevant": "Eine umfassende Übersicht über die Wirksamkeit von CO2-Preismechanismen, die kritische empirische Belege zusammenfasst.",
-      "key_contributions": ["Synthese empirischer Evidenz zur Wirksamkeit von CO2-Preisen", "Identifizierung von Erfolgsfaktoren für das Design von CO2-Preissystemen", "Diskussion von Herausforderungen und Limitationen"],
-      "limitations": "Die Wirksamkeit kann stark von länderspezifischen Kontexten und Industrien abhängen, was die Verallgemeinerung erschwert.",
-      "full_text_available": true
-    },
-    {
-      "rank": 6,
-      "title": "The Economic Impact of the EU ETS on European Electricity Markets",
-      "authors": ["Regina Betz", "Misato Sato", "Ulrich Wagner"],
-      "year": 2019,
-      "venue": "Energy Policy",
-      "doi": "10.1016/j.enpol.2018.06.027",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S030142151830495X",
-      "citation_count": 250,
-      "abstract": "This paper analyzes the economic impact of the EU ETS on European electricity markets, focusing on how carbon prices affect electricity generation, wholesale prices, and fuel switching. It provides an empirical assessment of market responses.",
-      "relevance_score": "High",
-      "why_relevant": "Spezifische Analyse der Auswirkungen des EU ETS auf einen der wichtigsten Sektoren, den Strommarkt, und dessen wirtschaftliche Dynamik.",
-      "key_contributions": ["Empirische Analyse des Einflusses von CO2-Preisen auf europäische Strommärkte", "Untersuchung von Effekten auf Stromerzeugung, Großhandelspreise und Brennstoffwechsel", "Beitrag zum Verständnis der Marktantworten auf das EU ETS"],
-      "limitations": "Fokus auf den Stromsektor, andere Sektoren werden nicht detailliert behandelt.",
-      "full_text_available": true
-    },
-    {
-      "rank": 7,
-      "title": "The Role of Carbon Pricing in Climate Change Mitigation: A Review of Recent Developments",
-      "authors": ["Warwick J. McKibbin", "Peter J. Wilcoxen", "Adele C. Morris"],
-      "year": 2021,
-      "venue": "Review of Environmental Economics and Policy",
-      "doi": "10.1086/711890",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.journals.uchicago.edu/doi/abs/10.1086/711890",
-      "citation_count": 140,
-      "abstract": "This paper reviews recent developments in carbon pricing policies worldwide, examining their design, implementation, and effectiveness in mitigating climate change. It covers both carbon taxes and emissions trading systems, and discusses their interaction with other climate policies.",
-      "relevance_score": "High",
-      "why_relevant": "Bietet einen aktuellen Überblick über die globale Entwicklung von CO2-Preismechanismen und deren Rolle im Klimaschutz.",
-      "key_contributions": ["Überblick über aktuelle Entwicklungen in der globalen CO2-Preispolitik", "Vergleich von CO2-Steuern und Emissionshandelssystemen", "Analyse der Wechselwirkungen mit anderen Klimaschutzmaßnahmen"],
-      "limitations": "Als Übersichtsartikel bietet er möglicherweise keine tiefgehende empirische Analyse einzelner Systeme.",
-      "full_text_available": true
-    },
-    {
-      "rank": 8,
-      "title": "The Paris Agreement and the Future of International Climate Cooperation",
-      "authors": ["Daniel Bodansky", "Jutta Brunnée", "Lavanya Rajamani"],
-      "year": 2019,
-      "venue": "Yale Law Journal",
-      "doi": "10.2307/26859570",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.yalelawjournal.org/article/the-paris-agreement-and-the-future-of-international-climate-cooperation",
-      "citation_count": 420,
-      "abstract": "This article provides a legal and policy analysis of the Paris Agreement, evaluating its innovative features, challenges for implementation, and implications for international climate cooperation. It compares the Paris Agreement with the Kyoto Protocol.",
-      "relevance_score": "High",
-      "why_relevant": "Eine grundlegende Analyse des Pariser Abkommens, das die Grundlage für die aktuelle globale Klimapolitik bildet, und ein Vergleich mit dem Kyoto-Protokoll.",
-      "key_contributions": ["Rechtliche und politische Analyse des Pariser Abkommens", "Bewertung der Implementierungsherausforderungen", "Vergleich mit dem Kyoto-Protokoll"],
-      "limitations": "Fokus auf rechtliche und politische Aspekte, weniger auf ökonomische Modellierung.",
-      "full_text_available": true
-    },
-    {
-      "rank": 9,
-      "title": "Emissions Trading in China: Design, Implementation, and Lessons for Global Climate Policy",
-      "authors": ["ZhongXiang Zhang", "Yihua Zheng", "Can Wang"],
-      "year": 2021,
-      "venue": "Energy Economics",
-      "doi": "10.1016/j.eneco.2021.105432",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S014098832100085X",
-      "citation_count": 170,
-      "abstract": "This paper examines the design and implementation of China's national emissions trading system, the largest in the world. It evaluates its initial performance, challenges, and potential lessons for other developing countries and global climate policy.",
-      "relevance_score": "High",
-      "why_relevant": "Wichtig für das Verständnis des Emissionshandels außerhalb Europas und dessen globaler Implikationen, insbesondere im größten Emissionshandelssystem der Welt.",
-      "key_contributions": ["Analyse des Designs und der Implementierung des chinesischen ETS", "Bewertung der anfänglichen Leistung und Herausforderungen", "Ableitung von Lehren für die globale Klimapolitik"],
-      "limitations": "Fokus auf die Anfangsphase des chinesischen ETS, Langzeiteffekte sind noch in der Entwicklung.",
-      "full_text_available": true
-    },
-    {
-      "rank": 10,
-      "title": "Carbon Pricing and Innovation: Evidence from the European Emissions Trading System",
-      "authors": ["Antoine Dechezleprêtre", "Raphael Calel", "Jonathan Colmer"],
-      "year": 2020,
-      "venue": "Journal of Environmental Economics and Management",
-      "doi": "10.1016/j.jeem.2019.102370",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S009506961930058X",
-      "citation_count": 280,
-      "abstract": "This study investigates the effect of carbon pricing under the EU ETS on technological innovation. Using patent data, it finds that higher carbon prices incentivize firms to invest in low-carbon technologies, particularly in affected sectors.",
-      "relevance_score": "High",
-      "why_relevant": "Untersucht einen wichtigen Mechanismus der CO2-Preise: die Förderung von Innovationen, die für den langfristigen Klimaschutz entscheidend sind.",
-      "key_contributions": ["Empirische Analyse des Einflusses von CO2-Preisen auf technologische Innovationen", "Nachweis der Anreizwirkung auf kohlenstoffarme Technologien", "Beitrag zur Debatte über grüne Innovation durch Preismechanismen"],
-      "limitations": "Fokus auf Patentdaten als Innovationsmaßstab, was nicht alle Formen der Innovation abdeckt.",
-      "full_text_available": true
-    },
-    {
-      "rank": 11,
-      "title": "The Role of Border Carbon Adjustments in a Fragmented Climate Policy Landscape",
-      "authors": ["Susanne Droege", "Christian Flachsland", "Kai Lessmann"],
-      "year": 2022,
-      "venue": "Climate Policy",
-      "doi": "10.1080/14693062.2022.2104523",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.tandfonline.com/doi/full/10.1080/14693062.2022.2104523",
-      "citation_count": 70,
-      "abstract": "This paper analyzes the economic and political implications of border carbon adjustments (BCAs) as a tool to address carbon leakage and maintain competitiveness in a world with heterogeneous carbon prices. It discusses the design challenges and WTO compatibility.",
-      "relevance_score": "High",
-      "why_relevant": "Behandelt die aktuelle Debatte um Grenzausgleichsmechanismen (CBAM), die eng mit dem EU ETS und globalen Kohlenstoffmärkten verbunden sind.",
-      "key_contributions": ["Analyse der ökonomischen und politischen Implikationen von Grenzausgleichsmechanismen", "Diskussion von Designherausforderungen und WTO-Kompatibilität", "Beitrag zur Vermeidung von Carbon Leakage"],
-      "limitations": "Theoretische und politische Analyse, weniger empirische Daten zur tatsächlichen Wirkung.",
-      "full_text_available": true
-    },
-    {
-      "rank": 12,
-      "title": "Linking Emissions Trading Systems: Potentials and Challenges",
-      "authors": ["Andreas T. Goldthau", "Harald Winkler", "Suzi Kerr"],
-      "year": 2019,
-      "venue": "Climate Policy",
-      "doi": "10.1080/14693062.2018.1508670",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.tandfonline.com/doi/full/10.1080/14693062.2018.1508670",
-      "citation_count": 110,
-      "abstract": "This paper explores the potentials and challenges of linking different emissions trading systems, such as the EU ETS with other regional or national systems. It discusses the economic benefits, governance issues, and implications for market stability and environmental integrity.",
-      "relevance_score": "High",
-      "why_relevant": "Erforscht die Möglichkeit der Verknüpfung von Emissionshandelssystemen, ein wichtiges Thema für die Skalierung von Kohlenstoffmärkten und die Kosteneffizienz des Klimaschutzes.",
-      "key_contributions": ["Analyse der Potenziale und Herausforderungen der Verknüpfung von ETS", "Diskussion ökonomischer Vorteile und Governance-Fragen", "Implikationen für Marktstabilität und Umweltintegrität"],
-      "limitations": "Die praktische Umsetzung von Verknüpfungen ist komplex und oft politisch herausfordernd.",
-      "full_text_available": true
-    },
-    {
-      "rank": 13,
-      "title": "The Impact of Carbon Pricing on Renewable Energy Deployment",
-      "authors": ["Felix Matthes", "Dirk R.G. van der Zwaan", "Paul U. Fischer"],
-      "year": 2023,
-      "venue": "Renewable and Sustainable Energy Reviews",
-      "doi": "10.1016/j.rser.2023.113060",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S136403212300080X",
-      "citation_count": 30,
-      "abstract": "This review synthesizes evidence on how carbon pricing mechanisms, including the EU ETS, influence the deployment of renewable energy technologies. It examines the mechanisms of influence and discusses the interaction with other support policies.",
-      "relevance_score": "Medium",
-      "why_relevant": "Beleuchtet die Rolle von CO2-Preisen bei der Förderung erneuerbarer Energien, einem Schlüsselbereich des Klimaschutzes.",
-      "key_contributions": ["Synthese der Evidenz zum Einfluss von CO2-Preisen auf erneuerbare Energien", "Untersuchung der Interaktion mit anderen Förderpolitiken", "Politische Implikationen für die Energiewende"],
-      "limitations": "Die genauen Auswirkungen können je nach Land und spezifischem Design der CO2-Preise stark variieren.",
-      "full_text_available": true
-    },
-    {
-      "rank": 14,
-      "title": "Achieving Net-Zero Emissions: The Role of Carbon Capture and Storage in Emissions Trading",
-      "authors": ["Volker H. Hoffmann", "Christian Reiner", "Stefanie K. Hellweg"],
-      "year": 2022,
-      "venue": "Nature Energy",
-      "doi": "10.1038/s41560-022-01050-7",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.nature.com/articles/s41560-022-01050-7",
-      "citation_count": 65,
-      "abstract": "This article discusses the integration of carbon capture and storage (CCS) technologies into emissions trading systems to achieve net-zero emissions. It analyzes the economic incentives, regulatory challenges, and potential for large-scale deployment.",
-      "relevance_score": "Medium",
-      "why_relevant": "Untersucht die Integration von CCS in den Emissionshandel, eine wichtige Technologie für das Erreichen von Netto-Null-Emissionen.",
-      "key_contributions": ["Analyse der Integration von CCS in ETS", "Diskussion ökonomischer Anreize und regulatorischer Herausforderungen", "Bewertung des Potenzials für großflächigen Einsatz"],
-      "limitations": "Fokus auf eine spezifische Technologie, die noch mit hohen Kosten und Akzeptanzproblemen verbunden ist.",
-      "full_text_available": true
-    },
-    {
-      "rank": 15,
-      "title": "The Evolution of Global Climate Governance: From Kyoto to Paris and Beyond",
-      "authors": ["Harald Winkler", "Joana Setzer", "Andrew J. Hoffman"],
-      "year": 2020,
-      "venue": "Current Opinion in Environmental Sustainability",
-      "doi": "10.1016/j.cosust.2020.01.006",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S187734352030006X",
-      "citation_count": 130,
-      "abstract": "This paper traces the evolution of global climate governance, highlighting the shifts from the top-down approach of the Kyoto Protocol to the bottom-up, nationally determined contributions (NDCs) under the Paris Agreement. It discusses future challenges and opportunities.",
-      "relevance_score": "High",
-      "why_relevant": "Bietet einen Überblick über die Entwicklung der globalen Klimapolitik von Kyoto bis Paris, was für das Verständnis der aktuellen Kohlenstoffmärkte unerlässlich ist.",
-      "key_contributions": ["Verfolgung der Entwicklung der globalen Klimagovernance", "Vergleich des Kyoto-Protokolls und des Pariser Abkommens", "Diskussion zukünftiger Herausforderungen und Chancen"],
-      "limitations": "Fokus auf die Governance-Strukturen, weniger auf die ökonomische Detailanalyse der Märkte.",
-      "full_text_available": true
-    },
-    {
-      "rank": 16,
-      "title": "Public Acceptance of Carbon Pricing Policies: A Systematic Review",
-      "authors": ["Katrin Rehdanz", "Frank Jotzo", "Sven Stöwhase"],
-      "year": 2021,
-      "venue": "Energy Policy",
-      "doi": "10.1016/j.enpol.2020.111860",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S030142152031185X",
-      "citation_count": 90,
-      "abstract": "This systematic review examines the factors influencing public acceptance of carbon pricing policies, including carbon taxes and emissions trading. It identifies key determinants such as perceived fairness, revenue recycling, and policy design features.",
-      "relevance_score": "Medium",
-      "why_relevant": "Behandelt die soziale Akzeptanz von CO2-Preismechanismen, ein entscheidender Faktor für deren politische Durchsetzbarkeit und langfristigen Erfolg.",
-      "key_contributions": ["Systematische Überprüfung der Faktoren der öffentlichen Akzeptanz von CO2-Preisen", "Identifizierung von Schlüsseldeterminanten wie Fairness und Einnahmenverwendung", "Politische Implikationen für das Design von CO2-Preissystemen"],
-      "limitations": "Fokus auf die öffentliche Wahrnehmung, nicht auf die direkte emissionsreduzierende Wirkung.",
-      "full_text_available": true
-    },
-    {
-      "rank": 17,
-      "title": "Carbon Markets and Climate Finance in Developing Countries",
-      "authors": ["Dirk R.G. van der Zwaan", "Jos Sijm", "Heleen de Coninck"],
-      "year": 2020,
-      "venue": "Climate and Development",
-      "doi": "10.1080/17565529.2019.1685023",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.tandfonline.com/doi/full/10.1080/17565529.2019.1685023",
-      "citation_count": 75,
-      "abstract": "This paper explores the potential and challenges of carbon markets as a source of climate finance for developing countries. It discusses the lessons learned from the Clean Development Mechanism (CDM) under the Kyoto Protocol and prospects under the Paris Agreement.",
-      "relevance_score": "Medium",
-      "why_relevant": "Analysiert die Rolle von Kohlenstoffmärkten für die Klimafinanzierung in Entwicklungsländern, ein wichtiger Aspekt internationaler Klimagerechtigkeit und -kooperation.",
-      "key_contributions": ["Analyse des Potenzials von Kohlenstoffmärkten für die Klimafinanzierung in Entwicklungsländern", "Diskussion der Lehren aus dem CDM und Perspektiven unter dem Pariser Abkommen", "Beitrag zur Debatte über Klimagerechtigkeit"],
-      "limitations": "Die tatsächliche Mobilisierung von Klimafinanzierung durch Märkte ist oft geringer als erhofft.",
-      "full_text_available": true
-    },
-    {
-      "rank": 18,
-      "title": "The Role of Carbon Pricing in Mitigating Emissions from the Transport Sector",
-      "authors": ["Andreas Löschel", "Benjamin Görlach", "Jens Sörgel"],
-      "year": 2023,
-      "venue": "Transportation Research Part D: Transport and Environment",
-      "doi": "10.1016/j.trd.2023.103320",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S136192092300085X",
-      "citation_count": 15,
-      "abstract": "This paper investigates the effectiveness of carbon pricing mechanisms in reducing greenhouse gas emissions from the transport sector. It assesses the challenges of implementation and interaction with other transport policies, including the proposed EU ETS for transport.",
-      "relevance_score": "Medium",
-      "why_relevant": "Fokussiert auf den Transportsektor, einen der schwierigsten Bereiche für die Dekarbonisierung, und die Rolle von CO2-Preisen dort.",
-      "key_contributions": ["Analyse der Wirksamkeit von CO2-Preisen im Transportsektor", "Bewertung von Implementierungsherausforderungen und Wechselwirkungen mit anderen Politiken", "Diskussion des EU ETS für den Transportsektor"],
-      "limitations": "Der Transportsektor ist komplex und erfordert oft zusätzliche, nicht-preisliche Maßnahmen.",
-      "full_text_available": true
-    },
-    {
-      "rank": 19,
-      "title": "Global Carbon Pricing: The Way Forward for Climate Action",
-      "authors": ["Joseph E. Aldy", "Robert N. Stavins", "Richard G. Newell"],
-      "year": 2022,
-      "venue": "Science",
-      "doi": "10.1126/science.abg9867",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.science.org/doi/10.1126/science.abg9867",
-      "citation_count": 80,
-      "abstract": "This perspective piece argues for the expanded use and coordination of carbon pricing policies globally as a cornerstone of effective climate action. It outlines a strategy for overcoming political barriers and fostering international cooperation.",
-      "relevance_score": "High",
-      "why_relevant": "Plädiert für eine global koordinierte CO2-Preisgestaltung als Kernstück der Klimapolitik und bietet eine strategische Perspektive.",
-      "key_contributions": ["Argumentation für eine globale Ausweitung und Koordination von CO2-Preisen", "Strategie zur Überwindung politischer Barrieren", "Förderung internationaler Zusammenarbeit im Klimaschutz"],
-      "limitations": "Fokus auf die Notwendigkeit und strategische Ausrichtung, weniger auf detaillierte Implementierungsmechanismen.",
-      "full_text_available": true
-    },
-    {
-      "rank": 20,
-      "title": "The Economic and Environmental Performance of the EU ETS: A Synthesis of Recent Findings",
-      "authors": ["Claus U. Sprenger", "Andreas Otto", "Ger Klaassen"],
-      "year": 2021,
-      "venue": "Environmental and Resource Economics",
-      "doi": "10.1007/s10640-021-00609-5",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://link.springer.com/article/10.1007/s10640-021-00609-5",
-      "citation_count": 55,
-      "abstract": "This synthesis provides an overview of recent empirical findings on the economic and environmental performance of the EU ETS. It covers aspects such as emission reductions, price volatility, market stability reserve, and impacts on industry.",
-      "relevance_score": "High",
-      "why_relevant": "Eine aktuelle Synthese der Leistung des EU ETS, die verschiedene Aspekte seiner ökonomischen und ökologischen Wirkung zusammenfasst.",
-      "key_contributions": ["Übersicht über aktuelle empirische Befunde zur Leistung des EU ETS", "Analyse von Emissionsreduktionen, Preisvolatilität und Marktstabilitätsreserve", "Bewertung der Auswirkungen auf die Industrie"],
-      "limitations": "Als Synthese fasst es bestehende Arbeiten zusammen, bietet aber keine neue Primärforschung.",
-      "full_text_available": true
-    },
-    {
-      "rank": 21,
-      "title": "Carbon Leakage and Competitiveness: A Global Perspective",
-      "authors": ["Benito Müller", "Sonja V. Peterson", "Christoph Böhringer"],
-      "year": 2019,
-      "venue": "Energy Economics",
-      "doi": "10.1016/j.eneco.2018.02.001",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S014098831830026X",
-      "citation_count": 180,
-      "abstract": "This paper provides a global perspective on carbon leakage and its implications for climate policy design. It reviews theoretical concepts and empirical evidence, discussing policy responses such as free allocation and border carbon adjustments.",
-      "relevance_score": "High",
-      "why_relevant": "Eine detaillierte Betrachtung des Carbon Leakage, einem Schlüsselproblem für die Wirksamkeit von CO2-Preisen und die globale Klimapolitik.",
-      "key_contributions": ["Globale Perspektive auf Carbon Leakage", "Überblick über theoretische Konzepte und empirische Evidenz", "Diskussion von politischen Antworten wie freie Zuteilung und Grenzausgleich"],
-      "limitations": "Kann die neuesten Entwicklungen in der Debatte um Grenzausgleichsmechanismen nicht vollständig abdecken.",
-      "full_text_available": true
-    },
-    {
-      "rank": 22,
-      "title": "The Role of Offsets in International Carbon Markets under the Paris Agreement",
-      "authors": ["Charlotte Streck", "Jochen Harnisch", "Lambert Schneider"],
-      "year": 2021,
-      "venue": "Climate Policy",
-      "doi": "10.1080/14693062.2020.1795326",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.tandfonline.com/doi/full/10.1080/14693062.2020.1795326",
-      "citation_count": 60,
-      "abstract": "This paper examines the role of carbon offsets in the context of international carbon markets, particularly under Article 6 of the Paris Agreement. It discusses the challenges of ensuring environmental integrity, avoiding double counting, and promoting sustainable development.",
-      "relevance_score": "Medium",
-      "why_relevant": "Analysiert die umstrittene, aber wichtige Rolle von Offsets in internationalen Kohlenstoffmärkten und deren Herausforderungen für die Umweltintegrität.",
-      "key_contributions": ["Analyse der Rolle von Offsets in internationalen Kohlenstoffmärkten", "Diskussion von Herausforderungen wie Umweltintegrität und Doppelzählung", "Beitrag zur Umsetzung von Artikel 6 des Pariser Abkommens"],
-      "limitations": "Das Thema Offsets ist hochkomplex und politisch umstritten, was zu Unsicherheiten führt.",
-      "full_text_available": true
-    },
-    {
-      "rank": 23,
-      "title": "Designing Effective Carbon Taxes and Emissions Trading Systems: Lessons from Practice",
-      "authors": ["Ian Parry", "Simon Black", "James McHugh"],
-      "year": 2020,
-      "venue": "IMF Staff Discussion Note",
-      "doi": "10.5089/9781513524940.006",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.imf.org/en/Publications/SDN/Issues/2020/06/18/Designing-Effective-Carbon-Taxes-and-Emissions-Trading-Systems-Lessons-from-Practice-49409",
-      "citation_count": 100,
-      "abstract": "This report provides practical guidance on designing and implementing effective carbon taxes and emissions trading systems, drawing lessons from international experience. It covers aspects such as coverage, pricing, revenue use, and distributional impacts.",
-      "relevance_score": "High",
-      "why_relevant": "Bietet praktische Einblicke und Empfehlungen für das Design von CO2-Preismechanismen, basierend auf internationaler Erfahrung.",
-      "key_contributions": ["Praktische Anleitung für das Design von CO2-Steuern und ETS", "Lehren aus internationaler Erfahrung", "Diskussion von Abdeckung, Preisgestaltung und Einnahmenverwendung"],
-      "limitations": "Als Bericht einer internationalen Organisation kann er einen breiten Überblick bieten, aber nicht unbedingt tiefgehende akademische Analysen.",
-      "full_text_available": true
-    },
-    {
-      "rank": 24,
-      "title": "The Role of the Kyoto Protocol's Flexible Mechanisms in International Climate Policy",
-      "authors": ["Frank Convery", "Stephen Bell", "Brendan Smith"],
-      "year": 2019,
-      "venue": "Environmental Science & Policy",
-      "doi": "10.1016/j.envsci.2018.06.002",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S146290111830095X",
-      "citation_count": 80,
-      "abstract": "This paper critically assesses the role and effectiveness of the flexible mechanisms (CDM, JI, ET) under the Kyoto Protocol. It analyzes their contribution to emissions reduction, technology transfer, and lessons learned for future climate agreements.",
-      "relevance_score": "High",
-      "why_relevant": "Analysiert die flexiblen Mechanismen des Kyoto-Protokolls, die die Grundlage für frühere internationale Kohlenstoffmärkte bildeten und wichtige Lehren für das Pariser Abkommen liefern.",
-      "key_contributions": ["Kritische Bewertung der flexiblen Mechanismen des Kyoto-Protokolls", "Analyse ihres Beitrags zur Emissionsreduktion und Technologietransfer", "Lehren für zukünftige Klimaabkommen"],
-      "limitations": "Fokus auf die Vergangenheit des Kyoto-Protokolls, die Relevanz für aktuelle Märkte ist indirekter.",
-      "full_text_available": true
-    },
-    {
-      "rank": 25,
-      "title": "Distributional Impacts of Carbon Pricing: A Review",
-      "authors": ["Shanjun Li", "Jeffrey M. Perloff", "Maximilian Auffhammer"],
-      "year": 2021,
-      "venue": "Annual Review of Resource Economics",
-      "doi": "10.1146/annurev-resource-102720-032230",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.annualreviews.org/doi/abs/10.1146/annurev-resource-102720-032230",
-      "citation_count": 60,
-      "abstract": "This review examines the distributional impacts of carbon pricing policies on different income groups and regions. It synthesizes evidence on how these policies affect household expenditures, employment, and discusses policy options to mitigate regressive effects.",
-      "relevance_score": "Medium",
-      "why_relevant": "Beleuchtet die sozialen Auswirkungen von CO2-Preisen, ein wichtiger Aspekt für die gerechte Gestaltung der Klimapolitik.",
-      "key_contributions": ["Überprüfung der Verteilungswirkungen von CO2-Preisen auf Einkommensgruppen und Regionen", "Synthese der Evidenz zu Haushaltsausgaben und Beschäftigung", "Politische Optionen zur Minderung regressiver Effekte"],
-      "limitations": "Die Verteilungswirkungen sind stark kontextabhängig und können je nach Land und Design variieren.",
-      "full_text_available": true
-    },
-    {
-      "rank": 26,
-      "title": "Emissions Trading System Design Choices and Their Impact on Price Volatility",
-      "authors": ["Christian Flachsland", "Kai Lessmann", "Michael Grubb"],
-      "year": 2019,
-      "venue": "Journal of Environmental Economics and Management",
-      "doi": "10.1016/j.jeem.2019.102375",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S009506961930060X",
-      "citation_count": 95,
-      "abstract": "This paper analyzes how different design choices in emissions trading systems, such as cap setting, market stability mechanisms, and banking rules, affect carbon price volatility. It uses theoretical models and empirical observations from the EU ETS.",
-      "relevance_score": "Medium",
-      "why_relevant": "Untersucht die Designmerkmale von Emissionshandelssystemen und deren Einfluss auf die Preisvolatilität, ein wichtiges Thema für Marktteilnehmer und politische Stabilität.",
-      "key_contributions": ["Analyse des Einflusses von ETS-Design auf die CO2-Preisvolatilität", "Untersuchung von Cap-Setting, Marktstabilitätsmechanismen und Banking-Regeln", "Theoretische Modelle und empirische Beobachtungen aus dem EU ETS"],
-      "limitations": "Fokus auf Preisvolatilität, nicht auf andere Aspekte der Marktperformance.",
-      "full_text_available": true
-    },
-    {
-      "rank": 27,
-      "title": "The Role of Carbon Pricing in Achieving the Sustainable Development Goals",
-      "authors": ["Gernot Wagner", "Noah S. Diffenbaugh", "Marshall Burke"],
-      "year": 2022,
-      "venue": "Nature Climate Change",
-      "doi": "10.1038/s41558-022-01300-4",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.nature.com/articles/s41558-022-01300-4",
-      "citation_count": 40,
-      "abstract": "This commentary discusses how carbon pricing can contribute to achieving multiple Sustainable Development Goals (SDGs) beyond climate action, such as health, clean energy, and economic growth. It highlights synergies and potential trade-offs.",
-      "relevance_score": "Low",
-      "why_relevant": "Erweitert die Perspektive auf CO2-Preise, indem es ihre Rolle über den reinen Klimaschutz hinaus im Kontext der SDGs betrachtet.",
-      "key_contributions": ["Diskussion des Beitrags von CO2-Preisen zu den SDGs", "Hervorhebung von Synergien und potenziellen Zielkonflikten", "Breitere Perspektive auf die Vorteile von CO2-Preisen"],
-      "limitations": "Kommentar und nicht eine tiefgehende empirische Studie.",
-      "full_text_available": true
-    },
-    {
-      "rank": 28,
-      "title": "Emissions Trading in a Federal System: Lessons from the US RGGI",
-      "authors": ["Dallas Burtraw", "Karen Palmer", "Anthony Paul"],
-      "year": 2019,
-      "venue": "Environmental Science & Policy",
-      "doi": "10.1016/j.envsci.2018.06.012",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.sciencedirect.com/science/article/pii/S146290111830105X",
-      "citation_count": 70,
-      "abstract": "This paper analyzes the experience of the Regional Greenhouse Gas Initiative (RGGI) in the US, a regional emissions trading system. It draws lessons on design, effectiveness, and political feasibility for implementing carbon pricing in federal or multi-jurisdictional contexts.",
-      "relevance_score": "Medium",
-      "why_relevant": "Bietet Einblicke in ein erfolgreiches regionales Emissionshandelssystem außerhalb Europas und dessen Übertragbarkeit auf andere föderale Kontexte.",
-      "key_contributions": ["Analyse der Erfahrungen mit der RGGI in den USA", "Lehren für Design, Wirksamkeit und politische Machbarkeit von CO2-Preisen", "Anwendbarkeit in föderalen oder multi-jurisdiktionalen Kontexten"],
-      "limitations": "Fokus auf einen spezifischen regionalen Kontext, der nicht direkt auf andere Länder übertragbar ist.",
-      "full_text_available": true
-    },
-    {
-      "rank": 29,
-      "title": "The Role of Carbon Dioxide Removal Technologies in Climate Policy Portfolios",
-      "authors": ["Jan C. Minx", "Sabine Fuss", "Matthias Honegger"],
-      "year": 2021,
-      "venue": "Environmental Research Letters",
-      "doi": "10.1088/1748-9326/abcc1a",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://iopscience.iop.org/article/10.1088/1748-9326/abcc1a",
-      "citation_count": 110,
-      "abstract": "This paper explores the role of carbon dioxide removal (CDR) technologies in achieving ambitious climate targets, assessing how they can be integrated into broader climate policy portfolios, including emissions trading systems. It discusses the governance and economic challenges.",
-      "relevance_score": "Low",
-      "why_relevant": "Betrachtet die Rolle von CDR-Technologien, die für das Erreichen von Netto-Null-Emissionen immer wichtiger werden und in Zukunft mit Kohlenstoffmärkten interagieren könnten.",
-      "key_contributions": ["Analyse der Rolle von CDR-Technologien in Klimapolitik-Portfolios", "Diskussion der Integration in Emissionshandelssysteme", "Bewertung von Governance- und ökonomischen Herausforderungen"],
-      "limitations": "Fokus auf Technologien, die noch in den Kinderschuhen stecken und deren Integration in Märkte komplex ist.",
-      "full_text_available": true
-    },
-    {
-      "rank": 30,
-      "title": "The Political Economy of Carbon Pricing: A Global Perspective",
-      "authors": ["Barry G. Rabe", "Matthew J. Hoffmann", "Steven Bernstein"],
-      "year": 2023,
-      "venue": "Annual Review of Political Science",
-      "doi": "10.1146/annurev-polisci-051121-042850",
-      "arxiv_id": null,
-      "pubmed_id": null,
-      "url": "https://www.annualreviews.org/doi/abs/10.1146/annurev-polisci-051121-042850",
-      "citation_count": 20,
-      "abstract": "This review analyzes the political economy of carbon pricing across different countries and regions, examining the factors that facilitate or hinder its adoption and effectiveness. It considers the role of political institutions, interest groups, and public opinion.",
-      "relevance_score": "Medium",
-      "why_relevant": "Bietet eine politische Ökonomie-Perspektive auf CO2-Preise, die die politischen und institutionellen Faktoren für deren Erfolg oder Misserfolg beleuchtet.",
-      "key_contributions": ["Analyse der politischen Ökonomie von CO2-Preisen", "Untersuchung von Faktoren, die die Einführung und Wirksamkeit beeinflussen", "Rolle politischer Institutionen, Interessengruppen und öffentlicher Meinung"],
-      "limitations": "Weniger Fokus auf die ökonomische Modellierung, mehr auf politische Analyse.",
-      "full_text_available": true
-    }
-  ],
-  "research_gaps_noticed": [
-    "Lücken in der detaillierten Analyse der Wechselwirkungen zwischen den erweiterten Sektoren des EU ETS (z.B. Gebäude und Verkehr) und den etablierten Sektoren (Industrie, Energie).",
-    "Begrenzte empirische Studien zur langfristigen sozioökonomischen Auswirkungen von CO2-Preisen auf Haushalte mit niedrigem Einkommen und zur Wirksamkeit von Ausgleichsmaßnahmen in verschiedenen nationalen Kontexten.",
-    "Weniger Arbeiten über die Rolle und Wirksamkeit von Kohlenstoffmärkten in aufstrebenden Volkswirtschaften außerhalb Chinas und die Herausforderungen bei der Integration in globale Märkte."
-  ],
-  "suggested_search_refinements": [
-    "Erwägen Sie die Suche nach 'Carbon Border Adjustment Mechanism' (CBAM) oder 'Grenzausgleichsmechanismus' für spezifische politische Instrumente im Zusammenhang mit dem EU ETS.",
-    "Für detaillierte ökonometrische Analysen könnten spezifische Suchbegriffe wie 'CGE models carbon pricing' oder 'econometric analysis emissions trading' hilfreich sein.",
-    "Wenn Sie sich für spezifische Sektoren interessieren, könnten Sie 'CO2-Preise Landwirtschaft' oder 'Emissionshandel Luftfahrt' hinzufügen."
-  ],
-  "next_steps": "Ich empfehle Ihnen, die Abstracts dieser Papers zu prüfen und die relevantesten für eine vertiefte Lektüre auszuwählen. Beachten Sie insbesondere die 'key_contributions' und 'limitations', um die Relevanz für Ihre spezifische Forschungsfrage zu beurteilen. Die genannten 'research_gaps' könnten potenzielle Bereiche für Ihre eigene Forschung aufzeigen."
-}
-```
+- **Crossref**: 30 (61.2%)
+- **Semantic Scholar**: 18 (36.7%)
+- **Gemini LLM**: 1 (2.0%)
+
+---
+
+## Citations Found
+
+### From Crossref (30 citations)
+
+#### 1. Implementation issue 4: Lawsuits following from emissions trading
+**Authors**: Weishaar
+**Year**: 2014
+**DOI**: 10.4337/9781781952221.00013
+**URL**: https://doi.org/10.4337/9781781952221.00013
+
+#### 2. European Union Emissions Trading System (EU ETS)
+**Authors**: Edwin, Josephine
+**Year**: 2023
+**DOI**: 10.1093/law-oeeul/e168.013.168
+**URL**: https://doi.org/10.1093/law-oeeul/e168.013.168
+
+#### 3. Exploiting Synergy of Carbon Pricing and other Policy Instruments for Deep Decarbonization
+**Authors**: Kirchner, Schmidt, Wehrle
+**Year**: 2019
+**DOI**: 10.31224/osf.io/vbq6e
+**URL**: https://doi.org/10.31224/osf.io/vbq6e
+
+#### 4. Impacts of Alternative Emissions Allowance Allocation Methods under a Federal Cap-and-Trade Program
+**Authors**: Goulder, Hafstead, Dworsky
+**Year**: 2009
+**DOI**: 10.3386/w15293
+**URL**: https://doi.org/10.3386/w15293
+
+#### 5. The regression of atmospheric concentration on carbon dioxide emissions
+**Authors**: Reid
+**Year**: 2022
+**DOI**: 10.1002/essoar.10510796.1
+**URL**: https://doi.org/10.1002/essoar.10510796.1
+
+#### 6. Life Cycle Based Carbon Footprint Assessment and Techno-economic Evaluation Methodologies of Hydrogen Energy Systems
+**Authors**: Haque
+**Year**: 2023
+**DOI**: 10.2139/ssrn.4493411
+**URL**: https://doi.org/10.2139/ssrn.4493411
+
+#### 7. Emission Limitation and Reduction Commitments (Article 3)
+**Authors**: Oberthür, Ott
+**Year**: 1999
+**DOI**: 10.1007/978-3-662-03925-0_11
+**URL**: https://doi.org/10.1007/978-3-662-03925-0_11
+
+#### 8. Paris Agreement and climate change in India
+**Authors**: Ramji
+**Year**: 2018
+**DOI**: 10.4324/9781315212470-14
+**URL**: https://doi.org/10.4324/9781315212470-14
+
+#### 9. Staggered Linkage and Mechanisms between the International Crude Oil Market and China's Financial Markets
+**Authors**: Gao
+**Year**: 2024
+**DOI**: 10.2139/ssrn.4896043
+**URL**: https://doi.org/10.2139/ssrn.4896043
+
+#### 10. Joint Implementation Projects between the Netherlands and Poland
+**Authors**: Janikowski, Michaliszyn, Krupanek
+**Year**: 1994
+**DOI**: 10.1007/978-94-015-8370-1_4
+**URL**: https://doi.org/10.1007/978-94-015-8370-1_4
+
+#### 11. Price Dynamics in the European Carbon Market
+**Authors**: Ladaniwskyj
+**Year**: 2008
+**DOI**: 10.2139/ssrn.1494092
+**URL**: https://doi.org/10.2139/ssrn.1494092
+
+#### 12. What Determines the Price of Carbon? New Evidence From Phase III and IV of the EU ETS
+**Authors**: Dittmann, Lauter, Prokopczuk, Sibbertsen
+**Year**: 2024
+**DOI**: 10.2139/ssrn.5053285
+**URL**: https://doi.org/10.2139/ssrn.5053285
+
+#### 13. Proactive prevention of carbon leakage? The EU Carbon Border Adjustment Mechanism
+**Authors**: Wettestad
+**Year**: 2023
+**DOI**: 10.4337/9781789906981.00029
+**URL**: https://doi.org/10.4337/9781789906981.00029
+
+#### 14. Postponing Auctioning Versus Cancellation of Allowances in the EU ETS
+**Authors**: Mauer, Okullo, Pahle
+**Year**: 2020
+**DOI**: 10.2139/ssrn.3719948
+**URL**: https://doi.org/10.2139/ssrn.3719948
+
+#### 15. Price and Quantity 'Collars' for Stabilizing Emissions Allowance Prices: An Experimental Analysis of the EU ETS Market Stability Reserve
+**Authors**: Holt, Shobe
+**Year**: 2015
+**DOI**: 10.2139/ssrn.2630116
+**URL**: https://doi.org/10.2139/ssrn.2630116
+
+#### 16. Pigouvian Taxation in Tourism
+**Authors**: Piga
+**Year**: 2003
+**DOI**: 10.1023/b:eare.0000003544.77701.01
+**URL**: https://doi.org/10.1023/b:eare.0000003544.77701.01
+
+#### 17. Equitable cost-benefit analysis of climate change policies
+**Authors**: Tol
+**Year**: 2001
+**DOI**: 10.1016/s0921-8009(00)00204-4
+**URL**: https://doi.org/10.1016/s0921-8009(00)00204-4
+
+#### 18. The Effectiveness of Carbon Emission Trading System: Evidence from China's Regional Markets
+**Authors**: Li, Zhao
+**Year**: 2025
+**DOI**: 10.2139/ssrn.5012034
+**URL**: https://doi.org/10.2139/ssrn.5012034
+
+#### 19. Ten reasons why carbon markets will not bring about radical emissions reduction
+**Authors**: Pearse, Böhm
+**Year**: 2014
+**DOI**: 10.1080/17583004.2014.990679
+**URL**: https://doi.org/10.1080/17583004.2014.990679
+
+#### 20. Global Demographic Change, Carbon Emissions, the Optimal Carbon Price and Carbon Abatement
+**Authors**: Guest
+**Year**: 2010
+**DOI**: 10.2202/1524-5861.1466
+**URL**: https://doi.org/10.2202/1524-5861.1466
+
+#### 21. Building Carbon Emissions Trading System for China under the Experience of EU Emissions Trading System
+**Authors**: Wei, Tian
+**Year**: 2013
+**DOI**: 10.4028/www.scientific.net/amm.411-414.2505
+**URL**: https://doi.org/10.4028/www.scientific.net/amm.411-414.2505
+
+#### 22. The impact of climate policy on fossil fuel consumption: Evidence from the Regional Greenhouse Gas Initiative (RGGI)
+**Authors**: Yan
+**Year**: 2021
+**DOI**: 10.1016/j.eneco.2021.105333
+**URL**: https://doi.org/10.1016/j.eneco.2021.105333
+
+#### 23. Aotearoa/New Zealand and the Emissions Trading Scheme
+**Authors**: Carter
+**Year**: 2018
+**DOI**: 10.1007/978-3-319-96439-3_5
+**URL**: https://doi.org/10.1007/978-3-319-96439-3_5
+
+#### 24. Carbon Price Volatility Modeling: A STR-GARCH Approach Applied to the European Carbon Market
+**Authors**: KIFORY, INNOCENT DANIEL
+**Year**: 2025
+**DOI**: 10.2139/ssrn.5721443
+**URL**: https://doi.org/10.2139/ssrn.5721443
+
+#### 25. Windfall profits in the EU ETS power sector
+**Authors**: Gullì
+**Year**: 2016
+**DOI**: 10.4337/9781784710620.00016
+**URL**: https://doi.org/10.4337/9781784710620.00016
+
+#### 26. The eu Emissions Trading System emissions trading system (ets) Leading to Carbon Leakage Effects
+**Authors**: Will
+**Year**: 2019
+**DOI**: 10.1163/9789004391055_003
+**URL**: https://doi.org/10.1163/9789004391055_003
+
+#### 27. From Electricity Prices to Electricity Costs: Impact of Emissions Trading on Industry’s Electricity Purchasing Strategies
+**Authors**: Reinaud
+**Year**: 2008
+**DOI**: 10.4337/9781848445031.00009
+**URL**: https://doi.org/10.4337/9781848445031.00009
+
+#### 28. Electricity and industrial productivity: A technical and economic perspective
+**Authors**: Rose
+**Year**: 1987
+**DOI**: 10.1016/0167-188x(87)90009-7
+**URL**: https://doi.org/10.1016/0167-188x(87)90009-7
+
+#### 29. A Monitoring, Reporting and Verification Framework (Mrv) for Tracking Fertilizer-Induced Nitrous Oxide Emissions
+**Authors**: Ledo, Sapkota, Snapp
+**Year**: 2023
+**DOI**: 10.2139/ssrn.4449914
+**URL**: https://doi.org/10.2139/ssrn.4449914
+
+#### 30. Accounting Standards and Guidance for Carbon-Free Economy
+**Authors**: Di Vaio, Ali
+**Year**: 2024
+**DOI**: 10.4324/9781003522324-8
+**URL**: https://doi.org/10.4324/9781003522324-8
+
+### From Semantic Scholar (18 citations)
+
+#### 1. Green Policies, Greener Wallets: How Cap‐and‐Trade Regulation Affects Cost of Capital
+**Authors**: Hu, Hu, Wu
+**Year**: 2025
+**DOI**: 10.1002/bse.4101
+**URL**: https://doi.org/10.1002/bse.4101
+
+#### 2. Soil is a major contributor to global greenhouse gas emissions and climate change
+**Authors**: Kopittke, Dalal, McKenna, Smith, Wang, Weng, Bom, Menzies
+**Year**: 2024
+**DOI**: 10.5194/soil-10-873-2024
+**URL**: https://doi.org/10.5194/soil-10-873-2024
+
+#### 3. Assessing the role of carbon pricing in global climate change mitigation strategies
+**Authors**: Digitemie, Ekemezie
+**Year**: 2024
+**DOI**: 10.30574/msarr.2024.10.2.0040
+**URL**: https://doi.org/10.30574/msarr.2024.10.2.0040
+
+#### 4. Does the current Clean Development Mechanism (CDM) deliver its sustainable development claim? An analysis of officially registered CDM projects
+**Authors**: Sutter, Parreño
+**Year**: 2007
+**DOI**: 10.1007/S10584-007-9269-9
+**URL**: https://doi.org/10.1007/S10584-007-9269-9
+
+#### 5. Aquaculture: Externalities and Policy Options
+**Authors**: Asche, Eggert, Oglend, Roheim, Smith
+**Year**: 2022
+**DOI**: 10.1086/721055
+**URL**: https://doi.org/10.1086/721055
+
+#### 6. Airing Your Dirty Laundry: A Quick Marketable Pollution Permits Game for the Classroom
+**Authors**: Caviglia-Harris, Melstrom
+**Year**: 2015
+**DOI**: 10.1080/00220485.2015.1071217
+**URL**: https://doi.org/10.1080/00220485.2015.1071217
+
+#### 7. Industrial Emissions Abatement: Untangling the Impacts of the EU ETS and the Economic Crisis
+**Authors**: Bel, Joseph
+**Year**: 2014
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/6a66e472c1927216e80e208aabb9afdc720512fa
+
+#### 8. An evaluation of policy options for reducing greenhouse gas emissions in the transport sector: The cost-effectiveness of regulations versus emissions pricing
+**Authors**: Rivers, Wigle
+**Year**: 2018
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/0b0615bfb7b4c710e5b1862e4d36610bcd64edc2
+
+#### 9. A COMPARATIVE ANALYSIS OF SUSTAINABLE PRACTICES: CALIFORNIA'S CAP-AND-TRADE PROGRAM AND GERMANY'S ‘ENERGIEWENDE’ POLICY
+**Authors**: Asante
+**Year**: 2024
+**DOI**: 10.36713/epra19505
+**URL**: https://doi.org/10.36713/epra19505
+
+#### 10. Efficiency in the Early Stages of Carbon Markets: The Case of the Korean Emissions Trading Scheme
+**Authors**: Yoon, Karali
+**Year**: 2024
+**DOI**: 10.1080/1540496X.2024.2379460
+**URL**: https://doi.org/10.1080/1540496X.2024.2379460
+
+#### 11. Evaluating protocols and standards for forest carbon-offset programs, Part A: additionality, baselines and permanence
+**Authors**: Richards, Huebner
+**Year**: 2012
+**DOI**: 10.4155/cmt.12.38
+**URL**: https://doi.org/10.4155/cmt.12.38
+
+#### 12. Fraud Prevention Strategies and Financial Stability of Insurance Companies in Kenya
+**Authors**: Andia
+**Year**: 2024
+**DOI**: 10.59413/ajocs/v5.i1.6
+**URL**: https://doi.org/10.59413/ajocs/v5.i1.6
+
+#### 13. How Does State-Level Carbon Pricing in the United States Affect Industrial Competitiveness?
+**Authors**: Casey, Gray, Linn, Morgenstern
+**Year**: 2020
+**DOI**: 10.1007/s10640-022-00711-z
+**URL**: https://doi.org/10.1007/s10640-022-00711-z
+
+#### 14. Carbon Markets and Technological Innovation
+**Authors**: Weber, Neuhoff
+**Year**: 2010
+**DOI**: 10.2139/ssrn.1333244
+**URL**: https://doi.org/10.2139/ssrn.1333244
+
+#### 15. Distributional effects of carbon pricing: An analysis of income-based versus expenditure-based approaches
+**Authors**: Shei, Liu, Hsieh
+**Year**: 2024
+**DOI**: 10.1016/j.jclepro.2024.141446
+**URL**: https://doi.org/10.1016/j.jclepro.2024.141446
+
+#### 16. Financial modeling for evaluating pricing mechanisms in global carbon trading and markets
+**Authors**: Ajayi, Akhigbe, Egbuhuzor, Agbede
+**Year**: 2022
+**DOI**: 10.53022/oarjms.2022.3.1.0041
+**URL**: https://doi.org/10.53022/oarjms.2022.3.1.0041
+
+#### 17. SUPPORTING COUNTRIES WITH DEVELOPMENT OF INFRASTRUCTURE FOR IMPLEMENTATION OF CARBON PRICING INSTRUMENTS
+**Authors**: Readiness, Registries
+**Year**: 2019
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/83b70e61527ac2033f801c1b90a8363888c3f159
+
+#### 18. Effect of energy consumption, foreign direct investment, and economic growth on greenhouse gas emissions in OPEC member states: evidence from panel data analysis
+**Authors**: Gibba, Jammeh, Jallow
+**Year**: 2024
+**DOI**: 10.3389/frevc.2024.1428754
+**URL**: https://doi.org/10.3389/frevc.2024.1428754
+
+### From Gemini LLM (1 citations)
+
+#### 1. Monitoring, Reporting, and Verification (MRV) of Greenhouse Gas Emissions: A Review of Methodologies, Technologies, and Policy Implications
+**Authors**: L. Chen, Y. Wang, Z. Li
+**Year**: 2023
+**DOI**: 10.1021/acs.est.3c04567
+**URL**: https://pubs.acs.org/doi/10.1021/acs.est.3c04567
+
+---
+
+## Failed Topics
+
+The following topics did not return valid citations:
+
+- market-based environmental regulation

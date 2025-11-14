@@ -8,14 +8,13 @@
         "Lahoti",
         "Adgaonkar",
         "Jain",
-        "Ryan",
-        "Kshirsagar"
+        "Ryan"
       ],
       "year": 2021,
-      "title": "Gree-Coco: Green Artificial Intelligence Powered Cost Pricing Models For Congestion Control",
+      "title": "GREE-COCO: Green Artificial Intelligence Powered Cost Pricing Models for Congestion Control",
       "source_type": "conference",
       "language": "english",
-      "publisher": "SCITEPRESS",
+      "publisher": "International Conference on Agents and Artificial Intelligence",
       "doi": "10.5220/0010261209160923",
       "url": "https://doi.org/10.5220/0010261209160923"
     },
@@ -29,7 +28,7 @@
         "Thompson"
       ],
       "year": 2024,
-      "title": "Dynamic Token Hierarchies: Enhancing Large Language Models With A Multi-Tiered Token Processing Framework",
+      "title": "Dynamic Token Hierarchies: Enhancing Large Language Models with a Multi-Tiered Token Processing Framework",
       "source_type": "report",
       "language": "english",
       "publisher": "TechRxiv",
@@ -43,7 +42,7 @@
         "Laurent"
       ],
       "year": 2018,
-      "title": "Bdua: Blockchain-Based Data Usage Auditing",
+      "title": "BDUA: Blockchain-Based Data Usage Auditing",
       "source_type": "conference",
       "language": "english",
       "publisher": "IEEE",
@@ -56,7 +55,7 @@
         "Maguire"
       ],
       "year": 2021,
-      "title": "Value Selling",
+      "title": "Value selling",
       "source_type": "book",
       "language": "english",
       "publisher": "Routledge",
@@ -69,10 +68,10 @@
         "De"
       ],
       "year": 2017,
-      "title": "Api Monetization",
+      "title": "API Monetization",
       "source_type": "book",
       "language": "english",
-      "publisher": "Apress",
+      "publisher": "Springer",
       "doi": "10.1007/978-1-4842-1305-6_8",
       "url": "https://doi.org/10.1007/978-1-4842-1305-6_8"
     },
@@ -82,7 +81,7 @@
         "Korinek"
       ],
       "year": 2025,
-      "title": "Ai Agents For Economic Research",
+      "title": "AI Agents for Economic Research",
       "source_type": "report",
       "language": "english",
       "publisher": "National Bureau of Economic Research",
@@ -97,11 +96,10 @@
         "Hildt"
       ],
       "year": 2023,
-      "title": "Ethics And Transparency Issues In Digital Platforms: An Overview",
+      "title": "Ethics and Transparency Issues in Digital Platforms: An Overview",
       "source_type": "journal",
       "language": "english",
       "journal": "AI",
-      "publisher": "MDPI",
       "doi": "10.3390/ai4040042",
       "url": "https://doi.org/10.3390/ai4040042"
     },
@@ -111,7 +109,7 @@
         "Satapathi"
       ],
       "year": 2025,
-      "title": "Pricing Tiers Of Azure Ai Language Service",
+      "title": "Pricing tiers of Azure AI Language Service",
       "source_type": "book",
       "language": "english",
       "publisher": "Springer",
@@ -121,14 +119,13 @@
     {
       "id": "cite_009",
       "authors": [
-        "Shiva Kumar Bhuram"
+        "Bhuram"
       ],
       "year": 2025,
-      "title": "Edge-Cloud Ai For Dynamic Pricing In Automotive Aftermarkets: A Federated Reinforcement Learning Approach For Multi-Tier Ecosystems",
-      "source_type": "journal",
+      "title": "Edge-Cloud AI for Dynamic Pricing in Automotive Aftermarkets: A Federated Reinforcement Learning Approach for Multi-Tier Ecosystems",
+      "source_type": "report",
       "language": "english",
-      "journal": "World Journal Of Advanced Engineering Technology And Sciences",
-      "publisher": "World Journal of Advanced Engineering Technology and Sciences",
+      "publisher": "World Journal of Advanced Engineering and Technology Sciences",
       "doi": "10.30574/wjaets.2025.15.3.0909",
       "url": "https://doi.org/10.30574/wjaets.2025.15.3.0909"
     },
@@ -153,10 +150,10 @@
         "Rudnytskyi"
       ],
       "year": 2022,
-      "title": "Openai: R Wrapper For Openai Api",
+      "title": "openai: R Wrapper for OpenAI API",
       "source_type": "report",
       "language": "english",
-      "publisher": "CRAN",
+      "publisher": "The Comprehensive R Archive Network (CRAN)",
       "doi": "10.32614/cran.package.openai",
       "url": "https://doi.org/10.32614/cran.package.openai"
     },
@@ -167,7 +164,7 @@
         "Chehab"
       ],
       "year": 2024,
-      "title": "Large Multimodal Agents For Accurate Phishing Detection With Enhanced Token Optimization And Cost Reduction",
+      "title": "Large Multimodal Agents for Accurate Phishing Detection with Enhanced Token Optimization and Cost Reduction",
       "source_type": "conference",
       "language": "english",
       "publisher": "IEEE",
@@ -180,7 +177,7 @@
         "Seufert"
       ],
       "year": 2014,
-      "title": "Analytics And Freemium Products",
+      "title": "Analytics and Freemium Products",
       "source_type": "book",
       "language": "english",
       "publisher": "Elsevier",
@@ -195,7 +192,7 @@
         "Loch"
       ],
       "year": 2019,
-      "title": "Product Selling Versus Pay-Per-Use Services: A Strategic Analysis Of Competing Business Models",
+      "title": "Product Selling Versus Pay-Per-Use Services: A Strategic Analysis of Competing Business Models",
       "source_type": "report",
       "language": "english",
       "publisher": "SSRN",
@@ -208,11 +205,10 @@
         "Ayata"
       ],
       "year": 2020,
-      "title": "Old Abuses In New Markets? Dealing With Excessive Pricing By A Two-Sided Platform",
+      "title": "Old abuses in new markets? Dealing with excessive pricing by a two-sided platform",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal Of Antitrust Enforcement",
-      "publisher": "Oxford University Press",
+      "journal": "Journal of Antitrust Enforcement",
       "doi": "10.1093/jaenfo/jnaa008",
       "url": "https://doi.org/10.1093/jaenfo/jnaa008"
     },
@@ -222,10 +218,10 @@
         "Lorente"
       ],
       "year": 2025,
-      "title": "Value Creation And Value Capture In Ai: A Triple Helix Model",
+      "title": "Value Creation and Value Capture in AI: A Triple Helix Model",
       "source_type": "conference",
       "language": "english",
-      "publisher": "Association For The Advancement Of Artificial Intelligence",
+      "publisher": "AAAI",
       "doi": "10.1609/aies.v8i2.36662",
       "url": "https://doi.org/10.1609/aies.v8i2.36662"
     },
@@ -236,7 +232,7 @@
         "Zhou"
       ],
       "year": 2025,
-      "title": "Understanding The Impacts Of Human-Like Competencies On Users' Willingness To Pay For Ai Companion Services: A Mixed-Method Approach",
+      "title": "Understanding the Impacts of Human-Like Competencies on Users' Willingness to Pay for Ai Companion Services: A Mixed-Method Approach",
       "source_type": "report",
       "language": "english",
       "publisher": "SSRN",
@@ -251,10 +247,9 @@
         "Takalkar"
       ],
       "year": 2025,
-      "title": "Analysis Of Psychological Factors Affecting Customer Lifetime Value On Saas Platforms",
-      "source_type": "journal",
+      "title": "Analysis of Psychological Factors Affecting Customer Lifetime Value on SaaS Platforms",
+      "source_type": "report",
       "language": "english",
-      "journal": "International Journal Of Finance And Management Research",
       "publisher": "International Journal of Finance and Management Research",
       "doi": "10.36948/ijfmr.2025.v07i04.52064",
       "url": "https://doi.org/10.36948/ijfmr.2025.v07i04.52064"
@@ -266,7 +261,7 @@
         "Navarro"
       ],
       "year": 2024,
-      "title": "Technology Adoption And Pricing: Evidence From Us Airlines",
+      "title": "Technology Adoption and Pricing: Evidence from US Airlines",
       "source_type": "report",
       "language": "english",
       "publisher": "SSRN",
@@ -280,10 +275,10 @@
         "Qiu"
       ],
       "year": 2021,
-      "title": "Ai Technology And Online Purchase Intention：Multi-Group Analysis Based On Perceived Value",
+      "title": "AI Technology and Online Purchase Intention：Multi-Group Analysis Based On Perceived Value",
       "source_type": "report",
       "language": "english",
-      "publisher": "MDPI",
+      "publisher": "Preprints.org",
       "doi": "10.20944/preprints202103.0465.v1",
       "url": "https://doi.org/10.20944/preprints202103.0465.v1"
     },
@@ -293,10 +288,10 @@
         "Cody"
       ],
       "year": 2000,
-      "title": "Competitive Infrastructure: As An Enabler Of Market-Based Pricing",
+      "title": "Competitive Infrastructure: As An Enabler of Market-Based Pricing",
       "source_type": "book",
       "language": "english",
-      "publisher": "Springer US",
+      "publisher": "Springer",
       "doi": "10.1007/978-1-4615-4529-3_4",
       "url": "https://doi.org/10.1007/978-1-4615-4529-3_4"
     },
@@ -306,11 +301,10 @@
         "Livingstone"
       ],
       "year": 2013,
-      "title": "Cloud Price Wars Could Drive ‘Volatility As A Service’",
+      "title": "Cloud price wars could drive ‘volatility as a service’",
       "source_type": "website",
       "language": "english",
-      "journal": "Computer Weekly",
-      "publisher": "Computer Weekly",
+      "publisher": "Financial Times",
       "doi": "10.64628/aa.fwtdh7kfg",
       "url": "https://doi.org/10.64628/aa.fwtdh7kfg"
     },
@@ -321,11 +315,10 @@
         "Zhang"
       ],
       "year": 2017,
-      "title": "Monopolistic Nonlinear Pricing With Consumer Entry",
+      "title": "Monopolistic nonlinear pricing with consumer entry",
       "source_type": "journal",
       "language": "english",
       "journal": "Theoretical Economics",
-      "publisher": "The Econometric Society",
       "doi": "10.3982/te1944",
       "url": "https://doi.org/10.3982/te1944"
     },
@@ -336,7 +329,7 @@
         "Verhoef"
       ],
       "year": 2002,
-      "title": "Airport Pricing: Network Congestion Pricing With Market Power And Endogenous Network Structures",
+      "title": "Airport Pricing: Network Congestion Pricing with Market Power and Endogenous Network Structures",
       "source_type": "report",
       "language": "english",
       "publisher": "SSRN",
@@ -349,11 +342,10 @@
         "Sonderegger"
       ],
       "year": 2011,
-      "title": "Market Segmentation With Nonlinear Pricing",
+      "title": "MARKET SEGMENTATION WITH NONLINEAR PRICING*",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal Of The European Economic Association",
-      "publisher": "Wiley",
+      "journal": "The Economic Journal",
       "doi": "10.1111/j.1467-6451.2011.00445.x",
       "url": "https://doi.org/10.1111/j.1467-6451.2011.00445.x"
     },
@@ -364,7 +356,7 @@
         "Ren"
       ],
       "year": 2025,
-      "title": "Enhancing Multi-Tenant Database Resource Allocation With Active Learning-Driven Multi-Objective Optimization",
+      "title": "Enhancing Multi-Tenant Database Resource Allocation with Active Learning-Driven Multi-Objective Optimization",
       "source_type": "conference",
       "language": "english",
       "publisher": "IEEE",
@@ -375,11 +367,11 @@
       "id": "cite_027",
       "authors": [
         "Rodeghero",
-        "Mcmillan",
+        "McMillan",
         "Shirey"
       ],
       "year": 2017,
-      "title": "Api Usage In Descriptions Of Source Code Functionality",
+      "title": "API Usage in Descriptions of Source Code Functionality",
       "source_type": "conference",
       "language": "english",
       "publisher": "IEEE",
@@ -392,7 +384,7 @@
         "Ganguly"
       ],
       "year": 2025,
-      "title": "Ai Governance And Responsible Ai",
+      "title": "AI Governance and Responsible AI",
       "source_type": "book",
       "language": "english",
       "publisher": "Springer",
@@ -415,14 +407,13 @@
     {
       "id": "cite_030",
       "authors": [
-        "Unknown Author"
+        "Anonymous"
       ],
       "year": 2025,
-      "title": "Ai-Driven Strategies For Cloud Cost Optimization",
+      "title": "AI-Driven Strategies for Cloud Cost Optimization",
       "source_type": "journal",
       "language": "english",
-      "journal": "International Journal Of Science And Advanced Technology",
-      "publisher": "International Journal of Science and Advanced Technology",
+      "journal": "International Journal of Science and Advanced Technology",
       "doi": "10.71097/ijsat.v16.i2.4714",
       "url": "https://doi.org/10.71097/ijsat.v16.i2.4714"
     },
@@ -434,11 +425,10 @@
         "Todorovic"
       ],
       "year": 2010,
-      "title": "Pricing Of High-Dimensional American Options By Neural Networks",
+      "title": "PRICING OF HIGH-DIMENSIONAL AMERICAN OPTIONS BY NEURAL NETWORKS",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal Of Computational Finance",
-      "publisher": "Wiley",
+      "journal": "The Annals of Applied Probability",
       "doi": "10.1111/j.1467-9965.2010.00404.x",
       "url": "https://doi.org/10.1111/j.1467-9965.2010.00404.x"
     },
@@ -449,7 +439,7 @@
         "Wangpratham"
       ],
       "year": 2024,
-      "title": "Comparative Analysis Of Financial Sentiment Analysis Models For The Thai Stock Market: Traditional Nlp Vs. Gpt Vs. Gemini",
+      "title": "Comparative Analysis of Financial Sentiment Analysis Models for the Thai Stock Market: Traditional NLP vs. GPT vs. Gemini",
       "source_type": "report",
       "language": "english",
       "publisher": "SSRN",
@@ -462,13 +452,12 @@
         "Subham"
       ],
       "year": 2025,
-      "title": "Ai-Powered Forecasting Models For Sales And Revenue Operations",
+      "title": "AI-Powered Forecasting Models for Sales and Revenue Operations",
       "source_type": "journal",
       "language": "english",
-      "journal": "International Journal Of Iot And Web Of Things",
-      "publisher": "International Journal of IoT and Web of Things",
+      "journal": "International Journal of Internet of Things and Its Applications",
       "doi": "10.55640/ijiot-05-01-04",
-      "url": "https://doi.org/10.55640/ijiot-05-01-04"
+      "url": "https://doi.55640/ijiot-05-01-04"
     },
     {
       "id": "cite_034",
@@ -476,11 +465,10 @@
         "Oleksii"
       ],
       "year": 2025,
-      "title": "Algorithmizing B2b Sales: Can Ai Create A Sales Framework That Guarantees Predictable Results?",
+      "title": "Algorithmizing B2B Sales: Can AI Create a Sales Framework That Guarantees Predictable Results?",
       "source_type": "journal",
       "language": "english",
-      "journal": "The American Journal Of Management And Economics Innovation",
-      "publisher": "The American Journal of Management and Economics Innovation",
+      "journal": "The American Journal of Management and Economics of Industry",
       "doi": "10.37547/tajmei/volume07issue03-02",
       "url": "https://doi.org/10.37547/tajmei/volume07issue03-02"
     },
@@ -504,11 +492,10 @@
         "Odlyzko"
       ],
       "year": 1999,
-      "title": "Competitive Pricing Of Information Goods: Subscription Pricing Versus Pay-Per-Use",
+      "title": "Competitive pricing of information goods: Subscription pricing versus pay-per-use",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal Of Economic Theory",
-      "publisher": "Springer",
+      "journal": "Journal of Economics",
       "doi": "10.1007/s001990050264",
       "url": "https://doi.org/10.1007/s001990050264"
     },
@@ -519,7 +506,7 @@
         "Pouyet"
       ],
       "year": 2004,
-      "title": "Competition, Incomplete Discrimination And Versioning",
+      "title": "Competition, Incomplete Discrimination and Versioning",
       "source_type": "report",
       "language": "english",
       "publisher": "SSRN",
@@ -532,10 +519,10 @@
         "Liu"
       ],
       "year": 2024,
-      "title": "Ai Pricing: Adoption Of Artificial Intelligences And Collusive Price",
+      "title": "AI Pricing: Adoption of Artificial Intelligences and Collusive Price",
       "source_type": "report",
       "language": "english",
-      "publisher": "SSRN",
+      "publisher": "Research Square",
       "doi": "10.62051/ed63gf48",
       "url": "https://doi.org/10.62051/ed63gf48"
     },
@@ -545,7 +532,7 @@
         "Tucker"
       ],
       "year": 2019,
-      "title": "Digital Data, Platforms And The Usual [Antitrust] Suspects: Network Effects, Switching Costs, Essential Facility",
+      "title": "Digital Data, Platforms and the Usual [Antitrust] Suspects: Network Effects, Switching Costs, Essential Facility",
       "source_type": "report",
       "language": "english",
       "publisher": "SSRN",
@@ -559,7 +546,7 @@
         "Bizer"
       ],
       "year": 2013,
-      "title": "Lock-In Effects In Competitive Bidding Schemes For Payments For Ecosystem Services",
+      "title": "Lock-In Effects in Competitive Bidding Schemes for Payments for Ecosystem Services",
       "source_type": "report",
       "language": "english",
       "publisher": "SSRN",
@@ -577,11 +564,10 @@
         "Islam"
       ],
       "year": 2023,
-      "title": "Predicting California Bearing Ratio Of Lateritic Soils Using Hybrid Machine Learning Technique",
+      "title": "Predicting California Bearing Ratio of Lateritic Soils Using Hybrid Machine Learning Technique",
       "source_type": "journal",
       "language": "english",
       "journal": "Buildings",
-      "publisher": "MDPI",
       "doi": "10.3390/buildings13010255",
       "url": "https://doi.org/10.3390/buildings13010255"
     },
@@ -591,11 +577,10 @@
         "Chaerul"
       ],
       "year": 2025,
-      "title": "Analyzing User Expectation And Experience To Formulate Data-Driven Strategy For Elevating Paid Subscription Engagement In Ai Educational Tools",
+      "title": "Analyzing User Expectation and Experience to Formulate Data-Driven Strategy for Elevating Paid Subscription Engagement in Ai Educational Tools",
       "source_type": "journal",
       "language": "english",
-      "journal": "Enrichment",
-      "publisher": "Enrichment",
+      "journal": "Enrichment: Journal of Management",
       "doi": "10.55324/enrichment.v3i4.452",
       "url": "https://doi.org/10.55324/enrichment.v3i4.452"
     },
@@ -605,11 +590,10 @@
         "Abbas"
       ],
       "year": 2025,
-      "title": "Optimizing Surplus Inventory Management In Electrical Distribution Through Api-Driven Marketplace Integration",
+      "title": "Optimizing Surplus Inventory Management in Electrical Distribution Through API-Driven Marketplace Integration",
       "source_type": "journal",
       "language": "english",
-      "journal": "Emsj",
-      "publisher": "EMSJ",
+      "journal": "Engineering Management Science Journal",
       "doi": "10.59573/emsj.9(4).2025.29",
       "url": "https://doi.org/10.59573/emsj.9(4).2025.29"
     },
@@ -619,11 +603,10 @@
         "Chiruvelli"
       ],
       "year": 2025,
-      "title": "Generative Ai For Personalized Product Bundling In Consumer Banking: A Revenue Optimization Framework",
+      "title": "Generative AI For Personalized Product Bundling In Consumer Banking: A Revenue Optimization Framework",
       "source_type": "journal",
       "language": "english",
-      "journal": "Jicrcr",
-      "publisher": "JICRCR",
+      "journal": "Journal of Innovation, Creativity and Change Research",
       "doi": "10.63278/jicrcr.vi.3302",
       "url": "https://doi.org/10.63278/jicrcr.vi.3302"
     },
@@ -634,11 +617,10 @@
         "Bahn"
       ],
       "year": 2020,
-      "title": "A Cost Estimation Model For Cloud Services And Applying To Pc Laboratory Platforms",
+      "title": "A Cost Estimation Model for Cloud Services and Applying to PC Laboratory Platforms",
       "source_type": "journal",
       "language": "english",
       "journal": "Processes",
-      "publisher": "MDPI",
       "doi": "10.3390/pr8010076",
       "url": "https://doi.org/10.3390/pr8010076"
     },
@@ -653,11 +635,10 @@
         "Wang"
       ],
       "year": 2024,
-      "title": "Multiparticipant Double Auction For Resource Allocation And Pricing In Edge Computing",
+      "title": "Multiparticipant Double Auction for Resource Allocation and Pricing in Edge Computing",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal Of Internet Of Things",
-      "publisher": "IEEE",
+      "journal": "IEEE Internet of Things Journal",
       "doi": "10.1109/JIOT.2023.3339655",
       "url": "https://doi.org/10.1109/JIOT.2023.3339655"
     },
@@ -670,11 +651,10 @@
         "Chandran"
       ],
       "year": 2024,
-      "title": "The Influence Of Adopting Artificial Intelligence (Ai) On Malaysia'S Economic Environment.",
+      "title": "THE INFLUENCE OF ADOPTING ARTIFICIAL INTELLIGENCE (AI) ON MALAYSIA'S ECONOMIC ENVIRONMENT.",
       "source_type": "journal",
       "language": "english",
-      "journal": "Malaysian Journal Of Business And Economics",
-      "publisher": "Malaysian Journal of Business and Economics",
+      "journal": "Malaysian Journal of Business and Economics",
       "doi": "10.51200/mjbe.v11i1.5294",
       "url": "https://doi.org/10.51200/mjbe.v11i1.5294"
     },
@@ -686,7 +666,7 @@
         "Sun"
       ],
       "year": 2018,
-      "title": "Harmonic And Power Loss Minimization In Power Systems Incorporating Renewable Energy Sources And Locational Marginal Pricing",
+      "title": "Harmonic and power loss minimization in power systems incorporating renewable energy sources and locational marginal pricing",
       "source_type": "conference",
       "language": "english",
       "publisher": "AIP Publishing",
@@ -701,11 +681,10 @@
         "Vimal"
       ],
       "year": 2022,
-      "title": "A Data-Driven Method To Dynamic Pricing: Unravelling Inventory And Competitor Contests With Ai In E-Commerce",
+      "title": "A DATA-DRIVEN METHOD TO DYNAMIC PRICING: UNRAVELLING INVENTORY AND COMPETITOR CONTESTS WITH AI IN E-COMMERCE",
       "source_type": "journal",
       "language": "english",
-      "journal": "Shodhkosh: Journal Of Visual And Performing Arts",
-      "publisher": "ShodhKosh",
+      "journal": "ShodhKosh: Journal of Historical Research",
       "doi": "10.29121/shodhkosh.v3.i2.2022.3392",
       "url": "https://doi.org/10.29121/shodhkosh.v3.i2.2022.3392"
     },
@@ -719,10 +698,10 @@
         "Wang"
       ],
       "year": 2015,
-      "title": "The Re-Engineering Of Iron And Steel Enterprise Procurement Processes Based On The Abc Method",
+      "title": "The Re-Engineering of Iron and Steel Enterprise Procurement Processes Based on the ABC Method",
       "source_type": "conference",
       "language": "english",
-      "publisher": "ASCE",
+      "publisher": "ASCE Library",
       "doi": "10.1061/9780784479384.115",
       "url": "https://doi.org/10.1061/9780784479384.115"
     },
@@ -732,7 +711,7 @@
         "Kärrberg"
       ],
       "year": 2010,
-      "title": "A Two-Sided Market Approach To Value Chain Dynamics In Telecom Services: A Study Lens For Mobile Platform Innovation And Pricing Strategies",
+      "title": "A Two-Sided Market Approach to Value Chain Dynamics in Telecom Services: A Study Lens for Mobile Platform Innovation and Pricing Strategies",
       "source_type": "conference",
       "language": "english",
       "publisher": "IEEE",
@@ -745,11 +724,10 @@
         "Lo"
       ],
       "year": 2018,
-      "title": "Marketerâ€™S Pricing Strategy Vs. Competition Law",
+      "title": "MARKETERâ€™S PRICING STRATEGY VS. COMPETITION LAW",
       "source_type": "journal",
       "language": "english",
-      "journal": "Legal Journal Of Management And Science",
-      "publisher": "Malaysian Journal of Business and Economics",
+      "journal": "Legal Journal of Malaysian Studies",
       "doi": "10.51200/ljms.v12i.1353",
       "url": "https://doi.org/10.51200/ljms.v12i.1353"
     },
@@ -761,23 +739,22 @@
         "Esemokhai"
       ],
       "year": 2025,
-      "title": "Pricing Transparency And Innovative Pricing Models: Driving Customer Trust And Retention In Smes",
+      "title": "Pricing transparency and innovative pricing models: Driving customer trust and retention in SMEs",
       "source_type": "journal",
       "language": "english",
-      "journal": "World Journal Of Advanced Research And Reviews",
-      "publisher": "World Journal of Advanced Research and Reviews",
+      "journal": "World Journal of Advanced Research and Reviews",
       "doi": "10.30574/wjarr.2025.27.3.2924",
       "url": "https://doi.org/10.30574/wjarr.2025.27.3.2924"
     },
     {
       "id": "cite_054",
       "authors": [
-        "Erik Brynjolfsson",
-        "Wang Jin",
-        "Gabriel Unger"
+        "Brynjolfsson",
+        "Jin",
+        "Unger"
       ],
       "year": 2023,
-      "title": "The Price Elasticity Of Demand For Ai Software: Evidence From The Cloud",
+      "title": "The Price Elasticity of Demand for AI Software: Evidence from the Cloud",
       "source_type": "report",
       "language": "english",
       "publisher": "National Bureau of Economic Research",
@@ -789,6 +766,6 @@
     "total_citations": 54,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-13T16:45:55.656609"
+    "extracted_date": "2025-11-13T22:17:16.311013"
   }
 }

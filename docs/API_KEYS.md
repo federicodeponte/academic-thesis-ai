@@ -87,6 +87,26 @@ python examples/quick_test.py
 
 You should see: `✅ API key valid`
 
+### Google Search Grounding (NEW)
+
+Your Google API key also enables **Google Search grounding** for citation discovery:
+
+- 🔍 **Real-time source discovery** - Finds web sources with Google Search integration
+- ✅ **URL validation** - Automatically validates and unwraps URLs
+- 🌐 **Web source support** - Complements academic databases with general web sources
+
+**How it works:**
+1. Academic databases (Crossref, Semantic Scholar) are tried first
+2. If no academic paper found, Gemini with Google Search grounding searches the web
+3. URLs are validated (HTTP 200 check) and redirects unwrapped
+4. Only verified, accessible sources are added to citations
+
+**Requirements:**
+- `google-generativeai >= 0.8.0` (automatically installed)
+- Same Google API key as above
+
+No additional setup needed - grounding is enabled automatically!
+
 ---
 
 ## Option 2: Claude (Anthropic)

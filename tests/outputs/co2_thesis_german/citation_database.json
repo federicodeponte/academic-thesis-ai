@@ -9,7 +9,6 @@
       "title": "Implementation issue 4: Lawsuits following from emissions trading",
       "source_type": "book",
       "language": "german",
-      "publisher": "Edward Elgar Publishing",
       "doi": "10.4337/9781781952221.00013"
     },
     {
@@ -36,7 +35,7 @@
       "title": "Exploiting Synergy of Carbon Pricing and other Policy Instruments for Deep Decarbonization",
       "source_type": "report",
       "language": "german",
-      "publisher": "OSF Preprints",
+      "publisher": "Open Science Framework",
       "doi": "10.31224/osf.io/vbq6e"
     },
     {
@@ -62,7 +61,7 @@
       "title": "The regression of atmospheric concentration on carbon dioxide emissions",
       "source_type": "report",
       "language": "german",
-      "publisher": "ESSOAr",
+      "publisher": "EarthArXiv",
       "doi": "10.1002/essoar.10510796.1"
     },
     {
@@ -87,7 +86,7 @@
       "title": "Emission Limitation and Reduction Commitments (Article 3)",
       "source_type": "book",
       "language": "german",
-      "publisher": "Springer Berlin Heidelberg",
+      "publisher": "Springer",
       "doi": "10.1007/978-3-662-03925-0_11"
     },
     {
@@ -99,7 +98,7 @@
       "title": "Paris Agreement and climate change in India",
       "source_type": "book",
       "language": "german",
-      "publisher": "Routledge",
+      "publisher": "Taylor & Francis",
       "doi": "10.4324/9781315212470-14"
     },
     {
@@ -125,7 +124,7 @@
       "title": "Joint Implementation Projects between the Netherlands and Poland",
       "source_type": "book",
       "language": "german",
-      "publisher": "Springer Netherlands",
+      "publisher": "Springer",
       "doi": "10.1007/978-94-015-8370-1_4"
     },
     {
@@ -203,7 +202,7 @@
       "title": "Pigouvian Taxation in Tourism",
       "source_type": "journal",
       "language": "german",
-      "journal": "Environmental & Resource Economics",
+      "journal": "Environmental and Resource Economics",
       "doi": "10.1023/b:eare.0000003544.77701.01"
     },
     {
@@ -241,7 +240,7 @@
       "title": "Ten reasons why carbon markets will not bring about radical emissions reduction",
       "source_type": "journal",
       "language": "german",
-      "journal": "Carbon Management",
+      "journal": "Climate Policy",
       "doi": "10.1080/17583004.2014.990679"
     },
     {
@@ -253,7 +252,7 @@
       "title": "Global Demographic Change, Carbon Emissions, the Optimal Carbon Price and Carbon Abatement",
       "source_type": "journal",
       "language": "german",
-      "journal": "B.E. Journal of Economic Analysis & Policy",
+      "journal": "The B.E. Journal of Economic Analysis & Policy",
       "doi": "10.2202/1524-5861.1466"
     },
     {
@@ -264,9 +263,9 @@
       ],
       "year": 2013,
       "title": "Building Carbon Emissions Trading System for China under the Experience of EU Emissions Trading System",
-      "source_type": "journal",
+      "source_type": "conference",
       "language": "german",
-      "journal": "Advanced Materials Research",
+      "publisher": "Trans Tech Publications",
       "doi": "10.4028/www.scientific.net/amm.411-414.2505"
     },
     {
@@ -290,7 +289,7 @@
       "title": "Aotearoa/New Zealand and the Emissions Trading Scheme",
       "source_type": "book",
       "language": "german",
-      "publisher": "Springer International Publishing",
+      "publisher": "Springer",
       "doi": "10.1007/978-3-319-96439-3_5"
     },
     {
@@ -327,7 +326,7 @@
       "title": "The eu Emissions Trading System emissions trading system (ets) Leading to Carbon Leakage Effects",
       "source_type": "book",
       "language": "german",
-      "publisher": "Brill Nijhoff",
+      "publisher": "Brill",
       "doi": "10.1163/9789004391055_003"
     },
     {
@@ -378,7 +377,7 @@
       "title": "Accounting Standards and Guidance for Carbon-Free Economy",
       "source_type": "book",
       "language": "german",
-      "publisher": "Routledge",
+      "publisher": "Taylor & Francis",
       "doi": "10.4324/9781003522324-8"
     },
     {
@@ -424,7 +423,7 @@
       "title": "Assessing the role of carbon pricing in global climate change mitigation strategies",
       "source_type": "journal",
       "language": "german",
-      "journal": "Multidisciplinary Scientific Annals of the Royal Society for Science and Research",
+      "journal": "Modern Science and Applied Research Review",
       "doi": "10.30574/msarr.2024.10.2.0040"
     },
     {
@@ -443,119 +442,111 @@
     {
       "id": "cite_035",
       "authors": [
-        "European Union"
+        "Tan",
+        "Zhang",
+        "Jin",
+        "Guo"
       ],
-      "year": 2003,
-      "title": "Richtlinie 2003/87/EG über ein System für den Handel mit Treibhausgasemissionszertifikaten in der Gemeinschaft",
-      "source_type": "report",
+      "year": 2021,
+      "title": "A review of carbon emission reduction targets and policy instruments of the EU, China and the US",
+      "source_type": "journal",
       "language": "german",
-      "publisher": "Official Journal of the European Union"
+      "journal": "Journal of Cleaner Production",
+      "doi": "10.1016/j.jclepro.2021.127882",
+      "url": "https://doi.org/10.1016/j.jclepro.2021.127882"
     },
     {
       "id": "cite_036",
       "authors": [
-        "IPCC"
+        "Ellerman",
+        "Buchner"
       ],
-      "year": 2021,
-      "title": "Assessment Report",
-      "source_type": "report",
+      "year": 2007,
+      "title": "Price trends of EU ETS carbon allowances",
+      "source_type": "journal",
       "language": "german",
-      "publisher": "IPCC"
+      "journal": "Energy Policy",
+      "doi": "10.1016/j.enpol.2006.05.010",
+      "url": "https://doi.org/10.1016/j.enpol.2006.05.010"
     },
     {
       "id": "cite_037",
       "authors": [
-        "ISO"
+        "Olsen",
+        "Fenhann"
       ],
-      "year": 2006,
-      "title": "Environmental management – Life cycle assessment – Principles and framework (ISO 14040)",
-      "source_type": "report",
+      "year": 2008,
+      "title": "The Clean Development Mechanism: An assessment of its environmental and sustainable development benefits",
+      "source_type": "journal",
       "language": "german",
-      "publisher": "International Organization for Standardization"
+      "journal": "Energy Policy",
+      "doi": "10.1016/j.enpol.2007.09.003",
+      "url": "https://doi.org/10.1016/j.enpol.2007.09.003"
     },
     {
       "id": "cite_038",
       "authors": [
-        "United Nations Framework Convention on Climate Change"
+        "Calel",
+        "Dechezleprêtre"
       ],
-      "year": 1997,
-      "title": "Kyoto Protocol to the United Nations Framework Convention on Climate Change",
-      "source_type": "report",
+      "year": 2016,
+      "title": "EU Emission Trading Scheme and carbon leakage: A systematic literature review",
+      "source_type": "journal",
       "language": "german",
-      "publisher": "United Nations"
+      "journal": "Energy Policy",
+      "doi": "10.1016/j.enpol.2016.03.003",
+      "url": "https://doi.org/10.1016/j.enpol.2016.03.003"
     },
     {
       "id": "cite_039",
       "authors": [
-        "United Nations Framework Convention on Climate Change"
+        "Ellerman",
+        "Convery",
+        "de Zegher"
       ],
-      "year": 2015,
-      "title": "Paris Agreement",
-      "source_type": "report",
+      "year": 2016,
+      "title": "The EU Emissions Trading System (EU ETS): A review of its design, effectiveness, and future development",
+      "source_type": "journal",
       "language": "german",
-      "publisher": "United Nations"
+      "journal": "Energy Policy",
+      "doi": "10.1016/j.enpol.2016.09.006",
+      "url": "https://doi.org/10.1016/j.enpol.2016.09.006"
     },
     {
       "id": "cite_040",
       "authors": [
-        "European Union"
+        "Zhang",
+        "Wang",
+        "Li"
       ],
-      "year": 2023,
-      "title": "Verordnung (EU) 2023/956 zur Schaffung eines CO2-Grenzausgleichsmechanismus",
+      "year": 2024,
+      "title": "The Role of Carbon Price in Promoting Energy Transition and Decarbonization in China",
       "source_type": "report",
       "language": "german",
-      "publisher": "Official Journal of the European Union"
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.5029054",
+      "url": "https://doi.org/10.2139/ssrn.5029054"
     },
     {
       "id": "cite_041",
       "authors": [
-        "Pigou",
-        "A.C."
-      ],
-      "year": 1920,
-      "title": "The Economics of Welfare",
-      "source_type": "book",
-      "language": "german",
-      "publisher": "Macmillan"
-    },
-    {
-      "id": "cite_042",
-      "authors": [
-        "IPCC"
-      ],
-      "year": 2006,
-      "title": "2006 IPCC Guidelines for National Greenhouse Gas Inventories",
-      "source_type": "report",
-      "language": "german",
-      "publisher": "IPCC"
-    },
-    {
-      "id": "cite_043",
-      "authors": [
-        "International Accounting Standards Board"
+        "Dong",
+        "Li",
+        "Yu"
       ],
       "year": 2024,
-      "title": "International Financial Reporting Standards",
+      "title": "The effectiveness of carbon pricing in achieving emission reductions: A systematic review",
       "source_type": "report",
       "language": "german",
-      "publisher": "International Accounting Standards Board"
-    },
-    {
-      "id": "cite_044",
-      "authors": [
-        "Task Force on Climate-related Financial Disclosures"
-      ],
-      "year": 2017,
-      "title": "Recommendations of the Task Force on Climate-related Financial Disclosures",
-      "source_type": "report",
-      "language": "german",
-      "publisher": "Task Force on Climate-related Financial Disclosures"
+      "publisher": "SSRN",
+      "doi": "10.2139/ssrn.4704050",
+      "url": "https://doi.org/10.2139/ssrn.4704050"
     }
   ],
   "metadata": {
-    "total_citations": 44,
+    "total_citations": 41,
     "citation_style": "APA 7th",
     "thesis_language": "german",
-    "extracted_date": "2025-11-13T16:47:10.095425"
+    "extracted_date": "2025-11-13T22:21:07.859135"
   }
 }

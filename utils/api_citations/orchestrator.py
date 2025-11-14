@@ -1,15 +1,17 @@
 #!/usr/bin/env python3
 """
 ABOUTME: Citation research orchestrator with intelligent fallback chain
-ABOUTME: Coordinates Crossref → Semantic Scholar → Gemini LLM for 95%+ success rate
+ABOUTME: Coordinates Crossref → Semantic Scholar → Gemini Grounded → Gemini LLM for 95%+ success rate
 """
 
 import logging
+import json
 from typing import Optional, Dict, Any, Tuple
 from pathlib import Path
 
 from .crossref import CrossrefClient
 from .semantic_scholar import SemanticScholarClient
+from .gemini_grounded import GeminiGroundedClient
 
 # Import existing Citation dataclass
 import sys
@@ -25,18 +27,23 @@ class CitationResearcher:
     Orchestrates citation research across multiple sources with intelligent fallback.
 
     Fallback chain:
-    1. Crossref API (best metadata, DOI-focused)
-    2. Semantic Scholar API (better search, 200M+ papers)
-    3. Gemini LLM (last resort, current behavior)
+    1. Crossref API (best metadata, DOI-focused, academic papers)
+    2. Semantic Scholar API (better search, 200M+ papers, academic focus)
+    3. Gemini Grounded (Google Search grounding, web sources, URL validation)
+    4. Gemini LLM (last resort, unverified)
 
     Provides 95%+ success rate vs 40% LLM-only approach.
     """
+
+    # Persistent cache file path
+    CACHE_FILE = Path(".citation_cache_orchestrator.json")
 
     def __init__(
         self,
         gemini_model: Optional[Any] = None,
         enable_crossref: bool = True,
         enable_semantic_scholar: bool = True,
+        enable_gemini_grounded: bool = True,
         enable_llm_fallback: bool = True,
         verbose: bool = True,
     ):
@@ -47,12 +54,14 @@ class CitationResearcher:
             gemini_model: Gemini model for LLM fallback (optional)
             enable_crossref: Whether to use Crossref API
             enable_semantic_scholar: Whether to use Semantic Scholar API
-            enable_llm_fallback: Whether to fall back to LLM if APIs fail
+            enable_gemini_grounded: Whether to use Gemini with Google Search grounding
+            enable_llm_fallback: Whether to fall back to LLM if all else fails
             verbose: Whether to print progress
         """
         self.gemini_model = gemini_model
         self.enable_crossref = enable_crossref
         self.enable_semantic_scholar = enable_semantic_scholar
+        self.enable_gemini_grounded = enable_gemini_grounded
         self.enable_llm_fallback = enable_llm_fallback and gemini_model is not None
         self.verbose = verbose
 
@@ -61,9 +70,69 @@ class CitationResearcher:
             self.crossref = CrossrefClient()
         if self.enable_semantic_scholar:
             self.semantic_scholar = SemanticScholarClient()
+        if self.enable_gemini_grounded:
+            try:
+                self.gemini_grounded = GeminiGroundedClient()
+            except Exception as e:
+                logger.warning(f"Gemini Grounded client unavailable: {e}")
+                self.enable_gemini_grounded = False
 
-        # Cache for avoiding duplicate API calls
-        self.cache: Dict[str, Optional[Tuple[Dict[str, Any], str]]] = {}
+        # Load persistent cache (or initialize empty if file doesn't exist)
+        self.cache: Dict[str, Optional[Tuple[Dict[str, Any], str]]] = self._load_cache()
+
+    def _load_cache(self) -> Dict[str, Optional[Tuple[Dict[str, Any], str]]]:
+        """
+        Load citation cache from disk.
+
+        Returns:
+            Dict mapping topics to (metadata, source) tuples or None
+        """
+        if not self.CACHE_FILE.exists():
+            logger.info(f"No existing cache file found at {self.CACHE_FILE}")
+            return {}
+
+        try:
+            with open(self.CACHE_FILE, 'r', encoding='utf-8') as f:
+                cache_data = json.load(f)
+
+            logger.info(f"Loaded {len(cache_data)} cached citations from {self.CACHE_FILE}")
+
+            # Convert JSON back to cache format
+            cache = {}
+            for topic, value in cache_data.items():
+                if value is None:
+                    cache[topic] = None
+                else:
+                    # value is [metadata_dict, source_string]
+                    cache[topic] = (value[0], value[1])
+
+            return cache
+        except Exception as e:
+            logger.warning(f"Failed to load cache from {self.CACHE_FILE}: {e}")
+            return {}
+
+    def _save_cache(self) -> None:
+        """
+        Save citation cache to disk.
+
+        Persists the in-memory cache to a JSON file for reuse across runs.
+        """
+        try:
+            # Convert cache to JSON-serializable format
+            cache_data = {}
+            for topic, value in self.cache.items():
+                if value is None:
+                    cache_data[topic] = None
+                else:
+                    metadata, source = value
+                    cache_data[topic] = [metadata, source]
+
+            with open(self.CACHE_FILE, 'w', encoding='utf-8') as f:
+                json.dump(cache_data, f, indent=2, ensure_ascii=False)
+
+            logger.debug(f"Saved {len(cache_data)} citations to cache file {self.CACHE_FILE}")
+        except Exception as e:
+            logger.error(f"Failed to save cache to {self.CACHE_FILE}: {e}")
 
     def research_citation(self, topic: str) -> Optional[Citation]:
         """
@@ -134,7 +203,25 @@ class CitationResearcher:
                     print(f"✗ Error: {e}")
                 logger.error(f"Semantic Scholar error: {e}")
 
-        # 3. Try Gemini LLM if both APIs failed
+        # 3. Try Gemini Grounded if academic APIs failed
+        if not metadata and self.enable_gemini_grounded:
+            if self.verbose:
+                print(f"    → Trying Gemini Grounded (Google Search)...", end=" ", flush=True)
+            try:
+                metadata = self.gemini_grounded.search_paper(topic)
+                if metadata:
+                    source = "Gemini Grounded"
+                    if self.verbose:
+                        print(f"✓")
+                else:
+                    if self.verbose:
+                        print(f"✗")
+            except Exception as e:
+                if self.verbose:
+                    print(f"✗ Error: {e}")
+                logger.error(f"Gemini Grounded error: {e}")
+
+        # 4. Try Gemini LLM if all else failed
         if not metadata and self.enable_llm_fallback:
             if self.verbose:
                 print(f"    → Trying Gemini LLM fallback...", end=" ", flush=True)
@@ -158,6 +245,9 @@ class CitationResearcher:
             self.cache[topic] = (metadata, source)
         else:
             self.cache[topic] = None
+
+        # Persist cache to disk
+        self._save_cache()
 
         # Convert to Citation object
         if metadata:
@@ -372,6 +462,8 @@ Return a JSON object with this structure:
             self.crossref.close()
         if hasattr(self, "semantic_scholar"):
             self.semantic_scholar.close()
+        if hasattr(self, "gemini_grounded"):
+            self.gemini_grounded.close()
 
     def __enter__(self):
         """Context manager entry."""

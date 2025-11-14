@@ -1,6 +1,6 @@
 # Paper Architecture
 
-**Paper Type:** Empirische Studie (mit Fallstudien)
+**Paper Type:** Empirische Studie (mit Fallstudien, umfassend für eine Abschlussarbeit)
 **Research Question:** Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels?
 **Target Venue:** Abschlussarbeit (Masterarbeit)
 **Estimated Length:** 8,000-10,000 Wörter
@@ -9,263 +9,277 @@
 
 ## Core Argument Flow
 
-**Thesis Statement:** Obwohl CO2-Zertifikatehandel als Instrument zur Emissionsreduktion vielversprechend ist, zeigen aktuelle empirische Analysen – insbesondere nach den jüngsten Reformen des EU ETS im Rahmen des "Fit for 55"-Pakets – dass seine Wirksamkeit zur signifikanten Verlangsamung des Klimawandels von komplexen Faktoren abhängt und weitere Anpassungen erfordert.
+**Thesis Statement:** Obwohl der CO2-Zertifikatehandel (insbesondere das EU-ETS) ein zentrales Instrument zur Emissionsreduktion darstellt, ist seine nachweisliche und langfristige Wirksamkeit bei der signifikanten Verlangsamung des menschengemachten Klimawandels maßgeblich von seiner integrierten rechtlichen und ökonomischen Resilienz gegenüber externen Schocks sowie seiner Fähigkeit zur effektiven Adressierung schwer minderbarer Sektoren abhängig, was bislang unzureichend integriert untersucht wurde.
 
 **Logical Progression:**
-1.  Der Klimawandel stellt eine globale Bedrohung dar, die dringende Emissionsreduktionen erfordert (Einleitung).
-2.  CO2-Zertifikatehandel wird als ein zentrales, marktbasiertes Instrument zur Erreichung dieser Reduktionen diskutiert (Literaturübersicht).
-3.  Die bisherige Forschung liefert gemischte Ergebnisse zur Wirksamkeit und vernachlässigt oft die jüngsten, signifikanten Reformen des EU ETS seit 2019 (Forschungslücke).
-4.  Unsere empirische Analyse untersucht die Auswirkungen dieser Reformen auf Emissionen und spezifische Sektoren (Beitrag/Methoden).
-5.  Die Ergebnisse zeigen, dass X in den untersuchten Sektoren beobachtet wurde (Ergebnisse).
-6.  Dies bedeutet, dass das EU ETS unter bestimmten Bedingungen zur Emissionsreduktion beiträgt, aber auch Herausforderungen wie Y bestehen bleiben, was Z für die Klimapolitik impliziert (Diskussion).
+1.  Der Klimawandel ist ein drängendes Problem, und der CO2-Zertifikatehandel ist ein zentrales politisches Instrument zu seiner Bekämpfung (Einleitung).
+2.  Bestehende Forschungen zeigen Potenziale und Herausforderungen des Zertifikatehandels auf, lassen jedoch eine integrierte Analyse der Systemresilienz gegenüber externen Schocks vermissen (Literaturübersicht).
+3.  Um die Wirksamkeit des Zertifikatehandels bei der Verlangsamung des Klimawandels zu beurteilen, muss seine Fähigkeit zur Anpassung an externe Schocks und zur Sicherstellung rechtlicher und ökonomischer Stabilität untersucht werden (Theoretischer Rahmen).
+4.  Wir untersuchen diese Resilienz anhand spezifischer Fallstudien innerhalb des EU-ETS (Methodik).
+5.  Die Ergebnisse der Fallstudien zeigen, wie das EU-ETS auf externe Schocks reagiert hat und welche Implikationen dies für seine Emissionsminderungsziele hat (Ergebnisse).
+6.  Dies bedeutet, dass die langfristige Wirksamkeit des Zertifikatehandels zur Verlangsamung des Klimawandels stark von seiner adaptiven Kapazität abhängt und weitere Anpassungen erfordert (Diskussion).
+7.  Die Arbeit leistet einen Beitrag zum Verständnis der Bedingungen, unter denen der Zertifikatehandel seine Klimaziele erreichen kann (Schlussfolgerung).
 
 ---
 
 ## Paper Structure
 
-### 1. Titel
-**Suggested title:** Die Wirksamkeit des CO2-Zertifikatehandels nach "Fit for 55": Eine empirische Analyse der Emissionsreduktion im EU ETS
-**Alternative:** CO2-Zertifikatehandel und Klimawandel: Eine Bewertung der Auswirkungen der jüngsten EU ETS-Reformen
+### 1. Title
+**Suggested title:** CO2-Zertifikatehandel und Klimawandel: Eine Analyse der rechtlichen und ökonomischen Resilienz des EU-ETS gegenüber externen Schocks
+**Alternative:** Die Rolle des EU-Emissionshandelssystems bei der Verlangsamung des Klimawandels: Eine empirische Untersuchung der Systemrobustheit
 
 ### 2. Abstract (250-300 Wörter)
 **Structure:**
--   **Hintergrund (2 Sätze):** Der menschengemachte Klimawandel erfordert drastische Emissionsreduktionen, wobei marktbasierte Instrumente wie der CO2-Zertifikatehandel eine Schlüsselrolle spielen. Das Europäische Emissionshandelssystem (EU ETS) ist das weltweit größte und älteste System dieser Art.
--   **Lücke/Problem (1-2 Sätze):** Die empirische Evidenz zur tatsächlichen Wirksamkeit des EU ETS, insbesondere nach den weitreichenden Reformen seit 2019 und dem "Fit for 55"-Paket, ist noch begrenzt und bedarf einer aktualisierten Analyse. Es ist unklar, ob diese Reformen nachweislich zu einer signifikanten Verlangsamung des Klimawandels beitragen.
--   **Ihr Ansatz (2 Sätze):** Diese Masterarbeit führt eine empirische Analyse der Emissions- und Marktdaten des EU ETS nach 2019 durch, ergänzt durch Fallstudien in ausgewählten Sektoren, um die Auswirkungen der jüngsten Reformen zu bewerten. Sie nutzt quantitative Methoden zur Untersuchung von Trends und Korrelationen.
--   **Hauptergebnisse (2-3 Sätze):** Die Analyse zeigt, dass die verschärften Ziele und Mechanismen des EU ETS zu einer beschleunigten Emissionsreduktion in Sektor A und B geführt haben, während Sektor C noch Herausforderungen begegnet. Der Anstieg der Zertifikatspreise korreliert signifikant mit Investitionen in Dekarbonisierung.
--   **Implikationen (1 Satz):** Die Ergebnisse unterstreichen die potenzielle, aber auch die notwendige Weiterentwicklung des CO2-Zertifikatehandels als wirksames Instrument zur Erreichung der Klimaziele.
+-   **Hintergrund (2 Sätze):** Der CO2-Zertifikatehandel ist ein Schlüsselmechanismus zur Reduktion von Treibhausgasemissionen und zur Bekämpfung des Klimawandels. Das EU-ETS ist das größte und reifste System seiner Art.
+-   **Problem/Forschungslücke (1-2 Sätze):** Die direkte kausale Wirkung auf die Verlangsamung des Klimawandels ist komplex, und es fehlt eine integrierte Analyse der rechtlichen und ökonomischen Resilienz des EU-ETS gegenüber externen Schocks, die seine langfristige Wirksamkeit beeinflussen könnten.
+-   **Ihr Ansatz (2 Sätze):** Diese Arbeit untersucht mittels Fallstudien, wie das EU-ETS auf spezifische externe Schocks reagiert hat und welche Implikationen dies für seine Fähigkeit zur Emissionsminderung hat. Dabei wird ein besonderer Fokus auf die Anpassungsfähigkeit der rechtlichen und ökonomischen Rahmenbedingungen gelegt.
+-   **Hauptergebnisse (2-3 Sätze):** Die Analyse zeigt, dass das EU-ETS zwar Anpassungsmechanismen besitzt, seine Resilienz jedoch je nach Art des Schocks variiert und zukünftige Reformen für eine robustere Klimawirkung erforderlich sind. Die rechtliche Flexibilität und die Marktstabilität sind entscheidende Faktoren für die Bewältigung solcher Krisen.
+-   **Implikationen (1 Satz):** Die Ergebnisse liefern wichtige Erkenntnisse für die Weiterentwicklung des Zertifikatehandels als effektives Instrument im Kampf gegen den Klimawandel.
 
-### 3. Einleitung (800-1200 Wörter)
+### 3. Introduction (800-1200 Wörter)
 **Sections:**
 
-#### 3.1 Aufhänger & Kontext (200 Wörter)
--   **Eröffnung:** [Compelling opening sentence] Der menschengemachte Klimawandel ist die größte Herausforderung unserer Zeit, mit weitreichenden ökologischen, sozialen und ökonomischen Folgen.
--   **Warum das wichtig ist:** [Broader impact] Die Notwendigkeit einer raschen Dekarbonisierung der Wirtschaft ist unbestreitbar, um irreversible Kipppunkte zu vermeiden und eine nachhaltige Zukunft zu sichern.
--   **Aktueller Stand:** [What we know] Internationale Abkommen wie das Pariser Abkommen und regionale Politiken wie der European Green Deal zielen darauf ab, Treibhausgasemissionen drastisch zu reduzieren, wobei marktwirtschaftliche Instrumente zunehmend an Bedeutung gewinnen.
+#### 3.1 Hook & Context (200 Wörter)
+-   **Eröffnung:** [Eindringlicher erster Satz über die Dringlichkeit des Klimawandels und die Suche nach effektiven Lösungen.]
+-   **Warum dieses Thema wichtig ist:** [Breitere Auswirkungen des Klimawandels und die zentrale Rolle von Emissionsminderungspolitiken.]
+-   **Aktueller Stand:** [Kurze Einführung in den CO2-Zertifikatehandel als marktbasiertes Instrument zur Emissionsreduktion, insbesondere das EU-ETS.]
 
-#### 3.2 Problemstellung (200 Wörter)
--   **Die Lücke:** [What's missing] Während der CO2-Zertifikatehandel (Emissionshandel) als effizientes Instrument zur Emissionsreduktion theoretisch gut verstanden ist, mangelt es an aktueller empirischer Evidenz, die die *nachweisliche* Wirksamkeit der jüngsten Reformen, insbesondere des EU ETS nach 2019 und des "Fit for 55"-Pakets, auf die *signifikante Verlangsamung* des Klimawandels quantifiziert.
--   **Warum es wichtig ist:** [Stakes] Ohne eine klare empirische Bewertung können die Effektivität und die Akzeptanz dieser zentralen Klimapolitik untergraben werden, was die Erreichung der Klimaziele gefährdet.
--   **Herausforderungen:** [Why it's hard] Die Komplexität des Systems, die Vielzahl externer Faktoren (Energiepreise, Wirtschaftswachstum) und die lange Zeitspanne bis zur sichtbaren Klimawirkung erschweren eine direkte Kausalitätszuweisung.
+#### 3.2 Problem Statement (200 Wörter)
+-   **Die Lücke:** [Während der CO2-Zertifikatehandel als Instrument gut erforscht ist, fehlt eine integrierte Analyse seiner langfristigen Wirksamkeit bei der *nachweislichen Verlangsamung* des Klimawandels, insbesondere unter Berücksichtigung der *Resilienz* des Systems gegenüber externen Schocks und seiner rechtlichen sowie ökonomischen Anpassungsfähigkeit. (Referenz zum Gap 1 aus der Analyse)]
+-   **Warum es wichtig ist:** [Ohne ein robustes, schockresistentes System können Emissionsminderungsziele und damit die Klimaziele nicht zuverlässig erreicht werden, was Investitionen und politische Glaubwürdigkeit gefährdet.]
+-   **Herausforderungen:** [Die Komplexität der Kausalitätskette zwischen einem Politik-Instrument und einem globalen Phänomen wie dem Klimawandel; die Identifizierung und Messung von Systemresilienz.]
 
-#### 3.3 Forschungsfrage (150 Wörter)
--   **Hauptfrage:** [Primary RQ] Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels, insbesondere im Kontext der jüngsten Reformen des Europäischen Emissionshandelssystems (EU ETS) seit 2019?
--   **Unterfragen:** [2-3 specific questions]
-    1.  Welche spezifischen Auswirkungen hatten die Reformen des EU ETS seit 2019 (insbesondere "Fit for 55") auf die Emissionsentwicklung in den erfassten Sektoren?
-    2.  Inwiefern korrelieren Veränderungen im CO2-Zertifikatspreis mit beobachtbaren Emissionsreduktionen in ausgewählten Fallstudien-Sektoren?
-    3.  Welche Mechanismen (z.B. technologische Innovation, Brennstoffwechsel) trugen in den Fallstudien zur Emissionsreduktion bei und welche Rolle spielte dabei der CO2-Preis?
+#### 3.3 Research Question (150 Wörter)
+-   **Hauptfrage:** Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels?
+-   **Unterfragen:**
+    1.  Wie haben sich die rechtlichen und ökonomischen Mechanismen des EU-ETS angesichts spezifischer externer Schocks (z.B. Energiepreiskrisen, geopolitische Konflikte) bewährt?
+    2.  Welchen Einfluss hat die Resilienz des EU-ETS auf seine Fähigkeit, dauerhaft Emissionsreduktionen zu erzielen, die zur Verlangsamung des Klimawandels beitragen?
+    3.  Welche Anpassungen sind notwendig, um die langfristige Wirksamkeit des EU-ETS zur Verlangsamung des Klimawandels unter zukünftigen Unsicherheiten zu gewährleisten?
 
-#### 3.4 Beitrag der Arbeit (250 Wörter)
--   **Ihr Ansatz:** [How you address it] Diese Arbeit adressiert die identifizierte Forschungslücke durch eine umfassende empirische Analyse der neuesten verfügbaren Daten des EU ETS (2019-heute) und ergänzende qualitative Fallstudien in ausgewählten Schlüsselindustrien.
--   **Neue Aspekte:** [What's new] Der Fokus liegt auf der Bewertung der *tatsächlichen* Auswirkungen der "Fit for 55"-Reformen, die in der Literatur bisher unterrepräsentiert sind. Die Kombination aus quantitativer Makroanalyse und sektorspezifischen Fallstudien bietet eine tiefere Einsicht in die Wirkungsmechanismen.
--   **Wichtige Ergebnisse (Vorschau):** [Main results - preview] Die Studie erwartet, Belege für eine verstärkte Emissionsreduktion nach den Reformen zu finden, wird aber auch auf die Herausforderungen bei der Kausalitätszuweisung und die Notwendigkeit weiterer politischer Maßnahmen hinweisen.
+#### 3.4 Contribution (250 Wörter)
+-   **Ihr Ansatz:** [Die Arbeit adressiert die Forschungslücke durch eine integrierte empirische Analyse der rechtlichen und ökonomischen Resilienz des EU-ETS, basierend auf Fallstudien zu ausgewählten externen Schocks.]
+-   **Neue Aspekte:** [Im Gegensatz zu früheren Studien, die oft entweder rechtliche oder ökonomische Aspekte isoliert betrachten, bietet diese Arbeit eine multidisziplinäre Perspektive auf die Systemrobustheit und ihre Implikationen für die Klimawirkung.]
+-   **Wichtigste Ergebnisse (Vorschau):** [Vorschau auf die Erkenntnisse zur Adaptionsfähigkeit des EU-ETS und die Herausforderungen bei der Sicherstellung einer kontinuierlichen Klimawirkung unter Stress.]
 
-#### 3.5 Aufbau der Arbeit (100 Wörter)
--   **Abschnitt 2:** [What's there] Der zweite Abschnitt bietet eine umfassende Literaturübersicht zu den Grundlagen des Klimawandels, der Theorie des Emissionshandels und der Entwicklung des EU ETS.
--   **Abschnitt 3:** [What's there] Im dritten Abschnitt wird die Methodologie der empirischen Analyse und der Fallstudien detailliert beschrieben.
--   **Abschnitt 4:** [What's there] Abschnitt vier präsentiert die Ergebnisse der Datenanalyse und der Fallstudien.
--   **Abschnitt 5:** [What's there] Im fünften Abschnitt werden die Ergebnisse diskutiert, mit der bestehenden Literatur verglichen und Implikationen abgeleitet.
--   **Abschnitt 6:** [What's there] Der sechste und letzte Abschnitt fasst die Arbeit zusammen, beantwortet die Forschungsfrage und gibt einen Ausblick auf zukünftige Forschungsbedarfe.
+#### 3.5 Paper Organization (100 Wörter)
+-   **Abschnitt 2:** [Stellt den theoretischen Rahmen des CO2-Zertifikatehandels und Konzepte der Systemresilienz dar.]
+-   **Abschnitt 3:** [Bietet eine kritische Literaturübersicht zum EU-ETS und identifiziert die Forschungslücken.]
+-   **Abschnitt 4:** [Beschreibt die Methodik der Fallstudienanalyse.]
+-   **Abschnitt 5:** [Präsentiert die empirischen Ergebnisse der Fallstudien.]
+-   **Abschnitt 6:** [Diskutiert die Ergebnisse im Kontext der Forschungslücke und der Hauptforschungsfrage.]
+-   **Abschnitt 7:** [Fasst die Arbeit zusammen, beleuchtet die Beiträge und gibt Ausblick auf zukünftige Forschung.]
 
-### 4. Literaturübersicht (1500-2500 Wörter)
+### 4. Theoretischer Rahmen (700-1000 Wörter)
+Dieser Abschnitt ist für eine Abschlussarbeit sehr wichtig, um das tiefere Verständnis der zugrundeliegenden Konzepte zu demonstrieren.
+
+#### 4.1 Grundlagen des CO2-Zertifikatehandels
+-   **Ökonomische Prinzipien:** [Kap-and-Trade, Preismechanismus, Allokation, Marktversagen.]
+-   **Policy-Design-Elemente:** [Cap-Setting, Marktstabilitätsreserve, Governance-Strukturen.]
+
+#### 4.2 Klimawirkung und Kausalitätsketten
+-   **Von Emissionen zu Klimawandel:** [Wie Emissionsreduktionen theoretisch zur Verlangsamung des Klimawandels beitragen.]
+-   **Direkte und indirekte Effekte des ETS:** [Auf Innovation, Investitionen, Verhaltensänderungen.]
+
+#### 4.3 Konzept der Systemresilienz
+-   **Definition und Dimensionen:** [Ökonomische, rechtliche, ökologische Resilienz.]
+-   **Externe Schocks:** [Definition, Typologien (z.B. geopolitisch, technologisch, ökonomisch).]
+-   **Adaptive Governance:** [Mechanismen zur Anpassung von Politikinstrumenten.]
+
+### 5. Literature Review (1500-2500 Wörter)
 **Organization:** Thematisch
 
-#### 4.1 Grundlagen des Klimawandels und der Treibhausgasemissionen
--   **Papiere:** [VERIFY] IPCC-Berichte, grundlegende Klimawissenschaftspublikationen
--   **Schlüsselerkenntnisse:** [What they found] Wissenschaftlicher Konsens über anthropogenen Klimawandel, Rolle der Treibhausgase, Dringlichkeit der Emissionsreduktion.
--   **Grenzen:** [What they missed] Fokus auf die naturwissenschaftlichen Aspekte, weniger auf ökonomische Instrumente.
+#### 5.1 Ökonomische Wirksamkeit des EU-ETS
+-   **Papiere:** [Liste relevanter ökonomischer Studien zur Emissionsminderung, Preisfindung, Marktstabilität (z.B. Paper 11, 14, 19, 35, 44).]
+-   **Wichtige Erkenntnisse:** [Was diese Studien über die Effektivität des ETS bei der Emissionsreduktion und die Funktionsweise des Marktes gefunden haben.]
+-   **Grenzen:** [Kritikpunkte wie Preisschwankungen, Over-Allocation, Fokus auf bestimmte Sektoren.]
 
-#### 4.2 Ökonomische Theorie des Emissionshandels
--   **Papiere:** [VERIFY] Coase (1960), Pigou (1920), Tietenberg (2006), Stavins (2003)
--   **Schlüsselerkenntnisse:** [What they found] Effizienz von Cap-and-Trade-Systemen, Kostenwirksamkeit, Anreize zur Innovation, Preisbildung.
--   **Grenzen:** [What they missed] Idealisierte Annahmen, Vernachlässigung politischer und institutioneller Realitäten.
+#### 5.2 Rechtlicher Rahmen und Governance des EU-ETS
+-   **Papiere:** [Liste relevanter Studien zu rechtlichen Aspekten, Richtlinien, Anpassungen (z.B. Paper 1, 49).]
+-   **Wichtige Erkenntnisse:** [Entwicklung des rechtlichen Rahmens, Rolle der EU-Gesetzgebung, Implementierungsherausforderungen.]
+-   **Grenzen:** [Fehlende Flexibilität, Komplexität, Herausforderungen bei der Harmonisierung nationaler Politiken.]
 
-#### 4.3 Das Europäische Emissionshandelssystem (EU ETS): Entwicklung und Design
--   **Papiere:** [VERIFY] Grubb et al. (2020), Europäische Kommission Dokumente, Betz & Sato (2019)
--   **Schlüsselerkenntnisse:** [What they found] Historische Entwicklung (Phasen 1-3), Mechanismen (Cap, Auktionierung, freie Zuteilung), Governance, Marktstabilitätsreserve (MSR).
--   **Grenzen:** [What they missed] Viele Analysen enden vor den jüngsten Reformen oder sind deskriptiv, nicht empirisch bewertend.
+#### 5.3 Resilienz und externe Schocks im Kontext von Klima-Governance
+-   **Papiere:** [Studien zu Resilienzkonzepten in der Umweltpolitik, Auswirkungen von Krisen auf andere Politikinstrumente, aber auch zu Fragmenten der ETS-Resilienz.]
+-   **Wichtige Erkenntnisse:** [Bedeutung von Robustheit, adaptivem Management.]
+-   **Grenzen:** [Fehlen einer *integrierten* Analyse der *rechtlichen und ökonomischen Resilienz* des EU-ETS gegenüber *externen Schocks* im Kontext seiner *Klimawirkung* (wie in der Forschungslücke identifiziert).]
 
-#### 4.4 Bisherige empirische Studien zur Wirksamkeit des EU ETS (bis 2019)
--   **Papiere:** [VERIFY] Schleich et al. (2019), Dechezleprêtre et al. (2014), Koch et al. (2017)
--   **Schlüsselerkenntnisse:** [What they found] Gemischte Ergebnisse zur Emissionsreduktion (teilweise wirksam, aber oft durch externe Faktoren überlagert), Innovationsanreize, Carbon Leakage Debatte.
--   **Grenzen:** [What they missed] Diese Studien können die Auswirkungen der *aktuellen* Reformen ("Fit for 55") nicht abbilden, da sie vor deren Implementierung oder vollständigen Entfaltung stattfanden.
+#### 5.4 Synthese & Gap Identification
+-   **Was wir wissen:** [Zusammenfassung der Erkenntnisse zu den ökonomischen und rechtlichen Aspekten des EU-ETS.]
+-   **Was fehlt:** [Die detaillierte Auseinandersetzung mit der integrierten Resilienz des Systems, insbesondere wie rechtliche Anpassungsfähigkeit und ökonomische Stabilität *gemeinsam* auf externe Schocks reagieren und welche Implikationen dies für die *nachweisliche* Verlangsamung des Klimawandels hat. Bezugnahme auf die identifizierte Forschungslücke.]
+-   **Ihr Beitrag:** [Wie diese Arbeit diese Lücke durch die Fallstudienanalyse schließt.]
 
-#### 4.5 Synthese & Lückenidentifikation
--   **Was wir wissen:** [Summary] Emissionshandel ist ein prinzipiell effizientes Instrument zur Internalisierung externer Kosten des Klimawandels und zur Förderung von Emissionsreduktionen. Das EU ETS hat sich über mehrere Phasen entwickelt und wichtige Anpassungen erfahren.
--   **Was fehlt:** [Gaps] Es gibt eine signifikante Lücke in der empirischen Forschung bezüglich der *tatsächlichen, nachweisbaren Auswirkungen* der jüngsten und weitreichendsten Reformen des EU ETS seit 2019, insbesondere im Rahmen des "Fit for 55"-Pakets. Eine umfassende Bewertung, ob diese Reformen *signifikant* zur Verlangsamung des Klimawandels beitragen, fehlt.
--   **Ihr Beitrag:** [How you fill gaps] Diese Arbeit füllt diese Lücke, indem sie eine aktualisierte empirische Analyse dieser jüngsten Reformen und deren Auswirkungen auf die Emissionsentwicklung und spezifische Sektoren vornimmt.
+### 6. Methodology (1000-1500 Wörter)
+#### 6.1 Research Design
+-   **Ansatz:** [Qualitative Fallstudienanalyse mit Elementen der Dokumentenanalyse und Experteninterviews (falls geplant).]
+-   **Begründung:** [Warum Fallstudien geeignet sind, um die komplexen Wechselwirkungen von rechtlichen, ökonomischen und Schockereignissen zu untersuchen und tiefgehende Einblicke in die Systemresilienz zu gewinnen, die eine quantitative Analyse nicht bieten könnte.]
 
-### 5. Methodologie (1000-1500 Wörter)
-#### 5.1 Forschungsdesign
--   **Ansatz:** [Qualitative | Quantitative | Mixed] Diese Studie verfolgt einen Mixed-Methods-Ansatz, der eine primär quantitative, empirische Analyse der EU ETS-Daten mit qualitativen Fallstudien in ausgewählten Sektoren kombiniert.
--   **Begründung:** [Why this design] Der quantitative Ansatz ermöglicht die Analyse von Emissions-, Preis- und Allokationsdaten über einen längeren Zeitraum, um Trends und Korrelationen zu identifizieren. Die qualitativen Fallstudien liefern tiefere Einblicke in die spezifischen Anpassungsstrategien von Unternehmen und die Wirkungsmechanismen auf Sektorebene, die durch reine quantitative Daten nicht vollständig erfasst werden können.
+#### 6.2 Data/Materials
+-   **Quelle:** [Gesetzestexte (EU-Richtlinien, Verordnungen), Kommissionsberichte, Marktberichte (z.B. EEX, ICAP), akademische Studien, Medienanalysen, (ggf. Transkripte von Interviews).]
+-   **Beschreibung:** [Detaillierte Beschreibung der Art der gesammelten Daten für jede Fallstudie.]
+-   **Rechtfertigung:** [Warum diese Daten für die Beantwortung der Unterfragen und der Hauptforschungsfrage relevant sind.]
 
-#### 5.2 Daten/Materialien
--   **Quelle:** [Where data comes from] Emissionsdaten (verified emissions) aus dem EUTL (European Union Transaction Log), Zertifikatspreise (EUA Futures) von EEX und anderen Börsen, Auktionsvolumen und -erlöse, politische Dokumente der Europäischen Kommission (z.B. "Fit for 55"-Paketdetails, Richtlinien).
--   **Beschreibung:** [What it contains] Emissionsdaten auf Anlagen- und Länderebene (2019-aktuell), tägliche/wöchentliche EUA-Spot- und Future-Preise, Dokumente zur Gesetzgebung und Implementierung der Reformen.
--   **Rechtfertigung:** [Why appropriate] Diese Daten sind öffentlich zugänglich, hochrelevant für die Fragestellung und ermöglichen eine direkte Analyse der Systemperformance nach den Reformen.
+#### 6.3 Procedures (Fallstudienauswahl & -durchführung)
+-   **Auswahl der Fallstudien:** [Kriterien für die Auswahl von 2-3 spezifischen externen Schocks (z.B. Energiepreiskrise 2021/22, Finanzkrise 2008, Auswirkungen des Brexit auf den ETS-Markt, COVID-19-Pandemie) und deren Bezug zum EU-ETS.]
+-   **Datenerhebung pro Fallstudie:**
+    -   Schritt 1: [Identifikation relevanter Zeiträume und Schlüsselereignisse.]
+    -   Schritt 2: [Sammlung von rechtlichen Dokumenten und politischen Reaktionen.]
+    -   Schritt 3: [Sammlung von ökonomischen Marktdaten (z.B. Zertifikatspreise, Handelsvolumen) und Emissionsdaten.]
+    -   Schritt 4: [Analyse von Expertenmeinungen und Sekundärliteratur zu den Auswirkungen des Schocks.]
 
-#### 5.3 Prozedere
--   **Schritt 1:** [What you did] Datensammlung und -bereinigung: Beschaffung von Emissionsdaten, Zertifikatspreisen und politischen Dokumenten für den Zeitraum 2019 bis zum aktuellen Zeitpunkt.
--   **Schritt 2:** [What you did] Quantitative Analyse der Aggregatdaten: Untersuchung der Emissionsentwicklung in den erfassten Sektoren, Korrelationsanalyse zwischen Zertifikatspreisen und Emissionsreduktionen, Analyse der Marktstabilitätsreserve-Effekte.
--   **Schritt 3:** [What you did] Auswahl der Fallstudien-Sektoren: Identifikation von 2-3 Schlüsselindustrien innerhalb des EU ETS (z.B. Energieerzeugung, Zement, Stahl), die besonders von den Reformen betroffen sind und aussagekräftige Daten liefern.
--   **Schritt 4:** [What you did] Durchführung der Fallstudien: Detaillierte Analyse der Emissionsentwicklung, Investitionen in Dekarbonisierung und politischen Anpassungen in den ausgewählten Sektoren, basierend auf öffentlich zugänglichen Berichten, Unternehmensdaten und ggf. Experteninterviews (falls Zeit und Ressourcen vorhanden).
+#### 6.4 Analysis
+-   **Techniken:** [Qualitative Inhaltsanalyse für Gesetzestexte und Berichte; Zeitreihenanalyse für ökonomische Daten; Cross-Case-Analyse zum Vergleich der Resilienzmechanismen über die Fallstudien hinweg.]
+-   **Tools:** [Software für qualitative Datenanalyse (z.B. NVivo, MAXQDA) und/oder statistische Software (z.B. R, Stata) für ökonomische Daten.]
 
-#### 5.4 Analyse
--   **Techniken:** [Statistical methods, etc.] Deskriptive Statistik (Trends, Mittelwerte), Regressionsanalyse (Paneldaten), Zeitreihenanalyse zur Untersuchung von Kausalitäten und Korrelationen zwischen CO2-Preisen und Emissionsreduktionen. Qualitative Inhaltsanalyse für politische Dokumente und Fallstudienberichte.
--   **Tools:** [Software used] Statistische Software wie R oder Stata für die quantitative Analyse, qualitative Datenanalyse-Software (z.B. MAXQDA) für die Fallstudien.
+### 7. Results (1500-2000 Wörter)
+Präsentation der Ergebnisse der einzelnen Fallstudien.
 
-### 6. Ergebnisse (1500-2000 Wörter)
-#### 6.1 Gesamtemissionsentwicklung und Preistrends
--   **Beobachtung:** [What you found] Darstellung der Entwicklung der Gesamtemissionen im EU ETS seit 2019 im Vergleich zu den Vorjahren. Visualisierung des Anstiegs der EUA-Preise nach 2019.
--   **Evidenz:** [Data/stats] Aggregierte Emissionsdaten, durchschnittliche Jahrespreise, Varianz.
--   **Abbildung/Tabelle:** [Visual reference] Abbildung 1: Zeitreihe der Gesamtemissionen im EU ETS (2005-aktuell). Abbildung 2: Entwicklung der EUA-Preise (2019-aktuell).
+#### 7.1 Fallstudie 1: [Beispiel: Energiepreiskrise 2021/2022]
+-   **Beobachtung:** [Beschreibung des Schocks und seiner unmittelbaren Auswirkungen auf den EU-ETS-Markt und die Gesetzgebung.]
+-   **Evidenz (Rechtlich):** [Analyse der rechtlichen Reaktionen, z.B. Debatten über Interventionen, Anpassungen von Marktstabilitätsmechanismen. Zitate aus Dokumenten.]
+-   **Evidenz (Ökonomisch):** [Darstellung der Entwicklung der Zertifikatspreise, Handelsvolumina, Auswirkungen auf Emissionen in relevanten Sektoren. Grafiken/Tabellen.]
+-   **Zusammenfassung der Resilienz:** [Wie gut das System den Schock absorbierte und sich anpasste.]
 
-#### 6.2 Auswirkungen der MSR und des LFM (Linearer Reduktionsfaktor)
--   **Beobachtung:** [What you found] Analyse, inwiefern die verschärfte Marktstabilitätsreserve und der erhöhte lineare Reduktionsfaktor das Überangebot an Zertifikaten reduziert und die Preise beeinflusst haben.
--   **Evidenz:** [Data/stats] Daten zu MSR-Einlagerungen, Auktionsvolumen, Korrelation mit Preisentwicklung.
--   **Abbildung/Tabelle:** [Visual reference] Tabelle 1: Übersicht der MSR-Anpassungen und deren Auswirkungen.
+#### 7.2 Fallstudie 2: [Beispiel: Finanzkrise 2008/2009]
+[Wiederholung der Struktur für die zweite Fallstudie]
 
-#### 6.3 Ergebnisse der Fallstudie: Sektor Energieerzeugung
--   **Beobachtung:** [What you found] Darstellung der Emissionsreduktion im Energiesektor nach 2019, Analyse des Brennstoffwechsels (Kohle zu Gas/Erneuerbaren) und der Investitionen in erneuerbare Energien.
--   **Evidenz:** [Data/stats] Sektorspezifische Emissionsdaten, Daten zu Kraftwerksstilllegungen, Investitionsberichte.
--   **Abbildung/Tabelle:** [Visual reference] Abbildung 3: Emissionsentwicklung im Stromsektor der EU (2019-aktuell). Tabelle 2: Beispiele für Dekarbonisierungsmaßnahmen im Energiesektor.
+#### 7.3 Fallstudie 3: [Beispiel: Auswirkungen der COVID-19-Pandemie]
+[Wiederholung der Struktur für die dritte Fallstudie]
 
-#### 6.4 Ergebnisse der Fallstudie: Sektor Zement/Stahl (oder anderer relevanter Sektor)
--   **Beobachtung:** [What you found] Analyse der Emissionsentwicklung und der Herausforderungen/Fortschritte bei der Dekarbonisierung in einem emissionsintensiven Industriesektor (z.B. Zement oder Stahl). Fokus auf technologische Innovationen und Carbon Leakage Risiken.
--   **Evidenz:** [Data/stats] Sektorspezifische Emissionsdaten, Unternehmensberichte, Expertenzitate (falls Interviews durchgeführt).
--   **Abbildung/Tabelle:** [Visual reference] Abbildung 4: Emissionsentwicklung im Zement-/Stahlsektor der EU (2019-aktuell). Tabelle 3: Herausforderungen und Lösungen im Zement-/Stahlsektor.
+### 8. Discussion (1500-2000 Wörter)
+#### 8.1 Interpretation der Ergebnisse
+-   **Was die Ergebnisse bedeuten:** [Zusammenfassende Interpretation der Resilienz des EU-ETS in den Fallstudien. Welche Muster zeigen sich in den rechtlichen und ökonomischen Reaktionen?]
+-   **Wie sie die RQ adressieren:** [Diskussion, inwiefern die beobachtete Resilienz oder deren Mangel die Fähigkeit des EU-ETS beeinflusst, *nachweislich* zur Verlangsamung des Klimawandels beizutragen. Eine robuste Resilienz ist eine notwendige, wenn auch nicht hinreichende Bedingung.]
 
-### 7. Diskussion (1500-2000 Wörter)
-#### 7.1 Interpretation
--   **Was die Ergebnisse bedeuten:** [Implications] Die Ergebnisse deuten darauf hin, dass die verschärften Mechanismen des EU ETS nach 2019 zu einer verstärkten Emissionsreduktion geführt haben, insbesondere in Sektoren mit einfacheren Dekarbonisierungsoptionen. Der Anstieg der CO2-Preise hat wirksame Anreize geschaffen.
--   **Wie sie die Forschungsfrage beantworten:** [Connection] Die Studie liefert Evidenz, dass der CO2-Zertifikatehandel *nachweislich* zu einer *Beschleunigung* der Emissionsreduktion beiträgt, was einen wichtigen Schritt zur Verlangsamung des Klimawandels darstellt. Die *Signifikanz* hängt jedoch von der weiteren Verschärfung des Caps und der Ausweitung des Anwendungsbereichs ab.
+#### 8.2 Bezug zur Literatur
+-   **Bestätigt:** [Welche Ergebnisse stimmen mit früheren Forschungsergebnissen zu ökonomischer oder rechtlicher Effektivität überein?]
+-   **Widerspricht:** [Gibt es Befunde, die früheren Annahmen oder Modellen widersprechen, insbesondere im Hinblick auf die integrierte Resilienz?]
+-   **Erweitert:** [Wie erweitert die integrierte Betrachtung von rechtlicher und ökonomischer Resilienz gegenüber externen Schocks die bestehende Literatur und schließt die identifizierte Forschungslücke?]
 
-#### 7.2 Bezug zur Literatur
--   **Bestätigt:** [What aligns with prior work] Die findings bestätigen frühere Studien zur prinzipiellen Wirksamkeit von Cap-and-Trade-Systemen und die Bedeutung eines hohen CO2-Preises.
--   **Widerspricht:** [What diverges] Einige frühere Kritiken an der geringen Wirksamkeit des EU ETS vor 2019 werden durch die aktuellen Ergebnisse relativiert, da die jüngsten Reformen die Systemschwächen adressiert haben.
--   **Erweitert:** [What's new] Die Arbeit erweitert die Literatur durch die erste umfassende empirische Bewertung der "Fit for 55"-Reformen und deren spezifische Auswirkungen auf Sektorebene.
+#### 8.3 Theoretische Implikationen
+-   **Fortschritte im Verständnis:** [Wie die Ergebnisse das Verständnis von Systemresilienz in der Umweltpolitik und der Kausalitätskette zwischen Politikinstrumenten und Klimawirkung verbessern.]
+-   **Entwicklung des theoretischen Rahmens:** [Welche Anpassungen oder Verfeinerungen des theoretischen Rahmens (Abschnitt 4) sich aus den empirischen Befunden ergeben.]
 
-#### 7.3 Theoretische Implikationen
--   **Fortschritte im Verständnis:** [Theory] Die Ergebnisse tragen zum Verständnis der Dynamik von Kohlenstoffmärkten bei, insbesondere wie politische Eingriffe (z.B. MSR, LFM) deren Effektivität in realen Kontexten beeinflussen können. Sie stärken die Theorie der marktgestützten Umweltpolitik.
+#### 8.4 Praktische Implikationen
+-   **Anwendungen in der realen Welt:** [Empfehlungen für politische Entscheidungsträger zur Stärkung der Resilienz des EU-ETS, z.B. durch Anpassung von Marktstabilitätsmechanismen, Schaffung flexiblerer rechtlicher Rahmenbedingungen oder besserer Integration in andere Klimapolitiken.]
+-   **Für schwer minderbare Sektoren:** [Welche Implikationen ergeben sich für die Einbeziehung und Dekarbonisierung von Sektoren, die bislang schwer zu mindern sind, und wie kann das ETS hier effektiver werden?]
 
-#### 7.4 Praktische Implikationen
--   **Anwendungen in der realen Welt:** [Practice] Die Studie liefert wichtige Erkenntnisse für politische Entscheidungsträger bezüglich der Gestaltung und Weiterentwicklung von Emissionshandelssystemen. Sie unterstreicht die Notwendigkeit, ein ambitioniertes Cap beizubehalten und die MSR effektiv zu nutzen. Es werden auch Herausforderungen für bestimmte Sektoren aufgezeigt.
+#### 8.5 Limitations
+-   **Studiengrenzen:** [Einschränkungen der Fallstudienmethode (z.B. Generalisierbarkeit), Auswahl der Schocks, Verfügbarkeit von Daten, Fokus auf das EU-ETS.]
+-   **Zukünftige Forschung:** [Aufbauend auf den Limitationen, welche weiteren Forschungsfragen ergeben sich, z.B. vergleichende Analysen mit anderen ETS, quantitative Modellierung der Resilienz, Analyse spezifischer Sektoren.]
 
-#### 7.5 Limitationen
--   **Studienbeschränkungen:** [What to qualify] Die begrenzte Zeitspanne seit den "Fit for 55"-Reformen erschwert eine vollständige Kausalitätsanalyse. Externe Faktoren wie die Energiekrise können die Ergebnisse beeinflusst haben. Die Generalisierbarkeit der Fallstudien ist begrenzt.
--   **Zukünftige Forschung:** [What's needed next] Langfristige Studien zur vollständigen Bewertung der Klimawirkung sind erforderlich. Weitere Forschung zu den Auswirkungen auf Innovation, Wettbewerbsfähigkeit und Carbon Leakage in spezifischen Sektoren ist notwendig.
+### 9. Conclusion (500-700 Wörter)
+#### 9.1 Summary
+-   **Forschungsfrage erneut aufgegriffen:** [Kurze Wiederholung der Hauptforschungsfrage.]
+-   **Zentrale Ergebnisse rekapitulieren:** [Zusammenfassung der wichtigsten Erkenntnisse aus den Fallstudien zur Resilienz des EU-ETS und ihrer Bedeutung für die Emissionsminderung.]
 
-### 8. Fazit (500-700 Wörter)
-#### 8.1 Zusammenfassung
--   **Forschungsfrage revisited:** Die zentrale Frage nach der nachweislichen Verlangsamung des Klimawandels durch CO2-Zertifikatehandel wurde im Kontext der jüngsten EU ETS-Reformen untersucht.
--   **Wichtige Ergebnisse rekapitulieren:** Die Analyse zeigt, dass die "Fit for 55"-Reformen die Wirksamkeit des EU ETS durch einen signifikanten Preisanstieg und verstärkte Emissionsreduktionen gesteigert haben, insbesondere in Sektoren mit vorhandenen Dekarbonisierungsoptionen.
+#### 9.2 Contributions
+-   **Theoretische Beiträge:** [Wie die Arbeit das Konzept der Systemresilienz im Kontext des Klimawandels und des Emissionshandels vertieft hat.]
+-   **Praktische Beiträge:** [Die Relevanz der Ergebnisse für die Gestaltung und Anpassung des EU-ETS und anderer Carbon-Pricing-Mechanismen.]
+-   **Beantwortung der Hauptfrage:** [Eine nuancierte Antwort auf die Forschungsfrage, die betont, dass der CO2-Zertifikatehandel *unter bestimmten Bedingungen* und mit *ausreichender Resilienz* einen *signifikanten Beitrag* leisten kann, eine *nachweisliche Verlangsamung des Klimawandels* jedoch von vielen weiteren Faktoren und einer stetigen Anpassung des Systems abhängt.]
 
-#### 8.2 Beiträge
--   **Theoretische Beiträge:** Die Arbeit vertieft das empirische Verständnis der Funktionsweise und Wirksamkeit von Emissionshandelssystemen unter realen politischen Rahmenbedingungen.
--   **Praktische Beiträge:** Sie liefert aktuelle, evidenzbasierte Erkenntnisse für die Klimapolitik, insbesondere im Hinblick auf die kontinuierliche Anpassung und Stärkung des EU ETS und potenzieller anderer Kohlenstoffmärkte.
-
-#### 8.3 Zukünftige Richtungen
--   **Unmittelbare nächste Schritte:** [Immediate next steps] Fortgesetzte Überwachung der Emissions- und Marktdaten, um die langfristigen Auswirkungen der Reformen zu bewerten.
--   **Langfristige Forschungsagenda:** [Long-term research agenda] Untersuchung der Integration weiterer Sektoren (z.B. Gebäude, Verkehr) in den Emissionshandel, Analyse der globalen Kohlenstoffmärkte und deren Interaktionen sowie die Bewertung der sozialen Gerechtigkeit von CO2-Preismechanismen.
+#### 9.3 Future Directions
+-   **Unmittelbare nächste Schritte:** [Konkrete Vorschläge für die nächste Phase der Forschung, z.B. detailliertere quantitative Analysen, Erweiterung der Fallstudien.]
+-   **Langfristige Forschungsagenda:** [Breitere Perspektiven für die Forschung zur Rolle von Marktmechanismen im globalen Klimaschutz.]
 
 ---
 
 ## Argument Flow Map
 
 ```
-Einleitung: Klimawandel erfordert dringende Emissionsreduktion
+Einleitung: Klimawandel ist Problem X; CO2-Zertifikatehandel (ETS) ist eine Schlüsselantwort, aber seine Wirkung ist umstritten.
     ↓
-Literaturübersicht: CO2-Zertifikatehandel ist ein Schlüsselmechanismus, aber frühere Wirksamkeit umstritten
+Theoretischer Rahmen: Erklärt, wie ETS wirken soll und führt Konzepte der Systemresilienz ein.
     ↓
-Lücke: Empirische Evidenz zu den Auswirkungen der jüngsten EU ETS-Reformen ("Fit for 55") fehlt
+Literaturübersicht: Bestehende Lösungen (ETS) haben Potenziale, aber auch Defizite, insbes. bezüglich integrierter Resilienz gegenüber Schocks (Gap Y).
     ↓
-Methoden: Quantitative Analyse von Emissions- & Preisdaten, ergänzt durch Fallstudien in Schlüsselindustrien
+Methodik: Wir nutzen Fallstudien, um die Resilienz des EU-ETS (rechtl. & ökon.) gegenüber spezifischen Schocks Z zu untersuchen.
     ↓
-Ergebnisse: Reformen führten zu beschleunigter Emissionsreduktion in Sektor A&B; CO2-Preisanstieg korreliert mit Dekarbonisierung
+Ergebnisse: Die Fallstudien zeigen, wie das EU-ETS auf Schocks Z reagiert hat und welche Implikationen dies für die Emissionsminderung hat.
     ↓
-Diskussion: Ergebnisse bestätigen prinzipielle Wirksamkeit des EU ETS; Wirksamkeit zur "signifikanten Verlangsamung" hängt von weiterer Verschärfung ab; Herausforderungen bleiben
+Diskussion: Die Ergebnisse bedeuten, dass die langfristige Wirksamkeit des ETS zur Klimaverlangsamung stark von seiner adaptiven Kapazität abhängt und weitere Anpassungen erfordert.
     ↓
-Fazit: CO2-Zertifikatehandel ist ein wirksames, aber entwicklungsbedürftiges Instrument; Beitrag zur Aktualisierung der Evidenz; Ausblick auf weitere Forschung und Politik
+Schlussfolgerung: Der Beitrag ist signifikant für die Politikgestaltung; zukünftige Arbeit ist V.
 ```
 
 ---
 
 ## Evidence Placement Strategy
 
-| Section           | Papers to Cite                                     | Purpose                                                                                                                                                                                                                |
-|-------------------|----------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Einleitung        | IPCC-Berichte, EU Green Deal Dokumente             | Bedeutung des Klimawandels und Einführung des EU ETS als Instrument.                                                                                                                                                    |
-| Literaturübersicht| Coase, Pigou, Grubb et al. (2020), Schleich et al. (2019) | Theoretische Grundlagen des Emissionshandels, Entwicklung des EU ETS, frühere Wirksamkeitsstudien und deren Grenzen (insb. vor "Fit for 55"). [VERIFY]                                                                 |
-| Methodologie      | Methodologische Standardwerke, Datenquellen (EUTL, EEX) | Begründung des Forschungsdesigns, Beschreibung der Datenherkunft und -analyse.                                                                                                                                         |
-| Ergebnisse        | Eigene Datenanalyse, Berichte der Europäischen Kommission | Darstellung der empirischen Befunde aus den gesammelten Emissions- und Marktdaten sowie den Fallstudien.                                                                                                            |
-| Diskussion        | Grubb et al. (2020), Dechezleprêtre et al. (2014), Koch et al. (2017) | Vergleich der eigenen Ergebnisse mit der bestehenden Literatur; Einordnung der Befunde in den Kontext der Wirksamkeitsdebatte um das EU ETS. [VERIFY]                                                               |
-| Fazit             | Keine spezifischen neuen Zitate                  | Zusammenfassung der eigenen Arbeit und deren Beitrag.                                                                                                                                                                  |
+| Section           | Papers to Cite                                | Purpose                                                  |
+|-------------------|-----------------------------------------------|----------------------------------------------------------|
+| Einleitung        | Überblickswerke zum Klimawandel und ETS       | Bedeutung des Themas etablieren                          |
+| Theoretischer Rahmen | Standardwerke zu Ökonomie, Resilienz, Governance | Konzepte definieren und verankern                        |
+| Literaturübersicht | Paper 1, 49 (Recht); Paper 11, 14, 19, 35, 44 (Ökonomie); weitere zur Resilienz | Forschungsstand abdecken und Lücke identifizieren       |
+| Methodik          | Methodologische Leitlinien, Fallstudienliteratur | Ansatz rechtfertigen                                     |
+| Ergebnisse        | Spezifische Datenquellen (Gesetzestexte, Marktdaten) | Empirische Befunde untermauern                           |
+| Diskussion        | Paper 1, 5, 12, 15 (Vergleich mit ähnlichen Studien) | Ergebnisse interpretieren und in Kontext setzen          |
+| Schlussfolgerung  | Keine spezifischen neuen Zitate               | Zusammenfassen und Ausblick geben                        |
 
 ---
 
 ## Figure/Table Plan
 
-1.  **Abbildung 1:** Zeitreihe der Gesamtemissionen im EU ETS (2005-aktuell)
-2.  **Abbildung 2:** Entwicklung der EUA-Preise (2019-aktuell)
-3.  **Tabelle 1:** Übersicht der EU ETS-Reformen seit 2019 ("Fit for 55"-Paket) und deren Auswirkungen auf das Systemdesign
-4.  **Abbildung 3:** Emissionsentwicklung im Stromsektor der EU (2019-aktuell) – Fallstudie
-5.  **Abbildung 4:** Emissionsentwicklung im Zement-/Stahlsektor der EU (2019-aktuell) – Fallstudie
-6.  **Tabelle 2:** Korrelationsmatrix zwischen EUA-Preisen und sektoralen Emissionsreduktionen (2019-aktuell)
-7.  **Abbildung 5:** Konzeptioneller Rahmen für die Wirkungsweise der EU ETS-Reformen (in Einleitung oder Methodologie)
+1.  **Abbildung 1:** Konzeptuelles Modell: Vom ETS zur Klimawirkung über Resilienz (in Theoretischer Rahmen)
+2.  **Tabelle 1:** Übersicht der analysierten externen Schocks und ihre Charakteristika (in Methodik)
+3.  **Abbildung 2:** Zeitliche Entwicklung der CO2-Zertifikatspreise und Emissionsmengen im EU-ETS für Fallstudie 1 (in Ergebnisse)
+4.  **Tabelle 2:** Zusammenfassung der rechtlichen Anpassungen des EU-ETS für Fallstudie 2 (in Ergebnisse)
+5.  **Abbildung 3:** Vergleich der Resilienz-Indikatoren über die Fallstudien hinweg (in Ergebnisse)
+6.  **Abbildung 4:** Schematische Darstellung der vorgeschlagenen Policy-Anpassungen zur Stärkung der Resilienz (in Diskussion)
 
 ---
 
 ## Writing Priorities
 
-**Muss kristallklar sein:**
--   Die spezifische Forschungslücke, die adressiert wird (Auswirkungen der "Fit for 55"-Reformen).
--   Der Beitrag der Arbeit zur aktuellen Forschung.
--   Die Hauptbefunde der empirischen Analyse.
+**Muss absolut klar sein:**
+-   Die Hauptforschungsfrage und Unterfragen
+-   Ihr Beitrag zur Forschungslücke
+-   Die wichtigsten Ergebnisse aus den Fallstudien und deren Interpretation
 
 **Kann prägnant sein:**
--   Grundlagen der Klimawissenschaft (sofern nicht direkt relevant für die Mechanismen des Emissionshandels).
--   Sehr frühe Phasen des EU ETS (Fokus auf die jüngste Periode).
+-   Detaillierte Beschreibungen von Basiskonzepten, die im Feld als bekannt vorausgesetzt werden können.
+-   Methodologische Details, die nicht direkt zur Argumentation beitragen.
 
 **Sollte überzeugend sein:**
--   Der "Aufhänger" in der Einleitung, der die Dringlichkeit des Themas unterstreicht.
--   Die Diskussion der Implikationen für die Klimapolitik und zukünftige Forschung.
+-   Der "Hook" in der Einleitung
+-   Die Diskussion der Implikationen und des Beitrags
 
 ---
 
 ## Section Dependencies
 
-Write in this order:
-1.  Methodologie (am konkretsten, die "Anleitung")
-2.  Ergebnisse (datenbasiert, objektiv)
-3.  Einleitung (jetzt wissen Sie, was Sie einführen)
-4.  Literaturübersicht (jetzt wissen Sie, welche Literatur relevant ist, um Ihre Ergebnisse einzuordnen)
-5.  Diskussion (Sie wissen, was Sie gefunden haben und wie es sich zur Literatur verhält)
-6.  Fazit (Zusammenfassung dessen, was Sie geschrieben haben)
-7.  Abstract (zuletzt – fasst alles zusammen)
+Schreibe in dieser Reihenfolge:
+1.  **Methodik** (am konkretsten, legt den Rahmen fest)
+2.  **Ergebnisse** (datengesteuert, klar)
+3.  **Theoretischer Rahmen** (jetzt wissen Sie, welche Konzepte Sie benötigen)
+4.  **Literaturübersicht** (Sie wissen, welche Literatur für Ihre Ergebnisse relevant ist)
+5.  **Einleitung** (jetzt wissen Sie, was Sie einleiten)
+6.  **Diskussion** (Sie wissen, was Sie diskutieren müssen)
+7.  **Schlussfolgerung** (fasst alles zusammen)
+8.  **Abstract** (zuletzt – fasst die gesamte Arbeit zusammen)
 
 ---
 
 ## Quality Checks
 
-Each section should answer:
+Jeder Abschnitt sollte folgende Fragen beantworten:
 -   **Einleitung:** Warum sollte ich mich dafür interessieren?
--   **Literaturübersicht:** Was wissen wir bereits, und wo sind die Lücken?
--   **Methodologie:** Was wurde genau gemacht?
+-   **Theoretischer Rahmen:** Auf welchen Grundlagen baut die Analyse auf?
+-   **Literaturübersicht:** Was wissen wir bereits, und was fehlt?
+-   **Methodik:** Was wurde genau gemacht?
 -   **Ergebnisse:** Was wurde gefunden?
 -   **Diskussion:** Was bedeuten die Ergebnisse?
--   **Fazit:** Warum ist das wichtig und was kommt als Nächstes?
+-   **Schlussfolgerung:** Warum ist das wichtig?
 
 ---
 
 ## Target Audience Considerations
 
-**Für diese Arbeit wird angenommen, dass die Leser:**
--   **Wissen:** Grundlegende Konzepte des Klimawandels, der Umweltökonomie und des prinzipiellen Funktionsweise von Emissionshandelssystemen.
--   **Nicht wissen:** Die spezifischen Details und *empirischen Auswirkungen* der EU ETS-Reformen seit 2019, insbesondere des "Fit for 55"-Pakets.
--   **Interessieren sich für:** Die tatsächliche Wirksamkeit von Klimapolitiken, politische Implikationen und zukünftige Entwicklungen im Bereich der Kohlenstoffmärkte.
+**Für diese Arbeit wird angenommen, dass die Leserschaft:**
+-   **Kennt:** [Grundlegende Konzepte des Klimawandels und der Umweltökonomie, allgemeine Funktionsweise des EU-ETS.]
+-   **Nicht kennt:** [Ihre spezifische integrierte Analyse der rechtlichen und ökonomischen Resilienz des EU-ETS gegenüber externen Schocks.]
+-   **Interessiert sich für:** [Die Wirksamkeit von Klimapolitiken, die Robustheit von Governance-Systemen, praktische Implikationen für die Politikgestaltung.]
 
 **Daher:**
--   **Erklären:** Technische Details der "Fit for 55"-Reformen und deren erwartete Wirkungsweisen.
--   **Annehmen:** Grundlegendes Verständnis für Umweltökonomie und Klimawissenschaft.
--   **Betonen:** Die Neuartigkeit der empirischen Ergebnisse und deren Relevanz für die Klimapolitik.
+-   **Erklären Sie:** [Die spezifischen rechtlichen und ökonomischen Anpassungsmechanismen des EU-ETS detailliert; die Methodik der Fallstudienanalyse.]
+-   **Nehmen Sie an:** [Ein gewisses Grundverständnis für Emissionshandel und Klimapolitik.]
+-   **Betonen Sie:** [Die Neuartigkeit und Relevanz Ihrer integrierten Analyse und der daraus resultierenden Handlungsempfehlungen.]

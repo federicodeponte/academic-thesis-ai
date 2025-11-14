@@ -27,6 +27,7 @@ class BaseAPIClient(ABC):
     def __init__(
         self,
         base_url: str,
+        api_key: Optional[str] = None,
         rate_limit_per_second: float = 10.0,
         timeout: int = 10,
         max_retries: int = 3,
@@ -36,11 +37,13 @@ class BaseAPIClient(ABC):
 
         Args:
             base_url: Base URL for API
+            api_key: Optional API key for authenticated requests
             rate_limit_per_second: Maximum requests per second
             timeout: Request timeout in seconds
             max_retries: Maximum retry attempts for failed requests
         """
         self.base_url = base_url.rstrip("/")
+        self.api_key = api_key
         self.rate_limit_per_second = rate_limit_per_second
         self.timeout = timeout
         self.max_retries = max_retries

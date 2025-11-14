@@ -151,7 +151,7 @@ def main():
             model=model,
             research_topics=research_topics,
             output_path=output_dir / "01_scout.md",
-            target_minimum=50,  # Quality gate: require 50+ valid citations
+            target_minimum=60,  # Quality gate: 110% enhancement (54 → 60 citations)
             verbose=True
         )
 
@@ -207,8 +207,11 @@ def main():
 
     # Step 3.5: Citation Manager - Extract citations from research
     print("\n📚 Extracting citations from research materials...")
+    # FIXED: Use full Scout output (not Scout+Scribe concat) to avoid duplicate citations
+    # Root cause: Scribe may summarize citations differently, causing duplicates/conflicts
+    # Scout output contains complete citation metadata for all researched papers
     citation_database = extract_citations_from_text(
-        text=f"{scout_output}\n\n{scribe_output}",
+        text=scout_output,  # ✅ FIXED: Using full Scout markdown with all citations
         model=model,
         language="english",
         citation_style="APA 7th",

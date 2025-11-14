@@ -52,6 +52,10 @@ def main():
     # Initialize model
     model = setup_model()
 
+    # Initialize tracking variables for test issues and manual interventions
+    test_issues: list = []
+    manual_interventions: int = 0
+
     topic = "How Open Source Software Can Save the World: From Code Collaboration to Global Impact"
     research_focus = "open source software, collaborative development, global impact, innovation, sustainability, digital commons, open source economics, software freedom, community-driven development"
 
@@ -144,7 +148,7 @@ def main():
             model=model,
             research_topics=research_topics,
             output_path=output_dir / "01_scout.md",
-            target_minimum=50,  # Quality gate: require 50+ valid citations
+            target_minimum=55,  # Quality gate: 110% enhancement (50 → 55 citations)
             verbose=True
         )
 
@@ -238,8 +242,11 @@ def main():
     print("Extracting citations from research notes...")
 
     # Extract citations from research materials
+    # FIXED: Use full Scout output (not Scribe summary) to preserve all citations
+    # Root cause: Scribe truncates to 8000 chars, losing many citations
+    # Scout output contains complete citation metadata for all researched papers
     citation_database = extract_citations_from_text(
-        text=scribe_output,  # Use summarized research notes
+        text=scout_output,  # ✅ FIXED: Using full Scout markdown with all citations
         model=model,
         language="english",
         citation_style="APA 7th",
@@ -595,7 +602,7 @@ def main():
     if validation_result['missing_citations'] > 0:
         print(f"⚠️  Missing citations: {validation_result['missing_citations']}")
         print(f"   Missing IDs: {missing_ids}")
-        issues.append(f"❌ {validation_result['missing_citations']} missing citation IDs")
+        test_issues.append(f"❌ {validation_result['missing_citations']} missing citation IDs")
         manual_interventions += 1
     else:
         print("✅ All citation IDs successfully compiled - 100% success rate!")
@@ -639,7 +646,7 @@ def main():
         print(f"✅ Abstract already complete - no generation needed")
     else:
         print(f"⚠️  Abstract generation failed - continuing with existing content")
-        issues.append("⚠️ Abstract generation failed")
+        test_issues.append("⚠️ Abstract generation failed")
 
     rate_limit_delay()
 

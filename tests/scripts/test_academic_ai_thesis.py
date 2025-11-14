@@ -242,8 +242,11 @@ def main():
     print("Extracting citations from research notes...")
 
     # Extract citations from research materials
+    # FIXED: Use full Scout output (not Scribe summary) to preserve all 49 citations
+    # Root cause: Scribe truncates to 8000 chars, losing ~32 citations
+    # Scout output contains complete citation metadata for all researched papers
     citation_database = extract_citations_from_text(
-        text=scribe_output,  # Use summarized research notes
+        text=scout_output,  # ✅ FIXED: Using full Scout markdown with all citations
         model=model,
         language="english",
         citation_style="APA 7th",

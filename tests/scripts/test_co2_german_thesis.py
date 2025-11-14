@@ -149,7 +149,7 @@ def main():
             model=model,
             research_topics=research_topics,
             output_path=output_dir / "01_scout.md",
-            target_minimum=50,  # Quality gate: require 50+ valid citations
+            target_minimum=55,  # Quality gate: 110% enhancement (49 → 55 citations)
             verbose=True
         )
 
@@ -247,8 +247,11 @@ def main():
     print("Zitate aus Forschungsnotizen extrahieren...")
 
     # Extract citations from research materials
+    # FIXED: Use full Scout output (not Scribe summary) to preserve all citations
+    # Root cause: Scribe truncates to 8000 chars, losing many citations
+    # Scout output contains complete citation metadata for all researched papers
     citation_database = extract_citations_from_text(
-        text=scribe_output,  # Use summarized research notes
+        text=scout_output,  # ✅ FIXED: Using full Scout markdown with all citations
         model=model,
         language="german",
         citation_style="APA 7th",

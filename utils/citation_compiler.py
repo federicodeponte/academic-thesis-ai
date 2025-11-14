@@ -200,11 +200,14 @@ class CitationCompiler:
         """
         Generate reference list from citations used in text.
 
+        FIXED: Removes placeholder headers and detects content-full sections.
+        Prevents dual headers (German placeholder + English actual citations).
+
         Args:
             text: Text with formatted citations (to determine which were used)
 
         Returns:
-            str: Formatted reference list (header only added if not already present)
+            str: Formatted reference list (header added if section doesn't exist or is placeholder)
         """
         # Find all cited IDs in original format
         cited_ids = self._extract_cited_ids(text)
@@ -217,8 +220,10 @@ class CitationCompiler:
         ]
 
         if not cited_citations:
-            # Only add header if not already present
-            if "## References" not in text:
+            # Check if placeholder exists - if so, don't add another header
+            if self._has_placeholder_references(text):
+                return "\n(No citations found)\n"
+            elif "## References" not in text:
                 return "## References\n\n(No citations found)\n"
             else:
                 return "\n(No citations found)\n"
@@ -240,13 +245,22 @@ class CitationCompiler:
 
             references.append(ref)
 
-        # Only add "## References" header if not already present in text
         references_content = "\n\n".join(references)
-        if "## References" not in text:
-            return f"## References\n\n{references_content}"
+
+        # Check if section already has CONTENT-FULL references (not just placeholder)
+        has_content_full_refs = self._has_content_full_references(text)
+
+        if has_content_full_refs:
+            # References already exist with actual citations - don't duplicate
+            logger.warning(
+                "References section already exists with content - skipping generation. "
+                "This may indicate the text was already compiled."
+            )
+            return ""
         else:
-            # Header already exists, just return the references
-            return references_content
+            # Either no References section, or only placeholder exists
+            # Add full section with header
+            return f"\n\n## References\n\n{references_content}"
 
     def _extract_cited_ids(self, text: str) -> Set[str]:
         """Extract all citation IDs mentioned in text."""
@@ -255,6 +269,85 @@ class CitationCompiler:
         pattern = r'\{cite_\d{3}\}'
         matches = re.findall(pattern, text)
         return {match.strip('{}') for match in matches}
+
+    def _has_placeholder_references(self, text: str) -> bool:
+        """
+        Check if text has placeholder References section (no actual citations).
+
+        Args:
+            text: Text to check
+
+        Returns:
+            bool: True if placeholder detected, False otherwise
+        """
+        # Pattern for References header followed by placeholder text
+        placeholder_patterns = [
+            r'##\s+(?:References|Literaturverzeichnis|Bibliograf[íi]a|Références)\s*\n+\s*\[(?:Wird automatisch generiert|To be completed|A generar|À compléter)\]',
+            r'##\s+(?:References|Literaturverzeichnis|Bibliograf[íi]a|Références)\s*\n+\s*\((?:No citations|Keine Zitate|Sin citas)\)',
+        ]
+
+        return any(re.search(pattern, text, re.IGNORECASE | re.DOTALL) for pattern in placeholder_patterns)
+
+    def _has_content_full_references(self, text: str) -> bool:
+        """
+        Check if text has References section with actual citations (not placeholder).
+
+        Detects content by looking for DOI URLs, year patterns, and citation formatting.
+
+        Args:
+            text: Text to check
+
+        Returns:
+            bool: True if section has real content, False if placeholder/empty
+        """
+        # Universal References header patterns (all languages)
+        references_patterns = [
+            r'##\s+References\s*\n+(.*?)(?=\n##|\Z)',
+            r'##\s+Bibliography\s*\n+(.*?)(?=\n##|\Z)',
+            r'##\s+Literaturverzeichnis\s*\n+(.*?)(?=\n##|\Z)',
+            r'##\s+Referenzen\s*\n+(.*?)(?=\n##|\Z)',
+            r'##\s+Bibliograf[íi]a\s*\n+(.*?)(?=\n##|\Z)',
+            r'##\s+Références\s*\n+(.*?)(?=\n##|\Z)',
+        ]
+
+        for pattern in references_patterns:
+            match = re.search(pattern, text, re.IGNORECASE | re.DOTALL)
+            if match:
+                section_content = match.group(1).strip()
+
+                # Check for placeholder indicators
+                placeholder_indicators = [
+                    r'\[(?:Wird automatisch generiert|To be completed|A generar|À compléter)\]',
+                    r'^\s*$',  # Empty
+                    r'^\(No citations',
+                ]
+
+                is_placeholder = any(
+                    re.search(ind, section_content, re.IGNORECASE)
+                    for ind in placeholder_indicators
+                )
+
+                if is_placeholder:
+                    return False  # Placeholder, not content-full
+
+                # Check for actual citation indicators
+                citation_indicators = [
+                    r'https?://doi\.org/',  # DOI URLs
+                    r'\(\d{4}\)',  # Year in parentheses
+                    r'et al\.',  # Author formatting
+                    r'&',  # Author separators in APA
+                    r'\*\w+\*',  # Italics (journal/book titles)
+                ]
+
+                has_citations = any(
+                    re.search(ind, section_content)
+                    for ind in citation_indicators
+                )
+
+                return has_citations  # Has actual citations
+
+        # No References section found
+        return False
 
     def _format_apa_reference(self, citation: Citation) -> str:
         """Format full reference in APA 7th style."""

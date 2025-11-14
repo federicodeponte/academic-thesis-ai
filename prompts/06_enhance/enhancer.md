@@ -595,6 +595,80 @@ Alternative styles (all ASCII-only):
 - **🚨 CRITICAL: PRESERVE ALL SECTION NAMES** - Do NOT replace section headers with generic "## Content"
 - **🚨 CRITICAL: PRESERVE ALL CONTENT LENGTH** - Do NOT truncate or significantly shorten existing sections
 
+### 2.5. 🚨 CRITICAL: Bibliography/References Preservation (MANDATORY)
+
+**THE REFERENCES/BIBLIOGRAPHY SECTION MUST BE PRESERVED EXACTLY AS-IS.**
+
+This is the MOST CRITICAL requirement. The References section contains validated academic citations that were painstakingly researched and verified. Losing this section destroys the academic integrity of the entire thesis.
+
+**ABSOLUTE REQUIREMENTS - NON-NEGOTIABLE:**
+
+1. **LOCATE the References section** (may be named: "## References", "## Bibliograf[íi]a", "## Literaturverzeichnis", "## Références")
+2. **PRESERVE it EXACTLY as-is** - Every single citation must appear in your output
+3. **PLACE it at the END** of your output (after all appendices)
+4. **DO NOT modify, shorten, or truncate** the reference list
+5. **DO NOT remove ANY citations** - even if they seem redundant
+6. **DO NOT add placeholder text** like "[To be completed]" or "[Wird automatisch generiert]"
+
+**If the input has 40+ citations, your output MUST have 40+ citations.**
+**If the input References section is 500 lines, your output MUST have 500+ lines.**
+
+**Verification Steps - MANDATORY BEFORE OUTPUT:**
+
+✅ Count citations in input References section
+✅ Count citations in your output References section
+✅ Verify counts match (output >= input)
+✅ Visually confirm References section appears at end of output
+✅ Verify NO placeholder text exists in References
+
+**Common Failure Modes to AVOID:**
+
+❌ **WRONG:** Truncating output due to token limits and losing References
+  - **FIX:** Reduce appendix verbosity, NOT References section
+  - **FIX:** Shorten expanded case studies, NOT References
+  - **FIX:** Reduce methodology examples, NOT References
+
+❌ **WRONG:** Seeing placeholder "## Literaturverzeichnis\n\n[Wird automatisch generiert]" and thinking References doesn't exist
+  - **FIX:** Check for "## References" (English) even in German theses
+  - **FIX:** Look for actual citations with DOI URLs, years, authors
+
+❌ **WRONG:** Replacing full References with summary like "See original thesis for citations"
+  - **FIX:** Include EVERY citation from input
+
+**Token Limit Handling:**
+
+If your enhanced output approaches token limits:
+1. **FIRST:** Reduce Appendix D (Additional References) verbosity - can be brief bullet points
+2. **SECOND:** Shorten expanded case study tables (fewer rows)
+3. **THIRD:** Reduce Limitations section from 5 to 3 subsections
+4. **FOURTH:** Reduce Future Research from 7 to 5 directions
+5. **NEVER:** Truncate or remove the References/Bibliography section
+
+**The References section is MORE IMPORTANT than:**
+- Long appendices
+- Detailed case studies
+- Verbose limitations
+- Extensive future research directions
+- YAML metadata descriptions
+
+**Priority Order (Highest to Lowest):**
+1. References/Bibliography section (MUST be preserved 100%)
+2. Core thesis sections (Introduction, Lit Review, Methods, Analysis, Discussion, Conclusion)
+3. YAML frontmatter
+4. Limitations section
+5. Future Research section
+6. Appendices (can be shortened if needed)
+7. Extended case studies
+
+**Final Check - BEFORE you return enhanced thesis:**
+```
+Input References section: [Count lines, citations, characters]
+Output References section: [Count lines, citations, characters]
+Match? YES ✅ / NO ❌
+
+If NO: STOP. Go back and restore References section from input.
+```
+
 ### 3. Quality Standards
 - **Ensure consistency:** Tables/figures should use terminology from the thesis
 - **Professional formatting:** Use consistent markdown, proper table alignment

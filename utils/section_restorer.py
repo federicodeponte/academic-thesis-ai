@@ -15,17 +15,22 @@ def detect_missing_sections(
     """
     Detect critical sections missing from enhanced thesis.
 
+    FIXED: Content-aware detection - checks for ACTUAL content, not just headers.
+    Checks universal patterns (all languages) to catch English "## References"
+    even when language="german".
+
     Args:
         enhanced_text: Enhanced thesis content
-        language: Thesis language (english/german)
+        language: Thesis language (english/german/spanish/french)
 
     Returns:
         List of missing section names
     """
     missing = []
 
-    # Define section patterns for different languages
-    patterns = {
+    # Define section patterns - checking BOTH language-specific AND universal patterns
+    # This fixes the blind spot where German theses had English "## References"
+    language_patterns = {
         "english": {
             "Introduction": r"^#+\s+(?:\d+\.?\s+)?Introduction\s*$",
             "Literature Review": r"^#+\s+(?:\d+\.?\s+)?Literature\s+Review\s*$",
@@ -36,15 +41,115 @@ def detect_missing_sections(
             "Literature Review": r"^#+\s+(?:\d+\.?\s+)?Literaturübersicht\s*$",
             "References": r"^#+\s+(?:Literaturverzeichnis|Referenzen)\s*$",
         },
+        "spanish": {
+            "Introduction": r"^#+\s+(?:\d+\.?\s+)?Introducción\s*$",
+            "Literature Review": r"^#+\s+(?:\d+\.?\s+)?Revisión de Literatura\s*$",
+            "References": r"^#+\s+Bibliografía\s*$",
+        },
+        "french": {
+            "Introduction": r"^#+\s+(?:\d+\.?\s+)?Introduction\s*$",
+            "Literature Review": r"^#+\s+(?:\d+\.?\s+)?Revue de Littérature\s*$",
+            "References": r"^#+\s+Références\s*$",
+        },
     }
 
-    sections_to_check = patterns.get(language, patterns["english"])
+    # CRITICAL FIX: Universal References patterns (check ALL, regardless of language)
+    # This catches English "## References" even in German theses
+    universal_references_patterns = [
+        r'^#+\s+References\s*$',
+        r'^#+\s+Bibliography\s*$',
+        r'^#+\s+Literaturverzeichnis\s*$',
+        r'^#+\s+Referenzen\s*$',
+        r'^#+\s+Bibliografía\s*$',
+        r'^#+\s+Références\s*$',
+    ]
+
+    sections_to_check = language_patterns.get(language, language_patterns["english"])
 
     for section_name, pattern in sections_to_check.items():
-        if not re.search(pattern, enhanced_text, re.MULTILINE | re.IGNORECASE):
+        # Check language-specific pattern first
+        header_found = bool(re.search(pattern, enhanced_text, re.MULTILINE | re.IGNORECASE))
+
+        # For References, also check ALL universal patterns
+        if section_name == "References" and not header_found:
+            header_found = any(
+                re.search(p, enhanced_text, re.MULTILINE | re.IGNORECASE)
+                for p in universal_references_patterns
+            )
+
+        if header_found:
+            # CRITICAL: Header exists, but does it have CONTENT?
+            if section_name == "References":
+                has_content = _section_has_citation_content(
+                    text=enhanced_text,
+                    patterns=universal_references_patterns if section_name == "References" else [pattern]
+                )
+
+                if not has_content:
+                    # Placeholder detected - section is "missing" (needs restoration)
+                    missing.append(section_name)
+            # For other sections, header existence is enough
+        else:
+            # No header found at all
             missing.append(section_name)
 
     return missing
+
+
+def _section_has_citation_content(text: str, patterns: List[str]) -> bool:
+    """
+    Check if References/Bibliography section has actual citations (not placeholder).
+
+    Args:
+        text: Full thesis text
+        patterns: List of header patterns to check
+
+    Returns:
+        True if section has real citations, False if placeholder or empty
+    """
+    for pattern in patterns:
+        match = re.search(
+            pattern + r'\s*\n+(.*?)(?=\n##|\Z)',
+            text,
+            re.MULTILINE | re.IGNORECASE | re.DOTALL
+        )
+
+        if match:
+            section_content = match.group(1).strip()
+
+            # Check for placeholders
+            placeholder_indicators = [
+                r'\[(?:Wird automatisch generiert|To be completed|A generar|À compléter)\]',
+                r'^\s*$',  # Empty
+                r'^\(No citations',
+            ]
+
+            is_placeholder = any(
+                re.search(ind, section_content, re.IGNORECASE)
+                for ind in placeholder_indicators
+            )
+
+            if is_placeholder:
+                return False  # Placeholder, not real content
+
+            # Check for actual citation indicators
+            citation_indicators = [
+                r'https?://doi\.org/',  # DOI URLs
+                r'\(\d{4}\)',  # Year in parentheses
+                r'et al\.',  # Author formatting
+                r'&',  # Author separators
+                r'\*\w+\*',  # Italics (journal names)
+            ]
+
+            has_citations = any(
+                re.search(ind, section_content)
+                for ind in citation_indicators
+            )
+
+            return has_citations  # Has actual citations
+
+    # No section found with any of the patterns
+    return False
 
 
 def extract_section(

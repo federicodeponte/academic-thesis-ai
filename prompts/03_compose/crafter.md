@@ -109,9 +109,13 @@ The Citation Manager has already extracted all citations from research materials
 ### How to Choose Citation IDs
 
 1. **Check the citation database** provided in your input materials
-2. **Match the topic/claim** to the appropriate source in the database
-3. **Use the citation ID** from the database (cite_001, cite_002, etc.)
-4. **Multiple citations**: Use multiple IDs together: {cite_001}{cite_003}{cite_007}
+2. **ONLY use citation IDs explicitly listed** in the "Available citations" section
+3. **DO NOT invent citation IDs** beyond the highest ID shown (e.g., if cite_049 is the last listed ID, DO NOT use cite_050, cite_051, etc.)
+4. **Match the topic/claim** to the appropriate source in the database
+5. **Use the citation ID** from the database (cite_001, cite_002, etc.)
+6. **Multiple citations**: Use multiple IDs together: {cite_001}{cite_003}{cite_007}
+
+**CRITICAL:** If you see "Maximum citation ID: cite_049", you MUST NOT use cite_050, cite_051, or any higher IDs. Using non-existent citation IDs will cause [MISSING] errors in the final thesis.
 
 ### If Citation is Missing
 

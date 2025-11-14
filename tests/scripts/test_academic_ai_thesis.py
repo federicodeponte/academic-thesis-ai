@@ -261,15 +261,19 @@ def main():
     print(f"📄 Saved to: {citation_db_path}")
 
     # Prepare citation database summary for Crafters
+    # FIXED (Bug #12): Show ALL citations explicitly to prevent hallucination
     citation_summary = f"\n\n## CITATION DATABASE\n\nYou have access to {len(citation_database.citations)} citations. Use citation IDs (cite_001, cite_002, etc.) instead of inline citations.\n\n"
+    citation_summary += "**CRITICAL: ONLY use citation IDs listed below. DO NOT invent IDs beyond this list.**\n\n"
     citation_summary += "Available citations:\n"
-    for citation in citation_database.citations[:20]:  # Show first 20
+    for citation in citation_database.citations:  # Show ALL citations (removed [:20] limit)
         authors_str = ", ".join(citation.authors[:2])
         if len(citation.authors) > 2:
             authors_str += " et al."
         citation_summary += f"- {citation.id}: {authors_str} ({citation.year}) - {citation.title[:60]}...\n"
-    if len(citation_database.citations) > 20:
-        citation_summary += f"  ... and {len(citation_database.citations) - 20} more citations\n"
+    # Add explicit maximum ID boundary
+    if citation_database.citations:
+        max_id = citation_database.citations[-1].id
+        citation_summary += f"\n**Maximum citation ID: {max_id}** (DO NOT exceed this)\n"
 
     rate_limit_delay()
 

@@ -675,6 +675,7 @@ def research_citations_via_api(
     sources_breakdown: Dict[str, int] = {
         "Crossref": 0,
         "Semantic Scholar": 0,
+        "Gemini Grounded": 0,  # Track Google Search grounded sources
         "Gemini LLM": 0
     }
     failed_topics: List[str] = []
@@ -701,8 +702,8 @@ def research_citations_via_api(
             if citation:
                 citations.append(citation)
 
-                # Track source (CitationResearcher stores this in citation metadata)
-                source = getattr(citation, '_source', 'Unknown')
+                # Track source (CitationResearcher stores this in citation.api_source)
+                source = citation.api_source or 'Unknown'
                 if source in sources_breakdown:
                     sources_breakdown[source] += 1
 
@@ -819,8 +820,8 @@ def research_citations_via_api(
     ])
 
     # Add citations grouped by source
-    for source in ["Crossref", "Semantic Scholar", "Gemini LLM"]:
-        source_citations = [c for c in citations if getattr(c, '_source', '') == source]
+    for source in ["Crossref", "Semantic Scholar", "Gemini Grounded", "Gemini LLM"]:
+        source_citations = [c for c in citations if c.api_source == source]
         if not source_citations:
             continue
 

@@ -17,21 +17,23 @@ class PandocLatexEngine(PDFEngine):
     """
     Pandoc/LaTeX-based PDF generation engine.
 
-    Uses Pandoc to convert markdown to LaTeX, then pdflatex to generate PDF.
-    This is the academic standard for document typesetting with superior
-    typography and font rendering.
+    Uses Pandoc to convert markdown to LaTeX, then XeLaTeX to generate PDF.
+    This is the modern academic standard for document typesetting with superior
+    typography and full Unicode support (including CJK characters).
 
     Advantages:
     - Best font rendering quality (solves AI vs Al visual issues)
     - Professional academic typesetting
     - Industry standard for research papers
     - Proper handling of italics, bold, and formatting
+    - Full Unicode support for international characters (Chinese, Japanese, Korean, etc.)
     - Clean separation of content and presentation
 
     Requirements:
     - pandoc
-    - pdflatex (texlive-latex-base)
+    - xelatex (texlive-xetex)
     - texlive-latex-recommended (for additional packages)
+    - fonts-noto-cjk (for CJK character support)
     """
 
     def get_name(self) -> str:
@@ -48,10 +50,10 @@ class PandocLatexEngine(PDFEngine):
         return 85
 
     def is_available(self) -> bool:
-        """Check if pandoc and pdflatex are available."""
+        """Check if pandoc and xelatex are available."""
         return (
             shutil.which('pandoc') is not None and
-            shutil.which('pdflatex') is not None
+            shutil.which('xelatex') is not None
         )
 
     def generate(
@@ -92,8 +94,8 @@ class PandocLatexEngine(PDFEngine):
 
             md_content = self._normalize_yaml_for_pandoc(md_content)
 
-            # Sanitize problematic Unicode characters for pdflatex
-            md_content = self._sanitize_unicode_for_latex(md_content)
+            # Note: XeLaTeX handles Unicode natively, no sanitization needed
+            # (Previous pdflatex required _sanitize_unicode_for_latex)
 
             # Write normalized content to temporary file for Pandoc
             import tempfile
@@ -177,6 +179,12 @@ class PandocLatexEngine(PDFEngine):
 \usepackage{etoolbox}
 \usepackage{setspace}
 ''' + spacing_command + r'''
+
+% Unicode font support for XeLaTeX (handles CJK and all Unicode)
+\usepackage{fontspec}
+% XeLaTeX natively handles Unicode - no special CJK packages needed
+% System fonts like DejaVu Sans support basic CJK glyphs
+
 \usepackage{indentfirst}
 \setlength{\parindent}{0.5in}
 \setlength{\parskip}{0pt}
@@ -305,7 +313,7 @@ class PandocLatexEngine(PDFEngine):
                 'pandoc',
                 str(md_file.resolve()),
                 '-o', str(output_pdf.resolve()),
-                '--pdf-engine=pdflatex',
+                '--pdf-engine=xelatex',  # Use XeLaTeX for full Unicode support
                 '--include-in-header', str(preamble_path.resolve()),
                 '--from', 'markdown+autolink_bare_uris',
                 '--variable', f'geometry:margin={margin}',

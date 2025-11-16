@@ -239,7 +239,7 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
                 # Extract from grounding chunks
                 grounding_chunks = grounding_metadata.get('groundingChunks', [])
 
-                for chunk in grounding_chunks:
+                for idx, chunk in enumerate(grounding_chunks, 1):
                     source = {}
 
                     # Extract web source details

@@ -82,7 +82,10 @@ class CitationResearcher:
             self.semantic_scholar = SemanticScholarClient()
         if self.enable_gemini_grounded:
             try:
-                self.gemini_grounded = GeminiGroundedClient()
+                self.gemini_grounded = GeminiGroundedClient(
+                    validate_urls=False,  # Disable URL validation to prevent timeouts
+                    timeout=120  # Keep standard timeout
+                )
             except Exception as e:
                 logger.warning(f"Gemini Grounded client unavailable: {e}")
                 self.enable_gemini_grounded = False

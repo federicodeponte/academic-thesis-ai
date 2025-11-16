@@ -8,127 +8,125 @@
 ## Summary
 
 **Strengths:**
-- Comprehensive overview of various AI agent pricing models.
-- Clear and structured comparison of advantages and disadvantages for each model.
-- Good integration of real-world examples from LLMs, specialized AI services, and cloud platforms.
-- Thoughtful exploration of hybrid pricing approaches, demonstrating a nuanced understanding of the challenges.
-- Explicitly flags the complexity of defining "tasks," "decisions," and "actions" for autonomous agents.
+- **Comprehensive Coverage:** The section provides an extensive overview of various AI agent pricing models, including usage-based, subscription, value-based, and dynamic approaches.
+- **Clear Definitions and Examples:** Each pricing model is clearly defined, and its advantages and disadvantages are well-articulated for both providers and users.
+- **Real-World Relevance:** The inclusion of real-world examples from prominent AI providers (OpenAI, Anthropic, Google) grounds the theoretical discussion in current industry practices.
+- **Emphasis on Hybrid Approaches:** The dedicated section on hybrid pricing models effectively addresses the complexity of AI agent monetization and offers practical combinations.
+- **Ethical Awareness:** The paper acknowledges significant ethical concerns, particularly regarding personalized and dynamic pricing.
+- **Logical Structure:** The analysis progresses logically from individual models to real-world applications and then to hybrid strategies, concluding with influencing factors.
 
-**Critical Issues:** 2 major, 4 moderate, 5 minor
-**Recommendation:** Significant revisions needed before publication to enhance depth, address critical gaps, and strengthen claims.
+**Critical Issues:** 3 major, 3 moderate, 5 minor
+**Recommendation:** Significant revisions are needed to strengthen claims, improve verification, and address critical omissions before publication.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Missing Specific Citation for Foundational LLM Pricing
-**Location:** Section 4.1.1, "Token-Based Pricing" (second sentence of the second paragraph)
-**Claim:** "For example, OpenAI's GPT models and Anthropic's Claude models primarily utilize this method, differentiating costs between input (prompt) tokens and output (completion) tokens, often with output tokens being more expensive due to the generative computational load {cite_MISSING: OpenAI/Anthropic pricing models}."
-**Problem:** This is a crucial, specific factual claim about leading models, yet the citation is explicitly marked as missing. Without proper citation, this claim lacks academic backing and could be perceived as unsubstantiated.
-**Evidence:** The placeholder "{cite_MISSING: OpenAI/Anthropic pricing models}" explicitly indicates the absence of a reference.
-**Fix:** Provide direct citations to the official pricing pages or documentation for OpenAI and Anthropic, or reputable third-party analyses that detail their token-based pricing structures.
-**Severity:** 🔴 High - affects academic integrity and factual accuracy of a core example.
+### Issue 1: Overclaims and Insufficient Hedging
+**Location:** Throughout "Advantages" sections (e.g., "Maximized Revenue," "Optimal Resource Allocation")
+**Claim:** Statements implying guaranteed positive outcomes (e.g., value-based pricing *will* maximize revenue, dynamic pricing *will* optimize resource allocation).
+**Problem:** While these are *potential* advantages or *aims*, their achievement is contingent on successful implementation, market conditions, and other factors. Strong, definitive language can be misleading.
+**Evidence:** For instance, "Maximized Revenue" under Value-Based Pricing's advantages. Value-based pricing *can* maximize revenue if executed perfectly, but it also carries high risk and complexity, which are often barriers to maximum revenue.
+**Fix:** Rephrase strong claims using more cautious and hedged language (e.g., "potential for maximized revenue," "aims to optimize," "can lead to").
+**Severity:** 🔴 High - affects the academic rigor and accuracy of claims.
 
-### Issue 2: Insufficient Discussion of Ethical and Liability Concerns in Value-Based Pricing
-**Location:** Section 4.1.4, "Value-Based Pricing" (last sentence of the third paragraph) and 4.2.4 "Value-Based Pricing: Pros and Cons" (fifth disadvantage).
-**Claim:** "Furthermore, ethical considerations regarding responsibility and liability arise when an agent's performance directly impacts financial outcomes {cite_002}{cite_027}." and "Ethical and Liability Concerns: When an agent's performance directly impacts financial outcomes, questions of responsibility, accountability, and liability become paramount {cite_002}{cite_021}."
-**Problem:** The paper repeatedly states that ethical and liability concerns are "paramount" or "arise" but provides no elaboration on *what* these specific concerns are, *how* they manifest, or *what potential frameworks or solutions* might address them. This leaves a critical, high-impact issue underexplored. This is a significant gap given the paper's overall objective to propose viable pricing frameworks.
-**Evidence:** The text merely declares the existence of these concerns without delving into their nature (e.g., who is liable for an agent's financial error? How do you define agent "responsibility"? What are the implications for insurance or legal contracts?).
-**Fix:** Dedicate a subsection or at least a substantial paragraph to dissecting these ethical and liability concerns. Discuss practical implications, potential legal frameworks (e.g., tort law, contract law), and emerging solutions (e.g., AI ethics boards, explicit SLAs, insurance models). Integrate this deeper discussion into the relevant hybrid models (e.g., Performance-Based Bonuses).
-**Severity:** 🔴 High - a critical gap in addressing a fundamental challenge of AI agent deployment.
+### Issue 2: Specific Factual Verification & Citation Quality
+**Location:** "OpenAI's Pricing Model" and "Anthropic (Claude) and Google's Gemini" sections, specifically regarding pricing numbers.
+**Claim:** "For instance, GPT-4 Turbo might be priced at $0.01 per 1,000 input tokens and $0.03 per 1,000 output tokens {cite_014}."
+**Problem:** Citing specific, real-time pricing figures from a general research paper ({cite_014}) is insufficient. Pricing for rapidly evolving AI services changes frequently and should be sourced directly from the provider's official pricing pages (e.g., OpenAI API pricing page). The current citation is likely not the primary, authoritative source for these specific numbers.
+**Evidence:** The nature of AI pricing means these numbers are volatile. A research paper is unlikely to be updated in real-time.
+**Fix:** For specific pricing examples, cite the official company pricing page directly (e.g., "OpenAI, as of [Date], prices GPT-4 Turbo at... [cite OpenAI official pricing page]"). If specific numbers are not critical, generalize the statement. Also, ensure all placeholder citations `{cite_XXX}` are replaced with full, verifiable references including DOIs or arXiv IDs.
+**Severity:** 🔴 High - directly impacts factual accuracy and academic integrity.
+
+### Issue 3: Missing Discussion on Vendor Lock-in
+**Location:** General omission in "Advantages and Disadvantages" and "Hybrid Pricing Approaches" sections.
+**Claim:** The paper discusses various pricing models and their implications for providers and users.
+**Problem:** A critical consideration for enterprise users, especially when adopting complex or highly integrated AI agent services, is the risk of vendor lock-in. This arises when switching costs are high due due to custom integrations, data formats, or proprietary models. This is a significant disadvantage that is not addressed.
+**Missing:** A discussion of how different pricing models (e.g., highly customized value-based contracts, platform-specific integrations) can contribute to or mitigate vendor lock-in for users.
+**Fix:** Add a section or points within the disadvantages of relevant models (e.g., Value-Based, Subscription with heavy feature integration) discussing the risk of vendor lock-in for users.
+**Severity:** 🔴 High - a major oversight in a comprehensive analysis of economic models for AI agents.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 3: Overclaim in Introduction/Objectives
-**Location:** Introduction, last sentence of the first paragraph.
-**Claim:** "The objective is to identify pricing strategies that not only ensure the economic viability of AI agent development and deployment but also promote equitable access, foster innovation, and manage the inherent complexities of autonomous decision-making and resource consumption {cite_002}{cite_021}."
-**Problem:** While the paper effectively *compares* and *proposes frameworks* for pricing models, claiming to "identify strategies that *ensure*... equitable access, foster innovation, and manage complexities" is a very strong overclaim for an analysis section. These are broad societal and economic goals that a pricing model alone cannot guarantee. The paper's scope is primarily economic viability and operational considerations.
-**Evidence:** The subsequent analysis focuses heavily on economic and operational aspects, with only high-level mentions of ethical/fairness concerns, not deep dives into "equitable access" or "fostering innovation" as direct outcomes of pricing models.
-**Fix:** Rephrase to be more modest and accurate to the scope of the analysis. For example: "The objective is to explore pricing strategies that aim to support the economic viability of AI agent development and deployment, while considering factors such as equitable access, innovation, and the complexities of autonomous decision-making."
-**Severity:** 🟡 Moderate - affects the perceived scope and achievable objectives of the paper.
+### Issue 4: Insufficient Depth on Implementation Costs & Complexity
+**Location:** "Value-Based Pricing Models," "Dynamic Pricing Models," and "Hybrid Pricing Approaches"
+**Problem:** While the paper mentions "complexity" as a disadvantage for value-based and dynamic pricing, it doesn't adequately elaborate on the *types* and *magnitude* of costs involved. Implementation complexity isn't just a conceptual hurdle; it translates into significant financial and resource overhead (e.g., specialized data scientists, legal teams for contracts, custom integration development, robust data infrastructure, ongoing monitoring).
+**Missing:** A more detailed breakdown of the practical, non-obvious costs (e.g., human capital, legal, infrastructure, ongoing maintenance) associated with designing, implementing, and managing these complex pricing models.
+**Fix:** Expand the discussion on disadvantages for value-based and dynamic pricing to include specific examples of the high costs and resource demands for successful implementation.
+**Severity:** 🟡 Moderate - important for a realistic understanding of these models.
 
-### Issue 4: Weak Argument: "Per-Decision Pricing" and "Active Intelligence"
-**Location:** Section 4.1.2, "Per-Decision Pricing" (second sentence).
-**Claim:** "This model aims to align cost more closely with the agent's active intelligence and autonomy {cite_032}."
-**Problem:** The connection between counting discrete "decisions" and measuring "active intelligence" is a weak argument. A "decision" is a simple event count, which does not inherently capture the *quality*, *complexity*, *context-awareness*, or *computational effort* behind that decision. An agent making many trivial decisions might appear "more intelligent" by this metric than one making fewer, more profound, and resource-intensive decisions. This is a logical leap.
-**Evidence:** No further explanation is provided on *how* a simple count of decisions reflects "active intelligence."
-**Fix:** Qualify this claim. Instead of "active intelligence," perhaps "active engagement" or "discrete operational steps." Or, elaborate on how decision-counting *could* be refined (e.g., weighting decisions by complexity, resource consumption, or impact) to better reflect intelligence.
-**Severity:** 🟡 Moderate - represents a logical flaw and a weak justification for a proposed pricing unit.
+### Issue 5: Limited Discussion on Navigating Ethical/Regulatory Challenges
+**Location:** "Personalized Pricing/Discriminatory Pricing" and "Dynamic Pricing within a Subscription Framework"
+**Problem:** The paper rightly flags ethical concerns (fairness, transparency, discrimination) and regulatory scrutiny. However, it largely stops at identification and doesn't delve into *how* providers might practically navigate these challenges or *what frameworks* could be adopted to mitigate risks.
+**Missing:** Potential strategies for providers to ensure ethical implementation, build user trust, or comply with emerging regulations (e.g., explainable AI principles in pricing, transparent communication strategies, opt-out mechanisms, regulatory sandboxes).
+**Fix:** Expand the discussion to suggest ways providers can proactively address ethical and regulatory concerns, moving beyond just acknowledging them.
+**Severity:** 🟡 Moderate - crucial for a forward-looking analysis of AI agent monetization.
 
-### Issue 5: Repetitive Structure in Section 4.2
-**Location:** Section 4.2, "Advantages and Disadvantages of Pricing Models"
-**Problem:** This section largely re-states and elaborates on points already made in Section 4.1 during the initial description of each model. While structuring pros and cons explicitly is helpful, much of the content feels redundant.
-**Evidence:** Compare the "Disadvantages" in 4.1.1 with "Cons" in 4.2.1; they are very similar. The same applies across other subsections.
-**Fix:** Consider either:
-    a) Integrating the pros/cons directly into Section 4.1's description of each model, making 4.2 a shorter, high-level comparative summary.
-    b) Ensuring that Section 4.2 introduces *new insights* or *deeper analysis* for each pro/con, rather than just restating them. For instance, instead of just saying "cost unpredictability," expand on *why* it's difficult for businesses to manage and *what specific types* of costs fluctuate.
-**Severity:** 🟡 Moderate - impacts readability and efficiency of information delivery.
-
-### Issue 6: Limited Depth on Ethical/Liability in Hybrid Models
-**Location:** Section 4.4.2, "Performance-Based Bonuses with Fixed Retainer" and 4.4.4 "Dynamic Pricing with AI Agents"
-**Problem:** Despite the major issue flagged regarding ethical/liability concerns in value-based pricing, this crucial aspect is still not adequately addressed when discussing hybrid models that incorporate value-based or dynamic elements. "Contractual Complexity" is mentioned for performance-based bonuses, but this only hints at the underlying legal/ethical issues. For dynamic pricing, "transparency and fairness concerns" and "ethical considerations" are mentioned, but again, without detail.
-**Evidence:** The paper describes the mechanisms of these hybrid models but does not delve into how they practically mitigate or exacerbate the ethical and liability challenges posed by autonomous agents.
-**Fix:** For Performance-Based Bonuses, explicitly discuss how the fixed retainer and bonus structure might *distribute* or *shift* liability compared to pure value-based models. For Dynamic Pricing, elaborate on specific ethical pitfalls (e.g., price discrimination, exploitation of urgent needs) and how transparency mechanisms could address them.
-**Severity:** 🟡 Moderate - a missed opportunity to provide practical guidance on a critical issue within the proposed solutions.
+### Issue 6: Repetitive Language and Structure
+**Location:** Across the "Comparison of Pricing Models" and "Advantages and Disadvantages of Pricing Models" sections.
+**Problem:** Many points in the "Advantages and Disadvantages" section are direct reiterations of points made when introducing each model in the "Comparison" section. While a summary can be useful, the current structure leads to redundancy rather than adding new insights or a comparative synthesis.
+**Evidence:** For example, "Predictable Revenue" for subscriptions is stated in both sections with similar phrasing.
+**Fix:** Consider reframing the "Advantages and Disadvantages" section to be more comparative, highlighting trade-offs *between* models, or focusing on overarching themes rather than simply repeating points already made. Alternatively, integrate the advantages/disadvantages more fully into the initial model descriptions and then use the subsequent section for a higher-level comparative analysis or a discussion of the strategic implications of these trade-offs.
+**Severity:** 🟡 Moderate - impacts readability and conciseness.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Nuance Missing in Token-Based Predictability:** In 4.1.1, it's stated, "users can estimate costs based on the verbosity of their prompts and the expected length of responses." This is immediately contradicted later by the "Cost Unpredictability for Agents" disadvantage. A small clarification upfront that this predictability *only applies to direct, simple LLM calls* and not complex agents would improve coherence.
-2.  **Ambiguity in "Direct Cost Recovery" for Token-Based:** In 4.2.1, "Direct Cost Recovery" is listed as an advantage. While token consumption reflects marginal computational costs, it doesn't always directly recover *all* provider costs (e.g., R&D, specialized infrastructure, business overhead). A slight hedging or clarification that it primarily covers *marginal compute costs* would be more precise.
-3.  **Vague "Cognitive Load" for Resource-Based Pricing:** In 4.2.5, "High Cognitive Load" is listed as a disadvantage for end-users. While intuitive, in an academic context, it could be more precisely explained (e.g., "requires specialized technical knowledge to interpret and optimize, increasing the mental burden on non-expert users").
-4.  **Overly Confident Phrasing:** Phrases like "fundamentally reshapes" (Introduction) and "will be critical" (Conclusion of 4.4) are strong. While the content largely supports the importance, academic writing often benefits from slightly more hedged language (e.g., "is poised to fundamentally reshape," "is likely to be critical") to reflect the ongoing nature of research and development.
-5.  **Lack of Specificity in "Multi-Agent Market Models and Pricing" Challenges:** While challenges like "Design Complexity," "Stability and Fairness," and "Debugging and Auditability" are listed, they are quite generic. Adding a sentence to each explaining *why* they are complex or challenging in the context of AI agent markets would provide more depth. For instance, "Stability and Fairness: Ensuring that internal agent markets do not lead to monopolies or unfair resource hoarding by certain agents requires sophisticated game-theoretic design and continuous monitoring."
+1.  **Vague Claim:** "Providers must also ensure transparent tokenization methods..." (Per-Token Pricing). While important, "must" is a strong word. Suggest changing to "should ensure" or "it is critical that providers ensure."
+2.  **Missing Specific Examples of "Dead Zones":** In "Tiered Subscription," the mention of "creating 'dead zones' where no tier perfectly fits user needs" is insightful but could benefit from a brief hypothetical example to illustrate.
+3.  **Ambiguity in "Maximize Revenue":** In several places (e.g., Value-Based, Dynamic Pricing advantages), "maximizes revenue" is stated definitively. As noted in Major Issue 1, this should be softened to "aims to maximize revenue" or "has the potential to maximize revenue."
+4.  **Clarity of "De Facto Standard":** While per-token pricing is prevalent, calling it a "de facto standard" for *all* foundational LLM APIs might be a slight overstatement given the diversity of enterprise offerings and cloud integrations. Could be hedged to "a widely adopted standard" or "the prevailing standard for raw LLM API access."
+5.  **Introduction Repetition:** The first two paragraphs of the introduction contain somewhat repetitive statements about the unique characteristics of AI agents and their impact on pricing. Could be condensed for conciseness.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Unsubstantiated Link between "Decision" and "Intelligence"
-**Location:** Section 4.1.2, "Per-Decision Pricing"
-**Logic:** The claim that charging per-decision aligns costs with "active intelligence" is a logical leap. A simple count of decisions does not inherently measure the quality, complexity, or value of the intelligence applied. This suggests an uncritical acceptance of "decision" as a direct proxy for "intelligence."
-**Missing:** A clear rationale or framework for how a discrete decision count can accurately reflect the *value* or *quality* of an agent's intelligence, or how such decisions would be weighted.
-**Fix:** Either qualify the claim as discussed in Moderate Issue 4, or provide a theoretical basis/model that connects decision counting to intelligence metrics.
+### Gap 1: Implicit Feasibility Assumption
+**Location:** Throughout discussions of complex pricing models (Value-Based, Dynamic, advanced Hybrid).
+**Logic:** The paper describes these models and their potential benefits.
+**Missing:** An explicit acknowledgment of the often-prohibitive *organizational* and *technical* feasibility challenges for many providers, particularly smaller ones, in implementing truly sophisticated value-based or dynamic pricing. The paper assumes these are generally implementable options, perhaps understating the practical hurdles beyond just "complexity."
+**Fix:** Integrate a discussion on the scalability of implementation for providers of different sizes or maturity levels, acknowledging that not all models are feasible for all providers.
 
 ---
 
 ## Methodological Concerns
 
-### Concern 1: Depth of Analysis for Critical Issues
-**Issue:** While the paper provides a good comparative analysis of pricing models, the depth of discussion for critical, non-economic factors like ethics, liability, and user perception remains superficial. These issues are repeatedly mentioned as challenges but are not systematically analyzed or addressed with potential solutions.
-**Risk:** The analysis may be perceived as incomplete or lacking robustness in addressing the multifaceted challenges of AI agent commercialization.
-**Reviewer Question:** "How does the analysis move beyond merely identifying these critical non-economic issues to providing a framework for understanding or mitigating them within the proposed pricing models?"
-**Suggestion:** Integrate dedicated sub-sections or expanded discussions on these critical areas, especially for value-based and dynamic pricing models, as suggested in Major Issue 2 and Moderate Issue 6.
+### Concern 1: Scope of "Analysis"
+**Issue:** The "Analysis" section is primarily descriptive and comparative. While excellent in its breadth, it could be argued that it lacks a deeper analytical framework for *prescribing* or *optimizing* pricing strategies beyond listing factors.
+**Risk:** The reader gains a comprehensive overview but might still lack a structured approach for decision-making in a specific context.
+**Reviewer Question:** "Does this analysis provide a framework for a provider to *select* the optimal pricing model for their specific AI agent, or is it primarily a survey of options?"
+**Suggestion:** While not a "fix" for this paper's current scope, for future work or a broader paper, consider developing a decision framework or a multi-criteria evaluation matrix based on the identified factors.
 
 ---
 
 ## Missing Discussions
 
-1.  **Practical Mitigation for Ethical/Liability Issues:** Beyond acknowledging them as challenges, the paper does not discuss concrete, practical strategies (e.g., legal clauses, insurance products, ethical AI design principles, independent audits) that providers and users could employ to address the ethical and liability concerns inherent in value-based or performance-based agent pricing.
-2.  **User Acceptance and Trust for Dynamic Pricing:** While "transparency and fairness concerns" are mentioned for dynamic pricing, a deeper discussion on user psychology, trust-building mechanisms, and how rapid price fluctuations impact user adoption and satisfaction would be valuable. How can dynamic pricing be implemented in a user-friendly and trustworthy manner?
-3.  **Regulatory Landscape and Policy Implications:** The conclusion briefly mentions "policymakers," but the analysis itself lacks a discussion of potential regulatory frameworks, anti-trust concerns, data privacy implications (especially for telemetry needed for usage/dynamic pricing), or other policy considerations that might influence the feasibility and design of these pricing models.
-4.  **Security and Privacy Implications of Telemetry:** Granular usage-based and dynamic pricing models necessitate extensive data collection on agent behavior and user interactions. The security risks (e.g., data breaches) and privacy implications (e.g., surveillance, data misuse) of collecting, storing, and analyzing this telemetry are not discussed.
+1.  **Impact of Rapid AI Model Evolution on Pricing:** The pace at which new, more capable, and often cheaper AI models emerge is unprecedented. How does this rapid obsolescence or improvement affect long-term pricing contracts, user willingness to commit, and provider R&D investment recovery?
+2.  **User Trust and Communication Strategies:** Especially for dynamic and personalized pricing, how can providers effectively communicate pricing logic and build user trust to mitigate backlash and perceptions of unfairness?
+3.  **Legal and Contractual Nuances:** For value-based and gain-sharing models, the legal complexities of defining metrics, baselines, and dispute resolution are substantial. A brief mention of this would enhance the practicality of the discussion.
+4.  **Small Provider/Startup Considerations:** The analysis largely focuses on the capabilities of major players. What are the unique pricing challenges and opportunities for smaller AI agent startups with limited resources?
+5.  **Open-Source Model's Full Competitive Impact:** While mentioned that open-source models shift compute costs to users, a deeper dive into how this impacts the *value proposition* and *pricing ceilings* for commercial models would be beneficial.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **High-Level Ethical Discussion:** The tone regarding ethical and liability issues is more declarative (e.g., "concerns arise," "become paramount") than analytical or problem-solving. It states the problem without engaging with solutions or deeper implications.
-2.  **Repetitive Content in 4.2:** As noted in Moderate Issue 5, the repetition between 4.1 and 4.2 could be streamlined to improve flow and conciseness.
+1.  **Slightly Repetitive:** As noted in Moderate Issue 6, some points are reiterated across sections.
+2.  **Confident Language:** Some definitive statements could benefit from hedging (e.g., "clearly demonstrates" → "suggests," "maximizes" → "has the potential to maximize").
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Please provide the specific citations for OpenAI and Anthropic pricing models mentioned in Section 4.1.1." (Relates to Major Issue 1)
-2.  "Given the 'paramount' ethical and liability concerns in value-based pricing, what concrete legal frameworks, contractual terms, or risk mitigation strategies do you envision being necessary to make such models viable for AI agents?" (Relates to Major Issue 2 and Missing Discussion 1)
-3.  "How do you propose to practically define, measure, and audit 'decisions' in a way that accurately reflects an agent's 'intelligence' or value, especially for complex, adaptive agents, beyond a simple count?" (Relates to Moderate Issue 4 and Logical Gap 1)
-4.  "What are the specific data privacy and security implications of collecting the extensive telemetry required for granular usage-based or dynamic pricing, and how should providers address these?" (Relates to Missing Discussion 4)
-5.  "Beyond merely mentioning 'transparency,' what specific UI/UX design principles or communication strategies can providers employ to build user trust and manage perceptions of fairness when implementing dynamic pricing for AI agents?" (Relates to Missing Discussion 2)
-6.  "How might future regulatory landscapes or policy interventions (e.g., on AI accountability, data governance) impact the feasibility and design of the various pricing models discussed, particularly for highly autonomous agents?" (Relates to Missing Discussion 3)
+1.  "Can you provide direct citations (e.g., URLs to official pricing pages) for the specific pricing figures mentioned for OpenAI, Anthropic, and Google?"
+2.  "Beyond identifying ethical concerns, what concrete steps or frameworks do you propose providers adopt to ensure fairness and transparency in dynamic or personalized pricing?"
+3.  "What are the *actual* financial and resource costs (e.g., for specialized staff, legal, infrastructure) involved in implementing and maintaining sophisticated value-based or dynamic pricing models?"
+4.  "How does the risk of vendor lock-in influence a customer's choice of AI agent pricing model, and what strategies can mitigate this?"
+5.  "How do providers account for the rapid evolution and potential obsolescence of underlying AI models when designing long-term pricing strategies or subscriptions?"
 
 **Prepare answers or add to paper**
 
@@ -137,14 +135,13 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 Fix Issue 1 (missing citation) - affects academic integrity.
-2.  🔴 Address Issue 2 (insufficient ethical/liability discussion) - critical gap.
-3.  🟡 Address Issue 3 (overclaim in intro) - strengthens paper's focus.
-4.  🟡 Address Issue 4 (weak argument for per-decision pricing) - improves logical rigor.
-5.  🟡 Streamline Issue 5 (repetitive structure) - improves readability.
-6.  🟡 Integrate deeper ethical/liability discussion into hybrid models (Issue 6).
-7.  Add missing discussions on practical mitigations, user acceptance, regulatory landscape, and security/privacy.
+1.  🔴 Fix Issue 1 (Overclaims and Hedging) - affects academic rigor.
+2.  🔴 Address Issue 2 (Specific Factual Verification & Citation Quality) - critical for accuracy and integrity.
+3.  🔴 Resolve Issue 3 (Missing Discussion on Vendor Lock-in) - a significant oversight.
+4.  🟡 Address Issue 4 (Insufficient Depth on Implementation Costs & Complexity).
+5.  🟡 Address Issue 5 (Limited Discussion on Navigating Ethical/Regulatory Challenges).
+6.  🟡 Address Issue 6 (Repetitive Language and Structure) - for readability and conciseness.
 
 **Can defer:**
 - Minor wording issues (fix in revision).
-- Further examples (can be added if space permits, but not essential for initial revision).
+- Further expansion on "Missing Discussions" (can be suggested as future work if space is a constraint, but incorporating some points would strengthen the current analysis).

@@ -1,7 +1,7 @@
 # Formatted Paper Outline
 
-**Format Applied:** IMRaD (adapted for Theoretical Analysis)
-**Target Journal:** Business/Economics Journal (e.g., *AI & Society*, *Journal of AI Research*, *MIS Quarterly*, *Journal of Business Ethics*)
+**Format Applied:** IMRaD (adapted for theoretical paper)
+**Target Journal:** Management Science (or similar Business/Economics journal like MIS Quarterly)
 **Word Limit:** 8,000-10,000 words
 **Citation Style:** APA 7th Edition
 
@@ -14,16 +14,18 @@
 - **Line Spacing:** Double
 - **Margins:** 1 inch all sides
 - **Page Numbers:** Top right
-- **Headings:** Numbered (for Level 1 and Level 2 sections)
+- **Headings:** Numbered (for main sections), Unnumbered (for sub-levels as per APA 7th hierarchy)
 
-### Section Heading Levels (APA-adapted for journal submission)
-- **Level 1 (Main Section):** **Bold, Centered, Title Case** (e.g., **1. Introduction**)
-- **Level 2 (Subsection):** **Bold, Left-Aligned, Title Case** (e.g., **1.1 Background and Motivation**)
-- **Level 3 (Sub-subsection):** **Bold, Indented, Sentence case, ending with a period.** The text begins on the same line and continues in a regular paragraph. (e.g., **1.1.1 Current pricing models.** The current token-based models...)
+### Section Heading Levels (APA 7th with numbering for main sections)
+- **Level 1 (Main Section):** **1. Heading Title** (Bold, Centered, Title Case)
+- **Level 2 (Subsection):** **Heading Title** (Bold, Left-Aligned, Title Case)
+- **Level 3 (Sub-subsection):** **Heading Title.** (Bold, Indented, Sentence case, ends with a period)
+- **Level 4 (Sub-sub-subsection):** **_Heading Title._** (Bold, Italic, Indented, Sentence case, ends with a period)
+- **Level 5 (Sub-sub-sub-subsection):** _Heading Title._ (Italic, Indented, Sentence case, ends with a period)
 
 ### Citation Format
-- **In-text:** (Author, Year) or Author (Year)
-- **Bibliography:** Full APA 7th Edition format specification (details below)
+- **In-text:** (Author, Year)
+- **Bibliography:** Full format specification for APA 7th Edition
 
 ### ⚠️ CITATION REQUIREMENTS - CRITICAL
 
@@ -57,7 +59,9 @@
 - Agent #14 (Citation Verifier) will complete any [VERIFY] tags
 
 **Language-specific adaptations:**
-- For English language journals, adhere strictly to APA 7th English punctuation and formatting rules.
+- German theses: Use German punctuation but keep APA structure
+- Spanish/French: Adapt punctuation while maintaining APA format
+- Always specify language requirements to Crafter agents
 
 **Communicate to Crafter agents:**
 "All citations must follow APA 7th format. Use (Author, Year) in-text. Only add [VERIFY] if you cannot determine the year from research context."
@@ -67,275 +71,257 @@
 ## Formatted Structure
 
 ### Title
-**Format:** **Bold, Centered, 14pt**
+**Format:** Bold, Centered, 14pt
 **Max Length:** 100 characters
-**Suggested:** **Beyond Tokens: A Value-Based Pricing Framework for Agentic AI Systems**
+**Suggested:** **From Tokens to Value: A Theoretical Framework for Pricing Agentic AI Systems**
 
 ### Author Information
 **Format:**
-- Name(s): Full Name, No titles or degrees
-- Affiliation(s): Department, University, City, State, Country
-- Email(s): Corresponding author email clearly indicated
-- ORCID: [Optional, recommended]
+- Name(s): Full Name (e.g., John Doe)
+- Affiliation(s): Department, University/Organization, City, Country
+- Email(s): Corresponding author email clearly marked
+- ORCID: [Optional, e.g., https://orcid.org/XXXX-XXXX-XXXX-XXXX]
 
 ### Abstract
 **Heading:** **Abstract** (Bold, Centered)
 **Length:** 250-300 words
 **Structure:**
-- Background (2 sentences): The rise of autonomous agentic AI systems promises transformative capabilities but introduces novel challenges in economic valuation and pricing.
-- Objective/Gap (1-2 sentences): Current token-based pricing models are resource-centric and fundamentally misaligned with the complex, non-linear value generation of AI agents, lacking integration of ethical considerations.
-- Methods/Approach (2 sentences): This paper proposes a novel theoretical framework for value-based pricing, incorporating dimensions such as task complexity, outcome utility, and responsible AI principles.
-- Results/Findings (2-3 sentences): Through illustrative case studies, we demonstrate how this framework offers a more comprehensive and equitable valuation approach compared to traditional token-based methods.
-- Conclusions/Implications (1-2 sentences): The shift to value-based pricing has significant implications for AI development, business models, and policy, fostering ethical considerations and sustainable economic models for agentic AI.
+- Background (1-2 sentences): Agentic AI systems are poised to revolutionize various sectors, offering unparalleled autonomy and complex problem-solving capabilities. Their emergence necessitates a re-evaluation of current monetization strategies.
+- Objective (1 sentence): This paper aims to conceptualize and develop a novel theoretical framework for value-based pricing of agentic AI systems, moving beyond traditional token-based approaches.
+- Methods (2-3 sentences): We critically analyze the limitations of existing token-based models for autonomous AI and synthesize insights from economic theory, AI ethics, and value-based management to construct our framework. Illustrative case studies are then employed to demonstrate its applicability and advantages.
+- Results (2-3 sentences): Our framework integrates dimensions such as outcome utility, risk, autonomy level, and long-term relationship value, offering a more robust mechanism for capturing the true value generated by agentic AI. The case studies exemplify its practical implications across diverse scenarios.
+- Conclusions (1-2 sentences): This value-based approach provides a foundation for sustainable development, fair monetization, and widespread adoption of agentic AI, fostering innovation and aligning incentives more effectively than current methods.
 
-**Keywords:** 3-6 keywords (e.g., Agentic AI, Value-Based Pricing, AI Ethics, Economic Models, Autonomous Systems)
+**Keywords:** 3-6 keywords (e.g., Agentic AI, Value-based pricing, AI monetization, Autonomous systems, Economic models, AI ethics)
 
 ---
 
 ## 1. Introduction
 **Section Number:** 1
-**Length:** 900-1100 words
+**Length:** 1000-1100 words (approx. 12% of total)
 **Subsections:**
 
-### 1.1 The Emergence of Agentic AI and Novel Pricing Challenges
-**Format specifications:** Introduce agentic AI, its transformative potential, and the inherent difficulties in its economic valuation.
-**Content:** Agentic AI systems are emerging and pose novel pricing challenges.
+### 1.1 Background and Motivation
+**Format:** Narrative paragraph(s) introducing agentic AI as a paradigm shift and the significance of its monetization.
+*   *Content from User:* Agentic AI systems represent a paradigm shift, but their unique characteristics pose significant challenges for traditional monetization.
 
-### 1.2 Research Gap and Problem Statement
-**Format specifications:** Clearly articulate why current pricing models are inadequate.
-**Content:** Existing token-based models are simplistic and misalign with agentic value creation.
+### 1.2 Problem Statement
+**Format:** Clear articulation of the core issue.
+*   *Content from User:* Existing token-based pricing models are fundamentally misaligned with the autonomous, goal-oriented, and value-creating nature of agentic AI systems.
 
 ### 1.3 Research Objectives
-**List format:**
-1. To critique existing token-based pricing models for agentic AI and identify their limitations.
-2. To develop a theoretical framework for value-based pricing that accounts for task complexity, outcome utility, and responsible AI principles.
-3. To illustrate the application and benefits of this framework through hypothetical or real-world case studies.
-4. To discuss the theoretical, practical, and ethical implications of shifting towards value-based pricing for agentic AI systems.
+**Format:** List format, clearly stating what the paper aims to achieve.
+1.  To critically evaluate the limitations of current token-based pricing models for agentic AI systems.
+2.  To propose a novel theoretical framework for value-based pricing of agentic AI, incorporating key dimensions of value creation.
+3.  To illustrate the practical application and advantages of this framework through diverse case studies.
 
 ### 1.4 Contributions
-**Bullet format:**
-- A comprehensive critique of current AI pricing models.
-- A novel theoretical framework for value-based pricing for agentic AI.
-- Illustrative case studies demonstrating the framework's application.
-- Discussion of ethical, economic, and policy implications for the future of AI.
+**Format:** Bullet format highlighting the paper's unique contributions.
+-   Development of a comprehensive theoretical framework for value-based pricing tailored to agentic AI.
+-   Identification of critical dimensions (e.g., outcome utility, risk, autonomy level) that define value in agentic AI interactions.
+-   Demonstration of the framework's applicability through illustrative case studies, bridging theory and practice.
+-   Advancement of the discourse on sustainable and ethical monetization strategies for autonomous AI.
 
 ### 1.5 Paper Organization
-**Format specifications:** Standard paragraph outlining the structure.
-**Content:** This paper proceeds as follows: Section 2 critically examines current AI pricing models. Section 3 develops a theoretical framework for value-based pricing. Section 4 presents illustrative case studies. Section 5 discusses the implications, and Section 6 concludes the paper.
+**Format:** Standard paragraph outlining the structure of the paper.
 
 ---
 
-## 2. Background and Critique of Current Pricing Models
+## 2. Theoretical Background and Literature Review
 **Section Number:** 2
-**Length:** 2400-2800 words
-**Organization:** Thematic subsections, building towards a critique.
+**Length:** 2500-2700 words (approx. 29% of total)
+**Organization:** Thematic subsections, moving from general AI pricing to specific agentic challenges and existing gaps.
 
-### 2.1 Understanding Agentic AI Systems
-**Format:** Define agentic AI, its characteristics, and autonomy levels.
-**Content:** [Narrative on agentic AI capabilities and architecture.]
+### 2.1 Overview of AI Monetization Models
+**Format:** Narrative with citations. Discuss traditional SaaS, API, and token-based models.
 
-### 2.2 Overview of Current AI Pricing Models (e.g., Token-Based)
-**Format:** Describe prevalent models and their historical context.
-**Content:** [Discussion of token-based, API call-based, and other resource-centric pricing.]
+### 2.2 Limitations of Token-Based Pricing for Agentic AI
+**Format:** Detailed analysis, drawing on user's core argument.
+*   *Content from User:* Current token-based pricing models, inherited from LLMs, are inadequate for agentic AI, failing to capture their true value, complexity, and autonomy.
 
-### 2.3 Limitations and Misalignment of Token-Based Pricing
-**Format:** Detailed critique, highlighting economic and ethical gaps.
-**Content:** Existing token-based models are simplistic and misalign with agentic value creation.
-**Table 1:** Comparison of Pricing Model Limitations
-| Aspect | Token-Based Pricing | Value-Based Pricing (Proposed) |
-|--------|---------------------|--------------------------------|
-| Focus  | Computational cost  | Outcome utility, impact, ethics |
-| Value Capture | Incomplete          | Comprehensive                  |
-| Ethics | Absent              | Integrated                     |
-| Scalability | Limited             | Adaptable                      |
+### 2.3 Value-Based Pricing in Traditional Economics and Business
+**Format:** Review of relevant theories (e.g., customer perceived value, utility theory, contingent valuation).
 
-### 2.4 Economic Theories Informing AI Valuation
-**Format:** Briefly review relevant economic theories (e.g., utility theory, behavioral economics).
-**Content:** [Synthesis paragraph highlighting the gap for agentic AI.]
+### 2.4 Agentic AI Characteristics and Value Creation
+**Format:** Discussion of autonomy, goal-orientation, emergent behavior, and their implications for value.
+
+### 2.5 Summary and Gap Analysis
+**Format:** Synthesis paragraph, clearly articulating the theoretical and practical void addressed by this paper.
+*   *Content from User:* A significant gap exists in theoretical and practical understanding of how to price agentic AI systems based on the value they create, rather than mere computational inputs.
 
 ---
 
-## 3. Theoretical Framework for Value-Based Pricing
+## 3. Conceptual Framework Development and Case Study Methodology
 **Section Number:** 3
-**Length:** 900-1100 words
+**Length:** 1000-1100 words (approx. 12% of total)
 
-### 3.1 Foundational Principles of Value-Based Pricing for AI
-**Format:** Introduce core principles.
-**Content:** A theoretical framework for value-based pricing is needed, considering dimensions beyond computational cost.
+### 3.1 Research Design and Framework Development Approach
+**Format:** Narrative paragraph explaining the conceptual approach (e.g., systematic literature review, synthesis, inductive reasoning).
+**Figure 1:** Conceptualization Process for Value-Based Pricing Framework
+[Placeholder for a diagram illustrating the steps taken to develop the framework, e.g., identifying dimensions, defining relationships.]
 
-### 3.2 Key Dimensions of Value Generation in Agentic AI
-**Format:** Detail the factors influencing value.
-**Content:** This framework incorporates factors like autonomy, complexity, utility, and ethical considerations.
+### 3.2 Dimensions of Value for Agentic AI Systems
+**Format:** Detailed explanation of each dimension that forms the basis of the proposed framework.
+*   *Content from User:* Incorporating dimensions like outcome utility, risk, autonomy level, and long-term relationship value.
 
-**Figure 1:** Conceptual Framework for Value-Based AI Pricing
-[Placeholder for conceptual diagram illustrating inputs (autonomy, complexity, context), processes (agentic action), outputs (utility, impact), and feedback loops, with ethical considerations overarching.]
-**Caption Format:** Figure 1. A conceptual framework for value-based pricing in agentic AI systems.
+### 3.3 Case Study Selection and Illustrative Approach
+**Format:** Narrative explaining the purpose of the case studies (illustration, not empirical testing) and criteria for selection.
+**Table 1:** Overview of Illustrative Case Studies
+| Case Study | Agentic AI Application | Value Proposition | Key Pricing Challenge |
+|------------|------------------------|-------------------|-----------------------|
+| Case A     | ...                    | ...               | ...                   |
+| Case B     | ...                    | ...               | ...                   |
 
-### 3.3 Integrating Ethical and Policy Considerations
-**Format:** Explain how ethics are embedded.
-**Content:** [Discussion on fairness, transparency, accountability, and regulatory compliance.]
-
-### 3.4 Operationalizing the Framework: Metrics and Assessment
-**Format:** Discuss potential metrics and measurement challenges.
-**Content:** [Narrative on how to quantitatively and qualitatively assess value dimensions.]
+### 3.4 Application of the Framework in Case Studies
+**Format:** Explanation of how the proposed framework will be applied to analyze each case.
 
 ---
 
-## 4. Illustrative Case Studies and Framework Application
+## 4. The Value-Based Pricing Framework and Illustrative Case Studies
 **Section Number:** 4
-**Length:** 2400-2800 words
+**Length:** 2500-2700 words (approx. 29% of total)
 
-### 4.1 Case Study 1: Autonomous Financial Advisor Agent
-**Format:** Detail the scenario, apply the framework, compare with token-based.
-**Content:** [Scenario description, application of value dimensions, comparison of pricing models.]
+### 4.1 The Proposed Value-Based Pricing Framework for Agentic AI
+**Format:** Comprehensive presentation of the framework, including its components, relationships, and theoretical underpinnings.
+**Figure 2:** The Value-Based Pricing Framework for Agentic AI
+[Placeholder for a detailed diagram of the framework.]
 
-**Table 2:** Value Assessment for Financial Advisor Agent
-| Value Dimension | Token-Based Assessment | Value-Based Assessment |
-|-----------------|------------------------|------------------------|
-| Autonomy Level  | Not captured           | High (decision-making) |
-| Task Complexity | Simple (per token)     | High (market analysis) |
-| Outcome Utility | Transaction cost        | Investment gains, risk reduction |
-| Ethical Impact  | Not captured           | Fairness, transparency |
+### 4.2 Illustrative Case Study A: [Specific Agentic AI Scenario]
+**Format:** Detailed application of the framework to the first case study.
+**Table 2:** Value Assessment for Case Study A
+| Value Dimension | Token-Based Pricing | Value-Based Pricing | Rationale/Benefit |
+|-----------------|---------------------|---------------------|-------------------|
+| Outcome Utility | Low/Indirect        | High/Direct         | ...               |
+| Risk Mitigation | ...                 | ...                 | ...               |
 
-### 4.2 Case Study 2: Intelligent Healthcare Diagnostic Agent
-**Format:** Similar structure to Case Study 1.
-**Content:** [Scenario description, framework application, comparison.]
-
-**Figure 2:** Comparative Pricing Outcomes: Token-Based vs. Value-Based
-[Placeholder for a bar chart or line graph showing the difference in perceived/actual value vs. cost using both pricing models for a specific task.]
-**Caption Format:** Figure 2. Comparison of pricing outcomes between token-based and value-based models for a healthcare diagnostic task.
-
-### 4.3 Case Study 3: Creative Content Generation Agent
-**Format:** Similar structure.
-**Content:** [Scenario description, framework application, comparison.]
+### 4.3 Illustrative Case Study B: [Specific Agentic AI Scenario]
+**Format:** Detailed application of the framework to the second case study.
 
 ### 4.4 Synthesis of Case Study Findings
-**Format:** Summarize common themes and demonstrate the framework's superiority.
-**Content:** [Highlight how value-based pricing better reflects actual utility and ethical considerations across diverse applications.]
+**Format:** Discussion of common themes, insights, and generalizability observed across the illustrative cases.
+*   *Content from User:* Through illustrative case studies, we demonstrate how this value-based framework can be applied across diverse agentic AI scenarios, highlighting its practical implications and advantages over token-based models.
 
 ---
 
 ## 5. Discussion
 **Section Number:** 5
-**Length:** 1100-1300 words
+**Length:** 1100-1300 words (approx. 14% of total)
 
 ### 5.1 Interpretation of Findings
-**Format:** Relate findings back to the research question and thesis.
-**Content:** Our findings indicate that value-based pricing models offer a more robust and ethically aligned approach to valuing agentic AI systems compared to traditional token-based methods.
+**Format:** Narrative relating the findings back to the research question and theoretical background.
+*   *Content from User:* This framework offers a more robust and equitable approach to agentic AI monetization, fostering innovation, aligning incentives, and addressing ethical concerns, thereby advancing the field.
 
-### 5.2 Comparison with Prior Work and Theoretical Implications
-**Format:** Discuss how the framework extends existing economic theories and AI valuation models.
-**Content:** This framework significantly advances the discourse on AI economics by providing a structured method to account for factors beyond mere computational cost, addressing identified gaps.
+### 5.2 Comparison with Prior Work
+**Format:** Comparative discussion, highlighting how the proposed framework extends or challenges existing models.
 
-### 5.3 Practical Implications
-**Format:** Discuss implications for AI developers, businesses, and users.
-**Content:** The shift has significant implications for AI development (incentivizing quality), business models (new revenue streams), and user adoption (fairer pricing).
+### 5.3 Theoretical Implications
+**Format:** Paragraph(s) discussing the contributions to economic theory, AI management, or other relevant fields.
 
-### 5.4 Ethical and Policy Implications
-**Format:** Elaborate on the broader societal impact.
-**Content:** Value-based pricing encourages responsible AI development, fostering trust and enabling better regulatory oversight, addressing concerns raised in AI ethics.
+### 5.4 Practical Implications
+**Format:** Bullet points or paragraphs outlining actionable insights for developers, businesses, and policymakers.
 
 ### 5.5 Limitations and Future Work
-**Format:** Honest assessment of the framework's current scope and areas for future research.
-**Content:** [Acknowledge current limitations (e.g., measurement challenges, subjective valuation) and suggest empirical validation, extension to multi-agent systems, or dynamic pricing models.]
+**Format:** Honest assessment of the framework's limitations (e.g., theoretical nature, illustrative cases) and clear suggestions for future research directions.
 
 ---
 
 ## 6. Conclusion
 **Section Number:** 6
-**Length:** 400-500 words
+**Length:** 400-500 words (approx. 5% of total)
 
-**Format:** No subsections - continuous narrative.
+[No subsections - continuous narrative]
 
 **Required elements:**
-- Restate problem and approach: Reiterate the inadequacy of token-based pricing and the necessity of a value-based approach for agentic AI.
-- Summarize key findings: Briefly recap the theoretical framework and the insights from case studies.
-- Emphasize contributions: Highlight the paper's main contributions to AI economics and ethics.
-- Suggest future directions: Reinforce the importance of continued research in this evolving area.
+- Restate problem and approach: Briefly reiterate the challenge of pricing agentic AI and the paper's aim.
+- Summarize key findings: Briefly recap the proposed framework and its successful illustration through case studies.
+- Emphasize contributions: Reiterate the theoretical and practical significance of the value-based approach.
+- Suggest future directions: Briefly mention key avenues for further research stemming from the paper's limitations and findings.
 
 ---
 
 ## Acknowledgments
-[If applicable - funding bodies, research assistants, specific individuals who contributed but are not authors.]
+[If applicable - funding, contributors. This section is typically unnumbered and placed before References.]
 
 ---
 
 ## References
 **Format:** APA 7th Edition
-**Minimum:** 30-40 references (for a theoretical paper of this length)
+**Minimum:** 40 references for a theoretical paper with case studies.
 
 **Categories:**
-- Foundational works (pre-2019): [~20-30%]
-- Recent works (2020-2024): [~70-80%]
+- Foundational works (pre-2019): [~20%]
+- Recent works (2020-2024): [~80%]
 - Including own prior work: [Optional, max 10%]
 
 ---
 
 ## Appendices
-[If applicable]
-- Appendix A: [Supplementary materials, e.g., detailed case study data, survey instruments, mathematical derivations]
+[If applicable, e.g., detailed case study data, supplementary theoretical derivations.]
+- Appendix A: [Supplementary Case Study Details]
 
 ---
 
-## Journal-Specific Requirements (General for Business/Economics Journals)
+## Journal-Specific Requirements (Example: Management Science)
 
 **Mandatory sections:**
-- [ ] Data Availability Statement (even for theoretical papers, if any data was used for case studies)
+- [ ] Data Availability Statement (if applicable, for case studies)
 - [ ] Conflict of Interest Statement
 - [ ] Author Contributions (if multiple authors)
-- [ ] Funding Statement (if applicable)
+- [ ] Funding Statement
+- [ ] ORCID IDs for all authors
 
 **Formatting specifics:**
-- Figures: PNG/TIFF, min 300dpi, clearly labeled axes, legible text.
-- Tables: Editable format (e.g., Word table, not images), clear captions and column headers.
-- Equations: Numbered sequentially, right-aligned, using professional equation editor (e.g., MathType, LaTeX).
+- Figures: High-resolution (min 300dpi), preferably editable vector graphics (e.g., EPS, PDF) or high-quality raster (TIFF, PNG).
+- Tables: Editable format (not images), clear headings, footnotes for sources.
+- Equations: Numbered sequentially, right-aligned, using equation editor (e.g., LaTeX).
+- Footnotes: Use sparingly, typically for additional information that cannot be integrated into the main text.
 
 **Submission checklist:**
-- [ ] Cover letter (addressing editor, outlining paper's fit)
+- [ ] Cover letter (addressing editor, outlining significance)
 - [ ] Highlights (3-5 bullet points summarizing key findings/contributions)
-- [ ] Graphical abstract (if required by specific journal)
-- [ ] Supplementary materials (if applicable)
+- [ ] Graphical abstract (if required, for visual summary)
+- [ ] Supplementary materials (if applicable, organized clearly)
+- [ ] Blinding for peer review (remove author/affiliation info from main manuscript)
 
 ---
 
-## Length Targets by Section (Scaled for 8,000-10,000 words, targeting ~9,300 words)
+## Length Targets by Section (for ~9,000 words)
 
-| Section | Words (Approx.) | % of Total |
-|-------------------------|-----------------|------------|
-| Abstract                | 250             | 2.7%       |
-| 1. Introduction         | 1000            | 10.8%      |
-| 2. Background & Critique | 2600            | 27.9%      |
-| 3. Theoretical Framework| 1000            | 10.8%      |
-| 4. Case Studies         | 2600            | 27.9%      |
-| 5. Discussion           | 1200            | 12.9%      |
-| 6. Conclusion           | 450             | 4.8%       |
-| **Total (Main Body)**   | **9100**        | **97.8%**  |
-| References/Appendices   | ~200-500        | 2.2-5.4%   |
-| **Grand Total**         | **~9300-9600**  | **100%**   |
+| Section | Words | % of Total |
+|---------|-------|------------|
+| Abstract | 250 | 2.8% |
+| Introduction | 1080 | 12.0% |
+| Theoretical Background & Lit Review | 2610 | 29.0% |
+| Conceptual Framework & Methodology | 1080 | 12.0% |
+| Framework & Case Studies | 2610 | 29.0% |
+| Discussion | 1260 | 14.0% |
+| Conclusion | 450 | 5.0% |
+| **Total** | **9340** | **100%** |
 
 ---
 
 ## Quality Checklist
 
 ### Structure
-- [X] All required sections present (as per adapted IMRaD for theoretical paper)
-- [X] Logical flow between sections (follows core argument flow)
-- [X] Appropriate section lengths (within targets)
+- [ ] All required sections present
+- [ ] Logical flow between sections (especially from problem to framework to application)
+- [ ] Appropriate section lengths, adhering to targets
 
 ### Formatting
-- [X] Consistent heading styles (APA 7th adapted)
-- [X] Proper citation format (APA 7th)
-- [X] Figures/tables numbered correctly (sequential)
-- [X] Captions complete and descriptive (placeholders added)
+- [ ] Consistent heading styles (APA 7th with numbering)
+- [ ] Proper APA 7th citation format (in-text and reference list)
+- [ ] Figures/tables numbered correctly and referenced in text
+- [ ] Captions complete, descriptive, and self-contained
 
 ### Content
-- [X] Abstract summarizes whole paper
-- [X] Introduction states clear RQ and thesis
-- [X] Background/Critique establishes problem and gap
-- [X] Theoretical Framework developed clearly
-- [X] Case Studies demonstrate framework application
-- [X] Discussion interprets findings and implications
-- [X] Conclusion emphasizes contribution
+- [ ] Abstract summarizes whole paper accurately
+- [ ] Introduction states clear research question and motivation
+- [ ] Literature review thoroughly covers relevant theories and identifies the gap
+- [ ] Conceptual framework clearly defined and justified
+- [ ] Methodology for framework development and case studies is transparent
+- [ ] Framework and case studies presented objectively and clearly
+- [ ] Discussion interprets findings, relates to prior work, and highlights implications
+- [ ] Conclusion emphasizes contribution and future directions
 
 ---
 
@@ -346,33 +332,27 @@
 - ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
 
 ### Tense Usage
-- **Introduction:** Present tense (current state of knowledge, the paper's aim)
-- **Background/Critique:** Past tense (what others found, description of existing models), Present tense (critique's validity)
-- **Theoretical Framework:** Present tense (describing the framework, its components)
-- **Case Studies:** Past tense (what was done in the case, what was observed), Present tense (implications)
-- **Discussion:** Present tense (what findings mean, implications)
-- **Conclusion:** Present tense (summary of paper, future directions)
+- **Introduction:** Present tense (current state, significance)
+- **Literature Review:** Past tense (what others found), Present tense (what existing theories state)
+- **Conceptual Framework & Methodology:** Past tense (what you did to develop the framework, how cases were selected), Present tense (describing the framework itself)
+- **Framework & Case Studies:** Present tense (describing the framework), Past tense (what was observed in the case studies)
+- **Discussion:** Present tense (what the findings mean, implications)
 
 ### Voice
-- **Active vs Passive:** Prefer active for clarity, passive for objectivity
+- **Active vs Passive:** Prefer active for clarity, passive for objectivity where appropriate.
 - ✅ "We analyzed the data" (active, clear)
 - ✅ "The data were analyzed" (passive, objective)
+- For theoretical papers, "This framework proposes..." (active) or "The framework is proposed to..." (passive) are both acceptable.
 
 ---
 
 ## Next Steps
 
 After formatting:
-1. Review against target journal's specific author guidelines (if known).
-2. Ensure all placeholders are noted and understood by Crafter agents.
-3. Proceed to Compose phase with clear structure.
-4. Save to `outline_formatted.md`.
-
-```markdown
-# Formatted Paper Outline
-```
-(Content of this response would be saved here)
-```
+1. Review against specific *Management Science* (or chosen journal) author guidelines.
+2. Ensure all placeholders (`[Placeholder]`, `[VERIFY]`, `[TODO]`) are noted for Crafter agents.
+3. Proceed to Compose phase with this clear, formatted structure.
+4. Save to `outline_formatted.md`
 
 ---
 
@@ -385,6 +365,6 @@ After formatting:
 2. **Never suggest fabricated examples** or statistics
 3. **Mark placeholders** clearly with [VERIFY] or [TODO]
 4. **Ensure structure supports** verifiable, evidence-based arguments
-5. **Flag sections** that will need strong citation support
+5. **Flag sections** that will need strong citation support (e.g., assertions in the literature review, claims about the framework's novelty)
 
 **A well-structured paper with fabricated content will still fail verification. Build for accuracy.**

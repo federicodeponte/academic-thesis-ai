@@ -1,94 +1,141 @@
 # Critical Review Report
 
 **Reviewer Stance:** Constructively Critical
-**Overall Assessment:** Accept with Minor Revisions
+**Overall Assessment:** Accept with Major Revisions
 
 ---
 
 ## Summary
 
 **Strengths:**
-- **Clear Justification for Theoretical Approach:** The paper effectively argues for a theoretical methodology, explicitly stating why an empirical approach is premature and how this study lays a foundational understanding.
-- **Robust Comparative Framework:** The six proposed dimensions (Efficiency, Transparency, Ethics, Complexity, Market Impact, Control) are highly relevant, comprehensive, and well-justified for comparing traditional and AI-agentic pricing models.
-- **Careful Definition of "Case Studies":** The explicit redefinition of "case studies" as "illustrative scenarios" for theoretical analysis is a crucial strength, clearly setting expectations and avoiding misinterpretation.
-- **Rigorous Scenario Selection Criteria:** The criteria for selecting illustrative scenarios are well-thought-out, ensuring diversity, relevance, and analytical utility for a conceptual study.
-- **Appropriate Analytical Methods:** The chosen analytical methods (Conceptual Mapping, Critical Discourse Analysis, Scenario Analysis) are well-aligned with the qualitative and theoretical nature of the study.
-- **Clear Derivation of Theoretical Implications:** The methodology clearly outlines how theoretical propositions and a conceptual model will be derived, which are key outputs for a theoretical paper.
-- **Consistent Tone and Coherence:** The entire methodology section is logically structured, flows well, and maintains a consistent, academic tone.
+- Proposes a novel conceptual framework integrating diverse dimensions (economic, AI-specific, stakeholder, ethical).
+- Clearly articulates a multi-stage qualitative analytical process (thematic, comparative, conceptual modeling).
+- Outlines well-considered criteria for purposeful case study selection, aiming for diversity and variety.
+- Explicitly acknowledges the qualitative nature of the research, focusing on analytical rather than statistical generalization.
 
-**Critical Issues:** 0 major, 2 moderate, 3 minor
-**Recommendation:** Minor revisions needed to enhance clarity and specificity.
+**Critical Issues:** 5 major, 3 moderate, 2 minor
+**Recommendation:** Substantial revisions needed to temper claims and address inherent limitations of the chosen methodology.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-*None observed. The core methodological approach is sound and well-justified for a theoretical paper.*
+### Issue 1: Missing Explicit Research Questions
+**Location:** Throughout Section 3 (Intro, Framework, Case Study, Data Collection)
+**Problem:** The methodology section does not explicitly state the research questions (RQs) that the paper aims to answer. This is a fundamental omission.
+**Impact:** Without RQs, it's impossible to fully assess if the chosen methodology is truly "most appropriate" or if the framework and analysis methods are adequately designed to address the study's objectives. The broad goal of "exploring, analyzing, and synthesizing insights" is insufficient as a guiding principle for methodological rigor.
+**Fix:** Clearly articulate 1-3 specific research questions at the beginning of the methodology section. These RQs should guide the entire methodological design.
+**Severity:** 🔴 High - affects the core justification and evaluation of the entire methodology.
+
+### Issue 2: Overclaiming Rigor, Validity, and Depth from Secondary Data
+**Location:** Intro (Line 4), Section 3.2.4 (Data Availability), Section 3.3.1 (Data Collection), Section 3.3.2 (Inductive/Deductive), Section 3.3.3 (Rigor and Validity)
+**Claim:** The paper frequently uses strong terms like "robust," "comprehensive," "ensure validity," "deep qualitative analysis," "empirical anchors," and "cross-validated evidence base" while explicitly stating reliance *solely* on publicly available secondary data and 5-7 case studies.
+**Problem:** Relying exclusively on secondary, publicly available data (annual reports, white papers, news articles) inherently limits the depth, nuance, and proprietary insights that can be gathered. Companies rarely disclose the full complexities, failures, or internal decision-making rationale behind their pricing. Overstating the rigor and validity achievable under these conditions is misleading.
+**Evidence:** Phrases like "deep qualitative analysis" (3.2.4), "ensure the validity and reliability" (3.3.1), "empirical anchors for validating" (3.3.2), and "ensure the rigor and validity" (3.3.3) are used.
+**Fix:** Temper the language throughout to reflect the inherent limitations of secondary data. Replace "ensure" with "enhance," "improve," or "contribute to." Acknowledge that while triangulation helps, it does not fully "ensure" validity or provide a "comprehensive" evidence base, especially for proprietary information. Frame the reliance on secondary data as a necessary constraint of a *theoretical* paper, rather than an unmitigated strength.
+**Severity:** 🔴 High - misrepresents the achievable depth and reliability of findings.
+
+### Issue 3: Ambiguity in Framework's "Mechanism" for Comparison
+**Location:** Section 3.1 (Framework Introduction), Section 3.1.3 (Stakeholder Perspectives), Section 3.1.4 (Ethical Considerations)
+**Claim:** "This framework integrates classical economic pricing theories with AI-specific considerations, ethical dimensions, and stakeholder perspectives. Its purpose is to provide a structured lens through which the intricacies of AI agent monetization can be dissected, facilitating a nuanced understanding that goes beyond superficial cost-benefit analyses."
+**Problem:** The framework largely describes *what to consider* (dimensions, perspectives, ethics) rather than *how* these elements are systematically integrated or used for *comparison* within the framework itself. It reads more like a comprehensive checklist of analytical lenses than a structured, operationalized tool for direct comparison. For instance, how does the framework *quantitatively or qualitatively weigh* stakeholder perspectives against economic foundations? How does it *mandate* ethical consideration beyond listing it as a category?
+**Fix:** Elaborate on the *structure* and *mechanisms* of the framework that enable systematic comparison. For example, will a matrix be used? Are there specific questions or scoring criteria derived from the framework to apply to each case? How are trade-offs between different dimensions (e.g., economic efficiency vs. ethical fairness) handled within the framework's comparative structure?
+**Severity:** 🔴 High - weakens the claim of a "bespoke conceptual framework" and its utility for systematic comparison.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 1: Lack of Illustrative Scenario Example
-**Location:** Section 3.2 (Case Study Selection Criteria), Section 3.3.1 (Application of the Comparative Framework)
-**Problem:** While the criteria for selecting illustrative scenarios are excellent, the paper does not provide a concrete, brief example of what such a scenario might look like or how it would be framed.
-**Impact:** Without an example, it's harder for the reader to fully grasp the practical application of the framework and criteria, leaving the concept somewhat abstract.
-**Fix:** Add a short, hypothetical example of an illustrative scenario (e.g., "Consider a scenario involving dynamic pricing in ride-sharing services, comparing a traditional surge pricing algorithm with an AI-agentic system that learns optimal pricing based on real-time traffic, competitor pricing, and individual rider profiles."). This would greatly enhance understanding.
-**Severity:** 🟡 Moderate - affects clarity and reader comprehension.
+### Issue 4: "Most Appropriate" Claim Unjustified
+**Location:** Section 3, Paragraph 1
+**Claim:** "Given the nascent and rapidly evolving landscape of AI agent deployment across various industries, a qualitative, theoretical approach underpinned by a structured analytical framework is most appropriate."
+**Problem:** This claim is made without explicitly contrasting it with other potential methodological approaches (e.g., large-scale surveys, expert interviews, quantitative analysis of market data, mixed methods) and justifying *why* this specific approach is superior or "most appropriate" for the (unstated) research questions. While a qualitative approach is valid, claiming it's *most* appropriate requires a comparative argument.
+**Fix:** Briefly discuss alternative methodological approaches and provide a clearer rationale for why the chosen qualitative, theoretical approach is best suited for the study's specific aims and the current state of the field.
+**Severity:** 🟡 Moderate - lacks a strong justification for the methodological choice.
 
-### Issue 2: Scope and "Data" for Critical Discourse Analysis
-**Location:** Section 3.3.2.2 (Critical Discourse Analysis)
-**Problem:** The method is well-justified, but the specific "discourse" or "texts" to be analyzed are not explicitly defined. It mentions "existing literature" but could be more precise.
-**Missing:** Clarification on what specific types of sources (e.g., academic journals, industry reports, policy documents, news articles) will constitute the "discourse" for this analysis.
-**Fix:** Specify the scope of the discourse analysis. For example, "This will involve a critical examination of language and assumptions within key academic literature on AI ethics and pricing, as well as relevant policy documents from regulatory bodies concerning algorithmic pricing."
-**Severity:** 🟡 Moderate - impacts rigor and replicability (even in a conceptual sense).
+### Issue 5: Limited Scope for "Broad Applicability"
+**Location:** Section 3.1 (Framework Intro), Section 3.2 (Case Study Selection Intro)
+**Claim:** The framework is "flexible enough to encompass a wide spectrum of AI agent types" (3.1), and the goal is to ensure the derived conceptual framework is "robust and broadly applicable" (3.2.1). However, the methodology explicitly states analyzing "five to seven case studies" for analytical generalization.
+**Problem:** While analytical generalization is appropriate for qualitative research, claiming "broad applicability" for a framework derived from such a small number of *secondary* case studies (even if diverse) is an overclaim. The rapidly evolving and vast nature of AI agent deployment suggests that 5-7 cases, however well-chosen, will offer illustrative insights rather than universally "broadly applicable" propositions.
+**Fix:** Temper expectations regarding "broad applicability." Rephrase to "contribute to a broadly applicable framework," or "provide initial insights towards a robust and broadly applicable framework." Acknowledge this limitation explicitly in the discussion section.
+**Severity:** 🟡 Moderate - overstates the generalizability of findings from a limited sample.
+
+### Issue 6: Ethical/Stakeholder Integration in Framework - Overstated Agency
+**Location:** Section 3.1.3 (Stakeholder Perspectives), Section 3.1.4 (Ethical and Fairness Considerations)
+**Claim:** "The framework explicitly incorporates the viewpoints..." (3.1.3); "The framework mandates an explicit consideration..." (3.1.4); "...examining mechanisms for auditing pricing decisions and incorporating fairness constraints into optimization algorithms." (3.1.4)
+**Problem:** The framework itself is a conceptual tool; it doesn't "mandate" or "examine" or "incorporate constraints into algorithms." These are actions taken by the researchers *using* the framework or recommendations for *developers*. The framework provides *categories* or *lenses* for analysis, but it isn't an active agent.
+**Fix:** Rephrase these statements to clarify that the framework *provides categories for analysis*, *highlights the importance of considering*, or *serves as a lens to investigate* these dimensions. For example, "The framework includes dedicated dimensions for analyzing stakeholder viewpoints..."
+**Severity:** 🟡 Moderate - minor wording issue, but hints at an overclaim of the framework's capabilities.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Placeholder Citations:** Throughout the document, citations are denoted as `{cite_xxx}`. While understood as placeholders, in the final draft, these must be replaced with proper, full citations (ideally including DOIs or arXiv IDs if applicable) to meet academic integrity standards.
-2.  **Presentation of Conceptual Maps:** In Section 3.3.2.1, the method of "Conceptual Mapping" is described. Briefly clarify how these maps will be presented in the final paper (e.g., "Conceptual maps will be presented visually as diagrams" or "as structured textual representations of relationships").
-3.  **Mitigation of Subjectivity in Qualitative Assessment:** Given the qualitative nature of the "Dimension-Specific Assessment" (Section 3.3.1) and "Identification of Trade-offs," a brief statement on how subjectivity will be managed (e.g., "assessments will adhere strictly to predefined guidelines derived from the framework, ensuring consistency") would strengthen methodological rigor.
+1.  **"Performance-Based/Outcome-Based Pricing" as "More Advanced":**
+    **Location:** Section 3.1.2
+    **Problem:** Labeling this as "A more advanced and potentially powerful monetization strategy" is a subjective judgment presented as fact. While it has advantages, it also has significant complexities and is not inherently "more advanced" in all contexts.
+    **Fix:** Either remove this subjective assessment or explicitly attribute it as a hypothesis or a common perception in the field, supported by a citation.
+
+2.  **Vague "Sufficient" for Case Studies:**
+    **Location:** Section 3.2, Paragraph 1
+    **Problem:** While citing Yin (2018) for 5-7 cases being "sufficient" for qualitative analysis, the term "sufficient" remains vague. What specific criteria for saturation or depth are met by this number, especially given the broad scope of "AI agent monetization"?
+    **Fix:** Briefly elaborate on *why* 5-7 cases are considered sufficient for *this specific study's goals*, perhaps linking it to the expected diversity or the anticipated point of thematic saturation given the secondary data approach.
 
 ---
 
 ## Logical Gaps
 
-*None apparent. The methodology is logically structured and the arguments flow coherently from one section to the next.*
+### Gap 1: Disconnect Between "Deep Analysis" and "Public Secondary Data"
+**Location:** Section 3.2.4 (Data Availability), Section 3.3.1 (Data Collection), Section 3.3.3 (Rigor and Validity)
+**Logic:** The paper aims for "deep qualitative analysis" and "robust insights" into AI agent monetization strategies.
+**Missing:** The inherent logical tension that such deep, nuanced insights (especially on proprietary pricing logic, cost structures, and internal trade-offs) are extremely difficult, if not impossible, to obtain solely from publicly available secondary data. Public information is often curated for external consumption and lacks the granular detail needed for truly "deep" analysis.
+**Fix:** Explicitly acknowledge this inherent limitation and discuss *how* the research plans to navigate this tension or *what kind* of "deep" insights are realistically achievable.
+
+### Gap 2: Link between Problem Statement and Chosen Method
+**Location:** Section 3, Introduction
+**Logic:** "The systematic investigation into the monetization strategies of AI agents necessitates a robust methodological framework..."
+**Missing:** A clear, explicit statement of the specific research questions or objectives. Without these, the logical leap to "a qualitative, theoretical approach... is most appropriate" is unsupported. The "necessity" of the chosen method is not fully established.
+**Fix:** As per Major Issue 1, state the RQs clearly to bridge this gap.
 
 ---
 
 ## Methodological Concerns
 
-### Concern 1: Potential for Over-Generalization in Theoretical Propositions
-**Issue:** While the paper explicitly states its theoretical nature, the derivation of "generalizable statements or hypotheses" (Section 3.3.3) from illustrative scenarios could still risk over-generalization if the scenarios are not sufficiently diverse or representative.
-**Risk:** Propositions might be too broad given the conceptual nature of the "data."
-**Reviewer Question:** "How will the study ensure that the derived theoretical propositions are appropriately scoped and reflect the limitations of being based on conceptual scenarios rather than empirical observations?"
-**Suggestion:** Reiterate that the propositions are *foundational* and *for future empirical testing*, and perhaps add a sentence about carefully qualifying the scope of these propositions.
+### Concern 1: Depth of Insight from Secondary Data
+**Issue:** The exclusive reliance on publicly available secondary data for a "deep" qualitative analysis of complex and often proprietary AI monetization strategies.
+**Risk:** The analysis may remain at a relatively high, descriptive level, failing to uncover the true underlying rationales, challenges, and internal dynamics that shape these strategies. It risks presenting a generalized picture rather than truly "dissecting" the intricacies.
+**Reviewer Question:** "How will the study ensure that the publicly available information provides sufficient detail to conduct the claimed 'deep qualitative analysis' and derive truly novel, rather than descriptive, conceptual propositions?"
+**Suggestion:** Add a dedicated "Limitations" subsection to the methodology acknowledging this.
+
+### Concern 2: Potential for Researcher Bias in Interpretation
+**Issue:** With thematic and comparative analysis of secondary data, there's an inherent risk of researcher bias in selecting information, interpreting themes, and linking them back to a pre-defined framework.
+**Risk:** The findings might inadvertently confirm existing biases or theoretical assumptions rather than genuinely discovering emergent themes or challenging the initial framework.
+**Reviewer Question:** "What specific steps will be taken to mitigate researcher bias during data selection, coding, and interpretation, especially given the reliance on secondary data?"
+**Suggestion:** Discuss measures like reflective journaling, peer debriefing (if applicable), or clear audit trails for coding decisions to enhance trustworthiness.
 
 ---
 
 ## Missing Discussions
 
-1.  **Alternative Theoretical Lenses:** The paper effectively justifies its chosen comparative framework. However, it doesn't explicitly discuss *why other broad theoretical approaches* (e.g., a purely economic modeling approach, a sociological approach focused solely on power dynamics, or a policy-centric analysis) were deemed less suitable or were integrated into the current framework. Briefly addressing this would further strengthen the methodological choices.
-2.  **Interplay between Dimensions:** While the dimensions are well-defined, a brief mention of how the *interplay* between these dimensions will be analyzed (beyond just "identifying trade-offs") could be valuable. For instance, how does a lack of transparency *exacerbate* ethical issues, or how does increased complexity *affect* strategic control? The conceptual mapping might address this, but it could be highlighted more explicitly.
+1.  **Limitations of Secondary Data:** A crucial omission is a dedicated discussion subsection detailing the specific limitations of relying *exclusively* on secondary data. This should cover aspects like lack of real-time data, inability to ask follow-up questions, potential for corporate spin/selection bias in public documents, absence of internal decision-making rationale, and potential for outdated information.
+2.  **Scope and Boundary Conditions:** While case study selection criteria are listed, a brief discussion on the explicit boundary conditions of the study (e.g., what types of AI agents or monetization strategies are *intentionally excluded* or beyond scope) would strengthen clarity.
+3.  **Trade-offs of Qualitative Approach:** Briefly discuss the trade-offs made by choosing a qualitative, theoretical approach over more empirical or quantitative methods. This includes acknowledging limitations in statistical generalizability and the focus on "why" and "how" over "how much."
 
 ---
 
 ## Tone & Presentation Issues
 
-*None. The tone is consistently academic, professional, and appropriately confident without being overly assertive or dismissive of other approaches.*
+1.  **Overly Confident Language:** As highlighted in Major Issue 2, the frequent use of strong, definitive terms ("ensure," "mandates," "robust," "comprehensive") should be softened to more appropriate language for qualitative, theoretical work based on secondary data (e.g., "enhance," "contribute to," "aims to provide").
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Could you provide a brief, concrete example of one of your 'illustrative scenarios' to demonstrate how the comparative framework would be applied in practice?"
-2.  "What specific types of sources (e.g., academic articles, industry reports, policy documents) will constitute the 'discourse' for your critical discourse analysis?"
-3.  "How will you ensure consistency and minimize subjectivity when performing the qualitative assessments across different scenarios and dimensions?"
-4.  "Beyond the inherent reliance on conceptual scenarios, what are the primary limitations of this theoretical methodology, and how will these be addressed in the discussion section?"
-5.  "Are there other significant theoretical frameworks or approaches for comparing pricing models that you considered but chose not to adopt, and if so, why?"
+1.  "What are the precise research questions guiding this entire study?"
+2.  "Given that all data is secondary and publicly available, how can you guarantee the depth and accuracy of the insights, especially for proprietary business models and internal cost structures?"
+3.  "Can you elaborate on the specific mechanisms within your conceptual framework that facilitate systematic *comparison* of pricing models, beyond listing key dimensions?"
+4.  "How do you address the generalizability of your findings, even analytically, from only 5-7 case studies in such a dynamic and broad field?"
+5.  "What are the most significant limitations of your methodology, particularly concerning data collection and potential biases, and how do you plan to mitigate them?"
 
 **Prepare answers or add to paper**
 
@@ -97,12 +144,14 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🟡 **Address Issue 1 (Lack of Illustrative Scenario Example):** Provide a brief, concrete example of a conceptual scenario.
-2.  🟡 **Address Issue 2 (Scope and "Data" for Critical Discourse Analysis):** Clarify the specific sources for discourse analysis.
-3.  🟢 **Address Minor Issue 1 (Placeholder Citations):** Replace `{cite_xxx}` with proper citations.
-4.  🟢 **Address Minor Issue 2 (Presentation of Conceptual Maps):** Briefly clarify how maps will be presented.
-5.  🟢 **Address Minor Issue 3 (Mitigation of Subjectivity):** Add a brief statement on managing subjectivity.
+1.  🔴 Fix Issue 1 (Missing Research Questions) - *Absolutely critical, forms the backbone of the paper.*
+2.  🔴 Address Issue 2 (Overclaiming Rigor/Validity for Secondary Data) - *Crucial for academic integrity and accurate representation.*
+3.  🔴 Resolve Issue 3 (Ambiguity in Framework's "Mechanism") - *Strengthens the core contribution of the paper.*
+4.  🟡 Add Missing Discussion 1 (Limitations of Secondary Data) - *Essential for transparency and acknowledging methodological constraints.*
+5.  🟡 Address Methodological Concern 1 (Depth of Insight from Secondary Data) - *Directly related to the above, needs explicit acknowledgment.*
 
 **Can defer:**
-- Elaborating on alternative theoretical lenses (can be addressed if space permits or in response to reviewer comments).
-- Further detailing the interplay between dimensions (can be implicitly covered by the analysis).
+- Minor wording issues (Issue 6, Minor Issue 1)
+- Further elaboration on case study sufficiency (Minor Issue 2)
+
+---

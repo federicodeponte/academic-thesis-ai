@@ -1,0 +1,17 @@
+
+================================================================================
+CITATION VALIDATION REPORT: CO2 German Thesis
+================================================================================
+
+❌ CRITICAL ISSUES (2):
+--------------------------------------------------------------------------------
+
+[cite_010] DOI not found: 10.15266/KEREA.2021.30.1.129
+  Kim (2021) - Analysis of the Impact of Key Design Elements for the EU-ETS...
+
+[cite_036] DOI not found: 10.15203/MOMENTUMQUARTERLY.VOL4.NO1.P3-22
+  Becker, Richter (2015) - Klimaschutz in Deutschland: Realität oder Rhetorik?...
+
+================================================================================
+TOTAL ISSUES: 2 (2 critical, 0 warnings)
+================================================================================

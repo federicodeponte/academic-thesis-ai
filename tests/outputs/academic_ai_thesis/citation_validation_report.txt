@@ -3,14 +3,12 @@
 CITATION VALIDATION REPORT: Open Source Thesis
 ================================================================================
 
-
-
-⚠️  WARNINGS (1):
+❌ CRITICAL ISSUES (1):
 --------------------------------------------------------------------------------
 
-[cite_023] Generic title pattern: 'A Systematic Review'
-  Aljuaid (2024) - The Impact of Artificial Intelligence Tools on Academic Writ...
+[cite_013] DOI not found: 10.48550/arXiv.2411.04468
+  Fourney, Bansal et al. (2024) - Magentic-One: A Generalist Multi-Agent System for Solving Co...
 
 ================================================================================
-TOTAL ISSUES: 1 (0 critical, 1 warnings)
+TOTAL ISSUES: 1 (1 critical, 0 warnings)
 ================================================================================

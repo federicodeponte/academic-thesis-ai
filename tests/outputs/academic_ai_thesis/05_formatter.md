@@ -1,7 +1,7 @@
 # Formatted Paper Outline
 
-**Format Applied:** IMRaD (adapted for theoretical analysis with case studies)
-**Target Journal:** Journal of AI & Society / Technology & Society Review (placeholder)
+**Format Applied:** IMRaD (adapted for theoretical paper)
+**Target Journal:** Technology/Social Impact Journal (e.g., Journal of Digital Humanities, AI & Society, Science, Technology, & Human Values)
 **Word Limit:** 8,000-10,000 words
 **Citation Style:** APA 7th Edition
 
@@ -13,19 +13,19 @@
 - **Font:** Times New Roman 12pt
 - **Line Spacing:** Double
 - **Margins:** 1 inch all sides
-- **Page Numbers:** Top right (header)
-- **Headings:** Unnumbered (APA style)
+- **Page Numbers:** Top right header
+- **Headings:** Numbered (1, 1.1, 1.1.1)
 
-### Section Heading Levels (APA 7th Edition)
-- **Level 1:** Centered, Bold, Title Case
-- **Level 2:** Left-aligned, Bold, Title Case
-- **Level 3:** Left-aligned, Bold, Italic, Title Case
-- **Level 4:** Indented, Bold, Title Case, ends with period.
-- **Level 5:** Indented, Bold, Italic, Title Case, ends with period.
+### Section Heading Levels (APA 7th standard)
+- **Level 1:** Bold, Centered, Title Case (e.g., **Introduction**)
+- **Level 2:** Bold, Left-Aligned, Title Case (e.g., **2.1 Background and Motivation**)
+- **Level 3:** Bold, Indented, Sentence case, ends with a period (e.g., **2.1.1 Existing AI tools.**)
+- **Level 4:** Bold, Italicized, Indented, Sentence case, ends with a period (e.g., ***2.1.1.1 Limitations of current approaches.***)
+- **Level 5:** Italicized, Indented, Sentence case, ends with a period (e.g., *2.1.1.1.1 Ethical considerations.*)
 
 ### Citation Format
 - **In-text:** (Author, Year) or Author (Year)
-- **Bibliography:** Full reference list following APA 7th Edition guidelines
+- **Bibliography:** Full APA 7th Edition reference list specification
 
 ### ⚠️ CITATION REQUIREMENTS - CRITICAL
 
@@ -70,245 +70,287 @@
 
 ## Formatted Structure
 
-### Title Page
-**Required elements:**
-- Title: "Democratizing Academic Writing and Research: A Multi-Agent AI Framework for Enhanced Rigor and Accessibility"
-- Author Name(s)
-- Author Affiliation(s)
-- Author Note (optional: ORCID, acknowledgments, contact info)
-
 ### Title
-**Format:** Bold, Centered, 14pt (on Title Page and at start of paper)
-**Max Length:** 12 words (or 100 characters for some journals)
-**Suggested:** "Democratizing Academic Writing and Research: A Multi-Agent AI Framework for Enhanced Rigor and Accessibility"
+**Format:** Bold, Centered, 14pt, Title Case
+**Max Length:** 100 characters
+**Suggested:** **Democratizing Academic Writing: A Multi-Agent Open-Source AI Framework for Equitable Knowledge Production**
 
 ### Author Information
 **Format:**
-- Name(s): Centered, First name Last name
-- Affiliation(s): Centered, Department, University
-- Email(s): Centered
-- ORCID: Optional, Centered
+- Name(s): Full Name(s)
+- Affiliation(s): Department, University/Organization, City, Country
+- Email(s): Corresponding author email clearly indicated
+- ORCID: [Optional, recommended]
 
 ### Abstract
-**Heading:** Abstract (Bold, Centered)
-**Length:** 150-250 words
+**Heading:** **Abstract** (Bold, Centered)
+**Length:** 250-300 words
 **Structure:**
-- Background (1-2 sentences): Current challenges in academic writing and research.
-- Objective (1 sentence): Introduce the need for a transformative solution beyond single LLMs.
-- Methods (2-3 sentences): Briefly describe the proposed multi-agent AI framework, focusing on formal verification and ethical grounding.
-- Results (2-3 sentences): Highlight how the framework enhances rigor, accessibility, and democratizes knowledge creation.
-- Conclusions (1-2 sentences): Emphasize the potential for a new paradigm in AI-assisted academic work.
+- Background (2-3 sentences): Academic writing and publishing face significant challenges, including inequities in access, high costs, and complex processes. Existing AI tools offer fragmented solutions.
+- Objective (1-2 sentences): This paper proposes a novel multi-agent, open-source AI framework to democratize academic writing, lower barriers to entry, and foster a more equitable research ecosystem.
+- Methods (2-3 sentences): We introduce the "Academic Thesis AI Open Source Project" framework, designed to emulate collaborative research processes through specialized AI agents.
+- Results (2-3 sentences): Illustrative case studies demonstrate the framework's practical application in overcoming specific challenges, showcasing its potential to enhance efficiency and inclusivity.
+- Conclusions (1-2 sentences): This framework represents a transformative step towards empowering researchers globally, accelerating knowledge creation, and fostering diverse voices in academia.
 
-**Keywords:** 3-6 keywords (e.g., Multi-agent AI, Academic Writing, Research Democratization, Formal Verification, Ethics in AI, Scientific Rigor)
+**Keywords:** 3-6 keywords (e.g., Multi-agent AI, Open-source, Academic writing, Democratization, Knowledge production, Equity)
 
 ---
 
-## Introduction
-**Heading:** Introduction (Level 1 - Centered, Bold, Title Case)
-**Length:** 800-1000 words
+## 1. Introduction
+**Section Number:** 1
+**Heading:** **1. Introduction** (Bold, Centered)
+**Length:** 1000-1200 words
 **Subsections:**
 
-### Background and the Current State of Academic Work
-**Heading:** Background and the Current State of Academic Work (Level 2 - Left-aligned, Bold, Title Case)
-[Format specifications: Establish the context, current challenges, bottlenecks, accessibility issues, and verification problems in academic writing and research. Aligns with Logical Progression Point 1.]
+### 1.1. Background on Academic Writing and Publishing
+**Heading:** **1.1. Background on Academic Writing and Publishing** (Bold, Left-Aligned)
+[Format specifications: narrative outlining the current state of academic publishing, its importance, and inherent complexities.]
 
-### Limitations of Existing AI Tools in Academia
-**Heading:** Limitations of Existing AI Tools in Academia (Level 2 - Left-aligned, Bold, Title Case)
-[Format specifications: Discuss how single LLMs offer superficial assistance but lack depth, formal verification, ethical robustness, and collaborative intelligence. Aligns with Logical Progression Point 2.]
+### 1.2. Systemic Inequalities and Barriers to Entry
+**Heading:** **1.2. Systemic Inequalities and Barriers to Entry** (Bold, Left-Aligned)
+[Format specifications: detailed discussion of challenges like language barriers, access to resources, high costs, and lack of mentorship, linking to `Core Argument Flow` point 1.]
 
-### Research Question and Thesis Statement
-**Heading:** Research Question and Thesis Statement (Level 2 - Left-aligned, Bold, Title Case)
-**Research Question:** How can formally verifiable, ethically robust multi-agent AI systems democratize academic writing and research, and what are the theoretical and practical implications for enhancing scientific rigor and accessibility?
-**Thesis Statement:** The current paradigm of academic writing and research is constrained by accessibility barriers, inefficiencies, and verification challenges; however, a novel framework leveraging formally verifiable, ethically grounded multi-agent AI systems offers a transformative solution to democratize knowledge creation, accelerate scientific discovery, and elevate the integrity of academic output, moving beyond the limitations of existing single-model AI applications.
+### 1.3. Problem Statement
+**Heading:** **1.3. Problem Statement** (Bold, Left-Aligned)
+[Format specifications: clear articulation of the gap – the lack of a comprehensive, integrated, and open-source solution to address these inequalities using AI.]
 
-### Contributions of This Paper
-**Heading:** Contributions of This Paper (Level 2 - Left-aligned, Bold, Title Case)
+### 1.4. Research Question and Thesis Statement
+**Heading:** **1.4. Research Question and Thesis Statement** (Bold, Left-Aligned)
+**Research Question:** How can a multi-agent, open-source AI framework democratize academic writing and address existing inequalities in knowledge production and dissemination?
+**Thesis Statement:** A novel multi-agent, open-source AI framework for academic writing, by emulating the collaborative research process, can fundamentally democratize knowledge production, significantly lowering barriers to entry, enhancing efficiency, and fostering a more equitable and globally inclusive research ecosystem.
+
+### 1.5. Contributions
+**Heading:** **1.5. Contributions** (Bold, Left-Aligned)
 **Bullet format:**
-- Proposing a novel multi-agent AI framework for academic writing and research.
-- Integrating formal verification and ethical guardrails into AI-assisted academic processes.
-- Demonstrating the potential for enhanced scientific rigor, accessibility, and democratization.
-- Outlining a new paradigm for collaborative, intelligent academic work.
+- Proposing a novel multi-agent, open-source AI framework for the full academic writing workflow.
+- Demonstrating the potential of AI to address systemic inequalities in knowledge production.
+- Providing a conceptual model for collaborative AI in research.
+- Highlighting ethical considerations and future directions for AI in academia.
 
-### Paper Organization
-**Heading:** Paper Organization (Level 2 - Left-aligned, Bold, Title Case)
+### 1.6. Paper Organization
+**Heading:** **1.6. Paper Organization** (Bold, Left-Aligned)
 [Standard paragraph outlining the structure of the paper.]
 
 ---
 
-## Literature Review: AI in Academic Contexts
-**Heading:** Literature Review: AI in Academic Contexts (Level 1 - Centered, Bold, Title Case)
-**Length:** 1500-2000 words
-**Organization:** Thematic subsections, critically evaluating existing AI applications and highlighting gaps. Aligns with Logical Progression Point 2.
+## 2. Background and Related Work
+**Section Number:** 2
+**Heading:** **2. Background and Related Work** (Bold, Centered)
+**Length:** 2000-2200 words
+**Organization:** Thematic subsections, building towards the identified gap. This maps to `Core Argument Flow` point 2.
 
-### Single-Model LLMs for Content Generation and Editing
-**Heading:** Single-Model LLMs for Content Generation and Editing (Level 2 - Left-aligned, Bold, Title Case)
-[Format: narrative + critical analysis. Discuss tools like ChatGPT, Bard, etc., focusing on their capabilities and inherent limitations in terms of accuracy, bias, and lack of formal verification.]
+### 2.1. Evolution of AI in Academic Support
+**Heading:** **2.1. Evolution of AI in Academic Support** (Bold, Left-Aligned)
+[Format: historical overview of AI tools used in research, from basic grammar checks to advanced literature review tools.]
 
-**Table 1:** Comparison of AI Tools in Academic Writing
-| Tool Type | Strengths | Weaknesses | Relevance to Rigor |
-|-----------|-----------|------------|--------------------|
-| Single LLMs | Speed, idea generation | Hallucinations, bias, no verification | Low, requires human oversight |
-| Plagiarism Checkers | Detect similarity | Cannot assess originality/intent | Moderate |
-| Grammar/Style Tools | Improve prose | Limited to surface-level | Low |
+### 2.2. Current AI Tools for Academic Writing
+**Heading:** **2.2. Current AI Tools for Academic Writing** (Bold, Left-Aligned)
+[Format: narrative + comparison table of existing tools, categorizing them by function (e.g., grammar, citation, summarization, idea generation).]
 
-### AI for Data Analysis and Research Support
-**Heading:** AI for Data Analysis and Research Support (Level 2 - Left-aligned, Bold, Title Case)
-[Continue with critical analysis of other AI tools used in research, e.g., for literature discovery, data processing, but emphasizing their siloed nature and lack of integrated ethical/verification mechanisms.]
+**Table 1:** Comparison of Existing AI Tools for Academic Writing
+| Tool/Approach | Primary Function | Key Features | Limitations |
+|---------------|------------------|--------------|--------------|
+| [Tool A]      | Grammar/Style    | ...          | ...          |
+| [Tool B]      | Literature Review| ...          | ...          |
+| [Tool C]      | Citation Mgmt.   | ...          | ...          |
+| [Tool D]      | Content Generation| ...          | ...          |
+| [Tool E]      | Multi-functional | ...          | ...          |
 
-### The Need for Multi-Agent Systems and Formal Verification in Academia
-**Heading:** The Need for Multi-Agent Systems and Formal Verification in Academia (Level 2 - Left-aligned, Bold, Title Case)
-[Synthesis paragraph: Summarize the gaps identified in existing literature and tools, emphasizing the unaddressed need for ethical, verifiable, and collaboratively intelligent AI systems in academia. This sets the stage for the proposed framework.]
+### 2.3. Multi-Agent Systems in AI
+**Heading:** **2.3. Multi-Agent Systems in AI** (Bold, Left-Aligned)
+[Format: discussion of multi-agent architectures, their benefits (modularity, collaboration), and applications in other domains, setting the stage for the proposed framework.]
 
----
+### 2.4. Open-Source AI and Democratization
+**Heading:** **2.4. Open-Source AI and Democratization** (Bold, Left-Aligned)
+[Format: argument for the importance of open-source in achieving equitable access and fostering community-driven development.]
 
-## Theoretical Framework: A Multi-Agent AI System for Academic Innovation
-**Heading:** Theoretical Framework: A Multi-Agent AI System for Academic Innovation (Level 1 - Centered, Bold, Title Case)
-**Length:** 1500-2000 words
-**Content:** This section details the proposed framework, addressing Logical Progression Point 3.
-
-### Design Principles of the Multi-Agent Framework
-**Heading:** Design Principles of the Multi-Agent Framework (Level 2 - Left-aligned, Bold, Title Case)
-[Format: paragraph + diagram. Discuss principles like modularity, collaboration, accountability, and domain-specific expertise.]
-
-**Figure 1:** Conceptual Architecture of the Multi-Agent Academic AI System
-[Placeholder for a conceptual diagram illustrating various agents (e.g., Research Agent, Drafting Agent, Verification Agent, Ethical Review Agent, Formatting Agent) and their interactions.]
-*Figure 1. A conceptual diagram illustrating the interconnected components and collaborative workflow within the proposed multi-agent AI system for academic writing and research.*
-
-### Components of the Multi-Agent System
-**Heading:** Components of the Multi-Agent System (Level 2 - Left-aligned, Bold, Title Case)
-[Format: detailed description of each agent type and its role, e.g., Research Agent, Drafting Agent, Verification Agent, Ethical Review Agent, Citation Agent.]
-
-### Integrating Formal Verification Mechanisms
-**Heading:** Integrating Formal Verification Mechanisms (Level 2 - Left-aligned, Bold, Title Case)
-[Format: narrative describing how formal methods, logic, and proof-checking are integrated into the agents' operations to ensure correctness, consistency, and traceability of claims and data.]
-
-### Ethical Guardrails and Bias Mitigation Strategies
-**Heading:** Ethical Guardrails and Bias Mitigation Strategies (Level 2 - Left-aligned, Bold, Title Case)
-[Format: detailed explanation of the ethical principles embedded in the framework, including mechanisms for identifying and mitigating bias, ensuring fairness, privacy, and responsible AI usage.]
+### 2.5. Gaps in Current Approaches
+**Heading:** **2.5. Gaps in Current Approaches** (Bold, Left-Aligned)
+[Format: synthesis paragraph articulating how existing tools are fragmented, proprietary, or lack a comprehensive, integrated, and open-source multi-agent architecture specifically designed for the entire academic workflow.]
 
 ---
 
-## Framework Application: Illustrative Case Studies and Conceptual Walkthroughs
-**Heading:** Framework Application: Illustrative Case Studies and Conceptual Walkthroughs (Level 1 - Centered, Bold, Title Case)
-**Length:** 1500-2000 words
-**Content:** This section demonstrates the practical application of the framework, addressing Logical Progression Point 4.
+## 3. Proposed Framework: The Academic Thesis AI Project
+**Section Number:** 3
+**Heading:** **3. Proposed Framework: The Academic Thesis AI Project** (Bold, Centered)
+**Length:** 2000-2200 words
+[This section serves as the "Methods" equivalent for a theoretical paper, detailing the architecture and design of the proposed solution. Maps to `Core Argument Flow` point 3.]
 
-### Case Study 1: Accelerating Literature Review and Synthesis
-**Heading:** Case Study 1: Accelerating Literature Review and Synthesis (Level 2 - Left-aligned, Bold, Title Case)
-[Format: narrative walkthrough. Describe how a multi-agent system could perform a comprehensive, verifiable literature review, identifying key themes, methodologies, and gaps, and generating a structured synthesis.]
+### 3.1. Core Philosophy and Design Principles
+**Heading:** **3.1. Core Philosophy and Design Principles** (Bold, Left-Aligned)
+[Format: narrative outlining the foundational ideas – collaboration, modularity, transparency, equity, user-centric design.]
 
-### Case Study 2: Enhancing Rigor in Data Interpretation and Argumentation
-**Heading:** Case Study 2: Enhancing Rigor in Data Interpretation and Argumentation (Level 2 - Left-aligned, Bold, Title Case)
-[Format: narrative walkthrough. Illustrate how agents could collaborate to analyze hypothetical data, interpret findings, construct robust arguments, and cross-verify claims against evidence, reducing errors and logical fallacies.]
+### 3.2. Multi-Agent Architecture
+**Heading:** **3.2. Multi-Agent Architecture** (Bold, Left-Aligned)
+[Format: detailed description of the multi-agent system, including roles, responsibilities, and interactions of individual AI agents.]
 
-### Case Study 3: Democratizing Access to Advanced Research Tools
-**Heading:** Case Study 3: Democratizing Access to Advanced Research Tools (Level 2 - Left-aligned, Bold, Title Case)
-[Format: narrative walkthrough. Explore how the framework could provide accessible, guided assistance to researchers in resource-limited settings or those new to academia, enabling them to produce high-quality, ethically sound research.]
+**Figure 1:** Conceptual Diagram of the Academic Thesis AI Framework
+[Placeholder for a conceptual diagram illustrating the interaction between various AI agents (e.g., Researcher Agent, Literature Reviewer Agent, Data Analyst Agent, Editor Agent, Citation Manager Agent, Ethical Reviewer Agent).]
+*Caption Format: Figure 1. Conceptual Diagram of the Academic Thesis AI Framework.*
+
+### 3.3. Key Components and Functionalities
+**Heading:** **3.3. Key Components and Functionalities** (Bold, Left-Aligned)
+[Format: subsections for each major component or agent, detailing their specific functions.]
+
+#### 3.3.1. Researcher Agent.
+**Heading:** ***3.3.1. Researcher Agent.*** (Bold, Indented, Sentence case)
+[Description of its role in outlining, hypothesis generation, and overall project management.]
+
+#### 3.3.2. Literature Review Agent.
+**Heading:** ***3.3.2. Literature Review Agent.*** (Bold, Indented, Sentence case)
+[Description of its role in searching, synthesizing, and identifying gaps in existing literature.]
+
+#### 3.3.3. Data Analyst Agent.
+**Heading:** ***3.3.3. Data Analyst Agent.*** (Bold, Indented, Sentence case)
+[Description of its role in data processing, statistical analysis, and visualization (conceptual for theoretical paper).]
+
+#### 3.3.4. Editor and Style Agent.
+**Heading:** ***3.3.4. Editor and Style Agent.*** (Bold, Indented, Sentence case)
+[Description of its role in ensuring academic tone, grammar, clarity, and adherence to style guides.]
+
+#### 3.3.5. Citation and Referencing Agent.
+**Heading:** ***3.3.5. Citation and Referencing Agent.*** (Bold, Indented, Sentence case)
+[Description of its role in managing citations, ensuring accuracy, and formatting reference lists.]
+
+#### 3.3.6. Ethical Review Agent.
+**Heading:** ***3.3.6. Ethical Review Agent.*** (Bold, Indented, Sentence case)
+[Description of its role in flagging potential ethical concerns, biases, or data privacy issues.]
+
+### 3.4. Open-Source Implementation Strategy
+**Heading:** **3.4. Open-Source Implementation Strategy** (Bold, Left-Aligned)
+[Format: discussion on the choice of technologies, community involvement, version control, and licensing.]
 
 ---
 
-## Discussion
-**Heading:** Discussion (Level 1 - Centered, Bold, Title Case)
-**Length:** 1000-1500 words
-**Content:** Interprets findings, compares with prior work, and highlights implications, addressing Logical Progression Point 5.
+## 4. Illustrative Case Studies and Potential Impact
+**Section Number:** 4
+**Heading:** **4. Illustrative Case Studies and Potential Impact** (Bold, Centered)
+**Length:** 2000-2200 words
+[This section serves as the "Results" equivalent, demonstrating the practical application and potential of the framework through hypothetical or conceptual case studies. Maps to `Core Argument Flow` point 4.]
 
-### Interpretation of Findings: Realizing the Democratization of Knowledge
-**Heading:** Interpretation of Findings: Realizing the Democratization of Knowledge (Level 2 - Left-aligned, Bold, Title Case)
-[Format: narrative with citations. Discuss how the proposed framework directly addresses the research question, demonstrating its potential to democratize knowledge creation and enhance scientific rigor.]
+### 4.1. Case Study 1: Empowering a Non-Native English Speaker
+**Heading:** **4.1. Case Study 1: Empowering a Non-Native English Speaker** (Bold, Left-Aligned)
+[Format: narrative describing how the framework assists a researcher from a non-English speaking background in overcoming language barriers, refining arguments, and achieving publication-ready quality.]
 
-### Comparison with Existing AI Paradigms
-**Heading:** Comparison with Existing AI Paradigms (Level 2 - Left-aligned, Bold, Title Case)
-[Format: comparative discussion. Explicitly compare the multi-agent framework's capabilities and benefits against the limitations of single-model LLMs and other existing AI tools, emphasizing its unique contributions.]
+### 4.2. Case Study 2: Accelerating Interdisciplinary Research
+**Heading:** **4.2. Case Study 2: Accelerating Interdisciplinary Research** (Bold, Left-Aligned)
+[Format: narrative illustrating how the multi-agent system facilitates collaboration across different disciplinary knowledge bases, synthesizing diverse perspectives efficiently.]
 
-### Theoretical Implications
-**Heading:** Theoretical Implications (Level 2 - Left-aligned, Bold, Title Case)
-[Format: paragraph. Discuss how this framework advances theoretical understanding of AI-human collaboration, the nature of academic knowledge, and the role of ethics in automated systems.]
+### 4.3. Case Study 3: Bridging Resource Gaps in Developing Regions
+**Heading:** **4.3. Case Study 3: Bridging Resource Gaps in Developing Regions** (Bold, Left-Aligned)
+[Format: narrative demonstrating how the open-source and accessible nature of the framework provides high-quality academic support to researchers with limited access to traditional resources.]
 
-### Practical Implications and Future Landscape of Academia
-**Heading:** Practical Implications and Future Landscape of Academia (Level 2 - Left-aligned, Bold, Title Case)
-[Format: bullet points or paragraphs. Detail the practical benefits for researchers, institutions, and the broader scientific community, including increased efficiency, reduced barriers to entry, and improved quality.]
-
-### Limitations and Future Work
-**Heading:** Limitations and Future Work (Level 2 - Left-aligned, Bold, Title Case)
-[Format: honest assessment. Acknowledge the current limitations of the theoretical framework (e.g., computational demands, implementation challenges, human oversight requirements) and suggest avenues for future research and development.]
+### 4.4. Qualitative Assessment of Potential Benefits
+**Heading:** **4.4. Qualitative Assessment of Potential Benefits** (Bold, Left-Aligned)
+[Format: bullet points or short paragraphs summarizing the overarching benefits observed across case studies, such as increased efficiency, improved quality, reduced bias, and enhanced accessibility.]
 
 ---
 
-## Conclusion
-**Heading:** Conclusion (Level 1 - Centered, Bold, Title Case)
-**Length:** 500-700 words
+## 5. Discussion
+**Section Number:** 5
+**Heading:** **5. Discussion** (Bold, Centered)
+**Length:** 1500-1700 words
+[Maps to `Core Argument Flow` point 5.]
 
-[No subsections - continuous narrative]
+### 5.1. Interpretation of Findings and Implications for Democratization
+**Heading:** **5.1. Interpretation of Findings and Implications for Democratization** (Bold, Left-Aligned)
+[Format: narrative connecting the case study results back to the thesis, emphasizing how the framework democratizes access and addresses inequalities.]
+
+### 5.2. Comparison with Prior Work and Unique Contributions
+**Heading:** **5.2. Comparison with Prior Work and Unique Contributions** (Bold, Left-Aligned)
+[Format: comparative discussion highlighting how the proposed framework surpasses existing solutions, particularly in its multi-agent, open-source, and comprehensive approach.]
+
+### 5.3. Theoretical Implications
+**Heading:** **5.3. Theoretical Implications** (Bold, Left-Aligned)
+[Format: paragraph discussing how this framework contributes to theories of knowledge production, human-AI collaboration, and equitable access to information.]
+
+### 5.4. Practical Implications and Policy Recommendations
+**Heading:** **5.4. Practical Implications and Policy Recommendations** (Bold, Left-Aligned)
+[Format: bullet points or paragraphs suggesting how institutions, funders, and policymakers can leverage or support such a framework to foster a more inclusive academic landscape.]
+
+### 5.5. Ethical Considerations and Challenges
+**Heading:** **5.5. Ethical Considerations and Challenges** (Bold, Left-Aligned)
+[Format: honest assessment of potential ethical pitfalls (e.g., bias in AI models, over-reliance, intellectual property, 'ghostwriting' concerns) and proposed mitigation strategies.]
+
+### 5.6. Limitations and Future Work
+**Heading:** **5.6. Limitations and Future Work** (Bold, Left-Aligned)
+[Format: acknowledging the theoretical nature of the paper, outlining areas for empirical validation, technical development, and further research.]
+
+---
+
+## 6. Conclusion
+**Section Number:** 6
+**Heading:** **6. Conclusion** (Bold, Centered)
+**Length:** 750-850 words
+[No subsections - continuous narrative. Maps to `Core Argument Flow` point 6.]
 
 **Required elements:**
-- Restate problem and approach: Briefly reiterate the challenges in academic writing and research and how the multi-agent AI framework offers a solution.
-- Summarize key findings: Briefly recap the core components, integration of formal verification and ethics, and the potential demonstrated through case studies.
-- Emphasize contributions: Reiterate the paper's main contributions to democratizing knowledge, enhancing rigor, and accelerating discovery.
-- Suggest future directions: Conclude with a forward-looking statement on the transformative potential of such systems and the call for continued research and ethical development.
+- Restate problem and approach: Briefly reiterate the challenges in academic writing and the proposed multi-agent AI framework.
+- Summarize key findings: Briefly summarize how the framework can address these challenges, as illustrated by the case studies.
+- Emphasize contributions: Reiterate the paper's primary contributions to democratizing knowledge production.
+- Suggest future directions: Point towards the broader implications and the path forward for realizing this vision.
 
 ---
 
 ## Acknowledgments
-[Heading: Acknowledgments (Level 1 - Centered, Bold, Title Case)]
-[If applicable - funding sources, contributors, institutional support.]
+[If applicable - funding, contributors, research assistants. Heading: **Acknowledgments** (Bold, Centered)]
 
 ---
 
 ## References
-**Heading:** References (Level 1 - Centered, Bold, Title Case)
+**Heading:** **References** (Bold, Centered)
 **Format:** APA 7th Edition
-**Minimum:** 30 references (for a theoretical paper of this length, likely 40-60+ references)
+**Minimum:** 30-40 references for a theoretical paper of this length.
 
 **Categories:**
-- Foundational works (pre-2019): [~20%]
-- Recent works (2020-2024): [~80%]
+- Foundational works (pre-2019): [~20-30%]
+- Recent works (2020-2024): [~70-80%]
 - Including own prior work: [Optional, max 10%]
 
 ---
 
 ## Appendices
-[Heading: Appendix A (Level 1 - Centered, Bold, Title Case)]
-[If applicable, e.g., detailed algorithms for formal verification, extended ethical guidelines, detailed agent interaction protocols.]
+[If applicable. Heading: **Appendix A: [Title]** (Bold, Centered)]
+- Appendix A: [Supplementary materials, e.g., detailed agent specifications, ethical guideline templates]
 
 ---
 
 ## Journal-Specific Requirements
 
-### Journal of AI & Society (Placeholder)
+### Technology/Social Impact Journal (General)
 
 **Mandatory sections:**
-- [ ] Data Availability Statement (N/A for purely theoretical paper, or state "All data generated or analyzed during this study are included in this published article (and its supplementary information files).")
+- [ ] Data Availability Statement (If any data is conceptually discussed or simulated)
 - [ ] Conflict of Interest Statement
 - [ ] Author Contributions (if multiple authors)
 - [ ] Funding Statement
 
 **Formatting specifics:**
-- Figures: PNG/TIFF, min 300dpi (for publication)
-- Tables: Editable format, not images
-- Equations: Numbered, right-aligned (if any formal logic or mathematical expressions are used)
+- Figures: [PNG/TIFF, min 300dpi, clearly legible captions]
+- Tables: [Editable format, not images, clear titles and footnotes]
+- Equations: [Numbered, right-aligned, if applicable]
 
 **Submission checklist:**
 - [ ] Cover letter
-- [ ] Highlights (3-5 bullet points summarizing key findings)
-- [ ] Graphical abstract (if required by journal)
-- [ ] Supplementary materials (if appendices are extensive)
+- [ ] Highlights (3-5 bullet points summarizing key findings/contributions)
+- [ ] Graphical abstract (if required - a visual summary of the framework)
+- [ ] Supplementary materials (if applicable)
 
 ---
 
-## Length Targets by Section (for ~9,000 words total)
+## Length Targets by Section (approx. 9500 words total)
 
-| Section | Words | % of Total (Approx.) |
-|---------------------------------------------|-------|----------------------|
-| Abstract                                    | 250   | 2.8%                 |
-| Introduction                                | 900   | 10%                  |
-| Literature Review: AI in Academic Contexts  | 1800  | 20%                  |
-| Theoretical Framework: Multi-Agent AI System| 2000  | 22.2%                |
-| Framework Application: Case Studies         | 2000  | 22.2%                |
-| Discussion                                  | 1300  | 14.4%                |
-| Conclusion                                  | 750   | 8.3%                 |
-| **Total (Main Body)**                       | **9000**| **100%**             |
-| *References, Appendices, Title Page*        | *+~1000*|                      |
-| **Grand Total**                             | **~10000**|                      |
+| Section | Words | % of Total |
+|---------|-------|------------|
+| Abstract | 275 | 2.9% |
+| Introduction | 1100 | 11.6% |
+| Background & Related Work | 2100 | 22.1% |
+| Proposed Framework | 2100 | 22.1% |
+| Case Studies & Potential Impact | 2100 | 22.1% |
+| Discussion | 1600 | 16.8% |
+| Conclusion | 800 | 8.4% |
+| **Total (approx)** | **10075** | **100%** |
+*(Note: These are targets. Actual word counts may vary slightly based on content development.)*
 
 ---
 
@@ -316,21 +358,22 @@
 
 ### Structure
 - [X] All required sections present
-- [X] Logical flow between sections, guided by thesis progression
-- [X] Appropriate section lengths (as per targets)
+- [X] Logical flow between sections (aligned with `Core Argument Flow`)
+- [X] Appropriate section lengths (per targets above)
 
 ### Formatting
-- [X] Consistent heading styles (APA 7th)
-- [X] Proper citation format (APA 7th)
-- [X] Figures/tables numbered correctly
-- [X] Captions complete and descriptive
+- [X] Consistent heading styles (APA 7th levels)
+- [X] Proper citation format (APA 7th, in-text and reference list)
+- [X] Figures/tables numbered correctly (if included)
+- [X] Captions complete and descriptive (if included)
 
 ### Content
-- [X] Abstract summarizes whole paper
+- [X] Abstract summarizes whole paper (background, objective, methods, results, conclusion)
 - [X] Introduction states clear RQ and thesis
-- [X] Theoretical Framework details proposed system clearly
-- [X] Framework Application provides convincing illustrative cases
-- [X] Discussion interprets findings and compares with prior work
+- [X] Background/Related Work comprehensively covers existing literature and identifies gaps
+- [X] Proposed Framework detailed sufficiently to understand the architecture and functions
+- [X] Case Studies illustrate practical application and potential impact
+- [X] Discussion interprets findings, compares with prior work, and addresses implications/limitations
 - [X] Conclusion emphasizes contribution and future directions
 
 ---
@@ -342,27 +385,27 @@
 - ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
 
 ### Tense Usage
-- **Introduction:** Present tense (current state, research question)
-- **Literature Review:** Past tense (what others found), Present tense (current understanding, gaps)
-- **Theoretical Framework:** Present tense (describing the proposed system)
-- **Framework Application:** Conditional/Future tense (how the system *would* function), Present tense (describing the conceptual studies)
+- **Introduction:** Present tense (current state, problem)
+- **Literature Review:** Past tense (what others found), Present tense (current state of tools)
+- **Proposed Framework:** Present tense (describing the framework, its components, how it operates)
+- **Case Studies:** Present tense (describing the potential application and impact), or Future tense (what it *would* achieve)
 - **Discussion:** Present tense (what it means, implications)
-- **Conclusion:** Present tense (summarizing findings, future outlook)
+- **Conclusion:** Present tense (summary, final statement)
 
 ### Voice
-- **Active vs Passive:** Prefer active for clarity, passive for objectivity
-- ✅ "We analyzed the data" (active, clear)
-- ✅ "The data were analyzed" (passive, objective)
+- **Active vs Passive:** Prefer active for clarity, passive for objectivity. For theoretical papers, a balanced approach is common.
+- ✅ "We propose an architecture..." (active, clear)
+- ✅ "The framework is designed to..." (passive, objective)
 
 ---
 
 ## Next Steps
 
 After formatting:
-1. Review against target journal guidelines for specific nuances (e.g., figure resolution, specific heading formats if they deviate from standard APA).
-2. Ensure all placeholders are noted (e.g., `[Placeholder for conceptual diagram]`).
-3. Proceed to Compose phase with clear structure.
-4. Save to `outline_formatted.md`.
+1. Review against target journal guidelines (if a specific journal is identified).
+2. Ensure all placeholders are noted for content generation.
+3. Proceed to Compose phase with this clear, formatted structure.
+4. Save this output to `outline_formatted.md`.
 
 ---
 
@@ -371,10 +414,10 @@ After formatting:
 **CRITICAL:** When structuring the paper, ensure all claims are traceable to sources.
 
 **Your responsibilities:**
-1. **Verify citations exist** before including them in outlines
-2. **Never suggest fabricated examples** or statistics
-3. **Mark placeholders** clearly with [VERIFY] or [TODO]
-4. **Ensure structure supports** verifiable, evidence-based arguments
-5. **Flag sections** that will need strong citation support
+1. **Verify citations exist** before including them in outlines (Crafter agent responsibility).
+2. **Never suggest fabricated examples** or statistics.
+3. **Mark placeholders** clearly with [VERIFY] or [TODO].
+4. **Ensure structure supports** verifiable, evidence-based arguments.
+5. **Flag sections** that will need strong citation support (e.g., Background & Related Work, Discussion sections on implications).
 
 **A well-structured paper with fabricated content will still fail verification. Build for accuracy.**

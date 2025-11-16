@@ -8,124 +8,148 @@
 ## Summary
 
 **Strengths:**
-- **Comprehensive Scope:** The review covers a broad and highly relevant range of topics concerning AI's impact on academic research and writing, from historical evolution to multi-agent systems, accessibility, open-source AI, citation management, and ethical considerations.
-- **Systematic Structure:** The paper is well-organized into logical sections, providing a clear trajectory of AI's development and its implications.
-- **Strong Ethical Discussion:** The section on ethical considerations is particularly robust, delving into authorship, plagiarism, bias, and the need for transparency and accountability with good depth and nuance.
-- **Relevant Examples:** The paper incorporates several pertinent examples, such as Grammarly, ChatGPT, Llama 2, Semantic Scholar, Crossref, and the Denario project, which helps illustrate key points.
+-   **Comprehensive Scope:** The literature review covers a broad and relevant range of topics, from the historical evolution of AI in academic writing to modern multi-agent systems, accessibility barriers, open-source solutions, and critical ethical considerations.
+-   **Logical Structure:** The paper is well-structured, progressing logically through the historical development, current state, challenges, and future implications of AI in academia. Each section builds upon the previous one, providing a coherent narrative.
+-   **Clear Explanations:** Complex concepts, such as agentic AI, multi-agent systems, and the transformer architecture, are explained clearly and accessibly, making the content understandable to a broad academic audience.
+-   **Ethical Awareness:** The review dedicates substantial and thoughtful attention to ethical considerations, demonstrating a strong awareness of the challenges related to academic integrity, bias, fairness, and reproducibility.
 
-**Critical Issues:** 3 major, 3 moderate, 5 minor
-**Recommendation:** Revisions needed before publication to refine claims, strengthen arguments with more specific evidence of *achieved* impact, and address potential overstatements.
+**Critical Issues:** 3 major, 4 moderate, 8 minor
+**Recommendation:** Substantial revisions are needed, primarily to address pervasive citation gaps and strengthen the evidential basis of several claims.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Overclaiming in Introduction and Conclusion
-**Location:** Introduction (line 2), Conclusion (line 3)
-**Claim:** Introduction: "nowhere more acutely felt than in the intricate ecosystem of academic research and writing." Conclusion: "unparalleled capacity to augment human intellect."
-**Problem:** While AI's impact is significant, claiming it's "nowhere more acutely felt" is a strong overstatement given AI's profound impact across healthcare, finance, engineering, etc. Similarly, "unparalleled capacity" can be debated, as previous technological shifts (e.g., the internet, digital libraries) also had transformative effects.
-**Evidence:** No comparative evidence is provided to substantiate the claim that AI's impact is *uniquely* or *most* acute in academia compared to other sectors.
-**Fix:** Hedge these statements. For example, "among the most acutely felt areas" or "a significant and potentially unparalleled capacity."
-**Severity:** 🔴 High - affects the paper's overarching framing and credibility.
+### Issue 1: Pervasive Missing Citations for Foundational Claims
+**Location:** Throughout Sections 2.1, 2.2, 2.4, 2.5, 2.6
+**Claim/Problem:** Numerous foundational concepts, historical developments, and widely accepted phenomena are stated as fact without specific academic citations. This undermines the academic rigor expected of a literature review.
+**Examples (not exhaustive):**
+-   "The primary goal was to improve the efficiency of editing and proofreading, freeing up researchers to focus more on content generation {cite_MISSING: early word processing tools impact}" (2.1.1)
+-   "Introduced in 2017, the transformer architecture revolutionized natural language processing (NLP)... {cite_MISSING: transformer architecture}" (2.1.3) - This is a landmark paper (Vaswani et al., 2017) and absolutely requires a direct citation.
+-   "Common designs include hierarchical architectures... peer-to-peer architectures... and blackboard architectures... {cite_MISSING: MAS architectures}" (2.2.2)
+-   "The process of synthesizing vast amounts of information... demands substantial cognitive effort {cite_MISSING: cognitive load of academic writing}" (2.3.1)
+-   "The competitive nature of academic funding and publishing also places immense pressure on researchers... This "publish or perish" culture... {cite_MISSING: publish or perish culture}" (2.3.2)
+-   "TensorFlow (Google) and PyTorch (Meta AI) are two dominant open-source machine learning libraries... {cite_MISSING: open source ML frameworks}" (2.4.2)
+-   "The stochastic nature of generative AI means that the same prompt can yield different outputs, making it difficult to replicate specific results... {cite_MISSING: AI reproducibility}" (2.6.2)
+**Problem:** While these claims might be considered "common knowledge" within their respective sub-fields, a literature review must meticulously attribute all information to its source. The absence of citations for such fundamental points significantly weakens the paper's scholarly foundation.
+**Fix:** Provide specific citations for all uncited claims. For historical claims, cite the original papers or comprehensive reviews that discuss these developments. For common phenomena, cite studies that analyze or document them.
+**Severity:** 🔴 High - fundamentally compromises the academic integrity and trustworthiness of a literature review.
 
-### Issue 2: Overstatement of AI's "Ensuring" Role in Credibility
-**Location:** Automated Citation Discovery and Management, paragraph 4
-**Claim:** "The ability of AI to cross-reference claims with their original sources also aids in ensuring the evidence-based nature of academic arguments, providing a layer of verification that strengthens the credibility of research {cite_003}."
-**Problem:** While AI *assists* in verification, claiming it "ensures" evidence-based nature or *automatically* "strengthens" credibility is an overstatement. Human oversight and critical evaluation remain paramount for actual assurance and credibility building. AI is a tool, not a guarantor.
-**Evidence:** The cited paper {cite_003} likely discusses AI's *assistive* capabilities, not its capacity to *ensure* or *guarantee* such outcomes without human intervention.
-**Fix:** Rephrase to reflect AI's assistive role. For example, "AI can significantly *aid* in verifying claims against original sources, *contributing to* the evidence-based nature of academic arguments and *supporting* the strengthening of research credibility."
-**Severity:** 🔴 High - risks misrepresenting AI's role and human responsibility in academic rigor.
+### Issue 2: Lack of Evidential Support for Specific Examples and Applications
+**Location:** Throughout Sections 2.1, 2.2, 2.4, 2.5, 2.6
+**Claim/Problem:** Several specific examples of tools, capabilities, or applications are mentioned without corresponding citations. This makes it difficult for readers to verify the claims or explore the examples further.
+**Examples (not exhaustive):**
+-   "Early ML-powered tools began to provide stylistic recommendations... {cite_MISSING: ML writing tools evolution}. For instance, tools like Grammarly... increasingly leveraged ML... {cite_MISSING: specific writing assistant tools}" (2.1.2)
+-   "For instance, a research-oriented MAS might consist of an "Ideation Agent"... a "Literature Review Agent"... {cite_MISSING: multi-agent literature review example}" (2.2.3)
+-   "In the realm of Large Language Models (LLMs), projects like Llama (Meta AI), Falcon (Technology Innovation Institute), and Mistral AI have released models... {cite_MISSING: open source LLM examples}" (2.4.2)
+-   "Furthermore, platforms like Hugging Face have emerged as central hubs for the open-source AI community... {cite_MISSING: hugging face impact}" (2.4.2)
+-   "The ability to import bibliographic information directly from academic databases... {cite_MISSING: reference manager features}. A key feature of these managers was their ability to integrate with word processors... {cite_MISSING: word processor integration}" (2.5.2)
+-   "For example, an AI might generate literature reviews that overemphasize research from certain regions or demographics... {cite_MISSING: AI bias in literature review}" (2.6.2)
+**Problem:** When discussing specific tools, models, or applications, it is crucial to cite the papers or official documentation that introduce or describe them. Without these, the claims appear unsubstantiated.
+**Fix:** For each specific example or application mentioned, provide a direct citation to the relevant paper, project page, or authoritative review.
+**Severity:** 🔴 High - reduces the verifiability and utility of the examples provided.
 
-### Issue 3: Lack of Specificity for Multi-Agent AI System Impact
-**Location:** Multi-Agent AI Systems for Complex Academic Tasks (entire section)
-**Claim:** The section generally presents MAS as a "significant leap" and "powerful paradigm" with immense potential for scientific discovery, hypothesis generation, and data analysis.
-**Problem:** While the potential is clear, the discussion largely focuses on *what MAS can do* or *could do*, with only one specific project mentioned (Denario). More examples of *currently implemented* MAS that have demonstrably *achieved* these "significant leaps" in academic research would strengthen the argument from potential to realized impact.
-**Missing:** Concrete, diverse examples of successful, impactful MAS deployments in academic research beyond one project.
-**Fix:** Provide additional brief examples of MAS applications or specific research findings attributed to MAS, or explicitly frame these as future potentials and areas of active development rather than established, widespread impacts.
-**Severity:** 🔴 High - weakens the empirical basis for claims of transformative impact in this specific area.
+### Issue 3: Section 2.5.2 (Early Automation Tools) is Critically Undercited
+**Location:** Section 2.5.2
+**Claim/Problem:** This entire subsection, which discusses the evolution and features of early reference managers (Zotero, Mendeley, EndNote), relies almost entirely on uncited claims.
+**Examples:**
+-   "Reference managers emerged as a crucial innovation, significantly streamlining the process... {cite_MISSING: reference manager evolution}"
+-   "Tools such as Zotero, Mendeley, and EndNote became indispensable..." (no citation)
+-   "These early automation tools allowed researchers to import bibliographic information... {cite_MISSING: reference manager features}"
+-   "A key feature of these managers was their ability to integrate with word processors... {cite_MISSING: word processor integration}"
+**Problem:** This section describes a significant historical development in academic writing tools, yet lacks any direct citations to support its claims about the evolution, features, or impact of these tools. This makes the section read more like a general overview than a scholarly review.
+**Fix:** Research and incorporate specific citations for the development, features, and impact of early reference managers. This could include original papers introducing these tools, or comprehensive reviews of their history and functionality.
+**Severity:** 🔴 High - a critical gap in the historical narrative of automation in academic writing.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 4: Imbalance in Discussing Human vs. AI Capabilities
-**Location:** Multi-Agent AI Systems for Complex Academic Tasks, paragraph 2
-**Claim:** "Traditional scientific discovery is often characterized by iterative cycles... a process that is resource-intensive and often limited by human cognitive biases and processing capacities {cite_030}."
-**Problem:** While true that humans have cognitive biases, this statement, without immediate counterbalance, positions AI as a direct solution to *all* human limitations. It overlooks the unique strengths of human intuition, creativity, and synthetic reasoning which AI cannot yet fully replicate.
-**Missing:** Acknowledgment of complementary human strengths or the emergence of new forms of bias in AI.
-**Fix:** Add a sentence or phrase acknowledging the complementary role of human intuition, creativity, and the ability to formulate truly novel paradigms, which remain crucial even with advanced AI assistance. Also, consider mentioning that AI can introduce its own forms of bias.
-**Severity:** 🟡 Moderate - affects the nuanced understanding of human-AI collaboration.
+### Issue 4: Overclaims in Language for Future Potential
+**Location:** Section 2.2 Introduction, Section 2.2.3
+**Claim:** "the true potential for addressing complex academic challenges lies in the orchestration of multiple AI agents working collaboratively." (2.2 Intro) and "This shift towards agentic AI promises to not only streamline existing research processes but also unlock entirely new modalities of scientific and scholarly discovery, pushing the boundaries of human knowledge in unprecedented ways." (2.2.3)
+**Problem:** While multi-agent systems are promising, phrases like "true potential" and "unlock entirely new modalities... pushing the boundaries in unprecedented ways" are strong, potentially overclaiming statements about future capabilities. They border on speculative rather than strictly reviewing existing literature.
+**Fix:** Hedge these claims with more cautious language (e.g., "holds significant potential," "could unlock," "may push boundaries"). While enthusiasm is good, a literature review should maintain a more objective and evidence-based tone.
+**Severity:** 🟡 Medium - affects the scholarly tone and objectivity.
 
-### Issue 5: Repetitive Phrasing
-**Location:** Addressing Barriers to Academic Research and Writing Accessibility, paragraph 3 and 4
-**Observation:** The phrase "fostering inclusive research environments" is used twice in close proximity.
-**Problem:** Repetition reduces the impact and flow of the prose.
-**Fix:** Rephrase one of the instances for variety. For example, "cultivating more equitable research settings."
-**Severity:** 🟠 Minor - easily fixable, improves readability.
+### Issue 5: Insufficient Nuance on "Information Poverty"
+**Location:** Section 2.3.2, "Structural and Systemic Barriers"
+**Problem:** The discussion on "information poverty" primarily focuses on paywalls. While crucial, this term encompasses a broader range of issues, including lack of digital literacy, inadequate internet infrastructure (briefly mentioned in 2.3.3 but not fully integrated into the definition of information poverty here), and lack of access to diverse types of information or publishing platforms.
+**Missing:** A deeper exploration of the multifaceted nature of information poverty beyond just journal paywalls, and how it intersects with other structural barriers.
+**Fix:** Expand the discussion on information poverty to include other dimensions like digital literacy gaps, insufficient infrastructure (even if internet access exists, quality can vary), and access to diverse publishing avenues. Connect it more explicitly to the broader digital divide discussed in 2.3.3.
+**Severity:** 🟡 Medium - misses an opportunity for a more comprehensive analysis of a critical barrier.
 
-### Issue 6: Generalization of "Widely Recognized"
-**Location:** The Evolution of AI in Academic Writing, paragraph 1 (implied)
-**Problem:** While the evolution of spell checkers to Grammarly is generally understood, a claim like "incremental progression underscored a growing recognition of AI's potential" is a broad statement. While plausible, it could benefit from a specific citation to a review or historical account that tracks this "growing recognition" in the literature.
-**Missing:** A specific citation for the historical "growing recognition" of AI's potential in writing.
-**Fix:** Add a relevant citation that discusses the historical perception and adoption of AI writing tools or slightly rephrase to attribute this recognition more generally (e.g., "This progression reflected a growing recognition...").
-**Severity:** 🟠 Minor - improves scholarly rigor.
+### Issue 6: Limited Discussion of AI's Role in Introducing *New* Biases
+**Location:** Section 2.6.2, "Bias, Fairness, and Reproducibility"
+**Problem:** The section effectively discusses how AI models "perpetuate and amplify" existing societal biases present in training data. However, it largely overlooks the potential for AI models to introduce *new* forms of bias or systematic errors that are not simply reflections of human data.
+**Missing:** Discussion of emergent biases from model architectures, optimization objectives, or interaction patterns that might not directly map to human societal biases but still lead to unfair or skewed academic outputs.
+**Fix:** Briefly acknowledge that AI models can also introduce novel forms of bias due to their internal mechanisms, beyond just reflecting training data. This adds a layer of sophistication to the ethical discussion.
+**Severity:** 🟡 Medium - a nuanced point that would strengthen the ethical analysis.
+
+### Issue 7: Citation Verification & Format
+**Location:** Throughout the paper
+**Problem:** The prompt specifies "Verify citations include DOI or arXiv ID". While you've used placeholders like `{cite_010}`, these don't provide the necessary information for a reviewer to verify sources.
+**Fix:** Ensure that when the actual bibliography is created, each entry includes a DOI, arXiv ID, or a stable URL where applicable. This is crucial for transparency and verifiability in academic work.
+**Severity:** 🟡 Medium - essential for academic integrity, even if it's a formatting/backend issue not visible in the current draft.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Vague claims:** Phrases like "significant leap" or "powerful paradigm" could occasionally be followed by a brief, concrete example or a more specific descriptor to illustrate the magnitude.
-2.  **Citation specificity:** While the placeholders {cite_XXX} are used, in the final paper, ensure that each specific claim is directly supported by the cited work, not just generally related to the topic of the cited paper.
-3.  **Potential "AI as panacea" undertone:** Although balanced by a strong ethical section, some parts of the review might inadvertently lean towards presenting AI primarily as a solution without fully exploring the depth of the problems it addresses or its own inherent limitations beyond ethical concerns.
-4.  **Initial uncited claim in Introduction:** The very first sentence, "The pervasive integration of artificial intelligence (AI) into various facets of human endeavor has catalyzed a paradigm shift, nowhere more acutely felt than in the intricate ecosystem of academic research and writing," lacks a citation. While a general statement, it sets the stage and could benefit from a foundational reference.
-5.  **Uncited consequence:** In "Automated Citation Discovery," the specific consequence "Poor metadata can render valuable research virtually invisible, hindering reproducibility and scientific progress" is a strong claim that could benefit from a direct citation, even though the surrounding text is cited.
+1.  **Vague Claim:** "The landscape of academic research and writing has undergone profound transformations..." (Intro) While true, "profound" is subjective. Consider adding a qualifying statement or examples to ground it.
+2.  **Repetitive Phrasing:** "fundamentally altering the interaction between humans and machines in scholarly pursuits." (2.1 Intro) and "They represent a paradigm shift, moving AI from a supportive role in refining existing text to a co-creative partner in generating new academic content." (2.1.3) While the ideas are connected, the language of "fundamental alteration" and "paradigm shift" is used multiple times. Consider varying the phrasing.
+3.  **Clarity on "Agent-Native Automation":** In 2.2.1, Vishwakarma {cite_002} is cited for "agent-native automation." While the concept is introduced, a slightly clearer, concise definition or elaboration on what "agent-native" specifically entails would be beneficial for readers unfamiliar with the term.
+4.  **Flow/Transition:** In 2.3.1, the jump from "writer's block, procrastination, and reduced productivity" to "The pressure to produce high-quality, impactful research..." is slightly abrupt. A smoother transition could connect the individual cognitive struggles to the systemic pressures.
+5.  **Minor Wording:** "The sheer volume of academic publications released daily makes comprehensive manual literature searching increasingly impractical {cite_027}." (2.5.1) "Daily" might be an overstatement for comprehensive *manual* searching. "Rapidly increasing volume" or "constant influx" might be more accurate.
+6.  **Minor Wording:** "Even minor discrepancies in punctuation, capitalization, or author names can lead to incorrect citations, which can diminish the credibility of a paper and create difficulties for readers..." (2.5.1) "Diminish the credibility" might be too strong for minor formatting errors, though "create difficulties for readers" is accurate. Consider softening.
+7.  **Slight Redundancy:** "The concept of authorship itself is challenged {cite_019}. If an AI significantly contributes to the creation of a scholarly work, should it be credited as an author, a co-author, or merely acknowledged as a tool? Pereira, Reis et al. {cite_019} discuss how generative AI forces a re-evaluation of authorship in academic writing." (2.6.1) The question and the citation to Pereira et al. state the same point twice. Condense for conciseness.
+8.  **Passive Voice/Wordiness:** "The capability of these systems to integrate diverse methodologies—from qualitative analysis to quantitative modeling—within a single workflow makes them uniquely suited for interdisciplinary research." (2.2.3) Can be slightly more direct, e.g., "These systems' ability to integrate diverse methodologies..."
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Unexplored Transition from "Potential" to "Realized Impact"
-**Location:** Multi-Agent AI Systems for Complex Academic Tasks
-**Logic:** The section establishes the *definition* and *potential applications* of MAS in academia.
-**Missing:** A clearer logical bridge showing how this *potential* is currently being widely *realized* and transforming academic tasks, beyond a single example. The leap from "can simulate" or "can be deployed" to a "significant leap in capability" needs more empirical grounding or a stronger framing of future outlook.
-**Fix:** Either provide more evidence of current widespread adoption and impact or explicitly frame the discussion more as "emerging potential" or "future directions" for MAS in academic research.
+### Gap 1: Implicit Assumption of AI as a Solution
+**Location:** Introduction, Conclusion of sections
+**Logic:** The review extensively details problems (barriers to accessibility) and then presents AI (open-source, multi-agent) as a solution. While this is the paper's implied thesis, the literature review itself could benefit from explicitly linking *how* the discussed AI advancements *directly address specific aspects* of the identified barriers.
+**Missing:** A more explicit, detailed mapping between the capabilities of AI (especially multi-agent systems and open-source tools) and the precise barriers they aim to mitigate, beyond general statements.
+**Fix:** In the "Open Source AI Tools" and "Citation Discovery" sections, consider a brief, explicit paragraph or set of sentences that directly ties the benefits of these AI tools back to the specific cognitive, linguistic, structural, or digital divide barriers identified earlier.
 
 ---
 
-## Methodological Concerns (for a Literature Review)
+## Methodological Concerns
 
-### Concern 1: Depth of Engagement with Specific Debates
-**Issue:** The review covers a wide array of topics, which is a strength for breadth. However, for a critical review, it might occasionally sacrifice depth into specific, ongoing academic debates within each sub-field. For instance, the exact mechanisms for detecting AI-generated plagiarism, or the specific types of biases observed in LLMs for academic use, are mentioned but not deeply explored.
-**Risk:** The review might be perceived as a broad overview rather than a critical synthesis of existing controversies and nuanced discussions.
-**Reviewer Question:** "Could the authors select one or two specific sub-areas (e.g., AI bias in qualitative research, or the implications of AI on authorship guidelines) and delve into the current debates, different viewpoints, and unresolved questions in more detail, perhaps offering a more critical synthesis of the literature within that narrower scope?"
-**Suggestion:** Consider adding a paragraph or two to one or two sections that highlight a specific, unresolved debate or a methodological challenge that researchers are currently grappling with in that area.
+### Concern 1: Lack of Explicit Literature Search Strategy
+**Issue:** As a literature review, the paper does not mention its methodology for identifying, selecting, and synthesizing the reviewed literature.
+**Risk:** Without a stated methodology (e.g., databases searched, keywords used, inclusion/exclusion criteria, review period), the review's comprehensiveness and potential biases in literature selection cannot be assessed.
+**Reviewer Question:** "What systematic approach was used to gather the literature for this review?"
+**Suggestion:** Add a brief paragraph (perhaps in the introduction or a dedicated "Methodology" subsection if appropriate for the overall paper) outlining the search strategy, databases consulted, and criteria for including/excluding papers. This enhances the rigor and reproducibility of the review itself.
 
 ---
 
 ## Missing Discussions
 
-1.  **Computational Cost and Environmental Impact:** While digital divides are mentioned for accessibility, the significant computational resources, energy consumption, and environmental footprint associated with training and running large AI models are not discussed. This is a growing ethical and practical concern.
-2.  **IP Rights of Training Data:** While authorship and IP of *generated* content are discussed, the ethical and legal implications of using vast amounts of copyrighted and non-copyrighted academic content as *training data* for LLMs are not explored. This is a major ongoing debate.
-3.  **Economic Models and Equity:** Beyond basic accessibility, a discussion of the economic models for advanced AI tools (e.g., free tiers vs. expensive institutional licenses, commercialization of open-source models) and their impact on equity in research funding and resource allocation would be valuable.
-4.  **Regulatory Landscape:** A brief mention of emerging national or international regulations concerning AI development and deployment, particularly as they pertain to academic integrity and research ethics, could add a forward-looking dimension.
-5.  **Specific Failure Cases/Limitations:** While ethical concerns are detailed, a section on specific types of tasks or contexts where current AI tools consistently *fail* or perform poorly in academic settings (beyond just needing human oversight) could provide a more balanced perspective.
+1.  **Cost of Open Source AI:** While open-source AI is free in terms of licensing, it often requires significant computational resources (hardware, cloud services) and expertise to deploy and fine-tune. This could be a new form of barrier for less-resourced institutions. A brief acknowledgment of this "hidden cost" would add nuance to the "democratization" argument.
+2.  **Scalability Challenges of Multi-Agent Systems:** While MAS promise to tackle complex problems, their development, management, and debugging can be notoriously complex. A brief mention of the engineering challenges in building and scaling robust MAS would provide a more balanced perspective.
+3.  **Human-AI Collaboration Best Practices:** The ethical section touches on human oversight, but a discussion on emerging best practices for effective human-AI collaboration in academic contexts (e.g., when to trust AI, how to effectively co-write, what skills human researchers need) could enrich the practical implications.
+4.  **AI's Impact on Critical Thinking Skills:** A potential long-term concern is how reliance on AI for tasks like summarization, drafting, and idea generation might affect the development of critical thinking, analytical, and writing skills in human researchers. This could be a brief point in the ethical considerations.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Overly confident language:** As noted in Major Issue 1, phrases like "nowhere more acutely felt" and "unparalleled capacity" could be softened to maintain an academic, balanced tone.
-2.  **Occasional repetitiveness:** As noted in Moderate Issue 5, minor repetition can occur. A final read-through for varied phrasing would be beneficial.
+1.  **Enthusiastic but Needs Grounding:** The tone is generally enthusiastic about AI's potential, which is fine, but needs to be consistently grounded in evidence (as highlighted by the major citation issues).
+2.  **Slightly Declarative:** Some statements are very declarative ("is a testament to," "the most transformative development," "are the bedrock of"). While often true, ensuring robust citation for these strong claims is paramount.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Given the rapid pace of AI development, how current is this review? Have you considered very recent, seminal works (e.g., from late 2023/early 2024) that might significantly alter any of these discussions?"
-2.  "Beyond the Denario project, can you provide more specific, real-world examples of multi-agent AI systems that are currently being successfully deployed in academic research and demonstrating a 'significant leap' in capabilities?"
-3.  "The discussion on AI bias is strong. Could you further elaborate on the specific types of biases observed in LLMs when applied to academic tasks, and what concrete strategies (beyond XAI and fairness-aware algorithms) are being explored to mitigate them in academic contexts?"
-4.  "What are the specific intellectual property challenges related to the *training data* used by LLMs, particularly when that data includes copyrighted academic works, and how are these being addressed by the academic and AI communities?"
-5.  "Could you include a brief discussion on the computational resources and environmental footprint associated with the large-scale deployment of AI in academic research?"
+1.  "Where are the citations for these fundamental claims about AI's history and core concepts (e.g., transformer architecture, multi-agent system types)?"
+2.  "Can you provide specific sources for the examples of ML writing tools, open-source LLMs, and multi-agent system applications mentioned?"
+3.  "What was the methodology for conducting this literature review? How were papers identified and selected?"
+4.  "Beyond paywalls, what other aspects of 'information poverty' are truly addressed by open-source AI, considering the computational resources often required?"
+5.  "How do you propose academic institutions should balance the benefits of AI in research with the need to maintain human critical thinking and writing skills?"
 
 **Prepare answers or add to paper**
 
@@ -134,12 +158,15 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 Fix Issue 1 (Overclaim in Intro/Conclusion) - affects paper's main claim and credibility.
-2.  🔴 Address Issue 2 (Overstatement of AI's "Ensuring" Role) - crucial for academic rigor and accurate representation.
-3.  🔴 Resolve Issue 3 (Lack of Specificity for MAS Impact) - strengthens empirical basis.
-4.  🟡 Address Issue 4 (Imbalance in Human/AI Capabilities) - improves nuance.
-5.  🟡 Incorporate discussions on Computational Cost/Environmental Impact and IP Rights of Training Data (from Missing Discussions) - these are significant contemporary concerns.
+1.  🔴 **Fix Issue 1 (Pervasive Missing Citations - Foundational Claims):** This is the most critical issue. Every major concept, historical point, or general academic phenomenon must be cited.
+2.  🔴 **Fix Issue 2 (Missing Citations - Specific Examples):** All specific tools, models, and applications need direct citations.
+3.  🔴 **Fix Issue 3 (Undercited Section 2.5.2):** This entire section needs to be thoroughly cited.
+4.  🟡 **Address Issue 4 (Overclaims):** Refine language to be more cautious and evidence-based.
+5.  🟡 **Address Issue 5 (Information Poverty Nuance):** Expand the discussion to cover more facets of information poverty.
+6.  🟡 **Address Issue 6 (New Biases):** Briefly acknowledge AI's potential to introduce novel biases.
+7.  🟡 **Address Issue 7 (Citation Verification):** Plan for DOI/arXiv IDs in the final bibliography.
+8.  🟢 **Address Methodological Concern 1:** Add a brief statement on the literature search strategy.
 
-**Can defer:**
--   Minor wording issues (Issue 5) can be fixed during the overall revision.
--   Deeper dives into specific debates (Methodological Concern 1) could be considered for a subsequent, more focused paper or if word count allows.
+**Can defer (minor issues):**
+-   Minor wording and stylistic refinements (can be done during the major revision pass).
+-   Additional discussions (can be considered for a future, expanded version or if space allows).

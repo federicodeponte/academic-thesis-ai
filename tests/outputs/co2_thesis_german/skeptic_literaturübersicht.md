@@ -8,158 +8,129 @@
 ## Summary
 
 **Strengths:**
-- Comprehensive scope, covering historical, theoretical, empirical, and critical aspects of carbon pricing and ETS.
-- Well-structured and logically organized, providing a clear narrative flow.
-- Acknowledges both the successes and challenges of these instruments.
-- Highlights the evolving nature and future importance of carbon pricing in global climate policy.
+- **Comprehensive Coverage:** The literature review provides a well-structured and broad overview of CO2 pricing, covering its history, theoretical foundations, various mechanisms, empirical effectiveness, and critical challenges.
+- **Strong Citations:** The text generally supports its claims with a good number of relevant academic citations, including recent literature.
+- **Balanced Perspective:** The review consistently acknowledges complexities, nuances, and limitations of CO2 pricing, such as the initial challenges of the EU ETS, the importance of complementary measures, and the need for revenue recycling.
+- **Clear Structure:** The logical flow from historical context to theoretical underpinnings, implementation, empirical evidence, and challenges makes the text easy to follow.
+- **Specific Examples:** The inclusion of concrete examples like the Kyoto Protocol, various phases of the EU ETS, and country examples (Sweden, China) enhances the discussion.
 
-**Critical Issues:** 10 major, 10 moderate, 5 minor
-**Recommendation:** Extensive revisions are needed, primarily to address missing citations and deepen critical analysis, before publication.
+**Critical Issues:** 3 major, 5 moderate, 7 minor
+**Recommendation:** Revisions needed before publication
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Missing Core Economic Citations
-**Location:** Section 2.1.1, 2.2.1, 2.2.3
-**Problem:** Fundamental economic concepts central to the paper's argument (efficiency of emissions trading, Pigou-tax, Coase-theorem, windfall profits) are stated without specific citations.
-**Missing:**
-- Referenz für ökonomische Effizienz des Emissionshandels im Kyoto-Kontext (2.1.1)
-- Referenz für Pigou-Steuer und Externalitäten (2.2.1)
-- Referenz für Coase-Theorem (2.2.1)
-- Referenz für Windfall Profits (2.2.3)
-**Fix:** Provide authoritative academic sources for these foundational concepts.
-**Severity:** 🔴 High - undermines the theoretical basis and academic rigor.
+### Issue 1: Lack of Quantitative Specificity in Empirical Claims
+**Location:** Primarily Section 2.4.1 (Reduktion von Treibhausgasemissionen) and 2.4.3 (Innovation und technologischer Wandel)
+**Claim:** Statements like "zu erheblichen Emissionsreduktionen beigetragen haben" (2.3.1 & 2.4.1), "signifikante Reduktionen" (2.4.1), or "positiven Einfluss auf die grüne Innovation" (2.4.3).
+**Problem:** While citations are provided, the text rarely offers quantitative context or ranges for these claims. "Significant" and "erheblich" are vague without numbers. Even if a meta-analysis is cited, summarizing typical effect sizes or ranges would greatly strengthen the claims.
+**Evidence:** For instance, for Sweden's carbon tax, "erhebliche Entkopplung von Wirtschaftswachstum und Emissionen" (2.4.1) is stated, but no figures (e.g., percentage reduction in emissions, or reduction per GDP unit) are given. Similarly for EU ETS, "signifikante Reduktionen" lacks numerical grounding.
+**Fix:** Where possible, add specific percentages, ranges, or typical effect sizes from the cited literature to quantify the impact. If precise numbers are highly context-dependent, acknowledge this explicitly.
+**Severity:** 🔴 High - affects the strength of empirical claims and the depth of the review.
 
-### Issue 2: Missing Key Empirical and Statistical Citations
-**Location:** Section 2.1.2, 2.1.3, 2.3.2, 2.3.3, 2.4.2
-**Problem:** Several significant claims regarding the scope, mechanisms, and effectiveness of ETS are uncited.
-**Missing:**
-- Referenz für Marktstabilitätsmechanismen in Phase III (EU ETS) (2.1.2)
-- Referenz für aktuelle Anzahl und Abdeckung globaler ETS (2.1.3)
-- Referenz für globale Abdeckung von Kohlenstoffpreisen (2.3.3) (Likely same as above)
-- Referenz für geringe Carbon Leakage im EU ETS (2.4.2)
-- Referenz für Green Growth durch Carbon Pricing (2.4.2)
-- Referenz für Wettbewerbsfähigkeit in Industrien (2.3.2)
-**Fix:** Provide specific, up-to-date, and reputable sources (e.g., World Bank Carbon Pricing Dashboard, ICAP reports, specific academic studies) for these crucial statistics and empirical findings.
-**Severity:** 🔴 High - weakens empirical claims and overall credibility.
+### Issue 2: Insufficient Engagement with Conflicting Empirical Evidence
+**Location:** Section 2.4 (Empirische Studien zur Wirksamkeit), especially 2.4.1 (Emissionsreduktion) and 2.4.2 (Wirtschaftliche Auswirkungen)
+**Claim:** The review acknowledges "mixed results" (e.g., Carbon Leakage in 2.4.2 and 2.5.1) or "limited effectiveness in early phases" (EU ETS in 2.4.1).
+**Problem:** While acknowledging these, the review often summarizes the *overall* consensus or the *latest* findings without adequately discussing *why* studies might yield different results. What are the methodological differences, contextual factors, or specific data limitations that lead to these variations?
+**Missing:** A deeper analytical discussion of the heterogeneity in empirical findings. For example, regarding Carbon Leakage, which specific sectors show more evidence of leakage, and what are the key drivers or counteracting factors identified in conflicting studies?
+**Fix:** Expand the discussion on "mixed results" by briefly outlining the reasons for such variations (e.g., different econometric models, varying timeframes, specific sector focus, data quality, or differing definitions of "leakage"). This would demonstrate a more critical engagement with the literature.
+**Severity:** 🔴 High - limits the analytical depth and critical stance of the review.
 
-### Issue 3: Over-reliance on Placeholder Citations (cite_XXX)
-**Location:** Throughout the entire document
-**Problem:** The use of `cite_XXX` placeholders makes it impossible for a reviewer to verify the claims against the cited literature. This is a critical barrier to assessing the paper's academic integrity.
-**Evidence:** Every citation is currently a placeholder (e.g., `{cite_038}`).
-**Fix:** Replace all placeholders with proper academic citations (e.g., author-year, numbered references) that link to a complete bibliography. For a final submission, DOIs or arXiv IDs should be included where applicable.
-**Severity:** 🔴 High - fundamental issue for any academic review.
-
-### Issue 4: Lack of Quantitative Detail in Empirical Evidence
-**Location:** Section 2.4.1, 2.4.2
-**Claim:** "signifikante Reduktionen", "messbaren Einfluss", "positive Effekte"
-**Problem:** While studies are cited, the review often describes outcomes vaguely (e.g., "significant reductions") without quantifying them (e.g., "reduced emissions by X%," "price increase of Y Euro/ton").
-**Evidence:** Phrases like "signifikante Reduktionen bewirkt hat" (2.4.1) or "positive Effekte dokumentierten" (2.4.1) are common.
-**Fix:** Where possible, provide specific quantitative findings (ranges, percentages, magnitudes) from the cited studies to strengthen the empirical claims. This helps readers understand the scale of impact.
-**Severity:** 🟡 Moderate - reduces impact and precision of empirical findings.
+### Issue 3: Limited Discussion on the Political Economy of Price/Cap Setting
+**Location:** Section 2.5.3 (Politische Umsetzbarkeit und Governance-Fragen)
+**Claim:** The section discusses political controversy and the need for clear rules and consistency.
+**Problem:** While it mentions political controversy and the impact of over-allocation (2.1.2), it doesn't sufficiently delve into the political economy challenges of *setting* the initial CO2 price or cap. This involves significant lobbying, interest group conflicts, and balancing environmental ambition with economic concerns.
+**Missing:** A more explicit discussion of the political processes and compromises involved in determining the level of the carbon price or the stringency of the emissions cap, and how these factors can influence the eventual effectiveness and acceptance of the instrument.
+**Fix:** Add a paragraph or two discussing the political economy aspects of policy design, including the role of different stakeholders, the challenges of setting an optimal price/cap, and how political considerations often shape the design elements (e.g., initial free allocation, phase-in periods).
+**Severity:** 🔴 High - an important aspect of "political feasibility" that is currently underdeveloped.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 5: Uncited Claims Regarding Systemic Functioning and Impacts
-**Location:** Various sections (e.g., 2.1.1, 2.1.2, 2.2.2, 2.2.3, 2.3.1, 2.5.2)
-**Problem:** Several statements describing the functioning, historical context, or general impacts of carbon pricing are presented as fact without citation. While some might be widely accepted, a formal literature review requires explicit sourcing.
-**Examples:**
-- "Die Verwaltung und Validierung von Projekten [CDM] war zudem komplex und bürokratisch, was die Skalierung erschwerte." (2.1.1)
-- "Die Zuteilung [EU ETS Phase I] erfolgte primär kostenfrei durch nationalen Allokationspläne (NAPs), was oft zu einer Überallokation führte." (2.1.2)
-- "Ein Nachteil [Kohlenstoffsteuer] ist jedoch die Unsicherheit hinsichtlich der tatsächlich erreichten Emissionsreduktion..." (2.2.2)
-- "In der Praxis existieren auch hybride Ansätze..." (2.2.2)
-- "[Grandfathering] kann als ineffizient angesehen werden, da es keine Einnahmen für den Staat generiert..." (2.2.3)
-- "Die transparente und strategische Verwendung [von Einnahmen] ist entscheidend für die Akzeptanz und Legitimität..." (2.3.1)
-- "Ohne eine breite gesellschaftliche Akzeptanz könnten selbst die effektivsten ökonomischen Instrumente scheitern." (2.5.2)
-**Fix:** Add appropriate citations for these claims.
-**Severity:** 🟡 Moderate - reduces the formal academic rigor.
+### Issue 4: "Windfall Profits" Discussion Could Be Stronger
+**Location:** Section 2.3.2 (Implementierungsstrategien und Designelemente) and 2.5.1 (Carbon Leakage und Wettbewerbsnachteile)
+**Problem:** The term "Windfall Profits" (Mitnahmeeffekte) is mentioned in relation to free allocation, but its implications for efficiency and equity are not fully elaborated.
+**Missing:** A brief explanation of *how* windfall profits arise (e.g., companies receiving free permits but passing on the carbon cost to consumers) and why this is a significant concern from an economic efficiency and fairness perspective.
+**Fix:** Expand on the consequences of windfall profits, highlighting their impact on the "polluter pays" principle and the overall cost-effectiveness of the system.
 
-### Issue 6: Overclaim Regarding "Maximale Effizienz"
-**Location:** Section 2.3.1
-**Claim:** "Der Marktmechanismus sorgt dafür, dass diese Reduktionen dort erfolgen, wo sie am kostengünstigsten sind, was die gesamtwirtschaftliche Effizienz des Klimaschutzes maximiert {cite_001}."
-**Problem:** While theoretically true under ideal conditions, claiming "maximizes" efficiency in practice is an overclaim given real-world frictions, transaction costs, political compromises, and imperfect information.
-**Fix:** Hedge this claim with more cautious language, such as "trägt dazu bei, die gesamtwirtschaftliche Effizienz zu erhöhen" or "hat das Potenzial, die Effizienz zu maximieren." Acknowledge that real-world implementation introduces complexities that prevent theoretical maximization.
-**Severity:** 🟡 Moderate - potential overstatement of practical effectiveness.
+### Issue 5: Geographic Scope Beyond Key Examples
+**Location:** General, implicitly throughout
+**Problem:** The review heavily focuses on the EU ETS, the Kyoto Protocol, and mentions Sweden and China. While these are central, a brief acknowledgment or mention of other significant carbon pricing initiatives globally (e.g., California, Québec, South Korea, Canada's federal system, emerging efforts in Latin America or Asia) would enhance the comprehensiveness and global perspective.
+**Missing:** Broader international context or a explicit statement of scope for geographical focus.
+**Fix:** Either briefly mention other notable systems in relevant sections (e.g., 2.3.1) or add a sentence in the introduction/conclusion explaining that the review focuses on the most prominent and illustrative examples.
 
-### Issue 7: Insufficient Depth on CBAM Complexities
-**Location:** Section 2.3.2
-**Observation:** CBAM is mentioned as a mechanism to prevent carbon leakage in agriculture, but its complexities and ongoing debates are not elaborated.
-**Problem:** CBAM is a highly debated and complex policy instrument with significant implications for international trade, developing countries, and administrative burden. Simply stating its purpose without acknowledging these nuances is a simplification.
-**Fix:** Briefly acknowledge the ongoing debates, implementation challenges, and potential trade implications of CBAM.
-**Severity:** 🟡 Moderate - misses an opportunity for critical depth on a relevant policy.
+### Issue 6: Interaction with Existing Environmental Regulations
+**Location:** Section 2.5.4 (Die Rolle von Komplementärmaßnahmen)
+**Problem:** While the section rightly emphasizes the *synergies* of CO2 pricing with complementary measures, it could also briefly address potential *conflicts* or *redundancies* that can arise when CO2 pricing interacts with pre-existing environmental regulations (e.g., energy efficiency standards, technology mandates).
+**Missing:** Discussion of potential policy overlaps or unintended consequences when multiple instruments target the same emissions, which might dilute the price signal or lead to inefficiencies.
+**Fix:** Add a short paragraph discussing the importance of policy coherence and the challenge of managing potential overlaps or conflicts between CO2 pricing and other regulations.
 
-### Issue 8: Limited Discussion of Policy Interaction Challenges
-**Location:** Section 2.5.3
-**Observation:** The integration of carbon pricing with other climate policies is mentioned as a future development, but the *challenges* and *potential conflicts* of such integration are not fully explored.
-**Problem:** Overlapping policies (e.g., carbon pricing alongside energy efficiency standards or renewable energy subsidies) can lead to inefficiencies, unexpected outcomes, or even undermine the carbon price signal.
-**Fix:** Expand the discussion to include the complexities of policy interactions, potential for double regulation, and the need for careful policy coordination.
-**Severity:** 🟡 Moderate - misses a crucial aspect of real-world policy implementation.
+### Issue 7: Role of Offsets (CDM/JI) Beyond Kyoto
+**Location:** Section 2.1.1 (Das Kyoto-Protokoll und seine Mechanismen)
+**Problem:** The review discusses the flexible mechanisms (CDM, JI) under Kyoto and their criticisms, but it doesn't explicitly address their current or potential future role in contemporary carbon pricing schemes (e.g., how some ETS might still allow certain international offset credits, or the debate around Article 6 of the Paris Agreement).
+**Missing:** A brief update on the evolution or continued relevance of offset mechanisms in current carbon markets.
+**Fix:** Add a short paragraph in Section 2.1.1 or 2.3.1 to clarify if and how international offset mechanisms (or their successor under the Paris Agreement) are integrated or excluded in modern carbon pricing systems.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Repetitive Claims (e.g., Carbon Leakage Risk):** The risk of carbon leakage is mentioned in several sections (2.1.2, 2.3.2, 2.4.2) without always adding new insights. While important, ensure each mention serves a distinct purpose or builds on previous points.
-2.  **General Wording:** Some phrases could be more precise. E.g., "ein erheblicher Überschuss" (2.1.2) could benefit from rough quantification if available in the cited literature.
-3.  **Tone of Critical Sections:** While Section 2.5 is dedicated to critical perspectives, some earlier sections could benefit from a slightly more critical lens or proactive acknowledgement of limitations, rather than solely descriptive presentation.
-4.  **Future-dated citation:** `Klimko und Hasprová (2025)` (2.4.1) is cited for a paper in a future year. This is highly unusual and should be verified. If it's "forthcoming," it should be indicated as such, or removed if not yet published.
-5.  **Lack of DOI/arXiv IDs:** For a formal academic paper, the final bibliography should include DOIs or arXiv IDs for cited works to facilitate verification.
+1.  **Vague claim (Introduction):** "umfassende und effektive politische Maßnahmen" - While true, "umfassend" and "effektiv" are subjective. Could be slightly rephrased for a more objective tone, or just accepted as general context.
+2.  **Citation Placement (2.1.2):** "Das EU ETS ist das weltweit größte und erste internationale Emissionshandelssystem für Treibhausgase und deckt über 40% der EU-Gesamtemissionen ab, hauptsächlich aus den Sektoren Energieerzeugung, energieintensive Industrie und kommerzieller Luftverkehr {cite_002}{cite_009}." The 40% figure might require a more direct citation if it's not explicitly in 002 or 009. [NEEDS VERIFICATION]
+3.  **Ambiguity in "Preissicherheit" (2.2.2):** For Pigou taxes, "Preissicherheit für die Unternehmen" is mentioned. While the tax rate is fixed by the government, the *final price* to the consumer can still be uncertain due to market dynamics. Clarify this refers to the *cost per tonne of CO2* for the emitter.
+4.  **Minor repetition (2.3.1):** Some content on the differences between carbon taxes and ETS (price vs. quantity, advantages/disadvantages) is repeated from 2.2.2. While acceptable for an overview, it could be slightly condensed or cross-referenced.
+5.  **Clarification of "Carbon Capture and Storage (CCS)" (2.3.3, 2.4.3):** CCS is mentioned as an innovation target. It might be helpful to briefly state that CCS itself is also a controversial technology with its own challenges (e.g., cost, storage permanence, public acceptance), even if it's an innovation target.
+6.  **"Unsubstantiated" (2.5.1):** "Die Kosten der Verlagerung... die potenziellen Einsparungen durch niedrigere CO2-Kosten überwiegen." While plausible, this general statement ideally needs a citation or should be phrased as "often outweigh" or "can outweigh." [NEEDS CITATION/HEDGING]
+7.  **Tone of "Gelbwesten"-Bewegung (2.5.2):** While a great example, the phrasing "wie er beispielsweise bei der 'Gelbwesten'-Bewegung in Frankreich aufgrund von Kraftstoffpreiserhöhungen sichtbar wurde" is a bit passive. It could be more direct, e.g., "wie der deutliche Widerstand der 'Gelbwesten'-Bewegung in Frankreich nach Kraftstoffpreiserhöhungen zeigte."
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Implicit Assumptions of "Optimal" Policy Choices
-**Location:** Sections 2.2.2, 2.2.3, 2.3.1
-**Logic:** The text often discusses "well-designed systems" or "economically preferred approaches" (e.g., auctioning vs. free allocation) and their benefits.
-**Missing:** A deeper acknowledgment that "optimal" is often subjective and depends on political feasibility, social preferences, and specific national contexts, not just pure economic efficiency. The "choice between X and Y depends on various factors" is mentioned, but the underlying *reasons* for non-optimal choices (e.g., political economy) could be more explicitly addressed.
-**Fix:** Briefly discuss how political economy factors, stakeholder interests, and path dependencies often lead to deviations from theoretically optimal designs, and how these trade-offs are managed in practice.
+### Gap 1: Causal Chain between Policy Design and Outcomes
+**Location:** Throughout sections 2.1.2 and 2.4.1
+**Logic:** The text states that "Überallokation führte zu einem Preisverfall und minderte die Anreizwirkung" (2.1.2) and "Niedrige oder volatile CO2-Preise... können die Anreizwirkung erheblich schwächen" (2.4.1).
+**Missing:** While the correlation is clear, the *mechanisms* by which a weak price signal specifically impacts different types of abatement (e.g., short-term operational changes vs. long-term capital investments in new technologies) could be briefly elaborated.
+**Fix:** Briefly explain that low prices reduce the economic incentive to invest in costly abatement technologies or switch to cleaner, but more expensive, fuels, thus slowing decarbonization beyond easy wins.
 
 ---
 
-## Methodological Concerns (for a Literature Review)
+## Methodological Concerns (of the review itself)
 
-### Concern 1: Gaps in Cited Literature
-**Issue:** The numerous `cite_MISSING` entries and uncited claims indicate potential gaps in the literature that the author has drawn upon or cited.
-**Risk:** The review may not be fully comprehensive or representative of the current academic discourse if key papers or concepts are missing from the references.
-**Reviewer Question:** "Have all major foundational texts and recent influential papers on each sub-topic been consulted and properly cited?"
-**Suggestion:** Conduct a thorough review of the references to ensure all claims are supported and the most relevant literature is included.
-
-### Concern 2: Limited Engagement with Methodological Differences in Empirical Studies
-**Issue:** Section 2.4 discusses empirical evidence but does not delve into the methodological differences (e.g., specific econometric models, data limitations) of the cited studies, beyond mentioning "Difference-in-Differences-Ansätze oder synthetische Kontrollmethoden."
-**Risk:** Without understanding the methods, it's harder to critically assess the robustness of the empirical findings or reconcile potentially conflicting results.
-**Question:** "What are the common methodological challenges in assessing ETS effectiveness, and how do the cited studies attempt to overcome them?"
-**Fix:** Briefly describe common methodological approaches and their respective strengths and limitations when discussing empirical evidence.
+### Concern 1: Selection Criteria for Empirical Studies
+**Issue:** The review presents empirical findings without explicitly stating its criteria for selecting these studies.
+**Risk:** Appears as a selective summary rather than a systematic review.
+**Reviewer Question:** "How were the empirical studies in Section 2.4 selected? Is there a specific methodology for the literature search and synthesis?"
+**Suggestion:** Add a brief statement in the introduction or at the beginning of Section 2.4 outlining the scope and (even informal) selection approach for the empirical literature (e.g., focusing on meta-analyses, prominent studies, and recent work).
 
 ---
 
 ## Missing Discussions
 
-1.  **Political Economy of Reform:** While lobbying is mentioned (2.5.1), a deeper dive into the political challenges of implementing and reforming carbon pricing schemes (e.g., overcoming vested interests, building political coalitions) would strengthen the "Critical Perspectives" section.
-2.  **Global North-South Divide in Carbon Markets:** The review touches on distribution effects in "developing countries of Asia" (2.2.3, 2.5.2) and Article 6 (2.3.3), but a more explicit discussion of equity concerns from a global North-South perspective, especially regarding historical emissions and development pathways, would be valuable.
-3.  **Risk of "Greenwashing" and Integrity in Offset Markets:** While Article 6 is mentioned, the specific challenges of ensuring environmental integrity and avoiding "greenwashing" or non-additional projects in international offset markets (which was a major critique of CDM) could be more explicitly discussed.
-4.  **Role of Public Opinion and Communication:** Beyond general "social acceptance," how specific communication strategies or public engagement efforts influence the success or failure of carbon pricing initiatives is a relevant area of research.
+1.  **Equity of Allocation (Beyond Windfall Profits):** While distribution effects on households are discussed, the equity implications of *initial allocation* of permits to industries (e.g., grandfathering vs. auctioning) could be expanded beyond just "windfall profits." Who benefits, and who bears the initial cost burden among industries?
+2.  **Impact on Specific Sectors/Industries:** The review mentions "energieintensive Industrien" generally. A brief discussion of how CO2 pricing differentially affects various sectors (e.g., power generation vs. cement vs. agriculture vs. transport) could add valuable detail.
+3.  **Public Perception and Trust:** Beyond social acceptance related to cost, a deeper dive into how public perception of carbon markets (e.g., concerns about speculation, complexity, or perceived fairness) can influence political support.
+4.  **Role of Carbon Pricing in Developing Countries:** The review focuses heavily on developed economies (EU, Sweden) and China. A short discussion on the unique challenges and opportunities of implementing CO2 pricing in developing countries could add a global dimension.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Overly Confident Claims:** Some claims, particularly about maximizing efficiency or the certainty of outcomes (e.g., "maximiert die gesamtwirtschaftliche Effizienz"), could be softened with more cautious language (e.g., "trägt zur Maximierung bei", "hat das Potenzial").
-2.  **Descriptive vs. Analytical Balance:** While the review is informative, it could benefit from more analytical depth, especially in earlier sections, by proactively presenting counter-arguments or nuances, rather than mostly deferring critical engagement to Section 2.5.
-3.  **Placeholder Citations Impact:** The pervasive `cite_XXX` format severely impacts the perceived professionalism and academic rigor of the document.
+1.  **Consistency in "CO2-Bepreisung":** The term is sometimes used broadly (carbon pricing) and sometimes implicitly as a carbon tax. Ensure consistent usage or clearly differentiate when referring to the umbrella term vs. a specific instrument.
+2.  **Slightly Repetitive Summaries:** Some paragraphs, especially at the end of subsections, tend to summarize points already made. While acceptable, some could be tightened to avoid redundancy.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Please provide a complete and properly formatted bibliography for all cited works, ensuring all `cite_XXX` placeholders are resolved. Include DOIs/arXiv IDs where available."
-2.  "Can you quantify the 'significant reductions' or 'measurable influence' of ETS with specific percentages or ranges from the cited empirical literature?"
-3.  "How do the different design features of ETS (e.g., auctioning vs. free allocation, price collars, MSR) empirically affect their effectiveness and equity outcomes?"
-4.  "What are the main arguments for and against linking different ETS, and what are the specific governance challenges involved?"
-5.  "Given the critiques of carbon markets (e.g., price volatility, social impacts), what are the most promising policy innovations or complementary measures discussed in the literature to overcome these limitations?"
+1.  "Can you provide specific quantitative data or ranges from the cited literature to support claims of 'significant' or 'erheblich' emissions reductions and innovation impacts?"
+2.  "What are the main methodological differences or contextual factors that explain the 'mixed results' observed in empirical studies on Carbon Leakage or overall economic impacts?"
+3.  "How does the political economy, including lobbying and interest group dynamics, influence the setting of carbon prices or emissions caps in practice?"
+4.  "Beyond the EU, Sweden, and China, what other significant carbon pricing initiatives exist globally, and what key lessons can be drawn from their experiences?"
+5.  "Could you elaborate on the potential conflicts or redundancies that might arise when CO2 pricing is implemented alongside existing environmental regulations, and how these are typically managed?"
+6.  "What are the specific equity considerations related to the initial allocation of emission permits to different industries, and how does this affect the 'polluter pays' principle?"
 
 **Prepare answers or add to paper**
 
@@ -168,12 +139,13 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Resolve all `cite_MISSING` entries and replace all `cite_XXX` placeholders with proper citations.** This is the most critical issue. (Issues 1, 2, 3)
-2.  🔴 **Quantify empirical findings** where possible to add precision and impact to claims about effectiveness. (Issue 4)
-3.  🟡 **Add citations for uncited claims** regarding systemic functioning, historical context, and general impacts. (Issue 5)
-4.  🟡 **Hedge overclaims** about "maximale Effizienz" and acknowledge real-world complexities. (Issue 6)
-5.  🟡 **Deepen critical analysis** of CBAM and policy interaction challenges. (Issues 7, 8)
+1.  🔴 Fix Issue 1 (Quantitative Specificity) - affects the robustness of empirical claims.
+2.  🔴 Address Issue 2 (Conflicting Evidence) - crucial for analytical depth.
+3.  🔴 Resolve Issue 3 (Political Economy of Price Setting) - enhances understanding of practical implementation.
+4.  🟡 Address Issue 4 (Windfall Profits) - strengthens critical analysis of market design.
+5.  🟡 Incorporate aspects of Issue 5 (Geographic Scope) - broadens perspective.
+6.  🟡 Consider Issue 6 (Policy Interaction) - adds nuance to policy mix.
 
 **Can defer:**
-- Minor wording refinements (can be done during final proofreading).
-- Further expansion of missing discussions (could be suggested for a follow-up paper if word count is a concern, but ideally addressed).
+- Minor wording issues and minor repetitions (fix in revision).
+- Further expansion on specific sectors or developing countries (suggest as future work or in a longer version).

@@ -3,14 +3,12 @@
 CITATION VALIDATION REPORT: Open Source Thesis
 ================================================================================
 
-
-
-⚠️  WARNINGS (1):
+❌ CRITICAL ISSUES (1):
 --------------------------------------------------------------------------------
 
-[cite_042] Generic title pattern: 'A Survey'
-  Alexy, Reischauer (2010) - The Open Source Business Model: A Survey...
+[cite_020] DOI not found: 10.48550/arXiv.2410.13095
+  Sharma, Potter et al. (2024) - Future of Algorithmic Organization: Large-Scale Analysis of ...
 
 ================================================================================
-TOTAL ISSUES: 1 (0 critical, 1 warnings)
+TOTAL ISSUES: 1 (1 critical, 0 warnings)
 ================================================================================

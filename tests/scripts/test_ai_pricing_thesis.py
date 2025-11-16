@@ -214,9 +214,16 @@ def main():
     # Root cause: extract_citations_from_text() asks LLM to extract citations from markdown,
     # but LLM hallucinates fake citations instead of using real Scout API results.
     # Scout returns real Citation objects with api_source metadata - use them directly!
+
+    # FIXED (Bug #19): Reassign citation IDs from "temp_id" to "cite_NNN"
+    # Scout citations have temporary IDs that fail validation
     from utils.citation_database import CitationDatabase
+    scout_citations = scout_result['citations']
+    for i, citation in enumerate(scout_citations, start=1):
+        citation.id = f"cite_{i:03d}"  # cite_001, cite_002, etc.
+
     citation_database = CitationDatabase(
-        citations=scout_result['citations'],  # Use real Scout citations with api_source
+        citations=scout_citations,  # Use real Scout citations with api_source
         citation_style="APA 7th",
         thesis_language="english"
     )

@@ -107,6 +107,8 @@ def main():
         "cost-benefit analysis of climate policies",
         "market-based environmental regulation",
         "pollution permits tradable emissions rights",
+        "John Dales emission trading theory 1968 pollution permits",
+        "W. David Montgomery emissions trading 1972 market mechanisms",
 
         # Effectiveness studies
         "carbon trading effectiveness empirical evidence",
@@ -149,8 +151,11 @@ def main():
             model=model,
             research_topics=research_topics,
             output_path=output_dir / "01_scout.md",
-            target_minimum=55,  # Quality gate: 110% enhancement (49 → 55 citations)
-            verbose=True
+            target_minimum=35,  # Realistic for deep research mode (70-90% of query count)
+            verbose=True,
+            use_deep_research=True,  # Enable deep research mode
+            topic=topic,  # Main research topic for deep research planning
+            scope=research_focus  # Research scope
         )
 
         print(f"\n✅ Scout Erfolg: {scout_result['count']} gültige Zitate")

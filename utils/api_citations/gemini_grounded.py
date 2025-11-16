@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
 """
 ABOUTME: Gemini API client with Google Search grounding for source discovery
-ABOUTME: Uses Google Search tool to find and validate real web sources with citations
+ABOUTME: Uses Google Search tool via REST API to find and validate real web sources with citations
 """
 
 import os
 import re
+import json
 from typing import Optional, Dict, Any, List
 from urllib.parse import urlparse
-
-try:
-    import google.generativeai as genai
-except ImportError:
-    genai = None
 
 try:
     import requests
@@ -26,18 +22,18 @@ class GeminiGroundedClient(BaseAPIClient):
     """
     Gemini API client with Google Search grounding.
 
-    Uses Gemini 2.5 Flash with Google Search tool to discover real sources
+    Uses Gemini 2.5 Pro with Google Search tool via REST API to discover real sources
     with grounded citations. Validates URLs and extracts metadata.
 
     Features:
-    - Google Search grounding for real-time source discovery
+    - Google Search grounding for real-time source discovery (via REST API)
+    - Deep research capability with high token limits
     - URL validation (HTTP 200 checks)
     - Redirect unwrapping to final destinations
     - Domain filtering (competitors, forbidden hosts)
     - Grounding citation extraction
 
     Requirements:
-    - google-generativeai >= 0.8.0
     - requests
     - GOOGLE_API_KEY environment variable
     """
@@ -45,7 +41,7 @@ class GeminiGroundedClient(BaseAPIClient):
     def __init__(
         self,
         api_key: Optional[str] = None,
-        timeout: int = 30,
+        timeout: int = 120,  # Longer timeout for deep research
         max_retries: int = 3,
         forbidden_domains: Optional[List[str]] = None,
         validate_urls: bool = True
@@ -55,23 +51,17 @@ class GeminiGroundedClient(BaseAPIClient):
 
         Args:
             api_key: Google AI API key (defaults to GOOGLE_API_KEY env var)
-            timeout: Request timeout in seconds
+            timeout: Request timeout in seconds (120s for deep research)
             max_retries: Number of retry attempts
             forbidden_domains: List of domains to filter out
             validate_urls: Whether to validate URLs return HTTP 200
         """
         super().__init__(
             api_key=api_key or os.getenv('GOOGLE_API_KEY'),
-            base_url='https://generativelanguage.googleapis.com',
+            base_url='https://generativelanguage.googleapis.com/v1beta/models',
             timeout=timeout,
             max_retries=max_retries
         )
-
-        if not genai:
-            raise ImportError(
-                "google-generativeai not installed. "
-                "Run: pip install google-generativeai>=0.8.0"
-            )
 
         if not requests:
             raise ImportError(
@@ -83,20 +73,13 @@ class GeminiGroundedClient(BaseAPIClient):
                 "GOOGLE_API_KEY not found. Set via environment variable or constructor."
             )
 
-        # Configure Gemini
-        genai.configure(api_key=self.api_key)
-
-        # Use Gemini 2.5 Flash with Google Search tool
-        # NOTE: Google updated API - changed from 'google_search_retrieval' to 'google_search' (Jan 2025)
-        self.model = genai.GenerativeModel(
-            model_name='gemini-2.0-flash-exp',
-            tools='google_search'
-        )
+        # Use Gemini 2.5 Flash for deep research (matching gtm-os-v2 pattern)
+        self.model_name = 'gemini-2.5-flash'
 
         self.forbidden_domains = forbidden_domains or []
         self.validate_urls = validate_urls
 
-        # Session for URL validation
+        # Session for both API calls and URL validation
         self.session = requests.Session()
         self.session.headers.update({
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) '
@@ -111,7 +94,7 @@ class GeminiGroundedClient(BaseAPIClient):
 
     def search_paper(self, query: str) -> Optional[Dict[str, Any]]:
         """
-        Search for a source using Gemini with Google Search grounding.
+        Search for a source using Gemini with Google Search grounding via REST API.
 
         Args:
             query: Search query (topic, title, keywords)
@@ -129,11 +112,14 @@ class GeminiGroundedClient(BaseAPIClient):
             # Construct grounded search prompt
             prompt = self._build_search_prompt(query)
 
-            # Generate with Google Search grounding
-            response = self.model.generate_content(prompt)
+            # Generate with Google Search grounding via REST API
+            response_data = self._generate_content_with_grounding(prompt)
 
-            # Extract grounding citations
-            sources = self._extract_grounding_citations(response)
+            if not response_data:
+                return None
+
+            # Extract grounding citations from response
+            sources = self._extract_grounding_citations(response_data)
 
             if not sources:
                 return None
@@ -149,6 +135,66 @@ class GeminiGroundedClient(BaseAPIClient):
 
         except Exception as e:
             print(f"Gemini grounded search error: {e}")
+            import traceback
+            traceback.print_exc()
+            return None
+
+    def _generate_content_with_grounding(self, prompt: str) -> Optional[Dict[str, Any]]:
+        """
+        Generate content using Gemini REST API with Google Search grounding.
+
+        Args:
+            prompt: User prompt for generation
+
+        Returns:
+            API response data dict, or None if error
+        """
+        try:
+            # Build request body (matching gtm-os-v2 pattern)
+            body = {
+                "contents": [
+                    {
+                        "role": "user",
+                        "parts": [{"text": prompt}]
+                    }
+                ],
+                "generationConfig": {
+                    "temperature": 0.2,  # Low temp for factual accuracy
+                    "maxOutputTokens": 8192,  # High limit for deep research
+                },
+                "tools": [
+                    {"googleSearch": {}},  # Enable Google Search grounding
+                ]
+            }
+
+            # Make REST API call
+            url = f"{self.base_url}/{self.model_name}:generateContent?key={self.api_key}"
+
+            response = self.session.post(
+                url,
+                json=body,
+                headers={"Content-Type": "application/json"},
+                timeout=self.timeout
+            )
+
+            if not response.ok:
+                error_text = response.text[:500]
+                print(f"Gemini API error {response.status_code}: {error_text}")
+                return None
+
+            data = response.json()
+
+            # Check for valid response
+            if not data.get('candidates'):
+                print(f"No candidates in response: {data}")
+                return None
+
+            return data
+
+        except Exception as e:
+            print(f"Error calling Gemini API: {e}")
+            import traceback
+            traceback.print_exc()
             return None
 
     def _build_search_prompt(self, query: str) -> str:
@@ -165,13 +211,13 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
 
     def _extract_grounding_citations(
         self,
-        response
+        response_data: Dict[str, Any]
     ) -> List[Dict[str, str]]:
         """
-        Extract grounding citations from Gemini response.
+        Extract grounding citations from Gemini REST API response.
 
         Args:
-            response: Gemini API response object
+            response_data: Gemini API response dict (from REST API)
 
         Returns:
             List of dicts with 'title', 'url', 'snippet' keys
@@ -179,36 +225,54 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
         sources = []
 
         try:
-            # Check for grounding metadata in response
-            if hasattr(response, 'candidates') and response.candidates:
-                candidate = response.candidates[0]
+            # Check for candidates in response
+            candidates = response_data.get('candidates', [])
+            if not candidates:
+                return sources
 
-                # Extract grounding citations
-                if hasattr(candidate, 'grounding_metadata'):
-                    metadata = candidate.grounding_metadata
+            candidate = candidates[0]
 
-                    if hasattr(metadata, 'grounding_chunks'):
-                        for chunk in metadata.grounding_chunks:
-                            source = {}
+            # Extract grounding metadata (matching gtm-os-v2 pattern)
+            grounding_metadata = candidate.get('groundingMetadata')
 
-                            # Extract web source details
-                            if hasattr(chunk, 'web'):
-                                web = chunk.web
-                                if hasattr(web, 'uri'):
-                                    source['url'] = web.uri
-                                if hasattr(web, 'title'):
-                                    source['title'] = web.title
+            if grounding_metadata:
+                # Extract from grounding chunks
+                grounding_chunks = grounding_metadata.get('groundingChunks', [])
 
-                            if source.get('url') and source.get('title'):
-                                sources.append(source)
+                for chunk in grounding_chunks:
+                    source = {}
 
-                # Also extract from text content
-                if hasattr(candidate, 'content'):
-                    text = candidate.content.parts[0].text if candidate.content.parts else ""
+                    # Extract web source details
+                    web = chunk.get('web', {})
+                    if web:
+                        uri = web.get('uri')
+                        title = web.get('title')
+
+                        if uri:
+                            source['url'] = uri
+                        if title:
+                            source['title'] = title
+
+                        if source.get('url') and source.get('title'):
+                            sources.append(source)
+
+                # Also check webSearchQueries if available
+                web_search_queries = grounding_metadata.get('webSearchQueries', [])
+                if web_search_queries:
+                    print(f"Web search queries used: {web_search_queries}")
+
+            # Also extract from text content as fallback
+            content = candidate.get('content', {})
+            parts = content.get('parts', [])
+            if parts:
+                text = parts[0].get('text', '')
+                if text:
                     sources.extend(self._extract_urls_from_text(text))
 
         except Exception as e:
             print(f"Error extracting grounding citations: {e}")
+            import traceback
+            traceback.print_exc()
 
         return sources
 
@@ -268,6 +332,7 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
                 'snippet': source.get('snippet'),
                 'authors': None,  # Not available from grounding
                 'date': None,  # Not available from grounding
+                'source_type': 'website',  # Industry sources are websites/reports
             }
 
             valid_sources.append(valid_source)

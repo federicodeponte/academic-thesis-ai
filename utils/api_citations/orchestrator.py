@@ -315,7 +315,7 @@ class CitationResearcher:
                 authors=metadata["authors"],
                 year=int(metadata["year"]),
                 title=metadata["title"],
-                source_type=metadata.get("source_type", "journal"),
+                source_type=metadata.get("source_type", "website"),
                 language="english",  # Assume English for API results
                 journal=metadata.get("journal", ""),
                 publisher=metadata.get("publisher", ""),

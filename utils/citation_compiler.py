@@ -376,6 +376,7 @@ class CitationCompiler:
             issue = citation.issue
             pages = citation.pages or ""
             doi = citation.doi or ""
+            url = citation.url or ""
 
             ref = f"{author_str} ({year}). {title}. *{journal}*"
             if volume:
@@ -386,6 +387,8 @@ class CitationCompiler:
                 ref += f", {pages}"
             if doi:
                 ref += f". https://doi.org/{doi}"
+            elif url:
+                ref += f". {url}"
             ref += "."
 
         elif source_type == 'book':

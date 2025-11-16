@@ -561,6 +561,10 @@ def research_citations_via_api(
     """
     # Validate mode parameters
     if use_deep_research:
+        # Debug logging to understand validation failure
+        print(f"🔍 DEBUG: use_deep_research={use_deep_research}")
+        print(f"🔍 DEBUG: topic type={type(topic)}, value={repr(topic)}")
+        print(f"🔍 DEBUG: bool(topic)={bool(topic)}, not topic={not topic}")
         if not topic:
             raise ValueError("Deep research mode requires 'topic' parameter")
         mode_name = "DEEP RESEARCH MODE"
@@ -660,6 +664,8 @@ def research_citations_via_api(
         gemini_model=model,
         enable_crossref=True,
         enable_semantic_scholar=True,
+        enable_gemini_grounded=True,  # Enable Google Search grounding for industry sources
+        enable_smart_routing=True,     # Enable query classification for source diversity
         enable_llm_fallback=True,
         verbose=verbose
     )

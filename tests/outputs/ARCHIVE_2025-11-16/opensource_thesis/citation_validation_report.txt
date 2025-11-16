@@ -1,19 +1,16 @@
 
 ================================================================================
-CITATION VALIDATION REPORT: AI Pricing Thesis
+CITATION VALIDATION REPORT: Open Source Thesis
 ================================================================================
 
 
 
-⚠️  WARNINGS (2):
+⚠️  WARNINGS (1):
 --------------------------------------------------------------------------------
 
-[cite_007] Generic title pattern: 'An Overview'
-  Mirghaderi, Sziron et al. (2023) - Ethics and Transparency Issues in Digital Platforms: An Over...
-
-[cite_035] Generic title pattern: 'An Overview'
-  Williamson (2010) - Transaction Cost Economics: An Overview...
+[cite_042] Generic title pattern: 'A Survey'
+  Alexy, Reischauer (2010) - The Open Source Business Model: A Survey...
 
 ================================================================================
-TOTAL ISSUES: 2 (0 critical, 2 warnings)
+TOTAL ISSUES: 1 (0 critical, 1 warnings)
 ================================================================================

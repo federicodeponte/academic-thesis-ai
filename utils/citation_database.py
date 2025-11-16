@@ -38,6 +38,7 @@ class Citation:
         doi: Optional[str] = None,
         url: Optional[str] = None,
         access_date: Optional[str] = None,
+        api_source: Optional[str] = None,
     ):
         self.id = citation_id
         self.authors = authors
@@ -53,6 +54,7 @@ class Citation:
         self.doi = doi
         self.url = url
         self.access_date = access_date
+        self.api_source = api_source
 
     def to_dict(self) -> Dict:
         """Convert to dictionary for JSON serialization."""
@@ -82,6 +84,8 @@ class Citation:
             data["url"] = self.url
         if self.access_date:
             data["access_date"] = self.access_date
+        if self.api_source:
+            data["api_source"] = self.api_source
 
         return data
 
@@ -103,6 +107,7 @@ class Citation:
             doi=data.get("doi"),
             url=data.get("url"),
             access_date=data.get("access_date"),
+            api_source=data.get("api_source"),
         )
 
 

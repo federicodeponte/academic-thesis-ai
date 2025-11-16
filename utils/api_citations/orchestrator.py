@@ -168,10 +168,7 @@ class CitationResearcher:
                 print(
                     f"    ✓ Cached: {cached_metadata['authors'][0]} et al. ({cached_metadata['year']}) [from {cached_source}]"
                 )
-            citation = self._create_citation(cached_metadata)
-            if citation and cached_source:
-                # Attach source metadata for tracking (used by Scout analytics)
-                citation._source = cached_source  # type: ignore[attr-defined]
+            citation = self._create_citation(cached_metadata, cached_source)
             return citation
 
         if self.verbose:
@@ -278,10 +275,7 @@ class CitationResearcher:
 
         # Convert to Citation object
         if metadata:
-            citation = self._create_citation(metadata)
-            if citation and source:
-                # Attach source metadata for tracking (used by Scout analytics)
-                citation._source = source  # type: ignore[attr-defined]
+            citation = self._create_citation(metadata, source)
             if self.verbose and citation:
                 print(f"    ✓ Found: {citation.authors[0]} et al. ({citation.year}) [from {source}]")
                 if citation.doi:
@@ -294,12 +288,13 @@ class CitationResearcher:
                 print(f"    ✗ No citation found for: {topic[:70]}...")
             return None
 
-    def _create_citation(self, metadata: Dict[str, Any]) -> Optional[Citation]:
+    def _create_citation(self, metadata: Dict[str, Any], source: Optional[str] = None) -> Optional[Citation]:
         """
         Create Citation object from metadata.
 
         Args:
             metadata: Paper metadata from API or LLM
+            source: API source that found this citation (Crossref, Semantic Scholar, etc.)
 
         Returns:
             Citation object or None if validation fails
@@ -324,6 +319,7 @@ class CitationResearcher:
                 pages=metadata.get("pages", ""),
                 doi=metadata.get("doi", ""),
                 url=metadata.get("url", ""),
+                api_source=source,  # Track which API found this citation
             )
 
             return citation

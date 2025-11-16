@@ -27,11 +27,11 @@ def test_gemini_grounded_pro():
     print(f"\n📝 Query: {query}")
     print(f"🤖 Model: gemini-2.5-pro")
     print(f"🔧 validate_urls: False (to prevent timeouts)")
-    print(f"⏱️  timeout: 120s\n")
+    print(f"⏱️  timeout: 300s (5 minutes for Pro model)\n")
 
     client = GeminiGroundedClient(
         validate_urls=False,
-        timeout=120
+        timeout=300  # Longer timeout for Gemini 2.5 Pro
     )
 
     print("🔍 Calling search_paper()...\n")

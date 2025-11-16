@@ -84,7 +84,7 @@ class CitationResearcher:
             try:
                 self.gemini_grounded = GeminiGroundedClient(
                     validate_urls=False,  # Disable URL validation to prevent timeouts
-                    timeout=120  # Keep standard timeout
+                    timeout=60  # Flash model is fast (~15s per query)
                 )
             except Exception as e:
                 logger.warning(f"Gemini Grounded client unavailable: {e}")

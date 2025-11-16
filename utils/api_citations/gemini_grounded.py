@@ -73,8 +73,8 @@ class GeminiGroundedClient(BaseAPIClient):
                 "GOOGLE_API_KEY not found. Set via environment variable or constructor."
             )
 
-        # Use Gemini 2.5 Pro for high-quality grounded search
-        self.model_name = 'gemini-2.5-pro'
+        # Use Gemini 2.5 Flash for fast grounded search (Pro is too slow)
+        self.model_name = 'gemini-2.5-flash'
 
         self.forbidden_domains = forbidden_domains or []
         self.validate_urls = validate_urls

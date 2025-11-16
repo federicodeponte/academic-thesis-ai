@@ -94,6 +94,15 @@ class PandocLatexEngine(PDFEngine):
 
             md_content = self._normalize_yaml_for_pandoc(md_content)
 
+            # CRITICAL: Remove outer ```markdown wrapper if present (BUG #20)
+            # Recent thesis generations incorrectly wrap entire file in code fence
+            md_content = self._unwrap_markdown_fence(md_content)
+
+            # CRITICAL: Remove code blocks (ASCII diagrams) before PDF generation
+            # Code blocks cause massive verbatim sections in LaTeX that truncate documents
+            # (e.g., 122 pages → 39 pages due to unbreakable monospace text)
+            md_content = self._strip_code_blocks(md_content)
+
             # Note: XeLaTeX handles Unicode natively, no sanitization needed
             # (Previous pdflatex required _sanitize_unicode_for_latex)
 
@@ -557,6 +566,87 @@ class PandocLatexEngine(PDFEngine):
 
         # Reconstruct markdown
         return f'---{yaml_content}---{rest_content}'
+
+    def _unwrap_markdown_fence(self, md_content: str) -> str:
+        """
+        Remove outer ```markdown wrapper if present (BUG #20).
+
+        Recent thesis generations incorrectly wrap the entire file content
+        in a code fence like:
+            ```markdown
+            ---
+            title: ...
+            ---
+            # Content...
+            ```
+
+        This causes Pandoc to treat the entire thesis as verbatim code.
+
+        Args:
+            md_content: Markdown content potentially wrapped in code fence
+
+        Returns:
+            Markdown content with outer wrapper removed
+        """
+        lines = md_content.strip().split('\n')
+
+        # Check if first line is ```markdown and last line is ```
+        if (len(lines) >= 3 and
+            lines[0].strip().startswith('```') and
+            lines[-1].strip() == '```'):
+            # Remove first and last line
+            return '\n'.join(lines[1:-1])
+
+        return md_content
+
+    def _strip_code_blocks(self, md_content: str) -> str:
+        """
+        Remove markdown code blocks (fenced with triple backticks) from content.
+
+        This fixes PDF truncation caused by ASCII diagrams in code blocks.
+        LaTeX renders code blocks as unbreakable verbatim text, causing:
+        - Overfull hbox errors (lines too wide for page)
+        - Document truncation (e.g., 122 pages → 39 pages)
+        - Missing citations and content
+
+        Args:
+            md_content: Markdown content potentially containing code blocks
+
+        Returns:
+            Markdown content with all code blocks removed
+        """
+        # Separate YAML frontmatter from body to avoid processing YAML fences
+        if md_content.strip().startswith('---'):
+            parts = md_content.split('---', 2)
+            if len(parts) >= 3:
+                yaml_section = f"---{parts[1]}---"
+                body_content = parts[2]
+            else:
+                # No valid YAML, process entire content
+                yaml_section = ""
+                body_content = md_content
+        else:
+            yaml_section = ""
+            body_content = md_content
+
+        # Remove code blocks from body only
+        lines = body_content.split('\n')
+        result = []
+        in_code_block = False
+
+        for line in lines:
+            if line.strip().startswith('```'):
+                # Toggle code block state
+                in_code_block = not in_code_block
+                continue  # Skip the fence line itself
+
+            if not in_code_block:
+                result.append(line)
+
+        cleaned_body = '\n'.join(result)
+
+        # Reconstruct with YAML intact
+        return yaml_section + cleaned_body if yaml_section else cleaned_body
 
     def _sanitize_unicode_for_latex(self, md_content: str) -> str:
         """

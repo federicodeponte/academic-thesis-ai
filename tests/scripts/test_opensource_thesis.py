@@ -242,18 +242,17 @@ def main():
     print("📚 PHASE 2.5: CITATION MANAGEMENT")
     print("="*70)
 
-    print("Extracting citations from research notes...")
+    print("Creating citation database from Scout research...")
 
-    # Extract citations from research materials
-    # FIXED: Use full Scout output (not Scribe summary) to preserve all citations
-    # Root cause: Scribe truncates to 8000 chars, losing many citations
-    # Scout output contains complete citation metadata for all researched papers
-    citation_database = extract_citations_from_text(
-        text=scout_output,  # ✅ FIXED: Using full Scout markdown with all citations
-        model=model,
-        language="english",
+    # FIXED (Bug #18): Use Scout citations directly instead of LLM extraction
+    # Root cause: extract_citations_from_text() asks LLM to extract citations from markdown,
+    # but LLM hallucinates fake citations instead of using real Scout API results.
+    # Scout returns real Citation objects with api_source metadata - use them directly!
+    from utils.citation_database import CitationDatabase
+    citation_database = CitationDatabase(
+        citations=scout_result['citations'],  # Use real Scout citations with api_source
         citation_style="APA 7th",
-        verbose=True
+        thesis_language="english"
     )
 
     # Save citation database

@@ -208,20 +208,20 @@ def main():
     print("🏗️  PHASE 2: STRUCTURE")
     print("="*70)
 
-    # Step 3.5: Citation Manager - Extract citations from research
-    print("\n📚 Extracting citations from research materials...")
-    # FIXED: Use full Scout output (not Scout+Scribe concat) to avoid duplicate citations
-    # Root cause: Scribe may summarize citations differently, causing duplicates/conflicts
-    # Scout output contains complete citation metadata for all researched papers
-    citation_database = extract_citations_from_text(
-        text=scout_output,  # ✅ FIXED: Using full Scout markdown with all citations
-        model=model,
-        language="english",
+    # Step 3.5: Citation Manager - Use Scout citations directly
+    print("\n📚 Creating citation database from Scout research...")
+    # FIXED (Bug #18): Use Scout citations directly instead of LLM extraction
+    # Root cause: extract_citations_from_text() asks LLM to extract citations from markdown,
+    # but LLM hallucinates fake citations instead of using real Scout API results.
+    # Scout returns real Citation objects with api_source metadata - use them directly!
+    from utils.citation_database import CitationDatabase
+    citation_database = CitationDatabase(
+        citations=scout_result['citations'],  # Use real Scout citations with api_source
         citation_style="APA 7th",
-        verbose=True
+        thesis_language="english"
     )
 
-    print(f"✅ Citation database created: {len(citation_database.citations)} citations extracted")
+    print(f"✅ Citation database created: {len(citation_database.citations)} citations from Scout")
 
     # Save citation database to file
     citation_db_path = output_dir / "citation_database.json"

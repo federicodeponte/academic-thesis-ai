@@ -121,7 +121,8 @@ def find_duplicate_groups(citations: List[Dict]) -> Dict[str, List[Dict]]:
     # Group by DOI
     doi_groups = defaultdict(list)
     for c in citations:
-        doi = c.get('doi', '').lower().strip()
+        doi = c.get('doi', '') or ''  # Handle None values
+        doi = doi.lower().strip()
         if doi:
             doi_groups[doi].append(c)
 
@@ -132,7 +133,8 @@ def find_duplicate_groups(citations: List[Dict]) -> Dict[str, List[Dict]]:
     # Group by URL (normalized)
     url_groups = defaultdict(list)
     for c in citations:
-        url = normalize_url(c.get('url', ''))
+        url = c.get('url', '') or ''  # Handle None values
+        url = normalize_url(url)
         if url:
             url_groups[url].append(c)
 

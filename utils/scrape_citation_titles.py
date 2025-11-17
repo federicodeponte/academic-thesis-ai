@@ -18,6 +18,33 @@ from typing import Dict, List, Optional, Tuple
 from urllib.parse import urlparse
 import time
 import re
+from utils.logging_config import get_logger
+from utils.retry import retry_on_network_error
+
+# Initialize logger for this module
+logger = get_logger(__name__)
+
+
+def safe_get(obj, key, default=None):
+    """
+    Safely get value from dict or object attribute.
+
+    Handles both dictionaries and objects (NamedTuple, dataclass, etc.)
+
+    Args:
+        obj: Dictionary or object
+        key: Attribute/key name
+        default: Default value if not found
+
+    Returns:
+        Value from obj[key] or obj.key, or default if not found
+    """
+    if hasattr(obj, 'get'):
+        # Dictionary
+        return obj.get(key, default)
+    else:
+        # Object (NamedTuple, dataclass, etc.)
+        return getattr(obj, key, default)
 
 
 class TitleScraper:
@@ -48,6 +75,7 @@ class TitleScraper:
         self.session = requests.Session()
         self.session.headers.update({'User-Agent': user_agent})
 
+    @retry_on_network_error(max_attempts=3, base_delay=2.0, max_delay=30.0)
     def scrape_title(self, url: str) -> Optional[str]:
         """
         Scrape page title from URL.
@@ -66,7 +94,7 @@ class TitleScraper:
             Page title or None if scraping failed
         """
         if self.verbose:
-            print(f"   🌐 Scraping: {url[:80]}...")
+            logger.info(f"Scraping title from: {url[:80]}...")
 
         try:
             response = self.session.get(url, timeout=self.timeout, allow_redirects=True)
@@ -80,7 +108,7 @@ class TitleScraper:
                 title = title_tag.string.strip()
                 if self._is_valid_title(title):
                     if self.verbose:
-                        print(f"      ✅ Title: {title[:60]}...")
+                        logger.debug(f"Found title tag: {title[:60]}...")
                     return self._clean_title(title)
 
             # Strategy 2: Open Graph title
@@ -89,7 +117,7 @@ class TitleScraper:
                 title = og_title['content'].strip()
                 if self._is_valid_title(title):
                     if self.verbose:
-                        print(f"      ✅ OG Title: {title[:60]}...")
+                        logger.debug(f"Found Open Graph title: {title[:60]}...")
                     return self._clean_title(title)
 
             # Strategy 3: Twitter Card title
@@ -98,7 +126,7 @@ class TitleScraper:
                 title = twitter_title['content'].strip()
                 if self._is_valid_title(title):
                     if self.verbose:
-                        print(f"      ✅ Twitter Title: {title[:60]}...")
+                        logger.debug(f"Found Twitter Card title: {title[:60]}...")
                     return self._clean_title(title)
 
             # Strategy 4: First <h1> tag
@@ -107,7 +135,7 @@ class TitleScraper:
                 title = h1_tag.get_text().strip()
                 if self._is_valid_title(title):
                     if self.verbose:
-                        print(f"      ✅ H1 Title: {title[:60]}...")
+                        logger.debug(f"Found H1 title: {title[:60]}...")
                     return self._clean_title(title)
 
             # Strategy 5: URL path (last resort)
@@ -116,25 +144,25 @@ class TitleScraper:
             if path_title and len(path_title) > 3:
                 title = path_title.replace('-', ' ').replace('_', ' ').title()
                 if self.verbose:
-                    print(f"      ⚠️  Fallback (URL): {title[:60]}...")
+                    logger.warning(f"Using URL fallback title: {title[:60]}...")
                 return self._clean_title(title)
 
             if self.verbose:
-                print(f"      ❌ No title found")
+                logger.warning(f"No title found for {url[:60]}")
 
             return None
 
         except requests.exceptions.Timeout:
             if self.verbose:
-                print(f"      ❌ Timeout")
+                logger.warning(f"Timeout scraping {url[:60]}")
             return None
         except requests.exceptions.RequestException as e:
             if self.verbose:
-                print(f"      ❌ Request error: {str(e)[:50]}")
+                logger.warning(f"Request error scraping {url[:60]}: {str(e)[:50]}")
             return None
         except Exception as e:
             if self.verbose:
-                print(f"      ❌ Unexpected error: {str(e)[:50]}")
+                logger.error(f"Unexpected error scraping {url[:60]}: {str(e)[:50]}", exc_info=True)
             return None
 
     def _is_valid_title(self, title: str) -> bool:
@@ -218,9 +246,9 @@ class TitleScraper:
         if filter_condition is None:
             # Default: Gemini Grounded with domain-name titles
             def default_filter(c):
-                if c.get('api_source') != 'Gemini Grounded':
+                if safe_get(c, 'api_source') != 'Gemini Grounded':
                     return False
-                title = c.get('title', '')
+                title = safe_get(c, 'title', '')
                 # Bad title indicators
                 return (
                     title.endswith('.com') or
@@ -240,36 +268,39 @@ class TitleScraper:
 
         if not to_scrape:
             if self.verbose:
-                print("✅ No citations need title scraping")
+                logger.info("No citations need title scraping")
             return 0, 0
 
-        print(f"\n🌐 Scraping titles for {len(to_scrape)} citations...")
+        logger.info(f"Scraping titles for {len(to_scrape)} citations...")
 
         success_count = 0
         fail_count = 0
 
         for i, citation in enumerate(to_scrape, 1):
-            url = citation.get('url')
+            url = safe_get(citation, 'url')
             if not url:
                 fail_count += 1
                 continue
 
             if self.verbose:
-                print(f"\n[{i}/{len(to_scrape)}] {citation['id']}")
-                print(f"   Old title: '{citation.get('title', 'N/A')}'")
+                logger.info(f"Processing citation [{i}/{len(to_scrape)}]: {safe_get(citation, 'id')}")
+                logger.debug(f"Old title: '{safe_get(citation, 'title', 'N/A')}'")
 
             # Scrape title
             new_title = self.scrape_title(url)
 
             if new_title:
-                citation['title'] = new_title
+                if hasattr(citation, 'title'):
+                    citation.title = new_title
+                else:
+                    citation['title'] = new_title
                 success_count += 1
                 if self.verbose:
-                    print(f"   ✅ New title: '{new_title}'")
+                    logger.info(f"Successfully scraped title: '{new_title}'")
             else:
                 fail_count += 1
                 if self.verbose:
-                    print(f"   ❌ Failed to scrape title")
+                    logger.warning(f"Failed to scrape title for {safe_get(citation, 'id')}")
 
             # Rate limiting
             if i < len(to_scrape):
@@ -335,7 +366,7 @@ def scrape_citation_database_titles(
     }
 
     if verbose:
-        print(f"\n💾 Saved updated database to: {output_path}")
+        logger.info(f"Saved updated database to: {output_path}")
 
     return stats
 
@@ -361,8 +392,8 @@ if __name__ == '__main__':
         verbose=args.verbose
     )
 
-    print(f"\n📊 Summary:")
-    print(f"   Total citations: {stats['total_citations']}")
-    print(f"   Scraped: {stats['scraped_count']}")
-    print(f"   Successful: {stats['successful']}")
-    print(f"   Failed: {stats['failed']}")
+    logger.info("Summary:")
+    logger.info(f"  Total citations: {stats['total_citations']}")
+    logger.info(f"  Scraped: {stats['scraped_count']}")
+    logger.info(f"  Successful: {stats['successful']}")
+    logger.info(f"  Failed: {stats['failed']}")

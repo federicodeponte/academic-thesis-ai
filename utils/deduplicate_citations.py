@@ -22,6 +22,28 @@ import re
 from difflib import SequenceMatcher
 
 
+def safe_get(obj, key, default=None):
+    """
+    Safely get value from dict or object attribute.
+
+    Handles both dictionaries and objects (NamedTuple, dataclass, etc.)
+
+    Args:
+        obj: Dictionary or object
+        key: Attribute/key name
+        default: Default value if not found
+
+    Returns:
+        Value from obj[key] or obj.key, or default if not found
+    """
+    if hasattr(obj, 'get'):
+        # Dictionary
+        return obj.get(key, default)
+    else:
+        # Object (NamedTuple, dataclass, etc.)
+        return getattr(obj, key, default)
+
+
 def normalize_text(text: str) -> str:
     """
     Normalize text for comparison (lowercase, remove extra spaces, punctuation).
@@ -121,7 +143,7 @@ def find_duplicate_groups(citations: List[Dict]) -> Dict[str, List[Dict]]:
     # Group by DOI
     doi_groups = defaultdict(list)
     for c in citations:
-        doi = c.get('doi', '') or ''  # Handle None values
+        doi = safe_get(c, 'doi', '') or ''  # Handle None values
         doi = doi.lower().strip()
         if doi:
             doi_groups[doi].append(c)
@@ -133,7 +155,7 @@ def find_duplicate_groups(citations: List[Dict]) -> Dict[str, List[Dict]]:
     # Group by URL (normalized)
     url_groups = defaultdict(list)
     for c in citations:
-        url = c.get('url', '') or ''  # Handle None values
+        url = safe_get(c, 'url', '') or ''  # Handle None values
         url = normalize_url(url)
         if url:
             url_groups[url].append(c)
@@ -146,19 +168,19 @@ def find_duplicate_groups(citations: List[Dict]) -> Dict[str, List[Dict]]:
                 groups['exact_url'].append(cites)
 
     # Group by title similarity (expensive, so do after URL/DOI)
-    already_matched = set(c['id'] for c in sum(groups['exact_doi'] + groups['exact_url'], []))
-    remaining = [c for c in citations if c['id'] not in already_matched]
+    already_matched = set(safe_get(c, 'id') for c in sum(groups['exact_doi'] + groups['exact_url'], []))
+    remaining = [c for c in citations if safe_get(c, 'id') not in already_matched]
 
     checked_pairs = set()
     for i, c1 in enumerate(remaining):
         for c2 in remaining[i+1:]:
-            pair = tuple(sorted([c1['id'], c2['id']]))
+            pair = tuple(sorted([safe_get(c1, 'id'), safe_get(c2, 'id')]))
             if pair in checked_pairs:
                 continue
             checked_pairs.add(pair)
 
-            title1 = c1.get('title', '')
-            title2 = c2.get('title', '')
+            title1 = safe_get(c1, 'title', '')
+            title2 = safe_get(c2, 'title', '')
 
             if not title1 or not title2:
                 continue
@@ -228,18 +250,18 @@ def deduplicate_citations(
         """Select best citation from duplicate group."""
         if strategy == 'keep_first':
             # Sort by ID (cite_001, cite_002, etc.) and keep first
-            return sorted(group, key=lambda c: c['id'])[0]
+            return sorted(group, key=lambda c: safe_get(c, 'id'))[0]
         elif strategy == 'keep_best':
             # Score by metadata completeness
             def score(c):
                 return sum([
-                    bool(c.get('doi')),
-                    bool(c.get('url')),
-                    bool(c.get('authors')),
-                    bool(c.get('year')),
-                    bool(c.get('journal')),
-                    bool(c.get('title')) and len(c.get('title', '')) > 10,
-                    c.get('api_source') != 'Gemini Grounded',  # Prefer academic sources
+                    bool(safe_get(c, 'doi')),
+                    bool(safe_get(c, 'url')),
+                    bool(safe_get(c, 'authors')),
+                    bool(safe_get(c, 'year')),
+                    bool(safe_get(c, 'journal')),
+                    bool(safe_get(c, 'title')) and len(safe_get(c, 'title', '')) > 10,
+                    safe_get(c, 'api_source') != 'Gemini Grounded',  # Prefer academic sources
                 ])
             return max(group, key=score)
         else:
@@ -253,16 +275,16 @@ def deduplicate_citations(
 
             # Mark others for removal
             for c in group:
-                if c['id'] != keep['id']:
-                    ids_to_remove.add(c['id'])
+                if safe_get(c, 'id') != safe_get(keep, 'id'):
+                    ids_to_remove.add(safe_get(c, 'id'))
 
                     if verbose:
-                        print(f"\n❌ Removing duplicate: {c['id']}")
-                        print(f"   Title: {c.get('title', 'N/A')[:60]}...")
-                        print(f"   Reason: Duplicate of {keep['id']} ({group_type})")
+                        print(f"\n❌ Removing duplicate: {safe_get(c, 'id')}")
+                        print(f"   Title: {safe_get(c, 'title', 'N/A')[:60]}...")
+                        print(f"   Reason: Duplicate of {safe_get(keep, 'id')} ({group_type})")
 
     # Create deduplicated list
-    deduplicated = [c for c in citations if c['id'] not in ids_to_remove]
+    deduplicated = [c for c in citations if safe_get(c, 'id') not in ids_to_remove]
 
     stats['removed_count'] = len(ids_to_remove)
     stats['final_count'] = len(deduplicated)

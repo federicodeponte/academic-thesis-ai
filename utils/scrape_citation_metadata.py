@@ -21,6 +21,11 @@ import time
 import re
 import json
 from datetime import datetime
+from utils.retry import retry_on_network_error
+from utils.logging_config import get_logger
+
+# Initialize logger for this module
+logger = get_logger(__name__)
 
 
 def safe_get(obj, key, default=None):
@@ -73,6 +78,7 @@ class MetadataScraper:
         self.session = requests.Session()
         self.session.headers.update({'User-Agent': user_agent})
 
+    @retry_on_network_error(max_attempts=3, base_delay=2.0, max_delay=30.0)
     def scrape_publication_date(self, url: str, html_content: Optional[str] = None) -> Optional[int]:
         """
         Scrape publication date from URL.
@@ -97,7 +103,7 @@ class MetadataScraper:
                 soup = BeautifulSoup(html_content, 'html.parser')
             else:
                 if self.verbose:
-                    print(f"   📅 Scraping publication date from: {url[:60]}...")
+                    logger.info(f"Scraping publication date from: {url[:60]}...")
 
                 response = self.session.get(url, timeout=self.timeout, allow_redirects=True)
                 response.raise_for_status()
@@ -109,7 +115,7 @@ class MetadataScraper:
                 year = self._extract_year(og_date['content'])
                 if year:
                     if self.verbose:
-                        print(f"      ✅ OG Date: {year}")
+                        logger.debug(f"Found Open Graph date: {year}")
                     return year
 
             # Strategy 2: pubdate meta tag
@@ -118,7 +124,7 @@ class MetadataScraper:
                 year = self._extract_year(pubdate['content'])
                 if year:
                     if self.verbose:
-                        print(f"      ✅ Pubdate: {year}")
+                        logger.debug(f"Found pubdate meta tag: {year}")
                     return year
 
             # Strategy 3: Dublin Core date
@@ -127,7 +133,7 @@ class MetadataScraper:
                 year = self._extract_year(dc_date['content'])
                 if year:
                     if self.verbose:
-                        print(f"      ✅ DC.date: {year}")
+                        logger.debug(f"Found Dublin Core date: {year}")
                     return year
 
             # Strategy 4: JSON-LD structured data
@@ -141,13 +147,13 @@ class MetadataScraper:
                             year = self._extract_year_from_jsonld(item)
                             if year:
                                 if self.verbose:
-                                    print(f"      ✅ JSON-LD: {year}")
+                                    logger.debug(f"Found JSON-LD date: {year}")
                                 return year
                     else:
                         year = self._extract_year_from_jsonld(data)
                         if year:
                             if self.verbose:
-                                print(f"      ✅ JSON-LD: {year}")
+                                logger.debug(f"Found JSON-LD date: {year}")
                             return year
                 except (json.JSONDecodeError, AttributeError):
                     continue
@@ -158,34 +164,35 @@ class MetadataScraper:
                 year = self._extract_year(time_tag['datetime'])
                 if year:
                     if self.verbose:
-                        print(f"      ✅ Time tag: {year}")
+                        logger.debug(f"Found time tag date: {year}")
                     return year
 
             # Strategy 6: URL path pattern (e.g., /2024/03/article-name)
             year = self._extract_year_from_url(url)
             if year:
                 if self.verbose:
-                    print(f"      ⚠️  Fallback (URL): {year}")
+                    logger.warning(f"Using URL fallback date: {year}")
                 return year
 
             if self.verbose:
-                print(f"      ❌ No publication date found")
+                logger.warning(f"No publication date found for {url[:60]}")
 
             return None
 
         except requests.exceptions.Timeout:
             if self.verbose:
-                print(f"      ❌ Timeout")
+                logger.warning(f"Timeout scraping date from {url[:60]}")
             return None
         except requests.exceptions.RequestException as e:
             if self.verbose:
-                print(f"      ❌ Request error: {str(e)[:50]}")
+                logger.warning(f"Request error scraping date from {url[:60]}: {str(e)[:50]}")
             return None
         except Exception as e:
             if self.verbose:
-                print(f"      ❌ Unexpected error: {str(e)[:50]}")
+                logger.error(f"Unexpected error scraping date from {url[:60]}: {str(e)[:50]}", exc_info=True)
             return None
 
+    @retry_on_network_error(max_attempts=3, base_delay=2.0, max_delay=30.0)
     def scrape_authors(self, url: str, html_content: Optional[str] = None) -> Optional[List[str]]:
         """
         Scrape author names from URL.
@@ -209,7 +216,7 @@ class MetadataScraper:
                 soup = BeautifulSoup(html_content, 'html.parser')
             else:
                 if self.verbose:
-                    print(f"   👤 Scraping authors from: {url[:60]}...")
+                    logger.info(f"Scraping authors from: {url[:60]}...")
 
                 response = self.session.get(url, timeout=self.timeout, allow_redirects=True)
                 response.raise_for_status()
@@ -269,25 +276,25 @@ class MetadataScraper:
 
             if authors:
                 if self.verbose:
-                    print(f"      ✅ Authors: {', '.join(authors[:3])}{'...' if len(authors) > 3 else ''}")
+                    logger.info(f"Found authors: {', '.join(authors[:3])}{'...' if len(authors) > 3 else ''}")
                 return authors
 
             if self.verbose:
-                print(f"      ❌ No authors found")
+                logger.warning(f"No authors found for {url[:60]}")
 
             return None
 
         except requests.exceptions.Timeout:
             if self.verbose:
-                print(f"      ❌ Timeout")
+                logger.warning(f"Timeout scraping authors from {url[:60]}")
             return None
         except requests.exceptions.RequestException as e:
             if self.verbose:
-                print(f"      ❌ Request error: {str(e)[:50]}")
+                logger.warning(f"Request error scraping authors from {url[:60]}: {str(e)[:50]}")
             return None
         except Exception as e:
             if self.verbose:
-                print(f"      ❌ Unexpected error: {str(e)[:50]}")
+                logger.error(f"Unexpected error scraping authors from {url[:60]}: {str(e)[:50]}", exc_info=True)
             return None
 
     def scrape_metadata(self, url: str) -> Tuple[Optional[int], Optional[List[str]]]:
@@ -304,7 +311,7 @@ class MetadataScraper:
         """
         try:
             if self.verbose:
-                print(f"   🔍 Scraping metadata: {url[:60]}...")
+                logger.info(f"Scraping metadata from: {url[:60]}...")
 
             response = self.session.get(url, timeout=self.timeout, allow_redirects=True)
             response.raise_for_status()
@@ -318,7 +325,7 @@ class MetadataScraper:
 
         except Exception as e:
             if self.verbose:
-                print(f"      ❌ Metadata scraping failed: {str(e)[:50]}")
+                logger.error(f"Metadata scraping failed for {url[:60]}: {str(e)[:50]}", exc_info=True)
             return None, None
 
     def scrape_citations(
@@ -368,10 +375,10 @@ class MetadataScraper:
 
         if not to_scrape:
             if self.verbose:
-                print("✅ No citations need metadata scraping")
+                logger.info("No citations need metadata scraping")
             return 0, 0
 
-        print(f"\n🔍 Scraping metadata for {len(to_scrape)} citations...")
+        logger.info(f"Scraping metadata for {len(to_scrape)} citations...")
 
         success_count = 0
         fail_count = 0
@@ -388,8 +395,8 @@ class MetadataScraper:
             old_authors = safe_get(citation, 'authors', ['N/A'])
 
             if self.verbose:
-                print(f"\n[{i}/{len(to_scrape)}] {citation_id}")
-                print(f"   Old: {old_year} - {old_authors}")
+                logger.info(f"Processing citation [{i}/{len(to_scrape)}]: {citation_id}")
+                logger.debug(f"Old metadata: {old_year} - {old_authors}")
 
             # Scrape metadata
             year, authors = self.scrape_metadata(url)
@@ -413,13 +420,13 @@ class MetadataScraper:
             if updated:
                 success_count += 1
                 if self.verbose:
-                    new_year = getattr(citation, 'year', 'N/A') if hasattr(citation, 'year') else citation.get('year', 'N/A')
-                    new_authors = getattr(citation, 'authors', ['N/A']) if hasattr(citation, 'authors') else citation.get('authors', ['N/A'])
-                    print(f"   ✅ New: {new_year} - {new_authors[:3]}")
+                    new_year = safe_get(citation, 'year', 'N/A')
+                    new_authors = safe_get(citation, 'authors', ['N/A'])
+                    logger.info(f"Successfully updated metadata: {new_year} - {new_authors[:3]}")
             else:
                 fail_count += 1
                 if self.verbose:
-                    print(f"   ❌ No improvement")
+                    logger.warning(f"No improvement for {citation_id}")
 
             # Rate limiting
             if i < len(to_scrape):
@@ -550,7 +557,7 @@ if __name__ == '__main__':
     # Load database
     db_path = Path(args.database)
     if not db_path.exists():
-        print(f"❌ Database not found: {args.database}")
+        logger.error(f"Database not found: {args.database}")
         sys.exit(1)
 
     citation_database = load_citation_database(db_path)
@@ -567,9 +574,9 @@ if __name__ == '__main__':
     output_path = Path(args.output) if args.output else db_path
     save_citation_database(citation_database, output_path)
 
-    print(f"\n📊 Summary:")
-    print(f"   Total citations: {len(citation_database.citations)}")
-    print(f"   Scraped: {success_count + fail_count}")
-    print(f"   Successful: {success_count}")
-    print(f"   Failed: {fail_count}")
-    print(f"\n💾 Saved to: {output_path}")
+    logger.info("Summary:")
+    logger.info(f"  Total citations: {len(citation_database.citations)}")
+    logger.info(f"  Scraped: {success_count + fail_count}")
+    logger.info(f"  Successful: {success_count}")
+    logger.info(f"  Failed: {fail_count}")
+    logger.info(f"Saved to: {output_path}")

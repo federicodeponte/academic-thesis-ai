@@ -269,11 +269,26 @@ def main():
         thesis_language="german"
     )
 
+    # FIXED (Day 1B): Deduplicate citations before saving
+    from utils.deduplicate_citations import deduplicate_citations
+    deduplicated_citations, dedup_stats = deduplicate_citations(
+        citation_database.citations,
+        strategy='keep_best',
+        verbose=True
+    )
+
+    # Update citation database with deduplicated citations
+    citation_database.citations = deduplicated_citations
+
+    if dedup_stats['removed_count'] > 0:
+        print(f"🧹 {dedup_stats['removed_count']} doppelte Zitate entfernt")
+        print(f"   Endgültig: {dedup_stats['final_count']} eindeutige Zitate")
+
     # Save citation database
     citation_db_path = output_dir / "citation_database.json"
     save_citation_database(citation_database, citation_db_path)
 
-    print(f"\n✅ Zitatdatenbank erstellt: {len(citation_database.citations)} Zitate")
+    print(f"\n✅ Zitatdatenbank erstellt: {dedup_stats['final_count']} eindeutige Zitate")
     print(f"📄 Gespeichert in: {citation_db_path}")
 
     # Prepare citation database summary for Crafters

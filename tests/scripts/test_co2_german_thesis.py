@@ -697,11 +697,23 @@ def main():
     print("   • Erweiterte Fallstudien")
     print("\n⏳ Verbesserung kann 3-5 Minuten dauern...")
 
+    # FIXED (Day 1A): Pass actual citation count to prevent frontmatter mismatch
+    actual_citation_count = len(citation_database.citations)
+
     enhanced_paper = run_agent(
         model=model,
         name="15. Enhancer - Professionelle Verbesserung",
         prompt_path="prompts/06_enhance/enhancer.md",
-        user_input=f"**WICHTIG: Antworte auf Deutsch.**\n\nVerbessere diese Arbeit auf publikationsreifen Standard:\n\n{paper_for_enhancement}",
+        user_input=f"""**WICHTIG: Antworte auf Deutsch.**
+
+Verbessere diese Arbeit auf publikationsreifen Standard.
+
+WICHTIG: Diese Arbeit hat GENAU {actual_citation_count} Zitate in der Zitationsdatenbank.
+Verwende diese exakte Zahl für das Feld citations_verified im YAML-Frontmatter.
+
+Arbeit zum Verbessern:
+
+{paper_for_enhancement}""",
         save_to=output_dir / "16_enhanced_final.md"
     )
 

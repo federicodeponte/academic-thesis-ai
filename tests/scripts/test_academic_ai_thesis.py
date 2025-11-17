@@ -689,11 +689,21 @@ def main():
     print("   • Expanded case studies")
     print("\n⏳ Enhancement may take 3-5 minutes...")
 
+    # FIXED (Day 1A): Pass actual citation count to prevent frontmatter mismatch
+    actual_citation_count = len(citation_database.citations)
+
     enhanced_paper = run_agent(
         model=model,
         name="15. Enhancer - Professional Enhancement",
         prompt_path="prompts/06_enhance/enhancer.md",
-        user_input=f"Enhance this thesis to publication-ready standard:\n\n{paper_for_enhancement}",
+        user_input=f"""Enhance this thesis to publication-ready standard.
+
+IMPORTANT: This thesis has EXACTLY {actual_citation_count} citations in the citation database.
+When generating the YAML frontmatter, use this exact number for citations_verified field.
+
+Thesis to enhance:
+
+{paper_for_enhancement}""",
         save_to=output_dir / "16_enhanced_final.md"
     )
 

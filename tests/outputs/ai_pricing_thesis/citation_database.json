@@ -8,179 +8,389 @@
         "Lobo"
       ],
       "year": 2025,
-      "title": "Architecting Agentic AI Systems with a Well-Architected Framework",
+      "title": "Case Studies: Agentic AI in Real-World Applications",
       "source_type": "book",
       "language": "english",
       "journal": "Agentic AI in Enterprise",
       "publisher": "Apress",
-      "pages": "35-93",
-      "doi": "10.1007/979-8-8688-1542-3_2",
-      "url": "https://doi.org/10.1007/979-8-8688-1542-3_2",
+      "pages": "325-358",
+      "doi": "10.1007/979-8-8688-1542-3_8",
+      "url": "https://doi.org/10.1007/979-8-8688-1542-3_8",
       "api_source": "Crossref"
     },
     {
       "id": "cite_002",
       "authors": [
-        "Keppo",
-        "Li",
-        "Tsoukalas",
-        "Yuan"
+        "Sakai",
+        "Lam"
       ],
       "year": 2025,
-      "title": "AI Pricing, Agent Heterogeneity, and Collusion",
+      "title": "Large Language Models for Healthcare Text Classification: A Systematic Review (Preprint)",
       "source_type": "report",
       "language": "english",
-      "publisher": "Elsevier BV",
-      "doi": "10.2139/ssrn.5386338",
-      "url": "https://doi.org/10.2139/ssrn.5386338",
+      "publisher": "JMIR Publications Inc.",
+      "doi": "10.2196/preprints.79202",
+      "url": "https://doi.org/10.2196/preprints.79202",
       "api_source": "Crossref"
     },
     {
       "id": "cite_003",
       "authors": [
-        "Ferrario",
-        "Gloeckler",
-        "Biller-Andorno"
+        "Velasco",
+        "Tsirtsis",
+        "Gomez-Rodriguez"
       ],
-      "year": 2023,
-      "title": "AI knows best? Avoiding the traps of paternalism and other pitfalls of AI-based patient preference prediction",
+      "year": 2025,
+      "title": "Auditing Pay-Per-Token in Large Language Models",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal of Medical Ethics",
-      "doi": "10.1136/jme-2023-108945",
-      "url": "https://doi.org/10.1136/jme-2023-108945",
+      "journal": "arXiv.org",
+      "doi": "10.48550/arXiv.2510.05181",
+      "url": "https://doi.org/10.48550/arXiv.2510.05181",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_004",
       "authors": [
-        "Lerer"
+        "Yu",
+        "Yao",
+        "Zhou",
+        "Fu",
+        "Yu",
+        "Wang",
+        "Wang",
+        "Chen",
+        "Lin"
       ],
-      "year": 2025,
-      "title": "Beyond WEIRD Bias: Why Token-Based Legal AI Cannot Model Post-Colonial Compliance Dynamics",
-      "source_type": "report",
+      "year": 2024,
+      "title": "Data on the Move: Traffic-Oriented Data Trading Platform Powered by AI Agent with Common Sense",
+      "source_type": "journal",
       "language": "english",
-      "publisher": "Elsevier BV",
-      "doi": "10.2139/ssrn.5584450",
-      "url": "https://doi.org/10.2139/ssrn.5584450",
-      "api_source": "Crossref"
+      "journal": "2024 IEEE Intelligent Vehicles Symposium (IV)",
+      "doi": "10.1109/IV55156.2024.10588800",
+      "url": "https://doi.org/10.1109/IV55156.2024.10588800",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_005",
       "authors": [
-        "Rossi"
+        "Bala",
+        "Carr"
       ],
-      "year": 2024,
-      "title": "IT Data-Driven and AI Intercompany Services in Multinational Banks: The Border in Their Regulation between Low Value-Adding and High-Value Services",
+      "year": 2010,
+      "title": "Usage-based pricing of software services under competition",
       "source_type": "journal",
       "language": "english",
-      "journal": "International Transfer Pricing Journal",
-      "publisher": "IBFD",
-      "volume": "31",
-      "issue": "5",
-      "doi": "10.59403/1f0yc7z",
-      "url": "https://doi.org/10.59403/1f0yc7z",
+      "journal": "Journal of Revenue and Pricing Management",
+      "publisher": "Springer Science and Business Media LLC",
+      "volume": "9",
+      "issue": "3",
+      "pages": "204-216",
+      "doi": "10.1057/rpm.2010.12",
+      "url": "https://doi.org/10.1057/rpm.2010.12",
       "api_source": "Crossref"
     },
     {
       "id": "cite_006",
       "authors": [
-        "Bhattacharya"
+        "Qian",
+        "Liu"
       ],
-      "year": 2024,
-      "title": "Strategies to mitigate hallucinations in large language models",
+      "year": 2025,
+      "title": "Socio-Economic Model of AI Agents",
       "source_type": "journal",
       "language": "english",
-      "journal": "Applied Marketing Analytics: The Peer-Reviewed Journal",
-      "publisher": "Henry Stewart Publications",
-      "volume": "10",
-      "issue": "1",
-      "pages": "62",
-      "doi": "10.69554/nxxb8234",
-      "url": "https://doi.org/10.69554/nxxb8234",
-      "api_source": "Crossref"
+      "journal": "arXiv.org",
+      "doi": "10.48550/arXiv.2509.23270",
+      "url": "https://doi.org/10.48550/arXiv.2509.23270",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_007",
       "authors": [
-        "Jayashree",
-        "Joshi",
-        "Arshad M",
-        "P",
-        "V"
+        "Beck",
+        "Beck",
+        "Gunter",
+        "Lalman",
+        "Prather"
       ],
-      "year": 2025,
-      "title": "Intelligent Vegetable Processing and Pricing System: A Comprehensive Framework for Real-Time Market Analysis, Automated Classification, Weight Estimation, and Dynamic Pricing Using AI, Computer Vision, and Cloud -Based APIs",
+      "year": 2024,
+      "title": "406 Impacts of drought on long term cow-calf productivity and potential management strategies for producers to overcome these challenges",
       "source_type": "journal",
       "language": "english",
-      "journal": "SSRN Electronic Journal",
-      "publisher": "Elsevier BV",
-      "doi": "10.2139/ssrn.5075879",
-      "url": "https://doi.org/10.2139/ssrn.5075879",
-      "api_source": "Crossref"
+      "journal": "Journal of Animal Science",
+      "doi": "10.1093/jas/skae234.111",
+      "url": "https://doi.org/10.1093/jas/skae234.111",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_008",
       "authors": [
-        "Kim",
-        "Wi",
-        "Park",
-        "Kim",
-        "Keum",
-        "Kim",
-        "Kim",
-        "Jung",
-        "Kim",
-        "Guerrero",
-        "Goff",
-        "Po",
-        "Moon",
-        "Nam",
-        "Lee"
+        "Sami",
+        "Rasheed",
+        "Kemell",
+        "Waseem",
+        "Kilamo",
+        "Saari",
+        "Nguyen-Duc",
+        "Systä",
+        "Abrahamsson"
       ],
-      "year": 2025,
-      "title": "From Generation to Attribution: Music AI Agent Architectures for the Post-Streaming Era",
+      "year": 2024,
+      "title": "System for systematic literature review using multiple AI agents: Concept and an empirical evaluation",
       "source_type": "journal",
       "language": "english",
       "journal": "arXiv.org",
-      "doi": "10.48550/arXiv.2510.20276",
-      "url": "https://doi.org/10.48550/arXiv.2510.20276",
+      "doi": "10.48550/arXiv.2403.08399",
+      "url": "https://doi.org/10.48550/arXiv.2403.08399",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_009",
       "authors": [
-        "Camps-Aragó",
-        "Delaere",
-        "D’Hauwers"
+        "Yang",
+        "Dai",
+        "Ma",
+        "Liu",
+        "Liu"
       ],
-      "year": 2021,
-      "title": "Value Networks and Monetization Strategies for C-ITS Safety Use Cases",
-      "source_type": "conference",
+      "year": 2020,
+      "title": "A pricing strategy based on potential game and bargaining theory in smart grid",
+      "source_type": "journal",
       "language": "english",
-      "journal": "Proceedings of the 7th International Conference on Vehicle Technology and Intelligent Transport Systems",
-      "publisher": "SCITEPRESS - Science and Technology Publications",
-      "pages": "341-349",
-      "doi": "10.5220/0010404103410349",
-      "url": "https://doi.org/10.5220/0010404103410349",
-      "api_source": "Crossref"
+      "journal": "IET Generation, Transmission & Distribution",
+      "doi": "10.1049/gtd2.12013",
+      "url": "https://doi.org/10.1049/gtd2.12013",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_010",
       "authors": [
-        "Bhogawar"
+        "Bosse",
+        "Siddiqui",
+        "Treur"
       ],
-      "year": 2025,
-      "title": "Agentic Voice AI in Enterprise Call Centers: Data-Driven Cost-Benefit and Strategic Analysis of RAG-Powered Automation in Financial Services and E-commerce",
+      "year": 2010,
+      "title": "Modelling Greed of Agents in Economical Context",
       "source_type": "journal",
       "language": "english",
-      "journal": "World Journal of Advanced Research and Reviews",
-      "doi": "10.30574/wjarr.2025.27.2.2996",
-      "url": "https://doi.org/10.30574/wjarr.2025.27.2.2996",
+      "journal": "International Conference on Industrial, Engineering and Other Applications of Applied Intelligent Systems",
+      "doi": "10.1007/978-3-642-13025-0_43",
+      "url": "https://doi.org/10.1007/978-3-642-13025-0_43",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_011",
+      "authors": [
+        "Chen",
+        "Xiao",
+        "Dai"
+      ],
+      "year": 2023,
+      "title": "Computerized Intelligent Pricing and Replenishment Model for Vegetable Products Based on ARIMA Prediction",
+      "source_type": "conference",
+      "language": "english",
+      "journal": "2023 IEEE International Conference on Electrical, Automation and Computer Engineering (ICEACE)",
+      "doi": "10.1109/ICEACE60673.2023.10442305",
+      "url": "https://doi.org/10.1109/ICEACE60673.2023.10442305",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_012",
+      "authors": [
+        "Chen",
+        "Hu",
+        "Qi",
+        "Masi"
+      ],
+      "year": 2024,
+      "title": "AI-driven dynamic pricing for high-value assets in manufacturing and services: optimizing finite horizon sales with demand sensitivity",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "International Journal of Production Research",
+      "doi": "10.1080/00207543.2024.2430447",
+      "url": "https://doi.org/10.1080/00207543.2024.2430447",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_013",
+      "authors": [
+        "Bidault"
+      ],
+      "year": 1989,
+      "title": "An Empirical Analysis of Technology Pricing",
+      "source_type": "book",
+      "language": "english",
+      "journal": "Technology Pricing",
+      "publisher": "Palgrave Macmillan UK",
+      "pages": "139-160",
+      "doi": "10.1007/978-1-349-10393-5_8",
+      "url": "https://doi.org/10.1007/978-1-349-10393-5_8",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_014",
+      "authors": [
+        "Gupta"
+      ],
+      "year": 2025,
+      "title": "AI-Driven Personalized Pricing Models in E-Commerce: Leveraging Machine Learning for Customer Segmentation and Competitive Pricing Strategies",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "Elsevier BV",
+      "doi": "10.2139/ssrn.5075202",
+      "url": "https://doi.org/10.2139/ssrn.5075202",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_015",
+      "authors": [
+        "Shinde",
+        "Paradkar",
+        "Vig",
+        "Thalnerkar",
+        "Jain"
+      ],
+      "year": 2024,
+      "title": "HELIX: Autonomous AI Agent",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "International Journal for Research in Applied Science and Engineering Technology",
+      "doi": "10.22214/ijraset.2024.61080",
+      "url": "https://doi.org/10.22214/ijraset.2024.61080",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_016",
+      "authors": [
+        "Soleymani"
+      ],
+      "year": 2011,
+      "title": "Strategic bidding of Gencos under two pricing mechanisms: Pay-as-bid and uniform pricing",
+      "source_type": "conference",
+      "language": "english",
+      "journal": "2011 IEEE GCC Conference and Exhibition (GCC)",
+      "publisher": "IEEE",
+      "pages": "657-660",
+      "doi": "10.1109/ieeegcc.2011.5752638",
+      "url": "https://doi.org/10.1109/ieeegcc.2011.5752638",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_017",
+      "authors": [
+        "Goyanes",
+        "Lopezosa",
+        "Piñeiro-Naval"
+      ],
+      "year": 2025,
+      "title": "The use of artificial intelligence (AI) in research: a review of author guidelines in leading journals across eight social science disciplines",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Scientometrics",
+      "doi": "10.1007/s11192-025-05377-0",
+      "url": "https://doi.org/10.1007/s11192-025-05377-0",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_018",
+      "authors": [
+        "Jakieła",
+        "Litwin",
+        "Olech"
+      ],
+      "year": 2012,
+      "title": "INTELLIGENT AGENTS AND MULTI-AGENT SYSTEMS AN AGENT – ORIENTED ELECTRONIC MARKETPLACE FOR MODELING AND SIMULATION OF DYNAMIC PRICING MODELS BUSINESS LOGIC",
+      "source_type": "journal",
+      "language": "english",
+      "url": "https://www.semanticscholar.org/paper/04ec1b56403a82a645e0bd8d098d15c9aba07dd3",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_019",
+      "authors": [
+        "Burken",
+        "Spruit",
+        "Fillerup",
+        "Mouter"
+      ],
+      "year": 2023,
+      "title": "Value Sensitive Design meets Participatory Value Evaluation for autonomous systems in Defence",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Ethics: An International Journal of Social, Political, and Legal Philosophy",
+      "doi": "10.1109/ETHICS57328.2023.10155025",
+      "url": "https://doi.org/10.1109/ETHICS57328.2023.10155025",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_020",
+      "authors": [
+        "Shakya",
+        "Ghribi",
+        "Chopin",
+        "Merghem"
+      ],
+      "year": 2023,
+      "title": "Agent-based Simulation for Placement and Pricing of 5G Network Slices",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Consumer Communications and Networking Conference",
+      "doi": "10.1109/CCNC51644.2023.10059952",
+      "url": "https://doi.org/10.1109/CCNC51644.2023.10059952",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_021",
+      "authors": [
+        "Sibala",
+        "Rivas",
+        "Oguis"
+      ],
+      "year": 2025,
+      "title": "Assessing the Dynamics of the Coffee Value Chain in Davao del Sur: An Agent-Based Modeling Approach",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "arXiv.org",
+      "doi": "10.48550/arXiv.2505.05797",
+      "url": "https://doi.org/10.48550/arXiv.2505.05797",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_022",
+      "authors": [
+        "Ahsan",
+        "Gholizadeh",
+        "Musilek"
+      ],
+      "year": 2025,
+      "title": "Multi-agent systems in networked microgrids: Reinforcement learning and strategic pricing mechanisms",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Renewable Energy",
+      "doi": "10.1016/j.renene.2025.123678",
+      "url": "https://doi.org/10.1016/j.renene.2025.123678",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_023",
+      "authors": [
+        "Ikeda",
+        "Hadfi",
+        "Ito",
+        "Fujihara"
+      ],
+      "year": 2025,
+      "title": "Anomaly detection and facilitation AI to empower decentralized autonomous organizations for secure crypto-asset transactions",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Ai & Society",
+      "doi": "10.1007/s00146-024-02166-w",
+      "url": "https://doi.org/10.1007/s00146-024-02166-w",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_024",
       "authors": [
         "Gazi",
         "Gurung",
@@ -197,7 +407,21 @@
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_012",
+      "id": "cite_025",
+      "authors": [
+        "Kumar"
+      ],
+      "year": 2025,
+      "title": "Detailed Analysis of AI Agents in Carrier Outreach for Freight Brokerage and Carrier Operations",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Transactions on Machine Learning and Artificial Intelligence",
+      "doi": "10.14738/tmlai.1303.18855",
+      "url": "https://doi.org/10.14738/tmlai.1303.18855",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_026",
       "authors": [
         "Karunakaran",
         "Hemasundari",
@@ -214,215 +438,300 @@
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_013",
+      "id": "cite_027",
       "authors": [
-        "Yaipairoj",
-        "Harmantzis"
+        "Chaikovska",
+        "Sapozhnikov"
       ],
-      "year": 2006,
-      "title": "Auction-based Congestion Pricing for Wireless Data Services",
+      "year": 2025,
+      "title": "Development of a pricing strategy and profitable business model for person RE-ID it products",
       "source_type": "journal",
       "language": "english",
-      "journal": "IEEE International Conference on Communications",
-      "doi": "10.1109/ICC.2006.254887",
-      "url": "https://doi.org/10.1109/ICC.2006.254887",
+      "journal": "Marketing and Digital Technologies",
+      "doi": "10.15276/mdt.9.3.2025.11",
+      "url": "https://doi.org/10.15276/mdt.9.3.2025.11",
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_014",
+      "id": "cite_028",
       "authors": [
-        "Peshkova",
-        "Fedorov"
+        "Li",
+        "Lunku",
+        "Yang",
+        "Salim"
+      ],
+      "year": 2024,
+      "title": "The dynamic interplay of foreign direct investment and education expenditure on Sub-Saharan Africa income inequality",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "International Economics and Economic Policy",
+      "doi": "10.1007/s10368-024-00614-y",
+      "url": "https://doi.org/10.1007/s10368-024-00614-y",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_029",
+      "authors": [
+        "Holland",
+        "Mullins",
+        "Cunneen"
+      ],
+      "year": 2021,
+      "title": "Creating Ethics Guidelines for Artificial Intelligence (AI) and Big Data Analytics: The Case of the European Consumer Insurance Market",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Social Science Research Network",
+      "doi": "10.2139/ssrn.3808207",
+      "url": "https://doi.org/10.2139/ssrn.3808207",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_030",
+      "authors": [
+        "Khowaja",
+        "Dev",
+        "Pathan",
+        "Zeydan",
+        "Debbah"
+      ],
+      "year": 2025,
+      "title": "Integration of Agentic AI with 6G Networks for Mission-Critical Applications: Use-case and Challenges",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "arXiv.org",
+      "doi": "10.48550/arXiv.2502.13476",
+      "url": "https://doi.org/10.48550/arXiv.2502.13476",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_031",
+      "authors": [
+        "Ning",
+        "Shi",
+        "Tong"
+      ],
+      "year": 2025,
+      "title": "Value-Based or One-Time? Optimal Pricing Modes for Generative AI Services in E-Commerce Platforms",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "International Journal of Production Economics",
+      "doi": "10.1016/j.ijpe.2025.109828",
+      "url": "https://doi.org/10.1016/j.ijpe.2025.109828",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_032",
+      "authors": [
+        "Feng",
+        "Chodhary",
+        "Shrestha"
+      ],
+      "year": 2025,
+      "title": "Human aversion? Do AI Agents Judge Identity More Harshly Than Performance",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "arXiv.org",
+      "doi": "10.48550/arXiv.2504.13871",
+      "url": "https://doi.org/10.48550/arXiv.2504.13871",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_033",
+      "authors": [
+        "Huang",
+        "Lian",
+        "Lei",
+        "Yao",
+        "Lian",
+        "Xie"
       ],
       "year": 2023,
-      "title": "THE ROLE OF GENERATIVE AI MODELS AND THE PHENOMENON OF GPT-TYPE NEURAL LANGUAGE MODELS IN DETERMINING THE DIGITAL ECONOMY",
+      "title": "Recommender AI Agent: Integrating Large Language Models for Interactive Recommendations",
       "source_type": "journal",
       "language": "english",
-      "journal": "The economy of the North-West: problems and prospects of development",
-      "doi": "10.52897/2411-4588-2023-2-148-153",
-      "url": "https://doi.org/10.52897/2411-4588-2023-2-148-153",
+      "journal": "ACM Trans. Inf. Syst.",
+      "doi": "10.1145/3731446",
+      "url": "https://doi.org/10.1145/3731446",
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_015",
+      "id": "cite_034",
       "authors": [
-        "Salako",
-        "Ojo",
-        "Awe"
-      ],
-      "year": 2024,
-      "title": "Fish-NET: Advancing Aquaculture Management through AI-Enhanced Fish Monitoring and Tracking",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Agris on-line Papers in Economics and Informatics",
-      "doi": "10.7160/aol.2024.160209",
-      "url": "https://doi.org/10.7160/aol.2024.160209",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_016",
-      "authors": [
-        "Rantalaiho"
-      ],
-      "year": 2017,
-      "title": "Challenges in implementing value-based pricing strategy",
-      "source_type": "journal",
-      "language": "english",
-      "url": "https://www.semanticscholar.org/paper/ae39715b8f327158a6451d790537564ac7aa2a97",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_017",
-      "authors": [
-        "Sharma"
-      ],
-      "year": 2024,
-      "title": "AI Monetization: Strategies for Profitable Innovation",
-      "source_type": "book",
-      "language": "english",
-      "journal": "AI and the Boardroom",
-      "publisher": "Apress",
-      "pages": "203-213",
-      "doi": "10.1007/979-8-8688-0796-1_16",
-      "url": "https://doi.org/10.1007/979-8-8688-0796-1_16",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_018",
-      "authors": [
-        "Rajan",
-        "Arango"
+        "Liu",
+        "Liu"
       ],
       "year": 2025,
-      "title": "Multi-Agent AI: From Isolated Agents to Cooperative Ecosystems",
-      "source_type": "report",
-      "language": "english",
-      "publisher": "Elsevier BV",
-      "doi": "10.2139/ssrn.5118817",
-      "url": "https://doi.org/10.2139/ssrn.5118817",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_019",
-      "authors": [
-        "Faheemuddin"
-      ],
-      "year": 2025,
-      "title": "Exploring the Role of Artificial Intelligence in Predicting Property Value Trends: A Systematic Review of Machine Learning Applications in Real Estate Pricing and Risk Assessment",
+      "title": "Evaluating the performance of Q-learning-based AI in auctions",
       "source_type": "journal",
       "language": "english",
-      "journal": "American Journal of Multidisciplinary Research and Innovation",
-      "doi": "10.54536/ajmri.v4i5.4815",
-      "url": "https://doi.org/10.54536/ajmri.v4i5.4815",
+      "journal": "Journal of emerging investigators",
+      "doi": "10.59720/25-073",
+      "url": "https://doi.org/10.59720/25-073",
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_020",
+      "id": "cite_035",
       "authors": [
-        "Ali",
-        "Shaikh",
-        "Izhar",
-        "Seereddi",
-        "Umesh"
+        "Saig",
+        "Einav",
+        "Talgam-Cohen"
       ],
       "year": 2024,
-      "title": "Investigating How Different Pricing Strategies Impact Consumer Perception and Purchase Behavior in Online Markets with Special Reference to Discounts, Bundling",
+      "title": "Incentivizing Quality Text Generation via Statistical Contracts",
       "source_type": "journal",
       "language": "english",
-      "journal": "Journal of Informatics Education and Research",
-      "doi": "10.52783/jier.v4i3.1771",
-      "url": "https://doi.org/10.52783/jier.v4i3.1771",
+      "journal": "Neural Information Processing Systems",
+      "doi": "10.48550/arXiv.2406.11118",
+      "url": "https://doi.org/10.48550/arXiv.2406.11118",
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_021",
+      "id": "cite_036",
       "authors": [
-        "Salehi"
+        "Aid",
+        "Bergault",
+        "Rosenbaum"
       ],
       "year": 2025,
-      "title": "Boardroom AI: The Governance of AI-Assisted Corporate Decision-Making",
+      "title": "Competition and Incentives in a Shared Order Book",
       "source_type": "journal",
       "language": "english",
-      "journal": "Global Journal of Economic and Finance Research",
-      "publisher": "International Journal of Clinical Science and Medical Research",
-      "volume": "02",
-      "issue": "04",
-      "doi": "10.55677/gjefr/08-2025-vol02e4",
-      "url": "https://doi.org/10.55677/gjefr/08-2025-vol02e4",
-      "api_source": "Crossref"
+      "url": "https://www.semanticscholar.org/paper/b10861474022e520d8b6d0b4d52e7b130a1cb418",
+      "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_022",
+      "id": "cite_037",
       "authors": [
-        "Castro",
-        "Hassan",
-        "Rubio",
-        "Halim"
+        "Hajira",
+        "Shahapurkar"
+      ],
+      "year": 2024,
+      "title": "Comparative Analysis of Traditional Wealth Management Services vs. AI-Based Wealth Management Software",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT",
+      "doi": "10.55041/ijsrem37400",
+      "url": "https://doi.org/10.55041/ijsrem37400",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_038",
+      "authors": [
+        "Schelling",
+        "Heesen",
+        "Tautermann",
+        "Wepf",
+        "Federico",
+        "Frei",
+        "Oudenaarde",
+        "Giovanoli",
+        "Bode-Lesniewska",
+        "Studer",
+        "Fuchs",
+        "Network"
+      ],
+      "year": 2024,
+      "title": "Impact of Institutional Practices and Surgical Complexity on Sarcoma Surgery Costs: Driving Efficiency in Value-Based Healthcare",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Cancers",
+      "doi": "10.3390/cancers16122209",
+      "url": "https://doi.org/10.3390/cancers16122209",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_039",
+      "authors": [
+        "Abraham",
+        "Aithal",
+        "Mohan"
       ],
       "year": 2020,
-      "title": "Relative performance of religious and ethical investment funds",
+      "title": "Blockchain and Collaborative Intelligence based next generation Smart Toll Application",
       "source_type": "journal",
       "language": "english",
-      "doi": "10.1108/jiabr-04-2019-0084",
-      "url": "https://doi.org/10.1108/jiabr-04-2019-0084",
+      "journal": "Conference on Blockchain Research & Applications for Innovative Networks and Services",
+      "doi": "10.1109/BRAINS49436.2020.9223296",
+      "url": "https://doi.org/10.1109/BRAINS49436.2020.9223296",
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_023",
-      "authors": [
-        "Neves",
-        "Aparicio",
-        "Neto"
-      ],
-      "year": 2024,
-      "title": "The Impacts of Open Data and eXplainable AI on Real Estate Price Predictions in Smart Cities",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Applied Sciences",
-      "doi": "10.3390/app14052209",
-      "url": "https://doi.org/10.3390/app14052209",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_024",
-      "authors": [
-        "Krishnakumar"
-      ],
-      "year": 2022,
-      "title": "Transforming E-Commerce with Generative AI : Toward Intelligent Demand Forecasting and Adaptive Pricing",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "International Journal of Scientific Research in Science and Technology",
-      "doi": "10.32628/ijsrst2295157",
-      "url": "https://doi.org/10.32628/ijsrst2295157",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_025",
+      "id": "cite_040",
       "authors": [
         "Zhang",
-        "Du",
-        "Liu",
-        "Niyato",
-        "Kang",
-        "Xiong",
-        "Jamalipour",
-        "Kim"
+        "Chen",
+        "Gümrükcü",
+        "Ji",
+        "Ponci",
+        "Monti"
       ],
       "year": 2024,
-      "title": "Generative AI Agents With Large Language Model for Satellite Networks via a Mixture of Experts Transmission",
+      "title": "Advancing Urban Electric Vehicle Charging Stations: AI-Driven Day-ahead Optimization of Pricing and Nudge Strategies Utilizing Multi-Agent Deep Reinforcement Learning",
       "source_type": "journal",
       "language": "english",
-      "journal": "IEEE Journal on Selected Areas in Communications",
-      "doi": "10.1109/JSAC.2024.3459037",
-      "url": "https://doi.org/10.1109/JSAC.2024.3459037",
+      "journal": "eTransportation",
+      "doi": "10.1016/j.etran.2024.100352",
+      "url": "https://doi.org/10.1016/j.etran.2024.100352",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_041",
+      "authors": [
+        "Yu",
+        "Yao",
+        "Zhou",
+        "Fu",
+        "Yu",
+        "Wang",
+        "Wang",
+        "Chen",
+        "Lin"
+      ],
+      "year": 2024,
+      "title": "Data on the Move: Traffic-Oriented Data Trading Platform Powered by AI Agent with Common Sense",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "2024 IEEE Intelligent Vehicles Symposium (IV)",
+      "doi": "10.1109/IV55156.2024.10588800",
+      "url": "https://doi.org/10.1109/IV55156.2024.10588800",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_042",
+      "authors": [
+        "Abraham",
+        "Aithal",
+        "Mohan"
+      ],
+      "year": 2020,
+      "title": "Real time Smart Contracts for IoT using Blockchain and Collaborative Intelligence based Dynamic Pricing for the next generation Smart Toll Application",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "arXiv.org",
+      "url": "https://www.semanticscholar.org/paper/e0a3d8273ddf083470a2391cd66ed64f85427451",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_043",
+      "authors": [
+        "Srinivas",
+        "Vaikunth",
+        "Runkana"
+      ],
+      "year": 2024,
+      "title": "Towards Automated Patent Workflows: AI-Orchestrated Multi-Agent Framework for Intellectual Property Management and Analysis",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "arXiv.org",
+      "doi": "10.48550/arXiv.2409.19006",
+      "url": "https://doi.org/10.48550/arXiv.2409.19006",
       "api_source": "Semantic Scholar"
     }
   ],
   "metadata": {
-    "total_citations": 25,
+    "total_citations": 43,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-17T09:51:00.351053"
+    "extracted_date": "2025-11-17T10:29:49.144711"
   }
 }

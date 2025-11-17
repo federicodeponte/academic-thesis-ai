@@ -304,9 +304,38 @@ class CitationResearcher:
         """
         try:
             # Validate required fields
-            if not metadata.get("title") or not metadata.get("authors") or not metadata.get("year"):
-                logger.debug(f"Invalid metadata: missing required fields")
-                return None
+            # For web sources (Gemini Grounded), only title and URL are required
+            # Academic sources need authors and year
+            is_web_source = source == "Gemini Grounded" or metadata.get("source_type") == "website"
+
+            if is_web_source:
+                # Web sources: require title + (URL or DOI)
+                if not metadata.get("title"):
+                    logger.debug(f"Invalid web source: missing title")
+                    return None
+                if not metadata.get("url") and not metadata.get("doi"):
+                    logger.debug(f"Invalid web source: missing URL/DOI")
+                    return None
+                # Fill in missing academic fields for web sources
+                if not metadata.get("authors"):
+                    # Extract domain as author for web sources
+                    url = metadata.get("url", "")
+                    if url:
+                        from urllib.parse import urlparse
+                        domain = urlparse(url).netloc
+                        domain = domain.replace('www.', '')  # Clean up domain
+                        metadata["authors"] = [domain]
+                    else:
+                        metadata["authors"] = ["Web Source"]
+                if not metadata.get("year"):
+                    # Use current year for undated web sources
+                    from datetime import datetime
+                    metadata["year"] = datetime.now().year
+            else:
+                # Academic sources: require title + authors + year
+                if not metadata.get("title") or not metadata.get("authors") or not metadata.get("year"):
+                    logger.debug(f"Invalid metadata: missing required fields")
+                    return None
 
             citation = Citation(
                 citation_id="temp_id",  # Will be assigned by CitationCompiler

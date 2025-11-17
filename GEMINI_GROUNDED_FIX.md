@@ -14,15 +14,31 @@ User expected to see citations from Google Search grounding appearing in citatio
 - **Gemini Grounded: 0%**
 - Gemini LLM: 0%
 
-## Root Cause (UPDATED - Final Fix)
+## Root Cause (THREE-PART FIX REQUIRED)
 
-**URL unwrapping was still running even when `validate_urls=False`**, causing all grounded sources to be discarded.
-
-### Original Issue (Partially Fixed)
+### Root Cause #1 (Partially Fixed)
 **URL validation timeouts** were causing Gemini Grounded API calls to timeout.
 
-### Deeper Issue (Final Fix)
+### Root Cause #2 (Partially Fixed)
 Even after disabling `validate_urls=False`, the `_unwrap_url()` function was STILL being called unconditionally in `_validate_sources()` at line 319. This function makes HTTP HEAD/GET requests to follow redirects, and when these requests failed (slow redirects, timeouts, server issues), it returned `None`, causing the entire grounded source to be discarded.
+
+### Root Cause #3 (CRITICAL - Final Fix)
+**Code required BOTH `url` AND `title` to add grounded sources**, but API returns grounding chunks with URLs that may NOT have titles. This caused 100% of successfully retrieved grounding chunks to be discarded.
+
+**Evidence from debug logs**:
+- API succeeded: ✓
+- Grounding chunks returned: 9, 1, 6, 6, 3, etc. per query
+- Web search queries executed: `['BCG white paper...', 'OECD...']`
+- **But final result**: `❌ No citation found` (all sources discarded!)
+
+**The smoking gun** (line 279-280):
+```python
+# BEFORE (BUGGY):
+if source.get('url') and source.get('title'):  # ❌ Requires BOTH
+    sources.append(source)  # Discarded if title missing!
+```
+
+This strict requirement meant that even when Google Search grounding successfully found and returned sources, they were all being thrown away because they didn't have titles in the grounding chunk metadata.
 
 ### Technical Details
 
@@ -60,7 +76,7 @@ Web search queries used: [...]
 ✗  # <-- No debug output, means exception/timeout
 ```
 
-## The Fix (TWO-PART)
+## The Fix (THREE-PART)
 
 ### Part 1: Disable URL Validation in Orchestrator
 **File**: `utils/api_citations/orchestrator.py` line 85-88
@@ -184,3 +200,41 @@ After this fix, thesis regenerations should show:
 - Total citations: 10-20% increase
 
 Industry queries will now successfully return web citations from Google Search grounding.
+
+### Part 3: Only Require URL Not Title for Grounded Sources
+**File**: `utils/api_citations/gemini_grounded.py` line 272-288
+
+```python
+# BEFORE (BUGGY):
+if uri:
+    source['url'] = uri
+if title:
+    source['title'] = title
+
+if source.get('url') and source.get('title'):  # ❌ Requires BOTH!
+    sources.append(source)  # Discarded if title missing!
+else:
+    print(f"DEBUG: ❌ Chunk missing url or title")
+
+# AFTER (FULLY FIXED):
+if uri:
+    source['url'] = uri
+    source['title'] = title if title else uri  # Fallback to URL as title
+
+if source.get('url'):  # ✅ Only URL required
+    sources.append(source)
+    print(f"DEBUG: ✅ Chunk added to sources!")
+else:
+    print(f"DEBUG: ❌ Chunk missing url")
+```
+
+**Commit**: afa0ccf
+
+**Why This Matters**:
+- Google Search grounding returns valid URLs in grounding chunks
+- But chunks may not always include title metadata
+- The title is not essential - we can use the URL as title or extract it later
+- Requiring BOTH fields caused 100% loss of grounded sources
+
+**Result**: ALL grounding chunks (1-9 per query) now successfully added to sources!
+

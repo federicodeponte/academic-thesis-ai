@@ -318,15 +318,21 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
             if self._is_forbidden_domain(url):
                 continue
 
-            # Unwrap redirects only if URL validation is enabled
-            if self.validate_urls:
+            # ALWAYS unwrap grounding-api-redirect URLs to get real destination
+            # But skip HTTP validation to prevent timeouts
+            if 'grounding-api-redirect' in url or 'vertexaisearch.cloud.google.com' in url:
+                final_url = self._unwrap_url(url)
+                if not final_url:
+                    continue  # Failed to unwrap, skip this source
+            elif self.validate_urls:
+                # For non-grounding URLs, validate only if enabled
                 final_url = self._unwrap_url(url)
                 if not final_url:
                     continue
                 if not self._validate_url(final_url):
                     continue
             else:
-                # Skip unwrapping/validation - use URL as-is from Google grounding
+                # Use URL as-is (no unwrapping, no validation)
                 final_url = url
 
             # Build validated source metadata

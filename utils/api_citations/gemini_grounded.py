@@ -228,12 +228,19 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
             # Check for candidates in response
             candidates = response_data.get('candidates', [])
             if not candidates:
+                print(f"❌ DEBUG: NO CANDIDATES in response!")
+                print(f"DEBUG: Response keys: {list(response_data.keys())}")
                 return sources
 
             candidate = candidates[0]
+            print(f"DEBUG: Candidate keys: {list(candidate.keys())}")
 
             # Extract grounding metadata (matching gtm-os-v2 pattern)
             grounding_metadata = candidate.get('groundingMetadata')
+
+            if not grounding_metadata:
+                print(f"❌ DEBUG: NO groundingMetadata in candidate!")
+                print(f"DEBUG: Full candidate structure: {candidate}")
 
             if grounding_metadata:
                 # Extract from grounding chunks

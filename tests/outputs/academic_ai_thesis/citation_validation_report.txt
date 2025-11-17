@@ -1,0 +1,20 @@
+
+================================================================================
+CITATION VALIDATION REPORT: Open Source Thesis
+================================================================================
+
+❌ CRITICAL ISSUES (3):
+--------------------------------------------------------------------------------
+
+[cite_007] DOI not found: 10.48550/arXiv.2505.03049
+  Zimmermann, Bazgir et al. (2025) - 34 Examples of LLM Applications in Materials Science and Che...
+
+[cite_016] DOI not found: 10.48550/arXiv.2412.11948
+  Idahl, Ahmadi (2024) - OpenReviewer: A Specialized Large Language Model for Generat...
+
+[cite_026] DOI not found: 10.48550/arXiv.2405.06563
+  Kuznetsov, Afzal et al. (2024) - What Can Natural Language Processing Do for Peer Review?...
+
+================================================================================
+TOTAL ISSUES: 3 (3 critical, 0 warnings)
+================================================================================

@@ -184,18 +184,9 @@ class GeminiGroundedClient(BaseAPIClient):
 
             data = response.json()
 
-            # DEBUG: Print raw API response structure
-            print(f"\n{'='*80}")
-            print(f"DEBUG: Raw Gemini API Response for query: {prompt[:60]}...")
-            print(f"{'='*80}")
-            import json
-            print(json.dumps(data, indent=2)[:3000])  # First 3000 chars
-            print(f"{'='*80}\n")
-
             # Check for valid response
             if not data.get('candidates'):
-                print(f"❌ NO CANDIDATES in response!")
-                print(f"Response keys: {list(data.keys())}")
+                print(f"No candidates in response: {data}")
                 return None
 
             return data
@@ -237,45 +228,25 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
             # Check for candidates in response
             candidates = response_data.get('candidates', [])
             if not candidates:
-                print(f"❌ DEBUG: NO CANDIDATES in response!")
-                print(f"DEBUG: Response keys: {list(response_data.keys())}")
                 return sources
 
             candidate = candidates[0]
-            print(f"DEBUG: Candidate keys: {list(candidate.keys())}")
 
             # Extract grounding metadata (matching gtm-os-v2 pattern)
             grounding_metadata = candidate.get('groundingMetadata')
-
-            if not grounding_metadata:
-                print(f"❌ DEBUG: NO groundingMetadata in candidate!")
-                print(f"DEBUG: Full candidate structure: {candidate}")
 
             if grounding_metadata:
                 # Extract from grounding chunks
                 grounding_chunks = grounding_metadata.get('groundingChunks', [])
 
-                # DEBUG: Print what we got
-                print(f"DEBUG: Grounding metadata keys: {list(grounding_metadata.keys())}")
-                print(f"DEBUG: Number of grounding chunks: {len(grounding_chunks)}")
-
-                if not grounding_chunks:
-                    print(f"DEBUG: No grounding chunks! Full metadata: {grounding_metadata}")
-
-                for idx, chunk in enumerate(grounding_chunks, 1):
-                    # DEBUG: Print chunk structure
-                    print(f"DEBUG: Chunk #{idx} keys: {list(chunk.keys())}")
-                    print(f"DEBUG: Chunk #{idx} content: {chunk}")
-
+                for chunk in grounding_chunks:
                     source = {}
 
                     # Extract web source details
                     web = chunk.get('web', {})
                     if web:
-                        print(f"DEBUG: Chunk #{idx} 'web' keys: {list(web.keys())}")
                         uri = web.get('uri')
                         title = web.get('title')
-                        print(f"DEBUG: Chunk #{idx} uri={uri}, title={title}")
 
                         if uri:
                             source['url'] = uri
@@ -283,14 +254,6 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
 
                         if source.get('url'):  # Only URL required
                             sources.append(source)
-                            print(f"DEBUG: ✅ Chunk #{idx} added to sources!")
-                        else:
-                            print(f"DEBUG: ❌ Chunk #{idx} missing url")
-
-                # Also check webSearchQueries if available
-                web_search_queries = grounding_metadata.get('webSearchQueries', [])
-                if web_search_queries:
-                    print(f"Web search queries used: {web_search_queries}")
 
             # Also extract from text content as fallback
             content = candidate.get('content', {})

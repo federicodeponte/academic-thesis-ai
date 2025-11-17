@@ -15,6 +15,11 @@ try:
 except ImportError:
     requests = None
 
+try:
+    from dotenv import load_dotenv
+except ImportError:
+    load_dotenv = None
+
 from .base import BaseAPIClient
 
 
@@ -56,6 +61,10 @@ class GeminiGroundedClient(BaseAPIClient):
             forbidden_domains: List of domains to filter out
             validate_urls: Whether to validate URLs return HTTP 200
         """
+        # Load .env file to ensure API key is available
+        if load_dotenv is not None:
+            load_dotenv()
+
         super().__init__(
             api_key=api_key or os.getenv('GOOGLE_API_KEY'),
             base_url='https://generativelanguage.googleapis.com/v1beta/models',

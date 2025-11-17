@@ -111,3 +111,7 @@ credentials.json
 # Documentation builds
 docs/_build/
 site/
+
+# Log files
+logs/*.log
+logs/*.log.[0-9]*

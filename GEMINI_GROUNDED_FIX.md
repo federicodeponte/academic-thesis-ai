@@ -14,9 +14,15 @@ User expected to see citations from Google Search grounding appearing in citatio
 - **Gemini Grounded: 0%**
 - Gemini LLM: 0%
 
-## Root Cause
+## Root Cause (UPDATED - Final Fix)
 
-**URL validation timeouts** were causing Gemini Grounded API calls to fail silently.
+**URL unwrapping was still running even when `validate_urls=False`**, causing all grounded sources to be discarded.
+
+### Original Issue (Partially Fixed)
+**URL validation timeouts** were causing Gemini Grounded API calls to timeout.
+
+### Deeper Issue (Final Fix)
+Even after disabling `validate_urls=False`, the `_unwrap_url()` function was STILL being called unconditionally in `_validate_sources()` at line 319. This function makes HTTP HEAD/GET requests to follow redirects, and when these requests failed (slow redirects, timeouts, server issues), it returned `None`, causing the entire grounded source to be discarded.
 
 ### Technical Details
 
@@ -54,22 +60,57 @@ Web search queries used: [...]
 ✗  # <-- No debug output, means exception/timeout
 ```
 
-## The Fix
+## The Fix (TWO-PART)
 
+### Part 1: Disable URL Validation in Orchestrator
 **File**: `utils/api_citations/orchestrator.py` line 85-88
-
-**Change**: Disable URL validation for Gemini Grounded
 
 ```python
 # BEFORE (BUGGY):
 self.gemini_grounded = GeminiGroundedClient()
 
-# AFTER (FIXED):
+# AFTER (PARTIALLY FIXED):
 self.gemini_grounded = GeminiGroundedClient(
     validate_urls=False,  # Disable URL validation to prevent timeouts
-    timeout=120  # Keep standard timeout
+    timeout=60  # Flash model is fast (~15s per query)
 )
 ```
+
+**Status**: Fixed timeouts, but citations STILL 0% because URL unwrapping was still running.
+
+### Part 2: Skip URL Unwrapping When validate_urls=False
+**File**: `utils/api_citations/gemini_grounded.py` line 318-327
+
+```python
+# BEFORE (BUGGY):
+# Unwrap redirects
+final_url = self._unwrap_url(url)  # ❌ ALWAYS called, even when validate_urls=False
+if not final_url:
+    continue
+
+# Validate URL if enabled
+if self.validate_urls:
+    if not self._validate_url(final_url):
+        continue
+
+# AFTER (FULLY FIXED):
+# Unwrap redirects only if URL validation is enabled
+if self.validate_urls:
+    final_url = self._unwrap_url(url)
+    if not final_url:
+        continue
+    if not self._validate_url(final_url):
+        continue
+else:
+    # Skip unwrapping/validation - use URL as-is from Google grounding
+    final_url = url
+```
+
+**Why This Matters**:
+- Google Search grounding already returns valid, accessible URLs
+- URL unwrapping adds latency (HEAD/GET requests)
+- Redirect failures (server issues, rate limits) would discard perfectly good sources
+- Many grounded URLs work fine without unwrapping
 
 ## Verification
 
@@ -104,9 +145,15 @@ Completion time: ~15s
 
 ## Files Modified
 
-1. `utils/api_citations/orchestrator.py` - Added `validate_urls=False, timeout=60` to GeminiGroundedClient initialization
-2. `utils/api_citations/gemini_grounded.py` - Using `gemini-2.5-flash` model
-3. `utils/deep_research.py` - Using `gemini-2.5-flash` model
+1. `utils/api_citations/orchestrator.py` (Commit: bcbd52b)
+   - Added `validate_urls=False, timeout=60` to GeminiGroundedClient initialization
+
+2. `utils/api_citations/gemini_grounded.py` (Commits: 70fd4e0, d6d939b)
+   - Using `gemini-2.5-flash` model (fast, 15s per query)
+   - **CRITICAL FIX**: Skip URL unwrapping when `validate_urls=False`
+
+3. `utils/deep_research.py` (Commits: 8bf2012, cf5bcb4)
+   - Using `gemini-2.5-flash` model (matches gtm-backend)
 
 ## Final Configuration (Matching gtm-power-app-backend)
 

@@ -184,9 +184,18 @@ class GeminiGroundedClient(BaseAPIClient):
 
             data = response.json()
 
+            # DEBUG: Print raw API response structure
+            print(f"\n{'='*80}")
+            print(f"DEBUG: Raw Gemini API Response for query: {prompt[:60]}...")
+            print(f"{'='*80}")
+            import json
+            print(json.dumps(data, indent=2)[:3000])  # First 3000 chars
+            print(f"{'='*80}\n")
+
             # Check for valid response
             if not data.get('candidates'):
-                print(f"No candidates in response: {data}")
+                print(f"❌ NO CANDIDATES in response!")
+                print(f"Response keys: {list(data.keys())}")
                 return None
 
             return data
@@ -254,21 +263,29 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
                     print(f"DEBUG: No grounding chunks! Full metadata: {grounding_metadata}")
 
                 for idx, chunk in enumerate(grounding_chunks, 1):
+                    # DEBUG: Print chunk structure
+                    print(f"DEBUG: Chunk #{idx} keys: {list(chunk.keys())}")
+                    print(f"DEBUG: Chunk #{idx} content: {chunk}")
+
                     source = {}
 
                     # Extract web source details
                     web = chunk.get('web', {})
                     if web:
+                        print(f"DEBUG: Chunk #{idx} 'web' keys: {list(web.keys())}")
                         uri = web.get('uri')
                         title = web.get('title')
+                        print(f"DEBUG: Chunk #{idx} uri={uri}, title={title}")
 
                         if uri:
                             source['url'] = uri
-                        if title:
-                            source['title'] = title
+                            source['title'] = title if title else uri  # Use URL as title if title missing
 
-                        if source.get('url') and source.get('title'):
+                        if source.get('url'):  # Only URL required
                             sources.append(source)
+                            print(f"DEBUG: ✅ Chunk #{idx} added to sources!")
+                        else:
+                            print(f"DEBUG: ❌ Chunk #{idx} missing url")
 
                 # Also check webSearchQueries if available
                 web_search_queries = grounding_metadata.get('webSearchQueries', [])

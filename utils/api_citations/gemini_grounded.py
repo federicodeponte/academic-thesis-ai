@@ -239,6 +239,13 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
                 # Extract from grounding chunks
                 grounding_chunks = grounding_metadata.get('groundingChunks', [])
 
+                # DEBUG: Print what we got
+                print(f"DEBUG: Grounding metadata keys: {list(grounding_metadata.keys())}")
+                print(f"DEBUG: Number of grounding chunks: {len(grounding_chunks)}")
+
+                if not grounding_chunks:
+                    print(f"DEBUG: No grounding chunks! Full metadata: {grounding_metadata}")
+
                 for idx, chunk in enumerate(grounding_chunks, 1):
                     source = {}
 

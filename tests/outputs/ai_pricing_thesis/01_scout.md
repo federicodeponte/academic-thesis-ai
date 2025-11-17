@@ -2,14 +2,14 @@
 
 ## Summary
 
-**Total Valid Citations**: 44
-**Success Rate**: 71.0%
-**Failed Topics**: 18
+**Total Valid Citations**: 25
+**Success Rate**: 45.5%
+**Failed Topics**: 30
 
 ### Sources Breakdown
 
-- **Crossref**: 7 (15.9%)
-- **Semantic Scholar**: 37 (84.1%)
+- **Crossref**: 10 (40.0%)
+- **Semantic Scholar**: 15 (60.0%)
 - **Gemini Grounded**: 0 (0.0%)
 - **Gemini LLM**: 0 (0.0%)
 
@@ -17,273 +17,159 @@
 
 ## Citations Found
 
-### From Crossref (7 citations)
+### From Crossref (10 citations)
 
-#### 1. Calibration of Derivative Pricing Models: a Multi-Agent Reinforcement Learning Perspective
-**Authors**: Vadori
-**Year**: 2023
-**DOI**: 10.1145/3604237.3626837
-**URL**: https://doi.org/10.1145/3604237.3626837
+#### 1. Architecting Agentic AI Systems with a Well-Architected Framework
+**Authors**: Ranjan, Chembachere, Lobo
+**Year**: 2025
+**DOI**: 10.1007/979-8-8688-1542-3_2
+**URL**: https://doi.org/10.1007/979-8-8688-1542-3_2
 
-#### 2. AI Monetization: Strategies for Profitable Innovation
-**Authors**: Sharma
-**Year**: 2024
-**DOI**: 10.1007/979-8-8688-0796-1_16
-**URL**: https://doi.org/10.1007/979-8-8688-0796-1_16
+#### 2. AI Pricing, Agent Heterogeneity, and Collusion
+**Authors**: Keppo, Li, Tsoukalas, Yuan
+**Year**: 2025
+**DOI**: 10.2139/ssrn.5386338
+**URL**: https://doi.org/10.2139/ssrn.5386338
 
-#### 3. IT Data-Driven and AI Intercompany Services in Multinational Banks: The Border in Their Regulation between Low Value-Adding and High-Value Services
+#### 3. Beyond WEIRD Bias: Why Token-Based Legal AI Cannot Model Post-Colonial Compliance Dynamics
+**Authors**: Lerer
+**Year**: 2025
+**DOI**: 10.2139/ssrn.5584450
+**URL**: https://doi.org/10.2139/ssrn.5584450
+
+#### 4. IT Data-Driven and AI Intercompany Services in Multinational Banks: The Border in Their Regulation between Low Value-Adding and High-Value Services
 **Authors**: Rossi
 **Year**: 2024
 **DOI**: 10.59403/1f0yc7z
 **URL**: https://doi.org/10.59403/1f0yc7z
 
-#### 4. Around meta-analysis (15): emerging Large Language Models (LLM) tools
-**Authors**: Lagisz
+#### 5. Strategies to mitigate hallucinations in large language models
+**Authors**: Bhattacharya
 **Year**: 2024
-**DOI**: 10.53962/krmv-p5c5
-**URL**: https://doi.org/10.53962/krmv-p5c5
+**DOI**: 10.69554/nxxb8234
+**URL**: https://doi.org/10.69554/nxxb8234
 
-#### 5. Adversarial Attacks on Agentic AI Systems: Mechanisms, Impacts, and Defense Strategies
-**Authors**: Kishore Chakrabarty
+#### 6. Intelligent Vegetable Processing and Pricing System: A Comprehensive Framework for Real-Time Market Analysis, Automated Classification, Weight Estimation, and Dynamic Pricing Using AI, Computer Vision, and Cloud -Based APIs
+**Authors**: Jayashree, Joshi, Arshad M, P, V
 **Year**: 2025
-**DOI**: 10.21275/sr25417074844
-**URL**: https://doi.org/10.21275/sr25417074844
+**DOI**: 10.2139/ssrn.5075879
+**URL**: https://doi.org/10.2139/ssrn.5075879
 
-#### 6. Chapter 7 Pricing Models in Autonomous Manufacturing
-**Authors**: Fazlollahtabar, Saidi-Mehrabad
-**Year**: 2019
-**DOI**: 10.1108/978-1-78973-469-020191007
-**URL**: https://doi.org/10.1108/978-1-78973-469-020191007
+#### 7. Value Networks and Monetization Strategies for C-ITS Safety Use Cases
+**Authors**: Camps-Aragó, Delaere, D’Hauwers
+**Year**: 2021
+**DOI**: 10.5220/0010404103410349
+**URL**: https://doi.org/10.5220/0010404103410349
 
-#### 7. NUBB
-**Authors**: Walters
-**Year**: 2005
-**DOI**: 10.1145/1099435.1099529
-**URL**: https://doi.org/10.1145/1099435.1099529
+#### 8. AI Monetization: Strategies for Profitable Innovation
+**Authors**: Sharma
+**Year**: 2024
+**DOI**: 10.1007/979-8-8688-0796-1_16
+**URL**: https://doi.org/10.1007/979-8-8688-0796-1_16
 
-### From Semantic Scholar (37 citations)
-
-#### 1. From Economics to AI: Integrating Discretionary and Quantitative Approaches in Asset Management
-**Authors**: Rudin, Yelnik, Antolin–Diaz, Fabozzi, Shaikh
+#### 9. Multi-Agent AI: From Isolated Agents to Cooperative Ecosystems
+**Authors**: Rajan, Arango
 **Year**: 2025
-**DOI**: 10.3905/jpm.2025.1.737
-**URL**: https://doi.org/10.3905/jpm.2025.1.737
+**DOI**: 10.2139/ssrn.5118817
+**URL**: https://doi.org/10.2139/ssrn.5118817
 
-#### 2. The Use of AI in Economic Forecasting
-**Authors**: Omondi
+#### 10. Boardroom AI: The Governance of AI-Assisted Corporate Decision-Making
+**Authors**: Salehi
 **Year**: 2025
-**DOI**: 10.47941/ijecop.2990
-**URL**: https://doi.org/10.47941/ijecop.2990
+**DOI**: 10.55677/gjefr/08-2025-vol02e4
+**URL**: https://doi.org/10.55677/gjefr/08-2025-vol02e4
 
-#### 3. Contracting Theory with Competitive Interacting Agents
-**Authors**: Élie, Possamaï
-**Year**: 2016
-**DOI**: 10.1137/17M1121202
-**URL**: https://doi.org/10.1137/17M1121202
+### From Semantic Scholar (15 citations)
 
-#### 4. Game Theory Based Optimal Pricing Strategy for V2G Participating in Demand Response
-**Authors**: Chen, Han, Xin, Zhang, Ren, Wang
+#### 1. AI knows best? Avoiding the traps of paternalism and other pitfalls of AI-based patient preference prediction
+**Authors**: Ferrario, Gloeckler, Biller-Andorno
 **Year**: 2023
-**DOI**: 10.1109/TIA.2023.3273209
-**URL**: https://doi.org/10.1109/TIA.2023.3273209
+**DOI**: 10.1136/jme-2023-108945
+**URL**: https://doi.org/10.1136/jme-2023-108945
 
-#### 5. From Perception to Purchase: How AI Literacy Shapes Consumer Decisions in AI-Generated Sponsored Vlogs Across Products and Services
-**Authors**: Liu, Osman, Lian, Wel, Hamid
+#### 2. From Generation to Attribution: Music AI Agent Architectures for the Post-Streaming Era
+**Authors**: Kim, Wi, Park, Kim, Keum, Kim, Kim, Jung, Kim, Guerrero, Goff, Po, Moon, Nam, Lee
 **Year**: 2025
-**DOI**: 10.3390/jtaer20040302
-**URL**: https://doi.org/10.3390/jtaer20040302
+**DOI**: 10.48550/arXiv.2510.20276
+**URL**: https://doi.org/10.48550/arXiv.2510.20276
 
-#### 6. AI-Driven Ethical Pricing: Balancing Profitability and Social Responsibility
-**Authors**: Ramakrishnan
+#### 3. Agentic Voice AI in Enterprise Call Centers: Data-Driven Cost-Benefit and Strategic Analysis of RAG-Powered Automation in Financial Services and E-commerce
+**Authors**: Bhogawar
 **Year**: 2025
-**DOI**: 10.32628/cseit25111220
-**URL**: https://doi.org/10.32628/cseit25111220
+**DOI**: 10.30574/wjarr.2025.27.2.2996
+**URL**: https://doi.org/10.30574/wjarr.2025.27.2.2996
 
-#### 7. Ethical Considerations in AI-driven Dynamic Pricing in the USA: Balancing Profit Maximization with Consumer Fairness and Transparency
+#### 4. Ethical Considerations in AI-driven Dynamic Pricing in the USA: Balancing Profit Maximization with Consumer Fairness and Transparency
 **Authors**: Gazi, Gurung, Mitra, Hasan
 **Year**: 2024
 **DOI**: 10.32996/jefas.2024.6.2.8
 **URL**: https://doi.org/10.32996/jefas.2024.6.2.8
 
-#### 8. Evolution of Tax Exemption Policy and Pricing Strategy Selection in a Competitive Market
-**Authors**: Yang, Yang, Huang, Song
+#### 5. Integrating AI and ML for Dynamic Pricing Strategies: Innovations in Marketing Analytics and Revenue Management
+**Authors**: Karunakaran, Hemasundari, Suguna, Thandauthapani
 **Year**: 2024
-**DOI**: 10.3390/math12132082
-**URL**: https://doi.org/10.3390/math12132082
+**DOI**: 10.1109/ICPECTS62210.2024.10780375
+**URL**: https://doi.org/10.1109/ICPECTS62210.2024.10780375
 
-#### 9. Retail pricing models
-**Authors**: Yeoman
+#### 6. Auction-based Congestion Pricing for Wireless Data Services
+**Authors**: Yaipairoj, Harmantzis
+**Year**: 2006
+**DOI**: 10.1109/ICC.2006.254887
+**URL**: https://doi.org/10.1109/ICC.2006.254887
+
+#### 7. THE ROLE OF GENERATIVE AI MODELS AND THE PHENOMENON OF GPT-TYPE NEURAL LANGUAGE MODELS IN DETERMINING THE DIGITAL ECONOMY
+**Authors**: Peshkova, Fedorov
 **Year**: 2023
-**DOI**: 10.1057/s41272-023-00433-x
-**URL**: https://doi.org/10.1057/s41272-023-00433-x
+**DOI**: 10.52897/2411-4588-2023-2-148-153
+**URL**: https://doi.org/10.52897/2411-4588-2023-2-148-153
 
-#### 10. Adaptive Price Optimization: Leveraging Google Cloud AI for Real-Time Retail Transformation
-**Authors**: Vetsa, Kovvuri, Kanamarlapudi, Barmavat, Karey, S.
-**Year**: 2025
-**DOI**: 10.1109/ICICV64824.2025.11086002
-**URL**: https://doi.org/10.1109/ICICV64824.2025.11086002
-
-#### 11. Leveraging AI to Revolutionize Subscription Business Models
-**Authors**: Nagubandi
+#### 8. Fish-NET: Advancing Aquaculture Management through AI-Enhanced Fish Monitoring and Tracking
+**Authors**: Salako, Ojo, Awe
 **Year**: 2024
-**DOI**: 10.32628/cseit241051052
-**URL**: https://doi.org/10.32628/cseit241051052
+**DOI**: 10.7160/aol.2024.160209
+**URL**: https://doi.org/10.7160/aol.2024.160209
 
-#### 12. Microsoft Azure vs. Google Cloud Platform: An In-Depth Review of Services, Pricing, and Performance
-**Authors**: Rohatgi
-**Year**: 2025
-**DOI**: 10.37082/ijirmps.v13.i1.232021
-**URL**: https://doi.org/10.37082/ijirmps.v13.i1.232021
-
-#### 13. Business Case for a Regional AI-Based Marketplace for Renewable Energies
-**Authors**: Holzinger, Nagl, Bozem, Lecon, Ensinger, Roessler, Neufeld
-**Year**: 2025
-**DOI**: 10.3390/su17041739
-**URL**: https://doi.org/10.3390/su17041739
-
-#### 14. Fault-tolerant Mechanisms and Dynamic User Guidance for Proactive AI Agents in Enterprise SaaS Environments
-**Authors**: Chu
-**Year**: 2025
-**DOI**: 10.54254/2755-2721/2025.tj23597
-**URL**: https://doi.org/10.54254/2755-2721/2025.tj23597
-
-#### 15. Policy Frameworks for Transparent Chain-of-Thought Reasoning in Large Language Models
-**Authors**: Chen, Deng, Han, Zhao
-**Year**: 2025
-**DOI**: 10.48550/arXiv.2503.14521
-**URL**: https://doi.org/10.48550/arXiv.2503.14521
-
-#### 16. Business Model Canvas to Create and Capture AI-enabled Public Value
-**Authors**: Fatima, Desouza, Buck, Fielt
-**Year**: 2021
-**DOI**: 10.24251/HICSS.2021.283
-**URL**: https://doi.org/10.24251/HICSS.2021.283
-
-#### 17. EconWebArena: Benchmarking Autonomous Agents on Economic Tasks in Realistic Web Environments
-**Authors**: Liu, Quan
-**Year**: 2025
-**DOI**: 10.48550/arXiv.2506.08136
-**URL**: https://doi.org/10.48550/arXiv.2506.08136
-
-#### 18. Real time Smart Contracts for IoT using Blockchain and Collaborative Intelligence based Dynamic Pricing for the next generation Smart Toll Application
-**Authors**: Abraham, Aithal, Mohan
-**Year**: 2020
+#### 9. Challenges in implementing value-based pricing strategy
+**Authors**: Rantalaiho
+**Year**: 2017
 **DOI**: 
-**URL**: https://www.semanticscholar.org/paper/e0a3d8273ddf083470a2391cd66ed64f85427451
+**URL**: https://www.semanticscholar.org/paper/ae39715b8f327158a6451d790537564ac7aa2a97
 
-#### 19. Towards Automated Patent Workflows: AI-Orchestrated Multi-Agent Framework for Intellectual Property Management and Analysis
-**Authors**: Srinivas, Vaikunth, Runkana
+#### 10. Exploring the Role of Artificial Intelligence in Predicting Property Value Trends: A Systematic Review of Machine Learning Applications in Real Estate Pricing and Risk Assessment
+**Authors**: Faheemuddin
+**Year**: 2025
+**DOI**: 10.54536/ajmri.v4i5.4815
+**URL**: https://doi.org/10.54536/ajmri.v4i5.4815
+
+#### 11. Investigating How Different Pricing Strategies Impact Consumer Perception and Purchase Behavior in Online Markets with Special Reference to Discounts, Bundling
+**Authors**: Ali, Shaikh, Izhar, Seereddi, Umesh
 **Year**: 2024
-**DOI**: 10.48550/arXiv.2409.19006
-**URL**: https://doi.org/10.48550/arXiv.2409.19006
+**DOI**: 10.52783/jier.v4i3.1771
+**URL**: https://doi.org/10.52783/jier.v4i3.1771
 
-#### 20. Evolving Data Privacy Norms: Impact and Implications for Energy Internet Pricing Schemes
-**Authors**: Rao, Lalitha, Rajalakshmi, Gupta, Alzubaidi, Sharma
+#### 12. Relative performance of religious and ethical investment funds
+**Authors**: Castro, Hassan, Rubio, Halim
+**Year**: 2020
+**DOI**: 10.1108/jiabr-04-2019-0084
+**URL**: https://doi.org/10.1108/jiabr-04-2019-0084
+
+#### 13. The Impacts of Open Data and eXplainable AI on Real Estate Price Predictions in Smart Cities
+**Authors**: Neves, Aparicio, Neto
 **Year**: 2024
-**DOI**: 10.1109/CSNT60213.2024.10545944
-**URL**: https://doi.org/10.1109/CSNT60213.2024.10545944
+**DOI**: 10.3390/app14052209
+**URL**: https://doi.org/10.3390/app14052209
 
-#### 21. Analysis of AI Customer Service Application Strategy of E-commerce Platform based on Hotelling Model
-**Authors**: Zhu, Zhao, Li, Jiao, Nie
-**Year**: 2025
-**DOI**: 10.54691/ne65m961
-**URL**: https://doi.org/10.54691/ne65m961
-
-#### 22. Development of a pricing strategy and profitable business model for person RE-ID it products
-**Authors**: Chaikovska, Sapozhnikov
-**Year**: 2025
-**DOI**: 10.15276/mdt.9.3.2025.11
-**URL**: https://doi.org/10.15276/mdt.9.3.2025.11
-
-#### 23. Open Source at a Crossroads: The Future of Licensing Driven by Monetization
-**Authors**: Kula, Treude
-**Year**: 2025
-**DOI**: 10.48550/arXiv.2503.02817
-**URL**: https://doi.org/10.48550/arXiv.2503.02817
-
-#### 24. The Agentic Economy
-**Authors**: Rothschild, Mobius, Hofman, Dillon, Goldstein, Immorlica, Jaffe, Lucier, Slivkins, Vogel
-**Year**: 2025
-**DOI**: 10.48550/arXiv.2505.15799
-**URL**: https://doi.org/10.48550/arXiv.2505.15799
-
-#### 25. Machine-Readable Ads: Accessibility and Trust Patterns for AI Web Agents interacting with Online Advertisements
-**Authors**: Nitu, Mühle, Stöckl
-**Year**: 2025
-**DOI**: 10.48550/arXiv.2507.12844
-**URL**: https://doi.org/10.48550/arXiv.2507.12844
-
-#### 26. The Rise of AI Pricing: Trends, Driving Forces, and Implications for Firm Performance
-**Authors**: Adams, Fang, Liu, Wang
-**Year**: 2024
-**DOI**: 10.24148/wp2024-33
-**URL**: https://doi.org/10.24148/wp2024-33
-
-#### 27. Transparency for AI systems: a value-based approach
-**Authors**: Buijsman
-**Year**: 2024
-**DOI**: 10.1007/s10676-024-09770-w
-**URL**: https://doi.org/10.1007/s10676-024-09770-w
-
-#### 28. Dynamic Pricing Scheme for Edge Computing Services: A Two-layer Reinforcement Learning Approach
-**Authors**: Lyu, Cai, Wu, Lu, Duan, Ren
+#### 14. Transforming E-Commerce with Generative AI : Toward Intelligent Demand Forecasting and Adaptive Pricing
+**Authors**: Krishnakumar
 **Year**: 2022
-**DOI**: 10.1109/IWQoS54832.2022.9812869
-**URL**: https://doi.org/10.1109/IWQoS54832.2022.9812869
+**DOI**: 10.32628/ijsrst2295157
+**URL**: https://doi.org/10.32628/ijsrst2295157
 
-#### 29. Pelatihan Penerapan Cost-Plus Pricing Untuk Menciptakan Harga Produk Yang Kompetitif Dan Digitalisasi Pemasaran Bagi UMKM
-**Authors**: Laily, Sulikah, Herdiani, Ardhani, Devi, Wulansuci
-**Year**: 2023
-**DOI**: 10.30651/hm.v4i1.14993
-**URL**: https://doi.org/10.30651/hm.v4i1.14993
-
-#### 30. Levels of AI Agents: from Rules to Large Language Models
-**Authors**: Huang
+#### 15. Generative AI Agents With Large Language Model for Satellite Networks via a Mixture of Experts Transmission
+**Authors**: Zhang, Du, Liu, Niyato, Kang, Xiong, Jamalipour, Kim
 **Year**: 2024
-**DOI**: 10.48550/arXiv.2405.06643
-**URL**: https://doi.org/10.48550/arXiv.2405.06643
-
-#### 31. Efficient hybrid pricing for optimal DSM of home energy management system utilizing load precedence
-**Authors**: Swain, Lakhara, Khetan, Mishra, De
-**Year**: 2020
-**DOI**: 10.1002/2050-7038.12783
-**URL**: https://doi.org/10.1002/2050-7038.12783
-
-#### 32. Bmc Medical Informatics and Decision Making a Markov Computer Simulation Model of the Economics of Neuromuscular Blockade in Patients with Acute Respiratory Distress Syndrome
-**Authors**: Macario, Chow, Dexter, Email
-**Year**: 2005
-**DOI**: 
-**URL**: https://www.semanticscholar.org/paper/fbc6dd35a0010b1bd3803450e3668de7c880781c
-
-#### 33. Customer-perceived value in the circular economy: A multidimensional framework
-**Authors**: Sairanen, Aarikka‐Stenroos, Kaipainen
-**Year**: 2024
-**DOI**: 10.1016/j.indmarman.2024.01.006
-**URL**: https://doi.org/10.1016/j.indmarman.2024.01.006
-
-#### 34. Industrial Policy for Advanced AI: Compute Pricing and the Safety Tax
-**Authors**: Jensen, Emery-Xu, Trager
-**Year**: 2023
-**DOI**: 
-**URL**: https://www.semanticscholar.org/paper/9a8645efed4a653023a287d0102f0a41afe5216d
-
-#### 35. The Ethics of AI in Pricing: Fairness, Transparency, and Accountability
-**Authors**: Chaudhary
-**Year**: 2025
-**DOI**: 10.22399/ijcesen.3949
-**URL**: https://doi.org/10.22399/ijcesen.3949
-
-#### 36. A General Choice Model for Bundles with Multiple-Category Products: Application to Market Segmentation and Optimal Pricing for Bundles
-**Authors**: Chung, Rao
-**Year**: 2003
-**DOI**: 10.1509/jmkr.40.2.115.19230
-**URL**: https://doi.org/10.1509/jmkr.40.2.115.19230
-
-#### 37. High Quality Product, Good Services, and Competitive Pricing of Local Coffee Shop to Increase Consumer Satisfaction and Loyalty
-**Authors**: Gunawan, Muhaimin, Sitawati
-**Year**: 2024
-**DOI**: 10.23960/jtep-l.v13i2.592-605
-**URL**: https://doi.org/10.23960/jtep-l.v13i2.592-605
+**DOI**: 10.1109/JSAC.2024.3459037
+**URL**: https://doi.org/10.1109/JSAC.2024.3459037
 
 ---
 
@@ -291,21 +177,33 @@
 
 The following topics did not return valid citations:
 
-- IEEE Transactions on AI 'pricing strategies'
-- ACM Computing Surveys 'AI service pricing'
-- McKinsey report 'AI pricing models'
-- Gartner analysis 'AI agent monetization'
-- BCG white paper 'value-based AI pricing'
-- OECD 'AI policy pricing frameworks'
-- European Commission 'AI regulation economic impact'
-- NIST 'AI trustworthiness pricing best practices'
-- IEEE standards 'AI system economics'
-- Brookings 'AI economic impact pricing'
-- RAND Corporation 'AI pricing strategies'
-- Deloitte 'AI monetization strategies'
-- PwC 'AI pricing frameworks'
-- Accenture 'AI value realization'
-- World Economic Forum 'AI governance pricing'
-- IDC market analysis 'AI software pricing'
-- Forrester report 'AI agent economics'
-- regulatory frameworks 'AI pricing'
+- McKinsey report "AI monetization strategies"
+- Gartner analysis "future of AI pricing models"
+- BCG white paper "value creation AI agents"
+- OECD "AI policy and economic impact"
+- European Commission "regulation of AI services pricing"
+- IEEE standards "AI system economics"
+- NIST "AI trustworthiness and cost models"
+- Brookings "economic implications of agentic AI"
+- RAND "AI pricing and market dynamics"
+- "value-based pricing frameworks for autonomous agents"
+- "regulatory challenges for AI service pricing"
+- "subscription models for AI agents" industry report
+- "pricing strategies for enterprise AI solutions" Gartner
+- "impact of AI agent autonomy on pricing" academic
+- "measuring value in AI agent services" McKinsey
+- "comparison of token-based vs. value-based AI pricing"
+- "AI service level agreements and pricing"
+- "pricing models for multi-agent systems"
+- "AI agent marketplace economics"
+- "cost attribution in complex AI systems"
+- "fair pricing for AI services" OECD
+- "governance of AI pricing mechanisms" European Commission
+- "intellectual property and AI pricing"
+- "business models for AI-as-a-Service" consulting report
+- "AI pricing innovation" academic journal
+- "agentic AI system architecture and pricing implications"
+- "market segmentation for AI agent services"
+- "competitive landscape of AI pricing models"
+- "economic theory applied to AI agent behavior"
+- "AI pricing in vertical industries" BCG

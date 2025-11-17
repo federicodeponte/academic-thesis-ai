@@ -315,15 +315,16 @@ Provide the source title, URL, and a brief snippet explaining relevance."""
             if self._is_forbidden_domain(url):
                 continue
 
-            # Unwrap redirects
-            final_url = self._unwrap_url(url)
-            if not final_url:
-                continue
-
-            # Validate URL if enabled
+            # Unwrap redirects only if URL validation is enabled
             if self.validate_urls:
+                final_url = self._unwrap_url(url)
+                if not final_url:
+                    continue
                 if not self._validate_url(final_url):
                     continue
+            else:
+                # Skip unwrapping/validation - use URL as-is from Google grounding
+                final_url = url
 
             # Build validated source metadata
             valid_source = {

@@ -23,6 +23,28 @@ import json
 from datetime import datetime
 
 
+def safe_get(obj, key, default=None):
+    """
+    Safely get value from dict or object attribute.
+
+    Handles both dictionaries and objects (NamedTuple, dataclass, etc.)
+
+    Args:
+        obj: Dictionary or object
+        key: Attribute/key name
+        default: Default value if not found
+
+    Returns:
+        Value from obj[key] or obj.key, or default if not found
+    """
+    if hasattr(obj, 'get'):
+        # Dictionary
+        return obj.get(key, default)
+    else:
+        # Object (NamedTuple, dataclass, etc.)
+        return getattr(obj, key, default)
+
+
 class MetadataScraper:
     """
     Scrapes publication metadata (dates, authors) from URLs with intelligent fallbacks.
@@ -318,13 +340,13 @@ class MetadataScraper:
         if filter_condition is None:
             # Default: Gemini Grounded with domain-name authors or year == 2025
             def default_filter(c):
-                # Handle both dict and Citation object
-                api_source = getattr(c, 'api_source', None) or c.get('api_source') if hasattr(c, 'get') else getattr(c, 'api_source', None)
+                # Handle both dict and Citation object using module-level safe_get
+                api_source = safe_get(c, 'api_source')
                 if api_source != 'Gemini Grounded':
                     return False
 
                 # Check for domain-name authors
-                authors = getattr(c, 'authors', []) if hasattr(c, 'authors') else c.get('authors', [])
+                authors = safe_get(c, 'authors', [])
                 if authors and len(authors) > 0:
                     first_author = authors[0]
                     # Domain pattern: xxx.com, xxx.org, etc.
@@ -332,7 +354,7 @@ class MetadataScraper:
                         return True
 
                 # Check for suspicious year (current year = likely placeholder)
-                year = getattr(c, 'year', None) if hasattr(c, 'year') else c.get('year')
+                year = safe_get(c, 'year')
                 current_year = datetime.now().year
                 if year == current_year:
                     return True
@@ -355,15 +377,15 @@ class MetadataScraper:
         fail_count = 0
 
         for i, citation in enumerate(to_scrape, 1):
-            # Handle both dict and Citation object
-            url = getattr(citation, 'url', None) if hasattr(citation, 'url') else citation.get('url')
+            # Handle both dict and Citation object using safe_get
+            url = safe_get(citation, 'url')
             if not url:
                 fail_count += 1
                 continue
 
-            citation_id = getattr(citation, 'id', 'unknown') if hasattr(citation, 'id') else citation.get('id', 'unknown')
-            old_year = getattr(citation, 'year', 'N/A') if hasattr(citation, 'year') else citation.get('year', 'N/A')
-            old_authors = getattr(citation, 'authors', ['N/A']) if hasattr(citation, 'authors') else citation.get('authors', ['N/A'])
+            citation_id = safe_get(citation, 'id', 'unknown')
+            old_year = safe_get(citation, 'year', 'N/A')
+            old_authors = safe_get(citation, 'authors', ['N/A'])
 
             if self.verbose:
                 print(f"\n[{i}/{len(to_scrape)}] {citation_id}")

@@ -92,8 +92,8 @@ class QueryRouter:
         'federal reserve', 'european central bank', 'ecb',
         'fda', 'epa', 'cdc', 'nih', 'nist', 'nasa',
 
-        # Standards bodies
-        'iso', 'ieee', 'ietf', 'w3c', 'oasis', 'ansi',
+        # Standards bodies (use word boundaries to avoid false positives like "comparison")
+        'iso standard', 'iso ', 'ieee', 'ietf', 'w3c', 'oasis', 'ansi',
 
         # Document types
         'white paper', 'whitepaper', 'policy brief', 'policy paper',
@@ -105,6 +105,18 @@ class QueryRouter:
         # Business/Industry focus
         'market analysis', 'industry trends', 'sector overview',
         'competitive landscape', 'market forecast',
+
+        # Tech companies & products (NEW - Day 3A enhancement)
+        'openai', 'anthropic', 'google', 'microsoft', 'meta',
+        'amazon', 'apple', 'ibm', 'oracle', 'salesforce',
+        'gpt-4', 'claude', 'gemini', 'chatgpt', 'copilot',
+        'aws', 'azure', 'gcp', 'cloud platform',
+
+        # Consulting/Industry sources (NEW - Day 3A enhancement)
+        'comparison', 'benchmark', 'pricing comparison',
+        'vendor', 'product', 'service provider',
+        'platform', 'saas', 'enterprise software',
+        'implementation', 'deployment', 'migration',
     ]
 
     # Academic source indicators (peer-reviewed, scholarly)
@@ -133,6 +145,29 @@ class QueryRouter:
         # Research focus
         'theoretical framework', 'conceptual model',
         'research methodology', 'data analysis',
+
+        # Economic & business theory (NEW - Day 3A enhancement)
+        'economics', 'economic theory', 'economic model',
+        'pricing theory', 'market theory', 'game theory',
+        'transaction cost', 'information goods', 'public goods',
+        'two-sided market', 'platform economics', 'network effects',
+        'demand elasticity', 'price discrimination', 'marginal cost',
+        'economies of scale', 'market equilibrium',
+
+        # Technology/CS theory (NEW - Day 3A enhancement)
+        'algorithm', 'computational complexity', 'machine learning',
+        'neural network', 'natural language processing',
+        'computer vision', 'distributed systems', 'cryptography',
+        'information retrieval', 'data mining',
+
+        # Social sciences (NEW - Day 3A enhancement)
+        'sociological', 'psychological', 'anthropological',
+        'behavioral', 'cognitive', 'organizational behavior',
+
+        # Environmental/climate science (NEW - Day 3A enhancement)
+        'climate science', 'environmental impact', 'carbon emissions',
+        'renewable energy', 'sustainability assessment',
+        'ecological', 'biodiversity',
     ]
 
     def __init__(self, enable_multilingual: bool = True):

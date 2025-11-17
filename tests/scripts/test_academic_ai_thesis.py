@@ -279,12 +279,21 @@ def main():
 
     # FIXED (Day 2A): Scrape real titles for Gemini Grounded citations
     from utils.scrape_citation_titles import TitleScraper
-    scraper = TitleScraper(verbose=True)
-    success_count, fail_count = scraper.scrape_citations(citation_database.citations)
-    if success_count > 0:
-        print(f"📰 Scraped {success_count} real page titles from web sources")
-        if fail_count > 0:
-            print(f"   ⚠️  {fail_count} titles could not be scraped (timeouts, errors)")
+    title_scraper = TitleScraper(verbose=True)
+    title_success, title_fail = title_scraper.scrape_citations(citation_database.citations)
+    if title_success > 0:
+        print(f"📰 Scraped {title_success} real page titles from web sources")
+        if title_fail > 0:
+            print(f"   ⚠️  {title_fail} titles could not be scraped (timeouts, errors)")
+
+    # FIXED (Day 2B): Scrape metadata (publication dates, authors) for Gemini citations
+    from utils.scrape_citation_metadata import MetadataScraper
+    metadata_scraper = MetadataScraper(verbose=True)
+    metadata_success, metadata_fail = metadata_scraper.scrape_citations(citation_database.citations)
+    if metadata_success > 0:
+        print(f"📅 Scraped {metadata_success} publication dates and authors from web sources")
+        if metadata_fail > 0:
+            print(f"   ⚠️  {metadata_fail} metadata items could not be scraped")
 
     # Save citation database
     citation_db_path = output_dir / "citation_database.json"

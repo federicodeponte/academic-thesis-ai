@@ -187,9 +187,15 @@
     {
       "id": "cite_013",
       "authors": [
-        "bcg.com"
+        "https://www.bcg.com/about/people/experts/john-pineda",
+        "https://www.bcg.com/about/people/experts/jean-manuel-izaret",
+        "John Pineda",
+        "Jacob Konikoff",
+        "Saran Rajendran",
+        "Pranay Ahlawat",
+        "Jean-Manuel Izaret"
       ],
-      "year": 2025,
+      "year": 2024,
       "title": "GenAI Needs Pricing Strategies to Match Its Potential",
       "source_type": "website",
       "language": "english",
@@ -199,7 +205,7 @@
     {
       "id": "cite_014",
       "authors": [
-        "theaiinnovator.com"
+        "Deborah Yao"
       ],
       "year": 2025,
       "title": "Deloitte Innovation Chief: How AI Is Changing the Internet's Economics - The AI Innovator",
@@ -223,9 +229,9 @@
     {
       "id": "cite_016",
       "authors": [
-        "datainnovation.org"
+        "Benjamin Mueller"
       ],
-      "year": 2025,
+      "year": 2021,
       "title": "AI Act Would Cost the EU Economy €31 Billion Over 5 Years, and Reduce AI Investments by Almost 20 Percent, New Report Finds",
       "source_type": "website",
       "language": "english",
@@ -247,7 +253,7 @@
     {
       "id": "cite_018",
       "authors": [
-        "stocktitan.net"
+        "Stock Titan"
       ],
       "year": 2025,
       "title": "IEEE Approves Breakthrough AI Standards, VERSES First to Commercialize | VRSSF Stock News",
@@ -261,7 +267,7 @@
       "authors": [
         "brookings.edu"
       ],
-      "year": 2025,
+      "year": 2020,
       "title": "Can AI model economic choices? | Brookings",
       "source_type": "website",
       "language": "english",
@@ -295,7 +301,7 @@
     {
       "id": "cite_022",
       "authors": [
-        "forrester.com"
+        "Lisa Singer"
       ],
       "year": 2025,
       "title": "Optimize Your Pricing To Reflect AI Value",
@@ -463,7 +469,8 @@
     {
       "id": "cite_036",
       "authors": [
-        "candymc.co.uk"
+        "Candy Management Consultants",
+        "https://www.facebook.com/CandyManagementConsultants"
       ],
       "year": 2025,
       "title": "candymc.co.uk",
@@ -475,7 +482,7 @@
     {
       "id": "cite_037",
       "authors": [
-        "completeaitraining.com"
+        "Jeroen Erne"
       ],
       "year": 2025,
       "title": "Why IEEE 7000 Standards Are Crucial for Ethical AI and Algorithmic Decisions Protecting Human Values",
@@ -487,9 +494,9 @@
     {
       "id": "cite_038",
       "authors": [
-        "fedscoop.com"
+        "Dave Nyczepir"
       ],
-      "year": 2025,
+      "year": 2021,
       "title": "NIST seeks evidence on economic impact of 8 emerging technologies | FedScoop",
       "source_type": "website",
       "language": "english",
@@ -614,7 +621,7 @@
     {
       "id": "cite_046",
       "authors": [
-        "theregister.com"
+        "Simon Sharwood"
       ],
       "year": 2025,
       "title": "AI pricing currently in a state of ‘pandemonium’ - Gartner • The Register",
@@ -726,7 +733,7 @@
       "authors": [
         "isaca.org"
       ],
-      "year": 2025,
+      "year": 2024,
       "title": "White Papers 2024 Understanding the EU AI Act",
       "source_type": "website",
       "language": "english",
@@ -738,10 +745,6 @@
     "total_citations": 52,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-17T11:33:45.239297",
-    "deduplication_applied": true,
-    "deduplication_strategy": "keep_best",
-    "title_scraping_applied": true,
-    "titles_updated": 21
+    "extracted_date": "2025-11-17T11:33:45.239297"
   }
 }

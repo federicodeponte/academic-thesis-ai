@@ -2,6 +2,7 @@
 
 **Date**: November 16, 2025
 **Issue**: Gemini Grounded returning 0 citations despite being enabled
+**Final Status**: FIXED - Using Gemini 2.5 Flash for all operations
 
 ## Problem Statement
 
@@ -103,8 +104,29 @@ Completion time: ~15s
 
 ## Files Modified
 
-1. `utils/api_citations/orchestrator.py` - Added `validate_urls=False` to GeminiGroundedClient initialization
-2. `utils/api_citations/gemini_grounded.py` - Removed debug logging (clean code)
+1. `utils/api_citations/orchestrator.py` - Added `validate_urls=False, timeout=60` to GeminiGroundedClient initialization
+2. `utils/api_citations/gemini_grounded.py` - Using `gemini-2.5-flash` model
+3. `utils/deep_research.py` - Using `gemini-2.5-flash` model
+
+## Final Configuration (Matching gtm-power-app-backend)
+
+**Gemini Grounded (Google Search):**
+- Model: `gemini-2.5-flash` (fast, proven in production)
+- URL Validation: Disabled (prevents timeouts)
+- Timeout: 60 seconds
+- Speed: ~15 seconds per query
+
+**Deep Research (Planning):**
+- Model: `gemini-2.5-flash` (consistent with gtm-backend)
+- Used for: Research strategy planning and query generation
+- Speed: ~15-30 seconds for planning
+
+**Why Flash over Pro:**
+- gtm-power-app-backend uses Flash for all Gemini operations
+- Flash: ~15 seconds per query
+- Pro: 4.5+ minutes per query (10-20x slower)
+- For 50+ queries: Flash = 12 minutes, Pro = 3.75 hours
+- Flash has proven production quality
 
 ## Expected Results
 

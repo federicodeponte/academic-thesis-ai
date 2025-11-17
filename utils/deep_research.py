@@ -73,8 +73,8 @@ class DeepResearchPlanner:
                 )
 
             genai.configure(api_key=api_key)
-            # Use Gemini 2.5 Pro for high-quality research planning
-            self.model = genai.GenerativeModel('gemini-2.5-pro')
+            # Use Gemini 2.5 Flash for fast research planning (matches gtm-backend)
+            self.model = genai.GenerativeModel('gemini-2.5-flash')
 
     def create_research_plan(
         self,

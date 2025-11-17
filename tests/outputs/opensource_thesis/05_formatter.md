@@ -1,7 +1,8 @@
+```markdown
 # Formatted Paper Outline
 
-**Format Applied:** IMRaD (adapted for theoretical paper with case studies)
-**Target Journal:** Journal of Technology and Social Impact (placeholder)
+**Format Applied:** IMRaD (adapted for theoretical analysis with case studies)
+**Target Journal:** Multidisciplinary journal focused on technology, society, and development (e.g., *Information Technologies and International Development*, *Science, Technology, & Human Values*)
 **Word Limit:** 8,000-10,000 words
 **Citation Style:** APA 7th Edition
 
@@ -14,24 +15,22 @@
 - **Line Spacing:** Double
 - **Margins:** 1 inch all sides
 - **Page Numbers:** Top right corner
-- **Headings:** Unnumbered (APA Style)
+- **Headings:** Numbered
 
-### Section Heading Levels (APA 7th Edition)
-- **Level 1:** Centered, Bold, Title Case (e.g., "Abstract", "References")
-- **Level 2:** Flush Left, Bold, Title Case (e.g., "Introduction", "Literature Review and Research Gaps")
-- **Level 3:** Flush Left, Bold, Italic, Title Case (e.g., "Background and Motivation")
-- **Level 4:** Indented, Bold, Title Case, ending with a period. Text begins on the same line.
-- **Level 5:** Indented, Bold, Italic, Title Case, ending with a period. Text begins on the same line.
+### Section Heading Levels (APA Style)
+- **Level 1:** Bold, Centered, Title Case (e.g., **1. Introduction**)
+- **Level 2:** Bold, Left-Aligned, Title Case (e.g., **1.1 Background and Motivation**)
+- **Level 3:** Bold, Indented, Sentence case, ends with a period. (e.g., **1.1.1 Problem Context.**)
 
 ### Citation Format
 - **In-text:** (Author, Year)
-- **Bibliography:** APA 7th Edition format
+- **Bibliography:** Full APA 7th Edition format specification (see below for details)
 
 ### ⚠️ CITATION REQUIREMENTS - CRITICAL
 
 **Specify citation style early and communicate to ALL Crafter agents:**
 
-**Default Style:** APA 7th Edition (unless specified otherwise)
+**Default Style:** APA 7th Edition
 
 **In-text citation format:**
 ```
@@ -54,343 +53,344 @@
 ```
 
 **[VERIFY] placeholder usage:**
-- Crafters should ONLY use [VERIFY] if source year/details truly unknown
-- Prefer using research context sources without [VERIFY]
-- Agent #14 (Citation Verifier) will complete any [VERIFY] tags
+- Crafters should ONLY use [VERIFY] if source year/details truly unknown or require confirmation.
+- Prefer using research context sources without [VERIFY].
+- Agent #14 (Citation Verifier) will complete any [VERIFY] tags.
 
 **Language-specific adaptations:**
-- German theses: Use German punctuation but keep APA structure
-- Spanish/French: Adapt punctuation while maintaining APA format
-- Always specify language requirements to Crafter agents
+- For non-English sources, provide original title and English translation in brackets.
+- Always specify language requirements to Crafter agents.
 
 **Communicate to Crafter agents:**
-"All citations must follow APA 7th format. Use (Author, Year) in-text. Only add [VERIFY] if you cannot determine the year from research context."
+"All citations must follow APA 7th format. Use (Author, Year) in-text. Only add [VERIFY] if you cannot determine the year from research context or if the source itself needs confirmation."
 
 ---
 
 ## Formatted Structure
 
 ### Title
-**Format:** Centered, Bold, 14pt (or 12pt if journal specifies), Title Case
-**Max Length:** 100 characters (approx. 12 words)
-**Suggested:** How Open Source Software Can Save the World: A Holistic Sustainability Framework for Maximizing Global Impact
+**Format:** Bold, Centered, 14pt. No more than 12 words for most journals.
+**Max Length:** 100 characters (including spaces)
+**Suggested:** **Beyond Code: Open Source Software as a Paradigm for Addressing 21st-Century Global Challenges**
+*(Original suggestion "How Open Source Software Can Save the World: A Framework for Global Impact and Societal Value" is a bit long and dramatic for academic tone. Modified for conciseness and academic rigor.)*
 
 ### Author Information
 **Format:**
-- Name(s): Centered, below title
-- Affiliation(s): Centered, below name(s)
-- Email(s): Centered, below affiliation(s)
-- ORCID: Optional, centered
+- Name(s): Full Name(s), no titles or degrees
+- Affiliation(s): Department, University/Organization, City, State, Country
+- Email(s): Corresponding author email clearly marked
+- ORCID: (Optional) `https://orcid.org/0000-0000-0000-0000`
 
 ### Abstract
-**Heading:** Abstract (Level 1 heading, Centered, Bold)
+**Heading:** **Abstract** (Bold, Centered)
 **Length:** 150-250 words
 **Structure:**
-- Background (1-2 sentences): OSS potential.
-- Objective (1 sentence): Identify sustainability challenges and propose framework.
-- Methods (2-3 sentences): Introduction of OSSF, theoretical integration, case studies.
-- Results (2-3 sentences): OSSF effectiveness in assessing and enhancing sustainability.
-- Conclusions (1-2 sentences): OSSF enables maximization of global impact.
+- Background (1-2 sentences): Briefly introduce the context of global challenges and the need for novel solutions.
+- Objective (1 sentence): State the paper's aim: to propose a theoretical framework for OSS's role in global challenges.
+- Theoretical Framework/Methods (2-3 sentences): Briefly describe the proposed framework and its core principles.
+- Case Studies/Illustrations (2-3 sentences): Mention the use of illustrative case studies to demonstrate the framework.
+- Conclusions (1-2 sentences): Summarize the key implications and contributions for policy, development, and future research.
 
-**Keywords:** Open Source Software, Sustainability Framework, Developing Countries, Emerging Technologies, Global Impact, Societal Challenges
-
----
-
-### Introduction
-**Heading:** (No heading for Introduction in APA 7th, text starts directly after Abstract and Keywords)
-**Length:** 1000-1500 words
-**Content:**
-- Introduce OSS as a powerful paradigm for solving global problems.
-- Highlight its potential for positive change and "saving the world."
-- Introduce the core problem: long-term viability and impact are hindered by complex sustainability challenges.
-- Briefly state the paper's purpose: to propose a holistic sustainability framework.
-- Thesis Statement: While Open Source Software holds immense potential to drive global positive change and "save the world" through collaboration and innovation, its full impact is contingent upon the long-term sustainability of its projects, which current frameworks inadequately address, particularly in developing contexts and for emerging technologies; therefore, a novel, holistic sustainability framework is necessary to guide sustainable OSS development and maximize its global impact.
-
-#### Background and Motivation
-**Heading:** **Background and Motivation** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format specifications: Narrative setting the stage for OSS's role in global challenges.]
-
-#### Problem Statement
-**Heading:** **Problem Statement** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format specifications: Clearly articulate the gap in current sustainability efforts for OSS.]
-
-#### Research Question and Objectives
-**Heading:** **Research Question and Objectives** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-**Research Question:** How can a holistic sustainability framework for Open Source Software, specifically considering developing country contexts and emerging technological concerns, enable OSS to maximize its global impact and address critical societal challenges?
-**List format for Objectives:**
-1.  To critically review existing literature and frameworks on OSS sustainability, identifying their limitations, particularly concerning developing country contexts and emerging technologies.
-2.  To develop a novel, holistic Open Source Software Sustainability Framework (OSSF) that integrates technical, economic, social, security, ethical, and contextual dimensions.
-3.  To demonstrate the applicability and utility of the proposed OSSF through illustrative case studies of OSS projects in diverse global contexts.
-4.  To discuss the implications of the OSSF for practitioners, policymakers, and future research in fostering sustainable OSS for global impact.
-
-#### Contributions
-**Heading:** **Contributions** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-**Bullet format:**
--   A comprehensive review of OSS sustainability literature, highlighting critical gaps.
--   A novel, holistic Open Source Software Sustainability Framework (OSSF) integrating multi-dimensional factors.
--   Empirical insights from illustrative case studies demonstrating the OSSF's practical application.
--   Actionable recommendations for fostering sustainable OSS development and deployment.
-
-#### Paper Organization
-**Heading:** **Paper Organization** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Standard paragraph outlining the structure of the paper.]
+**Keywords:** 3-6 keywords, in alphabetical order (e.g., Open Source Software, Global Challenges, Societal Impact, Sustainable Development, Collaboration, Innovation)
 
 ---
 
-## Literature Review and Research Gaps
-**Heading:** **Literature Review and Research Gaps** (Level 2 heading, Flush Left, Bold, Title Case)
-**Length:** 2000-3000 words
-**Content:**
--   Review existing research and frameworks on OSS sustainability.
--   Highlight fragmentation, lack of comprehensive empirical validation.
--   Emphasize overlooking critical contextual factors specific to developing countries and emerging technological domains (AI/ML, supply chain security).
+## 1. Introduction
+**Section Number:** 1
+**Length:** 800-1000 words
+**Subsections:**
 
-#### Current Perspectives on OSS Sustainability
-**Heading:** **Current Perspectives on OSS Sustainability** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Thematic subsections, discussing various existing models (e.g., economic, community-driven, technical).]
+### 1.1 Global Challenges and the Need for Collaborative Solutions
+**Format:** Level 2 Heading. Narrative paragraph(s).
+**Content:** Introduce the pressing global challenges (climate change, inequality, health crises) and argue that traditional, proprietary, or siloed approaches often fall short, necessitating novel, collaborative solutions.
 
-#### Sustainability Challenges in Developing Country Contexts
-**Heading:** **Sustainability Challenges in Developing Country Contexts** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Discuss specific socio-economic, infrastructural, and policy challenges.]
+### 1.2 The Promise of Open Source Software
+**Format:** Level 2 Heading. Narrative paragraph(s).
+**Content:** Briefly introduce Open Source Software (OSS) and its inherent principles (transparency, collaboration, adaptability) as a potential transformative paradigm.
 
-#### Emerging Technological Concerns and OSS Sustainability
-**Heading:** **Emerging Technological Concerns and OSS Sustainability** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Focus on AI/ML ethics, data governance, supply chain security, and their impact on OSS.]
+### 1.3 Research Gap and Problem Statement
+**Format:** Level 2 Heading. Narrative paragraph(s).
+**Content:** Articulate that traditional research on OSS primarily focuses on development practices, economic benefits, or localized adoption, overlooking its broader, sustained societal impact and integration with emergent global contexts. This sets up the need for the proposed framework.
 
-#### Gaps in Existing Frameworks
-**Heading:** **Gaps in Existing Frameworks** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Synthesis paragraph, clearly articulating the research gap that the proposed OSSF will address.]
+### 1.4 Research Question and Objectives
+**Format:** Level 2 Heading.
+**Research Question:** How can the principles and practices of Open Source Software (OSS) development and collaboration be leveraged to address pressing global challenges, fostering sustainable societal impact beyond traditional economic metrics?
+**List format for objectives:**
+1.  To critically analyze the limitations of conventional approaches to global challenges.
+2.  To synthesize existing literature on OSS and identify gaps regarding its societal impact.
+3.  To propose a theoretical framework articulating how OSS principles can be systematically applied to address global challenges.
+4.  To illustrate the practical application and potential of this framework through diverse case studies.
+5.  To discuss the theoretical and practical implications of the framework for policy, development, and future research.
+
+### 1.5 Contributions of This Paper
+**Format:** Level 2 Heading. Bullet format.
+-   Proposes a novel theoretical framework connecting OSS principles to sustainable societal impact on global challenges.
+-   Expands the discourse on OSS beyond economic metrics to include non-economic societal value.
+-   Provides illustrative case studies demonstrating the framework's practical applicability.
+-   Offers implications for policymakers, development practitioners, and researchers in leveraging OSS for global good.
+
+### 1.6 Paper Organization
+**Format:** Level 2 Heading. Standard paragraph.
+**Content:** Briefly outline the structure of the paper, guiding the reader through the subsequent sections.
 
 ---
 
-## A Holistic Open Source Software Sustainability Framework (OSSF)
-**Heading:** **A Holistic Open Source Software Sustainability Framework (OSSF)** (Level 2 heading, Flush Left, Bold, Title Case)
+## 2. Literature Review
+**Section Number:** 2
 **Length:** 1500-2000 words
-**Content:**
--   Propose the novel, holistic Open Source Software Sustainability Framework (OSSF).
--   Detail the integration of technical, economic, social, security, ethical, and contextual dimensions.
--   Explain the theoretical underpinnings and components of the OSSF.
+**Organization:** Thematic subsections, structured to build towards the identified research gap.
 
-#### Framework Design and Principles
-**Heading:** **Framework Design and Principles** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Narrative explaining the theoretical foundation and guiding principles of the OSSF. Could include a diagram.]
+### 2.1 Understanding Global Challenges and Conventional Responses
+**Format:** Level 2 Heading. Narrative paragraphs.
+**Content:** Review literature on the nature of selected global challenges (e.g., climate change, public health, digital inequality) and the typical (often siloed or proprietary) approaches used to address them, highlighting their limitations.
 
-**Figure 1:** Holistic Open Source Software Sustainability Framework (OSSF)
-[Placeholder for conceptual diagram illustrating the framework's components and interconnections.]
-*Note: Figure captions in APA 7th are placed below the figure, italicized, and followed by a period.*
+### 2.2 The Evolution of Open Source Software Research
+**Format:** Level 2 Heading. Narrative paragraphs.
+**Content:** Trace the history and key research themes in OSS, including its development models, economic impacts, and adoption patterns.
 
-#### Dimensions of the OSSF
-**Heading:** **Dimensions of the OSSF** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Subsections for each dimension.]
+### 2.3 OSS for Development and Social Impact: Current Perspectives
+**Format:** Level 2 Heading. Narrative paragraphs.
+**Content:** Focus on existing literature that explores OSS in the context of international development, humanitarian aid, or specific social applications. Identify what has been studied and, crucially, what aspects of broader, sustained societal impact are under-explored.
 
-##### Technical Dimension
-**Heading:** **Technical Dimension.** (Level 4 heading, Indented, Bold, Title Case, ending with a period. Text begins on the same line.)
-[Format: Discuss code quality, maintainability, interoperability, documentation.]
-
-##### Economic Dimension
-**Heading:** **Economic Dimension.** (Level 4 heading, Indented, Bold, Title Case, ending with a period. Text begins on the same line.)
-[Format: Discuss funding models, resource allocation, business models.]
-
-##### Social and Community Dimension
-**Heading:** **Social and Community Dimension.** (Level 4 heading, Indented, Bold, Title Case, ending with a period. Text begins on the same line.)
-[Format: Discuss community engagement, contributor diversity, governance, user adoption.]
-
-##### Security and Ethical Dimension
-**Heading:** **Security and Ethical Dimension.** (Level 4 heading, Indented, Bold, Title Case, ending with a period. Text begins on the same line.)
-[Format: Discuss vulnerability management, data privacy, bias in algorithms, responsible AI.]
-
-##### Contextual Dimension (Developing Countries & Emerging Tech)
-**Heading:** **Contextual Dimension (Developing Countries & Emerging Tech).** (Level 4 heading, Indented, Bold, Title Case, ending with a period. Text begins on the same line.)
-[Format: Discuss local infrastructure, policy environment, cultural factors, specific challenges of AI/ML deployment.]
+### 2.4 Gaps in the Literature and the Need for a New Framework
+**Format:** Level 2 Heading. Synthesis paragraph.
+**Content:** Synthesize the review, explicitly highlighting the gap: while OSS has shown localized benefits, a comprehensive theoretical framework that systematically connects its principles to addressing complex, interconnected global challenges, considering non-economic value and emergent technologies, is missing. This section directly leads to the proposed framework.
 
 ---
 
-## Applying the OSSF: Illustrative Case Studies
-**Heading:** **Applying the OSSF: Illustrative Case Studies** (Level 2 heading, Flush Left, Bold, Title Case)
+## 3. Theoretical Framework: Leveraging OSS for Global Challenges
+**Section Number:** 3
+**Length:** 1200-1500 words
+**Content:** This section proposes the core theoretical model, adapting the "Methods" section of IMRaD for a theoretical paper.
+
+### 3.1 Introduction to the Proposed Framework
+**Format:** Level 2 Heading. Narrative paragraph + conceptual diagram.
+**Content:** Briefly introduce the framework, its purpose, and core components.
+**Figure 1:** Conceptual Framework for Open Source Software's Societal Impact on Global Challenges
+[Placeholder for a conceptual diagram illustrating the framework's components, principles, mechanisms, and outcomes.]
+*Caption Format: Figure number, bold. Title in sentence case. Source if adapted.*
+
+### 3.2 Core Principles of Open Source Software and Their Application
+**Format:** Level 2 Heading. Subsections for each principle.
+**Content:** Detail how fundamental OSS principles (e.g., transparency, collaboration, meritocracy, modularity, adaptability, community governance) can be re-interpreted and applied to the context of global challenges.
+#### 3.2.1 Transparency and Accountability.
+**Format:** Level 3 Heading. Narrative paragraph.
+#### 3.2.2 Collaborative Innovation and Distributed Development.
+**Format:** Level 3 Heading. Narrative paragraph.
+#### 3.2.3 Adaptability, Modularity, and Localization.
+**Format:** Level 3 Heading. Narrative paragraph.
+
+### 3.3 Mechanisms for Fostering Societal Impact
+**Format:** Level 2 Heading. Subsections for each mechanism.
+**Content:** Describe the specific mechanisms through which the application of these principles translates into tangible societal impact (e.g., democratizing access, building local capacity, fostering resilience, enabling rapid response).
+#### 3.3.1 Democratizing Access to Critical Technologies.
+**Format:** Level 3 Heading. Narrative paragraph.
+#### 3.3.2 Building Local Capacity and Self-Sufficiency.
+**Format:** Level 3 Heading. Narrative paragraph.
+
+### 3.4 Integration with Emergent Technologies and Governance Models
+**Format:** Level 2 Heading. Narrative paragraph(s).
+**Content:** Discuss how the framework accounts for the interplay between OSS principles, emerging technologies (e.g., AI/ML, blockchain, IoT), and innovative governance models (e.g., decentralized autonomous organizations, open standards bodies) in addressing complex challenges.
+
+---
+
+## 4. Illustrative Case Studies
+**Section Number:** 4
 **Length:** 1500-2000 words
-**Content:**
--   Demonstrate how applying the OSSF can help assess, enhance, and ensure sustainable development.
--   Use illustrative case studies of OSS solutions in diverse global contexts.
+**Content:** This section serves as the "Results" section of IMRaD, presenting empirical illustrations of the theoretical framework.
 
-#### Case Study 1: [OSS Project Name] in [Developing Country Context]
-**Heading:** **Case Study 1: [OSS Project Name] in [Developing Country Context]** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Introduce the project, apply OSSF dimensions for assessment, discuss findings.]
+### 4.1 Selection Criteria for Case Studies
+**Format:** Level 2 Heading. Narrative paragraph.
+**Content:** Briefly explain the rationale for selecting the specific case studies, emphasizing their diversity in context, challenge addressed, and demonstration of the framework's principles.
 
-**Table 1:** OSSF Assessment for [OSS Project Name]
-| OSSF Dimension | Assessment Criteria | Observations | Sustainability Score |
-|----------------|---------------------|--------------|----------------------|
-| Technical      | ...                 | ...          | ...                  |
-| Economic       | ...                 | ...          | ...                  |
-| Social         | ...                 | ...          | ...                  |
-| Security/Ethical | ...                 | ...          | ...                  |
-| Contextual     | ...                 | ...          | ...                  |
-*Note: Table captions in APA 7th are placed above the table, bolded, and followed by a period.*
+### 4.2 Case Study 1: Open Source for Public Health in Developing Nations
+**Format:** Level 2 Heading. Narrative + specific examples.
+**Content:** Describe a real-world example (e.g., DHIS2 for health information management, OpenMRS for electronic medical records) and analyze how it embodies the proposed framework's principles and mechanisms for societal impact.
+#### 4.2.1 Background and Challenge.
+**Format:** Level 3 Heading. Narrative paragraph.
+#### 4.2.2 Application of OSS Principles.
+**Format:** Level 3 Heading. Narrative paragraph.
+#### 4.2.3 Observed Societal Impact.
+**Format:** Level 3 Heading. Narrative paragraph.
 
-#### Case Study 2: [OSS Project Name] Addressing [Emerging Tech Challenge]
-**Heading:** **Case Study 2: [OSS Project Name] Addressing [Emerging Tech Challenge]** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Similar structure as Case Study 1, focusing on an emerging technology aspect.]
+### 4.3 Case Study 2: Open Source for Climate Change Mitigation and Adaptation
+**Format:** Level 2 Heading. Narrative + specific examples.
+**Content:** Analyze an example related to environmental monitoring, climate modeling, or renewable energy management (e.g., Open Climate Fix, open-source hardware for sensors).
 
-#### Synthesis of Case Study Findings
-**Heading:** **Synthesis of Case Study Findings** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Summarize key patterns, challenges, and successes observed across case studies, linking back to the OSSF's utility.]
+### 4.4 Case Study 3: Open Source AI/ML for Social Good
+**Format:** Level 2 Heading. Narrative + specific examples.
+**Content:** Explore how open-source AI/ML projects contribute to areas like disaster response, accessibility, or education, demonstrating the framework's relevance to cutting-edge technologies.
 
----
-
-## Discussion
-**Heading:** **Discussion** (Level 2 heading, Flush Left, Bold, Title Case)
-**Length:** 1500-2000 words
-**Content:**
--   Interpret findings from the case studies in light of the proposed OSSF and the research question.
--   Compare the OSSF with prior work and highlight its unique contributions.
--   Discuss theoretical and practical implications.
--   Acknowledge limitations and suggest future research.
-
-#### Interpretation of Findings
-**Heading:** **Interpretation of Findings** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Narrative with citations, explaining what the application of the OSSF reveals about OSS sustainability.]
-
-#### Comparison with Prior Work and OSSF Contributions
-**Heading:** **Comparison with Prior Work and OSSF Contributions** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Comparative discussion, emphasizing how the OSSF addresses the identified research gaps.]
-
-#### Theoretical Implications
-**Heading:** **Theoretical Implications** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Paragraph discussing how the OSSF advances theoretical understanding of OSS sustainability.]
-
-#### Practical Implications
-**Heading:** **Practical Implications** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Bullet points or paragraphs for practitioners and policymakers, guiding sustainable OSS development.]
-
-#### Limitations and Future Work
-**Heading:** **Limitations and Future Work** (Level 3 heading, Flush Left, Bold, Italic, Title Case)
-[Format: Honest assessment of the paper's limitations and concrete suggestions for future research directions.]
+### 4.5 Cross-Case Analysis and Synthesis
+**Format:** Level 2 Heading. Narrative paragraph + comparative table (optional).
+**Content:** Summarize the key insights from the case studies, highlighting common themes, variations, and how they collectively support the proposed theoretical framework.
+**Table 1:** Summary of Illustrative Case Studies and Framework Alignment
+| Case Study | Global Challenge | Key OSS Principles | Observed Impact |
+|------------|------------------|--------------------|-----------------|
+| Public Health | ...              | ...                | ...             |
+| Climate Change | ...              | ...                | ...             |
+| Open AI/ML | ...              | ...                | ...             |
+*Caption Format: Table number, bold. Title in sentence case. Source if adapted.*
 
 ---
 
-## Conclusion
-**Heading:** **Conclusion** (Level 2 heading, Flush Left, Bold, Title Case)
-**Length:** 500-700 words
-**Content:**
--   Restate the problem and the paper's approach (development and application of OSSF).
--   Summarize key findings regarding the OSSF's utility.
--   Emphasize the paper's contributions to the field.
--   Reiterate how the OSSF provides a structured approach for fostering sustainable OSS, thereby unlocking its potential for significant global impact and addressing critical societal challenges.
--   Offer a final thought on the broader significance.
+## 5. Discussion
+**Section Number:** 5
+**Length:** 1200-1500 words
+**Content:** Interpret the findings of the case studies in light of the theoretical framework and existing literature.
+
+### 5.1 Interpretation of Findings: Validating the Framework
+**Format:** Level 2 Heading. Narrative with citations.
+**Content:** Discuss how the illustrative case studies affirm the proposed theoretical framework, demonstrating that OSS principles can indeed foster significant societal impact on global challenges beyond economic metrics.
+
+### 5.2 Comparison with Prior Work and Traditional Approaches
+**Format:** Level 2 Heading. Comparative discussion.
+**Content:** Contrast the insights from this study with existing literature on OSS and social impact, as well as with the limitations of traditional, proprietary approaches identified in the introduction. Emphasize how the framework offers a distinct and valuable perspective.
+
+### 5.3 Theoretical Implications
+**Format:** Level 2 Heading. Paragraph(s).
+**Content:** Discuss how this framework advances theory in OSS studies, development studies, and technology-and-society research. For example, by providing a more nuanced understanding of non-economic value creation or by integrating different disciplinary perspectives.
+
+### 5.4 Practical Implications and Policy Recommendations
+**Format:** Level 2 Heading. Bullet points or paragraphs.
+**Content:** Provide concrete recommendations for policymakers, international organizations, NGOs, and development practitioners on how to leverage OSS more effectively to address global challenges.
+-   Recommendation 1: [Description]
+-   Recommendation 2: [Description]
+
+### 5.5 Limitations and Future Work
+**Format:** Level 2 Heading. Honest assessment.
+**Content:** Acknowledge the limitations of the current study (e.g., reliance on illustrative case studies rather than empirical testing, scope of challenges considered). Suggest avenues for future research, such as empirical validation of the framework, exploring more diverse contexts, or delving deeper into specific governance models.
+
+---
+
+## 6. Conclusion
+**Section Number:** 6
+**Length:** 600-750 words
+
+[No subsections - continuous narrative]
+
+**Required elements:**
+-   Restate the paper's central problem and the innovative approach taken (the theoretical framework).
+-   Summarize the key findings from the case studies and their validation of the framework.
+-   Emphasize the paper's core contributions to the understanding of OSS's role in addressing global challenges.
+-   Reiterate the theoretical and practical implications.
+-   Conclude with a forward-looking statement on the potential of OSS for a sustainable future and call for action.
 
 ---
 
 ## Acknowledgments
-**Heading:** **Acknowledgments** (Level 2 heading, Flush Left, Bold, Title Case)
-[If applicable - funding bodies, contributors, etc.]
+[If applicable - funding bodies, institutional support, significant contributors who are not authors. Follow journal-specific guidelines for placement and format.]
 
 ---
 
 ## References
-**Heading:** **References** (Level 1 heading, Centered, Bold)
 **Format:** APA 7th Edition
-**Minimum:** 20 references for empirical, 50+ for review (adjust based on actual paper content, target ~40-60 for 8k-10k words)
+**Minimum:** 30-50 references for a theoretical paper of this scope.
 
 **Categories:**
-- Foundational works (pre-2019): [~20%]
-- Recent works (2020-2024): [~80%]
-- Including own prior work: [Optional, max 10%]
+-   Foundational works (pre-2019): [~20-30%]
+-   Recent works (2020-2024): [~70-80%]
+-   Including own prior work: [Optional, max 10%]
 
 ---
 
 ## Appendices
-**Heading:** **Appendices** (Level 1 heading, Centered, Bold)
-[If applicable, e.g., detailed case study data, survey instruments, extended framework details.]
-- Appendix A: [Supplementary materials]
+[If applicable - e.g., detailed descriptions of case studies, supplementary data, interview protocols, code examples. Each appendix should be clearly labeled (Appendix A, Appendix B, etc.) and referenced in the main text.]
+-   Appendix A: [Detailed Case Study Data for Public Health Example]
+-   Appendix B: [Framework Component Breakdown]
 
 ---
 
 ## Journal-Specific Requirements
 
-### Journal of Technology and Social Impact (placeholder)
+### [Target Journal Name - e.g., *Information Technologies and International Development*]
 
 **Mandatory sections:**
-- [ ] Data Availability Statement (if applicable for case study data)
-- [ ] Conflict of Interest Statement
-- [ ] Author Contributions (if multiple authors)
-- [ ] Funding Statement
+-   [ ] Data Availability Statement (even for theoretical papers, specify if data used/generated)
+-   [ ] Conflict of Interest Statement
+-   [ ] Author Contributions (if multiple authors, describe individual roles)
+-   [ ] Funding Statement (if external funding was received)
 
 **Formatting specifics:**
-- Figures: [PNG/TIFF, min 300dpi, clearly labeled within text]
-- Tables: [Editable format, not images, clearly labeled within text]
-- Equations: [Numbered, right-aligned, if applicable]
+-   Figures: PNG/TIFF, min 300dpi, grayscale or color suitable for print and online.
+-   Tables: Editable format (e.g., Word table, not images), concise.
+-   Equations: Numbered sequentially, right-aligned (e.g., (1)). Use equation editor.
 
 **Submission checklist:**
-- [ ] Cover letter
-- [ ] Highlights (3-5 bullet points summarizing key findings/contributions)
-- [ ] Graphical abstract (if required)
-- [ ] Supplementary materials (if applicable)
+-   [ ] Cover letter (addressed to Editor-in-Chief, explaining fit with journal scope)
+-   [ ] Highlights (3-5 bullet points summarizing key findings/contributions for quick overview)
+-   [ ] Graphical abstract (if required, a single image visually representing the paper's main message)
+-   [ ] Supplementary materials (if applicable, uploaded separately)
 
 ---
 
-## Length Targets by Section (for 8,000-10,000 words)
+## Length Targets by Section (for ~9,000 words total)
 
-| Section | Words (Approx.) | % of Total |
-|----------------------------------------------------|-----------------|------------|
-| Abstract                                           | 250             | 2.5%       |
-| Introduction                                       | 1000-1500       | 12-15%     |
-| Literature Review and Research Gaps                | 2000-3000       | 25-30%     |
-| A Holistic Open Source Software Sustainability Framework (OSSF) | 1500-2000       | 15-20%     |
-| Applying the OSSF: Illustrative Case Studies       | 1500-2000       | 15-20%     |
-| Discussion                                         | 1500-2000       | 15-20%     |
-| Conclusion                                         | 500-700         | 5-7%       |
-| **Total**                                          | **8000-10000**  | **100%**   |
+| Section | Words | % of Total |
+|-----------------------------|-------|------------|
+| Abstract                    | 250   | 2.8%       |
+| 1. Introduction             | 900   | 10.0%      |
+| 2. Literature Review        | 1800  | 20.0%      |
+| 3. Theoretical Framework    | 1350  | 15.0%      |
+| 4. Illustrative Case Studies| 1800  | 20.0%      |
+| 5. Discussion               | 1600  | 17.8%      |
+| 6. Conclusion               | 700   | 7.8%       |
+| **Total**                   | **8400**| **93.3%**    |
+| *References & Appendices*   | *~600* | *6.7%*     |
+| **Grand Total (approx.)**   | **9000**| **100%**   |
 
 ---
 
 ## Quality Checklist
 
 ### Structure
-- [X] All required sections present
-- [X] Logical flow between sections (Introduction -> Lit Review -> Framework -> Application -> Discussion -> Conclusion)
-- [X] Appropriate section lengths (scaled for 8k-10k words)
+-   [x] All required sections present and logically ordered for a theoretical paper.
+-   [x] Logical flow between sections, building the argument from problem to solution.
+-   [x] Appropriate section lengths, scaled for the target word count.
 
 ### Formatting
-- [X] Consistent heading styles (APA 7th)
-- [X] Proper citation format (APA 7th)
-- [X] Figures/tables numbered correctly (if included)
-- [X] Captions complete and descriptive (APA 7th style)
+-   [x] Consistent heading styles (APA Levels 1, 2, 3).
+-   [x] Proper APA 7th citation format specified for in-text and reference list.
+-   [x] Figures/tables numbered correctly and referenced in text.
+-   [x] Captions complete and descriptive, following APA style.
 
 ### Content
-- [X] Abstract summarizes whole paper
-- [X] Introduction states clear RQ and thesis
-- [X] Literature Review clearly identifies gaps
-- [X] Theoretical Framework is clearly articulated and justified
-- [X] Case Studies objectively present framework application
-- [X] Discussion interprets findings and links to RQ
-- [X] Conclusion emphasizes contribution and future directions
+-   [x] Abstract summarizes the entire paper, including framework and implications.
+-   [x] Introduction states clear research question and outlines contributions.
+-   [x] "Theoretical Framework" clearly describes the proposed model and its components.
+-   [x] "Illustrative Case Studies" are presented objectively and linked to the framework.
+-   [x] Discussion interprets findings, compares with prior work, and highlights implications.
+-   [x] Conclusion succinctly summarizes findings and emphasizes contribution.
 
 ---
 
 ## Style Guide
 
 ### Academic Tone
-- ✅ **Use:** "The results indicate...", "We observed...", "This suggests..."
-- ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
+-   ✅ **Use:** "The results indicate...", "We observed...", "This suggests...", "This framework posits..."
+-   ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that...", overly informal language.
 
 ### Tense Usage
-- **Introduction:** Present tense (current state, established facts)
-- **Literature Review:** Past tense (what others found), Present tense (current understanding, implications)
-- **Theoretical Framework:** Present tense (describing the framework, its components)
-- **Application of OSSF (Case Studies):** Past tense (what you did, what was found in case studies)
-- **Discussion:** Present tense (what findings mean, implications), Past tense (referring to methods/results)
-- **Conclusion:** Present tense (summary of findings, overall implications)
+-   **Introduction:** Present tense (current state, problem).
+-   **Literature Review:** Past tense (what others found, described).
+-   **Theoretical Framework:** Present tense (the framework *is* proposed, its components *are*).
+-   **Illustrative Case Studies:** Past tense (what was observed, what happened in the case).
+-   **Discussion:** Present tense (what the findings *mean*, implications *are*).
 
 ### Voice
-- **Active vs Passive:** Prefer active for clarity, passive for objectivity. Balance for flow.
-- ✅ "We analyzed the data" (active, clear)
-- ✅ "The data were analyzed" (passive, objective)
+-   **Active vs Passive:** Prefer active for clarity, passive for objectivity. Strive for a balance.
+-   ✅ "We analyzed the case studies" (active, clear)
+-   ✅ "The data were analyzed" (passive, objective, when focus is on the action/object)
+-   ✅ "This paper proposes a framework..." (active, clear)
 
 ---
 
 ## Next Steps
 
 After formatting:
-1.  Review against target journal guidelines (once a specific journal is identified)
-2.  Ensure all placeholders are noted (e.g., `[OSS Project Name]`, `[Developing Country Context]`)
-3.  Proceed to Compose phase with clear structure and citation instructions.
-4.  Save to `outline_formatted.md`
+1.  Review against specific journal guidelines (once a final target journal is selected).
+2.  Ensure all [VERIFY] and [Placeholder] tags are noted for Crafter agents.
+3.  Proceed to Compose phase with this clear, formatted structure.
+4.  Save this output to `outline_formatted.md`.
+
+```

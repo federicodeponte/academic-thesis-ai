@@ -8,195 +8,168 @@
 ## Summary
 
 **Strengths:**
--   **Comprehensive Analytical Framework:** The study outlines a multi-dimensional approach to assessing climate protection impact, moving beyond direct emissions to include technological innovation, economic effects, and policy interactions. This holistic view is commendable.
--   **Well-Justified Case Study Selection:** The choice of EU ETS and California Cap-and-Trade is well-argued based on maturity, economic relevance, design heterogeneity, and data availability, providing a solid basis for comparative analysis.
--   **Broad Data Collection Strategy:** The section details a wide array of relevant data sources (emissions, prices, macroeconomics, innovation, policy) and appropriate measurement procedures, demonstrating a thorough data-gathering plan.
--   **Robust Methodological Approach:** The proposed use of Differenz-in-Differenzen (DiD), Paneldaten-Regressionsmodelle (FE/RE), and Vektorautoregressionsmodelle (VAR/VECM) reflects an awareness of the need for rigorous causal inference and dynamic analysis.
--   **Emphasis on Robustness:** The commitment to comprehensive robustness and sensitivity analyses is a strong point, enhancing the credibility of future findings.
+- **Clear Purpose:** The introduction clearly states the goal of analyzing the effectiveness of ETS as a climate policy instrument.
+- **Multi-Dimensional Framework:** The analytical framework is well-structured, considering direct emissions reduction, economic efficiency, and innovation incentives.
+- **Theoretical Grounding:** The methodology is appropriately grounded in environmental economics, particularly the theory of external effects.
+- **Well-Justified Case Studies:** The selection of EU ETS and California Cap-and-Trade is well-reasoned, highlighting their relevance, maturity, and differing contexts.
+- **Robust Econometric Approach:** The proposed use of panel data analysis with fixed effects and Difference-in-Differences (DiD) for emissions reduction is appropriate for causal inference.
+- **Comprehensive Data Sources:** A wide range of publicly available data sources are identified for emissions, market, and economic data.
 
-**Critical Issues:** 5 major, 7 moderate, 6 minor
-**Recommendation:** Substantial revisions needed before publication, particularly regarding the practical implementation of causal inference and data harmonization.
+**Critical Issues:** 5 major, 4 moderate, 4 minor
+**Recommendation:** Revisions needed before publication
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Insufficient Detail on Endogeneity of Carbon Prices
-**Location:** Statistische Methoden zur Wirksamkeitsanalyse (specifically Paneldaten and VAR/VECM)
-**Problem:** The paper aims for a "kausaler Rahmen" but does not explicitly address the significant challenge of endogeneity, particularly for the carbon price. Carbon prices are not exogenous; they are influenced by economic activity, policy changes, and market expectations, which can also affect emissions and innovation. Simply including carbon price as an independent variable without addressing its potential endogeneity could lead to biased and inconsistent estimates, undermining causal claims.
-**Evidence:** The section lists carbon price as an independent variable but lacks any discussion of methods to handle its potential endogeneity (e.g., instrumental variables, GMM, or lagged effects within a VAR context beyond simple Granger causality which doesn't guarantee exogeneity).
-**Fix:** Add a dedicated discussion on how endogeneity will be addressed. This might involve:
-    *   Using lagged carbon prices.
-    *   Exploring instrumental variables that influence carbon price but not directly emissions/innovation.
-    *   Employing more advanced panel data methods suitable for dynamic endogeneity (e.g., System GMM, Difference GMM).
-    *   Acknowledging this as a key limitation if not fully addressable within the scope.
-**Severity:** 🔴 High - threatens the validity of causal claims, central to the thesis's objective.
+### Issue 1: Overclaim in "Gestaltungsmerkmale" Analysis
+**Location:** Section 2.1, para 3 & 4; Section 2.4.1
+**Claim:** "Ein systematischer Vergleich dieser Merkmale über die Fallstudien hinweg wird ermöglichen, Best Practices zu identifizieren und Empfehlungen für die zukünftige Ausgestaltung von ETS abzuleiten." and "Die Analyse der Wechselwirkungen zwischen den Gestaltungsmerkmalen und den beobachteten Wirkungen ist zentral, um kausale Zusammenhänge besser zu verstehen..."
+**Problem:** The proposed econometric model ($ETS_{it}$ as a dummy or price) in Section 2.4.1 does not explicitly incorporate *specific design features* (e.g., cap stringency, allocation method, MSR mechanisms) as distinct variables. This creates a significant disconnect between the ambitious claims of analyzing "Gestaltungsmerkmale" and their "Wechselwirkungen" in the analytical framework and the actual detailed methods.
+**Evidence:** The model is $E_{it} = \beta_0 + \beta_1 ETS_{it} + \beta_2 X_{it} + \alpha_i + \gamma_t + \epsilon_{it}$, where $ETS_{it}$ is a dummy or price, not a vector of design features.
+**Fix:** Either refine the econometric model to explicitly include and test the impact of specific design features and their interactions (e.g., by creating variables for MSR activation, changes in allocation rules, etc.), or significantly temper the claims about identifying "Best Practices" and understanding "Wechselwirkungen" of design features through quantitative analysis. Acknowledge that the econometric model primarily assesses the *overall effect* or *price effect* of an ETS, while design feature analysis might be more qualitative.
+**Severity:** 🔴 High - affects the alignment of research questions with methodology and potential for overclaiming results.
 
-### Issue 2: Lack of Practical Detail for Data Harmonization
-**Location:** Datenquellen und Messverfahren, Unterpunkt "Datenaufbereitung und Harmonisierung"
-**Problem:** The text states "Harmonisierung der Daten über das EU ETS und das kalifornische System hinweg ist von entscheidender Bedeutung," but provides only vague examples ("Umrechnung von Währungen und die Anpassung an unterschiedliche Berichtsstile"). Given the significant "Heterogenität im Design und Kontext" (as highlighted in Selection Criteria), simply stating "Anpassung an unterschiedliche Berichtsstile" is insufficient. Different sector classifications, measurement methodologies for specific economic indicators, and varying reporting frequencies could severely impact comparability.
-**Evidence:** The section lacks concrete steps or examples of how complex harmonization issues (e.g., aligning diverse sector definitions, reconciling different units of measurement for industrial output, or standardizing policy dummy variables across distinct regulatory environments) will be tackled.
-**Fix:** Provide specific examples and a more detailed plan for data harmonization. For instance:
-    *   How will industrial sectors be matched between EU NACE codes and US NAICS codes?
-    *   What specific assumptions will be made for converting or standardizing economic output if not directly comparable?
-    *   How will data reported at different frequencies (e.g., quarterly vs. annually) be handled?
-    *   If some data are only available at national (EU member state) vs. sub-national (California) level, how will this be addressed for comparative analysis?
-**Severity:** 🔴 High - directly impacts the reliability and comparability of results from a comparative case study.
-
-### Issue 3: Overly Ambitious DiD Control Group Selection for Macro-level Policy
-**Location:** Statistische Methoden zur Wirksamkeitsanalyse, Unterpunkt "Differenz-in-Differenzen (DiD) Analyse"
-**Problem:** The proposed DiD comparisons (e.g., "Vergleich mit Ländern außerhalb der EU, die ähnliche wirtschaftliche Strukturen, aber keine vergleichbare CO2-Bepreisung implementiert haben" or "Vergleich mit einem anderen US-Bundesstaat") are extremely difficult to implement credibly at the macro-level for complex, economy-wide policies like Cap-and-Trade. Finding a "control group" that truly satisfies the parallel-trends assumption, especially given the vast economic, political, and regulatory differences, is a major methodological hurdle often debated in policy evaluation literature.
-**Evidence:** While the paper acknowledges the parallel-trends assumption, it doesn't discuss the *feasibility* or *rigor* of finding such a comparable macro-level control group. The "similar economic structures" clause is very broad and unlikely to hold for all unobserved factors.
+### Issue 2: Lack of Specificity for Econometric Model Variables
+**Location:** Section 2.4.1
+**Claim:** Model includes $ETS_{it}$ and $\alpha_i$ (feste Effekte für die Einheit $i$).
+**Problem:**
+1.  **$ETS_{it}$ Variable:** The definition "eine Dummy-Variable... (oder eine Variable für den Zertifikatspreis...)" is vague. These are fundamentally different approaches with distinct implications for interpretation. A dummy only captures presence, while price captures intensity and market dynamics. The paper needs to commit to one, or clearly explain how both will be used and how their results will be reconciled. Using a dummy variable would struggle to capture reforms and evolving stringency.
+2.  **"Einheit i":** The term "Einheit i" (unit i) is not clearly defined. Is it individual facilities, specific sectors, or entire countries/regions (e.g., EU as one unit, California as another)? The statement "Länder oder Sektoren innerhalb des ETS" is still ambiguous. This choice significantly impacts the number of observations, the degrees of freedom, the interpretation of fixed effects, and the statistical power.
 **Fix:**
-    *   Refine the DiD strategy to focus on more granular comparisons (e.g., specific sectors within the EU ETS vs. non-ETS sectors *within the same countries*, or specific industries in California vs. similar industries in a control state, where the parallel trends assumption is more plausible).
-    *   Provide a more detailed justification for the chosen control group(s) and a specific plan for how the parallel trends assumption will be rigorously tested and *defended* against potential confounders.
-    *   Acknowledge the inherent limitations and challenges of macro-level DiD and discuss how these will be mitigated or interpreted.
-**Severity:** 🔴 High - if the control group is flawed, the entire causal inference from DiD is compromised.
+1.  Clearly state whether the primary ETS effect will be captured by a dummy variable (and how reforms will be handled then) or by the certificate price. Justify this choice.
+2.  Explicitly define what "Einheit i" refers to (e.g., "Sektoren auf NACE-2-Ebene innerhalb der EU-Mitgliedstaaten und Kaliforniens").
+**Severity:** 🔴 High - fundamental for the clarity, validity, and interpretability of the econometric results.
+
+### Issue 3: Unaddressed Parallel Trends Assumption in DiD
+**Location:** Section 2.4.1, para 3
+**Claim:** "Zusätzlich zur direkten Emissionsreduktion wird die Methode der Differenz-in-Differenzen (DiD)-Analyse angewendet, um die kausale Wirkung des ETS präziser zu identifizieren."
+**Problem:** DiD analysis critically relies on the **parallel trends assumption**, meaning that in the absence of the treatment (ETS), the emissions trends of the treatment group (ETS-covered entities) and the control group (non-ETS entities) would have followed parallel paths. This assumption is not mentioned, discussed, or proposed to be tested.
+**Evidence:** No mention of parallel trends assumption.
+**Fix:** Explicitly state the parallel trends assumption. Describe how this assumption will be tested (e.g., visual inspection of pre-treatment trends, statistical tests comparing pre-treatment slopes) and what steps will be taken if the assumption is violated (e.g., using synthetic control methods, event studies). Also, concretely identify the proposed control groups for EU ETS and California.
+**Severity:** 🔴 High - a critical assumption for the causal interpretation of DiD results; ignoring it undermines validity.
+
+### Issue 4: Data Availability for Economic Efficiency Indicators
+**Location:** Section 2.3, "Wirtschaftsdaten" and "Messverfahren"
+**Claim:** "Indikatoren wie die Änderung der Produktionskosten oder der Gewinnmargen werden, wo Daten verfügbar sind, herangezogen."
+**Problem:** Data on production costs and profit margins at a granular level (e.g., company or sector-specific within ETS-covered entities) are often proprietary and difficult to obtain from public sources. The phrase "wo Daten verfügbar sind" is a significant caveat that suggests these key indicators might not be systematically available, potentially making a comprehensive quantitative analysis of "ökonomische Effizienz" (as defined) challenging or impossible.
+**Evidence:** The explicit caveat "wo Daten verfügbar sind" for crucial indicators.
+**Fix:** Be more transparent about the expected availability of these specific data points. If they are largely unavailable, either propose alternative, more readily available proxies (e.g., energy intensity, investment in specific technologies from public reports, stock market performance of ETS-affected companies) or explicitly state that the quantitative analysis of these specific indicators will be limited/qualitative due to data constraints. Adjust the overall claims about quantifying economic efficiency accordingly.
+**Severity:** 🔴 High - impacts the feasibility and transparency of a core analytical dimension.
+
+### Issue 5: Comparability of Emissions Data
+**Location:** Section 2.3, "Emissionsdaten"
+**Claim:** "Die Konsistenz und Vergleichbarkeit der Emissionsdaten über die Fallstudien hinweg wird durch die Verwendung standardisierter Reporting-Protokolle sichergestellt."
+**Problem:** While there are some international standards, the specific facility-level reporting protocols for the EU ETS (under EU law) and the California Cap-and-Trade Program (under CARB regulations) might have subtle differences in scope, definitions, or methodologies that affect direct comparability, especially for detailed sectoral or facility-level analysis. Claiming "sichergestellt" (ensured) is too strong without further substantiation.
+**Evidence:** No specific "standardisierte Reporting-Protokolle" are cited that definitively guarantee cross-system comparability at a granular level.
+**Fix:** Acknowledge potential subtle differences in reporting protocols between the two systems. Explain *how* these differences will be identified and, if necessary, harmonized or controlled for in the analysis. If specific international standards *do* apply and ensure comparability, cite them.
+**Severity:** 🟡 Moderate - impacts the rigor and confidence in cross-case comparisons.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 4: Absence of Explicit Research Questions or Hypotheses
-**Location:** Throughout the "Methodik" section
-**Problem:** The "Methodik" chapter, while detailing the analytical framework and methods, does not explicitly state the specific research questions or hypotheses that will be tested. While the "Analyserahmen" outlines dimensions of impact, it doesn't formulate concrete, testable statements.
-**Impact:** Without clear hypotheses, it's difficult to precisely evaluate if the chosen methods are optimally aligned to answer the study's core questions, and the interpretation of results can become less focused.
-**Fix:** Add a dedicated subsection after the "Analyserahmen" (or refer to a preceding chapter if hypotheses are there) that clearly lists the specific research questions and corresponding hypotheses derived from the analytical framework. For example: "Hypothesis 1: The introduction of CO2 pricing leads to a statistically significant reduction in direct GHG emissions in covered sectors."
+### Issue 6: Vagueness in "Robustheit Testen" for Comparative Analysis
+**Location:** Section 2.2, para 4
+**Claim:** "Dies erlaubt es, die Robustheit der ETS-Wirkungsmechanismen unter verschiedenen Bedingungen zu testen {cite_048}."
+**Problem:** While the selection of diverse case studies is good, the specific *methodology* for "testing the robustness" of ETS mechanisms under different conditions (e.g., supranational vs. subnational, different economic contexts) is not elaborated. It's unclear how the econometric models or qualitative analyses will explicitly perform this "robustness test" beyond simply comparing results.
+**Fix:** Briefly describe *how* the comparative analysis will formally assess robustness. This could involve, for instance, performing separate regressions for each system and comparing coefficients, or including interaction terms between ETS effects and context-specific dummy variables if the panel structure allows.
 
-### Issue 5: Lack of Specificity in Method Application Details
-**Location:** Statistische Methoden zur Wirksamkeitsanalyse
-**Problem:** While a good range of methods is proposed, the exact implementation strategy for some is vague.
-**Missing:**
-    *   For DiD: Which specific comparison (out of the several suggested) will be the primary one, and why?
-    *   For Panel Data: Will the models be applied at the EU member state level, or industry level across the EU? Same for California. What are the chosen units of analysis?
-    *   For VAR/VECM: What are the specific units of analysis (e.g., aggregate EU/California, or specific sectors/countries)? How will optimal lag lengths be determined? What specific stationarity and cointegration tests will be employed before applying VAR/VECM?
-**Fix:** Clarify the specific units of analysis for each model, detail the primary DiD comparison, and outline the specific steps for pre-analysis (e.g., lag selection, unit root tests) for VAR/VECM.
+### Issue 7: Insufficient Detail on Carbon Leakage Data
+**Location:** Section 2.4.2
+**Claim:** "Hierbei wird auch die Möglichkeit von Carbon Leakage untersucht, indem die Entwicklung von Emissionsintensitäten in den ETS-Sektoren im Vergleich zu Nicht-ETS-Sektoren oder internationalen Wettbewerbern analysiert wird {cite_017}."
+**Problem:** While a good approach, the data sources for "internationale Wettbewerber" were not explicitly listed in Section 2.3. Analyzing international competitors requires comparable data from non-ETS regions/countries, which is a significant data requirement that needs to be addressed.
+**Fix:** Add a brief mention in Section 2.3 about the data sources that will be used for "internationale Wettbewerber" (e.g., Eurostat for non-EU countries, specific national statistics, or international industry databases).
 
-### Issue 6: Weak Justification for Clemens et al. (2024) Citation
-**Location:** Statistische Methoden zur Wirksamkeitsanalyse, Unterpunkt "Robustheitstests und Sensitivitätsanalysen"
-**Problem:** The citation {cite_029} (Clemens et al., 2024) is introduced to emphasize the importance of "Expertensichtweisen zur Bewertung von Kostensenkungspotenzialen." While expert views are valuable, this section is about *statistical methods* for robustness and sensitivity analysis in an econometric context. The connection between expert views on cost reduction potentials and the *methodology* of performing econometric robustness tests is not clearly established.
-**Impact:** The citation appears somewhat out of place and weakens the methodological rigor of the argument for statistical robustness.
-**Fix:** Either remove this citation if it doesn't directly inform the *statistical methodology* of robustness tests, or provide a clearer and more explicit link explaining *how* expert perspectives will be integrated into the *design or interpretation* of the sensitivity analyses, if that is the intention.
+### Issue 8: Clarity on "Secondary" Qualitative Data for Innovation
+**Location:** Section 2.3, "Messverfahren" and Section 2.4.3
+**Problem:** The phrasing "Hierbei werden auch qualitative Analysen von Unternehmensberichten und Experteninterviews (sekundär) herangezogen" (2.3) and "Erfahrungen und Bewertungen von Akteuren aus Wirtschaft und Politik, wie sie in Berichten von Organisationen... dokumentiert sind" (2.4.3) is slightly ambiguous. While "sekundär" clarifies no primary interviews, the initial phrasing could be misinterpreted.
+**Fix:** Explicitly state upfront that the qualitative analysis relies *solely* on secondary data (literature, policy documents, reports, *reported* expert opinions) and does not involve primary data collection (e.g., new interviews).
 
-### Issue 7: Missing Discussion on Potential Limitations of Proxies
-**Location:** Datenquellen und Messverfahren, Unterpunkt "Technologische Innovationsdaten"
-**Problem:** The section proposes using patent applications and F&E expenditures as proxies for technological innovation. While common, these proxies have known limitations (e.g., not all innovation is patented, patents vary in quality, F&E spending doesn't always translate to successful innovation).
-**Impact:** Not acknowledging these limitations can lead to an overstatement of the findings related to innovation.
-**Fix:** Briefly acknowledge the limitations of using patents and F&E spending as proxies for innovation and discuss how these limitations might affect the interpretation of results.
-
-### Issue 8: Undefined "Aktuellstes Verfügbares Datenjahr"
-**Location:** Datenquellen und Messverfahren, Unterpunkt "Datenaufbereitung und Harmonisierung"
-**Problem:** The statement "Der Untersuchungszeitraum erstreckt sich von der Einführung der jeweiligen Systeme bis zum aktuellsten verfügbaren Datenjahr" is vague.
-**Impact:** For reproducibility and clarity, the exact timeframe is crucial. "Aktuellstes verfügbares Datenjahr" can change.
-**Fix:** Specify the precise end year for the data collection (e.g., "bis Ende 2023" or "bis zum Datenjahr 2022").
-
-### Issue 9: Incomplete Detail on Data Cleaning Procedures
-**Location:** Datenquellen und Messverfahren, Unterpunkt "Datenaufbereitung und Harmonisierung"
-**Problem:** The text mentions "gründlichen Reinigung und Aufbereitung" including "Behandlung fehlender Werte, die Bereinigung von Ausreißern."
-**Missing:** Specific methods for handling missing values (e.g., imputation, deletion) and outlier detection/treatment (e.g., Winsorization, robust regression).
-**Fix:** Briefly outline the planned approaches for dealing with missing data and outliers to ensure transparency and reproducibility.
-
-### Issue 10: Lack of Specifics on "Policy-Mix und Interaktionen" in Methodology
-**Location:** Analyserahmen and Statistische Methoden
-**Problem:** The analytical framework rightly highlights the importance of "Policy-Mix und Interaktionen." However, the "Statistische Methoden" section, while mentioning "politisch-regulatorische Dummy-Variablen und eine Reihe von Kontrollvariablen," doesn't elaborate on *how* these interactions will be specifically modeled or disentangled.
-**Impact:** Without a clearer methodological plan, the ambition to assess policy interactions might not be fully realized.
-**Fix:** Briefly elaborate on how the interaction effects of CO2 pricing with other policies (e.g., renewable energy subsidies, energy efficiency standards) will be explicitly captured in the econometric models (e.g., interaction terms, separate models for different policy regimes).
+### Issue 9: Overstatement of Internal Validity
+**Location:** Section 2.4.4
+**Claim:** "Die interne Validität der Studie wird durch die sorgfältige Auswahl der ökonometrischen Modelle, die Kontrolle für Störvariablen und die Anwendung von robusten Schätzverfahren gewährleistet."
+**Problem:** "Gewährleistet" (ensured/guaranteed) is too strong a claim for any empirical study, especially one dealing with complex policy interventions. Econometric models aim to *enhance* or *improve* internal validity, but rarely "guarantee" it due to potential unobserved confounders or remaining endogeneity.
+**Fix:** Soften the language to "Die interne Validität der Studie wird durch... angestrebt" (is aimed to be achieved), or "wird durch... gestärkt" (is strengthened by), or "wird durch... adressiert" (is addressed by).
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Placeholder Citations:** All citations (e.g., {cite_009}) are placeholders.
-    *   **Fix:** Replace with full, properly formatted citations including DOIs or arXiv IDs where applicable. This is crucial for academic integrity and verification.
-2.  **Repetitive Phrasing:** "Messverfahren" sections often repeat "Der Kohlenstoffpreis dient als zentraler Indikator..." or similar.
-    *   **Fix:** Streamline language for conciseness.
-3.  **Ambiguity in "Wirtschaftliche Auswirkungen":** While listing concerns like inflation and employment, the "Messverfahren" for these specific aspects is not explicitly detailed, though general macroeconomic data is mentioned.
-    *   **Fix:** Briefly indicate how these specific impacts (e.g., on employment in covered sectors, or on general inflation) will be measured or approximated in the models.
-4.  **No mention of Software for Data Prep:** While R or Stata are mentioned for analysis, it's not clear what software will be used for the "gründlichen Reinigung und Aufbereitung" and "Harmonisierung."
-    *   **Fix:** Briefly mention the software for data preparation.
-5.  **Clarity on "Anpassung an unterschiedliche Berichtsstile":** This phrase is quite vague.
-    *   **Fix:** Replace with more concrete examples or explanations of what "unterschiedliche Berichtsstile" entail and how they will be adjusted.
-6.  **"Transparenz der Daten ist ein Schlüsselkriterium für die Reproduzierbarkeit":** While true, this statement is somewhat self-evident.
-    *   **Fix:** Rephrase to emphasize *how* the research ensures transparency and reproducibility beyond just using publicly available data (e.g., by making code/processed data available).
+1.  **Generic Theoretical Underpinnings:** "Der theoretische Unterbau dieses Analyserahmens speist sich aus der Umweltökonomie, insbesondere der Theorie der externen Effekte und marktbasierter Instrumente." (2.1) Could be slightly more specific by naming specific economic models or concepts (e.g., Pigouvian taxes, Coase Theorem, permit market design theory) if applicable, to show deeper theoretical engagement.
+2.  **"Am längsten etablierten" Overclaim:** For case studies (2.2), "Diese Systeme repräsentieren zwei der größten und am längsten etablierten Emissionshandelssysteme weltweit..." is a slight overclaim. While very mature, there might be older, smaller, or national systems. Better to say "zwei der größten und bedeutendsten etablierten multisektoralen Systeme" or "zwei der am längsten etablierten großen Systeme."
+3.  **Specificity of Interpolation Methods:** "Fehlende Datenpunkte werden, wo angemessen, durch Interpolation oder andere statistische Verfahren behandelt, wobei die Grenzen dieser Methoden transparent gemacht werden." (2.3) While stating limits is good, briefly mentioning *which* interpolation methods (e.g., linear, spline, Last Observation Carried Forward) are considered and under what criteria "angemessen" is defined would enhance transparency.
+4.  **Lack of Alternative Econometric Estimators:** While Fixed Effects are appropriate, briefly mentioning that other estimators (e.g., Random Effects with Hausman test, or GMM for dynamic panels if lagged dependent variables are considered) were *considered* and why Fixed Effects were chosen as primary would demonstrate broader methodological awareness.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Link between Heterogeneity and Specific Policy Impact
-**Location:** Auswahlkriterien für Fallstudien (Punkt 3) → Statistische Methoden zur Wirksamkeitsanalyse
-**Logic:** The selection criteria emphasize "Heterogenität im Design und Kontext" (e.g., scope, allocation, price mechanisms) to "die Auswirkungen spezifischer politischer Entscheidungen... zu untersuchen." However, the statistical methods section does not explicitly detail *how* these specific design differences will be isolated and their impacts quantified. While dummy variables are mentioned, this is a general approach and doesn't fully explain how the *comparative value* of these differences will be leveraged for specific policy insights.
-**Missing:** A clear articulation of how the comparative analysis of these design differences will be structured in the econometric models to yield insights into "welche Designmerkmale unter welchen Umständen besonders effektiv sind."
-**Fix:** Add a paragraph explaining how the design differences (e.g., auctioning vs. free allocation, price floors/ceilings vs. MSR) will be operationalized in the models (e.g., via interaction terms with carbon price or time, or by comparing model results from sub-groups/periods reflecting different designs).
-
-### Gap 2: Causal Framework vs. Methodological Limitations
-**Location:** Analyserahmen → Statistische Methoden
-**Logic:** The "Analyserahmen" explicitly states that a "kausaler Rahmen angestrebt" is needed to "die Effekte der CO2-Bepreisung von anderen zeitgleich wirkenden Faktoren zu isolieren." However, the subsequent discussion of statistical methods, while proposing robust techniques, does not fully address the practical challenges and limitations that might prevent achieving this "kausaler Rahmen" (most notably, the endogeneity of carbon prices and the difficulty of finding perfect DiD control groups).
-**Missing:** A frank discussion of the inherent limitations in achieving true causal inference in complex, real-world policy evaluations, especially at a macro level, and how the study plans to navigate these limitations or qualify its causal claims.
-**Fix:** Incorporate a section discussing the limitations of the chosen methods in achieving strict causality and how the study will interpret its findings in light of these limitations (e.g., "results suggest strong correlations and plausible causal pathways, but definitive causal attribution remains challenging due to...").
+### Gap 1: Disconnect between Design Feature Ambition and Method
+**Location:** Section 2.1 vs. 2.4.1
+**Logic:** The paper sets an ambitious goal to analyze the *influence* and *interactions* of specific ETS "Gestaltungsmerkmale" (design features) to identify best practices. However, the econometric model presented for effectiveness analysis does not explicitly operationalize these specific features as variables.
+**Missing:** A clear logical bridge explaining how the proposed quantitative methods will *actually* analyze the nuances of "Gestaltungsmerkmale" beyond the mere presence or price of an ETS.
+**Fix:** As per Major Issue 1, either align the method with the ambition or temper the ambition.
 
 ---
 
 ## Methodological Concerns
 
-### Concern 1: Generalizability from Two Case Studies
-**Issue:** The study focuses on two specific, albeit large and mature, CO2 pricing systems. While the selection criteria highlight their relevance, the generalizability of findings to other contexts (e.g., developing economies, smaller systems, different political environments) might be limited.
-**Risk:** Conclusions drawn from EU ETS and California might not be directly transferable to other systems without careful consideration of contextual factors.
-**Reviewer Question:** "To what extent can the findings from these two systems be generalized to other CO2 pricing schemes globally, especially those in different economic or political stages?"
-**Suggestion:** Add a dedicated paragraph in the discussion of the methodology or future work section to explicitly address the generalizability of the findings and potential limitations.
+### Concern 1: Unaddressed Endogeneity Beyond Fixed Effects
+**Issue:** While fixed effects help control for time-invariant unobservables, the econometric models (2.4.1, 2.4.2) do not discuss potential *time-varying* endogeneity issues (e.g., reverse causality between ETS prices and emissions/economic variables, or omitted time-varying variables). This is particularly relevant when using certificate prices as an explanatory variable, as prices themselves are endogenous outcomes of market dynamics and policy expectations.
+**Risk:** Causal claims might be biased if such endogeneity is not addressed.
+**Reviewer Question:** "How do you plan to address potential endogeneity concerns beyond fixed effects, especially regarding the relationship between ETS prices and emissions/economic outcomes?"
+**Suggestion:** Briefly discuss potential sources of time-varying endogeneity and outline strategies to mitigate them (e.g., using instrumental variables if feasible, lagged variables, or explicitly acknowledging as a limitation).
 
-### Concern 2: Definition and Measurement of "Technological Progress" as a Control Variable
-**Issue:** "Technischer Fortschritt" is listed as a control variable in panel data models, but its specific measurement is not detailed in the "Datenquellen und Messverfahren" section. While "Technologische Innovationsdaten" are discussed as dependent variables, measuring "general technological progress" as a control is a different challenge.
-**Risk:** If not properly measured, this could lead to omitted variable bias.
-**Question:** "How will 'technischer Fortschritt' be measured and controlled for in the econometric models, particularly as a distinct factor from the innovation *induced* by carbon pricing?"
-**Fix:** Clarify the specific proxy or method for measuring general technological progress as a control variable (e.g., R&D intensity at a broader level, patent counts in general technology fields, or total factor productivity).
+### Concern 2: Ambiguity of "Einheit i" for Panel Data
+**Issue:** As highlighted in Major Issue 2, the precise definition of "Einheit i" for the panel data analysis remains ambiguous. This is not just a clarity issue but a fundamental methodological choice affecting the entire panel structure and interpretation.
+**Risk:** Misinterpretation of fixed effects, incorrect degrees of freedom, and unclear scope of findings.
+**Reviewer Question:** "Please specify what constitutes 'Einheit i' in your panel data analysis (e.g., specific industrial sectors, individual facilities, or regional aggregations)."
+**Suggestion:** Clearly define "Einheit i" and justify the choice in terms of data availability and research questions.
 
 ---
 
 ## Missing Discussions
 
-1.  **Specific Hypotheses:** As noted in Moderate Issues, explicit, testable hypotheses are absent.
-2.  **Detailed Endogeneity Strategy:** A dedicated discussion on how the endogeneity of carbon prices will be addressed.
-3.  **Data Quality and Missing Data Handling:** More specific plans for dealing with missing values, outliers, and potential data inconsistencies across sources.
-4.  **Computational Resources/Efficiency:** No mention of the computational demands of the proposed VAR/VECM models or large panel datasets, especially if robustness checks are extensive.
-5.  **Uncertainty and Scenario Analysis:** How will the inherent uncertainties in economic and climate modeling be reflected in the analysis beyond just sensitivity checks (e.g., confidence intervals for policy implications)?
-6.  **Ethical Considerations/Data Privacy:** While not typically a major issue for aggregated public data, it's good practice to briefly mention if any privacy or ethical concerns arise from data usage.
+1.  **Specific Control Groups for DiD:** While DiD is proposed, concrete examples or criteria for selecting the actual control group(s) for both the EU ETS and California program are missing.
+2.  **Handling of ETS Reforms:** The EU ETS, in particular, has undergone significant reforms (e.g., MSR introduction). The methodology should explicitly state how these reforms will be integrated into the econometric models (especially if using a simple ETS dummy) or how their impact will be qualitatively assessed.
+3.  **Data Limitations for Innovation:** A more explicit and detailed discussion of the inherent difficulties in *quantitatively* attributing innovation to ETS and the limitations of proxy measures (patents, R&D investment) would strengthen transparency.
+4.  **Sensitivity to Data Quality:** While data checks are mentioned, a brief discussion of how critical outliers, missing values (beyond interpolation), or potential inaccuracies in publicly available datasets (especially for emissions and prices, which can be subject to reporting errors or market manipulation) might be handled or acknowledged as limitations.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Slightly Overconfident in Causal Claims:** Phrases like "kausaler Rahmen angestrebt, der versucht, die Effekte... zu isolieren" are strong. While a good goal, the practical difficulties imply a need for more cautious phrasing until the methods for achieving this are fully detailed and robustly defended.
-    *   **Fix:** Temper strong causal language with acknowledgments of inherent complexities and limitations in real-world policy evaluation.
+1.  **Overly Confident Language:** As noted in Major Issue 9 and Moderate Issue 4, phrases like "gewährleistet" (ensured) for internal validity are too strong. Academic writing generally requires a more cautious and nuanced tone, acknowledging inherent limitations.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Given the significant endogeneity challenges, what specific econometric techniques (e.g., IV, GMM) will be employed to ensure the causal identification of the carbon price effect?"
-2.  "Please provide a detailed table or section outlining the exact data harmonization steps, especially for sector classifications and economic indicators, to ensure comparability between the EU ETS and California systems."
-3.  "Which specific DiD comparison will be the primary focus, and how will the parallel trends assumption be rigorously tested and justified, particularly given the macro-level nature of the policy interventions?"
-4.  "What are the precise research questions and testable hypotheses that this methodology aims to answer?"
-5.  "How will 'technischer Fortschritt' be operationalized as a control variable, and how will its measurement avoid conflating with the innovation effects directly attributable to CO2 pricing?"
-6.  "How will the interactions between CO2 pricing and other existing climate policies in both regions be specifically modeled and distinguished?"
+1.  "What are the specific 'units i' (e.g., sectors, countries, facilities) in your panel data analysis, and how does this choice impact your number of observations and the interpretation of your fixed effects?"
+2.  "How will you test or justify the critical parallel trends assumption for your Difference-in-Differences analysis, and what are your proposed control groups for both the EU ETS and California?"
+3.  "Given your ambition to analyze 'Gestaltungsmerkmale,' how will your econometric models explicitly account for specific ETS design features (e.g., cap stringency, allocation methods, MSR) beyond a simple dummy or price variable?"
+4.  "Considering the likely difficulty in obtaining granular data on production costs or profit margins, how will you ensure a robust and quantitative analysis of the 'ökonomische Effizienz' dimension, or will this aspect be primarily qualitative?"
+5.  "How do you plan to address potential endogeneity concerns beyond fixed effects, especially regarding the relationship between ETS prices and emissions/economic outcomes, and what are the limitations of your approach?"
+6.  "How will you integrate the significant reforms and evolution of the EU ETS (e.g., MSR, phase changes) into your econometric models?"
+7.  "What specific 'standardisierte Reporting-Protokolle' ensure the comparability of emissions data between the EU ETS and California Cap-and-Trade, or how will you address potential differences?"
 
-**Prepare answers or add to paper.**
+**Prepare answers or add to paper**
 
 ---
 
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 Fix Issue 1 (Endogeneity of Carbon Prices) - crucial for validity.
-2.  🔴 Address Issue 2 (Data Harmonization Detail) - essential for comparative analysis.
-3.  🔴 Resolve Issue 3 (DiD Control Group Ambition) - critical for causal inference.
-4.  🟡 Add explicit Research Questions/Hypotheses (Issue 4) - improves focus.
-5.  🟡 Provide Specificity in Method Application (Issue 5) - clarifies implementation.
-6.  🟡 Clarify or remove Clemens et al. citation (Issue 6) - improves methodological rigor.
+1.  🔴 Fix Issue 1 (Overclaim on "Gestaltungsmerkmale" Analysis) - affects core research question alignment and credibility.
+2.  🔴 Address Issue 2 (Lack of Specificity on Econometric Model Variables) - fundamental for clarity and validity.
+3.  🔴 Resolve Issue 3 (Unaddressed Parallel Trends Assumption in DiD) - critical for causal inference.
+4.  🔴 Address Issue 4 (Data Availability Concerns for Economic Efficiency) - impacts feasibility and transparency of claims.
+5.  🟡 Clarify Issue 5 (Comparability of Emissions Data) - impacts data rigor and interpretation.
+6.  🟡 Address Issue 6 (Vagueness in "Robustheit Testen") and Issue 7 (Insufficient Detail on Carbon Leakage Data).
+7.  🟡 Review all instances of overly confident language (e.g., "gewährleistet") and soften them to reflect appropriate academic caution.
 
-**Can defer:**
--   Minor wording and stylistic improvements.
--   More detailed discussion of proxy limitations (Issue 7).
--   Adding software for data prep (Minor Issue 4).
-
-This review aims to help make your "Methodik" section exceptionally strong and defensible.
+**Can defer (but recommended for final version):**
+- Minor wording issues (fix in revision).
+- Adding more specific theoretical underpinnings (Minor Issue 1).
+- Expanding on general data handling details (Minor Issue 3).

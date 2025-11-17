@@ -8,121 +8,125 @@
 ## Summary
 
 **Strengths:**
-- Comprehensive overview of Emissions Trading Systems (ETS) and their mechanisms.
-- Good integration of theoretical concepts with practical examples (EU ETS, California, China).
-- Detailed comparison with other climate policy instruments (carbon tax, command-and-control, subsidies).
-- Acknowledges challenges such as price volatility, over-allocation, and attribution difficulties.
-- Well-structured and logically flowing arguments within sections.
+- **Comprehensive Coverage:** The analysis provides a well-structured and broad overview of Emissions Trading Systems (EHS), covering their mechanisms, market dynamics, specific case studies, comparison with other instruments, and empirical evidence.
+- **Clear Structure:** The paper is logically organized into distinct sections, making it easy to follow the arguments.
+- **Acknowledgment of General Challenges:** The author effectively identifies common challenges associated with EHS, such as carbon leakage, price volatility, and initial over-allocation, and discusses mechanisms to address them (e.g., MSR, CBAM).
+- **Inclusion of Diverse Case Studies:** The selection of EU-ETS, California, and China provides valuable insights into different design philosophies and stages of EHS implementation.
+- **Dedicated Section on Empirical Evidence Challenges:** Section 5.4, "Herausforderungen und Grenzen der empirischen Forschung," is a strong addition, demonstrating an awareness of the complexities in attributing causality.
 
-**Critical Issues:** 2 major, 2 moderate, 2 minor
-**Recommendation:** Significant revisions needed before publication, primarily to address academic integrity and strengthen evidence for broad claims.
+**Critical Issues:** 3 major, 3 moderate, 5 minor
+**Recommendation:** Significant revisions are needed, particularly regarding missing empirical data and more nuanced causal attribution, before publication.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Academic Integrity - Unverified / Future Citations
-**Location:** Throughout the text, specifically:
-- "Preisgestaltung und Marktmechanismen" {cite_004} (Shammah, Emeka et al. (2025))
-- "Vergleich mit anderen Klimaschutzinstrumenten" {cite_022} (Phuong, Huy et al. (2025)), {cite_010} (Wu, Ahmad et al. (2025))
-- "Empirische Belege für Klimaschutzwirkung" {cite_006} (Kler (2025))
-**Claim:** Specific findings, analytical frameworks, or comprehensive bibliometric studies are attributed to papers dated 2025. Another 2024 paper {cite_017} (Simpa, Solomon et al. (2024)) is used to support a broad claim of consensus.
-**Problem:** Citing papers from a future year (2025) suggests either a hallucination, misrepresentation, or reliance on unverified pre-prints without proper disclosure. Even 2024 papers, if published very recently, need careful verification. This severely undermines the academic credibility and trustworthiness of the entire analysis.
-**Evidence:** The publication year "2025" for multiple cited works.
-**Fix:**
-1.  **Immediately verify the existence and publication status of *all* 2024 and 2025 citations.**
-2.  If the papers are non-existent, they must be removed, and the claims they support must either be removed or substantiated with verifiable, published sources.
-3.  If they are genuine "forthcoming" or "in press" articles, this must be explicitly stated (e.g., "(forthcoming)") and, if possible, a DOI or arXiv ID for a pre-print should be provided.
-4.  For the 2024 citation, ensure it is a published, peer-reviewed source.
-**Severity:** 🔴 High - a fundamental breach of academic integrity and severely impacts the paper's reliability.
+### Issue 1: Critical Missing Citations for Empirical Data
+**Location:** Section 3.2. Das kalifornische Cap-and-Trade-Programm
+**Claim:** "Zwischen 2013 und 2018 sanken die Emissionen der erfassten Sektoren in Kalifornien um 11% {cite_MISSING: Quelle für kalifornische Emissionsreduktion}"
+**Problem:** A key empirical statistic supporting the effectiveness of the Californian system is presented without a citation. This undermines the credibility of the claim and the section.
+**Fix:** Provide a specific, verifiable citation for this crucial data point.
+**Severity:** 🔴 High - affects academic integrity and factual accuracy.
 
-### Issue 2: Overclaim of Consensus on Macroeconomic Effects
-**Location:** "Empirische Belege für Klimaschutzwirkung" -> "Makroökonomische und Verteilungseffekte"
-**Claim:** "Während Kritiker oft vor negativen Auswirkungen auf das Wirtschaftswachstum und die Wettbewerbsfähigkeit warnen, zeigen viele Studien, dass gut gestaltete EHS nur geringe oder keine negativen makroökonomischen Effekte haben können." (While critics often warn of negative impacts on economic growth and competitiveness, many studies show that well-designed ETS can have little or no negative macroeconomic effects.)
-**Problem:** This broad claim of "many studies" is supported by only one citation {cite_017} (Simpa, Solomon et al. (2024)). One paper, especially a very recent one, does not constitute "many studies" or a broad consensus in the extensive literature on the macroeconomic impacts of carbon pricing. This misrepresents the current state of academic debate.
-**Evidence:** The claim uses "viele Studien" (many studies) but provides only one reference {cite_017}.
+### Issue 2: Critical Missing Citations for Political Context
+**Location:** Section 3.2. Das kalifornische Cap-and-Trade-Programm
+**Claim:** "Die Verlängerung des Programms über 2020 hinaus erforderte erhebliche politische Anstrengungen und Kompromisse {cite_MISSING: Quelle für politische Herausforderungen in Kalifornien}"
+**Problem:** While acknowledging political challenges is good, stating they required "erhebliche politische Anstrengungen und Kompromisse" without a supporting citation makes it an unsubstantiated claim.
+**Fix:** Provide a specific, verifiable citation that details these political challenges and efforts.
+**Severity:** 🔴 High - affects academic integrity and factual support.
+
+### Issue 3: Overclaiming/Lack of Nuance in Causal Attribution
+**Location:** Throughout Sections 1, 3.1, and 5.1 (e.g., "signifikante Emissionsreduktionen... sind teilweise auf das EHS zurückzuführen, insbesondere in Kombination mit anderen politischen Maßnahmen")
+**Claim:** The paper frequently highlights "signifikante" or "substanzielle" emissions reductions and attributes them to EHS, even when acknowledging other contributing factors. While a hedge like "teilweise" is included, the overall tone often leans towards a strong, direct causal link.
+**Problem:** Disentangling the precise causal effect of EHS from concurrent policies (e.g., renewable energy subsidies, energy efficiency standards, economic cycles) is notoriously complex. While the paper mentions this complexity in Section 1 and 5.4, the strength of the claims elsewhere could imply a higher degree of EHS-specific attribution than robust empirical studies often allow for, or than the provided citations fully support in isolation. For instance, the 41% reduction in EU-ETS sectors is stated, followed by "Diese Reduktionen sind teilweise auf das EHS zurückzuführen, insbesondere in Kombination mit anderen politischen Maßnahmen und dem Ausbau erneuerbarer Energien." This is a good hedge, but the subsequent text often focuses heavily on the EHS contribution without further quantifying or elaborating on the *magnitude* of the "partial" effect.
+**Evidence:** The phrasing "substanzielle Emissionsreduktionen" in Section 3.1 and strong statements of "positive und signifikante Einfluss" (Section 5.1) without clear quantification of the EHS-specific share.
 **Fix:**
-1.  Provide multiple, diverse, and well-established citations from the literature to support such a strong claim of consensus.
-2.  Alternatively, hedge the claim to reflect the evidence provided, e.g., "Some studies suggest...", "Evidence from certain contexts indicates...", or "A recent analysis by Simpa, Solomon et al. (2024) suggests...".
-**Severity:** 🔴 High - misrepresents the current state of research and can mislead the reader.
+1.  Strengthen the discussion in Section 5.4 by explicitly referencing the methodological challenges in *quantifying* the isolated EHS effect, beyond just "isolating" it.
+2.  Where strong claims of EHS effectiveness are made, either qualify them with more precise estimates (if available from citations) or explicitly reiterate the difficulty of isolating the EHS effect from confounding factors, perhaps by offering ranges or acknowledging different study findings on the *proportion* of reductions attributable solely to EHS.
+3.  Ensure that the cited studies *do* robustly isolate the EHS effect to the extent claimed.
+**Severity:** 🔴 High - threatens the validity of the paper's core argument regarding EHS effectiveness.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 3: Insufficient Critical Assessment of Policy Solutions
-**Location:** Throughout, e.g., "Fallstudien: EU ETS, Kalifornien und China" -> "EU ETS: Auswirkungen und Herausforderungen"
-**Claim:** The text identifies challenges such as carbon leakage and competitiveness concerns.
-**Problem:** While challenges are acknowledged (e.g., carbon leakage), the text often immediately presents proposed solutions (e.g., CBAM) without critically assessing their *effectiveness*, *limitations*, or the *ongoing debate* about their success. This creates an impression that the challenges are largely resolved or easily manageable, which might not reflect the full complexity.
-**Missing:** A deeper analysis of the ongoing debate about the efficacy of measures like CBAM or MSR in fully addressing the underlying issues, or an acknowledgment that these are *ongoing* challenges rather than fully resolved ones. For example, what are the criticisms or potential drawbacks of CBAM?
-**Fix:** Add a paragraph or sentences discussing the ongoing debate, the potential limitations, or the unproven long-term effectiveness of proposed solutions. Explicitly state if challenges *persist* despite mitigation efforts.
-**Severity:** 🟡 Moderate - reduces the critical depth and comprehensive nature of the analysis.
+### Issue 4: Limited Criticality on Macroeconomic Costs & Carbon Leakage
+**Location:** Section 5.3. Makroökonomische und Verteilungseffekte
+**Claim:** "Studien zeigen, dass die Kosten von EHS für die Gesamtwirtschaft in der Regel moderat sind..." and "...die tatsächlichen Effekte von Carbon Leakage bisher begrenzt waren..."
+**Problem:** While these are common findings, the phrasing "in der Regel moderat" and "begrenzt waren" can be an oversimplification. Even if overall moderate, certain sectors or regions can face disproportionately high costs or be more susceptible to leakage. The discussion could benefit from more nuance on *why* leakage has been limited (e.g., specific policy design, trade patterns, methodological challenges in measurement) and the *distribution* of these "moderate" costs.
+**Fix:** Qualify these statements with more detail on the conditions under which costs are moderate or leakage is limited, and acknowledge that certain sectors may experience significant impacts. Discuss the challenges in accurately measuring carbon leakage and its full economic impact.
 
-### Issue 4: Limited Nuance on Innovation Incentives
-**Location:** "Emissionsreduktionen durch CO2-Handel", "Empirische Belege für Klimaschutzwirkung" -> "Auswirkungen auf technologische Innovation und Investitionen"
-**Claim:** Emissions trading promotes technological innovation.
-**Problem:** The discussion primarily focuses on the positive effect of ETS on innovation (investment in R&D, low-carbon technologies). It does not explore potential nuances or counter-arguments, such as whether ETS predominantly drives *incremental* rather than *disruptive/radical* innovation, or if other policy instruments (e.g., direct R&D grants, technology mandates) might be more effective for fostering fundamental breakthroughs.
-**Missing:** A more nuanced discussion about the *type* of innovation fostered by ETS, or a brief comparison with how other innovation policies might complement or differ in their effects.
-**Fix:** Add a sentence or two acknowledging that the *type* of innovation spurred by ETS can vary, or briefly mention the debate on whether ETS alone is sufficient for radical shifts, or how it interacts with other innovation policies.
-**Severity:** 🟡 Moderate - limits the comprehensiveness of the innovation discussion.
+### Issue 5: Depth of Analysis on Price Volatility Impacts
+**Location:** Section 2. Preisgestaltung und Marktmechanismen
+**Claim:** "Diese Volatilität erschwert Unternehmen die Planung langfristiger Investitionen in Dekarbonisierung."
+**Problem:** The paper correctly identifies price volatility as a major challenge and mentions mechanisms like MSR or price floors/ceilings. However, it doesn't delve deeply into the *extent* to which this volatility has actually deterred investments or led to suboptimal decisions in practice, or how effective the mitigation mechanisms have *truly* been over the long term, especially during periods of extreme market shocks.
+**Fix:** Expand on the observed impacts of price volatility (e.g., delayed investments, reduced confidence) and critically evaluate the limitations or successes of mechanisms like MSR in providing genuine long-term price predictability for investors.
+
+### Issue 6: Nuance on Intensity Targets vs. Absolute Caps (Chinese EHS)
+**Location:** Section 3.3. Das nationale chinesische EHS
+**Claim:** "Dieser Ansatz ermöglicht es, die Emissionen auch bei anhaltendem Wirtschaftswachstum zu reduzieren, bietet jedoch weniger absolute Planungssicherheit für die Klimaziele als ein Cap-System."
+**Problem:** While this distinction is correctly made, the analysis could benefit from a deeper discussion on the *implications* of intensity targets. It states "less absolute planning security," but this is a significant difference from absolute caps in terms of guaranteed total emissions reductions. The paper could explore how this impacts global climate goals and if it presents a substantial weakness in China's EHS compared to others.
+**Fix:** Elaborate on the trade-offs of intensity targets, particularly concerning the certainty of *absolute* emission reductions, and discuss if this design choice makes China's EHS a less effective tool for achieving specific, absolute climate targets compared to cap-and-trade systems.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Vague initial quantification of EU ETS reductions:**
-    *   **Location:** "Emissionsreduktionen durch CO2-Handel" (first paragraph on EU ETS)
-    *   **Problem:** The text states EU ETS achieved "erhebliche Reduktionen" (significant reductions) {cite_008} without immediate quantification. While later sections provide the "über 35%" figure, its initial absence makes the claim less impactful.
-    *   **Fix:** Add the "über 35%" figure or the period (2005-2020) earlier for better clarity.
-
-2.  **General lack of specific citation details:**
-    *   **Problem:** Most citations are generic `cite_XXX`. For a critical academic paper, it would strengthen the arguments if citations included specific page numbers or sections, especially for direct claims or statistics, to facilitate verification.
-    *   **Fix:** Where possible, add page numbers or specific sections to citations, e.g., `{cite_008, p. 123}`.
+1.  **Vague claim:** "signifikanten Einfluss" (Section 1), "substanziell" (Section 3.1) – While cited, these terms could be quantified or compared more precisely where possible to strengthen the argument.
+2.  **Citation Verification:** All citations are currently placeholders (`{cite_XXX}`). While this indicates intent, the integrity check cannot be fully performed.
+    **Fix:** Ensure all `cite_XXX` are replaced with full, verifiable citations including DOI or arXiv ID where applicable.
+3.  **Consistency in Naming:** "Klimko und Hasprová (2025)" is cited in text in Section 1, but then in parenthesis in Section 3.1. Ensure consistent in-text citation style.
+4.  **Minor Redundancy:** Some points (e.g., the 41% EU-ETS reduction, carbon leakage) are repeated across sections. While useful for emphasis, ensure it doesn't become overly repetitive without adding new insights.
+5.  **Terminology Precision:** "Internierung externer Kosten" (Section 1) should likely be "Internalisierung externer Kosten".
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Implicit Bias Towards ETS as Primary Solution
-**Location:** Implicit throughout the "Vergleich mit anderen Klimaschutzinstrumenten" section and the overall narrative.
-**Logic:** While the comparison section is balanced in presenting pros/cons of different instruments, the extensive focus and detailed analysis of ETS (including multiple case studies) compared to other instruments (which receive more high-level summaries) could implicitly suggest a bias towards ETS as the preferred or most effective instrument.
-**Missing:** A more explicit statement about the specific conditions or contexts under which ETS might *not* be the optimal choice, or a more robust discussion of cases where other instruments have demonstrably outperformed ETS for specific goals or contexts.
-**Fix:** Explicitly state that the "optimal policy mix" is highly context-dependent and that ETS is not a universal panacea, and perhaps briefly elaborate on scenarios where other instruments might be prioritized.
+### Gap 1: Causal Chain for Broader EHS Effects
+**Location:** Sections 1, 5
+**Logic:** The paper effectively argues that EHS leads to price signals, which lead to innovation and efficiency. However, the causal chain from "EHS implementation" to "overall observed emissions reductions" could be strengthened by explicitly discussing the *methodologies* used in the cited studies to isolate this causality.
+**Missing:** A brief explanation (perhaps in Section 5.4 or earlier) of *how* studies (e.g., Klimko and Hasprová) are able to disentangle the EHS effect from other factors like economic growth, other policy interventions, or pre-existing trends.
+**Fix:** Briefly describe the common econometric techniques (e.g., difference-in-differences, synthetic control methods) employed in the literature to establish causality, or explicitly state the limitations of existing studies in this regard.
+
+### Gap 2: Full Implications of Flexibility
+**Location:** Section 4.2 (EHS vs. Direkte Regulierungen)
+**Logic:** EHS are praised for flexibility and cost-efficiency. While true, this flexibility can sometimes lead to slower adoption of specific *breakthrough* technologies that might need more direct nudges, or allow for "hot spots" of pollution if the trading system permits localized high emissions.
+**Missing:** A brief acknowledgment that while EHS offer overall cost-efficiency, direct regulations or targeted subsidies might be more effective for specific, urgent, or localized environmental problems, or for accelerating nascent technologies.
+**Fix:** Add a sentence or two to acknowledge that the "technology-neutral" aspect of EHS, while an advantage, can sometimes mean slower progress in specific areas that might benefit from targeted, less flexible interventions.
 
 ---
 
 ## Methodological Concerns
 
-### Concern 1: Compromised Evidential Basis
-**Issue:** The heavy reliance on potentially unverified or future publications (as highlighted in Major Issue 1) compromises the methodological rigor of this literature review. A robust analysis draws from established, peer-reviewed, and verifiable sources.
-**Risk:** The entire evidentiary basis for claims supported by these citations is questionable.
-**Reviewer Question:** "How can the reader trust the evidence presented when key supporting references are not yet published or verifiable?"
-**Suggestion:** Rectify Major Issue 1 rigorously.
+*   **Reliance on Aggregated Data:** The discussion of empirical evidence (Section 5) largely relies on aggregate emissions reductions (e.g., 41% for EU-ETS). Acknowledging the limitations of such aggregate data in fully capturing the diverse impacts across different sectors or firms could add nuance.
+*   **Study Specificity:** While studies are cited, the paper doesn't delve into the specific methodologies or scope of these studies. For a critical review, understanding *how* these studies arrived at their conclusions is important. This ties back to Major Issue 3 and Logical Gap 1.
 
 ---
 
 ## Missing Discussions
 
-1.  **Political Economy of Ambitious Cap Setting:** While free allocation and acceptance are mentioned, a deeper discussion on the political challenges of setting and maintaining an *ambitious* cap, overcoming industry lobbying, and managing international coordination (beyond CBAM) would be valuable.
-2.  **Equity and Justice Concerns (Broader Scope):** The text mentions distributional effects (burden on low-income households) and revenue redistribution. However, a broader discussion on environmental justice, e.g., how ETS might impact specific communities, indigenous populations, or vulnerable groups beyond just economic burdens, is missing.
-3.  **Interaction with Other Environmental Goals:** How does an ETS, primarily focused on CO2, interact with other environmental goals (e.g., air quality, biodiversity, resource efficiency)? Are there synergies or trade-offs that need to be considered?
-4.  **Long-term Efficacy and Dynamic Adaptation to Net-Zero:** While the evolution of EU ETS is discussed, a more forward-looking discussion on how ETS systems need to dynamically adapt to increasingly ambitious climate targets (e.g., net-zero by 2050) and emerging technologies (e.g., carbon capture, geoengineering) would be insightful.
+1.  **Specific Sectoral Impacts:** While the paper mentions "energieintensiven Industrien," a more detailed discussion of how EHS specifically impacts different sectors (e.g., heavy industry vs. power generation) and their unique challenges/opportunities would be beneficial.
+2.  **Interaction with Global Markets:** How EHS in one region (e.g., EU) might influence global commodity prices or trade flows beyond simple carbon leakage.
+3.  **Stakeholder Perspectives:** A brief mention of how different stakeholders (e.g., environmental NGOs, industry lobbyists, consumers) perceive EHS and its effectiveness could add a valuable dimension.
+4.  **Future Challenges:** Beyond the current mechanisms, what are the emerging challenges for EHS (e.g., integrating new sectors, managing geopolitical risks, ensuring long-term political stability for ambitious caps)?
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Slightly Declarative Tone:** While generally well-hedged, some statements are quite declarative (e.g., "Der EU ETS wird weithin als ein wirksames Instrument zur Emissionsreduktion anerkannt"). While likely true, adding a qualifier like "in der Forschungsgemeinschaft" or "von vielen Experten" can sometimes soften it slightly and make it more academically cautious.
+1.  **Confidence vs. Certainty:** Some phrases like "Klimko und Hasprová (2025) unterstreicht den positiven Einfluss" could be softened to "zeigt den positiven Einfluss" or "legt den positiven Einfluss nahe" to reflect the nature of scientific findings, especially when dealing with complex causal inference.
+2.  **Slightly Repetitive Language:** The terms "signifikant," "substanziell," and "wirksam" are used frequently. Varying the vocabulary or providing more specific details could enhance engagement.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Please provide DOIs or arXiv IDs for *all* cited papers, especially those dated 2024 and 2025. Clarify their publication status (published, in press, pre-print, or in preparation)."
-2.  "The claim that 'many studies show EHS have little or no negative macroeconomic effects' (Makroökonomische und Verteilungseffekte) is supported by only one recent paper. Can you provide more comprehensive and diverse evidence for this broad assertion, or rephrase the claim to reflect the actual evidence base?"
-3.  "Could you elaborate on the ongoing challenges of carbon leakage and the expected effectiveness of mechanisms like CBAM, rather than simply stating them as solutions? What are the limitations or criticisms of these solutions?"
-4.  "Does the paper consider the different types of innovation (e.g., incremental vs. radical) stimulated by ETS, or how ETS interacts with other innovation policies for different goals?"
-5.  "What are the significant political economy challenges of implementing and sustaining an effective ETS, particularly in diverse national contexts, and how are these addressed in the literature?"
+1.  "Can you provide the specific citations for the 11% emission reduction in California and the political challenges faced by its program?" (See Major Issues 1 & 2)
+2.  "To what extent are the 'significant' and 'substantial' emissions reductions you attribute to EHS truly *causal* effects of the EHS itself, rather than other concurrent policies or economic factors? Can you elaborate on the methodologies used by your cited studies to isolate these effects?" (See Major Issue 3 and Logical Gap 1)
+3.  "What are the *specific* observed impacts of CO2 price volatility on long-term investment decisions in EHS-covered sectors, and how effective have mechanisms like MSR or price floors/ceilings been in truly mitigating these effects?" (See Moderate Issue 5)
+4.  "Given China's use of intensity targets, how does this fundamentally affect the certainty of achieving *absolute* emission reduction targets compared to the cap-and-trade systems in the EU and California?" (See Moderate Issue 6)
+5.  "While the overall macroeconomic costs are described as 'moderate' and carbon leakage as 'limited,' can you provide more nuanced details on which specific sectors or regions bore the brunt of these costs, or faced significant leakage risks, and *why*?" (See Moderate Issue 4)
 
 **Prepare answers or add to paper**
 
@@ -131,12 +135,13 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Fix Issue 1 (Academic Integrity - Unverified / Future Citations)** - This is paramount.
-2.  🔴 **Address Issue 2 (Overclaim of Consensus on Macroeconomic Effects)** - Crucial for academic rigor.
-3.  🟡 Address Issue 3 (Insufficient Critical Assessment of Policy Solutions).
-4.  🟡 Address Issue 4 (Limited Nuance on Innovation Incentives).
-5.  🟡 Address Logical Gap 1 (Implicit Bias Towards ETS).
+1.  🔴 **Fix Issue 1 (Missing California Emission Data Citation)** - Critical for factual accuracy.
+2.  🔴 **Fix Issue 2 (Missing California Political Challenges Citation)** - Critical for factual accuracy.
+3.  🔴 **Address Issue 3 (Overclaiming/Nuance in Causal Attribution)** - Essential for scientific rigor and validity.
+4.  🟡 **Address Issue 4 (Criticality on Macroeconomic Costs & Carbon Leakage)** - Improve nuance and depth.
+5.  🟡 **Address Issue 5 (Depth of Analysis on Price Volatility Impacts)** - Provide more detailed analysis.
+6.  🟡 **Address Issue 6 (Nuance on Intensity Targets vs. Absolute Caps)** - Deepen the comparative analysis.
 
 **Can defer:**
-- Minor wording issues and adding specific page numbers to citations.
-- Deeper dives into missing discussions (these could be suggested for future work if not integrated).
+- Minor wording issues and vocabulary variation (can be fixed during final editing).
+- Expanding on missing discussions (could be suggested as future research or addressed in a more comprehensive version).

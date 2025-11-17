@@ -284,6 +284,15 @@ def main():
         print(f"🧹 {dedup_stats['removed_count']} doppelte Zitate entfernt")
         print(f"   Endgültig: {dedup_stats['final_count']} eindeutige Zitate")
 
+    # FIXED (Day 2A): Scrape real titles for Gemini Grounded citations
+    from utils.scrape_citation_titles import TitleScraper
+    scraper = TitleScraper(verbose=True)
+    success_count, fail_count = scraper.scrape_citations(citation_database.citations)
+    if success_count > 0:
+        print(f"📰 {success_count} echte Seitentitel aus Webquellen extrahiert")
+        if fail_count > 0:
+            print(f"   ⚠️  {fail_count} Titel konnten nicht extrahiert werden (Timeouts, Fehler)")
+
     # Save citation database
     citation_db_path = output_dir / "citation_database.json"
     save_citation_database(citation_database, citation_db_path)

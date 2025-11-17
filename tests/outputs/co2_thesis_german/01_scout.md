@@ -2,224 +2,383 @@
 
 ## Summary
 
-**Total Valid Citations**: 28
-**Success Rate**: 50.0%
-**Failed Topics**: 28
+**Total Valid Citations**: 60
+**Success Rate**: 100.0%
+**Failed Topics**: 0
 
 ### Sources Breakdown
 
-- **Crossref**: 5 (17.9%)
-- **Semantic Scholar**: 23 (82.1%)
-- **Gemini Grounded**: 0 (0.0%)
+- **Crossref**: 4 (6.7%)
+- **Semantic Scholar**: 30 (50.0%)
+- **Gemini Grounded**: 26 (43.3%)
 - **Gemini LLM**: 0 (0.0%)
 
 ---
 
 ## Citations Found
 
-### From Crossref (5 citations)
+### From Crossref (4 citations)
 
-#### 1. Business perspectives on the EU emissions trading scheme
-**Authors**: Brewer
-**Year**: 2018
-**DOI**: 10.4324/9781315065816-11
-**URL**: https://doi.org/10.4324/9781315065816-11
-
-#### 2. The impact of the EU ETS on greenhouse gas emissions in the EU from 2005 to 2022
+#### 1. The impact of the EU ETS on greenhouse gas emissions in the EU from 2005 to 2022
 **Authors**: Klimko, Hasprová
 **Year**: 2025
 **DOI**: 10.34659/eis.2025.92.1.874
 **URL**: https://doi.org/10.34659/eis.2025.92.1.874
 
-#### 3. Flexibility, emissions trading and the Kyoto Protocol
-**Authors**: Skea
-**Year**: 1999
-**DOI**: 10.4337/9781781008454.00033
-**URL**: https://doi.org/10.4337/9781781008454.00033
-
-#### 4. Santa Cap
-**Authors**: Naaz
+#### 2. Empirical Analysis
+**Authors**: Erdoğan
 **Year**: 2023
-**DOI**: 10.5958/2454-1753.2023.00016.8
-**URL**: https://doi.org/10.5958/2454-1753.2023.00016.8
+**DOI**: 10.4324/9781003349358-4
+**URL**: https://doi.org/10.4324/9781003349358-4
 
-#### 5. Klimaschutz/Emissionshandel
-**Authors**: Schiffer
-**Year**: 2018
-**DOI**: 10.1007/978-3-658-23024-1_6
-**URL**: https://doi.org/10.1007/978-3-658-23024-1_6
+#### 3. Design Discourse from the Perspective of Literature: Methodological Principles for the History of Albanian Literature
+**Authors**: Shatro
+**Year**: 2011
+**DOI**: 10.18848/1833-1874/cgp/v05i03/38052
+**URL**: https://doi.org/10.18848/1833-1874/cgp/v05i03/38052
 
-### From Semantic Scholar (23 citations)
+#### 4. Emissions Trading
+**Authors**: Raufer, Iyer
+**Year**: 2012
+**DOI**: 10.1007/978-1-4419-7991-9_8
+**URL**: https://doi.org/10.1007/978-1-4419-7991-9_8
 
-#### 1. Strategic implications of carbon pricing on global environmental sustainability and economic development: A conceptual framework
-**Authors**: Simpa, Solomon, Adenekan, Obasi
+### From Semantic Scholar (30 citations)
+
+#### 1. Potential economic impacts of carbon tariffs on target countries: a systematic review
+**Authors**: Ma, Xu
 **Year**: 2024
-**DOI**: 10.51594/ijae.v6i5.1134
-**URL**: https://doi.org/10.51594/ijae.v6i5.1134
+**DOI**: 10.1080/14693062.2024.2407830
+**URL**: https://doi.org/10.1080/14693062.2024.2407830
 
-#### 2. Opportunities for REDD+ to minimise forest carbon emissions and mitigate climate change in Southeast Asia
-**Authors**: Graham
+#### 2. The impact of emissions trading systems on technological innovation for climate change mitigation: a systematic review
+**Authors**: Chen, Brockway, Few, Paavola
+**Year**: 2024
+**DOI**: 10.1080/14693062.2024.2443464
+**URL**: https://doi.org/10.1080/14693062.2024.2443464
+
+#### 3. Unveiling the ‘Puzzle’ of Climate Policies and Urban Energy Resilience in the Era of Artificial Intelligence: Evidence from China’s Carbon Emissions Trading Pilot Program
+**Authors**: Chen, Dai, Zhu
+**Year**: 2025
+**DOI**: 10.3390/su17219554
+**URL**: https://doi.org/10.3390/su17219554
+
+#### 4. 20 Years of the Kyoto Protocol: Profile and Behavior in Brazilian Academia From the Perspective of Social Network Analysis
+**Authors**: Ribeiro, Corrêa, Pierot, Leal
+**Year**: 2024
+**DOI**: 10.24857/rgsa.v18n11-190
+**URL**: https://doi.org/10.24857/rgsa.v18n11-190
+
+#### 5. Assessing the role of carbon pricing in global climate change mitigation strategies
+**Authors**: Digitemie, Ekemezie
+**Year**: 2024
+**DOI**: 10.30574/msarr.2024.10.2.0040
+**URL**: https://doi.org/10.30574/msarr.2024.10.2.0040
+
+#### 6. Academic Literature on Compliance Programs, ESG, Corporate Governance, Fraud Prevention, Human Rights, Corruption, Data Protection, and SDGs
+**Authors**: Review
+**Year**: 2022
+**DOI**: 10.37497/corruptionreview.4.2022.71
+**URL**: https://doi.org/10.37497/corruptionreview.4.2022.71
+
+#### 7. EMISSIONS TRADING IN THE U.S.: EXPERIENCE, LESSONS, AND CONSIDERATIONS FOR GREENHOUSE GASES
+**Authors**: Ellerman, Harrison
+**Year**: 2003
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/6d68f34c8457609e3216ba13e75e1302c67fe1a5
+
+#### 8. Do climate change policies affect labour market distortions? Empirical evidence from China's low-carbon city pilots
+**Authors**: Shen, Yang, Xing
+**Year**: 2024
+**DOI**: 10.1080/14693062.2024.2428757
+**URL**: https://doi.org/10.1080/14693062.2024.2428757
+
+#### 9. Low-Carbon Economic Dispatching of Wind-Solar-Storage Virtual Power Plant Under Uncertainty and Stepped Carbon Pricing
+**Authors**: Jin, Wang, Xu, Xu, Li, Le
+**Year**: 2024
+**DOI**: 10.1109/CICED63421.2024.10753870
+**URL**: https://doi.org/10.1109/CICED63421.2024.10753870
+
+#### 10. Does the EU ETS Cause Carbon Leakage in European Manufacturing?
+**Authors**: Naegele, Zaklan
 **Year**: 2017
-**DOI**: 10.4225/28/5AFA6D1FB90FF
-**URL**: https://doi.org/10.4225/28/5AFA6D1FB90FF
+**DOI**: 10.2139/ssrn.3050323
+**URL**: https://doi.org/10.2139/ssrn.3050323
 
-#### 3. Ausweitung des Emissionshandels und Lastenteilung: Das europäische Paket zur Reduktion der Treibhausgasemissionen bis 2020
-**Authors**: Czybulka
-**Year**: 2009
-**DOI**: 
-**URL**: https://www.semanticscholar.org/paper/2c36b62b7fd6090d6125ec7b3eb6bf43483087c1
-
-#### 4. South Africa Carbon Pricing and Climate Mitigation Policy South Africa
-**Authors**: Suphachalasai, Thube, Walker
-**Year**: 2023
-**DOI**: 
-**URL**: https://www.semanticscholar.org/paper/d5a0add69c82911df3ee250cf09e76eb36cb968f
-
-#### 5. A Resource-Based View on Low-Carbon Value: Governance and Environmental Management Accounting Pathways via Carbon Disclosure and Stakeholder Pressure
-**Authors**: Sari, Ismail, Yulianto, Muchlish
+#### 11. Sustainable Meat Production from a Marketing and Management Perspective: a Case Study of Kirsehir Province
+**Authors**: Altuntas, Ozdemir
 **Year**: 2025
-**DOI**: 10.32479/ijeep.20596
-**URL**: https://doi.org/10.32479/ijeep.20596
+**DOI**: 10.22194/jgias/25.1630
+**URL**: https://doi.org/10.22194/jgias/25.1630
 
-#### 6. Demand-pull and technology-push environmental innovation: a policy mix analysis on EU ETS and EU Cohesion Policy
-**Authors**: Scotti, Flori, Crescenzi, Pammolli
-**Year**: 2024
-**DOI**: 10.1080/14693062.2024.2366894
-**URL**: https://doi.org/10.1080/14693062.2024.2366894
-
-#### 7. The Effectiveness of the EU ETS Policy in Changing the Energy Mix in Selected European Countries
-**Authors**: Błażejowska, Czarny, Kowalska, Michalczewski, Stępień
-**Year**: 2024
-**DOI**: 10.3390/en17174243
-**URL**: https://doi.org/10.3390/en17174243
-
-#### 8. Strategic implications of carbon pricing on global environmental sustainability and economic development: A conceptual framework
-**Authors**: Simpa, Solomon, Adenekan, Obasi
-**Year**: 2024
-**DOI**: 10.51594/ijae.v6i5.1134
-**URL**: https://doi.org/10.51594/ijae.v6i5.1134
-
-#### 9. The Economics of Carbon Sequestration and Climate Change Mitigation Potential of Different Soil Management Practices
-**Authors**: Dongre, Jendre, Mohanty, Pradhan, Wani, Ashish, Panotra, Bhojani, Soni, Upadhyay
-**Year**: 2025
-**DOI**: 10.9734/acri/2025/v25i61279
-**URL**: https://doi.org/10.9734/acri/2025/v25i61279
-
-#### 10. Poverty and inequality implications of carbon pricing under the long-term climate target
-**Authors**: Zhao, Fujimori, Hasegawa, Oshiro, Sasaki
+#### 12. The Carbon Market Challenge
+**Authors**: Betz, Michaelowa, Castro, Kotsch, Mehling, Michaelowa, Baranzini
 **Year**: 2022
-**DOI**: 10.1007/s11625-022-01206-y
-**URL**: https://doi.org/10.1007/s11625-022-01206-y
+**DOI**: 10.1017/9781009216500
+**URL**: https://doi.org/10.1017/9781009216500
 
-#### 11. Carbon pricing policies in China: Comparative analysis of carbon tax and emission trading systems
-**Authors**: Yang
-**Year**: 2023
-**DOI**: 10.54660/.ijmrge.2023.4.5.56-61
-**URL**: https://doi.org/10.54660/.ijmrge.2023.4.5.56-61
+#### 13. The impact of shale gas on the costs of climate policy
+**Authors**: Kersting, Duscha, Schleich, Keramidas
+**Year**: 2014
+**DOI**: 10.1080/14693062.2017.1302917
+**URL**: https://doi.org/10.1080/14693062.2017.1302917
 
-#### 12. Discussing Measures to Address the Risk of Carbon Leakage in EU Climate Change Policy: Coordinating Taxation, Emission Trading and State Aid
-**Authors**: Soares
+#### 14. Impact of Land-Use Changes on Climate Change Mitigation Goals: The Case of Lithuania
+**Authors**: Dagiliūtė, Kazanaviciute
+**Year**: 2024
+**DOI**: 10.3390/land13020131
+**URL**: https://doi.org/10.3390/land13020131
+
+#### 15. The effectiveness of international climate finance in enabling low-carbon development: comparing public finance and carbon markets
+**Authors**: Stadelmann
+**Year**: 2013
+**DOI**: 10.5167/UZH-109069
+**URL**: https://doi.org/10.5167/UZH-109069
+
+#### 16. Uncommon Goods: On Environmental Virtues and Voluntary Carbon Offsets
+**Authors**: Skopek
+**Year**: 2010
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/92c5d1f6168b3050e30e805e80b1fc3f0c568285
+
+#### 17. Impact on Emissions Trading Legislation from Effi cient Breach
+**Authors**: Xi
+**Year**: 2014
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/be06f612a0e3f036287203a62f08c5dda920ef06
+
+#### 18. Theoretical Insights into the Economics of Climate Change and Environmental Policy
+**Authors**: Abrha
+**Year**: 2025
+**DOI**: 10.11648/j.ijeee.20251002.14
+**URL**: https://doi.org/10.11648/j.ijeee.20251002.14
+
+#### 19. Carbon market as an emerging policy instrument for sustainable finance and climate change: a review and research agenda
+**Authors**: Vadhava, Khanna
+**Year**: 2025
+**DOI**: 10.1108/qrfm-11-2023-0293
+**URL**: https://doi.org/10.1108/qrfm-11-2023-0293
+
+#### 20. An Analysis of Fuel Demand and Carbon Emissions in China
+**Authors**: Hu
+**Year**: 2004
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/890a2b324a6f4155a8de91f91fde290cbefec255
+
+#### 21. Private Governance in Climate Mitigation: A Global Comparison of Corporate Participation in Voluntary Carbon Markets
+**Authors**: Xie, Chen
+**Year**: 2025
+**DOI**: 10.1080/13876988.2025.2510596
+**URL**: https://doi.org/10.1080/13876988.2025.2510596
+
+#### 22. Legal Aspects of Implementing the Kyoto Protocol Mechanisms: Making Kyoto Work
+**Authors**: Freestone, Streck
+**Year**: 2005
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/6953cc71cf03aff09d3ad038c4a294c4355329ed
+
+#### 23. Tourism & climate change in North America: regional state of knowledge
+**Authors**: Rutty, Hewer, Knowles, Ma
+**Year**: 2022
+**DOI**: 10.1080/09669582.2022.2127742
+**URL**: https://doi.org/10.1080/09669582.2022.2127742
+
+#### 24. EU ETS Impact on Companies Performance in Portugal: A Sector Analysis
+**Authors**: Madaleno, Robaina, Meireles, Silva
+**Year**: 2024
+**DOI**: 10.1109/EEM60825.2024.10608993
+**URL**: https://doi.org/10.1109/EEM60825.2024.10608993
+
+#### 25. In the Market ICAP – The International Carbon Action Partnership: Building a Global Carbon Market from the Bottom-up
+**Authors**: Bergfelder
+**Year**: 2008
+**DOI**: 10.21552/CCLR/2008/2/36
+**URL**: https://doi.org/10.21552/CCLR/2008/2/36
+
+#### 26. Path Analysis of The Carbon Market's Impact on Corporate Carbon Emission Reduction
+**Authors**: Chen
+**Year**: 2024
+**DOI**: 10.54097/a7jeqk60
+**URL**: https://doi.org/10.54097/a7jeqk60
+
+#### 27. The impact of COVID-19 and recovery packages on emission pathways to 2030: Inputs to the UNEP Emissions Gap Report 2021 Final project report
+**Authors**: Olhoff, Romero, Hans, Kuramochi, Höhne, Peters, Andrew, Dafnomilis, Elzen, Chen, Boer, Daioglou, Edelenbosch
+**Year**: 2022
+**DOI**: 10.6027/temanord2022-530
+**URL**: https://doi.org/10.6027/temanord2022-530
+
+#### 28. The Shift to Performance and Effectiveness at the European Court of Auditors
+**Authors**: Stephenson
 **Year**: 2015
-**DOI**: 10.2139/ssrn.2560848
-**URL**: https://doi.org/10.2139/ssrn.2560848
-
-#### 13. The Rise in Investors Awareness of Climate Risks After the Paris Agreement and the Clean Energy-Oil-Technology Prices Nexus
-**Authors**: Fahmy
-**Year**: 2022
-**DOI**: 10.2139/ssrn.4000691
-**URL**: https://doi.org/10.2139/ssrn.4000691
-
-#### 14. Financial Impact Analysis of Carbon Pricing on Geothermal Power Plant Project Investment at PT PLN (Persero)
-**Authors**: Heryan, Sudrajad
-**Year**: 2024
-**DOI**: 10.47191/ijcsrr/v7-i8-67
-**URL**: https://doi.org/10.47191/ijcsrr/v7-i8-67
-
-#### 15. Labor Markets and Climate Change: How to Adapt Labor Market Policies and Improve Employment Opportunities?
-**Authors**: Baptista, Ayala, Noh, Novella
-**Year**: 2024
-**DOI**: 10.18235/0012889
-**URL**: https://doi.org/10.18235/0012889
-
-#### 16. General Equilibrium Analysis of Cost-Effectiveness and Distributional Impacts of China’s Nationwide CO2 Emissions Trading System Final Report
-**Authors**: Long, Zhang, Goulder, Qu
-**Year**: 2023
 **DOI**: 
-**URL**: https://www.semanticscholar.org/paper/b57e0616ac3344fbb8943900a79f4222dd442117
+**URL**: https://www.semanticscholar.org/paper/9ecfcb4a343e5a54c27fe98e02641c37b26c5499
 
-#### 17. Climate mitigation and biodiversity conservation: a review of progress and key issues in global carbon markets and potential impacts on ecosystems
-**Authors**: Shah, Orchard, Kreuzberg, Braga, Das, Dias, Kandasamy, Kibria, Kumar, Min, Pandey, Rais, Sahay, Saika, Scozzafava, Sharma, Swamy, Thakur, Vasseur, Andrade
+#### 29. Optionen für eine CO2-Preisreform. MCC-PIK-Expertise für den Sachverständigenrat zur Begutachtung der gesamtwirtschaftlichen Entwicklung
+**Authors**: Edenhofer, Flachsland, Kalkuhl, Knopf, Pahle
+**Year**: 2019
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/8b59805e47061bf6b62d726fd7ec60c1f1385e4e
+
+#### 30. Heiduk Felix, Deutschlands Werte-partnerschaften im Indo-Pazifik , Stiftung Wissenschaft und Politik (SWP), 2024, 26 pages Hasenkamp Oliver et Köllner Patrick, Die Neuentdeckung des Pazifiks: Möglichkeiten deutscher Zusammenarbeit , German institute for Global and Area Studies (GiGA), 2023, 12 pages
+**Authors**: Wahden
 **Year**: 2024
-**DOI**: 10.2305/wgzi5482
-**URL**: https://doi.org/10.2305/wgzi5482
+**DOI**: 10.3917/rdna.872.0254
+**URL**: https://doi.org/10.3917/rdna.872.0254
 
-#### 18. Assessing the role of carbon pricing in global climate change mitigation strategies
-**Authors**: Digitemie, Ekemezie
-**Year**: 2024
-**DOI**: 10.30574/msarr.2024.10.2.0040
-**URL**: https://doi.org/10.30574/msarr.2024.10.2.0040
+### From Gemini Grounded (26 citations)
 
-#### 19. Research on China’s Railway Freight Pricing Under Carbon Emissions Trading Mechanism
-**Authors**: Wei, Wang
+#### 1. worldbank.org
+**Authors**: openknowledge.worldbank.org
 **Year**: 2025
-**DOI**: 10.3390/su17125265
-**URL**: https://doi.org/10.3390/su17125265
+**DOI**: 
+**URL**: https://openknowledge.worldbank.org/entities/publication/e5f6e755-e6a6-4d2c-927a-23b5cc8a9b03
 
-#### 20. CDP (carbon disclosure project) emissions of CO2 and environmental disclosure quality: the mediating role of media legitimacy and governance
-**Authors**: Cormier, Magnan, Gutiérrez
-**Year**: 2024
-**DOI**: 10.1080/13504509.2024.2386601
-**URL**: https://doi.org/10.1080/13504509.2024.2386601
+#### 2. mdpi.com
+**Authors**: mdpi.com
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.mdpi.com/1996-1073/18/5/1030
 
-#### 21. Assessing the role of carbon pricing in global climate change mitigation strategies
-**Authors**: Digitemie, Ekemezie
-**Year**: 2024
-**DOI**: 10.30574/msarr.2024.10.2.0040
-**URL**: https://doi.org/10.30574/msarr.2024.10.2.0040
+#### 3. sustainabilityperformances.eu
+**Authors**: sustainabilityperformances.eu
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.sustainabilityperformances.eu/wp-content/uploads/2024/10/SPES-Deliverable-7.1_layout.pdf
 
-#### 22. Assessing the role of carbon pricing in global climate change mitigation strategies
-**Authors**: Digitemie, Ekemezie
-**Year**: 2024
-**DOI**: 10.30574/msarr.2024.10.2.0040
-**URL**: https://doi.org/10.30574/msarr.2024.10.2.0040
+#### 4. oecd.org
+**Authors**: oecd.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.oecd.org/en/publications/making-markets-unpacking-design-and-governance-of-carbon-market-mechanisms_5k43nhks65xs-en.html
 
-#### 23. An evaluation of New York state livestock carbon offset projects under California’s cap and trade program
-**Authors**: Pierce, Strong
-**Year**: 2023
-**DOI**: 10.1080/17583004.2023.2211946
-**URL**: https://doi.org/10.1080/17583004.2023.2211946
+#### 5. oup.com
+**Authors**: academic.oup.com
+**Year**: 2025
+**DOI**: 
+**URL**: https://academic.oup.com/oocc/article/4/1/kgae012/7715933
 
----
+#### 6. mdpi.com
+**Authors**: mdpi.com
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.mdpi.com/1996-1073/17/17/4243
 
-## Failed Topics
+#### 7. europa.eu
+**Authors**: climate.ec.europa.eu
+**Year**: 2025
+**DOI**: 
+**URL**: https://climate.ec.europa.eu/news-your-voice/news/2024-carbon-market-report-stable-and-well-functioning-market-driving-emissions-power-and-industry-2024-11-19_en
 
-The following topics did not return valid citations:
+#### 8. oecd.org
+**Authors**: oecd.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.oecd.org/en/about/news/press-releases/2025/11/carbon-pricing-mechanisms-are-evolving-to-meet-a-broader-range-of-policy-objectives.html
 
-- author:Ellerman emissions trading climate impact
-- title:empirical analysis of carbon markets and climate change
-- economic models carbon markets climate change mitigation
-- CO2-Zertifikate Handel Klimawandel Wirksamkeit Studie
-- Klimapolitik CO2-Preismechanismen Wirksamkeitsanalyse
-- Recent studies on EU ETS phase 4 impact on emissions
-- Effectiveness of carbon offset projects climate change additionality
-- European Commission EU ETS impact assessment report
-- OECD carbon pricing policy brief climate change mitigation
-- World Bank carbon pricing report climate mitigation effectiveness
-- IMF working paper carbon tax vs emissions trading climate
-- McKinsey report decarbonization carbon markets climate impact
-- BCG white paper emissions trading climate strategy
-- PwC analysis carbon pricing climate impact 2023
-- Deloitte report carbon markets climate action effectiveness
-- IEA carbon market review climate change mitigation
-- UNFCCC report Kyoto Protocol emissions trading evaluation
-- EBRD carbon markets climate finance impact
-- European Environment Agency EU ETS effectiveness report
-- German Environment Agency (UBA) Emissionshandel Klimaschutz Bewertung
-- Agora Energiewende CO2-Preis Wirkung Klimaziele Studie
-- Brookings Institution carbon pricing climate policy effectiveness
-- RAND Corporation emissions trading climate security implications
-- Gartner report carbon accounting climate impact corporate
-- ISO 14064 carbon footprint emissions trading relevance
-- World Economic Forum carbon markets climate action report
-- WRI (World Resources Institute) carbon pricing climate impact analysis
-- EU ETS Market Stability Reserve impact on emissions reduction
+#### 9. worldbank.org
+**Authors**: worldbank.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.worldbank.org/en/news/press-release/2024/05/21/global-carbon-pricing-revenues-top-a-record-100-billion
+
+#### 10. blmi.org
+**Authors**: blmi.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://blmi.org/articles/Understanding_the_Price_of_Decarbonization
+
+#### 11. gfma.org
+**Authors**: gfma.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.gfma.org/correspondence/unlocking-the-potential-of-carbon-markets-to-achieve-global-net-zero/
+
+#### 12. brookings.edu
+**Authors**: brookings.edu
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.brookings.edu/articles/carbon-markets-at-cop30/
+
+#### 13. rand.org
+**Authors**: rand.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.rand.org/content/dam/rand/pubs/research_reports/RRA2600/RRA2614-1/RAND_RRA2614-1.pdf
+
+#### 14. Source
+**Authors**: imf.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.imf.org/en/Publications/WP/Issues/2024/03/08/Fiscal-Implications-of-Global-Decarbonization-545283](https://www.imf.org/en/Publications/WP/Issues/2024/03/08/Fiscal-Implications-of-Global-Decarbonization-545283
+
+#### 15. gartner.com
+**Authors**: gartner.com
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.gartner.com/en/supply-chain/insights/beyond-supply-chain-blog/targeting-climate-change-action
+
+#### 16. europa.eu
+**Authors**: europarl.europa.eu
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.europarl.europa.eu/news/en/press-room/20251110IPR31334/eu-2040-climate-target-meps-want-90-emissions-reduction-in-eu-climate-law
+
+#### 17. weforum.org
+**Authors**: weforum.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.weforum.org/stories/2024/09/voluntary-carbon-market-carbon-dioxide-removal-net-zero/
+
+#### 18. ebrd.com
+**Authors**: ebrd.com
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.ebrd.com/content/dam/ebrd_dxp/assets/pdfs/green/knowledge-hub/Carbon%20market%20options%20for%20SEMED%20countries.pdf
+
+#### 19. climatepolicyinitiative.org
+**Authors**: climatepolicyinitiative.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.climatepolicyinitiative.org/topics/carbon-markets/
+
+#### 20. eif.org
+**Authors**: eif.org
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.eif.org/news_centre/publications/eib_group_climate_bank_roadmap_en.pdf
+
+#### 21. pwc.com
+**Authors**: pwc.com
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.pwc.com/us/en/services/esg/library/decarbonization-strategic-plan.html
+
+#### 22. deloitte.com
+**Authors**: deloitte.com
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.deloitte.com/us/en/insights/industry/financial-services/future-of-carbon-market.html
+
+#### 23. umweltbundesamt.de
+**Authors**: umweltbundesamt.de
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.umweltbundesamt.de/en/press/pressinformation/german-emissions-nearly-halved-in-20-years-of
+
+#### 24. dehst.de
+**Authors**: dehst.de
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.dehst.de/error_path/400.html?al_req_id=aRsFL8MwraG70tJg2qixiwAADqE
+
+#### 25. kfw.de
+**Authors**: kfw.de
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.kfw.de/%C3%9Cber-die-KfW/Newsroom/Aktuelles/Pressemitteilungen-Details_828672.html
+
+#### 26. bundeswirtschaftsministerium.de
+**Authors**: bundeswirtschaftsministerium.de
+**Year**: 2025
+**DOI**: 
+**URL**: https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2025/20250131-bundestag-emissionshandel.html

@@ -1,0 +1,23 @@
+
+================================================================================
+CITATION VALIDATION REPORT: Open Source Thesis
+================================================================================
+
+❌ CRITICAL ISSUES (4):
+--------------------------------------------------------------------------------
+
+[cite_017] DOI not found: 10.48550/arXiv.2404.06484
+  Osborne (2024) - Public-private funding models in open source software develo...
+
+[cite_022] DOI not found: 10.1184/r1/14512605.v1
+  Valiev (2021) - External Factors in Sustainability of Open Source Software...
+
+[cite_026] Initials only (incomplete): 'I.'
+  Gadasina, I. (2023) - Analysis of the Impact of Digital Transformation of the Comp...
+
+[cite_029] DOI not found: 10.48550/arXiv.2509.07763
+  Robredo, Esposito et al. (2025) - What Were You Thinking? An LLM-Driven Large-Scale Study of R...
+
+================================================================================
+TOTAL ISSUES: 4 (4 critical, 0 warnings)
+================================================================================

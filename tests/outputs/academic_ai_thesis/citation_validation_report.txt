@@ -3,18 +3,30 @@
 CITATION VALIDATION REPORT: Open Source Thesis
 ================================================================================
 
-❌ CRITICAL ISSUES (3):
+❌ CRITICAL ISSUES (7):
 --------------------------------------------------------------------------------
 
-[cite_007] DOI not found: 10.48550/arXiv.2505.03049
+[cite_017] DOI not found: 10.48550/arXiv.2503.04765
+  Aydin, Karaarslan et al. (2025) - Generative AI in Academic Writing: A Comparison of DeepSeek,...
+
+[cite_019] DOI not found: 10.48550/arXiv.2508.12314
+  Mitra (2025) - Synchronization Dynamics of Heterogeneous, Collaborative Mul...
+
+[cite_021] DOI not found: 10.48550/arXiv.2505.03049
   Zimmermann, Bazgir et al. (2025) - 34 Examples of LLM Applications in Materials Science and Che...
 
-[cite_016] DOI not found: 10.48550/arXiv.2412.11948
-  Idahl, Ahmadi (2024) - OpenReviewer: A Specialized Large Language Model for Generat...
+[cite_030] DOI not found: 10.5281/ZENODO.5017705
+  Maryl, Błaszczyńska et al. (2021) - Future of Scholarly Communication...
 
-[cite_026] DOI not found: 10.48550/arXiv.2405.06563
-  Kuznetsov, Afzal et al. (2024) - What Can Natural Language Processing Do for Peer Review?...
+[cite_043] Initials only (incomplete): 'N.'
+  Adebowale, Mohamed et al. (2024) - Intellectual property law and artificial intelligence in Uga...
+
+[cite_045] DOI not found: 10.48550/arXiv.2506.19364
+  Chen, Lian et al. (2025) - Can theory-driven learning analytics dashboard enhance human...
+
+[cite_051] DOI not found: 10.48550/arXiv.2507.19902
+  Khanzadeh (2025) - AgentMesh: A Cooperative Multi-Agent Generative AI Framework...
 
 ================================================================================
-TOTAL ISSUES: 3 (3 critical, 0 warnings)
+TOTAL ISSUES: 7 (7 critical, 0 warnings)
 ================================================================================

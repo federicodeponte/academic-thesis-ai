@@ -18,140 +18,24 @@
     {
       "id": "cite_002",
       "authors": [
-        "Nowacki"
+        "Seker",
+        "Diri",
+        "Arslan",
+        "Amasyalı"
       ],
       "year": 2021,
-      "title": "Heritage Interpretation and Sustainable Development: A Systematic Literature Review",
-      "source_type": "journal",
+      "title": "Open Source Software Development Challenges",
+      "source_type": "book",
       "language": "english",
-      "journal": "Sustainability",
-      "publisher": "MDPI AG",
-      "volume": "13",
-      "issue": "8",
-      "pages": "4383",
-      "doi": "10.3390/su13084383",
-      "url": "https://doi.org/10.3390/su13084383",
+      "journal": "Research Anthology on Usage and Development of Open Source Software",
+      "publisher": "IGI Global",
+      "pages": "33-62",
+      "doi": "10.4018/978-1-7998-9158-1.ch003",
+      "url": "https://doi.org/10.4018/978-1-7998-9158-1.ch003",
       "api_source": "Crossref"
     },
     {
       "id": "cite_003",
-      "authors": [
-        "M. Schweik"
-      ],
-      "year": 2013,
-      "title": "Sustainability in Open Source Software Commons: Lessons Learned from an Empirical Study of SourceForge Projects",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Technology Innovation Management Review",
-      "publisher": "Carleton University",
-      "volume": "3",
-      "issue": "1",
-      "pages": "13-19",
-      "doi": "10.22215/timreview/645",
-      "url": "https://doi.org/10.22215/timreview/645",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_004",
-      "authors": [
-        "Bitzer",
-        "Schröder"
-      ],
-      "year": 2006,
-      "title": "The Economics of Open source Software Development",
-      "source_type": "book",
-      "language": "english",
-      "journal": "The Economics of Open Source Software Development",
-      "publisher": "Elsevier",
-      "pages": "1-13",
-      "doi": "10.1016/b978-044452769-1/50001-9",
-      "url": "https://doi.org/10.1016/b978-044452769-1/50001-9",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_005",
-      "authors": [
-        "Núñez-Tapia",
-        "Vargas-Larraguível"
-      ],
-      "year": 2025,
-      "title": "Brewing Interdisciplinary Collaboration in Higher Education: The Centro de Enseñanza Técnica y Superior (CETYS) BrewEd Initiative as a Model for Community-Driven Learning",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Interdisciplinary Journal of Partnership Studies",
-      "doi": "10.24926/ijps.v12i1.6749",
-      "url": "https://doi.org/10.24926/ijps.v12i1.6749",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_006",
-      "authors": [
-        "Suber"
-      ],
-      "year": 2006,
-      "title": "Open source, open content, open access in developing countries",
-      "source_type": "report",
-      "language": "english",
-      "publisher": "Front Matter",
-      "doi": "10.63485/56ytc-6ew54",
-      "url": "https://doi.org/10.63485/56ytc-6ew54",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_007",
-      "authors": [
-        "Alami",
-        "Pardo",
-        "Linåker"
-      ],
-      "year": 2024,
-      "title": "Free open source communities sustainability: Does it make a difference in software quality?",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Empirical Software Engineering",
-      "doi": "10.1007/s10664-024-10529-6",
-      "url": "https://doi.org/10.1007/s10664-024-10529-6",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_008",
-      "authors": [
-        "Habib",
-        "Kelshiker",
-        "Henide"
-      ],
-      "year": 2025,
-      "title": "The UN Sustainable Development Goals (SDGs)—Using Open-Source Data, How Aligned Is Your Equity Portfolio?",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "The Journal of Impact and ESG Investing",
-      "publisher": "With Intelligence LLC",
-      "volume": "5",
-      "issue": "3",
-      "pages": "64-89",
-      "doi": "10.3905/jesg.2025.1.123",
-      "url": "https://doi.org/10.3905/jesg.2025.1.123",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_009",
-      "authors": [
-        "Lattemann",
-        "Stieglitz"
-      ],
-      "year": 2006,
-      "title": "Coworker Governance in Open-Source Projects",
-      "source_type": "book",
-      "language": "english",
-      "journal": "The Economics of Open Source Software Development",
-      "publisher": "Elsevier",
-      "pages": "149-164",
-      "doi": "10.1016/b978-044452769-1/50007-x",
-      "url": "https://doi.org/10.1016/b978-044452769-1/50007-x",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_010",
       "authors": [
         "Froede",
         "JOHN",
@@ -167,240 +51,159 @@
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_011",
+      "id": "cite_004",
       "authors": [
-        "Ehls"
+        "Gupta"
       ],
-      "year": 2013,
-      "title": "Open Source Innovation",
+      "year": 2024,
+      "title": "Open Source Culture",
       "source_type": "book",
       "language": "english",
-      "journal": "Joining Decisions in Open Collaborative Innovation Communities",
-      "publisher": "Springer Fachmedien Wiesbaden",
-      "pages": "7-42",
-      "doi": "10.1007/978-3-658-04064-2_2",
-      "url": "https://doi.org/10.1007/978-3-658-04064-2_2",
+      "journal": "Fostering Open Source Culture",
+      "publisher": "Apress",
+      "pages": "1-26",
+      "doi": "10.1007/979-8-8688-0977-4_1",
+      "url": "https://doi.org/10.1007/979-8-8688-0977-4_1",
       "api_source": "Crossref"
+    },
+    {
+      "id": "cite_005",
+      "authors": [
+        "Zhou"
+      ],
+      "year": 2022,
+      "title": "Open Source Software Digital Sociology: Engineering Open Source Software Ecosystem for Impact and Sustainability",
+      "source_type": "conference",
+      "language": "english",
+      "journal": "Federated Africa and Middle East Conference on Software Engineering",
+      "publisher": "ACM",
+      "pages": "95-96",
+      "doi": "10.1145/3531056.3542767",
+      "url": "https://doi.org/10.1145/3531056.3542767",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_006",
+      "authors": [
+        "enterpriseaiexecutive.ai"
+      ],
+      "year": 2025,
+      "title": "enterpriseaiexecutive.ai",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://enterpriseaiexecutive.ai/p/mckinsey-the-state-of-open-source-ai",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_007",
+      "authors": [
+        "channelweb.co.uk"
+      ],
+      "year": 2025,
+      "title": "channelweb.co.uk",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://www.channelweb.co.uk/news/2025/geopatriation",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_008",
+      "authors": [
+        "aidsdatahub.org"
+      ],
+      "year": 2025,
+      "title": "aidsdatahub.org",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://www.aidsdatahub.org/sites/default/files/resource/who-guideline-digital-interventions-health-system-strengthening-2019.pdf",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_009",
+      "authors": [
+        "oecd.org"
+      ],
+      "year": 2025,
+      "title": "oecd.org",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://www.oecd.org/en/publications/access-to-public-research-data-toolkit_a12e8998-en/data-algorithms-and-source-code-policy-roadmap-2021-2024_d0f1d3ee-en.html",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_010",
+      "authors": [
+        "commission.europa.eu"
+      ],
+      "year": 2025,
+      "title": "europa.eu",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://commission.europa.eu/about/departments-and-executive-agencies/digital-services/open-source-software-strategy_en",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_011",
+      "authors": [
+        "bcg.com"
+      ],
+      "year": 2025,
+      "title": "bcg.com",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://www.bcg.com/publications/2021/open-source-software-strategy-benefits",
+      "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_012",
       "authors": [
-        "Bainbridge",
-        "Cunningham",
-        "Downie"
+        "saopen.ieee.org"
       ],
-      "year": 2004,
-      "title": "GREENSTONE as a Music Digital Library Toolkit",
-      "source_type": "journal",
+      "year": 2025,
+      "title": "ieee.org",
+      "source_type": "website",
       "language": "english",
-      "journal": "International Society for Music Information Retrieval Conference",
-      "url": "https://www.semanticscholar.org/paper/05f0787f2d89f8d83cc41a15aa8ec0fb79dad38f",
-      "api_source": "Semantic Scholar"
+      "url": "https://saopen.ieee.org/",
+      "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_013",
       "authors": [
-        "Halpern"
+        "csrc.nist.gov"
       ],
-      "year": 2012,
-      "title": "Beyond the annual book sale : a model for an environmentally sustainable post-weeding process",
-      "source_type": "journal",
+      "year": 2025,
+      "title": "nist.gov",
+      "source_type": "website",
       "language": "english",
-      "url": "https://www.semanticscholar.org/paper/349e68ecb279d26364e0f4c10334b1ba9815dd86",
-      "api_source": "Semantic Scholar"
+      "url": "https://csrc.nist.gov/pubs/sp/800/161/r1/final",
+      "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_014",
       "authors": [
-        "Colston",
-        "Flynn",
-        "Denton",
-        "Schiaffino",
-        "Majowicz",
-        "Devleesschauwer",
-        "Bari",
-        "Minato",
-        "Kosek"
+        "brookings.edu"
       ],
       "year": 2025,
-      "title": "Updating global estimates of pathogen-attributable diarrhoeal disease burden: a methodology and integrated protocol for a broad-scope systematic review of a syndrome with diverse infectious aetiologies",
-      "source_type": "journal",
+      "title": "brookings.edu",
+      "source_type": "website",
       "language": "english",
-      "journal": "BMJ Open",
-      "doi": "10.1136/bmjopen-2024-093018",
-      "url": "https://doi.org/10.1136/bmjopen-2024-093018",
-      "api_source": "Semantic Scholar"
+      "url": "https://www.brookings.edu/articles/digital-infrastructure-is-more-than-just-broadband-what-the-u-s-can-learn-from-europes-open-source-technology-policy-study/",
+      "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_015",
       "authors": [
-        "Ebardo"
+        "rand.org"
       ],
-      "year": 2018,
-      "title": "Visibility and Training in Open Source Software Adoption: A Case in Philippine Higher Education",
-      "source_type": "journal",
+      "year": 2025,
+      "title": "rand.org",
+      "source_type": "website",
       "language": "english",
-      "journal": "arXiv.org",
-      "doi": "10.18178/wcse.2018.06.065",
-      "url": "https://doi.org/10.18178/wcse.2018.06.065",
-      "api_source": "Semantic Scholar"
+      "url": "https://www.rand.org/pubs/research_reports/RR1964.html",
+      "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_016",
-      "authors": [
-        "Fatimah",
-        "Marianti",
-        "Rahayuningsih"
-      ],
-      "year": 2024,
-      "title": "Plastic Waste Management as a Alternative Energy Source to Support Sustainable Development Goals and Environmental Ethics: A Systematic Literatur Review",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Kappa journal",
-      "doi": "10.29408/kpj.v8i1.25588",
-      "url": "https://doi.org/10.29408/kpj.v8i1.25588",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_017",
-      "authors": [
-        "Okoli"
-      ],
-      "year": 2009,
-      "title": "A Brief Review of Studies on Open Source Software in Developing Countries in Peer-Reviewed Journals",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "SSRN Electronic Journal",
-      "publisher": "Elsevier BV",
-      "doi": "10.2139/ssrn.2293669",
-      "url": "https://doi.org/10.2139/ssrn.2293669",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_018",
-      "authors": [
-        "Dihaa",
-        "Salman",
-        "Khalaf",
-        "Jasim"
-      ],
-      "year": 2024,
-      "title": "International Legal Frameworks for Protecting Intellectual Property and Ensuring Academic Freedom",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Journal of Ecohumanism",
-      "doi": "10.62754/joe.v3i5.3905",
-      "url": "https://doi.org/10.62754/joe.v3i5.3905",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_019",
-      "authors": [
-        "Ahmad",
-        "Tripathi"
-      ],
-      "year": 2023,
-      "title": "Benefits, Challenges, and Implications of Open-Source Software for Health-Tech Startups: An Empirical Study",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "International Conference on Software Business",
-      "doi": "10.1007/978-3-031-53227-6_19",
-      "url": "https://doi.org/10.1007/978-3-031-53227-6_19",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_020",
-      "authors": [
-        "Bechara",
-        "Lechner"
-      ],
-      "year": 2024,
-      "title": "Digital Sovereignty and Open-Source Software - A Discussion Paper",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "International Conference on Innovations for Community Services",
-      "doi": "10.1007/978-3-031-60433-1_22",
-      "url": "https://doi.org/10.1007/978-3-031-60433-1_22",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_021",
-      "authors": [
-        "Salkever"
-      ],
-      "year": 2023,
-      "title": "Open Source Maintainers: Exploring the People, Practices, and Constraints Facing the World's Most Critical Open Source Software Projects",
-      "source_type": "journal",
-      "language": "english",
-      "doi": "10.70828/lddj8886",
-      "url": "https://doi.org/10.70828/lddj8886",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_022",
-      "authors": [
-        "Adebiyi",
-        "Adeusi"
-      ],
-      "year": 2025,
-      "title": "Analyzing the impact of open-source licensing models on AI development, commercialization, and knowledge dissemination in technology sectors",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "International Journal of Science and Research Archive",
-      "doi": "10.30574/ijsra.2025.15.3.1753",
-      "url": "https://doi.org/10.30574/ijsra.2025.15.3.1753",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_023",
-      "authors": [
-        "He",
-        "Liu"
-      ],
-      "year": 2024,
-      "title": "Reliability Assessment of Open Source Software: Taking Linux Operating System as an Example",
-      "source_type": "conference",
-      "language": "english",
-      "journal": "2024 6th International Academic Exchange Conference on Science and Technology Innovation (IAECST)",
-      "doi": "10.1109/IAECST64597.2024.11117657",
-      "url": "https://doi.org/10.1109/IAECST64597.2024.11117657",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_024",
-      "authors": [
-        "Suttiratana",
-        "Wong",
-        "Lanning",
-        "Dunlap",
-        "Hanes",
-        "Hood",
-        "Lal",
-        "Naranjo"
-      ],
-      "year": 2021,
-      "title": "518-P: User Experiences with Loop, an Open-Source Automated Insulin Delivery (AID) System",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Diabetes",
-      "doi": "10.2337/db21-518-p",
-      "url": "https://doi.org/10.2337/db21-518-p",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_025",
-      "authors": [
-        "Novakoff"
-      ],
-      "year": 2015,
-      "title": "Transnational Organized Crime: An Insidious Threat to U.S. National Security Interests",
-      "source_type": "journal",
-      "language": "english",
-      "url": "https://www.semanticscholar.org/paper/99a3e3989a7be848b5c1fb701eb39e4fb2515135",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_026",
       "authors": [
         "Sandberg"
       ],
@@ -413,109 +216,219 @@
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_027",
+      "id": "cite_017",
       "authors": [
-        "Carter",
-        "Groopman"
+        "Osborne"
       ],
-      "year": 2021,
-      "title": "Diversity, Equity, and Inclusion in Open Source: Exploring the Challenges and Opportunities to Create Equity and Agency Across Open Source Ecosystems",
+      "year": 2024,
+      "title": "Public-private funding models in open source software development: A case study on scikit-learn",
       "source_type": "journal",
       "language": "english",
-      "doi": "10.70828/kewr6778",
-      "url": "https://doi.org/10.70828/kewr6778",
+      "journal": "arXiv.org",
+      "doi": "10.48550/arXiv.2404.06484",
+      "url": "https://doi.org/10.48550/arXiv.2404.06484",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_018",
+      "authors": [
+        "Komba",
+        "Kitole"
+      ],
+      "year": 2025,
+      "title": "Impact of community-driven development programs on poverty reduction: evidence from Tanzania’s Social Action Fund (TASAF) in Babati District, Tanzania",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Discover Global Society",
+      "doi": "10.1007/s44282-025-00220-6",
+      "url": "https://doi.org/10.1007/s44282-025-00220-6",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_019",
+      "authors": [
+        "Sposini"
+      ],
+      "year": 2024,
+      "title": "Impact of New Technologies on Economic Behavior and Consumer Freedom of Choice: from Neuromarketing to Neuro-Rights",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Digital Technologies and Law",
+      "doi": "10.21202/jdtl.2024.5",
+      "url": "https://doi.org/10.21202/jdtl.2024.5",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_020",
+      "authors": [
+        "Lindman"
+      ],
+      "year": 2017,
+      "title": "Is it a Small World ? Developing Exclusion in New Commons Governance : Investigating Open Source and Wikipedia",
+      "source_type": "journal",
+      "language": "english",
+      "url": "https://www.semanticscholar.org/paper/608807f4be64a995d98174a7ec3324eefaf2dcb0",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_021",
+      "authors": [
+        "Tywoniak",
+        "Muselli"
+      ],
+      "year": 2008,
+      "title": "Value creation, value network, value capture : determinants of business models",
+      "source_type": "journal",
+      "language": "english",
+      "url": "https://www.semanticscholar.org/paper/e1453af2a737fb1270fdea8ecccaf3f5e9ab30ac",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_022",
+      "authors": [
+        "Valiev"
+      ],
+      "year": 2021,
+      "title": "External Factors in Sustainability of Open Source Software",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.1184/r1/14512605.v1",
+      "url": "https://doi.org/10.1184/r1/14512605.v1",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_023",
+      "authors": [
+        "forward.digital"
+      ],
+      "year": 2025,
+      "title": "forward.digital",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://forward.digital/blog/best-practices-for-fostering-collaboration-with-the-open-source-community",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_024",
+      "authors": [
+        "arxiv.org"
+      ],
+      "year": 2025,
+      "title": "arxiv.org",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://arxiv.org/abs/2411.14894",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_025",
+      "authors": [
+        "Blind",
+        "Schubert"
+      ],
+      "year": 2023,
+      "title": "Estimating the GDP effect of Open Source  Software and its complementarities with R&D and patents: evidence and policy implications",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Journal of Technology Transfer",
+      "doi": "10.1007/s10961-023-09993-x",
+      "url": "https://doi.org/10.1007/s10961-023-09993-x",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_026",
+      "authors": [
+        "Gadasina",
+        "I."
+      ],
+      "year": 2023,
+      "title": "Analysis of the Impact of Digital Transformation of the Company's Strategy Based on Open Source Data Analysis",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Social Science Research Network",
+      "doi": "10.2139/ssrn.4643308",
+      "url": "https://doi.org/10.2139/ssrn.4643308",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_027",
+      "authors": [
+        "Vasudeva"
+      ],
+      "year": 2014,
+      "title": "Open Source Software and Intellectual Property Rights",
+      "source_type": "journal",
+      "language": "english",
+      "url": "https://www.semanticscholar.org/paper/d8943c536fd264696c7e41d49199d91e0ba068ea",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_028",
       "authors": [
-        "Lehmann",
-        "Bilke",
-        "Buchwald",
-        "Graebling",
-        "Grunwald",
-        "Heinze",
-        "Meisel",
-        "Lu",
-        "Naumov",
-        "Rink",
-        "Sen",
-        "Selzer",
-        "Shao",
-        "Wang",
-        "Zill",
-        "Nagel",
-        "Kolditz"
+        "sustaine.org"
       ],
-      "year": 2024,
-      "title": "OpenWorkFlow—Development of an open-source synthesis-platform for safety investigations in the site selection process",
-      "source_type": "journal",
+      "year": 2025,
+      "title": "sustaine.org",
+      "source_type": "website",
       "language": "english",
-      "journal": "Grundwasser",
-      "doi": "10.1007/s00767-024-00566-9",
-      "url": "https://doi.org/10.1007/s00767-024-00566-9",
-      "api_source": "Semantic Scholar"
+      "url": "https://sustaine.org/open-source-software-development-through-information-and-communication-technology-ict/",
+      "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_029",
       "authors": [
-        "Widder",
-        "Nafus",
-        "Dabbish",
-        "Herbsleb"
+        "Robredo",
+        "Esposito",
+        "Palomba",
+        "Peñaloza",
+        "Lenarduzzi"
       ],
-      "year": 2022,
-      "title": "Limits and Possibilities for “Ethical AI” in Open Source: A Study of Deepfakes",
+      "year": 2025,
+      "title": "What Were You Thinking? An LLM-Driven Large-Scale Study of Refactoring Motivations in Open-Source Projects",
       "source_type": "journal",
       "language": "english",
-      "journal": "Conference on Fairness, Accountability and Transparency",
-      "doi": "10.1145/3531146.3533779",
-      "url": "https://doi.org/10.1145/3531146.3533779",
+      "journal": "arXiv.org",
+      "doi": "10.48550/arXiv.2509.07763",
+      "url": "https://doi.org/10.48550/arXiv.2509.07763",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_030",
       "authors": [
-        "Dempsey",
-        "Weiss",
-        "Jones",
-        "Greenberg"
+        "arxiv.org"
       ],
-      "year": 1999,
-      "title": "A Quantitative Profile of a Community of Open Source Linux Developers",
-      "source_type": "journal",
+      "year": 2025,
+      "title": "arxiv.org",
+      "source_type": "website",
       "language": "english",
-      "url": "https://www.semanticscholar.org/paper/2485102b783745b65e3a2ce1bc54cf0c52ab469a",
-      "api_source": "Semantic Scholar"
+      "url": "https://arxiv.org/abs/2101.10291",
+      "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_031",
       "authors": [
-        "Hassan"
+        "Chesbrough"
       ],
-      "year": 2017,
-      "title": "Methodologies and technologies for iot based academic ERP for smart university",
+      "year": 2023,
+      "title": "Measuring the Economic Value of Open Source: A Survey and a Preliminary Analysis",
       "source_type": "journal",
       "language": "english",
-      "doi": "10.5958/2321-581X.2017.00021.6",
-      "url": "https://doi.org/10.5958/2321-581X.2017.00021.6",
+      "doi": "10.70828/mnod1451",
+      "url": "https://doi.org/10.70828/mnod1451",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_032",
       "authors": [
-        "Viseur"
+        "Goodman"
       ],
-      "year": 2012,
-      "title": "From Open Source Software to Open Source Hardware",
-      "source_type": "book",
+      "year": 2022,
+      "title": "Paving the Way to Battle Climate Change: How Two Utilities Embraced Open Source to Speed Modernization of the Electric Grid",
+      "source_type": "journal",
       "language": "english",
-      "journal": "IFIP Advances in Information and Communication Technology",
-      "publisher": "Springer Berlin Heidelberg",
-      "pages": "286-291",
-      "doi": "10.1007/978-3-642-33442-9_23",
-      "url": "https://doi.org/10.1007/978-3-642-33442-9_23",
-      "api_source": "Crossref"
+      "doi": "10.70828/zxch7776",
+      "url": "https://doi.org/10.70828/zxch7776",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_033",
@@ -533,52 +446,345 @@
     {
       "id": "cite_034",
       "authors": [
-        "Thornton"
+        "blogs.worldbank.org"
       ],
-      "year": 2022,
-      "title": "Open-Source Governance and Democratic Deterrence: How Taiwan is harnessing technology and social media platforms to advance democracy",
-      "source_type": "journal",
+      "year": 2025,
+      "title": "worldbank.org",
+      "source_type": "website",
       "language": "english",
-      "journal": "Social Science Research Network",
-      "doi": "10.2139/ssrn.4110413",
-      "url": "https://doi.org/10.2139/ssrn.4110413",
-      "api_source": "Semantic Scholar"
+      "url": "https://blogs.worldbank.org/en/opendata/opening-code--opening-access--the-world-bank-s-first-open-source",
+      "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_035",
       "authors": [
-        "Yarmoliuk"
+        "Xiaoyun",
+        "Huichuan",
+        "Xiaoshuang",
+        "Lin"
       ],
-      "year": 2022,
-      "title": "THE INFLUENCE OF THE CONCEPT OF OPEN INNOVATION ON THE LEGISLATION IN THE FIELD OF INNOVATIVE ACTIVITY AND INTELLECTUAL PROPERTY OF UKRAINE",
+      "year": 2025,
+      "title": "Terahertz detection simulation of plasma waves in monolayer MoS2 field-effect transistor",
       "source_type": "journal",
       "language": "english",
-      "journal": "International scientific journal Internauka Series Juridical Sciences",
-      "doi": "10.25313/2520-2308-2022-7-8166",
-      "url": "https://doi.org/10.25313/2520-2308-2022-7-8166",
+      "journal": "Acta Physica Sinica",
+      "doi": "10.7498/aps.74.20250517",
+      "url": "https://doi.org/10.7498/aps.74.20250517",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_036",
       "authors": [
-        "Lumbard",
-        "Germonprez",
-        "Goggins"
+        "Santos",
+        "Gouvêa",
+        "Castro",
+        "Menezes",
+        "Silva",
+        "Cristóvão",
+        "Martins",
+        "Oliveira",
+        "Fucuta",
+        "Werneck",
+        "Filho",
+        "Lima",
+        "Caldas",
+        "Brienze",
+        "André",
+        "Oliani"
       ],
-      "year": 2023,
-      "title": "An empirical investigation of social comparison and open source community health",
+      "year": 2024,
+      "title": "Trends, outcomes and knowledge gaps in mobile apps for reproductive endocrinology and infertility: a scoping review protocol",
       "source_type": "journal",
       "language": "english",
-      "journal": "Information Systems Journal",
-      "doi": "10.1111/isj.12485",
-      "url": "https://doi.org/10.1111/isj.12485",
+      "journal": "BMJ Open",
+      "doi": "10.1136/bmjopen-2024-090463",
+      "url": "https://doi.org/10.1136/bmjopen-2024-090463",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_037",
+      "authors": [
+        "Widder",
+        "Nafus",
+        "Dabbish",
+        "Herbsleb"
+      ],
+      "year": 2022,
+      "title": "Limits and Possibilities for “Ethical AI” in Open Source: A Study of Deepfakes",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Conference on Fairness, Accountability and Transparency",
+      "doi": "10.1145/3531146.3533779",
+      "url": "https://doi.org/10.1145/3531146.3533779",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_038",
+      "authors": [
+        "nber.org"
+      ],
+      "year": 2025,
+      "title": "nber.org",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://www.nber.org/system/files/working_papers/w10956/w10956.pdf",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_039",
+      "authors": [
+        "Skiba"
+      ],
+      "year": 2005,
+      "title": "Open source: will you follow the cathedral or the bazaar model?",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Nursing Education Perspectives",
+      "url": "https://www.semanticscholar.org/paper/979076c4ce04cf185c0a90a5e6183ce28c45e982",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_040",
+      "authors": [
+        "institute.global"
+      ],
+      "year": 2025,
+      "title": "institute.global",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://institute.global/insights/tech-and-digitalisation/open-source-software-considerations-digital-government-transformation",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_041",
+      "authors": [
+        "Xie",
+        "Memon"
+      ],
+      "year": 2006,
+      "title": "Model-Based Testing of Community-Driven Open-Source GUI Applications",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "2006 22nd IEEE International Conference on Software Maintenance",
+      "doi": "10.1109/ICSM.2006.39",
+      "url": "https://doi.org/10.1109/ICSM.2006.39",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_042",
+      "authors": [
+        "Kikelj",
+        "Sabic"
+      ],
+      "year": 2024,
+      "title": "Strengthening the Digital Ecosystem: Effects of the Cyber Resilience Act (CRA) on Open-Source Software",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Computer Science Symposium in Russia",
+      "doi": "10.1109/CSR61664.2024.10679481",
+      "url": "https://doi.org/10.1109/CSR61664.2024.10679481",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_043",
+      "authors": [
+        "Plevnik",
+        "Gumzej"
+      ],
+      "year": 2025,
+      "title": "Open Source as the Foundation of Safety and Security in Logistics Digital Transformation",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Syst.",
+      "doi": "10.3390/systems13060424",
+      "url": "https://doi.org/10.3390/systems13060424",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_044",
+      "authors": [
+        "Srinivasa",
+        "Deka",
+        "Krishnaraj"
+      ],
+      "year": 2021,
+      "title": "A Multi-Step Process Towards Integrating Free and Open Source Software in Engineering Education",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Research Anthology on Usage and Development of Open Source Software",
+      "doi": "10.4018/978-1-7998-9158-1.ch021",
+      "url": "https://doi.org/10.4018/978-1-7998-9158-1.ch021",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_045",
+      "authors": [
+        "Hahn",
+        "Lewis",
+        "Blazes"
+      ],
+      "year": 2014,
+      "title": "The Use of Open Source Software to Enhance Public Health Initiatives",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Online Journal of Public Health Informatics",
+      "doi": "10.5210/OJPHI.V6I1.5181",
+      "url": "https://doi.org/10.5210/OJPHI.V6I1.5181",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_046",
+      "authors": [
+        "openchainproject.org"
+      ],
+      "year": 2025,
+      "title": "openchainproject.org",
+      "source_type": "website",
+      "language": "english",
+      "url": "https://openchainproject.org/license-compliance",
+      "api_source": "Gemini Grounded"
+    },
+    {
+      "id": "cite_047",
+      "authors": [
+        "Rahal"
+      ],
+      "year": 2018,
+      "title": "Tools for Transparency in Central Government Spending",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "International Journal of Population Data Science",
+      "doi": "10.23889/ijpds.v4i1.1092",
+      "url": "https://doi.org/10.23889/ijpds.v4i1.1092",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_048",
+      "authors": [
+        "Powell"
+      ],
+      "year": 2012,
+      "title": "Democratizing production through open source knowledge: from open software to open hardware",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.1177/0163443712449497",
+      "url": "https://doi.org/10.1177/0163443712449497",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_049",
+      "authors": [
+        "Knežević",
+        "Paunović"
+      ],
+      "year": 2024,
+      "title": "Open Source Integrated Circuit Design Tools in Scientific Research: Yay or Nay?",
+      "source_type": "conference",
+      "language": "english",
+      "journal": "10th International Scientific Conference Technics, Informatic, and Education",
+      "doi": "10.46793/tie24.048k",
+      "url": "https://doi.org/10.46793/tie24.048k",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_050",
+      "authors": [
+        "Alexakos",
+        "Komninos",
+        "Anagnostopoulos",
+        "Kalogeras",
+        "Savvopoulos",
+        "Kalogeras"
+      ],
+      "year": 2019,
+      "title": "Building an Industrial IoT Infrastructure with open Source Software for Smart Energy",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "International Conference on Societal Automation",
+      "doi": "10.1109/SA47457.2019.8938057",
+      "url": "https://doi.org/10.1109/SA47457.2019.8938057",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_051",
+      "authors": [
+        "Woody",
+        "Hissam"
+      ],
+      "year": 2024,
+      "title": "Open Source Software (OSS) Transparency Tutorial",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "IEEE Cybersecurity Development",
+      "doi": "10.1109/secdev61143.2024.00026",
+      "url": "https://doi.org/10.1109/secdev61143.2024.00026",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_052",
+      "authors": [
+        "Kazanskaia"
+      ],
+      "year": 2025,
+      "title": "Future Trends in Data Analysis for Non-Profit Organizations: Emerging Technologies, Real-Time Insights, and Impact Measurement",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "NEYA Global Journal of Non-Profit Studies",
+      "doi": "10.64357/neya-gjnps-ftda-2025",
+      "url": "https://doi.org/10.64357/neya-gjnps-ftda-2025",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_053",
+      "authors": [
+        "Halim",
+        "Setiawan"
+      ],
+      "year": 2025,
+      "title": "Promoting Digital Inclusion through Free and Open Source Software (FOSS) in Indonesian Public Policy",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Social Science and Human Research Bulletin",
+      "doi": "10.55677/sshrb/2025-3050-0807",
+      "url": "https://doi.org/10.55677/sshrb/2025-3050-0807",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_054",
+      "authors": [
+        "Careem",
+        "Silva",
+        "Silva",
+        "Raschid",
+        "Weerawarana"
+      ],
+      "year": 2007,
+      "title": "Demonstration of Sahana: free and open source disaster management",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Digital Government Research",
+      "url": "https://www.semanticscholar.org/paper/3727aaf892bd4887884f27587cd415653f57a4eb",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_055",
+      "authors": [
+        "Hendrick",
+        "Santamaria"
+      ],
+      "year": 2023,
+      "title": "The 2023 State of OSPOs and OSS Initatives: Open Source Software Programs and Initiatives Become Mainstream",
+      "source_type": "journal",
+      "language": "english",
+      "doi": "10.70828/dqap9709",
+      "url": "https://doi.org/10.70828/dqap9709",
       "api_source": "Semantic Scholar"
     }
   ],
   "metadata": {
-    "total_citations": 36,
+    "total_citations": 55,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-17T09:43:22.005626"
+    "extracted_date": "2025-11-17T11:26:24.391498"
   }
 }

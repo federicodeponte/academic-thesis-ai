@@ -8,145 +8,140 @@
 ## Summary
 
 **Strengths:**
-- Comprehensive coverage of key aspects of emissions trading (implications, challenges, improvements, global role, recommendations).
-- Well-structured and logically flows through different facets of the topic.
-- Generally well-cited, drawing on established literature.
-- Identifies critical issues like Carbon Leakage, price volatility, and social justice.
-- Provides actionable recommendations for both policy and industry.
+- Comprehensive overview of Emissions Trading Systems (EHS) from multiple angles (implications, challenges, improvements, global role, recommendations).
+- Good logical flow from problem identification to proposed solutions and policy advice.
+- Addresses key challenges like carbon leakage, price volatility, and social impacts.
+- Synthesizes a broad range of literature to support general claims about EHS.
 
-**Critical Issues:** 3 major, 4 moderate, 3 minor
-**Recommendation:** Substantial revisions needed, particularly to ground the discussion in the paper's own findings and to refine certain claims.
+**Critical Issues:** 4 major, 4 moderate, 5 minor
+**Recommendation:** Significant revisions are needed, particularly regarding academic integrity (citation verification) and acknowledging the limitations inherent to a literature-based discussion without original empirical findings.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Missing Core Content - Placeholder for Paper's Results
-**Location:** Discussion Introduction (para 1), Fazit der Diskussion (para 1)
-**Claim:** The discussion is based on "Die Ergebnisse der Analyse..."
-**Problem:** The actual findings of *this specific paper* are missing (indicated by placeholders). This is the most critical flaw, as the entire discussion section should be an interpretation and contextualization of the paper's own research. Without these results, the discussion reads as a general literature review on emissions trading rather than a discussion of *this study's* contribution.
-**Evidence:** `[kurze Zusammenfassung des Themas der Arbeit...]`, `[kurze Erwähnung der Hauptergebnisse]`, `[kurze Zusammenfassung der Hauptergebnisse der Arbeit]`
-**Fix:** Integrate the concrete findings and results of the paper throughout the discussion, especially in the introductory and concluding paragraphs. Explicitly link how *your* results support or challenge the discussed points.
-**Severity:** 🔴 High - fundamentally compromises the purpose and coherence of the discussion section.
+### Issue 1: Citation Verification and Academic Integrity
+**Location:** Throughout the entire document
+**Problem:** All citations are placeholders (`{cite_0XX}`). As a critical reviewer, I cannot verify if these citations are valid, if they accurately support the claims made, or if they point to appropriate sources. This fundamentally undermines the academic integrity and verifiability of the discussion.
+**Evidence:** Every cited statement uses a placeholder (e.g., `{cite_015}`, `{cite_003}`).
+**Fix:** Replace all placeholders with full, verifiable citations including author(s), year, title, journal/publisher, and preferably a DOI or arXiv ID. Ensure each citation genuinely supports the specific claim it is attached to.
+**Severity:** 🔴 High - **CRITICAL ACADEMIC INTEGRITY FLAW.**
 
-### Issue 2: Future-Dated Citation
-**Location:** Verbesserungsvorschläge für CO2-Märkte, para 4
-**Claim:** `Mulwa und Kyongo (2025) betonen die Notwendigkeit einer Meta-Analyse der Umwelteffektivität und der Kohlenstoffsteuer, was die Relevanz solcher Kombinationen unterstreicht {cite_016}.`
-**Problem:** Citing a paper from 2025 as an existing, authoritative source is problematic if the paper is not yet published or publicly available. This could be a placeholder error, a reference to a forthcoming publication that hasn't materialized, or even a hallucination.
-**Evidence:** The year "2025" implies future publication.
-**Fix:** Verify the status of this publication. If it's not published, remove the citation or rephrase to acknowledge it as a *forthcoming* or *planned* work, if relevant. If it's an error, replace with the correct citation.
-**Severity:** 🔴 High - raises academic integrity concerns.
+### Issue 2: Lack of Paper-Specific Limitations
+**Location:** Introduction, Conclusion, and implicitly throughout
+**Claim:** The introduction states, "die hier auf einem breiten Verständnis der Literatur und der allgemeinen Funktionsweise von EHS basiert, da keine spezifischen experimentellen Ergebnisse vorlagen."
+**Problem:** While this disclaimer is crucial, the discussion section *itself* fails to explicitly address the limitations of *this specific paper's approach*. For a purely literature-based synthesis, key limitations include:
+    *   The scope and methodology of the literature review (was it systematic? what were the inclusion/exclusion criteria?).
+    *   Potential for selection bias in the literature reviewed.
+    *   The inherent lack of novel empirical contribution from this paper.
+    *   The reliance on secondary sources and interpretations.
+**Missing:** A dedicated section or clear statements acknowledging the limitations of *this paper's own research methodology and scope*.
+**Fix:** Add a section (e.g., at the end of the discussion or in the introduction to the discussion) that explicitly outlines the limitations of this work given its nature as a literature-based synthesis. This demonstrates critical self-reflection.
+**Severity:** 🔴 High - affects the overall rigor and transparency of the paper.
 
-### Issue 3: Overclaims in Definitive Language
-**Location:** Multiple instances (e.g., "Implikationen für die Klimapolitik" para 2, "Verbesserungsvorschläge" para 2, "Fazit der Diskussion" para 3)
-**Claim:** Use of strong, definitive terms like "unerlässlich" (indispensable), "müssen" (must), "entscheidend" (decisive), "unverzichtbar" (unavoidable).
-**Problem:** While emissions trading is crucial, such strong terms can sometimes overstate the case or ignore alternative pathways. For instance, is ETS truly "unerlässlich" for *all* climate goals, or is it a "highly effective and preferred" instrument?
-**Evidence:**
-- "was für die Erreichung nationaler und internationaler Klimaziele... **unerlässlich ist** {cite_009}."
-- "Um die Klimaziele umfassend zu erreichen, **müssen** jedoch auch Sektoren wie Verkehr, Gebäude und Landwirtschaft in den Emissionshandel integriert werden {cite_006}."
-- "Internationale Unterstützung und Kapazitätsaufbau sind daher **entscheidend**, um die Einführung und den Erfolg solcher Systeme in diesen Regionen zu gewährleisten {cite_038}."
-- "Insgesamt bleibt der Emissionshandel ein **unverzichtbarer** Pfeiler der globalen Klimapolitik."
-**Fix:** Soften these claims to reflect a more nuanced scientific perspective using terms like "hochgradig wichtig," "sollten," "tragen entscheidend bei," or "ein zentraler Pfeiler." Acknowledge that other policy mixes *could* theoretically exist, even if less efficient.
-**Severity:** 🔴 High - affects the precision and scientific rigor of the claims.
+### Issue 3: Overclaim / Tautology in "Gewährleisten"
+**Location:** Section 1, paragraph 2
+**Claim:** "Durch die Festlegung einer Obergrenze für Emissionen (Cap) gewährleisten sie, dass die Reduktionsziele erreicht werden, sofern das Cap adäquat und ambitioniert gesetzt ist {cite_008}."
+**Problem:** This statement is a tautology. If the cap *is* "adäquat und ambitioniert gesetzt" (adequately and ambitiously set), then *by definition* the reduction goals will be met because the cap *is* the goal. The phrasing "gewährleisten sie" (they ensure) implies an inherent, unconditional reliability of EHS, which is then undermined by the necessary condition. EHS *can* achieve goals if properly designed, but they don't inherently "guarantee" it.
+**Evidence:** The conditional clause "sofern das Cap adäquat und ambitioniert gesetzt ist" makes the "gewährleisten" redundant and misleading.
+**Fix:** Rephrase to accurately reflect the conditional nature: "Durch die Festlegung einer Obergrenze für Emissionen (Cap) *können* EHS dazu beitragen, dass die Reduktionsziele erreicht werden, *vorausgesetzt* das Cap ist adäquat und ambitioniert gesetzt." or "EHS können die Erreichung von Reduktionszielen sicherstellen, *wenn* das Cap entsprechend den Zielen festgelegt wird."
+**Severity:** 🔴 High - affects logical coherence and precision of claims.
+
+### Issue 4: Logical Flaw / Oversimplification of Price Stabilization
+**Location:** Section 1, paragraph 3
+**Claim:** "Beispielsweise können Fördermechanismen für erneuerbare Energien die Einführung neuer Technologien beschleunigen, wodurch die Nachfrage nach Emissionszertifikaten sinkt und der CO2-Preis stabilisiert wird."
+**Problem:** While increased renewable energy deployment would likely *reduce* the demand for emissions certificates and thus *lower* the CO2 price, it does not necessarily *stabilize* it. Price stabilization implies reducing volatility and extreme fluctuations, not just a downward pressure. A lower price might still be highly volatile.
+**Evidence:** Lowering a price is a directional change, stabilization is about reducing amplitude of change. These are distinct concepts.
+**Fix:** Rephrase to accurately reflect the likely outcome: "...wodurch die Nachfrage nach Emissionszertifikaten sinkt und der CO2-Preis *potenziell sinkt oder sich auf einem niedrigeren Niveau einpendelt*." Or, if price stabilization is indeed a documented effect of such mechanisms, provide a more specific citation that explains this complex interaction.
+**Severity:** 🔴 High - logical flaw, oversimplification of complex market dynamics.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 4: Missing "Limitations of This Study" Subsection
-**Location:** Entire document, but especially relevant in the Discussion.
-**Problem:** The discussion thoroughly covers the general "Grenzen und Herausforderungen des Emissionshandels," but it fails to address the specific limitations of *this particular study*. A robust discussion section typically includes a subsection on the limitations of the research itself (e.g., scope, data, methodology, generalizability of its findings).
-**Missing:** A dedicated section or paragraph discussing the specific limitations of the research presented in the paper.
-**Fix:** Add a subsection titled "Grenzen der vorliegenden Studie" where you explicitly state and discuss the limitations of *your* research, how they might affect the interpretation of *your* results, and suggestions for future work to address them.
-**Severity:** 🟡 Moderate - standard academic practice, impacts methodological rigor.
+### Issue 5: Prescriptive Recommendation without Explicit Backing
+**Location:** Section 3, paragraph 1
+**Claim:** "Eine dynamische Anpassung der Zertifikatemenge an die tatsächliche Emissionsentwicklung und wirtschaftliche Rahmenbedingungen könnte die Resilienz des Systems weiter erhöhen."
+**Problem:** This is presented as a specific, advanced improvement suggestion. While plausible, it sounds like the author's own proposal or a very specific mechanism. Without a direct citation or an explicit statement that this is a recognized or proposed mechanism in the literature, it appears unsubstantiated as a general improvement suggestion.
+**Missing:** A citation to literature discussing "dynamische Anpassung der Zertifikatemenge" beyond the MSR (which is mentioned earlier).
+**Fix:** Either provide a citation for this specific mechanism or phrase it more cautiously as a potential future direction: "Zukünftige Entwicklungen könnten eine dynamische Anpassung der Zertifikatemenge an die tatsächliche Emissionsentwicklung und wirtschaftliche Rahmenbedingungen umfassen, um die Resilienz des Systems weiter zu erhöhen."
 
-### Issue 5: Speculative Claims without Sufficient Evidence
-**Location:** Verbesserungsvorschläge für CO2-Märkte, para 5 (CBAM)
-**Claim:** `Eine erfolgreiche Implementierung des CBAM könnte nicht nur Carbon Leakage verhindern, sondern auch andere Länder dazu anregen, eigene CO2-Bepreisungssysteme einzuführen, um die Einnahmen aus den Grenzabgaben selbst zu generieren.`
-**Problem:** While plausible, this claim regarding CBAM's "anregen" (incentivizing) effect on other countries is speculative. CBAM is a relatively new mechanism, and its long-term effects, especially on the policy decisions of other nations, are not yet fully observed or proven.
-**Evidence:** The statement uses "könnte" (could), indicating possibility, but it's presented quite definitively regarding a future outcome.
-**Fix:** Qualify this statement with more caution, e.g., "Es besteht das Potenzial, dass CBAM andere Länder dazu *ermutigen könnte*..." or "Es bleibt abzuwarten, inwieweit CBAM andere Länder tatsächlich dazu anregt..."
-**Severity:** 🟡 Moderate - overclaims beyond current evidence.
+### Issue 6: Strong Claim on CBAM's Motivational Effect
+**Location:** Section 3, paragraph 3
+**Claim:** "Dies [CBAM] würde den Anreiz zur Verlagerung der Produktion reduzieren und gleichzeitig Drittländer motivieren, eigene Klimaschutzmaßnahmen zu ergreifen."
+**Problem:** While reducing carbon leakage is a primary goal of CBAM, the claim that it will "motivieren" (motivate) third countries to adopt their own climate protection measures is a strong assertion about a complex geopolitical outcome. While it's a hoped-for secondary effect and a stated policy intention, it's not a guaranteed or easily measurable outcome and could be an overclaim without stronger empirical backing or more careful hedging.
+**Fix:** Hedge the claim more carefully: "...und *könnte* Drittländer *dazu anregen*, eigene Klimaschutzmaßnahmen zu ergreifen."
 
-### Issue 6: Weak Link Between Transparency and Lobby Influence Reduction
-**Location:** Verbesserungsvorschläge für CO2-Märkte, para 6
-**Claim:** `Eine klare und nachvollziehbare Entscheidungsfindung, die Reduzierung von Lobbyeinfluss und eine kontinuierliche wissenschaftliche Begleitung können das Vertrauen in die Systeme stärken.`
-**Problem:** While transparency can *aim* to reduce lobby influence, stating it as a direct outcome that "can" strengthen trust might be an oversimplification. Lobbying is a complex political process, and transparency alone may not guarantee a significant reduction in influence. It's more of an aspirational goal than a guaranteed consequence.
-**Evidence:** "die Reduzierung von Lobbyeinfluss" is listed as one of the factors leading to stronger trust.
-**Fix:** Rephrase to acknowledge the complexity, e.g., "Eine klare und nachvollziehbare Entscheidungsfindung, *verbunden mit Bemühungen zur Eindämmung von übermäßigem Lobbyeinfluss*, und eine kontinuierliche wissenschaftliche Begleitung können das Vertrauen in die Systeme stärken."
-**Severity:** 🟡 Moderate - slightly oversimplifies a complex political dynamic.
+### Issue 7: Repetitive Points Across Sections
+**Location:** Throughout (e.g., synergy with other policies, international cooperation, use of revenues for social compensation)
+**Problem:** Several key points, while important, are reiterated across different sections (e.g., Section 1, 3, 4, 5). While some repetition can be for emphasis or re-contextualization, it occasionally makes the text feel redundant.
+**Evidence:**
+    *   "Synergies with other policies" (Section 1) and "Integration of EHS in a broader portfolio of climate protection measures" (Section 4).
+    *   "Harmonization and linking of EHS on an international level" (Section 3) and "Role in global climate protection" (Section 4).
+    *   "Use of EHS revenues for social compensation" (Section 3) and "Social compensation measures" (Section 5).
+**Fix:** Review the discussion for areas of redundancy. Consolidate or rephrase to ensure each instance adds new depth or a different perspective, rather than simply repeating a previous statement.
 
-### Issue 7: Prescriptive Tone in Policy Recommendations
-**Location:** Empfehlungen für Politik und Wirtschaft, "Für die Politik", Punkt 2
-**Claim:** `Die Politik sollte der Versuchung widerstehen, Zertifikate zu überallokieren, auch unter Druck von Lobbygruppen {cite_020}.`
-**Problem:** While this is a valid and important recommendation, the phrasing "sollte der Versuchung widerstehen" is quite direct and prescriptive, leaning towards a political commentary rather than a purely academic recommendation.
-**Evidence:** Direct instructional language towards "Politik."
-**Fix:** Soften the tone to be more analytical and less directive, e.g., "Es ist entscheidend, dass die Politik eine Überallokation von Zertifikaten, auch unter Berücksichtigung von Lobbyinteressen, vermeidet, um ein robustes Preissignal zu gewährleisten."
-**Severity:** 🟡 Moderate - affects academic tone.
+### Issue 8: Lack of Methodological Transparency for Literature Review
+**Location:** Implied by the entire discussion
+**Problem:** Given that the paper is explicitly based on "einem breiten Verständnis der Literatur" and lacks original experimental results, the absence of any description of *how* this literature was reviewed (e.g., search strategy, databases, selection criteria, number of papers considered, types of sources) is a significant methodological gap for the paper itself.
+**Missing:** A brief explanation of the approach taken to survey and synthesize the literature.
+**Fix:** Add a short paragraph, ideally in the introduction or a dedicated "Methodology" section (if applicable for the overall paper), explaining how the literature was gathered and processed for this discussion. This enhances the credibility of the synthesis.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Generalization of Financing from ETS Auctions:**
-    **Location:** Rolle im globalen Klimaschutz, para 3
-    **Issue:** `Einnahmen aus der Versteigerung von Emissionszertifikaten können zweckgebunden für Klimaschutz- und Anpassungsmaßnahmen verwendet werden.` While true, this is a general statement of potential. It would be stronger to provide examples or statistics on how much *is actually* used this way globally, or to acknowledge that this potential is not always fully realized.
-    **Fix:** Add context, examples, or a caveat about the actual implementation.
-
-2.  **Repetitive Phrasing / Redundancy:**
-    **Location:** Throughout the text, especially in "Implikationen" and "Verbesserungsvorschläge."
-    **Issue:** Some arguments, like the need for a policy mix or the importance of a strong price signal, are reiterated multiple times. While reinforcing key messages, it can sometimes feel redundant.
-    **Fix:** Consolidate or rephrase to avoid exact repetition, perhaps by building on previous mentions rather than simply restating.
-
-3.  **Vague Claims for "Wirtschaft" Recommendations:**
-    **Location:** Empfehlungen für Politik und Wirtschaft, "Für die Wirtschaft", Punkt 1
-    **Issue:** `Eine proaktive Anpassung an diese Rahmenbedingungen durch Investitionen in Dekarbonisierung und Energieeffizienz kann langfristig Wettbewerbsvorteile sichern.` "Kann... sichern" (can secure) is still a strong claim for a potential benefit. "Kann... fördern" (can promote) or "ermöglichen" (enable) might be more appropriate, as securing competitive advantages is complex and not solely dependent on CO2-price adaptation.
-    **Fix:** Soften "sichern" to "fördern" or "ermöglichen."
+1.  **Vague claim:** Section 1, paragraph 2: "Diese Verlässlichkeit macht EHS zu einem attraktiven Instrument..." "Verlässlichkeit" is a strong term given the conditional nature of the cap. Consider "Diese *potenzielle* Verlässlichkeit..."
+2.  **Strong adjective:** Section 4, paragraph 1: "EHS bieten ein *enormes* Potenzial für internationale Kooperation..." While cited, "enormes" is a very strong adjective. Consider "erhebliches" (considerable) or "signifikantes" (significant) for a more measured tone.
+3.  **Ambiguous phrasing:** Section 4, paragraph 4: "Dieser Trend kann eine positive Rückkopplungsschleife erzeugen..." While the concept is clear, the phrasing could be slightly more precise, e.g., "Diese Entwicklung kann eine positive Rückkopplungsschleife *in Gang setzen*..."
+4.  **Minor wording for flow:** Section 4, paragraph 2, sentence 1: "Die Herausforderungen bei der Implementierung von EHS in Entwicklungsländern sind vielfältig und bedürfen besonderer Aufmerksamkeit." Could be smoother: "...sind vielfältig und *erfordern* besonderer Aufmerksamkeit."
+5.  **Consistency in terminology:** Ensure consistent use of terms like "CO2-Märkte" and "Emissionshandelssysteme (EHS)" throughout, or clarify if there's a nuanced difference intended. Currently, they seem used interchangeably.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Disconnect between Study's Results and Discussion
-**Location:** Throughout the entire "Diskussion" section.
-**Logic:** A discussion section should logically *discuss* the findings of the preceding "Ergebnisse" section.
-**Missing:** A clear, explicit, and recurring connection between the paper's *own empirical results* and the broader points being made about emissions trading. The current text reads like a standalone literature review and policy analysis, rather than a discussion that interprets *this paper's specific contribution*.
-**Fix:** After filling in the placeholder for your results (Major Issue 1), ensure that each major point in the discussion (implications, challenges, etc.) explicitly references how *your study's findings* either support, contradict, refine, or add new insights to the existing literature and policy debates.
+### Gap 1: Incomplete Causality Explanation
+**Location:** Section 1, paragraph 3
+**Logic:** "Fördermechanismen für erneuerbare Energien...beschleunigen...wodurch die Nachfrage nach Emissionszertifikaten sinkt und der CO2-Preis stabilisiert wird."
+**Missing:** A clear explanation of how *lowering* the price specifically leads to *stabilization*. As noted in Major Issue 4, these are distinct concepts. A causal link for stabilization needs to be established or the claim should be modified.
+**Fix:** Either provide the missing causal link/explanation (backed by literature) or revise the claim to focus on price reduction rather than stabilization.
 
 ---
 
-## Methodological Concerns
+## Methodological Concerns (as they pertain to the paper's overall approach)
 
-### Concern 1: Unclear Basis for Discussion
-**Issue:** Without the "Ergebnisse der Analyse" (results of the analysis), it is impossible to assess if the discussion appropriately interprets, extrapolates, or limits its claims based on the study's specific methodology, data, and scope.
-**Risk:** The discussion might overgeneralize findings, draw conclusions not supported by the study's methods, or fail to acknowledge methodological limitations.
-**Reviewer Question:** "How do the specific methods and data used in *this study* shape or constrain the conclusions drawn in this discussion?"
-**Suggestion:** Once the results are included, ensure clear links to the methodology section.
+### Concern 1: Unspecified Review Methodology
+**Issue:** The paper states it's based on "einem breiten Verständnis der Literatur," but provides no details on how this understanding was systematically developed.
+**Risk:** The selection and interpretation of literature could be perceived as subjective or biased, lacking the rigor expected for a scholarly work, especially one without original data.
+**Reviewer Question:** "What was the methodology for collecting and synthesizing the literature referenced in this discussion? Was it a systematic or structured review?"
+**Suggestion:** Add a brief section detailing the approach to literature review, even if it's a narrative review, to enhance transparency.
 
 ---
 
 ## Missing Discussions
 
-1.  **Specific Findings of the Paper:** As highlighted in Major Issue 1, this is the most critical missing element. The discussion needs to be grounded in the paper's own research.
-2.  **Limitations of *this specific study*:** A dedicated section on the scope, methods, and data limitations of the paper itself is crucial for academic rigor (see Moderate Issue 4).
-3.  **Future Research Directly Building on *This Study*:** While "Verbesserungsvorschläge" are given, a "Future Work" section specifically outlining how *this study's findings* open new avenues for research would strengthen the paper's contribution.
+1.  **Specific EHS Failures/Less Successful Systems:** While challenges are generally discussed, the paper heavily leans on the EU-EHS as a success story. A discussion of EHS that have struggled, failed, or faced significant implementation hurdles (e.g., in specific developing countries or early, less mature systems) would add valuable balance and lessons learned.
+2.  **Detailed Debate on CBAM and WTO Compatibility:** The paper mentions that CBAM "mit den Regeln der Welthandelsorganisation (WTO) vereinbar sein muss." However, it doesn't delve into the *ongoing debates and legal challenges* surrounding this, which are significant. A more critical discussion of these complexities would strengthen the analysis.
+3.  **Political Economy of EHS Implementation:** Beyond administrative complexity, a deeper dive into the political economy aspects – e.g., lobbyism, vested interests, the difficulty of setting ambitious caps due to political pressures – would enrich the discussion of challenges.
+4.  **Trade-offs and Unintended Consequences of Proposed Solutions:** For instance, while extending EHS to transport and heat is proposed, the significant political and social resistance, and potential regressive impacts beyond what is covered by "social compensation measures," could be further explored. Similarly, the challenges of international linking (e.g., differing ambition levels, governance structures) could be elaborated.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Lack of Self-Reflection:** The discussion is very outward-looking, focusing on the general instrument of emissions trading. It needs more self-reflection on the specific contribution, scope, and limitations of the current paper.
-2.  **Slightly Overconfident Phrasing:** As noted in Major Issue 3, the use of very strong, definitive terms could be softened to enhance scientific nuance.
+1.  **Slightly Overly Confident:** While generally professional, some phrases could be softened to reflect the inherent uncertainties in policy analysis. For example, "gewährleisten" (ensure) or "entscheidend" (decisive) could sometimes be replaced by "stark beitragen" (strongly contribute) or "von großer Bedeutung" (of great importance).
+2.  **Repetitive Phrasing:** As noted in Moderate Issue 7, some concepts are repeated. Varying the language or structure when reiterating a point could improve readability.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "What are the *specific empirical findings* of your study that underpin this entire discussion section?"
-2.  "What are the *limitations of your own research* that readers should be aware of when interpreting your discussion and recommendations?"
-3.  "Can you verify the citation for 'Mulwa und Kyongo (2025)' and confirm its publication status?"
-4.  "Could you elaborate on how your study's results either support, challenge, or extend existing literature on emissions trading?"
-5.  "How do you justify the strong claims made with terms like 'unerlässlich' or 'müssen,' especially when alternative policy instruments might exist?"
+1.  Given the absence of empirical results from *this paper*, what is the explicit methodology used to synthesize the existing literature?
+2.  Can you provide examples of EHS that have been less successful or faced significant implementation challenges, and what lessons can be drawn from those cases?
+3.  What are the key ongoing debates and criticisms regarding the WTO compatibility of Carbon Border Adjustment Mechanisms (CBAMs), and how do these influence your recommendations?
+4.  Please clarify how promoting renewable energies leads to the *stabilization* of CO2 prices, beyond simply lowering them.
+5.  How would you address the political economy challenges, such as strong industry lobbying or public resistance, in setting ambitious caps or expanding EHS to new sectors?
 
 **Prepare answers or add to paper**
 
@@ -155,13 +150,12 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Fix Issue 1 (Missing Core Content):** Integrate your paper's specific results throughout the discussion. This is paramount.
-2.  🔴 **Fix Issue 2 (Future-Dated Citation):** Rectify the Mulwa and Kyongo (2025) citation immediately.
-3.  🔴 **Fix Issue 3 (Overclaims in Definitive Language):** Systematically review and soften strong, definitive terms like "unerlässlich," "müssen," "entscheidend," "unverzichtbar."
-4.  🟡 **Address Issue 4 (Missing "Limitations of This Study"):** Add a dedicated subsection discussing the specific limitations of your research.
-5.  🟡 **Address Issue 5 (Speculative CBAM Claims):** Qualify the claims about CBAM's incentivizing effect.
+1.  🔴 Fix Issue 1 (Citation Verification) - **Absolutely critical for academic integrity.**
+2.  🔴 Address Issue 2 (Lack of Paper-Specific Limitations) - Essential for transparency and rigor.
+3.  🔴 Resolve Issue 3 (Overclaim/Tautology in "Gewährleisten") - Logical coherence.
+4.  🔴 Fix Issue 4 (Logical Flaw/Oversimplification of Price Stabilization) - Accuracy of claims.
+5.  🟡 Address Issue 8 (Lack of Methodological Transparency for Literature Review) - Enhances credibility.
 
 **Can defer:**
-- Minor wording issues and subtle repetitions (fix in revision).
-- Further elaboration on general financing from ETS auctions (can be addressed in revision if space permits).
-- Refining the prescriptive tone in recommendations (can be refined during comprehensive editing).
+- Minor wording adjustments (e.g., Issue 9, 10, 11) can be polished during the revision process.
+- Deeper dives into missing discussions (e.g., EHS failures, detailed CBAM debates) could be suggested as avenues for future work, or incorporated if time and scope allow.

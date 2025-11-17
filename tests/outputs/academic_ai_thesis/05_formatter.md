@@ -1,7 +1,7 @@
 # Formatted Paper Outline
 
-**Format Applied:** IMRaD (adapted for theoretical paper)
-**Target Journal:** AI & Society / Technology & Social Impact Journal
+**Format Applied:** IMRaD (adapted for theoretical analysis with case studies)
+**Target Journal:** Journal of AI in Education and Scholarly Communication (Example)
 **Word Limit:** 8,000-10,000 words
 **Citation Style:** APA 7th Edition
 
@@ -10,22 +10,25 @@
 ## Formatting Requirements
 
 ### Manuscript Specifications
-- **Font:** Times New Roman 12pt (or Arial 11pt, check journal guidelines)
+- **Font:** Times New Roman 12pt
 - **Line Spacing:** Double
 - **Margins:** 1 inch all sides
-- **Page Numbers:** Top right, running head (if required by journal)
-- **Headings:** Unnumbered (APA style)
+- **Page Numbers:** Top right corner
+- **Headings:** Numbered for Level 1 & 2 sections; APA 7th style for sub-levels (Level 3, 4, 5).
 
 ### Section Heading Levels (APA 7th Edition)
-- **Level 1:** Centered, Bold, Title Case
-- **Level 2:** Flush Left, Bold, Title Case
-- **Level 3:** Flush Left, Bold Italic, Title Case
-- **Level 4:** Indented, Bold, Title Case, ending with a period. Text begins on the same line.
-- **Level 5:** Indented, Bold Italic, Title Case, ending with a period. Text begins on the same line.
+- **Level 1:** Centered, Bold, Title Case (e.g., **1. Introduction**)
+- **Level 2:** Left-aligned, Bold, Title Case (e.g., **2.1. Background and Motivation**)
+- **Level 3:** Left-aligned, Bold, Italicized, Title Case (e.g., ***2.1.1. Current AI Tools***)
+- **Level 4:** Indented, bold, Title Case, ending with a period. Text begins on the same line. (e.g., **Key features of AI assistants.**)
+- **Level 5:** Indented, bold, Italicized, Title Case, ending with a period. Text begins on the same line. (e.g., ***Ethical considerations in design.***)
 
 ### Citation Format
-- **In-text:** (Author, Year) for paraphrases; (Author, Year, p. X) for direct quotes.
-- **Bibliography:** Full APA 7th Edition reference list format.
+- **In-text:** (Author, Year) or Author (Year)
+- **Bibliography:** Full APA 7th Edition format. Examples:
+    *   **Journal Article:** Author, A. A., & Author, B. B. (Year). Title of article. *Title of Periodical, volume*(issue), pages. https://doi.org/xxxx
+    *   **Book:** Author, A. A. (Year). *Title of work*. Publisher.
+    *   **Chapter in an Edited Book:** Author, A. A. (Year). Title of chapter. In E. E. Editor & F. F. Editor (Eds.), *Title of book* (pp. pages). Publisher.
 
 ### ⚠️ CITATION REQUIREMENTS - CRITICAL
 
@@ -71,256 +74,267 @@
 ## Formatted Structure
 
 ### Title
-**Format:** Centered, Bold, 14pt (often 12pt for journal submissions, check guidelines)
-**Max Length:** 12-15 words (approx. 100 characters)
-**Suggested:** **Democratizing Academic Writing: A Multi-Agent AI Framework for Enhanced Scholarly Communication and Foundational Skill Development**
+**Format:** Bold, Centered, 14pt
+**Max Length:** 100 characters
+**Suggested:** **Democratizing Academic Writing Through Multi-Agent AI: A Theoretical Framework for Enhanced Pedagogy and Ethical Scholarly Communication**
 
 ### Author Information
 **Format:**
-- Name(s): Centered, First Author, Second Author, etc.
-- Affiliation(s): Centered, Department, University
-- Email(s): Centered, Corresponding Author's Email
-- ORCID: Optional, centered below email
+- Name(s): Centered, standard font
+- Affiliation(s): Centered, standard font
+- Email(s): Centered, standard font
+- ORCID: (Optional) Centered, standard font
 
 ### Abstract
-**Heading:** **Abstract** (Level 1, Centered, Bold)
+**Heading:** **Abstract** (Bold, Centered)
 **Length:** 250-300 words
 **Structure:**
-- Background (1-2 sentences): Challenges in academic writing and scholarly communication.
-- Objective (1 sentence): To propose a multi-agent AI framework to address these challenges.
-- Methods (2-3 sentences): Description of the framework's design principles, agent roles, and pedagogical scaffolding.
-- Results (2-3 sentences): Anticipated outcomes and benefits, demonstrated through illustrative case studies.
-- Conclusions (1-2 sentences): Broader implications for democratization, quality enhancement, and foundational skill development.
+- Background (2 sentences): Academic writing is critical but often inequitable; AI offers potential but has limitations.
+- Gap/Problem (1-2 sentences): Current AI tools lack long-term pedagogical effectiveness, robust ethical frameworks, and seamless socio-technical integration, failing to truly democratize the process.
+- Approach (2-3 sentences): This paper proposes a novel multi-agent AI framework (MAAW) designed to overcome these limitations through specialized agents, context-aware support, and an open-source ecosystem.
+- Illustrative Cases/Findings (2-3 sentences): Through illustrative case studies, we demonstrate MAAW's potential to enhance critical thinking, ensure ethical conduct, and democratize access to high-quality academic support.
+- Conclusion/Implications (1-2 sentences): This framework offers a comprehensive, responsible, and scalable solution, establishing new ethical benchmarks and addressing key pedagogical, ethical, and socio-technical gaps in current AI applications.
 
-**Keywords:** 3-6 keywords (e.g., Multi-agent AI, Academic Writing, Scholarly Communication, AI in Education, Critical Thinking, Open Source)
-
----
-
-## Introduction
-*(No heading for "Introduction" in APA 7th; the paper begins with the title, author info, abstract, and then the first paragraph of the introduction. The first actual heading is the first Level 1 heading after the introductory content.)*
-**Length:** 1000-1200 words
-**Content Flow:**
--   **Background and Motivation:** Discuss the current challenges in academic writing (accessibility, efficiency, quality, inequalities). Establish the problem context.
--   **Problem Statement:** Articulate the specific gap: existing AI tools offer partial solutions but raise concerns about foundational skills. This is the core problem the paper addresses.
--   **Research Question(s) and Objectives:** Clearly state the research question (from Architect Agent) and outline specific objectives.
-    **List format for Objectives:**
-    1.  To analyze current challenges in academic writing and existing AI solutions.
-    2.  To propose a novel multi-agent AI open-source framework for academic writing support.
-    3.  To illustrate the potential of this framework through case studies.
-    4.  To discuss the implications for democratizing academic writing and fostering foundational skills.
--   **Thesis Statement and Contributions:** Reiterate the paper's main argument (from Architect Agent) and explicitly list the key contributions.
-    **Bullet format for Contributions:**
-    -   A novel multi-agent AI framework for comprehensive academic writing support.
-    -   Integration of pedagogical scaffolding to foster critical thinking and foundational writing skills.
-    -   Exploration of ethical considerations and practical implications for scholarly communication.
--   **Paper Organization:** Briefly describe the structure of the rest of the paper.
+**Keywords:** Multi-agent AI, academic writing, AI in education, scholarly communication, ethical AI, democratization of knowledge
 
 ---
 
-## Related Work and Critical Analysis
-**Heading:** **Related Work and Critical Analysis** (Level 1, Centered, Bold)
-**Length:** 2000-2500 words
+## 1. Introduction
+**Section Number:** 1
+**Length:** 800-1200 words
+**Subsections:**
+
+### 1.1 Background and Motivation
+[Format: Narrative paragraph(s) setting the stage for the importance of academic writing and the rise of AI tools. APA 7th Level 2 heading: Left-aligned, Bold, Title Case.]
+
+### 1.2 Problem Statement
+[Format: Clear articulation of the "Gap/Problem" from the abstract, elaborating on the limitations of current AI in addressing academic writing challenges. APA 7th Level 2 heading.]
+
+### 1.3 Research Question and Objectives
+**Research Question:** How can a multi-agent AI framework democratize academic writing by addressing current limitations of AI tools, improving pedagogical effectiveness, and fostering ethical scholarly communication?
+**List format:**
+1.  To critically analyze the limitations of existing single-agent AI tools in supporting academic writing.
+2.  To propose a theoretical multi-agent AI framework (MAAW) designed for holistic, context-aware, and ethically-guided academic support.
+3.  To illustrate through case studies how MAAW can enhance critical thinking, ensure ethical conduct, and democratize access to academic writing resources.
+[APA 7th Level 2 heading.]
+
+### 1.4 Contributions
+**Bullet format:**
+-   **Novel Framework:** Introduction of a comprehensive multi-agent AI framework (MAAW) tailored for academic writing.
+-   **Ethical Benchmarks:** Proposing new standards for ethical AI integration in scholarly communication.
+-   **Pedagogical Enhancement:** Addressing long-term learning outcomes beyond mere text generation.
+-   **Democratization:** Focusing on equitable access to advanced academic support.
+[APA 7th Level 2 heading.]
+
+### 1.5 Paper Organization
+[Format: Standard paragraph outlining the structure of the paper, guiding the reader through subsequent sections. APA 7th Level 2 heading.]
+
+---
+
+## 2. Related Work and Literature Review
+**Section Number:** 2
+**Length:** 1500-2500 words
 **Organization:** Thematic subsections, critically evaluating existing literature.
 
-### Existing AI Writing Tools and Their Limitations
-**Heading:** **Existing AI Writing Tools and Their Limitations** (Level 2, Flush Left, Bold)
-[Format: narrative review of current AI tools (e.g., Grammarly, ChatGPT, specialized academic tools), highlighting their strengths and particularly their shortcomings in fostering deep learning or addressing systemic inequalities.]
+### 2.1 The Landscape of AI in Academic Writing
+[Format: Narrative review of current AI tools (e.g., Grammarly, ChatGPT, specialized writing assistants), their functionalities, and initial impact. APA 7th Level 2 heading.]
 
-### Concerns Regarding Foundational Skills
-**Heading:** **Concerns Regarding Foundational Skills** (Level 2, Flush Left, Bold)
-[Format: Discuss literature on the impact of AI on critical thinking, originality, and basic writing competence. Frame this as a significant challenge that needs proactive solutions.]
+### 2.2 Limitations of Single-Agent AI Approaches
+[Format: Focused discussion on the shortcomings of current AI tools regarding pedagogical effectiveness, ethical oversight, and socio-technical integration. APA 7th Level 2 heading.]
 
-### Gap Analysis and Novel Approach
-**Heading:** **Gap Analysis and Novel Approach** (Level 2, Flush Left, Bold)
-[Format: Synthesis paragraph identifying the unmet needs and how the proposed multi-agent system fills this gap by focusing on collaborative, transparent, and pedagogically-informed support.]
+### 2.3 Pedagogical, Ethical, and Socio-Technical Gaps
+[Format: Deeper dive into specific areas where current AI falls short, emphasizing the need for a more integrated and responsible approach. APA 7th Level 2 heading.]
 
-**Table 1:** Comparison of AI Writing Tools and Proposed Framework
-| Feature/Tool | Grammarly | ChatGPT | [Proposed Framework] |
-|--------------|-----------|---------|----------------------|
-| Scope        | Grammar, Style | General Content | Full Academic Workflow |
-| Skill Dev.   | Limited   | Negligible | Explicit Scaffolding |
-| Collaboration| No        | Limited | Core Feature         |
-| Transparency | Low       | Low     | High (Open-source)   |
-| Customization| Some      | Limited | High                 |
-| Equity Focus | Low       | Low     | High                 |
+**Table 1:** Comparative Analysis of AI Writing Tools and MAAW (Illustrative)
+| Feature / Tool | Grammarly | ChatGPT | Specialized AI Tool X | Proposed MAAW |
+|----------------|-----------|---------|-----------------------|---------------|
+| Real-time feedback | High      | Medium  | High                  | High          |
+| Contextual understanding | Medium    | High    | Medium                | High          |
+| Ethical guidance | Low       | Low     | Low                   | High          |
+| Pedagogical support | Medium    | Low     | Medium                | High          |
+| Customizability | Medium    | Low     | High                  | High          |
+| Open-source potential | Low       | Low     | Medium                | High          |
+*Source: Developed by Authors based on literature review.*
+[Table format: Title above table, source below. APA 7th style for tables.]
 
----
-
-## A Multi-Agent AI Framework for Academic Writing
-**Heading:** **A Multi-Agent AI Framework for Academic Writing** (Level 1, Centered, Bold)
-**Length:** 1500-1800 words
-**Content:** This section details the theoretical and architectural underpinnings of the proposed system.
-
-### Core Architectural Principles
-**Heading:** **Core Architectural Principles** (Level 2, Flush Left, Bold)
-[Format: Paragraphs outlining key principles such as collaboration, transparency, pedagogical scaffolding, open-source development, modularity, and ethical AI design.]
-
-### Agent Roles and Interactions
-**Heading:** **Agent Roles and Interactions** (Level 2, Flush Left, Bold)
-[Format: Narrative describing different agent types (e.g., Research Assistant Agent, Structure Agent, Style Agent, Critique Agent, Ethical Review Agent) and how they interact throughout the writing process. Could include a diagram.]
-
-**Figure 1:** Conceptual Diagram of the Multi-Agent AI Framework
-[Placeholder for a conceptual diagram illustrating agent interactions and workflow.]
-*Note: Figure captions in APA are typically below the figure, italicized, and followed by a period.*
-
-### Pedagogical Scaffolding Mechanisms
-**Heading:** **Pedagogical Scaffolding Mechanisms** (Level 2, Flush Left, Bold)
-[Format: Detail how the system is designed to *teach* and *foster* skills, not just automate tasks. Examples: interactive feedback loops, guided revisions, prompts for critical reflection, source verification challenges.]
-
-### Technical Architecture Overview
-**Heading:** **Technical Architecture Overview** (Level 2, Flush Left, Bold)
-[Format: High-level description of the open-source platform, data flow, integration points, and potential technologies (e.g., large language models, knowledge graphs, version control).]
+### 2.4 Synthesis and Identification of Research Gaps
+[Format: Concluding paragraph(s) summarizing the literature and explicitly stating the void that the proposed multi-agent framework aims to fill. APA 7th Level 2 heading.]
 
 ---
 
-## Illustrative Case Studies: Application and Potential Impact
-**Heading:** **Illustrative Case Studies: Application and Potential Impact** (Level 1, Centered, Bold)
+## 3. The Multi-Agent AI Framework (MAAW): Theoretical Foundations and Design
+**Section Number:** 3
 **Length:** 2000-2500 words
-**Content:** This section provides hypothetical scenarios demonstrating the framework's utility.
+[This section serves as the "Methods" equivalent for a theoretical paper, detailing the proposed framework.]
 
-### Case Study 1: Supporting a Novice Researcher
-**Heading:** **Case Study 1: Supporting a Novice Researcher** (Level 2, Flush Left, Bold)
-[Format: Detailed narrative illustrating how the multi-agent system guides a student through drafting a literature review, from initial search to synthesis and critical analysis, emphasizing skill development.]
+### 3.1 Conceptualizing MAAW: Overcoming Current Limitations
+[Format: Introduction to the MAAW framework, explaining its fundamental principles and how it directly addresses the identified gaps. APA 7th Level 2 heading.]
 
-### Case Study 2: Enhancing Collaborative Research Writing
-**Heading:** **Case Study 2: Enhancing Collaborative Research Writing** (Level 2, Flush Left, Bold)
-[Format: Demonstrate how the system facilitates co-authorship across different institutions or linguistic backgrounds, ensuring consistency, quality, and equitable contribution.]
+### 3.2 Architectural Design of MAAW
+[Format: Detailed description of the framework's architecture, including core components, inter-agent communication, and overall system flow. This would typically include a diagram.]
 
-### Case Study 3: Bridging Language Barriers in Scholarly Publishing
-**Heading:** **Case Study 3: Bridging Language Barriers in Scholarly Publishing** (Level 2, Flush Left, Bold)
-[Format: Illustrate the system's role in helping non-native English speakers articulate complex ideas accurately and academically, thereby democratizing access to global scholarly discourse.]
+**Figure 1:** Conceptual Architecture of the Multi-Agent AI Framework (MAAW)
+[Placeholder for conceptual diagram showing specialized agents (e.g., Architect, Formatter, Crafter, Verifier), a central orchestrator, and user interface. Caption below figure. APA 7th style for figures.]
 
-### Expected Outcomes and Benefits
-**Heading:** **Expected Outcomes and Benefits** (Level 2, Flush Left, Bold)
-[Format: Synthesis of the case studies, highlighting the framework's potential to democratize access, improve writing quality, and actively foster foundational skills.]
+### 3.3 Key Design Principles and Ethical Considerations
+[Format: Discussion of the guiding principles behind MAAW, such as modularity, explainability, user agency, data privacy, and bias mitigation. APA 7th Level 2 heading.]
 
----
+### 3.4 Specialized Agents within MAAW
+[Format: Description of the role and function of each type of agent within the framework (e.g., Architect Agent, Formatter Agent, Crafter Agent, Verifier Agent, Ethical Review Agent). This could be structured with Level 3 headings for each agent type.]
 
-## Discussion
-**Heading:** **Discussion** (Level 1, Centered, Bold)
-**Length:** 1800-2200 words
+#### ***3.4.1. The Architect Agent: Strategic Planning***
+[Format: Description of the Architect Agent's role in outline generation and research question refinement. APA 7th Level 3 heading.]
 
-### Interpretation of Findings and Broader Implications
-**Heading:** **Interpretation of Findings and Broader Implications** (Level 2, Flush Left, Bold)
-[Format: Connect the insights from the conceptual framework and case studies back to the initial problem statement and research question. Discuss how the proposed system offers a transformative pathway.]
+#### ***3.4.2. The Formatter Agent: Style and Compliance***
+[Format: Description of the Formatter Agent's role in applying academic conventions and style guides. APA 7th Level 3 heading.]
 
-### Addressing Concerns about Foundational Skills
-**Heading:** **Addressing Concerns about Foundational Skills** (Level 2, Flush Left, Bold)
-[Format: Directly address the initial concerns raised in the literature review. Explain how the pedagogical scaffolding features are designed to mitigate risks and actively cultivate critical thinking and writing abilities.]
+#### ***3.4.3. The Crafter Agent: Content Generation and Elaboration***
+[Format: Description of the Crafter Agent's role in drafting sections, ensuring coherence and depth. APA 7th Level 3 heading.]
 
-### Theoretical Contributions
-**Heading:** **Theoretical Contributions** (Level 2, Flush Left, Bold)
-[Format: Discuss how this work advances theories in AI in education, human-computer interaction, and scholarly communication. For instance, contributing to models of AI-supported learning or collaborative intelligence.]
-
-### Practical Applications and Policy Considerations
-**Heading:** **Practical Applications and Policy Considerations** (Level 2, Flush Left, Bold)
-[Format: Explore the real-world implications for universities, research institutions, publishers, and policymakers. Discuss the need for ethical guidelines, funding for open-source initiatives, and integration into curricula.]
-
-### Limitations and Future Research Directions
-**Heading:** **Limitations and Future Research Directions** (Level 2, Flush Left, Bold)
-[Format: Acknowledge the theoretical nature of the paper, potential challenges in implementation (e.g., data privacy, bias in AI models, user adoption), and outline concrete avenues for future empirical research and development.]
+#### ***3.4.4. The Verifier Agent: Quality Control and Integrity***
+[Format: Description of the Verifier Agent's role in fact-checking, citation verification, and plagiarism detection. APA 7th Level 3 heading.]
 
 ---
 
-## Conclusion
-**Heading:** **Conclusion** (Level 1, Centered, Bold)
-**Length:** 800-1000 words
+## 4. Illustrative Case Studies: MAAW in Practice
+**Section Number:** 4
+**Length:** 2000-2500 words
+[This section serves as the "Results" equivalent, demonstrating the framework's capabilities through hypothetical scenarios.]
 
-[No subsections - continuous narrative]
+### 4.1 Enhancing Critical Thinking and Argumentation with MAAW
+[Format: A case study illustrating how MAAW guides a user through developing a complex argument, identifying logical fallacies, and strengthening critical analysis. APA 7th Level 2 heading.]
+
+### 4.2 Ensuring Ethical Conduct in Scholarly Communication
+[Format: A case study demonstrating MAAW's role in promoting responsible citation practices, avoiding self-plagiarism, and navigating ethical dilemmas in research. APA 7th Level 2 heading.]
+
+### 4.3 Democratizing Access and Reducing Barriers to Entry
+[Format: A case study showcasing how MAAW supports a non-native English speaker or a researcher from an under-resourced institution in producing high-quality academic work. APA 7th Level 2 heading.]
+
+### 4.4 MAAW's Impact on Pedagogical Effectiveness
+[Format: Discussion on how the interactive and structured support from MAAW fosters long-term learning and skill development in academic writing. APA 7th Level 2 heading.]
+
+---
+
+## 5. Discussion
+**Section Number:** 5
+**Length:** 1500-2000 words
+
+### 5.1 Interpretation of Findings and Framework Effectiveness
+[Format: Narrative discussing how the illustrative case studies support the MAAW's potential to address the research question and achieve its objectives. APA 7th Level 2 heading.]
+
+### 5.2 Comparison with Prior Work and Existing AI Solutions
+[Format: Comparative discussion highlighting MAAW's advantages over single-agent systems and how it builds upon or diverges from existing theoretical models. APA 7th Level 2 heading.]
+
+### 5.3 Theoretical Implications
+[Format: Discussion of how MAAW contributes to theories of human-computer interaction, AI in education, and scholarly communication. APA 7th Level 2 heading.]
+
+### 5.4 Practical Implications and Implementation Challenges
+[Format: Discussion of the real-world impact of MAAW, potential implementation hurdles (e.g., data privacy, computational resources, user adoption), and strategies for overcoming them. APA 7th Level 2 heading.]
+
+### 5.5 Limitations and Future Research Directions
+[Format: Honest assessment of the current theoretical nature of MAAW, its limitations, and clear suggestions for empirical validation, further development, and expansion of the framework. APA 7th Level 2 heading.]
+
+---
+
+## 6. Conclusion
+**Section Number:** 6
+**Length:** 500-700 words
+
+[No subsections - continuous narrative. APA 7th Level 1 heading.]
 
 **Required elements:**
--   Restate the core problem and the proposed multi-agent AI approach.
--   Summarize the key arguments and anticipated benefits (democratization, quality, skill development).
--   Emphasize the unique contributions of the framework.
--   Reiterate the importance of proactive, pedagogically-informed AI development.
--   Offer a final thought on the transformative potential for the future of academic writing.
+-   Restate the core problem and the proposed multi-agent AI framework approach.
+-   Summarize the key contributions and the potential of MAAW as demonstrated through the illustrative case studies.
+-   Emphasize the framework's role in democratizing academic writing, enhancing pedagogical effectiveness, and fostering ethical scholarly communication.
+-   Reiterate the significant theoretical and practical implications.
+-   Conclude with a forward-looking statement on the future of AI-supported academic writing.
 
 ---
 
 ## Acknowledgments
-**Heading:** **Acknowledgments** (Level 1, Centered, Bold)
-[If applicable - funding bodies, institutional support, significant contributors who are not authors.]
+[If applicable - funding bodies, institutional support, or individuals who contributed but are not authors. Place this section before References. APA 7th Level 1 heading, unnumbered.]
 
 ---
 
 ## References
-**Heading:** **References** (Level 1, Centered, Bold)
-**Format:** APA 7th Edition (alphabetical by first author, double-spaced, hanging indent)
-**Minimum:** 30-50 references (for a theoretical paper of this length)
+**Format:** APA 7th Edition
+**Minimum:** 30-50 references for a theoretical paper of this scope.
 
 **Categories:**
--   Foundational works (pre-2019): [~20-30%]
--   Recent works (2020-2024): [~60-70%]
+-   Foundational works (pre-2019): [~20%]
+-   Recent works (2020-2024): [~80%]
 -   Including own prior work: [Optional, max 10%]
+[APA 7th Level 1 heading, unnumbered. Each entry double-spaced, with a hanging indent.]
 
 ---
 
 ## Appendices
-**Heading:** **Appendix A: [Supplementary materials title]** (Level 1, Centered, Bold)
-[If applicable, e.g., detailed agent specifications, ethical framework considerations, detailed technical architecture diagrams. Each appendix should have its own letter and descriptive title.]
+[If applicable, for supplementary materials such as detailed agent protocols, extended case study scenarios, or specific technical specifications not critical to the main text. Each appendix should start on a new page. APA 7th Level 1 heading, unnumbered, followed by a letter (e.g., Appendix A).]
+-   Appendix A: Detailed Agent Interaction Protocols
+-   Appendix B: Extended Ethical Guidelines for MAAW
 
 ---
 
 ## Journal-Specific Requirements
 
-### AI & Society (or similar Technology/Social Impact Journal)
+### Journal of AI in Education and Scholarly Communication (Example)
 
 **Mandatory sections:**
--   [ ] Data Availability Statement (even for theoretical papers, state if no new data was generated or if all data sources are publicly available)
+-   [ ] Data Availability Statement (even for theoretical papers, noting that no primary data was collected)
 -   [ ] Conflict of Interest Statement
 -   [ ] Author Contributions (if multiple authors)
 -   [ ] Funding Statement
--   [ ] Ethical Approval (if any human subjects research was involved, though unlikely for a theoretical paper)
 
 **Formatting specifics:**
--   Figures: [PNG/TIFF, min 300dpi, grayscale or color suitable for print]
--   Tables: [Editable format, not images, follow APA table guidelines]
--   Equations: [Numbered, right-aligned, if applicable]
+-   Figures: PNG/TIFF, min 300dpi, grayscale or color suitable for print.
+-   Tables: Editable format (e.g., Word table), not images.
+-   Equations: Numbered sequentially, right-aligned.
+-   Headings: As specified above (Level 1, 2 numbered; Level 3, 4, 5 APA 7th style).
 
 **Submission checklist:**
--   [ ] Cover letter (addressing editor, highlighting novelty and fit)
--   [ ] Highlights (3-5 bullet points summarizing key findings/contributions for journal website)
--   [ ] Graphical abstract (if required, a single image summarizing the paper's main idea)
+-   [ ] Cover letter (addressing journal scope, novelty, and fit)
+-   [ ] Highlights (3-5 bullet points summarizing key findings/contributions)
+-   [ ] Graphical abstract (if required, illustrating the MAAW framework)
 -   [ ] Supplementary materials (if any, clearly labeled)
 
 ---
 
 ## Length Targets by Section (for 10,000 words total)
 
-| Section                 | Words | % of Total |
-|-------------------------|-------|------------|
-| Abstract                | 250   | 2.5%       |
-| Introduction            | 1000  | 10%        |
-| Related Work & Analysis | 2000  | 20%        |
-| Conceptual Framework    | 1800  | 18%        |
-| Illustrative Case Studies | 2000  | 20%        |
-| Discussion              | 2000  | 20%        |
-| Conclusion              | 750   | 7.5%       |
-| **Total (approx)**      | **9800**| **98%**    |
-| *References/Appendices* | *~200*| *2%*       |
+| Section | Words (Approx.) | % of Total |
+|-------------------------------------------------|-----------------|------------|
+| Abstract                                        | 250             | 2.5%       |
+| 1. Introduction                                 | 1000            | 10%        |
+| 2. Related Work and Literature Review           | 1750            | 17.5%      |
+| 3. The Multi-Agent AI Framework (MAAW)          | 2500            | 25%        |
+| 4. Illustrative Case Studies: MAAW in Practice  | 2500            | 25%        |
+| 5. Discussion                                   | 1500            | 15%        |
+| 6. Conclusion                                   | 500             | 5%         |
+| Acknowledgments / Appendices / References       | (Variable)      |            |
+| **Total (Main Body)**                           | **10,000**      | **100%**   |
 
 ---
 
 ## Quality Checklist
 
 ### Structure
--   [x] All required sections present
--   [x] Logical flow between sections, following the core argument progression
--   [x] Appropriate section lengths, scaled to target word count
+-   [x] All required sections present (adapted IMRaD for theoretical paper)
+-   [x] Logical flow between sections (following core argument progression)
+-   [x] Appropriate section lengths (aligned with word targets)
 
 ### Formatting
--   [x] Consistent heading styles (APA 7th, unnumbered)
+-   [x] Consistent heading styles (APA 7th, with numbering for Level 1 & 2)
 -   [x] Proper citation format (APA 7th in-text and reference list)
--   [ ] Figures/tables numbered correctly (if added)
--   [ ] Captions complete and descriptive (if added)
+-   [x] Figures/tables numbered correctly (sequential for figures, sequential for tables)
+-   [x] Captions complete and descriptive (APA 7th style for figures/tables)
 
 ### Content
--   [x] Abstract summarizes whole paper's theoretical contribution
+-   [x] Abstract summarizes whole paper (background, problem, approach, findings, conclusion)
 -   [x] Introduction states clear RQ and thesis
--   [x] Related Work provides critical analysis and identifies gap
--   [x] Conceptual Framework clearly outlines the proposed system
--   [x] Illustrative Case Studies demonstrate application and potential impact
--   [x] Discussion interprets findings, addresses concerns, and highlights implications
+-   [x] Literature Review critically evaluates prior work and identifies clear gaps
+-   [x] Theoretical Framework enables understanding and potential replication (of the theoretical design)
+-   [x] Illustrative Case Studies presented objectively to demonstrate framework capabilities
+-   [x] Discussion interprets implications and compares to existing work
 -   [x] Conclusion emphasizes contribution and future directions
 
 ---
@@ -328,31 +342,33 @@
 ## Style Guide
 
 ### Academic Tone
--   ✅ **Use:** "The framework is designed to...", "We propose that...", "This analysis suggests..."
+-   ✅ **Use:** "The framework posits...", "We argue that...", "This analysis suggests..."
 -   ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
 
 ### Tense Usage
--   **Introduction:** Present tense (current state of the field, problem)
--   **Literature Review:** Past tense (what others found), Present tense (for implications or current understanding)
--   **Conceptual Framework:** Present tense (describing the proposed system)
--   **Illustrative Case Studies:** Present tense (describing the hypothetical operation), Future tense (for anticipated outcomes)
--   **Discussion:** Present tense (what the findings mean, implications)
--   **Conclusion:** Present tense (summary of contributions, final thoughts)
+-   **Introduction:** Present tense (current state, problem)
+-   **Literature Review:** Past tense (what others found), present tense (current understanding, gaps)
+-   **Theoretical Framework:** Present tense (describing the proposed framework)
+-   **Illustrative Case Studies:** Present tense (describing hypothetical applications), past tense (if referring to actions within the case)
+-   **Discussion:** Present tense (what the framework means, implications)
+-   **Conclusion:** Present tense (summary of findings, future outlook)
 
 ### Voice
--   **Active vs Passive:** Prefer active for clarity, passive for objectivity. Maintain a consistent voice.
+-   **Active vs Passive:** Prefer active for clarity, passive for objectivity. Use "We" for authorial voice.
 -   ✅ "We propose a multi-agent framework" (active, clear)
--   ✅ "The framework is designed to facilitate..." (passive, objective)
+-   ✅ "The framework is designed to address..." (passive, objective)
 
 ---
 
 ## Next Steps
 
 After formatting:
-1.  Review against specific journal guidelines for *AI & Society* or the chosen target journal.
-2.  Ensure all placeholders like `[Specific Scenario]` or `[Placeholder for conceptual diagram]` are noted for the Crafter agents.
+1.  Review against specific journal guidelines (if a particular journal is chosen).
+2.  Ensure all placeholders (e.g., "[VERIFY]", "[Placeholder for conceptual diagram]") are noted.
 3.  Proceed to Compose phase with this clear, formatted structure.
-4.  Save this output to `outline_formatted.md`.
+4.  Save to `outline_formatted.md`
+
+```
 
 ---
 

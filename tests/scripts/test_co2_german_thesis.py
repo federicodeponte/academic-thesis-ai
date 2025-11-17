@@ -799,6 +799,26 @@ Arbeit zum Verbessern:
             else:
                 print("✅ Keine Abschnitts-Wiederherstellung erforderlich - alle Abschnitte intakt")
 
+        # Day 4: Seitenumbrüche für professionelle PDF-Struktur hinzufügen
+        print("\n" + "="*70)
+        print("📄 SEITENUMBRÜCHE HINZUFÜGEN (Day 4 Enhancement)")
+        print("="*70)
+
+        from utils.add_page_breaks import add_all_page_breaks
+        try:
+            page_breaks_added = add_all_page_breaks(
+                output_dir / "16_enhanced_final.md",
+                verbose=True
+            )
+
+            # Version mit Seitenumbrüchen erneut lesen
+            with open(output_dir / "16_enhanced_final.md", 'r', encoding='utf-8') as f:
+                enhanced_paper = f.read()
+
+            print(f"✅ Seitenumbrüche erfolgreich integriert!")
+        except Exception as e:
+            print(f"⚠️  Seitenumbruch-Integration fehlgeschlagen: {e}")
+
     # Verwende erweiterte Version falls verfügbar, sonst Fallback auf verifizierte oder Entwurf
     final_paper = enhanced_paper if enhanced_paper else (verified_paper if verified_paper else draft_paper)
 

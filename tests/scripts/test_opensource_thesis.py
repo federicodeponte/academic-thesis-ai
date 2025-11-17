@@ -781,6 +781,26 @@ Thesis to enhance:
             else:
                 print("✅ No section restoration needed - all sections intact")
 
+        # Day 4: Add page breaks for professional PDF structure
+        print("\n" + "="*70)
+        print("📄 ADDING PAGE BREAKS (Day 4 Enhancement)")
+        print("="*70)
+
+        from utils.add_page_breaks import add_all_page_breaks
+        try:
+            page_breaks_added = add_all_page_breaks(
+                output_dir / "16_enhanced_final.md",
+                verbose=True
+            )
+
+            # Re-read version with page breaks
+            with open(output_dir / "16_enhanced_final.md", 'r', encoding='utf-8') as f:
+                enhanced_paper = f.read()
+
+            print(f"✅ Page breaks integrated successfully!")
+        except Exception as e:
+            print(f"⚠️  Page break integration failed: {e}")
+
     # Use enhanced version if available, otherwise fall back to verified or draft
     final_paper = enhanced_paper if enhanced_paper else (verified_paper if verified_paper else draft_paper)
 

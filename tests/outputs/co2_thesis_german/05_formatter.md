@@ -1,9 +1,9 @@
-# Formatierte Gliederung der Arbeit
+# Formatiertes Papier-Outline
 
 **Angewandtes Format:** IMRaD
-**Ziel:** Masterarbeit
+**Zielpublikation:** Masterarbeit
 **Wortlimit:** 8.000-10.000 Wörter
-**Zitierstil:** APA 7th Edition
+**Zitationsstil:** APA 7th Edition
 
 ---
 
@@ -11,27 +11,27 @@
 
 ### Manuskriptspezifikationen
 - **Schriftart:** Times New Roman 12pt
-- **Zeilenabstand:** 1.5-fach (üblich für Masterarbeiten, doppelt für Journalartikel)
-- **Ränder:** 2.54 cm (1 Zoll) ringsum
-- **Seitenzahlen:** Unten rechts
-- **Überschriften:** Nummeriert
+- **Zeilenabstand:** 1.5-fach (häufig für Masterarbeiten; doppelt für Manuskripte)
+- **Ränder:** 2,54 cm (1 Zoll) an allen Seiten
+- **Seitenzahlen:** Oben rechts (Fortlaufend ab Einleitung, Titelseite und Inhaltsverzeichnis römische Ziffern)
+- **Überschriften:** Nummeriert (gemäß IMRaD-Struktur)
 
-### Überschriftenebenen
+### Abschnittsüberschriften-Ebenen
 - **Ebene 1:** Fett, Zentriert, Titel-Case (z.B. **1. Einleitung**)
 - **Ebene 2:** Fett, Linksbündig, Titel-Case (z.B. **1.1 Hintergrund und Motivation**)
-- **Ebene 3:** Fett, Eingezogen, Satz-Case (z.B. **1.1.1 Spezifische Aspekte**)
+- **Ebene 3:** Fett, Eingezogen, Satz-Case (z.B. **1.1.1 Historische Entwicklung des EU ETS.**)
 
-### Zitierformat
-- **Im Text:** [(Autor, Jahr) | (Autor & Co-Autor, Jahr) | (Autor et al., Jahr)]
-- **Literaturverzeichnis:** [Vollständige Formatierung gemäß APA 7th Edition]
+### Zitationsformat
+- **Im Text:** (Autor, Jahr) oder (Autor & Co-Autor, Jahr) oder (Autor et al., Jahr)
+- **Literaturverzeichnis:** Vollständige APA 7th Edition Spezifikation (alphabetisch geordnet, vollständige Metadaten, DOI bevorzugt)
 
-### ⚠️ ZITIERANFORDERUNGEN - KRITISCH
+### ⚠️ ZITATIONSANFORDERUNGEN - KRITISCH
 
-**Zitierstil frühzeitig festlegen und an ALLE Crafter-Agenten kommunizieren:**
+**Der Zitationsstil muss frühzeitig festgelegt und an ALLE Crafter-Agenten kommuniziert werden:**
 
-**Standardstil:** APA 7th Edition (sofern nicht anders angegeben)
+**Standardstil:** APA 7th Edition
 
-**Format für Zitate im Text:**
+**Format der In-Text-Zitation:**
 ```
 ✅ KORREKT: (Autor, Jahr)
 ✅ KORREKT: (Autor & Co-Autor, Jahr)
@@ -40,10 +40,10 @@
 ```
 
 **Anforderungen an das Literaturverzeichnis:**
-- DOI verwenden, falls verfügbar: `https://doi.org/xxxxx`
+- DOI verwenden, wenn verfügbar: `https://doi.org/xxxxx`
 - Konsistente Formatierung für alle Einträge
 - Alphabetische Reihenfolge nach dem ersten Autor
-- Vollständige Metadaten (Autor, Jahr, Titel, Verlag/Zeitschrift, DOI/URL)
+- Vollständige Metadaten (Autor, Jahr, Titel, Verlag/Journal, DOI/URL)
 
 **Für Tabellenfußnoten und Datenquellen:**
 ```
@@ -51,314 +51,334 @@
 ❌ FALSCH: *Quelle: Autor (Jahr) [VERIFY].*
 ```
 
-**Verwendung des Platzhalters [VERIFY]:**
-- Crafter sollten [VERIFY] NUR verwenden, wenn das Quelljahr/die Details tatsächlich unbekannt sind.
-- Bevorzugen Sie die Verwendung von Quellen aus dem Forschungskontext ohne [VERIFY].
-- Agent #14 (Zitations-Verifizierer) wird alle [VERIFY]-Tags vervollständigen.
+**Verwendung des [VERIFY]-Platzhalters:**
+- Crafter sollten [VERIFY] NUR verwenden, wenn das Quelljahr/die Details wirklich unbekannt sind.
+- Bevorzugt sollten Forschungskontext-Quellen ohne [VERIFY] verwendet werden.
+- Agent #14 (Citation Verifier) wird alle [VERIFY]-Tags vervollständigen.
 
 **Sprachspezifische Anpassungen:**
 - Deutsche Masterarbeiten: Deutsche Interpunktion verwenden, aber APA-Struktur beibehalten.
 - Spanisch/Französisch: Interpunktion anpassen, während das APA-Format beibehalten wird.
-- Sprachliche Anforderungen immer an Crafter-Agenten kommunizieren.
+- Sprachliche Anforderungen stets an Crafter-Agenten kommunizieren.
 
 **Kommunikation an Crafter-Agenten:**
-"Alle Zitate müssen dem APA 7th Format folgen. Verwenden Sie (Autor, Jahr) im Text. Fügen Sie [VERIFY] nur hinzu, wenn Sie das Jahr aus dem Forschungskontext nicht bestimmen können."
+"Alle Zitationen müssen dem APA 7th Format folgen. Verwenden Sie (Autor, Jahr) im Text. Fügen Sie [VERIFY] nur hinzu, wenn Sie das Jahr aus dem Forschungskontext nicht ermitteln können."
 
 ---
 
-## Formatierte Gliederung
+## Formatierte Struktur
 
 ### Titel
 **Format:** Fett, Zentriert, 14pt
-**Maximale Länge:** 100 Zeichen (Empfehlung)
-**Vorgeschlagen:** Die Rolle von CO2-Emissionshandelssystemen bei der Verlangsamung des Klimawandels: Eine vergleichende Analyse heterogener Innovations- und Wettbewerbseffekte auf Unternehmensebene
+**Max. Länge:** 100 Zeichen
+**Vorgeschlagen:** CO2-Zertifikatehandel und Klimawandel: Eine empirische Analyse von Wirksamkeit und Preisvolatilität.
+*(Hinweis: Der ursprüngliche Titel "CO2-Zertifikatehandel und Klimawandel: Eine vergleichende empirische Analyse der Wirksamkeit und der Rolle der Preisvolatilität" ist mit 125 Zeichen zu lang für das vorgegebene Limit. Eine Kürzung ist erforderlich.)*
 
-### Autorinformationen
+### Autoreninformationen
 **Format:**
-- Name(n): [Vorname Nachname, zentriert]
-- Affiliation(en): [Abteilung, Universität, Ort, zentriert]
-- E-Mail(s): [E-Mail-Adresse, zentriert]
-- ORCID: [Optional, zentriert]
+- Name: [Vorname Nachname]
+- Affiliation: [Name der Universität, Fakultät/Institut]
+- E-Mail: [E-Mail-Adresse]
+- ORCID: [Optional, falls vorhanden]
 
-### Zusammenfassung
+### Kurzfassung (Abstract)
 **Überschrift:** Fett, Zentriert
-**Länge:** 150-250 Wörter
+**Länge:** 250-300 Wörter
 **Struktur:**
-- Hintergrund (1-2 Sätze)
-- Zielsetzung (1 Satz)
-- Methodik (2-3 Sätze)
-- Ergebnisse (2-3 Sätze)
-- Schlussfolgerungen (1-2 Sätze)
+- **Hintergrund** (1-2 Sätze): Klimawandel als dringendes Problem, das wirksame politische Instrumente erfordert. CO2-Zertifikatehandel als zentrales Instrument.
+- **Zielsetzung** (1 Satz): Untersuchung der Wirksamkeit des CO2-Zertifikatehandels bei der Verlangsamung des Klimawandels durch eine vergleichende empirische Analyse.
+- **Methodik** (2-3 Sätze): Vergleichende Fallstudien (z.B. EU ETS, Kalifornien ETS, China ETS), Analyse von Emissionsdaten, Investitionsmustern und Preisentwicklungen.
+- **Ergebnisse** (2-3 Sätze): Darstellung der Kernbefunde zur Wirksamkeit, Abhängigkeit von Designmerkmalen, regulatorischem Umfeld und Preisvolatilität.
+- **Schlussfolgerungen** (1-2 Sätze): Zusammenfassung der Implikationen für die Klimapolitik und zukünftige Gestaltung von ETS.
 
-**Schlüsselwörter:** [3-6 Schlüsselwörter, z.B. Emissionshandel, Klimawandel, Innovation, Wettbewerbsfähigkeit, Masterarbeit]
+**Schlüsselwörter:** 3-6 Schlüsselwörter (z.B. CO2-Zertifikatehandel, Klimawandel, Emissionshandelssysteme, Wirksamkeit, Preisvolatilität, Klimapolitik)
 
 ---
 
 ## 1. Einleitung
 **Abschnittsnummer:** 1
-**Länge:** 900-1100 Wörter
+**Länge:** 800-1000 Wörter
 **Unterabschnitte:**
 
 ### 1.1 Hintergrund und Motivation
-[Format: Einleitung in das Thema, Relevanz des Klimawandels und der politischen Instrumente]
+**Format:** Einleitender Text, der die Dringlichkeit des Klimawandels und die Notwendigkeit wirksamer Klimapolitik darlegt. Einführung des CO2-Zertifikatehandels als ein diskutiertes Instrument.
 
 ### 1.2 Problemstellung
-[Format: Präzisierung der Forschungslücke, d.h. unzureichende vergleichende Untersuchung heterogener Auswirkungen von ETS auf Unternehmensebene]
+**Format:** Präzisierung der Forschungslücke – die Komplexität der Wirksamkeit des CO2-Zertifikatehandels und die Notwendigkeit einer vergleichenden, empirischen Analyse unter Berücksichtigung jüngster Entwicklungen und der Rolle der Preisvolatilität.
 
-### 1.3 Forschungsziele
-**Listenformat:**
-1.  Untersuchung, wie unterschiedliche ETS-Designs Innovationen auf Unternehmensebene beeinflussen.
-2.  Analyse der Auswirkungen unterschiedlicher ETS-Designs auf die Wettbewerbsfähigkeit von Unternehmen.
-3.  Vergleichende Bewertung der Gesamtwirksamkeit etablierter und aufkommender ETS-Systeme zur Verlangsamung des Klimawandels.
+### 1.3 Forschungsfrage und Forschungsziele
+**Format:** Formulierung der zentralen Forschungsfrage und der spezifischen Ziele in Listenform.
+**Forschungsfrage:** Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels?
+**Ziele in Listenform:**
+1.  Die Designmerkmale und Funktionsweisen ausgewählter Emissionshandelssysteme (ETS) zu identifizieren und zu vergleichen.
+2.  Die Auswirkungen dieser ETS auf Emissionsreduktionen und die Förderung grüner Investitionen empirisch zu analysieren.
+3.  Die Rolle der Preisvolatilität im CO2-Zertifikatehandel auf dessen Wirksamkeit zu bewerten.
+4.  Implikationen für die Gestaltung zukünftiger Klimapolitik abzuleiten.
 
-### 1.4 Beitrag der Arbeit
-**Aufzählungsformat:**
--  Schließung der Forschungslücke durch eine vergleichende Fallstudienanalyse.
--  Bereitstellung detaillierter Einblicke in unternehmensspezifische Reaktionen auf ETS.
--  Ableitung von Empfehlungen für die Gestaltung effektiverer, innovationsfördernder Klimapolitiken.
+### 1.4 Beiträge der Arbeit
+**Format:** Auflistung der erwarteten wissenschaftlichen und praktischen Beiträge der Studie.
+**Bullet-Format:**
+-   **Wissenschaftlicher Beitrag:** Bereitstellung einer umfassenden vergleichenden empirischen Analyse, die bestehende Forschungslücken schließt.
+-   **Praktischer Beitrag:** Ableitung konkreter Empfehlungen für Politikgestalter zur Optimierung von ETS und zur Steigerung ihrer Wirksamkeit.
 
 ### 1.5 Aufbau der Arbeit
-[Standardabsatz, der die Struktur der folgenden Kapitel kurz beschreibt]
+**Format:** Standardabsatz, der einen Überblick über die Gliederung der Masterarbeit gibt.
 
 ---
 
-## 2. Literaturübersicht
+## 2. Literaturübersicht und theoretischer Rahmen
 **Abschnittsnummer:** 2
-**Länge:** 2500-2900 Wörter
-**Organisation:** Thematische Unterabschnitte
+**Länge:** 1500-2000 Wörter
+**Organisation:** Thematische Unterabschnitte, die bestehende Forschung kritisch aufarbeiten und den theoretischen Rahmen abstecken.
 
-### 2.1 Grundlagen des Klimawandels und der Klimapolitik
-[Format: Darstellung der wissenschaftlichen Grundlagen des Klimawandels und der Notwendigkeit politischer Interventionen]
+### 2.1 Grundlagen des CO2-Zertifikatehandels
+**Format:** Erläuterung des Cap-and-Trade-Prinzips, ökonomische Theorie hinter dem Instrument, historische Entwicklung.
 
-### 2.2 Emissionshandelssysteme (ETS): Konzepte und globale Beispiele
-[Format: Überblick über die Theorie des Emissionshandels, Vorstellung wichtiger ETS-Systeme (z.B. EU ETS, California Cap-and-Trade)]
+### 2.2 Bestehende Forschung zur Wirksamkeit von ETS
+**Format:** Systematische Darstellung relevanter Studien zu Emissionsreduktionen, Kostenwirksamkeit und Innovationseffekten.
+-   **Tabelle 1:** Überblick über zentrale Studien zur Wirksamkeit von ETS
+| Studie | ETS | Methodik | Zentrale Befunde | Limitationen |
+|--------|-----|----------|------------------|--------------|
+| [1]    | ... | ...      | ...              | ...          |
 
-### 2.3 Die Rolle von ETS bei der Förderung von Innovationen
-[Format: Diskussion bestehender Literatur zu den Auswirkungen von ETS auf technologische und prozessuale Innovationen in Unternehmen]
+### 2.3 Die Rolle der Preisvolatilität in ETS
+**Format:** Diskussion der Literatur zu Preisbildung, Volatilität und deren Auswirkungen auf Investitionsentscheidungen und Marktstabilität.
 
-### 2.4 Die Auswirkungen von ETS auf die Wettbewerbsfähigkeit von Unternehmen
-[Format: Analyse der Literatur zu "Carbon Leakage", Kostenbelastungen und strategischen Anpassungen von Unternehmen]
+### 2.4 Vergleichende Analysen von ETS
+**Format:** Darstellung bestehender vergleichender Studien und Identifizierung von Lücken, insbesondere bezüglich der Berücksichtigung jüngster Entwicklungen und der spezifischen Rolle der Preisvolatilität.
 
-### 2.5 Synthese und Forschungslücke
-[Format: Zusammenfassung der bisherigen Erkenntnisse, Herausarbeitung der Notwendigkeit einer vergleichenden Analyse auf Unternehmensebene und der Berücksichtigung heterogener Effekte]
+### 2.5 Zusammenfassung und Forschungslücken
+**Format:** Synthese der Literatur, Herausarbeitung der zentralen Forschungslücken, die durch die vorliegende Arbeit geschlossen werden sollen.
 
 ---
 
-## 3. Methodik
+## 3. Methodologie
 **Abschnittsnummer:** 3
-**Länge:** 900-1100 Wörter
+**Länge:** 1000-1200 Wörter
+**Fokus:** Beschreibung des Forschungsdesigns, der Datenerhebung und der Analyseverfahren.
 
 ### 3.1 Forschungsdesign
-[Format: Beschreibung des gewählten Forschungsansatzes (z.B. vergleichende Fallstudienanalyse, qualitative/quantitative Methoden), Begründung der Wahl]
-
-**Abbildung 1:** Forschungsrahmen
-[Platzhalter für ein konzeptionelles Diagramm des Forschungsdesigns oder des Analysemodells]
+**Format:** Beschreibung des gewählten vergleichenden Fallstudien-Ansatzes. Begründung der Auswahl der Fallstudien (EU ETS, Kalifornien ETS, China ETS).
+**Abbildung 1:** Forschungsrahmen für die vergleichende Analyse
+[Platzhalter für konzeptionelles Diagramm, das die Beziehungen zwischen ETS-Design, Preisvolatilität, Emissionsreduktionen und grünen Investitionen darstellt]
 
 ### 3.2 Datenerhebung
-[Format: Detaillierte Beschreibung der Datenerhebungsmethoden (z.B. Interviews, Umfragen, Sekundärdatenanalyse), Auswahl der Fallstudien (Kriterien), Zeitraum]
-
-**Tabelle 1:** Spezifikationen der Datensätze
-| Attribut | Beschreibung |
-|-----------|-------------|
-| Quellen    | z.B. Unternehmensberichte, ETS-Register, Experteninterviews |
-| Größe      | z.B. Anzahl der Interviews, Dauer, Umfang der Dokumente |
-| Zeitraum   | z.B. 2010-2023 |
-| Stichprobe | z.B. Unternehmen X (EU ETS), Unternehmen Y (California ETS) |
+**Format:** Detaillierte Beschreibung der Quellen und Arten der gesammelten Daten.
+**Tabelle 2:** Datensatz-Spezifikationen
+| Attribut      | Beschreibung                               |
+|---------------|--------------------------------------------|
+| Quellen       | Offizielle ETS-Berichte, Datenbanken (z.B. Eurostat, World Bank), Studien     |
+| Datenarten    | Emissionsdaten, Preisdaten, Auktionsdaten, Investitionsdaten, Politikinstrumente |
+| Zeitrahmen    | [Spezifischer Zeitraum, z.B. 2005-2023]    |
+| Fallstudien   | EU ETS, Kalifornien ETS, China ETS          |
 
 ### 3.3 Analyseverfahren
-[Format: Beschreibung der verwendeten Analysemethoden (z.B. Inhaltsanalyse, Regressionsanalyse, Cross-Case-Analyse), Software]
-1.  Schritt 1: [Beschreibung des ersten Analyseschritts]
-2.  Schritt 2: [Beschreibung des zweiten Analyseschritts]
-3.  Schritt 3: [Beschreibung weiterer Analyseschritte]
+**Format:** Beschreibung der verwendeten quantitativen und qualitativen Analysemethoden.
+**Nummerierte Schritte:**
+1.  **Schritt 1: Deskriptive Analyse der ETS-Designmerkmale:** Vergleich von Cap-Setting, Allokationsmechanismen, Marktstabilitätsreserven.
+2.  **Schritt 2: Quantitative Analyse der Emissionsreduktionen:** Statistische Analyse von Emissionsdaten im Zeitverlauf, Vergleich mit Baselines.
+3.  **Schritt 3: Analyse von Investitionsmustern:** Untersuchung des Zusammenhangs zwischen ETS und Investitionen in grüne Technologien.
+4.  **Schritt 4: Analyse der Preisvolatilität und ihrer Auswirkungen:** Ökonometrische Modelle zur Untersuchung des Einflusses von Preisvolatilität auf Investitionsentscheidungen.
+5.  **Schritt 5: Vergleichende Bewertung:** Synthese der Ergebnisse über die Fallstudien hinweg.
 
 ---
 
 ## 4. Ergebnisse
 **Abschnittsnummer:** 4
-**Länge:** 2500-2900 Wörter
+**Länge:** 1500-2000 Wörter
+**Fokus:** Objektive Darstellung der empirischen Befunde aus den Analysen.
 
-### 4.1 Deskriptive Statistik der Fallstudien
-[Format: Textliche Beschreibung der Fallstudienunternehmen und relevanter Kennzahlen]
+### 4.1 Deskriptive Übersicht der Fallstudien
+**Format:** Textliche Zusammenfassung der wichtigsten Merkmale und Entwicklungen der untersuchten ETS.
+**Tabelle 3:** Schlüsselkennzahlen der untersuchten ETS
+[Spezifikation: z.B. Startjahr, Umfang, Cap-Entwicklung, Mechanismen]
 
-**Tabelle 2:** Deskriptive Statistik der Unternehmen A und B
-| Merkmal | Unternehmen A (EU ETS) | Unternehmen B (CA ETS) |
-|---------|------------------------|------------------------|
-| Branche | ...                    | ...                    |
-| Größe   | ...                    | ...                    |
-| Emissionen | ...                  | ...                    |
+### 4.2 Emissionsreduktionen durch ETS
+**Format:** Darstellung der quantitativen Ergebnisse zu Emissionsreduktionen für jedes ETS.
+**Abbildung 2:** Entwicklung der Emissionen im EU ETS (2005-2023)
+[Platzhalter für Liniendiagramm + Bildunterschrift im APA-Format]
+**Abbildung 3:** Vergleich der Emissionsreduktionen in EU, Kalifornien und China ETS
+[Platzhalter für Balkendiagramm + Bildunterschrift]
 
-### 4.2 Auswirkungen auf Innovationen
-[Format: Darstellung der Ergebnisse pro Fallstudie oder thematisch, z.B. welche Innovationen gefördert wurden, welche Rolle das ETS-Design spielte]
+### 4.3 Einfluss von ETS auf grüne Investitionen
+**Format:** Darstellung der Befunde zu Investitionsmustern in erneuerbare Energien und energieeffiziente Technologien im Kontext der ETS.
+**Tabelle 4:** Investitionen in grüne Technologien im EU ETS-Sektor
+[Spezifikation]
 
-**Abbildung 2:** Innovationsaktivitäten unter ETS (Beispielvisualisierung)
-[Platzhalter + Beschriftungsformat]
-
-### 4.3 Auswirkungen auf die Wettbewerbsfähigkeit
-[Format: Darstellung der Ergebnisse bezüglich Wettbewerbsfähigkeit, z.B. Anpassungsstrategien, Kostenbelastungen, Marktposition]
-
-### 4.4 Vergleichende Analyse der Fallstudien
-[Format: Gegenüberstellung der Ergebnisse aus den Fallstudien, Hervorhebung von Unterschieden und Gemeinsamkeiten im Bezug auf ETS-Design und Unternehmenseffekte]
+### 4.4 Auswirkungen der Preisvolatilität
+**Format:** Präsentation der Ergebnisse zur Rolle der Preisvolatilität auf Emissionsreduktionen und Investitionen.
+**Abbildung 4:** Preisentwicklung und Volatilität im EU ETS
+[Platzhalter für Zeitreihen-Diagramm + Bildunterschrift]
 
 ---
 
 ## 5. Diskussion
 **Abschnittsnummer:** 5
-**Länge:** 1100-1400 Wörter
+**Länge:** 1500-2000 Wörter
+**Fokus:** Interpretation der Ergebnisse im Kontext der Forschungsfrage und der bestehenden Literatur.
 
-### 5.1 Interpretation der Ergebnisse
-[Format: Kontextualisierung der gefundenen Ergebnisse im Hinblick auf die Forschungsfragen]
+### 5.1 Interpretation der Befunde
+**Format:** Narrative Interpretation der Hauptergebnisse, Verknüpfung mit den Forschungszielen.
+-   Bestätigung oder Widerlegung der Wirksamkeit des CO2-Zertifikatehandels.
+-   Herausarbeitung der spezifischen Bedingungen für den Erfolg oder Misserfolg.
 
-### 5.2 Vergleich mit bestehender Literatur
-[Format: Einordnung der eigenen Ergebnisse in den Forschungsstand, Abgleich mit Theorien und früheren Studien, Erklärung von Übereinstimmungen und Abweichungen]
+### 5.2 Vergleich mit der Literatur
+**Format:** Abgleich der eigenen Ergebnisse mit den Erkenntnissen aus der Literaturübersicht. Identifikation von Übereinstimmungen und Abweichungen.
 
 ### 5.3 Theoretische Implikationen
-[Format: Beitrag der Arbeit zur Weiterentwicklung relevanter Theorien (z.B. Umweltökonomie, Innovationsforschung)]
+**Format:** Diskussion, wie die Ergebnisse das theoretische Verständnis von Marktmechanismen und Klimapolitik erweitern oder modifizieren.
 
 ### 5.4 Praktische Implikationen
-[Format: Ableitung konkreter Empfehlungen für Politikgestalter und Unternehmen zur Optimierung von ETS-Designs und zur Förderung nachhaltiger Geschäftspraktiken]
+**Format:** Ableitung konkreter Handlungsempfehlungen für Politikgestalter und Regulierungsbehörden zur Verbesserung der Wirksamkeit von ETS.
+-   Empfehlungen für das Design von ETS (z.B. Cap-Setting, Marktstabilitätsreserve).
+-   Empfehlungen zum Umgang mit Preisvolatilität.
 
-### 5.5 Limitationen und zukünftige Forschung
-[Format: Kritische Reflexion der eigenen Arbeit, Nennung von Einschränkungen (z.B. Stichprobengröße, Methodik) und Vorschläge für weitere Forschungsrichtungen]
+### 5.5 Limitationen und zukünftige Forschungsansätze
+**Format:** Offene und ehrliche Diskussion der Einschränkungen der eigenen Studie und Vorschläge für zukünftige Forschungsrichtungen.
 
 ---
 
-## 6. Fazit
+## 6. Schlussfolgerung
 **Abschnittsnummer:** 6
-**Länge:** 400-500 Wörter
+**Länge:** 500-700 Wörter
 
-[Keine Unterabschnitte - fortlaufender Text]
+**Keine Unterabschnitte – kontinuierliche Erzählung.**
 
 **Erforderliche Elemente:**
--  Wiederholung der Problemstellung und des Forschungsansatzes.
--  Zusammenfassung der wichtigsten Ergebnisse.
--  Hervorhebung des Beitrags der Arbeit.
--  Vorschläge für zukünftige Forschungsrichtungen.
+-   **Zusammenfassung der Problemstellung und des Ansatzes:** Kurze Wiederholung der Forschungsfrage und der gewählten Methodik.
+-   **Zusammenfassung der wichtigsten Ergebnisse:** Prägnante Darstellung der Kernbefunde.
+-   **Hervorhebung der Beiträge:** Betonung des Mehrwerts der Arbeit für Wissenschaft und Praxis.
+-   **Ausblick auf zukünftige Forschungsrichtungen:** Anknüpfung an die Limitationen und Weiterentwicklungsmöglichkeiten.
 
 ---
 
 ## Danksagung
-[Falls zutreffend - z.B. für Betreuer, Förderer, Teilnehmer]
+[Falls zutreffend – z.B. für Betreuer, Finanzierung, technische Unterstützung.]
 
 ---
 
 ## Literaturverzeichnis
 **Format:** APA 7th Edition
-**Minimum:** Mindestens 30-50 Referenzen für eine Masterarbeit
+**Mindestanzahl:** 50+ Referenzen für eine Masterarbeit mit empirischer Analyse.
 
 **Kategorien:**
--  Grundlagenwerke (vor 2019): [~20-30%]
--  Aktuelle Arbeiten (2020-2024): [~70-80%]
--  Eigene frühere Arbeiten: [Optional, max. 10%]
+-   Grundlagenwerke (vor 2019): [~20%]
+-   Aktuelle Werke (2020-2024): [~80%]
+-   Eigene frühere Arbeiten: [Optional, max 10%]
 
 ---
 
-## Anhang
+## Anhänge
 [Falls zutreffend]
-- Anhang A: [Zusätzliche Materialien, z.B. Interviewleitfäden, Detailtabellen]
+-   Anhang A: [Zusätzliche Daten, Detailtabellen, statistische Outputs]
+-   Anhang B: [Interviewleitfäden oder Umfrageinstrumente, falls verwendet]
 
 ---
 
-## Masterarbeits-Spezifische Anforderungen
+## Masterarbeit-Spezifische Anforderungen
 
-### [Name der Universität/Fakultät/Department]
+### [Name der Universität/Fakultät]
 
 **Obligatorische Abschnitte:**
-- [X] Eidesstattliche Erklärung/Selbstständigkeitserklärung
-- [ ] Ggf. Data Availability Statement (falls Daten geteilt werden)
-- [ ] Ggf. Conflict of Interest Statement (weniger üblich für Masterarbeiten)
-- [ ] Ggf. Funding Statement (falls externe Förderung vorliegt)
+-   [ ] **Erklärung der Eigenständigkeit** (Eidesstattliche Versicherung)
+-   [ ] **Inhaltsverzeichnis**
+-   [ ] **Abbildungsverzeichnis**
+-   [ ] **Tabellenverzeichnis**
+-   [ ] **Abkürzungsverzeichnis**
+-   [ ] **Glossar** (falls erforderlich)
 
-**Formatierungsdetails:**
-- Abbildungen: [Hochauflösend, min. 300dpi, in den Text eingebettet]
-- Tabellen: [Bearbeitbares Format, keine Bilder, mit fortlaufender Nummerierung und Titel]
-- Gleichungen: [Fortlaufend nummeriert, rechtsbündig]
+**Formatierungsbesonderheiten:**
+-   Abbildungen: [PNG/TIFF, min. 300dpi, klare Beschriftung]
+-   Tabellen: [Editierbares Format, keine Bilder, klare Beschriftung]
+-   Gleichungen: [Nummeriert, rechtsbündig ausgerichtet]
 
-**Einreichungs-Checkliste (universitätsspezifisch):**
-- [ ] Abgabe des Manuskripts in gebundener Form
-- [ ] Abgabe des Manuskripts als PDF auf Datenträger/Upload
-- [ ] Eidesstattliche Erklärung unterschrieben
-- [ ] Plagiatsprüfung (oft obligatorisch)
+**Einreichungs-Checkliste:**
+-   [ ] Alle Formatvorgaben der Universität/Fakultät eingehalten
+-   [ ] Plagiatsprüfung durchgeführt (falls erforderlich)
+-   [ ] Alle Zitationen korrekt und vollständig
+-   [ ] Sprachliche Korrektur abgeschlossen
 
 ---
 
-## Längenangaben pro Abschnitt (Ziel: 9.000 Wörter)
+## Längenziele nach Abschnitt (für 10.000 Wörter)
 
-| Abschnitt | Wörter | % des Gesamten |
-|-------------------|--------|----------------|
-| Zusammenfassung   | 250    | ~2.8%          |
-| 1. Einleitung     | 1080   | 12%            |
-| 2. Literaturübersicht | 2610   | 29%            |
-| 3. Methodik       | 1080   | 12%            |
-| 4. Ergebnisse     | 2610   | 29%            |
-| 5. Diskussion     | 1260   | 14%            |
-| 6. Fazit          | 450    | 5%             |
-| **Gesamt**        | **9340** | **104.8% (Summe der Prozente)** |
-(Hinweis: Die Prozentwerte sind gerundet, die Wortzahlen sind Schätzungen basierend auf einem Gesamtwert von 9000 Wörtern und den ursprünglichen relativen Anteilen.)
+| Abschnitt         | Wörter | % des Gesamtumfangs |
+|-------------------|--------|---------------------|
+| Kurzfassung       | 250    | 2,5%                |
+| 1. Einleitung     | 1000   | 10%                 |
+| 2. Literaturübersicht | 2000   | 20%                 |
+| 3. Methodologie   | 1200   | 12%                 |
+| 4. Ergebnisse     | 2000   | 20%                 |
+| 5. Diskussion     | 2000   | 20%                 |
+| 6. Schlussfolgerung | 550    | 5,5%                |
+| **Total (Haupttext)** | **9000** | **90%**             |
+| *Verbleibend für Titel, Inhaltsverzeichnis, Literaturverzeichnis, Anhänge etc.* | *1000* | *10%*               |
+| **Gesamt**        | **10000**| **100%**              |
 
 ---
 
 ## Qualitäts-Checkliste
 
 ### Struktur
-- [X] Alle erforderlichen Abschnitte vorhanden
-- [X] Logischer Fluss zwischen den Abschnitten
-- [X] Angemessene Abschnittslängen (gemäß Zielvorgaben)
+-   [ ] Alle erforderlichen Abschnitte vorhanden
+-   [ ] Logischer Fluss zwischen den Abschnitten
+-   [ ] Angemessene Abschnittslängen (siehe Tabelle)
 
 ### Formatierung
-- [X] Konsistente Überschriftenstile
-- [X] Korrektes Zitierformat (APA 7th)
-- [X] Abbildungen/Tabellen korrekt nummeriert
-- [X] Bildunterschriften und Tabellentitel vollständig und beschreibend
+-   [ ] Konsistente Überschriftenstile
+-   [ ] Korrektes Zitationsformat (APA 7th)
+-   [ ] Abbildungen/Tabellen korrekt nummeriert
+-   [ ] Bildunterschriften und Tabellenüberschriften vollständig und deskriptiv
 
 ### Inhalt
-- [X] Zusammenfassung fasst die gesamte Arbeit zusammen
-- [X] Einleitung formuliert klare Forschungsfrage(n)/Ziele
-- [X] Methodik ermöglicht Replikation
-- [X] Ergebnisse objektiv dargestellt
-- [X] Diskussion interpretiert die Ergebnisse und setzt sie in Bezug zur Literatur
-- [X] Fazit betont den Beitrag der Arbeit
+-   [ ] Kurzfassung fasst die gesamte Arbeit zusammen
+-   [ ] Einleitung formuliert klare Forschungsfrage und Ziele
+-   [ ] Methodik ermöglicht Replikation
+-   [ ] Ergebnisse objektiv präsentiert
+-   [ ] Diskussion interpretiert Befunde und vergleicht mit Literatur
+-   [ ] Schlussfolgerung betont den Beitrag und gibt Ausblick
 
 ---
 
 ## Stilrichtlinien
 
 ### Akademischer Ton
-- ✅ **Verwenden Sie:** "Die Ergebnisse deuten darauf hin...", "Wir beobachteten...", "Dies legt nahe..."
-- ❌ **Vermeiden Sie:** "Offensichtlich...", "Es ist klar, dass...", "Es ist interessant, dass..."
+-   ✅ **Verwenden Sie:** "Die Ergebnisse deuten darauf hin...", "Wir beobachteten...", "Dies legt nahe..."
+-   ❌ **Vermeiden Sie:** "Offensichtlich...", "Es ist klar, dass...", "Es ist interessant, dass..."
 
 ### Zeitform
-- **Einleitung:** Präsens (aktueller Stand der Forschung, Problemstellung)
-- **Literaturübersicht:** Präteritum (was andere Forscher gefunden haben)
-- **Methodik:** Präteritum (was Sie getan haben)
-- **Ergebnisse:** Präteritum (was Sie gefunden haben)
-- **Diskussion:** Präsens (was die Ergebnisse bedeuten, Implikationen)
+-   **Einleitung:** Präsens (aktueller Forschungsstand, Problemstellung)
+-   **Literaturübersicht:** Präteritum (was andere herausfanden)
+-   **Methodik:** Präteritum (was Sie getan haben)
+-   **Ergebnisse:** Präteritum (was Sie gefunden haben)
+-   **Diskussion:** Präsens (was die Ergebnisse bedeuten, Implikationen)
 
-### Stimme
-- **Aktiv vs. Passiv:** Aktive Stimme für Klarheit bevorzugen, passive Stimme für Objektivität
-- ✅ "Wir analysierten die Daten" (aktiv, klar)
-- ✅ "Die Daten wurden analysiert" (passiv, objektiv)
+### Voice
+-   **Aktiv vs. Passiv:** Aktive Form für Klarheit bevorzugen, passive Form für Objektivität
+-   ✅ "Wir analysierten die Daten" (aktiv, klar)
+-   ✅ "Die Daten wurden analysiert" (passiv, objektiv)
 
 ---
 
 ## Nächste Schritte
 
 Nach der Formatierung:
-1.  Überprüfung anhand der universitätsspezifischen Richtlinien für Masterarbeiten.
-2.  Sicherstellen, dass alle Platzhalter ([VERIFY], [TODO]) klar gekennzeichnet sind.
-3.  Übergabe an die Compose-Phase mit einer klaren Struktur.
+1.  Überprüfung anhand der universitätsspezifischen Richtlinien (Masterarbeit).
+2.  Sicherstellen, dass alle Platzhalter ([VERIFY], [TODO]) notiert sind.
+3.  Fortfahren mit der Compose-Phase mit klarer Struktur.
 4.  Speichern unter `outline_formatted.md`.
 
 ---
 
 ## ⚠️ AKADEMISCHE INTEGRITÄT & VERIFIKATION
 
-**KRITISCH:** Stellen Sie bei der Strukturierung der Arbeit sicher, dass alle Behauptungen auf Quellen zurückführbar sind.
+**KRITISCH:** Stellen Sie bei der Strukturierung der Arbeit sicher, dass alle Behauptungen auf Quellen zurückgeführt werden können.
 
 **Ihre Verantwortlichkeiten:**
-1.  **Überprüfen Sie, ob Zitate existieren**, bevor Sie sie in Gliederungen aufnehmen.
+1.  **Verifizieren Sie, dass Zitationen existieren**, bevor Sie sie in Outlines aufnehmen.
 2.  **Schlagen Sie niemals fabrizierte Beispiele** oder Statistiken vor.
 3.  **Markieren Sie Platzhalter** deutlich mit [VERIFY] oder [TODO].
 4.  **Stellen Sie sicher, dass die Struktur** überprüfbare, evidenzbasierte Argumente unterstützt.
-5.  **Kennzeichnen Sie Abschnitte**, die eine starke Zitationsunterstützung benötigen.
+5.  **Markieren Sie Abschnitte**, die eine starke Zitationsunterstützung benötigen werden.
 
 **Eine gut strukturierte Arbeit mit fabrizierten Inhalten wird die Verifikation trotzdem nicht bestehen. Bauen Sie auf Genauigkeit.**

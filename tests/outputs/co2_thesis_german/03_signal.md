@@ -1,141 +1,175 @@
-# Forschungslückenanalyse & Opportunitäten
+# Forschungs-Gap-Analyse & Möglichkeiten
 
-**Thema:** Emissionshandelssysteme, Kohlenstoffmärkte und Klimapolitik
-**Papers Analysiert:** 22 (von 60 bereitgestellten, nach Filterung irrelevanter Titel)
-**Analysis Date:** 20. Juni 2024
+**Thema:** CO2-Zertifikatehandel
+**Analysierte Papiere:** 32
+**Analyse-Datum:** 24. Juli 2024
 
 ---
 
 ## Executive Summary
 
-**Key Finding:** Während die Wirksamkeit etablierter Emissionshandelssysteme wie des EU ETS zunehmend durch robuste empirische Studien belegt wird, besteht eine signifikante Forschungslücke in der detaillierten Untersuchung der **heterogenen Auswirkungen auf Innovation und Wettbewerbsfähigkeit auf Unternehmensebene**, insbesondere unter Berücksichtigung **verhaltensökonomischer Faktoren** und im **Vergleich mit aufkommenden ETS-Systemen weltweit**.
+**Schlüsselerkenntnis:** Die aktuelle Forschung zum CO2-Zertifikatehandel ist stark auf den chinesischen Kontext und dessen Einfluss auf grüne Innovationen und Investitionen konzentriert. Es besteht eine erhebliche Lücke in der vergleichenden Analyse verschiedener Emissionshandelssysteme (ETS) weltweit sowie in der Untersuchung der jüngsten Entwicklungen des EU ETS und seiner sozioökonomischen Auswirkungen jenseits der Unternehmensperspektive.
 
-**Recommendation:** Eine vergleichende Analyse der Innovationsreaktionen von Unternehmen innerhalb des EU ETS und neuen Kohlenstoffmärkten (z.B. China ETS), unter Einbeziehung von Faktoren wie Unternehmensgröße, Sektorzugehörigkeit und der Rolle von Verhaltensanreizen, um Designprinzipien für zukünftige, innovationsfördernde Kohlenstoffmärkte zu identifizieren.
+**Empfehlung:** Eine vergleichende Studie der Auswirkungen der Preisvolatilität auf grüne Investitionen in verschiedenen ETS-Regionen (z.B. EU, China, Kalifornien), unter Berücksichtigung unterschiedlicher regulatorischer Rahmenbedingungen und Governance-Strukturen, bietet das größte Potenzial für einen neuartigen und wirkungsvollen Forschungsbeitrag.
 
 ---
 
 ## 1. Major Research Gaps
 
-### Gap 1: Heterogene Auswirkungen des ETS auf Innovation und Wettbewerbsfähigkeit auf Unternehmensebene
-**Description:** Während Paper 1 (Klimko, Hasprová, 2025) die aggregierten Auswirkungen des EU ETS auf Emissionen untersucht, fehlt oft eine detaillierte, kausale Analyse, wie das System Innovationen (z.B. in Prozesstechnologien, Produktentwicklung) auf der Ebene einzelner Unternehmen fördert oder behindert und wie sich dies auf deren Wettbewerbsfähigkeit auswirkt. Die Auswirkungen sind wahrscheinlich nicht homogen.
-**Why it matters:** Das Verständnis dieser Mechanismen ist entscheidend, um Kohlenstoffmärkte so zu gestalten, dass sie nicht nur Emissionen reduzieren, sondern auch grüne Innovationen vorantreiben und die wirtschaftliche Transformation unterstützen, ohne zu unerwünschten Kohlenstoffleckagen zu führen.
-**Evidence:** Paper 1 erwähnt "sektorale Unterschiede" in der Wirksamkeit, was auf heterogene Unternehmenseffekte hindeutet, ohne diese jedoch im Detail zu untersuchen. [VERIFY]
+### Gap 1: Regionale und Vergleichende Analyse von ETS-Auswirkungen
+**Description:** Eine überwältigende Mehrheit der jüngsten Studien (28 von 32 Papieren aus 2024) konzentriert sich ausschließlich auf den chinesischen Emissionshandel und dessen Auswirkungen auf grüne Innovationen und Investitionen. Es fehlt an neueren empirischen Studien, die andere etablierte ETS wie das EU ETS (insbesondere nach 2018 und den jüngsten Reformen), das kalifornische ETS oder das südkoreanische ETS im Detail analysieren. Noch stärker fehlt es an vergleichenden Studien, die die Effektivität und die spezifischen Mechanismen dieser Systeme gegenüberstellen.
+**Why it matters:** Die Generalisierbarkeit der Ergebnisse aus dem chinesischen Kontext ist begrenzt, da die Marktstruktur, die Regulierungslandschaft und die politischen Einflüsse dort einzigartig sind. Ein umfassenderer, vergleichender Ansatz ist notwendig, um übertragbare Best Practices und Designprinzipien für den globalen Kohlenstoffmarkt zu identifizieren.
+**Evidence:** P4, P5, P6, P7 (teilweise), P8, P12-P32 konzentrieren sich auf China. P1, P9, P10, P11 sind die einzigen Papiere, die sich mit dem EU ETS oder allgemeinen ETS-Fragen befassen, stammen aber aus dem Zeitraum 2008-2018.
 **Difficulty:** 🟡 Medium
 **Impact potential:** ⭐⭐⭐⭐⭐
 
 **How to address:**
-- Approach 1: Durchführung von Paneldatenanalysen auf Unternehmensebene, die Investitionen in F&E, Patentanmeldungen oder die Einführung neuer Technologien mit Kohlenstoffpreisen und Zuteilungsmechanismen in Verbindung bringen.
-- Approach 2: Qualitative Fallstudien oder Umfragen bei Unternehmen in verschiedenen Sektoren, um deren strategische Reaktionen auf das ETS zu verstehen.
+-   Approach 1: Empirische Studien zu den Auswirkungen des EU ETS (Phase 4 und "Fit for 55"-Paket) auf grüne Innovationen und Investitionen.
+-   Approach 2: Eine vergleichende Fallstudie oder ökonometrische Analyse, die die Auswirkungen der Kohlenstoffpreise und ihrer Volatilität auf Unternehmensverhalten in mindestens zwei unterschiedlichen ETS-Regionen (z.B. EU und China) untersucht.
 
 ---
 
-### Gap 2: Integration verhaltensökonomischer Perspektiven in die ETS-Analyse
-**Description:** Die meisten ökonomischen Analysen von ETS-Systemen basieren auf rationalen Akteursmodellen. Es gibt eine Lücke in der Untersuchung, wie verhaltensökonomische Faktoren (z.B. Verlustaversion, Framing-Effekte, begrenzte Rationalität von Managern) die Entscheidungen von Unternehmen und Politikern im Kontext des Kohlenstoffmarktes beeinflussen (z.B. bei Investitionen, Compliance, Lobbying).
-**Why it matters:** Verhaltensbiases können die Effizienz von Preissignalen untergraben oder verstärken und zu unerwarteten Ergebnissen führen. Das Verständnis dieser Faktoren kann zu effektiveren Politikdesigns führen.
-**Evidence:** Die vorliegenden Zusammenfassungen konzentrieren sich auf makroökonomische und ökonometrische Analysen, ohne explizit verhaltensökonomische Aspekte zu erwähnen. [VERIFY]
+### Gap 2: Sozioökonomische und Equity-Aspekte des Kohlenstoffpreises
+**Description:** Die analysierten Papiere konzentrieren sich stark auf die Perspektiven von Unternehmen (P1) und deren Reaktionen auf Kohlenstoffpreise (grüne Innovation, Investitionen). Es gibt jedoch eine deutliche Lücke in der Forschung zu den breiteren sozioökonomischen Auswirkungen des CO2-Zertifikatehandels, einschließlich Fragen der Verteilungsgerechtigkeit (Equity), der Auswirkungen auf Haushalte (insbesondere Energiearmut), der Akzeptanz in der Bevölkerung und der politischen Ökonomie der ETS-Reformen.
+**Why it matters:** Die gesellschaftliche Akzeptanz von Kohlenstoffpreisen ist entscheidend für ihre langfristige Stabilität und Effektivität. Ungerechte Verteilungseffekte können zu politischem Widerstand führen und die Klimapolitik untergraben.
+**Evidence:** Kein Papier adressiert diese Aspekte direkt. P1 erwähnt "Unternehmensperspektiven" und "Kosten als Belastung", aber nicht die breiteren gesellschaftlichen Auswirkungen.
 **Difficulty:** 🟡 Medium
 **Impact potential:** ⭐⭐⭐⭐
 
 **How to address:**
-- Approach 1: Experimentelle Studien (Laborexperimente, Feldexperimente) mit Unternehmensentscheidern oder Simulationen, die verhaltensökonomische Heuristiken einbeziehen.
-- Approach 2: Analyse von Unternehmensberichten und Interviews, um Indikatoren für verhaltensbedingte Entscheidungsfindung zu identifizieren.
+-   Approach 1: Qualitative Studien (Interviews, Fokusgruppen) mit Stakeholdern außerhalb der direkt regulierten Unternehmen (z.B. Verbraucherverbände, Gewerkschaften, NGOs) zu ihrer Wahrnehmung und Erfahrung mit den Auswirkungen des ETS.
+-   Approach 2: Quantitative Analysen der Verteilungseffekte von Kohlenstoffpreisen auf verschiedene Einkommensgruppen in ETS-Regionen.
 
 ---
 
-### Gap 3: Vergleichende Analyse zwischen etablierten und aufkommenden Emissionshandelssystemen
-**Description:** Paper 1 analysiert das EU ETS umfassend. Es besteht jedoch eine Lücke in der systematischen vergleichenden Analyse der Designmerkmale, Wirksamkeit und Herausforderungen verschiedener ETS-Systeme weltweit (z.B. China ETS, Kalifornien Cap-and-Trade, UK ETS), insbesondere im Hinblick auf ihre unterschiedlichen Entwicklungsstadien und politischen Kontexte.
-**Why it matters:** Jedes ETS ist ein einzigartiges Experiment. Ein Vergleich kann Best Practices identifizieren, häufige Fallstricke aufzeigen und Lehren für die Entwicklung und Reform von Kohlenstoffmärkten weltweit ziehen.
-**Evidence:** Paper 1 konzentriert sich ausschließlich auf das EU ETS. Keine der Zusammenfassungen deutet auf eine vergleichende Studie hin. [VERIFY]
-**Difficulty:** 🟢 Low
+### Gap 3: Langfristige Anpassungsstrategien und Resilienz gegenüber Preisvolatilität
+**Description:** Mehrere Papiere (P3, P6, P13, P18, P20) heben die negativen Auswirkungen der Kohlenstoffpreisvolatilität auf grüne Investitionen hervor. Was jedoch fehlt, ist eine tiefere Untersuchung, wie Unternehmen oder Sektoren langfristig Resilienz gegenüber dieser Volatilität aufbauen können. Welche strategischen Anpassungen (z.B. Hedging-Strategien, vertikale Integration, Diversifizierung) werden implementiert, und wie effektiv sind diese?
+**Why it matters:** Die Volatilität der Kohlenstoffpreise ist ein inhärentes Merkmal von Marktmechanismen. Das Verständnis, wie Akteure damit umgehen und sich anpassen können, ist entscheidend, um die negativen Auswirkungen zu minimieren und die Investitionssicherheit zu erhöhen.
+**Evidence:** P3, P6, P13, P18, P20 identifizieren Volatilität als Problem, bieten aber keine detaillierten Lösungen oder Anpassungsstrategien von Unternehmen.
+**Difficulty:** 🔴 High
+**Impact potential:** ⭐⭐⭐⭐
+
+**How to address:**
+-   Approach 1: Fallstudien von Unternehmen, die erfolgreich Strategien zur Minderung des Volatilitätsrisikos implementiert haben.
+-   Approach 2: Ökonometrische Modellierung, die den Einfluss von Hedging-Instrumenten oder anderen Risikomanagementstrategien auf grüne Investitionen untersucht.
+
+---
+
+### Gap 4: Integration von Carbon Pricing mit neuen Klimaschutztechnologien
+**Description:** Die Forschung konzentriert sich auf "grüne Innovation" im Allgemeinen, aber es gibt eine Lücke in der spezifischen Analyse, wie Kohlenstoffpreise die Entwicklung und Skalierung von disruptiven Klimaschutztechnologien (z.B. Direct Air Capture, fortschrittliche Energiespeicher, grüne Wasserstoffproduktion) fördern oder behindern. Wie muss das Design des ETS angepasst werden, um diese Technologien effektiv zu unterstützen?
+**Why it matters:** Das Erreichen der Klimaziele erfordert nicht nur inkrementelle grüne Innovationen, sondern auch den Durchbruch und die Skalierung neuer, bahnbrechender Technologien.
+**Evidence:** Die Papiere über grüne Innovation (P4, P5, P7, P8, P12, P14-P17, P19, P21-P32) sind oft generisch und differenzieren nicht nach Technologiearten oder Reifegrad.
+**Difficulty:** 🟡 Medium
+**Impact potential:** ⭐⭐⭐⭐
+
+**How to address:**
+-   Approach 1: Sektorspezifische Analysen, die den Einfluss von Kohlenstoffpreisen auf die Investitionen in und die Markteinführung von spezifischen Schlüsseltechnologien untersuchen.
+-   Approach 2: Modellierung des Zusammenspiels von Kohlenstoffpreisen und anderen Förderinstrumenten (z.B. Subventionen, Tax Credits) für neue Technologien.
+
+---
+
+### Gap 5: Der Einfluss von Geopolitik und globalen Lieferketten auf den Kohlenstoffhandel
+**Description:** Die analysierten Papiere behandeln primär interne Faktoren (z.B. Politik im ETS-Land, Unternehmensmerkmale) oder endogene Marktvariablen (Preisvolatilität). Es fehlt an Studien, die den Einfluss externer Faktoren wie geopolitische Spannungen, Handelskonflikte, Verschiebungen in globalen Lieferketten oder die Einführung von Grenzausgleichsmechanismen (CBAM) auf die Funktionsweise von ETS und die Reaktion der Unternehmen untersuchen.
+**Why it matters:** Die Weltwirtschaft ist zunehmend vernetzt. Externe Schocks können die Effektivität von ETS erheblich beeinflussen und neue Herausforderungen für die Wettbewerbsfähigkeit und die Vermeidung von Carbon Leakage schaffen.
+**Evidence:** Kein Papier erwähnt diese externen, makroökonomischen/geopolitischen Faktoren als zentrale Forschungsfrage. P11 (2008) erwähnt "Linking", aber nicht die breiteren geopolitischen Aspekte.
+**Difficulty:** 🔴 High
 **Impact potential:** ⭐⭐⭐⭐⭐
 
 **How to address:**
-- Approach 1: Eine vergleichende Fallstudienanalyse der Designmerkmale (Scope, Allokationsmethoden, Preiskontrollmechanismen) und deren Auswirkungen auf die Emissionsreduktion und Marktstabilität.
-- Approach 2: Entwicklung eines Rahmens zur Bewertung und zum Benchmarking von ETS-Systemen unter Berücksichtigung lokaler Kontextfaktoren.
+-   Approach 1: Qualitative Analyse (Experteninterviews, Fallstudien) zu den Auswirkungen des EU CBAM auf nicht-EU-Unternehmen, die am EU ETS teilnehmen oder mit ihm interagieren.
+-   Approach 2: Ökonometrische Analyse der Reaktion von Kohlenstoffpreisen und Unternehmensinvestitionen auf geopolitische Ereignisse oder signifikante Veränderungen in Handelsbeziehungen.
 
 ---
 
 ## 2. Emerging Trends (2023-2024)
 
-### Trend 1: Fokus auf die Langzeitwirksamkeit und Robustheit des EU ETS
-**Description:** Die Veröffentlichung von Paper 1 (Klimko, Hasprová, 2025), das die Auswirkungen des EU ETS von 2005 bis 2022 untersucht, zeigt ein anhaltendes und wachsendes Interesse an der umfassenden Bewertung der Wirksamkeit etablierter Kohlenstoffmärkte über lange Zeiträume und unter verschiedenen politischen Anpassungen (z.B. Marktstabilitätsreserve).
-**Evidence:** Paper 1, veröffentlicht 2025, mit Daten bis 2022, unterstreicht die Aktualität und Relevanz dieser Langzeitperspektive.
-**Key papers:** Klimko, Hasprová (2025)
+### Trend 1: Der Kohlenstoffpreis als Treiber grüner Innovation
+**Description:** Eine überwältigende Anzahl der jüngsten Papiere (28 von 32 Papiere, alle aus 2024) untersucht den positiven Einfluss des Kohlenstoffhandels auf die grüne Innovation von Unternehmen. Dieser Trend wird oft durch moderierende Faktoren wie digitale Wirtschaft, grüne Finanzierungen, Umweltregulierung und Offenlegung von Umweltinformationen verstärkt.
+**Evidence:** P4, P5, P7, P8, P12, P14-P17, P19, P21-P32. Die Häufigkeit dieser Studien im Jahr 2024 zeigt ein stark wachsendes Interesse.
+**Key papers:** Hao et al. (2024), Yang et al. (2024), Ren et al. (2024)
 **Maturity:** 🟡 Growing
 
-**Opportunity:** Eine Erweiterung dieser Langzeitstudien, um die Auswirkungen jüngster politischer Entwicklungen (z.B. Fit for 55-Paket, Ausweitung auf neue Sektoren wie Gebäude und Verkehr) und externer Schocks (z.B. Energiekrise 2022) auf die Marktstabilität und Wirksamkeit des EU ETS zu analysieren.
+**Opportunity:** Während der positive Einfluss gut belegt ist, gibt es noch Raum für Forschung, die spezifische Arten grüner Innovationen (z.B. Prozess vs. Produkt, inkrementell vs. radikal) differenziert und die Mechanismen genauer untersucht, durch die die verschiedenen Moderatoren wirken.
 
 ---
 
-### Trend 2: Zunehmende Bedeutung kausaler Inferenz in der Politikbewertung
-**Description:** Die Methodik von Paper 1, die darauf abzielt, "kausale Zusammenhänge zu identifizieren" und "die Auswirkungen des EU ETS von anderen Einflussfaktoren zu isolieren", spiegelt einen allgemeinen Trend in der empirischen Ökonomie wider, sich auf robuste kausale Inferenzmethoden zu konzentrieren, um die tatsächlichen Effekte von Umweltpolitiken zu quantifizieren.
-**Evidence:** Betonung von "ökonometrischen Methoden wie Paneldatenanalysen (z. B. Difference-in-Differences, Synthetic Control Method)" in Paper 1. [VERIFY]
-**Key papers:** Klimko, Hasprová (2025), Erdoğan (2023) – letzteres als generisches Beispiel für empirische Analyse.
-**Maturity:** 🟢 Established
+### Trend 2: Auswirkungen der Kohlenstoffpreisvolatilität auf grüne Investitionen
+**Description:** Mehrere aktuelle Studien (P3, P6, P13, P18, P20) aus dem Jahr 2024 befassen sich mit der Volatilität der Kohlenstoffpreise und deren negativen Auswirkungen auf grüne Investitionen von Unternehmen, insbesondere in China. Dies zeigt ein wachsendes Bewusstsein für die Risikoseite des Kohlenstoffhandels.
+**Evidence:** P3, P6, P13, P18, P20. Alle 5 Papiere sind von 2024.
+**Key papers:** Kim & Shin (2024), Xie et al. (2024), Du et al. (2024)
+**Maturity:** 🟡 Growing
 
-**Opportunity:** Anwendung noch fortgeschrittenerer oder bisher wenig genutzter kausaler Inferenzmethoden (z.B. maschinelles Lernen für kausale Inferenz, Instrumentalvariablenansätze für Endogenitätsprobleme) auf spezifische Forschungsfragen im Bereich der Kohlenstoffmärkte, um die Robustheit der Ergebnisse weiter zu erhöhen.
+**Opportunity:** Eine vertiefte Analyse der spezifischen Governance-Strukturen, Finanzierungsmechanismen und Risikomanagementstrategien, die die negativen Auswirkungen der Volatilität abmildern können, bietet wichtige Forschungsmöglichkeiten. Auch der Vergleich der Volatilitätsfaktoren und ihrer Auswirkungen in verschiedenen ETS-Systemen ist ein offenes Feld.
+
+---
+
+### Trend 3: Rolle der digitalen Wirtschaft und grüner Finanzierungen
+**Description:** Die digitale Wirtschaft und grüne Finanzierungen werden zunehmend als wichtige Moderatoren des Einflusses des Kohlenstoffhandels auf grüne Innovationen identifiziert. Dies deutet auf eine Anerkennung der Synergien zwischen Digitalisierung, Finanzsektor und Klimapolitik hin.
+**Evidence:** P2 (ESG in Versicherungen), P5 (digitale Wirtschaft), P7 (grüne Finanzen), P12 (digitale Finanzen). Alle relevanten Papiere sind von 2023-2024.
+**Key papers:** Goel et al. (2023), Yang et al. (2024), Zhang et al. (2024)
+**Maturity:** 🔴 Emerging
+
+**Opportunity:** Es besteht die Möglichkeit, die kausalen Pfade und Mechanismen, durch die die digitale Wirtschaft und grüne Finanzierungen die Wirkung des Kohlenstoffpreises verstärken, detaillierter zu untersuchen. Welche spezifischen digitalen Technologien oder grünen Finanzprodukte sind am effektivsten?
 
 ---
 
 ## 3. Unresolved Questions & Contradictions
 
-### Debate 1: Isolierung des kausalen Effekts des ETS von anderen Politiken und makroökonomischen Trends
-**Position A (impliziert durch Paper 1):** Es ist möglich, mit fortgeschrittenen ökonometrischen Methoden den kausalen Beitrag des ETS zur Emissionsreduktion zu isolieren, auch wenn dies eine Herausforderung darstellt. Paper 1 versucht, dies für den Zeitraum 2005-2022 zu leisten.
-**Position B (impliziert durch Limitationen):** Die "Herausforderung, den kausalen Effekt ... von anderen Klimapolitiken und makroökonomischen Trends zu isolieren, ist erheblich." Einige Studien könnten argumentieren, dass die Verflechtung so komplex ist, dass eine vollständige Isolation kaum möglich ist oder zu unzuverlässigen Ergebnissen führt. [VERIFY]
-**Why it's unresolved:** Die Komplexität der realen Welt, die Vielzahl simultaner Politiken und unkontrollierbarer externer Schocks erschweren die exakte Zuschreibung von Effekten zu einem einzelnen Instrument.
-**How to resolve:**
-- **Proprietary Study Design:** Einsatz von quasi-experimentellen Designs, die spezifische politische Änderungen (z.B. Einführung der MSR, Ausweitung des Scopes) als "natürliche Experimente" nutzen.
-- **Improved Data:** Integration von hochfrequenten oder detaillierteren, firmenspezifischen Daten, um kurzfristige Reaktionen genauer zu erfassen.
-- **Advanced Econometrics:** Kombination von Difference-in-Differences mit Synthetic Control Methoden oder Machine Learning für robuste Kausalanalysen.
+### Debate 1: Optimale Allokationsmethoden im ETS
+**Position A:** Ältere Papiere wie Sartor et al. (2014, P10) und Rittler (2012, P9) diskutieren die Vor- und Nachteile von Benchmark-basierten Zuteilungen und freien Zuteilungen im EU ETS Phase 3, wobei der Fokus auf Wettbewerbsfähigkeit und Carbon Leakage liegt.
+**Position B:** Die jüngsten Papiere (überwiegend aus China, 2024) gehen von einem bereits implementierten Kohlenstoffhandel aus und analysieren dessen Auswirkungen, ohne die Allokationsmethoden selbst in Frage zu stellen oder zu vergleichen.
+**Why it's unresolved:** Die Debatte über die "beste" Allokationsmethode ist nicht abgeschlossen, sondern hat sich mit der Weiterentwicklung des EU ETS (z.B. Übergang zu mehr Auktionierung in Phase 4) und der Einführung neuer ETS in anderen Regionen (z.B. China) verlagert. Die Auswirkungen der gewählten Methode auf Innovation, Investitionen und Wettbewerbsfähigkeit sind kontextabhängig und erfordern kontinuierliche Bewertung.
+**How to resolve:** Eine vergleichende Studie, die die Langzeitwirkungen verschiedener Allokationsmethoden (freie Zuteilung vs. Auktionierung vs. Benchmark-basiert) in verschiedenen ETS-Systemen auf grüne Innovation, Investitionen und Wettbewerbsfähigkeit unter Berücksichtigung aktueller Marktdynamiken und politischer Ziele untersucht.
 
 ---
 
 ## 4. Methodological Opportunities
 
 ### Underutilized Methods
-1.  **Machine Learning für Kausale Inferenz:** Bisher selten in der ETS-Forschung angewendet, könnte aber zur Identifizierung komplexer nicht-linearer Zusammenhänge und zur besseren Kontrolle von Confoundern beitragen, insbesondere bei der Vorhersage von Kohlenstoffpreisen oder der Bewertung von Policy-Interventionen.
-2.  **Agentenbasierte Modellierung (ABM):** Könnte zur Simulation der Interaktionen von Marktteilnehmern, des Einflusses von Allokationsregeln und der Entstehung von Kohlenstoffpreisen unter verschiedenen Szenarien eingesetzt werden, um die Dynamik des Kohlenstoffmarktes besser zu verstehen.
+1.  **Machine Learning für Policy-Simulation und Szenario-Analyse:** P3 erwähnt ML für die Preisprognose. ML könnte jedoch auch genutzt werden, um komplexe Interaktionen von ETS-Designparametern, externen Schocks und Unternehmensreaktionen zu simulieren, um resiliente Politikdesigns zu entwickeln.
+2.  **Qualitative Comparative Analysis (QCA):** Angesichts der Vielzahl von Moderatoren (digitale Wirtschaft, grüne Finanzen, Governance etc.) und der Notwendigkeit, kontextspezifische Bedingungen zu verstehen, könnte QCA nützlich sein, um Konfigurationen von Faktoren zu identifizieren, die zu erfolgreicher grüner Innovation oder Investition führen.
+3.  **Agentenbasierte Modellierung (ABM):** Um die dynamischen und emergenten Effekte des Kohlenstoffhandels auf heterogene Akteure (Unternehmen, Investoren, Haushalte) und deren Interaktionen zu verstehen, könnte ABM ein leistungsstarkes Werkzeug sein, das in den Zusammenfassungen nicht erwähnt wird.
 
-### Datensätze Nicht Yet Explored
-1.  **Firmenspezifische Investitions- und Innovationsdaten:** Detaillierte Daten zu F&E-Ausgaben, Patentanmeldungen oder Investitionen in spezifische Dekarbonisierungstechnologien, die mit Emissionsdaten und Kohlenstoffpreisen verknüpft werden.
-2.  **Internationale Handelsdaten auf Produktebene:** Zur detaillierteren Analyse von Kohlenstoffleckagen, indem die Verlagerung von Produktionsstätten oder der Import emissionsintensiver Produkte untersucht wird.
+### Datasets Not Yet Explored
+1.  **Detaillierte Unternehmensdaten außerhalb Chinas:** Angesichts der starken Konzentration auf China, könnten detaillierte, firmenspezifische Daten zu Emissionen, Investitionen in grüne Technologien und Finanzierungsstrukturen aus dem EU ETS, US-amerikanischen ETS (z.B. RGGI, Kalifornien) oder anderen entwickelten Märkten ein wertvolles, untergenutztes Asset sein.
+2.  **Daten zu Risikomanagement- und Hedging-Strategien:** Es gibt eine Lücke in der Untersuchung, wie Unternehmen Kohlenstoffpreisvolatilität managen. Daten zu Derivategeschäften, internen Kohlenstoffpreisen oder Investitionen in Energieeffizienz/erneuerbare Energien zur Absicherung könnten aufschlussreich sein.
 
 ### Novel Combinations
-1.  **[Verhaltensökonomie] + [ETS-Compliance und Trading-Strategien]:** Untersuchung, wie kognitive Verzerrungen oder soziale Normen die Handelsentscheidungen von Unternehmen oder deren Compliance-Verhalten im ETS beeinflussen.
-2.  **[Maschinelles Lernen] + [Prognose von Kohlenstoffpreisen unter Klimarisiken]:** Entwicklung von Modellen, die nicht nur historische Preisdaten, sondern auch Klimarisikobewertungen und politische Ankündigungen zur Verbesserung der Preisprognosen nutzen.
+1.  **[Machine Learning-basierte Preisprognose] + [Analyse des Investitionsverhaltens von Unternehmen]:** Verbindung der prädiktiven Kraft von ML mit empirischer Forschung, um zu verstehen, wie Unternehmen auf prognostizierte Preisentwicklungen reagieren oder reagieren sollten.
+2.  **[Qualitative Interviews mit Unternehmensentscheidern] + [Analyse von Nachhaltigkeitsberichten und Finanzdaten]:** Eine Mixed-Methods-Studie, die die subjektiven Wahrnehmungen von Unternehmen (P1) mit ihren tatsächlichen Investitionsentscheidungen und Offenlegungen (P12, P17) verbindet, um Diskrepanzen oder Übereinstimmungen aufzudecken.
 
 ---
 
 ## 5. Interdisciplinary Bridges
 
-### Connection 1: [Umweltökonomie] ↔️ [Innovationsforschung / Technologiemanagement]
-**Observation:** Die Umweltökonomie (wie in Paper 1) konzentriert sich auf die makroökonomischen Effekte von ETS auf Emissionen. Die Innovationsforschung untersucht die Mechanismen der Technologieentwicklung und -diffusion.
-**Opportunity:** Import von Konzepten und Methoden aus der Innovationsforschung (z.B. Innovationssysteme, Technologietransfermodelle, Innovationspfade) in die Analyse von Kohlenstoffmärkten, um besser zu verstehen, wie ETS grüne Innovationen spezifisch anregt und welche Barrieren bestehen.
-**Potential impact:** Hoch – könnte die Gestaltung von ETS-Systemen dahingehend verbessern, dass sie nicht nur Kosteneffizienz bei der Emissionsreduktion gewährleisten, sondern auch einen starken Innovationsschub auslösen.
+### Connection 1: [Umweltökonomie/Klimapolitik] ↔️ [Finanzwirtschaft/Risikomanagement]
+**Observation:** Papiere diskutieren Kohlenstoffpreisvolatilität (P3, P6, P13, P18, P20) und ESG-Investitionen im Finanzsektor (P2). Die Verbindung zwischen der Preisvolatilität als Finanzrisiko und den spezifischen Risikomanagementstrategien, die von Finanzinstituten und Industrieunternehmen zur Minderung dieses Risikos eingesetzt werden, ist jedoch unterbelichtet.
+**Opportunity:** Import von Konzepten und Methoden aus dem Finanzrisikomanagement (z.B. Optionspreismodelle, Value-at-Risk-Analysen, Hedging-Strategien) in die Umweltökonomie, um die Resilienz von Unternehmen und ETS-Systemen gegenüber Preisvolatilität zu verbessern.
+**Potential impact:** High - könnte die Stabilität und Wirksamkeit von Kohlenstoffmärkten erheblich verbessern und Investitionen in Klimaschutz sichern.
 
 ---
 
 ## 6. Replication & Extension Opportunities
 
 ### High-Value Replications
-1.  **[Paper 1 (Klimko, Hasprová, 2025)]:** Eine unabhängige Replikation der Analyse der EU ETS-Auswirkungen von 2005-2022 mit alternativen ökonometrischen Methoden oder einem erweiterten Datensatz, um die Robustheit der Ergebnisse zu überprüfen.
-2.  **[Frühere Studien zur Kohlenstoffleckage]:** Wichtige Ergebnisse zur Kohlenstoffleckage, die oft auf älteren Daten basieren, sollten mit aktuellen Daten und verbesserten Modellen repliziert werden, um die Relevanz in einem dynamischen globalen Kontext zu überprüfen. [VERIFY]
+1.  **[Brewer (2018), P1]: Business perspectives on the EU emissions trading scheme:** Diese Studie ist 6 Jahre alt. Eine Replikation mit Fokus auf die aktuellen Phasen des EU ETS (Phase 4) und die Auswirkungen der "Fit for 55"-Politik wäre sehr wertvoll, um zu sehen, wie sich Unternehmensperspektiven und -strategien entwickelt haben.
+2.  **[Kim & Shin (2024), P3]: Carbon Credit Price Volatility in K-ETS:** Die Anwendung der hier verwendeten ML-Methoden zur Prognose und Analyse von Preisvolatilität auf andere ETS-Märkte (z.B. EU ETS, China ETS) würde die Generalisierbarkeit der Methodik testen und vergleichende Einblicke liefern.
 
 ### Extension Opportunities
-1.  **[Paper 1 (Klimko, Hasprová, 2025)]:** Die Studie könnte um eine detailliertere Analyse der **Innovationsreaktionen auf Sektorebene** erweitert werden, um zu verstehen, welche Sektoren am besten auf Preissignale reagieren und warum.
-2.  **[Erdoğan (2023)]:** Wenn es sich um eine allgemeine empirische Analyse handelt, könnte die Methodik auf die **Bewertung spezifischer politischer Anpassungen im EU ETS** (z.B. Auswirkungen der MSR auf Preisstabilität und Investitionen) angewendet werden.
+1.  **[Goel et al. (2023), P2]: ESG Investing in the Insurance Industry:** Die systematische Übersicht könnte erweitert werden, um den spezifischen Einfluss von Kohlenstoffpreisen (nicht nur Klimawandel allgemein) auf ESG-Investitionsentscheidungen und Produktentwicklung in der Versicherungsbranche zu untersuchen.
+2.  **[Hao et al. (2024), P4] und viele andere (P5, P8, P12, P14-P17, P19, P21-P32): Carbon Price & Green Innovation in China:** Diese Studien könnten durch eine Differenzierung zwischen verschiedenen Arten grüner Innovationen (z.B. End-of-Pipe vs. Prozessintegration, inkrementell vs. radikal) und die Analyse von Langzeiteffekten über mehrere Innovationszyklen hinweg erweitert werden.
 
 ---
 
 ## 7. Temporal Gaps
 
 ### Recent Developments Not Yet Studied
-1.  **[Ausweitung des EU ETS auf Gebäude und Verkehr]:** Das "Fit for 55"-Paket der EU, das eine Ausweitung des ETS auf neue Sektoren vorsieht, ist eine sehr aktuelle Entwicklung (2023/2024). Es gibt noch kaum akademische Papiere, die die potenziellen Auswirkungen, Herausforderungen und Akzeptanz dieses neuen Systems analysieren.
-2.  **[Globale Energiekrise 2022/2023]:** Die Auswirkungen der Energiekrise auf Kohlenstoffmärkte (z.B. Preisvolatilität, politische Interventionen, Rückkehr zu Kohle) sind noch nicht umfassend und systematisch in der Literatur aufgearbeitet.
+1.  **EU ETS Reformen ("Fit for 55" Paket):** Die jüngsten und weitreichenden Reformen des EU ETS, einschließlich der Erhöhung der Emissionsreduktionsziele, der Ausweitung auf neue Sektoren (Gebäude und Verkehr mit ETS2) und der Stärkung der Marktstabilitätsreserve, sind in den analysierten Papieren (insbesondere den älteren EU-fokussierten) nicht berücksichtigt. Deren Auswirkungen auf Unternehmen, Haushalte und die Wirtschaft sind ein großes Forschungsfeld.
+2.  **Einführung des Carbon Border Adjustment Mechanism (CBAM) in der EU:** Dies ist eine wegweisende Entwicklung, die erhebliche Auswirkungen auf den internationalen Handel, die Wettbewerbsfähigkeit und das Verhalten von Unternehmen außerhalb der EU haben wird. Es gibt noch kaum akademische Arbeiten, die die realen Auswirkungen des CBAM untersuchen.
 
 ### Outdated Assumptions
-1.  **Annahme aus 2010er Jahren:** Viele ältere Papiere zur Kohlenstoffleckage basieren auf der Annahme, dass die globalen Kohlenstoffmärkte isoliert operieren. Angesichts der zunehmenden Vernetzung von ETS-Systemen und der Diskussion um Grenzausgleichsmechanismen (CBAM) sind diese Annahmen möglicherweise überholt. [VERIFY]
-2.  **Technologische Limitation:** Frühere Studien konnten bestimmte Daten (z.B. Echtzeit-Emissionsdaten von Anlagen) nicht in dem Maße nutzen, wie es heute durch Sensorik und Big Data möglich ist.
+1.  **Annahmen über Allokationsmethoden im EU ETS:** Ältere Papiere (P9, P10) basieren auf Annahmen und Daten aus Phase 3 des EU ETS (bis 2020), wo freie Zuteilungen noch eine größere Rolle spielten. Die Annahme, dass freie Zuteilungen weiterhin die dominante Allokationsmethode sind, ist angesichts des Übergangs zu mehr Auktionierung in Phase 4 veraltet.
+2.  **Annahmen über die Marktreife des Kohlenstoffhandels:** Papiere aus den frühen 2010er Jahren (P9, P10, P11) diskutieren oft die Einführung und grundlegende Funktionsweise des ETS. Heute ist der Kohlenstoffhandel in vielen Regionen ein etabliertes Instrument, was die Forschungsfragen von der grundlegenden Machbarkeit zu Fragen der Optimierung, Governance und Resilienz verschiebt.
 
 ---
 
@@ -143,87 +177,88 @@
 
 Basierend auf dieser Analyse, hier sind **3 vielversprechende Richtungen** für Ihre Forschung:
 
-### Angle 1: Verhaltensökonomische Analyse der Innovationsreaktion von Unternehmen im EU ETS
-**Gap addressed:** Gap 1 (Heterogene Auswirkungen auf Innovation), Gap 2 (Verhaltensökonomische Perspektiven)
-**Novel contribution:** Dieses Projekt würde die Lücke schließen, indem es untersucht, wie verhaltensökonomische Faktoren (z.B. Framing von Kohlenstoffpreisen als Kosten vs. Investitionsanreiz, Verlustaversion bei Allokationsentscheidungen) die Innovationsbereitschaft und Dekarbonisierungsstrategien von Unternehmen in verschiedenen Sektoren des EU ETS beeinflussen.
-**Why promising:** Die Integration verhaltensökonomischer Erkenntnisse kann zu einem differenzierteren Verständnis der Unternehmensreaktionen führen und Politikern helfen, Anreize effektiver zu gestalten.
-**Feasibility:** 🟢 High - bestehende Methoden aus der Verhaltensökonomie und Ökonometrie können adaptiert werden.
+### Angle 1: Vergleichende Analyse der Auswirkungen von Kohlenstoffpreisvolatilität auf grüne Investitionen im EU ETS und China ETS
+**Gap addressed:** Regionale und vergleichende Analyse (Gap 1), Langfristige Anpassungsstrategien (Gap 3), Temporal Gaps (EU ETS Reformen).
+**Novel contribution:** Diese Studie würde die weit verbreiteten Erkenntnisse über die negativen Auswirkungen der Volatilität (Trend 2) in einem vergleichenden Rahmen auf zwei der größten und unterschiedlichsten Kohlenstoffmärkte anwenden. Sie würde nicht nur die Volatilitätsfaktoren vergleichen, sondern auch untersuchen, wie unterschiedliche regulatorische Rahmenbedingungen (z.B. MSR im EU ETS vs. staatliche Eingriffe in China) und Unternehmensgovernance-Strukturen diese Auswirkungen moderieren.
+**Why promising:** Die Relevanz ist hoch, da die Preisvolatilität ein Kernproblem für Investitionssicherheit darstellt. Ein Vergleich würde übertragbare Erkenntnisse für das Design und Management von ETS liefern.
+**Feasibility:** 🟡 Medium - erfordert Zugang zu detaillierten Unternehmens- und Marktdaten aus beiden Regionen.
 
 **Proposed approach:**
-1.  Entwicklung eines theoretischen Modells, das verhaltensökonomische Hypothesen zur Innovationsreaktion unter Kohlenstoffpreisen aufstellt.
-2.  Durchführung von Umfragen oder experimentellen Studien mit Managern von ETS-Unternehmen, um Verhaltensmuster zu identifizieren.
-3.  Empirische Analyse von firmenspezifischen Daten (z.B. F&E-Investitionen, Patentanmeldungen) unter Berücksichtigung von Verhaltensvariablen (z.B. Risikobereitschaft, strategische Ausrichtung).
-
-**Expected contribution:** Ein tieferes Verständnis der nicht-rationalen Faktoren, die grüne Innovationen im Rahmen des ETS beeinflussen, und Empfehlungen für verhaltensinformierte Policy-Designs.
+1.  Identifizierung geeigneter Sektoren und Unternehmen in der EU und China, für die vergleichbare Daten verfügbar sind.
+2.  Entwicklung eines ökonometrischen Modells zur Schätzung des Einflusses der Kohlenstoffpreisvolatilität auf grüne Investitionen, unter Berücksichtigung von Kontrollvariablen (z.B. Unternehmensgröße, Finanzierungsstruktur, Marktbedingungen).
+3.  Integration von Interaktionstermen, die die Rolle von länderspezifischen Regulierungs- und Governance-Merkmalen als Moderatoren untersuchen.
+**Expected contribution:** Erkenntnisse darüber, welche ETS-Designmerkmale und Unternehmensstrategien am effektivsten sind, um die negativen Auswirkungen der Kohlenstoffpreisvolatilität auf grüne Investitionen zu mindern, mit direkten Implikationen für politische Entscheidungsträger und Unternehmen.
 
 ---
 
-### Angle 2: Vergleichende Analyse der Innovations- und Wettbewerbsfähigkeitseffekte zwischen EU ETS und China ETS
-**Gap addressed:** Gap 1 (Heterogene Auswirkungen auf Innovation), Gap 3 (Vergleichende Analyse)
-**Novel contribution:** Diese Studie würde einen direkten Vergleich der Innovations- und Wettbewerbsfähigkeitseffekte zwischen dem reifen EU ETS und dem aufstrebenden China ETS ziehen. Dabei würden Unterschiede in den Designmerkmalen (z.B. Allokationsmethoden, Preiskontrollmechanismen) und nationalen Kontexten (z.B. staatliche Industriepolitik, Regulierung) explizit berücksichtigt.
-**Why promising:** Bietet wertvolle Lehren für die Optimierung bestehender und die Gestaltung zukünftiger Kohlenstoffmärkte, insbesondere im Hinblick auf die Balance zwischen Emissionsreduktion und wirtschaftlicher Entwicklung.
-**Feasibility:** 🟡 Medium - Datenerhebung für China kann herausfordernd sein, aber zunehmend verfügbar.
+### Angle 2: Sozioökonomische Auswirkungen des EU ETS2 (Gebäude & Verkehr) auf Haushalte und Verteilungsgerechtigkeit
+**Gap addressed:** Sozioökonomische und Equity-Aspekte (Gap 2), Temporal Gaps (EU ETS Reformen).
+**Novel contribution:** Mit der Einführung des ETS2 für Gebäude und Verkehr in der EU wird der Kohlenstoffpreis direkt Haushalte und kleinere Unternehmen betreffen. Diese Studie würde die erwarteten Verteilungseffekte auf verschiedene Einkommensgruppen, potenzielle Effekte der Energiearmut und die gesellschaftliche Akzeptanz dieses neuen Politikinstruments untersuchen. Sie könnte auch die Rolle von Flankierungsmaßnahmen (z.B. Sozialfonds) bewerten.
+**Why promising:** Dies ist ein hochaktuelles und politisch sensibles Thema, das entscheidend für die langfristige Legitimität und Wirksamkeit des EU ETS ist.
+**Feasibility:** 🟢 High - Methoden aus der Verteilungsökonomie und Soziologie sind etabliert.
 
 **Proposed approach:**
-1.  Entwicklung eines analytischen Rahmens zur Bewertung der Innovations- und Wettbewerbsfähigkeitseffekte von ETS-Systemen.
-2.  Sammlung und Analyse von Sektor- und Firmendaten aus beiden Systemen (z.B. Emissionen, Produktion, Investitionen, Handelsergebnisse).
-3.  Anwendung von Matching- oder Difference-in-Differences-Methoden, um vergleichbare Unternehmen in den beiden Systemen zu analysieren.
-
-**Expected contribution:** Identifizierung von Best Practices und Designprinzipien, die Innovationsanreize in Kohlenstoffmärkten über verschiedene Entwicklungsstadien und politische Kontexte hinweg optimieren.
+1.  Modellierung der direkten und indirekten Kosten des ETS2 für Haushalte unterschiedlicher Einkommensklassen und Wohnsituationen.
+2.  Analyse der Auswirkungen auf die Energiearmut und Identifizierung besonders betroffener Gruppen.
+3.  Qualitative Erhebungen (Umfragen, Fokusgruppen) zur Wahrnehmung und Akzeptanz des ETS2 und der begleitenden sozialen Maßnahmen durch die Bevölkerung.
+**Expected contribution:** Eine umfassende Bewertung der sozialen Auswirkungen des ETS2, die politische Entscheidungsträger bei der Gestaltung gerechter und akzeptierter Klimapolitiken unterstützt.
 
 ---
 
-### Angle 3: Die Rolle von KI und Big Data bei der Verbesserung der Marktstabilität und Effizienz von Kohlenstoffmärkten
-**Gap addressed:** Methodologische Lücken (Untergenutzte Methoden), Temporale Lücken (Technologische Limitationen)
-**Novel contribution:** Dies würde untersuchen, wie fortschrittliche Analysetechniken (KI/ML) und die Nutzung von Big Data (z.B. Echtzeit-Emissionsdaten, Satellitenbilder, Finanzmarktinformationen) die Transparenz, Vorhersagbarkeit und Effizienz von Kohlenstoffmärkten verbessern können.
-**Why promising:** Angesichts der zunehmenden Datenverfügbarkeit und der Fortschritte in KI/ML besteht ein enormes Potenzial, die Funktionsweise von Kohlenstoffmärkten zu optimieren und politische Entscheidungen besser zu unterstützen.
-**Feasibility:** 🟢 High - die Technologien sind vorhanden, es bedarf der Anwendung und Validierung im spezifischen Kontext.
+### Angle 3: Die Rolle von Carbon Pricing bei der Förderung disruptiver Klimaschutztechnologien
+**Gap addressed:** Integration von Carbon Pricing mit neuen Klimaschutztechnologien (Gap 4), Methodological Opportunities (Sektorspezifische Analyse).
+**Novel contribution:** Anstatt "grüne Innovation" allgemein zu betrachten, würde diese Studie den Einfluss von Kohlenstoffpreisen (und ihrer Interaktion mit anderen Politikmaßnahmen) auf die Entwicklung und Kommerzialisierung spezifischer, disruptiver Klimaschutztechnologien untersuchen (z.B. grüner Wasserstoff, Direct Air Capture, fortschrittliche Batterien). Es würde analysiert, wie Kohlenstoffpreise Anreize für F&E, Pilotprojekte und Skalierung in diesen Nischenmärkten schaffen oder welche Barrieren bestehen.
+**Why promising:** Dies adressiert eine kritische Lücke in der Forschung, die für das Erreichen anspruchsvoller Klimaziele unerlässlich ist. Es verbindet Makroökonomie mit technologischen Entwicklungen.
+**Feasibility:** 🟡 Medium - erfordert sektorspezifisches Wissen und ggf. Zugang zu Daten von Start-ups oder spezialisierten Unternehmen.
 
 **Proposed approach:**
-1.  Evaluierung bestehender KI/ML-Modelle für Finanzmarktprognosen und deren Anpassung an die Spezifika von Kohlenstoffpreisen.
-2.  Entwicklung von Prototypen für Überwachungs- und Prognosesysteme, die verschiedene Big-Data-Quellen integrieren.
-3.  Simulation der Auswirkungen von KI-gestützten Entscheidungsunterstützungssystemen auf die Marktstabilität und die Effizienz der Emissionsreduktion.
-
-**Expected contribution:** Neue Tools und Methoden zur Verbesserung der Governance und des Managements von Kohlenstoffmärkten, die zu stabileren Preisen und effektiveren Emissionsreduktionen führen können.
+1.  Auswahl von 2-3 disruptiven Klimaschutztechnologien, die für eine detaillierte Analyse geeignet sind.
+2.  Analyse des Lebenszyklus dieser Technologien und der Rolle von Kohlenstoffpreisen in verschiedenen Phasen (F&E, Demonstration, Kommerzialisierung).
+3.  Qualitative Fallstudien von Unternehmen, die in diesen Bereichen tätig sind, um die Wirkung von Kohlenstoffpreisen und anderen Politikmaßnahmen auf ihre Investitionsentscheidungen zu verstehen.
+**Expected contribution:** Detaillierte Erkenntnisse darüber, wie Kohlenstoffpreise spezifische, bahnbrechende Technologien am besten fördern können, mit Empfehlungen für Politik und Industrie.
 
 ---
 
 ## 9. Risk Assessment
 
 ### Low-Risk Opportunities (Safe bets)
-1.  **Replikation und Erweiterung von Paper 1:** Eine Replikation der Analyse der EU ETS-Auswirkungen mit Fokus auf eine spezifische sektorale Erweiterung oder die Integration aktuellerer Daten bis 2024. Dies ist ein inkrementeller, aber solider Beitrag.
-2.  **Detaillierte Analyse der Auswirkungen des "Fit for 55"-Pakets auf den Gebäudesektor:** Eine zeitnahe und thematisch fokussierte Studie zu einer neuen Politik, mit klaren Datenquellen und einer hohen Relevanz für die aktuelle Politikdebatte.
+1.  **Replikation der Unternehmensperspektiven zum EU ETS (Angle 1, Teilaspekt "EU-Fokus"):** Eine Aktualisierung der Studie von Brewer (P1) ist eine solide, inkrementelle Forschung, die auf etablierten Methoden aufbaut.
+2.  **Erweiterung der China-Studien auf spezifische Innovationstypen (Angle 3, Teilaspekt "Differenzierung"):** Dies ist eine logische Weiterentwicklung des dominierenden Forschungstrends.
 
 ### High-Risk, High-Reward Opportunities
-1.  **Integration von Quantencomputing für Kohlenstoffmarkt-Modellierung:** Sehr neuartiger Ansatz, der potenziell bahnbrechende Prognosefähigkeiten ermöglichen könnte, aber erfordert erhebliche Forschung in der Methodik selbst.
-2.  **Entwicklung eines globalen, interaktiven ETS-Simulationsmodells mit verhaltensökonomischen Agenten:** Extrem komplex, erfordert umfangreiche Daten und Modellierungskompetenzen, könnte aber ein umfassendes Verständnis der globalen Kohlenstoffmärkte liefern.
+1.  **Vergleichende Analyse der Auswirkungen von Kohlenstoffpreisvolatilität (Angle 1):** Hoher Aufwand bei der Datenbeschaffung und Methodik für einen internationalen Vergleich, aber potenziell sehr hohe Auswirkungen auf das ETS-Design.
+2.  **Sozioökonomische Auswirkungen des EU ETS2 (Angle 2):** Politisch sehr sensibel und erfordert eine sorgfältige Methodik und Kommunikation, könnte aber einen großen Beitrag zur Gestaltung gerechter Klimapolitik leisten.
+3.  **Rolle von Carbon Pricing bei disruptiven Technologien (Angle 3):** Erfordert interdisziplinäres Wissen und möglicherweise Zugang zu Daten aus neuen/nischen Industrien, hat aber das Potenzial, die Debatte über die Rolle von Marktmechanismen bei der technologischen Transformation zu prägen.
 
 ---
 
 ## 10. Next Steps Recommendations
 
 **Immediate actions:**
-1.  [ ] Lesen Sie diese 3 Must-Read-Papers in der Tiefe: [Klimko, Hasprová (2025) – falls verfügbar, ansonsten ähnliche aktuelle EU ETS-Evaluierungsstudien], [Eine aktuelle Studie zum China ETS], [Ein grundlegendes Werk zur verhaltensökonomischen Umweltpolitik].
-2.  [ ] Erkunden Sie die Lücke bezüglich **Innovationsreaktionen auf Unternehmensebene** weiter – suchen Sie nach verwandten Arbeiten in der Innovationsökonomie und der Umweltökonomie.
-3.  [ ] Entwerfen Sie eine erste Forschungsfrage basierend auf **Angle 1** (Verhaltensökonomische Analyse der Innovationsreaktion).
+1.  [ ] Lesen Sie diese 3 Must-Read-Papiere in die Tiefe:
+    *   Brewer (2018) [DOI: 10.4324/9781315065816-11] – für die Ausgangsperspektive der Unternehmen.
+    *   Kim & Shin (2024) [DOI: 10.1016/j.jenvman.2023.119799] – für die Methodik der Volatilitätsanalyse.
+    *   Yang et al. (2024) [DOI: 10.1016/j.jclepro.2023.140413] – als Beispiel für die aktuelle China-Forschung.
+2.  [ ] Erforschen Sie [Gap 1: Regionale und Vergleichende Analyse] weiter – suchen Sie nach verwandten Arbeiten zu den jüngsten EU ETS Reformen (insbesondere "Fit for 55" und ETS2).
+3.  [ ] Entwerfen Sie eine erste Forschungsfrage basierend auf [Angle 1].
 
 **Short-term (1-2 weeks):**
-1.  [ ] Testen Sie die Machbarkeit der Datenerhebung für firmenspezifische Innovationsdaten im EU ETS-Kontext.
-2.  [ ] Identifizieren Sie potenzielle Kollaborationspartner mit Expertise in Verhaltensökonomie oder detaillierten Kenntnissen des China ETS.
-3.  [ ] Verfassen Sie einen einseitigen Forschungsvorschlag für **Angle 2** (Vergleichende Analyse EU ETS vs. China ETS).
+1.  [ ] Testen Sie die Machbarkeit der Datenbeschaffung für eine vergleichende Analyse (z.B. Verfügbarkeit von Unternehmensdaten für EU-Länder im Kontext des ETS).
+2.  [ ] Identifizieren Sie potenzielle Kollaborationspartner mit Expertise in der Verteilungsanalyse oder spezifischen Klimaschutztechnologien.
+3.  [ ] Verfassen Sie einen 1-seitigen Forschungsvorschlag für [Angle 2].
 
 **Medium-term (1-2 months):**
-1.  [ ] Entwerfen Sie eine Pilotstudie für die verhaltensökonomische Analyse (z.B. ein kleines Experiment oder eine Umfrage).
-2.  [ ] Beantragen Sie Zugang zu relevanten firmenspezifischen Datenbanken oder Handelsregistern (falls erforderlich).
-3.  [ ] Präsentieren Sie erste Ideen zu Angle 1 und Angle 2 Ihrem Betreuer/Kollegen für Feedback.
+1.  [ ] Entwerfen Sie eine Pilotstudie für [Gap 2: Sozioökonomische Aspekte].
+2.  [ ] Beantragen Sie Zugang zu relevanten Mikrodaten, falls erforderlich (z.B. Eurostat, nationale Statistikämter).
+3.  [ ] Präsentieren Sie erste Ideen Ihrem Betreuer/Kollegenkreis für Feedback.
 
 ---
 
 ## Confidence Assessment
 
-**Gap analysis confidence:** 🟢 High (basierend auf der Interpretation der bereitgestellten Zusammenfassungen und des allgemeinen Verständnisses des Forschungsfeldes)
-**Trend identification:** 🟡 Medium (begrenzt auf die expliziten Hinweise in den Zusammenfassungen und allgemeines Wissen über die jüngsten Entwicklungen im Feld)
-**Novel angle viability:** 🟢 High (baut auf etablierten Forschungsansätzen auf, füllt aber spezifische, bisher wenig adressierte Lücken)
+**Gap analysis confidence:** 🟢 High (basierend auf der klaren Dominanz bestimmter Themen und regionaler Schwerpunkte in den 32 analysierten Papieren).
+**Trend identification:** 🟢 High (die Häufigkeit der Publikationen von 2024 zu bestimmten Themen ist ein starker Indikator).
+**Novel angle viability:** 🟢 High (die vorgeschlagenen Winkel bauen auf identifizierten Lücken und Trends auf und sind methodisch umsetzbar).
 
 ---
 

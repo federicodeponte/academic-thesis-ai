@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ABOUTME: Citation validation utility to detect hallucinated/invalid citations
-ABOUTME: Uses CrossRef API to verify DOIs and sanity checks for author names
+ABOUTME: Uses CrossRef API to verify DOIs, URL status checks, and metadata quality validation
 """
 
 import json
@@ -10,6 +10,7 @@ import requests
 from pathlib import Path
 from typing import List, Dict, Tuple, Optional
 from dataclasses import dataclass
+from urllib.parse import urlparse
 
 
 @dataclass
@@ -88,6 +89,92 @@ class CitationValidator:
             if re.search(r'([A-Z])\.\s*\1\.\s*\1\.', author):
                 issues.append(f"Repetitive letters: '{author}'")
 
+            # Pattern 5: Domain name as author (NEW - Day 10)
+            if re.search(r'\.(com|org|gov|edu|net|io|ai|co\.uk)(:443)?$', author, re.IGNORECASE):
+                issues.append(f"Domain name as author: '{author}'")
+
+        return issues
+
+    def validate_url_status(self, url: str) -> Tuple[Optional[int], str]:
+        """
+        Check HTTP status of URL.
+
+        Args:
+            url: URL to validate
+
+        Returns:
+            Tuple of (status_code, error_message)
+            - status_code: HTTP status code (200, 403, 404, etc.) or None if error
+            - error_message: Error description if request failed
+        """
+        if not url:
+            return None, "No URL provided"
+
+        try:
+            response = requests.head(
+                url,
+                timeout=self.timeout,
+                allow_redirects=True,
+                headers={'User-Agent': 'AcademicThesisAI/1.0 Citation Validator'}
+            )
+
+            # Some servers block HEAD, try GET
+            if response.status_code == 405:
+                response = requests.get(url, timeout=self.timeout, allow_redirects=True)
+
+            return response.status_code, ""
+
+        except requests.exceptions.Timeout:
+            return None, "Timeout"
+        except requests.exceptions.ConnectionError:
+            return None, "Connection failed"
+        except requests.exceptions.RequestException as e:
+            return None, f"Request error: {str(e)[:50]}"
+
+    def check_metadata_quality(self, citation: Dict) -> List[str]:
+        """
+        Check for suspicious metadata patterns.
+
+        Returns:
+            List of issues found (empty if no issues)
+        """
+        issues = []
+        title = citation.get('title', '')
+        authors = citation.get('authors', [])
+        url = citation.get('url', '')
+        year = citation.get('year', 0)
+
+        # Check 1: Title is domain name
+        domain_pattern = r'^[a-zA-Z0-9.-]+\.(com|org|gov|edu|net|io|ai|co\.uk)(:443)?$'
+        if re.match(domain_pattern, title, re.IGNORECASE):
+            issues.append(f"Domain name as title: '{title}'")
+
+        # Check 2: Author is same as title (domain repetition)
+        if authors and title and authors[0].strip().lower() == title.strip().lower():
+            issues.append(f"Author duplicates title: '{authors[0]}'")
+
+        # Check 3: URL contains error keywords
+        error_keywords = ['error', '403', '404', '500', '503', 'not-found', 'forbidden']
+        if url and any(keyword in url.lower() for keyword in error_keywords):
+            issues.append(f"URL contains error keyword: '{url}'")
+
+        # Check 4: Year out of reasonable range
+        if year and (year < 1990 or year > 2026):
+            issues.append(f"Year out of range: {year}")
+
+        # Check 5: Empty or placeholder titles
+        placeholder_titles = [
+            'untitled',
+            'no title',
+            'unknown',
+            '[title]',
+            'n/a',
+            'article',
+            'document'
+        ]
+        if title.lower().strip() in placeholder_titles:
+            issues.append(f"Placeholder title: '{title}'")
+
         return issues
 
     def validate_citation(self, citation: Dict) -> List[ValidationIssue]:
@@ -160,6 +247,41 @@ class CitationValidator:
                     citation_text=cite_text
                 ))
 
+        # Check 4: Metadata quality (NEW - Day 10)
+        metadata_issues = self.check_metadata_quality(citation)
+        for issue in metadata_issues:
+            issues.append(ValidationIssue(
+                citation_id=cite_id,
+                severity='critical',
+                issue_type='invalid_metadata',
+                message=issue,
+                citation_text=cite_text
+            ))
+
+        # Check 5: URL HTTP status (NEW - Day 10)
+        url = citation.get('url', '')
+        if url:
+            status_code, error_msg = self.validate_url_status(url)
+
+            if status_code and status_code >= 400:
+                # 4xx or 5xx errors are critical
+                issues.append(ValidationIssue(
+                    citation_id=cite_id,
+                    severity='critical',
+                    issue_type='invalid_url',
+                    message=f"URL returns HTTP {status_code}: {url}",
+                    citation_text=cite_text
+                ))
+            elif error_msg:
+                # Network errors are warnings (might be temporary)
+                issues.append(ValidationIssue(
+                    citation_id=cite_id,
+                    severity='warning',
+                    issue_type='url_check_failed',
+                    message=f"Could not verify URL ({error_msg}): {url}",
+                    citation_text=cite_text
+                ))
+
         return issues
 
     def validate_database(self, database_path: Path) -> Tuple[List[ValidationIssue], Dict]:
@@ -192,6 +314,8 @@ class CitationValidator:
             'warnings': sum(1 for i in all_issues if i.severity == 'warning'),
             'invalid_dois': sum(1 for i in all_issues if i.issue_type == 'invalid_doi'),
             'invalid_authors': sum(1 for i in all_issues if i.issue_type == 'invalid_author'),
+            'invalid_urls': sum(1 for i in all_issues if i.issue_type == 'invalid_url'),
+            'invalid_metadata': sum(1 for i in all_issues if i.issue_type == 'invalid_metadata'),
         }
 
         return all_issues, stats

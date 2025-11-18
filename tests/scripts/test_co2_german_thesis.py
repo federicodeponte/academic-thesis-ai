@@ -309,6 +309,21 @@ def main():
     print(f"\n✅ Zitatdatenbank erstellt: {dedup_stats['final_count']} eindeutige Zitate")
     print(f"📄 Gespeichert in: {citation_db_path}")
 
+    # === DAY 10: CITATION QUALITY FILTERING ===
+    print(f"\n{'='*80}")
+    print("🔍 CITATION QUALITY FILTERING (Day 10)")
+    print(f"{'='*80}")
+    from utils.citation_quality_filter import CitationQualityFilter
+    filter_obj = CitationQualityFilter(strict_mode=True)
+    filter_stats = filter_obj.filter_database(citation_db_path, citation_db_path)
+    filter_report = filter_obj.generate_report(filter_stats, "CO2 German Thesis")
+    print(filter_report)
+
+    # Reload filtered database
+    citation_database = load_citation_database(citation_db_path)
+    print(f"✅ Filtered database reloaded: {len(citation_database.citations)} clean citations")
+    # === END DAY 10 FILTERING ===
+
     # Prepare citation database summary for Crafters
     # FIXED (Bug #12): Show ALL citations explicitly to prevent hallucination
     citation_summary = f"\n\n## ZITATDATENBANK\n\nSie haben Zugriff auf {len(citation_database.citations)} Zitate. Verwenden Sie Zitat-IDs (cite_001, cite_002, etc.) statt Inline-Zitate.\n\n"

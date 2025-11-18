@@ -268,6 +268,21 @@ def main():
     save_citation_database(citation_database, citation_db_path)
     print(f"✅ Citation database saved to: {citation_db_path}")
 
+    # === DAY 10: CITATION QUALITY FILTERING ===
+    print(f"\n{'='*80}")
+    print("🔍 CITATION QUALITY FILTERING (Day 10)")
+    print(f"{'='*80}")
+    from utils.citation_quality_filter import CitationQualityFilter
+    filter_obj = CitationQualityFilter(strict_mode=True)
+    filter_stats = filter_obj.filter_database(citation_db_path, citation_db_path)
+    filter_report = filter_obj.generate_report(filter_stats, "AI Pricing Thesis")
+    print(filter_report)
+
+    # Reload filtered database
+    citation_database = load_citation_database(citation_db_path)
+    print(f"✅ Filtered database reloaded: {len(citation_database.citations)} clean citations")
+    # === END DAY 10 FILTERING ===
+
     # Prepare citation summary for Crafters
     # FIXED (Bug #12): Show ALL citations explicitly to prevent hallucination
     citation_summary = f"\n\n## CITATION DATABASE\n\nYou have access to {len(citation_database.citations)} citations. Use citation IDs (cite_001, cite_002, etc.) instead of inline citations.\n\n"

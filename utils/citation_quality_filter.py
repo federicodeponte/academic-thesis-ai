@@ -120,6 +120,10 @@ class CitationQualityFilter:
         # Update database with filtered citations
         data['citations'] = filtered_citations
 
+        # CRITICAL: Update metadata citation count to match filtered count
+        if 'metadata' in data:
+            data['metadata']['citation_count'] = len(filtered_citations)
+
         # Save filtered database
         if output_path is None:
             output_path = database_path

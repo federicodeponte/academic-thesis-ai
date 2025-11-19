@@ -20,7 +20,7 @@ from tests.test_utils import setup_model, run_agent, rate_limit_delay, research_
 from tests.validators import Section, validate_paper_sections
 from utils.citation_manager import extract_citations_from_text
 from utils.citation_compiler import CitationCompiler
-from utils.citation_database import save_citation_database
+from utils.citation_database import save_citation_database, load_citation_database
 from utils.text_utils import smart_truncate
 from utils.abstract_generator import generate_abstract_for_thesis
 from utils.output_sanitizer import sanitize_enhanced_file

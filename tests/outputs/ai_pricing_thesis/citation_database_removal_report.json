@@ -1,0 +1,454 @@
+{
+  "stats": {
+    "total_original": 56,
+    "total_filtered": 31,
+    "total_removed": 25,
+    "removal_reasons": {
+      "invalid_url": 7,
+      "invalid_author": 14,
+      "invalid_doi": 3,
+      "invalid_metadata": 1
+    }
+  },
+  "removed_citations": [
+    {
+      "citation": {
+        "id": "cite_002",
+        "authors": [
+          "Luria",
+          "Grybos"
+        ],
+        "year": 2025,
+        "title": "Policy Considerations for Socially Interactive AI Agents: A Systematic Literature Review",
+        "source_type": "report",
+        "language": "english",
+        "publisher": "Elsevier BV",
+        "doi": "10.2139/ssrn.5375608",
+        "url": "https://doi.org/10.2139/ssrn.5375608",
+        "api_source": "Crossref"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.2139/ssrn.5375608",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_004",
+        "authors": [
+          "Ravindran"
+        ],
+        "year": 2025,
+        "title": "Overview — AI Value Creation",
+        "source_type": "book",
+        "language": "english",
+        "journal": "Data Strategy and AI Value Creation",
+        "publisher": "WORLD SCIENTIFIC",
+        "pages": "115-120",
+        "doi": "10.1142/9789819800858_0008",
+        "url": "https://doi.org/10.1142/9789819800858_0008",
+        "api_source": "Crossref"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1142/9789819800858_0008",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_007",
+        "authors": [
+          "mckinsey.com"
+        ],
+        "year": 2025,
+        "title": "Source",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.mckinsey.com/industries/software-and-services/our-insights/upgrading-software-business-models-to-thrive-in-the-ai-era",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'mckinsey.com'",
+      "issues": 2
+    },
+    {
+      "citation": {
+        "id": "cite_008",
+        "authors": [
+          "Simon Sharwood"
+        ],
+        "year": 2025,
+        "title": "AI pricing currently in a state of ‘pandemonium’ - Gartner • The Register",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.theregister.com/2025/09/10/ai_software_licensing_immature/",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "URL returns HTTP 403: https://www.theregister.com/2025/09/10/ai_software_licensing_immature/",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_009",
+        "authors": [
+          "bcg.com"
+        ],
+        "year": 2024,
+        "title": "How Vietnamese Companies Can Stay Ahead",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.bcg.com/ja-jp/publications/2024/vietnam-leading-with-genai-ai-how-vietnamese-companies-can-stay-ahead",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'bcg.com'; URL returns HTTP 403: https://www.bcg.com/ja-jp/publications/2024/vietnam-leading-with-genai-ai-how-vietnamese-companies-can-stay-ahead",
+      "issues": 2
+    },
+    {
+      "citation": {
+        "id": "cite_010",
+        "authors": [
+          "oecd.ai"
+        ],
+        "year": 2025,
+        "title": "AI Principles Overview - OECD.AI",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://oecd.ai/en/ai-principles",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'oecd.ai'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_012",
+        "authors": [
+          "nvlpubs.nist.gov"
+        ],
+        "year": 2025,
+        "title": "Nist.Ai.100 1.Pdf",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'nvlpubs.nist.gov'; URL returns HTTP 404: https://nvlpubs.nist.gov/nistpubs/ai/nist.ai.100-1.pdf",
+      "issues": 2
+    },
+    {
+      "citation": {
+        "id": "cite_015",
+        "authors": [
+          "Robert",
+          "Mini"
+        ],
+        "year": 2025,
+        "title": "Token Economics",
+        "source_type": "report",
+        "language": "english",
+        "publisher": "Elsevier BV",
+        "doi": "10.2139/ssrn.5135097",
+        "url": "https://doi.org/10.2139/ssrn.5135097",
+        "api_source": "Crossref"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.2139/ssrn.5135097",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_017",
+        "authors": [
+          "Delfani",
+          "Pappas"
+        ],
+        "year": 2024,
+        "title": "Optimizing Information Freshness in Constrained IoT Systems: A Token-Based Approach",
+        "source_type": "report",
+        "language": "english",
+        "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+        "doi": "10.36227/techrxiv.172054724.49267481/v1",
+        "url": "https://doi.org/10.36227/techrxiv.172054724.49267481/v1",
+        "api_source": "Crossref"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.36227/techrxiv.172054724.49267481/v1",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_019",
+        "authors": [
+          "gartner.com"
+        ],
+        "year": 2025,
+        "title": "gartner.com",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.gartner.com/en/articles/ai-pricing-tips-control-costs-effectively",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'gartner.com'; Domain name as title: 'gartner.com'; Author duplicates title: 'gartner.com'",
+      "issues": 4
+    },
+    {
+      "citation": {
+        "id": "cite_024",
+        "authors": [
+          "Schlechtinger",
+          "Kosack",
+          "Paulheim",
+          "Fetzer",
+          "Krause"
+        ],
+        "year": 2023,
+        "title": "The Price of Algorithmic Pricing: Investigating Collusion in a Market Simulation with AI Agents",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Adaptive Agents and Multi-Agent Systems",
+        "doi": "10.5555/3545946.3599065",
+        "url": "https://doi.org/10.5555/3545946.3599065",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "DOI not found: 10.5555/3545946.3599065; URL returns HTTP 404: https://doi.org/10.5555/3545946.3599065",
+      "issues": 2
+    },
+    {
+      "citation": {
+        "id": "cite_029",
+        "authors": [
+          "revsure.ai"
+        ],
+        "year": 2025,
+        "title": "Agentic AI Pricing Models: Redefining Value and Autonomy in Enterprise Software",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://revsure.ai/newsletter/agentic-ai-pricing-models",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'revsure.ai'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_030",
+        "authors": [
+          "oecd.org"
+        ],
+        "year": 2025,
+        "title": "oecd.org",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.oecd.org/en/publications/addressing-the-tax-challenges-of-the-digital-economy_9789264218789-en.html",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'oecd.org'; Domain name as title: 'oecd.org'; Author duplicates title: 'oecd.org'",
+      "issues": 4
+    },
+    {
+      "citation": {
+        "id": "cite_033",
+        "authors": [
+          "researchgate.net"
+        ],
+        "year": 2025,
+        "title": "researchgate.net",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.researchgate.net/publication/373858995_Research_on_Price-Based_Autonomous_Group_Robot_Resource_Allocation_Strategy_in_Emergency_Scenarios",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'researchgate.net'; Domain name as title: 'researchgate.net'; Author duplicates title: 'researchgate.net'",
+      "issues": 4
+    },
+    {
+      "citation": {
+        "id": "cite_038",
+        "authors": [
+          "simon-kucher.com"
+        ],
+        "year": 2025,
+        "title": "The key to AI monetization for tech companies | Simon-Kucher",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.simon-kucher.com/en/insights/key-ai-monetization-tech-companies",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'simon-kucher.com'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_039",
+        "authors": [
+          "brookings.edu"
+        ],
+        "year": 2025,
+        "title": "The effects of AI on firms and workers | Brookings",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.brookings.edu/articles/the-effects-of-ai-on-firms-and-workers/",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'brookings.edu'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_040",
+        "authors": [
+          "rand.org"
+        ],
+        "year": 2025,
+        "title": "rand.org",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.rand.org/health/projects/rethinking-social-economic-policy-systems/ai-adoption.html",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'rand.org'; Domain name as title: 'rand.org'; Author duplicates title: 'rand.org'",
+      "issues": 4
+    },
+    {
+      "citation": {
+        "id": "cite_041",
+        "authors": [
+          "Daniel Rodríguez"
+        ],
+        "year": 2025,
+        "title": "medium.com",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://medium.com/sadasant/measuring-the-real-economic-impact-of-ai-agents-3f2b4296577c",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as title: 'medium.com'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_042",
+        "authors": [
+          "Yapar",
+          "Chick",
+          "Gans"
+        ],
+        "year": 2024,
+        "title": "Conditional Approval and Value-Based Pricing for New Health Technologies",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Management Sciences",
+        "doi": "10.1287/mnsc.2022.03628",
+        "url": "https://doi.org/10.1287/mnsc.2022.03628",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1287/mnsc.2022.03628",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_045",
+        "authors": [
+          "Lu",
+          "Sun",
+          "Liu",
+          "Jiang",
+          "Yan"
+        ],
+        "year": 2025,
+        "title": "Mapping Key Nodes and Global Trends in AI and Large Language Models for Medical Education: A Bibliometric Study",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Advances in Medical Education and Practice",
+        "doi": "10.2147/AMEP.S538362",
+        "url": "https://doi.org/10.2147/AMEP.S538362",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "DOI not found: 10.2147/AMEP.S538362",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_046",
+        "authors": [
+          "knowledge.wharton.upenn.edu"
+        ],
+        "year": 2025,
+        "title": "Monetizing AI Platforms: Freemium Models, Sponsored Bots, and Beyond - Knowledge at Wharton",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://knowledge.wharton.upenn.edu/podcast/this-week-in-business/monetizing-ai-platforms-freemium-models-sponsored-bots-and-beyond/",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'knowledge.wharton.upenn.edu'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_047",
+        "authors": [
+          "ginterfaces.com"
+        ],
+        "year": 2025,
+        "title": "IT Cost Governance in the Age of AI – General Interfaces",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://ginterfaces.com/it-cost-governance-in-the-age-of-ai/",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'ginterfaces.com'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_049",
+        "authors": [
+          "Li",
+          "S'anchez-Momp'o",
+          "Farnham",
+          "Khan",
+          "Aijaz"
+        ],
+        "year": 2024,
+        "title": "Large Generative AI Models meet Open Networks for 6G: Integration, Platform, and Monetization",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "arXiv.org",
+        "doi": "10.48550/arXiv.2410.18790",
+        "url": "https://doi.org/10.48550/arXiv.2410.18790",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "DOI not found: 10.48550/arXiv.2410.18790",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_056",
+        "authors": [
+          "Liu",
+          "Vigh",
+          "Roudaut"
+        ],
+        "year": 2025,
+        "title": "Deceptive Pattern Analysis in Education Technology: Examining Manipulative and Ethical Design Practices in EdTech Platforms",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Conference on Designing Interactive Systems",
+        "doi": "10.1145/3715668.3736370",
+        "url": "https://doi.org/10.1145/3715668.3736370",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1145/3715668.3736370",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_058",
+        "authors": [
+          "wilmerhale.com"
+        ],
+        "year": 2025,
+        "title": "wilmerhale.com",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.wilmerhale.com/en/insights/blogs/wilmerhale-privacy-and-cybersecurity-law/20250313-artificial-intelligence-and-anticompetitive-agreements-in-eu-law",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'wilmerhale.com'; Domain name as title: 'wilmerhale.com'; Author duplicates title: 'wilmerhale.com'",
+      "issues": 5
+    }
+  ]
+}

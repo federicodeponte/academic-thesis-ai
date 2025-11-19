@@ -1,0 +1,535 @@
+{
+  "stats": {
+    "total_original": 53,
+    "total_filtered": 24,
+    "total_removed": 29,
+    "removal_reasons": {
+      "invalid_url": 13,
+      "invalid_metadata": 4,
+      "invalid_author": 11,
+      "generic_title": 1
+    }
+  },
+  "removed_citations": [
+    {
+      "citation": {
+        "id": "cite_003",
+        "authors": [
+          "Chen",
+          "Brockway",
+          "Few",
+          "Paavola"
+        ],
+        "year": 2024,
+        "title": "The impact of emissions trading systems on technological innovation for climate change mitigation: a systematic review",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Climate Policy",
+        "doi": "10.1080/14693062.2024.2443464",
+        "url": "https://doi.org/10.1080/14693062.2024.2443464",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1080/14693062.2024.2443464",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_006",
+        "authors": [
+          "sustainabilityperformances.eu"
+        ],
+        "year": 2024,
+        "title": "sustainabilityperformances.eu",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.sustainabilityperformances.eu/wp-content/uploads/2024/10/SPES-Deliverable-7.1_layout.pdf",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Author duplicates title: 'sustainabilityperformances.eu'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_007",
+        "authors": [
+          "umweltbundesamt.de"
+        ],
+        "year": 2024,
+        "title": "umweltbundesamt.de",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.umweltbundesamt.de/presse/pressemitteilungen/europaeischer-emissionshandel-rekordrueckgang-der",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Author duplicates title: 'umweltbundesamt.de'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_008",
+        "authors": [
+          "Zhao",
+          "Sun",
+          "Zhang"
+        ],
+        "year": 2022,
+        "title": "A Study of the Drivers of Decarbonization in the Plastics Supply Chain in the Post-COVID-19 Era",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Sustainability",
+        "doi": "10.3390/su142315858",
+        "url": "https://doi.org/10.3390/su142315858",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.3390/su142315858",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_010",
+        "authors": [
+          "mitsloan.mit.edu"
+        ],
+        "year": 2025,
+        "title": "Documents",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://mitsloan.mit.edu/shared/ods/documents?DocumentID=4110",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'mitsloan.mit.edu'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_011",
+        "authors": [
+          "researchgate.net"
+        ],
+        "year": 2025,
+        "title": "researchgate.net",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.researchgate.net/publication/309513447_Policy_interaction_between_the_EU_Emissions_Trading_System_and_the_Renewable_Energy_Directive_Author",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'researchgate.net'; Domain name as title: 'researchgate.net'; Author duplicates title: 'researchgate.net'",
+      "issues": 4
+    },
+    {
+      "citation": {
+        "id": "cite_013",
+        "authors": [
+          "mckinsey.com"
+        ],
+        "year": 2025,
+        "title": "Source",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.mckinsey.com/capabilities/sustainability/our-insights/matching-durable-carbon-removal-supply-and-demand-by-2030",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'mckinsey.com'",
+      "issues": 2
+    },
+    {
+      "citation": {
+        "id": "cite_014",
+        "authors": [
+          "oecd.org"
+        ],
+        "year": 2025,
+        "title": "oecd.org",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.oecd.org/en/publications/effective-carbon-rates-2025_a5a5d71f-en.html",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'oecd.org'; Domain name as title: 'oecd.org'; Author duplicates title: 'oecd.org'",
+      "issues": 4
+    },
+    {
+      "citation": {
+        "id": "cite_015",
+        "authors": [
+          "regulationtomorrow.com"
+        ],
+        "year": 2025,
+        "title": "regulationtomorrow.com",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.regulationtomorrow.com/france/esg-fr/european-commission-consults-on-review-of-the-ets-directive/",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'regulationtomorrow.com'; Domain name as title: 'regulationtomorrow.com'; Author duplicates title: 'regulationtomorrow.com'",
+      "issues": 4
+    },
+    {
+      "citation": {
+        "id": "cite_016",
+        "authors": [
+          "worldbank.org"
+        ],
+        "year": 2025,
+        "title": "State and Trends of Carbon Pricing 2025",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.worldbank.org/en/publication/state-and-trends-of-carbon-pricing",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'worldbank.org'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_018",
+        "authors": [
+          "Tang",
+          "Mizunoya"
+        ],
+        "year": 2024,
+        "title": "Quantitative Approaches for Analyzing the Potential Effectiveness of Vietnam’s Emissions Trading System: A Systematic Review",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Sustainability",
+        "doi": "10.3390/su16135504",
+        "url": "https://doi.org/10.3390/su16135504",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.3390/su16135504",
+      "issues": 2
+    },
+    {
+      "citation": {
+        "id": "cite_019",
+        "authors": [
+          "agora-energiewende.de"
+        ],
+        "year": 2023,
+        "title": "agora-energiewende.de",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.agora-energiewende.de/fileadmin/Projekte/2023/2023-26_DE_BEH_ETS_II/A-EW_311_BEH_ETS_II_WEB.pdf",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Author duplicates title: 'agora-energiewende.de'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_020",
+        "authors": [
+          "rpc.cfainstitute.org"
+        ],
+        "year": 2025,
+        "title": "Global Trends & Developments in Carbon Pricing",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://rpc.cfainstitute.org/research/reports/2025/global-trends-and-developments-in-carbon-pricing",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'rpc.cfainstitute.org'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_021",
+        "authors": [
+          "Barrez"
+        ],
+        "year": 2024,
+        "title": "Public acceptability of carbon pricing: unravelling the impact of revenue recycling",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Climate Policy",
+        "doi": "10.1080/14693062.2024.2376747",
+        "url": "https://doi.org/10.1080/14693062.2024.2376747",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1080/14693062.2024.2376747",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_022",
+        "authors": [
+          "Marzouk"
+        ],
+        "year": 2024,
+        "title": "Expectations for the Role of Hydrogen and Its Derivatives in Different Sectors through Analysis of the Four Energy Scenarios: IEA-STEPS, IEA-NZE, IRENA-PES, and IRENA-1.5°C",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Energies",
+        "doi": "10.3390/en17030646",
+        "url": "https://doi.org/10.3390/en17030646",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.3390/en17030646",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_023",
+        "authors": [
+          "Kanitkar",
+          "Mythri",
+          "Jayaraman"
+        ],
+        "year": 2024,
+        "title": "Equity assessment of global mitigation pathways in the IPCC Sixth Assessment Report",
+        "source_type": "journal",
+        "language": "english",
+        "doi": "10.1080/14693062.2024.2319029",
+        "url": "https://doi.org/10.1080/14693062.2024.2319029",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1080/14693062.2024.2319029",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_026",
+        "authors": [
+          "Colmer",
+          "Martin",
+          "Muûls",
+          "Wagner"
+        ],
+        "year": 2024,
+        "title": "Does Pricing Carbon Mitigate Climate Change? Firm-Level Evidence from the European Union Emissions Trading System",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "The Review of Economic Studies",
+        "doi": "10.1093/restud/rdae055",
+        "url": "https://doi.org/10.1093/restud/rdae055",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1093/restud/rdae055",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_034",
+        "authors": [
+          "Zhai",
+          "Kong"
+        ],
+        "year": 2024,
+        "title": "The Impact of Multi-Dimensional Urbanization on CO2 Emissions: Empirical Evidence from Jiangsu, China, at the County Level",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Sustainability",
+        "doi": "10.3390/su16073005",
+        "url": "https://doi.org/10.3390/su16073005",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.3390/su16073005",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_035",
+        "authors": [
+          "ww2.arb.ca.gov"
+        ],
+        "year": 2025,
+        "title": "Cap-and-Trade Program SRIA | California Air Resources Board",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://ww2.arb.ca.gov/resources/documents/cap-and-trade-program-sria",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'ww2.arb.ca.gov'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_038",
+        "authors": [
+          "Xu",
+          "Kuang",
+          "Zhai"
+        ],
+        "year": 2024,
+        "title": "Do green and low-carbon development policies affect carbon markets? Evidence from China",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Applied Economics",
+        "doi": "10.1080/00036846.2024.2364922",
+        "url": "https://doi.org/10.1080/00036846.2024.2364922",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1080/00036846.2024.2364922",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_041",
+        "authors": [
+          "Foggia",
+          "Beccarello",
+          "Arrigo"
+        ],
+        "year": 2023,
+        "title": "Assessment of the European Emissions Trading System’s Impact on Sustainable Development",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Sustainability",
+        "doi": "10.3390/su16010223",
+        "url": "https://doi.org/10.3390/su16010223",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.3390/su16010223",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_044",
+        "authors": [
+          "Hou",
+          "Hao",
+          "Du"
+        ],
+        "year": 2022,
+        "title": "Design of Public Voluntary Carbon Market Mechanism based on Crosschain and Token Economics",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "International Symposium on Blockchain and Secure Critical Infrastructure",
+        "doi": "10.1145/3494106.3528685",
+        "url": "https://doi.org/10.1145/3494106.3528685",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1145/3494106.3528685",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_047",
+        "authors": [
+          "Aman Modi",
+          "Anna Oberauer",
+          "Uday Vir Singh",
+          "Colin Ong",
+          "Jens Burchardt",
+          "Hardik Sheth"
+        ],
+        "year": 2023,
+        "title": "Benefits of Carbon Pricing to Inspire Action: Net Zero",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.bcg.com/publications/2023/benefits-of-carbon-pricing-to-inspire-net-zero",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "URL returns HTTP 403: https://www.bcg.com/publications/2023/benefits-of-carbon-pricing-to-inspire-net-zero",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_048",
+        "authors": [
+          "mdpi.com"
+        ],
+        "year": 2025,
+        "title": "mdpi.com",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.mdpi.com/2071-1050/17/21/9462",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'mdpi.com'; Domain name as title: 'mdpi.com'; Author duplicates title: 'mdpi.com'",
+      "issues": 4
+    },
+    {
+      "citation": {
+        "id": "cite_049",
+        "authors": [
+          "nist.gov"
+        ],
+        "year": 2022,
+        "title": "Greenhouse Gas Measurements Program | NIST",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.nist.gov/spo/greenhouse-gas-measurements-program",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'nist.gov'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_051",
+        "authors": [
+          "citp.ac.uk"
+        ],
+        "year": 2025,
+        "title": "citp.ac.uk",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://citp.ac.uk/publications/linking-eu-and-uk-emissions-trading-systems-why-how-and-is-it-easy-or-tough-for-the-uk-labour-government",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Author duplicates title: 'citp.ac.uk'",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_052",
+        "authors": [
+          "Gabela",
+          "Spiegel",
+          "Stepanyan",
+          "Freund",
+          "Banse",
+          "Gocht",
+          "Söder",
+          "Heidecke",
+          "Osterburg",
+          "Matthews"
+        ],
+        "year": 2024,
+        "title": "Carbon leakage in agriculture: when can a carbon border adjustment mechanism help?",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "Climate Policy",
+        "doi": "10.1080/14693062.2024.2387237",
+        "url": "https://doi.org/10.1080/14693062.2024.2387237",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1080/14693062.2024.2387237",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_053",
+        "authors": [
+          "Chaudhry"
+        ],
+        "year": 2008,
+        "title": "A Brief Study of Voluntary Carbon Markets, Recent and Future Trends with Special Focus on India",
+        "source_type": "journal",
+        "language": "english",
+        "doi": "10.2139/ssrn.1334905",
+        "url": "https://doi.org/10.2139/ssrn.1334905",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.2139/ssrn.1334905",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_054",
+        "authors": [
+          "cleanenergywire.org"
+        ],
+        "year": 2025,
+        "title": "German industry and energy emissions almost halved since introduction of EU trading system | Clean Energy Wire",
+        "source_type": "website",
+        "language": "english",
+        "url": "https://www.cleanenergywire.org/news/german-industry-and-energy-emissions-almost-halved-introduction-eu-trading-system",
+        "api_source": "Gemini Grounded"
+      },
+      "reason": "Domain name as author: 'cleanenergywire.org'",
+      "issues": 1
+    }
+  ]
+}

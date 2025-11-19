@@ -1,824 +1,362 @@
 {
   "citations": [
     {
-      "id": "cite_001",
-      "authors": [
-        "Mittal Brahmbhatt"
-      ],
-      "year": 2020,
-      "title": "Journaling: A powerful Academic Writing Learning Tool",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "International Peer Reviewed E Journal of English Language &amp; Literature Studies - ISSN: 2583-5963",
-      "publisher": "Vedant Knowledge Systems Private Limited",
-      "volume": "2",
-      "issue": "2",
-      "pages": "01-32",
-      "doi": "10.58213/ell.v2i2.23",
-      "url": "https://doi.org/10.58213/ell.v2i2.23",
-      "api_source": "Crossref"
-    },
-    {
       "id": "cite_002",
       "authors": [
-        "Albedah"
+        "Kurz"
       ],
       "year": 2025,
-      "title": "Artificial Intelligence in Language Education: A Systematic Review of Multilingual Applications, Large Language Models, and Emerging Challenges",
+      "title": "Generic Multi-Agent AI Framework for Weighted Dynamic Corridor Price Optimisation",
       "source_type": "journal",
       "language": "english",
-      "journal": "Language Teaching Research Quarterly",
-      "publisher": "EUROKD Egitm Danismanlik Group",
-      "volume": "49",
-      "pages": "247-268",
-      "doi": "10.32038/ltrq.2025.49.13",
-      "url": "https://doi.org/10.32038/ltrq.2025.49.13",
+      "journal": "Journal of Next-Generation Research 5.0",
+      "publisher": "Journal of Next-Generation Research 5.0",
+      "doi": "10.70792/jngr5.0.v1i2.65",
+      "url": "https://doi.org/10.70792/jngr5.0.v1i2.65",
       "api_source": "Crossref"
     },
     {
       "id": "cite_003",
       "authors": [
-        "Иванова"
+        "Awunkori"
       ],
-      "year": 2021,
-      "title": "Взаимоотношения «человек — алгоритм — человек» как социальная проблема и проблема для социологов. Рец. на кн.: Cathy O’Neil. Weapons of Math Destruction: How Big Data Increases Inequality and Threatens Democracy. New York: Crown Publishers, 2016",
-      "source_type": "journal",
+      "year": 2025,
+      "title": "Using Artificial Intelligence (AI) Tools to Facilitate Academic Research: A systematic Review",
+      "source_type": "conference",
       "language": "english",
-      "doi": "10.14515/MONITORING.2021.1.1900",
-      "url": "https://doi.org/10.14515/MONITORING.2021.1.1900",
-      "api_source": "Semantic Scholar"
+      "journal": "AERA 2025",
+      "publisher": "AERA",
+      "doi": "10.3102/ip.25.2195263",
+      "url": "https://doi.org/10.3102/ip.25.2195263",
+      "api_source": "Crossref"
     },
     {
       "id": "cite_004",
       "authors": [
-        "Parra Pennefather"
+        "Suryanti",
+        "Jahidin",
+        "Fadlil"
       ],
-      "year": 2023,
-      "title": "Generative AI Form and Composition",
-      "source_type": "book",
+      "year": 2024,
+      "title": "Artificial Intelligence in Education: Bibliometric and Systematic Literature Review from 2019 – 2024",
+      "source_type": "journal",
       "language": "english",
-      "journal": "Design Thinking",
-      "publisher": "Apress",
-      "pages": "181-196",
-      "doi": "10.1007/978-1-4842-9579-3_7",
-      "url": "https://doi.org/10.1007/978-1-4842-9579-3_7",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_005",
-      "authors": [
-        "Moulaison-Sandy"
-      ],
-      "year": 2025,
-      "title": "AI Technologies and Scholarly Communication",
-      "source_type": "book",
-      "language": "english",
-      "journal": "AI and Authorship in Scholarly Communication",
-      "publisher": "Routledge",
-      "pages": "30-45",
-      "doi": "10.4324/9781003570325-3",
-      "url": "https://doi.org/10.4324/9781003570325-3",
-      "api_source": "Crossref"
+      "journal": "International Education Trend Issues",
+      "doi": "10.56442/ieti.v2i2.647",
+      "url": "https://doi.org/10.56442/ieti.v2i2.647",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_006",
       "authors": [
-        "Vishwakarma"
+        "Meyer",
+        "Urbanowicz",
+        "Martin",
+        "O’Connor",
+        "Li",
+        "Peng",
+        "Bright",
+        "Tatonetti",
+        "Won",
+        "Gonzalez-Hernandez",
+        "Moore"
       ],
-      "year": 2025,
-      "title": "Designing Agent-Native Automation in n8n: A Scalable Framework Integrating AI Agents, Multi-Agent Systems, and Retrieval-Augmented Generation",
+      "year": 2023,
+      "title": "ChatGPT and large language models in academia: opportunities and challenges",
       "source_type": "journal",
       "language": "english",
-      "journal": "International Journal for Research in Applied Science and Engineering Technology",
-      "doi": "10.22214/ijraset.2025.75231",
-      "url": "https://doi.org/10.22214/ijraset.2025.75231",
+      "journal": "BioData Mining",
+      "doi": "10.1186/s13040-023-00339-9",
+      "url": "https://doi.org/10.1186/s13040-023-00339-9",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_007",
       "authors": [
-        "Li",
-        "He",
-        "Liu"
+        "Rapolu"
       ],
-      "year": 2017,
-      "title": "Topic Analysis and Influential Paper Discovery on Scientific Publications",
-      "source_type": "conference",
+      "year": 2024,
+      "title": "IMPLEMENTING CLOUD-BASED AUTOMATION TOOLS BY LEVERAGING AI AND ML FOR ENHANCED EFFICIENCY AND INNOVATION",
+      "source_type": "journal",
       "language": "english",
-      "journal": "2017 14th Web Information Systems and Applications Conference (WISA)",
-      "publisher": "IEEE",
-      "pages": "68-73",
-      "doi": "10.1109/wisa.2017.69",
-      "url": "https://doi.org/10.1109/wisa.2017.69",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_008",
-      "authors": [
-        "mckinsey.com"
-      ],
-      "year": 2025,
-      "title": "Source",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/ai-in-the-workplace-a-report-for-2025",
-      "api_source": "Gemini Grounded"
+      "journal": "Journal of Artificial Intelligence, Machine Learning and Data Science",
+      "doi": "10.51219/jaimld/naresh-kumar-rapolu/518",
+      "url": "https://doi.org/10.51219/jaimld/naresh-kumar-rapolu/518",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_009",
       "authors": [
-        "gartner.com"
+        "Jain",
+        "Deleu",
+        "Hartford",
+        "Liu",
+        "Hernandez-Garcia",
+        "Bengio"
       ],
-      "year": 2025,
-      "title": "gartner.com",
-      "source_type": "website",
+      "year": 2023,
+      "title": "GFlowNets for AI-Driven Scientific Discovery",
+      "source_type": "journal",
       "language": "english",
-      "url": "https://www.gartner.com/en/podcasts/thinkcast/generative-ai-and-education-the-short-term-risk-and-long-term-opportunities",
-      "api_source": "Gemini Grounded"
+      "journal": "Digital Discovery",
+      "doi": "10.1039/D3DD00002H",
+      "url": "https://doi.org/10.1039/D3DD00002H",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_010",
       "authors": [
-        "oecd.org"
+        "Singh",
+        "Singhania",
+        "Ranjan",
+        "Kirchenbauer",
+        "Geiping",
+        "Wen",
+        "Jain",
+        "Hans",
+        "Shu",
+        "Tomar",
+        "Goldstein",
+        "Bhatele"
       ],
-      "year": 2025,
-      "title": "oecd.org",
-      "source_type": "website",
+      "year": 2024,
+      "title": "Democratizing AI: Open-source Scalable LLM Training on GPU-based Supercomputers",
+      "source_type": "journal",
       "language": "english",
-      "url": "https://www.oecd.org/en/topics/ai-principles.html",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_011",
-      "authors": [
-        "dennison-associates.com"
-      ],
-      "year": 2025,
-      "title": "dennison-associates.com",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://www.dennison-associates.com/eu-ai-act-what-associations-need-to-know/",
-      "api_source": "Gemini Grounded"
+      "journal": "International Conference for High Performance Computing, Networking, Storage and Analysis",
+      "doi": "10.1109/SC41406.2024.00010",
+      "url": "https://doi.org/10.1109/SC41406.2024.00010",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_012",
       "authors": [
-        "bcg.com"
+        "Nasr"
       ],
       "year": 2025,
-      "title": "bcg.com",
-      "source_type": "website",
+      "title": "Generative AI and Critical Thinking in Higher Education: A Systematic Review",
+      "source_type": "conference",
       "language": "english",
-      "url": "https://www.bcg.com/publications/2024/gen-z-and-ai-in-higher-ed",
-      "api_source": "Gemini Grounded"
+      "journal": "AERA 2025",
+      "publisher": "AERA",
+      "doi": "10.3102/ip.25.2186818",
+      "url": "https://doi.org/10.3102/ip.25.2186818",
+      "api_source": "Crossref"
     },
     {
       "id": "cite_013",
       "authors": [
-        "ieee-aess.org"
+        "Onwuakor"
       ],
       "year": 2025,
-      "title": "ieee-aess.org",
-      "source_type": "website",
+      "title": "AI-Powered Research Tools for Literature Review and Scientific Discovery",
+      "source_type": "report",
       "language": "english",
-      "url": "https://ieee-aess.org/using-ai-generated-content-ieee-article-and-its-review",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_014",
-      "authors": [
-        "itsupport.ou.edu"
-      ],
-      "year": 2025,
-      "title": "ou.edu",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://itsupport.ou.edu/TDClient/30/Unified/KB/PrintArticle?ID=3408",
-      "api_source": "Gemini Grounded"
+      "publisher": "ResearchHub Technologies, Inc.",
+      "doi": "10.55277/researchhub.23t3yp02",
+      "url": "https://doi.org/10.55277/researchhub.23t3yp02",
+      "api_source": "Crossref"
     },
     {
       "id": "cite_015",
       "authors": [
-        "brookings.edu"
+        "abradley"
       ],
       "year": 2025,
-      "title": "brookings.edu",
+      "title": "Navigating the AI Frontier: Key Takeaways from Gartner’s Education Report - Ativion",
       "source_type": "website",
       "language": "english",
-      "url": "https://www.brookings.edu/articles/generative-ai-the-american-worker-and-the-future-of-work/",
+      "url": "https://www.ativion.com/navigating-the-ai-frontier-key-takeaways-from-gartners-education-report/",
       "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_016",
       "authors": [
-        "rand.org"
+        "Health Ethics &amp",
+        "Governance (HEG)"
       ],
-      "year": 2025,
-      "title": "rand.org",
+      "year": 2021,
+      "title": "Ethics and governance of artificial intelligence for health",
       "source_type": "website",
       "language": "english",
-      "url": "https://www.rand.org/pubs/research_reports/RRA4180-1.html",
+      "url": "https://www.who.int/publications/i/item/9789240029200",
       "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_017",
-      "authors": [
-        "Aydin",
-        "Karaarslan",
-        "Erenay",
-        "Bačanin"
-      ],
-      "year": 2025,
-      "title": "Generative AI in Academic Writing: A Comparison of DeepSeek, Qwen, ChatGPT, Gemini, Llama, Mistral, and Gemma",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "arXiv.org",
-      "doi": "10.48550/arXiv.2503.04765",
-      "url": "https://doi.org/10.48550/arXiv.2503.04765",
-      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_018",
       "authors": [
-        "Plale",
-        "Khan",
-        "Morales"
-      ],
-      "year": 2023,
-      "title": "Democratization of AI: Challenges of AI Cyberinfrastructure and Software Research",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "IEEE International Conference on e-Science",
-      "doi": "10.1109/e-Science58273.2023.10254950",
-      "url": "https://doi.org/10.1109/e-Science58273.2023.10254950",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_019",
-      "authors": [
-        "Mitra"
+        "digital-strategy.ec.europa.eu"
       ],
       "year": 2025,
-      "title": "Synchronization Dynamics of Heterogeneous, Collaborative Multi-Agent AI Systems",
-      "source_type": "journal",
+      "title": "European research development and deployment of AI | Shaping Europe’s digital future",
+      "source_type": "website",
       "language": "english",
-      "journal": "arXiv.org",
-      "doi": "10.48550/arXiv.2508.12314",
-      "url": "https://doi.org/10.48550/arXiv.2508.12314",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_020",
-      "authors": [
-        "Shrishail S. Patil"
-      ],
-      "year": 2024,
-      "title": "Deep Learning for Automated Code Generation: Challenges and Opportunities",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Advances in Nonlinear Variational Inequalities",
-      "publisher": "Science Research Society",
-      "volume": "27",
-      "issue": "4",
-      "pages": "247-265",
-      "doi": "10.52783/anvi.v27.1504",
-      "url": "https://doi.org/10.52783/anvi.v27.1504",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_021",
-      "authors": [
-        "Zimmermann",
-        "Bazgir",
-        "Al-Feghali",
-        "Ansari",
-        "Brinson",
-        "Yuan",
-        "Çirci",
-        "Chiu",
-        "Daelman",
-        "Evans",
-        "Gangan",
-        "George",
-        "Harb",
-        "Khalighinejad",
-        "Khan",
-        "Klawohn",
-        "Lederbauer",
-        "Mahjoubi",
-        "Mohr",
-        "Moosavi",
-        "Naik",
-        "Ozhan",
-        "Plessers",
-        "Roy",
-        "Schoppach",
-        "Schwaller",
-        "Terboven",
-        "Ueltzen",
-        "Zhu",
-        "Janssen",
-        "Li",
-        "Foster",
-        "Blaiszik"
-      ],
-      "year": 2025,
-      "title": "34 Examples of LLM Applications in Materials Science and Chemistry: Towards Automation, Assistants, Agents, and Accelerated Scientific Discovery",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "arXiv.org",
-      "doi": "10.48550/arXiv.2505.03049",
-      "url": "https://doi.org/10.48550/arXiv.2505.03049",
-      "api_source": "Semantic Scholar"
+      "url": "https://digital-strategy.ec.europa.eu/en/policies/european-ai-research",
+      "api_source": "Gemini Grounded"
     },
     {
       "id": "cite_022",
       "authors": [
-        "Granjeiro",
-        "Cury",
-        "Cury",
-        "Bueno",
-        "Sousa-Neto",
-        "Estrela"
-      ],
-      "year": 2025,
-      "title": "The Future of Scientific Writing: AI Tools, Benefits, and Ethical Implications",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Brazilian Dental Journal",
-      "doi": "10.1590/0103-644020256471",
-      "url": "https://doi.org/10.1590/0103-644020256471",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_023",
-      "authors": [
-        "Kotsis"
-      ],
-      "year": 2025,
-      "title": "Beyond Human Authorship: AI, Pedagogy, and Ethics in Academic Writing",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Journal of Contemporary Philosophical and Anthropological Studies",
-      "doi": "10.59652/jcpas.v3i3.630",
-      "url": "https://doi.org/10.59652/jcpas.v3i3.630",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_024",
-      "authors": [
-        "Gupta",
-        "Pandit"
+        "Jandildinov",
+        "Yersultanova"
       ],
       "year": 2024,
-      "title": "The future of academic publishing in India: Embracing innovations for quality and global recognition",
+      "title": "AI-ASSISTED SCHOLARLY WRITING IN EDUCATION: A SCOPING REVIEW (2019–2024)",
       "source_type": "journal",
       "language": "english",
-      "journal": "IP Indian Journal of Library Science and Information Technology",
-      "doi": "10.18231/j.ijlsit.2023.021",
-      "url": "https://doi.org/10.18231/j.ijlsit.2023.021",
+      "journal": "BULLETIN Series of Pedagogical Sciences",
+      "doi": "10.51889/2959-5762.2025.87.3.003",
+      "url": "https://doi.org/10.51889/2959-5762.2025.87.3.003",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_025",
       "authors": [
-        "Lama",
-        "Suhodolli"
+        "Akpan",
+        "Magaji",
+        "Ismail"
       ],
-      "year": 2024,
-      "title": "Challenges in mastering academic writing: a case study of English language learners at the university for business and technology",
+      "year": 2025,
+      "title": "Assessing the Multifaceted Impact of Innovative City Initiatives on Housing Affordability, Environmental Sustainability, and Social Equity in Abuja, Nigeria",
       "source_type": "journal",
       "language": "english",
-      "journal": "Edelweiss Applied Science and Technology",
-      "doi": "10.55214/25768484.v8i6.1707",
-      "url": "https://doi.org/10.55214/25768484.v8i6.1707",
+      "journal": "Global Journal of Economic and Finance Research",
+      "doi": "10.55677/gjefr/10-2025-vol02e7",
+      "url": "https://doi.org/10.55677/gjefr/10-2025-vol02e7",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_026",
       "authors": [
-        "Saxena"
+        "Ullah",
+        "Chaudhary",
+        "Awon",
+        "Bukhari"
       ],
       "year": 2025,
-      "title": "AI-Powered Virtual Shopping Assistants: Transforming the Retail Landscape",
-      "source_type": "report",
-      "language": "english",
-      "publisher": "Elsevier BV",
-      "doi": "10.2139/ssrn.5207065",
-      "url": "https://doi.org/10.2139/ssrn.5207065",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_027",
-      "authors": [
-        "Niaz",
-        "Akbar",
-        "Siddique",
-        "Jamshaid",
-        "Hassaan"
-      ],
-      "year": 2024,
-      "title": "AI FOR INCLUSIVE EDUCATIONAL GOVERNANCE AND DIGITAL EQUITY EXAMINING THE IMPACT OF AI ADOPTION AND OPEN DATA ON COMMUNITY TRUST AND POLICY EFFECTIVENESS",
+      "title": "A Corpus-Based Investigation of Linguistic Patterns in Academic Writing by Non-Native Speakers in Pakistan",
       "source_type": "journal",
       "language": "english",
-      "journal": "Contemporary Journal of Social Science Review",
-      "doi": "10.63878/cjssr.v2i04.1502",
-      "url": "https://doi.org/10.63878/cjssr.v2i04.1502",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_028",
-      "authors": [
-        "Mwangi",
-        "Mainye",
-        "Ouso",
-        "Esoh",
-        "Muraya",
-        "Mwangi",
-        "Naitore",
-        "Karega",
-        "Kibet-Rono",
-        "Musundi",
-        "Mutisya",
-        "Mwangi",
-        "Mgawe",
-        "Miruka",
-        "Kibet"
-      ],
-      "year": 2021,
-      "title": "Open Science in Kenya: Where Are We?",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Frontiers in Research Metrics and Analytics",
-      "doi": "10.3389/frma.2021.669675",
-      "url": "https://doi.org/10.3389/frma.2021.669675",
+      "journal": "ACADEMIA International Journal for Social Sciences",
+      "doi": "10.63056/acad.004.04.1028",
+      "url": "https://doi.org/10.63056/acad.004.04.1028",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_029",
       "authors": [
-        "Apu"
+        "Ahn"
       ],
-      "year": 2025,
-      "title": "AI-Driven Data Analytics and Automation: A Systematic Literature Review of Industry Applications",
+      "year": 2024,
+      "title": "The transformative impact of large language models on medical writing and publishing: current applications, challenges and future directions",
       "source_type": "journal",
       "language": "english",
-      "journal": "Strategic Data Management and Innovation",
-      "publisher": "All Academics Research Publications",
-      "volume": "2",
-      "issue": "01",
-      "pages": "21-40",
-      "doi": "10.71292/sdmi.v2i01.9",
-      "url": "https://doi.org/10.71292/sdmi.v2i01.9",
-      "api_source": "Crossref"
+      "journal": "Korean Journal of Physiology and Pharmacology",
+      "doi": "10.4196/kjpp.2024.28.5.393",
+      "url": "https://doi.org/10.4196/kjpp.2024.28.5.393",
+      "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_030",
       "authors": [
-        "Maryl",
-        "Błaszczyńska",
-        "Zalotynska",
-        "Taylor",
-        "Avanço",
-        "Balula",
-        "Buchner",
-        "Caliman",
-        "Clivaz",
-        "Costa",
-        "Franczak",
-        "Gatti",
-        "Giglia",
-        "Gingold",
-        "Jarmelo",
-        "Padez",
-        "Leão",
-        "Zlodi",
-        "Mojsak",
-        "Morka",
-        "Mosterd",
-        "Nury",
-        "Plag",
-        "Schafer",
-        "Silva",
-        "Stojanovski",
-        "Szleszyński",
-        "Szulińska",
-        "Tóth-Czifra",
-        "Wcislik",
-        "Wieneke"
+        "Judijanto",
+        "Wibowo",
+        "Putra",
+        "Pratiwi"
       ],
-      "year": 2021,
-      "title": "Future of Scholarly Communication",
+      "year": 2024,
+      "title": "Industry 4.0 and the Future of Supply Chains: A Narrative Review of Digital Integration",
       "source_type": "journal",
       "language": "english",
-      "doi": "10.5281/ZENODO.5017705",
-      "url": "https://doi.org/10.5281/ZENODO.5017705",
+      "journal": "Logistica : Journal of Logistic and Transportation",
+      "doi": "10.61978/logistica.v2i3.1056",
+      "url": "https://doi.org/10.61978/logistica.v2i3.1056",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_031",
       "authors": [
-        "Sangwa",
-        "Nsabiyumva",
-        "Ngobi",
-        "Mutabazi"
+        "Lee",
+        "Bang",
+        "Lee"
       ],
       "year": 2025,
-      "title": "Ethical AI Integration in African Higher Education: Enhancing Research Supervision, Grant Discovery, and Proposal Writing Without Compromising Academic Integrity",
+      "title": "Development of the Curriculum for Enhancing AI Literacy among First-Year University Students and Its Implementation Results in a Pre-University Program",
       "source_type": "journal",
       "language": "english",
-      "journal": "Social Science Research Network",
-      "doi": "10.2139/ssrn.5331595",
-      "url": "https://doi.org/10.2139/ssrn.5331595",
+      "journal": "Korean Association for Literacy",
+      "doi": "10.37736/kjlr.2025.06.16.3.03",
+      "url": "https://doi.org/10.37736/kjlr.2025.06.16.3.03",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_032",
       "authors": [
-        "Avron",
-        "Dershowitz",
-        "Rabinovich"
+        "Bogdanov"
       ],
-      "year": 2008,
-      "title": "Pillars of Computer Science, Essays Dedicated to Boris (Boaz) Trakhtenbrot on the Occasion of His 85th Birthday",
+      "year": 2024,
+      "title": "The Legal Regime of the AI Generated Results: Anthropocentrism vs. Transhumanism in the Field of Intellectual Property Law",
       "source_type": "journal",
       "language": "english",
-      "journal": "Pillars of Computer Science",
-      "doi": "10.1007/978-3-540-78127-1",
-      "url": "https://doi.org/10.1007/978-3-540-78127-1",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_033",
-      "authors": [
-        "Spector-Bagdady"
-      ],
-      "year": 2025,
-      "title": "The Need for Prospective Integrity Standards for the Use of Generative AI in Research",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Journal of Law, Medicine & Ethics",
-      "doi": "10.1017/jme.2025.41",
-      "url": "https://doi.org/10.1017/jme.2025.41",
+      "journal": "Lex Russica",
+      "doi": "10.17803/1729-5920.2024.206.1.032-053",
+      "url": "https://doi.org/10.17803/1729-5920.2024.206.1.032-053",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_034",
       "authors": [
-        "Rawas"
+        "Zairuddin",
+        "Othman",
+        "Malek"
       ],
-      "year": 2023,
-      "title": "ChatGPT: Empowering lifelong learning in the digital age of higher education",
+      "year": 2020,
+      "title": "Sustainable Urban Streetscape: Managing trees as green infrastructure",
       "source_type": "journal",
       "language": "english",
-      "journal": "Education and Information Technologies : Official Journal of the IFIP technical committee on Education",
-      "doi": "10.1007/s10639-023-12114-8",
-      "url": "https://doi.org/10.1007/s10639-023-12114-8",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_035",
-      "authors": [
-        "Sarker",
-        "Susarla",
-        "Gopal",
-        "Thatcher"
-      ],
-      "year": 2024,
-      "title": "Democratizing Knowledge Creation Through Human-AI Collaboration in Academic Peer Review",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Journal of the AIS",
-      "doi": "10.17705/1jais.00872",
-      "url": "https://doi.org/10.17705/1jais.00872",
+      "doi": "10.21834/AJBES.V5I19.193",
+      "url": "https://doi.org/10.21834/AJBES.V5I19.193",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_036",
       "authors": [
-        "ox.ac.uk"
+        "Tay"
       ],
-      "year": 2025,
-      "title": "ox.ac.uk",
-      "source_type": "website",
+      "year": 2023,
+      "title": "JSTOR generative AI pilot - Or is Semantic Search coming for academic databases?",
+      "source_type": "report",
       "language": "english",
-      "url": "https://www.ox.ac.uk/news/2024-11-13-new-ethical-framework-help-navigate-use-ai-academic-research",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_037",
-      "authors": [
-        "Knežević",
-        "Paunović"
-      ],
-      "year": 2024,
-      "title": "Open Source Integrated Circuit Design Tools in Scientific Research: Yay or Nay?",
-      "source_type": "conference",
-      "language": "english",
-      "journal": "10th International Scientific Conference Technics, Informatic, and Education",
-      "doi": "10.46793/tie24.048k",
-      "url": "https://doi.org/10.46793/tie24.048k",
-      "api_source": "Semantic Scholar"
+      "publisher": "Front Matter",
+      "doi": "10.59350/d6m23-vk771",
+      "url": "https://doi.org/10.59350/d6m23-vk771",
+      "api_source": "Crossref"
     },
     {
       "id": "cite_038",
       "authors": [
-        "Neshkovska"
+        "Weber-Main",
+        "Engler",
+        "McGee",
+        "Egger",
+        "Jones",
+        "Wood",
+        "Boman",
+        "Wu",
+        "Langi",
+        "Okuyemi"
       ],
-      "year": 2025,
-      "title": "The Merits and Risks of AI-Assisted Academic Writing: Insights from Current Research",
+      "year": 2022,
+      "title": "Variations of a group coaching intervention to support early-career biomedical researchers in Grant proposal development: a pragmatic, four-arm, group-randomized trial",
       "source_type": "journal",
       "language": "english",
-      "journal": "ELOPE",
-      "doi": "10.4312/elope.22.1.55-68",
-      "url": "https://doi.org/10.4312/elope.22.1.55-68",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_039",
-      "authors": [
-        "Alzubaidi"
-      ],
-      "year": 2025,
-      "title": "The Role of Generative AI in Higher Education: Institutional Guidelines, Generational Gaps, and the Grok 4 Challenge",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Arab World English Journal",
-      "doi": "10.24093/awej/call11.1a",
-      "url": "https://doi.org/10.24093/awej/call11.1a",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_040",
-      "authors": [
-        "hai.stanford.edu"
-      ],
-      "year": 2025,
-      "title": "stanford.edu",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://hai.stanford.edu/news/how-much-research-being-written-large-language-models",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_041",
-      "authors": [
-        "Aydın",
-        "Orhan"
-      ],
-      "year": 2025,
-      "title": "Evaluating the Impact of AI in Orthopedics: A Quantitative Analysis of Advancements and Challenges",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Bratislava Medical Journal",
-      "doi": "10.1007/s44411-025-00170-0",
-      "url": "https://doi.org/10.1007/s44411-025-00170-0",
+      "journal": "BMC Medical Education",
+      "doi": "10.1186/s12909-021-03093-w",
+      "url": "https://doi.org/10.1186/s12909-021-03093-w",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_042",
-      "authors": [
-        "Shi",
-        "Wang"
-      ],
-      "year": 2025,
-      "title": "Academic exploration of blockchain and AI in financial services",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Journal of Electronic Business &amp; Digital Economics",
-      "doi": "10.1108/jebde-08-2024-0023",
-      "url": "https://doi.org/10.1108/jebde-08-2024-0023",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_043",
-      "authors": [
-        "Adebowale",
-        "Mohamed",
-        "Chukwuemeka",
-        "Shehu",
-        "Chima",
-        "Joshua",
-        "N."
-      ],
-      "year": 2024,
-      "title": "Intellectual property law and artificial intelligence in Uganda: Trending issues and future prospects",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Kampala International University law journal",
-      "doi": "10.59568/kiulj-2024-6-2-12",
-      "url": "https://doi.org/10.59568/kiulj-2024-6-2-12",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_044",
-      "authors": [
-        "cigionline.org"
-      ],
-      "year": 2025,
-      "title": "cigionline.org",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://www.cigionline.org/publications/toward-an-ai-policy-framework-for-research-institutions/",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_045",
-      "authors": [
-        "Chen",
-        "Lian",
-        "Kuang",
-        "Jia"
-      ],
-      "year": 2025,
-      "title": "Can theory-driven learning analytics dashboard enhance human-AI collaboration in writing learning? Insights from an empirical experiment",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "arXiv.org",
-      "doi": "10.48550/arXiv.2506.19364",
-      "url": "https://doi.org/10.48550/arXiv.2506.19364",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_046",
-      "authors": [
-        "aaai.sdsu.edu"
-      ],
-      "year": 2025,
-      "title": "sdsu.edu",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://aaai.sdsu.edu/initiatives/equitable-ai-alliance",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_047",
-      "authors": [
-        "Robles",
-        "Gonzalez-Barahona",
-        "Izquierdo-Cortazar",
-        "Herraiz"
-      ],
-      "year": 2011,
-      "title": "Tools and Datasets for Mining Libre Software Repositories",
-      "source_type": "journal",
-      "language": "english",
-      "doi": "10.4018/978-1-60960-513-1.CH002",
-      "url": "https://doi.org/10.4018/978-1-60960-513-1.CH002",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_048",
-      "authors": [
-        "news.mit.edu"
-      ],
-      "year": 2025,
-      "title": "mit.edu",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://news.mit.edu/2025/futurehouse-accelerates-scientific-discovery-with-ai-0630",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_049",
-      "authors": [
-        "cigionline.org"
-      ],
-      "year": 2025,
-      "title": "cigionline.org",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://www.cigionline.org/static/documents/DPH-paper-daMota.pdf",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_050",
-      "authors": [
-        "medium.com"
-      ],
-      "year": 2025,
-      "title": "medium.com",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://medium.com/@johnmunn/the-reproducibility-crisis-in-machine-learning-a-reckoning-a-reset-6edac20cdd34",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_051",
-      "authors": [
-        "Khanzadeh"
-      ],
-      "year": 2025,
-      "title": "AgentMesh: A Cooperative Multi-Agent Generative AI Framework for Software Development Automation",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "arXiv.org",
-      "doi": "10.48550/arXiv.2507.19902",
-      "url": "https://doi.org/10.48550/arXiv.2507.19902",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_052",
       "authors": [
         "Katam"
       ],
@@ -832,123 +370,150 @@
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_053",
+      "id": "cite_045",
       "authors": [
-        "Dai"
+        "Sohan",
+        "Basalamah"
       ],
-      "year": 2025,
-      "title": "Research on AIGC content detection model based on multimodal similarity for empowering sustainable development of education with digital technology",
+      "year": 2023,
+      "title": "A Systematic Review on Federated Learning in Medical Image Analysis",
       "source_type": "journal",
       "language": "english",
-      "journal": "AIP Advances",
-      "doi": "10.1063/5.0308359",
-      "url": "https://doi.org/10.1063/5.0308359",
+      "journal": "IEEE Access",
+      "doi": "10.1109/ACCESS.2023.3260027",
+      "url": "https://doi.org/10.1109/ACCESS.2023.3260027",
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_054",
+      "id": "cite_046",
       "authors": [
-        "Graham"
+        "Rustemi",
+        "Dalipi",
+        "Atanasovski",
+        "Risteski"
       ],
-      "year": 2021,
-      "title": "Discourse analysis of academic debate of ethics for AGI",
+      "year": 2024,
+      "title": "Enhancing Academic Credentials: The Synergy of Blockchain and Artificial Intelligence",
+      "source_type": "conference",
+      "language": "english",
+      "journal": "2024 7th International Balkan Conference on Communications and Networking (BalkanCom)",
+      "doi": "10.1109/BalkanCom61808.2024.10557185",
+      "url": "https://doi.org/10.1109/BalkanCom61808.2024.10557185",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_049",
+      "authors": [
+        "Zylla",
+        "Bomgni",
+        "Sani",
+        "Subramaniam",
+        "Lushbough",
+        "Winter",
+        "Gadhamshetty",
+        "Chundi",
+        "Gnimpieba"
+      ],
+      "year": 2024,
+      "title": "Convergence Research and Training in Computational Bioengineering: A Case Study on AI/ML-Driven Biofilm–Material Interaction Discovery",
       "source_type": "journal",
       "language": "english",
-      "journal": "Ai & Society",
-      "doi": "10.1007/s00146-021-01228-7",
-      "url": "https://doi.org/10.1007/s00146-021-01228-7",
+      "journal": "Biomedical Engineering Education",
+      "doi": "10.1007/s43683-024-00146-6",
+      "url": "https://doi.org/10.1007/s43683-024-00146-6",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_052",
+      "authors": [
+        "Cong-Lem",
+        "Tran",
+        "Nguyen"
+      ],
+      "year": 2024,
+      "title": "Academic Integrity In The Age Of Generative AI: Perceptions And Responses Of Vietnamese EFL Teachers",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Teaching English with Technology",
+      "doi": "10.56297/fsyb3031/mxnb7567",
+      "url": "https://doi.org/10.56297/fsyb3031/mxnb7567",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_053",
+      "authors": [
+        "Pletzl",
+        "Haberl",
+        "Ross-Hellauer",
+        "Thalmann"
+      ],
+      "year": 2024,
+      "title": "Reproducible AutoML: An Assessment of Research Reproducibility of No-Code AutoML Tools",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Wirtschaftsinformatik",
+      "url": "https://www.semanticscholar.org/paper/6cc5530b2e09223ab8d05e719f08e012527cc5fd",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_055",
       "authors": [
-        "Gill"
+        "Giebel",
+        "Raszke",
+        "Nowak",
+        "Palmowski",
+        "Adamzik",
+        "Heinz",
+        "Tokic",
+        "Timmesfeld",
+        "Brunkhorst",
+        "Wasem",
+        "Blase"
       ],
       "year": 2024,
-      "title": "Applications of AI for Interdisciplinary Research",
-      "source_type": "book",
+      "title": "Problems and Barriers Related to the Use of AI-Based Clinical Decision Support Systems: Interview Study",
+      "source_type": "journal",
       "language": "english",
-      "doi": "10.1201/9781003467199",
-      "url": "https://doi.org/10.1201/9781003467199",
+      "journal": "Journal of Medical Internet Research",
+      "doi": "10.2196/63377",
+      "url": "https://doi.org/10.2196/63377",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_056",
       "authors": [
-        "research.google"
+        "Pourret",
+        "Millet",
+        "Marin-Carbonne",
+        "Mallik",
+        "Tierney",
+        "Darling",
+        "Kiseeva",
+        "Torres",
+        "Fonseca",
+        "Tartèse",
+        "Namur",
+        "Klöcking",
+        "Matthews",
+        "Dahrén",
+        "Ickert",
+        "editor"
       ],
       "year": 2025,
-      "title": "research.google",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://research.google/blog/evaluating-progress-of-llms-on-scientific-problem-solving/",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_057",
-      "authors": [
-        "Cabral",
-        "Salles-Filho"
-      ],
-      "year": 2024,
-      "title": "Mapping science in artificial intelligence policy development: formulation, trends, and influences",
+      "title": "Equitable Access, Open Science, and the Future of Publishing in Geochemistry and Cosmochemistry",
       "source_type": "journal",
       "language": "english",
-      "journal": "Science and Public Policy",
-      "doi": "10.1093/scipol/scae052",
-      "url": "https://doi.org/10.1093/scipol/scae052",
+      "journal": "Advances in Geochemistry and Cosmochemistry",
+      "doi": "10.33063/agc.v1i1.770",
+      "url": "https://doi.org/10.33063/agc.v1i1.770",
       "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_058",
-      "authors": [
-        "Solak"
-      ],
-      "year": 2024,
-      "title": "Exploring the Efficiency of ChatGPT and Artificial Intelligence in Advancing Academic Writing Pedagogy",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "International Journal of Education in Mathematics Science and Technology",
-      "doi": "10.46328/ijemst.4373",
-      "url": "https://doi.org/10.46328/ijemst.4373",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_059",
-      "authors": [
-        "Adigwe",
-        "Olaniyi",
-        "Olabanji",
-        "Okunleye",
-        "Mayeke",
-        "Ajayi"
-      ],
-      "year": 2024,
-      "title": "Forecasting the Future: The Interplay of Artificial Intelligence, Innovation, and Competitiveness and its Effect on the Global Economy",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Asian Journal of Economics Business and Accounting",
-      "doi": "10.9734/ajeba/2024/v24i41269",
-      "url": "https://doi.org/10.9734/ajeba/2024/v24i41269",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_060",
-      "authors": [
-        "education.ec.europa.eu"
-      ],
-      "year": 2025,
-      "title": "europa.eu",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://education.ec.europa.eu/news/ethical-guidelines-on-the-use-of-artificial-intelligence-and-data-in-teaching-and-learning-for-educators",
-      "api_source": "Gemini Grounded"
     }
   ],
   "metadata": {
-    "total_citations": 60,
+    "total_citations": 57,
     "citation_style": "APA 7th",
     "thesis_language": "english",
-    "extracted_date": "2025-11-17T11:25:55.245180"
+    "extracted_date": "2025-11-19T08:08:07.095015",
+    "citation_count": 30
   }
 }

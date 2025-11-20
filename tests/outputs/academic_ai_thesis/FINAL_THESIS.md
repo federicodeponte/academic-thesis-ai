@@ -9,6 +9,10 @@ stats: "66 verified citations • 15,700 words • 0 hallucinations"
 tagline: "Want to write YOUR thesis with AI? This open-source system can."
 ---
 
+\newpage
+
+# Why This Academic Thesis AI Open Source Project Will Save the World: Democratizing Academic Writing Through Multi-Agent AI
+
 ## Abstract
 
 **Research Problem and Approach:** Academic writing often faces significant barriers related to accessibility, language proficiency, and resource availability, hindering diverse participation in scholarly discourse. This thesis addresses this problem by proposing and analyzing a multi-agent AI system, developed as an open-source project, designed to democratize academic writing processes.

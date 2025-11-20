@@ -76,6 +76,10 @@ def extract_metadata_from_yaml(md_file: Path) -> dict:
             'institution': 'institution',
             'department': 'department',
             'degree': 'degree',
+            'advisor': 'advisor',
+            'student_id': 'student_id',
+            'project_type': 'project_type',
+            'system_credit': 'system_credit',
         }
 
         normalized = {}
@@ -124,11 +128,16 @@ def export_pdf(
     if options is None:
         options = PDFGenerationOptions(
             title=metadata.get('title'),
+            subtitle=metadata.get('subtitle'),
             author=metadata.get('author'),
             date=metadata.get('date'),
             institution=metadata.get('institution'),
             department=metadata.get('department'),
-            course=metadata.get('degree')  # Map degree to course field
+            course=metadata.get('degree'),  # Map degree to course field
+            instructor=metadata.get('advisor'),  # Map advisor to instructor field
+            student_id=metadata.get('student_id'),
+            project_type=metadata.get('project_type'),
+            system_credit=metadata.get('system_credit')
         )
 
     print(f"\n📄 Generating PDF: {output_pdf.name}")

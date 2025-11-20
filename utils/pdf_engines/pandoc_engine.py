@@ -220,6 +220,8 @@ class PandocLatexEngine(PDFEngine):
   \def\UrlBreaks{\do\/\do\-\do\_\do\.}%
   % Add small spacing around break points for better line breaking
   \Urlmuskip=0mu plus 1mu%
+  % Suppress page number on cover page (first page only)
+  \thispagestyle{empty}%
 }
 
 % Fix Level 3 headings: italic (NOT bold) - APA 7th edition
@@ -253,22 +255,89 @@ class PandocLatexEngine(PDFEngine):
         if any([options.title, options.author, options.institution,
                 options.course, options.instructor]):
             preamble += r'''
-% APA 7th Edition Title Page Customization
+% Professional Academic Title Page
 \usepackage{titling}
-% Title page formatting: centered, double-spaced
-\pretitle{\begin{center}\LARGE\bfseries}
-\posttitle{\par\end{center}\vskip 2em}
-\preauthor{\begin{center}\large}
-\postauthor{\par\end{center}}
-\predate{\begin{center}\large}
-\postdate{\par\end{center}}
+\renewcommand{\maketitle}{%
+  \begin{titlepage}
+    \centering
+    \vspace*{1in}
+
+    % Institution and Department
+'''
+            # Add institution if provided
+            if options.institution:
+                preamble += f'''    {{\\large {options.institution}\\par}}
+    \\vspace{{0.3cm}}
+'''
+            if options.department:
+                preamble += f'''    {{\\normalsize {options.department}\\par}}
+    \\vspace{{1.5cm}}
+'''
+
+            # Add title and subtitle
+            preamble += r'''
+    % Title
+'''
+            if options.title:
+                preamble += f'''    {{\\LARGE\\bfseries {options.title}\\par}}
+    \\vspace{{0.5cm}}
+'''
+            if options.subtitle:
+                preamble += f'''    {{\\Large {options.subtitle}\\par}}
+    \\vspace{{1cm}}
+'''
+
+            # Add project type descriptor
+            if options.project_type:
+                preamble += f'''
+    {{\\normalsize {options.project_type}\\par}}
+    \\vspace{{1cm}}
+'''
+
+            # Add author and student ID
+            preamble += r'''
+    % Author Information
+'''
+            if options.author:
+                preamble += f'''    {{\\large {options.author}\\par}}
+'''
+            if options.student_id:
+                preamble += f'''    {{\\normalsize {options.student_id}\\par}}
+    \\vspace{{0.5cm}}
+'''
+
+            # Add degree
+            if options.course:  # course field holds degree info
+                preamble += f'''
+    {{\\normalsize {options.course}\\par}}
+    \\vspace{{0.5cm}}
+'''
+
+            # Add advisor
+            if options.instructor:  # instructor field holds advisor info
+                preamble += f'''
+    {{\\normalsize {options.instructor}\\par}}
+    \\vspace{{1cm}}
+'''
+
+            # Add system credit
+            if options.system_credit:
+                preamble += f'''
+    {{\\normalsize\\itshape {options.system_credit}\\par}}
+    \\vspace{{0.5cm}}
+'''
+
+            # Add date
+            if options.date:
+                preamble += f'''
+    {{\\normalsize {options.date}\\par}}
+'''
+
+            preamble += r'''
+  \end{titlepage}
+}
 
 % Pandoc's default template automatically calls \maketitle when title: is in YAML frontmatter
-% Our titling package customizations above control the formatting
-% No need to call \maketitle again (that would create duplicate cover pages)
-
-% Add custom fields for APA title page
-% These will be populated via Pandoc variables
 '''
 
         # Add front matter page numbering (roman numerals) if TOC enabled

@@ -39,12 +39,16 @@ class PDFGenerationOptions:
 
     # Title page metadata (optional - for professional academic title page)
     title: Optional[str] = None
+    subtitle: Optional[str] = None
     author: Optional[str] = None
     date: Optional[str] = None
     institution: Optional[str] = None
     department: Optional[str] = None
-    course: Optional[str] = None
-    instructor: Optional[str] = None
+    course: Optional[str] = None  # Maps to 'degree' in YAML
+    instructor: Optional[str] = None  # Maps to 'advisor' in YAML
+    student_id: Optional[str] = None
+    project_type: Optional[str] = None
+    system_credit: Optional[str] = None
 
     # Table of contents
     enable_toc: bool = True  # Changed from False - academic papers need TOC by default

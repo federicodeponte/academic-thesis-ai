@@ -1,7 +1,14 @@
 ---
-title: "Why This Academic Thesis AI Open Source Project Will Save the World: Democratizing Academic Writing Through Multi-Agent AI"
-subtitle: "AI-Generated Academic Thesis Showcase"
-author: "Academic Thesis AI (Multi-Agent System)"
+title: "Why This Academic Thesis AI Open Source Project Will Save the World"
+subtitle: "Democratizing Academic Writing Through Multi-Agent AI"
+institution: "[Your University Name]"
+department: "[Department of Computer Science]"
+degree: "Master of Science in Computer Science"
+author: "[Your Name]"
+student_id: "[Student ID: XXXXXXXX]"
+advisor: "[Advisor: Dr. Name]"
+project_type: "AI-Generated Academic Thesis Showcase"
+system_credit: "Academic Thesis AI (Multi-Agent System)"
 date: "January 2025"
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: "Democratizing Academic Writing Through Multi-Agent AI"
-subtitle: "A Complete 71-Page Academic Thesis Written Entirely by AI\\\\66 verified citations • 15,700 words • 0 hallucinations\\\\github.com/federicodeponte/academic-thesis-ai • MIT Open Source"
-author: "Academic Thesis AI"
+title: "Why This Academic Thesis AI Open Source Project Will Save the World: Democratizing Academic Writing Through Multi-Agent AI"
+subtitle: "AI-Generated Academic Thesis Showcase"
+author: "Academic Thesis AI (Multi-Agent System)"
 date: "January 2025"
 ---
 

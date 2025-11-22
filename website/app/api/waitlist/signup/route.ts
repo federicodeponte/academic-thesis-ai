@@ -6,10 +6,22 @@ import { WAITLIST_CONFIG } from '@/lib/config/waitlist';
 import { Resend } from 'resend';
 import crypto from 'crypto';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// Lazy initialization - only create when needed
+let resend: Resend | null = null;
+function getResend() {
+  if (!resend && process.env.RESEND_API_KEY) {
+    resend = new Resend(process.env.RESEND_API_KEY);
+  }
+  return resend;
+}
 
 // Verify Cloudflare Turnstile token
 async function verifyTurnstile(token: string, ip: string): Promise<boolean> {
+  // Skip verification if Turnstile is not configured
+  if (!process.env.TURNSTILE_SECRET_KEY) {
+    return true; // Allow signup without Turnstile if not configured
+  }
+
   try {
     const response = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
       method: 'POST',
@@ -131,26 +143,29 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Failed to create waitlist entry' }, { status: 500 });
     }
 
-    // 8. Send verification email
+    // 8. Send verification email (if Resend is configured)
     const verificationUrl = `${request.nextUrl.origin}/waitlist/verify?token=${verificationToken}`;
 
     try {
-      const { VerificationEmail } = await import('@/emails/VerificationEmail');
-      const { render } = await import('@react-email/render');
+      const resendClient = getResend();
+      if (resendClient) {
+        const { VerificationEmail } = await import('@/emails/VerificationEmail');
+        const { render } = await import('@react-email/render');
 
-      await resend.emails.send({
-        from: WAITLIST_CONFIG.FROM_EMAIL,
-        to: email,
-        subject: 'Verify your OpenDraft waitlist spot',
-        html: render(
-          VerificationEmail({
-            fullName,
-            verificationUrl,
-            position,
-            referralCode,
-          })
-        ),
-      });
+        await resendClient.emails.send({
+          from: WAITLIST_CONFIG.FROM_EMAIL,
+          to: email,
+          subject: 'Verify your OpenDraft waitlist spot',
+          html: render(
+            VerificationEmail({
+              fullName,
+              verificationUrl,
+              position,
+              referralCode,
+            })
+          ),
+        });
+      }
     } catch (emailError) {
       // Don't fail the signup if email fails - user can resend later
     }

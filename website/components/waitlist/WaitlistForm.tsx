@@ -210,12 +210,14 @@ export function WaitlistForm({ referralCode }: WaitlistFormProps) {
         </div>
       </div>
 
-      <div className="flex justify-center">
-        <Turnstile
-          sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
-          onVerify={setTurnstileToken}
-        />
-      </div>
+      {process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && (
+        <div className="flex justify-center">
+          <Turnstile
+            sitekey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY}
+            onVerify={setTurnstileToken}
+          />
+        </div>
+      )}
 
       {error && (
         <div className="bg-red-50 dark:bg-red-950 border border-red-200 dark:border-red-800 text-red-800 dark:text-red-200 p-4 rounded-lg">
@@ -225,7 +227,7 @@ export function WaitlistForm({ referralCode }: WaitlistFormProps) {
 
       <Button
         type="submit"
-        disabled={isSubmitting || !turnstileToken}
+        disabled={isSubmitting || (process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !turnstileToken)}
         className="w-full bg-gradient-to-r from-brand-purple-500 to-brand-purple-600 hover:from-brand-purple-600 hover:to-brand-purple-700 text-white"
         size="lg"
       >

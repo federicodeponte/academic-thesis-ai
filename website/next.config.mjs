@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
 
 // Validate required environment variables at build time
+// Note: RESEND_API_KEY and TURNSTILE_SECRET_KEY are optional - features degrade gracefully without them
 const requiredEnvVars = [
   'NEXT_PUBLIC_SUPABASE_URL',
   'NEXT_PUBLIC_SUPABASE_ANON_KEY',
-  'NEXT_PUBLIC_TURNSTILE_SITE_KEY',
   'SUPABASE_SERVICE_KEY',
 ];
 

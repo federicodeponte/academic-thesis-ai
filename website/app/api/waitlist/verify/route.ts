@@ -134,29 +134,31 @@ async function processReferralReward(referrerCode: string, refereeEmail: string)
         .eq('rewarded', false)
         .limit(WAITLIST_CONFIG.REFERRALS_REQUIRED);
 
-      // Send congratulations email to referrer
+      // Send congratulations email to referrer (if Resend is configured)
       try {
-        const { ReferralRewardEmail } = await import('@/emails/ReferralRewardEmail');
-        const { render } = await import('@react-email/render');
-        const { Resend } = await import('resend');
+        if (process.env.RESEND_API_KEY) {
+          const { ReferralRewardEmail } = await import('@/emails/ReferralRewardEmail');
+          const { render } = await import('@react-email/render');
+          const { Resend } = await import('resend');
 
-        const resendClient = new Resend(process.env.RESEND_API_KEY);
-        const dashboardUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/waitlist/${referrer.id}`;
+          const resendClient = new Resend(process.env.RESEND_API_KEY);
+          const dashboardUrl = `${process.env.NEXT_PUBLIC_BASE_URL}/waitlist/${referrer.id}`;
 
-        await resendClient.emails.send({
-          from: WAITLIST_CONFIG.FROM_EMAIL,
-          to: referrer.email,
-          subject: `You skipped 100 positions! Now at #${newPosition} 🎉`,
-          html: render(
-            ReferralRewardEmail({
-              fullName: referrer.full_name,
-              newPosition,
-              oldPosition: referrer.position,
-              referralCount,
-              dashboardUrl,
-            })
-          ),
-        });
+          await resendClient.emails.send({
+            from: WAITLIST_CONFIG.FROM_EMAIL,
+            to: referrer.email,
+            subject: `You skipped 100 positions! Now at #${newPosition} 🎉`,
+            html: render(
+              ReferralRewardEmail({
+                fullName: referrer.full_name,
+                newPosition,
+                oldPosition: referrer.position,
+                referralCount,
+                dashboardUrl,
+              })
+            ),
+          });
+        }
       } catch (emailError) {
         // Email error - silently continue
       }

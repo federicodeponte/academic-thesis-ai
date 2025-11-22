@@ -307,6 +307,355 @@ Real-world data from {meta['total_beta_users']} beta users and {meta['total_prod
 **Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
 """
 
+def generate_website_html(metrics):
+    """Generate index.html website from metrics."""
+
+    perf = metrics['performance']
+    qual = metrics['quality']
+    costs = metrics['costs']
+    meta = metrics['meta']
+    theses = metrics['theses']
+    research = metrics['research']
+    agents = metrics['agents']
+
+    return f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate publication-ready academic theses in 20-25 minutes using AI. 95%+ citation accuracy, $10-35 per thesis.">
+    <title>Academic Thesis AI - Generate Publication-Ready Theses in Minutes</title>
+    <style>
+        * {{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }}
+
+        body {{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }}
+
+        .container {{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }}
+
+        header {{
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }}
+
+        h1 {{
+            font-size: 3em;
+            margin-bottom: 20px;
+        }}
+
+        .subtitle {{
+            font-size: 1.3em;
+            opacity: 0.9;
+        }}
+
+        .cta {{
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 15px 40px;
+            margin-top: 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }}
+
+        .cta:hover {{
+            transform: scale(1.05);
+        }}
+
+        .stats {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }}
+
+        .stat-card {{
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+
+        .stat-number {{
+            font-size: 2.5em;
+            color: #667eea;
+            font-weight: bold;
+        }}
+
+        .stat-label {{
+            color: #666;
+            margin-top: 10px;
+        }}
+
+        section {{
+            padding: 60px 0;
+        }}
+
+        h2 {{
+            font-size: 2.5em;
+            margin-bottom: 30px;
+            text-align: center;
+        }}
+
+        .comparison-table {{
+            overflow-x: auto;
+            margin: 40px 0;
+        }}
+
+        table {{
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }}
+
+        th, td {{
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }}
+
+        th {{
+            background: #667eea;
+            color: white;
+            font-weight: bold;
+        }}
+
+        .highlight {{
+            background: #f0f7ff;
+            font-weight: bold;
+        }}
+
+        .theses-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }}
+
+        .thesis-card {{
+            background: white;
+            border: 2px solid #eee;
+            border-radius: 10px;
+            padding: 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }}
+
+        .thesis-card:hover {{
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+        }}
+
+        .thesis-title {{
+            font-size: 1.3em;
+            color: #667eea;
+            margin-bottom: 10px;
+        }}
+
+        .thesis-stats {{
+            margin: 15px 0;
+            font-size: 0.9em;
+            color: #666;
+        }}
+
+        .download-btn {{
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 15px;
+            transition: background 0.3s;
+        }}
+
+        .download-btn:hover {{
+            background: #5568d3;
+        }}
+
+        footer {{
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 60px;
+        }}
+
+        .bg-gray {{
+            background: #f8f9fa;
+        }}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Academic Thesis AI</h1>
+            <p class="subtitle">Generate publication-ready academic theses in {perf['ai_generation_time_min']}-{perf['ai_generation_time_max']} minutes</p>
+            <a href="https://github.com/federicodeponte/academic-thesis-ai" class="cta">Get Started on GitHub →</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number">{perf['ai_generation_time_min']}-{perf['ai_generation_time_max']} min</div>
+                    <div class="stat-label">Generation Time<br/>(20,000 words)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">{qual['citation_accuracy_percent']}%</div>
+                    <div class="stat-label">Citation Accuracy</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">${costs['gemini_flash_20k']}-${costs['gemini_pro_20k']}</div>
+                    <div class="stat-label">Cost per Thesis<br/>(Gemini 2.5)</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">{agents['total_count']}</div>
+                    <div class="stat-label">Specialized AI Agents</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">{research['papers_accessible']}</div>
+                    <div class="stat-label">Research Papers<br/>Accessible</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">{meta['total_production_theses']}</div>
+                    <div class="stat-label">Production<br/>Theses Generated</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray">
+        <div class="container">
+            <h2>Why Academic Thesis AI?</h2>
+
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th class="highlight">Academic Thesis AI</th>
+                            <th>Professional Editing</th>
+                            <th>ChatGPT Pro</th>
+                            <th>Jenni.ai</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Cost (20k words)</strong></td>
+                            <td class="highlight">${costs['gemini_flash_20k']}-${costs['gemini_pro_20k']}<br/><small>{perf['cost_savings_percent']}% cheaper</small></td>
+                            <td>${costs['professional_editing_min']}-${costs['professional_editing_max']:,}</td>
+                            <td>${costs['chatgpt_pro_yearly']}/year</td>
+                            <td>${costs['jenni_ai_monthly']}/month</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Time to Complete</strong></td>
+                            <td class="highlight">{perf['ai_generation_time_min']}-{perf['ai_generation_time_max']} min<br/><small>{perf['speed_vs_manual_percent']}% faster</small></td>
+                            <td>2-3 months</td>
+                            <td>40-80 hours</td>
+                            <td>30-50 hours</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Research Integration</strong></td>
+                            <td class="highlight">✅ {research['papers_accessible']} papers</td>
+                            <td>❌ Manual</td>
+                            <td>⚠️ Limited</td>
+                            <td>⚠️ Basic</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Citation Management</strong></td>
+                            <td class="highlight">✅ Auto-verify + {qual['citation_accuracy_percent']}% success</td>
+                            <td>⚠️ Basic</td>
+                            <td>❌ Often wrong</td>
+                            <td>⚠️ Manual verification</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Example Theses</h2>
+            <p style="text-align: center; margin-bottom: 40px;">Real theses generated by Academic Thesis AI</p>
+
+            <div class="theses-grid">
+                <div class="thesis-card">
+                    <div class="thesis-title">AI Pricing Models</div>
+                    <div>Business / Economics</div>
+                    <div class="thesis-stats">
+                        📄 {theses['ai_pricing']['word_count']:,} words<br/>
+                        📚 {theses['ai_pricing']['citations']} citations<br/>
+                        ⏱️ {theses['ai_pricing']['generation_time_min']} min generation
+                    </div>
+                    <a href="examples/{theses['ai_pricing']['file_name']}.pdf" class="download-btn">View PDF →</a>
+                </div>
+
+                <div class="thesis-card">
+                    <div class="thesis-title">Open Source SaaS</div>
+                    <div>Business / Technology</div>
+                    <div class="thesis-stats">
+                        📄 {theses['opensource']['word_count']:,} words<br/>
+                        📚 {theses['opensource']['citations']} citations<br/>
+                        ⏱️ {theses['opensource']['generation_time_min']} min generation
+                    </div>
+                    <a href="examples/{theses['opensource']['file_name']}.pdf" class="download-btn">View PDF →</a>
+                </div>
+
+                <div class="thesis-card">
+                    <div class="thesis-title">Academic AI Tools</div>
+                    <div>Education / Technology</div>
+                    <div class="thesis-stats">
+                        📄 {theses['academic_ai']['word_count']:,} words<br/>
+                        📚 {theses['academic_ai']['citations']} citations<br/>
+                        ⏱️ {theses['academic_ai']['generation_time_min']} min generation
+                    </div>
+                    <a href="examples/{theses['academic_ai']['file_name']}.pdf" class="download-btn">View PDF →</a>
+                </div>
+
+                <div class="thesis-card">
+                    <div class="thesis-title">CO2 Reduction (German)</div>
+                    <div>Environmental Science</div>
+                    <div class="thesis-stats">
+                        📄 {theses['co2_german']['word_count']:,} words<br/>
+                        📚 {theses['co2_german']['citations']} citations<br/>
+                        ⏱️ {theses['co2_german']['generation_time_min']} min generation
+                    </div>
+                    <a href="examples/{theses['co2_german']['file_name']}.pdf" class="download-btn">View PDF →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p><strong>Academic Thesis AI</strong></p>
+            <p>Open source, transparent, and built for researchers</p>
+            <p style="margin-top: 20px;"><a href="https://github.com/federicodeponte/academic-thesis-ai" style="color: white;">GitHub</a> | <a href="docs/BENCHMARKS.html" style="color: white;">Benchmarks</a></p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">Last updated: {meta['last_updated']} | Data from {meta['total_beta_users']} beta users</p>
+        </div>
+    </footer>
+</body>
+</html>"""
+
 def main():
     """Generate all documentation from metrics."""
     import argparse
@@ -314,12 +663,13 @@ def main():
     parser = argparse.ArgumentParser(description='Generate docs from metrics')
     parser.add_argument('--readme', action='store_true', help='Generate README sections')
     parser.add_argument('--bench', action='store_true', help='Generate BENCHMARKS.md')
+    parser.add_argument('--website', action='store_true', help='Generate website HTML')
     parser.add_argument('--all', action='store_true', help='Generate all docs')
 
     args = parser.parse_args()
 
     # Default to all if nothing specified
-    if not (args.readme or args.bench):
+    if not (args.readme or args.bench or args.website):
         args.all = True
 
     metrics = load_metrics()
@@ -347,6 +697,16 @@ def main():
             f.write(benchmarks)
 
         print(f"✅ BENCHMARKS.md → {output_file}")
+
+    if args.website or args.all:
+        print("Generating website...")
+        website_html = generate_website_html(metrics)
+
+        output_file = PROJECT_ROOT / 'index.html'
+        with open(output_file, 'w') as f:
+            f.write(website_html)
+
+        print(f"✅ index.html → {output_file}")
 
     print("\n✅ Documentation generation complete!")
     print(f"\n📊 Data source: {METRICS_FILE}")

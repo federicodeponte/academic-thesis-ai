@@ -227,7 +227,7 @@ export function WaitlistForm({ referralCode }: WaitlistFormProps) {
 
       <Button
         type="submit"
-        disabled={isSubmitting || (process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !turnstileToken)}
+        disabled={isSubmitting || (!!process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY && !turnstileToken)}
         className="w-full bg-gradient-to-r from-brand-purple-500 to-brand-purple-600 hover:from-brand-purple-600 hover:to-brand-purple-700 text-white"
         size="lg"
       >

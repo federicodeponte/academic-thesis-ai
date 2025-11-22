@@ -24,7 +24,6 @@ async function verifyTurnstile(token: string, ip: string): Promise<boolean> {
     const data = await response.json();
     return data.success;
   } catch (error) {
-    console.error('Turnstile verification error:', error);
     return false;
   }
 }
@@ -129,7 +128,6 @@ export async function POST(request: NextRequest) {
       .single();
 
     if (error) {
-      console.error('Database error:', error);
       return NextResponse.json({ error: 'Failed to create waitlist entry' }, { status: 500 });
     }
 
@@ -154,7 +152,6 @@ export async function POST(request: NextRequest) {
         ),
       });
     } catch (emailError) {
-      console.error('Email error:', emailError);
       // Don't fail the signup if email fails - user can resend later
     }
 
@@ -165,7 +162,6 @@ export async function POST(request: NextRequest) {
       userId: user.id,
     });
   } catch (error) {
-    console.error('Signup error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }

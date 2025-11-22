@@ -56,7 +56,6 @@ export async function GET(request: NextRequest) {
       .eq('id', user.id);
 
     if (updateError) {
-      console.error('Verification update error:', updateError);
       return NextResponse.json({ error: 'Failed to verify email' }, { status: 500 });
     }
 
@@ -68,7 +67,6 @@ export async function GET(request: NextRequest) {
     // 4. Redirect to success page
     return NextResponse.redirect(new URL(`/waitlist/${user.id}?verified=true`, request.url));
   } catch (error) {
-    console.error('Verification error:', error);
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }
@@ -84,10 +82,8 @@ async function processReferralReward(referrerCode: string, refereeEmail: string)
     if (referralError) {
       // If duplicate referral (UNIQUE constraint violation), silently return
       if (referralError.code === '23505') {
-        console.log('Duplicate referral ignored:', refereeEmail);
         return;
       }
-      console.error('Referral insert error:', referralError);
       return;
     }
 
@@ -113,7 +109,6 @@ async function processReferralReward(referrerCode: string, refereeEmail: string)
 
       // Only reward if user is still waiting (don't reward if already processing/completed)
       if (referrer.status !== 'waiting') {
-        console.log(`Referrer ${referrer.email} is ${referrer.status}, skipping reward`);
         return;
       }
 
@@ -128,7 +123,6 @@ async function processReferralReward(referrerCode: string, refereeEmail: string)
         .eq('status', 'waiting'); // Double-check status hasn't changed
 
       if (updateError) {
-        console.error('Failed to update referrer position:', updateError);
         return;
       }
 
@@ -164,12 +158,10 @@ async function processReferralReward(referrerCode: string, refereeEmail: string)
           ),
         });
       } catch (emailError) {
-        console.error('Failed to send referral reward email:', emailError);
+        // Email error - silently continue
       }
-
-      console.log(`Referral reward: ${referrer.email} skipped from ${referrer.position} to position ${newPosition}`);
     }
   } catch (error) {
-    console.error('Process referral reward error:', error);
+    // Referral reward error - silently continue
   }
 }

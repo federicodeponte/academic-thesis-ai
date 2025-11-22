@@ -112,6 +112,7 @@ credentials.json
 docs/_build/
 site/
 
-# Log files
+# Log files (keep logs/ directory structure but ignore generated files)
 logs/*.log
 logs/*.log.[0-9]*
+!logs/README.md

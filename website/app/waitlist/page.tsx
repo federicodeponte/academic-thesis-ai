@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title: 'Join Waitlist - Free AI Thesis Generation | OpenDraft',
-  description: '100 free AI-generated theses per day. Join the waitlist and skip ahead by referring friends. Generate your 20,000-word thesis in 15-25 minutes.',
+  description: '100 free AI-generated theses per day. Join the waitlist and skip ahead by referring friends. Generate your 20,000-word thesis in 20-30 minutes.',
 };
 
 interface PageProps {

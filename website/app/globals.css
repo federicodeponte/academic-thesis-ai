@@ -18,12 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
-/* *=========== Cursor-inspired Warm Neutral Theme =========== */
+/* *=========== OpenDraft Brand Theme =========== */
 @layer base {
   :root {
-    /* Main backgrounds - warm cream/beige palette */
-    --background: 60 14% 96%;        /* #f7f7f4 - Cursor's warm off-white */
-    --foreground: 45 19% 13%;        /* #26251e - Cursor's dark brown text */
+    /* Main backgrounds - keep warm cream/beige palette for readability */
+    --background: 60 14% 96%;        /* #f7f7f4 - Warm off-white */
+    --foreground: 45 19% 13%;        /* #26251e - Dark brown text */
 
     /* Card system - layered cream shades for depth */
     --card: 60 14% 94%;              /* #f2f1ed - Base card */
@@ -34,9 +34,9 @@ html {
     --popover: 60 14% 96%;
     --popover-foreground: 45 19% 13%;
 
-    /* Primary = Dark brown for CTAs (Cursor's ACTUAL primary) */
-    --primary: 45 19% 13%;           /* #26251e - Dark brown for buttons */
-    --primary-foreground: 60 14% 96%; /* #f7f7f4 - Light text on dark */
+    /* PRIMARY = Brand Purple for CTAs and interactive elements */
+    --primary: 268 83% 58%;          /* #8B5CF6 - Purple-500 */
+    --primary-foreground: 0 0% 100%; /* White text */
 
     /* Secondary - subtle card variation */
     --secondary: 60 14% 92%;
@@ -46,20 +46,20 @@ html {
     --muted: 60 14% 92%;
     --muted-foreground: 45 19% 40%;  /* 60% opacity brown */
 
-    /* Accent - muted teal for interactive elements, focus states, and highlights */
-    --accent: 180 41% 35%;           /* #3d7a7a - Muted Teal accent */
-    --accent-foreground: 60 14% 96%;
+    /* ACCENT = Brand Cyan for highlights, links, and interactive states */
+    --accent: 187 100% 42%;          /* #06B6D4 - Cyan-500 */
+    --accent-foreground: 0 0% 100%;  /* White text */
 
     /* Destructive - error states */
     --destructive: 350 89% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    /* Borders - very subtle, Cursor style */
-    --border: 45 14% 88%;            /* Low opacity for subtle borders */
-    --input: 45 14% 88%;
-    --ring: 45 19% 13%;              /* Dark brown focus ring */
+    /* Borders - purple tinted for brand consistency */
+    --border: 268 59% 88%;           /* Purple-200 tinted */
+    --input: 268 59% 88%;
+    --ring: 268 83% 58%;             /* Purple-500 focus ring */
 
-    /* Border radius - Cursor uses 4px for cards */
+    /* Border radius - 4px for consistency */
     --radius: 0.25rem;               /* 4px */
 
     /* Brand gradients */
@@ -68,7 +68,7 @@ html {
   }
 
   .dark {
-    /* Dark mode - Cursor's dark brown palette */
+    /* Dark mode - dark brown palette with purple accents */
     --background: 45 28% 6%;         /* #14120b - Very dark brown */
     --foreground: 0 3% 93%;          /* #edecec - Off-white */
 
@@ -79,7 +79,8 @@ html {
     --popover: 45 28% 6%;
     --popover-foreground: 0 3% 93%;
 
-    --primary: 0 3% 93%;             /* Light text for dark mode CTAs */
+    /* PRIMARY = Lighter purple for dark mode visibility */
+    --primary: 268 83% 70%;          /* Purple-400 (lighter) */
     --primary-foreground: 45 28% 6%; /* Dark background */
 
     --secondary: 45 19% 10%;
@@ -88,15 +89,17 @@ html {
     --muted: 45 19% 10%;
     --muted-foreground: 0 3% 65%;
 
-    --accent: 180 41% 45%;           /* Lighter teal for dark mode visibility */
-    --accent-foreground: 0 3% 93%;
+    /* ACCENT = Lighter cyan for dark mode visibility */
+    --accent: 187 100% 60%;          /* Cyan-400 (lighter) */
+    --accent-foreground: 45 28% 6%;  /* Dark background */
 
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 45 19% 15%;
-    --input: 45 19% 15%;
-    --ring: 0 3% 93%;                /* Light ring for dark mode */
+    /* Borders - purple tinted for dark mode */
+    --border: 268 64% 36%;           /* Purple-800 */
+    --input: 268 64% 36%;
+    --ring: 268 83% 70%;             /* Purple-400 for dark mode */
   }
 }
 

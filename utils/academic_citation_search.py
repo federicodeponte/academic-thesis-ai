@@ -352,8 +352,31 @@ def search_crossref(query: str, limit: int = 10) -> List[Citation]:
         return citations
 
     except requests.HTTPError as e:
-        logger.error(f"CrossRef API error: {e}")
-        raise
+        if e.response is not None and e.response.status_code == 429:
+            raise APIQuotaExceededError(
+                api_name="CrossRef",
+                reset_time="Unknown (check Retry-After header)",
+                context={"query": query, "limit": limit}
+            ) from e
+        else:
+            raise CitationFetchError(
+                citation_id=f"query:{query}",
+                source="CrossRef",
+                reason=str(e),
+                context={"status_code": e.response.status_code if e.response else None}
+            ) from e
+    except requests.Timeout as e:
+        raise NetworkError(
+            endpoint="api.crossref.org",
+            reason="Connection timeout",
+            context={"query": query}
+        ) from e
+    except requests.ConnectionError as e:
+        raise NetworkError(
+            endpoint="api.crossref.org",
+            reason="Network connection failed",
+            context={"query": query}
+        ) from e
     except Exception as e:
         logger.error(f"Unexpected error searching CrossRef: {e}")
         raise
@@ -512,8 +535,31 @@ def search_arxiv(query: str, limit: int = 10) -> List[Citation]:
         return citations
 
     except requests.HTTPError as e:
-        logger.error(f"arXiv API error: {e}")
-        raise
+        if e.response is not None and e.response.status_code == 429:
+            raise APIQuotaExceededError(
+                api_name="arXiv",
+                reset_time="Unknown (check Retry-After header)",
+                context={"query": query, "limit": limit}
+            ) from e
+        else:
+            raise CitationFetchError(
+                citation_id=f"query:{query}",
+                source="arXiv",
+                reason=str(e),
+                context={"status_code": e.response.status_code if e.response else None}
+            ) from e
+    except requests.Timeout as e:
+        raise NetworkError(
+            endpoint="export.arxiv.org",
+            reason="Connection timeout",
+            context={"query": query}
+        ) from e
+    except requests.ConnectionError as e:
+        raise NetworkError(
+            endpoint="export.arxiv.org",
+            reason="Network connection failed",
+            context={"query": query}
+        ) from e
     except Exception as e:
         logger.error(f"Unexpected error searching arXiv: {e}")
         raise

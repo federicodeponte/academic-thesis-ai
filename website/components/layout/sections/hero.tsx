@@ -29,20 +29,20 @@ export const HeroSection = () => {
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-[1.1] max-w-4xl mx-auto">
               Write Your Thesis{" "}
               <span className="bg-gradient-to-r from-brand-purple-500 to-brand-cyan-500 bg-clip-text text-transparent">
-                10x Faster
+                Faster
               </span>{" "}
               with AI
             </h1>
 
             <p className="text-xl md:text-2xl text-muted-foreground font-medium max-w-2xl mx-auto mt-6">
               Generate a 20,000-word master&apos;s thesis in{" "}
-              <span className="font-mono text-brand-purple-600 dark:text-brand-purple-400">15-25 minutes</span>, not{" "}
+              <span className="font-mono text-brand-purple-600 dark:text-brand-purple-400">20-30 minutes</span>, not{" "}
               <span className="line-through opacity-60">months</span>
             </p>
           </div>
 
           <p className="max-w-screen-sm mx-auto text-base text-muted-foreground leading-relaxed">
-            AI-powered framework with 15 specialized agents. 100% open source (MIT), no coding skills required. Integrated with 100M+ research papers.
+            AI-powered framework with 15 specialized agents. 100% open source (MIT), no coding skills required. Access to 200M+ research papers.
           </p>
 
           {/* GitHub Stats Badge */}
@@ -96,10 +96,14 @@ export const HeroSection = () => {
             </Button>
           </div>
 
-          <p className="text-xs text-muted-foreground max-w-md mx-auto">
-            <AlertTriangle className="inline size-3 mr-1" />
-            Check your institution&apos;s AI usage policy before using this tool. Learn more in <Link href="#faq" className="underline underline-offset-2 hover:text-accent transition-colors">FAQ</Link>.
-          </p>
+          <div className="max-w-lg mx-auto p-3 rounded-lg bg-yellow-50 dark:bg-yellow-950/30 border border-yellow-200 dark:border-yellow-800">
+            <p className="text-xs text-yellow-800 dark:text-yellow-200 flex items-start gap-2">
+              <AlertTriangle className="size-4 shrink-0 mt-0.5" />
+              <span>
+                <strong>Important:</strong> Many institutions restrict AI-generated content. Check your institution&apos;s academic honesty policy and disclose AI use if required. Failure to disclose may constitute academic misconduct. <Link href="#faq" className="underline underline-offset-2 hover:text-yellow-900 dark:hover:text-yellow-100 transition-colors">Learn more</Link>.
+              </span>
+            </p>
+          </div>
         </div>
 
         <div className="relative group mt-20 w-full">

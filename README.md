@@ -4,7 +4,7 @@
 
 ### AI-Powered Academic Writing Framework
 
-**Generate publication-ready theses with 15 specialized AI agents and 200M+ research papers**
+**Generate publication-ready theses with 15 specialized AI agents and 200M+ research papers** (via Semantic Scholar, arXiv, PubMed, Crossref)
 
 ![Demo](docs/assets/screenshots/demo-placeholder.svg)
 <!-- TODO: Replace with real demo GIF - see docs/VISUAL_ASSETS_GUIDE.md -->
@@ -190,7 +190,7 @@ while maintaining quality and academic integrity
 | 🧪 **Test Coverage** | 100% (70+ tests) |
 | 💰 **Cost per Thesis** | $10-$35 (Gemini 2.5) |
 | ⭐ **GitHub Stars** | 120+ |
-| 👥 **Active Users** | Growing daily |
+| 📦 **Production Theses** | 4 complete examples |
 
 </div>
 

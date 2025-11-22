@@ -64,7 +64,7 @@ Real-world data from 4 production theses (111,665 words total).
 
 ## ✅ Quality Metrics
 
-### Overall Score (N=20 expert reviews)
+### Overall Score
 
 | Dimension | Score |
 |-----------|-------|
@@ -105,4 +105,4 @@ Real-world data from 4 production theses (111,665 words total).
 **Sample Size:** 181 test runs, 4 production theses
 
 **Data Source:** `data/metrics.json` - Single source of truth
-**Generated:** 2025-11-22 14:17:02
+**Generated:** 2025-11-22 14:30:21

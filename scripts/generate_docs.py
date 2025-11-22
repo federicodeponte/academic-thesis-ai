@@ -58,7 +58,7 @@ def generate_readme_section(metrics):
 | 🧪 **Test Coverage** | {metrics['features']['test_coverage_percent']}% ({metrics['features']['test_count']}+ tests) |
 | 💰 **Cost per Thesis** | ${costs['gemini_flash_20k']}-${costs['gemini_pro_20k']} (Gemini 2.5) |
 | ⭐ **GitHub Stars** | 120+ |
-| 👥 **Active Users** | Growing daily |
+| 📦 **Production Theses** | {meta['total_production_theses']} complete examples |
 
 </div>"""
 
@@ -263,7 +263,7 @@ Real-world data from {meta['total_production_theses']} production theses ({meta[
 
 ## ✅ Quality Metrics
 
-### Overall Score (N=20 expert reviews)
+### Overall Score
 
 | Dimension | Score |
 |-----------|-------|

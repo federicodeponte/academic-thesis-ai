@@ -20,7 +20,7 @@
 | 🧪 **Test Coverage** | 100% (70+ tests) |
 | 💰 **Cost per Thesis** | $10-$35 (Gemini 2.5) |
 | ⭐ **GitHub Stars** | 120+ |
-| 👥 **Active Users** | Growing daily |
+| 📦 **Production Theses** | 4 complete examples |
 
 </div>
 

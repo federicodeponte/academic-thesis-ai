@@ -95,6 +95,10 @@ testpaths = ["tests"]
 python_files = "test_*.py"
 python_functions = "test_*"
 addopts = "-v --strict-markers --cov=. --cov-report=term-missing"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "integration: marks tests requiring API access",
+]
 
 [tool.black]
 line-length = 100

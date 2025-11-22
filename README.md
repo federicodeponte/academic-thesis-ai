@@ -4,7 +4,7 @@
 
 ### AI-Powered Academic Writing Framework
 
-**Generate publication-ready theses with 15 specialized AI agents and 200M+ research papers** (via Semantic Scholar, arXiv, PubMed, Crossref)
+**Generate publication-ready theses with 15 specialized AI agents and access to 200M+ research papers** via academic APIs (Semantic Scholar, arXiv, PubMed, Crossref)
 
 ![Demo](docs/assets/screenshots/demo-placeholder.svg)
 <!-- TODO: Replace with real demo GIF - see docs/VISUAL_ASSETS_GUIDE.md -->
@@ -57,7 +57,7 @@
 </p>
 
 <h3>
-Write academic papers <strong>99% faster</strong> with AI assistance<br/>
+Write academic papers <strong>significantly faster</strong> (20-25 min vs 40-80 hours manual)<br/>
 while maintaining quality and academic integrity
 </h3>
 

@@ -53,13 +53,12 @@ def extract_citations_from_text(
     Raises:
         ValueError: If extraction fails or output is invalid
     """
-    if verbose:
-        print(f"\n{'='*70}")
-        print(f"🔍 Citation Manager - Extracting Citations")
-        print(f"{'='*70}")
-        print(f"Text length: {len(text):,} chars")
-        print(f"Language: {language}")
-        print(f"Citation style: {citation_style}")
+    logger.info("="*70)
+    logger.info("Citation Manager - Extracting Citations")
+    logger.info("="*70)
+    logger.info(f"Text length: {len(text):,} chars")
+    logger.info(f"Language: {language}")
+    logger.info(f"Citation style: {citation_style}")
 
     # Load Citation Manager prompt
     prompt_path = Path("prompts/02_structure/citation_manager.md")
@@ -110,19 +109,15 @@ CRITICAL:
     # Call LLM
     full_prompt = f"{agent_prompt}\n\n---\n\n{user_input}"
 
-    if verbose:
-        print("Extracting citations...", end=' ', flush=True)
+    logger.info("Extracting citations from text...")
 
     try:
         response = model.generate_content(full_prompt)
         output = response.text
+        logger.info(f"Extraction complete ({len(output):,} chars)")
     except Exception as e:
-        if verbose:
-            print(f"❌ Error")
+        logger.error(f"Citation extraction failed: {str(e)}")
         raise ValueError(f"Citation extraction failed: {str(e)}") from e
-
-    if verbose:
-        print(f"✅ Done ({len(output):,} chars)")
 
     # Parse JSON response
     try:
@@ -178,10 +173,9 @@ CRITICAL:
     # DOI VALIDATION - Verify DOIs exist via CrossRef API
     # ====================================================================
     if validate_dois and citations:
-        if verbose:
-            print(f"\n{'='*70}")
-            print(f"🔍 DOI Validation - Verifying Citations via CrossRef API")
-            print(f"{'='*70}")
+        logger.info("="*70)
+        logger.info("DOI Validation - Verifying Citations via CrossRef API")
+        logger.info("="*70)
 
         # Import validator (lazy import to avoid circular dependencies)
         from utils.citation_validator import CitationValidator
@@ -198,16 +192,12 @@ CRITICAL:
                 if is_valid is False:  # Explicitly False (not None for network errors)
                     invalid_citations.append(citation)
                     logger.warning(f"Invalid DOI for {citation.id}: {citation.doi}")
-                    if verbose:
-                        print(f"  ❌ {citation.id}: Invalid DOI ({citation.doi})")
                 elif is_valid is None:  # Network error
                     network_error_count += 1
                     logger.warning(f"Network error validating DOI for {citation.id}: {citation.doi}")
-                    if verbose:
-                        print(f"  ⚠️  {citation.id}: Network error - keeping citation")
                 else:  # Valid
-                    if verbose and (i + 1) % 10 == 0:
-                        print(f"  ✅ Validated {i + 1}/{len([c for c in citations if c.doi])} DOIs...")
+                    if (i + 1) % 10 == 0:
+                        logger.debug(f"Validated {i + 1}/{len([c for c in citations if c.doi])} DOIs...")
 
         # Remove invalid citations
         if invalid_citations:
@@ -215,30 +205,25 @@ CRITICAL:
             citations = [c for c in citations if c not in invalid_citations]
             removed_count = original_count - len(citations)
 
-            logger.info(f"Removed {removed_count} citations with invalid DOIs")
-            if verbose:
-                print(f"\n⚠️  Removed {removed_count} citation(s) with invalid DOIs:")
-                for citation in invalid_citations[:5]:  # Show first 5
-                    authors_str = ", ".join(citation.authors[:2])
-                    if len(citation.authors) > 2:
-                        authors_str += " et al."
-                    print(f"   - {citation.id}: {authors_str} ({citation.year})")
-                    print(f"     Invalid DOI: {citation.doi}")
-                if len(invalid_citations) > 5:
-                    print(f"   ... and {len(invalid_citations) - 5} more")
+            logger.warning(f"Removed {removed_count} citations with invalid DOIs")
+            for citation in invalid_citations[:5]:  # Log first 5
+                authors_str = ", ".join(citation.authors[:2])
+                if len(citation.authors) > 2:
+                    authors_str += " et al."
+                logger.warning(f"  - {citation.id}: {authors_str} ({citation.year}) - Invalid DOI: {citation.doi}")
+            if len(invalid_citations) > 5:
+                logger.warning(f"  ... and {len(invalid_citations) - 5} more")
 
-        if verbose:
-            print(f"\n✅ DOI Validation Complete:")
-            print(f"   Valid: {len([c for c in citations if c.doi]) - len(invalid_citations)}")
-            print(f"   Invalid: {len(invalid_citations)}")
-            print(f"   Network Errors: {network_error_count}")
-            print(f"   Total Citations Remaining: {len(citations)}")
+        logger.info("DOI Validation Complete:")
+        logger.info(f"  Valid: {len([c for c in citations if c.doi]) - len(invalid_citations)}")
+        logger.info(f"  Invalid: {len(invalid_citations)}")
+        logger.info(f"  Network Errors: {network_error_count}")
+        logger.info(f"  Total Citations Remaining: {len(citations)}")
 
     # Deduplicate citations (keep version with most metadata)
-    if verbose:
-        print(f"\n📊 Deduplication:")
+    logger.info("Deduplicating citations...")
     from utils.citation_database import deduplicate_citations
-    citations = deduplicate_citations(citations, verbose=verbose)
+    citations = deduplicate_citations(citations, verbose=False)  # deduplicate_citations has its own logging
 
     # Re-assign sequential IDs after deduplication
     for i, citation in enumerate(citations):
@@ -254,9 +239,9 @@ CRITICAL:
     # Validate database
     database.validate()
 
-    if verbose:
-        print(f"\n✅ Extracted {len(citations)} citations")
-        print(f"Citation IDs: {citations[0].id} ... {citations[-1].id}")
+    logger.info(f"Successfully extracted {len(citations)} citations")
+    if citations:
+        logger.debug(f"Citation IDs: {citations[0].id} ... {citations[-1].id}")
 
     return database
 
@@ -340,9 +325,6 @@ def run_citation_manager(
 
         logger.info(f"Successfully saved citation database: {file_size} bytes to {output_path}")
 
-        if verbose:
-            print(f"📄 Database saved to: {output_path} ({file_size} bytes)")
-
     except ValueError as e:
         # Validation errors from save_citation_database
         error_msg = f"Citation database validation failed: {str(e)}"
@@ -378,6 +360,13 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
+    # Configure logging for CLI usage
+    import logging
+    logging.basicConfig(
+        level=logging.INFO if not args.quiet else logging.WARNING,
+        format='%(levelname)s - %(message)s'
+    )
+
     try:
         database = run_citation_manager(
             input_path=args.input,
@@ -388,9 +377,9 @@ if __name__ == '__main__':
             verbose=not args.quiet
         )
 
-        print(f"\n✅ SUCCESS: Extracted {len(database.citations)} citations")
-        print(f"📄 Database: {args.output}")
+        logger.info(f"SUCCESS: Extracted {len(database.citations)} citations")
+        logger.info(f"Database: {args.output}")
 
     except Exception as e:
-        print(f"\n❌ ERROR: {str(e)}")
+        logger.error(f"ERROR: {str(e)}")
         sys.exit(1)

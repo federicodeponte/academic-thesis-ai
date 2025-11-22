@@ -6,8 +6,12 @@ ABOUTME: Supports multiple PDF engines (LibreOffice, Pandoc, WeasyPrint) with au
 
 import sys
 import argparse
+import logging
 from pathlib import Path
 from typing import Optional, Literal
+
+# Configure logging
+logger = logging.getLogger(__name__)
 
 # Fix BUG #19: Add project root to path for subprocess/different CWD execution
 project_root = Path(__file__).resolve().parent.parent
@@ -90,7 +94,7 @@ def extract_metadata_from_yaml(md_file: Path) -> dict:
         return normalized
 
     except Exception as e:
-        print(f"⚠️  Warning: Could not extract YAML metadata: {e}")
+        logger.warning(f"Could not extract YAML metadata: {e}")
         return {}
 
 
@@ -140,10 +144,11 @@ def export_pdf(
             system_credit=metadata.get('system_credit')
         )
 
-    print(f"\n📄 Generating PDF: {output_pdf.name}")
-    print(f"   Input: {md_file}")
-    print(f"   Engine: {engine}")
-    print()
+    logger.info("="*70)
+    logger.info(f"Generating PDF: {output_pdf.name}")
+    logger.info(f"Input: {md_file}")
+    logger.info(f"Engine: {engine}")
+    logger.info("="*70)
 
     # Use factory to generate with automatic fallback
     result = PDFEngineFactory.generate_with_fallback(
@@ -155,18 +160,18 @@ def export_pdf(
 
     # Display result
     if result.success:
-        print(f"\n✅ PDF created successfully: {result.output_path}")
-        print(f"   Engine used: {result.engine_name}")
+        logger.info(f"PDF created successfully: {result.output_path}")
+        logger.info(f"Engine used: {result.engine_name}")
 
         if result.warnings:
-            print("\n⚠️  Warnings:")
+            logger.warning("Warnings during PDF generation:")
             for warning in result.warnings:
-                print(f"   - {warning}")
+                logger.warning(f"  - {warning}")
 
         return True
     else:
-        print(f"\n❌ PDF generation failed")
-        print(f"   Error: {result.error_message}")
+        logger.error("PDF generation failed")
+        logger.error(f"Error: {result.error_message}")
         return False
 
 
@@ -275,8 +280,8 @@ def export_docx_basic(md_file: Path, output_docx: Path) -> bool:
         from docx.shared import Pt, Inches
         from docx.enum.text import WD_ALIGN_PARAGRAPH
     except ImportError:
-        print("❌ Error: python-docx not installed")
-        print("   Run: pip install python-docx")
+        logger.error("python-docx not installed")
+        logger.error("Run: pip install python-docx")
         return False
 
     try:
@@ -354,11 +359,11 @@ def export_docx_basic(md_file: Path, output_docx: Path) -> bool:
         # Save
         doc.save(output_docx)
 
-        print(f"✅ DOCX created successfully: {output_docx}")
+        logger.info(f"DOCX created successfully: {output_docx}")
         return True
 
     except Exception as e:
-        print(f"❌ DOCX generation failed: {str(e)}")
+        logger.error(f"DOCX generation failed: {str(e)}")
         return False
 
 
@@ -401,9 +406,9 @@ def export_docx(
 
     # Try Pandoc method first (best quality)
     if not shutil.which('pandoc'):
-        print("⚠️  Pandoc not found - falling back to basic DOCX export")
-        print("   (Tables and advanced formatting will be limited)")
-        print("   Install Pandoc for better results: sudo apt install pandoc")
+        logger.warning("Pandoc not found - falling back to basic DOCX export")
+        logger.warning("Tables and advanced formatting will be limited")
+        logger.info("Install Pandoc for better results: sudo apt install pandoc")
         return export_docx_basic(md_file, output_docx)
 
     try:
@@ -431,8 +436,8 @@ def export_docx(
         reference_doc = Path(__file__).parent.parent / "examples" / "custom-reference.docx"
 
         if not reference_doc.exists():
-            print(f"⚠️  Warning: Reference document not found: {reference_doc}")
-            print("   Continuing without reference document (may lose some formatting)")
+            logger.warning(f"Reference document not found: {reference_doc}")
+            logger.warning("Continuing without reference document (may lose some formatting)")
             reference_doc = None
 
         # Build pandoc command (use normalized temp file)
@@ -459,11 +464,12 @@ def export_docx(
         if options.author:
             cmd.extend(['--metadata', f'author={options.author}'])
 
-        print(f"\n📄 Generating DOCX with Pandoc: {output_docx.name}")
-        print(f"   Input: {md_file}")
+        logger.info("="*70)
+        logger.info(f"Generating DOCX with Pandoc: {output_docx.name}")
+        logger.info(f"Input: {md_file}")
         if reference_doc:
-            print(f"   Reference doc: {reference_doc.name}")
-        print()
+            logger.info(f"Reference doc: {reference_doc.name}")
+        logger.info("="*70)
 
         # Run pandoc
         result = subprocess.run(
@@ -474,31 +480,30 @@ def export_docx(
         )
 
         if result.returncode != 0:
-            print(f"❌ Pandoc failed with return code {result.returncode}")
+            logger.error(f"Pandoc failed with return code {result.returncode}")
             if result.stderr:
-                print(f"   Error: {result.stderr}")
+                logger.error(f"Error: {result.stderr}")
             return False
 
-        print(f"✅ DOCX created successfully: {output_docx}")
-        print(f"   Tables, formatting, and styling preserved from markdown")
+        logger.info(f"DOCX created successfully: {output_docx}")
+        logger.info("Tables, formatting, and styling preserved from markdown")
 
         # Post-process DOCX to add academic structure (title page + TOC)
         # Fixes Pandoc's inline title block by inserting professional page breaks
         from utils.docx_post_processor import insert_academic_structure
 
-        print()
         if not insert_academic_structure(output_docx, verbose=True):
-            print("⚠️  Post-processing failed - DOCX created but may lack page structure")
-            print("   (DOCX will have inline title block instead of standalone pages)")
+            logger.warning("Post-processing failed - DOCX created but may lack page structure")
+            logger.warning("DOCX will have inline title block instead of standalone pages")
             return True  # Still return True since basic DOCX was created
 
         return True
 
     except subprocess.TimeoutExpired:
-        print("❌ DOCX generation timed out (>60s)")
+        logger.error("DOCX generation timed out (>60s)")
         return False
     except Exception as e:
-        print(f"❌ DOCX generation failed: {str(e)}")
+        logger.error(f"DOCX generation failed: {str(e)}")
         return False
     finally:
         # Clean up temporary markdown file
@@ -508,33 +513,37 @@ def export_docx(
 
 def show_available_engines() -> None:
     """Display available PDF engines and their status."""
-    print("\n📋 Available PDF Engines:")
-    print()
+    logger.info("="*70)
+    logger.info("Available PDF Engines")
+    logger.info("="*70)
 
     engines = get_available_engines()
     if not engines:
-        print("   ❌ No PDF engines available")
-        print()
-        print("   Install at least one of:")
-        print("   - LibreOffice: sudo apt install libreoffice-writer libreoffice-core-nogui")
-        print("   - Pandoc: sudo apt install pandoc texlive-latex-base texlive-latex-recommended")
-        print("   - WeasyPrint: pip install weasyprint")
+        logger.warning("No PDF engines available")
+        logger.info("Install at least one of:")
+        logger.info("  - LibreOffice: sudo apt install libreoffice-writer libreoffice-core-nogui")
+        logger.info("  - Pandoc: sudo apt install pandoc texlive-latex-base texlive-latex-recommended")
+        logger.info("  - WeasyPrint: pip install weasyprint")
         return
 
     recommended = get_recommended_engine()
 
     for engine in engines:
-        marker = "⭐" if engine == recommended else "  "
-        print(f"   {marker} {engine}")
+        marker = "[Recommended]" if engine == recommended else ""
+        logger.info(f"  {engine} {marker}")
 
-    print()
     if recommended:
-        print(f"   Recommended: {recommended}")
-    print()
+        logger.info(f"Recommended: {recommended}")
 
 
 def main():
     """CLI entry point."""
+    # Configure logging for CLI usage
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(levelname)s - %(message)s'
+    )
+
     parser = argparse.ArgumentParser(
         description='Export markdown to professional academic PDF/DOCX',
         formatter_class=argparse.RawDescriptionHelpFormatter,
@@ -588,7 +597,7 @@ Engine Options:
     input_file = Path(args.input)
 
     if not input_file.exists():
-        print(f"❌ Error: Input file not found: {input_file}")
+        logger.error(f"Input file not found: {input_file}")
         sys.exit(1)
 
     if not args.pdf and not args.docx:

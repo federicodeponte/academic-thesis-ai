@@ -5,6 +5,7 @@ const requiredEnvVars = [
   'NEXT_PUBLIC_SUPABASE_URL',
   'NEXT_PUBLIC_SUPABASE_ANON_KEY',
   'NEXT_PUBLIC_TURNSTILE_SITE_KEY',
+  'SUPABASE_SERVICE_KEY',
 ];
 
 const missingEnvVars = requiredEnvVars.filter((envVar) => !process.env[envVar]);

@@ -6,7 +6,6 @@ ABOUTME: Creates structured citation database from research notes or thesis
 
 import json
 import sys
-import logging
 from pathlib import Path
 from typing import Optional
 
@@ -24,8 +23,9 @@ from utils.citation_database import (
 )
 from tests.test_utils import setup_model, load_prompt
 
-# Configure logging
-logger = logging.getLogger(__name__)
+# Use centralized logging system
+from utils.logging_config import get_logger
+logger = get_logger(__name__)
 
 
 def extract_citations_from_text(
@@ -360,12 +360,11 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
 
-    # Configure logging for CLI usage
-    import logging
-    logging.basicConfig(
-        level=logging.INFO if not args.quiet else logging.WARNING,
-        format='%(levelname)s - %(message)s'
-    )
+    # Logging is automatically configured by utils.logging_config on import
+    # Optionally adjust level based on --quiet flag
+    if args.quiet:
+        import logging
+        logging.getLogger().setLevel(logging.WARNING)
 
     try:
         database = run_citation_manager(

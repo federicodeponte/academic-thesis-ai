@@ -10,6 +10,10 @@ import sys
 import markdown
 from pathlib import Path
 
+# Use centralized logging system
+from utils.logging_config import get_logger
+logger = get_logger(__name__)
+
 # Verification infrastructure
 try:
     from citation_verifier import CitationVerifier
@@ -25,14 +29,14 @@ except ImportError:
         VERIFICATION_AVAILABLE = True
     except ImportError:
         VERIFICATION_AVAILABLE = False
-        print("Warning: Verification infrastructure not available. Use --skip-verification to bypass.")
+        logger.warning("Verification infrastructure not available. Use --skip-verification to bypass.")
 
 try:
     from weasyprint import HTML, CSS
     WEASY_AVAILABLE = True
 except ImportError:
     WEASY_AVAILABLE = False
-    print("Warning: WeasyPrint not installed. PDF export unavailable.")
+    logger.warning("WeasyPrint not installed. PDF export unavailable.")
 
 try:
     from docx import Document
@@ -41,7 +45,7 @@ try:
     DOCX_AVAILABLE = True
 except ImportError:
     DOCX_AVAILABLE = False
-    print("Warning: python-docx not installed. Word export unavailable.")
+    logger.warning("python-docx not installed. Word export unavailable.")
 
 
 def verify_before_export(input_file, force=False, skip_verification=False):
@@ -53,27 +57,31 @@ def verify_before_export(input_file, force=False, skip_verification=False):
         False if verification failed and not forced
     """
     if skip_verification:
-        print("\n⚠️  WARNING: Skipping verification (--skip-verification)")
-        print("   Export may contain unverified citations and claims.\n")
+        logger.warning("="*70)
+        logger.warning("Skipping verification (--skip-verification)")
+        logger.warning("Export may contain unverified citations and claims.")
+        logger.warning("="*70)
         return True
 
     if not VERIFICATION_AVAILABLE:
-        print("\n⚠️  WARNING: Verification infrastructure not available")
-        print("   Install dependencies or use --skip-verification\n")
+        logger.warning("="*70)
+        logger.warning("Verification infrastructure not available")
+        logger.warning("Install dependencies or use --skip-verification")
+        logger.warning("="*70)
         return False
 
-    print("\n" + "="*60)
-    print("ACADEMIC INTEGRITY VERIFICATION")
-    print("="*60 + "\n")
+    logger.info("="*70)
+    logger.info("ACADEMIC INTEGRITY VERIFICATION")
+    logger.info("="*70)
 
     # Citation verification
-    print("Running citation verification...")
+    logger.info("Running citation verification...")
     citation_verifier = CitationVerifier(use_cache=True)
     citation_report = citation_verifier.verify_file(input_file)
     citation_report.print_summary()
 
     # Fact-checking
-    print("\nRunning fact-check...")
+    logger.info("Running fact-check...")
     fact_checker = FactChecker()
     fact_report = fact_checker.check_file(input_file)
     fact_report.print_summary()
@@ -82,27 +90,27 @@ def verify_before_export(input_file, force=False, skip_verification=False):
     citation_passed = citation_report.passes_threshold(95.0)
     fact_passed = fact_report.passes_threshold(95.0)
 
-    print("\n" + "="*60)
-    print("VERIFICATION SUMMARY")
-    print("="*60)
-    print(f"Citations: {'✅ PASS' if citation_passed else '❌ FAIL'} ({citation_report.verification_rate:.1f}%)")
-    print(f"Fact-check: {'✅ PASS' if fact_passed else '❌ FAIL'} ({fact_report.citation_rate:.1f}%)")
+    logger.info("="*70)
+    logger.info("VERIFICATION SUMMARY")
+    logger.info("="*70)
+    logger.info(f"Citations: {'PASS' if citation_passed else 'FAIL'} ({citation_report.verification_rate:.1f}%)")
+    logger.info(f"Fact-check: {'PASS' if fact_passed else 'FAIL'} ({fact_report.citation_rate:.1f}%)")
 
     if citation_passed and fact_passed:
-        print("\n✅ VERIFICATION PASSED - Ready for export")
-        print("="*60 + "\n")
+        logger.info("VERIFICATION PASSED - Ready for export")
+        logger.info("="*70)
         return True
     else:
-        print("\n❌ VERIFICATION FAILED - Academic integrity issues detected")
-        print("="*60 + "\n")
+        logger.error("VERIFICATION FAILED - Academic integrity issues detected")
+        logger.error("="*70)
 
         if force:
-            print("⚠️  WARNING: Proceeding with export anyway (--force)")
-            print("   This document has NOT met academic standards.\n")
+            logger.warning("Proceeding with export anyway (--force)")
+            logger.warning("This document has NOT met academic standards.")
             return True
         else:
-            print("Export BLOCKED. Fix issues or use --force to override.")
-            print("Use --skip-verification to bypass checks entirely.\n")
+            logger.error("Export BLOCKED. Fix issues or use --force to override.")
+            logger.error("Use --skip-verification to bypass checks entirely.")
             return False
 
 
@@ -121,7 +129,7 @@ def markdown_to_html(md_content):
 def export_pdf(input_file, output_file):
     """Export Markdown to PDF using WeasyPrint"""
     if not WEASY_AVAILABLE:
-        print("ERROR: WeasyPrint not installed. Run: pip install weasyprint")
+        logger.error("WeasyPrint not installed. Run: pip install weasyprint")
         return False
     
     # Read Markdown
@@ -199,14 +207,14 @@ def export_pdf(input_file, output_file):
     
     # Generate PDF
     HTML(string=html_content).write_pdf(output_file, stylesheets=[css])
-    print(f"✅ PDF exported successfully: {output_file}")
+    logger.info(f"PDF exported successfully: {output_file}")
     return True
 
 
 def export_docx(input_file, output_file):
     """Export Markdown to Word (.docx)"""
     if not DOCX_AVAILABLE:
-        print("ERROR: python-docx not installed. Run: pip install python-docx")
+        logger.error("python-docx not installed. Run: pip install python-docx")
         return False
     
     # Read Markdown
@@ -267,7 +275,7 @@ def export_docx(input_file, output_file):
     
     # Save
     doc.save(output_file)
-    print(f"✅ Word document exported successfully: {output_file}")
+    logger.info(f"Word document exported successfully: {output_file}")
     return True
 
 
@@ -337,9 +345,9 @@ def export_latex(input_file, output_file):
     # Save
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write(latex_content)
-    
-    print(f"✅ LaTeX exported successfully: {output_file}")
-    print(f"   Compile with: pdflatex {output_file}")
+
+    logger.info(f"LaTeX exported successfully: {output_file}")
+    logger.info(f"Compile with: pdflatex {output_file}")
     return True
 
 
@@ -381,7 +389,7 @@ Academic Integrity:
 
     # Check input file exists
     if not os.path.exists(args.input):
-        print(f"ERROR: Input file not found: {args.input}")
+        logger.error(f"Input file not found: {args.input}")
         sys.exit(1)
 
     # Verify academic integrity before export (Quality Gate)
@@ -392,8 +400,8 @@ Academic Integrity:
     )
 
     if not verification_passed:
-        print("❌ Export BLOCKED due to verification failure.")
-        print("   Fix issues, use --force, or use --skip-verification")
+        logger.error("Export BLOCKED due to verification failure.")
+        logger.error("Fix issues, use --force, or use --skip-verification")
         sys.exit(1)
 
     # Create output directory if needed

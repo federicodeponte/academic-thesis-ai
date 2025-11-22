@@ -6,12 +6,12 @@ ABOUTME: Supports multiple PDF engines (LibreOffice, Pandoc, WeasyPrint) with au
 
 import sys
 import argparse
-import logging
 from pathlib import Path
 from typing import Optional, Literal
 
-# Configure logging
-logger = logging.getLogger(__name__)
+# Use centralized logging system
+from utils.logging_config import get_logger
+logger = get_logger(__name__)
 
 # Fix BUG #19: Add project root to path for subprocess/different CWD execution
 project_root = Path(__file__).resolve().parent.parent
@@ -538,11 +538,7 @@ def show_available_engines() -> None:
 
 def main():
     """CLI entry point."""
-    # Configure logging for CLI usage
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(levelname)s - %(message)s'
-    )
+    # Logging is automatically configured by utils.logging_config on import
 
     parser = argparse.ArgumentParser(
         description='Export markdown to professional academic PDF/DOCX',

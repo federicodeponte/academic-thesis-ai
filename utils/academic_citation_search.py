@@ -25,6 +25,7 @@ from dataclasses import dataclass, asdict
 from urllib.parse import quote
 from utils.retry import retry, exponential_backoff_with_jitter
 from utils.logging_config import get_logger
+from utils.exceptions import CitationFetchError, NetworkError, APIQuotaExceededError
 
 logger = get_logger(__name__)
 
@@ -177,8 +178,31 @@ def search_semantic_scholar(
         return citations
 
     except requests.HTTPError as e:
-        logger.error(f"Semantic Scholar API error: {e}")
-        raise
+        if e.response is not None and e.response.status_code == 429:
+            raise APIQuotaExceededError(
+                api_name="Semantic Scholar",
+                reset_time="Unknown (check Retry-After header)",
+                context={"query": query, "limit": limit}
+            ) from e
+        else:
+            raise CitationFetchError(
+                citation_id=f"query:{query}",
+                source="Semantic Scholar",
+                reason=str(e),
+                context={"status_code": e.response.status_code if e.response else None}
+            ) from e
+    except requests.Timeout as e:
+        raise NetworkError(
+            endpoint="api.semanticscholar.org",
+            reason="Connection timeout",
+            context={"query": query}
+        ) from e
+    except requests.ConnectionError as e:
+        raise NetworkError(
+            endpoint="api.semanticscholar.org",
+            reason="Network connection failed",
+            context={"query": query}
+        ) from e
     except Exception as e:
         logger.error(f"Unexpected error searching Semantic Scholar: {e}")
         raise
@@ -599,6 +623,131 @@ def validate_doi(doi: str) -> bool:
     except Exception as e:
         logger.debug(f"DOI validation failed for {doi}: {e}")
         return False
+
+
+def search_multi_source(
+    query: str,
+    limit: int = 10,
+    prefer_source: Optional[str] = None
+) -> List[Citation]:
+    """
+    Search multiple citation APIs with graceful degradation fallback.
+
+    Implements production-grade error handling:
+    - Tries preferred source first (if specified)
+    - Falls back to alternative sources on failure
+    - Aggregates results from successful sources
+    - Logs failures but continues operation
+    - Never fails completely unless all sources fail
+
+    Args:
+        query: Search query
+        limit: Target number of citations (actual results may vary)
+        prefer_source: Preferred API to try first ("semantic_scholar", "crossref", "arxiv")
+
+    Returns:
+        List of citations from successful API sources (may be empty if all fail)
+
+    Example:
+        >>> # Try Semantic Scholar first, fall back to others if needed
+        >>> citations = search_multi_source("machine learning", limit=20, prefer_source="semantic_scholar")
+        >>> len(citations) > 0
+        True
+    """
+    sources = ["semantic_scholar", "crossref", "arxiv"]
+
+    # Reorder sources based on preference
+    if prefer_source and prefer_source in sources:
+        sources.remove(prefer_source)
+        sources.insert(0, prefer_source)
+
+    logger.info(f"Multi-source citation search for: '{query}' (limit={limit})")
+    logger.info(f"Source priority: {' -> '.join(sources)}")
+
+    all_citations = []
+    failed_sources = []
+    per_source_limit = limit // len(sources) + 1  # Distribute limit across sources
+
+    for source in sources:
+        try:
+            if source == "semantic_scholar":
+                citations = search_semantic_scholar(query, limit=per_source_limit)
+            elif source == "crossref":
+                citations = search_crossref(query, limit=per_source_limit)
+            elif source == "arxiv":
+                citations = search_arxiv(query, limit=per_source_limit)
+            else:
+                continue
+
+            all_citations.extend(citations)
+            logger.info(f"✅ {source}: Retrieved {len(citations)} citations")
+
+            # Stop early if we have enough citations
+            if len(all_citations) >= limit:
+                logger.info(f"Reached target limit ({limit}), stopping search")
+                break
+
+        except APIQuotaExceededError as e:
+            logger.warning(f"⚠️ {source}: API quota exceeded - {e.recovery_hint}")
+            failed_sources.append((source, "quota_exceeded"))
+            continue  # Try next source
+
+        except NetworkError as e:
+            logger.warning(f"⚠️ {source}: Network error - {e.recovery_hint}")
+            failed_sources.append((source, "network_error"))
+            continue  # Try next source
+
+        except CitationFetchError as e:
+            logger.warning(f"⚠️ {source}: Citation fetch failed - {e.recovery_hint}")
+            failed_sources.append((source, "fetch_error"))
+            continue  # Try next source
+
+        except Exception as e:
+            logger.error(f"❌ {source}: Unexpected error - {str(e)}")
+            failed_sources.append((source, "unexpected_error"))
+            continue  # Try next source
+
+    # Log summary
+    logger.info(f"Multi-source search complete: {len(all_citations)} total citations")
+
+    if failed_sources:
+        logger.warning(f"Failed sources: {', '.join([f'{s[0]} ({s[1]})' for s in failed_sources])}")
+
+    if len(all_citations) == 0:
+        logger.error("All citation sources failed - no citations retrieved")
+
+    # Deduplicate citations (same title + year = duplicate)
+    deduplicated = _deduplicate_citations(all_citations)
+
+    if len(deduplicated) < len(all_citations):
+        logger.info(f"Removed {len(all_citations) - len(deduplicated)} duplicate citations")
+
+    # Return up to limit
+    return deduplicated[:limit]
+
+
+def _deduplicate_citations(citations: List[Citation]) -> List[Citation]:
+    """
+    Remove duplicate citations based on title and year.
+
+    Args:
+        citations: List of citations (may contain duplicates)
+
+    Returns:
+        Deduplicated list of citations
+    """
+    seen = set()
+    unique_citations = []
+
+    for citation in citations:
+        # Create deduplication key (title + year, normalized)
+        key = (citation.title.lower().strip(), citation.year)
+
+        if key not in seen:
+            seen.add(key)
+            unique_citations.append(citation)
+
+    return unique_citations
 
 
 def validate_citation_quality(citation: Citation) -> bool:

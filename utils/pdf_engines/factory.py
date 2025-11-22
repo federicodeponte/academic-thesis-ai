@@ -11,6 +11,7 @@ from .base import PDFEngine, PDFGenerationOptions, EngineResult
 from .libreoffice_engine import LibreOfficeEngine
 from .weasyprint_engine import WeasyPrintEngine
 from .pandoc_engine import PandocLatexEngine
+from utils.exceptions import PDFExportError, ConfigurationError
 
 
 class PDFEngineFactory:
@@ -64,13 +65,18 @@ class PDFEngineFactory:
 
         engine_class = engine_map.get(engine_type)
         if not engine_class:
-            raise ValueError(f"Unknown engine type: {engine_type}")
+            raise PDFExportError(
+                engine=engine_type,
+                reason=f"Unknown engine type: {engine_type}",
+                recovery_hint="Use 'auto', 'libreoffice', 'pandoc', or 'weasyprint'"
+            )
 
         engine = engine_class()
         if not engine.is_available():
-            raise ValueError(
-                f"{engine.get_name()} engine not available. "
-                f"Check that required dependencies are installed."
+            raise PDFExportError(
+                engine=engine.get_name(),
+                reason="Engine not available - required dependencies missing",
+                recovery_hint="Install dependencies or use 'auto' to try alternative engines"
             )
 
         return engine

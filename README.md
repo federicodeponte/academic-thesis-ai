@@ -336,34 +336,6 @@ python tests/scripts/test_ai_pricing_thesis.py
   </tr>
 </table>
 
-<details>
-<summary><strong>📊 User Survey Results (N=127 Beta Users)</strong></summary>
-
-**Satisfaction Metrics:**
-- ✅ **89%** would recommend to colleagues
-- ✅ **92%** said it saved 50+ hours of work
-- ✅ **87%** rated citation quality as "excellent" or "good"
-- ✅ **94%** successfully submitted AI-assisted theses
-
-**Time Savings (AI Generation Only):**
-| Task | Manual | With AI | Savings |
-|------|--------|---------|---------|
-| Literature review | 40-60 hrs | 5-8 min | **99%** |
-| Outlining | 8-12 hrs | 3-5 min | **99%** |
-| First draft | 80-120 hrs | 8-12 min | **99%** |
-| Citation formatting | 10-15 hrs | 2-3 min | **99%** |
-| **Total (AI only)** | **138-207 hrs** | **20-25 min** | **99%** |
-
-**Optional Human Review/Revision:** 15-25 hours (separate activity, user's choice)
-
-**Common Use Cases:**
-- 🎓 Master's theses (42%)
-- 📚 Literature reviews (28%)
-- 📄 Research proposals (18%)
-- 🔬 Undergraduate theses (12%)
-
-</details>
-
 ---
 
 ## 🛠️ How It Works

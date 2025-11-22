@@ -184,10 +184,25 @@ class CitationResearcher:
             api_chain = classification.api_chain
             if self.verbose:
                 print(f"    📊 Query type: {classification.query_type} (confidence: {classification.confidence:.2f})")
-                print(f"    🔀 API chain: {' → '.join(api_chain)}")
         else:
             # Use original fallback chain if smart routing disabled
             api_chain = ['crossref', 'semantic_scholar', 'gemini_grounded']
+
+        # Filter out disabled APIs from chain (Day 1 Fix)
+        enabled_chain = []
+        for api_name in api_chain:
+            if api_name == 'crossref' and not self.enable_crossref:
+                continue
+            if api_name == 'semantic_scholar' and not self.enable_semantic_scholar:
+                continue
+            if api_name == 'gemini_grounded' and not self.enable_gemini_grounded:
+                continue
+            enabled_chain.append(api_name)
+
+        api_chain = enabled_chain
+
+        if self.verbose and api_chain:
+            print(f"    🔀 API chain: {' → '.join(api_chain)}")
 
         # Try API chain
         metadata: Optional[Dict[str, Any]] = None

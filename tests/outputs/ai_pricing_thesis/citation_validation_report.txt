@@ -3,15 +3,14 @@
 CITATION VALIDATION REPORT: AI Pricing Thesis
 ================================================================================
 
-❌ CRITICAL ISSUES (2):
+
+
+⚠️  WARNINGS (1):
 --------------------------------------------------------------------------------
 
-[cite_006] DOI not found: 10.48550/arXiv.2501.10388
-  Sanabria, Vecino (2024) - Beyond the Sum: Unlocking AI Agents Potential Through Market...
-
-[cite_042] DOI not found: 10.48550/arXiv.2402.18582
-  Jafari (2024) - Streamlining the Selection Phase of Systematic Literature Re...
+[cite_002] Generic title pattern: 'A Systematic Review'
+  Preckler, Espín (2022) - The Role of Indication-Based Pricing in Future Pricing and R...
 
 ================================================================================
-TOTAL ISSUES: 2 (2 critical, 0 warnings)
+TOTAL ISSUES: 1 (0 critical, 1 warnings)
 ================================================================================

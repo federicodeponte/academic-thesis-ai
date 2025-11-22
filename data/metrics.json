@@ -1,7 +1,6 @@
 {
   "meta": {
     "last_updated": "2025-11-22",
-    "total_beta_users": 127,
     "total_production_theses": 4,
     "total_words_generated": 111665,
     "test_runs": 181
@@ -16,7 +15,7 @@
     "words_per_minute": 1000
   },
   "quality": {
-    "citation_accuracy_percent": 95.2,
+    "citation_accuracy_percent": 95,
     "overall_score": 8.5,
     "user_satisfaction_percent": 89,
     "readability_flesch": 38.2,

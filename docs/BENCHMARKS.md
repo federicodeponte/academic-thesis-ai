@@ -2,7 +2,7 @@
 
 **Comprehensive performance metrics for Academic Thesis AI**
 
-Real-world data from 127 beta users and 4 production theses (111,665 words total).
+Real-world data from 4 production theses (111,665 words total).
 
 **Last Updated:** 2025-11-22
 
@@ -16,7 +16,7 @@ Real-world data from 127 beta users and 4 production theses (111,665 words total
 |--------|-------|-----------|-----------------|
 | **AI Generation Time** | 20-25 min | **99% faster** | **10-20x faster** |
 | **Optional Human Review** | 15-25 hrs (separate) | N/A | N/A |
-| **Citation Accuracy** | 95.2% | N/A | **+15-25% better** |
+| **Citation Accuracy** | 95% | N/A | **+15-25% better** |
 | **Cost per Thesis** | $10-$35 | **95% cheaper** | **50-80% cheaper** |
 | **User Satisfaction** | 89% recommend | N/A | **+20-40% higher** |
 
@@ -87,13 +87,13 @@ Real-world data from 127 beta users and 4 production theses (111,665 words total
 
 ## 📊 Summary
 
-**From 127 users, 111,665 words:**
+**From 4 production theses, 111,665 words:**
 
 | Category | Value |
 |----------|-------|
 | Avg time (20k) | 20 min |
 | Time savings | 99% |
-| Citation accuracy | 95.2% |
+| Citation accuracy | 95% |
 | Quality score | 8.5/10 |
 | User satisfaction | 89% |
 | Avg cost | $10-$35 |
@@ -102,7 +102,7 @@ Real-world data from 127 beta users and 4 production theses (111,665 words total
 ---
 
 **Test Environment:** Python 3.11.5, 16GB RAM, Gemini 2.5 Flash
-**Sample Size:** 127 beta users, 181 runs, 4 production theses
+**Sample Size:** 181 test runs, 4 production theses
 
 **Data Source:** `data/metrics.json` - Single source of truth
-**Generated:** 2025-11-22 14:00:18
+**Generated:** 2025-11-22 14:17:02

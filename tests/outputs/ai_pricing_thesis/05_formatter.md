@@ -1,8 +1,8 @@
 # Formatted Paper Outline
 
-**Format Applied:** IMRaD (adapted for Theoretical Analysis with Case Studies)
-**Target Journal:** MIS Quarterly (or similar Business/Economics journal)
-**Word Limit:** 10,000 words
+**Format Applied:** IMRaD (adapted for theoretical paper with case studies)
+**Target Journal:** Journal of AI & Business Economics (placeholder for an interdisciplinary journal focused on AI economics)
+**Word Limit:** 8,000-10,000 words
 **Citation Style:** APA 7th Edition
 
 ---
@@ -13,17 +13,19 @@
 - **Font:** Times New Roman 12pt
 - **Line Spacing:** Double
 - **Margins:** 1 inch all sides
-- **Page Numbers:** Top right corner
-- **Headings:** Numbered
+- **Page Numbers:** Top-right corner
+- **Headings:** Unnumbered (APA style)
 
-### Section Heading Levels
-- **Level 1:** Bold, Centered, Title Case (e.g., **1. INTRODUCTION**)
-- **Level 2:** Bold, Left-Aligned, Title Case (e.g., **1.1 Background and Motivation**)
-- **Level 3:** Bold, Indented, Sentence case (e.g., **1.1.1 Current pricing challenges.**)
+### Section Heading Levels (APA 7th Edition)
+- **Level 1:** Centered, Bold, Title Case (e.g., **Abstract**)
+- **Level 2:** Flush Left, Bold, Title Case (e.g., **Introduction**)
+- **Level 3:** Flush Left, Bold, Italic, Title Case (e.g., ***Background and Motivation***)
+- **Level 4:** Indented, Bold, Title Case, ending with a period. (e.g., **Research Design.**)
+- **Level 5:** Indented, Bold, Italic, Title Case, ending with a period. (e.g., ***Data Collection.***)
 
 ### Citation Format
-- **In-text:** (Author, Year)
-- **Bibliography:** Full APA 7th Edition format specification
+- **In-text:** (Author, Year) or Author (Year)
+- **Bibliography:** Full format specification for APA 7th Edition.
 
 ### ⚠️ CITATION REQUIREMENTS - CRITICAL
 
@@ -68,224 +70,196 @@
 
 ## Formatted Structure
 
-### Title
+**Title**
 **Format:** Bold, Centered, 14pt
 **Max Length:** 100 characters
-**Suggested:** Monetizing Autonomy: A Framework for Value-Based Pricing of AI Agent Services
+**Suggested:** **From Tokens to Value: A Theoretical Framework for Agentic AI Systems' Dynamic Pricing Models**
 
-### Author Information
+**Author Information**
 **Format:**
-- Name(s): Full Name, Centered
-- Affiliation(s): Department, University, City, Country, Centered
-- Email(s): Corresponding Author's Email, Centered
-- ORCID: [Optional, include if available]
+- Name(s): Full Name(s) (e.g., John Doe)
+- Affiliation(s): Department, University/Organization, City, Country
+- Email(s): [email protected]
+- ORCID: (Optional) https://orcid.org/xxxx-xxxx-xxxx-xxxx
 
-### Abstract
+**Abstract**
 **Heading:** **Abstract** (Bold, Centered)
 **Length:** 250-300 words
 **Structure:**
-- **Background** (1-2 sentences): Contextualize the rise of agentic AI and the challenge of monetization.
-- **Objective** (1 sentence): State the research question and purpose of the paper (to conceptualize and implement value-based approaches).
-- **Approach/Framework** (2-3 sentences): Briefly describe the theoretical analysis and proposed frameworks.
-- **Key Contributions/Implications** (2-3 sentences): Summarize the proposed models and their benefits, referencing illustrative case studies.
-- **Conclusions** (1-2 sentences): Highlight the paradigm shift needed and the broader impact.
+- Background (2 sentences): The rise of agentic AI systems is transforming various sectors, moving beyond simple automation to autonomous decision-making and value creation. Current AI pricing models, however, remain largely resource-centric, based on computational tokens or fixed costs, which are inadequate for truly autonomous, value-generating agentic systems.
+- Objective (1 sentence): This paper proposes a theoretical framework for Agentic Value-Based Pricing (AVBP) to address this gap, detailing mechanisms and architectural considerations for AI agents to autonomously set prices based on perceived value.
+- Methods (2-3 sentences): We synthesize existing literature on AI economics and agent behavior, identify critical theoretical deficiencies, and then construct a multi-layered framework encompassing agent architectures, pricing strategies, and market interaction protocols.
+- Results (2-3 sentences): Illustrative case studies demonstrate the applicability of the AVBP framework across diverse market scenarios, revealing its potential to foster more dynamic and efficient markets while highlighting new complexities.
+- Conclusions (1-2 sentences): The AVBP framework offers significant insights into future AI market dynamics, ethical challenges, and regulatory needs, advocating for a paradigm shift in how we conceptualize and implement AI pricing.
 
-**Keywords:** 3-6 keywords (e.g., Agentic AI, Value-Based Pricing, AI Economics, Monetization, Autonomous Systems, Business Models)
+**Keywords:** 3-6 keywords (e.g., Agentic AI, Dynamic Pricing, Value-Based Pricing, AI Economics, Market Dynamics, Autonomous Agents)
 
 ---
 
-## 1. Introduction
-**Section Number:** 1
-**Length:** 1000-1200 words
-**Subsections:**
+**Introduction**
+**Length:** 800-1200 words
 
-### 1.1 Background and Motivation
-[Format: Narrative paragraph(s)]
-- Introduce the transformative potential of agentic AI systems.
-- Highlight the current gap in understanding and pricing their economic value.
-- Emphasize the unique characteristics of agentic AI (autonomy, complex value creation).
+***Background and Motivation***
+-   Discuss the current state of AI systems, highlighting the shift from simple automation to autonomous, agentic behavior.
+-   Introduce the limitations of current token-based or resource-centric AI pricing models.
+-   Emphasize the growing need for AI agents to understand and price based on perceived value.
 
-### 1.2 Problem Statement
-[Format: Clear, concise paragraph(s)]
-- Detail the limitations of existing token-based pricing models for agentic AI.
-- Explain why these models are insufficient for capturing autonomous value.
-- State the necessity for a new approach.
+***Problem Statement***
+-   Clearly articulate the research gap: the lack of explicit theoretical frameworks and architectural considerations for *how* autonomous AI agents define, implement, and adapt value-based pricing strategies.
+-   State the significance of this problem for market dynamics and the future of AI economics.
 
-### 1.3 Research Objectives
+***Research Question***
+-   How can we develop and evaluate theoretical frameworks for autonomous AI agent-driven dynamic pricing, moving beyond token-based models towards value-based approaches, and what are their implications for market dynamics and policy?
+
+***Research Objectives***
 **List format:**
-1.  To critically analyze the limitations of current token-based pricing models for agentic AI systems.
-2.  To conceptualize a comprehensive theoretical foundation for value creation by autonomous agents.
-3.  To propose and detail specific value-based pricing frameworks tailored for agentic AI.
-4.  To illustrate the applicability and benefits of these proposed frameworks through case studies.
+1.  To critically analyze the limitations of existing AI pricing models in the context of autonomous agentic systems.
+2.  To propose a comprehensive theoretical framework for Agentic Value-Based Pricing (AVBP), outlining its core mechanisms and architectural components.
+3.  To illustrate the application and implications of the AVBP framework through diverse market scenarios.
+4.  To discuss the broader implications of AVBP for market dynamics, ethical considerations, and policy development.
 
-### 1.4 Contributions
+***Contributions***
 **Bullet format:**
-- A novel theoretical framework for understanding and valuing agentic AI contributions.
-- A set of distinct value-based pricing models (e.g., outcome-based, impact-based) designed for AI agents.
-- Illustrative case studies demonstrating the practical implementation and advantages of the proposed models.
-- Strategic implications for sustainable market adoption, equitable monetization, and responsible AI development.
+-   Introduction of a novel theoretical framework for Agentic Value-Based Pricing (AVBP).
+-   Identification of key architectural considerations for implementing value-based pricing in autonomous AI agents.
+-   Exploration of the transformative impact of AVBP on market dynamics and competitive landscapes.
+-   Guidance for policymakers and developers on navigating the ethical and regulatory challenges of agentic pricing.
 
-### 1.5 Paper Organization
-[Standard paragraph describing the structure of the paper]
-
----
-
-## 2. Literature Review and Theoretical Foundations
-**Section Number:** 2
-**Length:** 2500-3000 words
-**Organization:** Thematic subsections, building towards the theoretical gap.
-
-### 2.1 Evolution of AI Pricing Models: From Foundational Models to Agents
-[Format: Narrative + critical analysis]
-- Review existing AI pricing models (e.g., SaaS, API calls, token-based).
-- Discuss their origins and suitability for foundational models.
-- Highlight where these models begin to break down for agentic systems.
-
-### 2.2 Understanding Agentic AI: Characteristics and Value Creation
-[Format: Detailed conceptual discussion]
-- Define agentic AI systems and their key attributes (autonomy, goal-orientation, proactivity, social ability, learning).
-- Explore how these characteristics lead to complex, emergent, and often unpredictable value.
-- Introduce concepts of utility, outcome, and strategic impact in the context of AI agents.
-
-### 2.3 Economic Theories of Value and Pricing
-[Format: Review of relevant economic principles]
-- Discuss traditional theories of value (e.g., labor theory, utility theory, scarcity).
-- Explore value-based pricing in other industries (e.g., software, consulting).
-- Identify relevant economic principles for agentic AI (e.g., principal-agent theory, transaction cost economics, network effects).
-
-### 2.4 Gap Analysis and Research Opportunity
-[Synthesis paragraph + table]
-- Synthesize the literature to clearly articulate the theoretical and practical gap in pricing agentic AI.
-- Position the current research as addressing this critical gap.
-
-**Table 1:** Comparison of AI Pricing Models and Their Suitability for Agentic Systems
-| Model Type | Core Principle | Suitability for Foundational Models | Suitability for Agentic AI | Limitations for Agents |
-|------------|----------------|------------------------------------|----------------------------|-----------------------|
-| Token-based| Resource consumption | High                              | Low                       | Ignores autonomy, emergent value |
-| SaaS       | Access/Subscription | Moderate                          | Moderate                  | Lacks granularity for diverse agent tasks |
-| ...        | ...            | ...                                | ...                        | ...                   |
+***Paper Organization***
+-   Standard paragraph outlining the structure of the remainder of the paper.
 
 ---
 
-## 3. Conceptual Framework and Proposed Value-Based Pricing Models
-**Section Number:** 3
-**Length:** 2500-3000 words
+**Literature Review**
+**Length:** 1500-2500 words
+**Organization:** Thematic subsections, synthesizing existing research and identifying gaps.
 
-### 3.1 A Conceptual Framework for Agentic Value Creation
-[Format: Paragraph + diagram]
-- Propose a multi-dimensional framework that captures the inputs, processes, and outputs of agentic value.
-- Elements: Agent Architecture Costs, Operational Costs, Agent Performance Metrics, Achieved Outcomes, Strategic Impact.
+***Foundations of AI Economics and Pricing Models***
+-   Review current AI pricing models (e.g., token-based, subscription, pay-per-use).
+-   Discuss economic theories applied to AI (e.g., cost functions, utility theory).
+-   Highlight the limitations of these models when applied to autonomous, value-creating agents.
 
-**Figure 1:** Conceptual Framework for Agentic Value-Based Pricing
-[Placeholder for conceptual diagram illustrating the framework components and their interrelationships]
-**Caption Format:** Figure 1. Conceptual Framework for Agentic Value-Based Pricing. *This figure illustrates the multi-dimensional aspects contributing to the value generated by agentic AI systems, moving beyond simple resource consumption.*
+***Autonomous Agents and Multi-Agent Systems***
+-   Explore literature on agent architectures, decision-making processes, and learning in multi-agent environments.
+-   Review existing work on agent-based modeling of markets and economic interactions.
 
-### 3.2 Design Principles for Value-Based Agent Pricing
-[Format: Numbered list or bullet points with detailed explanation]
-1.  **Outcome-Oriented:** Focus on measurable results rather than inputs.
-2.  **Adaptive and Dynamic:** Pricing adjusts based on agent performance, context, and evolving value.
-3.  **Transparency and Explainability:** Clear understanding of how value is calculated.
-4.  **Risk-Sharing:** Alignment of incentives between provider and user.
-5.  **Scalability:** Models should accommodate varying levels of agent complexity and deployment.
+***Value Theory and Pricing Strategies***
+-   Delve into economic and philosophical concepts of value.
+-   Examine traditional value-based pricing strategies in human-driven markets.
+-   Discuss challenges in operationalizing "value" for AI systems.
 
-### 3.3 Proposed Value-Based Pricing Models for Agentic AI
-[Format: Detailed subsection for each model, including rationale, mechanics, and potential applications]
+***Dynamic Pricing and Algorithmic Pricing***
+-   Review the evolution of dynamic pricing and algorithmic pricing in various industries.
+-   Analyze the methods and impacts of existing algorithmic pricing systems, noting their differences from truly autonomous agentic pricing.
 
-#### 3.3.1 Outcome-Based Pricing (OBP)
-[Description of how OBP works for agents, examples (e.g., lead generation, task completion rate)]
-
-#### 3.3.2 Impact-Based Pricing (IBP)
-[Description of how IBP works, focusing on strategic or long-term benefits (e.g., cost savings, revenue growth, innovation)]
-
-#### 3.3.3 Performance-Tiered Subscription Models
-[Description of subscription models with tiers based on agent capabilities, performance levels, or value delivered]
-
-#### 3.3.4 Hybrid Models and Customization
-[Discussion on combining elements of the above, or tailoring models to specific industry/agent types]
+***Summary and Gap Analysis***
+-   Synthesize the reviewed literature, emphasizing where current research falls short in addressing agentic value-based pricing.
+-   Clearly state the critical gap that this paper's theoretical framework aims to fill.
 
 ---
 
-## 4. Illustrative Case Studies
-**Section Number:** 4
+**Proposed Theoretical Framework: Agentic Value-Based Pricing (AVBP)**
+**Length:** 2000-3000 words
+This section is adapted from the "Methodology" section of the IMRaD template, focusing on the construction of the theoretical framework.
+
+***Core Principles of AVBP***
+-   Define the fundamental tenets of value-based pricing for autonomous agents.
+-   Explain how agents move beyond cost/token-centric views to perceive and quantify value.
+
+***Agent Architecture for Value-Based Pricing***
+-   **Value Perception Module:** How agents sense and interpret market signals, user needs, and competitive landscapes to infer value.
+-   **Value Estimation Engine:** Algorithms and models agents use to quantify perceived value (e.g., utility functions, willingness-to-pay models, predictive analytics).
+-   **Pricing Strategy Module:** How agents translate value estimations into concrete pricing decisions (e.g., dynamic optimization, adaptive learning algorithms, game theory approaches).
+-   **Market Interaction Interface:** Mechanisms for agents to interact with other agents or human customers, negotiate, and execute transactions.
+
+**Figure 1:** Conceptual Architecture of an AVBP Agent
+[Placeholder for a diagram illustrating the modules and their interconnections within an AVBP agent.]
+*Caption Format: Figure 1. Conceptual Architecture of an Agentic Value-Based Pricing (AVBP) Agent.*
+
+***Mechanisms for Value Definition and Adaptation***
+-   **Learning and Adaptation:** How agents learn from market feedback, adjust their value models, and refine pricing strategies over time.
+-   **Contextual Value Assessment:** How agents account for varying contexts, customer segments, and temporal dynamics in their value calculations.
+-   **Inter-Agent Communication and Collaboration:** Potential for agents to share value insights or coordinate pricing in multi-agent markets.
+
+***Formalization of AVBP (Optional, if mathematical models are included)***
+-   Present mathematical models or pseudo-code illustrating key components of the framework.
+
+---
+
+**Illustrative Case Studies and Analysis**
 **Length:** 1500-2000 words
-**Organization:** Each case study should apply the proposed models.
+This section serves as the "Results" section, demonstrating the application and implications of the proposed framework.
 
-### 4.1 Case Study 1: [Agent Type/Industry 1, e.g., Automated Customer Support Agent]
-[Format: Narrative application of models]
-- **Scenario:** Describe the agent's function, context, and current pricing (if any).
-- **Application of OBP:** How would outcome-based pricing be structured? (e.g., per resolved query, customer satisfaction score).
-- **Application of IBP (if relevant):** How would impact be measured? (e.g., reduction in human agent workload, increased customer loyalty).
-- **Benefits:** Discuss the advantages over token-based pricing.
+***Case Study 1: Personalized Service Delivery (e.g., AI Tutors, Healthcare Navigators)***
+-   **Scenario Description:** Detail a hypothetical market where AVBP agents offer personalized services.
+-   **AVBP Application:** Show how the AVBP framework would enable agents to price services based on perceived user value, learning outcomes, or health improvements.
+-   **Market Dynamics:** Analyze the likely impact on competition, consumer surplus, and market efficiency.
 
-### 4.2 Case Study 2: [Agent Type/Industry 2, e.g., Financial Trading Agent]
-[Format: Narrative application of models]
-- **Scenario:** Describe the agent's function and complexity.
-- **Application of IBP:** How would impact-based pricing be structured? (e.g., percentage of profitable trades, risk reduction).
-- **Application of Performance-Tiered Subscription:** How would tiers be defined? (e.g., speed, accuracy, market access).
-- **Challenges and Mitigations:** Discuss potential implementation challenges and how to address them.
+***Case Study 2: Digital Content and Media (e.g., AI-Generated Art, Dynamic News Feeds)***
+-   **Scenario Description:** A market for unique, AI-generated digital content.
+-   **AVBP Application:** Demonstrate how agents might value content based on user engagement, virality potential, or unique artistic merit.
+-   **Market Dynamics:** Discuss implications for content creators, platforms, and consumption patterns.
 
-### 4.3 Comparative Analysis of Case Study Applications
-[Format: Synthesis and comparison]
-- Compare the effectiveness and suitability of different proposed models across the case studies.
-- Identify common themes and unique considerations.
+***Case Study 3: Autonomous Supply Chain Optimization (e.g., Logistics, Resource Allocation)***
+-   **Scenario Description:** A multi-agent system coordinating complex supply chain tasks.
+-   **AVBP Application:** Illustrate how agents could price their services (e.g., transportation, storage, processing) based on real-time demand, risk, and overall system efficiency gains.
+-   **Market Dynamics:** Analyze the potential for optimized resource allocation and new forms of collaborative competition.
 
----
-
-## 5. Discussion
-**Section Number:** 5
-**Length:** 1000-1200 words
-
-### 5.1 Interpretation of Findings
-[Format: Narrative with citations]
-- Summarize the key insights from the conceptual framework and case study applications.
-- Reiterate how the proposed models address the limitations of token-based pricing.
-
-### 5.2 Comparison with Prior Work
-[Format: Comparative discussion]
-- How do the proposed frameworks and models extend or challenge existing theories of AI economics and pricing?
-- Highlight the unique contributions in the context of agentic AI.
-
-### 5.3 Theoretical Implications
-[Format: Paragraph(s)]
-- Discuss the broader theoretical contributions to AI economics, business models, and the understanding of autonomous value creation.
-- Implications for principal-agent theory in AI contexts.
-
-### 5.4 Practical Implications
-[Format: Bullet points or paragraphs]
-- For AI developers: Guidance on designing monetizable agent services.
-- For businesses/users: How to evaluate and procure agentic AI, ensuring value alignment.
-- For policymakers: Considerations for regulation and market development.
-
-### 5.5 Limitations and Future Work
-[Format: Honest assessment]
-- Acknowledge limitations of the theoretical approach (e.g., empirical validation needed, specific industry nuances).
-- Suggest concrete avenues for future research (e.g., empirical testing, specific industry deep dives, ethical implications of value-based pricing).
+***Comparative Analysis Across Case Studies***
+-   Identify common themes and unique challenges in applying AVBP across different domains.
+-   Highlight the robustness and flexibility of the framework.
 
 ---
 
-## 6. Conclusion
-**Section Number:** 6
-**Length:** 400-500 words
+**Discussion**
+**Length:** 1200-1500 words
 
-[No subsections - continuous narrative]
+***Interpretation of Findings***
+-   Summarize the core insights gained from the theoretical framework and its application in case studies.
+-   Reiterate how AVBP addresses the limitations of token-based pricing.
 
-**Required elements:**
-- Restate the problem (limitations of token-based pricing for agentic AI) and the paper's approach (conceptualizing value-based models).
-- Summarize key findings (the necessity and feasibility of value-based pricing, the proposed framework and models).
-- Emphasize contributions (theoretical advancement, practical guidance for monetization).
-- Reiterate the thesis statement in a concluding manner.
-- Suggest future directions and the broader impact of adopting these new paradigms.
+***Comparison with Prior Work***
+-   Relate the AVBP framework to existing theories of AI economics, agent behavior, and pricing strategies.
+-   Clearly differentiate AVBP from current algorithmic pricing models, emphasizing the shift towards autonomous value perception and pricing.
+
+***Theoretical Implications***
+-   Discuss how AVBP advances our understanding of market dynamics, economic agents, and value creation in AI-driven economies.
+-   Propose new avenues for theoretical research in AI economics and multi-agent systems.
+
+***Practical Implications***
+-   Offer guidance for developers and businesses on designing and implementing AVBP agents.
+-   Discuss the potential for increased market efficiency, personalization, and innovation.
+-   Highlight potential challenges such as market volatility or unintended consequences.
+
+***Ethical Considerations***
+-   Address the ethical dimensions of autonomous value-based pricing (e.g., fairness, discrimination, transparency, market manipulation).
+-   Suggest design principles or regulatory mechanisms to mitigate ethical risks.
+
+***Limitations and Future Work***
+-   Acknowledge the theoretical nature of the proposed framework and its current lack of empirical validation.
+-   Suggest specific directions for future research, including empirical testing, simulation studies, and exploration of regulatory frameworks.
 
 ---
 
-## Acknowledgments
-[If applicable - funding bodies, specific contributors, research grants. Typically a short paragraph.]
+**Conclusion**
+**Length:** 400-600 words
+
+-   Restate the paper's main argument: the necessity of moving from token-based to value-based pricing for autonomous AI agents.
+-   Briefly summarize the proposed AVBP framework and its key components.
+-   Reiterate the significant findings from the illustrative case studies, emphasizing the transformative potential and complexities of AVBP.
+-   Emphasize the paper's primary contributions to AI economics, agent system design, and policy discourse.
+-   Conclude with a forward-looking statement on the future of agentic AI and market dynamics, highlighting the urgency for further research and responsible development.
 
 ---
 
-## References
+**Acknowledgments**
+[If applicable - funding, contributors, institutional support. Format: single paragraph.]
+
+---
+
+**References**
 **Format:** APA 7th Edition
-**Minimum:** 30-50 references (a mix of foundational works, recent AI literature, and economic/business model theories)
+**Minimum:** 30-40 references for a theoretical paper with case studies.
 
 **Categories:**
 - Foundational works (pre-2019): [~20-30%]
@@ -294,110 +268,104 @@
 
 ---
 
-## Appendices
-[If applicable, for supplementary materials not essential to the main text but useful for completeness]
-- Appendix A: Detailed Mathematical Formulations for Proposed Models
-- Appendix B: Supplementary Data for Case Studies
+**Appendices**
+[If applicable, for supplementary materials such as detailed mathematical proofs, extended case study data, or agent pseudo-code.]
+- Appendix A: [Supplementary materials]
 
 ---
 
 ## Journal-Specific Requirements
 
-### MIS Quarterly (or similar Business/Economics Journal)
+### Journal of AI & Business Economics (Example)
 
 **Mandatory sections:**
-- [ ] Data Availability Statement (even for theoretical papers, if case study data is publicly available or simulated)
+- [ ] Data Availability Statement (N/A for theoretical paper, or state "Data sharing not applicable to this article as no datasets were generated or analyzed during the current study.")
 - [ ] Conflict of Interest Statement
 - [ ] Author Contributions (if multiple authors)
 - [ ] Funding Statement
-- [ ] Ethical Approval (if human subjects or sensitive data were involved in case studies)
 
 **Formatting specifics:**
-- Figures: High-resolution (PNG/TIFF, min 300dpi for images), clearly labeled and referenced in text.
-- Tables: Editable format (not images), with clear titles, column headers, and footnotes.
-- Equations: Numbered sequentially, right-aligned (e.g., (1)).
-- Footnotes: Used sparingly for explanatory material.
+- Figures: [PNG/TIFF, min 300dpi, grayscale or color suitable for print]
+- Tables: [Editable format, not images, APA style table formatting]
+- Equations: [Numbered consecutively, right-aligned, using equation editor]
 
 **Submission checklist:**
-- [ ] Cover letter (addressed to the Editor-in-Chief, explaining the paper's significance and fit for the journal)
-- [ ] Highlights (3-5 concise bullet points summarizing the main findings/contributions)
-- [ ] Graphical abstract (if required by journal, a single image representing the main message)
-- [ ] Supplementary materials (packaged separately)
-- [ ] Blinding for peer review (ensure no author/affiliation information in the main manuscript text or file properties)
+- [ ] Cover letter
+- [ ] Highlights (3-5 bullet points summarizing key findings/contributions)
+- [ ] Graphical abstract (if required by journal)
+- [ ] Supplementary materials (if applicable)
 
 ---
 
 ## Length Targets by Section
 
-| Section | Words (Approx.) | % of Total |
-|---------------------------------------------|-----------------|------------|
-| Abstract                                    | 250-300         | 3%         |
-| 1. Introduction                             | 1000-1200       | 10-12%     |
-| 2. Literature Review & Theoretical Foundations | 2500-3000       | 25-30%     |
-| 3. Conceptual Framework & Proposed Models   | 2500-3000       | 25-30%     |
-| 4. Illustrative Case Studies                | 1500-2000       | 15-20%     |
-| 5. Discussion                               | 1000-1200       | 10-12%     |
-| 6. Conclusion                               | 400-500         | 4-5%       |
-| **Total (Main Body)**                       | **9150-11200**  | **~100%**  |
-| *References & Appendices (additional)*      | *Variable*      | *N/A*      |
+| Section | Words (Approx) | % of Total (Approx) |
+|---------------------------|----------------|---------------------|
+| Abstract | 250 | 3% |
+| Introduction | 1000 | 11% |
+| Literature Review | 2000 | 22% |
+| Proposed Theoretical Framework | 2500 | 28% |
+| Illustrative Case Studies & Analysis | 1500 | 17% |
+| Discussion | 1200 | 13% |
+| Conclusion | 500 | 6% |
+| **Total (excluding References/Appendices)** | **8950** | **100%** |
 
 ---
 
 ## Quality Checklist
 
 ### Structure
-- [x] All required sections present
-- [x] Logical flow between sections (follows the core argument progression)
-- [x] Appropriate section lengths (aligned with target word count)
+- [X] All required sections present
+- [X] Logical flow between sections, especially from problem to framework to application to implications.
+- [X] Appropriate section lengths, adhering to target word counts.
 
 ### Formatting
-- [x] Consistent heading styles (Level 1, 2, 3)
-- [x] Proper citation format (APA 7th, in-text and reference list)
-- [x] Figures/tables numbered correctly
-- [x] Captions complete and descriptive
+- [X] Consistent heading styles (APA 7th, unnumbered).
+- [X] Proper citation format (APA 7th in-text).
+- [ ] Figures/tables numbered correctly (placeholders noted).
+- [ ] Captions complete and descriptive (placeholders noted).
 
 ### Content
-- [x] Abstract summarizes whole paper (background, objective, approach, contributions, conclusion)
-- [x] Introduction states clear RQ and thesis
-- [x] Literature Review thoroughly establishes theoretical foundations and gap
-- [x] Conceptual Framework clearly defined and illustrated
-- [x] Proposed Models detailed with rationale and mechanics
-- [x] Case Studies effectively illustrate application of models
-- [x] Discussion interprets findings, compares to prior work, outlines implications
-- [x] Conclusion emphasizes contribution and future directions
+- [X] Abstract summarizes whole paper, including theoretical contribution and implications.
+- [X] Introduction states clear RQ and thesis.
+- [X] Literature Review identifies critical gaps relevant to the proposed framework.
+- [X] Theoretical Framework is clearly articulated and detailed.
+- [X] Case Studies illustrate the application and implications of the framework effectively.
+- [X] Discussion interprets findings, compares to prior work, and addresses implications.
+- [X] Conclusion emphasizes theoretical contribution and future directions.
 
 ---
 
 ## Style Guide
 
 ### Academic Tone
-- ✅ **Use:** "The results indicate...", "We observed...", "This suggests...", "The framework posits..."
+- ✅ **Use:** "The framework posits...", "This analysis suggests...", "We argue that..."
 - ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
 
 ### Tense Usage
 - **Introduction:** Present tense (current state, problem)
-- **Literature Review:** Past tense (what others found), Present tense (current understanding/theory)
-- **Conceptual Framework/Proposed Models:** Present tense (describing the framework/models)
-- **Case Studies:** Past tense (what was illustrated/applied)
-- **Discussion:** Present tense (what it means, implications)
-- **Conclusion:** Present tense (summary of contributions, future outlook)
+- **Literature Review:** Past tense (what others found), Present tense (what existing literature shows)
+- **Proposed Theoretical Framework:** Present tense (describing the framework, its components, and principles)
+- **Illustrative Case Studies & Analysis:** Present tense (describing the scenarios and how the framework *would* apply/imply)
+- **Discussion:** Present tense (interpreting findings, discussing implications)
+- **Conclusion:** Present tense (summarizing, emphasizing contributions)
 
 ### Voice
-- **Active vs Passive:** Prefer active for clarity, passive for objectivity. Balance for flow.
-- ✅ "We analyzed the data" (active, clear)
-- ✅ "The data were analyzed" (passive, objective)
-- ✅ "This framework is proposed to address..." (passive, for objectivity/emphasis on framework)
+- **Active vs Passive:** Prefer active for clarity, passive for objectivity.
+- ✅ "We propose a framework..." (active, clear)
+- ✅ "The framework is designed to..." (passive, objective)
 
 ---
 
 ## Next Steps
 
 After formatting:
-1. Review against target journal (MIS Quarterly) guidelines for any specific deviations.
-2. Ensure all placeholders are noted and understood by subsequent agents.
-3. Proceed to Compose phase with this clear, structured outline.
+1. Review against journal guidelines (placeholder used, need actual journal).
+2. Ensure all placeholders are noted.
+3. Proceed to Compose phase with clear structure.
 4. Save to `outline_formatted.md`
 
+```
 ---
 
 ## ⚠️ ACADEMIC INTEGRITY & VERIFICATION
@@ -412,3 +380,4 @@ After formatting:
 5. **Flag sections** that will need strong citation support
 
 **A well-structured paper with fabricated content will still fail verification. Build for accuracy.**
+```

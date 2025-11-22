@@ -3,226 +3,39 @@
     {
       "id": "cite_001",
       "authors": [
-        "Pölz"
+        "Raufer",
+        "Iyer"
       ],
       "year": 2012,
-      "title": "Stand structure and tree increment of a tropical lowland rainforest in Costa Rica",
-      "source_type": "journal",
-      "language": "english",
-      "url": "https://www.semanticscholar.org/paper/e45a1097a158a943f809a82a986fd5e3683e8768",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_002",
-      "authors": [
-        "Gründinger"
-      ],
-      "year": 2012,
-      "title": "Der Emissionshandel: ein Markt für Klimaschutz",
+      "title": "Emissions Trading",
       "source_type": "book",
       "language": "english",
-      "journal": "Lobbyismus im Klimaschutz",
-      "publisher": "VS Verlag für Sozialwissenschaften",
-      "pages": "15-20",
-      "doi": "10.1007/978-3-531-94070-0_2",
-      "url": "https://doi.org/10.1007/978-3-531-94070-0_2",
+      "journal": "Handbook of Climate Change Mitigation",
+      "publisher": "Springer US",
+      "pages": "235-275",
+      "doi": "10.1007/978-1-4419-7991-9_8",
+      "url": "https://doi.org/10.1007/978-1-4419-7991-9_8",
       "api_source": "Crossref"
     },
     {
       "id": "cite_004",
       "authors": [
-        "Asadnabizadeh",
-        "Moe"
+        "Zhu",
+        "Li",
+        "Huang",
+        "Lin"
       ],
-      "year": 2024,
-      "title": "A review of Global Carbon Markets from Kyoto to Paris and beyond: the persistent failure of implementation",
+      "year": 2023,
+      "title": "An empirical Analysis of Chinese Carbon Emissions Market Trading in the First Half of 2022",
       "source_type": "journal",
       "language": "english",
-      "journal": "Frontiers in Environmental Science",
-      "doi": "10.3389/fenvs.2024.1368105",
-      "url": "https://doi.org/10.3389/fenvs.2024.1368105",
+      "journal": "Advances in Economics, Management and Political Sciences",
+      "doi": "10.54254/2754-1169/17/20231051",
+      "url": "https://doi.org/10.54254/2754-1169/17/20231051",
       "api_source": "Semantic Scholar"
     },
     {
       "id": "cite_005",
-      "authors": [
-        "Amri",
-        "Oulfarsi",
-        "Boutti",
-        "Eddine",
-        "Hmioui"
-      ],
-      "year": 2021,
-      "title": "Carbon Financial Markets Underlying Climate Change Mitigation, Pricing and Challenges: Technical Analysis",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Financial Markets Institutions and Risks",
-      "doi": "10.21272/fmir.5(1).5-17.2021",
-      "url": "https://doi.org/10.21272/fmir.5(1).5-17.2021",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_009",
-      "authors": [
-        "Knöller",
-        "Fleig"
-      ],
-      "year": 2023,
-      "title": "Progressionshemmung der CKD im Spannungsfeld klimagesunder Ernährung",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Die Nephrologie",
-      "doi": "10.1007/s11560-023-00658-2",
-      "url": "https://doi.org/10.1007/s11560-023-00658-2",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_012",
-      "authors": [
-        "Lehmann",
-        "Schleich"
-      ],
-      "year": 2025,
-      "title": "Exploring internal trading in the EU emissions trading system: An empirical analysis",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Energy Economics",
-      "publisher": "Elsevier BV",
-      "pages": "109035",
-      "doi": "10.1016/j.eneco.2025.109035",
-      "url": "https://doi.org/10.1016/j.eneco.2025.109035",
-      "api_source": "Crossref"
-    },
-    {
-      "id": "cite_017",
-      "authors": [
-        "Nyekwere"
-      ],
-      "year": 2020,
-      "title": "Commercializing International Environmental Protection: A Review of the Kyoto Protocol to the United Nations Framework Convention on Climate Change and Its Market-Based Mechanisms",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "International affairs and global strategy",
-      "doi": "10.7176/iags/86-03",
-      "url": "https://doi.org/10.7176/iags/86-03",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_025",
-      "authors": [
-        "Beck",
-        "Kruse-Andersen"
-      ],
-      "year": 2020,
-      "title": "Endogenizing the Cap in a Cap-and-Trade System: Assessing the Agreement on EU ETS Phase 4",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Environmental and Resource Economics",
-      "doi": "10.1007/s10640-020-00518-w",
-      "url": "https://doi.org/10.1007/s10640-020-00518-w",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_027",
-      "authors": [
-        "Zhou",
-        "Wang",
-        "Fei",
-        "Liu",
-        "Xie",
-        "Zhao"
-      ],
-      "year": 2025,
-      "title": "Carbon Disclosure Effect, Corporate Fundamentals, and Net-zero Emission Target: Evidence from China",
-      "source_type": "journal",
-      "language": "english",
-      "url": "https://www.semanticscholar.org/paper/04576a08dba94f324686e28166e86d4c9daae7c2",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_028",
-      "authors": [
-        "projekttraeger.dlr.de"
-      ],
-      "year": 2025,
-      "title": "Oeko Institut Wpks Literaturrecherche Verteilungswirkungen.Pdf",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://projekttraeger.dlr.de/sites/default/files/2024-07/documents/Oeko-Institut_WPKS_Literaturrecherche_Verteilungswirkungen.pdf",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_030",
-      "authors": [
-        "Johnson",
-        "O'Connor",
-        "Duncan",
-        "Christensen"
-      ],
-      "year": 2017,
-      "title": "Towards an International Emissions Trading Scheme: Legal Specification of Tradeable Emissions Entitlements",
-      "source_type": "journal",
-      "language": "english",
-      "url": "https://www.semanticscholar.org/paper/8fe45542b39805ab60a2b5a1689eaeb2168c3de5",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_031",
-      "authors": [
-        "Fais",
-        "Blesl"
-      ],
-      "year": 2015,
-      "title": "Integrating Policy Instruments into Energy System Models—From Theory to Application to Germany",
-      "source_type": "journal",
-      "language": "english",
-      "doi": "10.1007/978-3-319-16540-0_7",
-      "url": "https://doi.org/10.1007/978-3-319-16540-0_7",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_032",
-      "authors": [
-        "Lokuge",
-        "Anders"
-      ],
-      "year": 2022,
-      "title": "Carbon Credit Systems in Agriculture: A Review of Literature",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "The School of Public Policy Publications",
-      "doi": "10.55016/ojs/sppp.v15i1.74591",
-      "url": "https://doi.org/10.55016/ojs/sppp.v15i1.74591",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_033",
-      "authors": [
-        "Jennifer L"
-      ],
-      "year": 2025,
-      "title": "Study Finds Carbon Offsets Failing to Deliver Real Climate Impact",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://carboncredits.com/study-finds-carbon-offsets-failing-to-deliver-real-climate-impact/",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_036",
-      "authors": [
-        "Baklaga"
-      ],
-      "year": 2024,
-      "title": "Synergizing AI and Blockchain: Innovations in Decentralized Carbon Markets for Emission Reduction through Intelligent Carbon Credit Trading",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Journal of Computer Science and Technology Studies",
-      "doi": "10.32996/jcsts.2024.6.2.13",
-      "url": "https://doi.org/10.32996/jcsts.2024.6.2.13",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_037",
       "authors": [
         "Digitemie",
         "Ekemezie"
@@ -237,109 +50,87 @@
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_039",
+      "id": "cite_006",
       "authors": [
-        "Elkerbout",
-        "Cătuţi",
-        "Egenhofer"
+        "Eslahi",
+        "Creti",
+        "Sanin"
       ],
-      "year": 2020,
-      "title": "What role for forest-based industries in a climate-neutral future? Finding the right balance between sinks, product substitution, renewable energy and biodiversity. CEPS Policy Contribution 20 Nov 2020.",
+      "year": 2026,
+      "title": "Mission accomplished? A post-assessment of EU ETS impact on power sector emissions reduction",
       "source_type": "journal",
       "language": "english",
-      "url": "https://www.semanticscholar.org/paper/ae341b56f23d36deffec9400e2de75f55e82c5c9",
+      "journal": "Ecological Economics",
+      "publisher": "Elsevier BV",
+      "volume": "239",
+      "pages": "108784",
+      "doi": "10.1016/j.ecolecon.2025.108784",
+      "url": "https://doi.org/10.1016/j.ecolecon.2025.108784",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_007",
+      "authors": [
+        "Black"
+      ],
+      "year": 2018,
+      "title": "Carbon Markets Under the Kyoto Protocol : Lessons Learned for Building an International Carbon Market Under the Paris Agreement",
+      "source_type": "journal",
+      "language": "english",
+      "url": "https://www.semanticscholar.org/paper/c1159062d0a261a4e26706b64b0b0b54c4ece2ec",
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_040",
+      "id": "cite_008",
       "authors": [
-        "Miltenberger",
-        "Jospe",
-        "Pittman"
+        "Woerdman"
       ],
-      "year": 2021,
-      "title": "The Good Is Never Perfect: Why the Current Flaws of Voluntary Carbon Markets Are Services, Not Barriers to Successful Climate Change Action",
-      "source_type": "journal",
+      "year": 2004,
+      "title": "Environmental Effectiveness of Market-Based Climate Policy",
+      "source_type": "book",
       "language": "english",
-      "journal": "Frontiers in Climate",
-      "doi": "10.3389/fclim.2021.686516",
-      "url": "https://doi.org/10.3389/fclim.2021.686516",
-      "api_source": "Semantic Scholar"
+      "journal": "Developments in Environmental Economics",
+      "publisher": "Elsevier",
+      "pages": "85-109",
+      "doi": "10.1016/s0927-5207(04)80006-2",
+      "url": "https://doi.org/10.1016/s0927-5207(04)80006-2",
+      "api_source": "Crossref"
     },
     {
-      "id": "cite_042",
+      "id": "cite_010",
       "authors": [
-        "bde.es"
-      ],
-      "year": 2025,
-      "title": "Carbon pricing, border adjustment and renewable energy investment: a network approach - Working Papers - Banco de España",
-      "source_type": "website",
-      "language": "english",
-      "url": "https://www.bde.es/wbe/en/publicaciones/analisis-economico-investigacion/documentos-trabajo/carbon-pricing-border-adjustment-and-renewable-energy-investment-a-network-approach.html",
-      "api_source": "Gemini Grounded"
-    },
-    {
-      "id": "cite_043",
-      "authors": [
-        "Holt",
-        "Shobe"
-      ],
-      "year": 2016,
-      "title": "Reprint of: Price and quantity collars for stabilizing emission allowance prices: Laboratory experiments on the EU ETS market stability reserve",
-      "source_type": "journal",
-      "language": "english",
-      "doi": "10.1016/J.JEEM.2016.01.003",
-      "url": "https://doi.org/10.1016/J.JEEM.2016.01.003",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_045",
-      "authors": [
-        "Bassey",
-        "Oyewale"
-      ],
-      "year": 2024,
-      "title": "Climate action and social equity: Mitigation strategies and carbon credits",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "World Journal of Advanced Research and Reviews",
-      "doi": "10.30574/wjarr.2024.24.2.3325",
-      "url": "https://doi.org/10.30574/wjarr.2024.24.2.3325",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_046",
-      "authors": [
-        "Guo",
-        "Wang",
         "Zhao",
-        "Dai"
-      ],
-      "year": 2023,
-      "title": "Carbon emissions from buildings based on a life cycle analysis: carbon reduction measures and effects of green building standards in China",
-      "source_type": "journal",
-      "language": "english",
-      "journal": "Low-carbon Materials and Green Construction",
-      "doi": "10.1007/s44242-022-00008-w",
-      "url": "https://doi.org/10.1007/s44242-022-00008-w",
-      "api_source": "Semantic Scholar"
-    },
-    {
-      "id": "cite_050",
-      "authors": [
-        "Herman"
+        "Wang",
+        "Chen",
+        "Li"
       ],
       "year": 2024,
-      "title": "Intermediaries and complexity: assessing emissions-based governance in the European Union’s EU-ETS",
+      "title": "Economic Incentives for Pollution Control in China Through the Lens of the Carbon Trading Market and Its Effectiveness and Challenges",
       "source_type": "journal",
       "language": "english",
-      "journal": "International Environmental Agreements: Politics, Law and Economics",
-      "doi": "10.1007/s10784-024-09651-z",
-      "url": "https://doi.org/10.1007/s10784-024-09651-z",
+      "journal": "Law and Economy",
+      "doi": "10.56397/le.2024.03.07",
+      "url": "https://doi.org/10.56397/le.2024.03.07",
       "api_source": "Semantic Scholar"
     },
     {
-      "id": "cite_055",
+      "id": "cite_014",
+      "authors": [
+        "Bhowmik",
+        "Rahut",
+        "Syed"
+      ],
+      "year": 2022,
+      "title": "Investigating the Impact of Climate Change Mitigation Technology on the Transport Sector CO2 Emissions: Evidence From Panel Quantile Regression",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Frontiers in Environmental Science",
+      "doi": "10.3389/fenvs.2022.916356",
+      "url": "https://doi.org/10.3389/fenvs.2022.916356",
+      "api_source": "Semantic Scholar"
+    },
+    {
+      "id": "cite_015",
       "authors": [
         "Bohm"
       ],
@@ -347,16 +138,198 @@
       "title": "Improving Cost-effectiveness and Facilitating Participation of Developing Countries in International Emissions Trading",
       "source_type": "journal",
       "language": "english",
-      "doi": "10.1023/A:1021391431206",
-      "url": "https://doi.org/10.1023/A:1021391431206",
-      "api_source": "Semantic Scholar"
+      "journal": "International Environmental Agreements",
+      "publisher": "Springer Science and Business Media LLC",
+      "volume": "2",
+      "issue": "3",
+      "pages": "261-273",
+      "doi": "10.1023/a:1021391431206",
+      "url": "https://doi.org/10.1023/a:1021391431206",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_017",
+      "authors": [
+        "Wurzel",
+        "Zito",
+        "Jordan"
+      ],
+      "year": 2013,
+      "title": "Governing by emissions trading",
+      "source_type": "book",
+      "language": "english",
+      "journal": "Environmental Governance in Europe",
+      "publisher": "Edward Elgar Publishing",
+      "doi": "10.4337/9781849804721.00016",
+      "url": "https://doi.org/10.4337/9781849804721.00016",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_019",
+      "authors": [
+        "Levi-Bliech",
+        "Dahan"
+      ],
+      "year": 2025,
+      "title": "The impact of green innovation products on an organization’s social performance via green supply chain management",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Green Technologies and Sustainability",
+      "publisher": "Elsevier BV",
+      "pages": "100273",
+      "doi": "10.1016/j.grets.2025.100273",
+      "url": "https://doi.org/10.1016/j.grets.2025.100273",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_026",
+      "authors": [
+        "Aristizabal",
+        "Gonzalez Manosalva"
+      ],
+      "year": 2021,
+      "title": "Application of NTC-ISO 14064 standard to calculate the Greenhouse Gas emissions and Carbon Footprint of ITM’s Robledo campus",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "DYNA",
+      "publisher": "Universidad Nacional de Colombia",
+      "volume": "88",
+      "issue": "218",
+      "pages": "88-94",
+      "doi": "10.15446/dyna.v88n218.88989",
+      "url": "https://doi.org/10.15446/dyna.v88n218.88989",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_027",
+      "authors": [
+        "Edwin",
+        "Josephine"
+      ],
+      "year": 2023,
+      "title": "European Union Emissions Trading System (EU ETS)",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Oxford Encyclopedia of EU Law",
+      "publisher": "Oxford University Press",
+      "doi": "10.1093/law-oeeul/e168.013.168",
+      "url": "https://doi.org/10.1093/law-oeeul/e168.013.168",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_028",
+      "authors": [
+        "Pigato"
+      ],
+      "year": 2018,
+      "title": "Fiscal Policies for Development and Climate Action",
+      "source_type": "book",
+      "language": "english",
+      "publisher": "Washington, DC: World Bank",
+      "doi": "10.1596/978-1-4648-1358-0",
+      "url": "https://doi.org/10.1596/978-1-4648-1358-0",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_029",
+      "authors": [
+        "Tang"
+      ],
+      "year": 2025,
+      "title": "Principles of Corporate Sustainability Development",
+      "source_type": "book",
+      "language": "english",
+      "journal": "Carbon Accounting and Sustainability, Volume II",
+      "publisher": "Springer Nature Switzerland",
+      "pages": "1-29",
+      "doi": "10.1007/978-3-031-90636-7_1",
+      "url": "https://doi.org/10.1007/978-3-031-90636-7_1",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_031",
+      "authors": [
+        "Peeters"
+      ],
+      "year": 2008,
+      "title": "Legislative Choices and Legal Values: Considerations on the Further Design of the European Greenhouse Gas Emissions Trading Scheme from a Viewpoint of Democratic Accountability",
+      "source_type": "book",
+      "language": "english",
+      "journal": "Climate Change and European Emissions Trading",
+      "publisher": "Edward Elgar Publishing",
+      "doi": "10.4337/9781848446038.00009",
+      "url": "https://doi.org/10.4337/9781848446038.00009",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_032",
+      "authors": [
+        "Wildgrube"
+      ],
+      "year": 2023,
+      "title": "Fit for 55? An assessment of the effectiveness of the EU COM's  reform proposal for the EU ETS",
+      "source_type": "journal",
+      "language": "english",
+      "journal": "Zeitschrift für Energiewirtschaft",
+      "publisher": "Springer Science and Business Media LLC",
+      "volume": "47",
+      "issue": "3",
+      "pages": "52-65",
+      "doi": "10.1007/s12398-023-0931-3",
+      "url": "https://doi.org/10.1007/s12398-023-0931-3",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_034",
+      "authors": [
+        "Swinfield",
+        "Toye Scott"
+      ],
+      "year": 2025,
+      "title": "Scientific credibility for high-integrity voluntary carbon markets",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "Cambridge University Press (CUP)",
+      "doi": "10.33774/coe-2025-f0j70",
+      "url": "https://doi.org/10.33774/coe-2025-f0j70",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_035",
+      "authors": [
+        "Martinus",
+        "Laopirun"
+      ],
+      "year": 2023,
+      "title": "The EU’s Carbon Border Adjustment Mechanism (CBAM): Implications for ASEAN-EU Relations",
+      "source_type": "book",
+      "language": "english",
+      "journal": "The EU’s Carbon Border Adjustment Mechanism (CBAM)",
+      "publisher": "ISEAS–Yusof Ishak Institute Singapore",
+      "pages": "1-30",
+      "doi": "10.1355/9789815104028-003",
+      "url": "https://doi.org/10.1355/9789815104028-003",
+      "api_source": "Crossref"
+    },
+    {
+      "id": "cite_038",
+      "authors": [
+        "Lake"
+      ],
+      "year": 2015,
+      "title": "How will carbon markets help the Paris climate agreement?",
+      "source_type": "report",
+      "language": "english",
+      "publisher": "The Conversation",
+      "doi": "10.64628/aa.mkh3s64nh",
+      "url": "https://doi.org/10.64628/aa.mkh3s64nh",
+      "api_source": "Crossref"
     }
   ],
   "metadata": {
-    "total_citations": 53,
+    "total_citations": 20,
     "citation_style": "APA 7th",
     "thesis_language": "german",
-    "extracted_date": "2025-11-19T07:50:23.605535",
-    "citation_count": 24
+    "extracted_date": "2025-11-22T10:00:41.097504"
   }
 }

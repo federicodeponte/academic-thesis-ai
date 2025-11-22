@@ -2,10 +2,10 @@
 
 ## Summary Statistics
 
-- **Total citations available**: 61
-- **Citations used in draft**: 49
-- **Citations unused**: 12
-- **Coverage percentage**: 80.3%
+- **Total citations available**: 45
+- **Citations used in draft**: 32
+- **Citations unused**: 14
+- **Coverage percentage**: 71.1%
 
 ## Analysis
 
@@ -15,15 +15,17 @@
 
 The following citations are in the database but not used in the draft:
 
-- **cite_023**: Kumar, Kumar et al. (2023) - The Six Decades of the Capital Asset Pricing Model: A Research Agenda
-- **cite_027**: Maimaris (2017) - Peer Review #1 of "Research Articles in Simplified HTML: a Web-first format f...
-- **cite_028**: discovery.ucl.ac.uk (2025) - ucl.ac.uk
-- **cite_032**: media-publications.bcg.com (2025) - bcg.com
-- **cite_033**: pwc.com (2025) - pwc.com
-- **cite_034**: rand.org (2025) - rand.org
-- **cite_037**: completeaitraining.com (2025) - completeaitraining.com
-- **cite_038**: fedscoop.com (2025) - fedscoop.com
-- **cite_050**: ieeexplore.ieee.org (2025) - ieee.org
-- **cite_052**: Takahashi (2016) - Analyzing the Influence of Indexing Strategies on Investors' Behavior and Ass...
-- **cite_054**: Bhusan, Tomar et al. (2024) - Optimal Transmission Expansion Planning in Deregulated Power Markets Using AI...
-- **cite_059**: bcg.com (2025) - bcg.com
+- **cite_059**: Gopalakrishnan (2000) - Classic Papers in Natural Resource Economics: An Overview
+- **cite_060**: Musabaeva, Mutalieva et al. (2024) - Regulation mechanisms of smart tourism development in Kazakhstan
+- **cite_061**: openai.com (2025) - openai.com
+- **cite_062**: Alsakran, Alabduljabbar (2025) - A Novel Llama 3-Based Prompt Engineering Platform for Textual Data Generation...
+- **cite_063**: aws.amazon.com (2025) - amazon.com
+- **cite_064**: Prushan (1995) - The strategy and tactics of pricing: A guide to profitable decision making (2...
+- **cite_065**: Liu, Ge (2025) - Testing LLM Generated Factors for Pricing Cross Sectional Returns
+- **cite_066**: Dodig-Crnkovic, Holstein et al. (2023) - Future Intelligent Autonomous Robots, Ethical by Design – Lessons Learned fro...
+- **cite_067**: openai.com (2025) - openai.com
+- **cite_068**: openai.com (2025) - openai.com
+- **cite_069**: anthropic.com (2025) - anthropic.com
+- **cite_070**: nops.io (2025) - nops.io
+- **cite_071**: cloud.google.com (2025) - google.com
+- **cite_072**: Pendyala (2024) - Enhancing Healthcare Pricing Transparency: A Machine Learning and AI-Driven A...

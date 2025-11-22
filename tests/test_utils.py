@@ -495,7 +495,7 @@ def research_citations_via_api(
     topic: Optional[str] = None,
     scope: Optional[str] = None,
     seed_references: Optional[List[str]] = None,
-    min_sources_deep: int = 50
+    min_sources_deep: int = 100  # Day 1 Fix: Increased from 50 to generate ~120 queries for 50-60 final citations
 ) -> Dict[str, Any]:
     """
     Research citations using API-backed fallback chain with optional deep research mode.
@@ -660,13 +660,14 @@ def research_citations_via_api(
         print()
 
     # Initialize CitationResearcher with API fallback chain
+    # Day 1 Fix: Disable junk fallbacks (Gemini Grounded + LLM) to ensure academic quality
     researcher = CitationResearcher(
         gemini_model=model,
         enable_crossref=True,
         enable_semantic_scholar=True,
-        enable_gemini_grounded=True,  # Enable Google Search grounding for industry sources
+        enable_gemini_grounded=False,  # DISABLED: Google Search returns websites, not academic papers
         enable_smart_routing=True,     # Enable query classification for source diversity
-        enable_llm_fallback=True,
+        enable_llm_fallback=False,     # DISABLED: LLM hallucinates citations
         verbose=verbose
     )
 

@@ -8,154 +8,111 @@
 ## Summary
 
 **Strengths:**
-- Comprehensive overview of Emissions Trading Systems (EHS) from multiple angles (implications, challenges, improvements, global role, recommendations).
-- Good logical flow from problem identification to proposed solutions and policy advice.
-- Addresses key challenges like carbon leakage, price volatility, and social impacts.
-- Synthesizes a broad range of literature to support general claims about EHS.
+- Comprehensive coverage of the topic, balancing the potential benefits and inherent challenges of emissions trading.
+- Clear, well-structured discussion with a logical flow between sections (implications, challenges, improvements, global role, recommendations).
+- Generally well-supported claims, drawing on a broad range of cited literature.
+- Identifies critical challenges such as price volatility, carbon leakage, and distributional effects, and proposes relevant solutions.
+- Provides actionable and differentiated recommendations for both policy-makers and the business sector.
 
-**Critical Issues:** 4 major, 4 moderate, 5 minor
-**Recommendation:** Significant revisions are needed, particularly regarding academic integrity (citation verification) and acknowledging the limitations inherent to a literature-based discussion without original empirical findings.
+**Critical Issues:** 2 major, 1 moderate, 2 minor
+**Recommendation:** Revisions needed before publication, particularly addressing missing citations for key claims.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Citation Verification and Academic Integrity
-**Location:** Throughout the entire document
-**Problem:** All citations are placeholders (`{cite_0XX}`). As a critical reviewer, I cannot verify if these citations are valid, if they accurately support the claims made, or if they point to appropriate sources. This fundamentally undermines the academic integrity and verifiability of the discussion.
-**Evidence:** Every cited statement uses a placeholder (e.g., `{cite_015}`, `{cite_003}`).
-**Fix:** Replace all placeholders with full, verifiable citations including author(s), year, title, journal/publisher, and preferably a DOI or arXiv ID. Ensure each citation genuinely supports the specific claim it is attached to.
-**Severity:** 🔴 High - **CRITICAL ACADEMIC INTEGRITY FLAW.**
+### Issue 1: Missing Citation for Price Collar Mechanisms
+**Location:** Section 3, paragraph 1 ("Optimierung der Marktstabilität und Preisvorhersehbarkeit")
+**Claim:** "Um die Preisvorhersehbarkeit weiter zu verbessern und extreme Volatilität zu vermeiden, könnten Mechanismen wie Preisunter- und -obergrenzen (Price Collars) oder ein dynamisches Cap in Betracht gezogen werden {cite_MISSING: Diskussion über Preiscollars und dynamisches Cap in der Literatur}."
+**Problem:** This is a direct placeholder indicating a missing citation for a crucial proposed improvement mechanism. The discussion of price collars and dynamic caps is a significant point for market stability, and its theoretical or empirical basis must be clearly referenced.
+**Evidence:** The explicit `cite_MISSING` tag in the text.
+**Fix:** Provide specific academic literature, policy reports, or economic analyses that discuss the implementation, effectiveness, and potential trade-offs of price collars or dynamic caps in emissions trading systems. If the idea is more speculative, rephrase to reflect that and cite general economic principles if applicable.
+**Severity:** 🔴 High - directly impacts the evidentiary basis for a key improvement suggestion.
 
-### Issue 2: Lack of Paper-Specific Limitations
-**Location:** Introduction, Conclusion, and implicitly throughout
-**Claim:** The introduction states, "die hier auf einem breiten Verständnis der Literatur und der allgemeinen Funktionsweise von EHS basiert, da keine spezifischen experimentellen Ergebnisse vorlagen."
-**Problem:** While this disclaimer is crucial, the discussion section *itself* fails to explicitly address the limitations of *this specific paper's approach*. For a purely literature-based synthesis, key limitations include:
-    *   The scope and methodology of the literature review (was it systematic? what were the inclusion/exclusion criteria?).
-    *   Potential for selection bias in the literature reviewed.
-    *   The inherent lack of novel empirical contribution from this paper.
-    *   The reliance on secondary sources and interpretations.
-**Missing:** A dedicated section or clear statements acknowledging the limitations of *this paper's own research methodology and scope*.
-**Fix:** Add a section (e.g., at the end of the discussion or in the introduction to the discussion) that explicitly outlines the limitations of this work given its nature as a literature-based synthesis. This demonstrates critical self-reflection.
-**Severity:** 🔴 High - affects the overall rigor and transparency of the paper.
-
-### Issue 3: Overclaim / Tautology in "Gewährleisten"
-**Location:** Section 1, paragraph 2
-**Claim:** "Durch die Festlegung einer Obergrenze für Emissionen (Cap) gewährleisten sie, dass die Reduktionsziele erreicht werden, sofern das Cap adäquat und ambitioniert gesetzt ist {cite_008}."
-**Problem:** This statement is a tautology. If the cap *is* "adäquat und ambitioniert gesetzt" (adequately and ambitiously set), then *by definition* the reduction goals will be met because the cap *is* the goal. The phrasing "gewährleisten sie" (they ensure) implies an inherent, unconditional reliability of EHS, which is then undermined by the necessary condition. EHS *can* achieve goals if properly designed, but they don't inherently "guarantee" it.
-**Evidence:** The conditional clause "sofern das Cap adäquat und ambitioniert gesetzt ist" makes the "gewährleisten" redundant and misleading.
-**Fix:** Rephrase to accurately reflect the conditional nature: "Durch die Festlegung einer Obergrenze für Emissionen (Cap) *können* EHS dazu beitragen, dass die Reduktionsziele erreicht werden, *vorausgesetzt* das Cap ist adäquat und ambitioniert gesetzt." or "EHS können die Erreichung von Reduktionszielen sicherstellen, *wenn* das Cap entsprechend den Zielen festgelegt wird."
-**Severity:** 🔴 High - affects logical coherence and precision of claims.
-
-### Issue 4: Logical Flaw / Oversimplification of Price Stabilization
-**Location:** Section 1, paragraph 3
-**Claim:** "Beispielsweise können Fördermechanismen für erneuerbare Energien die Einführung neuer Technologien beschleunigen, wodurch die Nachfrage nach Emissionszertifikaten sinkt und der CO2-Preis stabilisiert wird."
-**Problem:** While increased renewable energy deployment would likely *reduce* the demand for emissions certificates and thus *lower* the CO2 price, it does not necessarily *stabilize* it. Price stabilization implies reducing volatility and extreme fluctuations, not just a downward pressure. A lower price might still be highly volatile.
-**Evidence:** Lowering a price is a directional change, stabilization is about reducing amplitude of change. These are distinct concepts.
-**Fix:** Rephrase to accurately reflect the likely outcome: "...wodurch die Nachfrage nach Emissionszertifikaten sinkt und der CO2-Preis *potenziell sinkt oder sich auf einem niedrigeren Niveau einpendelt*." Or, if price stabilization is indeed a documented effect of such mechanisms, provide a more specific citation that explains this complex interaction.
-**Severity:** 🔴 High - logical flaw, oversimplification of complex market dynamics.
+### Issue 2: Missing Citation for EU-Switzerland ETS Linking Example
+**Location:** Section 3, paragraph 3 ("Harmonisierung und Verknüpfung (Linking) verschiedener CO2-Märkte")
+**Claim:** "Die Erfahrungen mit der Verknüpfung des EU ETS mit anderen Systemen, wie dem Schweizer ETS, zeigen die Machbarkeit solcher Ansätze {cite_MISSING: Beispiel für EU-Schweiz ETS Linking}."
+**Problem:** A concrete, real-world example used to demonstrate the feasibility of linking different ETS systems is uncited. This factual claim is central to the argument for international harmonization.
+**Evidence:** The explicit `cite_MISSING` tag in the text.
+**Fix:** Add the precise citation(s) for official documents, academic papers, or reports that detail the linking of the EU ETS with the Swiss ETS, confirming its establishment and initial experiences.
+**Severity:** 🔴 High - a critical factual example used to support an argument lacks verification.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 5: Prescriptive Recommendation without Explicit Backing
-**Location:** Section 3, paragraph 1
-**Claim:** "Eine dynamische Anpassung der Zertifikatemenge an die tatsächliche Emissionsentwicklung und wirtschaftliche Rahmenbedingungen könnte die Resilienz des Systems weiter erhöhen."
-**Problem:** This is presented as a specific, advanced improvement suggestion. While plausible, it sounds like the author's own proposal or a very specific mechanism. Without a direct citation or an explicit statement that this is a recognized or proposed mechanism in the literature, it appears unsubstantiated as a general improvement suggestion.
-**Missing:** A citation to literature discussing "dynamische Anpassung der Zertifikatemenge" beyond the MSR (which is mentioned earlier).
-**Fix:** Either provide a citation for this specific mechanism or phrase it more cautiously as a potential future direction: "Zukünftige Entwicklungen könnten eine dynamische Anpassung der Zertifikatemenge an die tatsächliche Emissionsentwicklung und wirtschaftliche Rahmenbedingungen umfassen, um die Resilienz des Systems weiter zu erhöhen."
-
-### Issue 6: Strong Claim on CBAM's Motivational Effect
-**Location:** Section 3, paragraph 3
-**Claim:** "Dies [CBAM] würde den Anreiz zur Verlagerung der Produktion reduzieren und gleichzeitig Drittländer motivieren, eigene Klimaschutzmaßnahmen zu ergreifen."
-**Problem:** While reducing carbon leakage is a primary goal of CBAM, the claim that it will "motivieren" (motivate) third countries to adopt their own climate protection measures is a strong assertion about a complex geopolitical outcome. While it's a hoped-for secondary effect and a stated policy intention, it's not a guaranteed or easily measurable outcome and could be an overclaim without stronger empirical backing or more careful hedging.
-**Fix:** Hedge the claim more carefully: "...und *könnte* Drittländer *dazu anregen*, eigene Klimaschutzmaßnahmen zu ergreifen."
-
-### Issue 7: Repetitive Points Across Sections
-**Location:** Throughout (e.g., synergy with other policies, international cooperation, use of revenues for social compensation)
-**Problem:** Several key points, while important, are reiterated across different sections (e.g., Section 1, 3, 4, 5). While some repetition can be for emphasis or re-contextualization, it occasionally makes the text feel redundant.
-**Evidence:**
-    *   "Synergies with other policies" (Section 1) and "Integration of EHS in a broader portfolio of climate protection measures" (Section 4).
-    *   "Harmonization and linking of EHS on an international level" (Section 3) and "Role in global climate protection" (Section 4).
-    *   "Use of EHS revenues for social compensation" (Section 3) and "Social compensation measures" (Section 5).
-**Fix:** Review the discussion for areas of redundancy. Consolidate or rephrase to ensure each instance adds new depth or a different perspective, rather than simply repeating a previous statement.
-
-### Issue 8: Lack of Methodological Transparency for Literature Review
-**Location:** Implied by the entire discussion
-**Problem:** Given that the paper is explicitly based on "einem breiten Verständnis der Literatur" and lacks original experimental results, the absence of any description of *how* this literature was reviewed (e.g., search strategy, databases, selection criteria, number of papers considered, types of sources) is a significant methodological gap for the paper itself.
-**Missing:** A brief explanation of the approach taken to survey and synthesize the literature.
-**Fix:** Add a short paragraph, ideally in the introduction or a dedicated "Methodology" section (if applicable for the overall paper), explaining how the literature was gathered and processed for this discussion. This enhances the credibility of the synthesis.
+### Issue 3: Vague Statement on Blockchain Technology
+**Location:** Section 3, paragraph 5 ("Transparenz und Datenintegrität")
+**Claim:** "Die Nutzung fortschrittlicher Technologien wie Blockchain für die Zertifikatsverwaltung könnte die Sicherheit und Nachvollziehbarkeit erhöhen, obwohl dies noch Gegenstand der Forschung ist."
+**Problem:** While correctly hedging that it's a research topic, the statement is somewhat generic. It does not elaborate on *why* Blockchain specifically would be advantageous over existing, presumably secure, centralized registry systems for ETS certificates. The terms "Sicherheit und Nachvollziehbarkeit" are often used broadly and lack specific analytical depth here.
+**Evidence:** The general phrasing of the sentence.
+**Fix:** Briefly expand on the specific benefits that Blockchain's characteristics (e.g., immutability of the distributed ledger, enhanced transparency of transactions, reduced risk of double-counting, decentralized trust) could offer for ETS certificate management. Alternatively, if this is a highly speculative idea, rephrase it to clearly position it as a conceptual future possibility for research rather than a direct "improvement suggestion" based on current understanding.
+**Severity:** 🟡 Medium - lacks specificity and deeper justification for a proposed technological improvement.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Vague claim:** Section 1, paragraph 2: "Diese Verlässlichkeit macht EHS zu einem attraktiven Instrument..." "Verlässlichkeit" is a strong term given the conditional nature of the cap. Consider "Diese *potenzielle* Verlässlichkeit..."
-2.  **Strong adjective:** Section 4, paragraph 1: "EHS bieten ein *enormes* Potenzial für internationale Kooperation..." While cited, "enormes" is a very strong adjective. Consider "erhebliches" (considerable) or "signifikantes" (significant) for a more measured tone.
-3.  **Ambiguous phrasing:** Section 4, paragraph 4: "Dieser Trend kann eine positive Rückkopplungsschleife erzeugen..." While the concept is clear, the phrasing could be slightly more precise, e.g., "Diese Entwicklung kann eine positive Rückkopplungsschleife *in Gang setzen*..."
-4.  **Minor wording for flow:** Section 4, paragraph 2, sentence 1: "Die Herausforderungen bei der Implementierung von EHS in Entwicklungsländern sind vielfältig und bedürfen besonderer Aufmerksamkeit." Could be smoother: "...sind vielfältig und *erfordern* besonderer Aufmerksamkeit."
-5.  **Consistency in terminology:** Ensure consistent use of terms like "CO2-Märkte" and "Emissionshandelssysteme (EHS)" throughout, or clarify if there's a nuanced difference intended. Currently, they seem used interchangeably.
+1.  **Nuance in "Pionierarbeit":** In Section 1, paragraph 1, the statement "Die Europäische Union hat mit ihrem Emissionshandelssystem (EU ETS) seit 2005 Pionierarbeit geleistet..." is generally accepted. However, for utmost precision, it could be qualified slightly, e.g., "Pionierarbeit für ein umfassendes, supranationales Multi-Sektor-System," as smaller-scale cap-and-trade systems (like the US Acid Rain Program) pre-existed. This is a very minor point and the current phrasing is acceptable in most contexts.
+2.  **Repetitive Citations in Summary:** The final concluding paragraph re-cites `cite_028`, `cite_014`, `cite_019`. While not incorrect, summary paragraphs often synthesize previously cited information without needing to re-cite every point unless a direct quote or a very specific, new claim is made. This can make the text appear slightly over-cited in the conclusion.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Incomplete Causality Explanation
-**Location:** Section 1, paragraph 3
-**Logic:** "Fördermechanismen für erneuerbare Energien...beschleunigen...wodurch die Nachfrage nach Emissionszertifikaten sinkt und der CO2-Preis stabilisiert wird."
-**Missing:** A clear explanation of how *lowering* the price specifically leads to *stabilization*. As noted in Major Issue 4, these are distinct concepts. A causal link for stabilization needs to be established or the claim should be modified.
-**Fix:** Either provide the missing causal link/explanation (backed by literature) or revise the claim to focus on price reduction rather than stabilization.
+### Gap 1: Deeper Analysis of Policy Mix Interactions
+**Location:** General throughout Section 1 ("Implikationen") and Section 2 ("Grenzen")
+**Logic:** The paper correctly emphasizes that ETS needs to be part of a "breiteren Policy-Mix" (Section 1) and that "der Emissionshandel allein nicht ausreicht" (Section 2). However, it primarily lists other policies (subsidies, regulations) without delving into the *complex interactions* between these instruments.
+**Missing:** A discussion on the potential synergies and, crucially, potential conflicts or inefficiencies that can arise when different climate policy instruments operate simultaneously. For example, how do renewable energy subsidies affect the CO2 price signal? Do they dilute the incentive for abatement within the ETS, or do they accelerate technological diffusion in a complementary way?
+**Fix:** Add a brief discussion point, perhaps in Section 2 or 3, acknowledging that while a policy mix is necessary, careful design is required to ensure instruments are complementary and avoid unintended consequences or reduced overall efficiency. This would add a more sophisticated layer to the argument.
 
 ---
 
-## Methodological Concerns (as they pertain to the paper's overall approach)
+## Methodological Concerns
 
-### Concern 1: Unspecified Review Methodology
-**Issue:** The paper states it's based on "einem breiten Verständnis der Literatur," but provides no details on how this understanding was systematically developed.
-**Risk:** The selection and interpretation of literature could be perceived as subjective or biased, lacking the rigor expected for a scholarly work, especially one without original data.
-**Reviewer Question:** "What was the methodology for collecting and synthesizing the literature referenced in this discussion? Was it a systematic or structured review?"
-**Suggestion:** Add a brief section detailing the approach to literature review, even if it's a narrative review, to enhance transparency.
+### Concern 1: Scope of Literature Review (Implicit)
+**Issue:** The presence of two explicit `cite_MISSING` tags in key areas of the discussion suggests that the "umfassenden Literaturrecherche" mentioned in the introduction might have overlooked critical literature on specific mechanisms (price collars) or important factual examples (EU-Switzerland linking).
+**Risk:** If the literature review itself did not cover these points, the claim of "umfassend" might be weakened, or the discussion might be presenting ideas not fully grounded in the preceding review.
+**Reviewer Question:** "Were these specific topics (price collars, EU-Switzerland linking) intentionally outside the scope of the comprehensive literature review, or were they genuinely missed? If missed, the comprehensiveness of the review might need re-evaluation."
+**Suggestion:** Ensure that the underlying literature review indeed covers these aspects and that the missing citations are not indicative of a gap in the foundational research. If they were outside the scope, this should be explicitly stated, or the claims should be rephrased as theoretical considerations.
 
 ---
 
 ## Missing Discussions
 
-1.  **Specific EHS Failures/Less Successful Systems:** While challenges are generally discussed, the paper heavily leans on the EU-EHS as a success story. A discussion of EHS that have struggled, failed, or faced significant implementation hurdles (e.g., in specific developing countries or early, less mature systems) would add valuable balance and lessons learned.
-2.  **Detailed Debate on CBAM and WTO Compatibility:** The paper mentions that CBAM "mit den Regeln der Welthandelsorganisation (WTO) vereinbar sein muss." However, it doesn't delve into the *ongoing debates and legal challenges* surrounding this, which are significant. A more critical discussion of these complexities would strengthen the analysis.
-3.  **Political Economy of EHS Implementation:** Beyond administrative complexity, a deeper dive into the political economy aspects – e.g., lobbyism, vested interests, the difficulty of setting ambitious caps due to political pressures – would enrich the discussion of challenges.
-4.  **Trade-offs and Unintended Consequences of Proposed Solutions:** For instance, while extending EHS to transport and heat is proposed, the significant political and social resistance, and potential regressive impacts beyond what is covered by "social compensation measures," could be further explored. Similarly, the challenges of international linking (e.g., differing ambition levels, governance structures) could be elaborated.
+1.  **Political Economy of ETS Design and Implementation:** While "Lobbyinteressen" are briefly mentioned (Section 2), a more explicit discussion on the political feasibility, challenges, and trade-offs involved in implementing proposed improvements (e.g., stricter caps, CBAM, linking, phase-out of free allocation) would be valuable. The "Fit for 55" package is cited, but the political negotiations and compromises behind such comprehensive changes are complex and could be contextualized.
+2.  **Role of Offsets/Carbon Credits within Regulated Markets:** The discussion focuses on regulated ETS and briefly mentions voluntary carbon markets. However, the specific role of carbon offsets (e.g., from international mechanisms like CDM or other project-based credits) within regulated ETS (e.g., allowing their use for compliance) and the associated integrity concerns, especially in the context of Article 6 of the Paris Agreement, could be further explored.
+3.  **Future of Free Allocation of Certificates:** Section 2 mentions "Zuteilung von Zertifikaten (kostenlos oder über Auktionen)." Given the global trend towards increased auctioning and the gradual phase-out of free allocation (e.g., in the EU ETS, especially with CBAM), a dedicated discussion on the implications of this shift for industry competitiveness, innovation incentives, and carbon leakage would be highly relevant.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Slightly Overly Confident:** While generally professional, some phrases could be softened to reflect the inherent uncertainties in policy analysis. For example, "gewährleisten" (ensure) or "entscheidend" (decisive) could sometimes be replaced by "stark beitragen" (strongly contribute) or "von großer Bedeutung" (of great importance).
-2.  **Repetitive Phrasing:** As noted in Moderate Issue 7, some concepts are repeated. Varying the language or structure when reiterating a point could improve readability.
+1.  **Slightly Declarative Tone for Theoretical Claims:** While the overall tone is balanced, some statements, such as "Ein Mindestpreis würde Investitionssicherheit bieten, während ein Höchstpreis vor extremen Kostenbelastungen schützen könnte" (Section 3), are presented as declarative facts. While theoretically sound, the practical implementation of such mechanisms is complex and can introduce its own market distortions or political challenges. The subsequent hedging ("müssen jedoch sorgfältig kalibriert werden") helps, but a slightly more cautious or attributed phrasing (e.g., "Es wird argumentiert, dass ein Mindestpreis...") could enhance scholarly precision. This is a minor stylistic suggestion.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  Given the absence of empirical results from *this paper*, what is the explicit methodology used to synthesize the existing literature?
-2.  Can you provide examples of EHS that have been less successful or faced significant implementation challenges, and what lessons can be drawn from those cases?
-3.  What are the key ongoing debates and criticisms regarding the WTO compatibility of Carbon Border Adjustment Mechanisms (CBAMs), and how do these influence your recommendations?
-4.  Please clarify how promoting renewable energies leads to the *stabilization* of CO2 prices, beyond simply lowering them.
-5.  How would you address the political economy challenges, such as strong industry lobbying or public resistance, in setting ambitious caps or expanding EHS to new sectors?
+1.  "Please provide the specific academic references for the discussion of price collars and dynamic caps as mechanisms to improve ETS market stability." (Directly from Major Issue 1)
+2.  "What are the authoritative sources or reports that detail the linking of the EU ETS with the Swiss ETS, which you refer to as an example of feasibility?" (Directly from Major Issue 2)
+3.  "Can you elaborate on the specific technical or operational advantages that Blockchain technology offers for ETS certificate management, beyond general terms like 'security and traceability'?" (Related to Moderate Issue 3)
+4.  "How does the paper account for potential unintended consequences or market distortions that might arise from implementing explicit price controls (like price collars) in an emissions trading system?" (Related to Logical Gap 1 and general nuance)
+5.  "Could you expand on the political economy aspects of expanding ETS to new sectors or harmonizing systems internationally, considering potential resistance from vested interests or national sovereignty concerns?" (Related to Missing Discussion 1)
+6.  "What are the key interaction effects (synergies or conflicts) between a carbon pricing mechanism like ETS and other common climate policy instruments, such as direct subsidies for renewable energy or energy efficiency regulations?" (Related to Logical Gap 1)
 
-**Prepare answers or add to paper**
+**Prepare answers or add to paper.**
 
 ---
 
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 Fix Issue 1 (Citation Verification) - **Absolutely critical for academic integrity.**
-2.  🔴 Address Issue 2 (Lack of Paper-Specific Limitations) - Essential for transparency and rigor.
-3.  🔴 Resolve Issue 3 (Overclaim/Tautology in "Gewährleisten") - Logical coherence.
-4.  🔴 Fix Issue 4 (Logical Flaw/Oversimplification of Price Stabilization) - Accuracy of claims.
-5.  🟡 Address Issue 8 (Lack of Methodological Transparency for Literature Review) - Enhances credibility.
+1.  🔴 **Fix Issue 1 (Missing Citation: Price Collars):** This is a fundamental gap in evidence for a key proposed solution.
+2.  🔴 **Fix Issue 2 (Missing Citation: EU-Switzerland Linking):** A critical factual example used to support an argument needs proper verification.
+3.  🟡 **Address Issue 3 (Vague Blockchain Claim):** Enhance the specificity and depth of this suggestion.
+4.  🟡 **Address Logical Gap 1 (Policy Mix Interaction):** Add a more nuanced discussion of how different policy instruments interact.
 
 **Can defer:**
-- Minor wording adjustments (e.g., Issue 9, 10, 11) can be polished during the revision process.
-- Deeper dives into missing discussions (e.g., EHS failures, detailed CBAM debates) could be suggested as avenues for future work, or incorporated if time and scope allow.
+- Minor wording or hedging adjustments (e.g., "Pionierarbeit" nuance).
+- Integration of additional discussion points (e.g., offsets, free allocation) can be suggested as avenues for future research or a more extensive review, depending on the scope of the overall paper.

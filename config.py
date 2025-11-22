@@ -48,6 +48,7 @@ class ModelConfig:
     def __post_init__(self):
         """Validate model configuration."""
         valid_models = [
+            'gemini-3-pro-preview',  # Latest preview (Gemini 3)
             'gemini-2.5-flash',
             'gemini-2.5-pro',
             'gemini-2.0-flash-exp',  # Legacy support

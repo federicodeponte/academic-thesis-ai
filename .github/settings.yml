@@ -1,0 +1,40 @@
+# GitHub Repository Settings
+
+repository:
+  name: academic-thesis-ai
+  description: "🎓 Generate publication-ready academic theses with 15 specialized AI agents and 200M+ research papers. 95%+ citation success. MIT licensed."
+  homepage: "https://academic-thesis-ai-landing.vercel.app"
+  topics:
+    - academic-writing
+    - thesis-generator
+    - ai-agents
+    - citation-management
+    - research-tools
+    - python
+    - gemini
+    - claude
+    - gpt
+    - natural-language-processing
+    - machine-learning
+    - education
+    - academia
+    - open-source
+    - mit-license
+
+  private: false
+  has_issues: true
+  has_projects: false
+  has_wiki: false
+  has_downloads: true
+
+  default_branch: main
+
+  allow_squash_merge: true
+  allow_merge_commit: false
+  allow_rebase_merge: true
+  allow_auto_merge: true
+  delete_branch_on_merge: true
+  allow_update_branch: true
+
+  enable_automated_security_fixes: true
+  enable_vulnerability_alerts: true

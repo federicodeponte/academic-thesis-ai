@@ -8,177 +8,147 @@
 ## Summary
 
 **Strengths:**
-- Clearly articulates a significant and timely research problem: the pricing of agentic AI systems.
-- Provides a comprehensive overview of agentic AI characteristics, differentiating it from traditional software.
-- Research objectives are well-defined and logically structured.
-- Highlights the strategic importance of the problem for both academia and industry.
+- Clearly articulates a significant and timely problem: pricing agentic AI.
+- Provides a comprehensive background on agentic AI, highlighting its unique characteristics.
+- Breaks down the problem into several distinct and challenging aspects (value attribution, dynamism, resource consumption, lack of precedent, data value, risk/liability).
+- Outlines clear and logical research objectives that directly address the identified problem.
+- Structure of the paper is well-defined and easy to follow.
+- Extensive use of citations, indicating an effort to ground claims in existing literature.
 
-**Critical Issues:** 4 major, 6 moderate, 5 minor
-**Recommendation:** Significant revisions needed, primarily focused on conciseness, avoiding repetition, and strengthening specific claims.
+**Critical Issues:** 3 major, 3 moderate, 5 minor
+**Recommendation:** Revisions needed before publication
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Excessive Length and Repetitiveness in Introduction
-**Location:** Throughout the entire Introduction (Sections 1, 1.1, 1.1.1, 1.1.2, 1.1.3, 1.2.3, 1.3, 1.3.1, 1.3.2, 1.4, 1.4.1, 1.4.2)
-**Problem:** The Introduction is excessively long (2,543 words) for its purpose and suffers from significant repetition of core arguments. Key points such as the "transformative impact of AI," the "unique characteristics of agentic AI," and the "limitations of traditional pricing models" are reiterated multiple times across different subsections. This dilutes the impact of the argument and makes the text less engaging.
-**Evidence:**
-    - The general introduction (first 3 paragraphs) already covers the core premise repeated in 1.1.1 ("unprecedented impact"), 1.1.2 ("from traditional software"), and 1.1.3 ("urgent need for robust frameworks").
-    - Section 1.3.1 ("Limitations of traditional pricing models") largely rephrases points made in the second and third paragraphs of the main introduction.
-    - Section 1.4.1 ("Articulation of the core problem") summarizes points already extensively discussed in 1.1.3 and 1.3.
-**Fix:** Drastically condense the introduction. Aim for 800-1200 words. Consolidate redundant sections, eliminate repetitive phrasing, and ensure each subsection introduces genuinely new information or perspective. For example, combine the general overview with 1.1, and integrate parts of 1.2.3 into the definition of agentic AI.
-**Severity:** 🔴 High - affects readability, conciseness, and overall quality of the paper.
+### Issue 1: Missing Critical Citation
+**Location:** Background on Agentic AI Systems, Capabilities paragraph
+**Claim:** "In sectors like healthcare, these agents could assist in diagnostics, treatment planning, and patient management, learning from each case to improve accuracy and efficiency {cite_MISSING: Agentic AI in healthcare diagnostics}."
+**Problem:** A specific, important claim is made without a supporting citation. This is a direct violation of academic integrity and raises questions about the veracity of the example.
+**Evidence:** Explicitly marked as `{cite_MISSING}` by the author.
+**Fix:** Provide a specific, relevant citation (e.g., a review paper, a case study, or a foundational work on AI in healthcare diagnostics) or remove the example if no such evidence exists.
+**Severity:** 🔴 High - direct factual gap, fundamental academic integrity concern.
 
-### Issue 2: Future-Dated Citation
-**Location:** Section 1.2.2, para 1
-**Claim:** "Ranjan, Chembachere et al. (2025) emphasize the importance..."
-**Problem:** Citing a paper from 2025 raises questions about its current availability and verifiability. While "forthcoming" papers can be cited, it's unusual to present it as an established source of emphasis without qualification.
-**Evidence:** The year "2025" for a citation in a current paper.
-**Fix:** Clarify the status of this publication. Is it accepted for publication and "forthcoming"? If so, state that. If it's a personal communication or an unpublished manuscript, it should be cited differently or potentially removed if not essential and publicly accessible.
-**Severity:** 🔴 High - academic integrity and verifiability concern.
+### Issue 2: Weak/Tangential Support for Key Claims
+**Location:**
+1.  Background on Agentic AI Systems, Integration paragraph
+2.  Background on Agentic AI Systems, Capabilities paragraph
+3.  Problem Statement, Resource Consumption / Data Value paragraphs
+**Claim:**
+1.  "The concept of value-based methods is also gaining traction in assessing new technologies, such as nuclear medical systems {cite_035}, suggesting a broader trend towards evaluating technology based on its intrinsic value generation."
+2.  "Furthermore, the development of these systems often involves a complex interplay of innovation and diffusion, similar to patterns observed in patent citations {cite_016}..."
+3.  "{cite_024}" is used for claims about "platforms handling 'data on the move'" and "data trading platforms" necessitating "intricate cost-benefit analyses" and "data itself becomes a commodity" in the context of *agentic AI pricing*.
+**Problem:** While citations are present, their relevance to the *specific context of agentic AI pricing* is tenuous or indirect.
+1.  **{cite_035}**: A paper on nuclear medical systems offers a very specific analogy for "value-based methods." While broadly related to technology valuation, it's not directly about AI, let alone agentic AI, and thus weakens the argument for a "broader trend" in this specific domain.
+2.  **{cite_016}**: A paper on patent citations and innovation diffusion is an interesting academic observation, but its direct relevance to the *problem of pricing agentic AI services* in an introduction is unclear and feels like a tangential inclusion. It doesn't directly contribute to framing the pricing challenge.
+3.  **{cite_024}**: If this citation discusses general data trading, its specific link to the *variable resource consumption* or *data valuation challenges unique to agentic AI pricing* needs to be explicitly drawn out and justified. Without this, it reads as a generic reference that doesn't fully support the nuanced claims about agentic AI.
+**Evidence:** The cited works appear to be from highly specialized domains (nuclear medicine, patent analysis, general data trading) that are not immediately analogous or directly relevant to the complex economic problem of agentic AI pricing without further explicit justification.
+**Fix:**
+1.  Replace {cite_035} with a broader, more general citation on value-based pricing for *complex, emerging technologies* or *software/services*, or explicitly justify the analogy.
+2.  Either remove the sentence citing {cite_016} as it distracts from the core problem, or provide a very clear and concise explanation of its *direct* relevance to the pricing challenges.
+3.  Clarify how {cite_024} specifically addresses the *agentic AI pricing* aspects of data value and resource consumption, or find more specific citations that directly link data platforms to the pricing intricacies of autonomous AI agents.
+**Severity:** 🔴 High - weakens the logical foundation of the problem statement and the justification for the research.
 
-### Issue 3: Overclaim of "Critical Gap" and "Underexplored Domain" Without Sufficient Initial Nuance
-**Location:** Main introduction, para 1; Section 1.4.1
-**Claim:** "...addressing a critical gap in both academic literature and practical business application." and "The core problem addressed by this research is the inadequacy of existing pricing paradigms..."
-**Problem:** While the existence of a gap is plausible and the paper aims to fill it, the introduction strongly asserts a *critical* and *underexplored* gap without briefly acknowledging any existing (even if insufficient) efforts or partial solutions. This makes the claim feel slightly absolute for an introduction, especially before the detailed literature review.
-**Evidence:** The strong, unqualified language used to describe the gap.
-**Fix:** Briefly acknowledge that *some* pricing models exist for complex software or AI-like services (e.g., value-based pricing for SaaS, outcome-based pricing in consulting), but immediately follow with why these are *insufficient* for the unique characteristics of agentic AI. This strengthens the argument for the "critical gap" by showing awareness of related work, rather than simply asserting a void.
-**Severity:** 🔴 High - impacts the credibility of the research problem articulation.
-
-### Issue 4: Lack of Specificity for General Claims
-**Location:** Section 1.1.1, para 1
-**Claim:** "Reports from leading consulting firms consistently highlight the multi-trillion-dollar economic impact projected for AI in the coming years..."
-**Problem:** This is a strong, quantifiable claim that lacks specific attribution to particular reports or firms. While general citations (`{cite_011}{cite_013}`) are provided, the phrasing "leading consulting firms" implies specific, identifiable sources.
-**Evidence:** The phrase "Reports from leading consulting firms" without naming them or providing specific report titles.
-**Fix:** Either name the consulting firms and their reports (e.g., "McKinsey's 2023 report on AI's economic impact...") or rephrase to be less specific (e.g., "Industry analyses consistently highlight..."). Ensure the cited references directly support this specific claim.
-**Severity:** 🔴 High - weakens claim strength and academic rigor.
+### Issue 3: Overgeneralization of "Agentic AI" Definition and Distinction
+**Location:** Background on Agentic AI Systems, first two paragraphs
+**Claim:** "Unlike earlier forms of AI, which might be limited to pattern recognition or rule-based execution, agentic systems possess a higher degree of autonomy, adaptability, and interactivity." and "This paradigm represents a significant leap from traditional machine learning models..."
+**Problem:** While the distinction is conceptually understood, the paper relies heavily on {cite_001} (which is a very general citation, possibly an encyclopedia entry or broad review) to define and differentiate agentic AI from "earlier forms" or "traditional machine learning models." The introduction needs a more robust and explicitly cited definition that clearly demarcates "agentic AI" in a way that supports the subsequent arguments about its unique pricing challenges.
+**Evidence:** The repeated use of a single, broad citation {cite_001} for multiple specific characteristics and distinctions of agentic AI.
+**Fix:** Introduce a more authoritative, specific, or foundational citation(s) that explicitly defines "agentic AI" and clearly articulates its distinguishing features and the "significant leap" from traditional ML, especially concerning autonomy, adaptability, and interactivity, to firmly establish the core subject of the paper.
+**Severity:** 🔴 High - affects the foundational understanding of the paper's core subject.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 5: Vague Definition of "Agentic AI" in Context
-**Location:** Section 1.2.1
-**Claim:** Defines agentic AI by autonomy, goal-orientation, and interaction.
-**Problem:** While the definition is theoretically sound, the introduction could benefit from a few very brief, concrete examples of *what specific types* of agentic AI are being considered (e.g., autonomous trading bots, personalized medical agents, supply chain optimizers) to ground the abstract concepts for the reader. The current examples (algorithmic trading, fraud detection, etc.) are only given later in 1.2.3 and are quite broad.
-**Fix:** In Section 1.2.1 or early in the introduction, provide 1-2 concise, illustrative examples of agentic AI systems that exemplify its unique characteristics and the pricing challenges.
-**Severity:** 🟡 Moderate - improves clarity and reader engagement.
+### Issue 4: Potential Over-reliance on General Citations for Specific Claims
+**Location:** Throughout the Introduction (e.g., {cite_001}, {cite_005}, {cite_007}, {cite_042})
+**Problem:** Several broad claims or specific characteristics are supported by very general citations (e.g., "architectural frameworks for agentic AI systems are complex... {cite_001}", or "value derived from an agent's actions may not be immediately apparent... {cite_007}"). While these citations might be foundational, for specific technical or economic nuances, a more targeted citation would strengthen the argument.
+**Evidence:** The same few citations are used to support a wide range of distinct claims.
+**Fix:** Review instances where highly specific claims are made. If the current citation is a very broad overview, consider adding a more precise citation that directly addresses that specific point, or rephrase the claim to be more general if only broad support is available.
+**Severity:** 🟡 Moderate - affects the argumentative rigor and precision.
 
-### Issue 6: Tone - Overly Confident/Declarative Language
-**Location:** Throughout (e.g., "unprecedented pace," "profoundly reshaping," "significant leap forward," "unparalleled potential," "undeniable," "critical impediment")
-**Problem:** The language is consistently very strong and declarative, bordering on hyperbole in places. While enthusiasm is good, excessive use of such adjectives can make the argument sound less objective and more like a sales pitch.
-**Evidence:** Repeated use of strong adjectives and adverbs.
-**Fix:** Soften some of the language. Replace some instances of "unprecedented," "profoundly," "unparalleled" with slightly more measured terms (e.g., "significant," "substantially," "remarkable"). Use strong language strategically rather than pervasively.
-**Severity:** 🟡 Moderate - affects academic tone and perceived objectivity.
+### Issue 5: Lack of Nuance on "Black Box" Problem
+**Location:** Problem Statement, Dynamic and Adaptive Nature paragraph
+**Claim:** "Moreover, the inherent uncertainty and opacity of some AI decisions, sometimes referred to as the 'black box' problem, make it difficult for consumers to understand the basis of the agent's actions and thus its perceived value, further complicating pricing {cite_053}."
+**Problem:** While "black box" is a valid concern, the statement implies it's a universal characteristic of "some AI decisions." It doesn't acknowledge ongoing research and progress in explainable AI (XAI) or interpretable models, which aim to mitigate this opacity. Ignoring this progress makes the problem statement slightly less nuanced.
+**Evidence:** The statement presents "black box" as a current, undifferentiated problem without acknowledging counter-efforts.
+**Fix:** Acknowledge the existence of XAI research and its attempts to address the "black box" problem, perhaps by stating that *despite* these efforts, significant challenges remain, especially for complex agentic systems, or that the *perception* of opacity still impacts pricing. This adds nuance and demonstrates awareness of the broader AI landscape.
+**Severity:** 🟡 Moderate - slightly overstates the problem without acknowledging ongoing mitigation efforts.
 
-### Issue 7: Implicit Assumption of Reader's Prior Knowledge/Agreement
-**Location:** Throughout, particularly in opening paragraphs.
-**Problem:** The introduction assumes the reader fully accepts the "transformative era of AI" and its "unprecedented impact" without needing further contextual grounding or a brief, compelling example *within the intro itself*. While generally true, a very brief, high-level example (e.g., "from self-driving cars to personalized medicine") could immediately set the stage more effectively than abstract assertions.
-**Fix:** Consider adding a single, concise, high-impact example early on to quickly illustrate the scale of AI's transformation, or slightly temper the initial claims.
-**Severity:** 🟡 Moderate - improves immediate reader buy-in.
-
-### Issue 8: Missing Discussion of Implementation Challenges
-**Location:** Section 1.4.2 (Strategic importance)
-**Problem:** While the section discusses the economic implications of suboptimal pricing, it doesn't explicitly touch upon the practical challenges businesses might face in *implementing* new, potentially complex pricing models for agentic AI. This is a crucial aspect of "practical business application."
-**Fix:** Briefly add a sentence or two in 1.4.2 (or a related section) acknowledging the potential difficulties or resistance to adopting novel pricing frameworks in established industries, or the operational overhead involved.
-**Severity:** 🟡 Moderate - adds practical depth to the "strategic importance."
-
-### Issue 9: Limited Acknowledgment of Ethical Pricing Complexities
-**Location:** Section 1.3.2 (Factors contributing to pricing complexity) and 1.4.3 (Contribution)
-**Problem:** Ethical considerations are mentioned as costs ("ethical compliance can incur significant development and compliance costs") and as something the framework will address ("ethical considerations inherent in AI monetization"). However, the intro doesn't fully articulate *how* ethical concerns specifically complicate pricing beyond being a cost. For example, issues like fairness in personalized pricing, potential for discrimination, or the societal value of AI services (which might not be captured by market price) are not explicitly raised as pricing challenges.
-**Fix:** Expand slightly on the ethical considerations to explain *how* they complicate pricing beyond just being a cost. For instance, "ensuring fairness and avoiding discriminatory pricing in personalized services," or "balancing profit motives with societal benefit."
-**Severity:** 🟡 Moderate - strengthens the ethical dimension of the research problem.
-
-### Issue 10: Logical Leap in Justification for Proposed Framework
-**Location:** Section 1.5, Objective 3
-**Problem:** Objective 3 states: "To develop a conceptual framework for pricing agentic AI services that accounts for dynamic capabilities, shared value creation, and ethical considerations." While the need for *a* framework is established, the introduction doesn't offer a brief, high-level preview or justification for *why this specific type* of framework (one accounting for dynamic capabilities, shared value, etc.) is the right approach, beyond simply stating it will address the identified gap.
-**Fix:** In the paragraphs preceding the objectives, or immediately after Objective 3, briefly hint at the *approach* or *core innovation* of the proposed framework. For example, "This framework will move beyond static models by proposing mechanisms that dynamically adjust pricing based on real-time performance and value co-creation..."
-**Severity:** 🟡 Moderate - improves logical coherence from problem to proposed solution.
+### Issue 6: Verbosity and Redundancy
+**Location:** Throughout the Introduction, particularly in "Background on Agentic AI Systems"
+**Problem:** The Introduction is quite long (2677 words) for a typical paper. While comprehensive, there are instances of repetition or slightly verbose phrasing. For example, the "Background on Agentic AI Systems" section reiterates some general AI impacts before focusing on agentic specifics.
+**Evidence:** Several sentences and phrases could be condensed or combined without losing meaning. For instance, the general economic implications of AI are discussed in the second paragraph, and then again in the "Integration of Agentic AI" subsection within the background.
+**Fix:** Conduct a thorough edit for conciseness. Identify and remove redundant phrases, combine sentences, and streamline paragraphs. Ensure each sentence adds new, critical information or directly advances the argument. Aim to reduce the overall word count without sacrificing clarity or comprehensiveness.
+**Severity:** 🟡 Moderate - impacts readability and engagement.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Placeholder Citations:** All citations are `{cite_XXX}`. While this is understood for a draft, ensure all these are replaced with full, verifiable citations, including DOI or arXiv ID where applicable, in the final draft.
-2.  **Redundant Phrase:** "The pervasive influence of artificial intelligence on the global economy is undeniable and continues to expand at an astonishing rate {cite_011}." -> "undeniable" and "astonishing rate" are strong, consider toning down or merging with previous claims.
-3.  **Wording Choice:** "making the study of its commercialization and value extraction mechanisms paramount." -> "paramount" is strong, consider "crucial" or "essential."
-4.  **Slightly Awkward Phrasing:** "The ability to unlock the full potential of AI agents through market mechanisms is a key area of study {cite_006}." -> Could be rephrased for better flow, e.g., "Understanding how market mechanisms can unlock the full potential of AI agents is a key area of study."
-5.  **Lack of Negative Framing for Traditional Models:** While the limitations of traditional pricing models are clear, the intro doesn't explicitly state *why* they "failed" or are "inadequate" in a more direct, critical sense, beyond simply not being suitable. A stronger, more direct comparison could be beneficial.
+1.  **Vague Claim:** "The rapid evolution and pervasive integration of artificial intelligence (AI) into nearly every facet of human endeavor mark a transformative epoch..." While broadly true, "transformative epoch" is a strong, somewhat hyperbolic phrase. Consider hedging slightly or using more precise language.
+2.  **Citation Placement:** In some instances, citations are placed at the very end of long sentences or paragraphs that contain multiple distinct claims. For example, the sentence ending with `{cite_007}{cite_026}` after listing "market inefficiencies, disputes over value attribution, and barriers to widespread adoption." It's unclear if both citations support all three consequences equally.
+3.  **Unclear Scope of "Traditional Economic Models":** The first paragraph states "The traditional economic models and pricing strategies... often fall short..." It would be helpful to briefly clarify *which* traditional models are primarily being referred to (e.g., cost-plus, value-based for tangible goods, subscription for software, etc.) even if they are discussed in detail later.
+4.  **Flow of "Patent Citations" point:** As noted in Major Issue 2, the sentence about patent citations ({cite_016}) disrupts the flow in the "Capabilities" paragraph, as its relevance to pricing is not immediately apparent.
+5.  **"Widely recognized" vs. Cited:** The phrase "sometimes referred to as the 'black box' problem" is well-understood, but it could still benefit from a more direct citation that introduces or defines this term in the context of AI, rather than just citing a paper that discusses its implications.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Insufficiently Differentiated "Value" vs. "Cost" Drivers
-**Location:** Section 1.5, Objective 1
-**Logic:** Objective 1 aims "To analyze the unique value drivers and cost structures of agentic AI systems." The subsequent parenthetical explanation lists both value creation and cost incurrence, but the introduction doesn't clearly delineate how these two aspects might be *intertwined* or create specific logical complexities for pricing (e.g., how emergent value might be hard to cost, or how R&D costs relate to perceived value).
-**Missing:** A brief, explicit statement on the *interplay* between value and cost in agentic AI pricing, and how this interplay itself creates a challenge.
-**Fix:** Add a sentence clarifying that the dynamic, emergent nature of agentic AI means value and cost are not always separable or linearly related, thus complicating pricing.
-
-### Gap 2: Assumed Consensus on "Agentic AI" Definition
-**Location:** Section 1.2.1
-**Logic:** Defines agentic AI without acknowledging that the term itself is still evolving and can be interpreted differently across various subfields of AI.
-**Missing:** A brief acknowledgment that while the paper adopts a specific definition, the concept of "agentic AI" is still an active area of research and definition.
-**Fix:** Add a sentence like, "While the precise boundaries of 'agentic AI' are still being debated in the literature, for the purpose of this study, we define it by these core characteristics..."
+### Gap 1: Implicit Assumption of "Novelty" of Pricing Challenges
+**Location:** Problem Statement, particularly "Lack of Precedent" section
+**Logic:** The paper strongly argues that traditional pricing models are "ill-suited" and there's a "lack of precedent" for agentic AI.
+**Missing:** While the arguments for complexity are strong, the paper doesn't explicitly address or briefly dismiss arguments that might suggest *some* existing models (e.g., highly dynamic, context-aware pricing in other service industries, or performance-based contracts) could, with adaptation, be partially applicable. By stating "lack of precedent" so definitively, it implicitly dismisses any counter-argument that existing frameworks might offer a starting point, even if insufficient.
+**Fix:** Acknowledge that while traditional models are *insufficient*, the paper will build upon *relevant aspects* of existing models while innovating for agentic AI's unique properties (as hinted in Research Objective 1). This shows a more balanced perspective.
 
 ---
 
-## Methodological Concerns (as implied by Introduction)
+## Methodological Concerns
 
-### Concern 1: Generalizability of Case Studies
-**Issue:** Research Objective 4 states validation "through case studies of diverse agentic AI applications."
-**Risk:** The term "diverse" is subjective. Without more context, there's a risk that the selected case studies, however diverse, might not be representative enough to claim broad generalizability for the proposed framework.
-**Reviewer Question:** "How will the selection criteria for 'diverse' case studies be defined to ensure the framework's broader applicability beyond the chosen examples?"
-**Suggestion:** The methodology chapter (Chapter 3) must rigorously define "diversity" for case study selection and clearly articulate the limitations of generalizability.
-
-### Concern 2: "Rigorous Analysis" Claim Needs Substantiation
-**Issue:** The introduction repeatedly uses terms like "rigorous analysis" and "rigorous methodology" to describe the study.
-**Risk:** These are strong claims that need to be explicitly justified and detailed in the methodology chapter. The introduction itself does not provide any specific indicators of this rigor beyond the general mention of a "mixed-methods approach."
-**Question:** "What specific aspects of the methodology (e.g., data collection, analytical techniques, triangulation) will ensure the claimed rigor?"
-**Fix:** Ensure Chapter 3 explicitly addresses and justifies the rigor of the chosen methods.
+*(Not directly applicable to an Introduction section, as methodology is discussed later. However, the theoretical evaluation in Objective 4 is noted.)*
 
 ---
 
-## Missing Discussions (Even for an Introduction)
+## Missing Discussions
 
-1.  **Current "Best Practices" (and why they fail):** Briefly mention any current, albeit inadequate, industry "best practices" for pricing complex AI solutions (e.g., SaaS models with AI features, consulting-style outcome-based pricing) and immediately explain why they fall short for *agentic* AI. This strengthens the "gap" argument.
-2.  **Potential Roadblocks to Adoption of New Pricing Models:** Beyond just "suboptimal pricing," discuss the inertia or resistance from industry to adopting novel, potentially more complex pricing structures, even if they are more theoretically sound.
-3.  **Distinction from "AI-as-a-Service":** Briefly clarify how pricing "agentic AI" differs from pricing general "AI-as-a-Service" (e.g., API calls to an LLM), as the latter might already have established models.
-4.  **Interdisciplinary Nature:** Explicitly state the interdisciplinary nature of the research, drawing from economics, computer science (AI), and potentially business/marketing.
+1.  **Ethical Trade-offs in Pricing:** While ethical concerns are mentioned (e.g., energy justice, fairness), the introduction could briefly hint at the *inherent trade-offs* that might arise when designing pricing models (e.g., optimizing for profit vs. ensuring equitable access, or pricing for performance vs. transparency).
+2.  **Regulatory Landscape:** The introduction touches on "policymakers" in objectives, but a brief mention of the nascent or evolving regulatory environment for AI, and how pricing models might need to anticipate or influence it, would strengthen the problem framing.
+3.  **User Perspective on Value:** The problem statement focuses on the challenges for producers/sellers of agentic AI. A brief mention of the consumer/user's perspective on *perceived value* and willingness-to-pay, especially given the "black box" problem, could enrich the problem statement.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Repetitive Language:** As noted in Major Issue 1, the repetition of key phrases and concepts makes the introduction verbose and less impactful.
-2.  **Overly Assertive:** The consistent use of strong, declarative language can make the tone less academic and more promotional. A slightly more nuanced approach would be beneficial.
-3.  **"Dissertation" vs. "Paper/Study":** The document refers to itself as "this paper" in the opening, then "this study," and then "this dissertation" in the objectives and structure. Maintain consistency. If this is truly a dissertation, then "dissertation" is fine throughout. If it's intended to be a paper for publication, "paper" or "study" is more appropriate.
+1.  **Slightly Overly Confident Language:** Phrases like "solves the X problem" (if they were present, not explicitly here but a general warning), or "clearly demonstrates" (if used in future sections) should be softened to "addresses," "improves," "suggests," or "indicates." In this introduction, phrases like "transformative epoch" or "significant leap" could be slightly rephrased for a more academic, less journalistic tone.
+2.  **Repetitive Phrasing:** As noted in Moderate Issue 6, some phrases or concepts are repeated, contributing to verbosity.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Given the extensive literature on dynamic pricing and value-based pricing, what is the *fundamental theoretical novelty* of your proposed framework that specifically addresses the 'agentic' nature, beyond just being an application?"
-2.  "How will your case studies adequately capture the 'dynamic capabilities' and 'emergent value generation' of agentic AI, which are central to your problem statement, especially if these are long-term phenomena?"
-3.  "How will you measure or quantify the 'shared value creation' and attribute it fairly for pricing purposes, particularly in complex human-agent or multi-agent collaborations?"
-4.  "What are the practical implications for businesses in terms of data collection, monitoring, and administrative overhead required to implement a dynamic, performance-based pricing model for agentic AI?"
-5.  "Could you provide a brief, concrete example of a pricing mechanism that you envision could capture the unique value of agentic AI, even if it's a simplified illustration?"
+1.  "How do you define 'agentic AI' specifically for the purpose of this paper, and what are its core distinguishing features compared to other advanced AI systems?" (Relates to Major Issue 3)
+2.  "What existing pricing models, even if imperfect, offer the closest parallels or foundational elements for pricing agentic AI, and why are they ultimately insufficient?" (Relates to Logical Gap 1)
+3.  "Can you provide more direct and relevant evidence or examples for the claims regarding the economic implications of agentic AI, particularly when drawing parallels from unrelated fields like nuclear medicine or patent analysis?" (Relates to Major Issue 2)
+4.  "Given the progress in explainable AI (XAI), how does your proposed framework account for or mitigate the 'black box' problem in perceived value and pricing?" (Relates to Moderate Issue 5)
+5.  "How will you specifically address the ethical considerations of pricing, beyond just acknowledging them, within your proposed framework?" (Relates to Missing Discussion 1)
+
+**Prepare answers or add to paper**
 
 ---
 
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Fix Issue 1 (Excessive Length & Repetition):** This is paramount for clarity and impact. Condense significantly.
-2.  🔴 **Address Issue 2 (Future-Dated Citation):** Clarify the status of the 2025 citation.
-3.  🔴 **Resolve Issue 3 (Overclaim of Gap):** Add nuance by briefly acknowledging and dismissing existing (insufficient) approaches.
-4.  🔴 **Resolve Issue 4 (Lack of Specificity for Claims):** Provide specific citations for general claims about consulting reports.
-5.  🟡 **Address Issue 5 (Vague Definition of Agentic AI):** Add brief, concrete examples of agentic AI applications.
-6.  🟡 **Address Issue 6 (Tone):** Soften overly confident/declarative language.
-7.  🟡 **Address Issue 9 (Ethical Pricing Complexities):** Expand on *how* ethics complicate pricing, beyond just being a cost.
-8.  🟡 **Address Issue 10 (Logical Leap for Framework):** Briefly hint at the core innovation or approach of the framework.
+1.  🔴 Fix Issue 1 (Missing Critical Citation) - **Urgent for academic integrity.**
+2.  🔴 Address Issue 2 (Weak/Tangential Support) - **Crucial for logical foundation.**
+3.  🔴 Resolve Issue 3 (Overgeneralization of Agentic AI) - **Fundamental to the paper's core concept.**
+4.  🟡 Address Issue 4 (Over-reliance on General Citations) - **Strengthens argumentative rigor.**
+5.  🟡 Address Issue 5 (Lack of Nuance on "Black Box") - **Adds sophistication and awareness.**
+6.  🟡 Address Issue 6 (Verbosity and Redundancy) - **Improves readability and impact.**
 
-**Can defer (but should address in final version):**
-- Minor wording issues.
-- Ensuring all placeholder citations are fully detailed in the final manuscript.
+**Can defer (but recommended for stronger paper):**
+- Minor wording issues (fix in comprehensive revision).
+- Further refinement of logical gaps and missing discussions (can be integrated into expanded sections later).

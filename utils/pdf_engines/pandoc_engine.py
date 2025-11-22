@@ -98,6 +98,12 @@ class PandocLatexEngine(PDFEngine):
             # Recent thesis generations incorrectly wrap entire file in code fence
             md_content = self._unwrap_markdown_fence(md_content)
 
+            # CRITICAL: Remove duplicate title heading for showcase theses
+            # Custom cover page already renders title, so remove # Title heading from body
+            # to prevent it from appearing in Table of Contents
+            # Use ORIGINAL content for showcase detection (before normalization strips showcase fields)
+            md_content = self._remove_title_heading(md_content, original_md_content)
+
             # CRITICAL: Remove code blocks (ASCII diagrams) before PDF generation
             # Code blocks cause massive verbatim sections in LaTeX that truncate documents
             # (e.g., 122 pages → 39 pages due to unbreakable monospace text)
@@ -337,7 +343,6 @@ class PandocLatexEngine(PDFEngine):
   \end{titlepage}
 }
 
-% Pandoc's default template automatically calls \maketitle when title: is in YAML frontmatter
 '''
 
         # Add front matter page numbering (roman numerals) if TOC enabled
@@ -609,7 +614,20 @@ class PandocLatexEngine(PDFEngine):
 
         # Strip custom fields that Pandoc doesn't recognize
         # Only keep: title, subtitle, author, date, abstract
+        # CRITICAL: For showcase theses (with custom cover pages), EXCLUDE title/subtitle
+        # to prevent Pandoc from inserting duplicate title headings that appear in ToC
         pandoc_recognized_fields = ['title', 'subtitle', 'author', 'date', 'abstract']
+
+        # Check if this is a showcase thesis (has custom professional cover page)
+        # Detection: either has showcase_description field OR project_type contains "showcase"
+        is_showcase = ('showcase_description:' in yaml_content.lower() or
+                      'showcase' in yaml_content.lower())
+
+        # If showcase thesis, remove title/subtitle from allowed fields
+        # The custom titlepage already renders these - Pandoc shouldn't duplicate them
+        if is_showcase:
+            pandoc_recognized_fields = ['author', 'date', 'abstract']
+
         yaml_lines = yaml_content.split('\n')
         filtered_lines = []
 
@@ -667,6 +685,51 @@ class PandocLatexEngine(PDFEngine):
             return '\n'.join(lines[1:-1])
 
         return md_content
+
+    def _remove_title_heading(self, md_content: str, original_content: str) -> str:
+        """
+        Remove first level-1 heading for showcase theses (BUG: Title in ToC).
+
+        Showcase theses have a custom professional cover page that renders
+        the title. The markdown body often includes the title as a level-1
+        heading (# Title...), which creates a duplicate title entry in the
+        Table of Contents. This method removes that first heading.
+
+        Args:
+            md_content: Markdown content after YAML frontmatter
+            original_content: Original content BEFORE normalization (for showcase detection)
+
+        Returns:
+            Markdown content with first # heading removed (if showcase thesis)
+        """
+        import re
+
+        # Only process showcase theses (check for "showcase" in ORIGINAL content)
+        # Use original because normalization strips custom fields that contain "showcase"
+        if 'showcase' not in original_content.lower():
+            return md_content
+
+        # Split by YAML frontmatter
+        parts = md_content.split('---', 2)
+        if len(parts) < 3:
+            return md_content
+
+        yaml_part = parts[1]
+        body_part = parts[2]
+
+        # Remove first level-1 heading from body (# Title...)
+        # Pattern: Optional \newpage, whitespace, then first # heading until next line
+        # The title is typically one long line like "# Why This... : Subtitle..."
+        body_part = re.sub(
+            r'(?:\\newpage\s*\n+)?\s*^#\s+[^\n]+\n+',  # \newpage (optional) + # heading + trailing newlines
+            r'',  # Remove it completely
+            body_part,
+            count=1,  # Only remove first # heading
+            flags=re.MULTILINE
+        )
+
+        # Reconstruct
+        return f'---{yaml_part}---{body_part}'
 
     def _strip_code_blocks(self, md_content: str) -> str:
         """

@@ -1,19 +1,18 @@
 {
   "stats": {
-    "total_original": 57,
-    "total_filtered": 28,
-    "total_removed": 29,
+    "total_original": 63,
+    "total_filtered": 45,
+    "total_removed": 18,
     "removal_reasons": {
-      "invalid_url": 8,
-      "invalid_author": 15,
-      "invalid_metadata": 5,
-      "invalid_doi": 1
+      "invalid_url": 12,
+      "invalid_metadata": 3,
+      "invalid_doi": 3
     }
   },
   "removed_citations": [
     {
       "citation": {
-        "id": "cite_001",
+        "id": "cite_003",
         "authors": [
           "Okoli"
         ],
@@ -32,495 +31,371 @@
     },
     {
       "citation": {
-        "id": "cite_002",
-        "authors": [
-          "Seker",
-          "Diri",
-          "Arslan",
-          "Amasyalı"
-        ],
-        "year": 2021,
-        "title": "Open Source Software Development Challenges",
-        "source_type": "book",
-        "language": "english",
-        "journal": "Research Anthology on Usage and Development of Open Source Software",
-        "publisher": "IGI Global",
-        "pages": "33-62",
-        "doi": "10.4018/978-1-7998-9158-1.ch003",
-        "url": "https://doi.org/10.4018/978-1-7998-9158-1.ch003",
-        "api_source": "Crossref"
-      },
-      "reason": "URL returns HTTP 429: https://doi.org/10.4018/978-1-7998-9158-1.ch003",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_003",
-        "authors": [
-          "Oduro"
-        ],
-        "year": 2024,
-        "title": "Eco-innovation and SMEs’ sustainable performance: a meta-analysis",
-        "source_type": "journal",
-        "language": "english",
-        "journal": "European Journal of Innovation Management",
-        "doi": "10.1108/ejim-11-2023-0961",
-        "url": "https://doi.org/10.1108/ejim-11-2023-0961",
-        "api_source": "Semantic Scholar"
-      },
-      "reason": "URL returns HTTP 403: https://doi.org/10.1108/ejim-11-2023-0961",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_004",
-        "authors": [
-          "Tirole",
-          "Lerner"
-        ],
-        "year": 2002,
-        "title": "Some Simple Economics of Open Source",
-        "source_type": "journal",
-        "language": "english",
-        "doi": "10.1111/1467-6451.00174",
-        "url": "https://doi.org/10.1111/1467-6451.00174",
-        "api_source": "Semantic Scholar"
-      },
-      "reason": "URL returns HTTP 403: https://doi.org/10.1111/1467-6451.00174",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_006",
-        "authors": [
-          "mckinsey.com"
-        ],
-        "year": 2025,
-        "title": "Source",
-        "source_type": "website",
-        "language": "english",
-        "url": "https://www.mckinsey.com/capabilities/quantumblack/our-insights/open-source-technology-in-the-age-of-ai",
-        "api_source": "Gemini Grounded"
-      },
-      "reason": "Domain name as author: 'mckinsey.com'",
-      "issues": 2
-    },
-    {
-      "citation": {
         "id": "cite_007",
         "authors": [
-          "channelweb.co.uk"
+          "Toro",
+          "Correa",
+          "Valencia-Arias",
+          "Benjumea-Arias"
         ],
-        "year": 2025,
-        "title": "channelweb.co.uk",
-        "source_type": "website",
+        "year": 2020,
+        "title": "A BIBLIOMETRIC ANALYSIS OF THE USE OF OPEN SOURCE SOFTWARE IN EDUCATIONAL CONTEXTS",
+        "source_type": "journal",
         "language": "english",
-        "url": "https://www.channelweb.co.uk/news/2025/geopatriation",
-        "api_source": "Gemini Grounded"
+        "doi": "10.33225/pec/20.78.114",
+        "url": "https://doi.org/10.33225/pec/20.78.114",
+        "api_source": "Semantic Scholar"
       },
-      "reason": "Domain name as author: 'channelweb.co.uk'; Domain name as title: 'channelweb.co.uk'; Author duplicates title: 'channelweb.co.uk'",
-      "issues": 4
-    },
-    {
-      "citation": {
-        "id": "cite_009",
-        "authors": [
-          "oecd.org"
-        ],
-        "year": 2025,
-        "title": "oecd.org",
-        "source_type": "website",
-        "language": "english",
-        "url": "https://www.oecd.org/en/publications/the-oecd-digital-government-policy-framework_f64fed2a-en.html",
-        "api_source": "Gemini Grounded"
-      },
-      "reason": "Domain name as author: 'oecd.org'; Domain name as title: 'oecd.org'; Author duplicates title: 'oecd.org'",
-      "issues": 4
-    },
-    {
-      "citation": {
-        "id": "cite_011",
-        "authors": [
-          "David Young",
-          "Rebecca Russell",
-          "Geoffrey Hoy"
-        ],
-        "year": 2025,
-        "title": "Sustainable Business Model Innovation Tactics",
-        "source_type": "website",
-        "language": "english",
-        "url": "https://www.bcg.com/publications/2025/sustainable-business-model-innovation",
-        "api_source": "Gemini Grounded"
-      },
-      "reason": "URL returns HTTP 403: https://www.bcg.com/publications/2025/sustainable-business-model-innovation",
+      "reason": "URL returns HTTP 403: https://doi.org/10.33225/pec/20.78.114",
       "issues": 1
     },
     {
       "citation": {
-        "id": "cite_012",
+        "id": "cite_008",
         "authors": [
-          "sagroups.ieee.org"
+          "Pazaitis",
+          "Giotitsas",
+          "Savvides",
+          "Kostakis"
         ],
         "year": 2025,
-        "title": "IEEE Computer Society Open Source Software Project Governance Working Group - Home",
-        "source_type": "website",
+        "title": "Reframing Innovation for Post-growth: Lessons from Patent Discourses in 3D Printing",
+        "source_type": "journal",
         "language": "english",
-        "url": "https://sagroups.ieee.org/osspg/",
-        "api_source": "Gemini Grounded"
+        "journal": "Science Technology & Society",
+        "doi": "10.1177/09717218251326836",
+        "url": "https://doi.org/10.1177/09717218251326836",
+        "api_source": "Semantic Scholar"
       },
-      "reason": "Domain name as author: 'sagroups.ieee.org'",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_013",
-        "authors": [
-          "nist.gov"
-        ],
-        "year": 2022,
-        "title": "Software Security in Supply Chains: Open Source Software Controls | NIST",
-        "source_type": "website",
-        "language": "english",
-        "url": "https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-open",
-        "api_source": "Gemini Grounded"
-      },
-      "reason": "Domain name as author: 'nist.gov'",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_014",
-        "authors": [
-          "brookings.edu"
-        ],
-        "year": 2021,
-        "title": "How open-source software shapes AI policy | Brookings",
-        "source_type": "website",
-        "language": "english",
-        "url": "https://www.brookings.edu/articles/how-open-source-software-shapes-ai-policy/",
-        "api_source": "Gemini Grounded"
-      },
-      "reason": "Domain name as author: 'brookings.edu'",
+      "reason": "URL returns HTTP 403: https://doi.org/10.1177/09717218251326836",
       "issues": 1
     },
     {
       "citation": {
         "id": "cite_015",
         "authors": [
-          "rand.org"
+          "Dahlander",
+          "Magnusson"
         ],
-        "year": 2025,
-        "title": "rand.org",
-        "source_type": "website",
+        "year": 2006,
+        "title": "Business Models and Community Relationships of Open Source Software Firms",
+        "source_type": "book",
         "language": "english",
-        "url": "https://www.rand.org/pubs/research_reports/RR1964.html",
-        "api_source": "Gemini Grounded"
+        "journal": "The Economics of Open Source Software Development",
+        "publisher": "Elsevier",
+        "pages": "111-130",
+        "doi": "10.1016/b978-044452769-1/50005-6",
+        "url": "https://doi.org/10.1016/b978-044452769-1/50005-6",
+        "api_source": "Crossref"
       },
-      "reason": "Domain name as author: 'rand.org'; Domain name as title: 'rand.org'; Author duplicates title: 'rand.org'",
-      "issues": 4
+      "reason": "URL contains error keyword: 'https://doi.org/10.1016/b978-044452769-1/50005-6'",
+      "issues": 1
     },
     {
       "citation": {
-        "id": "cite_018",
+        "id": "cite_016",
         "authors": [
-          "Muegge",
-          "Grant"
+          "Dohmke",
+          "Iansiti",
+          "Richards"
         ],
-        "year": 2013,
-        "title": "\"An institutional perspective on participation in business ecosystems, communities, and platforms\"",
+        "year": 2023,
+        "title": "Sea Change in Software Development: Economic and Productivity Analysis of the AI-Powered Developer Lifecycle",
         "source_type": "journal",
         "language": "english",
-        "doi": "10.5465/AMBPP.2013.15212ABSTRACT",
-        "url": "https://doi.org/10.5465/AMBPP.2013.15212ABSTRACT",
+        "url": "https://www.semanticscholar.org/paper/e5bafaae57503b59a59386d0b74fc6eb40225ba8",
         "api_source": "Semantic Scholar"
       },
-      "reason": "URL returns HTTP 403: https://doi.org/10.5465/AMBPP.2013.15212ABSTRACT",
+      "reason": "URL contains error keyword: 'https://www.semanticscholar.org/paper/e5bafaae57503b59a59386d0b74fc6eb40225ba8'",
       "issues": 1
     },
     {
       "citation": {
         "id": "cite_021",
         "authors": [
-          "opensource.googleblog.com"
+          "Carta",
+          "Chessa",
+          "Contu",
+          "Corriga",
+          "Deidda",
+          "Fenu",
+          "Frigau",
+          "Giuliani",
+          "Grassi",
+          "Manca",
+          "Marras",
+          "Mola",
+          "Mossa",
+          "Mura",
+          "Ortu",
+          "piano",
+          "Pisano",
+          "Pisu",
+          "Podda",
+          "Pompianu",
+          "Seu",
+          "Tiddia"
         ],
-        "year": 2025,
-        "title": "2024 Open Source Contributions: A Year in Review | Google Open Source Blog",
-        "source_type": "website",
+        "year": 2024,
+        "title": "LIMBA: An Open-Source Framework for the Preservation and Valorization of Low-Resource Languages using Generative Models",
+        "source_type": "journal",
         "language": "english",
-        "url": "https://opensource.googleblog.com/2025/10/2024-open-source-contributions-a-year-in-review.html",
-        "api_source": "Gemini Grounded"
+        "journal": "arXiv.org",
+        "doi": "10.48550/arXiv.2411.13453",
+        "url": "https://doi.org/10.48550/arXiv.2411.13453",
+        "api_source": "Semantic Scholar"
       },
-      "reason": "Domain name as author: 'opensource.googleblog.com'",
+      "reason": "DOI not found: 10.48550/arXiv.2411.13453",
       "issues": 1
     },
     {
       "citation": {
-        "id": "cite_024",
+        "id": "cite_023",
         "authors": [
-          "youtube.com"
+          "Yakubi",
+          "Basuki",
+          "Purwono",
+          "Usman"
         ],
-        "year": 2025,
-        "title": "- YouTube",
-        "source_type": "website",
+        "year": 2022,
+        "title": "The Impact of Digital Technology and Business Regulations on Financial Inclusion and Socio-Economic Development in Low-Income Countries",
+        "source_type": "journal",
         "language": "english",
-        "url": "https://www.youtube.com/watch?v=710PDpuLwOc",
-        "api_source": "Gemini Grounded"
+        "journal": "SAGE Open",
+        "doi": "10.1177/21582440221116112",
+        "url": "https://doi.org/10.1177/21582440221116112",
+        "api_source": "Semantic Scholar"
       },
-      "reason": "Domain name as author: 'youtube.com'",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_025",
-        "authors": [
-          "pwc.de"
-        ],
-        "year": 2025,
-        "title": "pwc.de",
-        "source_type": "website",
-        "language": "english",
-        "url": "https://www.pwc.de/en/digitale-transformation/open-source-software-management-and-compliance.html",
-        "api_source": "Gemini Grounded"
-      },
-      "reason": "Author duplicates title: 'pwc.de'",
+      "reason": "URL returns HTTP 403: https://doi.org/10.1177/21582440221116112",
       "issues": 1
     },
     {
       "citation": {
         "id": "cite_026",
         "authors": [
-          "jfrog.com"
+          "Zhou"
         ],
-        "year": 2025,
-        "title": "JFrog-Sponsored IDC Study Shows Growing Developer Focus on Software Security, Impacting Companies’ Competitive Advantage | JFrog",
-        "source_type": "website",
+        "year": 2022,
+        "title": "Open Source Software Digital Sociology: Engineering Open Source Software Ecosystem for Impact and Sustainability",
+        "source_type": "conference",
         "language": "english",
-        "url": "https://jfrog.com/press-room/idc-study-shows-growing-developer-focus-on-software-security-impacting-competitive-advantage/",
-        "api_source": "Gemini Grounded"
+        "journal": "Federated Africa and Middle East Conference on Software Engineering",
+        "publisher": "ACM",
+        "pages": "95-96",
+        "doi": "10.1145/3531056.3542767",
+        "url": "https://doi.org/10.1145/3531056.3542767",
+        "api_source": "Crossref"
       },
-      "reason": "Domain name as author: 'jfrog.com'",
+      "reason": "URL returns HTTP 403: https://doi.org/10.1145/3531056.3542767",
       "issues": 1
     },
     {
       "citation": {
-        "id": "cite_029",
+        "id": "cite_027",
         "authors": [
-          "Caddle",
-          "Razi",
-          "Kim",
-          "Ali",
-          "Popo",
-          "Stringhini",
-          "Choudhury",
-          "Wisniewski"
+          "Evangelatos",
+          "Evangelatos",
+          "Upadya",
+          "Venne",
+          "Satyamoorthy",
+          "Brand",
+          "Brand",
+          "Ramashesha",
+          "Brand",
+          "Brand"
         ],
-        "year": 2021,
-        "title": "MOSafely: Building an Open-Source HCAI Community to Make the Internet a Safer Place for Youth",
+        "year": 2020,
+        "title": "Digital Transformation and Governance Innovation for Public Biobanks and Free/Libre Open Source Software Using a Blockchain Technology",
         "source_type": "journal",
         "language": "english",
-        "journal": "CSCW Companion",
-        "doi": "10.1145/3462204.3481731",
-        "url": "https://doi.org/10.1145/3462204.3481731",
+        "journal": "Omics",
+        "doi": "10.1089/omi.2019.0178",
+        "url": "https://doi.org/10.1089/omi.2019.0178",
         "api_source": "Semantic Scholar"
       },
-      "reason": "URL returns HTTP 403: https://doi.org/10.1145/3462204.3481731",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_030",
-        "authors": [
-          "Pierce",
-          "Marru",
-          "Gunathilake",
-          "Wijeratne",
-          "Singh",
-          "Wimalasena",
-          "Ratnayaka",
-          "Pamidighantam"
-        ],
-        "year": 2014,
-        "title": "Apache Airavata: Design and Directions of a Science Gateway Framework",
-        "source_type": "journal",
-        "language": "english",
-        "journal": "International Workshop on Science Gateways",
-        "doi": "10.1002/cpe.3534",
-        "url": "https://doi.org/10.1002/cpe.3534",
-        "api_source": "Semantic Scholar"
-      },
-      "reason": "URL returns HTTP 403: https://doi.org/10.1002/cpe.3534",
+      "reason": "URL returns HTTP 403: https://doi.org/10.1089/omi.2019.0178",
       "issues": 1
     },
     {
       "citation": {
         "id": "cite_032",
         "authors": [
-          "Chou",
-          "Lin",
-          "Ishida"
+          "Plevnik",
+          "Gumzej"
         ],
-        "year": 2022,
-        "title": "Understanding Open Collaboration of Wikipedia Good Articles with Factor Analysis",
+        "year": 2025,
+        "title": "Open Source as the Foundation of Safety and Security in Logistics Digital Transformation",
         "source_type": "journal",
         "language": "english",
-        "journal": "Journal of Information & Knowledge Management",
-        "doi": "10.1142/s0219649222500307",
-        "url": "https://doi.org/10.1142/s0219649222500307",
+        "journal": "Syst.",
+        "doi": "10.3390/systems13060424",
+        "url": "https://doi.org/10.3390/systems13060424",
         "api_source": "Semantic Scholar"
       },
-      "reason": "URL contains error keyword: 'https://doi.org/10.1142/s0219649222500307'; URL returns HTTP 403: https://doi.org/10.1142/s0219649222500307",
-      "issues": 2
+      "reason": "URL returns HTTP 403: https://doi.org/10.3390/systems13060424",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_033",
+        "authors": [
+          "Maske"
+        ],
+        "year": 2016,
+        "title": "Competition Policy and the Digital Single Market in the Wake of Brexit: Is Geoblocking Always as Evil as Most Consumers Believe?",
+        "source_type": "journal",
+        "language": "english",
+        "doi": "10.1093/JECLAP/LPW069",
+        "url": "https://doi.org/10.1093/JECLAP/LPW069",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL returns HTTP 403: https://doi.org/10.1093/JECLAP/LPW069",
+      "issues": 1
     },
     {
       "citation": {
         "id": "cite_035",
         "authors": [
-          "opusproject.eu"
+          "Jahn",
+          "Engelbutzeder",
+          "Randall",
+          "Bollmann",
+          "Ntouros",
+          "Michel",
+          "Wulf"
         ],
-        "year": 2023,
-        "title": "opusproject.eu",
-        "source_type": "website",
+        "year": 2024,
+        "title": "In Between Users and Developers: Serendipitous Connections and Intermediaries in Volunteer-Driven Open-Source Software Development",
+        "source_type": "journal",
         "language": "english",
-        "url": "https://opusproject.eu/openscience-news/exploring-tech-tools-for-open-science/",
-        "api_source": "Gemini Grounded"
+        "journal": "International Conference on Human Factors in Computing Systems",
+        "doi": "10.1145/3613904.3642541",
+        "url": "https://doi.org/10.1145/3613904.3642541",
+        "api_source": "Semantic Scholar"
       },
-      "reason": "Author duplicates title: 'opusproject.eu'",
+      "reason": "URL returns HTTP 403: https://doi.org/10.1145/3613904.3642541",
       "issues": 1
     },
     {
       "citation": {
         "id": "cite_038",
         "authors": [
-          "mdpi.com"
+          "Tong",
+          "Ananth",
+          "Vaughan",
+          "Geethanath"
         ],
-        "year": 2025,
-        "title": "mdpi.com",
-        "source_type": "website",
+        "year": 2024,
+        "title": "Expanding access to magnetic resonance education through open‐source web tutorials",
+        "source_type": "journal",
         "language": "english",
-        "url": "https://www.mdpi.com/2813-6640/1/1/1",
-        "api_source": "Gemini Grounded"
+        "journal": "NMR in Biomedicine",
+        "doi": "10.1002/nbm.5109",
+        "url": "https://doi.org/10.1002/nbm.5109",
+        "api_source": "Semantic Scholar"
       },
-      "reason": "Domain name as author: 'mdpi.com'; Domain name as title: 'mdpi.com'; Author duplicates title: 'mdpi.com'",
-      "issues": 4
+      "reason": "URL returns HTTP 403: https://doi.org/10.1002/nbm.5109",
+      "issues": 1
     },
     {
       "citation": {
         "id": "cite_039",
         "authors": [
-          "Haddad"
+          "Widener",
+          "Mazzuchi",
+          "Sarkani"
         ],
-        "year": 2023,
-        "title": "Open Source License Compliance: Challenges Ahead",
+        "year": 2018,
+        "title": "Simplifying humanitarian assistance/disaster relief analytic models using activity-based intelligence: Syrian refugee crisis as a case study",
         "source_type": "journal",
         "language": "english",
-        "doi": "10.70828/yydg4040",
-        "url": "https://doi.org/10.70828/yydg4040",
+        "doi": "10.1108/DPM-06-2017-0134",
+        "url": "https://doi.org/10.1108/DPM-06-2017-0134",
         "api_source": "Semantic Scholar"
       },
-      "reason": "URL contains error keyword: 'https://doi.org/10.70828/yydg4040'",
+      "reason": "URL returns HTTP 403: https://doi.org/10.1108/DPM-06-2017-0134",
       "issues": 1
     },
     {
       "citation": {
-        "id": "cite_044",
+        "id": "cite_042",
         "authors": [
-          "undp.org"
+          "Robredo",
+          "Esposito",
+          "Palomba",
+          "Peñaloza",
+          "Lenarduzzi"
         ],
         "year": 2025,
-        "title": "undp.org",
-        "source_type": "website",
-        "language": "english",
-        "url": "https://www.undp.org/publications/open-design-how-open-source-can-drive-sustainable-urban-development",
-        "api_source": "Gemini Grounded"
-      },
-      "reason": "Domain name as author: 'undp.org'; Domain name as title: 'undp.org'; Author duplicates title: 'undp.org'",
-      "issues": 4
-    },
-    {
-      "citation": {
-        "id": "cite_046",
-        "authors": [
-          "redhat.com"
-        ],
-        "year": 2025,
-        "title": "The ethics of open and public AI: Balancing transparency and safety",
-        "source_type": "website",
-        "language": "english",
-        "url": "https://www.redhat.com/en/blog/ethics-open-and-public-ai-balancing-transparency-and-safety",
-        "api_source": "Gemini Grounded"
-      },
-      "reason": "Domain name as author: 'redhat.com'",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_050",
-        "authors": [
-          "Kavanagh"
-        ],
-        "year": 2004,
-        "title": "Licensing",
-        "source_type": "book",
-        "language": "english",
-        "journal": "Open Source Software",
-        "publisher": "Elsevier",
-        "pages": "297-305",
-        "doi": "10.1016/b978-155558320-0/50014-3",
-        "url": "https://doi.org/10.1016/b978-155558320-0/50014-3",
-        "api_source": "Crossref"
-      },
-      "reason": "URL contains error keyword: 'https://doi.org/10.1016/b978-155558320-0/50014-3'",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_055",
-        "authors": [
-          "media.libreplanet.org"
-        ],
-        "year": 2025,
-        "title": "Richard Stallman: The state of the free software movement — GNU MediaGoblin",
-        "source_type": "website",
-        "language": "english",
-        "url": "https://media.libreplanet.org/u/libreplanet/m/the-state-of-the-free-software-movement/",
-        "api_source": "Gemini Grounded"
-      },
-      "reason": "Domain name as author: 'media.libreplanet.org'",
-      "issues": 1
-    },
-    {
-      "citation": {
-        "id": "cite_056",
-        "authors": [
-          "Persson",
-          "Linåker"
-        ],
-        "year": 2024,
-        "title": "Soft-lockins in Public Sector Acquisitions of Open Source Software-solutions: A Case Study on a Municipal E-Service Platform",
+        "title": "What Were You Thinking? An LLM-Driven Large-Scale Study of Refactoring Motivations in Open-Source Projects",
         "source_type": "journal",
         "language": "english",
         "journal": "arXiv.org",
-        "doi": "10.48550/arXiv.2409.01118",
-        "url": "https://doi.org/10.48550/arXiv.2409.01118",
+        "doi": "10.48550/arXiv.2509.07763",
+        "url": "https://doi.org/10.48550/arXiv.2509.07763",
         "api_source": "Semantic Scholar"
       },
-      "reason": "DOI not found: 10.48550/arXiv.2409.01118",
+      "reason": "DOI not found: 10.48550/arXiv.2509.07763",
       "issues": 1
     },
     {
       "citation": {
-        "id": "cite_061",
+        "id": "cite_047",
         "authors": [
-          "dataconomy.com"
+          "Al-Kharusi",
+          "Khan",
+          "Rizwan",
+          "Bait-Suwailam"
         ],
-        "year": 2025,
-        "title": "McKinsey: Open-source AI Tools Are Quietly Winning In The Enterprise - Dataconomy",
-        "source_type": "website",
+        "year": 2024,
+        "title": "Open-Source Artificial Intelligence Privacy and Security: A Review",
+        "source_type": "journal",
         "language": "english",
-        "url": "https://dataconomy.com/2025/04/09/mckinsey-open-source-ai-tools-are-quietly-winning-in-the-enterprise/",
-        "api_source": "Gemini Grounded"
+        "journal": "De Computis",
+        "doi": "10.3390/computers13120311",
+        "url": "https://doi.org/10.3390/computers13120311",
+        "api_source": "Semantic Scholar"
       },
-      "reason": "Domain name as author: 'dataconomy.com'",
+      "reason": "URL returns HTTP 403: https://doi.org/10.3390/computers13120311",
+      "issues": 1
+    },
+    {
+      "citation": {
+        "id": "cite_054",
+        "authors": [
+          "Osborne"
+        ],
+        "year": 2024,
+        "title": "Public-private funding models in open source software development: A case study on scikit-learn",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "arXiv.org",
+        "doi": "10.48550/arXiv.2404.06484",
+        "url": "https://doi.org/10.48550/arXiv.2404.06484",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "DOI not found: 10.48550/arXiv.2404.06484; URL contains error keyword: 'https://doi.org/10.48550/arXiv.2404.06484'",
+      "issues": 2
+    },
+    {
+      "citation": {
+        "id": "cite_058",
+        "authors": [
+          "Esposte",
+          "Kon",
+          "Costa",
+          "Lago"
+        ],
+        "year": 2017,
+        "title": "InterSCity: A Scalable Microservice-based Open Source Platform for Smart Cities",
+        "source_type": "journal",
+        "language": "english",
+        "journal": "International Conference on Smart Grids and Green IT Systems",
+        "doi": "10.5220/0006306200350046",
+        "url": "https://doi.org/10.5220/0006306200350046",
+        "api_source": "Semantic Scholar"
+      },
+      "reason": "URL contains error keyword: 'https://doi.org/10.5220/0006306200350046'",
       "issues": 1
     }
   ]

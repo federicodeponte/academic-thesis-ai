@@ -8,136 +8,156 @@
 ## Summary
 
 **Strengths:**
--   Comprehensive coverage of various facets of open source software (OSS), from its history and economic models to its role in sustainability.
--   Well-structured, with clear topical sections that systematically build the narrative.
--   Acknowledges some key challenges and theoretical underpinnings (e.g., "Cathedral and the Bazaar," social capital theory, exclusion in commons governance).
--   Successfully expanded the content to meet word count requirements, adding more detail and examples.
+- **Comprehensive Scope:** The literature review covers a broad and relevant range of topics related to open source software (OSS), from its history and economics to its role in digital commons and environmental sustainability.
+- **Clear Structure:** The review is well-organized with distinct sections, making it easy to follow the narrative and different facets of OSS.
+- **Good Flow:** The arguments generally flow logically from one section to the next, building a coherent picture of OSS's evolution and impact.
+- **Relevant Themes:** Addresses crucial aspects of OSS that are central to academic and industry discourse.
 
-**Critical Issues:** 11 major, 5 moderate, 3 minor
-**Recommendation:** Extensive revisions are needed before publication to enhance academic rigor, address missing information, and provide a more balanced critical perspective.
+**Critical Issues:** 3 major, 5 moderate, 5 minor
+**Recommendation:** Significant revisions are needed, particularly regarding academic integrity (citations) and addressing a balanced perspective on OSS challenges.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Numerous Missing Citations
-**Location:** Throughout the entire literature review (Sections 2.1, 2.2, 2.4, 2.5)
-**Problem:** Multiple claims, historical facts, and model descriptions are marked with `{cite_MISSING}`. This is a critical flaw in a literature review, undermining its academic integrity and verifiability.
-**Missing Citations:**
--   `{cite_MISSING: Stallman's philosophy of free software}` (Section 2.1)
--   `{cite_MISSING: history of Apache HTTP Server}` (Section 2.1)
--   `{cite_MISSING: LAMP stack history}` (Section 2.1)
--   `{cite_MISSING: OSI Open Source Definition}` (Section 2.1)
--   `{cite_MISSING: open core model explanation}` (Section 2.2)
--   `{cite_MISSING: Red Hat business model}` (Section 2.2)
--   `{cite_MISSING: tools for knowledge sharing in OSS}` (Section 2.4)
--   `{cite_MISSING: open source environmental sensors}` (Section 2.5)
--   `{cite_MISSING: open source energy modeling tools}` (Section 2.5)
--   `{cite_MISSING: circular economy principles}` (Section 2.5)
--   `{cite_MISSING: comparison of proprietary vs open source in circular economy}` (Section 2.5)
-**Fix:** All `{cite_MISSING}` tags must be replaced with appropriate, verified citations. For foundational concepts or historical events, cite authoritative sources (e.g., historical texts, official documentation, seminal academic papers).
-**Severity:** 🔴 High - Fundamental breach of academic integrity.
+### Issue 1: Pervasive Missing Citations (`cite_MISSING`)
+**Location:** Throughout the entire document. Every section has multiple instances.
+**Problem:** The vast majority of claims, historical facts, theoretical frameworks, and examples are marked with `cite_MISSING`. In an academic literature review, every piece of information that is not common knowledge or the author's original analysis *must* be attributed to its source. This is a fundamental requirement for academic integrity and credibility. Without proper citations, the review cannot be considered reliable or scholarly.
+**Evidence:** `cite_MISSING` tags appear literally dozens of times, undermining almost every paragraph.
+**Fix:** Thoroughly research and add specific, verifiable citations (with DOIs or arXiv IDs where applicable) for *every* claim, historical event, concept, and example. If a claim cannot be cited, it should be rephrased or removed.
+**Severity:** 🔴 High - **CRITICAL ACADEMIC INTEGRITY FLAW.** This issue alone makes the paper unpublishable in its current form.
 
-### Issue 2: Overclaims and Lack of Hedging
-**Location:** Sections 2.1, 2.4, 2.5
-**Claim:** "unparalleled quality and reliability" (2.1), "far surpasses what isolated individuals or closed organizations could achieve" (2.4), "prevents redundant efforts" (2.4), "uniquely suited to address complex, global environmental problems" (2.5).
-**Problem:** These are strong, absolute claims that are difficult to substantiate universally. While OSS often demonstrates high quality and effectiveness, stating it as "unparalleled" or "far surpasses" is an overgeneralization and lacks academic hedging. Proprietary software can also achieve high quality, and other collaborative models exist. "Prevents redundant efforts" is also an overstatement; it *reduces* redundancy but doesn't eliminate it (e.g., through forks or competing projects).
-**Evidence:** No comparative evidence is provided to rigorously support these absolute claims against all other possible models or outcomes.
-**Fix:** Rephrase these statements with appropriate hedging language (e.g., "demonstrates robust quality," "often leads to more robust solutions than isolated efforts," "significantly reduces redundant efforts," "well-suited to address complex problems").
-**Severity:** 🔴 High - Affects the credibility and academic tone of the review.
+### Issue 2: Insufficient Discussion of OSS Challenges and Criticisms
+**Location:** General omission throughout the review, particularly in "Collaborative Development Theory" and "Economic Models."
+**Problem:** The review presents an overwhelmingly positive narrative of open source, largely overlooking significant challenges, criticisms, and complexities that are well-documented in the literature. A comprehensive literature review should offer a balanced perspective, acknowledging both the strengths and the inherent difficulties or downsides.
+**Missing Counterarguments/Discussions:**
+-   **Security Risks:** While "many eyeballs" is a common trope, the reality includes under-resourced projects, "bus factor" for key maintainers, and supply chain vulnerabilities (e.g., Log4j, XZ Utils backdoor).
+-   **Long-term Maintenance Burden:** Beyond just "smaller projects," many critical OSS components struggle with sustained funding and volunteer burnout.
+-   **"Open Washing":** Corporations leveraging open source for PR without genuine commitment or contributions, potentially exploiting volunteer labor.
+-   **Licensing Complexity & Compatibility:** The legal quagmire of combining different open source licenses, or integrating OSS with proprietary code, is a significant practical challenge.
+-   **Governance Failures/Forks:** While varying governance is mentioned, the potential for project forks due to irreconcilable disagreements or maintainer disputes is a reality.
+-   **Usability/User Experience:** Some OSS tools, while powerful, can have steeper learning curves or less polished interfaces compared to proprietary alternatives, limiting broader adoption.
+**Fix:** Integrate a dedicated subsection (e.g., "Challenges and Criticisms in Open Source Ecosystems") or weave these counterarguments and complexities into the existing sections. Frame these not as weaknesses of OSS itself, but as areas of ongoing research, debate, and practical management.
+**Severity:** 🔴 High - **Affects balance, depth, and scholarly rigor.**
 
-### Issue 3: Unfulfilled Promise of Identifying Research Gaps
-**Location:** Introduction, Conclusion (implied)
-**Claim:** The overall introduction states that the review aims to "identifying key insights and revealing enduring research gaps that warrant further investigation."
-**Problem:** The individual sections are largely descriptive and conclude with summaries of challenges or ongoing work, but do not explicitly articulate "enduring research gaps" in a structured manner. There is no dedicated section or clear summary of these gaps, which is a major expectation for a comprehensive literature review.
-**Missing:** A dedicated sub-section in each major section or a concluding section that explicitly lists and elaborates on specific research gaps identified from the synthesized literature.
-**Fix:** Add a clear "Research Gaps" sub-section, either at the end of each major topical section or as a standalone concluding section for the entire literature review, detailing specific areas requiring further investigation based on the literature discussed.
-**Severity:** 🔴 High - Fails to deliver on a key stated objective of the review.
+### Issue 3: Overclaims and Lack of Nuance in Environmental Sustainability Section
+**Location:** "Environmental Sustainability Through Open Source" section.
+**Claim:** Strong assertions about OSS's role in "fostering a more resilient and environmentally conscious future," "democratize access to technology," "reduce waste and resource consumption."
+**Problem:** While OSS *can* contribute to sustainability, the section presents a very optimistic view without sufficiently acknowledging the broader context or inherent environmental costs of computing and digital infrastructure. It risks overclaiming the direct impact of OSS alone.
+**Missing Nuance/Counterarguments:**
+-   **Environmental Footprint of Computing:** The act of running software (even OSS) on hardware requires energy, and the manufacturing of hardware (servers, devices) has a significant environmental impact. OSS itself doesn't negate this.
+-   **Scalability Challenges:** While open source *enables* solutions, scaling these to global impact often requires significant funding, policy, and infrastructure beyond just open code.
+-   **"Greenwashing" Risk:** Similar to "open washing," there's a risk of companies using "open source for sustainability" as a marketing tool without deep commitment.
+**Fix:** Introduce caveats and acknowledge the broader environmental context. For example, "While open source *enables* more sustainable practices, it operates within a larger technological ecosystem whose overall environmental footprint remains a significant challenge." Emphasize the *potential* and *enabling* role rather than definitive solutions.
+**Severity:** 🔴 High - **Threatens the validity and realism of claims in a critical area.**
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 4: Future Publication Citation
-**Location:** Section 2.4, "Digital Commons and Knowledge Sharing in Open Source"
-**Claim:** "Halim and Setiawan (2025) highlighted the role of free and open source software in promoting digital inclusion..."
-**Problem:** Citing a paper from a future year (2025) without explanation is problematic. While it could be an "in-press" or "forthcoming" article, this needs to be explicitly stated and ideally, a DOI or arXiv link should be provided if available. Otherwise, it should be replaced with an already published work.
-**Fix:** Clarify the status of Halim and Setiawan (2025) (e.g., "forthcoming," "in press") and provide a link if possible. If it's not genuinely an accepted or published work, replace it with a currently published, relevant citation.
-**Severity:** 🟡 Moderate - Raises questions about the verifiability of cited sources.
+### Issue 4: Generalizations Without Specific Examples (Even with Citations)
+**Location:** Various places, e.g., "History and Evolution," "Economic Models."
+**Problem:** Even if citations were present, some claims are quite broad and could benefit from more specific, illustrative examples beyond the major ones (Linux, Apache, Red Hat).
+**Example:** "Companies began to recognize the value of open source, not just as a cost-saving measure, but as a source of innovation, flexibility, and community engagement." (History section)
+**Fix:** Where possible, add brief, concrete examples or statistics to support generalized statements. For instance, name a few more companies that adopted OSS for innovation, or briefly mention specific innovations.
+**Severity:** 🟡 Moderate - **Reduces specificity and persuasive power.**
 
-### Issue 5: Lack of Deeper Criticality and Balanced Perspective
-**Location:** Throughout the review, particularly sections 2.2, 2.3, 2.4, 2.5
-**Problem:** While challenges are mentioned (e.g., sustainability, coordination overhead, exclusion), the overall tone is predominantly positive, focusing heavily on the benefits and success of OSS. The review could benefit from a more critical and balanced examination of potential downsides, limitations, or counter-arguments. For example:
--   **Economic Models (2.2):** Could discuss potential negative economic impacts, market disruption for proprietary vendors, or the challenges smaller open source businesses face.
--   **Collaborative Development (2.3):** Could elaborate on limitations like slower decision-making in large communities, the "tyranny of structurelessness," or high project abandonment rates.
--   **Digital Commons (2.4):** Could discuss challenges in sustaining the commons, quality control issues, or the "tragedy of the anti-commons" in some contexts.
--   **Environmental Sustainability (2.5):** Could acknowledge the environmental footprint of OSS development itself (e.g., energy consumption of massive CI/CD pipelines, cloud infrastructure).
-**Missing:** A more in-depth exploration of the criticisms, inherent limitations, and potential negative consequences or trade-offs associated with open source models.
-**Fix:** Integrate more critical perspectives and counter-arguments throughout the relevant sections, drawing on existing literature that highlights these challenges. This will make the review more robust and academically rigorous.
-**Severity:** 🟡 Moderate - Limits the depth of critical analysis expected in a comprehensive review.
+### Issue 5: Repetitive Themes
+**Location:** "Digital Commons" and "Environmental Sustainability" sections often reiterate "democratizing access," "knowledge sharing," and "innovation."
+**Problem:** While these are core tenets of OSS, their repeated emphasis across different sections without significant new nuance or context can make the text feel redundant.
+**Fix:** When these themes reappear, ensure they are contextualized specifically for the section's topic. For example, how does "democratizing access" manifest *uniquely* in the context of environmental monitoring compared to general software development?
+**Severity:** 🟡 Moderate - **Impacts readability and conciseness.**
 
-### Issue 6: Vague Claims and Lack of Specificity
-**Location:** Sections 2.2
-**Claim:** "The cost savings from using open source can be substantial..." (2.2), "...offer significant long-term public value..." (2.2)
-**Problem:** Terms like "substantial" and "significant" are subjective and vague. While generally true, a literature review can strengthen such claims by providing specific examples, ranges, or referencing studies that quantify these benefits (e.g., "cost savings ranging from X% to Y%," or "studies show Z million in public value").
-**Fix:** Where possible, add more specific examples, quantitative data, or reference specific findings from the cited literature to substantiate these claims, or hedge them further if quantification is not feasible within the scope.
-**Severity:** 🟡 Moderate - Weakens the empirical grounding of the claims.
+### Issue 6: Limited Engagement with Nuances of Intellectual Property
+**Location:** "Digital Commons and Knowledge Sharing" section, paragraph on IP.
+**Claim:** "Traditional IP regimes...often struggle to accommodate the fluid and collaborative nature of open source development."
+**Problem:** While true, the discussion then primarily focuses on how open source licenses *protect* the commons. It doesn't delve deeply into the *challenges* or *conflicts* that arise when open source interacts with proprietary IP, especially in commercial contexts, or the debates around different license philosophies (permissive vs. copyleft).
+**Fix:** Expand this paragraph to briefly discuss the complexities and potential conflicts, perhaps mentioning the challenges of license compatibility or the legal battles that have arisen over open source use in proprietary products.
+**Severity:** 🟡 Moderate - **Misses a crucial area of debate in the IP literature.**
+
+### Issue 7: Overly Ambitious Language in Introduction and Conclusion
+**Location:** Introduction, Conclusion.
+**Claim:** "comprehensive overview," "robust foundation," "profoundly shaped," "dominant force."
+**Problem:** While the ambition is laudable, such strong claims about the review itself can set an expectation that is hard to meet, especially given the current state of missing citations and omitted counterarguments.
+**Fix:** Tone down some of the most assertive language slightly, or ensure that the revised content truly lives up to these claims. For example, "aims to provide a comprehensive overview" is fine, but "has traversed the expansive landscape... and established that..." in the conclusion might be premature given the current gaps.
+**Severity:** 🟡 Moderate - **Can appear overconfident or premature.**
+
+### Issue 8: Vague Call to Action/Future Research in Conclusion
+**Location:** Final paragraph of "Conclusion of Literature Review."
+**Problem:** The conclusion states: "This current research aims to build upon these foundations by [briefly state what your paper will do...]". While this is the correct place for it, the placeholder indicates that the actual contribution is missing.
+**Fix:** Replace the bracketed placeholder with a clear, concise statement of the specific contribution of *this current paper* that follows the literature review. This is crucial for guiding the reader to the rest of the research.
+**Severity:** 🟡 Moderate - **Missing a key element of a conclusion.**
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Repetitive Phrasing:** Certain phrases like "pervasive nature," "strong and growing economic foundation," and "dynamic interplay" appear multiple times across sections. While sometimes appropriate, overuse can make the text feel repetitive.
-2.  **Lack of Explicit Transition Sentences:** Some paragraphs within sections could benefit from stronger explicit transition sentences to improve flow and coherence.
-3.  **General Tone:** While mostly academic, the consistent use of strong positive descriptors (e.g., "monumental achievement," "unparalleled," "far surpasses") without sufficient nuance can occasionally lean towards an overly enthusiastic or promotional tone rather than a strictly critical academic one. Softening these where appropriate would enhance objectivity.
+1.  **Vague Claim:** "intricate theories underpinning its collaborative paradigms" (Introduction) - While descriptive, "intricate" is vague. The subsequent sections do elaborate, but the intro could be more precise.
+2.  **Unsubstantiated:** "This success challenged the conventional wisdom that only proprietary, centrally controlled development could produce high-quality, reliable software." (History section) - While commonly believed, who held this "conventional wisdom"? A brief citation or example of this sentiment would strengthen the claim.
+3.  **Ambiguous phrasing:** "The sentiment of developers... can significantly impact practices and artifacts" (Collaborative Development) - "Sentiment" is a bit broad. What specific sentiments (e.g., frustration, enthusiasm, apathy) and how do they impact?
+4.  **Implicit Assumption:** "The paradigm of digital commons, therefore, is not merely about free access but about fostering a sustainable, collaborative ecosystem..." (Digital Commons conclusion) - This is a good point, but the "therefore" implies it was explicitly argued *before* this statement. Ensure the preceding text clearly builds to this conclusion.
+5.  **Minor Redundancy:** "The history of open source is, therefore, a narrative of continuous evolution... It underscores a fundamental shift... The journey... demonstrates a resilient model..." (History section conclusion) - The repeated emphasis on "evolution," "shift," and "journey" could be condensed for punchier prose.
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Implicit Correlation as Causation
-**Location:** Throughout the review, especially in sections discussing benefits.
-**Logic:** The review often highlights open source alongside positive outcomes (e.g., "open source fosters an environment of rapid iteration and innovation," "open source contributes to environmental sustainability").
-**Missing:** While often true, the review sometimes implicitly attributes causation without sufficiently acknowledging other contributing factors or alternative explanations. For example, while open source *enables* innovation, other factors like market demand, funding, and skilled individuals are also crucial.
-**Fix:** Introduce more nuanced language that acknowledges open source as a *contributing factor* or *enabler* rather than the sole cause, and briefly mention the interplay of other factors where relevant.
+### Gap 1: Implicit Jumps in Introduction
+**Location:** Introduction
+**Logic:** "Originating from a philosophical stance on software freedom" → "OSS has evolved into a dominant force, influencing everything..."
+**Missing:** While the history section fills this in, the introduction makes a large leap without immediately connecting the philosophical origins to its current dominance.
+**Fix:** Briefly hint at the mechanisms of this evolution in the introduction itself (e.g., "fueled by its collaborative model and pragmatic benefits").
+
+### Gap 2: Potential for "No True Scotsman" Fallacy (Implicit)
+**Location:** Implied throughout the positive framing.
+**Logic:** The review focuses on the *successes* and *positive attributes* of projects that align with the "true" spirit of open source.
+**Problem:** By not discussing the challenges and failures (e.g., projects that die due to lack of funding/maintainers, projects with toxic communities, "open washing"), the review might implicitly define "open source" only by its successes, ignoring less favorable realities.
+**Fix:** Explicitly acknowledge that not all open source projects achieve these ideals, and that challenges are an inherent part of the ecosystem (as per Major Issue 2).
 
 ---
 
-## Methodological Concerns
+## Methodological Concerns (Review Scope & Balance)
 
-### Concern 1: Systematicity of Literature Selection
-**Issue:** The review doesn't explicitly state its methodology for literature selection (e.g., search strategy, databases used, inclusion/exclusion criteria). While a full systematic review might not be intended, some indication of how the literature was gathered ensures transparency and rigor.
-**Risk:** Appears to be a narrative review, which is acceptable, but without explicit methodology, there's a risk of unconscious bias in literature selection, potentially missing key papers or alternative viewpoints.
-**Reviewer Question:** "What approach was taken to identify the literature cited? Was a systematic search conducted, or was it a more narrative selection?"
-**Suggestion:** Add a brief paragraph at the beginning of the literature review (or in the overall methodology) outlining the approach to literature identification and selection.
+### Concern 1: Lack of Critical Synthesis
+**Issue:** The review primarily describes different aspects of OSS. While it synthesizes these into a coherent narrative, it lacks a critical synthesis that weighs different perspectives, identifies controversies, or highlights areas of academic disagreement within the literature.
+**Risk:** Appears more descriptive than analytical/critical.
+**Reviewer Question:** "What are the main debates or unresolved questions in the literature on open source that this review identifies?"
+**Suggestion:** After presenting a concept, briefly introduce a contrasting view or a known criticism from the literature (e.g., for economic models, discuss the ongoing debate about sustainability for non-corporate-backed projects).
+
+### Concern 2: Over-reliance on "Canonical" Works
+**Issue:** While works like Raymond's "Cathedral and the Bazaar" are foundational, a comprehensive review should demonstrate engagement with more recent scholarly debates that might critique, extend, or offer alternative perspectives to these early, influential texts.
+**Risk:** May appear to privilege older, foundational texts without showing how the field has evolved.
+**Question:** "How have more recent theories or empirical studies challenged or refined Raymond's original observations?"
+**Fix:** Ensure a good balance of foundational and contemporary research, explicitly discussing how newer work builds on or diverges from earlier ideas.
 
 ---
 
 ## Missing Discussions
 
-1.  **Detailed Governance Structures:** While OSPOs are mentioned, a deeper dive into the specific governance models, decision-making processes, and conflict resolution mechanisms within large, diverse open source projects would add significant value to Section 2.3.
-2.  **Licensing Complexities:** Beyond mentioning GPL and MIT, a discussion of the nuances, challenges, and strategic implications of different open source licenses (e.g., permissive vs. copyleft, license compatibility issues) would be beneficial.
-3.  **Impact of AI on OSS:** With the rise of AI-assisted code generation and large language models, a discussion on their potential impact on open source contribution models, quality, and community dynamics would be highly relevant and forward-looking.
-4.  **Failure Cases/Project Abandonment:** While sustainability is mentioned, a more direct discussion of common reasons why open source projects fail or are abandoned, and their implications, would provide a more balanced perspective.
+1.  **Security Vulnerabilities & Supply Chain Attacks:** A major, contemporary concern for any software, especially OSS, given its widespread use. This needs significant attention.
+2.  **The "Bus Factor" / Maintainer Burnout:** The reliance on a few key individuals for critical projects and the associated risks are crucial.
+3.  **"Open Washing" and Corporate Exploitation:** The ethical and practical implications of companies leveraging OSS without genuinely contributing back or respecting community values.
+4.  **License Proliferation and Compatibility Issues:** The practical headaches and legal risks associated with navigating the multitude of open source licenses.
+5.  **The Role of Foundations:** Organizations like the Apache Software Foundation, Linux Foundation, etc., play a critical role in governance, funding, and legal protection for many projects.
+6.  **Barriers to Entry for Contributors:** While "democratizing development" is mentioned, the reality for new contributors (complex codebases, project politics, documentation gaps) can be challenging.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Overly Confident Language:** As noted in Major Issue 2, phrases like "clearly demonstrates," "unparalleled," and "far surpasses" should be softened to reflect a more academic and objective tone (e.g., "suggests," "indicates," "demonstrates robust performance").
-2.  **Lack of Critical Distance:** The review, while descriptive and informative, could benefit from a slightly more critical distance from the subject matter, actively questioning assumptions or presenting conflicting evidence where it exists.
+1.  **Predominantly Laudatory:** The tone is consistently positive, which, while reflecting the author's enthusiasm, detracts from the critical and balanced perspective expected in an academic literature review.
+2.  **Lack of Self-Correction/Nuance:** Few instances where the review acknowledges the complexities or trade-offs inherent in the open source model.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Please provide the missing citations for all claims marked with `{cite_MISSING}`. This is a critical requirement."
-2.  "Can you provide a more explicit section that outlines the specific research gaps identified from this literature review, as promised in the introduction?"
-3.  "The claim 'unparalleled quality and reliability' for Linux is very strong. What comparative evidence supports this against all proprietary systems? Please rephrase to be more precise."
-4.  "What is the status of the Halim and Setiawan (2025) publication? Is it in press, or should a more current reference be used?"
-5.  "Could you elaborate on the negative economic impacts or specific challenges open source models introduce to existing markets or smaller proprietary entities?"
-6.  "What are the major limitations of the collaborative development models discussed, beyond coordination overhead and exclusion?"
-7.  "Have you considered the environmental footprint of the open source development process itself, rather than just its application to sustainability solutions?"
+1.  "Why are there so many missing citations? Please provide all references."
+2.  "Where is the discussion on critical challenges facing OSS, such as security vulnerabilities, maintainer burnout, or 'open washing'?"
+3.  "How does this review address the environmental impact of computing infrastructure itself, rather than solely focusing on how OSS *helps* sustainability?"
+4.  "What are the key controversies or academic debates within the open source literature that this review identifies and engages with?"
+5.  "Can you provide more specific examples or quantitative data to support some of the broader claims about impact and adoption?"
+6.  "How does this review differentiate between the philosophical 'free software' movement and the more pragmatic 'open source' movement beyond the coining of the term?" (This is touched upon but could be more explicit in how this distinction plays out in current models).
 
 **Prepare answers or add to paper**
 
@@ -146,13 +166,14 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Address all Issue 1 (Missing Citations)** - This is paramount for academic integrity.
-2.  🔴 **Address Issue 2 (Overclaims and Lack of Hedging)** - Crucial for academic credibility and balanced reporting.
-3.  🔴 **Address Issue 3 (Unfulfilled Promise of Identifying Research Gaps)** - Fundamental for the structure and purpose of a literature review.
-4.  🟡 **Address Issue 4 (Future Publication Citation)** - Ensure all citations are verifiable and current.
-5.  🟡 **Address Issue 5 (Lack of Deeper Criticality and Balanced Perspective)** - Strengthen the analytical depth and objectivity of the review.
-6.  🟡 **Address Issue 6 (Vague Claims and Lack of Specificity)** - Enhance the empirical precision of the arguments.
+1.  🔴 **Fix Issue 1 (Pervasive Missing Citations):** This is non-negotiable. Every claim needs a source.
+2.  🔴 **Address Issue 2 (Insufficient Discussion of Challenges):** Integrate significant discussion of OSS downsides, risks, and complexities for a balanced view.
+3.  🔴 **Resolve Issue 3 (Overclaims in Sustainability):** Add nuance and acknowledge the broader environmental context of computing.
+4.  🟡 **Address Issue 6 (Limited IP Nuance):** Expand on the challenges and complexities of IP in OSS.
+5.  🟡 **Address Issue 8 (Vague Conclusion):** State your paper's specific contribution clearly.
 
 **Can defer:**
--   Minor wording and flow improvements (Minor Issues 1 & 2) can be polished during later stages of revision.
--   Adding completely new sections of discussion (e.g., AI impact) could be considered for a future, expanded version, but addressing the current missing discussions within existing sections is higher priority.
+- Minor wording issues (fix in revision).
+- Adding *more* specific examples (can be done if space allows after major revisions).
+
+---

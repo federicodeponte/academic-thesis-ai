@@ -1,7 +1,8 @@
+```markdown
 # Formatted Paper Outline
 
-**Format Applied:** IMRaD (adapted for theoretical analysis with case studies)
-**Target Journal:** Technology/Social Impact journal [VERIFY specific journal]
+**Format Applied:** IMRaD (adapted for theoretical analysis with illustrative case studies)
+**Target Journal:** Technology/Social Impact Journal (e.g., *Information Technology for Development*, *Journal of Open Source Software*, *MIS Quarterly* special issue)
 **Word Limit:** 8,000-10,000 words
 **Citation Style:** APA 7th Edition
 
@@ -13,17 +14,19 @@
 - **Font:** Times New Roman 12pt
 - **Line Spacing:** Double
 - **Margins:** 1 inch all sides
-- **Page Numbers:** Top right, starting on the title page
-- **Headings:** Numbered (for clarity in a complex theoretical paper)
+- **Page Numbers:** Top right corner
+- **Headings:** Unnumbered (APA 7th typically does not number main sections)
 
-### Section Heading Levels
-- **Level 1:** Bold, Centered, Title Case (e.g., **1. INTRODUCTION**)
-- **Level 2:** Bold, Left-Aligned, Title Case (e.g., **1.1 Background and Motivation**)
-- **Level 3:** Bold, Indented, Sentence case (e.g., **1.1.1 Specific Context.**)
+### Section Heading Levels (APA 7th Edition)
+- **Level 1:** Centered, Bold, Title Case (e.g., **Abstract**)
+- **Level 2:** Left-aligned, Bold, Title Case (e.g., **Introduction**)
+- **Level 3:** Left-aligned, Bold Italic, Title Case (e.g., ***Background and Motivation***)
+- **Level 4:** Indented, Bold, Title Case, ending with a period. Text begins on the same line.
+- **Level 5:** Indented, Bold Italic, Title Case, ending with a period. Text begins on the same line.
 
 ### Citation Format
 - **In-text:** (Author, Year) or Author (Year)
-- **Bibliography:** Follow APA 7th Edition guidelines (e.g., Author, A. A. (Year). *Title of work*. Publisher. DOI/URL)
+- **Bibliography:** Full APA 7th Edition style (see below for details)
 
 ### ⚠️ CITATION REQUIREMENTS - CRITICAL
 
@@ -68,305 +71,322 @@
 
 ## Formatted Structure
 
-### Title
-**Format:** Bold, Centered, 14pt
-**Max Length:** 100 characters (approx.)
-**Suggested:** "Bridging the Gap: A Theoretical Framework for Open Source Software's Contribution to Sustainable Development Goals in Developing Countries"
+**Title**
+**Format:** Centered, Bold, 12pt (or 14pt if journal specific), Title Case
+**Max Length:** 12 words (approx. 100 characters)
+**Suggested:** **Beyond Code: A Contemporary Framework for Understanding Open Source Software's Global Impact and Socio-Economic Transformation**
 
-### Author Information
+**Author Information**
 **Format:**
-- Name(s): Centered, Title Case
-- Affiliation(s): Centered, Title Case, below name
-- Email(s): Centered, below affiliation
-- ORCID: (Optional) Centered, below email
+- Name(s): [Full Name(s)]
+- Affiliation(s): [Department, University/Organization, City, State/Country]
+- Email(s): [Corresponding author's email]
+- ORCID: [Optional, recommended for unique identification]
 
-### Abstract
-**Heading:** **Abstract** (Bold, Centered)
+**Abstract**
+**Heading:** **Abstract** (Level 1 Heading)
 **Length:** 250-300 words
 **Structure:**
-- Background (2 sentences): The UN SDGs present urgent global challenges, for which technological innovation, including Open Source Software (OSS), is often cited as a powerful tool.
-- Objective (1 sentence): This paper proposes a novel theoretical framework to elucidate the precise mechanisms through which OSS contributes to SDG achievement, particularly within developing countries.
-- Methods (2-3 sentences): Drawing on existing literature and development theories, the framework systematically connects OSS principles to specific SDG targets. Illustrative case studies from diverse developing country contexts are then analyzed to demonstrate the framework's explanatory power.
-- Results (2-3 sentences): The application of the framework reveals specific pathways and conditions under which OSS fosters sustainable development, highlighting its transformative capacity across various sectors. The case studies provide empirical grounding for the theoretical linkages.
-- Conclusions (1-2 sentences): This research advances theoretical understanding of OSS's developmental impact, offers practical guidance for policymakers and practitioners, and underscores its potential as a catalyst for global sustainable development.
+- Background (2 sentences): Open Source Software (OSS) has long been lauded for its potential to drive innovation and address global challenges. However, the contemporary mechanisms through which OSS fosters socio-economic development, particularly in developing countries, require updated theoretical grounding and empirical illustration.
+- Objective (1 sentence): This paper proposes a contemporary theoretical framework to elucidate how OSS, through specific collaborative mechanisms, translates into tangible global impact and "world-saving" outcomes.
+- Methods (2-3 sentences): Drawing on existing literature and an adapted IMRaD approach, we develop a framework that integrates community-driven innovation, localized adaptation, and capacity building, and illustrate its application through diverse case studies from developing regions.
+- Results (2-3 sentences): The case studies demonstrate that OSS effectively addresses barriers to access, fosters digital inclusion, and enables resilient solutions for sustainable development, showcasing its profound and evolving impact.
+- Conclusions (1-2 sentences): The framework offers critical insights for policy, development initiatives, and future research into the transformative power of OSS, affirming its role as a powerful catalyst for global socio-economic change.
 
-**Keywords:** Open Source Software, Sustainable Development Goals, Developing Countries, Theoretical Framework, Social Impact, Technology for Development
+**Keywords:** 3-6 keywords (e.g., Open Source Software, Global Impact, Socio-Economic Development, Theoretical Framework, Case Studies, Developing Countries)
 
 ---
 
-## 1. Introduction
-**Section Number:** 1
-**Length:** 1000-1200 words
-**Subsections:**
+**Introduction**
+**Heading:** **Introduction** (Level 2 Heading, no heading for APA 7th for the actual "Introduction" text, it starts immediately after the abstract)
+**Length:** 800-1000 words
 
-### 1.1 Background and Motivation
-[Format specifications: Paragraphs explaining global challenges (SDGs) and the general recognition of OSS as a potential solution. Set the stage for the paper's significance.]
+***Background and Motivation*** (Level 3 Heading)
+[Format specifications: narrative paragraph(s). This section will set the stage, discussing global challenges and the need for innovative, accessible solutions.]
 
-### 1.2 Problem Statement
-[Format specifications: Clearly articulate the gap – the lack of a robust theoretical link between OSS and specific SDG outcomes, especially in developing countries. This will set up the need for the framework.]
+***Problem Statement and Research Gap*** (Level 3 Heading)
+[Format specifications: narrative paragraph(s). This section will articulate how traditional proprietary approaches often create barriers and highlight the gap in existing literature, particularly post-2009, regarding OSS impact.]
 
-### 1.3 Research Question and Objectives
-**Research Question:** How can a novel theoretical framework elucidate the mechanisms through which Open Source Software (OSS) contributes to the United Nations Sustainable Development Goals (SDGs), particularly within developing countries, and what insights do illustrative case studies offer regarding this potential?
-**List format:**
-1.  To critically review existing literature on Open Source Software's role in developing countries and its connection to sustainable development.
-2.  To propose and elaborate a novel theoretical framework that systematically links OSS principles and characteristics to specific SDG targets and outcomes.
-3.  To apply this framework through illustrative case studies from developing countries to demonstrate its explanatory power and highlight practical applications.
-4.  To discuss the theoretical and practical implications of the framework for understanding and leveraging OSS for global sustainable development.
+***Research Question and Objectives*** (Level 3 Heading)
+[Format specifications: clearly state the research question and objectives.]
+**Research Question:** How does open source software (OSS) foster global impact and socio-economic development in the contemporary landscape, particularly in developing countries, and what are the key mechanisms through which code collaboration translates into "world-saving" outcomes?
+**List format for Objectives:**
+1.  To review and synthesize existing literature on the global impact of OSS, identifying temporal and contextual gaps.
+2.  To propose a contemporary theoretical framework that explains the mechanisms through which OSS contributes to socio-economic development and global impact.
+3.  To illustrate these mechanisms through diverse case studies, demonstrating tangible "world-saving" outcomes.
+4.  To discuss the implications of this framework and evidence for policy, development practice, and future research.
 
-### 1.4 Contributions
+***Contributions*** (Level 3 Heading)
 **Bullet format:**
--   **Theoretical Contribution:** Development of a novel, comprehensive theoretical framework explicitly connecting OSS to SDG achievement, bridging a significant gap in current literature.
--   **Methodological Contribution:** Demonstration of a systematic approach to analyzing the developmental impact of technological interventions.
--   **Practical Contribution:** Provision of actionable insights and a structured lens for policymakers, practitioners, and development organizations to strategically leverage OSS for sustainable development initiatives.
--   **Empirical Illustration:** Presentation of illustrative case studies that ground the theoretical framework in real-world contexts, showcasing OSS's transformative capacity.
+-   Develops a contemporary theoretical framework for understanding OSS's global impact.
+-   Provides updated illustrative evidence of OSS's role in socio-economic development, especially in developing regions.
+-   Identifies specific mechanisms (e.g., community-driven innovation, localized adaptation, capacity building) linking code collaboration to "world-saving" outcomes.
+-   Offers insights for policymakers and development practitioners leveraging OSS for sustainable development.
 
-### 1.5 Paper Organization
-[Standard paragraph outlining the structure of the paper (e.g., "The remainder of this paper is organized as follows: Section 2 reviews the relevant literature...").]
-
----
-
-## 2. Related Work and Literature Review
-**Section Number:** 2
-**Length:** 2000-2500 words
-**Organization:** Thematic subsections, building towards the identified research gap.
-
-### 2.1 Open Source Software in Developing Countries: An Overview
-[Format: Narrative discussing the history and general perceptions of OSS adoption and impact in developing contexts. Focus on existing studies and their findings.]
-
-### 2.2 Theoretical Perspectives on Technology and Development
-[Format: Review of relevant development theories (e.g., diffusion of innovations, capability approach, digital divide, socio-technical systems) that can inform the understanding of OSS's role.]
-
-### 2.3 Existing Linkages between OSS and Sustainable Development Goals
-[Format: Critical analysis of current literature that attempts to connect OSS with SDGs. Highlight where these connections are made and, more importantly, where they are lacking in theoretical depth or specificity.]
-
-### 2.4 Gaps in Theoretical Linkages and the Need for a New Framework
-[Synthesis paragraph: Summarize the limitations of previous studies, specifically the absence of a comprehensive, mechanism-based theoretical framework that systematically connects OSS characteristics to SDG outcomes. This section will directly justify the proposed framework.]
+***Paper Organization*** (Level 3 Heading)
+[Standard paragraph describing the structure of the paper.]
 
 ---
 
-## 3. Theoretical Framework and Methodology
-**Section Number:** 3
-**Length:** 1500-2000 words
+**Literature Review**
+**Heading:** **Literature Review** (Level 2 Heading)
+**Length:** 1800-2200 words
+**Organization:** [Thematic subsections, building towards the identified research gap.]
 
-### 3.1 Research Design and Overall Approach
-[Format: Paragraph + diagram. Describe the overall qualitative, theoretical-exploratory research design, emphasizing the development and illustration of a novel framework using case studies.]
+***Theoretical Foundations of Open Source Software*** (Level 3 Heading)
+[Format: narrative, discussing core principles, history, and early theories of OSS.]
 
-**Figure 1:** Research Framework Overview
-[Placeholder for conceptual diagram illustrating the flow from OSS characteristics -> Framework Mechanisms -> SDG Contributions.]
-**Caption Format:** Figure 1. *Overall research design and conceptual flow for analyzing OSS contributions to SDGs.*
+***Existing Research on OSS and Socio-Economic Development*** (Level 3 Heading)
+[Format: narrative + synthesis. Discuss existing literature on OSS's impact, categorizing by themes such as innovation, education, governance, and economic growth.]
 
-### 3.2 Development of the Novel Theoretical Framework
-[Format: Detailed narrative explaining the components of the proposed framework. This should be the core of the "Methods" for a theoretical paper.]
+***Critique of Current Perspectives and Research Gap*** (Level 3 Heading)
+[Format: critical analysis. Focus on the limitations of existing literature, specifically highlighting the temporal gap (post-2009) and the need for a contemporary framework, as identified in the Architect's outline.]
 
-#### 3.2.1 Core Principles and Characteristics of Open Source Software
-[Format: Discuss key attributes like collaboration, transparency, modifiability, accessibility, cost-effectiveness, community-driven development, and their theoretical implications.]
-
-#### 3.2.2 Linking OSS Characteristics to SDG Mechanisms
-[Format: Explain the causal pathways. For example, how "modifiability" (OSS characteristic) enables "localization and adaptation" (mechanism), which contributes to "SDG 4: Quality Education" (outcome) through relevant, context-specific educational tools.]
-
-#### 3.2.3 Articulation of Proposed Framework: [Framework Name]
-[Format: Present the full framework, potentially using a model or diagram. This section should clearly define the constructs and their relationships.]
-
-**Figure 2:** The [Framework Name] for OSS and SDG Achievement
-[Placeholder for a detailed diagram of the proposed theoretical framework, showing relationships between OSS attributes, mediating mechanisms, and SDG outcomes.]
-**Caption Format:** Figure 2. *The [Framework Name] illustrating pathways from Open Source Software characteristics to Sustainable Development Goal achievement.*
-
-### 3.3 Case Study Selection and Methodology
-[Format: Narrative explaining the rationale for using illustrative case studies and how they were selected to demonstrate the framework's applicability.]
-
-#### 3.3.1 Case Study Selection Criteria
-[Format: List or paragraph outlining criteria (e.g., diverse SDG focus, different geographic regions, varying scales of implementation, availability of documentation).]
-
-#### 3.3.2 Data Collection for Case Studies
-[Format: Describe secondary data sources (e.g., project reports, academic articles, news articles, official documentation) and the process of data extraction.]
-
-#### 3.3.3 Case Study Analysis Procedures
-[Format: Numbered steps detailing how the case studies will be analyzed using the proposed framework. This might involve thematic analysis, pattern matching, or cross-case synthesis.]
-1.  Step 1: **Initial Case Description.** [Briefly summarize each case, its context, and primary objectives.]
-2.  Step 2: **Framework Application.** [Systematically apply the [Framework Name] to each case, identifying how OSS characteristics manifest and what mechanisms link them to observed SDG contributions.]
-3.  Step 3: **Cross-Case Synthesis.** [Compare and contrast findings across cases to identify common patterns, unique insights, and robust linkages.]
+**Table 1:** Summary of Key Literature on OSS Impact and Development
+| Study (Author, Year) | Focus Area | Key Findings | Limitations/Gaps Addressed |
+|----------------------|------------|--------------|---------------------------|
+| [Example 1]          | ...        | ...          | ...                       |
+| [Example 2]          | ...        | ...          | ...                       |
+| [VERIFY]             | ...        | ...          | ...                       |
+*Source: Compiled by authors.*
 
 ---
 
-## 4. Framework Application and Case Study Findings
-**Section Number:** 4
-**Length:** 1500-2000 words
-
-### 4.1 Overview of the Proposed Framework Applied
-[Format: Brief restatement of the framework's core and how it will be used to structure the presentation of case study findings.]
-
-### 4.2 Case Study 1: [Specific OSS Project/Initiative, e.g., Ushahidi for SDG 16]
-[Format: Dedicated subsection per case study. Describe the case, apply the framework to identify mechanisms, and present findings related to specific SDGs.]
-
-**Table 1:** Application of [Framework Name] to Case Study 1
-| OSS Characteristic | Mechanism | SDG Contribution (Specific Target) | Evidence from Case |
-|--------------------|-----------|------------------------------------|--------------------|
-| [e.g., Modifiability] | [e.g., Local Adaptation] | [e.g., SDG 4.4] | [Description] |
-
-### 4.3 Case Study 2: [Specific OSS Project/Initiative, e.g., DHIS2 for SDG 3]
-[Continue with detailed presentation for each selected case study, applying the framework systematically.]
-
-### 4.4 Case Study 3: [Specific OSS Project/Initiative, e.g., OpenStreetMap for SDG 11]
-[Continue with detailed presentation for each selected case study, applying the framework systematically.]
-
-### 4.5 Cross-Case Analysis and Emerging Patterns
-[Format: Narrative synthesizing findings across all case studies. Highlight common mechanisms, unique contributions, and generalizable insights derived from applying the framework.]
-
----
-
-## 5. Discussion
-**Section Number:** 5
+**Theoretical Framework: Open Source Software as a Catalyst for Global Impact**
+**Heading:** **Theoretical Framework: Open Source Software as a Catalyst for Global Impact** (Level 2 Heading)
 **Length:** 1000-1200 words
+[This section directly addresses the user's "Logical Progression" point 3.]
 
-### 5.1 Interpretation of Findings: The Framework's Explanatory Power
-[Format: Narrative discussing how the case studies validate and illustrate the proposed theoretical framework. Explain *why* and *how* OSS contributes to SDGs through the identified mechanisms, using evidence from the cases.]
+***Conceptualizing Global Impact and Socio-Economic Development*** (Level 3 Heading)
+[Format: Define key terms and scope of impact in the context of OSS.]
 
-### 5.2 Comparison with Prior Work and Bridging the Gap
-[Format: Comparative discussion. Explicitly link back to the literature review (Section 2). How does the proposed framework and its application address the identified gaps in existing research? How does it advance or challenge previous understandings?]
+***Mechanisms of OSS-Driven Impact*** (Level 3 Heading)
+[Format: Introduce and elaborate on the specific mechanisms through which OSS fosters impact. Each mechanism could be a Level 4 heading.]
+****Community-Driven Innovation.** (Level 4 Heading) [Discussion on collaborative development, rapid iteration, and problem-solving.]
+****Localized Adaptation and Contextual Relevance.** (Level 4 Heading) [Discussion on flexibility, customization, and addressing specific local needs.]
+****Capacity Building and Knowledge Transfer.** (Level 4 Heading) [Discussion on skill development, digital literacy, and empowering local communities.]
+****Resilience and Sustainability.** (Level 4 Heading) [Discussion on open standards, reduced vendor lock-in, and long-term viability.]
 
-### 5.3 Theoretical Implications
-[Format: Paragraph(s) discussing the broader theoretical contributions. How does this framework contribute to theories of technology and development, open innovation, or socio-technical systems? What new avenues for theoretical inquiry does it open?]
+**Figure 1:** Conceptual Model of OSS Global Impact
+[Placeholder for a diagram illustrating the theoretical framework and its mechanisms. Caption format: **Figure 1.** Conceptual Model illustrating the mechanisms of Open Source Software's global impact and socio-economic transformation.]
 
-### 5.4 Practical Implications
-[Format: Bullet points or paragraphs outlining actionable insights for practitioners, policymakers, and organizations working in development. How can the framework guide strategic decisions regarding OSS adoption and implementation for SDG achievement?]
-
-### 5.5 Limitations and Future Work
-[Format: Honest assessment of the study's limitations (e.g., reliance on secondary data, illustrative nature of case studies, scope of framework). Suggest clear directions for future research, including empirical validation, extension of the framework, or exploration of new contexts.]
+***Propositions*** (Level 3 Heading)
+[Format: List testable propositions derived from the theoretical framework, connecting mechanisms to outcomes.]
+1.  Proposition 1: [Statement]
+2.  Proposition 2: [Statement]
+[VERIFY]
 
 ---
 
-## 6. Conclusion
-**Section Number:** 6
-**Length:** 400-500 words
+**Illustrative Case Studies and Research Approach**
+**Heading:** **Illustrative Case Studies and Research Approach** (Level 2 Heading)
+**Length:** 1200-1500 words
+[This section acts as the "Methods" part for a theoretical paper, describing the selection and presentation of illustrative evidence. It addresses the user's "Logical Progression" point 4.]
 
+***Case Study Selection Criteria*** (Level 3 Heading)
+[Format: Explain the rationale and criteria for selecting the illustrative case studies (e.g., diversity in geography, sector, type of OSS project, relevance to mechanisms).]
+
+***Research Approach for Case Illustration*** (Level 3 Heading)
+[Format: Describe how the case studies will be presented and analyzed to illustrate the theoretical framework. Emphasize that these are illustrative, not formal empirical tests.]
+
+***Case Study 1: [Name of Project/Initiative] in [Region]*** (Level 3 Heading)
+[Format: For each case study, provide background, describe the OSS solution, and specifically illustrate how the proposed mechanisms (e.g., community-driven innovation, localized adaptation) are evident and contribute to impact.]
+
+***Case Study 2: [Name of Project/Initiative] in [Region]*** (Level 3 Heading)
+[Continue with additional case studies.]
+
+**Table 2:** Overview of Illustrative Case Studies
+| Case Study | Region | OSS Project/Initiative | Primary Impact Area(s) | Key Mechanisms Illustrated |
+|------------|--------|------------------------|------------------------|----------------------------|
+| 1          | ...    | ...                    | ...                    | ...                        |
+| 2          | ...    | ...                    | ...                    | ...                        |
+| [VERIFY]   | ...    | ...                    | ...                    | ...                        |
+*Source: Authors' compilation based on secondary data.*
+
+---
+
+**Case Study Findings and Analysis**
+**Heading:** **Case Study Findings and Analysis** (Level 2 Heading)
+**Length:** 1500-1800 words
+[This section presents the "results" of the case study analysis, demonstrating how the theoretical framework's mechanisms are observed in practice.]
+
+***Evidence of Community-Driven Innovation*** (Level 3 Heading)
+[Format: Synthesize findings across case studies related to this mechanism. Use examples and specific data points (if available from secondary sources) from the case studies.]
+
+***Evidence of Localized Adaptation and Contextual Relevance*** (Level 3 Heading)
+[Format: Discuss how OSS projects were adapted to local contexts in the case studies.]
+
+***Evidence of Capacity Building and Knowledge Transfer*** (Level 3 Heading)
+[Format: Highlight instances of skill development and knowledge sharing observed in the case studies.]
+
+***Emergent Themes and Cross-Case Insights*** (Level 3 Heading)
+[Format: Discuss any other significant findings or patterns that emerged consistently across the illustrative cases, reinforcing or expanding on the theoretical framework.]
+
+**Figure 2:** [Specific Finding Visualization, e.g., "Impact Pathways in Case Study 1"]
+[Placeholder + caption format: **Figure 2.** Impact pathways observed in [Case Study Name] demonstrating the role of [Mechanism].]
+
+---
+
+**Discussion**
+**Heading:** **Discussion** (Level 2 Heading)
+**Length:** 1200-1500 words
+[This section interprets the findings from the case studies in light of the theoretical framework and prior literature. It addresses the user's "Logical Progression" point 5.]
+
+***Interpretation of Findings and Framework Validation*** (Level 3 Heading)
+[Format: Narrative with citations. Discuss how the illustrative case studies support and validate the proposed theoretical framework and its mechanisms.]
+
+***Comparison with Prior Work*** (Level 3 Heading)
+[Format: Comparative discussion. How do these contemporary findings align with, diverge from, or extend previous research on OSS impact? Address the temporal gap identified earlier.]
+
+***Theoretical Implications*** (Level 3 Heading)
+[Format: Paragraph. Discuss how the framework contributes to existing theories of innovation, development, and collaborative production.]
+
+***Practical Implications*** (Level 3 Heading)
+[Format: Bullet points or paragraphs. Offer actionable insights for policymakers, NGOs, and development agencies seeking to leverage OSS for socio-economic development.]
+
+***Limitations and Future Work*** (Level 3 Heading)
+[Format: Honest assessment of the illustrative nature of the case studies and the limitations of the theoretical framework. Suggest concrete directions for future empirical research.]
+
+---
+
+**Conclusion**
+**Heading:** **Conclusion** (Level 2 Heading)
+**Length:** 300-400 words
 [No subsections - continuous narrative]
 
 **Required elements:**
--   Restate the paper's central problem (the under-theorized link between OSS and SDGs) and the approach (novel theoretical framework with case studies).
--   Summarize the key findings from the framework's development and application through case studies.
--   Emphasize the primary contributions of the paper (theoretical advancement, practical insights).
--   Reiterate the "world-saving" potential of OSS, framed by the new understanding provided by the framework.
--   Conclude with a forward-looking statement on the importance of OSS for sustainable development.
+-   Restate the paper's main argument and the core problem addressed.
+-   Summarize the key findings from the theoretical framework and illustrative case studies.
+-   Emphasize the paper's contributions to understanding OSS's global impact.
+-   Reiterate the practical and theoretical implications.
+-   Suggest future research avenues building on the presented framework.
 
 ---
 
-## Acknowledgments
-[If applicable - funding bodies, mentors, significant contributors outside of authorship. Format as a single paragraph.]
+**Acknowledgments**
+[If applicable - funding bodies, colleagues, data providers. Format: Short paragraph.]
 
 ---
 
-## References
+**References**
+**Heading:** **References** (Level 1 Heading)
 **Format:** APA 7th Edition
-**Minimum:** 30-40 references for a theoretical paper with case studies
+**Minimum:** 40-50 references (for a theoretical paper of this length, a substantial review of literature is expected).
+
 **Categories:**
-- Foundational works (pre-2019): [~20-30%]
-- Recent works (2020-2024): [~70-80%]
-- Including own prior work: [Optional, max 10%]
+-   Foundational works (pre-2015): [~20-30%]
+-   Recent works (2016-2024): [~70-80%]
+-   Including own prior work: [Optional, max 10%]
+-   Ensure a balance of theoretical, empirical, and policy-oriented sources.
 
 ---
 
-## Appendices
-[If applicable, for supplementary materials not essential to the main text but valuable for completeness.]
-- Appendix A: Full List of SDG Targets Relevant to OSS [e.g., detailed mapping]
-- Appendix B: Additional Data for Case Study 1 [e.g., specific reports]
+**Appendices**
+[If applicable, e.g., detailed case study profiles, interview protocols (if any secondary data involved interviews).]
+-   Appendix A: [Title of Appendix]
 
 ---
 
 ## Journal-Specific Requirements
 
-### Technology/Social Impact Journal [VERIFY specific journal]
+### [Target Technology/Social Impact Journal Name - Placeholder]
 
 **Mandatory sections:**
-- [ ] Data Availability Statement (e.g., "All data used in this study are publicly available via the cited sources.")
-- [ ] Conflict of Interest Statement
-- [ ] Author Contributions (if multiple authors)
-- [ ] Funding Statement (if applicable)
+-   [ ] Data Availability Statement (even for secondary/illustrative data)
+-   [ ] Conflict of Interest Statement
+-   [ ] Author Contributions (if multiple authors)
+-   [ ] Funding Statement
 
 **Formatting specifics:**
-- Figures: PNG/TIFF, min 300dpi, grayscale or color-blind friendly palette
-- Tables: Editable format (e.g., Word, LaTeX), not images
-- Equations: Numbered, right-aligned (if any theoretical equations are introduced)
+-   Figures: [PNG/TIFF, min 300dpi, grayscale or color suitable for print/digital]
+-   Tables: [Editable format (e.g., Word tables), not images]
+-   Equations: [Numbered, right-aligned, if any are used in a theoretical paper]
+-   Headings: As per APA 7th (unnumbered main sections, specific formatting for sub-levels).
 
 **Submission checklist:**
-- [ ] Cover letter (addressed to the Editor-in-Chief)
-- [ ] Highlights (3-5 bullet points summarizing key findings/contributions)
-- [ ] Graphical abstract (if required by the specific journal)
-- [ ] Supplementary materials (if any, clearly labeled)
+-   [ ] Cover letter
+-   [ ] Highlights (3-5 bullet points summarizing key findings/contributions)
+-   [ ] Graphical abstract (if required by journal, representing the conceptual model)
+-   [ ] Supplementary materials (if any appendices are extensive)
 
 ---
 
-## Length Targets by Section (for ~9,000 words total)
+## Length Targets by Section (Adjusted for 9,000 words total)
 
-| Section | Words | % of Total (Approx.) |
-|---------------------------------|-------|----------------------|
-| Abstract                        | 250   | 2.8%                 |
-| 1. Introduction                 | 1100  | 12.2%                |
-| 2. Related Work & Lit Review    | 2200  | 24.4%                |
-| 3. Theoretical Framework & Method | 1700  | 18.9%                |
-| 4. Framework Application & Findings | 1800  | 20.0%                |
-| 5. Discussion                   | 1100  | 12.2%                |
-| 6. Conclusion                   | 450   | 5.0%                 |
-| Acknowledgments                 | 50    | 0.6%                 |
-| References                      | 350   | 3.9%                 |
-| Appendices (if applicable)      | Varies| Varies               |
-| **Total (Main Body & Refs)**    | **9000** | **100%**            |
+| Section                                          | Words      | % of Total |
+|--------------------------------------------------|------------|------------|
+| Abstract                                         | 250-300    | ~3%        |
+| Introduction                                     | 800-1000   | ~10%       |
+| Literature Review                                | 1800-2200  | ~22%       |
+| Theoretical Framework                            | 1000-1200  | ~12%       |
+| Illustrative Case Studies and Research Approach  | 1200-1500  | ~15%       |
+| Case Study Findings and Analysis                 | 1500-1800  | ~18%       |
+| Discussion                                       | 1200-1500  | ~15%       |
+| Conclusion                                       | 300-400    | ~4%        |
+| **Total (Approx.)**                              | **8050-9900** | **~100%**  |
+| *References, Appendices, etc. are additional.*   |            |            |
 
 ---
 
 ## Quality Checklist
 
 ### Structure
-- [X] All required sections present
-- [X] Logical flow between sections, especially from problem to framework to findings
-- [X] Appropriate section lengths, consistent with theoretical paper
-- [X] Clear adaptation of IMRaD for a theoretical analysis with case studies
+-   [ ] All required sections present and logically ordered for a theoretical paper with case studies.
+-   [ ] Logical flow between sections, adhering to the adapted IMRaD progression.
+-   [ ] Appropriate section lengths, consistent with the overall word count.
+-   [ ] Clear distinction between theoretical development, illustrative evidence, and interpretation.
 
 ### Formatting
-- [X] Consistent heading styles (Numbered for IMRaD adaptation, levels applied)
-- [X] Proper citation format (APA 7th specified)
-- [X] Figures/tables numbered correctly (placeholders included)
-- [X] Captions complete and descriptive (format specified)
+-   [ ] Consistent heading styles (APA 7th, unnumbered main sections).
+-   [ ] Proper APA 7th in-text and reference list citation format.
+-   [ ] Figures/tables numbered correctly and referenced in text.
+-   [ ] Captions complete, descriptive, and formatted correctly for tables and figures.
 
 ### Content
-- [X] Abstract summarizes whole paper effectively
-- [X] Introduction states clear RQ and problem
-- [X] "Methods" (Theoretical Framework & Methodology) enable understanding and potential replication of framework application
-- [X] "Results" (Framework Application & Findings) presented objectively with case study evidence
-- [X] Discussion interprets findings in light of framework and prior work
-- [X] Conclusion emphasizes contribution and future directions
+-   [ ] Abstract accurately summarizes the entire paper, including framework and illustrative outcomes.
+-   [ ] Introduction clearly states the research question, motivation, and contributions.
+-   [ ] Literature Review establishes the theoretical background and identifies a clear research gap.
+-   [ ] Theoretical Framework is clearly articulated, defining mechanisms and propositions.
+-   [ ] Illustrative Case Studies section transparently describes selection and approach.
+-   [ ] Case Study Findings presented objectively, linking to the theoretical mechanisms.
+-   [ ] Discussion interprets findings in relation to the framework and prior literature, addressing implications.
+-   [ ] Conclusion concisely restates main arguments and emphasizes contributions.
 
 ---
 
 ## Style Guide
 
 ### Academic Tone
-- ✅ **Use:** "The results indicate...", "We observed...", "This suggests..."
-- ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that..."
+-   ✅ **Use:** "The results indicate...", "We observed...", "This suggests...", "The framework posits..."
+-   ❌ **Avoid:** "Obviously...", "Clearly...", "It's interesting that...", "I think..."
 
 ### Tense Usage
-- **Introduction:** Present tense (current state, problem)
-- **Literature Review:** Past tense (what others found), Present tense (what literature currently shows)
-- **Methods (Framework & Methodology):** Past tense (what was done to develop/apply framework), Present tense (describing the framework itself)
-- **Results (Framework Application & Findings):** Past tense (what was found in case studies)
-- **Discussion:** Present tense (what findings mean, implications)
-- **Conclusion:** Present tense (summary, implications)
+-   **Introduction:** Present tense (current state of knowledge, the paper's purpose)
+-   **Literature Review:** Past tense (what others found), Present tense (current state of the field, gaps)
+-   **Theoretical Framework:** Present tense (the framework "proposes," "defines," "explains")
+-   **Illustrative Case Studies:** Past tense (what was done in selecting/describing cases)
+-   **Case Study Findings:** Past tense (what was observed in the cases)
+-   **Discussion:** Present tense (what the findings mean, implications), Past tense (referring to the study's findings)
+-   **Conclusion:** Present tense (summary of the paper's contribution and implications)
 
 ### Voice
-- **Active vs Passive:** Prefer active for clarity, passive for objectivity
-- ✅ "We analyzed the data" (active, clear)
-- ✅ "The data were analyzed" (passive, objective)
+-   **Active vs Passive:** Prefer active for clarity, passive for objectivity. Strive for a balance.
+-   ✅ "We analyzed the case studies" (active, clear)
+-   ✅ "The data were analyzed" (passive, objective)
+-   ✅ "The framework proposes..." (active, clear)
 
 ---
 
 ## Next Steps
 
 After formatting:
-1. Review against journal guidelines (once a specific journal is verified)
-2. Ensure all placeholders are noted (e.g., [VERIFY], [Specific Case Name])
-3. Proceed to Compose phase with clear structure
-4. Save to `outline_formatted.md`
+1.  Review against specific journal guidelines (if a particular journal is chosen).
+2.  Ensure all placeholders ([VERIFY], [TODO]) are clearly noted for Crafter agents.
+3.  Proceed to Compose phase with this clear, formatted structure.
+4.  Save this output to `outline_formatted.md`.
 
 ```
+
 ---
 
 ## ⚠️ ACADEMIC INTEGRITY & VERIFICATION
@@ -374,10 +394,10 @@ After formatting:
 **CRITICAL:** When structuring the paper, ensure all claims are traceable to sources.
 
 **Your responsibilities:**
-1. **Verify citations exist** before including them in outlines
-2. **Never suggest fabricated examples** or statistics
-3. **Mark placeholders** clearly with [VERIFY] or [TODO]
-4. **Ensure structure supports** verifiable, evidence-based arguments
-5. **Flag sections** that will need strong citation support
+1.  **Verify citations exist** before including them in outlines (especially for the Literature Review and Case Study sections).
+2.  **Never suggest fabricated examples** or statistics.
+3.  **Mark placeholders** clearly with [VERIFY] or [TODO] for any details not fully confirmed.
+4.  **Ensure structure supports** verifiable, evidence-based arguments, even with illustrative case studies.
+5.  **Flag sections** that will need strong citation support (e.g., claims in the Literature Review, background for case studies).
 
 **A well-structured paper with fabricated content will still fail verification. Build for accuracy.**

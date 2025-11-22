@@ -5,6 +5,23 @@ All notable changes to the Academic Thesis AI project will be documented in this
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+### Added
+- CODE_OF_CONDUCT.md with academic integrity guidelines
+- SECURITY.md with vulnerability reporting process
+- GitHub issue templates (bug reports, feature requests)
+- GitHub pull request template
+- Enhanced CONTRIBUTING.md with detailed development workflow
+- docs/API_REFERENCE.md with comprehensive module documentation
+- docs/BENCHMARKS.md with performance metrics
+
+### Changed
+- Improved documentation structure and organization
+- Enhanced contribution guidelines with testing requirements
+
+---
+
 ## [1.3.1] - 2025-11-17
 
 ### Added - Production-Grade Reliability 🔒

@@ -201,7 +201,7 @@ def generate_benchmarks_md(metrics):
 
 **Comprehensive performance metrics for Academic Thesis AI**
 
-Real-world data from {meta['total_beta_users']} beta users and {meta['total_production_theses']} production theses ({meta['total_words_generated']:,} words total).
+Real-world data from {meta['total_production_theses']} production theses ({meta['total_words_generated']:,} words total).
 
 **Last Updated:** {meta['last_updated']}
 
@@ -286,7 +286,7 @@ Real-world data from {meta['total_beta_users']} beta users and {meta['total_prod
 
 ## 📊 Summary
 
-**From {meta['total_beta_users']} users, {meta['total_words_generated']:,} words:**
+**From {meta['total_production_theses']} production theses, {meta['total_words_generated']:,} words:**
 
 | Category | Value |
 |----------|-------|
@@ -301,7 +301,7 @@ Real-world data from {meta['total_beta_users']} beta users and {meta['total_prod
 ---
 
 **Test Environment:** Python 3.11.5, 16GB RAM, Gemini 2.5 Flash
-**Sample Size:** {meta['total_beta_users']} beta users, {meta['test_runs']} runs, {meta['total_production_theses']} production theses
+**Sample Size:** {meta['test_runs']} test runs, {meta['total_production_theses']} production theses
 
 **Data Source:** `data/metrics.json` - Single source of truth
 **Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
@@ -650,7 +650,7 @@ def generate_website_html(metrics):
             <p><strong>Academic Thesis AI</strong></p>
             <p>Open source, transparent, and built for researchers</p>
             <p style="margin-top: 20px;"><a href="https://github.com/federicodeponte/academic-thesis-ai" style="color: white;">GitHub</a> | <a href="docs/BENCHMARKS.html" style="color: white;">Benchmarks</a></p>
-            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">Last updated: {meta['last_updated']} | Data from {meta['total_beta_users']} beta users</p>
+            <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.7;">Last updated: {meta['last_updated']} | Data from {meta['total_production_theses']} production theses</p>
         </div>
     </footer>
 </body>

@@ -2,359 +2,399 @@
 
 ## Summary
 
-**Total Valid Citations**: 56
+**Total Valid Citations**: 63
 **Success Rate**: 100.0%
 **Failed Topics**: 0
 
 ### Sources Breakdown
 
-- **Crossref**: 5 (8.9%)
-- **Semantic Scholar**: 39 (69.6%)
-- **Gemini Grounded**: 12 (21.4%)
+- **Crossref**: 6 (9.5%)
+- **Semantic Scholar**: 57 (90.5%)
+- **Gemini Grounded**: 0 (0.0%)
 - **Gemini LLM**: 0 (0.0%)
 
 ---
 
 ## Citations Found
 
-### From Crossref (5 citations)
+### From Crossref (6 citations)
 
-#### 1. Impact of Developers Sentiments on Practices and Artifacts in Open Source Software Projects: A Systematic Literature Review
-**Authors**: Carige Junior, Carneiro
-**Year**: 2020
-**DOI**: 10.5220/0009313200310042
-**URL**: https://doi.org/10.5220/0009313200310042
-
-#### 2. A Brief Review of Studies on Open Source Software in Developing Countries in Peer-Reviewed Journals
+#### 1. A Brief Review of Studies on Open Source Software in Developing Countries in Peer-Reviewed Journals
 **Authors**: Okoli
 **Year**: 2009
 **DOI**: 10.2139/ssrn.2293669
 **URL**: https://doi.org/10.2139/ssrn.2293669
 
-#### 3. An Analysis of Open Source Business Models
-**Authors**: Krishnamurthy
-**Year**: 2005
-**DOI**: 10.7551/mitpress/5326.003.0022
-**URL**: https://doi.org/10.7551/mitpress/5326.003.0022
+#### 2. Impact of Developers Sentiments on Practices and Artifacts in Open Source Software Projects: A Systematic Literature Review
+**Authors**: Carige Junior, Carneiro
+**Year**: 2020
+**DOI**: 10.5220/0009313200310042
+**URL**: https://doi.org/10.5220/0009313200310042
 
-#### 4. Inside an open source software community: empirical analysis on individual and group level
-**Authors**: Maass
-**Year**: 2004
-**DOI**: 10.1049/ic:20040267
-**URL**: https://doi.org/10.1049/ic:20040267
+#### 3. Business Models and Community Relationships of Open Source Software Firms
+**Authors**: Dahlander, Magnusson
+**Year**: 2006
+**DOI**: 10.1016/b978-044452769-1/50005-6
+**URL**: https://doi.org/10.1016/b978-044452769-1/50005-6
 
-#### 5. Building Energy Management Open Source Software
-**Authors**: Rahman
-**Year**: 2017
-**DOI**: 10.2172/1376213
-**URL**: https://doi.org/10.2172/1376213
+#### 4. The Simple Economics of Open Source
+**Authors**: Lerner, Triole
+**Year**: 2000
+**DOI**: 10.3386/w7600
+**URL**: https://doi.org/10.3386/w7600
 
-### From Semantic Scholar (39 citations)
+#### 5. Factors influencing free and open-source software adoption in developing countries—an empirical study
+**Authors**: Silva, Coutinho, Costa
+**Year**: 2023
+**DOI**: 10.1016/j.joitmc.2023.01.002
+**URL**: https://doi.org/10.1016/j.joitmc.2023.01.002
 
-#### 1. From Code to Concept: A Semantic Approach to AI Innovation Discovery in Open Source Software Repositories
-**Authors**: Novalija, Roman, Belotti, Alexiev, Rei, Avogadro, Khalilvandian, Bechev, Chinie, Ciurea, Brank, Udroiu, Soylu, Palmonari
-**Year**: 2025
-**DOI**: 10.1109/ACCESS.2025.3590135
-**URL**: https://doi.org/10.1109/ACCESS.2025.3590135
+#### 6. Open Source Software Digital Sociology: Engineering Open Source Software Ecosystem for Impact and Sustainability
+**Authors**: Zhou
+**Year**: 2022
+**DOI**: 10.1145/3531056.3542767
+**URL**: https://doi.org/10.1145/3531056.3542767
 
-#### 2. A tale of two imaging informatics translational licensing models: commercial and open source
-**Authors**: Harris
-**Year**: 2024
-**DOI**: 10.1117/12.3013791
-**URL**: https://doi.org/10.1117/12.3013791
+### From Semantic Scholar (57 citations)
 
-#### 3. Organising the digital commons: a case study on engagement strategies in open source
-**Authors**: Gençer, Oba
-**Year**: 2011
-**DOI**: 10.1080/09537325.2011.616698
-**URL**: https://doi.org/10.1080/09537325.2011.616698
-
-#### 4. Transforming Knowledge Hierarchies and Educating for Freedom: Incorporating Diverse Texts in Elementary Literacy Curriculum
-**Authors**: Grieve
-**Year**: 2016
+#### 1. Chapter XII Collaborative Requirements Definition Processes in Open Source Software Development
+**Authors**: Dietze
+**Year**: 2020
 **DOI**: 
-**URL**: https://www.semanticscholar.org/paper/329c55c5dc82222e2d3615f76ee31f8eaa0f9909
+**URL**: https://www.semanticscholar.org/paper/f594ac341067e07920c1991dc4598d8518aca72b
 
-#### 5. An Open Architecture for Health Data Interoperability: How Open Source Can Help the Healthcare Sector Overcome the "Information Dark Ages"
-**Authors**: Hermansen
+#### 2. The Impact of Open-Source Software on Artificial Intelligence
+**Authors**: Hassri, Man
+**Year**: 2023
+**DOI**: 10.46754/jmsi.2023.12.006
+**URL**: https://doi.org/10.46754/jmsi.2023.12.006
+
+#### 3. MetaWin 3: open-source software for meta-analysis
+**Authors**: Rosenberg
 **Year**: 2024
-**DOI**: 10.70828/xelg8546
-**URL**: https://doi.org/10.70828/xelg8546
+**DOI**: 10.3389/fbinf.2024.1305969
+**URL**: https://doi.org/10.3389/fbinf.2024.1305969
 
-#### 6. Discovering Ideologies of the Open Source Software Movement
-**Authors**: Yue, Wang, Redmiles
+#### 4. The State of Sovereign AI: Exploring the Role of Open Source Projects and Global Collaboration in Global AI Strategy
+**Authors**: Gerosa, Hermansen, Lai, Lawson
 **Year**: 2025
-**DOI**: 10.1109/ICSE-NIER66352.2025.00010
-**URL**: https://doi.org/10.1109/ICSE-NIER66352.2025.00010
+**DOI**: 10.70828/uffb3325
+**URL**: https://doi.org/10.70828/uffb3325
 
-#### 7. Adoption and Economic Impact of Open-Source Software in Digital Libraries
-**Authors**: Jha
+#### 5. A BIBLIOMETRIC ANALYSIS OF THE USE OF OPEN SOURCE SOFTWARE IN EDUCATIONAL CONTEXTS
+**Authors**: Toro, Correa, Valencia-Arias, Benjumea-Arias
+**Year**: 2020
+**DOI**: 10.33225/pec/20.78.114
+**URL**: https://doi.org/10.33225/pec/20.78.114
+
+#### 6. Reframing Innovation for Post-growth: Lessons from Patent Discourses in 3D Printing
+**Authors**: Pazaitis, Giotitsas, Savvides, Kostakis
+**Year**: 2025
+**DOI**: 10.1177/09717218251326836
+**URL**: https://doi.org/10.1177/09717218251326836
+
+#### 7. Safeguarding innovation in the framework of sector-specific data access regimes: The case of digital payment services
+**Authors**: Hoffmann
+**Year**: 2021
+**DOI**: 10.5771/9783748924999-343
+**URL**: https://doi.org/10.5771/9783748924999-343
+
+#### 8. Everyone for Themselves? A Qualitative Study about Individual Security Setups of Open Source Software Contributors
+**Authors**: Amft, Höltervennhoff, Panskus, Marky, Fahl
 **Year**: 2024
-**DOI**: 10.53555/ajbr.v27i4s.6755
-**URL**: https://doi.org/10.53555/ajbr.v27i4s.6755
+**DOI**: 10.1109/SP54263.2024.00214
+**URL**: https://doi.org/10.1109/SP54263.2024.00214
 
-#### 8. Open Source for Sustainability: How Projects Under the Linux Foundation Are Helping to Advance the UN Sustainable Development Goals
+#### 9. The 2021 State of Open Source in Financial Services
+**Authors**: Ellison, Carter, Hendrick, Perlow, Eberhardt, Drozdzewski, Aitken, Gravier
+**Year**: 2021
+**DOI**: 10.70828/jxvv1154
+**URL**: https://doi.org/10.70828/jxvv1154
+
+#### 10. Multitask-Based Evaluation of Open-Source LLM on Software Vulnerability
+**Authors**: Yin, Ni, Wang
+**Year**: 2024
+**DOI**: 10.1109/TSE.2024.3470333
+**URL**: https://doi.org/10.1109/TSE.2024.3470333
+
+#### 11. Digital Commons to Hyku: An Institutional Repository Migration at a Small Liberal Arts University
+**Authors**: Baird, Meetz
+**Year**: 2022
+**DOI**: 10.31274/jlsc.12916
+**URL**: https://doi.org/10.31274/jlsc.12916
+
+#### 12. Open-source software in emerging technologies for economic growth
+**Authors**: Ehioghae, Idowu
+**Year**: 2021
+**DOI**: 10.5935/JETIA.V7I27.730
+**URL**: https://doi.org/10.5935/JETIA.V7I27.730
+
+#### 13. Sea Change in Software Development: Economic and Productivity Analysis of the AI-Powered Developer Lifecycle
+**Authors**: Dohmke, Iansiti, Richards
+**Year**: 2023
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/e5bafaae57503b59a59386d0b74fc6eb40225ba8
+
+#### 14. Business Models for Open Source Hardware Repositories
+**Authors**: Pearce
+**Year**: 2023
+**DOI**: 10.54337/jbm.v11i2.7513
+**URL**: https://doi.org/10.54337/jbm.v11i2.7513
+
+#### 15. Conference Title Crowdsourcing , Outsourcing to Obtain a Creativity Group
+**Authors**: Digouta, Azourib, Decaudinc, Rochardd
+**Year**: 2014
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/2612dec316ae89826605d5706755b12f02a8d028
+
+#### 16. LIMBA: An Open-Source Framework for the Preservation and Valorization of Low-Resource Languages using Generative Models
+**Authors**: Carta, Chessa, Contu, Corriga, Deidda, Fenu, Frigau, Giuliani, Grassi, Manca, Marras, Mola, Mossa, Mura, Ortu, piano, Pisano, Pisu, Podda, Pompianu, Seu, Tiddia
+**Year**: 2024
+**DOI**: 10.48550/arXiv.2411.13453
+**URL**: https://doi.org/10.48550/arXiv.2411.13453
+
+#### 17. The image of the Soviet Union in the context of the modern confrontation between the United States and China. The view of the RAND Corporation 2022 (economic and futurological aspects)
+**Authors**: Sperkach
+**Year**: 2024
+**DOI**: 10.26794/2226-7867-2024-14-2-60-65
+**URL**: https://doi.org/10.26794/2226-7867-2024-14-2-60-65
+
+#### 18. The Impact of Digital Technology and Business Regulations on Financial Inclusion and Socio-Economic Development in Low-Income Countries
+**Authors**: Yakubi, Basuki, Purwono, Usman
+**Year**: 2022
+**DOI**: 10.1177/21582440221116112
+**URL**: https://doi.org/10.1177/21582440221116112
+
+#### 19. An Investigation of the Mechanisms of Technology Transfer and Automation in Universities: A Case Study on Promoting Entrepreneurship and Startup Ecosystems at Bangladesh Open University
+**Authors**: Nayem, Khatun, Hossain
+**Year**: 2024
+**DOI**: 10.54536/ajet.v3i2.2785
+**URL**: https://doi.org/10.54536/ajet.v3i2.2785
+
+#### 20. Open Source Software Test Automation Tools: A Competitive Necessity
+**Authors**: Saravanan, Poorna, Prasad
+**Year**: 2016
+**DOI**: 10.19085/JOURNAL.SIJMD030601
+**URL**: https://doi.org/10.19085/JOURNAL.SIJMD030601
+
+#### 21. Digital Transformation and Governance Innovation for Public Biobanks and Free/Libre Open Source Software Using a Blockchain Technology
+**Authors**: Evangelatos, Evangelatos, Upadya, Venne, Satyamoorthy, Brand, Brand, Ramashesha, Brand, Brand
+**Year**: 2020
+**DOI**: 10.1089/omi.2019.0178
+**URL**: https://doi.org/10.1089/omi.2019.0178
+
+#### 22. Open Source for Sustainability: How Projects Under the Linux Foundation Are Helping to Advance the UN Sustainable Development Goals
 **Authors**: Sandberg
 **Year**: 2023
 **DOI**: 10.70828/yvgi5647
 **URL**: https://doi.org/10.70828/yvgi5647
 
-#### 9. The Origin and Opportunities of Developers' Perceived Code Accountability in Open Source AI Software Development
-**Authors**: Bartsch, Lother, Schmidt, Adam, Benlian
+#### 23. Decentralizing governance: exploring the dynamics and challenges of digital commons and DAOs
+**Authors**: Esposito, Tse, Goh
+**Year**: 2025
+**DOI**: 10.3389/fbloc.2025.1538227
+**URL**: https://doi.org/10.3389/fbloc.2025.1538227
+
+#### 24. Scalable solutions for global health: the SalivaDirect model
+**Authors**: Wyllie, Choate, Burke, Ali
 **Year**: 2024
-**DOI**: 10.1609/aies.v7i1.31621
-**URL**: https://doi.org/10.1609/aies.v7i1.31621
+**DOI**: 10.3389/fcimb.2024.1446514
+**URL**: https://doi.org/10.3389/fcimb.2024.1446514
 
-#### 10. Using humanitarian free and open source software (HFOSS) to introduce computing for the social good
-**Authors**: Postner, Burdge, Jackson, Ellis, Hislop, Goggins
-**Year**: 2015
-**DOI**: 10.1145/2809957.2809967
-**URL**: https://doi.org/10.1145/2809957.2809967
-
-#### 11. Design of Interactive Device on Climate Warming Based on Arduino, an Open-source Hardware
-**Authors**: Chenxuan
-**Year**: 2021
-**DOI**: 10.1088/1755-1315/687/1/012118
-**URL**: https://doi.org/10.1088/1755-1315/687/1/012118
-
-#### 12. Open Source, Hidden Costs: A Systematic Literature Review on OSS License Management
-**Authors**: Li, Liu, Fan, Chen, Zhang, Liu
-**Year**: 2025
-**DOI**: 10.1109/TSE.2025.3586411
-**URL**: https://doi.org/10.1109/TSE.2025.3586411
-
-#### 13. The Determinants of Output Per Contributor in Open Source Projects: An Empirical Examination
-**Authors**: Fershtman, Gandal
-**Year**: 2004
-**DOI**: 10.2139/ssrn.515282
-**URL**: https://doi.org/10.2139/ssrn.515282
-
-#### 14. Rethinking Scale: The Efficacy of Fine-Tuned Open-Source LLMs in Large-Scale Reproducible Social Science Research
-**Authors**: Carammia, Iacus, Porro
+#### 25. Time-Evolving Data Science and Artificial Intelligence for Advanced Open Environmental Science (TAIAO) Programme
+**Authors**: Koh, Bifet, Bryan, Cassales, Graffeuille, Lim, Mourot, Ning, Pfahringer, Vetrova, Gomes
 **Year**: 2024
-**DOI**: 10.48550/arXiv.2411.00890
-**URL**: https://doi.org/10.48550/arXiv.2411.00890
+**DOI**: 10.24963/ijcai.2024/809
+**URL**: https://doi.org/10.24963/ijcai.2024/809
 
-#### 15. Fifty Years of Open Source Software Supply-Chain Security
-**Authors**: Cox
+#### 26. Open Source as the Foundation of Safety and Security in Logistics Digital Transformation
+**Authors**: Plevnik, Gumzej
 **Year**: 2025
-**DOI**: 10.1145/3762635
-**URL**: https://doi.org/10.1145/3762635
+**DOI**: 10.3390/systems13060424
+**URL**: https://doi.org/10.3390/systems13060424
 
-#### 16. Legal Strategy for Intellectual Property Protection in the Era of Open-source and Creative Commons in Indonesia
-**Authors**: Utama, Susanty
-**Year**: 2023
-**DOI**: 10.58812/eslhr.v2i01.149
-**URL**: https://doi.org/10.58812/eslhr.v2i01.149
+#### 27. Competition Policy and the Digital Single Market in the Wake of Brexit: Is Geoblocking Always as Evil as Most Consumers Believe?
+**Authors**: Maske
+**Year**: 2016
+**DOI**: 10.1093/JECLAP/LPW069
+**URL**: https://doi.org/10.1093/JECLAP/LPW069
 
-#### 17. Open Source, Open Vision: The MakerPro Network and the Broadening of Participation in Setting Taiwan’s IT Vision Agenda
-**Authors**: Freeman, Bardzell, Bardzell
-**Year**: 2019
-**DOI**: 10.1080/07370024.2018.1555043
-**URL**: https://doi.org/10.1080/07370024.2018.1555043
-
-#### 18. Promoting Digital Inclusion through Free and Open Source Software (FOSS) in Indonesian Public Policy
-**Authors**: Halim, Setiawan
-**Year**: 2025
-**DOI**: 10.55677/sshrb/2025-3050-0807
-**URL**: https://doi.org/10.55677/sshrb/2025-3050-0807
-
-#### 19. MASTODON: An Open-Source Software for Seismic Analysis and Risk Assessment of Critical Infrastructure
-**Authors**: Veeraraghavan, Bolisetti, Slaughter, Coleman, Dhulipala, Hoffman, Kim, Kurt, Spears, Munday
+#### 28. Collaboration in Open Government Data Ecosystems: Open Cross-sector Sharing and Co-development of Data and Software
+**Authors**: Linåker, Runeson
 **Year**: 2020
-**DOI**: 10.1080/00295450.2020.1807282
-**URL**: https://doi.org/10.1080/00295450.2020.1807282
+**DOI**: 10.1007/978-3-030-57599-1_22
+**URL**: https://doi.org/10.1007/978-3-030-57599-1_22
 
-#### 20. Public-private funding models in open source software development: A case study on scikit-learn
+#### 29. In Between Users and Developers: Serendipitous Connections and Intermediaries in Volunteer-Driven Open-Source Software Development
+**Authors**: Jahn, Engelbutzeder, Randall, Bollmann, Ntouros, Michel, Wulf
+**Year**: 2024
+**DOI**: 10.1145/3613904.3642541
+**URL**: https://doi.org/10.1145/3613904.3642541
+
+#### 30. A Framework For Achieving An Industry-Driven, Open-Source Clinical Reporting System
+**Authors**: diTommaso, Roche, Martin, Oldenkamp, Hamilton
+**Year**: 2009
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/6a18ea11be2dd7262b94c9d17fa4879a2f19e3a5
+
+#### 31. The Use of Evidence in Humanitarian Response Decision-Making
+**Authors**: Saulnier, Allen, Eriksson, Taylor
+**Year**: 2019
+**DOI**: 10.1017/S1049023X19000852
+**URL**: https://doi.org/10.1017/S1049023X19000852
+
+#### 32. Expanding access to magnetic resonance education through open‐source web tutorials
+**Authors**: Tong, Ananth, Vaughan, Geethanath
+**Year**: 2024
+**DOI**: 10.1002/nbm.5109
+**URL**: https://doi.org/10.1002/nbm.5109
+
+#### 33. Simplifying humanitarian assistance/disaster relief analytic models using activity-based intelligence: Syrian refugee crisis as a case study
+**Authors**: Widener, Mazzuchi, Sarkani
+**Year**: 2018
+**DOI**: 10.1108/DPM-06-2017-0134
+**URL**: https://doi.org/10.1108/DPM-06-2017-0134
+
+#### 34. Reuse in Open Source : A Case Study
+**Authors**: Capiluppi
+**Year**: 2019
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/7d0c39abf5fe8219679983602bd031782e1d01b8
+
+#### 35. The cathedral and the bazaar
+**Authors**: Raymond
+**Year**: 1998
+**DOI**: 10.1007/s12130-999-1026-0
+**URL**: https://doi.org/10.1007/s12130-999-1026-0
+
+#### 36. What Were You Thinking? An LLM-Driven Large-Scale Study of Refactoring Motivations in Open-Source Projects
+**Authors**: Robredo, Esposito, Palomba, Peñaloza, Lenarduzzi
+**Year**: 2025
+**DOI**: 10.48550/arXiv.2509.07763
+**URL**: https://doi.org/10.48550/arXiv.2509.07763
+
+#### 37. OpenLabs - Collaborative Industrialization with Distributed and Open Source Microfactories
+**Authors**: Redlich, Moritz, Buxbaum-Conradi, Krenz, Heubischl, Basmer-Birkenfeld
+**Year**: 2015
+**DOI**: 10.4028/www.scientific.net/AMM.794.470
+**URL**: https://doi.org/10.4028/www.scientific.net/AMM.794.470
+
+#### 38. A new Decision Support Tool for assessing cities sustainability levels: the IBTool software
+**Authors**: Poli, Cuntò, Vita
+**Year**: 2025
+**DOI**: 10.48264/vvsiev-20253709
+**URL**: https://doi.org/10.48264/vvsiev-20253709
+
+#### 39. Diversity, Equity, and Inclusion in Open Source: Exploring the Challenges and Opportunities to Create Equity and Agency Across Open Source Ecosystems
+**Authors**: Carter, Groopman
+**Year**: 2021
+**DOI**: 10.70828/kewr6778
+**URL**: https://doi.org/10.70828/kewr6778
+
+#### 40. OPEN SOURCE SOFTWARE AND INTELLECTUAL PROPERTY
+**Authors**: Nedelkovski
+**Year**: 2024
+**DOI**: 10.53606/evfu.22.24-43
+**URL**: https://doi.org/10.53606/evfu.22.24-43
+
+#### 41. Open-Source Artificial Intelligence Privacy and Security: A Review
+**Authors**: Al-Kharusi, Khan, Rizwan, Bait-Suwailam
+**Year**: 2024
+**DOI**: 10.3390/computers13120311
+**URL**: https://doi.org/10.3390/computers13120311
+
+#### 42. Vulnerability Management Using Open-Source Tools
+**Authors**: Shivananjappa, Creutzburg
+**Year**: 2024
+**DOI**: 10.2352/ei.2024.36.3.mobmu-326
+**URL**: https://doi.org/10.2352/ei.2024.36.3.mobmu-326
+
+#### 43. brainlife.io: A decentralized and open source cloud platform to support neuroscience research
+**Authors**: Hayashi, Caron, Heinsfeld, Vinci-Booher, McPherson, Bullock, Bertò, Niso, Hanekamp, Levitas, Kitchell, Leong, Silva, Koudoro, Willis, Jolly, Pisner, Zuidema, Kurzwaski, Mikellidou, Bussalb, Rorden, Victory, Bhatia, Aydogan, Yeh, Delogu, Guaje, Veraart, Fischer, Faskowitz, Chaumon, Fábrega, Hunt, McKee, Brown, Heyman, Iacovella, Mejia, Marinazzo, Craddock, Olivetti, Hanson, Avesani, Garyfallidis, Stanzione, Carson, Henschel, Hancock, Stewart, Schnyer, Eke, Poldrack, George, Bridge, Sani, Freiwald, Puce, Port, Pestilli
+**Year**: 2023
+**DOI**: 10.1038/s41592-024-02237-2
+**URL**: https://doi.org/10.1038/s41592-024-02237-2
+
+#### 44. Key Enablers towards Mature Company-community Collaboration in Open Source Hardware
+**Authors**: Hassan, Mies, Jochem
+**Year**: 2021
+**DOI**: 10.3917/jie.pr1.0135
+**URL**: https://doi.org/10.3917/jie.pr1.0135
+
+#### 45. Open-Source AI Algorithms: A Qualitative Study on Transparency, Bias Mitigation, and Ethical Accountability
+**Authors**: Bharambe, Mahandule, More, Sawant
+**Year**: 2025
+**DOI**: 10.63680/hgcfnnh854
+**URL**: https://doi.org/10.63680/hgcfnnh854
+
+#### 46. Civic hacking: a retrospect and an analysis of collaboration participation in g0v.tw
+**Authors**: Etblue
+**Year**: 2020
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/5df8d72792798d5dd0f433f9698ef983a41f6876
+
+#### 47. Assessing Maintainability Risks in the Open Source Software Supply Chain: An Empirical Quality Approach
+**Authors**: Bi, Zhao, Wang, Wu
+**Year**: 2024
+**DOI**: 10.1109/COMPSAC61105.2024.00039
+**URL**: https://doi.org/10.1109/COMPSAC61105.2024.00039
+
+#### 48. Public-private funding models in open source software development: A case study on scikit-learn
 **Authors**: Osborne
 **Year**: 2024
 **DOI**: 10.48550/arXiv.2404.06484
 **URL**: https://doi.org/10.48550/arXiv.2404.06484
 
-#### 21. Paving the Way to Battle Climate Change: How Two Utilities Embraced Open Source to Speed Modernization of the Electric Grid
-**Authors**: Goodman
-**Year**: 2022
-**DOI**: 10.70828/zxch7776
-**URL**: https://doi.org/10.70828/zxch7776
-
-#### 22. Open Source Integrated Circuit Design Tools in Scientific Research: Yay or Nay?
-**Authors**: Knežević, Paunović
-**Year**: 2024
-**DOI**: 10.46793/tie24.048k
-**URL**: https://doi.org/10.46793/tie24.048k
-
-#### 23. Enhancing Urban Sustainability: Developing an Open-Source AI Framework for Smart Cities
-**Authors**: Shulajkovska, Smerkol, Noveski, Gams
-**Year**: 2024
-**DOI**: 10.3390/smartcities7050104
-**URL**: https://doi.org/10.3390/smartcities7050104
-
-#### 24. Hacking a Commercial Drone with Open-Source Software: Exploring Data Privacy Violations
-**Authors**: Gabrielsson, Bugeja, Vogel
-**Year**: 2021
-**DOI**: 10.1109/MECO52532.2021.9460295
-**URL**: https://doi.org/10.1109/MECO52532.2021.9460295
-
-#### 25. Digital Capability, Open-Source Use, and Interoperability Standards Within the National Health Service in England: Survey of Health Care Trusts
-**Authors**: Bennion, Spencer, Moore, Kenyon
-**Year**: 2024
-**DOI**: 10.2196/66398
-**URL**: https://doi.org/10.2196/66398
-
-#### 26. Design Smart Phone Application for E-Health System (ICE) Urban Cities Based on Open-source Software: Machine Learning Based Approach
-**Authors**: Haroon, Liao, Hingoro
-**Year**: 2024
-**DOI**: 10.14738/tecs.122.16799
-**URL**: https://doi.org/10.14738/tecs.122.16799
-
-#### 27. MedAlpaca -- An Open-Source Collection of Medical Conversational AI Models and Training Data
-**Authors**: Han, Adams, Papaioannou, Grundmann, Oberhauser, Löser, Truhn, Bressem
-**Year**: 2023
-**DOI**: 
-**URL**: https://www.semanticscholar.org/paper/90e41626b8c78600da70c4350c67c3a10525cb37
-
-#### 28. Limits and Possibilities for “Ethical AI” in Open Source: A Study of Deepfakes
-**Authors**: Widder, Nafus, Dabbish, Herbsleb
-**Year**: 2022
-**DOI**: 10.1145/3531146.3533779
-**URL**: https://doi.org/10.1145/3531146.3533779
-
-#### 29. The Use of Open Source Software to Enhance Public Health Initiatives
-**Authors**: Hahn, Lewis, Blazes
+#### 49. Barriers to Open Source ERP Adoption in South Africa
+**Authors**: Mr, Prof, Mrs, Ms
 **Year**: 2014
-**DOI**: 10.5210/OJPHI.V6I1.5181
-**URL**: https://doi.org/10.5210/OJPHI.V6I1.5181
-
-#### 30. Information policies and open source software in developing countries
-**Authors**: Câmara, Fonseca
-**Year**: 2007
-**DOI**: 10.1002/asi.20444
-**URL**: https://doi.org/10.1002/asi.20444
-
-#### 31. Transforming Education in Nigerian Universities: The Role of Free and Open-Source Software (FOSS) in Teaching and Learning
-**Authors**: Peter, Orubebe, Oladokun
-**Year**: 2024
-**DOI**: 10.70112/arss-2024.13.1.4239
-**URL**: https://doi.org/10.70112/arss-2024.13.1.4239
-
-#### 32. Health and Human Rights Nexus: A Bibliometric Analysis
-**Authors**: Mohsin, Ahsan, Haider
-**Year**: 2024
-**DOI**: 10.53808/kus.2024.21.02.1144-ss
-**URL**: https://doi.org/10.53808/kus.2024.21.02.1144-ss
-
-#### 33. The Dynamics of Innovation in Open Source Software Ecosystems
-**Authors**: M'esz'aros, Wachs
-**Year**: 2024
-**DOI**: 10.48550/arXiv.2411.14894
-**URL**: https://doi.org/10.48550/arXiv.2411.14894
-
-#### 34. Open to development: Open-Source software and economic development
-**Authors**: Morris
-**Year**: 2004
 **DOI**: 
-**URL**: https://www.semanticscholar.org/paper/bf4ae301abe74e2acf608b19f8268ca67bc21f39
+**URL**: https://www.semanticscholar.org/paper/dacb819cf2cdc7f0c96aeaf7bc5db129070d2757
 
-#### 35. Toward Open-Source Hardware and Software for the Mining Industry: a Case Study of Low-Cost Environmental Monitoring System for Non-Metallic Underground Mines
-**Authors**: Mardonova, Choi
-**Year**: 2019
-**DOI**: 10.1007/s42461-019-0093-3
-**URL**: https://doi.org/10.1007/s42461-019-0093-3
-
-#### 36. Open Source Software and the "Private-Collective" Innovation Model: Issues for Organization Science
-**Authors**: Hippel, Krogh
-**Year**: 2003
-**DOI**: 10.1287/ORSC.14.2.209.14992
-**URL**: https://doi.org/10.1287/ORSC.14.2.209.14992
-
-#### 37. Digital Sovereignty and Open-Source Software - A Discussion Paper
-**Authors**: Bechara, Lechner
+#### 50. Future Trends of Open-Source AI in Libraries: Implications for Librarianship and Service Delivery
+**Authors**: Okwu, Oyighan, Oladokun
 **Year**: 2024
-**DOI**: 10.1007/978-3-031-60433-1_22
-**URL**: https://doi.org/10.1007/978-3-031-60433-1_22
+**DOI**: 10.70112/ajist-2024.14.2.4283
+**URL**: https://doi.org/10.70112/ajist-2024.14.2.4283
 
-#### 38. Strengthening the Digital Ecosystem: Effects of the Cyber Resilience Act (CRA) on Open-Source Software
-**Authors**: Kikelj, Sabic
-**Year**: 2024
-**DOI**: 10.1109/CSR61664.2024.10679481
-**URL**: https://doi.org/10.1109/CSR61664.2024.10679481
+#### 51. Deploying SDN and NFV at the speed of innovation: toward a new bond between standards development organizations, industry fora, and open-source software projects
+**Authors**: Naudts, Tavernier, Verbrugge, Colle, Pickavet
+**Year**: 2016
+**DOI**: 10.1109/MCOM.2016.7432171
+**URL**: https://doi.org/10.1109/MCOM.2016.7432171
 
-#### 39. A Rapid Review on the Use of Free and Open Source Technologies and Software Applied to Precision Agriculture Practices
-**Authors**: Santos, Fachada, Beko, Leithardt
+#### 52. InterSCity: A Scalable Microservice-based Open Source Platform for Smart Cities
+**Authors**: Esposte, Kon, Costa, Lago
+**Year**: 2017
+**DOI**: 10.5220/0006306200350046
+**URL**: https://doi.org/10.5220/0006306200350046
+
+#### 53. The Role of Financial Technology (Fintech, Blockchain) in Promoting Green Finance
+**Authors**: Tham, Binh
+**Year**: 2025
+**DOI**: 10.62225/2583049x.2025.5.5.5104
+**URL**: https://doi.org/10.62225/2583049x.2025.5.5.5104
+
+#### 54. CiThruS2: Open-source Photorealistic 3D Framework for Driving and Traffic Simulation in Real Time
+**Authors**: Galazka, Niemirepo, Vanne
+**Year**: 2021
+**DOI**: 10.1109/itsc48978.2021.9564751
+**URL**: https://doi.org/10.1109/itsc48978.2021.9564751
+
+#### 55. Study on Use-Cases of Open Source Management and Orchestration Framework in 5G Projects
+**Authors**: Ciobanu, Contu, Borcoci
+**Year**: 2020
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/f3c6e7acbc9b8f6831945bfe484c1ad770c686d3
+
+#### 56. Automatic Implementation and Evaluation of Error-Correcting Codes for Quantum Computing: An Open-Source Framework for Quantum Error Correction
+**Authors**: Grurl, Pichler, Fuß, Wille
 **Year**: 2023
-**DOI**: 10.3390/jsan12020028
-**URL**: https://doi.org/10.3390/jsan12020028
+**DOI**: 10.1109/VLSID57277.2023.00068
+**URL**: https://doi.org/10.1109/VLSID57277.2023.00068
 
-### From Gemini Grounded (12 citations)
-
-#### 1. cmi.no
-**Authors**: cmi.no
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.cmi.no/publications/8330-community-driven-development-in-fragile-contexts
-
-#### 2. digitalcxo.com
-**Authors**: digitalcxo.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://digitalcxo.com/article/why-open-source-is-the-backbone-of-digital-transformation/
-
-#### 3. channelweb.co.uk
-**Authors**: channelweb.co.uk
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.channelweb.co.uk/news/2025/geopatriation
-
-#### 4. who.int
-**Authors**: pandemichub.who.int
-**Year**: 2025
-**DOI**: 
-**URL**: https://pandemichub.who.int/news-room/events/item/2023/06/13/default-calendar/complexity-of-pandemics-embracing-open-source-solutions-for-health-emergencies
-
-#### 5. oecd.org
-**Authors**: oecd.org
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.oecd.org/en/publications/the-oecd-digital-government-policy-framework_f64fed2a-en.html
-
-#### 6. europa.eu
-**Authors**: interoperable-europe.ec.europa.eu
-**Year**: 2025
-**DOI**: 
-**URL**: https://interoperable-europe.ec.europa.eu/collection/open-source-observatory-osor/news/open-source-digital-sovereignty-and-interoperability
-
-#### 7. finos.org
-**Authors**: osr.finos.org
-**Year**: 2025
-**DOI**: 
-**URL**: https://osr.finos.org/docs/presentations/strategy
-
-#### 8. ieee.org
-**Authors**: grouper.ieee.org
-**Year**: 2025
-**DOI**: 
-**URL**: https://grouper.ieee.org/groups/802/802_tutorials/2023_03/Open_Source_Tutorial_March_2023.pdf
-
-#### 9. nist.gov
-**Authors**: nist.gov
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.nist.gov/itl/executive-order-14028-improving-nations-cybersecurity/software-security-supply-chains-open
-
-#### 10. wikipedia.org
-**Authors**: en.wikipedia.org
-**Year**: 2025
-**DOI**: 
-**URL**: https://en.wikipedia.org/wiki/Digital_public_goods
-
-#### 11. rand.org
-**Authors**: rand.org
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.rand.org/pubs/research_reports/RRA1245-1.html
-
-#### 12. apereo.org
-**Authors**: apereo.org
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.apereo.org/news/2025/changing-narrative-how-open-source-software-addresses-change-higher-education-it
+#### 57. Insider attack mitigation in a smart metering infrastructure using reputation score and blockchain technology
+**Authors**: Singh, Sinha, Goli, Subramanian, Shukla, Vyas
+**Year**: 2021
+**DOI**: 10.1007/s10207-021-00561-8
+**URL**: https://doi.org/10.1007/s10207-021-00561-8

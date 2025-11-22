@@ -121,8 +121,9 @@ class CitationQualityFilter:
         data['citations'] = filtered_citations
 
         # CRITICAL: Update metadata citation count to match filtered count
+        # Field name MUST match CitationDatabase.to_dict() which uses "total_citations"
         if 'metadata' in data:
-            data['metadata']['citation_count'] = len(filtered_citations)
+            data['metadata']['total_citations'] = len(filtered_citations)
 
         # Save filtered database
         if output_path is None:

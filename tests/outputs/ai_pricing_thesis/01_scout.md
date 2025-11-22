@@ -2,22 +2,22 @@
 
 ## Summary
 
-**Total Valid Citations**: 62
-**Success Rate**: 100.0%
-**Failed Topics**: 0
+**Total Valid Citations**: 58
+**Success Rate**: 98.3%
+**Failed Topics**: 1
 
 ### Sources Breakdown
 
-- **Crossref**: 11 (17.7%)
-- **Semantic Scholar**: 31 (50.0%)
-- **Gemini Grounded**: 20 (32.3%)
+- **Crossref**: 9 (15.5%)
+- **Semantic Scholar**: 46 (79.3%)
+- **Gemini Grounded**: 3 (5.2%)
 - **Gemini LLM**: 0 (0.0%)
 
 ---
 
 ## Citations Found
 
-### From Crossref (11 citations)
+### From Crossref (9 citations)
 
 #### 1. Architecting Agentic AI Systems with a Well-Architected Framework
 **Authors**: Ranjan, Chembachere, Lobo
@@ -25,372 +25,356 @@
 **DOI**: 10.1007/979-8-8688-1542-3_2
 **URL**: https://doi.org/10.1007/979-8-8688-1542-3_2
 
-#### 2. Feeling Economics: AI, Empathy, and the Future of Labor– A Systematic Review and Conceptual Model
-**Authors**: Abdelaziz
+#### 2. Policy Considerations for Socially Interactive AI Agents: A Systematic Literature Review
+**Authors**: Luria, Grybos
 **Year**: 2025
-**DOI**: 10.21203/rs.3.rs-7971227/v1
-**URL**: https://doi.org/10.21203/rs.3.rs-7971227/v1
+**DOI**: 10.2139/ssrn.5375608
+**URL**: https://doi.org/10.2139/ssrn.5375608
 
-#### 3. The Future of AI-Enabled Pricing
-**Authors**: Yang
+#### 3. Dynamic Token Hierarchies: Enhancing Large Language Models with a Multi-Tiered Token Processing Framework
+**Authors**: Barbere, Martin, Thornton, Harris, Thompson
+**Year**: 2024
+**DOI**: 10.36227/techrxiv.172971998.83622138/v1
+**URL**: https://doi.org/10.36227/techrxiv.172971998.83622138/v1
+
+#### 4. Usage-based pricing of software services under competition
+**Authors**: Bala, Carr
+**Year**: 2010
+**DOI**: 10.1057/rpm.2010.12
+**URL**: https://doi.org/10.1057/rpm.2010.12
+
+#### 5. AI Agentic workflows and Enterprise APIs: Adapting API architectures for the age of AI agents
+**Authors**: Tupe, Thube
 **Year**: 2025
-**DOI**: 10.1007/978-3-031-90418-9_5
-**URL**: https://doi.org/10.1007/978-3-031-90418-9_5
+**DOI**: 10.36227/techrxiv.173895544.45005813/v1
+**URL**: https://doi.org/10.36227/techrxiv.173895544.45005813/v1
 
-#### 4. Future Trends and Prospects for Scholarly Communication
-**Authors**: Moulaison-Sandy
+#### 6. AI-Driven Dynamic Pricing and Energy Justice: Introducing the AI-Powered Pricing Justice Index (APJI) to Address Social Inequality
+**Authors**: Senyapar, Colak, Ayik, Bayindir
 **Year**: 2025
-**DOI**: 10.4324/9781003570325-7
-**URL**: https://doi.org/10.4324/9781003570325-7
+**DOI**: 10.1109/icsmartgrid66138.2025.11071841
+**URL**: https://doi.org/10.1109/icsmartgrid66138.2025.11071841
 
-#### 5. Generative AI in Economics: Teaching Economics and AI Literacy
-**Authors**: Beck, Brodersen
-**Year**: 2024
-**DOI**: 10.53593/n4121a
-**URL**: https://doi.org/10.53593/n4121a
-
-#### 6. THE USAGE OF WEB-BASED TECHNOLOGIES FOR AUDIOVISUAL CONTENT OUTPUT ON THE UNIVERSITY’S INDOOR TV - THE ADVANTAGES AND DISADVANTAGES
-**Authors**: Filippov
-**Year**: 2018
-**DOI**: 10.21777/2500-2112-2018-2-78-86
-**URL**: https://doi.org/10.21777/2500-2112-2018-2-78-86
-
-#### 7. What executives need to know about knowledge management, large language models and generative AI
-**Authors**: Earley
-**Year**: 2023
-**DOI**: 10.69554/yqbv7690
-**URL**: https://doi.org/10.69554/yqbv7690
-
-#### 8. Design Patterns and Best Practices for AI-Enhanced API and Microservices
-**Authors**: Pandiya, Charankar
-**Year**: 2025
-**DOI**: 10.1007/979-8-8688-1306-1_5
-**URL**: https://doi.org/10.1007/979-8-8688-1306-1_5
-
-#### 9. Empirical Analysis of Decision Making of an AI Agent on IBM’s 5Q Quantum Computer
-**Authors**: Hu
-**Year**: 2018
-**DOI**: 10.4236/ns.2018.101004
-**URL**: https://doi.org/10.4236/ns.2018.101004
-
-#### 10. Stochastic Optimization Algorithms in AI Models for Decision Making like Stock Options Pricing
-**Authors**: Mishra
-**Year**: 2024
-**DOI**: 10.2139/ssrn.4876008
-**URL**: https://doi.org/10.2139/ssrn.4876008
-
-#### 11. AI Agents in Chemical Research: An Intelligent Research Assistant System
-**Authors**: Ma
-**Year**: 2024
-**DOI**: 10.26434/chemrxiv-2024-6tv8c-v2
-**URL**: https://doi.org/10.26434/chemrxiv-2024-6tv8c-v2
-
-### From Semantic Scholar (31 citations)
-
-#### 1. Unlocking the AI-powered customer experience: Personalized service, enhanced engagement, and data-driven strategies for e-commerce applications
-**Authors**: Tran
-**Year**: 2024
-**DOI**: 10.24294/jipd.v8i7.4970
-**URL**: https://doi.org/10.24294/jipd.v8i7.4970
-
-#### 2. A Review of Agentic Artificial Intelligence: Power of Self-Driven AI in the Future of Financial Autonomy and Enhanced Customer Engagement
-**Authors**: Bhat, Krishnan
-**Year**: 2025
-**DOI**: 10.1109/ICSCDS65426.2025.11167368
-**URL**: https://doi.org/10.1109/ICSCDS65426.2025.11167368
-
-#### 3. Comparative analysis of different approaches to the Ukrainian residential property market evolution modelling and its forecast for the years 2019–2024
-**Authors**: Yakubovsky, Zhuk
-**Year**: 2024
-**DOI**: 10.1108/ijhma-11-2023-0160
-**URL**: https://doi.org/10.1108/ijhma-11-2023-0160
-
-#### 4. AN EMPIRICAL ANALYSIS OF THE STATIONARITY OF BETA ON THE ZIMBABWE STOCK EXCHANGE
-**Authors**: Mazviona
-**Year**: 2013
-**DOI**: 
-**URL**: https://www.semanticscholar.org/paper/03062b57fd01360897cd5b1c02a530c02d53336f
-
-#### 5. Optimizing Business Process Automation with AI: A Framework for Maximizing Strategic ROI
-**Authors**: Odogwu, Ogeawuchi, Abayomi, Agboola, Owoade
-**Year**: 2023
-**DOI**: 10.54660/ijmor.2023.2.3.44-54
-**URL**: https://doi.org/10.54660/ijmor.2023.2.3.44-54
-
-#### 6. Fact-Checking the Output of Large Language Models via Token-Level Uncertainty Quantification
-**Authors**: Fadeeva, Rubashevskii, Shelmanov, Petrakov, Li, Mubarak, Tsymbalov, Kuzmin, Panchenko, Baldwin, Nakov, Panov
-**Year**: 2024
-**DOI**: 10.48550/arXiv.2403.04696
-**URL**: https://doi.org/10.48550/arXiv.2403.04696
-
-#### 7. Beyond attention: Advancing AI token valuation through user engagement and market dynamics
-**Authors**: Akpan
-**Year**: 2024
-**DOI**: 10.22495/cocv21i4art1
-**URL**: https://doi.org/10.22495/cocv21i4art1
-
-#### 8. Data Collection and Wireless Communication in Internet of Things (IoT) Using Economic Analysis and Pricing Models: A Survey
-**Authors**: Luong, Hoang, Wang, Niyato, Kim, Han
-**Year**: 2016
-**DOI**: 10.1109/COMST.2016.2582841
-**URL**: https://doi.org/10.1109/COMST.2016.2582841
-
-#### 9. Adaptive Token Merging for Efficient Transformer Semantic Communication at the Edge
-**Authors**: Erak, Alhussein, Abou-Zeid, Bennis, Muhaidat
-**Year**: 2025
-**DOI**: 10.48550/arXiv.2509.09955
-**URL**: https://doi.org/10.48550/arXiv.2509.09955
-
-#### 10. Perceived Risks and Benefits of Advanced Pay-Per-Use Type of Business Models Based on Industry 4.0 Enabled Technologies in Manufacturing Companies
-**Authors**: Uuskoski, Menon, Kärkkäinen, Koskinen
-**Year**: 2018
-**DOI**: 10.1007/978-3-030-01614-2_46
-**URL**: https://doi.org/10.1007/978-3-030-01614-2_46
-
-#### 11. Lossy utility based outage compensation in Next Generation Networks
-**Authors**: Kibria, Jamalipour
+#### 7. About the Author
+**Authors**: Hinton
 **Year**: 2008
-**DOI**: 10.1109/KINGN.2008.4542292
-**URL**: https://doi.org/10.1109/KINGN.2008.4542292
+**DOI**: 10.5771/9780810866539-131
+**URL**: https://doi.org/10.5771/9780810866539-131
 
-#### 12. Scalable AI Solutions for IoT-based Healthcare Systems using Cloud Platforms
-**Authors**: V, M, Gujar, Shaikh, Ingole, Reddy
+#### 8. Energy and Cost Considerations for GPU Accelerated AI Inference Workloads
+**Authors**: Molom-Ochir, Shenoy
+**Year**: 2021
+**DOI**: 10.1109/urtc54388.2021.9701614
+**URL**: https://doi.org/10.1109/urtc54388.2021.9701614
+
+#### 9. Embodied AI Agent for Co-creation Ecosystem: Elevating Human-AI Co-creation through Emotion Recognition and Dynamic Personality Adaptation
+**Authors**: Zheng, Jia, Li, Fu
+**Year**: 2025
+**DOI**: 10.31235/osf.io/54de2
+**URL**: https://doi.org/10.31235/osf.io/54de2
+
+### From Semantic Scholar (46 citations)
+
+#### 1. A Comprehensive Evaluation Method for Cultural Value of Literary Works Based on Artificial Intelligence Technology
+**Authors**: Xue
+**Year**: 2023
+**DOI**: 10.25236/ajhss.2023.061313
+**URL**: https://doi.org/10.25236/ajhss.2023.061313
+
+#### 2. A Strategic Design of Personalized Based Learning System for Improving the Experience of Outcome Based Education
+**Authors**: Widono, Sri, Nugraheni, Saddhono, Nurhasanah, Legowo
 **Year**: 2024
-**DOI**: 10.1109/I-SMAC61858.2024.10714810
-**URL**: https://doi.org/10.1109/I-SMAC61858.2024.10714810
+**DOI**: 10.1109/ICACITE60783.2024.10616811
+**URL**: https://doi.org/10.1109/ICACITE60783.2024.10616811
 
-#### 13. Optimizing Dynamic Pricing through AI-Powered Real-Time Analytics: The Influence of Customer Behavior and Market Competition
-**Authors**: Awais
+#### 3. USimAgent: Large Language Models for Simulating Search Users
+**Authors**: Zhang, Wang, Gong, Lin, Mao
 **Year**: 2024
-**DOI**: 10.55737/qjss.370771519
-**URL**: https://doi.org/10.55737/qjss.370771519
+**DOI**: 10.1145/3626772.3657963
+**URL**: https://doi.org/10.1145/3626772.3657963
 
-#### 14. Optimizing Email Campaigns based on Pricing Variability
-**Authors**: Pathe
+#### 4. Scenario, Role, and Persona: A Scoping Review of Design Strategies for Socially Intelligent AI Agents
+**Authors**: Niu, Hu, Peng, Cao, Liu, Han, Guo
+**Year**: 2025
+**DOI**: 10.1145/3706599.3719762
+**URL**: https://doi.org/10.1145/3706599.3719762
+
+#### 5. AI and Catastrophic Risk
+**Authors**: Bengio
+**Year**: 2023
+**DOI**: 10.1353/jod.2023.a907692
+**URL**: https://doi.org/10.1353/jod.2023.a907692
+
+#### 6. OPPORTUNITIES AND CHALLENGES FOR INDIAN RETAIL STORES AND THEIR MARKETING STRATEGIES
+**Authors**: Costa, Hans
 **Year**: 2024
-**DOI**: 10.47363/jmca/2024(3)e154
-**URL**: https://doi.org/10.47363/jmca/2024(3)e154
+**DOI**: 10.36713/epra15414
+**URL**: https://doi.org/10.36713/epra15414
 
-#### 15. A comprehensive value-based method for new nuclear medical service pricing: with case study of radium [223Ra] bone metastases treatment
+#### 7. System for systematic literature review using multiple AI agents: Concept and an empirical evaluation
+**Authors**: Sami, Rasheed, Kemell, Waseem, Kilamo, Saari, Nguyen-Duc, Systä, Abrahamsson
+**Year**: 2024
+**DOI**: 10.48550/arXiv.2403.08399
+**URL**: https://doi.org/10.48550/arXiv.2403.08399
+
+#### 8. Analysis of innovation diffusion patterns through patent citation network: Focusing on Gartner Hype cycle for AI
+**Authors**: Shin, Kang
+**Year**: 2024
+**DOI**: 10.13088/jiis.2024.30.3.027
+**URL**: https://doi.org/10.13088/jiis.2024.30.3.027
+
+#### 9. AI-Driven Cybersecurity Strategies for ISPs: Balancing Threat Mitigation and Monetization
+**Authors**: Singh, Kumar
+**Year**: 2025
+**DOI**: 10.34190/iccws.20.1.3344
+**URL**: https://doi.org/10.34190/iccws.20.1.3344
+
+#### 10. AI Policy for Whom? Reclaiming Governance from Capitalist Capture
+**Authors**: Ericson, Carli, Tucker, Dignum
+**Year**: 2025
+**DOI**: 10.1609/aies.v8i1.36594
+**URL**: https://doi.org/10.1609/aies.v8i1.36594
+
+#### 11. Application of the NIST AI Risk Management Framework to Surveillance Technology
+**Authors**: Swaminathan, Danks
+**Year**: 2024
+**DOI**: 10.48550/arXiv.2403.15646
+**URL**: https://doi.org/10.48550/arXiv.2403.15646
+
+#### 12. Evaluating the Gaps in Existing AI Ethics Frameworks for Children
+**Authors**: Ragone, Tibidò, Buono, Lanzilotti, Ragone, Baldassarre
+**Year**: 2025
+**DOI**: 10.1145/3750069.3750296
+**URL**: https://doi.org/10.1145/3750069.3750296
+
+#### 13. Louise B. Russell, Evaluating preventive care: Report on a workshop (Studies in Social Economics) The Brookings Institution, Washington D.C. 1987 Price (U.S.) $22.95 (Paper $8.95)
+**Authors**: Malcolm
+**Year**: 1989
+**DOI**: 10.1002/HPM.4740040208
+**URL**: https://doi.org/10.1002/HPM.4740040208
+
+#### 14. AI as a Decision Companion: Supporting Executive Pricing and FX Decisions in Global Enterprises Through LSTM Forecasting
+**Authors**: Leeroy, Leeroy
+**Year**: 2025
+**DOI**: 10.3390/jrfm18100542
+**URL**: https://doi.org/10.3390/jrfm18100542
+
+#### 15. Data on the Move: Traffic-Oriented Data Trading Platform Powered by AI Agent with Common Sense
+**Authors**: Yu, Yao, Zhou, Fu, Yu, Wang, Wang, Chen, Lin
+**Year**: 2024
+**DOI**: 10.1109/IV55156.2024.10588800
+**URL**: https://doi.org/10.1109/IV55156.2024.10588800
+
+#### 16. Cloud Infrastructure Management in the Age of AI Agents
+**Authors**: Yang, Bhatnagar, Qiu, Miao, Kon, Xiao, Huang, Casado, Chen
+**Year**: 2025
+**DOI**: 10.1145/3759441.3759443
+**URL**: https://doi.org/10.1145/3759441.3759443
+
+#### 17. Skewed Bidding in Pay Per Action Auctions for Online Advertising
+**Authors**: Ewerhart
+**Year**: 2009
+**DOI**: 
+**URL**: https://www.semanticscholar.org/paper/44a770b600e00f01c0a7d92406bdc2d3626f2f44
+
+#### 18. Disrupting Drug Costs: The Role of Cost-Plus Pricing in Reducing Medicare Spending on Hypertension Treatments.
+**Authors**: Duncan, Tran, Witt, Elfar, Rashid, Vassar
+**Year**: 2025
+**DOI**: 10.1111/1475-6773.70045
+**URL**: https://doi.org/10.1111/1475-6773.70045
+
+#### 19. Leveraging AI and behavioral economics to enhance decision-making
+**Authors**: Neyyila, Neyyala, Das
+**Year**: 2025
+**DOI**: 10.30574/wjarr.2025.26.2.1581
+**URL**: https://doi.org/10.30574/wjarr.2025.26.2.1581
+
+#### 20. AI revolution in insurance: bridging research and reality
+**Authors**: Bhattacharya, Castignani, Masello, Sheehan
+**Year**: 2025
+**DOI**: 10.3389/frai.2025.1568266
+**URL**: https://doi.org/10.3389/frai.2025.1568266
+
+#### 21. Legal Implications of Using Artificial Intelligence (AI) Technology in Electronic Transactions
+**Authors**: Haq, Yunanto
+**Year**: 2024
+**DOI**: 10.47191/ijsshr/v7-i05-108
+**URL**: https://doi.org/10.47191/ijsshr/v7-i05-108
+
+#### 22. A Comprehensive Evaluation of IoT Cloud Platforms: A Feature-Driven Review with a Decision-Making Tool
+**Authors**: Panagou, Katsoulis, Nannos, Zantalis, Koulouras
+**Year**: 2025
+**DOI**: 10.3390/s25165124
+**URL**: https://doi.org/10.3390/s25165124
+
+#### 23. HERA: Hybrid Edge-cloud Resource Allocation for Cost-Efficient AI Agents
+**Authors**: Liu, Shen, Che, Ghandi, Li
+**Year**: 2025
+**DOI**: 10.48550/arXiv.2504.00434
+**URL**: https://doi.org/10.48550/arXiv.2504.00434
+
+#### 24. A comprehensive value-based method for new nuclear medical service pricing: with case study of radium [223Ra] bone metastases treatment
 **Authors**: Wang, Sun, Fu, Cheng, Jin, Shi, Luo, Xu, Wang
 **Year**: 2024
 **DOI**: 10.1186/s12913-024-10777-8
 **URL**: https://doi.org/10.1186/s12913-024-10777-8
 
-#### 16. AwarePrompt: Using Diffusion Models to Create Methods for Measuring Value-Aware AI Architectures
-**Authors**: Ciupińska, Marchesi, Abbo, Belpaeme, Wykowska
-**Year**: 2024
-**DOI**: 10.5220/0012596400003636
-**URL**: https://doi.org/10.5220/0012596400003636
+#### 25. Policy Frameworks for Transparent Chain-of-Thought Reasoning in Large Language Models
+**Authors**: Chen, Deng, Han, Zhao
+**Year**: 2025
+**DOI**: 10.48550/arXiv.2503.14521
+**URL**: https://doi.org/10.48550/arXiv.2503.14521
 
-#### 17. FUN-Agent: A 2020 HUMAINE Competition Entrant
+#### 26. The Business of Sustainability in the Airbnb Market: Insights from London Using AI-based Analysis
+**Authors**: Malik, Silva, Alteneiji
+**Year**: 2023
+**DOI**: 10.1109/ITT59889.2023.10184229
+**URL**: https://doi.org/10.1109/ITT59889.2023.10184229
+
+#### 27. ANTHROPOLOGICAL PRAXIS IN HIGHER EDUCATION
+**Authors**: Kozaitis
+**Year**: 2013
+**DOI**: 10.1111/NAPA.12021
+**URL**: https://doi.org/10.1111/NAPA.12021
+
+#### 28. From chaos to symbiosis: exploring adaptive co-evolution strategies for generative AI and research integrity systems
+**Authors**: Miao, Zang, Liu, Zheng, Zhou, Liu, Yang, Zhang, Zhang, Zhang, Li, Zhang, Zhang
+**Year**: 2025
+**DOI**: 10.1186/s12910-025-01288-0
+**URL**: https://doi.org/10.1186/s12910-025-01288-0
+
+#### 29. Application of Self-Supervised Autonomous Agent Framework With Growing Scheme for Digital Transformation of Elder/Existed Well Potentials Discovery
+**Authors**: Chen, Zhao, Lu, Jin, Gu, Li, Wang
+**Year**: 2025
+**DOI**: 10.2523/iptc-24776-ms
+**URL**: https://doi.org/10.2523/iptc-24776-ms
+
+#### 30. AI INTEGRATION IN E-COMMERCE BUSINESS MODELS: CASE STUDIES ON AMAZON FBA, AIRBNB, AND TURO OPERATIONS
+**Authors**: Paul
+**Year**: 2023
+**DOI**: 10.63125/1ekaxx73
+**URL**: https://doi.org/10.63125/1ekaxx73
+
+#### 31. Advancing innovation in financial stability: A comprehensive review of ai agent frameworks, challenges and applications
+**Authors**: Joshi
+**Year**: 2025
+**DOI**: 10.30574/wjaets.2025.14.2.0071
+**URL**: https://doi.org/10.30574/wjaets.2025.14.2.0071
+
+#### 32. Artificial Intelligence Transforming Hotel Gastronomy: An In-depth Review of AI-driven Innovations in Menu Design, Food Preparation, and Customer Interaction, with a Focus on Sustainability and Future Trends in the Hospitality Industry
+**Authors**: Milton, Dean
+**Year**: 2024
+**DOI**: 10.61877/ijmrp.v2i3.126
+**URL**: https://doi.org/10.61877/ijmrp.v2i3.126
+
+#### 33. Non-fungible tokens: a bubble or the end of an era of intellectual property rights
+**Authors**: Kraizberg
+**Year**: 2023
+**DOI**: 10.1186/s40854-022-00428-4
+**URL**: https://doi.org/10.1186/s40854-022-00428-4
+
+#### 34. E-COMMERCE OPERATIONS WITH AI-POWERED DATA WAREHOUSES: A CASE STUDY ON CUSTOMER BEHAVIOR ANALYSIS
+**Authors**: Hossen
+**Year**: 2024
+**DOI**: 10.69593/ajsteme.v4i03.96
+**URL**: https://doi.org/10.69593/ajsteme.v4i03.96
+
+#### 35. An Oversubscription and Service Pricing Exploitation-Based Profit Maximization Framework for Industry Cloud Resource Management
+**Authors**: Saxena, Singh
+**Year**: 2024
+**DOI**: 10.1109/TSC.2024.3445379
+**URL**: https://doi.org/10.1109/TSC.2024.3445379
+
+#### 36. Artificial Intelligence in Consumer Decision-Making: A Review of AI-Driven Personalization and Its Managerial Implications
+**Authors**: Leela.Vemula, Telangana, Khatri, Coordinator, Vijayalakshmi, Hatole, India
+**Year**: 2025
+**DOI**: 10.52783/jier.v5i2.2631
+**URL**: https://doi.org/10.52783/jier.v5i2.2631
+
+#### 37. AI revolution in insurance: bridging research and reality
+**Authors**: Bhattacharya, Castignani, Masello, Sheehan
+**Year**: 2025
+**DOI**: 10.3389/frai.2025.1568266
+**URL**: https://doi.org/10.3389/frai.2025.1568266
+
+#### 38. Enhancing Investment Analysis: Optimizing AI-Agent Collaboration in Financial Research
+**Authors**: Han, Wang, Che, Yang, Zhang, Xu
+**Year**: 2024
+**DOI**: 10.1145/3677052.3698645
+**URL**: https://doi.org/10.1145/3677052.3698645
+
+#### 39. Knowledge Sharing in AI Services: A Market-Based Approach
+**Authors**: Mohammed, Naas, Sigg, Francesco
+**Year**: 2023
+**DOI**: 10.1109/JIOT.2022.3206585
+**URL**: https://doi.org/10.1109/JIOT.2022.3206585
+
+#### 40. Adapted smart home services based on smart contracts and service level agreements
+**Authors**: Staifi, Belguidoum
+**Year**: 2021
+**DOI**: 10.1002/cpe.6208
+**URL**: https://doi.org/10.1002/cpe.6208
+
+#### 41. True uncertainty and ethical AI: regulatory sandboxes as a policy tool for moral imagination
+**Authors**: Undheim, Erikson, Timmermans
+**Year**: 2022
+**DOI**: 10.1007/s43681-022-00240-x
+**URL**: https://doi.org/10.1007/s43681-022-00240-x
+
+#### 42. FinRobot: AI Agent for Equity Research and Valuation with Large Language Models
+**Authors**: Zhou, Wang, Wu, Yang
+**Year**: 2024
+**DOI**: 10.48550/arXiv.2411.08804
+**URL**: https://doi.org/10.48550/arXiv.2411.08804
+
+#### 43. Identification of plant compounds that disrupt the insect juvenile hormone receptor complex
+**Authors**: Lee, Oh, Fang, An, Park, Song, Oh, Kim, Kim, Kim, Raikhel, Je, Shin
+**Year**: 2015
+**DOI**: 10.1073/pnas.1424386112
+**URL**: https://doi.org/10.1073/pnas.1424386112
+
+#### 44. AI-DRIVEN INSIGHTS FOR PRODUCT MARKETING: ENHANCING CUSTOMER EXPERIENCE AND REFINING MARKET SEGMENTATION
+**Authors**: Abdullah, Hasan
+**Year**: 2023
+**DOI**: 10.63125/pzd8m844
+**URL**: https://doi.org/10.63125/pzd8m844
+
+#### 45. FUN-Agent: A 2020 HUMAINE Competition Entrant
 **Authors**: Geraghty, Hale, Sen, Kroecker
 **Year**: 2020
 **DOI**: 10.1145/3423325.3423736
 **URL**: https://doi.org/10.1145/3423325.3423736
 
-#### 18. Blockchain and Collaborative Intelligence based next generation Smart Toll Application
-**Authors**: Abraham, Aithal, Mohan
-**Year**: 2020
-**DOI**: 10.1109/BRAINS49436.2020.9223296
-**URL**: https://doi.org/10.1109/BRAINS49436.2020.9223296
-
-#### 19. AI-driven strategic decision-making on innovation: Scalable, ethical approaches and ai agents for startups
-**Authors**: Chinnaraju
+#### 46. Research on AI-Enabling Strategies for OTA Platforms
+**Authors**: Guo
 **Year**: 2025
-**DOI**: 10.30574/wjarr.2025.25.2.0575
-**URL**: https://doi.org/10.30574/wjarr.2025.25.2.0575
+**DOI**: 10.54097/945gaq27
+**URL**: https://doi.org/10.54097/945gaq27
 
-#### 20. The Monetization of AI Products: Based on Closed-Loop Business Models
-**Authors**: Wang, Yu
-**Year**: 2025
-**DOI**: 10.70088/p1nvg868
-**URL**: https://doi.org/10.70088/p1nvg868
+### From Gemini Grounded (3 citations)
 
-#### 21. The future of the industrial AI edge is cellular
-**Authors**: Foukas, Radunovic
-**Year**: 2025
-**DOI**: 10.1145/3708468.3711887
-**URL**: https://doi.org/10.1145/3708468.3711887
-
-#### 22. The image of the Soviet Union in the context of the modern confrontation between the United States and China. The view of the RAND Corporation 2022 (economic and futurological aspects)
-**Authors**: Sperkach
-**Year**: 2024
-**DOI**: 10.26794/2226-7867-2024-14-2-60-65
-**URL**: https://doi.org/10.26794/2226-7867-2024-14-2-60-65
-
-#### 23. Author Correction: AI is a viable alternative to high throughput screening: a 318-target study
-**Authors**: Rosnik, Wallach, Bernard, Nguyen, Ho, Morrison, Stecula, Rosnik, O’Sullivan, Davtyan, Samudio, Thomas, Worley, Butler, Laggner, Thayer, Moharreri, Friedland, Truong, Bedem, Ng, Stafford, Sarangapani, Giesler, Ngo, Mysinger, Ahmed, Anthis, Henriksen, Gniewek, Eckert, Oliveira, Suterwala, PrasadPrasad, Shek, Contreras, Hare, Palazzo, O’Brien, Grack, Williams, Chern, Kenyon, Lee, Cann, Bergman, Anderson, Cox, Warrington, Sorenson, Goldenberg, Young, DeHaan, Pemberton, Schroedl, Abramyan, Gupta, Mysore, Presser, Ferrando, Andricopulo, Ghosh, Ayachi, Mushtaq, Shaqra, Toh, Smrcka, Ciccia, Oliveira, Sverzhinsky, Sousa, Agoulnik, Kushnir, Freiberg, Statsyuk, Gingras, Degterev, Tomilov, Vrielink, Garaeva, Bryant-Friedrich, Caflisch, Patel, Rangarajan, Matheeussen, Battistoni, Caporali, Chini, Ilari, Mattevi, Foote, Trabocchi, Stahl, Herr, Berti, Freywald, Reidenbach, Lam, Cuddihy, White, Taglialatela, Ojha, Cathcart, Motyl, Borowska, D'Antuono, Hirsch, Porcelli, Minakova, Montanaro, Müller, Fiorillo, Virtanen, O’Donoghue, Flores, Garmendia, Pineda-Lucena, Panganiban, Samantha, Chatterjee, Haas, Paparella, John, Prince, ElSheikh, Apfel, Colomba, O’Dea, Diallo, Ribeiro, Bailey-Elkin, Edelman, Liou, Perry, Chua, Kováts, Englinger, Balakrishnan, Gong, Agianian, Pressly, Salas, Duggan, Geisbrecht, Dymock, Morten, Hammock, Mota, Dickinson, Fraser, Lempicki, Novina, Torner, Ballatore, Bon, Chapman, Partch, Chaton, Huang, Yang, Kahler, Karan, Keller, Dieck, Chen, Liu, Peltier, Mantri, Kemet, Müller, Weber, Zeina, Muli, Morisseau, Alkan, Reglero, Loy, Wilson, Myhr, Arrigoni, Paulino, Santiago, Luo, Tumes, Keedy, Lawrence, Chen, Manor, Trader, Hildeman, Drewry, Dowling, Hosfield, Smith, Moreira, Siderovski, Shum, Krist, Riches, Ferraris, Anderson, Coombe, Welsbie, Hu, Ortiz, Alramadhani, Zhang, Chaudhuri, Slotboom, Ronning, Lee, Dirksen, Shoue, Zochodne, Krishnamurthy, Duncan, Glubb, Gelardi, Hsiao, Lynn, Silva, Aguilera, Lenci, Abraham, Lama, Mameli, Leung, Christensen, Mason, Petretto, Trakhtenberg, Rubin, Strauss, Thompson, Cione, Lisabeth, Fan, Kroon, Jo, García-Cuesta, Glukhov, Gavathiotis, Yu, Xiang, Leng, Wang, Ingoglia, Akker, Borriello, Vizeacoumar, Luh, Buckner, Vizeacoumar, Bdira, Svensson, Rodriguez, Bognár, Lembo, Zhang, Dempsey, Eitzen, Mayer, Greene, Garcia, Lukacs, Prikler, Parico, Colotti, Keulenaer, Cortopassi, Roti, Girolimetti, Fiermonte, Gasparre, Leuzzi, Dahal, Michlewski, Conn, Stuchbury, Bowman, Popowicz, Veit, Souza, Akk, Caljon, Alvarez, Rucinski, Lee, Cildir, Li, Breton, Jafar-Nejad, Zhou, Moore, Tilford, Yuan, Shim, Wulff, Hoppe, Chaytow, Tam, Remmen, Xu, Debonsi, Lieberman, Jung, Fan, Feng, Zhou, Kim, Greig, Caliandro, Corvo, Arozarena, Mungrue, Verhamme, Qureshi, Lotsaris, Cakir, Perry, Kwiatkowski, Boorman, Ferreira, Fries, Kratz, Miner, Siqueira-Neto, Granneman, Ng, Shorter, Voss, Gebauer, Chuah, Mousa, Maynes, Evans, Dickhout, MacKeigan, Jossart, Zhou, Lin, Xu, Wang, Zhu, Liao, Xu, Zhao, Lin, Lee, Reis, Stetefeld, Bruning, Bruning, Coles, Tanner, Pascal, So, Pederick, Costoya, Rayman, Maciag, Nasburg, Gruber, Finkelstein, Watkins, Rodríguez-Frade, Arias, Lasarte, Oyarzábal, Milosavljevic, Cools, Lescar, Bogomolovas, Wang, Kee, Kee, Liao, Sistla, Abrahão, Sishtla, Francisco, Hansen, Molyneaux, Cunningham, Martin, Gadar, Ojo, Wong, Wentworth, Lai, Lobb, Hopkins, Parang, Machaca, Pham, Ghilarducci, Sugamori, McManus, Musta, Faller, Nagamori, Mostert, Korotkov, Liu, Smith, Sarosiek, Rohde, Kim, Lee, Pusztai, Lehtiö, Haupt, Cowen, Byrne, Su, Wert-Lamas, Puchades-Carrasco, Chen, Malkas, Zhuo, Hedstrom, Walensky, Antonelli, Iommarini, Whitesell, Randall, Fathallah, Nagai, Kilkenny, Ben-Johny, Lussier, Windisch, Lolicato, Lolli, Vleminckx, Caroleo, Macias, Valli, Barghash, Mellado, Tye, Wilson, Hannink, Ashton, Cerna, Giorgis, Safo, Maurice, McDowell, Pasquali, Mehedi, Serafim, Soellner, Alteen, Champion, Skorodinsky, O’Mara, Bedi, Rizzi, Levin, Mowat, Jackson, Paige, Al-Yozbaki, Giardini, Maksimainen, Luise, Hussain, Christodoulides, Stec, Zelinskaya, Pelt, Merrill, Singh, Kootstra, Singh, Gandhi, Chan, Trinh, Schneider, Matovic, Horstmann, Longo, Bharambe, Rouzbeh, Mahmoodi, Gumede, Anastasio, Khalaf, Rabal, Kandror, Escaffre, Silvennoinen, Bishop, Iglesias, Sobrado, Chuong, O’Connell, Martin-Malpartida, Mellor
-**Year**: 2024
-**DOI**: 10.1038/s41598-024-70321-w
-**URL**: https://doi.org/10.1038/s41598-024-70321-w
-
-#### 24. Using Generative AI to Uncover What Drives Player Enjoyment in PC and VR Games
-**Authors**: Abdelqader
-**Year**: 2025
-**DOI**: 10.48550/arXiv.2508.16596
-**URL**: https://doi.org/10.48550/arXiv.2508.16596
-
-#### 25. HELIX: Autonomous AI Agent
-**Authors**: Shinde, Paradkar, Vig, Thalnerkar, Jain
-**Year**: 2024
-**DOI**: 10.22214/ijraset.2024.61080
-**URL**: https://doi.org/10.22214/ijraset.2024.61080
-
-#### 26. Role of Artificial Intelligence in Modern Retail Management
-**Authors**: Gahlawat
-**Year**: 2025
-**DOI**: 10.62823/ijgrit/03.2(ii).7755
-**URL**: https://doi.org/10.62823/ijgrit/03.2(ii).7755
-
-#### 27. Explainable AI In E-Commerce: Enhancing Trust And Transparency In AI-Driven Decisions
-**Authors**: Sarkar
-**Year**: 2024
-**DOI**: 10.70937/itej.v2i01.53
-**URL**: https://doi.org/10.70937/itej.v2i01.53
-
-#### 28. PACT: A Contract-Theoretic Framework for Pricing Agentic AI Services Powered by Large Language Models
-**Authors**: Yang, Zhu
-**Year**: 2025
-**DOI**: 10.48550/arXiv.2505.21286
-**URL**: https://doi.org/10.48550/arXiv.2505.21286
-
-#### 29. Optimal Transmission Expansion Planning in Deregulated Power Markets Using AI-Enhanced Cost-Based Pricing
-**Authors**: Bhusan, Tomar, Narayankhedkar
-**Year**: 2024
-**DOI**: 10.1109/CSNT60213.2024.10545953
-**URL**: https://doi.org/10.1109/CSNT60213.2024.10545953
-
-#### 30. Mobility as a Service—Stakeholders’ Challenges and Potential Implications
-**Authors**: Kostiainen, Tuominen
-**Year**: 2018
-**DOI**: 10.1007/978-3-319-99756-8_16
-**URL**: https://doi.org/10.1007/978-3-319-99756-8_16
-
-#### 31. Empowerment of Porang Farmers Through the Performance of Agricultural Extension in Increasing Economic Value in Rejosari Village, Bantur District, Malang Regency, East Java, Indonesia
-**Authors**: Arifin, Musniati, Rihi
-**Year**: 2023
-**DOI**: 10.36877/mjae.a0000433
-**URL**: https://doi.org/10.36877/mjae.a0000433
-
-### From Gemini Grounded (20 citations)
-
-#### 1. togai.com
-**Authors**: togai.com
+#### 1. theregister.com
+**Authors**: theregister.com
 **Year**: 2025
 **DOI**: 
-**URL**: https://www.togai.com/blog/generative-ai-pricing-strategies/
+**URL**: https://www.theregister.com/2025/10/09/mckinsey_ai_monetization/
 
-#### 2. constellationr.com
-**Authors**: constellationr.com
+#### 2. 2021.ai
+**Authors**: 2021.ai
 **Year**: 2025
 **DOI**: 
-**URL**: https://www.constellationr.com/blog-news/insights/ai-agents-bring-consumption-models-saas-goldilocks-or-headache
+**URL**: https://2021.ai/news/understanding-the-eu-ai-act-penalties-and-achieving-regulatory-compliance
 
-#### 3. gurustartups.com
-**Authors**: gurustartups.com
+#### 3. europa.eu
+**Authors**: europarl.europa.eu
 **Year**: 2025
 **DOI**: 
-**URL**: https://www.gurustartups.com/reports/revenue-models-in-the-ai-api-economy
+**URL**: https://www.europarl.europa.eu/doceo/document/A-10-2025-0225_EN.html
 
-#### 4. getmonetizely.com
-**Authors**: getmonetizely.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.getmonetizely.com/articles/how-to-implement-value-based-pricing-for-ai-customer-service-agents-a-strategic-guide
+---
 
-#### 5. getmonetizely.com
-**Authors**: getmonetizely.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.getmonetizely.com/articles/genai-pricing-models-from-tokens-to-outcomes
+## Failed Topics
 
-#### 6. themoonlight.io
-**Authors**: themoonlight.io
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.themoonlight.io/en/review/ten-principles-of-ai-agent-economics
+The following topics did not return valid citations:
 
-#### 7. Source
-**Authors**: mckinsey.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-api-led-growth-engine-driving-value-with-apis
-
-#### 8. Source
-**Authors**: mckinsey.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/upgrading-software-business-models-to-thrive-in-the-ai-era](https://www.mckinsey.com/capabilities/growth-marketing-and-sales/our-insights/upgrading-software-business-models-to-thrive-in-the-ai-era
-
-#### 9. zdnet.com
-**Authors**: zdnet.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.zdnet.com/article/gartner-says-add-ai-agents-in-the-next-6-months-or-else-oh-and-theyre-also-overhyped/
-
-#### 10. Source
-**Authors**: bcg.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.bcg.com/publications/2023/value-based-pricing-for-ai
-
-#### 11. digitalgovernmenthub.org
-**Authors**: digitalgovernmenthub.org
-**Year**: 2025
-**DOI**: 
-**URL**: https://digitalgovernmenthub.org/library/oecd-framework-for-the-classification-of-ai-systems/
-
-#### 12. ceps.eu
-**Authors**: ceps.eu
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.ceps.eu/clarifying-the-costs-for-the-eus-ai-act/
-
-#### 13. ispartnersllc.com
-**Authors**: ispartnersllc.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.ispartnersllc.com/hubs/nist-ai-rmf/process-timeline-cost/
-
-#### 14. ieee.org
-**Authors**: standards.ieee.org
-**Year**: 2025
-**DOI**: 
-**URL**: https://standards.ieee.org/products-programs/icap/ieee-certifaied/professional-certification/
-
-#### 15. brookings.edu
-**Authors**: brookings.edu
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.brookings.edu/articles/balancing-market-innovation-incentives-and-regulation-in-ai-challenges-and-opportunities/
-
-#### 16. engage3.com
-**Authors**: engage3.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.engage3.com/2025/03/the-future-of-ai-pricing-with-engage3/
-
-#### 17. pwc.com
-**Authors**: pwc.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.pwc.com/gx/en/issues/business-model-reinvention/nine-ai-business-models.html
-
-#### 18. weforum.org
-**Authors**: weforum.org
-**Year**: 2025
-**DOI**: 
-**URL**: https://www.weforum.org/stories/2024/09/ai-governance-trends-to-watch/
-
-#### 19. futureiot.tech
-**Authors**: futureiot.tech
-**Year**: 2025
-**DOI**: 
-**URL**: https://futureiot.tech/ai-iot-and-edge-to-transform-digital-banking/
-
-#### 20. idc.com
-**Authors**: blogs.idc.com
-**Year**: 2025
-**DOI**: 
-**URL**: https://blogs.idc.com/2025/10/08/ai-everywhere-value-nowhere-why-pricing-innovation-matters/
+- "hybrid pricing models AI services" academic

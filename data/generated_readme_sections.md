@@ -14,7 +14,7 @@
 |--------|-------|
 | 🤖 **AI Agents** | 15 specialized agents |
 | 📚 **Research Papers** | 200M+ accessible |
-| ✅ **Citation Success** | 95.2%+ accuracy |
+| ✅ **Citation Success** | 95%+ accuracy |
 | ⚡ **Generation Speed** | 20-25 min (20k words) |
 | 📄 **Export Formats** | PDF, DOCX, LaTeX |
 | 🧪 **Test Coverage** | 100% (70+ tests) |
@@ -70,7 +70,7 @@
   </tr>
   <tr>
     <td><strong>🔬 Citation Management</strong></td>
-    <td align="center">✅ <code>Auto-verify + 95.2% success</code></td>
+    <td align="center">✅ <code>Auto-verify + 95% success</code></td>
     <td align="center">⚠️ Basic</td>
     <td align="center">❌ None</td>
     <td align="center">❌ Often wrong</td>

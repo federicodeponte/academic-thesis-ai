@@ -1,145 +1,149 @@
 # Critical Review Report
 
 **Reviewer Stance:** Constructively Critical
-**Overall Assessment:** Reject and Resubmit (after major revisions)
+**Overall Assessment:** Accept with Major Revisions
 
 ---
 
 ## Summary
 
 **Strengths:**
--   **Comprehensive Coverage:** The review provides a broad overview of token-based, usage-based, and value-based pricing models, including their theoretical underpinnings, advantages, and disadvantages.
--   **Clear Structure:** The section is well-organized, progressing logically from general AI agent emergence to specific pricing models and a comparative analysis.
--   **Relevant Examples:** The discussion includes pertinent examples from leading AI providers (OpenAI, Anthropic) and cloud services (AWS, Azure, GCP).
--   **Integration of Broader AI Context:** The review effectively links pricing models to broader considerations like architectural design, ethical implications, and market dynamics.
+- **Comprehensive Coverage:** The review covers a broad and relevant landscape, from the emergence of AI agents to specific pricing models and their economic/societal implications.
+- **Clear Structure:** The paper is well-organized with logical section breaks, making it easy to follow the progression of arguments.
+- **Insightful Gap Identification:** The "Synthesis and Gaps" section is particularly strong, articulating specific and relevant areas for future research that logically follow from the preceding discussion.
+- **Balanced Perspective:** The review effectively discusses both the advantages and challenges/concerns associated with AI agents and dynamic pricing strategies, including ethical and societal considerations.
 
-**Critical Issues:** 3 major, 4 moderate, 5 minor
-**Recommendation:** This section requires significant revisions, particularly concerning academic integrity and the treatment of future/unpublished work, before it can be considered for publication.
+**Critical Issues:** 8 major (due to missing citations for foundational claims), 2 moderate, 1 minor.
+**Recommendation:** Significant revisions are needed, especially regarding the missing citations and strengthening certain arguments.
 
 ---
 
 ## MAJOR ISSUES (Must Address)
 
-### Issue 1: Reliance on Future/Unpublished Works
-**Location:** Throughout sections 2.1, 2.5, 2.6
-**Problem:** The literature review heavily cites papers from 2024 and 2025 (e.g., Ranjan, Chembachere et al. (2025), Sanabria and Vecino (2024), Sharma (2024), Rossi (2024), Gupta (2025)). In a traditional literature review, citing work that is not yet published (or explicitly stated as a pre-print/accepted for publication) is highly problematic. It either suggests speculation, potential hallucination of sources, or an inappropriate reliance on un-peer-reviewed or unestablished material.
-**Evidence:** Specific citations to years *after* the current year (assuming 2023 or earlier as current). For instance, "Ranjan, Chembachere et al. (2025) propose a 'Well-Architected Framework'..."
-**Fix:**
-1.  **Remove or Justify:** Remove all citations to future-dated papers. If these are pre-prints (e.g., arXiv) or "accepted for publication" works, this *must* be explicitly stated, along with a rationale for their inclusion (e.g., "This review includes select pre-print works [cite_X] that offer novel perspectives on emerging topics...").
-2.  **Re-evaluate Content:** The discussion points derived from these future works must be re-evaluated. Speculating on the content of future papers ("The paper likely delves into...") is inappropriate.
-**Severity:** 🔴 High - **Affects academic integrity and the foundational credibility of the literature review.**
+### Issue 1: Missing Foundational Economic Citations
+**Location:** "Foundations of Dynamic Pricing" section, para 1
+**Claim:** "The theoretical underpinnings of dynamic pricing draw heavily from microeconomics, particularly concepts of supply and demand elasticity, consumer surplus, and revenue management {cite_MISSING: classic economics papers on dynamic pricing}."
+**Problem:** This is a foundational claim for the entire section, yet it lacks specific academic support. Classic works in economics that establish these principles are essential.
+**Fix:** Add citations to seminal works in microeconomics and revenue management (e.g., studies by K. Arrow, W. Baumol, R. Schmalensee, etc., or foundational textbooks that cover these concepts).
+**Severity:** 🔴 High - affects academic rigor and foundational claims.
 
-### Issue 2: Overclaim of "Greatest Potential" for VBP without Sufficient Practical Solutions
-**Location:** Section 2.4 (Conclusion), Section 2.5.2 (Advantages of Value-Based Pricing)
-**Claim:** "Value-based pricing holds the greatest potential for AI agents..."
-**Problem:** While the theoretical advantages of VBP are well-articulated, the review simultaneously highlights that "the quantification of value for AI agents is notoriously challenging" and "defining and measuring these outcomes, as well as establishing causality, can be intricate." The leap from theoretical "potential" to practical "greatest potential" is an overclaim when the central practical hurdle remains largely unsolved or discussed more theoretically than practically within the review itself.
-**Evidence:** The repeated emphasis on the difficulties of value quantification (e.g., "notoriously challenging," "context-dependent," "difficult to isolate," "perceptual and subjective," "dynamic").
-**Fix:** Hedge the claim about "greatest potential" to reflect the significant practical challenges. For example, "Value-based pricing *theoretically offers the greatest potential*..." or "VBP presents *significant opportunities for value capture*, though substantial challenges in quantification remain." Alternatively, strengthen the discussion of *practical methodologies* and successful case studies (even if nascent) for overcoming the quantification challenges.
-**Severity:** 🔴 High - **Affects the balance and realism of the paper's central argument regarding pricing models.**
+### Issue 2: Missing Data Requirements Citations for Dynamic Pricing
+**Location:** "Foundations of Dynamic Pricing" section, para 2
+**Claim:** "The effectiveness of dynamic pricing models is contingent upon several factors, including the availability of granular data, the ability to predict demand accurately, and the flexibility to adjust prices seamlessly {cite_MISSING: papers on data requirements for dynamic pricing}."
+**Problem:** Another foundational claim regarding the practical requirements for dynamic pricing lacks specific academic backing.
+**Fix:** Provide citations to research papers or industry analyses that discuss the data infrastructure and analytical capabilities needed for effective dynamic pricing.
+**Severity:** 🔴 High - affects academic rigor and foundational claims.
 
-### Issue 3: Speculative Language Regarding Future Work's Content
-**Location:** Section 2.6 (e.g., referencing Sharma (2024), Sanabria and Vecino (2024))
-**Claim:** "Sharma (2024) directly tackles 'AI Monetization: Strategies for Profitable Innovation,' offering a comprehensive overview... The paper likely delves into how different types of AI capabilities..."
-**Problem:** The review makes definitive statements about the content and likely scope of papers that are dated for future publication. This is inappropriate for a literature review, which should synthesize *existing* and *established* knowledge, not predict the content of future research.
-**Evidence:** Phrases like "The paper likely delves into...", "This implies that pricing for AI agents might not always be a simple bilateral transaction...", "Their work suggests that traditional pricing models may not adequately capture..." when referring to future-dated papers.
-**Fix:** Remove all speculative language about the content of future papers. If a future paper is retained (due to being a pre-print, for example), its contribution should be described based on what is *actually present* in the pre-print, not on what it "likely" contains.
-**Severity:** 🔴 High - **Undermines the scholarly rigor and objectivity of the review.**
+### Issue 3: Missing Specific Examples for Token-Based Pricing
+**Location:** "Token-Based Pricing Models" section, para 1
+**Claim:** "For instance, platforms like OpenAI and Anthropic employ token-based systems, where the cost is directly proportional to the length of the input prompt and the generated output {cite_MISSING: OpenAI/Anthropic pricing documentation}."
+**Problem:** While widely known, specific academic papers or official documentation links are required to support this factual claim about current industry practices.
+**Fix:** Replace `{cite_MISSING: OpenAI/Anthropic pricing documentation}` with actual citations to their official pricing pages or relevant academic analyses of their models.
+**Severity:** 🔴 High - affects verifiability and academic integrity.
+
+### Issue 4: Missing Citations for Prompt Engineering Cost Optimization
+**Location:** "Token-Based Pricing Models" section, para 3
+**Claim:** "Users must learn to engineer prompts effectively to optimize for both quality and cost {cite_MISSING: articles on prompt engineering for cost optimization}."
+**Problem:** This is a key practical implication of token-based pricing, but it's presented without specific supporting literature.
+**Fix:** Add citations to articles, research papers, or best practice guides on prompt engineering that discuss cost considerations.
+**Severity:** 🔴 High - affects verifiability and practical relevance.
+
+### Issue 5: Missing Specific Examples for Usage-Based Pricing
+**Location:** "Usage-Based Pricing Models" section, para 1
+**Claim:** "This model is ubiquitous in cloud computing, where services like AWS, Google Cloud, and Azure bill users for compute instances, storage, data transfer, and API calls based on specific metrics {cite_MISSING: AWS/Azure pricing documentation}."
+**Problem:** Similar to Issue 3, this factual claim about common cloud pricing models requires specific academic or official documentation citations.
+**Fix:** Replace `{cite_MISSING: AWS/Azure pricing documentation}` with actual citations to their official pricing pages or relevant academic analyses.
+**Severity:** 🔴 High - affects verifiability and academic integrity.
+
+### Issue 6: Missing Foundational VBP Theory Citation
+**Location:** "Value-Based Pricing Theory" section, para 1
+**Claim:** "This approach shifts the focus from internal costs to external customer benefits, aiming to capture a portion of the economic value that the customer derives from the offering {cite_MISSING: Nagle & Holden - Strategy and Tactics of Pricing}."
+**Problem:** Nagle and Holden's work is a cornerstone of value-based pricing theory. Omitting its specific citation here is a significant oversight for a literature review.
+**Fix:** Add the full citation for "The Strategy and Tactics of Pricing" by Nagle and Holden.
+**Severity:** 🔴 High - affects academic rigor and foundational claims.
+
+### Issue 7: Missing Empirical Analysis of LLM Pricing Models
+**Location:** "Comparative Analysis of Pricing Models" section, para 2
+**Claim:** "Its main drawback is the potential for token inefficiency and the abstraction of "token" from perceived value, which can lead to a disconnect for end-users {cite_MISSING: analysis of LLM pricing models}."
+**Problem:** This claim about drawbacks of token-based pricing in LLMs, particularly regarding the value disconnect, needs specific research or analyses to back it up.
+**Fix:** Provide citations to academic or industry analyses that empirically or theoretically discuss the limitations and challenges of token-based pricing for LLMs.
+**Severity:** 🔴 High - affects verifiability and depth of analysis.
+
+### Issue 8: Missing Citations for AI and Future of Work
+**Location:** "Economic and Societal Implications of AI-Driven Dynamic Pricing" section, para 6
+**Claim:** "While AI can create new job categories, it also displaces others, leading to a need for robust social safety nets and educational reforms {cite_MISSING: literature on AI and future of work}."
+**Problem:** This is a major area of discussion in AI ethics and economics, and a strong claim like this requires substantial academic support.
+**Fix:** Add citations to key literature on the impact of AI on labor markets, job displacement, and future of work (e.g., works by Autor, Acemoglu & Restrepo, Frey & Osborne, etc.).
+**Severity:** 🔴 High - affects academic rigor and comprehensive coverage.
 
 ---
 
 ## MODERATE ISSUES (Should Address)
 
-### Issue 4: Limited Critical Engagement with Existing Literature
-**Location:** Throughout the comparative analysis and related work sections
-**Problem:** The review primarily summarizes the pros and cons of different pricing models and concepts from various papers. However, it lacks deeper critical engagement with the *arguments, methodologies, or potential limitations* of the cited literature itself. It doesn't highlight debates, contradictions, or specific gaps *within* the existing scholarship that the paper aims to address.
-**Missing:** Analysis of how different researchers might disagree on the applicability or effectiveness of models, or how certain studies might have methodological limitations that affect their conclusions on pricing.
-**Fix:** Incorporate more critical analysis of the cited works. For example, "While Smith et al. [X] advocate for token-based pricing due to its direct cost alignment, Jones et al. [Y] argue that its lack of value correlation ultimately limits its long-term viability for complex AI agents."
-**Severity:** 🟡 Moderate - **Reduces the "critical" aspect of the review.**
+### Issue 9: Weak Evidence for Value-Based Pricing in AI
+**Location:** "Value-Based Pricing Theory" section, para 2 and "Comparative Analysis" section, para 3
+**Problem:** The citation {cite_035} (nuclear medical services) is used to support the applicability of VBP in high-value, specialized domains. While conceptually correct for VBP generally, its direct relevance to *AI services* is weak. This creates a logical leap in applying a general VBP principle to the specific context of AI without strong AI-specific examples or discussions.
+**Fix:** Either replace or supplement `cite_035` with examples or studies that specifically discuss value-based pricing in the context of AI services or other software/intangible high-tech offerings. If no direct AI VBP papers exist, acknowledge this gap explicitly and explain why general VBP principles are being extrapolated.
+**Severity:** 🟡 Moderate - weakens the direct argument for VBP in AI.
 
-### Issue 5: Vague Link between Architectural Framework and Pricing Strategy
-**Location:** Section 2.5.3 and 2.6 (referencing Ranjan, Chembachere et al. (2025))
-**Claim:** "The architectural choices made during the development of an AI agent thus have direct implications for its monetization strategy."
-**Problem:** While this is a logically sound claim, the discussion remains generic. It states that efficiency leads to competitive pricing or that reliability justifies a premium, but it doesn't delve into *specific* architectural design patterns or features that directly enable or constrain particular pricing models in a nuanced way.
-**Missing:** Concrete examples or deeper analysis of how specific architectural decisions (e.g., modularity, distributed processing, specific security protocols) translate into distinct pricing opportunities or challenges.
-**Fix:** If the future citation is removed, this point needs to be supported by existing literature or rephrased as a general observation. If retained (as a pre-print), provide more specific examples of the link.
-**Severity:** 🟡 Moderate - **The connection is asserted but not deeply explored.**
-
-### Issue 6: Insufficient Depth on Ethical Implications of Dynamic/Personalized Pricing
-**Location:** Section 2.5.3 (Challenges of Dynamic Pricing) and Section 2.6 (Societal and ethical discussions)
-**Problem:** While the review mentions "fairness concerns" and "regulatory scrutiny" for dynamic pricing, and broader ethical concerns for AI, it doesn't deeply explore the specific ethical implications of *AI-driven personalized and dynamic pricing models*. Given AI's capabilities, this area warrants more detailed discussion (e.g., price discrimination, algorithmic bias in pricing, access equity).
-**Missing:** A dedicated paragraph or subsection exploring the specific ethical dilemmas arising from AI agents setting prices in real-time or personalizing them for users.
-**Fix:** Expand this discussion to include concrete ethical challenges and potential safeguards or regulatory responses related to dynamic and personalized pricing by AI agents.
-**Severity:** 🟡 Moderate - **Misses an important nuance given the capabilities of AI agents.**
-
-### Issue 7: Limited Discussion of Competitive Landscape and Open-Source Impact
-**Location:** Section 2.6
-**Problem:** The "Related Work" section touches upon market mechanisms and intercompany services but doesn't explicitly discuss how the current competitive landscape (e.g., dominance of a few large foundation model providers) or the rise of open-source AI models impacts the viability and strategic choice of pricing models.
-**Missing:** Analysis of how market concentration, network effects, or the availability of free/low-cost open-source alternatives influence the pricing power and strategies of proprietary AI agent providers.
-**Fix:** Add a subsection or expand existing paragraphs to address these critical market dynamics. How do these factors influence the feasibility of value-based pricing or the competitiveness of token/usage-based models?
-**Severity:** 🟡 Moderate - **Omits significant external factors shaping AI monetization.**
+### Issue 10: Missing Methodology for Literature Selection
+**Location:** Overall review
+**Problem:** As a literature review, there is no explicit mention of the methodology used for selecting the literature. This includes how papers were searched for, inclusion/exclusion criteria, and the scope of databases or journals consulted. Without this, the review's comprehensiveness and potential biases are unknown.
+**Fix:** Add a brief section (e.g., in the introduction or a dedicated "Methodology" subsection) explaining the search strategy, keywords used, databases consulted, and any criteria for selecting papers.
+**Severity:** 🟡 Moderate - affects the methodological rigor and transparency of the review.
 
 ---
 
 ## MINOR ISSUES
 
-1.  **Repetitive Phrasing:** Phrases like "economic implications," "monetization of AI agents," and "notoriously challenging" are used frequently. (Tone & Presentation)
-2.  **"Seemingly Transparent Method" (Section 2.2):** While hedged, the initial description of token-based pricing as "seemingly transparent" could be immediately followed by a brief explanation of why, to avoid ambiguity before the detailed criticisms. (Clarity)
-3.  **Generalizability of Cloud Lessons (Section 2.3):** While cloud computing provides a "strong foundation," the review could briefly acknowledge that AI agents introduce novel complexities not fully covered by traditional cloud models beyond just tokenization (e.g., emergent behavior, ethical considerations in output). (Nuance)
-4.  **Vague Claims without Specificity:** "substantially better" (if used), "reasonable performance" - ensure such terms are either quantified or removed. (Clarity)
-5.  **Unsubstantiated Implicit Claims:** "widely recognized" - if a claim is presented as widely recognized, a citation should ideally support that recognition, not just the claim itself. (Claim Strength)
+1.  **Overly Strong Claim:** In "Foundations of Dynamic Pricing," para 3, the phrase "unprecedented accuracy" for AI algorithms determining optimal prices is a strong claim. While AI offers significant improvements, "unprecedented" can be difficult to definitively prove.
+    **Fix:** Consider hedging to "significantly improved accuracy" or "enhanced accuracy."
 
 ---
 
 ## Logical Gaps
 
-### Gap 1: Over-Reliance on Theoretical Potential for VBP
-**Location:** Section 2.4, Conclusion
-**Logic:** VBP "holds the greatest potential" → despite being "notoriously challenging" to quantify value.
-**Missing:** A stronger bridge between the theoretical potential and concrete, practical strategies (or even nascent successes) for *overcoming* the quantification and causality challenges in real-world AI agent deployments. The conclusion feels like a hopeful assertion rather than a fully justified outcome given the acknowledged difficulties.
-**Fix:** Either temper the "greatest potential" claim or provide more robust examples/discussions of how these challenges are currently being addressed in practice or proposed in actionable research (from *published* works).
-
-### Gap 2: Limited Discussion of Incentive Misalignment Resolution
-**Location:** Section 2.3 (Usage-Based Pricing), Section 2.5.2 (Disadvantages of Consumption-Based)
-**Logic:** Usage-based pricing "might not always incentivize the most efficient use of AI agents" or may "incentivize users to minimize usage rather than maximize value."
-**Missing:** A deeper discussion on *how providers are attempting to mitigate this incentive misalignment* within consumption-based models, or how hybrid models specifically address this. The problem is identified, but the solutions or ongoing efforts to resolve it are not adequately explored.
-**Fix:** Add a paragraph on how providers are using model design, tiered pricing, or bundling to better align incentives within consumption-based frameworks.
+### Gap 1: Nuance in "Transparency" of Token-Based Pricing
+**Location:** "Token-Based Pricing Models," para 2
+**Logic:** The claim states token-based pricing offers "transparency and direct correlation with computational effort." However, later in the same section, it acknowledges that "Different models may have different tokenization schemes, leading to inconsistencies in pricing across platforms." This creates a slight logical tension where the initial claim of transparency is somewhat undermined by the later point without sufficient reconciliation.
+**Missing:** A more nuanced initial statement about transparency.
+**Fix:** Rephrase to acknowledge the *potential* for transparency while immediately introducing the complexities of varying tokenization schemes. E.g., "While token-based pricing *aims for* transparency through direct correlation with computational effort, the actual transparency to end-users can be complicated by varying tokenization schemes across models..."
 
 ---
 
-## Methodological Concerns (for a Literature Review)
+## Methodological Concerns (Adapted for Literature Review)
 
-### Concern 1: Lack of Stated Scope and Inclusion Criteria
-**Issue:** The literature review does not explicitly state its scope, the databases searched, or the criteria used for including/excluding papers.
-**Risk:** Appears arbitrary; difficult for readers to assess comprehensiveness or potential bias.
-**Reviewer Question:** "How were these papers selected? What are the boundaries of this review?"
-**Suggestion:** Add a brief paragraph at the beginning of the section outlining the scope, search strategy (e.g., keywords, databases, time frame), and selection criteria.
+### Concern 1: Scope of Evidence for Dynamic Pricing in AI
+**Issue:** While the review cites general dynamic pricing principles, the direct evidence or specific examples of *AI-driven* dynamic pricing in practice (beyond LLMs) could be expanded. The focus shifts heavily to LLMs for token-based, and general cloud for usage-based.
+**Risk:** The reader might perceive a lack of concrete examples for AI-driven dynamic pricing beyond the most obvious LLM/cloud contexts.
+**Reviewer Question:** "Are there more examples of AI agents driving dynamic pricing in other sectors (e.g., manufacturing, logistics, healthcare) beyond the mentioned e-commerce/finance, to truly demonstrate the breadth of 'AI-driven dynamic pricing'?"
+**Suggestion:** If available, integrate more diverse AI-driven dynamic pricing case studies or theoretical applications from other industries.
 
 ---
 
 ## Missing Discussions
 
-1.  **Specific Regulatory Frameworks:** Beyond general ethical concerns, specific regulatory discussions (e.g., AI Acts, data privacy laws like GDPR/CCPA) impacting data usage for pricing, explainability requirements for AI-driven pricing decisions, or accountability for pricing algorithms.
-2.  **Failure Cases/Limitations of Each Model:** While disadvantages are listed, a more explicit discussion of *when* each model definitively fails or is unsuitable for certain AI agent types or use cases would be beneficial.
-3.  **Long-Term Impact on Innovation:** How do these pricing models, particularly VBP or highly dynamic models, impact the broader innovation ecosystem for AI agents? Do they encourage or stifle experimentation?
-4.  **Operationalization Challenges of Hybrid Models:** While hybrid models are proposed as a solution, the complexities of integrating and managing multiple pricing components, and the potential for user confusion, could be discussed.
+1.  **Interplay of Pricing Models in Complex AI Agents:** While hybrid models are mentioned, a deeper discussion on *how* a single, complex AI agent (e.g., one with perception, reasoning, and action modules) might dynamically switch or combine pricing elements within its own operation could be valuable.
+2.  **Challenges in Measuring Value for VBP:** Beyond quantifying value, the discussion could delve into the practical difficulties of *agreeing* on value metrics with clients, potential for disputes, and the need for robust legal/contractual frameworks for VBP in AI.
+3.  **Governance of Pricing Algorithms:** While ethical concerns are raised, a specific discussion on the technical and policy mechanisms (e.g., explainable AI for pricing, auditing frameworks, regulatory sandboxes for pricing models) to govern dynamic pricing algorithms would strengthen the practical implications.
+4.  **Competitive Landscape and Market Power:** A more explicit discussion on how AI-driven dynamic pricing might lead to increased market concentration or impact competition, especially for smaller players or new entrants, could be beneficial.
 
 ---
 
 ## Tone & Presentation Issues
 
-1.  **Overly Confident Language (in places):** While generally balanced, certain phrases could be softened (e.g., "clearly demonstrates" → "suggests," "profound shift" → "significant shift").
-2.  **Repetitive Use of Adjectives:** "Notoriously challenging," "far-reaching," "immense opportunities" are effective but lose impact with overuse.
-3.  **Passive Voice:** Some sentences could benefit from more active voice for stronger impact.
+1.  **Repetitive Phrase:** The phrase "The complexity of these systems, their learning capabilities, and their increasing integration into economic processes demand a sophisticated approach..." or similar variations appear in multiple concluding sentences for sections. While true, varying the phrasing could improve flow.
+    **Fix:** Review and rephrase similar concluding sentences to avoid repetition.
 
 ---
 
 ## Questions a Reviewer Will Ask
 
-1.  "Why are so many 2024/2025 papers cited as established literature? Are these pre-prints, and if so, is their inclusion justified and clearly stated?"
-2.  "Given the acknowledged difficulty in quantifying value for AI agents, can you provide concrete examples of how companies are practically implementing value-based pricing, or what research is proposing actionable methods?"
-3.  "How do the dynamics of the open-source AI community and the availability of open models (e.g., Llama 2, Falcon) influence the monetization strategies discussed for proprietary AI agents?"
-4.  "Could you expand on the specific ethical concerns and potential for bias in AI-driven dynamic and personalized pricing, and how these might be mitigated?"
-5.  "What are the key differences or challenges in applying these pricing models to different *types* of AI agents (e.g., generative vs. predictive vs. autonomous decision-making agents)?"
+1.  "Given the numerous `cite_MISSING` tags, how thoroughly was the literature search conducted, and what steps will be taken to ensure all claims are properly supported?"
+2.  "Can you elaborate on the methodology used to select the literature for this review?"
+3.  "Beyond the conceptual application, what are concrete, empirical examples of value-based pricing being successfully implemented for AI services?"
+4.  "How do you propose to address the 'black box' problem in AI-driven dynamic pricing to ensure fairness and regulatory compliance?"
+5.  "What are the specific trade-offs and challenges when designing a hybrid pricing model for a multi-functional AI agent?"
 
 **Prepare answers or add to paper**
 
@@ -148,13 +152,12 @@
 ## Revision Priority
 
 **Before resubmission:**
-1.  🔴 **Fix Issue 1 (Future/Unpublished Citations):** This is paramount for academic integrity. Address all 2024/2025 citations.
-2.  🔴 **Resolve Issue 2 & Logical Gap 1 (VBP Overclaim vs. Challenges):** Reconcile the "greatest potential" claim with the practical difficulties of value quantification.
-3.  🔴 **Address Issue 3 (Speculative Language):** Remove all predictive statements about the content of future papers.
-4.  🟡 **Address Issue 4 (Limited Critical Engagement):** Incorporate more critical analysis of the existing literature itself.
-5.  🟡 **Address Issue 6 & Missing Discussion 1 (Ethical Implications of Dynamic Pricing):** Expand this crucial area.
-6.  🟡 **Address Issue 7 & Missing Discussion 3 (Competitive Landscape/Open Source):** Integrate these market dynamics.
+1.  🔴 **Address all `cite_MISSING` tags (Issues 1-8).** This is paramount for academic integrity and forms the most critical part of the revision.
+2.  🟡 **Strengthen evidence for VBP in AI (Issue 9).** Find more relevant citations or explicitly acknowledge the gap.
+3.  🟡 **Add a clear methodology for literature selection (Issue 10).** This adds significant rigor to the review.
+4.  🟡 **Refine the logical flow regarding token-based pricing transparency (Logical Gap 1).**
+5.  🟢 **Review and address minor wording/tone issues.**
 
 **Can defer:**
--   Minor wording and stylistic issues (addressed during overall revision).
--   Some additional discussions (can be noted as future work if not critical for the current scope).
+- Expanding on more diverse AI-driven dynamic pricing examples (Methodological Concern 1) could be a longer-term goal if data is hard to find, but even a brief mention of this as a future research need would be good.
+- Deeper dives into missing discussions (e.g., specific governance mechanisms, market power implications) can be integrated as feasible or explicitly stated as areas for future work.

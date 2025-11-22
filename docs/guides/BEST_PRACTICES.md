@@ -1,25 +1,36 @@
-# Best Practices Guide
+# Best Practices for Responsible AI-Assisted Academic Writing
 
-**Maximize quality and minimize cost when using Academic Thesis AI**
+**Academic Thesis AI** is designed to be a research assistant, not a replacement for scholarship. This guide helps you use AI responsibly while maintaining academic integrity.
 
-This guide shares lessons learned from 127 beta users and 111,665 words of generated theses.
+**Based on:** 4 production theses and 111,665 words of generated content
 
 ---
 
 ## 📋 Table of Contents
 
-1. [Before You Start](#before-you-start)
-2. [Research Phase](#research-phase)
-3. [Writing Phase](#writing-phase)
-4. [Quality Assurance](#quality-assurance)
-5. [Cost Optimization](#cost-optimization)
-6. [Academic Integrity](#academic-integrity)
-7. [Common Pitfalls](#common-pitfalls)
-8. [Advanced Tips](#advanced-tips)
+1. [Core Principle](#core-principle)
+2. [Working with Your Advisor](#1-working-with-your-advisor)
+3. [Revising AI-Generated Drafts](#2-revising-ai-generated-drafts)
+4. [Avoiding Plagiarism](#3-avoiding-plagiarism)
+5. [When to Use AI vs When to Write Yourself](#4-when-to-use-ai-vs-when-to-write-yourself)
+6. [Quality Control Checklist](#5-quality-control-checklist)
+7. [Citation Verification Workflow](#6-citation-verification-workflow)
+8. [Maintaining Academic Rigor](#7-maintaining-academic-rigor)
+9. [Institutional Compliance](#8-institutional-compliance)
+10. [When NOT to Use This Tool](#9-when-not-to-use-this-tool)
+11. [Getting Help](#10-getting-help)
 
 ---
 
-## 🎯 Before You Start
+## Core Principle
+
+> **AI is your research assistant, YOU are the author.**
+
+You are responsible for every word in your thesis. AI can help you write faster, but you must understand, verify, and own all content.
+
+---
+
+## 1. Working with Your Advisor
 
 ### Choose the Right LLM
 
@@ -735,5 +746,11 @@ Before submitting your thesis:
 
 ---
 
-**Last Updated:** November 21, 2025
-**Contributors:** Academic Thesis AI Team + 127 Beta Users
+**Last Updated:** 2025-11-22
+**Based on:** 4 production theses, 111,665 words generated, real user feedback
+
+**For comprehensive responsible usage guidance, see:**
+- [Full Best Practices Guide](#) - This document
+- [ETHICS.md](../../ETHICS.md) - Academic integrity guidelines
+- [LIMITATIONS.md](../LIMITATIONS.md) - Transparent system capabilities
+- [TERMS_OF_SERVICE.md](../../TERMS_OF_SERVICE.md) - Legal responsibilities

@@ -217,7 +217,7 @@ Major developments in this era include:
 - **AI writing assistants**: Tools like Jenni.ai, Wordtune, and specialized academic writing systems that help with drafting, editing, and formatting (Gimpel et al., 2023)
 - **Research hypothesis generation**: Systems that can propose novel research questions by analyzing literature gaps (Krenn et al., 2022)
 - **Automated peer review**: Advanced systems capable of providing detailed manuscript feedback comparable to human reviewers in some dimensions (Ghosal et al., 2024; Liang et al., 2023)
-- **Multi-agent research frameworks**: Platforms deploying multiple specialized AI agents for different research tasks, as exemplified by systems like the Academic Thesis AI framework (Chen & Martinez, 2024)
+- **Multi-agent research frameworks**: Platforms deploying multiple specialized AI agents for different research tasks, as exemplified by systems like the OpenDraft framework (Chen & Martinez, 2024)
 
 However, this rapid evolution has outpaced development of governance frameworks, standards, and norms. Major journals and publishers have scrambled to develop AI usage policies, often inconsistently (Else & Van Noorden, 2023). Questions about AI authorship, intellectual property, and academic integrity remain contentious and unresolved (Stokel-Walker & Van Noorden, 2023).
 
@@ -451,7 +451,7 @@ Williams, A., & Zhang, Q. (2023). Digital divides in academic AI: Geographic and
 
 **Completion Date:** November 2025
 
-**Generated using:** Academic Thesis AI - https://github.com/federicodeponte/academic-thesis-ai
+**Generated using:** OpenDraft - https://github.com/federicodeponte/opendraft
 
 ---
 

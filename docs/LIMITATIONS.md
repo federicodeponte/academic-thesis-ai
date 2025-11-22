@@ -1,6 +1,6 @@
 # System Limitations & Transparency
 
-**Academic Thesis AI** is a powerful research and writing assistant, but it's important to understand its limitations. This document provides transparent information about what the system can and cannot do.
+**OpenDraft** is a powerful research and writing assistant, but it's important to understand its limitations. This document provides transparent information about what the system can and cannot do.
 
 ---
 
@@ -291,7 +291,7 @@
 5. Discuss with your advisor for academic guidance
 
 **Reporting issues:**
-- GitHub: https://github.com/federicodeponte/academic-thesis-ai/issues
+- GitHub: https://github.com/federicodeponte/opendraft/issues
 - Include: thesis topic, error messages, expected vs actual behavior
 - Be specific about limitations you've encountered
 
@@ -311,4 +311,4 @@ This tool is **powerful but imperfect**. Understanding its limitations helps you
 **Based on:** 4 production theses, 181 test runs, 111,665 words generated
 **Transparency Level:** 100% - All metrics verifiable from real data
 
-**Questions?** Read [ETHICS.md](../ETHICS.md) | [FAQ](guides/FAQ.md) | [GitHub Issues](https://github.com/federicodeponte/academic-thesis-ai/issues)
+**Questions?** Read [ETHICS.md](../ETHICS.md) | [FAQ](guides/FAQ.md) | [GitHub Issues](https://github.com/federicodeponte/opendraft/issues)

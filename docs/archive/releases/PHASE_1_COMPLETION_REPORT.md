@@ -39,20 +39,20 @@ Phase 1 focused on fixing the 5 most critical blockers that would prevent any pu
   - Full package metadata (name, version, description, authors)
   - All dependencies from `requirements.txt`
   - Optional dependencies for dev, docker, all
-  - CLI entry points: `academic-thesis-ai` and `thesis-ai`
+  - CLI entry points: `opendraft` and `thesis-ai`
   - Build system configuration (setuptools)
   - Tool configurations (pytest, black, isort, mypy, flake8)
   - Project URLs (homepage, docs, repository, changelog, bug tracker)
 
 **Files Created:**
 - `pyproject.toml` (127 lines)
-- `academic_thesis_ai/__init__.py` (version exports)
-- `academic_thesis_ai/version.py` (version management)
-- `academic_thesis_ai/cli.py` (command-line interface)
+- `opendraft/__init__.py` (version exports)
+- `opendraft/version.py` (version management)
+- `opendraft/cli.py` (command-line interface)
 
 **Package Structure:**
 ```
-academic_thesis_ai/
+opendraft/
 ├── __init__.py        # Package initialization
 ├── version.py         # Version: 1.3.1
 ├── cli.py             # CLI entry point
@@ -66,9 +66,9 @@ academic_thesis_ai/
 **Now users can:**
 ```bash
 pip install -e .                    # Install in development mode
-pip install academic-thesis-ai      # (Future: from PyPI)
-academic-thesis-ai --version        # Check version
-academic-thesis-ai verify           # Verify installation
+pip install opendraft      # (Future: from PyPI)
+opendraft --version        # Check version
+opendraft verify           # Verify installation
 thesis-ai verify                    # Short alias
 ```
 
@@ -79,7 +79,7 @@ thesis-ai verify                    # Short alias
 **Issue:** No way for users to verify setup is correct after installation.
 
 **Solution Implemented:**
-- Created `academic_thesis_ai/verify.py` module with comprehensive checks:
+- Created `opendraft/verify.py` module with comprehensive checks:
   - ✅ **Python version** (>= 3.9)
   - ✅ **Dependencies** (13 required packages)
   - ✅ **API keys** (Gemini, Claude, OpenAI from .env or environment)
@@ -95,19 +95,19 @@ thesis-ai verify                    # Short alias
 - Next steps guidance when successful
 
 **Files Created:**
-- `academic_thesis_ai/verify.py` (223 lines)
+- `opendraft/verify.py` (223 lines)
 
 **Usage:**
 ```bash
-python -m academic_thesis_ai.verify
-academic-thesis-ai verify
+python -m opendraft.verify
+opendraft verify
 thesis-ai verify
 ```
 
 **Sample Output:**
 ```
 ============================================================
-  Academic Thesis AI - Installation Verification
+  OpenDraft - Installation Verification
 ============================================================
 🐍 Python version: 3.11.0
    ✅ Compatible (>= 3.9)
@@ -274,7 +274,7 @@ The codebase is clean - no unfinished work, no deferred bugs, no placeholder imp
 **Critical Issues:** 0
 **Achievements:**
 - ✅ `pip install -e .` works
-- ✅ `academic-thesis-ai verify` diagnoses setup
+- ✅ `opendraft verify` diagnoses setup
 - ✅ 12-combination CI matrix + security scanning
 - ✅ Professional security disclosure process
 - ✅ Codebase confirmed clean (0 actual TODOs)

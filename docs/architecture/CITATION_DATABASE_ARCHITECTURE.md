@@ -813,7 +813,7 @@ def validate_citation_database(db_path: str, draft_path: str):
 ### File Structure
 
 ```
-academic-thesis-ai/
+opendraft/
 ├── agents/
 │   ├── citation_manager.py          # NEW: Agent #3.5 implementation
 │   └── citation_compiler.py         # NEW: Agent #14 replacement

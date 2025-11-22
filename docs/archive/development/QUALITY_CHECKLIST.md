@@ -1,4 +1,4 @@
-# QUALITY CHECKLIST - Academic Thesis AI System
+# QUALITY CHECKLIST - OpenDraft System
 
 **Version:** 1.0
 **Last Updated:** 2025-01-06
@@ -591,8 +591,8 @@ _______________________________________________________________________________
 
 | Version | Date | Changes | Author |
 |---------|------|---------|--------|
-| 1.0 | 2025-01-06 | Initial comprehensive quality checklist | Claude (Academic Thesis AI) |
-| 1.1 | 2025-01-07 | Added DOI validation check (no 404s allowed), added DOI 404 error to issue resolution guide | Claude (Academic Thesis AI) |
+| 1.0 | 2025-01-06 | Initial comprehensive quality checklist | Claude (OpenDraft) |
+| 1.1 | 2025-01-07 | Added DOI validation check (no 404s allowed), added DOI 404 error to issue resolution guide | Claude (OpenDraft) |
 
 ---
 

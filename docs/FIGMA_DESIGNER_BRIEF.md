@@ -1,7 +1,7 @@
 # Figma Designer Brief: Multi-Agent Architecture Diagram
 
-**Project:** Academic Thesis AI - System Architecture Visualization
-**Client:** Academic Thesis AI (Open Source Project)
+**Project:** OpenDraft - System Architecture Visualization
+**Client:** OpenDraft (Open Source Project)
 **Designer Deliverable:** Static diagram showing 15-agent AI system
 **Timeline:** 2-4 hours
 **Date:** 2025-11-22
@@ -656,4 +656,4 @@ Enable layout grid:
 **Document Version:** 1.0
 **Date:** 2025-11-22
 **For:** Figma Designers
-**Project:** Academic Thesis AI Architecture Visualization
+**Project:** OpenDraft Architecture Visualization

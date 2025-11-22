@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Quick test to verify Academic Thesis AI setup is working correctly.
+Quick test to verify OpenDraft setup is working correctly.
 
 This script tests:
 1. All required Python packages are installed
@@ -181,7 +181,7 @@ def print_next_steps():
 
 def main():
     """Run all setup tests."""
-    print("🧪 Testing Academic Thesis AI Setup...\n")
+    print("🧪 Testing OpenDraft Setup...\n")
     print("="*60)
 
     all_tests_passed = True
@@ -211,7 +211,7 @@ def main():
         print("  - Setup guide: docs/INSTALLATION.md")
         print("  - API key help: docs/API_KEYS.md")
         print("  - FAQ: FAQ.md")
-        print("  - GitHub Issues: https://github.com/federicodeponte/academic-thesis-ai/issues")
+        print("  - GitHub Issues: https://github.com/federicodeponte/opendraft/issues")
         print("="*60)
         sys.exit(1)
 

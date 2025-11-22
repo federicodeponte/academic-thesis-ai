@@ -1,6 +1,6 @@
 # Large Language Models for Scientific Literature Review Automation: A Comprehensive Analysis
 
-**Authors:** Academic Thesis AI Research Team
+**Authors:** OpenDraft Research Team
 **Date:** October 30, 2025
 **Word Count:** ~1,500 words (minimal test version)
 

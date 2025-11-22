@@ -85,8 +85,8 @@ That's it! Use AI agents in prompts/ to help you write.
 
 ```bash
 # 1. Clone
-git clone https://github.com/yourusername/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/yourusername/opendraft.git
+cd opendraft
 
 # 2. Install
 pip install -r requirements.txt

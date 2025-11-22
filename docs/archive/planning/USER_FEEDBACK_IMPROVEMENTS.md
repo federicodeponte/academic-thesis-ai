@@ -8,7 +8,7 @@
 
 ## Overview
 
-This document summarizes all improvements made in response to external user feedback about the Academic Thesis AI project. The feedback identified 16 key areas for improvement across ethics, transparency, legal protection, and user experience.
+This document summarizes all improvements made in response to external user feedback about the OpenDraft project. The feedback identified 16 key areas for improvement across ethics, transparency, legal protection, and user experience.
 
 ---
 
@@ -286,7 +286,7 @@ This document summarizes all improvements made in response to external user feed
 
 ## Recommendations for Users
 
-**Before using Academic Thesis AI:**
+**Before using OpenDraft:**
 
 1. ✅ Read [TERMS_OF_SERVICE.md](../TERMS_OF_SERVICE.md) - Understand responsibilities
 2. ✅ Read [ETHICS.md](../ETHICS.md) - Learn responsible usage
@@ -324,7 +324,7 @@ This document summarizes all improvements made in response to external user feed
 
 Phase 1 and Phase 2 of user feedback implementation have successfully addressed the **most critical concerns**: legal liability, ethics, transparency, and user responsibility.
 
-The Academic Thesis AI project now has:
+The OpenDraft project now has:
 - ✅ Strong legal foundation (ToS, disclaimers, indemnification)
 - ✅ Comprehensive ethics guidelines (ETHICS.md)
 - ✅ Transparent limitations disclosure (LIMITATIONS.md)

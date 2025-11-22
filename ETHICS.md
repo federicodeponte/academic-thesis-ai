@@ -1,4 +1,4 @@
-# Ethical Guidelines for Academic Thesis AI
+# Ethical Guidelines for OpenDraft
 
 ## Core Principles
 

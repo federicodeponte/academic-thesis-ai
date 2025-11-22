@@ -347,7 +347,7 @@ Returns:
 **Directory Structure Clarity:**
 
 ```
-academic-thesis-ai/
+opendraft/
 ├── docs/architecture/
 │   ├── CITATION_DATABASE_ARCHITECTURE.md  - Technical design doc
 │   ├── CITATION_MIGRATION_GUIDE.md        - User migration guide

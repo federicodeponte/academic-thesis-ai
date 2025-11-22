@@ -1,6 +1,6 @@
 # Performance Benchmarks
 
-**Comprehensive performance metrics for Academic Thesis AI**
+**Comprehensive performance metrics for OpenDraft**
 
 Real-world data from 4 production theses (111,665 words total).
 
@@ -53,7 +53,7 @@ Real-world data from 4 production theses (111,665 words total).
 
 | Service | Cost |
 |---------|------|
-| Academic Thesis AI | **$10-$35** |
+| OpenDraft | **$10-$35** |
 | Professional Editor | $400-$2,000 |
 | Jenni.ai | $60 (3 months) |
 | ChatGPT Pro | $240/year |

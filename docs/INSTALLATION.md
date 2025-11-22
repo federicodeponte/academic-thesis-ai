@@ -33,8 +33,8 @@ Should show `Python 3.8.x` or higher.
 ### Step 1: Clone Repository
 
 ```bash
-git clone https://github.com/federicodeponte/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/federicodeponte/opendraft.git
+cd opendraft
 ```
 
 ### Step 2: Create Virtual Environment (Recommended)
@@ -236,8 +236,8 @@ pip install -r requirements.txt --force-reinstall
 brew install python3
 
 # 3. Clone and setup
-git clone https://github.com/federicodeponte/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/federicodeponte/opendraft.git
+cd opendraft
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -257,8 +257,8 @@ python examples/quick_test.py
 # Check "Add Python to PATH" during installation
 
 # 2. Clone and setup
-git clone https://github.com/federicodeponte/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/federicodeponte/opendraft.git
+cd opendraft
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
@@ -279,8 +279,8 @@ sudo apt update
 sudo apt install python3 python3-pip python3-venv git
 
 # 2. Clone and setup
-git clone https://github.com/federicodeponte/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/federicodeponte/opendraft.git
+cd opendraft
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
@@ -340,7 +340,7 @@ rm -rf venv/
 
 # Delete repository
 cd ..
-rm -rf academic-thesis-ai/
+rm -rf opendraft/
 ```
 
 ### Keep Config, Remove Code
@@ -351,10 +351,10 @@ cp .env.local ~/academic-thesis-backup.env
 
 # Delete repo
 cd ..
-rm -rf academic-thesis-ai/
+rm -rf opendraft/
 
 # Later, restore:
-# cp ~/academic-thesis-backup.env academic-thesis-ai/.env.local
+# cp ~/academic-thesis-backup.env opendraft/.env.local
 ```
 
 ---
@@ -379,7 +379,7 @@ If all checkboxes pass, you're ready!
 **Check:**
 - [FAQ.md](../FAQ.md) - Common questions
 - [docs/API_KEYS.md](API_KEYS.md) - API setup help
-- [GitHub Issues](https://github.com/federicodeponte/academic-thesis-ai/issues) - Known problems
+- [GitHub Issues](https://github.com/federicodeponte/opendraft/issues) - Known problems
 
 **Get Help:**
 1. Search existing GitHub issues

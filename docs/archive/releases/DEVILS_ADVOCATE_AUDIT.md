@@ -163,7 +163,7 @@
 
 **Fix Required (BEFORE LAUNCH):**
 1. Record 30-second demo GIF (terminal + generation)
-2. Take real screenshot of `academic-thesis-ai verify`
+2. Take real screenshot of `opendraft verify`
 3. Take real screenshot of generated PDF
 4. Replace ALL SVG placeholders
 
@@ -360,7 +360,7 @@
 **Current state:**
 - Installation: `pip install -e .` (editable/dev mode)
 - No PyPI package published
-- No `pip install academic-thesis-ai` (as implied)
+- No `pip install opendraft` (as implied)
 
 **README badge claims:**
 > "PyPI: coming soon"

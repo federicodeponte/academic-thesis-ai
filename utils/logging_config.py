@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ABOUTME: Centralized logging configuration for Academic Thesis AI system
+ABOUTME: Centralized logging configuration for OpenDraft system
 ABOUTME: Provides consistent logging format, levels, and handlers across all modules
 
 Usage:
@@ -31,7 +31,7 @@ LOG_DIR = Path("logs")
 LOG_DIR.mkdir(exist_ok=True)
 
 # Log file paths
-MAIN_LOG_FILE = LOG_DIR / "academic_thesis_ai.log"
+MAIN_LOG_FILE = LOG_DIR / "opendraft.log"
 ERROR_LOG_FILE = LOG_DIR / "errors.log"
 
 # Log format

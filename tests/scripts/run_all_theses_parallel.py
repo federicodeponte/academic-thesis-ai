@@ -87,7 +87,7 @@ Available thesis scripts:
   - opensource: test_opensource_thesis.py (Open Source Software Impact)
   - pricing: test_ai_pricing_thesis.py (AI Pricing Strategies)
   - co2: test_co2_german_thesis.py (CO2 Management German)
-  - academic_ai: test_academic_ai_thesis.py (Academic Thesis AI Meta-thesis)
+  - academic_ai: test_academic_ai_thesis.py (OpenDraft Meta-thesis)
 
 Tier-Adaptive Execution:
   - FREE TIER (10 RPM):  Recommend running 1 thesis per Google Cloud account

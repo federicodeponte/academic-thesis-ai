@@ -1,9 +1,9 @@
 ---
-title: "Why This Academic Thesis AI Open Source Project Will Save the World: Democratizing Academic Writing Through Multi-Agent AI"
+title: "Why This OpenDraft Open Source Project Will Save the World: Democratizing Academic Writing Through Multi-Agent AI"
 subtitle: "AI-Generated Academic Thesis Showcase"
-author: "Academic Thesis AI (Multi-Agent System)"
+author: "OpenDraft (Multi-Agent System)"
 system_creator: "Federico De Ponte"
-github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
+github_repo: "https://github.com/federicodeponte/opendraft"
 date: "January 2025"
 quality_score: "A- (90/100) - Publication-ready for mid-tier academic journals"
 word_count: "15,200 words across 69 pages"
@@ -12,7 +12,7 @@ visual_elements: "4 tables, 2 figures, comprehensive appendices"
 generation_method: "14 specialized AI agents (Research, Writing, Fact-Checking, Citation, Export)"
 showcase_description: "This complete 69-page thesis on democratizing academic writing through multi-agent AI was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review to multi-agent workflow design to case studies—all AI-generated."
 system_capabilities: "Research any academic topic • Generate original frameworks • Create case studies • Verify citations • Export to PDF/DOCX/HTML • Quality gates for academic integrity"
-call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/academic-thesis-ai"
+call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/opendraft"
 license: "MIT - Use it, fork it, improve it, publish with it"
 ---
 
@@ -61,7 +61,7 @@ The evolution of AI in academic writing can be systematically categorized by the
 | **1. Basic Assistance** | Grammar, spell-check, punctuation correction | Grammarly (basic), Microsoft Word | Enhances mechanical correctness | Superficial, no content understanding |
 | **2. Stylistic Refinement** | Sentence structure, vocabulary, tone suggestions | Grammarly (advanced), ProWritingAid | Improves clarity, readability | Limited content generation, context |
 | **3. Generative AI (LLMs)** | Drafts text, summarizes, brainstorms, translates | ChatGPT, Bard, Llama | Accelerates content creation | Hallucination, bias, lack of true reasoning |
-| **4. Multi-Agent Systems** | Complex workflows, specialized tasks, verification | Academic Thesis AI, Denario | High accuracy, efficiency, rigor | Design complexity, coordination overhead |
+| **4. Multi-Agent Systems** | Complex workflows, specialized tasks, verification | OpenDraft, Denario | High accuracy, efficiency, rigor | Design complexity, coordination overhead |
 
 *Note: This table illustrates the increasing sophistication of AI tools, culminating in multi-agent systems that integrate various functionalities to address complex academic writing challenges.*
 

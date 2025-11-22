@@ -1,4 +1,4 @@
-# Academic Thesis AI - Python Dependencies
+# OpenDraft - Python Dependencies
 # Minimal dependencies for maximum simplicity
 
 # === LLM APIs ===

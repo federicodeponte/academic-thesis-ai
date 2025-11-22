@@ -3,7 +3,7 @@ titel: "Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikant
 untertitel: "KI-generierte akademische Abschlussarbeit als Showcase"
 autor: "Akademische Abschlussarbeit KI (Multi-Agenten-System)"
 system_ersteller: "Federico De Ponte"
-github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
+github_repo: "https://github.com/federicodeponte/opendraft"
 datum: "Januar 2025"
 qualitätsbewertung: "A- (90/100) - Publikationsreif für mittelrangige Fachzeitschriften"
 wortzahl: "25405 Wörter auf 115 Seiten (geschätzt)"
@@ -12,7 +12,7 @@ visuelle_elemente: "4 Tabellen, 2 Abbildungen, umfassende Anhänge"
 generierungsmethode: "14 spezialisierte KI-Agenten (Forschung, Schreiben, Faktenprüfung, Zitation, Export)"
 showcase_beschreibung: "Diese vollständige 115-seitige Arbeit zum Thema CO2-Emissionshandel wurde autonom von einem Multi-Agenten-KI-System recherchiert, geschrieben, faktengeprüft und formatiert. Von der Literaturübersicht über die Methodik bis hin zu Fallstudien – alles KI-generiert."
 system_fähigkeiten: "Jedes akademische Thema recherchieren • Originale Frameworks generieren • Fallstudien erstellen • Zitate verifizieren • Export nach PDF/DOCX/HTML • Qualitätskontrollen für akademische Integrität"
-aufruf_zur_aktion: "Möchten Sie IHRE Abschlussarbeit mit KI schreiben? Dieses Open-Source-System kann publikationsreife akademische Arbeiten zu jedem Thema generieren. Starten Sie unter https://github.com/federicodeponte/academic-thesis-ai"
+aufruf_zur_aktion: "Möchten Sie IHRE Abschlussarbeit mit KI schreiben? Dieses Open-Source-System kann publikationsreife akademische Arbeiten zu jedem Thema generieren. Starten Sie unter https://github.com/federicodeponte/opendraft"
 lizenz: "MIT - Nutzen, forken, verbessern, publizieren"
 ---
 

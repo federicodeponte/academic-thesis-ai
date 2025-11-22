@@ -32,7 +32,7 @@
 - ✅ Documented multi-engine strategy pattern
 
 **Commits:** 2 commits
-- `a3b359d` Initial commit - Academic Thesis AI v1.0
+- `a3b359d` Initial commit - OpenDraft v1.0
 - `90d4b85` docs: update SESSION.md with PDF solution
 
 ---
@@ -372,7 +372,7 @@ This was a highly productive 8-hour working session that delivered all planned o
 - 100% test coverage maintained
 - Clean git history with 7 commits and 2 release tags
 
-**The Academic Thesis AI project is now ready for broader adoption with Docker deployment, web UI, and comprehensive templates making it accessible to both technical and non-technical users.**
+**The OpenDraft project is now ready for broader adoption with Docker deployment, web UI, and comprehensive templates making it accessible to both technical and non-technical users.**
 
 ---
 

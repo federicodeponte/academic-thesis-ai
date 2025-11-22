@@ -1,6 +1,6 @@
 # Pre-Launch Checklist
 
-**Comprehensive checklist before public launch of Academic Thesis AI**
+**Comprehensive checklist before public launch of OpenDraft**
 
 Use this to ensure everything is ready for maximum impact.
 
@@ -106,7 +106,7 @@ Use this to ensure everything is ready for maximum impact.
 
 - [ ] **Screenshot 1: Terminal Verification** - `docs/assets/screenshots/terminal-verify.png`
   - [x] Placeholder created (SVG)
-  - [ ] **TODO:** Run `academic-thesis-ai verify` and screenshot
+  - [ ] **TODO:** Run `opendraft verify` and screenshot
   - [ ] **Resolution:** 800×500 minimum
   - [ ] **Priority:** HIGH
 
@@ -151,9 +151,9 @@ Use this to ensure everything is ready for maximum impact.
   - [x] CLI entry points configured
   - [x] Version specified
 
-- [x] **academic_thesis_ai/__init__.py** - Package initialization
-- [x] **academic_thesis_ai/cli.py** - CLI implementation
-- [x] **academic_thesis_ai/verify.py** - Installation verification (223 lines)
+- [x] **opendraft/__init__.py** - Package initialization
+- [x] **opendraft/cli.py** - CLI implementation
+- [x] **opendraft/verify.py** - Installation verification (223 lines)
 
 ### Testing
 
@@ -292,7 +292,7 @@ Use this to ensure everything is ready for maximum impact.
 
 - [x] **Installation**
   - [x] `pip install -e .` works
-  - [x] `academic-thesis-ai verify` runs
+  - [x] `opendraft verify` runs
   - [x] All checks pass
 
 - [x] **Generation**

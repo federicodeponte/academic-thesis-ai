@@ -80,7 +80,7 @@ Professional SVG dashboard (1200×800px) with 4 key metric panels
 
 **Panel 3: Cost Comparison (bottom-left)**
 - Horizontal bar chart comparing costs
-- Academic Thesis AI ($10-50) vs Jenni.ai ($60) vs ChatGPT ($240) vs Professional ($400-2,000)
+- OpenDraft ($10-50) vs Jenni.ai ($60) vs ChatGPT ($240) vs Professional ($400-2,000)
 - Callout box: "95% cheaper than professional editing"
 
 **Panel 4: Quality Scores (bottom-right)**

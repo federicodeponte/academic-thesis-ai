@@ -1,6 +1,6 @@
 # Terms of Service
 
-**Academic Thesis AI** - Open Source Academic Writing Assistant
+**OpenDraft** - Open Source Academic Writing Assistant
 
 **Effective Date:** 2025-11-22
 **Last Updated:** 2025-11-22
@@ -10,7 +10,7 @@
 
 ## 1. Acceptance of Terms
 
-By using Academic Thesis AI (the "Software"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Software.
+By using OpenDraft (the "Software"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, do not use the Software.
 
 **Important:** This Software is provided "as-is" under the MIT License. These Terms supplement, but do not replace, the MIT License.
 
@@ -18,7 +18,7 @@ By using Academic Thesis AI (the "Software"), you agree to be bound by these Ter
 
 ## 2. Description of Service
 
-Academic Thesis AI is an **open-source research and writing assistance tool** designed to help users with:
+OpenDraft is an **open-source research and writing assistance tool** designed to help users with:
 - Literature review and research paper discovery
 - Academic writing structure and organization
 - Citation management and verification
@@ -294,7 +294,7 @@ This is an open-source project. **We provide no guaranteed support**, but we wil
 ### 12.2 How to Get Help
 
 **Technical issues:**
-- GitHub Issues: https://github.com/federicodeponte/academic-thesis-ai/issues
+- GitHub Issues: https://github.com/federicodeponte/opendraft/issues
 - Documentation: See `docs/` folder
 - Community: GitHub Discussions
 
@@ -364,7 +364,7 @@ constitute the entire agreement between you and the Software maintainers.
 
 **MIT License Notice:**
 
-> Copyright (c) 2025 Academic Thesis AI Contributors
+> Copyright (c) 2025 OpenDraft Contributors
 >
 > Permission is hereby granted, free of charge, to any person obtaining a copy
 > of this software and associated documentation files (the "Software"), to deal
@@ -388,4 +388,4 @@ constitute the entire agreement between you and the Software maintainers.
 
 **Last Updated:** 2025-11-22
 **Version:** 1.0
-**Repository:** https://github.com/federicodeponte/academic-thesis-ai
+**Repository:** https://github.com/federicodeponte/opendraft

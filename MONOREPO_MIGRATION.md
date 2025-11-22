@@ -8,7 +8,7 @@
 ## What Changed
 
 ### Before (2 Repos)
-1. **`academic-thesis-ai`** - Core framework (15 AI agents)
+1. **`opendraft`** - Core framework (15 AI agents)
 2. **`academic-thesis-landing`** - Landing page (waitlist, marketing)
 
 ### After (1 Repo - Monorepo)
@@ -48,7 +48,7 @@ opendraft/                           # Single unified repository
 
 ### 1. Created `website/` Directory
 ```bash
-cd ~/academic-thesis-ai
+cd ~/opendraft
 mkdir -p website
 ```
 
@@ -60,11 +60,11 @@ rsync -av \
   --exclude='.next' \
   --exclude='.vercel' \
   ~/academic-thesis-landing/ \
-  ~/academic-thesis-ai/website/
+  ~/opendraft/website/
 ```
 
 ### 3. Updated Main README
-- Changed title: "Academic Thesis AI" → "OpenDraft"
+- Changed title: "OpenDraft" → "OpenDraft"
 - Added monorepo note
 - Updated website URL
 
@@ -150,7 +150,7 @@ Modal.com serverless worker:
 
 ## GitHub Repository
 
-**URL:** https://github.com/federicodeponte/academic-thesis-ai
+**URL:** https://github.com/federicodeponte/opendraft
 
 **Structure:**
 - **Branch:** `master` (main branch)
@@ -172,7 +172,7 @@ The separate `academic-thesis-landing` repository still exists but is now **arch
 # DEPRECATED - Moved to Monorepo
 
 This repository has been merged into the main OpenDraft repository:
-https://github.com/federicodeponte/academic-thesis-ai
+https://github.com/federicodeponte/opendraft
 
 All landing page code is now in the `website/` directory.
 
@@ -187,11 +187,11 @@ Please use the main repository for all future development.
 The website is still deployed from Vercel, but needs configuration update:
 
 **Current:** Points to `academic-thesis-landing` repo
-**New:** Should point to `academic-thesis-ai` repo, `website/` directory
+**New:** Should point to `opendraft` repo, `website/` directory
 
 **Update Vercel:**
 1. Go to: https://vercel.com/federico-de-pontes-projects/academic-thesis-landing/settings
-2. Under "Git" → Change repository to `academic-thesis-ai`
+2. Under "Git" → Change repository to `opendraft`
 3. Under "Build & Development Settings":
    - **Root Directory:** `website`
    - **Framework Preset:** Next.js
@@ -240,8 +240,8 @@ SEMANTIC_SCHOLAR_API_KEY=***
 ### Setup
 ```bash
 # Clone the unified repo
-git clone https://github.com/federicodeponte/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/federicodeponte/opendraft.git
+cd opendraft
 
 # Install framework dependencies
 pip install -r requirements.txt
@@ -315,11 +315,11 @@ git push origin master
 
 ## Summary
 
-✅ **Monorepo created** - All code in `academic-thesis-ai` repository
+✅ **Monorepo created** - All code in `opendraft` repository
 ✅ **Landing page moved** - Now in `website/` subdirectory
 ✅ **Structure documented** - Clear separation of concerns
 ✅ **Pushed to GitHub** - Latest commit: `e786a50`
 
-**Main Repository:** https://github.com/federicodeponte/academic-thesis-ai
+**Main Repository:** https://github.com/federicodeponte/opendraft
 
 **Everything is now in ONE place!** 🚀

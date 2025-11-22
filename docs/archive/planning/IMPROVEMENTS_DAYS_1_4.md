@@ -1,6 +1,6 @@
-# Academic Thesis AI: Improvements (Days 1-4)
+# OpenDraft: Improvements (Days 1-4)
 
-**Project**: Academic Thesis AI - Multi-Agent Thesis Generation System
+**Project**: OpenDraft - Multi-Agent Thesis Generation System
 **Period**: Days 1-4 of 8-day improvement plan
 **Status**: ✅ Complete
 
@@ -8,7 +8,7 @@
 
 ## Overview
 
-This document summarizes 4 days of systematic improvements to the Academic Thesis AI system, focusing on citation quality, source diversity, and PDF professionalism.
+This document summarizes 4 days of systematic improvements to the OpenDraft system, focusing on citation quality, source diversity, and PDF professionalism.
 
 ## Day 1A: Fix Frontmatter Citation Count Mismatches
 

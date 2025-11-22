@@ -1,5 +1,5 @@
 # PROFESSOR'S FINAL GRADE REPORT
-## Academic Thesis AI - Generated Paper Review
+## OpenDraft - Generated Paper Review
 
 **Paper Title:** "Large Language Models for Scientific Literature Review Automation: A Comprehensive Analysis"
 **Review Date:** October 30, 2025

@@ -1,4 +1,4 @@
-"""Installation verification for Academic Thesis AI."""
+"""Installation verification for OpenDraft."""
 
 import sys
 import os
@@ -86,7 +86,7 @@ def check_api_keys():
     if not found_any:
         print("\n   ⚠️  WARNING: No API keys configured!")
         print("   You need at least one LLM API key to generate theses.")
-        print("   See: https://github.com/federicodeponte/academic-thesis-ai#setup")
+        print("   See: https://github.com/federicodeponte/opendraft#setup")
 
     return found_any
 
@@ -156,7 +156,7 @@ def check_file_structure():
 def verify_installation():
     """Main verification function."""
     print("=" * 60)
-    print("  Academic Thesis AI - Installation Verification")
+    print("  OpenDraft - Installation Verification")
     print("=" * 60)
 
     results = {}
@@ -192,7 +192,7 @@ def verify_installation():
         print("\nTroubleshooting:")
         print("  - Install missing dependencies: pip install -e .")
         print("  - Configure API keys in .env file")
-        print("  - See: https://github.com/federicodeponte/academic-thesis-ai#troubleshooting")
+        print("  - See: https://github.com/federicodeponte/opendraft#troubleshooting")
         return 1
 
 

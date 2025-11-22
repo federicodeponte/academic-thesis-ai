@@ -1,11 +1,11 @@
-# Academic Thesis AI - Step-by-Step Tutorial
+# OpenDraft - Step-by-Step Tutorial
 
 **Goal:** Learn how to write your first academic paper section using AI agents
 
 **Time:** 30-60 minutes
 
 **Prerequisites:**
-- Academic Thesis AI installed (`./setup.sh`)
+- OpenDraft installed (`./setup.sh`)
 - API key configured (Claude, GPT, or Gemini)
 - Basic familiarity with your IDE (Cursor or Claude Code)
 

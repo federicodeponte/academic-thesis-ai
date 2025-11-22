@@ -167,7 +167,7 @@ Author, A. A., & Author, B. B. (Year). Title of article. *Journal Name*, *Volume
 
 ---
 
-**How to Use This Template with Academic Thesis AI:**
+**How to Use This Template with OpenDraft:**
 
 1. **Scout Agent** - Find 20-50 papers: Use `prompts/01_research/scout.md`
 2. **Scribe Agent** - Summarize each paper: Use `prompts/01_research/scribe.md`

@@ -1,4 +1,4 @@
-# Contributing to Academic Thesis AI
+# Contributing to OpenDraft
 
 Thank you for considering contributing! This project helps researchers worldwide conduct better academic research with AI assistance.
 
@@ -116,8 +116,8 @@ Improve AI agent capabilities:
 
 ```bash
 # 1. Fork and clone the repository
-git clone https://github.com/YOUR_USERNAME/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/YOUR_USERNAME/opendraft.git
+cd opendraft
 
 # 2. Create and activate virtual environment
 python -m venv venv
@@ -463,4 +463,4 @@ Contributors will be:
 - Create an [Issue](../../issues) for bugs or feature requests
 - Check [existing documentation](README.md) first
 
-Thank you for contributing to Academic Thesis AI! Your efforts help researchers worldwide. 🎓
+Thank you for contributing to OpenDraft! Your efforts help researchers worldwide. 🎓

@@ -21,12 +21,12 @@
 
 <p>
   <!-- CI/CD Status -->
-  <a href="https://github.com/federicodeponte/academic-thesis-ai/actions/workflows/ci.yml">
-    <img src="https://img.shields.io/github/actions/workflow/status/federicodeponte/academic-thesis-ai/ci.yml?branch=main&label=tests&style=flat-square" alt="Tests">
+  <a href="https://github.com/federicodeponte/opendraft/actions/workflows/ci.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/federicodeponte/opendraft/ci.yml?branch=main&label=tests&style=flat-square" alt="Tests">
   </a>
   <!-- Test Coverage -->
-  <a href="https://codecov.io/gh/federicodeponte/academic-thesis-ai">
-    <img src="https://img.shields.io/codecov/c/github/federicodeponte/academic-thesis-ai?style=flat-square" alt="Coverage">
+  <a href="https://codecov.io/gh/federicodeponte/opendraft">
+    <img src="https://img.shields.io/codecov/c/github/federicodeponte/opendraft?style=flat-square" alt="Coverage">
   </a>
   <!-- Python Version -->
   <img src="https://img.shields.io/badge/Python-3.9+-blue?style=flat-square&logo=python&logoColor=white" alt="Python 3.9+">
@@ -35,18 +35,18 @@
     <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="MIT License">
   </a>
   <!-- GitHub Stars -->
-  <a href="https://github.com/federicodeponte/academic-thesis-ai/stargazers">
-    <img src="https://img.shields.io/github/stars/federicodeponte/academic-thesis-ai?style=flat-square&color=yellow" alt="GitHub Stars">
+  <a href="https://github.com/federicodeponte/opendraft/stargazers">
+    <img src="https://img.shields.io/github/stars/federicodeponte/opendraft?style=flat-square&color=yellow" alt="GitHub Stars">
   </a>
   <!-- Code Quality -->
-  <a href="https://github.com/federicodeponte/academic-thesis-ai/actions/workflows/security.yml">
+  <a href="https://github.com/federicodeponte/opendraft/actions/workflows/security.yml">
     <img src="https://img.shields.io/badge/security-CodeQL-blue?style=flat-square&logo=github" alt="Security">
   </a>
   <!-- Last Commit -->
-  <img src="https://img.shields.io/github/last-commit/federicodeponte/academic-thesis-ai?style=flat-square" alt="Last Commit">
+  <img src="https://img.shields.io/github/last-commit/federicodeponte/opendraft?style=flat-square" alt="Last Commit">
   <!-- Issues -->
-  <a href="https://github.com/federicodeponte/academic-thesis-ai/issues">
-    <img src="https://img.shields.io/github/issues/federicodeponte/academic-thesis-ai?style=flat-square" alt="Issues">
+  <a href="https://github.com/federicodeponte/opendraft/issues">
+    <img src="https://img.shields.io/github/issues/federicodeponte/opendraft?style=flat-square" alt="Issues">
   </a>
   <!-- PRs Welcome -->
   <a href="CONTRIBUTING.md">
@@ -94,12 +94,12 @@ while maintaining quality and academic integrity
 
 ---
 
-## 🏆 Why Academic Thesis AI?
+## 🏆 Why OpenDraft?
 
 <table>
   <tr>
     <th width="20%">Feature</th>
-    <th width="20%" align="center"><strong>Academic Thesis AI</strong></th>
+    <th width="20%" align="center"><strong>OpenDraft</strong></th>
     <th width="15%" align="center">Professional Editing</th>
     <th width="15%" align="center">Grammarly Premium</th>
     <th width="15%" align="center">ChatGPT Pro</th>
@@ -207,7 +207,7 @@ while maintaining quality and academic integrity
 pip install -e .
 
 # 2. Verify setup
-academic-thesis-ai verify
+opendraft verify
 
 # 3. Configure API key (choose one)
 echo "GEMINI_API_KEY=your_key_here" >> .env
@@ -404,13 +404,13 @@ Your Topic → Deep Research → 15 AI Agents → Publication-Ready Thesis
 ### Option 1: Quick Install (Recommended)
 ```bash
 pip install -e .
-academic-thesis-ai verify
+opendraft verify
 ```
 
 ### Option 2: Docker
 ```bash
-docker pull academic-thesis-ai:latest
-docker run -it academic-thesis-ai
+docker pull opendraft:latest
+docker run -it opendraft
 ```
 
 **Requirements:**
@@ -439,7 +439,7 @@ We welcome contributions! This project helps researchers worldwide.
 - ⭐ Star the repo
 - 🗣️ Share with colleagues
 
-👉 **[Contribution Guide](CONTRIBUTING.md)** | **[Good First Issues](https://github.com/federicodeponte/academic-thesis-ai/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)**
+👉 **[Contribution Guide](CONTRIBUTING.md)** | **[Good First Issues](https://github.com/federicodeponte/opendraft/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22)**
 
 ---
 
@@ -499,7 +499,7 @@ If this tool helps your research:
 
 <div align="center">
 
-[![Star History Chart](https://api.star-history.com/svg?repos=federicodeponte/academic-thesis-ai&type=Date)](https://star-history.com/#federicodeponte/academic-thesis-ai&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=federicodeponte/opendraft&type=Date)](https://star-history.com/#federicodeponte/opendraft&Date)
 
 </div>
 
@@ -507,8 +507,8 @@ If this tool helps your research:
 
 ## 📞 Get Help
 
-- 💬 **[GitHub Discussions](https://github.com/federicodeponte/academic-thesis-ai/discussions)** - Ask questions
-- 🐛 **[Issue Tracker](https://github.com/federicodeponte/academic-thesis-ai/issues)** - Report bugs
+- 💬 **[GitHub Discussions](https://github.com/federicodeponte/opendraft/discussions)** - Ask questions
+- 🐛 **[Issue Tracker](https://github.com/federicodeponte/opendraft/issues)** - Report bugs
 - 📖 **[Documentation](docs/)** - Full guides
 - 🔒 **[Security](SECURITY.md)** - Report vulnerabilities
 
@@ -528,6 +528,6 @@ Built with:
 
 **Built with ❤️ for researchers, by researchers**
 
-[Website](https://academic-thesis-ai-landing.vercel.app) • [Docs](docs/) • [Examples](examples/) • [Roadmap](ROADMAP.md)
+[Website](https://opendraft-landing.vercel.app) • [Docs](docs/) • [Examples](examples/) • [Roadmap](ROADMAP.md)
 
 </div>

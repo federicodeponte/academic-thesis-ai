@@ -1,6 +1,6 @@
-# Academic Thesis AI: 8-Day Improvement Plan - Complete Summary
+# OpenDraft: 8-Day Improvement Plan - Complete Summary
 
-**Project**: Academic Thesis AI - Multi-Agent Thesis Generation System
+**Project**: OpenDraft - Multi-Agent Thesis Generation System
 **Period**: Days 1-8 (Complete)
 **Status**: ✅ All Improvements Delivered
 **Date Completed**: 2025-11-17
@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-Completed **8-day systematic improvement plan** for the Academic Thesis AI system, delivering **9 major enhancements** across citation quality, source diversity, PDF professionalism, code quality, and testing. All objectives achieved with **zero manual intervention required** for thesis generation.
+Completed **8-day systematic improvement plan** for the OpenDraft system, delivering **9 major enhancements** across citation quality, source diversity, PDF professionalism, code quality, and testing. All objectives achieved with **zero manual intervention required** for thesis generation.
 
 ### Key Achievements
 
@@ -206,7 +206,7 @@ After:  The State of AI in 2024: Fifth Annual McKinsey Global Survey
 - Console logging with ANSI color-coding (DEBUG=cyan, INFO=green, WARNING=yellow, ERROR=red, CRITICAL=magenta)
 - File logging with automatic rotation (10MB per file, 5 backups)
 - Two log files:
-  - `logs/academic_thesis_ai.log` (all levels)
+  - `logs/opendraft.log` (all levels)
   - `logs/errors.log` (ERROR+ only)
 - Module-specific loggers with hierarchy
 - Configurable levels for development/production/testing

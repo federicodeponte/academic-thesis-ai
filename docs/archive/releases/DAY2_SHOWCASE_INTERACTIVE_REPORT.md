@@ -35,7 +35,7 @@
 
 - **Terminal Verification** (`terminal-verify-placeholder.svg`)
   - 800×500 pixels, realistic terminal output
-  - Shows `academic-thesis-ai verify` output
+  - Shows `opendraft verify` output
   - 5 verification checks (Python, dependencies, API keys, PDF engine, structure)
   - GitHub dark theme colors
 
@@ -143,7 +143,7 @@
 2. **Prerequisites** - API key options (Gemini, Claude, GPT)
 3. **Installation** - Clone repo, install package, verify
 4. **API Configuration** - 3 options (getpass for security)
-5. **Verification** - Run `academic-thesis-ai verify`
+5. **Verification** - Run `opendraft verify`
 6. **Generation** - Demo thesis (5k words, 20 citations, 5 min)
 7. **Review** - Show structure, stats, citations
 8. **Exploration** - Citation research details

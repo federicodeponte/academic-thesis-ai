@@ -1,16 +1,16 @@
-"""Command-line interface for Academic Thesis AI."""
+"""Command-line interface for OpenDraft."""
 
 import sys
 import argparse
-from academic_thesis_ai.version import __version__
+from opendraft.version import __version__
 
 
 def main():
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
-        prog="academic-thesis-ai",
+        prog="opendraft",
         description="AI-Powered Academic Writing Framework",
-        epilog="For more information, visit: https://github.com/federicodeponte/academic-thesis-ai"
+        epilog="For more information, visit: https://github.com/federicodeponte/opendraft"
     )
 
     parser.add_argument(
@@ -41,12 +41,12 @@ def main():
     args = parser.parse_args()
 
     if args.command == "verify":
-        from academic_thesis_ai.verify import verify_installation
+        from opendraft.verify import verify_installation
         sys.exit(verify_installation())
     elif args.command == "generate":
         print("❌ Thesis generation via CLI is coming soon!")
         print("For now, please use the Python API or test scripts.")
-        print("See: https://github.com/federicodeponte/academic-thesis-ai#quick-start")
+        print("See: https://github.com/federicodeponte/opendraft#quick-start")
         sys.exit(1)
     else:
         parser.print_help()

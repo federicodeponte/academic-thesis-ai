@@ -1,12 +1,12 @@
 # Documentation Index
 
-Welcome to the Academic Thesis AI documentation! This directory contains all project documentation organized by category.
+Welcome to the OpenDraft documentation! This directory contains all project documentation organized by category.
 
 ---
 
 ## 📖 Getting Started
 
-**New to Academic Thesis AI?** Start here:
+**New to OpenDraft?** Start here:
 
 1. **[../README.md](../README.md)** - Project overview and features
 2. **[../QUICKSTART.md](../QUICKSTART.md)** - 10-minute setup guide
@@ -168,4 +168,4 @@ When adding new documentation:
 ---
 
 **Last Updated:** November 20, 2025
-**Maintainer:** Academic Thesis AI Team
+**Maintainer:** OpenDraft Team

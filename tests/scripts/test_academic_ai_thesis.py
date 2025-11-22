@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 REAL-WORLD TEST: Generate Complete Thesis
-Topic: Why This Academic Thesis AI Open Source Project Will Save the World
+Topic: Why This OpenDraft Open Source Project Will Save the World
 Full workflow test from research to final paper export - META-THESIS EDITION
 
 REFACTORED: Uses centralized config, shared utilities, and section-based validation
@@ -42,7 +42,7 @@ def main():
     print("REAL-WORLD THESIS TEST - META-THESIS EDITION")
     print("="*70)
     print()
-    print("Topic: Why This Academic Thesis AI Open Source Project Will Save the World")
+    print("Topic: Why This OpenDraft Open Source Project Will Save the World")
     print("Subtopics: AI democratization, multi-agent systems, open source academic tools")
     print("Format: Academic thesis (8,000+ words)")
     print(f"Model: {config.model.model_name}")
@@ -56,7 +56,7 @@ def main():
     test_issues: list = []
     manual_interventions: int = 0
 
-    topic = "Why This Academic Thesis AI Open Source Project Will Save the World: Democratizing Academic Writing Through Multi-Agent AI"
+    topic = "Why This OpenDraft Open Source Project Will Save the World: Democratizing Academic Writing Through Multi-Agent AI"
     research_focus = "AI-assisted academic writing, multi-agent systems, open source AI tools, democratization of research, automated thesis generation, LLM applications in academia, citation discovery automation, academic accessibility"
 
     # Output directory
@@ -392,7 +392,7 @@ def main():
         user_input=(
             f"Write Methodology section (2,500 words) for:\n\n{formatter_output[:2000]}\n\n"
             f"Describe:\n"
-            f"- Framework for analyzing the academic-thesis-ai system architecture\n"
+            f"- Framework for analyzing the opendraft system architecture\n"
             f"- 14-agent workflow design (Scout, Scribe, Signal, Architect, Formatter, Crafter x6, Skeptic, Compiler, Enhancer, Abstract Generator)\n"
             f"- API-backed citation discovery methodology (Crossref, Semantic Scholar, arXiv)\n"
             f"- Evaluation criteria for measuring democratization impact\n"

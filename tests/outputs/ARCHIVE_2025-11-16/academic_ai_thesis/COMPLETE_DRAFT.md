@@ -1,4 +1,4 @@
-# Why This Academic Thesis AI Open Source Project Will Save the World: Democratizing Academic Writing Through Multi-Agent AI
+# Why This OpenDraft Open Source Project Will Save the World: Democratizing Academic Writing Through Multi-Agent AI
 
 # Introduction
 

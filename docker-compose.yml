@@ -1,10 +1,10 @@
 version: '3.8'
 
 services:
-  academic-thesis-ai:
+  opendraft:
     build: .
-    image: academic-thesis-ai:latest
-    container_name: academic-thesis-ai
+    image: opendraft:latest
+    container_name: opendraft
 
     # Environment variables (override with .env file)
     environment:
@@ -29,7 +29,7 @@ services:
     #   - "8501:8501"
 
     # Default: run tests on startup
-    # Override with: docker-compose run --rm academic-thesis-ai bash
+    # Override with: docker-compose run --rm opendraft bash
     # command: ["python", "tests/test_pdf_engines.py"]
 
     # Restart policy
@@ -48,8 +48,8 @@ services:
   # Optional: Testing service
   test:
     build: .
-    image: academic-thesis-ai:latest
-    container_name: academic-thesis-ai-test
+    image: opendraft:latest
+    container_name: opendraft-test
     volumes:
       - ./tests/outputs:/app/tests/outputs
     command: ["python", "tests/test_pdf_engines.py"]
@@ -58,4 +58,4 @@ services:
 
 networks:
   default:
-    name: academic-thesis-ai-network
+    name: opendraft-network

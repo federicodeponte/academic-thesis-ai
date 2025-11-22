@@ -1,4 +1,4 @@
-# Welcome to Academic Thesis AI! 👋
+# Welcome to OpenDraft! 👋
 
 **First time here? You're in the right place.**
 
@@ -84,8 +84,8 @@ You type prompts → AI helps research/write → You review/edit → Export to P
 
 ```bash
 # Clone this repository
-git clone https://github.com/federicodeponte/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/federicodeponte/opendraft.git
+cd opendraft
 
 # Create virtual environment (recommended)
 python3 -m venv venv
@@ -137,7 +137,7 @@ python examples/quick_test.py
 
 **Expected output:**
 ```
-🧪 Testing Academic Thesis AI Setup...
+🧪 Testing OpenDraft Setup...
 
 ✅ All packages installed
 ✅ API key valid
@@ -202,8 +202,8 @@ Browse:
 - **How does it work?** → [README.md](README.md)
 
 ### Community & Support
-- **Bug reports:** [GitHub Issues](https://github.com/federicodeponte/academic-thesis-ai/issues)
-- **Feature requests:** [GitHub Discussions](https://github.com/federicodeponte/academic-thesis-ai/discussions)
+- **Bug reports:** [GitHub Issues](https://github.com/federicodeponte/opendraft/issues)
+- **Feature requests:** [GitHub Discussions](https://github.com/federicodeponte/opendraft/discussions)
 - **Ethical guidelines:** [ETHICS.md](ETHICS.md)
 
 ### Quick Links

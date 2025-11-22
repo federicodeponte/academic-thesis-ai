@@ -1,7 +1,7 @@
 ---
 title: "How Open Source Software Can Save the World: From Code Collaboration to Global Impact"
 subtitle: "How Open Source Software Can Save the World: From Code Collaboration to Global Impact"
-author: "Academic Thesis AI (Multi-Agent System)"
+author: "OpenDraft (Multi-Agent System)"
 date: "November 2025"
 ---
 

@@ -25,7 +25,7 @@ Phase 2 focused on making the project production-ready for public open-source re
 
 **Solution:**
 - Updated to modern `pip install -e .` workflow
-- Added `academic-thesis-ai verify` step
+- Added `opendraft verify` step
 - Added troubleshooting section with common issues
 - Included expected output examples
 - Updated time estimate to realistic 10 minutes
@@ -350,7 +350,7 @@ Phase 2 focused on making the project production-ready for public open-source re
 
 **Recommendation:**
 - Tag as `v1.4.0` (production packaging complete)
-- Publish to PyPI (pip install academic-thesis-ai)
+- Publish to PyPI (pip install opendraft)
 - Announce on Reddit, Hacker News, academic communities
 - Phase 3 (polish) can happen post-release as enhancements
 

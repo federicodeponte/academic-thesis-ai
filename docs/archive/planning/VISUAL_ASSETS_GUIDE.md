@@ -24,7 +24,7 @@
 ```
 [0:00-0:10] Terminal: Installation
   $ pip install -e .
-  $ academic-thesis-ai verify
+  $ opendraft verify
   ✅ All checks passed!
 
 [0:10-0:20] Terminal: Running generation
@@ -79,9 +79,9 @@
 
 **Content:**
 ```
-$ academic-thesis-ai verify
+$ opendraft verify
 
-🔍 Academic Thesis AI - Installation Verification
+🔍 OpenDraft - Installation Verification
 ═══════════════════════════════════════════════════
 
 ✅ Python 3.11.5 (>= 3.9 required)
@@ -96,7 +96,7 @@ $ academic-thesis-ai verify
 ```
 
 **How to capture:**
-1. Run `academic-thesis-ai verify` in terminal
+1. Run `opendraft verify` in terminal
 2. Screenshot the output
 3. Crop to just the output (no menu bar)
 4. Resolution: 1200x800 minimum
@@ -240,13 +240,13 @@ Top papers:
 ### Script Outline (3 minutes)
 ```
 [0:00-0:20] Introduction
-  - What is Academic Thesis AI?
+  - What is OpenDraft?
   - Problem: Writing 20k-word theses takes months
   - Solution: AI assistance in 15-25 minutes
 
 [0:20-1:00] Installation Demo
   - pip install -e .
-  - academic-thesis-ai verify
+  - opendraft verify
   - Show all checks passing
 
 [1:00-1:40] Generation Demo

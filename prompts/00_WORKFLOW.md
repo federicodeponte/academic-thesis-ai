@@ -1,4 +1,4 @@
-# Academic Thesis AI - Complete Workflow Guide
+# OpenDraft - Complete Workflow Guide
 
 **Welcome!** This guide will walk you through writing a complete academic paper using AI agents.
 

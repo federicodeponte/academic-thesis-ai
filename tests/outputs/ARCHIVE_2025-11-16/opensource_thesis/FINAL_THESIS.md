@@ -1,9 +1,9 @@
 ---
 title: "How Open Source Software Can Save the World: From Code Collaboration to Global Impact"
 subtitle: "AI-Generated Academic Thesis Showcase"
-author: "Academic Thesis AI (Multi-Agent System)"
+author: "OpenDraft (Multi-Agent System)"
 system_creator: "Federico De Ponte"
-github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
+github_repo: "https://github.com/federicodeponte/opendraft"
 date: "January 2025"
 quality_score: "A- (90/100) - Publication-ready for mid-tier academic journals"
 word_count: "23615 words across 107 pages"
@@ -12,7 +12,7 @@ visual_elements: "4 tables, 2 figures, comprehensive appendices"
 generation_method: "14 specialized AI agents (Research, Writing, Fact-Checking, Citation, Export)"
 showcase_description: "This complete 107-page thesis on the global impact of Open Source Software was autonomously written, researched, fact-checked, and formatted by a multi-agent AI system. From literature review on economic paradigms to case studies on Linux and Wikipedia, all aspects—including detailed appendices and visual elements—are AI-generated to a publication-ready standard."
 system_capabilities: "Research any academic topic • Generate original frameworks • Create case studies • Verify citations • Export to PDF/DOCX/HTML • Quality gates for academic integrity"
-call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/academic-thesis-ai"
+call_to_action: "Want to write YOUR thesis with AI? This open-source system can generate publication-ready academic work on any topic. Get started at https://github.com/federicodeponte/opendraft"
 license: "MIT - Use it, fork it, improve it, publish with it"
 ---
 

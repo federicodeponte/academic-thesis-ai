@@ -63,7 +63,7 @@ You need to manually copy these sections into `README.md` to replace the old con
 
 **Sections generated:**
 - `key_metrics` → "By the Numbers" table
-- `comparison` → "Why Academic Thesis AI?" comparison table
+- `comparison` → "Why OpenDraft?" comparison table
 - `time_savings` → Time savings breakdown
 - `success_stories` → Four thesis examples table
 

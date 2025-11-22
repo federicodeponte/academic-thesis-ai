@@ -2,7 +2,7 @@
 
 **Time needed: 5 minutes**
 
-This guide shows you exactly how to get an API key for Academic Thesis AI.
+This guide shows you exactly how to get an API key for OpenDraft.
 
 ---
 
@@ -137,7 +137,7 @@ Click **"Sign Up"** and create account with email
 
 - Click **"API Keys"** in sidebar
 - Click **"Create Key"**
-- Give it a name (e.g., "Academic Thesis AI")
+- Give it a name (e.g., "OpenDraft")
 - Click **"Create"**
 
 **5. Copy Your API Key**
@@ -196,7 +196,7 @@ Sign up with email or Google/Microsoft account
 
 - Click **"API Keys"** in sidebar
 - Click **"Create new secret key"**
-- Name it: "Academic Thesis AI"
+- Name it: "OpenDraft"
 - Click **"Create"**
 
 **5. Copy Your API Key**

@@ -242,7 +242,7 @@ What we WON'T do (to maintain focus):
 
 ## 🙋 Get Involved
 
-Want to help shape the future of Academic Thesis AI?
+Want to help shape the future of OpenDraft?
 
 - **Developers:** Check [good-first-issue](../../issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22) label
 - **Researchers:** Share feedback on generated theses

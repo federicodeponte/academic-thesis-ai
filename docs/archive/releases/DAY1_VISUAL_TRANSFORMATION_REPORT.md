@@ -78,7 +78,7 @@
 
 **Code Example:**
 ```markdown
-<a href="https://github.com/federicodeponte/academic-thesis-ai/actions/workflows/ci.yml">
+<a href="https://github.com/federicodeponte/opendraft/actions/workflows/ci.yml">
   <img src="https://img.shields.io/github/actions/workflow/status/..." alt="Tests">
 </a>
 ```

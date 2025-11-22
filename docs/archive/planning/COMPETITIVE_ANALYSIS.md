@@ -1,6 +1,6 @@
 # Competitive Analysis
 
-**How Academic Thesis AI compares to alternatives in the academic writing space**
+**How OpenDraft compares to alternatives in the academic writing space**
 
 **Last Updated:** November 21, 2025
 
@@ -8,7 +8,7 @@
 
 ## 📊 Executive Summary
 
-Academic Thesis AI offers significant advantages over alternatives:
+OpenDraft offers significant advantages over alternatives:
 
 - **95% cheaper** than professional editing services
 - **10-20x faster** than manual writing
@@ -22,7 +22,7 @@ Academic Thesis AI offers significant advantages over alternatives:
 
 ### Complete Feature Comparison
 
-| Feature | Academic Thesis AI | Professional Editing | Jenni.ai | ChatGPT Pro | Grammarly Premium |
+| Feature | OpenDraft | Professional Editing | Jenni.ai | ChatGPT Pro | Grammarly Premium |
 |---------|-------------------|---------------------|----------|-------------|-------------------|
 | **💰 Cost (20k words)** | **$10-50** | $400-2,000 | $60 (3mo) | $240/yr | $144/yr |
 | **⏱️ Time** | **18-28 hrs** | 2-3 months | 30-50 hrs | 40-80 hrs | N/A (editing only) |
@@ -63,7 +63,7 @@ Academic Thesis AI offers significant advantages over alternatives:
 - Budget > $1,000 available
 - Have 2-3 months to wait
 
-#### When to Choose Academic Thesis AI
+#### When to Choose OpenDraft
 - Budget < $100
 - Need results in days, not months
 - Want research + writing + editing combined
@@ -78,7 +78,7 @@ Professional Editing:
 - Drafts: 1 (final only)
 - Total: $800
 
-Academic Thesis AI:
+OpenDraft:
 - Draft 1: $10 (Gemini)
 - Draft 2: $10 (Gemini revised)
 - Final: $50 (Claude polish)
@@ -110,7 +110,7 @@ Academic Thesis AI:
 
 **Test:** Same 20k-word thesis generated with both tools
 
-| Metric | Jenni.ai | Academic Thesis AI |
+| Metric | Jenni.ai | OpenDraft |
 |--------|----------|-------------------|
 | **Citation Count** | 22 | 38 |
 | **Citation Accuracy** | 85% (18/22 verified) | 95% (36/38 verified) |
@@ -126,12 +126,12 @@ Academic Thesis AI:
 - Don't need advanced features
 - Budget allows ongoing costs
 
-#### When to Choose Academic Thesis AI
+#### When to Choose OpenDraft
 - Want cheapest option ($10 vs $20/month)
 - Need highest citation accuracy (95% vs 85%)
 - Want open-source / customizable
 - Prefer local execution (privacy)
-- **Recommendation:** Academic Thesis AI is better for serious research
+- **Recommendation:** OpenDraft is better for serious research
 
 ---
 
@@ -157,7 +157,7 @@ Academic Thesis AI:
 
 **Test:** Generate thesis on "AI Pricing Models" with both
 
-| Metric | ChatGPT Pro | Academic Thesis AI |
+| Metric | ChatGPT Pro | OpenDraft |
 |--------|-------------|-------------------|
 | **Citations** | 12 | 38 |
 | **Citation Accuracy** | 7/12 (58%) | 36/38 (95%) |
@@ -172,7 +172,7 @@ Academic Thesis AI:
 
 **Problem:** Paper doesn't exist, authors fabricated, year is future.
 
-**Academic Thesis AI:**
+**OpenDraft:**
 > "Zhang, L., et al. (2023). 'Deep Reinforcement Learning for Dynamic Pricing in AI Services.' ACM Transactions on Intelligent Systems, 15(3), 1-24. DOI: 10.1145/3580305.3599428"
 
 **Verified:** DOI resolves, paper exists, authors correct.
@@ -183,7 +183,7 @@ Academic Thesis AI:
 - Don't care about citation accuracy
 - Willing to manually verify everything
 
-#### When to Choose Academic Thesis AI
+#### When to Choose OpenDraft
 - Need verified academic citations
 - Want specialized academic agents
 - Care about formatting
@@ -212,10 +212,10 @@ Academic Thesis AI:
 
 #### Complementary Use Case
 
-**Grammarly + Academic Thesis AI = Best of both worlds**
+**Grammarly + OpenDraft = Best of both worlds**
 
 ```
-1. Academic Thesis AI: Generate draft with citations ($10)
+1. OpenDraft: Generate draft with citations ($10)
 2. Human review: Add your analysis (free)
 3. Grammarly: Grammar & style polish ($144/year)
 4. Final export: Publication-ready PDF
@@ -229,7 +229,7 @@ Total: $154 vs $800-2,000 professional editing (81% cheaper)
 - Don't need research or citations
 - Can write content yourself
 
-#### When to Choose Academic Thesis AI
+#### When to Choose OpenDraft
 - Need research + writing + citations
 - Starting from scratch
 - Want complete thesis generator
@@ -266,7 +266,7 @@ Total: $154 vs $800-2,000 professional editing (81% cheaper)
 - Formatting: 10 hours
 - **Total: 215 hours**
 
-**Academic Thesis AI (25 hours total):**
+**OpenDraft (25 hours total):**
 - Research (AI + human): 3 hours
 - Review AI draft: 10 hours
 - Add your analysis: 8 hours
@@ -282,7 +282,7 @@ Manual writing:
 - Time: 215 hours
 - Opportunity cost: 215 × $50 = **$10,750**
 
-Academic Thesis AI:
+OpenDraft:
 - Time: 25 hours
 - Tool cost: $20
 - Opportunity cost: 25 × $50 = $1,250
@@ -294,7 +294,7 @@ Academic Thesis AI:
 - Don't trust AI
 - Institution prohibits AI use
 
-#### When to Choose Academic Thesis AI
+#### When to Choose OpenDraft
 - Time-constrained (deadlines)
 - Value your time
 - Want research assistance
@@ -528,7 +528,7 @@ Academic Thesis AI:
 
 ### Bottom Line
 
-**Academic Thesis AI is the best choice for:**
+**OpenDraft is the best choice for:**
 - Researchers who value citation accuracy
 - Students on tight budgets
 - Privacy-conscious academics
@@ -541,7 +541,7 @@ Academic Thesis AI:
 - Those wanting general AI assistant (use ChatGPT)
 
 **Recommended approach:** **Hybrid workflow**
-1. Use Academic Thesis AI for research + drafts ($10-20)
+1. Use OpenDraft for research + drafts ($10-20)
 2. Add your own analysis and insights (free)
 3. Optional: Professional editing for final polish ($200)
 4. Total: $210-220 vs $800-2,000 standalone professional editing

@@ -1,6 +1,6 @@
 # Docker Deployment Guide
 
-Run Academic Thesis AI in a containerized environment with all dependencies pre-installed.
+Run OpenDraft in a containerized environment with all dependencies pre-installed.
 
 ---
 
@@ -17,7 +17,7 @@ This creates a Docker image with:
 - Pandoc + LaTeX (PDF generation)
 - LibreOffice (alternative PDF engine)
 - All Python dependencies
-- Complete Academic Thesis AI framework
+- Complete OpenDraft framework
 
 **Build time:** 5-10 minutes (first time)
 
@@ -46,7 +46,7 @@ Access at: http://localhost:8501
 Run an interactive session inside the container:
 
 ```bash
-docker-compose run --rm academic-thesis-ai bash
+docker-compose run --rm opendraft bash
 ```
 
 Then use any utility:
@@ -63,14 +63,14 @@ Mount your files and generate PDF:
 ```bash
 docker-compose run --rm \
     -v $(pwd)/my_paper.md:/app/input.md \
-    academic-thesis-ai \
+    opendraft \
     python utils/export_professional.py input.md --pdf output.pdf
 ```
 
 ### Run Specific Agent Tests
 
 ```bash
-docker-compose run --rm academic-thesis-ai \
+docker-compose run --rm opendraft \
     python tests/scripts/test_scout_agent.py
 ```
 
@@ -137,21 +137,21 @@ docker-compose build --no-cache
 ### Build for Production
 
 ```bash
-docker build -t academic-thesis-ai:v1.1.0 .
-docker tag academic-thesis-ai:v1.1.0 your-registry/academic-thesis-ai:v1.1.0
-docker push your-registry/academic-thesis-ai:v1.1.0
+docker build -t opendraft:v1.1.0 .
+docker tag opendraft:v1.1.0 your-registry/opendraft:v1.1.0
+docker push your-registry/opendraft:v1.1.0
 ```
 
 ### Run in Production
 
 ```bash
 docker run -d \
-    --name academic-thesis-ai \
+    --name opendraft \
     -p 8501:8501 \
     -v $(pwd)/examples:/app/examples \
     -v $(pwd)/.env:/app/.env:ro \
     --restart unless-stopped \
-    your-registry/academic-thesis-ai:v1.1.0
+    your-registry/opendraft:v1.1.0
 ```
 
 ### Health Monitoring
@@ -161,7 +161,7 @@ Check container health:
 docker ps
 # Look for "healthy" status
 
-docker inspect --format='{{.State.Health.Status}}' academic-thesis-ai
+docker inspect --format='{{.State.Health.Status}}' opendraft
 ```
 
 ---
@@ -186,7 +186,7 @@ chmod -R 755 examples/ tests/outputs/
 
 Check engine availability:
 ```bash
-docker-compose run --rm academic-thesis-ai \
+docker-compose run --rm opendraft \
     python -c "from utils.pdf_engines import get_available_engines; print(get_available_engines())"
 ```
 
@@ -196,7 +196,7 @@ Should show: `['Pandoc/LaTeX', 'LibreOffice', 'WeasyPrint']`
 
 Check logs:
 ```bash
-docker-compose logs academic-thesis-ai
+docker-compose logs opendraft
 ```
 
 ### Out of memory during LaTeX installation
@@ -235,7 +235,7 @@ For development with live code updates:
 ```bash
 docker-compose run --rm \
     -v $(pwd):/app \
-    academic-thesis-ai \
+    opendraft \
     bash
 ```
 
@@ -247,7 +247,7 @@ Add debug flag:
 ```bash
 docker-compose run --rm \
     -e PYTHONUNBUFFERED=1 \
-    academic-thesis-ai \
+    opendraft \
     python -m pdb tests/test_pdf_engines.py
 ```
 
@@ -282,7 +282,7 @@ Build for ARM64 (Mac M1/M2) and AMD64 (x86):
 ```bash
 docker buildx create --use
 docker buildx build --platform linux/amd64,linux/arm64 \
-    -t academic-thesis-ai:multi-arch .
+    -t opendraft:multi-arch .
 ```
 
 ---

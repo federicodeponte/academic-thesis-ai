@@ -1,6 +1,6 @@
 # Launch Announcement - Marketing Materials
 
-**Purpose:** Pre-written marketing materials for announcing Academic Thesis AI across different platforms
+**Purpose:** Pre-written marketing materials for announcing OpenDraft across different platforms
 
 **Date Created:** November 21, 2025
 **Target Audience:** Researchers, students, academics, AI enthusiasts
@@ -79,7 +79,7 @@ All citations verified against academic databases
 ```
 Cost breakdown:
 
-Academic Thesis AI: $10-50
+OpenDraft: $10-50
 Professional editing: $400-2,000
 Jenni.ai: $20/month (limited)
 ChatGPT Pro: $240/year (generic)
@@ -159,7 +159,7 @@ Built for researchers, by researchers
 
 ### r/MachineLearning
 
-**Title:** [P] Academic Thesis AI - Generate 20k-word research papers with 15 specialized AI agents (95%+ citation accuracy)
+**Title:** [P] OpenDraft - Generate 20k-word research papers with 15 specialized AI agents (95%+ citation accuracy)
 
 **Body:**
 ```markdown
@@ -222,13 +222,13 @@ Generates publication-ready academic theses (20,000-30,000 words) with verified 
 **Quick start:**
 ```bash
 pip install -e .
-academic-thesis-ai verify
+opendraft verify
 python tests/scripts/test_ai_pricing_thesis.py
 ```
 
 **Google Colab demo (no install):** [link]
 
-**GitHub:** https://github.com/federicodeponte/academic-thesis-ai
+**GitHub:** https://github.com/federicodeponte/opendraft
 
 ## Ethics & responsible use
 
@@ -330,12 +330,12 @@ I've generated 4 complete theses (111k words) in different fields:
 **Quick start:**
 ```bash
 pip install -e .
-academic-thesis-ai verify
+opendraft verify
 ```
 
 **Google Colab demo (5 min, no install):** [link]
 
-**GitHub:** https://github.com/federicodeponte/academic-thesis-ai
+**GitHub:** https://github.com/federicodeponte/opendraft
 
 ## Questions?
 
@@ -365,9 +365,9 @@ Open source (MIT) • Runs locally • You own everything
 
 ## 🟧 Hacker News
 
-**Title:** Academic Thesis AI – Generate research papers with 15 specialized AI agents
+**Title:** OpenDraft – Generate research papers with 15 specialized AI agents
 
-**URL:** https://github.com/federicodeponte/academic-thesis-ai
+**URL:** https://github.com/federicodeponte/opendraft
 
 **Optional Comment:**
 ```
@@ -382,7 +382,7 @@ Key stats:
 
 Tech stack: Python, multi-LLM (Gemini/Claude/GPT), Semantic Scholar API, Crossref API
 
-4 example theses (111k words total): https://github.com/federicodeponte/academic-thesis-ai/blob/main/examples/GALLERY.md
+4 example theses (111k words total): https://github.com/federicodeponte/opendraft/blob/main/examples/GALLERY.md
 
 Try the Google Colab demo (no install): [link]
 
@@ -397,7 +397,7 @@ Happy to answer technical questions about the agent architecture, citation verif
 
 **Post:**
 ```
-🎓 Excited to share: Academic Thesis AI - an open-source tool that's transforming academic writing
+🎓 Excited to share: OpenDraft - an open-source tool that's transforming academic writing
 
 After 6 months of development and 3 months of beta testing with 127 researchers, I'm making this public.
 
@@ -435,7 +435,7 @@ Generates 20,000-30,000 word academic theses with verified citations from 200M+ 
 Designed as a research assistant, not a replacement. Users verify all outputs and cite AI assistance per institutional policies.
 
 Try the interactive demo: [Colab link]
-GitHub: https://github.com/federicodeponte/academic-thesis-ai
+GitHub: https://github.com/federicodeponte/opendraft
 
 Thoughts on AI-assisted academic writing? Would love to hear perspectives from researchers and academics!
 
@@ -452,7 +452,7 @@ Thoughts on AI-assisted academic writing? Would love to hear perspectives from r
 ```
 Hi [Community/List],
 
-I'm sharing an open-source tool that might interest researchers and students: Academic Thesis AI.
+I'm sharing an open-source tool that might interest researchers and students: OpenDraft.
 
 It's a multi-agent AI system that generates academic theses with verified citations from 200M+ research papers.
 
@@ -477,11 +477,11 @@ The tool is designed as a research assistant, not a replacement. Users must:
 
 EXAMPLES:
 4 complete theses (111k words) across different fields:
-https://github.com/federicodeponte/academic-thesis-ai/blob/main/examples/GALLERY.md
+https://github.com/federicodeponte/opendraft/blob/main/examples/GALLERY.md
 
 TRY IT:
 • Google Colab demo (no install): [link]
-• GitHub: https://github.com/federicodeponte/academic-thesis-ai
+• GitHub: https://github.com/federicodeponte/opendraft
 
 Open source (MIT) • Runs locally • Multi-LLM support
 
@@ -498,7 +498,7 @@ Questions welcome!
 
 **Description:**
 ```
-Academic Thesis AI is an open-source system that generates 20,000-30,000 word academic theses with verified citations from 200M+ research papers.
+OpenDraft is an open-source system that generates 20,000-30,000 word academic theses with verified citations from 200M+ research papers.
 
 🤖 HOW IT WORKS
 15 specialized AI agents collaborate through 5 phases:
@@ -560,7 +560,7 @@ MIT licensed • Runs locally • You own everything
 There has to be a better way."
 
 [0:30-1:00] SOLUTION
-"Meet Academic Thesis AI - 15 specialized agents working together:
+"Meet OpenDraft - 15 specialized agents working together:
 
 Phase 1: Research
 - Scout plans strategy
@@ -581,7 +581,7 @@ Phase 3: Quality
 "Let me show you. I'll generate a thesis on AI pricing models.
 
 [Terminal]: pip install -e .
-[Terminal]: academic-thesis-ai verify
+[Terminal]: opendraft verify
 [Terminal]: python test_ai_pricing_thesis.py
 
 [Time-lapse of generation: 0% → 100%]

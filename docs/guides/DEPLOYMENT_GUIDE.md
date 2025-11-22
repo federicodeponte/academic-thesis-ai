@@ -1,4 +1,4 @@
-# Academic Thesis AI - v1.3.1 Deployment Guide
+# OpenDraft - v1.3.1 Deployment Guide
 
 **Version**: 1.3.1 - Production-Grade Reliability
 **Release Date**: 2025-11-17
@@ -8,7 +8,7 @@
 
 ## Overview
 
-This guide covers deploying Academic Thesis AI v1.3.1 with the new **automatic error recovery** features and **production-grade reliability** improvements.
+This guide covers deploying OpenDraft v1.3.1 with the new **automatic error recovery** features and **production-grade reliability** improvements.
 
 ---
 
@@ -92,7 +92,7 @@ git log origin/master --oneline -5
 
 ### Step 2: Create GitHub Release
 
-1. Go to: `https://github.com/federicodeponte/academic-thesis-ai/releases/new`
+1. Go to: `https://github.com/federicodeponte/opendraft/releases/new`
 2. Select tag: `v1.3.1`
 3. Release title: `v1.3.1: Production-Grade Reliability`
 4. Description: Copy from CHANGELOG.md (v1.3.1 section)
@@ -133,7 +133,7 @@ export PYTHONPATH="${PYTHONPATH}:$(pwd)"
 python3 tests/scripts/test_ai_pricing_thesis.py
 
 # Check logs
-tail -f logs/academic_thesis_ai.log | grep -E "(Retry|WARNING|ERROR)"
+tail -f logs/opendraft.log | grep -E "(Retry|WARNING|ERROR)"
 ```
 
 **Watch for**:
@@ -196,7 +196,7 @@ LOG_ROTATION = True  # 10MB per file, 5 backups
 
 1. **Retry Rate**
    ```bash
-   grep -c "Retrying" logs/academic_thesis_ai.log
+   grep -c "Retrying" logs/opendraft.log
    ```
    - **Good**: < 30% of total requests
    - **Warning**: 30-50% (check API health)
@@ -204,7 +204,7 @@ LOG_ROTATION = True  # 10MB per file, 5 backups
 
 2. **Success Rate After Retry**
    ```bash
-   grep -A 1 "Retrying" logs/academic_thesis_ai.log | grep -c "Success"
+   grep -A 1 "Retrying" logs/opendraft.log | grep -c "Success"
    ```
    - **Good**: > 90%
    - **Warning**: 70-90%
@@ -213,7 +213,7 @@ LOG_ROTATION = True  # 10MB per file, 5 backups
 3. **Average Retry Attempts**
    ```bash
    # Extract retry counts and calculate average
-   grep "failed after" logs/academic_thesis_ai.log | \
+   grep "failed after" logs/opendraft.log | \
      sed 's/.*attempt \([0-9]\).*/\1/' | \
      awk '{sum+=$1; count++} END {print sum/count}'
    ```
@@ -278,7 +278,7 @@ python3 -m pytest tests/test_deduplicate_citations.py -v
 
 **Diagnosis**:
 ```bash
-grep "Retrying" logs/academic_thesis_ai.log | tail -20
+grep "Retrying" logs/opendraft.log | tail -20
 ```
 
 **Solutions**:
@@ -295,7 +295,7 @@ grep "Retrying" logs/academic_thesis_ai.log | tail -20
 
 **Diagnosis**:
 ```bash
-grep "failed after" logs/academic_thesis_ai.log
+grep "failed after" logs/opendraft.log
 ```
 
 **Solutions**:
@@ -313,7 +313,7 @@ grep "failed after" logs/academic_thesis_ai.log
 **Diagnosis**:
 ```bash
 # Count retry delays
-grep "Retrying in" logs/academic_thesis_ai.log | \
+grep "Retrying in" logs/opendraft.log | \
   sed 's/.*in \([0-9.]*\)s.*/\1/' | \
   awk '{sum+=$1} END {print "Total delay:", sum, "seconds"}'
 ```
@@ -376,7 +376,7 @@ export OPENAI_API_KEY="your-key-here"  # Optional
 **Monitor usage**:
 ```bash
 # Count API calls per minute
-watch -n 60 'grep "API call" logs/academic_thesis_ai.log | tail -100 | wc -l'
+watch -n 60 'grep "API call" logs/opendraft.log | tail -100 | wc -l'
 ```
 
 ---
@@ -393,14 +393,14 @@ watch -n 60 'grep "API call" logs/academic_thesis_ai.log | tail -100 | wc -l'
 
 ### Getting Help
 
-**Issues**: https://github.com/federicodeponte/academic-thesis-ai/issues
-**Discussions**: https://github.com/federicodeponte/academic-thesis-ai/discussions
+**Issues**: https://github.com/federicodeponte/opendraft/issues
+**Discussions**: https://github.com/federicodeponte/opendraft/discussions
 
 ### Reporting Bugs
 
 When reporting retry-related issues, include:
 1. Error message and stack trace
-2. Retry log entries (from logs/academic_thesis_ai.log)
+2. Retry log entries (from logs/opendraft.log)
 3. Number of retry attempts before failure
 4. API endpoint that failed
 5. Python version and OS
@@ -414,11 +414,11 @@ When reporting retry-related issues, include:
 **Morning** (First 4 hours):
 ```bash
 # Check error rate
-grep ERROR logs/academic_thesis_ai.log | wc -l
+grep ERROR logs/opendraft.log | wc -l
 # Expected: < 10 errors
 
 # Check retry rate
-grep Retrying logs/academic_thesis_ai.log | wc -l
+grep Retrying logs/opendraft.log | wc -l
 # Expected: 15-30% of total requests
 
 # Verify thesis generation works
@@ -431,7 +431,7 @@ python3 tests/scripts/test_ai_pricing_thesis.py
 # Review retry statistics
 python3 -c "
 import re
-with open('logs/academic_thesis_ai.log') as f:
+with open('logs/opendraft.log') as f:
     content = f.read()
     retries = len(re.findall(r'Retrying', content))
     failures = len(re.findall(r'failed after', content))
@@ -472,7 +472,7 @@ Deployment is successful if:
 
 ## Conclusion
 
-Version 1.3.1 represents a **major reliability improvement** for Academic Thesis AI. The automatic retry mechanism eliminates the most common source of manual intervention (transient network failures) while maintaining the same high-quality output.
+Version 1.3.1 represents a **major reliability improvement** for OpenDraft. The automatic retry mechanism eliminates the most common source of manual intervention (transient network failures) while maintaining the same high-quality output.
 
 **Key Benefits**:
 - Zero manual restarts for network errors

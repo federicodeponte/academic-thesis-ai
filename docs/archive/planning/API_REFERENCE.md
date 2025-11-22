@@ -1,6 +1,6 @@
 # API Reference
 
-This document provides comprehensive API documentation for the Academic Thesis AI project.
+This document provides comprehensive API documentation for the OpenDraft project.
 
 ## Table of Contents
 

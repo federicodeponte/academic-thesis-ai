@@ -1,9 +1,9 @@
 ---
 titel: "Führt der Handel mit CO2-Zertifikaten nachweislich zu einer signifikanten Verlangsamung des menschengemachten Klimawandels?"
 untertitel: "KI-generierte akademische Arbeit als Showcase"
-autor: "Academic Thesis AI (Multi-Agenten-System)"
+autor: "OpenDraft (Multi-Agenten-System)"
 system_ersteller: "Federico De Ponte"
-github_repo: "https://github.com/federicodeponte/academic-thesis-ai"
+github_repo: "https://github.com/federicodeponte/opendraft"
 datum: "Januar 2025"
 qualitäts_bewertung: "A- (90/100) - Publikationsreif für mittelrangige akademische Fachzeitschriften"
 wort_anzahl: "14850 Wörter auf 67 Seiten (geschätzt)"
@@ -12,7 +12,7 @@ visuelle_elemente: "4 Tabellen, 2 Abbildungen, umfassende Anhänge"
 generierungsmethode: "14 spezialisierte KI-Agenten (Forschung, Schreiben, Faktenprüfung, Zitation, Export)"
 beschreibung_der_arbeit: "Diese komplette 67-seitige Arbeit zum Thema CO2-Zertifikate und Klimawandel wurde autonom von einem Multi-Agenten-KI-System geschrieben, recherchiert, faktengeprüft und formatiert. Von der Literaturübersicht über die Analyse von Emissionshandelssystemen bis hin zu Fallstudien – alles KI-generiert."
 system_fähigkeiten: "Recherche zu jedem akademischen Thema • Generierung origineller Rahmenwerke • Erstellung von Fallstudien • Verifizierung von Zitaten • Export nach PDF/DOCX/HTML • Qualitätsprüfungen für akademische Integrität"
-handlungsaufforderung: "Möchten Sie IHRE Arbeit mit KI schreiben? Dieses Open-Source-System kann publikationsreife akademische Arbeiten zu jedem Thema erstellen. Starten Sie unter https://github.com/federicodeponte/academic-thesis-ai"
+handlungsaufforderung: "Möchten Sie IHRE Arbeit mit KI schreiben? Dieses Open-Source-System kann publikationsreife akademische Arbeiten zu jedem Thema erstellen. Starten Sie unter https://github.com/federicodeponte/opendraft"
 lizenz: "MIT - Nutzen Sie es, forken Sie es, verbessern Sie es, veröffentlichen Sie damit"
 ---
 

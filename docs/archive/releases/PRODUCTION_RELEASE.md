@@ -1,4 +1,4 @@
-# 🎉 Academic Thesis AI - v1.0 Production Release
+# 🎉 OpenDraft - v1.0 Production Release
 
 **Release Date:** 2025-10-28
 **Status:** ✅ Production Ready
@@ -8,7 +8,7 @@
 
 ## 🚀 We're Live!
 
-After comprehensive testing of all 14 agents and complete validation of all utilities, **Academic Thesis AI v1.0** is officially production-ready!
+After comprehensive testing of all 14 agents and complete validation of all utilities, **OpenDraft v1.0** is officially production-ready!
 
 ---
 
@@ -146,7 +146,7 @@ After comprehensive testing of all 14 agents and complete validation of all util
 ## 📦 What You Get
 
 ```
-academic-thesis-ai/
+opendraft/
 ├── prompts/           # 14 agent prompts (6,058 lines)
 │   ├── 01_research/   # Scout, Scribe, Signal
 │   ├── 02_structure/  # Architect, Formatter
@@ -171,8 +171,8 @@ academic-thesis-ai/
 
 ### 1. Clone & Setup
 ```bash
-git clone https://github.com/yourusername/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/yourusername/opendraft.git
+cd opendraft
 ./setup.sh
 ```
 
@@ -269,8 +269,8 @@ Inspired by the need for better academic writing tools.
 
 ## 📧 Support & Community
 
-- **Issues:** [GitHub Issues](https://github.com/yourusername/academic-thesis-ai/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/academic-thesis-ai/discussions)
+- **Issues:** [GitHub Issues](https://github.com/yourusername/opendraft/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/yourusername/opendraft/discussions)
 - **Documentation:** See `README.md` and `docs/`
 - **Test Results:** See `tests/outputs/PRODUCTION_TEST_RESULTS.md`
 
@@ -301,7 +301,7 @@ Please consider:
 
 ---
 
-**Academic Thesis AI v1.0**
+**OpenDraft v1.0**
 *From literature review to publication - with AI assistance done right*
 
 ✅ **Production Ready** | 🧪 **100% Tested** | 📚 **Fully Documented**

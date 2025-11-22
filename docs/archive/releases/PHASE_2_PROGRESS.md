@@ -14,7 +14,7 @@
 
 **Changes Made:**
 - Updated from setup.sh to `pip install -e .`
-- Added verification step (`academic-thesis-ai verify`)
+- Added verification step (`opendraft verify`)
 - Added troubleshooting section
 - Fixed all commands to use new package structure
 - Added expected output examples

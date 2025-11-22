@@ -11,7 +11,7 @@ We actively support and provide security updates for the following versions:
 
 ## Reporting a Vulnerability
 
-We take security seriously. If you discover a security vulnerability in Academic Thesis AI, please report it privately.
+We take security seriously. If you discover a security vulnerability in OpenDraft, please report it privately.
 
 ### How to Report
 
@@ -20,7 +20,7 @@ We take security seriously. If you discover a security vulnerability in Academic
 Instead, please report security issues via one of these methods:
 
 1. **GitHub Security Advisories** (Preferred)
-   - Go to: https://github.com/federicodeponte/academic-thesis-ai/security/advisories
+   - Go to: https://github.com/federicodeponte/opendraft/security/advisories
    - Click "New draft security advisory"
    - Provide detailed information about the vulnerability
 
@@ -191,12 +191,12 @@ We acknowledge security researchers who responsibly disclose vulnerabilities:
 ## Contact
 
 For security concerns:
-- **GitHub Advisories** (Preferred): https://github.com/federicodeponte/academic-thesis-ai/security/advisories
+- **GitHub Advisories** (Preferred): https://github.com/federicodeponte/opendraft/security/advisories
 - **Urgent Issues**: Open a private Discussion with subject "[SECURITY - URGENT]"
 
 For general questions:
-- GitHub Issues: https://github.com/federicodeponte/academic-thesis-ai/issues
-- Discussions: https://github.com/federicodeponte/academic-thesis-ai/discussions
+- GitHub Issues: https://github.com/federicodeponte/opendraft/issues
+- Discussions: https://github.com/federicodeponte/opendraft/discussions
 
 ---
 

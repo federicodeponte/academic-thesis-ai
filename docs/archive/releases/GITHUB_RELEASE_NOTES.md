@@ -7,7 +7,7 @@
 
 ## 🎯 Overview
 
-Version 1.3.1 brings **automatic error recovery** to Academic Thesis AI, eliminating the need for manual intervention when transient network failures occur. This release represents a major reliability improvement with zero breaking changes.
+Version 1.3.1 brings **automatic error recovery** to OpenDraft, eliminating the need for manual intervention when transient network failures occur. This release represents a major reliability improvement with zero breaking changes.
 
 ## ✨ New Features
 
@@ -305,9 +305,9 @@ See [CHANGELOG.md](CHANGELOG.md) for complete version history.
 
 ## 🔗 Links
 
-- **Repository**: https://github.com/federicodeponte/academic-thesis-ai
-- **Issues**: https://github.com/federicodeponte/academic-thesis-ai/issues
-- **Discussions**: https://github.com/federicodeponte/academic-thesis-ai/discussions
+- **Repository**: https://github.com/federicodeponte/opendraft
+- **Issues**: https://github.com/federicodeponte/opendraft/issues
+- **Discussions**: https://github.com/federicodeponte/opendraft/discussions
 - **Documentation**: `docs/` directory
 
 ---

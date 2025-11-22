@@ -250,7 +250,7 @@ Derived from this framework:
 
 ---
 
-**How to Use This Template with Academic Thesis AI:**
+**How to Use This Template with OpenDraft:**
 
 1. **Scout Agent** - Find theoretical papers in your domain: `prompts/01_research/scout.md`
 2. **Scribe Agent** - Extract theoretical constructs: `prompts/01_research/scribe.md`

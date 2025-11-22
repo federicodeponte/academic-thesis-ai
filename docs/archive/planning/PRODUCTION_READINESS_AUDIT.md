@@ -2,7 +2,7 @@
 
 **Date:** November 20, 2025
 **Auditor:** Self-Assessment (Devil's Advocate Mode)
-**Repository:** academic-thesis-ai
+**Repository:** opendraft
 **Purpose:** Identify critical gaps before public open-source release
 
 ---
@@ -36,7 +36,7 @@ ls: No such file or directory
 ```
 
 **Impact:**
-- Users cannot `pip install academic-thesis-ai`
+- Users cannot `pip install opendraft`
 - Cannot declare dependencies properly
 - No version management
 - Not discoverable on PyPI
@@ -44,13 +44,13 @@ ls: No such file or directory
 
 **What Users Expect:**
 ```bash
-pip install academic-thesis-ai
+pip install opendraft
 ```
 
 **What They Get Instead:**
 ```bash
 git clone https://github.com/...
-cd academic-thesis-ai
+cd opendraft
 pip install -r requirements.txt  # Hope this works!
 ```
 
@@ -167,7 +167,7 @@ validate-pdfs.yml  # Only 1 workflow
 
 **Current State:**
 - README has installation instructions
-- But no `python -m academic_thesis_ai.verify` or similar
+- But no `python -m opendraft.verify` or similar
 - No smoke test to confirm API keys, dependencies, etc.
 
 **Impact:**
@@ -430,7 +430,7 @@ You may use, modify, and redistribute them with attribution.
 
 ## Privacy & Data Collection
 
-Academic Thesis AI does **NOT** collect, store, or transmit:
+OpenDraft does **NOT** collect, store, or transmit:
 - Your thesis content
 - API keys or credentials
 - Usage analytics or telemetry
@@ -482,7 +482,7 @@ Dockerfile  # Exists
 ```
 
 **But:**
-- No `docker pull academic-thesis-ai:latest`
+- No `docker pull opendraft:latest`
 - Users must build locally
 
 **Fix:** Publish to Docker Hub or GitHub Container Registry.
@@ -513,8 +513,8 @@ Dockerfile  # Exists
 
 **Fix:**
 ```markdown
-![Coverage](https://img.shields.io/codecov/c/github/federicodeponte/academic-thesis-ai)
-![Tests](https://img.shields.io/github/actions/workflow/status/federicodeponte/academic-thesis-ai/ci.yml)
+![Coverage](https://img.shields.io/codecov/c/github/federicodeponte/opendraft)
+![Tests](https://img.shields.io/github/actions/workflow/status/federicodeponte/opendraft/ci.yml)
 ```
 
 ---
@@ -531,14 +531,14 @@ Dockerfile  # Exists
 ```markdown
 # README.md - Citation
 
-If you use Academic Thesis AI in your research, please cite:
+If you use OpenDraft in your research, please cite:
 
 ```bibtex
-@software{academic_thesis_ai,
+@software{opendraft,
   author = {De Ponte, Federico},
-  title = {Academic Thesis AI: AI-Powered Academic Writing Framework},
+  title = {OpenDraft: AI-Powered Academic Writing Framework},
   year = {2025},
-  url = {https://github.com/federicodeponte/academic-thesis-ai}
+  url = {https://github.com/federicodeponte/opendraft}
 }
 ```
 ```

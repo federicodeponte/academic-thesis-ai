@@ -1,4 +1,4 @@
-# Week Plan: Production-Ready Academic Thesis AI (V2 - Honest Edition)
+# Week Plan: Production-Ready OpenDraft (V2 - Honest Edition)
 
 **Date**: 2025-11-19
 **Status**: 🔴 CRITICAL - Current system generates 30 citations, needs 50+
@@ -285,12 +285,12 @@ git push
 ```
 
 **Task 3: Verify Deployment** (15 min)
-- Visit: `https://[user].github.io/academic-thesis-ai/examples/opensource_thesis.pdf`
+- Visit: `https://[user].github.io/opendraft/examples/opensource_thesis.pdf`
 - Verify: All 4 PDFs accessible, render correctly
 
 **Task 4: Create Showcase README** (45 min)
 ```markdown
-# Academic Thesis AI - Showcase Examples
+# OpenDraft - Showcase Examples
 
 ## Live Examples
 

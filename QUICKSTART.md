@@ -1,4 +1,4 @@
-# Academic Thesis AI - Quickstart (10 Minutes)
+# OpenDraft - Quickstart (10 Minutes)
 
 > **✅ Production Ready:** All 15 agents fully tested with 100% coverage. Ready for academic paper writing.
 
@@ -12,20 +12,20 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/federicodeponte/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/federicodeponte/opendraft.git
+cd opendraft
 
 # Install the package
 pip install -e .
 
 # Verify installation
-academic-thesis-ai verify
+opendraft verify
 ```
 
 **Expected output:**
 ```
 ============================================================
-  Academic Thesis AI - Installation Verification
+  OpenDraft - Installation Verification
 ============================================================
 🐍 Python version: 3.11.0
    ✅ Compatible (>= 3.9)
@@ -58,7 +58,7 @@ OPENAI_API_KEY=your_key_here          # GPT-4
 
 ```bash
 # Run verification again to confirm API keys
-academic-thesis-ai verify
+opendraft verify
 ```
 
 You should now see ✅ for API Keys section.
@@ -102,7 +102,7 @@ pip install -r requirements.txt
 pip install -e . --user
 
 # Still having issues?
-python -m academic_thesis_ai.verify
+python -m opendraft.verify
 ```
 
 ### API Key Issues
@@ -129,7 +129,7 @@ pip install weasyprint
 - 🤖 **Agent Workflow:** [prompts/00_WORKFLOW.md](prompts/00_WORKFLOW.md)
 - ⚖️ **Ethics & Responsible Use:** [ETHICS.md](ETHICS.md)
 - 🎓 **Example Theses:** [examples/](examples/)
-- 🐛 **Report Issues:** [GitHub Issues](https://github.com/federicodeponte/academic-thesis-ai/issues)
+- 🐛 **Report Issues:** [GitHub Issues](https://github.com/federicodeponte/opendraft/issues)
 
 ## Need Help?
 

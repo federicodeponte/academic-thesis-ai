@@ -1,13 +1,13 @@
 <div align="center">
 
-# Academic Thesis AI
+# OpenDraft
 
 ### AI-Powered Academic Writing Framework
 
 Generate publication-ready theses with 15 specialized AI agents and 200M+ research papers
 
 <p>
-  <a href="https://academic-thesis-ai-landing.vercel.app"><strong>Website</strong></a> ·
+  <a href="https://opendraft-landing.vercel.app"><strong>Website</strong></a> ·
   <a href="#-quick-start-10-minutes"><strong>Quick Start</strong></a> ·
   <a href="docs/"><strong>Documentation</strong></a> ·
   <a href="examples/"><strong>Examples</strong></a>
@@ -16,7 +16,7 @@ Generate publication-ready theses with 15 specialized AI agents and 200M+ resear
 <p>
   <img src="https://img.shields.io/badge/Python-3.8+-8B5CF6?style=flat-square&logo=python&logoColor=white" alt="Python 3.8+">
   <img src="https://img.shields.io/badge/License-MIT-8B5CF6?style=flat-square" alt="MIT License">
-  <img src="https://img.shields.io/github/stars/federicodeponte/academic-thesis-ai?style=flat-square&color=8B5CF6" alt="GitHub Stars">
+  <img src="https://img.shields.io/github/stars/federicodeponte/opendraft?style=flat-square&color=8B5CF6" alt="GitHub Stars">
 </p>
 
 </div>
@@ -64,7 +64,7 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 <table>
   <tr>
     <th>Feature</th>
-    <th align="center"><strong>Academic Thesis AI</strong></th>
+    <th align="center"><strong>OpenDraft</strong></th>
     <th align="center">Professional Editing</th>
     <th align="center">Grammarly Premium</th>
     <th align="center">ChatGPT Pro</th>
@@ -249,7 +249,7 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 - 📄 **200M+ Papers** - Indexed across arXiv, Semantic Scholar, PubMed
 - ✅ **100% Test Coverage** - All 15 agents validated in production
 
-**Have you used Academic Thesis AI?** [Share your experience](https://github.com/federicodeponte/academic-thesis-ai/discussions/new) and help others!
+**Have you used OpenDraft?** [Share your experience](https://github.com/federicodeponte/opendraft/discussions/new) and help others!
 
 </details>
 
@@ -262,8 +262,8 @@ A **prompt-driven framework** for academic writing that uses specialized AI agen
 ### 1. Clone and Install
 
 ```bash
-git clone https://github.com/federicodeponte/academic-thesis-ai.git
-cd academic-thesis-ai
+git clone https://github.com/federicodeponte/opendraft.git
+cd opendraft
 
 # Create virtual environment (recommended)
 python3 -m venv venv
@@ -768,7 +768,7 @@ Inspired by the need for better academic writing tools.
 
 ## 🔒 Privacy & Data Collection
 
-**Academic Thesis AI respects your privacy and does NOT collect, store, or transmit:**
+**OpenDraft respects your privacy and does NOT collect, store, or transmit:**
 - ❌ Your thesis content (stays 100% local)
 - ❌ Personal information or analytics
 - ❌ Usage telemetry or tracking
@@ -802,8 +802,8 @@ See [SECURITY.md](SECURITY.md) for security best practices.
 
 ## 📧 Support
 
-- **Issues:** [GitHub Issues](https://github.com/yourusername/academic-thesis-ai/issues)
-- **Discussions:** [GitHub Discussions](https://github.com/yourusername/academic-thesis-ai/discussions)
+- **Issues:** [GitHub Issues](https://github.com/yourusername/opendraft/issues)
+- **Discussions:** [GitHub Discussions](https://github.com/yourusername/opendraft/discussions)
 - **Security:** See [SECURITY.md](SECURITY.md) for vulnerability reporting
 
 ---
@@ -844,7 +844,7 @@ See [SECURITY.md](SECURITY.md) for security best practices.
 
 ## ⭐ Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=federicodeponte/academic-thesis-ai&type=Date)](https://star-history.com/#federicodeponte/academic-thesis-ai&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=federicodeponte/opendraft&type=Date)](https://star-history.com/#federicodeponte/opendraft&Date)
 
 **If this tool helps your research, please:**
 - ⭐ **Star this repo** - Helps others discover it

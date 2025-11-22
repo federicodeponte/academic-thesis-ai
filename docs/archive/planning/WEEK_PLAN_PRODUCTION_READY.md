@@ -1,4 +1,4 @@
-# Week Plan: Production-Ready Academic Thesis AI
+# Week Plan: Production-Ready OpenDraft
 
 **Goal**: Transform this project into a next-level, production-grade system with 4 perfect showcase theses that work for ANY topic.
 
@@ -159,7 +159,7 @@
 - Copy PDFs to `examples/` directory
 - Update GitHub Pages
 - Verify PDFs visible at:
-  - `https://federicodeponte.github.io/academic-thesis-ai/examples/opensource_thesis.pdf`
+  - `https://federicodeponte.github.io/opendraft/examples/opensource_thesis.pdf`
   - All 4 theses accessible
 
 **Create Showcase README**

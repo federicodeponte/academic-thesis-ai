@@ -27,12 +27,12 @@
 
 ## comparison
 
-## 🏆 Why Academic Thesis AI?
+## 🏆 Why OpenDraft?
 
 <table>
   <tr>
     <th width="20%">Feature</th>
-    <th width="20%" align="center"><strong>Academic Thesis AI</strong></th>
+    <th width="20%" align="center"><strong>OpenDraft</strong></th>
     <th width="15%" align="center">Professional Editing</th>
     <th width="15%" align="center">Grammarly Premium</th>
     <th width="15%" align="center">ChatGPT Pro</th>

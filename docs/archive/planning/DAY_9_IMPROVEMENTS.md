@@ -526,7 +526,7 @@ def important_operation():
 **4. Monitor Retry Rates:**
 - High retry rates (> 30%) indicate upstream issues
 - Zero retries may indicate over-aggressive timeouts
-- Check logs regularly: `tail -f logs/academic_thesis_ai.log`
+- Check logs regularly: `tail -f logs/opendraft.log`
 
 ---
 

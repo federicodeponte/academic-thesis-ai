@@ -1,7 +1,7 @@
 # Multi-Agent Architecture Visualization Specifications
 
 **Date:** 2025-11-22
-**Purpose:** Detailed specifications for technical diagrams showing the 15-agent Academic Thesis AI system
+**Purpose:** Detailed specifications for technical diagrams showing the 15-agent OpenDraft system
 **Target Use Cases:** README.md, Landing Page, Social Media
 **Implementation Tool:** Figma (user-created)
 **Style:** Technical / Engineering Diagram
@@ -571,7 +571,7 @@ graph LR
 
 ### In README.md
 ```markdown
-# Academic Thesis AI
+# OpenDraft
 
 ![Multi-Agent Architecture](docs/images/architecture-diagram.png)
 
@@ -599,7 +599,7 @@ The system uses a **multi-agent pipeline architecture**:
 ### On Social Media
 **LinkedIn Post:**
 ```
-🚀 Introducing Academic Thesis AI
+🚀 Introducing OpenDraft
 
 15 specialized AI agents working together to generate publication-ready theses in 20-25 minutes.
 

@@ -254,7 +254,7 @@ This study contributes to the literature by:
 
 ---
 
-**How to Use This Template with Academic Thesis AI:**
+**How to Use This Template with OpenDraft:**
 
 1. **Scout Agent** - Find relevant empirical studies: `prompts/01_research/scout.md`
 2. **Scribe Agent** - Extract methodologies and findings: `prompts/01_research/scribe.md`

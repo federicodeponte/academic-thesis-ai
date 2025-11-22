@@ -2,7 +2,7 @@
 
 **Test Date:** 2025-10-30
 **Tester:** Claude Sonnet 4.5
-**Environment:** ~/academic-thesis-ai
+**Environment:** ~/opendraft
 
 ## Setup Verification Results
 

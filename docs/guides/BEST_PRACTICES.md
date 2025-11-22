@@ -1,6 +1,6 @@
 # Best Practices for Responsible AI-Assisted Academic Writing
 
-**Academic Thesis AI** is designed to be a research assistant, not a replacement for scholarship. This guide helps you use AI responsibly while maintaining academic integrity.
+**OpenDraft** is designed to be a research assistant, not a replacement for scholarship. This guide helps you use AI responsibly while maintaining academic integrity.
 
 **Based on:** 4 production theses and 111,665 words of generated content
 
@@ -397,7 +397,7 @@ Total: $23-47
 ```markdown
 ## Acknowledgments
 
-This thesis was written with assistance from Academic Thesis AI,
+This thesis was written with assistance from OpenDraft,
 an open-source tool that uses large language models to support
 academic research and writing. All AI-generated content was
 reviewed, verified, and edited by the author. Citations were
@@ -741,7 +741,7 @@ Before submitting your thesis:
 - [Ethics Guide](../../ETHICS.md) - Responsible use
 
 **Community:**
-- [GitHub Discussions](https://github.com/federicodeponte/academic-thesis-ai/discussions)
+- [GitHub Discussions](https://github.com/federicodeponte/opendraft/discussions)
 - [Best Thesis Examples](../../examples/GALLERY.md)
 
 ---

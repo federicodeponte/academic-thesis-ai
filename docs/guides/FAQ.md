@@ -1,6 +1,6 @@
 # Frequently Asked Questions (FAQ)
 
-Quick answers to common questions about Academic Thesis AI.
+Quick answers to common questions about OpenDraft.
 
 ---
 
@@ -384,7 +384,7 @@ Nothing is lost.
 
 ### How do I report bugs?
 
-**GitHub Issues:** https://github.com/federicodeponte/academic-thesis-ai/issues
+**GitHub Issues:** https://github.com/federicodeponte/opendraft/issues
 
 Please include:
 - What you tried to do
@@ -394,7 +394,7 @@ Please include:
 
 ### How do I request features?
 
-**GitHub Discussions:** https://github.com/federicodeponte/academic-thesis-ai/discussions
+**GitHub Discussions:** https://github.com/federicodeponte/opendraft/discussions
 
 Or open a feature request issue.
 
@@ -432,8 +432,8 @@ Areas that need help:
 - [README](README.md) - Full documentation
 
 **Community:**
-- [GitHub Issues](https://github.com/federicodeponte/academic-thesis-ai/issues) - Bug reports
-- [GitHub Discussions](https://github.com/federicodeponte/academic-thesis-ai/discussions) - Q&A
+- [GitHub Issues](https://github.com/federicodeponte/opendraft/issues) - Bug reports
+- [GitHub Discussions](https://github.com/federicodeponte/opendraft/discussions) - Q&A
 
 **Can't find your answer?**
 

@@ -25,7 +25,7 @@ class APITierDetector:
     Caches results to avoid repeated detection overhead.
     """
 
-    CACHE_FILE = Path.home() / ".cache" / "academic_thesis_ai" / "api_tier_cache.json"
+    CACHE_FILE = Path.home() / ".cache" / "opendraft" / "api_tier_cache.json"
     CACHE_TTL = 86400  # 24 hours (tier rarely changes)
 
     def __init__(self, api_key: Optional[str] = None, force_detect: bool = False):

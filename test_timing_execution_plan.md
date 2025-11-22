@@ -37,7 +37,7 @@ Execute thesis generation tests with real timing measurements to validate README
 ### Test 1: Demo Thesis Execution
 ```bash
 # Set environment and run demo
-cd /home/federicodeponte/academic-thesis-ai
+cd /home/federicodeponte/opendraft
 export GEMINI_MODEL="gemini-2.5-flash"
 time python3 tests/scripts/test_demo_thesis.py
 ```

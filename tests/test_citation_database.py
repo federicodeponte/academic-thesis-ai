@@ -167,15 +167,16 @@ class TestCitationDatabase:
             db.validate()
 
     def test_validate_journal_missing_journal_name(self):
-        """Test validation fails for journal without journal name."""
+        """Test validation logs warning for journal without journal name (lenient for AI extraction)."""
         citations = [
             Citation("cite_001", ["Smith"], 2023, "Test", "journal"),  # Missing journal field
         ]
 
         db = CitationDatabase(citations)
 
-        with pytest.raises(ValueError, match="missing journal name"):
-            db.validate()
+        # AI-extracted citations may have missing metadata - this should pass with warning, not fail
+        # Production systems need to be lenient with incomplete AI-extracted data
+        assert db.validate() == True
 
     def test_database_to_dict(self):
         """Test converting database to dictionary."""

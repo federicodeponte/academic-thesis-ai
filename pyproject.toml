@@ -95,6 +95,8 @@ testpaths = ["tests"]
 python_files = "test_*.py"
 python_functions = "test_*"
 addopts = "-v --strict-markers --cov=. --cov-report=term-missing"
+# Exclude standalone integration test scripts (run directly, not via pytest)
+norecursedirs = ["tests/scripts", "tests/exploratory"]
 markers = [
     "slow: marks tests as slow (deselect with '-m \"not slow\"')",
     "integration: marks tests requiring API access",

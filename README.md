@@ -55,7 +55,7 @@
 </p>
 
 <h3>
-Write academic papers <strong>50-70% faster</strong> with AI assistance<br/>
+Write academic papers <strong>99% faster</strong> with AI assistance<br/>
 while maintaining quality and academic integrity
 </h3>
 
@@ -84,13 +84,10 @@ while maintaining quality and academic integrity
   </tr>
 </table>
 
-**Watch:**
-📹 [3-Minute Demo Video](https://youtube.com/...) *(coming soon)* | 🎮 [Try Interactive Demo →](https://colab.research.google.com/github/federicodeponte/academic-thesis-ai/blob/main/notebooks/Academic_Thesis_AI_Demo.ipynb)
-
 **Results:**
-- 🚀 **15-25 minutes** to generate a 20,000-word thesis
+- 🚀 **20-25 minutes** to generate a 20,000-word thesis
 - 📚 **50+ citations** automatically researched and verified
-- 📄 **Publication-ready** PDF, Word, or LaTeX output
+- 📄 **Publication-ready** PDF, DOCX, or LaTeX output
 - ✅ **100% tested** - All 15 agents validated in production
 
 ---
@@ -109,7 +106,7 @@ while maintaining quality and academic integrity
   <tr>
     <td><strong>💰 Cost (20k words)</strong></td>
     <td align="center">
-      <code>$10-50</code><br/>
+      <code>$10-$35</code><br/>
       <sub>95% cheaper</sub>
     </td>
     <td align="center"><sub>$400-2,000</sub></td>
@@ -120,8 +117,8 @@ while maintaining quality and academic integrity
   <tr>
     <td><strong>⏱️ Time to Complete</strong></td>
     <td align="center">
-      <code>10-20 hours</code><br/>
-      <sub>10x faster</sub>
+      <code>20-25 min</code><br/>
+      <sub>99% faster</sub>
     </td>
     <td align="center"><sub>2-3 months</sub></td>
     <td align="center"><sub>N/A</sub></td>
@@ -153,8 +150,8 @@ while maintaining quality and academic integrity
     <td align="center">⚠️ 3 agents</td>
   </tr>
   <tr>
-    <td><strong>🆓 FREE Tier</strong></td>
-    <td align="center">✅ <code>Yes (Gemini)</code></td>
+    <td><strong>💸 Low-Cost Option</strong></td>
+    <td align="center">✅ <code>From $10 (Gemini)</code></td>
     <td align="center">❌ No</td>
     <td align="center">❌ No</td>
     <td align="center">❌ No</td>
@@ -172,8 +169,8 @@ while maintaining quality and academic integrity
 
 ### 💯 Bottom Line
 - **95% cheaper** than professional editing
-- **10x faster** than manual writing
-- **FREE option** available (Gemini covers 12k words)
+- **99% faster** than manual writing
+- **Low-cost option** available (from $10 with Gemini 2.5 Flash)
 - **Publication-ready** outputs with proper citations
 - **Full control** - runs locally, you own everything
 
@@ -188,10 +185,10 @@ while maintaining quality and academic integrity
 | 🤖 **AI Agents** | 15 specialized agents |
 | 📚 **Research Papers** | 200M+ accessible |
 | ✅ **Citation Success** | 95%+ accuracy |
-| ⚡ **Generation Speed** | 15-25 min (20k words) |
-| 📄 **Export Formats** | PDF, Word, LaTeX |
+| ⚡ **Generation Speed** | 20-25 min (20k words) |
+| 📄 **Export Formats** | PDF, DOCX, LaTeX |
 | 🧪 **Test Coverage** | 100% (70+ tests) |
-| 💰 **Cost per Thesis** | $10-50 (Gemini 2.5) |
+| 💰 **Cost per Thesis** | $10-$35 (Gemini 2.5) |
 | ⭐ **GitHub Stars** | 120+ |
 | 👥 **Active Users** | Growing daily |
 
@@ -219,7 +216,7 @@ python tests/scripts/test_ai_pricing_thesis.py
 
 **That's it!** Your thesis will be in `examples/ai_pricing_thesis.pdf`
 
-👉 **[Full Installation Guide](QUICKSTART.md)** | 🎮 **[Try Interactive Demo](https://colab.research.google.com/...)**
+👉 **[Full Installation Guide](QUICKSTART.md)**
 
 ---
 
@@ -304,7 +301,7 @@ python tests/scripts/test_ai_pricing_thesis.py
       📚 41 citations<br/>
       ⏱️ 18 min generation
     </td>
-    <td><a href="examples/co2_german_thesis.pdf">View PDF →</a></td>
+    <td><a href="examples/co2_thesis_german.pdf">View PDF →</a></td>
   </tr>
 </table>
 
@@ -442,9 +439,6 @@ docker pull academic-thesis-ai:latest
 docker run -it academic-thesis-ai
 ```
 
-### Option 3: Google Colab (No Install)
-👉 **[Try Interactive Demo](https://colab.research.google.com/...)**
-
 **Requirements:**
 - Python 3.9+
 - At least one LLM API key (Gemini/Claude/GPT)
@@ -456,10 +450,7 @@ docker run -it academic-thesis-ai
 
 ## 🎥 Demo & Tutorials
 
-- 🎬 **[3-Minute Demo Video](https://youtube.com/...)** - See it in action
-- 📺 **[Full Tutorial Series](https://youtube.com/...)** - Step-by-step guide
-- 🎮 **[Interactive Colab](https://colab.research.google.com/...)** - Try now
-- 📸 **[Screenshot Gallery](examples/GALLERY.md)** - Visual examples
+- 📸 **[Screenshot Gallery](examples/GALLERY.md)** - Visual examples of generated theses
 
 ---
 

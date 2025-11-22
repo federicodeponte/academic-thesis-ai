@@ -105,4 +105,4 @@ Real-world data from 127 beta users and 4 production theses (111,665 words total
 **Sample Size:** 127 beta users, 181 runs, 4 production theses
 
 **Data Source:** `data/metrics.json` - Single source of truth
-**Generated:** 2025-11-22 13:25:35
+**Generated:** 2025-11-22 14:00:18

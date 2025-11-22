@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 Academic Thesis AI
+# 🎓 OpenDraft
 
 ### AI-Powered Academic Writing Framework
 
@@ -10,12 +10,14 @@
 <!-- TODO: Replace with real demo GIF - see docs/VISUAL_ASSETS_GUIDE.md -->
 
 <p>
-  <a href="https://academic-thesis-ai-landing.vercel.app"><strong>🌐 Website</strong></a> ·
+  <a href="https://opendraft.ai"><strong>🌐 Website</strong></a> ·
   <a href="#-see-it-in-action"><strong>🎬 Demo</strong></a> ·
   <a href="#-quick-start"><strong>⚡ Quick Start</strong></a> ·
   <a href="docs/"><strong>📖 Docs</strong></a> ·
   <a href="examples/"><strong>🎓 Examples</strong></a>
 </p>
+
+> **📁 Monorepo Structure**: This repository contains both the core framework (`src/`) and the landing page (`website/`). Everything in one place!
 
 <p>
   <!-- CI/CD Status -->

@@ -36,7 +36,7 @@ export default function CompleteGuideAIThesisWriting() {
       <h1>Complete Guide to AI-Assisted Thesis Writing in 2025</h1>
 
       <p className="text-xl text-muted-foreground">
-        Learn how to leverage AI to write your master&apos;s thesis or PhD dissertation <strong>10x faster</strong> while maintaining academic integrity. This comprehensive guide covers 15 specialized AI agents, real-world examples, ethical considerations, and step-by-step workflows.
+        Learn how to leverage AI to <strong>generate thesis drafts in 20-30 minutes</strong> while maintaining academic integrity. This comprehensive guide covers 15 specialized AI agents, real-world examples, ethical considerations, and step-by-step workflows.
       </p>
 
       <h2>Introduction: The AI Revolution in Academic Writing</h2>
@@ -143,7 +143,7 @@ export default function CompleteGuideAIThesisWriting() {
         <li><strong>AI time:</strong> 20 minutes (total workflow: 10 days with human review)</li>
         <li><strong>Cost:</strong> $22 using Gemini 2.5 Flash</li>
         <li><strong>Quality:</strong> A- (90/100) – Publication ready for mid-tier business journals</li>
-        <li><strong>Citations:</strong> 63 academic sources (all auto-verified)</li>
+        <li><strong>Citations:</strong> 63 academic sources (all database-validated)</li>
       </ul>
 
       <h3>Example #2: Open Source Software (Technology/Social Impact)</h3>
@@ -210,7 +210,7 @@ export default function CompleteGuideAIThesisWriting() {
       </p>
 
       <div className="bg-primary text-primary-foreground rounded-lg p-8 text-center my-12 not-prose">
-        <h3 className="text-2xl font-bold mb-4">Write Your Thesis 10x Faster</h3>
+        <h3 className="text-2xl font-bold mb-4">Generate Your Thesis Draft in Minutes</h3>
         <p className="text-lg mb-6 opacity-90">
           Join thousands of students and researchers using AI to accelerate academic writing
         </p>

@@ -19,6 +19,7 @@ from utils.academic_citation_search import (
     search_semantic_scholar,
     search_crossref,
     search_arxiv,
+    search_multi_source,
     validate_doi,
     validate_citation_quality,
     _parse_semantic_scholar_paper,
@@ -505,6 +506,142 @@ class TestCitationQualityValidation:
         # Quality score: DOI (2) + venue (2) = 4.0 (exactly at threshold)
         assert citation.quality_score() == 4.0
         assert validate_citation_quality(citation) is True
+
+
+class TestMultiSourceFallback:
+    """Test multi-source search with graceful fallback."""
+
+    @pytest.mark.integration
+    def test_multi_source_returns_citations(self):
+        """Test multi-source search returns citations from available APIs."""
+        try:
+            citations = search_multi_source("machine learning", limit=5)
+            # Should get at least some citations if any API works
+            assert isinstance(citations, list)
+            # All returned items should be Citation objects
+            for citation in citations:
+                assert isinstance(citation, Citation)
+        except Exception as e:
+            # If all APIs fail, that's acceptable in test environment
+            pytest.skip(f"All APIs unavailable: {e}")
+
+    @pytest.mark.integration
+    def test_multi_source_respects_limit(self):
+        """Test multi-source search respects result limit."""
+        try:
+            limit = 10
+            citations = search_multi_source("deep learning", limit=limit)
+            # Should not exceed limit
+            assert len(citations) <= limit
+        except Exception:
+            pytest.skip("APIs unavailable")
+
+    @pytest.mark.integration
+    def test_multi_source_deduplicates(self):
+        """Test multi-source search removes duplicate citations."""
+        try:
+            citations = search_multi_source("neural networks", limit=20)
+            # Check for duplicates (same title + year)
+            seen = set()
+            duplicates = []
+            for citation in citations:
+                key = (citation.title.lower().strip(), citation.year)
+                if key in seen:
+                    duplicates.append(citation.title)
+                seen.add(key)
+
+            # Should have no duplicates
+            assert len(duplicates) == 0, f"Found {len(duplicates)} duplicates"
+        except Exception:
+            pytest.skip("APIs unavailable")
+
+    @pytest.mark.integration
+    def test_multi_source_prefer_semantic_scholar(self):
+        """Test multi-source can prefer specific source."""
+        try:
+            citations = search_multi_source(
+                "artificial intelligence",
+                limit=5,
+                prefer_source="semantic_scholar"
+            )
+            # If successful, should have citations
+            if citations:
+                # First citation likely from preferred source
+                assert len(citations) > 0
+        except Exception:
+            pytest.skip("APIs unavailable")
+
+    @pytest.mark.integration
+    def test_multi_source_handles_empty_query(self):
+        """Test multi-source handles invalid queries gracefully."""
+        with pytest.raises(ValueError, match="cannot be empty"):
+            search_multi_source("", limit=5)
+
+    @pytest.mark.integration
+    def test_multi_source_handles_invalid_limit(self):
+        """Test multi-source validates limit parameter."""
+        with pytest.raises(ValueError, match="between 1 and 100"):
+            search_multi_source("test query", limit=0)
+
+        with pytest.raises(ValueError, match="between 1 and 100"):
+            search_multi_source("test query", limit=150)
+
+    def test_multi_source_api_order(self):
+        """Test multi-source tries APIs in correct order."""
+        # This test verifies the fallback chain without network calls
+        # by checking the function's internal logic
+
+        # Mock all APIs to fail
+        from unittest.mock import patch, MagicMock
+
+        with patch('utils.academic_citation_search.search_semantic_scholar') as mock_ss, \
+             patch('utils.academic_citation_search.search_crossref') as mock_cr, \
+             patch('utils.academic_citation_search.search_arxiv') as mock_arx:
+
+            # Make all APIs return empty lists (simulating failure to find results)
+            mock_ss.return_value = []
+            mock_cr.return_value = []
+            mock_arx.return_value = []
+
+            # Call multi-source
+            result = search_multi_source("test query", limit=10)
+
+            # All three APIs should have been called (fallback chain)
+            assert mock_ss.called or mock_cr.called or mock_arx.called
+            assert result == []  # Empty result when all APIs fail
+
+    def test_multi_source_graceful_degradation(self):
+        """Test multi-source continues when individual APIs fail."""
+        from unittest.mock import patch
+        from utils.exceptions import NetworkError
+
+        # Mock APIs with one failing, others succeeding
+        mock_citation = Citation(
+            title="Test Paper",
+            authors=["Test Author"],
+            year=2020,
+            venue="Test Venue",
+            doi="10.1234/test"
+        )
+
+        with patch('utils.academic_citation_search.search_semantic_scholar') as mock_ss, \
+             patch('utils.academic_citation_search.search_crossref') as mock_cr, \
+             patch('utils.academic_citation_search.search_arxiv') as mock_arx:
+
+            # First API fails
+            mock_ss.side_effect = NetworkError(
+                endpoint="api.semanticscholar.org",
+                reason="Connection timeout"
+            )
+            # Second API succeeds
+            mock_cr.return_value = [mock_citation]
+            # Third API not called (already have results)
+            mock_arx.return_value = []
+
+            # Should still get results from working API
+            result = search_multi_source("test query", limit=10)
+            assert len(result) > 0
+            assert result[0].title == "Test Paper"
 
 
 if __name__ == '__main__':

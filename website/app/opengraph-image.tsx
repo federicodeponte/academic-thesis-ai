@@ -4,7 +4,7 @@
 import { ImageResponse } from 'next/og'
 import { BRAND_CONFIG } from '@/lib/brand-config'
 
-export const alt = 'OpenDraft - Write Your Thesis 10x Faster'
+export const alt = 'OpenDraft - Free AI Thesis Writing Tool with 15 Specialized Agents'
 export const size = {
   width: 1200,
   height: 630,
@@ -49,7 +49,7 @@ export default async function Image() {
             marginBottom: 30,
           }}
         >
-          Write Your Thesis 10x Faster
+          Generate Thesis Drafts in Minutes
         </div>
         <div
           style={{
@@ -59,7 +59,7 @@ export default async function Image() {
             maxWidth: 900,
           }}
         >
-          14 Specialized AI Agents • 200M+ Research Papers • FREE Tier Available
+          15 Specialized AI Agents • 200M+ Research Papers • FREE Tier Available
         </div>
         <div
           style={{

@@ -312,7 +312,7 @@ export default function ChatGPTThesisWritingTutorial() {
             <tr>
               <td>Citation Accuracy</td>
               <td>❌ 40-70% fabricated</td>
-              <td>✅ Auto-verified</td>
+              <td>✅ Database-validated</td>
             </tr>
             <tr>
               <td>Full Thesis Generation</td>
